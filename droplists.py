@@ -34,7 +34,7 @@ for filename, amiibo_name in amiibos:
 
     print('----- %s -----' % amiibo_name)
     
-    f=open(filename,'rb')
+    f=open('bdrop/' + filename,'rb')
     data = f.read()
     f.close()
     drop_data = aamp.parseAAMP(data)
