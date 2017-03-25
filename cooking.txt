@@ -1,0 +1,174 @@
+When cooking, there are four kinds of ingredients: food, additives, critters, and monster parts.
+To create a meal, you must include at least one food, no critters/monster parts, and optionally additives.
+To create an elixir, you must include at least one critter and monster part, and optionally food/additives.
+
+Food is fruit, mushrooms, vegetables, meat, honey, eggs, milk, nuts, fish, snails, and crabs.
+Additives are rice, wheat, sugar, butter, goron spice, rock salt, monster extract, star fragments, and dragon drops.
+Critters are butterflies, dragonflies, crickets, beetles, fireflies, frogs, and lizards.
+Monster parts are everything that drops from a monster, including ancient parts but not dragon drops.
+
+
+The healing power of a meal or elixir is the sum of its components. The duration is also the sum of the components, however elixirs are given a fixed 30 second bonus. The odds of a crit are the maximum of the components, although it seems the odds are never zero.
+
+The strength of a meal or elixir's effect is determined by sum of the levels of its ingredients, as follows:
+* AttackUp, DefenseUp, MovingSpeed: 5+ for strength 2, 7+ for strength 3
+* Fireproof: 7+ for strength 2
+* Quietness: 6+ for strength 2, 9+ for strength 3
+* ResistCold, ResistHot: 6+ for strength 2
+* ResistElectric: 4+ for strength 2, 6+ for strength 3
+* ExGutsMaxUp: complicated, but maxes out at 20+ for 2 bonus stamina wheels
+* GutsRecover: complicated, but maxes out at 9+ for 3 stamina wheels
+* LifeMaxUp: one gold heart per level
+
+
+Getting a critical cook will randomly apply one of the following to the dish, out of those that are applicable:
+* boost effect strength by 1
+* boost red hearts by 3
+* boost effect duration by 5 minutes
+
+Monster Extract is a special case, and will randomly modify the properties of a food, sometimes dramatically.
+Fairies are another special case, and will create Fairy Tonic no matter what, which heals but has no other effect.
+
+--------------------------------------------------------------------------------------
+
+AttackUp Lv. 1 (50 seconds), 0 hearts, 0% crit chance - Bladed Rhino Beetle
+AttackUp Lv. 1 (50 seconds), 0 hearts, 0% crit chance - Mighty Thistle
+AttackUp Lv. 2 (50 seconds), 1 hearts, 0% crit chance - Mighty Bananas
+AttackUp Lv. 2 (50 seconds), 1 hearts, 0% crit chance - Razorshroom
+AttackUp Lv. 2 (50 seconds), 2 hearts, 0% crit chance - Mighty Carp
+AttackUp Lv. 2 (50 seconds), 2 hearts, 0% crit chance - Razorclaw Crab
+AttackUp Lv. 3 (50 seconds), 2 hearts, 0% crit chance - Mighty Porgy
+DefenseUp Lv. 1 (50 seconds), 0 hearts, 0% crit chance - Armoranth
+DefenseUp Lv. 1 (50 seconds), 0 hearts, 0% crit chance - Rugged Rhino Beetle
+DefenseUp Lv. 2 (50 seconds), 1 hearts, 0% crit chance - Fortified Pumpkin
+DefenseUp Lv. 2 (50 seconds), 1 hearts, 0% crit chance - Ironshroom
+DefenseUp Lv. 2 (50 seconds), 2 hearts, 0% crit chance - Armored Carp
+DefenseUp Lv. 2 (50 seconds), 2 hearts, 0% crit chance - Ironshell Crab
+DefenseUp Lv. 3 (50 seconds), 2 hearts, 0% crit chance - Armored Porgy
+ExGutsMaxUp Lv. 1 (0 seconds), 2 hearts, 0% crit chance - Endura Shroom
+ExGutsMaxUp Lv. 2 (0 seconds), 4 hearts, 0% crit chance - Tireless Frog
+ExGutsMaxUp Lv. 4 (0 seconds), 4 hearts, 0% crit chance - Endura Carrot
+Fireproof Lv. 1 (150 seconds), 0 hearts, 0% crit chance - Fireproof Lizard
+Fireproof Lv. 2 (150 seconds), 0 hearts, 0% crit chance - Smotherwing Butterfly
+GutsRecover Lv. 1 (0 seconds), 0 hearts, 0% crit chance - Restless Cricket
+GutsRecover Lv. 1 (0 seconds), 1 hearts, 0% crit chance - Stamella Shroom
+GutsRecover Lv. 2 (0 seconds), 2 hearts, 0% crit chance - Bright-Eyed Crab
+GutsRecover Lv. 2 (0 seconds), 4 hearts, 0% crit chance - Courser Bee Honey
+GutsRecover Lv. 4 (0 seconds), 2 hearts, 0% crit chance - Staminoka Bass
+GutsRecover Lv. 6 (0 seconds), 0 hearts, 0% crit chance - Energetic Rhino Beetle
+LifeMaxUp Lv. 1 (0 seconds), 4 hearts, 0% crit chance - Hearty Truffle
+LifeMaxUp Lv. 2 (0 seconds), 4 hearts, 0% crit chance - Hearty Bass
+LifeMaxUp Lv. 3 (0 seconds), 5 hearts, 0% crit chance - Hearty Radish
+LifeMaxUp Lv. 3 (0 seconds), 6 hearts, 0% crit chance - Hearty Blueshell Snail
+LifeMaxUp Lv. 4 (0 seconds), 6 hearts, 0% crit chance - Big Hearty Truffle
+LifeMaxUp Lv. 4 (0 seconds), 6 hearts, 0% crit chance - Hearty Durian
+LifeMaxUp Lv. 4 (0 seconds), 8 hearts, 0% crit chance - Hearty Lizard
+LifeMaxUp Lv. 4 (0 seconds), 8 hearts, 0% crit chance - Hearty Salmon
+LifeMaxUp Lv. 5 (0 seconds), 8 hearts, 0% crit chance - Big Hearty Radish
+MovingSpeed Lv. 1 (60 seconds), 0 hearts, 0% crit chance - Hightail Lizard
+MovingSpeed Lv. 1 (60 seconds), 1 hearts, 0% crit chance - Rushroom
+MovingSpeed Lv. 1 (60 seconds), 1 hearts, 0% crit chance - Swift Carrot
+MovingSpeed Lv. 2 (60 seconds), 0 hearts, 0% crit chance - Hot-Footed Frog
+MovingSpeed Lv. 2 (60 seconds), 0 hearts, 0% crit chance - Swift Violet
+MovingSpeed Lv. 2 (60 seconds), 1 hearts, 0% crit chance - Fleet-Lotus Seeds
+None Lv. 0 (30 seconds), 0 hearts, 0% crit chance - Monster Extract
+None Lv. 0 (30 seconds), 0 hearts, 0% crit chance - Rock Salt
+None Lv. 0 (30 seconds), 1 hearts, 0% crit chance - Apple
+None Lv. 0 (30 seconds), 1 hearts, 0% crit chance - Hylian Shroom
+None Lv. 0 (30 seconds), 1 hearts, 0% crit chance - Wildberry
+None Lv. 0 (30 seconds), 10 hearts, 0% crit chance - Fairy
+None Lv. 0 (30 seconds), 2 hearts, 0% crit chance - Hyrule Bass
+None Lv. 0 (30 seconds), 2 hearts, 0% crit chance - Hyrule Herb
+None Lv. 0 (30 seconds), 2 hearts, 0% crit chance - Palm Fruit
+None Lv. 0 (30 seconds), 2 hearts, 0% crit chance - Raw Bird Drumstick
+None Lv. 0 (30 seconds), 2 hearts, 0% crit chance - Raw Meat
+None Lv. 0 (30 seconds), 2 hearts, 0% crit chance - Sanke Carp
+None Lv. 0 (30 seconds), 3 hearts, 0% crit chance - Hard-Boiled Egg
+None Lv. 0 (30 seconds), 3 hearts, 0% crit chance - Raw Bird Thigh
+None Lv. 0 (30 seconds), 3 hearts, 0% crit chance - Raw Prime Meat
+None Lv. 0 (30 seconds), 6 hearts, 0% crit chance - Raw Gourmet Meat
+None Lv. 0 (30 seconds), 6 hearts, 0% crit chance - Raw Whole Bird
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Ancient Screw
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Ancient Spring
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Bokoblin Horn
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Chuchu Jelly
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Hinox Toenail
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Keese Wing
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Lizalfos Horn
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Lynel Horn
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Moblin Horn
+None Lv. 0 (40 seconds), 0 hearts, 0% crit chance - Octorok Tentacle
+None Lv. 0 (40 seconds), 1 hearts, 0% crit chance - Chickaloo Tree Nut
+None Lv. 0 (50 seconds), 1 hearts, 0% crit chance - Acorn
+None Lv. 0 (60 seconds), 0 hearts, 100% crit chance - Star Fragment
+None Lv. 0 (60 seconds), 1.25 hearts, 100% crit chance - Dinraal's Scale
+None Lv. 0 (60 seconds), 1.25 hearts, 100% crit chance - Farosh's Scale
+None Lv. 0 (60 seconds), 1.25 hearts, 100% crit chance - Naydra's Scale
+None Lv. 0 (60 seconds), 2 hearts, 0% crit chance - Hylian Rice
+None Lv. 0 (60 seconds), 2 hearts, 0% crit chance - Tabantha Wheat
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Ancient Gear
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Ancient Shaft
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Bokoblin Fang
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Electric Keese Wing
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Fire Keese Wing
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Goat Butter
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Hinox Tooth
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Ice Keese Wing
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Lizalfos Talon
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Lynel Hoof
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Moblin Fang
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Molduga Fin
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Octorok Eyeball
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Red Chuchu Jelly
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - White Chuchu Jelly
+None Lv. 0 (80 seconds), 0 hearts, 10% crit chance - Yellow Chuchu Jelly
+None Lv. 0 (80 seconds), 0 hearts, 30% crit chance - Cane Sugar
+None Lv. 0 (80 seconds), 1 hearts, 0% crit chance - Fresh Milk
+None Lv. 0 (90 seconds), 0 hearts, 10% crit chance - Goron Spice
+None Lv. 0 (90 seconds), 2 hearts, 10% crit chance - Bird Egg
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Ancient Core
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Bokoblin Guts
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Giant Ancient Core
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Hinox Guts
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Icy Lizalfos Tail
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Keese Eyeball
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Lizalfos Tail
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Lynel Guts
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Moblin Guts
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Molduga Guts
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Octo Balloon
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Red Lizalfos Tail
+None Lv. 0 (160 seconds), 0 hearts, 30% crit chance - Yellow Lizalfos Tail
+None Lv. 0 (180 seconds), 2 hearts, 100% crit chance - Dinraal's Claw
+None Lv. 0 (180 seconds), 2 hearts, 100% crit chance - Farosh's Claw
+None Lv. 0 (180 seconds), 2 hearts, 100% crit chance - Naydra's Claw
+None Lv. 0 (600 seconds), 2.5 hearts, 100% crit chance - Shard of Dinraal's Fang
+None Lv. 0 (600 seconds), 2.5 hearts, 100% crit chance - Shard of Farosh's Fang
+None Lv. 0 (600 seconds), 2.5 hearts, 100% crit chance - Shard of Naydra's Fang
+None Lv. 0 (1800 seconds), 3.75 hearts, 100% crit chance - Shard of Dinraal's Horn
+None Lv. 0 (1800 seconds), 3.75 hearts, 100% crit chance - Shard of Farosh's Horn
+None Lv. 0 (1800 seconds), 3.75 hearts, 100% crit chance - Shard of Naydra's Horn
+Quietness Lv. 1 (120 seconds), 0 hearts, 0% crit chance - Blue Nightshade
+Quietness Lv. 1 (120 seconds), 0 hearts, 0% crit chance - Sunset Firefly
+Quietness Lv. 1 (120 seconds), 2 hearts, 0% crit chance - Sneaky River Snail
+Quietness Lv. 2 (120 seconds), 1 hearts, 0% crit chance - Silent Shroom
+Quietness Lv. 2 (120 seconds), 2 hearts, 0% crit chance - Stealthfin Trout
+Quietness Lv. 3 (120 seconds), 2 hearts, 0% crit chance - Silent Princess
+ResistCold Lv. 1 (150 seconds), 0 hearts, 0% crit chance - Summerwing Butterfly
+ResistCold Lv. 1 (150 seconds), 0 hearts, 0% crit chance - Warm Safflina
+ResistCold Lv. 1 (150 seconds), 1 hearts, 0% crit chance - Spicy Pepper
+ResistCold Lv. 2 (150 seconds), 0 hearts, 0% crit chance - Warm Darner
+ResistCold Lv. 2 (150 seconds), 1 hearts, 0% crit chance - Sunshroom
+ResistCold Lv. 3 (150 seconds), 2 hearts, 0% crit chance - Sizzlefin Trout
+ResistElectric Lv. 1 (150 seconds), 0 hearts, 0% crit chance - Electric Safflina
+ResistElectric Lv. 1 (150 seconds), 0 hearts, 0% crit chance - Thunderwing Butterfly
+ResistElectric Lv. 1 (150 seconds), 1 hearts, 0% crit chance - Voltfruit
+ResistElectric Lv. 2 (150 seconds), 0 hearts, 0% crit chance - Electric Darner
+ResistElectric Lv. 2 (150 seconds), 1 hearts, 0% crit chance - Zapshroom
+ResistElectric Lv. 3 (150 seconds), 2 hearts, 0% crit chance - Voltfin Trout
+ResistHot Lv. 1 (150 seconds), 0 hearts, 0% crit chance - Cool Safflina
+ResistHot Lv. 1 (150 seconds), 0 hearts, 0% crit chance - Winterwing Butterfly
+ResistHot Lv. 1 (150 seconds), 1 hearts, 0% crit chance - Hydromelon
+ResistHot Lv. 2 (150 seconds), 0 hearts, 0% crit chance - Cold Darner
+ResistHot Lv. 2 (150 seconds), 1 hearts, 0% crit chance - Chillshroom
+ResistHot Lv. 3 (150 seconds), 2 hearts, 0% crit chance - Chillfin Trout

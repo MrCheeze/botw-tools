@@ -72,7 +72,7 @@ def parseAAMP(data, offset=0x34, datatype='node'):
 
 if __name__ == '__main__':
     
-    f=open('bdrop/Item_Amiibo_DropTable_001.bdrop','rb')
+    f=open('cooking/Item_Plant_J.bgparamlist','rb')
     data = f.read()
     f.close()
     pprint.pprint(parseAAMP(data))
