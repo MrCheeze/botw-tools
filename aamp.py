@@ -57,13 +57,22 @@ def parseAAMP(data, offset=0x34, datatype='node'):
     elif datatype == 6:
         return struct.unpack('<f',data[offset:offset+4])
     elif datatype == 7:
-        return data[offset:].split(b'\0',1)[0].decode('ascii')
+        try:
+            return data[offset:].split(b'\0',1)[0].decode('ascii')
+        except UnicodeDecodeError:
+            return data[offset:].split(b'\0',1)[0]
     elif datatype == 8:
-        return data[offset:].split(b'\0',1)[0].decode('ascii')
+        try:
+            return data[offset:].split(b'\0',1)[0].decode('ascii')
+        except UnicodeDecodeError:
+            return data[offset:].split(b'\0',1)[0]
     elif datatype == 0x11:
         return struct.unpack('<I',data[offset:offset+4])[0]
     elif datatype == 0x14:
-        return data[offset:].split(b'\0',1)[0]
+        try:
+            return data[offset:].split(b'\0',1)[0].decode('ascii')
+        except UnicodeDecodeError:
+            return data[offset:].split(b'\0',1)[0]
     else:
         raise UnknownNodeTypeException('0x%X: 0x%02X' % (offset, datatype))
 

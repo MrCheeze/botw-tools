@@ -8,7 +8,7 @@ Critters are butterflies, dragonflies, crickets, beetles, fireflies, frogs, and 
 Monster parts are everything that drops from a monster, including ancient parts but not dragon drops.
 
 
-The healing power of a meal or elixir is the sum of its components. The duration is also the sum of the components, however elixirs are given a fixed 30 second bonus. The odds of a crit are the maximum of the components, although it seems the odds are never zero.
+The healing power of a meal or elixir is the sum of its components, except for gold heart food which always heals fully. The duration is also the sum of the components, however elixirs are given a fixed 30 second bonus. The odds of a crit are the maximum of the components, although it seems the odds are never zero.
 
 The strength of a meal or elixir's effect is determined by sum of the levels of its ingredients, as follows:
 * AttackUp, DefenseUp, MovingSpeed: 5+ for strength 2, 7+ for strength 3
