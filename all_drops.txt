@@ -318,7 +318,7 @@ Iced - x1
 Normal - x1
 100.0% - Bright-Eyed Crab
 
------ Animal_LittleBird -----
+----- Sparrow -----
 Normal - x1
 100.0% - Chickaloo Tree Nut
 
@@ -583,7 +583,7 @@ Normal - x3
 
 Happy - x1
 
------ BoarMeat -----
+----- Seared Steak -----
 Normal - x1
 100.0% - Seared Steak
 
@@ -880,7 +880,7 @@ Normal4 - x2-3
 Normal5 - x1
 100.0% - Bokoblin Horn
 
------ Enemy_Bokoblin_Guard_Junior -----
+----- Bokoblin -----
 Normal - x1
  20.0% - Bokoblin Fang
  80.0% - Arrow x5
@@ -919,7 +919,7 @@ ElectricArrow2 - x1
 BombArrow_A2 - x1
 100.0% - Bokoblin Horn
 
------ Enemy_Bokoblin_Guard_Middle -----
+----- Blue Bokoblin -----
 Normal - x1
  20.0% - Bokoblin Guts
  80.0% - Arrow x5
@@ -970,49 +970,49 @@ BombArrow_A2 - x1
 BombArrow_A3 - x1
  20.0% - Bokoblin Guts
 
------ Enemy_Chuchu_Electric_Middle -----
+----- Electric Chuchu -----
 Normal - x2
 100.0% - Yellow Chuchu Jelly
 
 Normal2 - x1-2
  60.0% - Yellow Chuchu Jelly
 
------ Enemy_Chuchu_Electric_Senior -----
+----- Electric Chuchu -----
 Normal - x3
 100.0% - Yellow Chuchu Jelly
 
 Normal2 - x2-3
  80.0% - Yellow Chuchu Jelly
 
------ Enemy_Chuchu_Fire_Middle -----
+----- Fire Chuchu -----
 Normal - x2
 100.0% - Red Chuchu Jelly
 
 Normal2 - x1-2
  60.0% - Red Chuchu Jelly
 
------ Enemy_Chuchu_Fire_Senior -----
+----- Fire Chuchu -----
 Normal - x3
 100.0% - Red Chuchu Jelly
 
 Normal2 - x2-3
  80.0% - Red Chuchu Jelly
 
------ Enemy_Chuchu_Ice_Middle -----
+----- Ice Chuchu -----
 Normal - x2
 100.0% - White Chuchu Jelly
 
 Normal2 - x1-2
  60.0% - White Chuchu Jelly
 
------ Enemy_Chuchu_Ice_Senior -----
+----- Ice Chuchu -----
 Normal - x3
 100.0% - White Chuchu Jelly
 
 Normal2 - x2-3
  80.0% - White Chuchu Jelly
 
------ Enemy_Chuchu_Middle -----
+----- Chuchu -----
 Normal - x2
 100.0% - Chuchu Jelly
 
@@ -1037,7 +1037,7 @@ Electronic - x2
 Electronic2 - x1-2
  60.0% - Yellow Chuchu Jelly
 
------ Enemy_Chuchu_Senior -----
+----- Chuchu -----
 Normal - x3
 100.0% - Chuchu Jelly
 
@@ -1062,7 +1062,7 @@ Electronic - x3
 Electronic2 - x2
  80.0% - Yellow Chuchu Jelly
 
------ Enemy_Dragon -----
+----- Naydra -----
 Normal - x0
 
 b'\xe8\xa7\x92\xef\xbc\x88\xe7\x82\x8e\xef\xbc\x89' - x0
@@ -1300,7 +1300,7 @@ Normal - x5-8
   2.0% - Ancient Core
   0.5% - Giant Ancient Core
 
------ Enemy_Guardian_Mini -----
+----- Guardian Scout -----
 Normal - x1
  60.0% - Ancient Screw
  40.0% - Ancient Spring
@@ -1311,7 +1311,7 @@ Normal2 - x0-1
 
 None - x0
 
------ Enemy_Guardian_Mini_Baby_Dark -----
+----- Guardian Scout I -----
 Normal - x1
  60.0% - Ancient Screw
  40.0% - Ancient Spring
@@ -1333,7 +1333,7 @@ Normal2 - x1
  20.0% - Ancient Gear
  10.0% - Ancient Shaft
 
------ Enemy_Guardian_Mini_Junior_Dark -----
+----- Guardian Scout II -----
 Normal - x1
  40.0% - Ancient Screw
  30.0% - Ancient Spring
@@ -1346,7 +1346,7 @@ Normal2 - x1
  20.0% - Ancient Gear
  10.0% - Ancient Shaft
 
------ Enemy_Guardian_Mini_Junior_Wipe -----
+----- Guardian Scout II -----
 Normal - x2
  40.0% - Ancient Screw
  30.0% - Ancient Spring
@@ -1371,7 +1371,7 @@ Normal2 - x3-4
  20.0% - Ancient Gear
  20.0% - Ancient Shaft
 
------ Enemy_Guardian_Mini_Middle_Dark -----
+----- Guardian Scout III -----
 Normal - x1
  40.0% - Ancient Gear
  40.0% - Ancient Shaft
@@ -1383,7 +1383,7 @@ Normal2 - x1-2
  20.0% - Ancient Gear
  20.0% - Ancient Shaft
 
------ Enemy_Guardian_Mini_Practice -----
+----- Guardian Scout II -----
 Normal - x1
  40.0% - Ancient Screw
  30.0% - Ancient Spring
@@ -1408,7 +1408,7 @@ Normal2 - x4-5
  30.0% - Ancient Gear
  30.0% - Ancient Shaft
 
------ Enemy_Guardian_Mini_Senior_Dark -----
+----- Guardian Scout IV -----
 Normal - x1
  20.0% - Ancient Gear
  30.0% - Ancient Shaft
@@ -1830,7 +1830,7 @@ Normal2 - x5-10
 100.0% - Molduga Fin
 
 Normal3 - x1-2
-100.0% - TBox_Field_Iron_Sandworm
+100.0% - Treasure Chest
 
 ----- FireWizzrobe -----
 Normal - x1
@@ -3425,11 +3425,11 @@ Rare1_Burnout - x1-2
 Arrow1 - x1
  43.0% - Arrow
  20.0% - Arrow x5
-  8.0% - Obj_FireArrow_A_01
+  8.0% - Fire Arrow
   3.0% - Fire Arrow x5
-  8.0% - Obj_IceArrow_A_01
+  8.0% - Ice Arrow
   3.0% - Ice Arrow x5
-  8.0% - Obj_ElectricArrow_A_01
+  8.0% - Shock Arrow
   3.0% - Shock Arrow x5
   4.0% - Arrow x10
 
@@ -3510,16 +3510,16 @@ Castle_Arrow - x2-3
  10.0% - Arrow
   6.0% - Arrow x10
  20.0% - Arrow x5
- 10.0% - Obj_FireArrow_A_01
+ 10.0% - Fire Arrow
   5.0% - Fire Arrow x5
   1.0% - Fire Arrow x10
- 10.0% - Obj_IceArrow_A_01
+ 10.0% - Ice Arrow
   5.0% - Ice Arrow x5
   1.0% - Ice Arrow x10
- 10.0% - Obj_ElectricArrow_A_01
+ 10.0% - Shock Arrow
   5.0% - Shock Arrow x5
   1.0% - Shock Arrow x10
- 10.0% - Obj_BombArrow_A_01
+ 10.0% - Bomb Arrow
   5.0% - Bomb Arrow x5
   1.0% - Bomb Arrow x10
 
@@ -3654,11 +3654,11 @@ Rare1 - x2-3
 Arrow1 - x1
  43.0% - Arrow
  20.0% - Arrow x5
-  8.0% - Obj_FireArrow_A_01
+  8.0% - Fire Arrow
   3.0% - Fire Arrow x5
-  8.0% - Obj_IceArrow_A_01
+  8.0% - Ice Arrow
   3.0% - Ice Arrow x5
-  8.0% - Obj_ElectricArrow_A_01
+  8.0% - Shock Arrow
   3.0% - Shock Arrow x5
   4.0% - Arrow x10
 
@@ -4455,7 +4455,7 @@ Normal - x1
   2.0% - Amber
   1.0% - Opal
   2.0% - Arrow x5
-  0.5% - Obj_BombArrow_A_01
+  0.5% - Bomb Arrow
 
 None - x0
 
@@ -4467,11 +4467,11 @@ Rupee_All_A - x1
   1.0% - Silver Rupee
 
 Arrow_Chemical - x1
- 31.0% - Obj_FireArrow_A_01
+ 31.0% - Fire Arrow
   3.0% - Fire Arrow x5
- 30.0% - Obj_IceArrow_A_01
+ 30.0% - Ice Arrow
   3.0% - Ice Arrow x5
- 30.0% - Obj_ElectricArrow_A_01
+ 30.0% - Shock Arrow
   3.0% - Shock Arrow x5
 
 Mushroom - x1
