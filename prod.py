@@ -25,7 +25,7 @@ def parseProd(data):
         cluster_size, element_count, cluster_strptr, padding = struct.unpack('>IIII',data[offset:offset+0x10])
         assert padding == 0
         assert cluster_size == element_count * 0x20
-        name = str(data[strings_ptr+cluster_strptr:].split(b'\0')[0])
+        name = data[strings_ptr+cluster_strptr:].split(b'\0')[0].decode('ascii')
         objects[name] = []
         for j in range(element_count):
             x, y, z, rotX, rotY, rotZ, scale, unk = struct.unpack('>ffffffff',data[offset+0x10+j*0x20:offset+0x30+j*0x20])
