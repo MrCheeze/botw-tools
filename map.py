@@ -21,7 +21,7 @@ for filename in os.listdir('mubin'):
         coords = [node.text for node in actor.findall('./Translate/value')]
         if len(coords) == 0:
             continue
-        drop_actors = actor.findall('./_Parameters/DropActor')
+        drop_actors = actor.findall('./_Parameters/DropActor') + actor.findall('./_Parameters/RideHorseName')
         drop_tables = actor.findall('./_Parameters/DropTable')
         
         if name in object_names:
