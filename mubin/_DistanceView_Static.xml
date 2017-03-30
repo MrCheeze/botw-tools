@@ -1,0 +1,1539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="30936583" SRTHash="1922632580">
+      <LinksToObj type="array">
+        <value DestUnitHashId="958215327">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2726.343f</value>
+        <value>49.98981f</value>
+        <value>-3656.275f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="58260063" SRTHash="676551451">
+      <Rotate type="array">
+        <value>-3.058829f</value>
+        <value>1.119936f</value>
+        <value>-3.04969f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4758.256f</value>
+        <value>7.820313f</value>
+        <value>-1526.153f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="64567822" Rotate="0.7599999f" SRTHash="-1844162021">
+      <LinksToObj type="array">
+        <value DestUnitHashId="67126261">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5530.003f</value>
+        <value>-2.75f</value>
+        <value>-131.8345f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="67126261" Rotate="0.7599999f" SRTHash="-1844162021">
+      <Translate type="array">
+        <value>-5530.003f</value>
+        <value>-2.75f</value>
+        <value>-131.8345f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="152052100" Rotate="0.08159279f" SRTHash="-593722014">
+      <Translate type="array">
+        <value>2019.345f</value>
+        <value>-207.9063f</value>
+        <value>-4311.227f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="175076901" Rotate="1.061593f" SRTHash="2045660695">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1041191180">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>4181.853f</value>
+        <value>66.04688f</value>
+        <value>-4883.807f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="179076433" Rotate="0.5415928f" SRTHash="-2088924785">
+      <Translate type="array">
+        <value>-2128.921f</value>
+        <value>-207.9063f</value>
+        <value>-4461.291f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="218280508" Rotate="-0.2584072f" SRTHash="-244036474">
+      <LinksToObj type="array">
+        <value DestUnitHashId="879757364">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>1427.116f</value>
+        <value>-207.9063f</value>
+        <value>-4368.852f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="326387556" Rotate="0.5415928f" SRTHash="-2088924785">
+      <LinksToObj type="array">
+        <value DestUnitHashId="179076433">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2128.921f</value>
+        <value>-207.9063f</value>
+        <value>-4461.291f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="336924988" Rotate="1.32f" SRTHash="-2065547954">
+      <Translate type="array">
+        <value>-5848.479f</value>
+        <value>-2.75f</value>
+        <value>312.6421f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="337216381" Rotate="-0.5784072f" SRTHash="723097301">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-13837423">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3462.281f</value>
+        <value>-13.16406f</value>
+        <value>-4445.907f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="360618579" SRTHash="-2037585969" Scale="10f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-669125643">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4450.441f</value>
+        <value>0f</value>
+        <value>-990.9226f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="403641314" SRTHash="-77201083">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.02268928f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Scale type="array">
+        <value>500f</value>
+        <value>80f</value>
+        <value>650f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4500f</value>
+        <value>65.44261f</value>
+        <value>-1262.469f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="432911670" SRTHash="175265255">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-44342399">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>1517.409f</value>
+        <value>50.02743f</value>
+        <value>-2994.229f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="448924495" Rotate="0.08159279f" SRTHash="-614068469">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-816017328">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>260.2183f</value>
+        <value>-207.9063f</value>
+        <value>-4487.479f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="454317451" Rotate="-0.2399985f" SRTHash="294449075">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1167799277">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>50f</value>
+        <value>900f</value>
+        <value>400f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4511.687f</value>
+        <value>900.0501f</value>
+        <value>-1007.266f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="517375022" SRTHash="-486527581" Scale="0.65f">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>1.570796f</value>
+        <value>-0.07853982f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>3014.247f</value>
+        <value>197.3694f</value>
+        <value>-3946.602f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A_02</UnitConfigName>
+    </value>
+    <value HashId="614145644" SRTHash="1424925912">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.04000993f</value>
+        <value>0.8643988f</value>
+        <value>0.1221469f</value>
+      </Rotate>
+      <Scale type="array">
+        <value>400f</value>
+        <value>80f</value>
+        <value>500f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-901.1989f</value>
+        <value>163.9405f</value>
+        <value>-3694.803f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="695548044" Rotate="0.8199998f" SRTHash="-1946527110">
+      <Translate type="array">
+        <value>-6157.562f</value>
+        <value>-2.75f</value>
+        <value>803.1655f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="718031060" SRTHash="1829493505">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-284757541">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3781.729f</value>
+        <value>50f</value>
+        <value>-3618.267f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="788349192" SRTHash="254454326">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>430f</value>
+        <value>65f</value>
+        <value>600f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4570f</value>
+        <value>65.01f</value>
+        <value>-148.9923f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="801154809" SRTHash="1196174957">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="360618579">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>350f</value>
+        <value>900f</value>
+        <value>600f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4678.451f</value>
+        <value>899.9833f</value>
+        <value>-906.8902f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="823709802" SRTHash="-1140737593">
+      <_Parameters BluffThunderOff="false" CloudShadowOff="false" FogMinusCorrection="false" IgnitedLevel="0" PSelSpeed="0" PaletteSel="3" TemperatureDay="99999.9f" TemperatureDirectDay="99999.9f" TemperatureDirectNight="99999.9f" TemperatureNight="99999.9f" Weather="-1" WeatherEff="2" />
+      <Translate type="array">
+        <value>-3475.469f</value>
+        <value>0f</value>
+        <value>3929.735f</value>
+      </Translate>
+      <UnitConfigName type="string">ChangeWeatherTag</UnitConfigName>
+    </value>
+    <value HashId="837769356" SRTHash="1765039545" Scale="1.1f">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1237902078">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.06474411f</value>
+        <value>0.6790008f</value>
+        <value>-0.102873f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-5252.103f</value>
+        <value>13.79102f</value>
+        <value>-4351.339f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="879757364" Rotate="-0.2584072f" SRTHash="-244036474">
+      <Translate type="array">
+        <value>1427.116f</value>
+        <value>-207.9063f</value>
+        <value>-4368.852f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="893654125" Rotate="1.32f" SRTHash="-2065547954">
+      <LinksToObj type="array">
+        <value DestUnitHashId="336924988">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5848.479f</value>
+        <value>-2.75f</value>
+        <value>312.6421f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="930238684" Rotate="1.570796f" SRTHash="-1120518871" Scale="1.2f">
+      <Translate type="array">
+        <value>746.99f</value>
+        <value>161.01f</value>
+        <value>-3635.127f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A_02</UnitConfigName>
+    </value>
+    <value HashId="936137953" Rotate="-0.03840721f" SRTHash="-328533011">
+      <Translate type="array">
+        <value>-1562.577f</value>
+        <value>-207.9063f</value>
+        <value>-4555.312f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="945362087" SRTHash="-565926231">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1942482945">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.8292906f</value>
+        <value>1.408722f</value>
+        <value>0.835857f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-5542.91f</value>
+        <value>22.82813f</value>
+        <value>-3874.863f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="958215327" SRTHash="863519595">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>1600f</value>
+        <value>80f</value>
+        <value>300f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-2826.919f</value>
+        <value>80.01f</value>
+        <value>-3700f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="962619973" Rotate="0.5799998f" SRTHash="1105062530">
+      <Translate type="array">
+        <value>-5033.472f</value>
+        <value>-2.75f</value>
+        <value>-503.7407f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="984926385" SRTHash="-1588868507" Scale="0.65f">
+      <Rotate type="array">
+        <value>0.02268928f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4325.328f</value>
+        <value>146.471f</value>
+        <value>-1260.472f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A_02</UnitConfigName>
+    </value>
+    <value HashId="1002768149" SRTHash="803447913">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-0.1799993f</value>
+      </Rotate>
+      <Scale type="array">
+        <value>300f</value>
+        <value>80f</value>
+        <value>400f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-724.0808f</value>
+        <value>129.778f</value>
+        <value>-3244.15f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1041814511" Rotate="1.321593f" SRTHash="1803470089">
+      <Translate type="array">
+        <value>-4734.257f</value>
+        <value>-2.75f</value>
+        <value>-951.5806f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1060425918" SRTHash="-123932383">
+      <_Parameters>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>25f</value>
+        <value>900f</value>
+        <value>4200f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-5000f</value>
+        <value>900f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWall</UnitConfigName>
+    </value>
+    <value HashId="1097939074" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="823709802">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3475f</value>
+        <value>100f</value>
+        <value>3950f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1111696635" Rotate="0.8199998f" SRTHash="-1946527110">
+      <LinksToObj type="array">
+        <value DestUnitHashId="695548044">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-6157.562f</value>
+        <value>-2.75f</value>
+        <value>803.1655f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="1118863407" Rotate="0.5799997f" SRTHash="-1191151177">
+      <_Parameters>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>25f</value>
+        <value>900f</value>
+        <value>500f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4721.804f</value>
+        <value>899.9987f</value>
+        <value>-1789.377f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWall</UnitConfigName>
+    </value>
+    <value HashId="1156234492" SRTHash="493664191">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-0.07853982f</value>
+      </Rotate>
+      <Scale type="array">
+        <value>650f</value>
+        <value>80f</value>
+        <value>250f</value>
+      </Scale>
+      <Translate type="array">
+        <value>3007.98f</value>
+        <value>116.7478f</value>
+        <value>-3873.586f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1158161847" SRTHash="-1773763975">
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FarGroundMountain_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1176655473" SRTHash="-564232860">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1156234492">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3298.896f</value>
+        <value>49.98981f</value>
+        <value>-3857.788f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="1189636122" Rotate="0.1215927f" SRTHash="-132533938">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1957219150">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4692.735f</value>
+        <value>-13.16406f</value>
+        <value>-4650.717f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="1211359272" SRTHash="-1414319634">
+      <_Parameters>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>25f</value>
+        <value>900f</value>
+        <value>4200f</value>
+      </Scale>
+      <Translate type="array">
+        <value>5000f</value>
+        <value>900f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWall</UnitConfigName>
+    </value>
+    <value HashId="1237902078" SRTHash="1765039545" Scale="1.1f">
+      <Rotate type="array">
+        <value>-0.06474411f</value>
+        <value>0.6790008f</value>
+        <value>-0.102873f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-5252.103f</value>
+        <value>13.79102f</value>
+        <value>-4351.339f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1292633985" Rotate="0.1415928f" SRTHash="2006730150">
+      <Translate type="array">
+        <value>-330.0972f</value>
+        <value>-207.9063f</value>
+        <value>-4397.372f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="1320180564" Rotate="0.08159279f" SRTHash="-1616761480">
+      <Translate type="array">
+        <value>3164.424f</value>
+        <value>66.04688f</value>
+        <value>-4339.171f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="1326407809" Rotate="0.5799991f" SRTHash="-862663448">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="360618579">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>25f</value>
+        <value>900f</value>
+        <value>550f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4706.766f</value>
+        <value>899.9818f</value>
+        <value>-1941.377f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1331569713" Rotate="2.14f" SRTHash="1370593997">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1319623089">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5115.242f</value>
+        <value>-80.39844f</value>
+        <value>-2051.454f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="1397197694" SRTHash="1452306183">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1025909769">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>1517.409f</value>
+        <value>50.02743f</value>
+        <value>-3769.472f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="1542722287" SRTHash="1236678534">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1097939074">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>1500f</value>
+        <value>100f</value>
+        <value>25f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-3475f</value>
+        <value>100f</value>
+        <value>3950f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1662956523" Rotate="-0.1384072f" SRTHash="-306380789">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1035144671">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4083.889f</value>
+        <value>-13.16406f</value>
+        <value>-4649.449f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="1685288946" Rotate="-0.03840721f" SRTHash="-328533011">
+      <LinksToObj type="array">
+        <value DestUnitHashId="936137953">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1562.577f</value>
+        <value>-207.9063f</value>
+        <value>-4555.312f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="1726389253" Rotate="-0.7399986f" SRTHash="-1584112510">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1167799277">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>50f</value>
+        <value>900f</value>
+        <value>300f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4782.95f</value>
+        <value>900.0233f</value>
+        <value>-435.9673f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1743387103" SRTHash="1327105113">
+      <LinksToObj type="array">
+        <value DestUnitHashId="403641314">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4454.177f</value>
+        <value>50f</value>
+        <value>-1220.321f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="1750247768" Rotate="-0.2399991f" SRTHash="403862953">
+      <_Parameters>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>25f</value>
+        <value>900f</value>
+        <value>400f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4547.3f</value>
+        <value>900.1038f</value>
+        <value>-1001.472f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWall</UnitConfigName>
+    </value>
+    <value HashId="1841642457" Rotate="-0.05840721f" SRTHash="-1156602634">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-230901280">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>879.168f</value>
+        <value>-207.9063f</value>
+        <value>-4488.301f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="1851726576" SRTHash="2080076710">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-365442955">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4866.122f</value>
+        <value>50f</value>
+        <value>-2358.673f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="1859469916" Rotate="0.3199998f" SRTHash="1785514629">
+      <Translate type="array">
+        <value>-6616.868f</value>
+        <value>-2.75f</value>
+        <value>1144.083f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="1886137905" Rotate="-0.09840721f" SRTHash="2126458825">
+      <Translate type="array">
+        <value>-973.3628f</value>
+        <value>-207.9063f</value>
+        <value>-4406.044f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1943040740" Rotate="-0.09840719f" SRTHash="-432341084">
+      <Translate type="array">
+        <value>2576.431f</value>
+        <value>-207.9063f</value>
+        <value>-4316.6f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1957219150" Rotate="0.1215927f" SRTHash="-132533938">
+      <Translate type="array">
+        <value>-4692.735f</value>
+        <value>-13.16406f</value>
+        <value>-4650.717f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="1960708760" Rotate="0.5799998f" SRTHash="1105062530">
+      <LinksToObj type="array">
+        <value DestUnitHashId="962619973">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5033.472f</value>
+        <value>-2.75f</value>
+        <value>-503.7407f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="2016811847" SRTHash="-1856876677" Scale="1.1f">
+      <Translate type="array">
+        <value>-4674.766f</value>
+        <value>161.01f</value>
+        <value>-3007.99f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A_03</UnitConfigName>
+    </value>
+    <value HashId="2047181482" Rotate="0.08159279f" SRTHash="-593722014">
+      <LinksToObj type="array">
+        <value DestUnitHashId="152052100">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2019.345f</value>
+        <value>-207.9063f</value>
+        <value>-4311.227f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="2103985843" Rotate="0.4415929f" SRTHash="1003635405">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-57637052">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3748.013f</value>
+        <value>66.04688f</value>
+        <value>-4483.373f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2140693629" SRTHash="-947503325">
+      <_Parameters>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>5000f</value>
+        <value>900f</value>
+        <value>25f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>900f</value>
+        <value>-4000f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWall</UnitConfigName>
+    </value>
+    <value HashId="-2048096015" Rotate="-0.7184072f" SRTHash="-1318555687">
+      <Translate type="array">
+        <value>-3080.058f</value>
+        <value>-8.523438f</value>
+        <value>-4146.682f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-2041523164" Rotate="0.4415929f" SRTHash="-1439978357">
+      <Translate type="array">
+        <value>4572.798f</value>
+        <value>66.04688f</value>
+        <value>-5268.779f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-1974771680" SRTHash="-1743370142" Scale="0.8415907f">
+      <Translate type="array">
+        <value>-4560.023f</value>
+        <value>131.01f</value>
+        <value>-391.7736f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1971513634" Rotate="0.1415928f" SRTHash="2006730150">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1292633985">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-330.0972f</value>
+        <value>-207.9063f</value>
+        <value>-4397.372f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1962123640" Rotate="1.570796f" SRTHash="-10406105" Scale="1.6f">
+      <Translate type="array">
+        <value>-2826.919f</value>
+        <value>161.01f</value>
+        <value>-3799.07f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1943692455" SRTHash="1791493882">
+      <LinksToObj type="array">
+        <value DestUnitHashId="614145644">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-528.1619f</value>
+        <value>49.99001f</value>
+        <value>-3486.696f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="-1942482945" SRTHash="-565926231">
+      <Rotate type="array">
+        <value>0.8292906f</value>
+        <value>1.408722f</value>
+        <value>0.835857f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-5542.91f</value>
+        <value>22.82813f</value>
+        <value>-3874.863f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-1928277305" Rotate="0.601593f" SRTHash="-281480048">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1198743231">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2551.011f</value>
+        <value>-13.16406f</value>
+        <value>-4153.863f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1822021729" Rotate="0.4415929f" SRTHash="-1439978357">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2041523164">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>4572.798f</value>
+        <value>66.04688f</value>
+        <value>-5268.779f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1811160186" Rotate="-0.09840719f" SRTHash="-432341084">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1943040740">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2576.431f</value>
+        <value>-207.9063f</value>
+        <value>-4316.6f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1777361091" Rotate="-0.8813913f" SRTHash="910208710">
+      <_Parameters>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>250f</value>
+        <value>900f</value>
+        <value>300f</value>
+      </Scale>
+      <Translate type="array">
+        <value>4027.004f</value>
+        <value>900f</value>
+        <value>-3983.867f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWall</UnitConfigName>
+    </value>
+    <value HashId="-1707792000" SRTHash="-99576920" Scale="0.5f">
+      <Rotate type="array">
+        <value>-0.04000993f</value>
+        <value>0.8643988f</value>
+        <value>0.1221469f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-848.5812f</value>
+        <value>252.2033f</value>
+        <value>-3773.552f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A</UnitConfigName>
+    </value>
+    <value HashId="-1588574947" SRTHash="159413392">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-879200977">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>3.025069f</value>
+        <value>1.239259f</value>
+        <value>3.018424f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-5371.313f</value>
+        <value>15.19824f</value>
+        <value>-2641.868f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1517699761" Rotate="0.5799991f" SRTHash="-1188384124">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1167799277">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>50f</value>
+        <value>900f</value>
+        <value>550f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4710.602f</value>
+        <value>899.9972f</value>
+        <value>-1810.386f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1505918716" Rotate="1.321593f" SRTHash="1803470089">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1041814511">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4734.257f</value>
+        <value>-2.75f</value>
+        <value>-951.5806f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1433135090" SRTHash="-1636453470">
+      <LinksToObj type="array">
+        <value DestUnitHashId="788349192">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4607.064f</value>
+        <value>50f</value>
+        <value>-151.4915f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="-1421999124" SRTHash="-916501586" Scale="0.2999f">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-0.1799993f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-709.491f</value>
+        <value>209.7014f</value>
+        <value>-3144.337f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A</UnitConfigName>
+    </value>
+    <value HashId="-1370710686" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-729141222">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4950f</value>
+        <value>300f</value>
+        <value>2495f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1319623089" Rotate="2.14f" SRTHash="1370593997">
+      <Translate type="array">
+        <value>-5115.242f</value>
+        <value>-80.39844f</value>
+        <value>-2051.454f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-1198743231" Rotate="0.601593f" SRTHash="-281480048">
+      <Translate type="array">
+        <value>-2551.011f</value>
+        <value>-13.16406f</value>
+        <value>-4153.863f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-1167799277" SRTHash="1515090591" Scale="10f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-844512288">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="801154809">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1326407809">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4485.105f</value>
+        <value>0f</value>
+        <value>-990.9226f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-1154417260" Rotate="1.281593f" SRTHash="270915376">
+      <Translate type="array">
+        <value>4921.392f</value>
+        <value>66.04688f</value>
+        <value>-5662.547f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-1127351199" Rotate="-0.7399995f" SRTHash="-2040114937">
+      <_Parameters>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>25f</value>
+        <value>900f</value>
+        <value>249.9999f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4825.25f</value>
+        <value>900.0841f</value>
+        <value>-463.0706f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWall</UnitConfigName>
+    </value>
+    <value HashId="-1041191180" Rotate="1.061593f" SRTHash="2045660695">
+      <Translate type="array">
+        <value>4181.853f</value>
+        <value>66.04688f</value>
+        <value>-4883.807f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-1035144671" Rotate="-0.1384072f" SRTHash="-306380789">
+      <Translate type="array">
+        <value>-4083.889f</value>
+        <value>-13.16406f</value>
+        <value>-4649.449f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-1025909769" SRTHash="-681488166">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0.1745329f</value>
+      </Rotate>
+      <Scale type="array">
+        <value>250f</value>
+        <value>80f</value>
+        <value>250f</value>
+      </Scale>
+      <Translate type="array">
+        <value>2147.003f</value>
+        <value>126.6091f</value>
+        <value>-3789.594f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-967671127" SRTHash="1557250162">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1002768149">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-528.1619f</value>
+        <value>49.99001f</value>
+        <value>-3114.953f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="-879200977" SRTHash="159413392">
+      <Rotate type="array">
+        <value>3.025069f</value>
+        <value>1.239259f</value>
+        <value>3.018424f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-5371.313f</value>
+        <value>15.19824f</value>
+        <value>-2641.868f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-844512288" SRTHash="-1192891863">
+      <_Parameters Direction="6" WindSpeed="19f" />
+      <Translate type="array">
+        <value>-4452.941f</value>
+        <value>0.03418922f</value>
+        <value>-1029.028f</value>
+      </Translate>
+      <UnitConfigName type="string">ChangeWindTag</UnitConfigName>
+    </value>
+    <value HashId="-816017328" Rotate="0.08159279f" SRTHash="-614068469">
+      <Translate type="array">
+        <value>260.2183f</value>
+        <value>-207.9063f</value>
+        <value>-4487.479f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-784682606" SRTHash="676551451">
+      <LinksToObj type="array">
+        <value DestUnitHashId="58260063">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-3.058829f</value>
+        <value>1.119936f</value>
+        <value>-3.04969f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4758.256f</value>
+        <value>7.820313f</value>
+        <value>-1526.153f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="-729141222" SRTHash="2091299612">
+      <_Parameters BluffThunderOff="false" CloudShadowOff="false" FogMinusCorrection="false" IgnitedLevel="0" PSelSpeed="0" PaletteSel="3" TemperatureDay="99999.9f" TemperatureDirectDay="99999.9f" TemperatureDirectNight="99999.9f" TemperatureNight="99999.9f" Weather="-1" WeatherEff="2" />
+      <Translate type="array">
+        <value>-4902.286f</value>
+        <value>-0.04565573f</value>
+        <value>2495.283f</value>
+      </Translate>
+      <UnitConfigName type="string">ChangeWeatherTag</UnitConfigName>
+    </value>
+    <value HashId="-698911349" Rotate="1.74f" SRTHash="169047752">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-151495521">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5536.429f</value>
+        <value>-13.16406f</value>
+        <value>-3272.502f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="-669125643" SRTHash="-2138563475">
+      <_Parameters Direction="6" WindSpeed="9.5f" />
+      <Translate type="array">
+        <value>-4418.277f</value>
+        <value>0.03418922f</value>
+        <value>-1029.028f</value>
+      </Translate>
+      <UnitConfigName type="string">ChangeWindTag</UnitConfigName>
+    </value>
+    <value HashId="-615877311" Rotate="0.3199998f" SRTHash="1785514629">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1859469916">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-6616.868f</value>
+        <value>-2.75f</value>
+        <value>1144.083f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="-504100430" SRTHash="-179358654" Scale="0.2499f">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0.1745329f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>2133.109f</value>
+        <value>206.4026f</value>
+        <value>-3789.594f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A</UnitConfigName>
+    </value>
+    <value HashId="-504067922" SRTHash="-1322530985">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1370710686">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>25f</value>
+        <value>300f</value>
+        <value>1430f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4950f</value>
+        <value>300f</value>
+        <value>2495f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-485698800" Rotate="0.08159279f" SRTHash="-1616761480">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1320180564">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3164.424f</value>
+        <value>66.04688f</value>
+        <value>-4339.171f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02</UnitConfigName>
+    </value>
+    <value HashId="-463399159" Rotate="1.281593f" SRTHash="270915376">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1154417260">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>4921.392f</value>
+        <value>66.04688f</value>
+        <value>-5662.547f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="-459373958" Rotate="-0.461391f" SRTHash="1129366309" Scale="0.25f">
+      <Translate type="array">
+        <value>3684.186f</value>
+        <value>151.01f</value>
+        <value>-3763.799f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_AreaStopClimbing_A</UnitConfigName>
+    </value>
+    <value HashId="-365442955" SRTHash="1633072029">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>300f</value>
+        <value>80f</value>
+        <value>1100f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-4700f</value>
+        <value>80.01f</value>
+        <value>-3007.99f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-326054883" SRTHash="-1773763975">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1158161847">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FarGroundMountain_A_01</UnitConfigName>
+    </value>
+    <value HashId="-284757541" Rotate="-0.461391f" SRTHash="1761647516">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>200f</value>
+        <value>75f</value>
+        <value>250f</value>
+      </Scale>
+      <Translate type="array">
+        <value>3729.194f</value>
+        <value>75f</value>
+        <value>-3741.42f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-230901280" Rotate="-0.05840721f" SRTHash="-1156602634">
+      <Translate type="array">
+        <value>879.168f</value>
+        <value>-207.9063f</value>
+        <value>-4488.301f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-151495521" Rotate="1.74f" SRTHash="169047752">
+      <Translate type="array">
+        <value>-5536.429f</value>
+        <value>-13.16406f</value>
+        <value>-3272.502f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-144659691" SRTHash="1116406014">
+      <_Parameters>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>5000f</value>
+        <value>900f</value>
+        <value>25f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>900f</value>
+        <value>4000f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWall</UnitConfigName>
+    </value>
+    <value HashId="-99098031" Rotate="-0.7184072f" SRTHash="-1318555687">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2048096015">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3080.058f</value>
+        <value>-8.523438f</value>
+        <value>-4146.682f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="-57637052" Rotate="0.4415929f" SRTHash="1003635405">
+      <Translate type="array">
+        <value>3748.013f</value>
+        <value>66.04688f</value>
+        <value>-4483.373f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-44342399" SRTHash="1521857776">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>1200f</value>
+        <value>80f</value>
+        <value>500f</value>
+      </Scale>
+      <Translate type="array">
+        <value>746.99f</value>
+        <value>80.01f</value>
+        <value>-3536.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-42326456" Rotate="-0.09840721f" SRTHash="2126458825">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1886137905">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-973.3628f</value>
+        <value>-207.9063f</value>
+        <value>-4406.044f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_01</UnitConfigName>
+    </value>
+    <value HashId="-13837423" Rotate="-0.5784072f" SRTHash="723097301">
+      <Translate type="array">
+        <value>-3462.281f</value>
+        <value>-13.16406f</value>
+        <value>-4445.907f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_WorldEnd_A_02_Far</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

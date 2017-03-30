@@ -1,0 +1,2720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="31786618" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.304321f</value>
+        <value>0.2685547f</value>
+        <value>-0.2835693f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4652.918f</value>
+        <value>170.0859f</value>
+        <value>1755.063f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="44389227" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-3.018829f</value>
+        <value>-0.6795328f</value>
+        <value>2.117559f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4407.015f</value>
+        <value>172.3069f</value>
+        <value>2390.136f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="50936712" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.848144f</value>
+        <value>-1.084839f</value>
+        <value>-0.6647949f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3911.219f</value>
+        <value>176.2773f</value>
+        <value>2158.059f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="52978243" Rotate="-0.5262451f" SRTHash="-529516346">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4615.773f</value>
+        <value>146.8237f</value>
+        <value>2036.73f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="62012069" SRTHash="333729379">
+      <Rotate type="array">
+        <value>2.220014f</value>
+        <value>0.06116023f</value>
+        <value>3.089991f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4715.063f</value>
+        <value>175.2185f</value>
+        <value>2195.137f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="72841342" Rotate="0.7853982f" SRTHash="1276336826" Scale="25f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4490f</value>
+        <value>147.7634f</value>
+        <value>2710f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="94220084" Rotate="2.617994f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4895.3f</value>
+        <value>137.7516f</value>
+        <value>2355.2f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="122766081" Rotate="0.7853982f" SRTHash="616567522" Scale="40f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4490f</value>
+        <value>147.7634f</value>
+        <value>2710f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="127820470" Rotate="-1.663185f" SRTHash="-707551228">
+      <Translate type="array">
+        <value>-4480.897f</value>
+        <value>155.2773f</value>
+        <value>2163.201f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_StageGerdo_SS_A_02</UnitConfigName>
+    </value>
+    <value HashId="142651390" Rotate="-2.530727f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4270f</value>
+        <value>162.47f</value>
+        <value>2531.7f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="150341238" Rotate="1.28f" SRTHash="1328008639">
+      <Translate type="array">
+        <value>-4500.684f</value>
+        <value>165.1678f</value>
+        <value>2170.045f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_StageGerdo_S_A_03</UnitConfigName>
+    </value>
+    <value HashId="179593528" SRTHash="-944772422">
+      <Translate type="array">
+        <value>-4591.036f</value>
+        <value>139.9902f</value>
+        <value>2639.291f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="238676055" SRTHash="-996068950">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_ArrowBundle_A_01</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4065.908f</value>
+        <value>153.5944f</value>
+        <value>2297.625f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="244264122" SRTHash="-1146881750">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-0.4742431f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4956.781f</value>
+        <value>139.421f</value>
+        <value>2142.988f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="260003268" SRTHash="-230741098" Scale="1.216567f">
+      <Rotate type="array">
+        <value>-2.876121f</value>
+        <value>1.352675f</value>
+        <value>-3.135722f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4642.586f</value>
+        <value>132.9513f</value>
+        <value>2408.273f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_Rib_A_01</UnitConfigName>
+    </value>
+    <value HashId="266622386" SRTHash="755835489">
+      <Translate type="array">
+        <value>-4819.376f</value>
+        <value>113.1192f</value>
+        <value>2824.129f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="276186008" SRTHash="-1183783264" Scale="1.216567f">
+      <Rotate type="array">
+        <value>2.75714f</value>
+        <value>0.1025919f</value>
+        <value>3.057443f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4703.588f</value>
+        <value>195.5152f</value>
+        <value>2172.362f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_Rib_A_01</UnitConfigName>
+    </value>
+    <value HashId="304711447" SRTHash="1293975731">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-0.9915771f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4113.207f</value>
+        <value>148.0239f</value>
+        <value>2140.219f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="379806432" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.451786f</value>
+        <value>-0.8337707f</value>
+        <value>1.721576f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4147.329f</value>
+        <value>164.4f</value>
+        <value>2376.447f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="417218640" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.580566f</value>
+        <value>-0.6809081f</value>
+        <value>-0.001953128f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4332.473f</value>
+        <value>193.7188f</value>
+        <value>2068.195f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="428976487" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.7841796f</value>
+        <value>0.7481689f</value>
+        <value>-0.6350097f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4916.793f</value>
+        <value>221.2031f</value>
+        <value>1911.449f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="478584437" Rotate="-3.054326f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4642.98f</value>
+        <value>151.6708f</value>
+        <value>2221.59f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="485215461" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.064354f</value>
+        <value>0.4116157f</value>
+        <value>2.33053f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4941.011f</value>
+        <value>145.97f</value>
+        <value>2115.481f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="494958846" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.909912f</value>
+        <value>-1.328491f</value>
+        <value>-1.383667f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4195.977f</value>
+        <value>185.2266f</value>
+        <value>2064.016f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="504557365" SRTHash="-17136103">
+      <Rotate type="array">
+        <value>2.064107f</value>
+        <value>-1.343275f</value>
+        <value>-2.075075f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4823.726f</value>
+        <value>126.3217f</value>
+        <value>2768.896f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_11</UnitConfigName>
+    </value>
+    <value HashId="524330400" Rotate="-2.996402f" SRTHash="-1711163608">
+      <Translate type="array">
+        <value>-4467.661f</value>
+        <value>145.6261f</value>
+        <value>2726.61f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="557079568" Rotate="2.617994f" SRTHash="-1902117070">
+      <Translate type="array">
+        <value>-4587.201f</value>
+        <value>147.743f</value>
+        <value>2711.331f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="560021830" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.015991f</value>
+        <value>-1.142578f</value>
+        <value>0.1132812f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3944.492f</value>
+        <value>194.9375f</value>
+        <value>2112.645f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="560597450" Rotate="0.5235988f" SRTHash="-1053035575">
+      <Translate type="array">
+        <value>-4472.711f</value>
+        <value>147.0399f</value>
+        <value>2734.129f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_A_02</UnitConfigName>
+    </value>
+    <value HashId="573118324" SRTHash="1419570548">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-1.044433f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4935.891f</value>
+        <value>137.2112f</value>
+        <value>2181.691f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="577657904" SRTHash="2079636222">
+      <Translate type="array">
+        <value>-4572.695f</value>
+        <value>140.3846f</value>
+        <value>2604.953f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_TravelerTrace_Mark_A_01</UnitConfigName>
+    </value>
+    <value HashId="608883353" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.613558f</value>
+        <value>-0.1671433f</value>
+        <value>2.40218f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4714.648f</value>
+        <value>173.67f</value>
+        <value>2186.946f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="631596512" Rotate="-0.6328125f" SRTHash="-1724166474">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4233.984f</value>
+        <value>178.8724f</value>
+        <value>2427.941f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="662749362" SRTHash="-759412359" Scale="100f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4497.566f</value>
+        <value>172.8108f</value>
+        <value>2140.63f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="669055754" SRTHash="1126286764" Scale="1.25f">
+      <Rotate type="array">
+        <value>-0.5739303f</value>
+        <value>-0.5499351f</value>
+        <value>0.286515f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4390.756f</value>
+        <value>156.7312f</value>
+        <value>2250.096f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="696424696" SRTHash="106750964">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>0.2714843f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4433.754f</value>
+        <value>151.4515f</value>
+        <value>2197.629f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="728790229" SRTHash="744250428">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Spear_029</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>1.190796f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4089.33f</value>
+        <value>150.96f</value>
+        <value>2777.93f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="756163395" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.261719f</value>
+        <value>-1.015625f</value>
+        <value>-0.7091064f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4031.426f</value>
+        <value>163.8281f</value>
+        <value>2360.18f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="792579153" SRTHash="1166293360">
+      <Rotate type="array">
+        <value>2.353863f</value>
+        <value>-0.3037461f</value>
+        <value>-1.81395f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4597.6f</value>
+        <value>134.8847f</value>
+        <value>2360.972f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="792675029" SRTHash="-256342199">
+      <Rotate type="array">
+        <value>2.064107f</value>
+        <value>-1.343275f</value>
+        <value>-2.075075f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4771.531f</value>
+        <value>126.3686f</value>
+        <value>2766.303f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_11</UnitConfigName>
+    </value>
+    <value HashId="802027646" SRTHash="1778169583">
+      <Translate type="array">
+        <value>-4253.59f</value>
+        <value>148.94f</value>
+        <value>2165.19f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DesertRuin_A_04</UnitConfigName>
+    </value>
+    <value HashId="814952937" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.812678f</value>
+        <value>-0.7602619f</value>
+        <value>1.981259f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4027.135f</value>
+        <value>155.93f</value>
+        <value>2707.967f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="819123402" Rotate="-2.476401f" SRTHash="-1263662082">
+      <Translate type="array">
+        <value>-4464.424f</value>
+        <value>147.5749f</value>
+        <value>2719.507f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="828032705" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.115356f</value>
+        <value>0.2225342f</value>
+        <value>-0.3238525f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4307.914f</value>
+        <value>202.3438f</value>
+        <value>2053.301f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="872421342" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.861252f</value>
+        <value>-0.41131f</value>
+        <value>2.33067f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4597.943f</value>
+        <value>169.97f</value>
+        <value>2499.996f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="875241909" SRTHash="-1183783264" Scale="1.216567f">
+      <Rotate type="array">
+        <value>0.3299173f</value>
+        <value>-1.374162f</value>
+        <value>-0.01038161f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4646.738f</value>
+        <value>150.7563f</value>
+        <value>2222.156f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_Rib_A_01</UnitConfigName>
+    </value>
+    <value HashId="935907257" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.346802f</value>
+        <value>-0.4243164f</value>
+        <value>-0.234375f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3914.48f</value>
+        <value>217.2031f</value>
+        <value>2134.563f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="939424071" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.255127f</value>
+        <value>-0.7055663f</value>
+        <value>0.4335937f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4366.77f</value>
+        <value>235.7109f</value>
+        <value>2016.715f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="959157564" Rotate="-2.119999f" SRTHash="1243945957">
+      <Translate type="array">
+        <value>-4582.542f</value>
+        <value>136.6005f</value>
+        <value>2623.897f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="966167057" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.8116454f</value>
+        <value>-0.9276122f</value>
+        <value>0.4296875f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3889.52f</value>
+        <value>175.0625f</value>
+        <value>2227.336f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="985058684" Rotate="-2.268928f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4312.7f</value>
+        <value>170.4961f</value>
+        <value>2298.91f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="985225526" SRTHash="-1969954505" Scale="1.25f">
+      <Rotate type="array">
+        <value>-1.515984f</value>
+        <value>-1.345524f</value>
+        <value>1.298674f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4272.901f</value>
+        <value>164.3115f</value>
+        <value>2275.061f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="995767255" Rotate="0.86f" SRTHash="-299833032">
+      <Translate type="array">
+        <value>-4508.543f</value>
+        <value>165.285f</value>
+        <value>2184.015f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_StageGerdo_S_A_03</UnitConfigName>
+    </value>
+    <value HashId="1028776920" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.942891f</value>
+        <value>-0.4789486f</value>
+        <value>2.295482f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4596.803f</value>
+        <value>146.87f</value>
+        <value>2341.619f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="1032565732" Rotate="0.218408f" SRTHash="-205735930">
+      <Translate type="array">
+        <value>-4648.41f</value>
+        <value>136.815f</value>
+        <value>2773.716f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="1032728867" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-3.111235f</value>
+        <value>-0.6320373f</value>
+        <value>2.173947f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4582.55f</value>
+        <value>149.2234f</value>
+        <value>2107.671f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="1057310969" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.8273925f</value>
+        <value>0.4228515f</value>
+        <value>-0.4553222f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4306.238f</value>
+        <value>216.1953f</value>
+        <value>2043.961f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1062832578" Rotate="2.617994f" SRTHash="822910169">
+      <Translate type="array">
+        <value>-4570.349f</value>
+        <value>148.968f</value>
+        <value>2717.56f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_A_02</UnitConfigName>
+    </value>
+    <value HashId="1077726214" Rotate="0.5235988f" SRTHash="-787557189">
+      <Translate type="array">
+        <value>-4458.89f</value>
+        <value>147.2482f</value>
+        <value>2722.651f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="1183184761" SRTHash="1817562678" Scale="1.25f">
+      <Rotate type="array">
+        <value>-0.1628987f</value>
+        <value>-0.5873941f</value>
+        <value>0.3031659f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4410.235f</value>
+        <value>163.2295f</value>
+        <value>2274.625f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="1206412332" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.6162109f</value>
+        <value>-1.035034f</value>
+        <value>0.5447997f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4194.004f</value>
+        <value>163.4844f</value>
+        <value>1980.582f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1207446271" SRTHash="-1299577646">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-0.3347168f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4954.684f</value>
+        <value>140.1689f</value>
+        <value>2127.105f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="1210930888" Rotate="-1.943185f" SRTHash="1134059488">
+      <Translate type="array">
+        <value>-4478.722f</value>
+        <value>159.9179f</value>
+        <value>2161.052f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_StageGerdo_SS_A_02</UnitConfigName>
+    </value>
+    <value HashId="1213944657" Rotate="-1.26f" SRTHash="-1306685509">
+      <Translate type="array">
+        <value>-4510.115f</value>
+        <value>173.9838f</value>
+        <value>2145.522f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_StageGerdoGate_A_01</UnitConfigName>
+    </value>
+    <value HashId="1219292146" SRTHash="-411215426">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_ElectricArrow_A_03</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.1570796f</value>
+        <value>-0.3490658f</value>
+        <value>-0.2268928f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4044.34f</value>
+        <value>149.59f</value>
+        <value>2715.551f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="1242802757" Rotate="-2.701591f" SRTHash="455318425" Scale="1.2f">
+      <Translate type="array">
+        <value>-4659.21f</value>
+        <value>131.8788f</value>
+        <value>2842.692f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="1250492853" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.086412f</value>
+        <value>-0.8373903f</value>
+        <value>1.449223f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4585.863f</value>
+        <value>164.8617f</value>
+        <value>2002.153f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="1296722406" SRTHash="356716712">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-1.547241f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4453.809f</value>
+        <value>150.2312f</value>
+        <value>2522.742f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="1303510506" Rotate="-2.792527f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4465.7f</value>
+        <value>150.8078f</value>
+        <value>2515.06f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="1304515279" SRTHash="967619232">
+      <Translate type="array">
+        <value>-4817.861f</value>
+        <value>135.4726f</value>
+        <value>2824.043f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_13</UnitConfigName>
+    </value>
+    <value HashId="1306838444" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.214369f</value>
+        <value>0.2699828f</value>
+        <value>2.38088f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4941.201f</value>
+        <value>145.97f</value>
+        <value>2195.326f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="1316461745" SRTHash="-1866120365" Scale="1.25f">
+      <Rotate type="array">
+        <value>0.6954101f</value>
+        <value>-1.269426f</value>
+        <value>-0.4983811f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4458.177f</value>
+        <value>145.1243f</value>
+        <value>2512.79f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="1318239363" Rotate="-0.9999999f" SRTHash="1297263001">
+      <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <EquipItem1 type="string">Weapon_Sword_009</EquipItem1>
+        <EquipItem2 type="string">Weapon_Shield_009</EquipItem2>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4497.566f</value>
+        <value>172.8108f</value>
+        <value>2140.63f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="1324418428" Rotate="-1.04f" SRTHash="-759412359" Scale="100f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4131.867f</value>
+        <value>159.2808f</value>
+        <value>2592.836f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1334620358" SRTHash="1971028676">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-1.21167f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4460.602f</value>
+        <value>157.7862f</value>
+        <value>2419.707f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="1354961095" SRTHash="-1219123898">
+      <Translate type="array">
+        <value>-4237.5f</value>
+        <value>185.32f</value>
+        <value>2408.04f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DesertRuin_A_04</UnitConfigName>
+    </value>
+    <value HashId="1360586016" Rotate="2.054102f" SRTHash="1245029238">
+      <Translate type="array">
+        <value>-4589.367f</value>
+        <value>149.0633f</value>
+        <value>2718.415f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="1385120181" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.359131f</value>
+        <value>0.7542724f</value>
+        <value>0.1628418f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4901.77f</value>
+        <value>199.3398f</value>
+        <value>1907.09f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1392034809" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.7229f</value>
+        <value>-0.3215332f</value>
+        <value>-0.3084716f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4585.75f</value>
+        <value>159.3438f</value>
+        <value>2039.652f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1419637032" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.383179f</value>
+        <value>-0.3287354f</value>
+        <value>0.2489014f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4335.605f</value>
+        <value>210.8047f</value>
+        <value>2040.602f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1433162166" SRTHash="-1030117393">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-0.6601562f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4948.172f</value>
+        <value>139.0089f</value>
+        <value>2109.664f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="1479852667" Rotate="-0.9020061f" SRTHash="-986805410">
+      <Translate type="array">
+        <value>-4579.386f</value>
+        <value>146.6771f</value>
+        <value>2716.947f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="1507003686" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.349121f</value>
+        <value>0.2479248f</value>
+        <value>0.1376953f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4659.758f</value>
+        <value>192.5859f</value>
+        <value>1751.871f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1515029890" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.813476f</value>
+        <value>-0.2001953f</value>
+        <value>-0.3040771f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4530.977f</value>
+        <value>163.7461f</value>
+        <value>2185.543f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1518628039" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.099243f</value>
+        <value>0.9841308f</value>
+        <value>-0.2392578f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4973.785f</value>
+        <value>184.6328f</value>
+        <value>2023.84f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1521475258" Rotate="0.9697265f" SRTHash="804803214">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4553.191f</value>
+        <value>148.3639f</value>
+        <value>2050.379f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="1549757392" Rotate="-2.701591f" SRTHash="-907051805" Scale="1.2f">
+      <Translate type="array">
+        <value>-4644.097f</value>
+        <value>131.1051f</value>
+        <value>2736.844f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="1559971486" Rotate="0.5645752f" SRTHash="1757257409">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4965.629f</value>
+        <value>137.0418f</value>
+        <value>2174.227f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="1568012317" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.363891f</value>
+        <value>-0.4383545f</value>
+        <value>0.4787597f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4475.797f</value>
+        <value>179.3164f</value>
+        <value>1972.672f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1586442302" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.190707f</value>
+        <value>-0.843165f</value>
+        <value>1.526937f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4258.449f</value>
+        <value>146.81f</value>
+        <value>2163.92f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="1591347320" Rotate="-1.919862f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4392.79f</value>
+        <value>158.8354f</value>
+        <value>2082.68f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="1603123707" SRTHash="880717926">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_FireArrow_A_03</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.1570796f</value>
+        <value>-0.3665192f</value>
+        <value>0.4363323f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4118.09f</value>
+        <value>151.31f</value>
+        <value>2051.18f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="1643542395" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.689819f</value>
+        <value>-0.1437988f</value>
+        <value>-0.2983398f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4058.391f</value>
+        <value>213.0234f</value>
+        <value>1972.699f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1665696539" SRTHash="1047877750" Scale="1.25f">
+      <Rotate type="array">
+        <value>-1.931188f</value>
+        <value>1.401461f</value>
+        <value>-1.966237f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4365.227f</value>
+        <value>171.1088f</value>
+        <value>2381.188f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="1695572097" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.69458f</value>
+        <value>-0.6446533f</value>
+        <value>-0.1103516f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3861.996f</value>
+        <value>273.1016f</value>
+        <value>2058.234f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="1701712170" Rotate="0.8037379f" SRTHash="1587090906">
+      <Translate type="array">
+        <value>-4587.842f</value>
+        <value>140.4091f</value>
+        <value>2621.009f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_01</UnitConfigName>
+    </value>
+    <value HashId="1725332812" Rotate="0.5235988f" SRTHash="-1160864207">
+      <Translate type="array">
+        <value>-4468.153f</value>
+        <value>146.5753f</value>
+        <value>2736.144f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="1733135209" Rotate="-1.06f" SRTHash="176778481">
+      <Translate type="array">
+        <value>-4586.99f</value>
+        <value>141.8788f</value>
+        <value>2624.605f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="1757698901" Rotate="0.9305176f" SRTHash="-1110110177">
+      <Translate type="array">
+        <value>-4582.792f</value>
+        <value>150.3933f</value>
+        <value>2726.841f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_01</UnitConfigName>
+    </value>
+    <value HashId="1803661027" Rotate="-2.443461f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4434.9f</value>
+        <value>162.18f</value>
+        <value>2261.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="1842013825" SRTHash="-1886370453">
+      <Rotate type="array">
+        <value>2.85692f</value>
+        <value>-0.4064896f</value>
+        <value>-1.966843f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4622.844f</value>
+        <value>141.9378f</value>
+        <value>2330.368f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_Rib_A_01</UnitConfigName>
+    </value>
+    <value HashId="1861605038" SRTHash="1649086410">
+      <Rotate type="array">
+        <value>2.638034f</value>
+        <value>0.09168935f</value>
+        <value>3.064069f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4710.971f</value>
+        <value>196.1958f</value>
+        <value>2171.335f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="1874373317" Rotate="-2.701591f" SRTHash="1576612721" Scale="1.2f">
+      <Translate type="array">
+        <value>-4647.164f</value>
+        <value>129.0337f</value>
+        <value>2774.253f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="1890550270" SRTHash="-2137290171">
+      <Rotate type="array">
+        <value>-3.001592f</value>
+        <value>1.34f</value>
+        <value>-3.141592f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4643.966f</value>
+        <value>132.8308f</value>
+        <value>2400.917f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="1910007804" SRTHash="2079636222">
+      <Translate type="array">
+        <value>-4598.586f</value>
+        <value>139.4454f</value>
+        <value>2648.164f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_TravelerTrace_Mark_A_01</UnitConfigName>
+    </value>
+    <value HashId="1922736034" Rotate="2.9147f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4812.8f</value>
+        <value>139.1609f</value>
+        <value>2429.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="1967352365" SRTHash="481454083">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-0.2290039f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4407.652f</value>
+        <value>166.4119f</value>
+        <value>2405.074f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="2003531858" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.20459f</value>
+        <value>0.2838135f</value>
+        <value>-0.3422851f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4121.867f</value>
+        <value>163.6445f</value>
+        <value>2007.117f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="2051612564" SRTHash="804575426">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>0.800415f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4926.559f</value>
+        <value>137.7919f</value>
+        <value>2169.551f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="2055869877" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.092529f</value>
+        <value>-1.244263f</value>
+        <value>0.2999267f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4491.449f</value>
+        <value>194.4102f</value>
+        <value>1936.578f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="2069999232" SRTHash="-1464313628" Scale="1.25f">
+      <Rotate type="array">
+        <value>0.2207933f</value>
+        <value>-1.233715f</value>
+        <value>-0.4408688f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4427.256f</value>
+        <value>144.894f</value>
+        <value>2504.592f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="2079854168" SRTHash="1649086410">
+      <Rotate type="array">
+        <value>0.2000004f</value>
+        <value>-1.361592f</value>
+        <value>4.20947E-07f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4645.508f</value>
+        <value>150.6156f</value>
+        <value>2229.538f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="2084640656" Rotate="2.650727f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4715.7f</value>
+        <value>148.2f</value>
+        <value>2052.4f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="2099137307" SRTHash="1588802926">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_ArrowBundle_A_02</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.743939f</value>
+        <value>-0.7189415f</value>
+        <value>-0.5542533f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4126.993f</value>
+        <value>158.8674f</value>
+        <value>2585.337f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="2105406180" SRTHash="-1969517944">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Shield_026</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.0009401141f</value>
+        <value>-0.5370372f</value>
+        <value>0.0008402838f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4498.394f</value>
+        <value>172.7911f</value>
+        <value>2137.479f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Wood</UnitConfigName>
+    </value>
+    <value HashId="2123828106" SRTHash="-2129451814">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="true" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="1">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.46162f</value>
+        <value>1.338101f</value>
+        <value>2.977404f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4130.115f</value>
+        <value>162.3462f</value>
+        <value>2581.962f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Spear_021</UnitConfigName>
+    </value>
+    <value HashId="-2120831971" Rotate="5.988811f" SRTHash="1332461502">
+      <Translate type="array">
+        <value>-4588.427f</value>
+        <value>140.6943f</value>
+        <value>2636.935f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2118592765" SRTHash="90659337">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-1.507935f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4443.34f</value>
+        <value>166.3521f</value>
+        <value>2281.887f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="-2118525647" Rotate="-2.821591f" SRTHash="1561736080" Scale="1.2f">
+      <Translate type="array">
+        <value>-4681.944f</value>
+        <value>132.3409f</value>
+        <value>2685.115f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="-2108921405" SRTHash="1811015024">
+      <Rotate type="array">
+        <value>0.01581304f</value>
+        <value>0.8797579f</value>
+        <value>-0.0313836f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4769.359f</value>
+        <value>129.7495f</value>
+        <value>2829.256f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-2084317885" Rotate="-0.5364013f" SRTHash="1819539248">
+      <Translate type="array">
+        <value>-4463.942f</value>
+        <value>147.6772f</value>
+        <value>2717.233f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="-2079525485" Rotate="2.617994f" SRTHash="-1351691168">
+      <Translate type="array">
+        <value>-4569.745f</value>
+        <value>140.1755f</value>
+        <value>2636.565f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="-2078783570" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.272217f</value>
+        <value>-1.4646f</value>
+        <value>0.1558838f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3972.441f</value>
+        <value>195.1289f</value>
+        <value>2040.461f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-2071700690" SRTHash="909123883">
+      <Rotate type="array">
+        <value>2.781867f</value>
+        <value>-0.2741584f</value>
+        <value>-1.842033f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4620.372f</value>
+        <value>134.9459f</value>
+        <value>2338.505f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="-2064500160" Rotate="2.886355f" SRTHash="-1013258011">
+      <Translate type="array">
+        <value>-4580.401f</value>
+        <value>150.3367f</value>
+        <value>2726.046f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="-2052650055" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.187866f</value>
+        <value>0.2147217f</value>
+        <value>-0.1342773f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4855.586f</value>
+        <value>209.5859f</value>
+        <value>1866.313f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-2033226880" SRTHash="-1492005932">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>0.01184082f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4609.141f</value>
+        <value>151.4961f</value>
+        <value>2223.84f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="-2019664667" Rotate="-0.5364013f" SRTHash="-1174964929">
+      <Translate type="array">
+        <value>-4475.033f</value>
+        <value>149.4526f</value>
+        <value>2721.181f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="-2014442102" SRTHash="333729379">
+      <Rotate type="array">
+        <value>-0.2199996f</value>
+        <value>-1.321592f</value>
+        <value>3.541822E-07f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4614.17f</value>
+        <value>149.9047f</value>
+        <value>2223.156f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1951507640" SRTHash="1263200413">
+      <Translate type="array">
+        <value>-4819.376f</value>
+        <value>130.4119f</value>
+        <value>2824.129f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_12</UnitConfigName>
+    </value>
+    <value HashId="-1797975790" SRTHash="2024081253" Scale="1.25f">
+      <Rotate type="array">
+        <value>-2.847137f</value>
+        <value>0.645633f</value>
+        <value>-2.806109f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4483.668f</value>
+        <value>165.5215f</value>
+        <value>2277.493f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1767522807" SRTHash="-1905842351">
+      <Rotate type="array">
+        <value>3.044365f</value>
+        <value>0.8804796f</value>
+        <value>3.015763f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4457.715f</value>
+        <value>163.029f</value>
+        <value>2150.764f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BridgeGerdoQuarry_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1763427747" Rotate="-2.443461f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4026.1f</value>
+        <value>150.66f</value>
+        <value>2709.2f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-1722186800" SRTHash="-2032346192">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>0.6607665f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4689.777f</value>
+        <value>152.6295f</value>
+        <value>2176.855f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="-1678165353" Rotate="-2.70526f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4581.87f</value>
+        <value>143.9534f</value>
+        <value>2109.13f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-1665022264" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.577972f</value>
+        <value>-0.8166474f</value>
+        <value>1.814344f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4313.933f</value>
+        <value>175.7661f</value>
+        <value>2297.875f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="-1662594173" SRTHash="-1823329760" Scale="1.25f">
+      <Rotate type="array">
+        <value>-2.525333f</value>
+        <value>1.377242f</value>
+        <value>-2.143261f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4396.576f</value>
+        <value>165.3472f</value>
+        <value>2383.892f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1631864956" SRTHash="1921638448" Scale="1.25f">
+      <Rotate type="array">
+        <value>-1.270716f</value>
+        <value>-1.353008f</value>
+        <value>1.477758f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4304.885f</value>
+        <value>164.7985f</value>
+        <value>2275.339f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1626881663" SRTHash="1498548282">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>0.4675293f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4667.828f</value>
+        <value>135.1702f</value>
+        <value>2005.063f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="-1585361106" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.688354f</value>
+        <value>-0.9552001f</value>
+        <value>-0.2707519f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4546.965f</value>
+        <value>162.5195f</value>
+        <value>2173.199f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-1581534114" SRTHash="-596067148" Scale="1.216567f">
+      <Rotate type="array">
+        <value>2.90352f</value>
+        <value>-0.2634546f</value>
+        <value>-1.849203f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4618.306f</value>
+        <value>141.937f</value>
+        <value>2336.808f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_Rib_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1563780125" Rotate="-1.04f" SRTHash="-788680952" Scale="50f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4131.867f</value>
+        <value>159.2808f</value>
+        <value>2592.836f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1560161777" Rotate="-1.04f" SRTHash="-586586217" Scale="0.25f">
+      <_Parameters>
+        <GetUpDirection type="string">None</GetUpDirection>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4130.91f</value>
+        <value>159.3499f</value>
+        <value>2582.028f</value>
+      </Translate>
+      <UnitConfigName type="string">AnchorAction1</UnitConfigName>
+    </value>
+    <value HashId="-1544903552" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.430914f</value>
+        <value>0.03604123f</value>
+        <value>2.41424f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4894.495f</value>
+        <value>143.0216f</value>
+        <value>2353.806f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="-1532478308" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.547241f</value>
+        <value>-0.5908203f</value>
+        <value>-0.1879883f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4343.563f</value>
+        <value>187.1875f</value>
+        <value>2059.191f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-1529718561" Rotate="-2.617994f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4406.21f</value>
+        <value>167.0369f</value>
+        <value>2391.53f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-1495046121" SRTHash="-407375716">
+      <Translate type="array">
+        <value>-4443.07f</value>
+        <value>184.58f</value>
+        <value>2270.65f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DesertRuin_A_04</UnitConfigName>
+    </value>
+    <value HashId="-1478428506" SRTHash="-1502577858">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Spear_029</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.2617994f</value>
+        <value>-0.5235988f</value>
+        <value>-0.7853982f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4190.6f</value>
+        <value>149.04f</value>
+        <value>2068.05f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="-1435574268" Rotate="1.570796f" SRTHash="-1561697472">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">PutRupee_Gold</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4938.5f</value>
+        <value>140.0988f</value>
+        <value>2156.9f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
+    </value>
+    <value HashId="-1359502262" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.919417f</value>
+        <value>-0.7225329f</value>
+        <value>2.053392f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4270.923f</value>
+        <value>167.74f</value>
+        <value>2530.381f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="-1328256684" Rotate="-2.181662f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4146.01f</value>
+        <value>159.13f</value>
+        <value>2377.37f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-1286509197" SRTHash="666103121" Scale="40f">
+      <_Parameters IsStopWithoutReductionY="false" SpotBgmLifeScaleMargin="0f">
+        <Shape type="string">Sphere</Shape>
+        <Sound type="string">CmnWildBgm</Sound>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4798.367f</value>
+        <value>133f</value>
+        <value>2799.087f</value>
+      </Translate>
+      <UnitConfigName type="string">SpotBgmTag</UnitConfigName>
+    </value>
+    <value HashId="-1269984559" SRTHash="-1976489678" Scale="1.25f">
+      <Rotate type="array">
+        <value>-2.411553f</value>
+        <value>0.6803026f</value>
+        <value>-2.780795f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4461.534f</value>
+        <value>157.2482f</value>
+        <value>2255.931f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1237148810" SRTHash="953732110">
+      <_Parameters EnableNoEntryAreaCheck="true" ForbidSystemDeleteDistance="false" IsLocatorCreate="false" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4609.491f</value>
+        <value>145.3385f</value>
+        <value>2683.421f</value>
+      </Translate>
+      <UnitConfigName type="string">Animal_Sunazarashi_A</UnitConfigName>
+    </value>
+    <value HashId="-1229689906" Rotate="-0.3183594f" SRTHash="-288850017">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4670.393f</value>
+        <value>132.2968f</value>
+        <value>2413.115f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="-1224213677" SRTHash="-74067709">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-1.538574f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4738.867f</value>
+        <value>161.179f</value>
+        <value>2169.719f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="-1204646965" Rotate="6.048132f" SRTHash="-107978390">
+      <Translate type="array">
+        <value>-4467.071f</value>
+        <value>146.6837f</value>
+        <value>2732.799f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1193620374" Rotate="1.88f" SRTHash="488221277">
+      <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="1" OnCliff="false" OnCliffTurn="true" RotAngle="60f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="150f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <EquipItem1 type="string">Weapon_Bow_011</EquipItem1>
+        <EquipItem3 type="string">LizalfosPipe</EquipItem3>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4482.552f</value>
+        <value>173.6839f</value>
+        <value>2133.983f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Guard_Junior</UnitConfigName>
+    </value>
+    <value HashId="-1166938221" Rotate="-0.6599999f" SRTHash="1904343434" Scale="0.9f">
+      <Translate type="array">
+        <value>-4775.746f</value>
+        <value>132.3536f</value>
+        <value>2770.092f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_12</UnitConfigName>
+    </value>
+    <value HashId="-1158572607" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.859776f</value>
+        <value>-0.4100231f</value>
+        <value>2.331259f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4643.12f</value>
+        <value>156.9408f</value>
+        <value>2219.986f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="-1100897846" SRTHash="-1814725669" Scale="1.2f">
+      <Translate type="array">
+        <value>-4717.718f</value>
+        <value>132.8451f</value>
+        <value>2653.498f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_20</UnitConfigName>
+    </value>
+    <value HashId="-1093450374" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.716308f</value>
+        <value>-0.750122f</value>
+        <value>-0.4372558f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4371.051f</value>
+        <value>185.5039f</value>
+        <value>2042.035f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-1088178270" SRTHash="1276336826" Scale="25f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4497.566f</value>
+        <value>172.8108f</value>
+        <value>2140.63f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1084037148" SRTHash="514737206">
+      <Rotate type="array">
+        <value>2.870281f</value>
+        <value>1.300061f</value>
+        <value>-3.132626f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4675.062f</value>
+        <value>130.2035f</value>
+        <value>2407.951f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_BackBone_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1079957234" SRTHash="1468534643" Scale="1.25f">
+      <Rotate type="array">
+        <value>2.403143f</value>
+        <value>0.1568115f</value>
+        <value>1.943272f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4822.68f</value>
+        <value>134.1036f</value>
+        <value>2773.651f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_13</UnitConfigName>
+    </value>
+    <value HashId="-1074305616" Rotate="1.412964f" SRTHash="171085761">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4917.117f</value>
+        <value>137.7616f</value>
+        <value>2169.594f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="-1052398624" SRTHash="-749821025">
+      <_Parameters EnableNoEntryAreaCheck="true" ForbidSystemDeleteDistance="false" IsLocatorCreate="false" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4634.152f</value>
+        <value>146.5946f</value>
+        <value>2704.938f</value>
+      </Translate>
+      <UnitConfigName type="string">Animal_Sunazarashi_A</UnitConfigName>
+    </value>
+    <value HashId="-1018276564" SRTHash="-1787070983">
+      <Translate type="array">
+        <value>-4819.376f</value>
+        <value>122.0397f</value>
+        <value>2824.129f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_11</UnitConfigName>
+    </value>
+    <value HashId="-876913107" SRTHash="-788680952" Scale="50f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4497.566f</value>
+        <value>172.8108f</value>
+        <value>2140.63f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-839473833" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.812678f</value>
+        <value>-0.7602619f</value>
+        <value>1.981259f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4435.935f</value>
+        <value>167.45f</value>
+        <value>2260.267f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="-833876784" SRTHash="-1895595494">
+      <Translate type="array">
+        <value>-4385f</value>
+        <value>164.24f</value>
+        <value>2580.71f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DesertRuin_A_04</UnitConfigName>
+    </value>
+    <value HashId="-828325522" Rotate="2.763185f" SRTHash="2108642101">
+      <Translate type="array">
+        <value>-4585.843f</value>
+        <value>138.1161f</value>
+        <value>2631.28f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-816149401" SRTHash="920354150" Scale="1.216567f">
+      <Rotate type="array">
+        <value>-0.5478276f</value>
+        <value>0.05999988f</value>
+        <value>-1.581334f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4131.18f</value>
+        <value>145.54f</value>
+        <value>2373.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_Rib_A_01</UnitConfigName>
+    </value>
+    <value HashId="-810074606" SRTHash="-2094443205">
+      <Translate type="array">
+        <value>-4583.574f</value>
+        <value>142.9404f</value>
+        <value>2632.534f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_A_01</UnitConfigName>
+    </value>
+    <value HashId="-800994181" Rotate="2.101288f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4942.4f</value>
+        <value>140.7f</value>
+        <value>2116.296f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-798558426" SRTHash="-1034380991">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Sword_030</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.3184696f</value>
+        <value>0.7914664f</value>
+        <value>0.4339832f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4020.98f</value>
+        <value>158.98f</value>
+        <value>2201.35f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="-798242223" Rotate="2.943185f" SRTHash="1841387813" Scale="1.036014f">
+      <Translate type="array">
+        <value>-4647.586f</value>
+        <value>132.6827f</value>
+        <value>2787.012f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_20</UnitConfigName>
+    </value>
+    <value HashId="-781352882" Rotate="0.16f" SRTHash="1913879681">
+      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4649.05f</value>
+        <value>146.3221f</value>
+        <value>2775.589f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchCandlestickOn</UnitConfigName>
+    </value>
+    <value HashId="-765091630" Rotate="4.732363f" SRTHash="451007498">
+      <Translate type="array">
+        <value>-4474.527f</value>
+        <value>148.543f</value>
+        <value>2718.714f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_01</UnitConfigName>
+    </value>
+    <value HashId="-722627562" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.629991f</value>
+        <value>-0.1848331f</value>
+        <value>2.399303f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4812.438f</value>
+        <value>144.4309f</value>
+        <value>2427.931f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="-699239828" Rotate="-1.04f" SRTHash="1276336826" Scale="25f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4131.867f</value>
+        <value>159.2808f</value>
+        <value>2592.836f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-674048727" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.554932f</value>
+        <value>0.5640869f</value>
+        <value>0.4089355f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4879.902f</value>
+        <value>184.293f</value>
+        <value>1901.715f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-646271103" Rotate="0.7853982f" SRTHash="-1909118778">
+      <Translate type="array">
+        <value>-4491.768f</value>
+        <value>147.5241f</value>
+        <value>2708.232f</value>
+      </Translate>
+      <UnitConfigName type="string">GrassCutTag</UnitConfigName>
+    </value>
+    <value HashId="-633988060" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.452678f</value>
+        <value>0.01158478f</value>
+        <value>2.414758f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4714.941f</value>
+        <value>153.47f</value>
+        <value>2050.98f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="-614699735" SRTHash="2099636412">
+      <Translate type="array">
+        <value>-4228.6f</value>
+        <value>185.32f</value>
+        <value>2432.24f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DesertRuin_A_04</UnitConfigName>
+    </value>
+    <value HashId="-613859153" SRTHash="1211734492">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Gerudo</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.165604f</value>
+        <value>-1.037702f</value>
+        <value>0.2060715f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4119.752f</value>
+        <value>159.4246f</value>
+        <value>2592.69f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_BreakBoxIron</UnitConfigName>
+    </value>
+    <value HashId="-585669814" SRTHash="1707287493">
+      <Rotate type="array">
+        <value>2.668186f</value>
+        <value>-0.03963915f</value>
+        <value>2.945298f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4702.697f</value>
+        <value>199.861f</value>
+        <value>2165.371f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_BoneGiant_Rib_A_01</UnitConfigName>
+    </value>
+    <value HashId="-584816758" Rotate="-1.596403f" SRTHash="-438408586">
+      <Translate type="array">
+        <value>-4468.494f</value>
+        <value>144.1105f</value>
+        <value>2718.566f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-584154946" Rotate="0.16f" SRTHash="1149178518">
+      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4649.608f</value>
+        <value>146.3324f</value>
+        <value>2772.302f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchCandlestickOn</UnitConfigName>
+    </value>
+    <value HashId="-501570255" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.463013f</value>
+        <value>-0.281372f</value>
+        <value>0.05114745f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4521.449f</value>
+        <value>179.5352f</value>
+        <value>1883.148f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-461879080" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.147949f</value>
+        <value>-1.037964f</value>
+        <value>-0.8912353f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4567.289f</value>
+        <value>169.9727f</value>
+        <value>1807.453f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-446616090" SRTHash="-595949966">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-0.9523925f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4146.738f</value>
+        <value>145.7088f</value>
+        <value>2118.094f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="-445605870" SRTHash="1875904477">
+      <Translate type="array">
+        <value>-4228.6f</value>
+        <value>185.32f</value>
+        <value>2408.04f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DesertRuin_A_04</UnitConfigName>
+    </value>
+    <value HashId="-439772526" OnlyOne="true" SRTHash="-1862996298">
+      <Rotate type="array">
+        <value>3.079934f</value>
+        <value>0.3361963f</value>
+        <value>2.956593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4491.041f</value>
+        <value>163.0128f</value>
+        <value>2182.478f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_StageGerdoNarrow_A_02_A10</UnitConfigName>
+    </value>
+    <value HashId="-435968390" SRTHash="900982473">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_IceArrow_A_03</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4109.422f</value>
+        <value>147.82f</value>
+        <value>2112.028f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="-433836378" Rotate="5.155283f" SRTHash="-463571426">
+      <Translate type="array">
+        <value>-4585.647f</value>
+        <value>148.9799f</value>
+        <value>2716.224f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="-428742778" SRTHash="-239416328">
+      <Translate type="array">
+        <value>-4521.025f</value>
+        <value>143.24f</value>
+        <value>2672.295f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_02</UnitConfigName>
+    </value>
+    <value HashId="-387919353" Rotate="2.890727f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4715.047f</value>
+        <value>168.4f</value>
+        <value>2188.506f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-376437570" SRTHash="-1692457581">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>0.5346679f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4221.824f</value>
+        <value>149.0202f</value>
+        <value>2095.813f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="-357499847" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.993286f</value>
+        <value>0.9836425f</value>
+        <value>-0.3806152f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4910.516f</value>
+        <value>234.2891f</value>
+        <value>1899.094f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-356209980" SRTHash="-859704315">
+      <Translate type="array">
+        <value>-4593.977f</value>
+        <value>140.8088f</value>
+        <value>2635.268f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_A_02</UnitConfigName>
+    </value>
+    <value HashId="-342634984" Rotate="2.301288f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4942.4f</value>
+        <value>140.7f</value>
+        <value>2196.4f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-339282338" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.085992f</value>
+        <value>-0.5807529f</value>
+        <value>2.222973f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4466.25f</value>
+        <value>156.0779f</value>
+        <value>2513.547f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="-318895615" Rotate="-1.937315f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4584.36f</value>
+        <value>159.5917f</value>
+        <value>2002.73f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-315367471" Rotate="2.781593f" SRTHash="2104636368" Scale="1.249275f">
+      <Translate type="array">
+        <value>-4644.707f</value>
+        <value>130.9634f</value>
+        <value>2780.702f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="-312699972" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.246704f</value>
+        <value>0.7906494f</value>
+        <value>0.2351074f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4968.379f</value>
+        <value>227.3867f</value>
+        <value>1983.059f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-300582691" Rotate="0.909912f" SRTHash="191999414">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4947.98f</value>
+        <value>137.264f</value>
+        <value>2169.797f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="-287758991" Rotate="0.3095703f" SRTHash="-876500962">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4386.787f</value>
+        <value>170.2121f</value>
+        <value>2394.359f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="-235150522" Rotate="-2.952457f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4596.5f</value>
+        <value>141.6f</value>
+        <value>2343.2f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-190817150" Rotate="1.224809f" SRTHash="242873291">
+      <Translate type="array">
+        <value>-4574.322f</value>
+        <value>148.3216f</value>
+        <value>2713.342f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleafLow_Branch_A_01</UnitConfigName>
+    </value>
+    <value HashId="-179459980" SRTHash="1166808862">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0.003185717f</value>
+        <value>-0.2f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4641.074f</value>
+        <value>139.5632f</value>
+        <value>2775.908f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-138218299" SRTHash="389992771">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-0.1531982f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4959.707f</value>
+        <value>137.3024f</value>
+        <value>2169.793f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="-123070656" Rotate="-3.052458f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4597.8f</value>
+        <value>164.7f</value>
+        <value>2501.6f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-122879028" SRTHash="1317656135">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.060595f</value>
+        <value>-0.8351076f</value>
+        <value>1.430063f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4394.303f</value>
+        <value>164.1054f</value>
+        <value>2082.129f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_001</UnitConfigName>
+    </value>
+    <value HashId="-119482280" SRTHash="587146256">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-0.7412109f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4971.004f</value>
+        <value>140.3981f</value>
+        <value>2130.559f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_F</UnitConfigName>
+    </value>
+    <value HashId="-117949558" Rotate="-2.007129f" SRTHash="386050114">
+      <Translate type="array">
+        <value>-4256.99f</value>
+        <value>141.54f</value>
+        <value>2164.6f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Magnetic_Fld_01</UnitConfigName>
+    </value>
+    <value HashId="-112991775" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.110107f</value>
+        <value>-1.009888f</value>
+        <value>0.4049072f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3941.789f</value>
+        <value>203.3633f</value>
+        <value>2110.063f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="-100832761" SRTHash="1304894426">
+      <_Parameters IsMimicry="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4196.6f</value>
+        <value>150.7974f</value>
+        <value>2046.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Octarock_Desert</UnitConfigName>
+    </value>
+    <value HashId="-96752344" SRTHash="682371238">
+      <Rotate type="array">
+        <value>-0.2555747f</value>
+        <value>0.8544074f</value>
+        <value>-0.3054693f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4821.796f</value>
+        <value>126.3217f</value>
+        <value>2829.607f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_11</UnitConfigName>
+    </value>
+    <value HashId="-28382324" Rotate="0.7853982f" SRTHash="909426171">
+      <_Parameters IsMimicry="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4105.27f</value>
+        <value>151.2422f</value>
+        <value>2773.17f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Octarock_Desert</UnitConfigName>
+    </value>
+    <value HashId="-28259359" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.04248f</value>
+        <value>-0.08325195f</value>
+        <value>-0.4443359f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4736.113f</value>
+        <value>142.875f</value>
+        <value>2655.227f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

@@ -1,0 +1,2673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="78633" SRTHash="715412873">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.973662f</value>
+        <value>-0.2275288f</value>
+        <value>2.791214f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4527.208f</value>
+        <value>189.0602f</value>
+        <value>2330.167f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_C_01</UnitConfigName>
+    </value>
+    <value HashId="12174343" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.247437f</value>
+        <value>0.9924316f</value>
+        <value>-2.510864f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4597.449f</value>
+        <value>158.8438f</value>
+        <value>2280.48f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="33902088" SRTHash="0">
+      <Rotate type="array">
+        <value>-2.948974f</value>
+        <value>0.4852295f</value>
+        <value>2.239258f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4004.141f</value>
+        <value>114.707f</value>
+        <value>2999.973f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointBirdTropical</UnitConfigName>
+    </value>
+    <value HashId="40593016" Rotate="1.460001f" SRTHash="928849662">
+      <Translate type="array">
+        <value>4673.629f</value>
+        <value>95.03069f</value>
+        <value>2252.401f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_M_04</UnitConfigName>
+    </value>
+    <value HashId="49476101" SRTHash="-1909118778">
+      <Translate type="array">
+        <value>4558.5f</value>
+        <value>105.4058f</value>
+        <value>2465f</value>
+      </Translate>
+      <UnitConfigName type="string">GrassCutTag</UnitConfigName>
+    </value>
+    <value HashId="59836428" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.3557129f</value>
+        <value>1.175171f</value>
+        <value>-1.201782f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4455.766f</value>
+        <value>220.9727f</value>
+        <value>2199.383f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="83380134" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.514648f</value>
+        <value>0.9281005f</value>
+        <value>-2.711548f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4596.641f</value>
+        <value>125.5273f</value>
+        <value>2249.469f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="98726405" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.549927f</value>
+        <value>1.207519f</value>
+        <value>1.51831f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4551.203f</value>
+        <value>212.3555f</value>
+        <value>2061.883f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="131502762" Rotate="1.43117f" SRTHash="174971004">
+      <Translate type="array">
+        <value>4211.719f</value>
+        <value>105.1275f</value>
+        <value>2436.937f</value>
+      </Translate>
+      <UnitConfigName type="string">TwnObj_BridgeWoodSmall_A_01</UnitConfigName>
+    </value>
+    <value HashId="167633940" Rotate="1.32f" SRTHash="755973816">
+      <Translate type="array">
+        <value>4528.947f</value>
+        <value>106.8375f</value>
+        <value>2519.167f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="168217170" SRTHash="-559948703">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4440.159f</value>
+        <value>106.0629f</value>
+        <value>2536.126f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="179928372" SRTHash="-601862655">
+      <Rotate type="array">
+        <value>0.46f</value>
+        <value>-1.540002f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4543.26f</value>
+        <value>106.2493f</value>
+        <value>2523.506f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="192749838" SRTHash="1197526650">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4142.314f</value>
+        <value>110.5803f</value>
+        <value>2397.739f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="201276541" Rotate="-1.540002f" SRTHash="181422109">
+      <Translate type="array">
+        <value>4536.246f</value>
+        <value>106.4955f</value>
+        <value>2512.616f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="253526347" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.619873f</value>
+        <value>0.755249f</value>
+        <value>-0.5703125f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4559.289f</value>
+        <value>163.0391f</value>
+        <value>2094.902f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="260781203" SRTHash="1837410430">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.019144E-05f</value>
+        <value>0.3599999f</value>
+        <value>4.087551E-07f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4087f</value>
+        <value>111.5092f</value>
+        <value>2377f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="269229199" SRTHash="-164309290">
+      <Translate type="array">
+        <value>4213.891f</value>
+        <value>106.3695f</value>
+        <value>2270.475f</value>
+      </Translate>
+      <UnitConfigName type="string">TravelersGuardianDeity_A_01</UnitConfigName>
+    </value>
+    <value HashId="271098870" Rotate="0.6200001f" SRTHash="-17147062">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4188.518f</value>
+        <value>107.8583f</value>
+        <value>2462.384f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_02</UnitConfigName>
+    </value>
+    <value HashId="299256924" SRTHash="45982122">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.564859f</value>
+        <value>-0.7748243f</value>
+        <value>1.808342f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4051.319f</value>
+        <value>306.4752f</value>
+        <value>2048.152f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="302868065" SRTHash="1559906284">
+      <Rotate type="array">
+        <value>0.14f</value>
+        <value>-0.36f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4528.663f</value>
+        <value>106.68f</value>
+        <value>2520.65f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="309703124" SRTHash="2092068788">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.3358835f</value>
+        <value>0.303223f</value>
+        <value>0.1038689f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4515.82f</value>
+        <value>184.814f</value>
+        <value>2337.755f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_C_01</UnitConfigName>
+    </value>
+    <value HashId="388439327" Rotate="1.561604f" SRTHash="-573165879">
+      <Translate type="array">
+        <value>4099.926f</value>
+        <value>101.0674f</value>
+        <value>2563.356f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Coral_A_03</UnitConfigName>
+    </value>
+    <value HashId="392286886" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.741821f</value>
+        <value>1.397217f</value>
+        <value>0.6207275f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4466.105f</value>
+        <value>207.7813f</value>
+        <value>2184.281f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="399929821" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.970703f</value>
+        <value>-0.12854f</value>
+        <value>-0.2147217f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4499.813f</value>
+        <value>176.4258f</value>
+        <value>2172.66f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="474106521" SRTHash="0">
+      <Rotate type="array">
+        <value>-0.3551025f</value>
+        <value>0.7910156f</value>
+        <value>0.1983642f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4119.594f</value>
+        <value>114.9336f</value>
+        <value>2414.375f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointBirdWet</UnitConfigName>
+    </value>
+    <value HashId="495376290" SRTHash="1264202613">
+      <Rotate type="array">
+        <value>0.58f</value>
+        <value>-0.7800003f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4539.208f</value>
+        <value>106.0536f</value>
+        <value>2513.568f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="525273067" SRTHash="-7861715">
+      <Translate type="array">
+        <value>4540.359f</value>
+        <value>105.7476f</value>
+        <value>2562.798f</value>
+      </Translate>
+      <UnitConfigName type="string">SmallFishes1</UnitConfigName>
+    </value>
+    <value HashId="528122037" Rotate="-1.540002f" SRTHash="979389265">
+      <Translate type="array">
+        <value>4539.154f</value>
+        <value>106.1785f</value>
+        <value>2527.374f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="534652571" SRTHash="-1543416073">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>-0.42f</value>
+        <value>-0.3f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4185.014f</value>
+        <value>347.4898f</value>
+        <value>2030.807f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="536330941" SRTHash="-1909118778">
+      <Translate type="array">
+        <value>4561f</value>
+        <value>105.1471f</value>
+        <value>2450f</value>
+      </Translate>
+      <UnitConfigName type="string">GrassCutTag</UnitConfigName>
+    </value>
+    <value HashId="547874670" Rotate="-1.979996f" SRTHash="-1695916736">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4676.112f</value>
+        <value>119.6716f</value>
+        <value>2454.815f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="550777769" SRTHash="1870016034">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Item_Ore_C</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.0007993419f</value>
+        <value>-0.0001626645f</value>
+        <value>0.001672282f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>3943.29f</value>
+        <value>98.61874f</value>
+        <value>2955.163f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="560230602" SRTHash="813917312">
+      <Translate type="array">
+        <value>4648.03f</value>
+        <value>93.56947f</value>
+        <value>2237.681f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_M_02</UnitConfigName>
+    </value>
+    <value HashId="584231060" Rotate="-1.04f" SRTHash="-1429270751">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4244.522f</value>
+        <value>266.4359f</value>
+        <value>2121.416f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="627582959" Rotate="1.54f" SRTHash="-2084200200" Scale="0.8f">
+      <Translate type="array">
+        <value>4117.641f</value>
+        <value>98.12149f</value>
+        <value>2552.794f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffWhite_A_S_03</UnitConfigName>
+    </value>
+    <value HashId="658147457" SRTHash="0">
+      <Rotate type="array">
+        <value>-1.55957f</value>
+        <value>-1.344604f</value>
+        <value>1.487305f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4413.727f</value>
+        <value>111.2578f</value>
+        <value>2470.484f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointInsectTemperate</UnitConfigName>
+    </value>
+    <value HashId="662884870" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.720703f</value>
+        <value>1.071045f</value>
+        <value>0.7993163f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4517.828f</value>
+        <value>261.6133f</value>
+        <value>2064.543f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="786690896" SRTHash="674407062">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.5547893f</value>
+        <value>-0.3229553f</value>
+        <value>-0.5816077f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4465.408f</value>
+        <value>111.3549f</value>
+        <value>2523.636f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="797448374" SRTHash="-1262952341">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Item_Ore_E</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.04480679f</value>
+        <value>-0.6946806f</value>
+        <value>-0.1178649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4256.383f</value>
+        <value>102.6634f</value>
+        <value>2412.08f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="823716616" SRTHash="-1193315522">
+      <Rotate type="array">
+        <value>0.6799994f</value>
+        <value>1.32f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4540.592f</value>
+        <value>106.1896f</value>
+        <value>2526.662f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="838790638" SRTHash="454729430">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Kimo</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4122.416f</value>
+        <value>108.5843f</value>
+        <value>2500.434f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="856460527" SRTHash="0">
+      <Rotate type="array">
+        <value>3.053711f</value>
+        <value>-0.1993408f</value>
+        <value>-2.602539f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4462.477f</value>
+        <value>113.5352f</value>
+        <value>2519.66f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointInsectTemperate</UnitConfigName>
+    </value>
+    <value HashId="864784590" SRTHash="-1784993606">
+      <_Parameters InitMotionStatus="1" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0.54f</value>
+        <value>1.5f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4209.884f</value>
+        <value>106.3841f</value>
+        <value>2271.92f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Fruit_G</UnitConfigName>
+    </value>
+    <value HashId="882727771" Rotate="-2.44f" SRTHash="-272280004">
+      <Translate type="array">
+        <value>4033.571f</value>
+        <value>105.6711f</value>
+        <value>2305.083f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffWhite_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="905961612" SRTHash="1415261984">
+      <Translate type="array">
+        <value>4573.065f</value>
+        <value>102.0675f</value>
+        <value>2380.009f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="913453958" SRTHash="979585821">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4115.347f</value>
+        <value>109.4289f</value>
+        <value>2351.909f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="914136974" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.418945f</value>
+        <value>-0.8220214f</value>
+        <value>-0.5994873f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4054.594f</value>
+        <value>321.1172f</value>
+        <value>2039.383f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="915614199" SRTHash="-1011518831">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Ore</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4194.92f</value>
+        <value>108.1501f</value>
+        <value>2346.282f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="930508409" SRTHash="798503019">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4459.423f</value>
+        <value>107.3472f</value>
+        <value>2527.549f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="949860766" SRTHash="-706962073">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4044.353f</value>
+        <value>111.3674f</value>
+        <value>2277.29f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="960377407" Rotate="-1.26f" SRTHash="1662906622">
+      <Translate type="array">
+        <value>4412.536f</value>
+        <value>106.2981f</value>
+        <value>2470.673f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="985942486" SRTHash="1274418600">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Kimo</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4109.232f</value>
+        <value>106.1873f</value>
+        <value>2415.373f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="990871069" SRTHash="645705007">
+      <Rotate type="array">
+        <value>0.8799995f</value>
+        <value>-1.540002f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4530.077f</value>
+        <value>107.0363f</value>
+        <value>2516.478f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1010316326" SRTHash="1480425285">
+      <Rotate type="array">
+        <value>3.128559f</value>
+        <value>0.9224151f</value>
+        <value>3.083882f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4099.517f</value>
+        <value>108.3918f</value>
+        <value>2340.858f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_EnemyTrace_Garbage_A_01</UnitConfigName>
+    </value>
+    <value HashId="1017595034" Rotate="-1.78f" SRTHash="1859489826">
+      <Translate type="array">
+        <value>4601.331f</value>
+        <value>105.4976f</value>
+        <value>2466.553f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="1022521107" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.414184f</value>
+        <value>1.197388f</value>
+        <value>0.3309326f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4568.422f</value>
+        <value>179.7188f</value>
+        <value>2052.098f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1022860072" SRTHash="1192340481" Scale="1.053711f">
+      <Rotate type="array">
+        <value>-0.0341121f</value>
+        <value>-0.9437361f</value>
+        <value>-0.3148271f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4318.543f</value>
+        <value>413.0506f</value>
+        <value>2004.98f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Plant_CypressLow_B_01</UnitConfigName>
+    </value>
+    <value HashId="1048954082" Rotate="-2.76f" SRTHash="-191526033">
+      <Translate type="array">
+        <value>4124.032f</value>
+        <value>101.6815f</value>
+        <value>2566.867f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Coral_A_02</UnitConfigName>
+    </value>
+    <value HashId="1070420049" SRTHash="1966762022">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>-1.52f</value>
+        <value>0.34f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4405.332f</value>
+        <value>106.6304f</value>
+        <value>2453.73f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="1100224865" SRTHash="2083092457">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4186.819f</value>
+        <value>110.0467f</value>
+        <value>2346.076f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="1118991123" Rotate="-1.24f" SRTHash="1196279578">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4606.744f</value>
+        <value>108.1585f</value>
+        <value>2413.251f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="1128122029" SRTHash="-318478482">
+      <Rotate type="array">
+        <value>-2.419342f</value>
+        <value>-1.504366f</value>
+        <value>2.558682f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4405.064f</value>
+        <value>106.8826f</value>
+        <value>2391.212f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="1129048281" Rotate="1.040001f" SRTHash="87148438">
+      <Translate type="array">
+        <value>4531.283f</value>
+        <value>106.173f</value>
+        <value>2525.582f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1136531289" SRTHash="-686979602">
+      <Rotate type="array">
+        <value>-0.1620368f</value>
+        <value>0.7253454f</value>
+        <value>-0.2416014f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4534.784f</value>
+        <value>106.7277f</value>
+        <value>2512.897f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1140739885" SRTHash="-1181703059">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.172879f</value>
+        <value>0.4066721f</value>
+        <value>-0.4157302f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4668.906f</value>
+        <value>158.1447f</value>
+        <value>2359.207f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="1176014483" Rotate="-0.09999993f" SRTHash="701146878">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4026.426f</value>
+        <value>110.4721f</value>
+        <value>2275.269f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="1182054093" Rotate="0.6600001f" SRTHash="258565020">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4609.375f</value>
+        <value>108.6458f</value>
+        <value>2423.586f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="1190780280" SRTHash="555398059">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4124.135f</value>
+        <value>108.8842f</value>
+        <value>2503.978f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="1223976642" SRTHash="-1169146938">
+      <Translate type="array">
+        <value>4530.89f</value>
+        <value>101.5518f</value>
+        <value>2391.172f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="1286416512" SRTHash="-330698629">
+      <Rotate type="array">
+        <value>0.3427535f</value>
+        <value>0.02483834f</value>
+        <value>-0.05228953f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4675.374f</value>
+        <value>119.7402f</value>
+        <value>2454.592f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralGrain_A_02</UnitConfigName>
+    </value>
+    <value HashId="1300967677" Rotate="-1.3f" SRTHash="-1718030454">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4115.31f</value>
+        <value>109.3144f</value>
+        <value>2353.842f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_02</UnitConfigName>
+    </value>
+    <value HashId="1326019490" SRTHash="-213875672">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="false" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.0850343f</value>
+        <value>1.41822f</value>
+        <value>0.07408655f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4005.024f</value>
+        <value>106.3158f</value>
+        <value>2998.393f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Lsword_056</UnitConfigName>
+    </value>
+    <value HashId="1330363317" Rotate="1.32f" SRTHash="1249169598">
+      <Translate type="array">
+        <value>4543.9f</value>
+        <value>106.1914f</value>
+        <value>2520.808f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1339994007" Rotate="-0.8400002f" SRTHash="717469626">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4526.056f</value>
+        <value>188.3542f</value>
+        <value>2331.035f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_C_01</UnitConfigName>
+    </value>
+    <value HashId="1376378435" SRTHash="614608938">
+      <Rotate type="array">
+        <value>0.01999998f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4462.273f</value>
+        <value>109.4002f</value>
+        <value>2518.448f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="1444972336" Rotate="0.7f" SRTHash="2054731663">
+      <Translate type="array">
+        <value>4531.832f</value>
+        <value>107.0576f</value>
+        <value>2514.419f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1469951798" SRTHash="65501981">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.421592f</value>
+        <value>-0.9215935f</value>
+        <value>3.141592f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4248.921f</value>
+        <value>266.6954f</value>
+        <value>2122.659f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="1477595137" SRTHash="-1843210025">
+      <Translate type="array">
+        <value>4141.584f</value>
+        <value>101.4025f</value>
+        <value>2566.205f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Coral_A_02</UnitConfigName>
+    </value>
+    <value HashId="1494969246" Rotate="0.6f" SRTHash="-1535078655">
+      <Translate type="array">
+        <value>4509.445f</value>
+        <value>131.3895f</value>
+        <value>2410.956f</value>
+      </Translate>
+      <UnitConfigName type="string">SoundProxyWatefallS</UnitConfigName>
+    </value>
+    <value HashId="1500652414" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.224243f</value>
+        <value>1.29895f</value>
+        <value>1.38269f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4554.188f</value>
+        <value>162.0938f</value>
+        <value>2113.156f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1523888978" SRTHash="509773787">
+      <Translate type="array">
+        <value>4521.118f</value>
+        <value>104.5746f</value>
+        <value>2446.957f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="1531570359" SRTHash="2089358287" Scale="5.744658f">
+      <_Parameters Count="8">
+        <ActorName type="string">Animal_Fish_G</ActorName>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>4583.538f</value>
+        <value>99.08595f</value>
+        <value>2576.989f</value>
+      </Translate>
+      <UnitConfigName type="string">AddAutoPlacementCreator</UnitConfigName>
+    </value>
+    <value HashId="1587808234" Rotate="0.9600004f" SRTHash="-1818547921">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4039.004f</value>
+        <value>108.6456f</value>
+        <value>2288.398f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="1608707129" SRTHash="-1188226616">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Ore</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4119.516f</value>
+        <value>107.3712f</value>
+        <value>2403.529f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="1646846108" Rotate="0.22f" SRTHash="-1906153674">
+      <Translate type="array">
+        <value>4502.877f</value>
+        <value>104.7557f</value>
+        <value>2438.58f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="1664455861" Rotate="-0.7800003f" SRTHash="371863370">
+      <Translate type="array">
+        <value>4532.4f</value>
+        <value>106.1818f</value>
+        <value>2526.524f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1668506507" SRTHash="0">
+      <Rotate type="array">
+        <value>2.609009f</value>
+        <value>0.7666015f</value>
+        <value>2.609253f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4131.563f</value>
+        <value>116.8594f</value>
+        <value>2526.508f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointBirdWet</UnitConfigName>
+    </value>
+    <value HashId="1673849808" SRTHash="1837410430">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.09037335f</value>
+        <value>-0.009046243f</value>
+        <value>0.1637407f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4111.738f</value>
+        <value>107.1266f</value>
+        <value>2388.206f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="1735708329" Rotate="-0.7800003f" SRTHash="1265046380">
+      <Translate type="array">
+        <value>4534.908f</value>
+        <value>106.2411f</value>
+        <value>2527.948f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1756408700" SRTHash="1606040607">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Sword_003</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.0009116657f</value>
+        <value>1.259981f</value>
+        <value>-0.00142033f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>3914.837f</value>
+        <value>98.5909f</value>
+        <value>2844.44f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="1762439757" SRTHash="746643150">
+      <Rotate type="array">
+        <value>1.133693f</value>
+        <value>1.112999f</value>
+        <value>0.3687716f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4529.104f</value>
+        <value>106.4976f</value>
+        <value>2522.009f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1784715464" SRTHash="-1487920567">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_FireArrow_A_03</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.009716892f</value>
+        <value>-0.6196464f</value>
+        <value>-0.02375918f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4050.194f</value>
+        <value>98.63522f</value>
+        <value>2934.547f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="1807395051" Rotate="0.02701163f" SRTHash="1643654557">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4131.056f</value>
+        <value>108.6003f</value>
+        <value>2526.042f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="1866873141" SRTHash="1010419225">
+      <Rotate type="array">
+        <value>-1.16f</value>
+        <value>-1.540002f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4530.192f</value>
+        <value>106.2187f</value>
+        <value>2524.593f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1880688601" SRTHash="1095664354">
+      <Translate type="array">
+        <value>4209.903f</value>
+        <value>106.4792f</value>
+        <value>2270.377f</value>
+      </Translate>
+      <UnitConfigName type="string">TravelersGuardianDeity_A_01</UnitConfigName>
+    </value>
+    <value HashId="1935219647" SRTHash="527064798">
+      <Rotate type="array">
+        <value>0.06349476f</value>
+        <value>0.07060517f</value>
+        <value>0.1442714f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4101.273f</value>
+        <value>106.8739f</value>
+        <value>2359.822f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_EnemyTrace_Garbage_A_01</UnitConfigName>
+    </value>
+    <value HashId="1949566556" SRTHash="0">
+      <Rotate type="array">
+        <value>2.689697f</value>
+        <value>1.459717f</value>
+        <value>2.987793f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4043.48f</value>
+        <value>119.4922f</value>
+        <value>2277.004f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointBirdWet</UnitConfigName>
+    </value>
+    <value HashId="1960647445" SRTHash="-1855819953">
+      <Rotate type="array">
+        <value>-0.1074968f</value>
+        <value>0.00212038f</value>
+        <value>0.03940703f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4608.381f</value>
+        <value>108.4995f</value>
+        <value>2417.278f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralGrain_A_02</UnitConfigName>
+    </value>
+    <value HashId="1969510900" SRTHash="0">
+      <Rotate type="array">
+        <value>-1.973511f</value>
+        <value>0.4282226f</value>
+        <value>-1.345337f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4172.805f</value>
+        <value>120.3359f</value>
+        <value>2328.715f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointBirdWet</UnitConfigName>
+    </value>
+    <value HashId="1972744063" SRTHash="257272579">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.15396f</value>
+        <value>0.8358722f</value>
+        <value>1.032706f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4533.501f</value>
+        <value>190.1415f</value>
+        <value>2325.577f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_C_01</UnitConfigName>
+    </value>
+    <value HashId="1979979837" Rotate="-1.020001f" SRTHash="1729476003">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4674.221f</value>
+        <value>156.3246f</value>
+        <value>2368.001f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="2027449594" SRTHash="0">
+      <Rotate type="array">
+        <value>0.4593506f</value>
+        <value>1.160156f</value>
+        <value>0.8381348f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4038.531f</value>
+        <value>117.043f</value>
+        <value>2288.742f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointBirdWet</UnitConfigName>
+    </value>
+    <value HashId="2037101331" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.7832031f</value>
+        <value>1.122192f</value>
+        <value>-1.906616f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4698.316f</value>
+        <value>137.7344f</value>
+        <value>2310.781f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="2043217180" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-3.000732f</value>
+        <value>1.094604f</value>
+        <value>2.070801f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4532.777f</value>
+        <value>240.6055f</value>
+        <value>2015.738f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="2065159553" SRTHash="372391454">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4121.789f</value>
+        <value>108.4737f</value>
+        <value>2472.579f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="2086087590" SRTHash="2094869411">
+      <Translate type="array">
+        <value>4157.308f</value>
+        <value>100.3127f</value>
+        <value>2563.571f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Coral_A_02</UnitConfigName>
+    </value>
+    <value HashId="2119625773" SRTHash="1184201918">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.0056f</value>
+        <value>0.9219751f</value>
+        <value>2.098542f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4404.171f</value>
+        <value>107.1744f</value>
+        <value>2447.782f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="2119931013" SRTHash="0">
+      <Rotate type="array">
+        <value>-0.3300781f</value>
+        <value>-0.01574708f</value>
+        <value>0.2520752f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4017.066f</value>
+        <value>106.9648f</value>
+        <value>2981.117f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointInsectTropical</UnitConfigName>
+    </value>
+    <value HashId="2120603431" SRTHash="218966574">
+      <Rotate type="array">
+        <value>0.1956028f</value>
+        <value>-0.9803202f</value>
+        <value>-0.04172054f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4098.389f</value>
+        <value>105.856f</value>
+        <value>2366.13f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_EnemyTrace_Garbage_A_01</UnitConfigName>
+    </value>
+    <value HashId="2140530072" SRTHash="-438328214">
+      <Rotate type="array">
+        <value>-0.07720302f</value>
+        <value>-0.9324244f</value>
+        <value>0.3279025f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4112.829f</value>
+        <value>109.1163f</value>
+        <value>2347.947f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_B_01</UnitConfigName>
+    </value>
+    <value HashId="-2049504403" SRTHash="-115928074">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.3760801f</value>
+        <value>-0.643198f</value>
+        <value>-1.178349f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4176.164f</value>
+        <value>350.1856f</value>
+        <value>2029.979f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2035890972" SRTHash="-422618236">
+      <Rotate type="array">
+        <value>0.2443342f</value>
+        <value>-0.8017203f</value>
+        <value>-0.2028649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4087.534f</value>
+        <value>122.7502f</value>
+        <value>2242.487f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="-2028257012" SRTHash="232164148">
+      <Rotate type="array">
+        <value>0.4866593f</value>
+        <value>-0.02039801f</value>
+        <value>0.08212433f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4515.225f</value>
+        <value>184.9894f</value>
+        <value>2338.467f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralGrain_A_04</UnitConfigName>
+    </value>
+    <value HashId="-2011081651" SRTHash="1068178947">
+      <_Parameters CreateHeightRange="10f" CreateMaxRadius="50f" CreateMinRadius="30f" CrySoundIntervalMax="20f" CrySoundIntervalMin="3f" EnableNoEntryAreaCheck="true" IsLocatorCreate="false" RoundMaxRadius="20f" RoundMinRadius="15f" SharpWeaponJudgeType="0" SubUnitNum="40">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4541.915f</value>
+        <value>141.6086f</value>
+        <value>2546.459f</value>
+      </Translate>
+      <UnitConfigName type="string">Animal_Gull_Swarm</UnitConfigName>
+    </value>
+    <value HashId="-1994601855" SRTHash="-330416628" Scale="5.685997f">
+      <_Parameters Count="8">
+        <ActorName type="string">Animal_Fish_G</ActorName>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>4524.601f</value>
+        <value>99.78908f</value>
+        <value>2581.981f</value>
+      </Translate>
+      <UnitConfigName type="string">AddAutoPlacementCreator</UnitConfigName>
+    </value>
+    <value HashId="-1969251752" SRTHash="610585788">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Item_Ore_E</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.0002299829f</value>
+        <value>-0.9810647f</value>
+        <value>-9.043724E-05f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4112.557f</value>
+        <value>98.59776f</value>
+        <value>2944.318f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="-1962722537" SRTHash="-1511887410">
+      <Translate type="array">
+        <value>4127.488f</value>
+        <value>101.0468f</value>
+        <value>2586.87f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Coral_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1958700748" SRTHash="-118314789">
+      <Rotate type="array">
+        <value>0.8f</value>
+        <value>-1.540002f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4542.457f</value>
+        <value>106.0072f</value>
+        <value>2516.731f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1933260450" SRTHash="-388606522">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.2276177f</value>
+        <value>0.7869362f</value>
+        <value>-0.1625922f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4176.818f</value>
+        <value>348.1426f</value>
+        <value>2035.198f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1917616904" Rotate="-1.540002f" SRTHash="671170188">
+      <Translate type="array">
+        <value>4529.599f</value>
+        <value>106.3411f</value>
+        <value>2523.283f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1902459115" Rotate="3f" SRTHash="1107924294">
+      <_Parameters>
+        <GetUpDirection type="string">None</GetUpDirection>
+      </_Parameters>
+      <Translate type="array">
+        <value>4098.309f</value>
+        <value>113.837f</value>
+        <value>2382.562f</value>
+      </Translate>
+      <UnitConfigName type="string">AnchorAction1</UnitConfigName>
+    </value>
+    <value HashId="-1869692759" Rotate="1.28f" SRTHash="-1430664538">
+      <Translate type="array">
+        <value>4584.496f</value>
+        <value>104.7184f</value>
+        <value>2468.974f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="-1849846547" Rotate="3f" SRTHash="1978232616">
+      <_Parameters>
+        <GetUpDirection type="string">None</GetUpDirection>
+      </_Parameters>
+      <Translate type="array">
+        <value>4090.567f</value>
+        <value>111.5652f</value>
+        <value>2373.038f</value>
+      </Translate>
+      <UnitConfigName type="string">AnchorAction1</UnitConfigName>
+    </value>
+    <value HashId="-1837862732" SRTHash="-676344601">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4186.96f</value>
+        <value>109.1429f</value>
+        <value>2458.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1804761695" SRTHash="499791839" Scale="10f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>4110.445f</value>
+        <value>107.2774f</value>
+        <value>2382.077f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1785044411" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.592407f</value>
+        <value>0.91333f</value>
+        <value>0.574829f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4518.711f</value>
+        <value>153.832f</value>
+        <value>2174.813f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-1780422180" Rotate="0.8199999f" SRTHash="-838283984">
+      <Translate type="array">
+        <value>4540.484f</value>
+        <value>105.9631f</value>
+        <value>2514.527f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1731742676" Rotate="2.343186f" SRTHash="-376573897">
+      <Translate type="array">
+        <value>4534.523f</value>
+        <value>103.7369f</value>
+        <value>2464.24f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="-1721520109" SRTHash="-1909118778">
+      <Translate type="array">
+        <value>4557f</value>
+        <value>105.273f</value>
+        <value>2481.5f</value>
+      </Translate>
+      <UnitConfigName type="string">GrassCutTag</UnitConfigName>
+    </value>
+    <value HashId="-1685384983" SRTHash="1356609426">
+      <Rotate type="array">
+        <value>0.05998802f</value>
+        <value>-0.0011992f</value>
+        <value>0.01996402f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4017.206f</value>
+        <value>105.4709f</value>
+        <value>2982.692f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="-1682106330" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.9337158f</value>
+        <value>-0.07714844f</value>
+        <value>0.2589111f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4350.566f</value>
+        <value>219.5391f</value>
+        <value>2223.238f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-1677613480" SRTHash="-1719420199">
+      <Translate type="array">
+        <value>4579.306f</value>
+        <value>103.712f</value>
+        <value>2429.272f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="-1658049116" SRTHash="1157762477">
+      <Rotate type="array">
+        <value>0.5127316f</value>
+        <value>-0.05962005f</value>
+        <value>0.2265348f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4457.045f</value>
+        <value>111.7637f</value>
+        <value>2521.183f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralGrain_A_04</UnitConfigName>
+    </value>
+    <value HashId="-1652835958" SRTHash="-162516354">
+      <Rotate type="array">
+        <value>0.54f</value>
+        <value>-1.540002f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4543.737f</value>
+        <value>106.2365f</value>
+        <value>2522.258f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1591354612" Rotate="1.040001f" SRTHash="1344001012">
+      <Translate type="array">
+        <value>4533.677f</value>
+        <value>106.208f</value>
+        <value>2527.292f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1590357440" SRTHash="-471108953">
+      <Rotate type="array">
+        <value>0.6799994f</value>
+        <value>1.32f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4537.856f</value>
+        <value>106.1981f</value>
+        <value>2528.03f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1556217548" SRTHash="883037331">
+      <Rotate type="array">
+        <value>0.14f</value>
+        <value>-0.36f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4543.147f</value>
+        <value>106.0647f</value>
+        <value>2518.039f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1531577167" Rotate="0.4400002f" SRTHash="-877497903">
+      <Translate type="array">
+        <value>4533.639f</value>
+        <value>127.2856f</value>
+        <value>2394.177f</value>
+      </Translate>
+      <UnitConfigName type="string">SoundProxyWatefallS</UnitConfigName>
+    </value>
+    <value HashId="-1507052442" SRTHash="161446350">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Kimo</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4203.302f</value>
+        <value>106.4427f</value>
+        <value>2350.744f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1498524204" Rotate="-1.2f" SRTHash="-699432469">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4030.262f</value>
+        <value>108.4239f</value>
+        <value>2290.038f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1466536323" SRTHash="1177796219">
+      <Rotate type="array">
+        <value>-0.12f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4546.154f</value>
+        <value>103.8683f</value>
+        <value>2379.703f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="-1450364485" Rotate="0.58f" SRTHash="795863510">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4056.542f</value>
+        <value>307.5595f</value>
+        <value>2052.496f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_B_01</UnitConfigName>
+    </value>
+    <value HashId="-1416457272" Rotate="-1.38f" SRTHash="-522671925">
+      <Translate type="array">
+        <value>4580.048f</value>
+        <value>93.63157f</value>
+        <value>2158.135f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_M_02</UnitConfigName>
+    </value>
+    <value HashId="-1348831155" SRTHash="-2088856574">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Kimo</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4194.469f</value>
+        <value>105.9284f</value>
+        <value>2474.416f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1348510034" SRTHash="-2105421701">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.3864778f</value>
+        <value>0.2860726f</value>
+        <value>-0.4455234f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4670.421f</value>
+        <value>124.2782f</value>
+        <value>2446.757f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1347778859" SRTHash="-239140001">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4051.862f</value>
+        <value>307.0669f</value>
+        <value>2053.261f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1340398903" SRTHash="-788680952" Scale="50f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>4106.787f</value>
+        <value>107.6286f</value>
+        <value>2356.896f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1338332368" Rotate="0.7f" SRTHash="-1982029623">
+      <Translate type="array">
+        <value>4537.746f</value>
+        <value>106.2524f</value>
+        <value>2512.883f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1334843937" SRTHash="-1032581446">
+      <Rotate type="array">
+        <value>0.58f</value>
+        <value>-1.540002f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4533.233f</value>
+        <value>106.9481f</value>
+        <value>2513.478f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1333386446" SRTHash="861947873">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">PutRupee_Purple</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.005756949f</value>
+        <value>-1.520139f</value>
+        <value>0.007962385f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>3846.106f</value>
+        <value>98.5696f</value>
+        <value>2852.758f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="-1309897451" SRTHash="1174646523">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Kimo</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4041.353f</value>
+        <value>107.6339f</value>
+        <value>2295.73f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1303180685" SRTHash="29112169">
+      <Rotate type="array">
+        <value>3.089543f</value>
+        <value>0.562086f</value>
+        <value>-3.10515f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4443.472f</value>
+        <value>108.306f</value>
+        <value>2513.362f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="-1278542430" SRTHash="-2132377882">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.8485578f</value>
+        <value>0.6245003f</value>
+        <value>0.678548f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4603.342f</value>
+        <value>106.565f</value>
+        <value>2425.922f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1233249715" Rotate="-0.6599999f" SRTHash="-799386316">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4038.62f</value>
+        <value>111.1157f</value>
+        <value>2275.774f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1224928037" SRTHash="621220505" Scale="25f">
+      <_Parameters IsStopWithoutReductionY="false" SpotBgmLifeScaleMargin="0f">
+        <Shape type="string">Sphere</Shape>
+        <Sound type="string">CmnWaterBgm</Sound>
+      </_Parameters>
+      <Translate type="array">
+        <value>3998f</value>
+        <value>107f</value>
+        <value>2990f</value>
+      </Translate>
+      <UnitConfigName type="string">SpotBgmTag</UnitConfigName>
+    </value>
+    <value HashId="-1223563262" SRTHash="1456944965">
+      <Rotate type="array">
+        <value>2.846262f</value>
+        <value>0.108494f</value>
+        <value>-2.999429f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4138.964f</value>
+        <value>98.8757f</value>
+        <value>2583.599f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffWhiteBroken_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1208775584" Rotate="-1.540002f" SRTHash="-805651353">
+      <Translate type="array">
+        <value>4530.802f</value>
+        <value>107.0823f</value>
+        <value>2515.361f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1196126959" Rotate="2.983184f" SRTHash="1457323067">
+      <Translate type="array">
+        <value>4384.853f</value>
+        <value>105.6058f</value>
+        <value>2391.382f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="-1185726876" Rotate="-0.9999999f" SRTHash="814873091">
+      <Translate type="array">
+        <value>4126.473f</value>
+        <value>109.3027f</value>
+        <value>2476.778f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_B_01</UnitConfigName>
+    </value>
+    <value HashId="-1126209925" Rotate="0.8199999f" SRTHash="-197997441">
+      <Translate type="array">
+        <value>4543.779f</value>
+        <value>106.121f</value>
+        <value>2519.382f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1120809698" SRTHash="-2023095724" Scale="0.993652f">
+      <Rotate type="array">
+        <value>0.1847882f</value>
+        <value>-0.6487844f</value>
+        <value>-0.0002746373f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4342.039f</value>
+        <value>406.9143f</value>
+        <value>2018.617f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Plant_CypressLow_B_01</UnitConfigName>
+    </value>
+    <value HashId="-1112597493" Rotate="1.46f" SRTHash="-882214560">
+      <Translate type="array">
+        <value>4568.953f</value>
+        <value>99.56557f</value>
+        <value>2157.149f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_M_02</UnitConfigName>
+    </value>
+    <value HashId="-1109171546" SRTHash="1290087586">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-3.141592f</value>
+        <value>0.1784071f</value>
+        <value>-3.121592f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4403.895f</value>
+        <value>107.4029f</value>
+        <value>2445.583f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_B_01</UnitConfigName>
+    </value>
+    <value HashId="-1101909419" SRTHash="1768709708">
+      <_Parameters SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Fruit1</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.04333399f</value>
+        <value>-0.06904935f</value>
+        <value>0.1059506f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4113.233f</value>
+        <value>107.3975f</value>
+        <value>2385.732f</value>
+      </Translate>
+      <UnitConfigName type="string">Kibako_Contain_01</UnitConfigName>
+    </value>
+    <value HashId="-1094445015" SRTHash="-1238396529">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.7641633f</value>
+        <value>0.00679697f</value>
+        <value>-0.1818035f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4664.312f</value>
+        <value>158.6149f</value>
+        <value>2353.59f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1092964623" Rotate="0.3046875f" SRTHash="0">
+      <Translate type="array">
+        <value>4440.465f</value>
+        <value>114.0703f</value>
+        <value>2537.25f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointBirdWet</UnitConfigName>
+    </value>
+    <value HashId="-1051831034" Rotate="-1.42f" SRTHash="-1958031812">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4402.577f</value>
+        <value>107.178f</value>
+        <value>2434.997f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1048151654" SRTHash="-678949251">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">PutRupee_Purple</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.140336f</value>
+        <value>-0.751049f</value>
+        <value>-3.141322f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4120.91f</value>
+        <value>102.3941f</value>
+        <value>2594.754f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="-1039185757" SRTHash="-1832078429">
+      <Translate type="array">
+        <value>4550.947f</value>
+        <value>105.7476f</value>
+        <value>2558.508f</value>
+      </Translate>
+      <UnitConfigName type="string">SmallFishes1</UnitConfigName>
+    </value>
+    <value HashId="-1034693037" Rotate="-1.679997f" SRTHash="1884384577">
+      <Translate type="array">
+        <value>4560.287f</value>
+        <value>93.34186f</value>
+        <value>2174.241f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_M_04</UnitConfigName>
+    </value>
+    <value HashId="-1016503619" SRTHash="1365822181">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.7913885f</value>
+        <value>0.8791318f</value>
+        <value>0.5455137f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4457.542f</value>
+        <value>112.3546f</value>
+        <value>2521.237f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="-999326870" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.148193f</value>
+        <value>0.7546387f</value>
+        <value>2.840332f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4534.363f</value>
+        <value>134.0313f</value>
+        <value>2189.375f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-991574501" SRTHash="-1307066780">
+      <Rotate type="array">
+        <value>2.270873f</value>
+        <value>0.08366869f</value>
+        <value>2.21319f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4526.245f</value>
+        <value>189.0436f</value>
+        <value>2330.844f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralGrain_A_04</UnitConfigName>
+    </value>
+    <value HashId="-960667947" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.610351f</value>
+        <value>0.8569335f</value>
+        <value>0.126709f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4534.957f</value>
+        <value>197.8984f</value>
+        <value>2321.512f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-911335008" SRTHash="-1909118778">
+      <Translate type="array">
+        <value>4573.5f</value>
+        <value>105.2277f</value>
+        <value>2469.5f</value>
+      </Translate>
+      <UnitConfigName type="string">GrassCutTag</UnitConfigName>
+    </value>
+    <value HashId="-891752434" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.120727f</value>
+        <value>0.3928222f</value>
+        <value>-0.4151611f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4524.793f</value>
+        <value>214.168f</value>
+        <value>2105.078f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-891324568" Rotate="2.78f" SRTHash="-1066146023">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4125.676f</value>
+        <value>109.0066f</value>
+        <value>2469.312f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="-872112602" SRTHash="1353906191">
+      <Rotate type="array">
+        <value>0.5659508f</value>
+        <value>0.1155467f</value>
+        <value>-0.3926876f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4464.766f</value>
+        <value>110.6665f</value>
+        <value>2524.26f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralGrain_A_04</UnitConfigName>
+    </value>
+    <value HashId="-871161004" SRTHash="-2139040450">
+      <Translate type="array">
+        <value>4515.397f</value>
+        <value>105.1798f</value>
+        <value>2549.245f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="-859938869" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.66394f</value>
+        <value>0.9975585f</value>
+        <value>1.136108f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4581.328f</value>
+        <value>122.5664f</value>
+        <value>2112.328f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-848812911" SRTHash="1276336826" Scale="25f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>4106.787f</value>
+        <value>107.6286f</value>
+        <value>2356.896f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-819754491" Rotate="-1.540002f" SRTHash="1624922949">
+      <Translate type="array">
+        <value>4541.491f</value>
+        <value>106.2217f</value>
+        <value>2525.665f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-818052785" SRTHash="1837410430">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.01113079f</value>
+        <value>0.8212028f</value>
+        <value>0.006501483f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4081.038f</value>
+        <value>105.5798f</value>
+        <value>2372.483f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="-810498620" SRTHash="977685799">
+      <Translate type="array">
+        <value>4030.831f</value>
+        <value>109.7245f</value>
+        <value>2281.116f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_B_01</UnitConfigName>
+    </value>
+    <value HashId="-800614526" SRTHash="-759412359" Scale="100f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>4106.787f</value>
+        <value>107.6286f</value>
+        <value>2356.896f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-785709840" SRTHash="1873464361">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Kimo</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4175.126f</value>
+        <value>112.2395f</value>
+        <value>2308.632f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="-769790698" SRTHash="1837410430">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>5.015779E-05f</value>
+        <value>-0.4399999f</value>
+        <value>-5.364664E-05f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4088.5f</value>
+        <value>111.5091f</value>
+        <value>2376.016f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="-765148577" SRTHash="2081237845">
+      <_Parameters IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <GolemSleepType type="string">SleepForward_B</GolemSleepType>
+        <GolemWeakPointLocation type="string">Point_C</GolemWeakPointLocation>
+        <UniqueNameMessageLabel type="string">Golem_[J-7]D264C25F</UniqueNameMessageLabel>
+      </_Parameters>
+      <Translate type="array">
+        <value>4558.5f</value>
+        <value>105.4058f</value>
+        <value>2465f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Golem_Middle</UnitConfigName>
+    </value>
+    <value HashId="-761395999" SRTHash="-1909118778">
+      <Translate type="array">
+        <value>4110.445f</value>
+        <value>107.2774f</value>
+        <value>2382.077f</value>
+      </Translate>
+      <UnitConfigName type="string">GrassCutTag</UnitConfigName>
+    </value>
+    <value HashId="-726986472" SRTHash="-1909118778">
+      <Translate type="array">
+        <value>4546f</value>
+        <value>105.2512f</value>
+        <value>2461.5f</value>
+      </Translate>
+      <UnitConfigName type="string">GrassCutTag</UnitConfigName>
+    </value>
+    <value HashId="-722123338" SRTHash="0">
+      <Rotate type="array">
+        <value>-1.711792f</value>
+        <value>-0.4840088f</value>
+        <value>0.982788f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4087.789f</value>
+        <value>113.7734f</value>
+        <value>2371.844f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointBirdTropical</UnitConfigName>
+    </value>
+    <value HashId="-720209898" Rotate="1.08f" SRTHash="1262120996">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4673.471f</value>
+        <value>121.1138f</value>
+        <value>2447.205f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="-719135466" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.567627f</value>
+        <value>1.328613f</value>
+        <value>0.5759277f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4465.676f</value>
+        <value>211.3359f</value>
+        <value>2179.074f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-660780837" SRTHash="1158322904">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Ore</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4199.768f</value>
+        <value>105.9488f</value>
+        <value>2462.978f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="-658778346" SRTHash="512753086">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.00089f</value>
+        <value>-0.514115f</value>
+        <value>-0.921465f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4080.894f</value>
+        <value>106.0573f</value>
+        <value>2370.385f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="-630271319" SRTHash="-384568215">
+      <Translate type="array">
+        <value>4560.417f</value>
+        <value>105.7476f</value>
+        <value>2559.377f</value>
+      </Translate>
+      <UnitConfigName type="string">SmallFishes1</UnitConfigName>
+    </value>
+    <value HashId="-560725928" Rotate="-2.439999f" SRTHash="-850474498">
+      <Translate type="array">
+        <value>4151.601f</value>
+        <value>100.1264f</value>
+        <value>2582.033f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Coral_A_03</UnitConfigName>
+    </value>
+    <value HashId="-545821510" SRTHash="-2029244868">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.1617385f</value>
+        <value>1.213655f</value>
+        <value>0.1826383f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4242.939f</value>
+        <value>266.0478f</value>
+        <value>2122.576f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="-529450424" SRTHash="1411714297" Scale="5.024703f">
+      <_Parameters Count="8">
+        <ActorName type="string">Animal_Fish_F</ActorName>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>4552.069f</value>
+        <value>100.3985f</value>
+        <value>2583.239f</value>
+      </Translate>
+      <UnitConfigName type="string">AddAutoPlacementCreator</UnitConfigName>
+    </value>
+    <value HashId="-520707089" SRTHash="1533490913">
+      <Rotate type="array">
+        <value>0.8957808f</value>
+        <value>-0.3332777f</value>
+        <value>-1.026892f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4534.497f</value>
+        <value>190.619f</value>
+        <value>2325.149f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralGrain_A_04</UnitConfigName>
+    </value>
+    <value HashId="-495073064" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.9323729f</value>
+        <value>-0.2385254f</value>
+        <value>-0.1920166f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4276.16f</value>
+        <value>225.1289f</value>
+        <value>2161.813f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-451970976" Rotate="-2.819999f" SRTHash="1364404813">
+      <Translate type="array">
+        <value>4116.415f</value>
+        <value>101.944f</value>
+        <value>2573.576f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_Coral_A_01</UnitConfigName>
+    </value>
+    <value HashId="-441081170" SRTHash="-2066446159">
+      <Rotate type="array">
+        <value>-0.2103206f</value>
+        <value>1.353753f</value>
+        <value>-0.1940001f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4542.583f</value>
+        <value>106.2394f</value>
+        <value>2524.756f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-424895070" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.107544f</value>
+        <value>1.272095f</value>
+        <value>2.543945f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4596.176f</value>
+        <value>112.7773f</value>
+        <value>2012.328f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-341358820" Rotate="0.5200001f" SRTHash="-915033285">
+      <Translate type="array">
+        <value>4543.52f</value>
+        <value>136.0964f</value>
+        <value>2387.311f</value>
+      </Translate>
+      <UnitConfigName type="string">SoundProxyWatefallS</UnitConfigName>
+    </value>
+    <value HashId="-296443047" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.448974f</value>
+        <value>0.6834717f</value>
+        <value>0.2263183f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4558.836f</value>
+        <value>162.0078f</value>
+        <value>2095.781f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-284521752" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.6790771f</value>
+        <value>0.953247f</value>
+        <value>-0.3295898f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4553.586f</value>
+        <value>156.8398f</value>
+        <value>2122.594f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-275767565" Rotate="-1.1f" SRTHash="-1466641630">
+      <Translate type="array">
+        <value>4045.504f</value>
+        <value>108.7311f</value>
+        <value>2288.955f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_B_01</UnitConfigName>
+    </value>
+    <value HashId="-202508329" Rotate="0.5999998f" SRTHash="-743081853">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4123.843f</value>
+        <value>107.6613f</value>
+        <value>2414.688f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="-193274619" SRTHash="0">
+      <Rotate type="array">
+        <value>2.609009f</value>
+        <value>0.7666015f</value>
+        <value>2.609253f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4131.563f</value>
+        <value>108.7539f</value>
+        <value>2526.508f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointInsectTemperate</UnitConfigName>
+    </value>
+    <value HashId="-186798511" SRTHash="1133414215">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.2896909f</value>
+        <value>0.6669037f</value>
+        <value>0.4646868f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4608.987f</value>
+        <value>108.3259f</value>
+        <value>2416.312f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="-186171003" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.222412f</value>
+        <value>0.09472656f</value>
+        <value>-0.1618652f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4428.004f</value>
+        <value>227.8906f</value>
+        <value>2234.609f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-186104155" Rotate="-2.959999f" SRTHash="-1667066126">
+      <_Parameters>
+        <GetUpDirection type="string">None</GetUpDirection>
+      </_Parameters>
+      <Translate type="array">
+        <value>4107.148f</value>
+        <value>107.6286f</value>
+        <value>2358.864f</value>
+      </Translate>
+      <UnitConfigName type="string">AnchorAction1</UnitConfigName>
+    </value>
+    <value HashId="-177391581" SRTHash="1837410430">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.0406208f</value>
+        <value>0.4798633f</value>
+        <value>-0.003219857f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4082.492f</value>
+        <value>111.6019f</value>
+        <value>2381.987f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="-169258555" SRTHash="-1620765182" Scale="75f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>4558.5f</value>
+        <value>105.1872f</value>
+        <value>2465f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-156871473" Rotate="-0.8400001f" SRTHash="-1003258347">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4668.014f</value>
+        <value>158.2551f</value>
+        <value>2357.649f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="-155713526" Rotate="-0.777832f" SRTHash="0">
+      <Translate type="array">
+        <value>4435.879f</value>
+        <value>114.0938f</value>
+        <value>2533.5f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointBirdWet</UnitConfigName>
+    </value>
+    <value HashId="-83511942" Rotate="3.996305f" SRTHash="-1236799694">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4125.308f</value>
+        <value>107.6158f</value>
+        <value>2530.458f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
+    </value>
+    <value HashId="-55745146" Rotate="1.48f" SRTHash="693201073">
+      <Translate type="array">
+        <value>4498.109f</value>
+        <value>105.016f</value>
+        <value>2465.518f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="-54212712" Rotate="0.3000001f" SRTHash="-452330316">
+      <Translate type="array">
+        <value>4560.103f</value>
+        <value>105.2892f</value>
+        <value>2502.818f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="-53134811" Rotate="-1.54f" SRTHash="-1894004146">
+      <Translate type="array">
+        <value>4606.438f</value>
+        <value>103.7369f</value>
+        <value>2416.068f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeachLump_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="-41030764" SRTHash="-1384803996">
+      <Translate type="array">
+        <value>4565.586f</value>
+        <value>99.4622f</value>
+        <value>2182.422f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RockBeach_A_M_04</UnitConfigName>
+    </value>
+    <value HashId="-7240293" SRTHash="-1836026411">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.291945f</value>
+        <value>-1.08855f</value>
+        <value>2.264337f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4613.512f</value>
+        <value>109.431f</value>
+        <value>2424.065f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_B_01</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

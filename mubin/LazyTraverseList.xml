@@ -1,0 +1,1824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <B6VarettaGenFlag type="array">
+    <value HashId="400809121">
+      <UnitConfigName type="string">Npc_GerudoDesert004</UnitConfigName>
+    </value>
+  </B6VarettaGenFlag>
+  <BattleArena_Level1 type="array">
+    <value HashId="-94054922">
+      <UnitConfigName type="string">Enemy_Lynel_Junior</UnitConfigName>
+    </value>
+    <value HashId="1677738069">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="1840647294">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="2054599949">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="61476265">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="584015546">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1301265621">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="-982027331">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1515128232">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-759706930">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+  </BattleArena_Level1>
+  <BattleArena_Level2 type="array">
+    <value HashId="1544805954">
+      <UnitConfigName type="string">Enemy_Lynel_Middle</UnitConfigName>
+    </value>
+    <value HashId="-1032369183">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-876542006">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="-603865415">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1512241635">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-295346652">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="2128233397">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="165507875">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="1763375814">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="505268816">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+  </BattleArena_Level2>
+  <BattleArena_Level3 type="array">
+    <value HashId="237760997">
+      <UnitConfigName type="string">Enemy_Lynel_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1873845178">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1711724435">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1908829922">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-135976518">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1501212608">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="909790673">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="1094548807">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="570094754">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="1459471412">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+  </BattleArena_Level3>
+  <BattleArena_Level4 type="array">
+    <value HashId="1578404536">
+      <UnitConfigName type="string">Enemy_Lynel_Dark</UnitConfigName>
+    </value>
+    <value HashId="-1066393829">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-909749456">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="-569972157">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1478864153">
+      <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1290845582">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="598761443">
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="1421307765">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="879814288">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+    <value HashId="1131927046">
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
+  </BattleArena_Level4>
+  <ChampionshipBallGenFlg type="array">
+    <value HashId="-1662934919">
+      <UnitConfigName type="string">FldObj_ChampionshipBall_01</UnitConfigName>
+    </value>
+  </ChampionshipBallGenFlg>
+  <Clear_RemainsElectric type="array">
+    <value HashId="1220537121">
+      <UnitConfigName type="string">Npc_oasis037</UnitConfigName>
+    </value>
+    <value HashId="-192332501">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1244205182">
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-1559688984">
+      <UnitConfigName type="string">TwnObj_City_GerudoThunderHelmet_A_01</UnitConfigName>
+    </value>
+    <value HashId="160503756">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1592478859">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1894364668">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-894348140">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-447727614">
+      <UnitConfigName type="string">Npc_SmallOasis012</UnitConfigName>
+    </value>
+    <value HashId="-126538343">
+      <UnitConfigName type="string">Npc_SmallOasis001</UnitConfigName>
+    </value>
+    <value HashId="403811472">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-2056401306">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-726059269">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="423502037">
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="1406287907">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-426544636">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1294256040">
+      <UnitConfigName type="string">Obj_HeartUtuwa_A_01</UnitConfigName>
+    </value>
+  </Clear_RemainsElectric>
+  <Demo347_2RougeGenFlg type="array">
+    <value HashId="1065890675">
+      <UnitConfigName type="string">Npc_oasis003</UnitConfigName>
+    </value>
+  </Demo347_2RougeGenFlg>
+  <Electlic_Relic_Demo347_2 type="array">
+    <value HashId="700189175">
+      <UnitConfigName type="string">Animal_Sunazarashi_B</UnitConfigName>
+    </value>
+    <value HashId="-622214136">
+      <UnitConfigName type="string">Animal_SunazarashiSP_C</UnitConfigName>
+    </value>
+  </Electlic_Relic_Demo347_2>
+  <Electric_Relic_Activated type="array">
+    <value HashId="1270801683">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="2039961651">
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="400809121">
+      <UnitConfigName type="string">Npc_GerudoDesert004</UnitConfigName>
+    </value>
+    <value HashId="1491976929">
+      <UnitConfigName type="string">FldObj_SecretBaseBoardIron_A_02</UnitConfigName>
+    </value>
+    <value HashId="-698170110">
+      <UnitConfigName type="string">FldObj_SecretBaseBoardIron_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2111107469">
+      <UnitConfigName type="string">Npc_oasis037</UnitConfigName>
+    </value>
+  </Electric_Relic_Activated>
+  <Electric_Relic_Battle type="array">
+    <value HashId="-1016702722">
+      <UnitConfigName type="string">Animal_SunazarashiSP_A</UnitConfigName>
+    </value>
+    <value HashId="626020292">
+      <UnitConfigName type="string">Animal_SunazarashiSP_B</UnitConfigName>
+    </value>
+    <value HashId="1464093008">
+      <UnitConfigName type="string">Npc_oasis033</UnitConfigName>
+    </value>
+  </Electric_Relic_Battle>
+  <Electric_Relic_Defeat type="array">
+    <value HashId="1949761432">
+      <UnitConfigName type="string">Npc_oasis003</UnitConfigName>
+    </value>
+    <value HashId="764149539">
+      <UnitConfigName type="string">Animal_SunazarashiSP_C</UnitConfigName>
+    </value>
+  </Electric_Relic_Defeat>
+  <Electric_Relic_Deliver type="array">
+    <value HashId="-2069692863">
+      <UnitConfigName type="string">Npc_GerudoDesert004</UnitConfigName>
+    </value>
+  </Electric_Relic_Deliver>
+  <Electric_Relic_GetBack type="array">
+    <value HashId="1824596519">
+      <UnitConfigName type="string">Npc_oasis003</UnitConfigName>
+    </value>
+    <value HashId="1543445013">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1572104810">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1154072935">
+      <UnitConfigName type="string">RemainsElectric</UnitConfigName>
+    </value>
+    <value HashId="318110893">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-74032744">
+      <UnitConfigName type="string">SandStorm_Distance_Battle</UnitConfigName>
+    </value>
+    <value HashId="546781154">
+      <UnitConfigName type="string">RemainsElectric_Far</UnitConfigName>
+    </value>
+  </Electric_Relic_GetBack>
+  <Electric_Relic_SunazarashiRouge type="array">
+    <value HashId="-575846826">
+      <UnitConfigName type="string">Npc_oasis003</UnitConfigName>
+    </value>
+  </Electric_Relic_SunazarashiRouge>
+  <Enemy_Dragon_Ice_CreateRunelDragon type="array">
+    <value HashId="-224643922">
+      <UnitConfigName type="string">Enemy_Dragon_Grudge</UnitConfigName>
+    </value>
+    <value HashId="673479078">
+      <UnitConfigName type="string">Enemy_Dragon_Grudge_Far</UnitConfigName>
+    </value>
+  </Enemy_Dragon_Ice_CreateRunelDragon>
+  <Gerudo_Ch_FindingValetta_Activated type="array">
+    <value HashId="520530905">
+      <UnitConfigName type="string">Npc_GerudoDesert004</UnitConfigName>
+    </value>
+    <value HashId="-1763817224">
+      <UnitConfigName type="string">Animal_Sunazarashi_A</UnitConfigName>
+    </value>
+    <value HashId="-1054189500">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+  </Gerudo_Ch_FindingValetta_Activated>
+  <Gerudo_Ch_FindingValetta_Step2 type="array">
+    <value HashId="35769334">
+      <UnitConfigName type="string">Npc_GerudoDesert004</UnitConfigName>
+    </value>
+  </Gerudo_Ch_FindingValetta_Step2>
+  <GoronCamp_GameReady type="array">
+    <value HashId="-292680819">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1429529818">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1846939955">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1683482134">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1672899529">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-41277832">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="37835703">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1765663571">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1334038798">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1811062221">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1998955088">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-635513369">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+    <value HashId="62203853">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+  </GoronCamp_GameReady>
+  <GoronCamp_HardCourseGenerateFlag type="array">
+    <value HashId="-1807222920">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1527455457">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-7301459">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-1100594849">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="2126312073">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1031330376">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1073149465">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-1291984624">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="526351245">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1274371889">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="613261440">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1386999417">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1696787807">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-1519104699">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-291778562">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-2144521329">
+      <UnitConfigName type="string">PutRupee_Silver</UnitConfigName>
+    </value>
+    <value HashId="-641018378">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="534290251">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-933269370">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-109267666">
+      <UnitConfigName type="string">PutRupee_Silver</UnitConfigName>
+    </value>
+    <value HashId="-1697747120">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-723793159">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="1035686757">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1483226470">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="1210034034">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1713499687">
+      <UnitConfigName type="string">PutRupee_Purple</UnitConfigName>
+    </value>
+    <value HashId="200311821">
+      <UnitConfigName type="string">PutRupee_Silver</UnitConfigName>
+    </value>
+    <value HashId="1852551277">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1668606224">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1359446829">
+      <UnitConfigName type="string">PutRupee_Gold</UnitConfigName>
+    </value>
+    <value HashId="-19573485">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="202054766">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-805440974">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+  </GoronCamp_HardCourseGenerateFlag>
+  <GoronCamp_NormalCourseGenerateFlag type="array">
+    <value HashId="-1236452385">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-1104178707">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-1596632682">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1283477163">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1159982928">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1601462832">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1080492145">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1040855386">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="369372691">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-90610017">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-762984015">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="1782761318">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1447679489">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="243330295">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1969560123">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-565103141">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-936757588">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1045936582">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-1988441889">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-676932869">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="1697652372">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1490275481">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-986762263">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="524936855">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="777439277">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="1432054836">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="79873720">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-2016737245">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="1647934741">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="477889961">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-1222027882">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="1630834295">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="825346524">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="606448425">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1213807974">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1040969445">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-286072296">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="821344815">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-1204025880">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-1898259731">
+      <UnitConfigName type="string">PutRupee_Red</UnitConfigName>
+    </value>
+    <value HashId="-31995110">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="1461170453">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-1445462754">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="106851533">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-2139709486">
+      <UnitConfigName type="string">PutRupee_Blue</UnitConfigName>
+    </value>
+    <value HashId="-1686201433">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+    <value HashId="-647187955">
+      <UnitConfigName type="string">PutRupee</UnitConfigName>
+    </value>
+  </GoronCamp_NormalCourseGenerateFlag>
+  <GoronCamp_mini_GameReady type="array">
+    <value HashId="-292680819">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1429529818">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1846939955">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1683482134">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1672899529">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-41277832">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="37835703">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1765663571">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1334038798">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1811062221">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1998955088">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-635513369">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+    <value HashId="62203853">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+  </GoronCamp_mini_GameReady>
+  <IsGanonLiving type="array">
+    <value HashId="195667130">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01</UnitConfigName>
+    </value>
+    <value HashId="60664786">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01</UnitConfigName>
+    </value>
+    <value HashId="1516943737">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01</UnitConfigName>
+    </value>
+    <value HashId="1604772164">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01</UnitConfigName>
+    </value>
+    <value HashId="-819845228">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01</UnitConfigName>
+    </value>
+    <value HashId="4594962">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1081736710">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-859543006">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-1156621925">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-1483094789">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_A_01_Far</UnitConfigName>
+    </value>
+  </IsGanonLiving>
+  <IsPlayed_Demo147_0 type="array">
+    <value HashId="1564743126">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_Past_A_01</UnitConfigName>
+    </value>
+    <value HashId="183173273">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_Past_A_01</UnitConfigName>
+    </value>
+    <value HashId="141333714">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_Past_A_01</UnitConfigName>
+    </value>
+    <value HashId="750091787">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_Past_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1137592101">
+      <UnitConfigName type="string">TwnObj_HyruleCastleAncientPole_Past_A_01</UnitConfigName>
+    </value>
+  </IsPlayed_Demo147_0>
+  <LastBossCurseGanonElectricGenerateFlag type="array">
+    <value HashId="-266330487">
+      <UnitConfigName type="string">Enemy_SiteBoss_Sword_Castle</UnitConfigName>
+    </value>
+    <value HashId="-1137988355">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="1640152910">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="-280119123">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="1887546467">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="945922567">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="-1193103902">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="1950920060">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="-1225873948">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+  </LastBossCurseGanonElectricGenerateFlag>
+  <LastBossCurseGanonFireGenerateFlag type="array">
+    <value HashId="440941049">
+      <UnitConfigName type="string">Enemy_SiteBoss_Lsword_Castle</UnitConfigName>
+    </value>
+  </LastBossCurseGanonFireGenerateFlag>
+  <LastBossCurseGanonWaterGenerateFlag type="array">
+    <value HashId="1015684631">
+      <UnitConfigName type="string">Enemy_SiteBoss_Spear_Castle</UnitConfigName>
+    </value>
+  </LastBossCurseGanonWaterGenerateFlag>
+  <LastBossCurseGanonWindGenerateFlag type="array">
+    <value HashId="-689817241">
+      <UnitConfigName type="string">Enemy_SiteBoss_Bow_Castle</UnitConfigName>
+    </value>
+    <value HashId="-187981159">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="-657683346">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="187275227">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="-2052681672">
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+  </LastBossCurseGanonWindGenerateFlag>
+  <LastBossGanonBeastGenerateFlag type="array">
+    <value HashId="-2116711615">
+      <UnitConfigName type="string">Weapon_Bow_071</UnitConfigName>
+    </value>
+    <value HashId="-1690423553">
+      <UnitConfigName type="string">Enemy_GanonBeast</UnitConfigName>
+    </value>
+  </LastBossGanonBeastGenerateFlag>
+  <LastBossIncompleteGanonGenerateFlag type="array">
+    <value HashId="108794243">
+      <UnitConfigName type="string">Enemy_Ganon</UnitConfigName>
+    </value>
+  </LastBossIncompleteGanonGenerateFlag>
+  <MiniGame_Bowling_PinSet type="array">
+    <value HashId="601928783">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+    <value HashId="527554490">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+    <value HashId="545712191">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+    <value HashId="1830935923">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+    <value HashId="-195617881">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+    <value HashId="-1488900966">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+    <value HashId="-180950559">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+    <value HashId="-1061369799">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+    <value HashId="-1451761410">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+    <value HashId="-438673763">
+      <UnitConfigName type="string">BowlPin</UnitConfigName>
+    </value>
+  </MiniGame_Bowling_PinSet>
+  <MiniGame_Bowling_SnowBallMakeFlag type="array">
+    <value HashId="1891825134">
+      <UnitConfigName type="string">SnowBowl</UnitConfigName>
+    </value>
+  </MiniGame_Bowling_SnowBallMakeFlag>
+  <MiniGame_Crosscountry_ActorGenerateFlag type="array">
+    <value HashId="1919467379">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1858675772">
+      <UnitConfigName type="string">FldObj_PushRock_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="-334057084">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-940739741">
+      <UnitConfigName type="string">Enemy_Chuchu_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1071736777">
+      <UnitConfigName type="string">FireWood</UnitConfigName>
+    </value>
+    <value HashId="761309559">
+      <UnitConfigName type="string">BarrelBomb</UnitConfigName>
+    </value>
+    <value HashId="1369143114">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1388535617">
+      <UnitConfigName type="string">FldObj_FlagChallengeGoal_A</UnitConfigName>
+    </value>
+    <value HashId="1635211462">
+      <UnitConfigName type="string">FldObj_FlagChallengeGoal_A</UnitConfigName>
+    </value>
+    <value HashId="1191880721">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1099564027">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1002404028">
+      <UnitConfigName type="string">FldObj_PushRock_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="1754623072">
+      <UnitConfigName type="string">FldObj_PushRock_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="-1395832603">
+      <UnitConfigName type="string">FldObj_PushRock_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="18638720">
+      <UnitConfigName type="string">FldObj_PushRock_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="844591827">
+      <UnitConfigName type="string">FldObj_PushRock_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="-723428430">
+      <UnitConfigName type="string">FldObj_PushRock_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="-1321566130">
+      <UnitConfigName type="string">FldObj_PushRock_A_M_01</UnitConfigName>
+    </value>
+  </MiniGame_Crosscountry_ActorGenerateFlag>
+  <MiniGame_HillTower_BirdMan_Activated type="array" />
+  <MiniGame_HorseRace_CreateObstacle type="array">
+    <value HashId="331607735">
+      <UnitConfigName type="string">FldObj_FlagChallengeGoal_A</UnitConfigName>
+    </value>
+    <value HashId="-570074687">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-468322008">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="683669942">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="61723695">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-821570383">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1957356729">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1207901145">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="643502046">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-353300672">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1365000008">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1644806186">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-933925134">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="83848812">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1085120924">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="1945657082">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="557239239">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-308491431">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1446116177">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1701053489">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1591432388">
+      <UnitConfigName type="string">FldObj_HorseRaceFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="1838066594">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+  </MiniGame_HorseRace_CreateObstacle>
+  <MiniGame_HorsebackArchery_TargetMakeFlag type="array">
+    <value HashId="460388744">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="1088700657">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-226565012">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="1798112609">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="41662327">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-35058498">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="181940708">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-168460602">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="1169502251">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-1184330982">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-344248834">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="476653515">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="1297504277">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-32425877">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="465547066">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-520537296">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-61510534">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-143989808">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="1521891496">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-611886865">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-1245141468">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="1450691594">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-1103724540">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="733353499">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-1147326461">
+      <UnitConfigName type="string">YabusameTarget</UnitConfigName>
+    </value>
+    <value HashId="-487542228">
+      <UnitConfigName type="string">FldObj_FlagChallengeGoal_A</UnitConfigName>
+    </value>
+  </MiniGame_HorsebackArchery_TargetMakeFlag>
+  <MiniGame_ParasailArchery_Ready type="array">
+    <value HashId="-1787567274">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-934319316">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1668818969">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1773458344">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="1850609388">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+  </MiniGame_ParasailArchery_Ready>
+  <MiniGame_ParasailArchery_TargetONOFF type="array">
+    <value HashId="-1787567274">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-934319316">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1668818969">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1773458344">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="1850609388">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+  </MiniGame_ParasailArchery_TargetONOFF>
+  <MiniGame_ParasailRide_ActerGenerateFlag type="array">
+    <value HashId="121557791">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+    <value HashId="-32771498">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+    <value HashId="-1461191300">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+    <value HashId="342966386">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+    <value HashId="401064308">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+    <value HashId="1458273636">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+    <value HashId="-449877584">
+      <UnitConfigName type="string">AscendingCurrent</UnitConfigName>
+    </value>
+    <value HashId="-760020399">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="504955599">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1023817962">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="240371592">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1241581696">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="2035611422">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="731537955">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-416259395">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1553814197">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1875422677">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-980155633">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="155059089">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1298975847">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="2117677831">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="573320712">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-293196138">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1428889246">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1719591424">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="904697723">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-112814107">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1122740205">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1908299917">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-605882793">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="390657737">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1394227519">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1615840863">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="847336290">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-30714884">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1166435316">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1993579670">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-594595250">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="270873296">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="993468233">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-140697641">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1278226399">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2137379007">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1854954755">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1573233251">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="140964679">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-993201191">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="2137113553">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1278491825">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-519743886">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="766465772">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1778227484">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1520985722">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="252393310">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1012844608">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="2014054344">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1264187562">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1615582513">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1394485841">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-9198806">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="869901236">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-2005625924">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1155437346">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="293454342">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-573062504">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1719333520">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1429147122">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-132225229">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="884238253">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1894164571">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1135826747">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="370148895">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-625342847">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1628911241">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1380108777">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-240637160">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1023552390">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-731975447">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="418705527">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="978358725">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-151350949">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1297588563">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2114084403">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-751618832">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="530134126">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1540094874">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1755186424">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1027429852">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-241740478">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1245341002">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2037357100">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-628786981">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="372209733">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1383970739">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1630030035">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-851066456">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="32489782">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1170017986">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1994977696">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="592158852">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-270426086">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1414303762">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1729720180">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-903346767">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="109184303">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1120979673">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1904555449">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="606495901">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-393452541">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1394693131">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1618258795">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1013036646">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="255084804">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1265010420">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="2016639378">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-184326151">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="967403367">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1812608579">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1600112931">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="453838549">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-676919733">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-2056678538">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1237554152">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-227630112">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1053074302">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1801974362">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1479675196">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="476103372">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-792018350">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1931485347">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1081466819">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-69668917">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="930279253">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1692441042">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="1471506096">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-333949256">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="548558374">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1964050178">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1178925156">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1581012161">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1835641761">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="691758167">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-443456311">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1067925150">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="217235964">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1498517720">
+      <UnitConfigName type="string">Obj_RingParachute_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1778675642">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+  </MiniGame_ParasailRide_ActerGenerateFlag>
+  <MiniGame_SmashGolf_Activated type="array">
+    <value HashId="-543905987">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="915552183">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+  </MiniGame_SmashGolf_Activated>
+  <MiniGame_TimeLimitHunting_AnimalGenerateFlag type="array">
+    <value HashId="401053659">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="1998593598">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="2567848">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="-1725006062">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="-299282556">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="1884150311">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="122350257">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="-1586964157">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="1208712310">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="-788386356">
+      <UnitConfigName type="string">Animal_Deer_C</UnitConfigName>
+    </value>
+    <value HashId="-1509614246">
+      <UnitConfigName type="string">Animal_Boar_C</UnitConfigName>
+    </value>
+    <value HashId="918159563">
+      <UnitConfigName type="string">Animal_Boar_C</UnitConfigName>
+    </value>
+    <value HashId="1451067694">
+      <UnitConfigName type="string">Animal_Boar_C</UnitConfigName>
+    </value>
+  </MiniGame_TimeLimitHunting_AnimalGenerateFlag>
+  <OneHundred_Activated type="array">
+    <value HashId="1868231484">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="519112489">
+      <UnitConfigName type="string">NPC_oasis004_fr02</UnitConfigName>
+    </value>
+    <value HashId="-261928830">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="1446344031">
+      <UnitConfigName type="string">TBox_Field_Wood</UnitConfigName>
+    </value>
+    <value HashId="48957650">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-1990373530">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-1191493797">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-948978341">
+      <UnitConfigName type="string">NPC_oasis004_fr01</UnitConfigName>
+    </value>
+    <value HashId="-986817810">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-1181704482">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-334602752">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-664535065">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-1778534180">
+      <UnitConfigName type="string">TBox_Field_Wood</UnitConfigName>
+    </value>
+    <value HashId="1443097011">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="374760175">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-1323450895">
+      <UnitConfigName type="string">NPC_oasis004_fr04</UnitConfigName>
+    </value>
+    <value HashId="547171185">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-1724282732">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="983496084">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="463979688">
+      <UnitConfigName type="string">BarrelBomb2</UnitConfigName>
+    </value>
+    <value HashId="-1352388309">
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="-1871770044">
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="-277210436">
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="-1404592888">
+      <UnitConfigName type="string">BarrelBomb2</UnitConfigName>
+    </value>
+    <value HashId="-462202723">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-1221539337">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-623203311">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="1551356620">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-2029768359">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="1408741481">
+      <UnitConfigName type="string">NPC_oasis004_fr03</UnitConfigName>
+    </value>
+    <value HashId="-1870705708">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="714828466">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-1464344775">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="-2035334494">
+      <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+  </OneHundred_Activated>
+  <Premium_Shield_1 type="array" />
+  <Premium_Shield_2 type="array" />
+  <Premium_Shield_3 type="array" />
+  <Premium_Shield_4 type="array" />
+  <Premium_Shield_5 type="array" />
+  <Premium_Shield_6 type="array" />
+  <Premium_Shield_7 type="array" />
+  <Premium_Shield_8 type="array" />
+  <Premium_Shield_9 type="array" />
+  <RemainsElectric_1st type="array">
+    <value HashId="40299661">
+      <UnitConfigName type="string">RemainsElectric</UnitConfigName>
+    </value>
+    <value HashId="926710780">
+      <UnitConfigName type="string">RemainsElectric_Far</UnitConfigName>
+    </value>
+  </RemainsElectric_1st>
+  <RemainsElectric_2nd type="array">
+    <value HashId="1572104810">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1154072935">
+      <UnitConfigName type="string">RemainsElectric</UnitConfigName>
+    </value>
+    <value HashId="546781154">
+      <UnitConfigName type="string">RemainsElectric_Far</UnitConfigName>
+    </value>
+  </RemainsElectric_2nd>
+  <SunazarashiRace_1st_Demo330_0 type="array">
+    <value HashId="1518521854">
+      <UnitConfigName type="string">Npc_oasis023</UnitConfigName>
+    </value>
+    <value HashId="2012009789">
+      <UnitConfigName type="string">Npc_oasis020</UnitConfigName>
+    </value>
+    <value HashId="-1392219163">
+      <UnitConfigName type="string">NPC_oasis067</UnitConfigName>
+    </value>
+    <value HashId="1818259714">
+      <UnitConfigName type="string">NPC_oasis068</UnitConfigName>
+    </value>
+    <value HashId="1618768198">
+      <UnitConfigName type="string">NPC_oasis064</UnitConfigName>
+    </value>
+    <value HashId="1580117133">
+      <UnitConfigName type="string">NPC_oasis062</UnitConfigName>
+    </value>
+  </SunazarashiRace_1st_Demo330_0>
+  <SunazarashiRace_Demo330_1 type="array">
+    <value HashId="-1902559579">
+      <UnitConfigName type="string">NPC_oasis069</UnitConfigName>
+    </value>
+    <value HashId="-606291985">
+      <UnitConfigName type="string">NPC_oasis065</UnitConfigName>
+    </value>
+    <value HashId="-1855363570">
+      <UnitConfigName type="string">NPC_oasis064</UnitConfigName>
+    </value>
+    <value HashId="-1035453877">
+      <UnitConfigName type="string">NPC_oasis063</UnitConfigName>
+    </value>
+    <value HashId="1698111903">
+      <UnitConfigName type="string">NPC_oasis062</UnitConfigName>
+    </value>
+    <value HashId="-1980225466">
+      <UnitConfigName type="string">NPC_oasis061</UnitConfigName>
+    </value>
+    <value HashId="1475516927">
+      <UnitConfigName type="string">NPC_oasis070</UnitConfigName>
+    </value>
+  </SunazarashiRace_Demo330_1>
+  <SunazarashiRace_Field1 type="array">
+    <value HashId="205547415">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="666887012">
+      <UnitConfigName type="string">FldObj_CheckPointGate</UnitConfigName>
+    </value>
+    <value HashId="1076363371">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-947088974">
+      <UnitConfigName type="string">FldObj_CheckPointGate</UnitConfigName>
+    </value>
+    <value HashId="1447981904">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="323909118">
+      <UnitConfigName type="string">FldObj_CheckPointGate</UnitConfigName>
+    </value>
+    <value HashId="468103517">
+      <UnitConfigName type="string">Animal_SunazarashiSP_A</UnitConfigName>
+    </value>
+    <value HashId="522472022">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-231022164">
+      <UnitConfigName type="string">FldObj_CheckPointGate</UnitConfigName>
+    </value>
+    <value HashId="-55801702">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="984364043">
+      <UnitConfigName type="string">FldObj_GoalGate</UnitConfigName>
+    </value>
+    <value HashId="-243964351">
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="634299442">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1098842278">
+      <UnitConfigName type="string">FldObj_CheckPointGate</UnitConfigName>
+    </value>
+    <value HashId="-1674203393">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1288820768">
+      <UnitConfigName type="string">FldObj_CheckPointGate</UnitConfigName>
+    </value>
+    <value HashId="87773988">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-2031256263">
+      <UnitConfigName type="string">FldObj_FallingRock_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2117365063">
+      <UnitConfigName type="string">FldObj_FallingRock_A_01</UnitConfigName>
+    </value>
+    <value HashId="-157282940">
+      <UnitConfigName type="string">FldObj_FallingRock_A_03</UnitConfigName>
+    </value>
+    <value HashId="1086438644">
+      <UnitConfigName type="string">FldObj_FallingRock_A_01</UnitConfigName>
+    </value>
+    <value HashId="-31486377">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1720988029">
+      <UnitConfigName type="string">FldObj_FallingRock_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1724246561">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1287584646">
+      <UnitConfigName type="string">FldObj_CheckPointGate</UnitConfigName>
+    </value>
+  </SunazarashiRace_Field1>
+  <SunazarashiRace_Step3 type="array">
+    <value HashId="-1662934919">
+      <UnitConfigName type="string">FldObj_ChampionshipBall_01</UnitConfigName>
+    </value>
+  </SunazarashiRace_Step3>
+  <Wind_Relic_Parashawl_Fail_AreaInAppear type="array">
+    <value HashId="417188827">
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+  </Wind_Relic_Parashawl_Fail_AreaInAppear>
+  <Wind_Relic_TargetONOFF type="array">
+    <value HashId="-398268542">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="1900787256">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="105678510">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1762419905">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-504058967">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="1756839764">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-239178002">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="1876622157">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2116773279">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="292259824">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="111885955">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="1907101205">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1616744647">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="29817498">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-252707516">
+      <UnitConfigName type="string">TwnObj_FlightTraningTarget_A_01</UnitConfigName>
+    </value>
+  </Wind_Relic_TargetONOFF>
+</yaml>

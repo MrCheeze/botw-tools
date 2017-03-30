@@ -35,17 +35,4 @@ def parseProd(data):
     return objects
 
 
-if __name__ == "__main__":
-    objects = {}
-    for filename in os.listdir('clustering'):
-        f=open('clustering/'+filename,'rb')
-        data = f.read()
-        f.close()
-        chunk_objects = parseProd(data)
-        for object_type in chunk_objects:
-            if object_type not in objects:
-                objects[object_type] = []
-            objects[object_type] += chunk_objects[object_type]
-    f2=open('cluster_objs.json','w')
-    json.dump(objects, f2, sort_keys=True)
-    f2.close()
+

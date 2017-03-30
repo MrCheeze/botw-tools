@@ -1,0 +1,1316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="29577249" SRTHash="-567510222">
+      <Translate type="array">
+        <value>-3745.406f</value>
+        <value>146.3413f</value>
+        <value>3599.865f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="83665939" SRTHash="86552305">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-0.09999999f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3674.826f</value>
+        <value>123.4488f</value>
+        <value>3579.053f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="108657362" SRTHash="2010946339" Scale="1.22439f">
+      <Rotate type="array">
+        <value>3.066603f</value>
+        <value>-0.356719f</value>
+        <value>-3.072433f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3765.65f</value>
+        <value>125.651f</value>
+        <value>3389.262f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="123782689" Rotate="-0.5768144f" SRTHash="1337572783">
+      <Translate type="array">
+        <value>-3741.682f</value>
+        <value>144.9924f</value>
+        <value>3631.7f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="184713871" SRTHash="-828270576">
+      <_Parameters SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Gerudo</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.00400062f</value>
+        <value>-0.01046962f</value>
+        <value>0.1498676f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3749.543f</value>
+        <value>151.0709f</value>
+        <value>3599.689f</value>
+      </Translate>
+      <UnitConfigName type="string">KibakoDesert_Contain_01</UnitConfigName>
+    </value>
+    <value HashId="195121924" SRTHash="-1489987056" Scale="35f">
+      <_Parameters IsStopWithoutReductionY="false" SpotBgmLifeScaleMargin="0f">
+        <Shape type="string">Sphere</Shape>
+        <Sound type="string">ObservationPostBgm</Sound>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3430f</value>
+        <value>175f</value>
+        <value>3130f</value>
+      </Translate>
+      <UnitConfigName type="string">SpotBgmTag</UnitConfigName>
+    </value>
+    <value HashId="221859876" Rotate="-0.136814f" SRTHash="1316759926">
+      <Translate type="array">
+        <value>-3831.688f</value>
+        <value>118.5512f</value>
+        <value>3586.785f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="249226348" SRTHash="-819120191">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0" StartNoDraw="false">
+        <DropActor type="string">Obj_BombArrow_A_03</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.02714937f</value>
+        <value>0.6726794f</value>
+        <value>0.1107198f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3751.359f</value>
+        <value>150.6079f</value>
+        <value>3602.25f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="302078917" Rotate="-2.859999f" SRTHash="1312608018">
+      <Translate type="array">
+        <value>-3431.205f</value>
+        <value>156.6503f</value>
+        <value>3100.372f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="342209271" Rotate="-2.483186f" SRTHash="-1667387380">
+      <Translate type="array">
+        <value>-3773.245f</value>
+        <value>154.808f</value>
+        <value>3131.638f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_A_01</UnitConfigName>
+    </value>
+    <value HashId="349009063" SRTHash="-412759732" Scale="40f">
+      <_Parameters IsStopWithoutReductionY="false" SpotBgmLifeScaleMargin="0f">
+        <Shape type="string">Sphere</Shape>
+        <Sound type="string">CmnWildBgm</Sound>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3792f</value>
+        <value>162f</value>
+        <value>3124f</value>
+      </Translate>
+      <UnitConfigName type="string">SpotBgmTag</UnitConfigName>
+    </value>
+    <value HashId="377773507" Rotate="-2.96f" SRTHash="-1542178127">
+      <Translate type="array">
+        <value>-3652.444f</value>
+        <value>139.3911f</value>
+        <value>3617.111f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_12</UnitConfigName>
+    </value>
+    <value HashId="380827232" Rotate="0.1384077f" SRTHash="679366394">
+      <Translate type="array">
+        <value>-3710.693f</value>
+        <value>145.5087f</value>
+        <value>3635.985f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="417128596" SRTHash="-1995991223">
+      <Rotate type="array">
+        <value>0.8799996f</value>
+        <value>0.5399971f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3034.27f</value>
+        <value>177.2569f</value>
+        <value>3762.65f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="462276861" SRTHash="786725735">
+      <_Parameters SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Gerudo</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.01854018f</value>
+        <value>0.6027603f</value>
+        <value>0.04268963f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3752.514f</value>
+        <value>150.5068f</value>
+        <value>3600.803f</value>
+      </Translate>
+      <UnitConfigName type="string">KibakoDesert_Contain_01</UnitConfigName>
+    </value>
+    <value HashId="579736494" SRTHash="654550519">
+      <Rotate type="array">
+        <value>0.4600001f</value>
+        <value>0.5399971f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3034.56f</value>
+        <value>178.0357f</value>
+        <value>3747.713f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="594104148" SRTHash="1859966197">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.01720541f</value>
+        <value>-0.001800991f</value>
+        <value>-0.02809213f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3749.733f</value>
+        <value>150.7959f</value>
+        <value>3607.097f</value>
+      </Translate>
+      <UnitConfigName type="string">Pot</UnitConfigName>
+    </value>
+    <value HashId="657299693" Rotate="2.899999f" SRTHash="1257705575">
+      <Translate type="array">
+        <value>-3038.414f</value>
+        <value>177.6102f</value>
+        <value>3749.271f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="673122750" Rotate="-0.1568143f" SRTHash="-1787070983">
+      <Translate type="array">
+        <value>-3674.181f</value>
+        <value>128.0254f</value>
+        <value>3702.259f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_11</UnitConfigName>
+    </value>
+    <value HashId="683968680" SRTHash="-1721177570">
+      <Rotate type="array">
+        <value>-1.16f</value>
+        <value>0.5399971f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3027.241f</value>
+        <value>179.2233f</value>
+        <value>3758.593f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="690378690" Rotate="-0.8600001f" SRTHash="1219300163">
+      <Translate type="array">
+        <value>-3410.154f</value>
+        <value>154.119f</value>
+        <value>3101.258f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_30</UnitConfigName>
+    </value>
+    <value HashId="713771261" SRTHash="-2038178002">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3835.042f</value>
+        <value>2000f</value>
+        <value>3593.625f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ElectricArrow_A_01</UnitConfigName>
+    </value>
+    <value HashId="746185880" Rotate="1.64f" SRTHash="-767193400">
+      <Translate type="array">
+        <value>-3770.668f</value>
+        <value>154.7922f</value>
+        <value>3127.773f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_A_01</UnitConfigName>
+    </value>
+    <value HashId="789363981" Rotate="-2.063186f" SRTHash="-1368129345">
+      <Translate type="array">
+        <value>-3823.415f</value>
+        <value>157.4917f</value>
+        <value>3136.287f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_A_01</UnitConfigName>
+    </value>
+    <value HashId="826222399" SRTHash="1428260405">
+      <Translate type="array">
+        <value>-3636.246f</value>
+        <value>119.6842f</value>
+        <value>3663.213f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="867574630" SRTHash="-1376903574" Scale="1.086238f">
+      <Rotate type="array">
+        <value>0.07999997f</value>
+        <value>4.279912E-09f</value>
+        <value>1.58512E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3737.241f</value>
+        <value>120.074f</value>
+        <value>3489.398f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_08</UnitConfigName>
+    </value>
+    <value HashId="888716994" Rotate="0.6828613f" SRTHash="-315980738">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3700.309f</value>
+        <value>125.1155f</value>
+        <value>3662.199f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="903701968" SRTHash="-10471258">
+      <Rotate type="array">
+        <value>-2.329077f</value>
+        <value>-0.07740459f</value>
+        <value>2.981108f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3028.967f</value>
+        <value>179.0603f</value>
+        <value>3760.802f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="931551683" Rotate="-2.146371f" SRTHash="-1914095648">
+      <Translate type="array">
+        <value>-3798.157f</value>
+        <value>157.4153f</value>
+        <value>3136.453f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_A_01</UnitConfigName>
+    </value>
+    <value HashId="937703032" Rotate="0.5399978f" SRTHash="-1808949682">
+      <Translate type="array">
+        <value>-3040.649f</value>
+        <value>176.0046f</value>
+        <value>3759.146f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="942881451" Rotate="0.6599998f" SRTHash="586018160">
+      <Translate type="array">
+        <value>-3764.907f</value>
+        <value>154.7902f</value>
+        <value>3127.125f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_A_01</UnitConfigName>
+    </value>
+    <value HashId="953872600" SRTHash="152899731">
+      <Rotate type="array">
+        <value>3.101593f</value>
+        <value>0.4752222f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3711.03f</value>
+        <value>145.0942f</value>
+        <value>3615.133f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="958558798" Rotate="0.2231851f" SRTHash="-465006950">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3775.179f</value>
+        <value>154.8453f</value>
+        <value>3129.587f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalm_A_01</UnitConfigName>
+    </value>
+    <value HashId="980318225" SRTHash="-1220103960" Scale="1.226815f">
+      <Rotate type="array">
+        <value>-2.149971f</value>
+        <value>-1.333162f</value>
+        <value>2.136988f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3767.838f</value>
+        <value>123.2999f</value>
+        <value>3541.685f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_08</UnitConfigName>
+    </value>
+    <value HashId="992309119" Rotate="-2.28f" SRTHash="467137886" Scale="1.086238f">
+      <Translate type="array">
+        <value>-3804.376f</value>
+        <value>114.2989f</value>
+        <value>3700.236f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_08</UnitConfigName>
+    </value>
+    <value HashId="1054690226" SRTHash="-692752502">
+      <Rotate type="array">
+        <value>0.58f</value>
+        <value>0.5399971f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3038.428f</value>
+        <value>175.9731f</value>
+        <value>3761.356f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1067529097" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.567627f</value>
+        <value>-0.3435058f</value>
+        <value>2.599243f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3042.582f</value>
+        <value>165.7031f</value>
+        <value>3735.066f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1094900229" Rotate="-2.883186f" SRTHash="-356839683">
+      <Translate type="array">
+        <value>-3037.228f</value>
+        <value>177.8557f</value>
+        <value>3748.469f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1174597661" Rotate="-0.01999979f" SRTHash="-811279300">
+      <Translate type="array">
+        <value>-3537.431f</value>
+        <value>134.6521f</value>
+        <value>3003.922f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_32</UnitConfigName>
+    </value>
+    <value HashId="1177058496" SRTHash="-248774658">
+      <Rotate type="array">
+        <value>-0.02633557f</value>
+        <value>0.317353f</value>
+        <value>-0.08421449f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3699.755f</value>
+        <value>144.5674f</value>
+        <value>3648.023f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="1225475951" SRTHash="-448930298">
+      <Rotate type="array">
+        <value>-2.461593f</value>
+        <value>-0.2584072f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3027.578f</value>
+        <value>178.6532f</value>
+        <value>3751.054f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1228163379" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.564819f</value>
+        <value>-1.101074f</value>
+        <value>-0.5329589f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3172.66f</value>
+        <value>145.5859f</value>
+        <value>3003.172f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1247071952" Rotate="2.7f" SRTHash="-1232389223">
+      <Translate type="array">
+        <value>-3437.633f</value>
+        <value>156.6005f</value>
+        <value>3155.661f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="1256717474" SRTHash="-795030054">
+      <Rotate type="array">
+        <value>0.06837835f</value>
+        <value>0.6782193f</value>
+        <value>0.06688423f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3764.407f</value>
+        <value>116.5074f</value>
+        <value>3696.242f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="1257387166" SRTHash="-672255071">
+      <Rotate type="array">
+        <value>-0.2107465f</value>
+        <value>0.03569552f</value>
+        <value>-0.2456166f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3788.145f</value>
+        <value>128.2411f</value>
+        <value>3329.87f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_30</UnitConfigName>
+    </value>
+    <value HashId="1291253784" SRTHash="190909605">
+      <Rotate type="array">
+        <value>-0.2f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3702.651f</value>
+        <value>122.052f</value>
+        <value>3423.69f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_08</UnitConfigName>
+    </value>
+    <value HashId="1302776935" SRTHash="127161847">
+      <Rotate type="array">
+        <value>0.8f</value>
+        <value>0.5399971f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3040.155f</value>
+        <value>177.1101f</value>
+        <value>3751.698f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1345684848" SRTHash="262606901">
+      <Rotate type="array">
+        <value>0.54f</value>
+        <value>0.5399971f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3035.882f</value>
+        <value>177.95f</value>
+        <value>3747.905f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1359384251" Rotate="2.343185f" SRTHash="564953958">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3761.312f</value>
+        <value>154.8169f</value>
+        <value>3121.426f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalm_A_01</UnitConfigName>
+    </value>
+    <value HashId="1417305855" OnlyOne="true" SRTHash="1937659315">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3431.8f</value>
+        <value>200.9438f</value>
+        <value>3126.801f</value>
+      </Translate>
+      <UnitConfigName type="string">TwnObj_ArtifactObservationPostWindmill_A_01</UnitConfigName>
+    </value>
+    <value HashId="1453417441" Rotate="1.299999f" SRTHash="300422616">
+      <Translate type="array">
+        <value>-3026.632f</value>
+        <value>179.0483f</value>
+        <value>3755.653f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1453625084" SRTHash="957743211">
+      <Rotate type="array">
+        <value>-2.461593f</value>
+        <value>-0.2584072f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3028.335f</value>
+        <value>178.5813f</value>
+        <value>3750.054f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1464093894" SRTHash="1159137305">
+      <Rotate type="array">
+        <value>-3.082018f</value>
+        <value>0.3162153f</value>
+        <value>-2.952091f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3039.691f</value>
+        <value>175.9583f</value>
+        <value>3760.285f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1492265921" SRTHash="852129607">
+      <Rotate type="array">
+        <value>-2.461593f</value>
+        <value>-0.2584072f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3030.504f</value>
+        <value>178.3564f</value>
+        <value>3748.504f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1568351181" SRTHash="1493097362">
+      <Rotate type="array">
+        <value>-3.069407f</value>
+        <value>-0.4757054f</value>
+        <value>0.2185858f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3461.885f</value>
+        <value>141.9756f</value>
+        <value>3019.007f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_30</UnitConfigName>
+    </value>
+    <value HashId="1585346206" Rotate="-2.141592f" SRTHash="1639797020">
+      <Translate type="array">
+        <value>-3702.995f</value>
+        <value>144.8364f</value>
+        <value>3629.767f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="1612541959" Rotate="-1.02f" SRTHash="-1002482070">
+      <Translate type="array">
+        <value>-3846.633f</value>
+        <value>116.2848f</value>
+        <value>3653.337f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="1627326426" Rotate="-0.1568143f" SRTHash="1263200413">
+      <Translate type="array">
+        <value>-3674.181f</value>
+        <value>136.3975f</value>
+        <value>3702.259f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_12</UnitConfigName>
+    </value>
+    <value HashId="1657297109" Rotate="-2.883186f" SRTHash="51862022">
+      <Translate type="array">
+        <value>-3031.372f</value>
+        <value>178.3818f</value>
+        <value>3762.325f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1690568554" SRTHash="-744142308">
+      <Rotate type="array">
+        <value>0.1553591f</value>
+        <value>0.6670735f</value>
+        <value>0.1526947f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3807.862f</value>
+        <value>120.2377f</value>
+        <value>3611.504f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="1834782295" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.9772949f</value>
+        <value>-0.2254639f</value>
+        <value>0.05310058f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3731.879f</value>
+        <value>149.8711f</value>
+        <value>3654.328f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="1850692058" Rotate="3.12f" SRTHash="-196346286">
+      <Translate type="array">
+        <value>-3026.909f</value>
+        <value>179.1265f</value>
+        <value>3757.158f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1856052798" SRTHash="575928040">
+      <Rotate type="array">
+        <value>3.139389f</value>
+        <value>-0.0182751f</value>
+        <value>-3.021572f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3825.871f</value>
+        <value>121.6518f</value>
+        <value>3589.191f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="1884547388" SRTHash="1151411267">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-1.289184f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3070.492f</value>
+        <value>146.5608f</value>
+        <value>3792.336f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="1896645740" SRTHash="1470851812">
+      <Translate type="array">
+        <value>-3462.426f</value>
+        <value>139.0052f</value>
+        <value>3013.365f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="1950963848" Rotate="3.12f" SRTHash="-628099019">
+      <Translate type="array">
+        <value>-3026.638f</value>
+        <value>178.9373f</value>
+        <value>3754.133f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1981578479" Rotate="1.299999f" SRTHash="125791609">
+      <Translate type="array">
+        <value>-3040.664f</value>
+        <value>176.9074f</value>
+        <value>3752.998f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="1999356160" Rotate="-2.624777f" SRTHash="-138120758">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Bow_015</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3432.911f</value>
+        <value>161.1246f</value>
+        <value>3131.577f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
+    </value>
+    <value HashId="2105508765" Rotate="-0.136814f" SRTHash="344501421">
+      <Translate type="array">
+        <value>-3831.688f</value>
+        <value>135.8439f</value>
+        <value>3586.785f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_12</UnitConfigName>
+    </value>
+    <value HashId="-1999765439" SRTHash="360513183">
+      <Rotate type="array">
+        <value>-3.001593f</value>
+        <value>1.421593f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3029.938f</value>
+        <value>178.8142f</value>
+        <value>3761.851f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1967915327" SRTHash="956086594">
+      <_Parameters InitBurnState="false" InitMotionStatus="0" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3747.684f</value>
+        <value>150.8055f</value>
+        <value>3607.149f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_CookSet</UnitConfigName>
+    </value>
+    <value HashId="-1961630972" Rotate="0.5399978f" SRTHash="935771387">
+      <Translate type="array">
+        <value>-3029.299f</value>
+        <value>178.4813f</value>
+        <value>3749.264f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1955188007" Rotate="-0.8000003f" SRTHash="-567765964">
+      <Translate type="array">
+        <value>-3463.404f</value>
+        <value>156.4815f</value>
+        <value>3131.914f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="-1861455463" OnlyOne="true" Rotate="-2.621586f" SRTHash="1469427122">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3434.248f</value>
+        <value>161.1441f</value>
+        <value>3126f</value>
+      </Translate>
+      <UnitConfigName type="string">TwnObj_ArtifactObservationPostDoor_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1858691141" Rotate="-0.4020996f" SRTHash="-977919251">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3705.027f</value>
+        <value>150.7593f</value>
+        <value>3636.906f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_H</UnitConfigName>
+    </value>
+    <value HashId="-1848976034" SRTHash="1239261908">
+      <Rotate type="array">
+        <value>3.108166f</value>
+        <value>-0.2958452f</value>
+        <value>-3.098178f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3033.139f</value>
+        <value>178.127f</value>
+        <value>3747.694f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1827061345" Rotate="0.6399999f" SRTHash="1095090877">
+      <Translate type="array">
+        <value>-3678.739f</value>
+        <value>117.4416f</value>
+        <value>3706.959f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-1752988549" Rotate="-2.96f" SRTHash="-143578178">
+      <Translate type="array">
+        <value>-3652.444f</value>
+        <value>122.0985f</value>
+        <value>3617.111f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="-1718189361" Rotate="-2.683185f" SRTHash="149152395">
+      <Translate type="array">
+        <value>-3838.636f</value>
+        <value>157.5091f</value>
+        <value>3131.779f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1658654751" SRTHash="-1624027268">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>0.4365234f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3711.094f</value>
+        <value>122.1156f</value>
+        <value>3682.109f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_L</UnitConfigName>
+    </value>
+    <value HashId="-1621671385" SRTHash="-1727330269">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.07309055f</value>
+        <value>-0.001022447f</value>
+        <value>-0.0182694f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3748.677f</value>
+        <value>150.9451f</value>
+        <value>3608.717f</value>
+      </Translate>
+      <UnitConfigName type="string">Pot</UnitConfigName>
+    </value>
+    <value HashId="-1548947978" SRTHash="1322870987">
+      <Rotate type="array">
+        <value>3.042269f</value>
+        <value>-1.224556f</value>
+        <value>-2.996832f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3757.108f</value>
+        <value>143.7296f</value>
+        <value>3600.407f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-1533781805" SRTHash="-1392934995">
+      <_Parameters EnableNoEntryAreaCheck="true" ForbidSystemDeleteDistance="false" IsLocatorCreate="false" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3187.228f</value>
+        <value>125.446f</value>
+        <value>3469.803f</value>
+      </Translate>
+      <UnitConfigName type="string">Animal_Sunazarashi_A</UnitConfigName>
+    </value>
+    <value HashId="-1504266667" Rotate="3.135555f" SRTHash="-1109085874">
+      <_Parameters IsMimicry="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3748f</value>
+        <value>125.8862f</value>
+        <value>3561f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Octarock_Desert</UnitConfigName>
+    </value>
+    <value HashId="-1500508579" Rotate="-0.1568143f" SRTHash="967619232">
+      <Translate type="array">
+        <value>-3672.67f</value>
+        <value>141.4582f</value>
+        <value>3702.411f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_13</UnitConfigName>
+    </value>
+    <value HashId="-1484930090" SRTHash="531285806">
+      <Rotate type="array">
+        <value>-2.601593f</value>
+        <value>0.2415933f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3032.806f</value>
+        <value>177.8769f</value>
+        <value>3762.711f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1467640180" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.685669f</value>
+        <value>0.2260742f</value>
+        <value>-0.2614746f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3014.738f</value>
+        <value>171.0195f</value>
+        <value>3778.191f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-1462561587" Rotate="0.5399978f" SRTHash="-1458434490">
+      <Translate type="array">
+        <value>-3028.095f</value>
+        <value>179.1453f</value>
+        <value>3759.749f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1419540179" SRTHash="-1953810339">
+      <Rotate type="array">
+        <value>0.5800002f</value>
+        <value>1.299999f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3041.262f</value>
+        <value>176.4457f</value>
+        <value>3756.095f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1394259422" Rotate="-0.136814f" SRTHash="-1020587391">
+      <Translate type="array">
+        <value>-3831.688f</value>
+        <value>127.4717f</value>
+        <value>3586.785f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_11</UnitConfigName>
+    </value>
+    <value HashId="-1390273931" Rotate="0.5399978f" SRTHash="-745220518">
+      <Translate type="array">
+        <value>-3031.813f</value>
+        <value>178.2238f</value>
+        <value>3748.205f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1374111299" Rotate="-2.72f" SRTHash="920972120">
+      <Translate type="array">
+        <value>-3745.908f</value>
+        <value>145.7502f</value>
+        <value>3606.582f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-1290212757" Rotate="0.7968144f" SRTHash="829742957">
+      <Translate type="array">
+        <value>-3821.922f</value>
+        <value>157.4164f</value>
+        <value>3115.031f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalmMini_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1223527955" SRTHash="203555416">
+      <Rotate type="array">
+        <value>-3.141592f</value>
+        <value>0.4384071f</value>
+        <value>-2.681593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3450.979f</value>
+        <value>155.2652f</value>
+        <value>3104.623f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="-1114224899" SRTHash="-777220924">
+      <Translate type="array">
+        <value>-3508.592f</value>
+        <value>135.4554f</value>
+        <value>3028.235f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="-1096882003" Rotate="-2.96f" SRTHash="2080643914">
+      <Translate type="array">
+        <value>-3652.444f</value>
+        <value>131.019f</value>
+        <value>3617.111f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_11</UnitConfigName>
+    </value>
+    <value HashId="-1059565761" Rotate="1.663186f" SRTHash="-1727293514">
+      <Translate type="array">
+        <value>-3534.513f</value>
+        <value>131.9555f</value>
+        <value>3003.869f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_11</UnitConfigName>
+    </value>
+    <value HashId="-1020470143" SRTHash="798443312" Scale="1.22439f">
+      <Rotate type="array">
+        <value>3.107595f</value>
+        <value>0.6422381f</value>
+        <value>-2.704955f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3739.116f</value>
+        <value>126.9917f</value>
+        <value>3366.144f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="-903531073" Rotate="-2.621586f" SRTHash="437674792">
+      <Translate type="array">
+        <value>-3433.369f</value>
+        <value>163.6416f</value>
+        <value>3133.745f</value>
+      </Translate>
+      <UnitConfigName type="string">TwnObj_Gerudo_Light_A_01</UnitConfigName>
+    </value>
+    <value HashId="-745314235" SRTHash="-472327237">
+      <_Parameters EnableNoEntryAreaCheck="true" ForbidSystemDeleteDistance="false" IsLocatorCreate="false" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3121.227f</value>
+        <value>119.2209f</value>
+        <value>3463.302f</value>
+      </Translate>
+      <UnitConfigName type="string">Animal_Sunazarashi_A</UnitConfigName>
+    </value>
+    <value HashId="-719034220" Rotate="-2.764778f" SRTHash="-103034825">
+      <Translate type="array">
+        <value>-3747.033f</value>
+        <value>144.5623f</value>
+        <value>3627.491f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-647447065" SRTHash="924574453">
+      <Translate type="array">
+        <value>-3422.483f</value>
+        <value>157.0461f</value>
+        <value>3149.124f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_32</UnitConfigName>
+    </value>
+    <value HashId="-640285935" Rotate="2.779999f" SRTHash="1875502686">
+      <Translate type="array">
+        <value>-3036.923f</value>
+        <value>176.3811f</value>
+        <value>3762.121f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-636028660" SRTHash="167855964">
+      <Translate type="array">
+        <value>-3803.229f</value>
+        <value>123.5769f</value>
+        <value>3561.162f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-635264154" Rotate="-1.481593f" SRTHash="1340140714">
+      <Translate type="array">
+        <value>-3752.607f</value>
+        <value>145.3256f</value>
+        <value>3600.333f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+    <value HashId="-620824507" SRTHash="-862350216">
+      <Rotate type="array">
+        <value>-3.001593f</value>
+        <value>1.421593f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3039.279f</value>
+        <value>177.3252f</value>
+        <value>3750.476f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-524139438" Rotate="2.779999f" SRTHash="-283648513">
+      <Translate type="array">
+        <value>-3041.148f</value>
+        <value>176.1852f</value>
+        <value>3757.706f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-504959097" Rotate="-0.2968146f" SRTHash="-287601210">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3832.083f</value>
+        <value>157.6081f</value>
+        <value>3136.174f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreePalm_A_01</UnitConfigName>
+    </value>
+    <value HashId="-497085623" Rotate="0.5399978f" SRTHash="-810637344">
+      <Translate type="array">
+        <value>-3035.599f</value>
+        <value>176.7647f</value>
+        <value>3762.561f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-474614376" SRTHash="-599153728" Scale="1.22439f">
+      <Rotate type="array">
+        <value>-0.0650052f</value>
+        <value>0.1953269f</value>
+        <value>-0.3254047f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3801.698f</value>
+        <value>124.8446f</value>
+        <value>3426.433f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="-460445055" SRTHash="959911564" Scale="1.205919f">
+      <Rotate type="array">
+        <value>1.856528f</value>
+        <value>-1.370648f</value>
+        <value>1.343361f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3729.055f</value>
+        <value>126.6907f</value>
+        <value>3545.196f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_30</UnitConfigName>
+    </value>
+    <value HashId="-457897696" Rotate="-0.1568143f" SRTHash="755835489">
+      <Translate type="array">
+        <value>-3674.181f</value>
+        <value>119.1049f</value>
+        <value>3702.259f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="-426264921" SRTHash="-265774365">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141479f</value>
+        <value>-0.1357422f</value>
+        <value>3.141479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3699.098f</value>
+        <value>150.5207f</value>
+        <value>3623.23f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_H</UnitConfigName>
+    </value>
+    <value HashId="-365539687" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.824829f</value>
+        <value>-0.2966308f</value>
+        <value>-0.3901367f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3718.637f</value>
+        <value>142.8242f</value>
+        <value>3660.129f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-345913620" SRTHash="-289744004">
+      <Translate type="array">
+        <value>-3034.873f</value>
+        <value>176.463f</value>
+        <value>3753.984f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_31</UnitConfigName>
+    </value>
+    <value HashId="-325381816" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.4490966f</value>
+        <value>-1.071899f</value>
+        <value>2.020752f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3768.32f</value>
+        <value>134.4648f</value>
+        <value>3587.164f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-276999419" Rotate="-0.5200004f" SRTHash="-1415251309">
+      <Translate type="array">
+        <value>-3396.238f</value>
+        <value>156.0109f</value>
+        <value>3140.102f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_32</UnitConfigName>
+    </value>
+    <value HashId="-174485714" Rotate="-0.4568144f" SRTHash="100574994">
+      <Translate type="array">
+        <value>-3628.042f</value>
+        <value>117.9113f</value>
+        <value>3661.097f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_10</UnitConfigName>
+    </value>
+    <value HashId="-94945974" Rotate="2.899999f" SRTHash="369042151">
+      <Translate type="array">
+        <value>-3041.047f</value>
+        <value>176.6778f</value>
+        <value>3754.514f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockGerudo_Korok_A_01</UnitConfigName>
+    </value>
+    <value HashId="-90056761" Rotate="-0.4568144f" SRTHash="-938926721">
+      <Translate type="array">
+        <value>-3628.042f</value>
+        <value>126.8318f</value>
+        <value>3661.097f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_11</UnitConfigName>
+    </value>
+    <value HashId="-75343726" SRTHash="2021338286">
+      <Rotate type="array">
+        <value>-0.2947364f</value>
+        <value>0.1669039f</value>
+        <value>0.2265237f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3445.777f</value>
+        <value>155.3192f</value>
+        <value>3093.268f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_32</UnitConfigName>
+    </value>
+    <value HashId="-72387446" Rotate="1.723185f" SRTHash="735443246">
+      <Translate type="array">
+        <value>-3703.925f</value>
+        <value>145.3364f</value>
+        <value>3621.715f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_GerudoDesertRock_A_05</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

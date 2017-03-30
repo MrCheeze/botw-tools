@@ -1,0 +1,2500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="121080775" SRTHash="-734950775" Scale="0.8f">
+      <Rotate type="array">
+        <value>-0.1105943f</value>
+        <value>-0.02075902f</value>
+        <value>-0.1507333f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-843.3196f</value>
+        <value>342.3106f</value>
+        <value>-3360.021f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="149985366" Rotate="-0.5800001f" SRTHash="-1648849174">
+      <Translate type="array">
+        <value>5.927277f</value>
+        <value>267.1883f</value>
+        <value>-3106.013f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="150169081" SRTHash="1633361295">
+      <Rotate type="array">
+        <value>-0.9665123f</value>
+        <value>-1.492303f</value>
+        <value>0.7756484f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-625.0063f</value>
+        <value>336.4897f</value>
+        <value>-3602.354f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="152534425" SRTHash="-1508565222">
+      <Rotate type="array">
+        <value>0.3307596f</value>
+        <value>0.8873741f</value>
+        <value>0.3704188f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-55.00159f</value>
+        <value>254.7524f</value>
+        <value>-3169.145f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="199491013" SRTHash="-826709117" Scale="150f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-401f</value>
+        <value>207.7825f</value>
+        <value>-3100.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="225641710" SRTHash="-164292040">
+      <Rotate type="array">
+        <value>0.1621327f</value>
+        <value>-0.6047499f</value>
+        <value>-0.1721949f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-764.105f</value>
+        <value>341.4669f</value>
+        <value>-3399.349f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="232808380" SRTHash="1159918149">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.828494E-09f</value>
+        <value>-1.450796f</value>
+        <value>0.9907916f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-754.1328f</value>
+        <value>340.6781f</value>
+        <value>-3536.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ArrowNormal_A_01</UnitConfigName>
+    </value>
+    <value HashId="254102307" SRTHash="0">
+      <Rotate type="array">
+        <value>0.08776856f</value>
+        <value>-1.009033f</value>
+        <value>0.3765869f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-88.67969f</value>
+        <value>247.7813f</value>
+        <value>-3145.406f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointInsectTemperate</UnitConfigName>
+    </value>
+    <value HashId="304950860" Rotate="0.7853982f" SRTHash="-2024080807">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="true" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0" />
+      <Translate type="array">
+        <value>-777.5f</value>
+        <value>365.0313f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Bow_035</UnitConfigName>
+    </value>
+    <value HashId="305750743" SRTHash="2017277907">
+      <Rotate type="array">
+        <value>0.4623678f</value>
+        <value>0.8567737f</value>
+        <value>0.5529392f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>49.41919f</value>
+        <value>273.4265f</value>
+        <value>-3219.995f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="319024649" SRTHash="423197961">
+      <Rotate type="array">
+        <value>-0.3973608f</value>
+        <value>0.164329f</value>
+        <value>0.4165092f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-222.4269f</value>
+        <value>202.0899f</value>
+        <value>-3182.333f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="342229154" SRTHash="469353052">
+      <Rotate type="array">
+        <value>0.2023735f</value>
+        <value>0.04494011f</value>
+        <value>-0.4356638f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-703.4835f</value>
+        <value>339.7022f</value>
+        <value>-3424.304f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="351084550" SRTHash="2046019780">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.231173f</value>
+        <value>0.5924646f</value>
+        <value>-0.4147908f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-745.2f</value>
+        <value>344.2359f</value>
+        <value>-3554.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Spear_008</UnitConfigName>
+    </value>
+    <value HashId="360929168" SRTHash="-1121079366">
+      <Translate type="array">
+        <value>-333.8389f</value>
+        <value>209.9429f</value>
+        <value>-3073.855f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="471308983" SRTHash="-1974665164">
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>5.276431E-08f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-778.8281f</value>
+        <value>373.9f</value>
+        <value>-3532.477f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="483249988" Rotate="-1.178407f" SRTHash="-2137180164">
+      <Translate type="array">
+        <value>-980.2164f</value>
+        <value>339.7679f</value>
+        <value>-3462.195f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="507546804" SRTHash="1278610798">
+      <Rotate type="array">
+        <value>-0.04387562f</value>
+        <value>0.5236067f</value>
+        <value>0.1890462f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-0.3744202f</value>
+        <value>261.6982f</value>
+        <value>-3161.16f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_A_02</UnitConfigName>
+    </value>
+    <value HashId="512455386" Rotate="-3.141593f" SRTHash="-1334845458">
+      <Translate type="array">
+        <value>-835.3203f</value>
+        <value>344.8672f</value>
+        <value>-3529.68f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="515433486" SRTHash="-1242155299">
+      <Rotate type="array">
+        <value>-0.404275f</value>
+        <value>-1.209358f</value>
+        <value>-0.1450387f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-30.01486f</value>
+        <value>195.3602f</value>
+        <value>-3361.751f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_05</UnitConfigName>
+    </value>
+    <value HashId="560078578" SRTHash="1099782133">
+      <Rotate type="array">
+        <value>-3.071233f</value>
+        <value>0.1335189f</value>
+        <value>3.137395f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-236.0068f</value>
+        <value>202.4855f</value>
+        <value>-3106.322f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RuinStatueDragon_A_04</UnitConfigName>
+    </value>
+    <value HashId="585614654" SRTHash="-816244746">
+      <Rotate type="array">
+        <value>-2.844515f</value>
+        <value>0.5204831f</value>
+        <value>-2.784705f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-155.7038f</value>
+        <value>231.0068f</value>
+        <value>-3106.399f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="599060572" SRTHash="670622254">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.8654963f</value>
+        <value>-0.01296656f</value>
+        <value>1.586024f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-752.1403f</value>
+        <value>340.0758f</value>
+        <value>-3532.62f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ArrowNormal_A_01</UnitConfigName>
+    </value>
+    <value HashId="634538918" Rotate="1.1f" SRTHash="-46454741">
+      <Translate type="array">
+        <value>-726.512f</value>
+        <value>342.8676f</value>
+        <value>-3409.673f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="696507855" SRTHash="-1610229875">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.07015097f</value>
+        <value>0.5443066f</value>
+        <value>-0.03636959f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-735f</value>
+        <value>340.4703f</value>
+        <value>-3506.336f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ArrowNormal_A_01</UnitConfigName>
+    </value>
+    <value HashId="724255579" Rotate="1.570796f" SRTHash="1467772014">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Item_Ore_A</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-825f</value>
+        <value>385f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
+    </value>
+    <value HashId="781029962" SRTHash="-681918874" Scale="0.85f">
+      <Rotate type="array">
+        <value>0.3913752f</value>
+        <value>1.36093f</value>
+        <value>0.4744123f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-88.32346f</value>
+        <value>199.0712f</value>
+        <value>-3279.699f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Plant_HopBush_B_01</UnitConfigName>
+    </value>
+    <value HashId="815609585" SRTHash="446195360">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">PutRupee_Silver</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-825f</value>
+        <value>345f</value>
+        <value>-3650f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
+    </value>
+    <value HashId="831067735" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.215698f</value>
+        <value>0.69458f</value>
+        <value>2.549438f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-973.2813f</value>
+        <value>362.4961f</value>
+        <value>-3387.016f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="834152523" SRTHash="-1475203420">
+      <Rotate type="array">
+        <value>-2.762133f</value>
+        <value>0.7477519f</value>
+        <value>-2.611191f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-319.1482f</value>
+        <value>257.9164f</value>
+        <value>-2990.273f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="852589893" SRTHash="1283339006">
+      <Translate type="array">
+        <value>-825.0156f</value>
+        <value>339.8595f</value>
+        <value>-3499.797f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="869560090" SRTHash="1642279664">
+      <Rotate type="array">
+        <value>-2.852274f</value>
+        <value>-0.701205f</value>
+        <value>2.673493f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-848.9338f</value>
+        <value>342.2178f</value>
+        <value>-3370.33f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="877767529" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.136963f</value>
+        <value>-1.168579f</value>
+        <value>2.94812f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-491.3516f</value>
+        <value>211.0781f</value>
+        <value>-3137.465f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="893619133" Rotate="1.570796f" SRTHash="-1475057181">
+      <Translate type="array">
+        <value>-829.6729f</value>
+        <value>344.8672f</value>
+        <value>-3645.311f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="905363409" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.9382324f</value>
+        <value>1.372558f</value>
+        <value>-0.4465332f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1014.246f</value>
+        <value>354.3281f</value>
+        <value>-3233.992f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="906470730" SRTHash="-1393137734">
+      <Translate type="array">
+        <value>-85.78119f</value>
+        <value>239.755f</value>
+        <value>-3148.241f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RuinStatueDragon_A_04</UnitConfigName>
+    </value>
+    <value HashId="911545134" SRTHash="-641382595">
+      <Rotate type="array">
+        <value>-0.2085927f</value>
+        <value>0.01793553f</value>
+        <value>0.1709311f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-85.09595f</value>
+        <value>199.8512f</value>
+        <value>-3274.587f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Plant_HopBush_B_01</UnitConfigName>
+    </value>
+    <value HashId="913030787" SRTHash="1971135271">
+      <Rotate type="array">
+        <value>0.1726566f</value>
+        <value>0.7653362f</value>
+        <value>0.05237434f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-169.0783f</value>
+        <value>200.0097f</value>
+        <value>-3259.939f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="937562397" SRTHash="-168039112" Scale="1.2f">
+      <Rotate type="array">
+        <value>-2.869967f</value>
+        <value>0.2675284f</value>
+        <value>-2.817188f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-966.7145f</value>
+        <value>333.9906f</value>
+        <value>-3593.332f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="965105967" SRTHash="-1394306631">
+      <Rotate type="array">
+        <value>0.08494934f</value>
+        <value>-0.01551673f</value>
+        <value>0.3611285f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-86.78781f</value>
+        <value>247.8866f</value>
+        <value>-3144.515f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="989257323" SRTHash="-784846440">
+      <Rotate type="array">
+        <value>-0.2288332f</value>
+        <value>-0.03858467f</value>
+        <value>-0.3326953f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-703.3323f</value>
+        <value>340.1634f</value>
+        <value>-3670.817f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="990938523" SRTHash="68867375">
+      <Rotate type="array">
+        <value>-2.184957f</value>
+        <value>-1.310947f</value>
+        <value>2.174551f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-991.4023f</value>
+        <value>338.6354f</value>
+        <value>-3504.884f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="998011909" SRTHash="1941780019">
+      <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="1" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <EquipItem1 type="string">Weapon_Sword_007</EquipItem1>
+        <EquipItem2 type="string">Weapon_Shield_007</EquipItem2>
+      </_Parameters>
+      <Translate type="array">
+        <value>-735.4f</value>
+        <value>340f</value>
+        <value>-3548.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="1035186669" SRTHash="-116012178">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Shield_003</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.3198264f</value>
+        <value>-1.570796f</value>
+        <value>-0.3202749f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-778.5845f</value>
+        <value>340.5f</value>
+        <value>-3535.002f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="1074109311" SRTHash="-207456028">
+      <Rotate type="array">
+        <value>-0.3f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-274.7795f</value>
+        <value>209.5201f</value>
+        <value>-3092.872f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1084168819" SRTHash="-534852798">
+      <Rotate type="array">
+        <value>0.009581998f</value>
+        <value>0.4898989f</value>
+        <value>-0.2832159f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-430.6134f</value>
+        <value>211.9274f</value>
+        <value>-3099.45f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1154077083" SRTHash="1353676075">
+      <Rotate type="array">
+        <value>2.456221f</value>
+        <value>1.396796f</value>
+        <value>2.194544f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-207.7149f</value>
+        <value>201.9391f</value>
+        <value>-3258.173f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="1155619029" Rotate="1.010802f" SRTHash="1636241130">
+      <_Parameters IsMimicry="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-882.2537f</value>
+        <value>340.3229f</value>
+        <value>-3592.535f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Octarock_Desert</UnitConfigName>
+    </value>
+    <value HashId="1165890602" SRTHash="-1341448254">
+      <Rotate type="array">
+        <value>-0.1506198f</value>
+        <value>0.8749524f</value>
+        <value>-0.1045805f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-392.1566f</value>
+        <value>211.1375f</value>
+        <value>-3061.442f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1180433958" Rotate="1.480001f" SRTHash="1258882955">
+      <_Parameters IsDrop="false" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-788.4f</value>
+        <value>340.1575f</value>
+        <value>-3525.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Electric_Junior</UnitConfigName>
+    </value>
+    <value HashId="1189190336" SRTHash="-1657729831">
+      <Rotate type="array">
+        <value>0.2007142f</value>
+        <value>0.8928983f</value>
+        <value>0.4297929f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-971.3681f</value>
+        <value>333.714f</value>
+        <value>-3543.002f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="1193292121" SRTHash="2141884221">
+      <Translate type="array">
+        <value>-830.3203f</value>
+        <value>344.8672f</value>
+        <value>-3545.328f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="1211496263" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.8051757f</value>
+        <value>1.122314f</value>
+        <value>-0.677246f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1045.441f</value>
+        <value>398.1523f</value>
+        <value>-3269.656f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="1229675918" SRTHash="-92657578">
+      <Rotate type="array">
+        <value>-0.2738087f</value>
+        <value>0.02845196f</value>
+        <value>0.205808f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-141.0533f</value>
+        <value>199.0814f</value>
+        <value>-3222.819f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="1234689667" SRTHash="-482479104">
+      <Rotate type="array">
+        <value>-2.628908f</value>
+        <value>-1.018818f</value>
+        <value>2.429166f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-233.5937f</value>
+        <value>198.8644f</value>
+        <value>-3251.156f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_02</UnitConfigName>
+    </value>
+    <value HashId="1260423278" SRTHash="-1585380259">
+      <Rotate type="array">
+        <value>0.212248f</value>
+        <value>0.04935538f</value>
+        <value>-0.4553835f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-701.9174f</value>
+        <value>339.3702f</value>
+        <value>-3368.569f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1276122414" Rotate="2.079997f" SRTHash="1929154433">
+      <Translate type="array">
+        <value>-830.6071f</value>
+        <value>334.2854f</value>
+        <value>-3699.379f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="1286547827" SRTHash="758361010">
+      <Rotate type="array">
+        <value>2.308296f</value>
+        <value>1.31515f</value>
+        <value>2.485701f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-81.28021f</value>
+        <value>199.2305f</value>
+        <value>-3262.588f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_05</UnitConfigName>
+    </value>
+    <value HashId="1293900014" Rotate="0.2600002f" SRTHash="-902579981">
+      <Translate type="array">
+        <value>-640.2014f</value>
+        <value>338.3759f</value>
+        <value>-3449.814f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="1316340971" Rotate="0.5631858f" SRTHash="65708785">
+      <Translate type="array">
+        <value>-758.3665f</value>
+        <value>341.5795f</value>
+        <value>-3423.903f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="1320774090" SRTHash="-1854284902">
+      <Translate type="array">
+        <value>-714.6729f</value>
+        <value>344.8672f</value>
+        <value>-3539.678f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="1324396407" SRTHash="-478500480">
+      <Rotate type="array">
+        <value>-1.263409f</value>
+        <value>-1.234225f</value>
+        <value>1.276945f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-813.2201f</value>
+        <value>334.7965f</value>
+        <value>-3711.412f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1352031416" SRTHash="828122662">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.092274f</value>
+        <value>1.073384f</value>
+        <value>-1.103232f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-759f</value>
+        <value>341.0234f</value>
+        <value>-3535.3f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ArrowNormal_A_01</UnitConfigName>
+    </value>
+    <value HashId="1352168059" SRTHash="1789079912">
+      <Rotate type="array">
+        <value>-0.03858176f</value>
+        <value>0.1288406f</value>
+        <value>-0.06015702f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-972.4825f</value>
+        <value>336.9162f</value>
+        <value>-3485.013f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="1478762649" SRTHash="2114143267">
+      <Rotate type="array">
+        <value>0.07917134f</value>
+        <value>-0.6369546f</value>
+        <value>-0.09568196f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-706.8359f</value>
+        <value>339.2416f</value>
+        <value>-3603.868f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="1548825902" SRTHash="1342934263">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.9107969f</value>
+        <value>0.06000004f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-735.2109f</value>
+        <value>340.4796f</value>
+        <value>-3506.336f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ArrowNormal_A_01</UnitConfigName>
+    </value>
+    <value HashId="1562333350" SRTHash="365847965">
+      <Rotate type="array">
+        <value>-0.1557303f</value>
+        <value>0.01439526f</value>
+        <value>0.1839828f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-238.5865f</value>
+        <value>210.2888f</value>
+        <value>-3110.203f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1583028388" SRTHash="690546583">
+      <Rotate type="array">
+        <value>2.65066f</value>
+        <value>-0.08014014f</value>
+        <value>-3.103677f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-219.296f</value>
+        <value>202.631f</value>
+        <value>-3248.654f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1598159481" SRTHash="319909367">
+      <Rotate type="array">
+        <value>-3.067738f</value>
+        <value>-0.2511815f</value>
+        <value>2.852263f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-403.2551f</value>
+        <value>252.0721f</value>
+        <value>-2929.854f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="1690379991" Rotate="-1.58f" SRTHash="656769418">
+      <Translate type="array">
+        <value>-759.9933f</value>
+        <value>336.7711f</value>
+        <value>-3718.156f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="1710783030" SRTHash="-1347120387">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.881581f</value>
+        <value>1.308492f</value>
+        <value>1.925522f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-637.2445f</value>
+        <value>339.1035f</value>
+        <value>-3536.628f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="1738703230" Rotate="-1.570796f" SRTHash="1806499446">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Item_Ore_C</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-812.5f</value>
+        <value>375.5f</value>
+        <value>-3533f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
+    </value>
+    <value HashId="1741620928" SRTHash="1359114208">
+      <Rotate type="array">
+        <value>-0.05889309f</value>
+        <value>0.003675444f</value>
+        <value>-0.01106489f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-642.9202f</value>
+        <value>341.4985f</value>
+        <value>-3460.26f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1744906619" SRTHash="1118679784">
+      <Rotate type="array">
+        <value>-2.252199f</value>
+        <value>1.157469f</value>
+        <value>-1.896598f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>35.53046f</value>
+        <value>269.2154f</value>
+        <value>-3172.616f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="1774643316" Rotate="3.141593f" SRTHash="895486556">
+      <Translate type="array">
+        <value>-825.001f</value>
+        <value>344.8672f</value>
+        <value>-3415.334f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="1779835939" Rotate="3.141593f" SRTHash="-1270889156">
+      <Translate type="array">
+        <value>-819.6875f</value>
+        <value>344.8672f</value>
+        <value>-3524.672f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="1780924835" SRTHash="697422297">
+      <Rotate type="array">
+        <value>-0.3309145f</value>
+        <value>-0.115796f</value>
+        <value>0.2034866f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-303.8367f</value>
+        <value>213.3804f</value>
+        <value>-3083.796f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_05</UnitConfigName>
+    </value>
+    <value HashId="1783891935" SRTHash="203719448">
+      <Rotate type="array">
+        <value>-0.3262193f</value>
+        <value>-0.01459824f</value>
+        <value>-0.08864791f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-716.8112f</value>
+        <value>337.4111f</value>
+        <value>-3681.578f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_C_L_08</UnitConfigName>
+    </value>
+    <value HashId="1789391592" SRTHash="196444637">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.2711488f</value>
+        <value>-0.7655701f</value>
+        <value>0.2547543f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-730.8553f</value>
+        <value>340.3704f</value>
+        <value>-3505.779f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="1794542350" SRTHash="679745030">
+      <Translate type="array">
+        <value>-220.2441f</value>
+        <value>207.103f</value>
+        <value>-3150.75f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RuinStatueDragon_A_02</UnitConfigName>
+    </value>
+    <value HashId="1796451894" Rotate="-1.67999f" SRTHash="-1171883456">
+      <Translate type="array">
+        <value>-105.2059f</value>
+        <value>237.3225f</value>
+        <value>-3160.076f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="1813638209" SRTHash="-1509592574">
+      <Rotate type="array">
+        <value>-2.161593f</value>
+        <value>-0.9815936f</value>
+        <value>3.141592f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-134.2226f</value>
+        <value>227.6269f</value>
+        <value>-3141.795f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RuinStonePillar_A_05</UnitConfigName>
+    </value>
+    <value HashId="1839426730" SRTHash="1413177072">
+      <Rotate type="array">
+        <value>2.899601f</value>
+        <value>0.02630138f</value>
+        <value>2.895427f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-968.6879f</value>
+        <value>334.1325f</value>
+        <value>-3524.585f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_02</UnitConfigName>
+    </value>
+    <value HashId="1852334049" SRTHash="1642857416">
+      <Rotate type="array">
+        <value>0.05861602f</value>
+        <value>-0.0002866496f</value>
+        <value>0.00977771f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-682.381f</value>
+        <value>340.4756f</value>
+        <value>-3546.015f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1865046920" SRTHash="879014271">
+      <Rotate type="array">
+        <value>-0.03819453f</value>
+        <value>0.8016435f</value>
+        <value>0.1234349f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-215.7401f</value>
+        <value>210.6531f</value>
+        <value>-3156.444f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="1884360379" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.595459f</value>
+        <value>-0.1098633f</value>
+        <value>-3.054809f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-941.4531f</value>
+        <value>302.6719f</value>
+        <value>-3686.578f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="1924627693" Rotate="0.2399988f" SRTHash="1257916890">
+      <Translate type="array">
+        <value>-929.7669f</value>
+        <value>333.0166f</value>
+        <value>-3658.009f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1966910386" SRTHash="-2120445491">
+      <Rotate type="array">
+        <value>-0.3023094f</value>
+        <value>0.2865288f</value>
+        <value>0.1836642f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-920.7218f</value>
+        <value>338.3846f</value>
+        <value>-3588.805f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="1979749206" SRTHash="972571753">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.5399997f</value>
+        <value>0.52f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-800.114f</value>
+        <value>338.757f</value>
+        <value>-3692.042f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="2015569725" SRTHash="1773474117">
+      <Rotate type="array">
+        <value>-2.639502f</value>
+        <value>1.08801f</value>
+        <value>-2.158135f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-991.7133f</value>
+        <value>326.408f</value>
+        <value>-3587.835f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_C_L_08</UnitConfigName>
+    </value>
+    <value HashId="2021721911" Rotate="1.570796f" SRTHash="-1406687174">
+      <Translate type="array">
+        <value>-774.6641f</value>
+        <value>339.8472f</value>
+        <value>-3515.617f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="2067972337" SRTHash="-1278997626">
+      <Rotate type="array">
+        <value>-2.245899f</value>
+        <value>-1.209529f</value>
+        <value>2.254615f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-886.6534f</value>
+        <value>334.9351f</value>
+        <value>-3684.516f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="2084929865" SRTHash="-631003334">
+      <Rotate type="array">
+        <value>-3.119971f</value>
+        <value>-0.221274f</value>
+        <value>3.080335f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-747.2051f</value>
+        <value>341.7039f</value>
+        <value>-3672.799f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="2093032885" Rotate="-1.570796f" SRTHash="-690513815">
+      <Translate type="array">
+        <value>-820.3213f</value>
+        <value>344.8672f</value>
+        <value>-3645.311f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="2100975804" Rotate="2.100001f" SRTHash="-1790599664">
+      <Translate type="array">
+        <value>-910.7667f</value>
+        <value>335.4053f</value>
+        <value>-3644.682f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-2113820523" SRTHash="-1173541642">
+      <Rotate type="array">
+        <value>-2.986659f</value>
+        <value>0.1850256f</value>
+        <value>-2.781854f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-398.7034f</value>
+        <value>225.4932f</value>
+        <value>-2992.522f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_02</UnitConfigName>
+    </value>
+    <value HashId="-2103850270" Rotate="1.570796f" SRTHash="-242524560">
+      <_Parameters InitBurnState="false" IsDrop="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-732.9f</value>
+        <value>340.0114f</value>
+        <value>-3509f</value>
+      </Translate>
+      <UnitConfigName type="string">FireWoodDie</UnitConfigName>
+    </value>
+    <value HashId="-2015042302" SRTHash="973647757">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.005771316f</value>
+        <value>-0.9000582f</value>
+        <value>-0.006067479f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-882.4002f</value>
+        <value>340.2843f</value>
+        <value>-3594.35f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_BarrelOld_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2001661102" Rotate="3.141593f" SRTHash="565999274">
+      <Translate type="array">
+        <value>-825f</value>
+        <value>339.8595f</value>
+        <value>-3570.32f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1981263887" SRTHash="-1058306524">
+      <Rotate type="array">
+        <value>-0.18f</value>
+        <value>0.16f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-871.9894f</value>
+        <value>338.1655f</value>
+        <value>-3673.669f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1976309654" SRTHash="1233319554">
+      <Rotate type="array">
+        <value>-3.098148f</value>
+        <value>0.6539624f</value>
+        <value>-2.759273f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-24.65002f</value>
+        <value>262.7046f</value>
+        <value>-3107.081f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_02</UnitConfigName>
+    </value>
+    <value HashId="-1940689487" SRTHash="-1526110428">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-765.7001f</value>
+        <value>340f</value>
+        <value>-3595.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Ore_G</UnitConfigName>
+    </value>
+    <value HashId="-1932468816" SRTHash="2043933752">
+      <Rotate type="array">
+        <value>-0.01837572f</value>
+        <value>0.7430018f</value>
+        <value>-0.02715915f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-707.2719f</value>
+        <value>341.6357f</value>
+        <value>-3439.141f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_05</UnitConfigName>
+    </value>
+    <value HashId="-1909804967" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.050781f</value>
+        <value>0.7607421f</value>
+        <value>3.073364f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-841.8672f</value>
+        <value>15.27344f</value>
+        <value>-3003.227f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
+    </value>
+    <value HashId="-1905462216" SRTHash="-420312828">
+      <Rotate type="array">
+        <value>-0.6568881f</value>
+        <value>0.506505f</value>
+        <value>-0.04544878f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-65.05264f</value>
+        <value>203.5791f</value>
+        <value>-3235.708f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-1900872528" SRTHash="301201644">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.02711804f</value>
+        <value>1.061682f</value>
+        <value>-0.1273044f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-881.2058f</value>
+        <value>340.2132f</value>
+        <value>-3594.438f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_BarrelOld_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1894558527" Rotate="1.480001f" SRTHash="874182246">
+      <_Parameters IsDrop="false" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-787.3f</value>
+        <value>340.0268f</value>
+        <value>-3529.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Electric_Junior</UnitConfigName>
+    </value>
+    <value HashId="-1882179209" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.509033f</value>
+        <value>0.4449463f</value>
+        <value>-2.573242f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-878.1211f</value>
+        <value>43.92188f</value>
+        <value>-2997.379f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="-1819918781" SRTHash="482733858">
+      <Rotate type="array">
+        <value>-0.2433371f</value>
+        <value>0.03079288f</value>
+        <value>0.3031223f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-987.0781f</value>
+        <value>340.929f</value>
+        <value>-3475.059f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-1813577207" SRTHash="768206095">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.421724f</value>
+        <value>-0.1012607f</value>
+        <value>-0.9324318f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-753.9734f</value>
+        <value>340.4719f</value>
+        <value>-3534.3f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ArrowNormal_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1809763120" SRTHash="1574960410">
+      <Rotate type="array">
+        <value>2.741592f</value>
+        <value>-1.261593f</value>
+        <value>-3.141592f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1000.991f</value>
+        <value>327.7832f</value>
+        <value>-3316.73f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1806845076" Rotate="3.141593f" SRTHash="-1108411442">
+      <Translate type="array">
+        <value>-830.3203f</value>
+        <value>344.8672f</value>
+        <value>-3524.672f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1804728045" SRTHash="-1478098435">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.650796f</value>
+        <value>3.773143E-08f</value>
+        <value>-0.3399999f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-754.5734f</value>
+        <value>340.7797f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ArrowNormal_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1792951862" SRTHash="676123846">
+      <Rotate type="array">
+        <value>-2.94417f</value>
+        <value>1.151158f</value>
+        <value>-2.960911f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-787.0454f</value>
+        <value>335.7486f</value>
+        <value>-3714.735f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_05</UnitConfigName>
+    </value>
+    <value HashId="-1783090740" SRTHash="483773539">
+      <Rotate type="array">
+        <value>-0.4354522f</value>
+        <value>0.04675561f</value>
+        <value>0.2374511f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-384.8617f</value>
+        <value>215.8118f</value>
+        <value>-3032.384f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-1756537036" Rotate="-1.570796f" SRTHash="650786459">
+      <Translate type="array">
+        <value>-770.3281f</value>
+        <value>339.8472f</value>
+        <value>-3515.617f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1751485185" Rotate="0.46f" SRTHash="283287539">
+      <Translate type="array">
+        <value>-909.0447f</value>
+        <value>335.9608f</value>
+        <value>-3609.531f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1676835642" SRTHash="2124038844">
+      <Rotate type="array">
+        <value>0.28f</value>
+        <value>0f</value>
+        <value>-0.3200001f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-808.1948f</value>
+        <value>334.6398f</value>
+        <value>-3704.501f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_A_L_03</UnitConfigName>
+    </value>
+    <value HashId="-1616027683" SRTHash="-386287353">
+      <Rotate type="array">
+        <value>-0.1686921f</value>
+        <value>-0.00501013f</value>
+        <value>-0.07771576f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-858.117f</value>
+        <value>339.0979f</value>
+        <value>-3678.723f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-1601357496" Rotate="1.48f" SRTHash="290353266">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-99.49994f</value>
+        <value>198.3461f</value>
+        <value>-3316.195f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1535364268" SRTHash="-1079104611">
+      <Translate type="array">
+        <value>-3.805267f</value>
+        <value>256.3264f</value>
+        <value>-3164.911f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RuinStonePillar_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1527719749" SRTHash="1132679878">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.820418f</value>
+        <value>-1.422737f</value>
+        <value>-3.064188f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-798.2333f</value>
+        <value>338.907f</value>
+        <value>-3692.283f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1509806578" Rotate="-3.141593f" SRTHash="1074089377">
+      <Translate type="array">
+        <value>-714.665f</value>
+        <value>344.8672f</value>
+        <value>-3530.334f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1491291141" SRTHash="1936712620">
+      <Rotate type="array">
+        <value>-0.2320089f</value>
+        <value>-0.6049313f</value>
+        <value>0.2077333f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-504.4579f</value>
+        <value>221.9356f</value>
+        <value>-3021.363f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-1479891187" Rotate="1.480001f" SRTHash="-2113082186">
+      <_Parameters IsDrop="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-778.2f</value>
+        <value>340f</value>
+        <value>-3523.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Electric_Junior</UnitConfigName>
+    </value>
+    <value HashId="-1468454307" Rotate="3.141593f" SRTHash="-1952648324">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_IceArrow_A_03</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-825f</value>
+        <value>345f</value>
+        <value>-3420f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
+    </value>
+    <value HashId="-1467454456" Rotate="-0.28f" SRTHash="-624450493">
+      <Translate type="array">
+        <value>-1034.277f</value>
+        <value>274.2894f</value>
+        <value>-3612.814f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_02</UnitConfigName>
+    </value>
+    <value HashId="-1455388013" SRTHash="1604233836">
+      <Rotate type="array">
+        <value>-0.04519078f</value>
+        <value>0.005406247f</value>
+        <value>0.238092f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-208.403f</value>
+        <value>199.6955f</value>
+        <value>-3201.407f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1445987308" SRTHash="1889528598">
+      <Translate type="array">
+        <value>-825.001f</value>
+        <value>344.8672f</value>
+        <value>-3654.686f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1425433912" SRTHash="862195445">
+      <Rotate type="array">
+        <value>0.00647669f</value>
+        <value>-0.7995884f</value>
+        <value>-0.1819339f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-678.4829f</value>
+        <value>335.2892f</value>
+        <value>-3627.769f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-1415956709" Rotate="1.480001f" SRTHash="1464344935">
+      <_Parameters IsDrop="false" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-784.5f</value>
+        <value>340f</value>
+        <value>-3527.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Electric_Senior</UnitConfigName>
+    </value>
+    <value HashId="-1403701987" SRTHash="1731354307">
+      <Rotate type="array">
+        <value>-2.515785f</value>
+        <value>-1.15741f</value>
+        <value>2.600507f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-352.8701f</value>
+        <value>214.2567f</value>
+        <value>-3058.615f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1401422245" SRTHash="-1758745628">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.520251f</value>
+        <value>1.095145f</value>
+        <value>1.114996f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-633.7527f</value>
+        <value>339.4399f</value>
+        <value>-3538.623f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Mineral_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1382550493" SRTHash="-306554974">
+      <Rotate type="array">
+        <value>0.571203f</value>
+        <value>-1.453573f</value>
+        <value>-0.8179867f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-394.8837f</value>
+        <value>207.0808f</value>
+        <value>-3117.292f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-1321151543" SRTHash="978904821">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.205398f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-734.4594f</value>
+        <value>340.2206f</value>
+        <value>-3508.872f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Ore_I</UnitConfigName>
+    </value>
+    <value HashId="-1304932889" Rotate="-1.570796f" SRTHash="1978878902">
+      <Translate type="array">
+        <value>-705.3369f</value>
+        <value>344.8672f</value>
+        <value>-3535.006f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1300140905" SRTHash="1860809582">
+      <Rotate type="array">
+        <value>-0.1449351f</value>
+        <value>0.01999553f</value>
+        <value>0.2737278f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-962.8292f</value>
+        <value>332.835f</value>
+        <value>-3614.774f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-1294329316" SRTHash="-397578589">
+      <Rotate type="array">
+        <value>-0.4916745f</value>
+        <value>-0.387743f</value>
+        <value>-0.02431635f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-189.802f</value>
+        <value>242.7251f</value>
+        <value>-3070.985f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-1279578655" SRTHash="-789083611">
+      <Rotate type="array">
+        <value>-0.009323225f</value>
+        <value>-0.0003458587f</value>
+        <value>-0.003485521f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-787.5147f</value>
+        <value>340.3535f</value>
+        <value>-3531.979f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_BoxIron_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="-1224666381" OnlyOne="true" SRTHash="1817841210">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.322618f</value>
+        <value>0.8341459f</value>
+        <value>0.4239448f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-756.6985f</value>
+        <value>341f</value>
+        <value>-3539f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Sword_048</UnitConfigName>
+    </value>
+    <value HashId="-1219657669" Rotate="-1.72f" SRTHash="1174903662">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Ore</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-100.0703f</value>
+        <value>198.0717f</value>
+        <value>-3323.25f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1196105494" SRTHash="-943807300">
+      <Rotate type="array">
+        <value>-0.7729134f</value>
+        <value>0.0729997f</value>
+        <value>0.05069003f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-49.12912f</value>
+        <value>190.3647f</value>
+        <value>-3374.752f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1173485336" SRTHash="-936087790">
+      <Rotate type="array">
+        <value>-0.09992898f</value>
+        <value>-0.02526129f</value>
+        <value>0.05170773f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-452.6639f</value>
+        <value>217.8069f</value>
+        <value>-2997.577f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-1161625966" Rotate="1.16f" SRTHash="1578633858">
+      <Translate type="array">
+        <value>-48.39825f</value>
+        <value>196.416f</value>
+        <value>-3280.084f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_02</UnitConfigName>
+    </value>
+    <value HashId="-1156677051" SRTHash="-1787988247">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-929.5f</value>
+        <value>340f</value>
+        <value>-3515.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Ore_G</UnitConfigName>
+    </value>
+    <value HashId="-1151075844" SRTHash="-766427125">
+      <Rotate type="array">
+        <value>0.5083885f</value>
+        <value>1.081724f</value>
+        <value>0.07708773f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-283.7062f</value>
+        <value>198.812f</value>
+        <value>-3200.042f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1148946124" Rotate="-3.141593f" SRTHash="315678520">
+      <Translate type="array">
+        <value>-810.3141f</value>
+        <value>375.3672f</value>
+        <value>-3530.325f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1125757794" SRTHash="0">
+      <Rotate type="array">
+        <value>2.827881f</value>
+        <value>-0.2572021f</value>
+        <value>-2.889893f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-53.80469f</value>
+        <value>259.7422f</value>
+        <value>-3168.992f</value>
+      </Translate>
+      <UnitConfigName type="string">EnvSeEmitPointInsectTemperate</UnitConfigName>
+    </value>
+    <value HashId="-1070063770" SRTHash="1019652225">
+      <Translate type="array">
+        <value>-835.3203f</value>
+        <value>344.8672f</value>
+        <value>-3540.336f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1068846931" SRTHash="548335987">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-96.99994f</value>
+        <value>198.1188f</value>
+        <value>-3322.352f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1056408555" SRTHash="-1534436914">
+      <Rotate type="array">
+        <value>-0.02353398f</value>
+        <value>0.2155031f</value>
+        <value>-0.266513f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-136.726f</value>
+        <value>195.119f</value>
+        <value>-3281.195f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1012111338" SRTHash="-1114276326">
+      <Rotate type="array">
+        <value>0.4027476f</value>
+        <value>-1.533584f</value>
+        <value>-0.6315835f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-64.44211f</value>
+        <value>196.7613f</value>
+        <value>-3289.037f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_A_02</UnitConfigName>
+    </value>
+    <value HashId="-983382635" SRTHash="775325227">
+      <Rotate type="array">
+        <value>-2.86172f</value>
+        <value>-0.8079993f</value>
+        <value>3.00115f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-367.0475f</value>
+        <value>208.8264f</value>
+        <value>-3078.655f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_05</UnitConfigName>
+    </value>
+    <value HashId="-959044164" Rotate="-3.063184f" SRTHash="-1095431017">
+      <Translate type="array">
+        <value>-908.5215f</value>
+        <value>325.1539f</value>
+        <value>-3302.355f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-953627537" Rotate="1.570796f" SRTHash="-107052463">
+      <Translate type="array">
+        <value>-829.6807f</value>
+        <value>344.8672f</value>
+        <value>-3424.678f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-904527085" SRTHash="-1858990721">
+      <Rotate type="array">
+        <value>3.037716f</value>
+        <value>-0.7061517f</value>
+        <value>-2.81354f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-735.4373f</value>
+        <value>339.0222f</value>
+        <value>-3635.663f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-889878575" SRTHash="-1652798693">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Lsword_055</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.094763f</value>
+        <value>-1.5696f</value>
+        <value>-3.094921f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-710.0107f</value>
+        <value>344.9998f</value>
+        <value>-3534.999f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="-865989215" SRTHash="165760617">
+      <Rotate type="array">
+        <value>-0.18f</value>
+        <value>-0.9200002f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-976.4133f</value>
+        <value>341.4822f</value>
+        <value>-3429.986f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-857422487" SRTHash="1763536903">
+      <Rotate type="array">
+        <value>0.5367991f</value>
+        <value>-0.9656497f</value>
+        <value>-0.6263779f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-319.9023f</value>
+        <value>204.2642f</value>
+        <value>-3170.24f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-830506463" SRTHash="1875266249">
+      <Rotate type="array">
+        <value>0.2739809f</value>
+        <value>-0.0327647f</value>
+        <value>0.3336533f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-173.9786f</value>
+        <value>227.1887f</value>
+        <value>-3141.918f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-816544319" SRTHash="368717051">
+      <Rotate type="array">
+        <value>0.09689882f</value>
+        <value>-0.004618674f</value>
+        <value>0.09518341f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-366.5347f</value>
+        <value>202.3943f</value>
+        <value>-3150.146f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-765608097" SRTHash="-165974340">
+      <Rotate type="array">
+        <value>-0.1124623f</value>
+        <value>-0.2669897f</value>
+        <value>0.3178878f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-141.3165f</value>
+        <value>230.6107f</value>
+        <value>-3148.887f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-755887864" SRTHash="1381160155">
+      <Rotate type="array">
+        <value>0.01534484f</value>
+        <value>-0.1615058f</value>
+        <value>-0.06753001f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-59.11594f</value>
+        <value>196.132f</value>
+        <value>-3346.258f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-745187119" SRTHash="-1647542230">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">PutRupee_Gold</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.173705f</value>
+        <value>-1.570024f</value>
+        <value>1.172092f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-790.7895f</value>
+        <value>340.3246f</value>
+        <value>-3560f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="-731979194" SRTHash="582440921">
+      <Rotate type="array">
+        <value>-2.235973f</value>
+        <value>1.217225f</value>
+        <value>-2.040664f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-264.4286f</value>
+        <value>201.7504f</value>
+        <value>-3153.315f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-723096446" SRTHash="-2069336205">
+      <Rotate type="array">
+        <value>0.1031236f</value>
+        <value>-0.001450079f</value>
+        <value>0.02809601f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-18.88925f</value>
+        <value>196.9564f</value>
+        <value>-3302.126f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Plant_HopBush_B_01</UnitConfigName>
+    </value>
+    <value HashId="-716918994" Rotate="3.063185f" SRTHash="426972261">
+      <Translate type="array">
+        <value>-158.8343f</value>
+        <value>226.2443f</value>
+        <value>-3105.309f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RuinStatueDragon_A_02</UnitConfigName>
+    </value>
+    <value HashId="-713831363" SRTHash="-1919211534">
+      <Rotate type="array">
+        <value>0.1700347f</value>
+        <value>-0.009422839f</value>
+        <value>-0.04954422f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-466.8385f</value>
+        <value>215.6608f</value>
+        <value>-3054.147f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_05</UnitConfigName>
+    </value>
+    <value HashId="-699415058" SRTHash="260998685">
+      <Translate type="array">
+        <value>-739.2f</value>
+        <value>340f</value>
+        <value>-3509.1f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_TravelerTrace_Mark_A_01</UnitConfigName>
+    </value>
+    <value HashId="-654035516" Rotate="1.480001f" SRTHash="-1022705850">
+      <_Parameters IsDrop="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-781.3f</value>
+        <value>340f</value>
+        <value>-3528.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Electric_Middle</UnitConfigName>
+    </value>
+    <value HashId="-650203056" Rotate="-1.18f" SRTHash="1559441131">
+      <Translate type="array">
+        <value>-946.1539f</value>
+        <value>338.8115f</value>
+        <value>-3560.07f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_A_02</UnitConfigName>
+    </value>
+    <value HashId="-640104686" SRTHash="1768755298">
+      <Translate type="array">
+        <value>-810.3219f</value>
+        <value>375.3672f</value>
+        <value>-3539.669f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-614152834" Rotate="1.480001f" SRTHash="-300850712">
+      <_Parameters IsDrop="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-777.3f</value>
+        <value>340.0312f</value>
+        <value>-3527.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Electric_Junior</UnitConfigName>
+    </value>
+    <value HashId="-612560329" Rotate="1.380001f" SRTHash="-867311932" Scale="0.85f">
+      <Translate type="array">
+        <value>-24.86243f</value>
+        <value>197.2973f</value>
+        <value>-3310.498f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Plant_HopBush_B_01</UnitConfigName>
+    </value>
+    <value HashId="-608247392" SRTHash="1279485232">
+      <Rotate type="array">
+        <value>-0.3836098f</value>
+        <value>-0.3713641f</value>
+        <value>0.4772404f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-443.3334f</value>
+        <value>235.2272f</value>
+        <value>-2921.992f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-583061796" SRTHash="-427503385">
+      <Rotate type="array">
+        <value>2.284398f</value>
+        <value>-1.262402f</value>
+        <value>-2.764837f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-685.9875f</value>
+        <value>337.8735f</value>
+        <value>-3638.455f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-574346221" SRTHash="-701152474">
+      <Rotate type="array">
+        <value>-2.924985f</value>
+        <value>0.5439399f</value>
+        <value>-2.663013f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-866.8048f</value>
+        <value>339.2713f</value>
+        <value>-3646.095f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-549319248" SRTHash="-1728492737">
+      <Rotate type="array">
+        <value>-0.4128154f</value>
+        <value>-1.396026f</value>
+        <value>0.265229f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-438.7772f</value>
+        <value>212.8058f</value>
+        <value>-3058.362f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-523481248" SRTHash="-1760427582">
+      <Rotate type="array">
+        <value>-2.551979f</value>
+        <value>1.284316f</value>
+        <value>-2.478114f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-355.7528f</value>
+        <value>201.5074f</value>
+        <value>-3166.775f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-493285890" SRTHash="-193263078">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.861593f</value>
+        <value>-0.7852131f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-748.6f</value>
+        <value>341f</value>
+        <value>-3523.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Shield_031</UnitConfigName>
+    </value>
+    <value HashId="-478801284" SRTHash="-1375269991">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.2453128f</value>
+        <value>-0.8752644f</value>
+        <value>-0.3152311f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-804.0867f</value>
+        <value>338.949f</value>
+        <value>-3691.641f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
+    </value>
+    <value HashId="-469526785" SRTHash="-767136230">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.014961f</value>
+        <value>-0.02111421f</value>
+        <value>1.536821f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-759.1f</value>
+        <value>341.0391f</value>
+        <value>-3536.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ArrowNormal_A_01</UnitConfigName>
+    </value>
+    <value HashId="-468901892" SRTHash="-310040405">
+      <Rotate type="array">
+        <value>0.07323238f</value>
+        <value>-0.00054723f</value>
+        <value>-0.03740741f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-260.0107f</value>
+        <value>201.2964f</value>
+        <value>-3235.582f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-451604008" SRTHash="-586594374">
+      <Rotate type="array">
+        <value>-0.3133065f</value>
+        <value>-0.01891934f</value>
+        <value>-0.1196432f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-929.2725f</value>
+        <value>339.8738f</value>
+        <value>-3443.925f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-439563476" Rotate="-1.570796f" SRTHash="-263320995">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Item_Ore_B</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-812.5f</value>
+        <value>375.5f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
+    </value>
+    <value HashId="-426397199" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-2.333252f</value>
+        <value>0.5517578f</value>
+        <value>2.752807f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1001.395f</value>
+        <value>350.4375f</value>
+        <value>-3435.313f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="-353323373" SRTHash="2083942254">
+      <Translate type="array">
+        <value>-819.6875f</value>
+        <value>344.8672f</value>
+        <value>-3545.328f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-314712747" SRTHash="1621304052">
+      <Rotate type="array">
+        <value>-0.1397121f</value>
+        <value>-0.01816709f</value>
+        <value>-0.2582046f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-72.74207f</value>
+        <value>195.2473f</value>
+        <value>-3324.615f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-309935127" Rotate="1.170532f" SRTHash="-831895185">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-343.7734f</value>
+        <value>209.6114f</value>
+        <value>-3082.664f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Mushroom_F</UnitConfigName>
+    </value>
+    <value HashId="-309781206" Rotate="-1.570796f" SRTHash="2135629530">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Item_Ore_D</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-812.5f</value>
+        <value>375.5f</value>
+        <value>-3537f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
+    </value>
+    <value HashId="-284040244" SRTHash="-29262222">
+      <Rotate type="array">
+        <value>-0.4919212f</value>
+        <value>0.5876729f</value>
+        <value>0.03662753f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-819.6235f</value>
+        <value>338.0114f</value>
+        <value>-3685.552f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_05</UnitConfigName>
+    </value>
+    <value HashId="-271798385" SRTHash="-1901070244">
+      <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-874f</value>
+        <value>328.9826f</value>
+        <value>-3316f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_TreeBroadleaf_A_L</UnitConfigName>
+    </value>
+    <value HashId="-259533282" SRTHash="0">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.881958f</value>
+        <value>0.8205566f</value>
+        <value>2.795654f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-974.8203f</value>
+        <value>347.3555f</value>
+        <value>-3392.633f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="-243716823" SRTHash="61542049">
+      <Rotate type="array">
+        <value>-0.2015626f</value>
+        <value>0.03887227f</value>
+        <value>0.379818f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-466.0117f</value>
+        <value>220.9096f</value>
+        <value>-2958.719f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-157053885" Rotate="1.670622f" SRTHash="1208663963" Scale="1.2f">
+      <Translate type="array">
+        <value>-839.9141f</value>
+        <value>374.008f</value>
+        <value>-3535.009f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_PlantBokoFortress_A_02</UnitConfigName>
+    </value>
+    <value HashId="-131934261" Rotate="-1.570796f" SRTHash="-337447450">
+      <Translate type="array">
+        <value>-820.3291f</value>
+        <value>344.8672f</value>
+        <value>-3424.686f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeTorchStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="-107826437" SRTHash="1591319297">
+      <Rotate type="array">
+        <value>0.004724253f</value>
+        <value>-0.0002561477f</value>
+        <value>0.2483328f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-6.266266f</value>
+        <value>261.3742f</value>
+        <value>-3165.052f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_03</UnitConfigName>
+    </value>
+    <value HashId="-89667088" Rotate="1.570796f" SRTHash="-2287041">
+      <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <EquipItem1 type="string">Weapon_Sword_007</EquipItem1>
+        <EquipItem2 type="string">Weapon_Shield_007</EquipItem2>
+      </_Parameters>
+      <Translate type="array">
+        <value>-735.4f</value>
+        <value>340f</value>
+        <value>-3520.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="-79221049" SRTHash="515133271">
+      <Rotate type="array">
+        <value>-2.414856f</value>
+        <value>1.044989f</value>
+        <value>-2.226065f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-237.1794f</value>
+        <value>205.0001f</value>
+        <value>-3163.402f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="-70394548" SRTHash="1110401805">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.05811f</value>
+        <value>-1.038358f</value>
+        <value>-2.019112f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-750.8597f</value>
+        <value>340.0665f</value>
+        <value>-3534.221f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ArrowNormal_A_01</UnitConfigName>
+    </value>
+    <value HashId="-59268214" SRTHash="1489847810">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>4.453407E-05f</value>
+        <value>-0.8974565f</value>
+        <value>-0.00278264f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-884.4042f</value>
+        <value>340.2784f</value>
+        <value>-3591.499f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_BarrelOld_A_01</UnitConfigName>
+    </value>
+    <value HashId="-49735361" SRTHash="-732393676">
+      <Rotate type="array">
+        <value>-0.6160031f</value>
+        <value>0.2602369f</value>
+        <value>0.03131849f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-420.4058f</value>
+        <value>226.5771f</value>
+        <value>-2966.914f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-48920391" SRTHash="-456078189">
+      <_Parameters IsNearCreate="false" LevelSensorMode="1" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">ElectricArrow</ArrowName>
+        <EquipItem1 type="string">Weapon_Spear_018</EquipItem1>
+        <EquipItem3 type="string">Weapon_Bow_032</EquipItem3>
+      </_Parameters>
+      <Translate type="array">
+        <value>-401f</value>
+        <value>207.7825f</value>
+        <value>-3100.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lynel_Senior</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

@@ -1,0 +1,4270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3" LocationPosX="-500f" LocationPosZ="-3500f" LocationSize="1000f">
+  <Objs type="array">
+    <value HashId="12164486" Rotate="0.36f" SRTHash="1825728307" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="462766153">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+        <value DestUnitHashId="1409911219">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-483.3669f</value>
+        <value>232.69f</value>
+        <value>-3140.495f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="20072204" Rotate="-1.570796f" SRTHash="-902373788" Scale="0.6f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">MapTower_07_Demo</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1780805972">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-561280803">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-822.5f</value>
+        <value>353.8f</value>
+        <value>-3536.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="40149411" Rotate="2.617994f" SRTHash="-1073213680">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="401519505">
+          <_Parameters>
+            <Pivot X="0f" Y="0.15f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-100.1506f</value>
+        <value>199.8737f</value>
+        <value>-3279.224f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Fruit_I</UnitConfigName>
+    </value>
+    <value HashId="78235255" SRTHash="-1774700378">
+      <Rotate type="array">
+        <value>-2.73302f</value>
+        <value>-0.6607527f</value>
+        <value>2.957596f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-624.2375f</value>
+        <value>232.2554f</value>
+        <value>-2938.608f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_03_Far</UnitConfigName>
+    </value>
+    <value HashId="78884413" SRTHash="1947469762">
+      <Rotate type="array">
+        <value>0.02000026f</value>
+        <value>0.9591037f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-636.3452f</value>
+        <value>337.7001f</value>
+        <value>-3444.379f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="110281562" Rotate="0.36f" SRTHash="1246388189" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-842133249">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-482.552f</value>
+        <value>233.19f</value>
+        <value>-3144.007f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="132063433" Rotate="1.8216f" SRTHash="0">
+      <Translate type="array">
+        <value>-803.7317f</value>
+        <value>342.5187f</value>
+        <value>-3549.665f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="176343579" OnlyOne="true" Rotate="-1.570796f" SRTHash="557786862">
+      <Translate type="array">
+        <value>-895f</value>
+        <value>340f</value>
+        <value>-3595f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeGround_B_01_Far</UnitConfigName>
+    </value>
+    <value HashId="176546139" Rotate="0.7853982f" SRTHash="1764965958">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1027094618">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>5f</value>
+        <value>28f</value>
+        <value>90f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-883.5f</value>
+        <value>355.5f</value>
+        <value>-3467.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="193357854" Rotate="0.7853982f" SRTHash="1859608919">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1027094618">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>90f</value>
+        <value>28f</value>
+        <value>5f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-883.5f</value>
+        <value>355.5f</value>
+        <value>-3602.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="206798590" SRTHash="594415794">
+      <Rotate type="array">
+        <value>3.101592f</value>
+        <value>0.8072828f</value>
+        <value>3.132866f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-667.0104f</value>
+        <value>337.3386f</value>
+        <value>-3670.478f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="226312569" SRTHash="-555433833">
+      <Rotate type="array">
+        <value>2.972549f</value>
+        <value>-0.341021f</value>
+        <value>3.112942f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-179.062f</value>
+        <value>202.064f</value>
+        <value>-3284.188f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="227157050" SRTHash="531252580">
+      <Rotate type="array">
+        <value>1.684984f</value>
+        <value>0.3198182f</value>
+        <value>1.648003f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-253.8791f</value>
+        <value>210.1126f</value>
+        <value>-3079.699f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_01_Far</UnitConfigName>
+    </value>
+    <value HashId="238389194" SRTHash="0">
+      <Rotate type="array">
+        <value>-2.972753f</value>
+        <value>-1.205908f</value>
+        <value>-1.728711f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-808.8043f</value>
+        <value>342.0203f</value>
+        <value>-3575.416f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="252701100" SRTHash="1622550870">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.1808894f</value>
+        <value>0.02311495f</value>
+        <value>-0.2535175f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-482.4597f</value>
+        <value>227.271f</value>
+        <value>-3137.933f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_KorokPinwheel_A_01</UnitConfigName>
+    </value>
+    <value HashId="277812354" SRTHash="-352506736" Scale="1.2f">
+      <Rotate type="array">
+        <value>2.527537f</value>
+        <value>-0.5897712f</value>
+        <value>-2.857929f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-21.2948f</value>
+        <value>221.6874f</value>
+        <value>-3219.646f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10_Far</UnitConfigName>
+    </value>
+    <value HashId="325746252" SRTHash="-1394937759">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1833485614">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-1.878815f</value>
+        <value>-1.138061f</value>
+        <value>1.430939f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-854.4924f</value>
+        <value>334.1526f</value>
+        <value>-3347.42f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_15</UnitConfigName>
+    </value>
+    <value HashId="327001300" SRTHash="0">
+      <Rotate type="array">
+        <value>-2.868545f</value>
+        <value>0.4160905f</value>
+        <value>3.006404f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-798.1237f</value>
+        <value>342.5507f</value>
+        <value>-3550.659f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeRib_L</UnitConfigName>
+    </value>
+    <value HashId="368255114" Rotate="-1.570796f" SRTHash="2090713509">
+      <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" OnCliff="false" OnCliffTurn="true" RotAngle="60f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="150f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <EquipItem1 type="string">Weapon_Bow_030</EquipItem1>
+        <EquipItem3 type="string">LizalfosPipe</EquipItem3>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1728923179">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="883937237">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-712.7672f</value>
+        <value>345f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Guard_Middle_LongVisibility</UnitConfigName>
+    </value>
+    <value HashId="382904003" SRTHash="300625873">
+      <LinksToObj type="array">
+        <value DestUnitHashId="996896396">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.950254f</value>
+        <value>0.8955316f</value>
+        <value>3.03193f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-948.4934f</value>
+        <value>296.3691f</value>
+        <value>-3032.877f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="401165100" SRTHash="0" Scale="1.6f">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>-0.3799998f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-844.2782f</value>
+        <value>350.8176f</value>
+        <value>-3547.738f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="401519505" SRTHash="-621523570">
+      <Translate type="array">
+        <value>-98.00189f</value>
+        <value>198.7637f</value>
+        <value>-3279.029f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="453213433" Rotate="1.481551f" SRTHash="0" Scale="2f">
+      <Translate type="array">
+        <value>-837.3193f</value>
+        <value>341.4005f</value>
+        <value>-3559.391f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_M</UnitConfigName>
+    </value>
+    <value HashId="462766153" Rotate="0.36f" SRTHash="-939776961">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1241656872">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-486.2506f</value>
+        <value>234.4948f</value>
+        <value>-3143.093f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="462943202" Rotate="0.36f" SRTHash="-175000956" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-791994297">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-484.4238f</value>
+        <value>234.69f</value>
+        <value>-3143.302f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="480686889" OnlyOne="true" SRTHash="494118871">
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeWall_C_04_Far</UnitConfigName>
+    </value>
+    <value HashId="498904382" Rotate="0.36f" SRTHash="-217441300" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="12164486">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+        <value DestUnitHashId="110281562">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-480.8011f</value>
+        <value>231.69f</value>
+        <value>-3147.872f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="535384312" SRTHash="-1972972475">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>1.110223E-16f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-819.3016f</value>
+        <value>345.0063f</value>
+        <value>-3554.688f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="549328500" SRTHash="-1042514290">
+      <LinksToObj type="array">
+        <value DestUnitHashId="805803038">
+          <DefinitionName type="string">DeadUp</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.023324f</value>
+        <value>1.442733f</value>
+        <value>2.537984f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-986.4095f</value>
+        <value>342.8156f</value>
+        <value>-3061.089f</value>
+      </Translate>
+      <UnitConfigName type="string">WallCrack</UnitConfigName>
+    </value>
+    <value HashId="555119253" SRTHash="-917048748">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1064994171">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-745f</value>
+        <value>336f</value>
+        <value>-3515f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeRoof_B_02</UnitConfigName>
+    </value>
+    <value HashId="565442987" SRTHash="-1849230205" Scale="0.8f">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1234567743">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.6506459f</value>
+        <value>0.8476221f</value>
+        <value>-0.2387521f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-312.5123f</value>
+        <value>182.2718f</value>
+        <value>-3189.336f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_14</UnitConfigName>
+    </value>
+    <value HashId="566663833" OnlyOne="true" SRTHash="1824820778">
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeWall_C_03_Far</UnitConfigName>
+    </value>
+    <value HashId="573503695" SRTHash="762825429">
+      <LinksToObj type="array">
+        <value DestUnitHashId="969535431">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.978012f</value>
+        <value>-0.967846f</value>
+        <value>-3.057943f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-367.804f</value>
+        <value>181.4364f</value>
+        <value>-2984.825f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_C_08</UnitConfigName>
+    </value>
+    <value HashId="626927089" Rotate="0.36f" SRTHash="-1177280944" Scale="0.5f">
+      <_Parameters EffectDispSize="1f" IsNoResponceSound="false">
+        <EffectDIspOffset X="0f" Y="0f" Z="0f" />
+        <EffectDispActorName type="string">none</EffectDispActorName>
+      </_Parameters>
+      <Translate type="array">
+        <value>-483.9108f</value>
+        <value>235.9948f</value>
+        <value>-3143.973f</value>
+      </Translate>
+      <UnitConfigName type="string">KorokAnswerResponce</UnitConfigName>
+    </value>
+    <value HashId="635606323" SRTHash="-1867010510">
+      <Rotate type="array">
+        <value>2.863543f</value>
+        <value>0.8274038f</value>
+        <value>3.089541f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-798.9369f</value>
+        <value>332.5826f</value>
+        <value>-3675.683f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_03_Far</UnitConfigName>
+    </value>
+    <value HashId="651644972" SRTHash="0" Scale="1.5f">
+      <Rotate type="array">
+        <value>-0.3800243f</value>
+        <value>0.4393236f</value>
+        <value>-0.4448f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-815.1119f</value>
+        <value>342.4609f</value>
+        <value>-3555.898f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeRib_M</UnitConfigName>
+    </value>
+    <value HashId="658806762" SRTHash="1499951655">
+      <LinksToObj type="array">
+        <value DestUnitHashId="719896574">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.6599993f</value>
+        <value>-1.120001f</value>
+        <value>3.262741E-07f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-657.2904f</value>
+        <value>310.1725f</value>
+        <value>-3591.137f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_08</UnitConfigName>
+    </value>
+    <value HashId="663217897" SRTHash="-1066256151">
+      <Rotate type="array">
+        <value>-2.867035f</value>
+        <value>-0.04672731f</value>
+        <value>1.735135f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-119.2137f</value>
+        <value>237.0077f</value>
+        <value>-3087.772f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_01_Far</UnitConfigName>
+    </value>
+    <value HashId="700033387" SRTHash="0" Scale="1.4f">
+      <Rotate type="array">
+        <value>3.073819f</value>
+        <value>0.5178161f</value>
+        <value>-3.1323f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-848.4531f</value>
+        <value>341.446f</value>
+        <value>-3552.402f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeRib_LL</UnitConfigName>
+    </value>
+    <value HashId="719896574" SRTHash="1499951655">
+      <Rotate type="array">
+        <value>0.6599993f</value>
+        <value>-1.120001f</value>
+        <value>3.262741E-07f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-657.2904f</value>
+        <value>310.1725f</value>
+        <value>-3591.137f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_08_Far</UnitConfigName>
+    </value>
+    <value HashId="772400393" SRTHash="-956629617">
+      <Translate type="array">
+        <value>-47.87238f</value>
+        <value>196.6274f</value>
+        <value>-3294.177f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="781657238" SRTHash="635992113">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1027469435">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-772.5f</value>
+        <value>340f</value>
+        <value>-3520f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeLadder_A_01</UnitConfigName>
+    </value>
+    <value HashId="787401386" Rotate="1.481551f" SRTHash="0" Scale="2f">
+      <Translate type="array">
+        <value>-836.8935f</value>
+        <value>341.3927f</value>
+        <value>-3562.313f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_M</UnitConfigName>
+    </value>
+    <value HashId="794887067" SRTHash="-555433833">
+      <LinksToObj type="array">
+        <value DestUnitHashId="226312569">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.972549f</value>
+        <value>-0.341021f</value>
+        <value>3.112942f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-179.062f</value>
+        <value>202.064f</value>
+        <value>-3284.188f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="805803038" SRTHash="-278757457">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1343845852">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-985.0032f</value>
+        <value>348.9459f</value>
+        <value>-3070.191f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="807233737" SRTHash="-6305469">
+      <Rotate type="array">
+        <value>-3.091625f</value>
+        <value>-0.7180059f</value>
+        <value>3.014971f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-416.106f</value>
+        <value>207.9366f</value>
+        <value>-3155.417f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="831802003" SRTHash="1587959777">
+      <Translate type="array">
+        <value>-231.2769f</value>
+        <value>208.5635f</value>
+        <value>-3148.187f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="842176154" Rotate="2.941598f" SRTHash="0">
+      <Translate type="array">
+        <value>-799.2317f</value>
+        <value>343.4718f</value>
+        <value>-3547.048f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="845018299" Rotate="0.36f" SRTHash="1825234782">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1241656872">
+          <DefinitionName type="string">CopyWaitRevival</DefinitionName>
+        </value>
+        <value DestUnitHashId="462766153">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="626927089">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1299266701">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="252701100">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-487.1864f</value>
+        <value>234.4948f</value>
+        <value>-3142.74f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="846502528" SRTHash="1228583342">
+      <Translate type="array">
+        <value>-381.7456f</value>
+        <value>29.70786f</value>
+        <value>-4112.584f</value>
+      </Translate>
+      <UnitConfigName type="string">ValleyEffectLocater</UnitConfigName>
+    </value>
+    <value HashId="860006833" SRTHash="703737614" Scale="190f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1445909048">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-825.4f</value>
+        <value>299.7f</value>
+        <value>-3532f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="870525213" SRTHash="56887998" Scale="0.8f">
+      <LinksToObj type="array">
+        <value DestUnitHashId="2120848663">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.1960868f</value>
+        <value>-0.01849531f</value>
+        <value>-0.3957755f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-502.7554f</value>
+        <value>202.0412f</value>
+        <value>-3021.967f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="883937237" SRTHash="0">
+      <Translate type="array">
+        <value>-712.7672f</value>
+        <value>345f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="899828925" SRTHash="-1818235206">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Open_Dungeon116</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-918433652">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-406778968">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-490389260">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-87930173">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="2105819958">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="535384312">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-850f</value>
+        <value>353f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="901526494" Rotate="-1.570796f" SRTHash="-1619909520">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-829.6953f</value>
+        <value>341.263f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_WarpPoint_A_01</UnitConfigName>
+    </value>
+    <value HashId="913555582" OnlyOne="true" SRTHash="-367971213">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1527171577">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeParts_C_01</UnitConfigName>
+    </value>
+    <value HashId="914646713" Rotate="-2.003183f" SRTHash="1257283389">
+      <_Parameters HiddenKorokBodyColor="0" HiddenKorokLeftPlantType="0" HiddenKorokMaskType="1" HiddenKorokRightPlantType="0" IsAppearCheck="false" IsHiddenKorokLiftAppear="false" IsInvisibleKorok="false" KorokEventStartWaitFrame="20" RailMoveSpeed="0.1f" TerritoryArea="0f">
+        <PlacementType type="string">Air</PlacementType>
+      </_Parameters>
+      <Translate type="array">
+        <value>-872.8973f</value>
+        <value>335.5025f</value>
+        <value>-3316.106f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_HiddenKorokFly</UnitConfigName>
+    </value>
+    <value HashId="927372872" SRTHash="-2101236802">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1032036177">
+          <DefinitionName type="string">DeadUp</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-82.25125f</value>
+        <value>199.3047f</value>
+        <value>-3319.847f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Plant_ChiliPepper_A_01</UnitConfigName>
+    </value>
+    <value HashId="964212983" Rotate="-1.570796f" SRTHash="-575281713">
+      <Translate type="array">
+        <value>-831f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">LookTag</UnitConfigName>
+    </value>
+    <value HashId="965658413" SRTHash="-1390003554">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1960946028">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.750113f</value>
+        <value>0.8189821f</value>
+        <value>2.715664f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-947.698f</value>
+        <value>325.207f</value>
+        <value>-3012.672f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_27</UnitConfigName>
+    </value>
+    <value HashId="969535431" SRTHash="762825429">
+      <Rotate type="array">
+        <value>2.978012f</value>
+        <value>-0.967846f</value>
+        <value>-3.057943f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-367.804f</value>
+        <value>181.4364f</value>
+        <value>-2984.825f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_C_08_Far</UnitConfigName>
+    </value>
+    <value HashId="974911022" SRTHash="-1795629598">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1599838572">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-3.120189f</value>
+        <value>-0.9790376f</value>
+        <value>3.019862f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-59.77487f</value>
+        <value>191.6737f</value>
+        <value>-3368.01f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="987252649" OnlyOne="true" Rotate="-1.570796f" SRTHash="-1132052894">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1883412859">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-765f</value>
+        <value>340f</value>
+        <value>-3595f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeGround_B_03</UnitConfigName>
+    </value>
+    <value HashId="996896396" SRTHash="300625873">
+      <Rotate type="array">
+        <value>2.950254f</value>
+        <value>0.8955316f</value>
+        <value>3.03193f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-948.4934f</value>
+        <value>296.3691f</value>
+        <value>-3032.877f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="1000077119" SRTHash="0">
+      <Translate type="array">
+        <value>-830f</value>
+        <value>348.8f</value>
+        <value>-3560.031f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="1010343161" SRTHash="0" Scale="2f">
+      <Rotate type="array">
+        <value>-3.023585f</value>
+        <value>-1.085212f</value>
+        <value>2.549106f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-816.0612f</value>
+        <value>343.0157f</value>
+        <value>-3562.824f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeRib_M</UnitConfigName>
+    </value>
+    <value HashId="1016433604" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">MainField_TwnObj_GanonGrudgeSolid_Eyeball_A_01_3620304423</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1339151837">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1003108541">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1639864141">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1378768855">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="401165100">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-172874701">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1345958973">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1767062408">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1451287416">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1999529866">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1516058862">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1287737052">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-232068452">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1241901683">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1765967335">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="132063433">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1571508025">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1749481836">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="842176154">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-60659150">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="787401386">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="453213433">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-913318815">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1557365736">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1710156652">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="238389194">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-591845550">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-380333823">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1289683215">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1367052784">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1222706264">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="700033387">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1458203720">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-111964528">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1707359354">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="327001300">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="651644972">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1010343161">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.2459f</value>
+        <value>343.6402f</value>
+        <value>-3556.023f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1018908211" SRTHash="-1066256151">
+      <LinksToObj type="array">
+        <value DestUnitHashId="663217897">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-2.867035f</value>
+        <value>-0.04672731f</value>
+        <value>1.735135f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-119.2137f</value>
+        <value>237.0077f</value>
+        <value>-3087.772f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_01</UnitConfigName>
+    </value>
+    <value HashId="1019636572" Rotate="0.7853982f" SRTHash="609079821">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1027094618">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>90f</value>
+        <value>28f</value>
+        <value>90f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-816.3f</value>
+        <value>355.5f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1027094618" SRTHash="-1417598948" Scale="3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-822387630">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1140166838">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-819.3f</value>
+        <value>270.8f</value>
+        <value>-3533.6f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="1027469435" SRTHash="635992113">
+      <Translate type="array">
+        <value>-772.5f</value>
+        <value>340f</value>
+        <value>-3520f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeLadder_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1032036177" SRTHash="2014039989">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-68380970">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1177972309">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1969459509">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-81.72064f</value>
+        <value>199.3047f</value>
+        <value>-3321.913f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="1078044382" SRTHash="-2101236802">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1250209735">
+          <DefinitionName type="string">DeadUp</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-99.99997f</value>
+        <value>198.7637f</value>
+        <value>-3279f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Plant_ChiliPepper_A_01</UnitConfigName>
+    </value>
+    <value HashId="1087593117" SRTHash="-2003398885" Scale="1.2f">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-713033341">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.469217f</value>
+        <value>0.606851f</value>
+        <value>3.021008f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>14.55676f</value>
+        <value>268.71f</value>
+        <value>-3024.724f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10</UnitConfigName>
+    </value>
+    <value HashId="1158223329" SRTHash="-1421556412" Scale="0.9f">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-690924484">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.856631f</value>
+        <value>-0.3599354f</value>
+        <value>2.861047f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>12.72845f</value>
+        <value>265.2411f</value>
+        <value>-3084.959f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10</UnitConfigName>
+    </value>
+    <value HashId="1166620121" SRTHash="1702328370">
+      <Translate type="array">
+        <value>-172.9637f</value>
+        <value>200.533f</value>
+        <value>-3267.555f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="1175965786" SRTHash="0">
+      <_Parameters LocationPriority="0">
+        <MessageID type="string">SaihokuCastle</MessageID>
+      </_Parameters>
+      <Translate type="array">
+        <value>-825.4f</value>
+        <value>299.7f</value>
+        <value>-3532f</value>
+      </Translate>
+      <UnitConfigName type="string">LocationTag</UnitConfigName>
+    </value>
+    <value HashId="1233087568" OnlyOne="true" SRTHash="-1601978389">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-622198019">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeWall_C_01</UnitConfigName>
+    </value>
+    <value HashId="1234567743" SRTHash="-1849230205" Scale="0.8f">
+      <Rotate type="array">
+        <value>-0.6506459f</value>
+        <value>0.8476221f</value>
+        <value>-0.2387521f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-312.5123f</value>
+        <value>182.2718f</value>
+        <value>-3189.336f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_14_Far</UnitConfigName>
+    </value>
+    <value HashId="1250209735" SRTHash="2014039989">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1930713536">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-825319107">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="40149411">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-99.46936f</value>
+        <value>198.7637f</value>
+        <value>-3281.065f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="1256012713" SRTHash="2026400409">
+      <Rotate type="array">
+        <value>1.61633f</value>
+        <value>-0.211947f</value>
+        <value>-1.895268f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-60.34259f</value>
+        <value>193.4887f</value>
+        <value>-3268.832f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1258383962" SRTHash="-1303358519">
+      <Translate type="array">
+        <value>-755f</value>
+        <value>336f</value>
+        <value>-3530f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeRoof_B_02_Far</UnitConfigName>
+    </value>
+    <value HashId="1264214609" Rotate="0.36f" SRTHash="-1098004843" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-874164701">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-486.2956f</value>
+        <value>234.69f</value>
+        <value>-3142.598f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1285835870" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="626927089">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-485.7826f</value>
+        <value>237.9948f</value>
+        <value>-3143.269f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1289683215" SRTHash="0" Scale="2f">
+      <Rotate type="array">
+        <value>-1.743114f</value>
+        <value>-1.024193f</value>
+        <value>1.718401f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-847.4433f</value>
+        <value>341.5959f</value>
+        <value>-3546.05f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_M</UnitConfigName>
+    </value>
+    <value HashId="1294119115" OnlyOne="true" Rotate="-1.570796f" SRTHash="-1019668073">
+      <Translate type="array">
+        <value>-895f</value>
+        <value>340f</value>
+        <value>-3480f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeGround_B_02_Far</UnitConfigName>
+    </value>
+    <value HashId="1299266701" Rotate="0.36f" SRTHash="-104709595" Scale="5.548098f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1588754061">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-481.6056f</value>
+        <value>226.9495f</value>
+        <value>-3135.815f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1324268437" SRTHash="1517935919">
+      <Rotate type="array">
+        <value>2.845747f</value>
+        <value>0.330009f</value>
+        <value>-3.082028f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-873.6383f</value>
+        <value>34.27017f</value>
+        <value>-2987.971f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10_Far</UnitConfigName>
+    </value>
+    <value HashId="1327030590" SRTHash="-1641913945">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1346334331">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-1.275022f</value>
+        <value>1.323877f</value>
+        <value>0.2994514f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-921.0854f</value>
+        <value>306.2139f</value>
+        <value>-3353.829f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_14</UnitConfigName>
+    </value>
+    <value HashId="1345958973" SRTHash="0" Scale="2f">
+      <Rotate type="array">
+        <value>-3.141593f</value>
+        <value>0.3637324f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-805.2886f</value>
+        <value>351.8297f</value>
+        <value>-3545.59f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="1349782581" Rotate="0.36f" SRTHash="1999688624" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="12164486">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+        <value DestUnitHashId="462943202">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-486.1852f</value>
+        <value>234.69f</value>
+        <value>-3147.982f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1378768855" Rotate="1.860001f" SRTHash="0">
+      <Translate type="array">
+        <value>-799.9636f</value>
+        <value>340.8206f</value>
+        <value>-3547.48f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_LL</UnitConfigName>
+    </value>
+    <value HashId="1391206297" Rotate="-2.003183f" SRTHash="-939072923" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-150292103">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-873.5258f</value>
+        <value>339.2759f</value>
+        <value>-3314.744f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1409911219" SRTHash="-307323863" Scale="0.5f">
+      <_Parameters SharpWeaponJudgeType="0" WaitTime="10f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1285835870">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>0.36f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-485.7826f</value>
+        <value>237.9948f</value>
+        <value>-3143.269f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
+    <value HashId="1424755169" SRTHash="1648237832">
+      <Rotate type="array">
+        <value>1.422268f</value>
+        <value>-0.9704053f</value>
+        <value>-3.044741f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-924.4366f</value>
+        <value>317.2389f</value>
+        <value>-3428.611f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_14_Far</UnitConfigName>
+    </value>
+    <value HashId="1452336906" Rotate="-1.570796f" SRTHash="990594583">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DungeonEntrance_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1462726226" SRTHash="945953569" Scale="1.2f">
+      <Rotate type="array">
+        <value>2.612091f</value>
+        <value>-0.1626647f</value>
+        <value>-2.9147f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-123.662f</value>
+        <value>202.2031f</value>
+        <value>-3197.974f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10_Far</UnitConfigName>
+    </value>
+    <value HashId="1464120321" SRTHash="-30562054">
+      <Translate type="array">
+        <value>-391.8212f</value>
+        <value>212.0373f</value>
+        <value>-3055.722f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="1516058862" Rotate="0.1400373f" SRTHash="0" Scale="2f">
+      <Translate type="array">
+        <value>-824.1772f</value>
+        <value>344.7052f</value>
+        <value>-3557.183f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_M</UnitConfigName>
+    </value>
+    <value HashId="1521136846" SRTHash="-320185616">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-930239368">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.375774f</value>
+        <value>0.9397571f</value>
+        <value>0.3293553f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-46.73315f</value>
+        <value>190.2134f</value>
+        <value>-3357.746f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_03</UnitConfigName>
+    </value>
+    <value HashId="1527171577" OnlyOne="true" SRTHash="-367971213">
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeParts_C_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1551691501" SRTHash="-676149721">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1986085866">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-745f</value>
+        <value>336f</value>
+        <value>-3545f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeRoof_B_02</UnitConfigName>
+    </value>
+    <value HashId="1557365736" Rotate="1.481551f" SRTHash="0" Scale="1.7f">
+      <Translate type="array">
+        <value>-854.4228f</value>
+        <value>340.1505f</value>
+        <value>-3565.16f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_M</UnitConfigName>
+    </value>
+    <value HashId="1567040468" SRTHash="-819480833" Scale="0.8f">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1947651113">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-3.081229f</value>
+        <value>-0.03649823f</value>
+        <value>3.121642f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-265.5696f</value>
+        <value>191.4833f</value>
+        <value>-3052.685f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_C_08</UnitConfigName>
+    </value>
+    <value HashId="1574539700" OnlyOne="true" SRTHash="0">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-826.1005f</value>
+        <value>347.4916f</value>
+        <value>-3557.346f</value>
+      </Translate>
+      <UnitConfigName type="string">MergedGrudge_E-1_1</UnitConfigName>
+    </value>
+    <value HashId="1575008054" Rotate="-3.141593f" SRTHash="732716547">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-158801592">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>16f</value>
+        <value>5.5f</value>
+        <value>16f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-825f</value>
+        <value>348.2f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1594619668" SRTHash="1947469762">
+      <LinksToObj type="array">
+        <value DestUnitHashId="78884413">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.02000026f</value>
+        <value>0.9591037f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-636.3452f</value>
+        <value>337.7001f</value>
+        <value>-3444.379f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="1599838572" SRTHash="-1795629598">
+      <Rotate type="array">
+        <value>-3.120189f</value>
+        <value>-0.9790376f</value>
+        <value>3.019862f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-59.77487f</value>
+        <value>191.6737f</value>
+        <value>-3368.01f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="1615259944" OnlyOne="true" SRTHash="1824820778">
+      <LinksToObj type="array">
+        <value DestUnitHashId="566663833">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeWall_C_03</UnitConfigName>
+    </value>
+    <value HashId="1625916167" SRTHash="-621523570">
+      <Translate type="array">
+        <value>-80.25317f</value>
+        <value>199.3047f</value>
+        <value>-3319.876f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="1639864141" Rotate="-3.062924f" SRTHash="0" Scale="1.5f">
+      <Translate type="array">
+        <value>-849.5538f</value>
+        <value>340.6081f</value>
+        <value>-3548.854f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="1662717697" SRTHash="474773328" Scale="3f">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">EntryPoint0</EventFlowEntryName>
+        <EventFlowName type="string">Cliff_Maze</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>-791.9f</value>
+        <value>271f</value>
+        <value>-3533.2f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="1690888496" SRTHash="1806516420">
+      <Translate type="array">
+        <value>-466.8427f</value>
+        <value>214.8597f</value>
+        <value>-3091.893f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="1707359354" SRTHash="0" Scale="1.5f">
+      <Rotate type="array">
+        <value>-1.774219f</value>
+        <value>1.261929f</value>
+        <value>-1.676493f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-801.8698f</value>
+        <value>342.5831f</value>
+        <value>-3550.991f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeRib_L</UnitConfigName>
+    </value>
+    <value HashId="1710156652" Rotate="-1.683463f" SRTHash="0" Scale="0.9999f">
+      <Translate type="array">
+        <value>-804.9672f</value>
+        <value>343.4875f</value>
+        <value>-3578.438f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="1718018121" OnlyOne="true" SRTHash="1081676485">
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeParts_C_02_Far</UnitConfigName>
+    </value>
+    <value HashId="1746021691" SRTHash="1472169002">
+      <_Parameters FortressEatPer="-1" IsCreateStalPart="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <EquipItem1 type="string">Weapon_Spear_012</EquipItem1>
+        <RideHorseName type="string">GameRomHorseBone</RideHorseName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-72075948">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-941.1001f</value>
+        <value>333.0443f</value>
+        <value>-3626.639f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Bokoblin_Bone_Junior</UnitConfigName>
+    </value>
+    <value HashId="1755126638" SRTHash="-1303358519">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1258383962">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-755f</value>
+        <value>336f</value>
+        <value>-3530f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeRoof_B_02</UnitConfigName>
+    </value>
+    <value HashId="1765967335" Rotate="-0.9200005f" SRTHash="0" Scale="1.3f">
+      <Translate type="array">
+        <value>-800.3684f</value>
+        <value>344.7531f</value>
+        <value>-3539.7f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="1767062408" Rotate="1.299716f" SRTHash="0" Scale="1.8f">
+      <Translate type="array">
+        <value>-810.2715f</value>
+        <value>340.1438f</value>
+        <value>-3579.914f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="1809382332" SRTHash="0">
+      <_Parameters IncrementSave="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Location_SaihokuCastle</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-825.4f</value>
+        <value>299.7f</value>
+        <value>-3532f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1833485614" SRTHash="-1394937759">
+      <Rotate type="array">
+        <value>-1.878815f</value>
+        <value>-1.138061f</value>
+        <value>1.430939f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-854.4924f</value>
+        <value>334.1526f</value>
+        <value>-3347.42f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_15_Far</UnitConfigName>
+    </value>
+    <value HashId="1860755320" Rotate="-2.003183f" SRTHash="1825234782">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="914646713">
+          <DefinitionName type="string">CopyWaitRevival</DefinitionName>
+        </value>
+        <value DestUnitHashId="-150292103">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2068448124">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-872.6879f</value>
+        <value>337.7759f</value>
+        <value>-3316.56f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1883412859" OnlyOne="true" Rotate="-1.570796f" SRTHash="-1132052894">
+      <Translate type="array">
+        <value>-765f</value>
+        <value>340f</value>
+        <value>-3595f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeGround_B_03_Far</UnitConfigName>
+    </value>
+    <value HashId="1886653681" Rotate="-1.570796f" SRTHash="-757633401" Scale="0.3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="2" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1452336906">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-826.5f</value>
+        <value>341.3f</value>
+        <value>-3536.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1938723365" SRTHash="-538608848">
+      <Rotate type="array">
+        <value>0.597133f</value>
+        <value>-0.6154624f</value>
+        <value>0.0497457f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-109.4447f</value>
+        <value>348.7917f</value>
+        <value>-2877.526f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_E_14_Far</UnitConfigName>
+    </value>
+    <value HashId="1969459509" Rotate="2.617994f" SRTHash="-1073213680">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1625916167">
+          <_Parameters>
+            <Pivot X="0f" Y="0.15f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-82.40186f</value>
+        <value>200.4147f</value>
+        <value>-3320.072f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Fruit_I</UnitConfigName>
+    </value>
+    <value HashId="1986085866" SRTHash="-676149721">
+      <Translate type="array">
+        <value>-745f</value>
+        <value>336f</value>
+        <value>-3545f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeRoof_B_02_Far</UnitConfigName>
+    </value>
+    <value HashId="2008879641" SRTHash="752425653">
+      <Rotate type="array">
+        <value>-0.7857963f</value>
+        <value>0.7890648f</value>
+        <value>0.06719883f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-456.4455f</value>
+        <value>185.2561f</value>
+        <value>-3112.884f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_C_01_Far</UnitConfigName>
+    </value>
+    <value HashId="2054028174" SRTHash="1137584320">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Cliff_Maze_Activated</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1662717697">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1140166838">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-799.36f</value>
+        <value>271f</value>
+        <value>-3526.027f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2062049060" OnlyOne="true" SRTHash="648310136">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-410375347">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeWall_C_02</UnitConfigName>
+    </value>
+    <value HashId="2093683804" SRTHash="-1051998477">
+      <Rotate type="array">
+        <value>-0.02533011f</value>
+        <value>0.2750395f</value>
+        <value>0.1205761f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-854.0105f</value>
+        <value>333.8239f</value>
+        <value>-3305.132f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="2105498146" OnlyOne="true" SRTHash="1081676485">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1718018121">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeParts_C_02</UnitConfigName>
+    </value>
+    <value HashId="2105819958" SRTHash="-576719886">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>1.110223E-16f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-826.0594f</value>
+        <value>345.0063f</value>
+        <value>-3554.68f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="2112874622" SRTHash="1898369114">
+      <Translate type="array">
+        <value>-42.01755f</value>
+        <value>201.5459f</value>
+        <value>-3365.879f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="2120848663" SRTHash="56887998" Scale="0.8f">
+      <Rotate type="array">
+        <value>0.1960868f</value>
+        <value>-0.01849531f</value>
+        <value>-0.3957755f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-502.7554f</value>
+        <value>202.0412f</value>
+        <value>-3021.967f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_C_01_Far</UnitConfigName>
+    </value>
+    <value HashId="2121122962" SRTHash="-95011359">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-763856049">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.006023431f</value>
+        <value>0.478278f</value>
+        <value>0.6227519f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-703.4689f</value>
+        <value>334.1994f</value>
+        <value>-3424.436f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_15</UnitConfigName>
+    </value>
+    <value HashId="2124345428" SRTHash="1877742721">
+      <Rotate type="array">
+        <value>3.120812f</value>
+        <value>-0.5255252f</value>
+        <value>2.987594f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-597.8623f</value>
+        <value>233.2112f</value>
+        <value>-2976.345f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="-2147044876" Rotate="0.36f" SRTHash="-1703160571" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1264214609">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-486.2956f</value>
+        <value>233.19f</value>
+        <value>-3142.598f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="-2103436561" Rotate="-1.570796f" SRTHash="-105080390">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-824.3f</value>
+        <value>341.3002f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_EntranceShutter_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2068448124" Rotate="-2.003183f" SRTHash="-2069811718">
+      <_Parameters IsNoAppearEffect="true" IsTargetWarp="false" KorokTargetAppearFrame="-1" KorokTargetVanishFrame="-1" RailMoveSpeed="0.1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1391206297">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-872.8972f</value>
+        <value>336.2759f</value>
+        <value>-3316.106f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_KorokTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2060132115" SRTHash="-538608848">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1938723365">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.597133f</value>
+        <value>-0.6154624f</value>
+        <value>0.0497457f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-109.4447f</value>
+        <value>348.7917f</value>
+        <value>-2877.526f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_E_14</UnitConfigName>
+    </value>
+    <value HashId="-2043810008" Rotate="0.36f" SRTHash="-1912555151">
+      <_Parameters IsNoAppearEffect="false" IsTargetWarp="false" KorokTargetAppearFrame="-1" KorokTargetVanishFrame="-1" RailMoveSpeed="0.3f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="498904382">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="970081690">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-483.3767f</value>
+        <value>241.4167f</value>
+        <value>-3150.692f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_KorokTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2039572778" SRTHash="2026400409">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1256012713">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>1.61633f</value>
+        <value>-0.211947f</value>
+        <value>-1.895268f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-60.34259f</value>
+        <value>193.4887f</value>
+        <value>-3268.832f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_01</UnitConfigName>
+    </value>
+    <value HashId="-2021068798" SRTHash="945953569" Scale="1.2f">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1462726226">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.612091f</value>
+        <value>-0.1626647f</value>
+        <value>-2.9147f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-123.662f</value>
+        <value>202.2031f</value>
+        <value>-3197.974f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10</UnitConfigName>
+    </value>
+    <value HashId="-2012238251" SRTHash="-1867010510">
+      <LinksToObj type="array">
+        <value DestUnitHashId="635606323">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.863543f</value>
+        <value>0.8274038f</value>
+        <value>3.089541f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-798.9369f</value>
+        <value>332.5826f</value>
+        <value>-3675.683f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_03</UnitConfigName>
+    </value>
+    <value HashId="-1999529866" SRTHash="0" Scale="0.9999f">
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>0f</value>
+        <value>1.919862f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-827.1459f</value>
+        <value>354.2175f</value>
+        <value>-3565.043f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-1968096731" SRTHash="1648237832">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1424755169">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>1.422268f</value>
+        <value>-0.9704053f</value>
+        <value>-3.044741f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-924.4366f</value>
+        <value>317.2389f</value>
+        <value>-3428.611f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_14</UnitConfigName>
+    </value>
+    <value HashId="-1960946028" SRTHash="-1390003554">
+      <Rotate type="array">
+        <value>2.750113f</value>
+        <value>0.8189821f</value>
+        <value>2.715664f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-947.698f</value>
+        <value>325.207f</value>
+        <value>-3012.672f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="-1947651113" SRTHash="-819480833" Scale="0.8f">
+      <Rotate type="array">
+        <value>-3.081229f</value>
+        <value>-0.03649823f</value>
+        <value>3.121642f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-265.5696f</value>
+        <value>191.4833f</value>
+        <value>-3052.685f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_C_08_Far</UnitConfigName>
+    </value>
+    <value HashId="-1930713536" SRTHash="-1735325584">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="401519505">
+          <_Parameters>
+            <Pivot X="0f" Y="0.15f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-99.79434f</value>
+        <value>199.6437f</value>
+        <value>-3279.058f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Fruit_I</UnitConfigName>
+    </value>
+    <value HashId="-1899214163" SRTHash="652120844">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-283618561">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-1.577346f</value>
+        <value>-0.8473045f</value>
+        <value>-0.08261945f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-677.4679f</value>
+        <value>317.2389f</value>
+        <value>-3497.204f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_14</UnitConfigName>
+    </value>
+    <value HashId="-1808488013" SRTHash="1517935919">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1324268437">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.845747f</value>
+        <value>0.330009f</value>
+        <value>-3.082028f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-873.6383f</value>
+        <value>34.27017f</value>
+        <value>-2987.971f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10</UnitConfigName>
+    </value>
+    <value HashId="-1780805972" Rotate="-2.094395f" SRTHash="1806128058">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-108117955">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-826.5f</value>
+        <value>341.3002f</value>
+        <value>-3533f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_EntranceTerminal_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1749481836" Rotate="0.2599934f" SRTHash="0">
+      <Translate type="array">
+        <value>-797.5754f</value>
+        <value>344.3078f</value>
+        <value>-3543.235f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-1728923179" Rotate="-1.570796f" SRTHash="-458338045">
+      <LinksToObj type="array">
+        <value DestUnitHashId="883937237">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-717.5016f</value>
+        <value>345f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">EnemyLookTag</UnitConfigName>
+    </value>
+    <value HashId="-1691820144" Rotate="0.5800001f" SRTHash="1513454765">
+      <_Parameters IsNoAppearEffect="false" IsTargetWarp="false" KorokTargetAppearFrame="-1" KorokTargetVanishFrame="-1" RailMoveSpeed="0.3f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349782581">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="753869155">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-487.167f</value>
+        <value>252.9557f</value>
+        <value>-3148.826f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_KorokTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1645587016" Rotate="1.570796f" SRTHash="1257667284">
+      <Translate type="array">
+        <value>-827.366f</value>
+        <value>341.3f</value>
+        <value>-3535.1f</value>
+      </Translate>
+      <UniqueName type="string">Demo008_0_PlayerEndPos</UniqueName>
+      <UnitConfigName type="string">PosAfterDemoSkip</UnitConfigName>
+    </value>
+    <value HashId="-1614235362" SRTHash="272770252">
+      <Translate type="array">
+        <value>-467.85f</value>
+        <value>215.3265f</value>
+        <value>-3032.742f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="-1591558432" Rotate="0.36f" SRTHash="1814253033" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1264214609">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+        <value DestUnitHashId="-842133249">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+        <value DestUnitHashId="-791994297">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-483.3669f</value>
+        <value>236.69f</value>
+        <value>-3140.495f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-1588754061" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1591558432">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+        <value DestUnitHashId="-874164701">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1691820144">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2043810008">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-481.6056f</value>
+        <value>226.9495f</value>
+        <value>-3135.815f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1577049015" OnlyOne="true" Rotate="-1.570796f" SRTHash="-1019668073">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1294119115">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-895f</value>
+        <value>340f</value>
+        <value>-3480f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeGround_B_02</UnitConfigName>
+    </value>
+    <value HashId="-1571508025" Rotate="1.019996f" SRTHash="0">
+      <Translate type="array">
+        <value>-796.7083f</value>
+        <value>342.6671f</value>
+        <value>-3547.626f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-1569084765" SRTHash="-1082517629">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-859952060">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>3.1211f</value>
+        <value>-0.07432835f</value>
+        <value>2.915858f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-799.6919f</value>
+        <value>271.1054f</value>
+        <value>-2932.218f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="-1550782754" SRTHash="1741861203">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-400568269">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.568213f</value>
+        <value>-0.05550147f</value>
+        <value>-3.005986f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-120.7976f</value>
+        <value>261.6459f</value>
+        <value>-3046.139f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_11</UnitConfigName>
+    </value>
+    <value HashId="-1533644537" SRTHash="1632223771">
+      <Translate type="array">
+        <value>-522.8911f</value>
+        <value>223.822f</value>
+        <value>-3002.781f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="-1491928757" SRTHash="-851026938">
+      <Translate type="array">
+        <value>-334.989f</value>
+        <value>197.4265f</value>
+        <value>-3227.182f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="-1470404722" Rotate="-2.356194f" SRTHash="2088219882">
+      <_Parameters FortressEatPer="-1" IsCreateStalPart="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <EquipItem1 type="string">Weapon_Bow_027</EquipItem1>
+        <RideHorseName type="string">GameRomHorseBone</RideHorseName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-72075948">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1045.138f</value>
+        <value>326.2711f</value>
+        <value>-3549.534f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Bokoblin_Bone_Junior</UnitConfigName>
+    </value>
+    <value HashId="-1458203720" SRTHash="0" Scale="0.9999f">
+      <Rotate type="array">
+        <value>-2.945951f</value>
+        <value>-0.3632887f</value>
+        <value>2.994984f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-825.2909f</value>
+        <value>344.0859f</value>
+        <value>-3556.842f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeRib_L</UnitConfigName>
+    </value>
+    <value HashId="-1451287416" SRTHash="0" Scale="0.9f">
+      <Rotate type="array">
+        <value>0.01326463f</value>
+        <value>0.1214506f</value>
+        <value>-0.2193851f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-796.2673f</value>
+        <value>340.7373f</value>
+        <value>-3578.146f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_LL</UnitConfigName>
+    </value>
+    <value HashId="-1445909048" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1809382332">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1175965786">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-825.4f</value>
+        <value>299.7f</value>
+        <value>-3532f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1417819334" Rotate="-1.570796f" SRTHash="608539723">
+      <Translate type="array">
+        <value>-417.9258f</value>
+        <value>29.7078f</value>
+        <value>-3639.128f</value>
+      </Translate>
+      <UnitConfigName type="string">ValleyEffectLocater</UnitConfigName>
+    </value>
+    <value HashId="-1410331978" SRTHash="0">
+      <_Parameters LocationPriority="1">
+        <MessageID type="string">Dungeon116</MessageID>
+      </_Parameters>
+      <Translate type="array">
+        <value>-825f</value>
+        <value>348.2f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">LocationTag</UnitConfigName>
+    </value>
+    <value HashId="-1403637143" Rotate="-1.570796f" SRTHash="990594583">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1452336906">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DungeonEntrance_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1367052784" SRTHash="0" Scale="2f">
+      <Rotate type="array">
+        <value>-3.141591f</value>
+        <value>-1.570796f</value>
+        <value>-0.5235987f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-816.916f</value>
+        <value>343.2716f</value>
+        <value>-3558.611f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_M</UnitConfigName>
+    </value>
+    <value HashId="-1361836716" SRTHash="531252580">
+      <LinksToObj type="array">
+        <value DestUnitHashId="227157050">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>1.684984f</value>
+        <value>0.3198182f</value>
+        <value>1.648003f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-253.8791f</value>
+        <value>210.1126f</value>
+        <value>-3079.699f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_01</UnitConfigName>
+    </value>
+    <value HashId="-1346334331" SRTHash="-1641913945">
+      <Rotate type="array">
+        <value>-1.275022f</value>
+        <value>1.323877f</value>
+        <value>0.2994514f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-921.0854f</value>
+        <value>306.2139f</value>
+        <value>-3353.829f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_14_Far</UnitConfigName>
+    </value>
+    <value HashId="-1343845852" SRTHash="-1363629603">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Spear_003</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-3.141592f</value>
+        <value>1.461204f</value>
+        <value>-3.060618f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-987.2784f</value>
+        <value>343.6189f</value>
+        <value>-3060.923f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
+    </value>
+    <value HashId="-1339151837" Rotate="0.2910882f" SRTHash="0" Scale="1.2f">
+      <Translate type="array">
+        <value>-802.8595f</value>
+        <value>340.1019f</value>
+        <value>-3560.305f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_LL</UnitConfigName>
+    </value>
+    <value HashId="-1334918309" SRTHash="116286568">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-546825922">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.337266f</value>
+        <value>-1.303632f</value>
+        <value>-2.16373f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-701.8103f</value>
+        <value>332.7947f</value>
+        <value>-3649.306f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_03</UnitConfigName>
+    </value>
+    <value HashId="-1318885856" SRTHash="-352506736" Scale="1.2f">
+      <LinksToObj type="array">
+        <value DestUnitHashId="277812354">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.527537f</value>
+        <value>-0.5897712f</value>
+        <value>-2.857929f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-21.2948f</value>
+        <value>221.6874f</value>
+        <value>-3219.646f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10</UnitConfigName>
+    </value>
+    <value HashId="-1287737052" SRTHash="0" Scale="1.15f">
+      <Rotate type="array">
+        <value>3.03264f</value>
+        <value>0f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-854.0377f</value>
+        <value>339.6599f</value>
+        <value>-3555.085f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_LL</UnitConfigName>
+    </value>
+    <value HashId="-1257554334" SRTHash="486930522">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-103557058">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>3.01942f</value>
+        <value>-0.4195213f</value>
+        <value>-3.119873f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-894.4283f</value>
+        <value>333.1448f</value>
+        <value>-3688.007f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_27</UnitConfigName>
+    </value>
+    <value HashId="-1241901683" SRTHash="0" Scale="1.1f">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>-0.37968f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-801.0051f</value>
+        <value>355.3234f</value>
+        <value>-3534.778f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-1241656872" Rotate="0.36f" SRTHash="1257283389">
+      <_Parameters HiddenKorokBodyColor="4" HiddenKorokLeftPlantType="0" HiddenKorokMaskType="0" HiddenKorokRightPlantType="0" IsAppearCheck="false" IsHiddenKorokLiftAppear="false" IsInvisibleKorok="false" KorokEventStartWaitFrame="55" RailMoveSpeed="0.1f" TerritoryArea="0f">
+        <PlacementType type="string">Air</PlacementType>
+      </_Parameters>
+      <Translate type="array">
+        <value>-486.7185f</value>
+        <value>231.9948f</value>
+        <value>-3142.917f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_HiddenKorokFly</UnitConfigName>
+    </value>
+    <value HashId="-1234677215" SRTHash="-6305469">
+      <LinksToObj type="array">
+        <value DestUnitHashId="807233737">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-3.091625f</value>
+        <value>-0.7180059f</value>
+        <value>3.014971f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-416.106f</value>
+        <value>207.9366f</value>
+        <value>-3155.417f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="-1222706264" SRTHash="0" Scale="1.6f">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>-0.3799966f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-794.6063f</value>
+        <value>349.7043f</value>
+        <value>-3538.945f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-1177972309" Rotate="-2.879793f" SRTHash="-94270366">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1625916167">
+          <_Parameters>
+            <Pivot X="0f" Y="0.15f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-82.42126f</value>
+        <value>200.2547f</value>
+        <value>-3319.692f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Fruit_I</UnitConfigName>
+    </value>
+    <value HashId="-1174799718" SRTHash="-718682443">
+      <Translate type="array">
+        <value>-276.8311f</value>
+        <value>200.6631f</value>
+        <value>-3218.25f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="-1154669014" Rotate="-1.570796f" SRTHash="-925432741">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <EventFlowEntryName type="string">Demo008_1</EventFlowEntryName>
+        <EventFlowName type="string">Demo008_1</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="964212983">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>341.3002f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_EntranceElevator_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1140166838" SRTHash="16068001" Scale="3f">
+      <_Parameters>
+        <EventFlowEntryName type="string">PlayerOnGround</EventFlowEntryName>
+        <EventFlowName type="string">SignalFlowchart</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1122457829">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-805.7f</value>
+        <value>271f</value>
+        <value>-3533.3f</value>
+      </Translate>
+      <UnitConfigName type="string">SignalFlowchart</UnitConfigName>
+    </value>
+    <value HashId="-1122457829" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1662717697">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-805.7f</value>
+        <value>271f</value>
+        <value>-3533.3f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1087073592" Rotate="-1.500001f" SRTHash="-1649281746">
+      <_Parameters FortressEatPer="-1" IsCreateStalPart="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <EquipItem1 type="string">Weapon_Spear_012</EquipItem1>
+        <RideHorseName type="string">GameRomHorseBone</RideHorseName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-72075948">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-963f</value>
+        <value>330.1712f</value>
+        <value>-3639.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Bokoblin_Bone_Junior</UnitConfigName>
+    </value>
+    <value HashId="-1064994171" SRTHash="-917048748">
+      <Translate type="array">
+        <value>-745f</value>
+        <value>336f</value>
+        <value>-3515f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeRoof_B_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-1058003727" OnlyOne="true" Rotate="-1.570796f" SRTHash="557786862">
+      <LinksToObj type="array">
+        <value DestUnitHashId="176343579">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-895f</value>
+        <value>340f</value>
+        <value>-3595f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeGround_B_01</UnitConfigName>
+    </value>
+    <value HashId="-1049664841" SRTHash="1877742721">
+      <LinksToObj type="array">
+        <value DestUnitHashId="2124345428">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>3.120812f</value>
+        <value>-0.5255252f</value>
+        <value>2.987594f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-597.8623f</value>
+        <value>233.2112f</value>
+        <value>-2976.345f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="-1031163339" SRTHash="0">
+      <_Parameters IncrementSave="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Location_Dungeon116</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-825f</value>
+        <value>348.2f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1007552342" SRTHash="1032135314">
+      <Translate type="array">
+        <value>-368.3446f</value>
+        <value>198.2892f</value>
+        <value>-3199.21f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="-1003108541" Rotate="2.122227f" SRTHash="0" Scale="2f">
+      <Translate type="array">
+        <value>-838.9258f</value>
+        <value>339.8068f</value>
+        <value>-3558.953f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-975108589" Rotate="-1.570796f" SRTHash="1313628183">
+      <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="15.70162f" WaitTime="1f">
+        <EquipItem1 type="string">Weapon_Spear_007</EquipItem1>
+        <TraversePos X="-747.8f" Y="340.3122f" Z="-3512.55f" />
+      </_Parameters>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-847921100">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-742f</value>
+        <value>340.1597f</value>
+        <value>-3497.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="-935895136" Rotate="-1.570796f" SRTHash="-757633401" Scale="0.3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="2" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2103436561">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="901526494">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1403637143">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-826.5f</value>
+        <value>341.3f</value>
+        <value>-3536.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-930239368" SRTHash="-320185616">
+      <Rotate type="array">
+        <value>0.375774f</value>
+        <value>0.9397571f</value>
+        <value>0.3293553f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-46.73315f</value>
+        <value>190.2134f</value>
+        <value>-3357.746f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_03_Far</UnitConfigName>
+    </value>
+    <value HashId="-918433652" SRTHash="-428028807">
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>1.110223E-16f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-844.6735f</value>
+        <value>345f</value>
+        <value>-3533.559f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-913318815" Rotate="1.422227f" SRTHash="0">
+      <Translate type="array">
+        <value>-857.5948f</value>
+        <value>340.7756f</value>
+        <value>-3563.168f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-906978146" Rotate="-2.094395f" SRTHash="295738227" Scale="0.6f">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0.8000488f">
+        <EventFlowEntryName type="string">Demo008_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo008_0</EventFlowName>
+        <TraversePos X="-827.366f" Y="341.3f" Z="-3534.3f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-935895136">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-368706545">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1645587016">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-679669513">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-826.5f</value>
+        <value>341.3f</value>
+        <value>-3533f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-899653031" OnlyOne="true" Rotate="-1.570796f" SRTHash="63650779">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-233697622">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-765f</value>
+        <value>340f</value>
+        <value>-3475f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeGround_B_04</UnitConfigName>
+    </value>
+    <value HashId="-874164701" Rotate="0.86f" SRTHash="-1727376114">
+      <_Parameters IsNoAppearEffect="false" IsTargetWarp="false" KorokTargetAppearFrame="-1" KorokTargetVanishFrame="-1" RailMoveSpeed="0.3f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-689930597">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1133391722">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-499.8763f</value>
+        <value>241.612f</value>
+        <value>-3139.549f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_KorokTarget_A_01</UnitConfigName>
+    </value>
+    <value HashId="-859952060" SRTHash="-1082517629">
+      <Rotate type="array">
+        <value>3.1211f</value>
+        <value>-0.07432835f</value>
+        <value>2.915858f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-799.6919f</value>
+        <value>271.1054f</value>
+        <value>-2932.218f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="-842133249" Rotate="0.36f" SRTHash="-644088472" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2043810008">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-482.552f</value>
+        <value>234.69f</value>
+        <value>-3144.007f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-825319107" Rotate="-2.879793f" SRTHash="-94270366">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="401519505">
+          <_Parameters>
+            <Pivot X="0f" Y="0.15f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-100.17f</value>
+        <value>199.7137f</value>
+        <value>-3278.845f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Fruit_I</UnitConfigName>
+    </value>
+    <value HashId="-822387630" SRTHash="1405963403" Scale="3f">
+      <_Parameters BluffThunderOff="false" CloudShadowOff="false" FogMinusCorrection="false" IgnitedLevel="0" PSelSpeed="0" PaletteSel="11" TemperatureDay="99999.9f" TemperatureDirectDay="99999.9f" TemperatureDirectNight="99999.9f" TemperatureNight="99999.9f" Weather="-1" WeatherEff="-1" />
+      <Translate type="array">
+        <value>-805.1f</value>
+        <value>261.9f</value>
+        <value>-3533.6f</value>
+      </Translate>
+      <UnitConfigName type="string">ChangeWeatherTag</UnitConfigName>
+    </value>
+    <value HashId="-803780107" OnlyOne="true" SRTHash="494118871">
+      <LinksToObj type="array">
+        <value DestUnitHashId="480686889">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeWall_C_04</UnitConfigName>
+    </value>
+    <value HashId="-791994297" Rotate="0.36f" SRTHash="-724076480" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1691820144">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-484.4238f</value>
+        <value>236.19f</value>
+        <value>-3143.302f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-763856049" SRTHash="-95011359">
+      <Rotate type="array">
+        <value>0.006023431f</value>
+        <value>0.478278f</value>
+        <value>0.6227519f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-703.4689f</value>
+        <value>334.1994f</value>
+        <value>-3424.436f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_15_Far</UnitConfigName>
+    </value>
+    <value HashId="-733594535" OnlyOne="true" SRTHash="1145460185">
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeParts_C_03_Far</UnitConfigName>
+    </value>
+    <value HashId="-713033341" SRTHash="-2003398885" Scale="1.2f">
+      <Rotate type="array">
+        <value>2.469217f</value>
+        <value>0.606851f</value>
+        <value>3.021008f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>14.55676f</value>
+        <value>268.71f</value>
+        <value>-3024.724f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10_Far</UnitConfigName>
+    </value>
+    <value HashId="-707677206" SRTHash="813923111">
+      <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="20.35416f" WaitTime="1f">
+        <EquipItem1 type="string">Weapon_Spear_007</EquipItem1>
+        <TraversePos X="-762.25f" Y="340.3128f" Z="-3559.7f" />
+      </_Parameters>
+      <LinksToRail type="array">
+        <value DestUnitHashId="704738878">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-752.3f</value>
+        <value>340f</value>
+        <value>-3548.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Senior</UnitConfigName>
+    </value>
+    <value HashId="-690924484" SRTHash="-1421556412" Scale="0.9f">
+      <Rotate type="array">
+        <value>2.856631f</value>
+        <value>-0.3599354f</value>
+        <value>2.861047f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>12.72845f</value>
+        <value>265.2411f</value>
+        <value>-3084.959f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_10_Far</UnitConfigName>
+    </value>
+    <value HashId="-689930597" Rotate="0.36f" SRTHash="-975559611" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="12164486">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2147044876">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-490.1601f</value>
+        <value>231.69f</value>
+        <value>-3144.349f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-679669513" Rotate="1.570796f" SRTHash="1324596190">
+      <Translate type="array">
+        <value>-827.366f</value>
+        <value>341.3f</value>
+        <value>-3535.1f</value>
+      </Translate>
+      <UniqueName type="string">Demo008_0_PlayerEndPos</UniqueName>
+      <UnitConfigName type="string">ForceSetPosDirAutoSaveAnchor</UnitConfigName>
+    </value>
+    <value HashId="-674662873" SRTHash="1944899493" Scale="3f">
+      <_Parameters ASFrame="0f" EyeballFirstState="0" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-270512564">
+          <DefinitionName type="string">DeadUp</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1339151837">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1003108541">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1639864141">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1378768855">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="401165100">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-172874701">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1345958973">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1767062408">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1451287416">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1999529866">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1516058862">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1287737052">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-232068452">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1241901683">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1765967335">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="132063433">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1571508025">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1749481836">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="842176154">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-60659150">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="787401386">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="453213433">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-913318815">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1557365736">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1710156652">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="238389194">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-591845550">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-380333823">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1289683215">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1367052784">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1222706264">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="700033387">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1458203720">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-111964528">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1707359354">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="327001300">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="651644972">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1010343161">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1000077119">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.3f</value>
+        <value>-1.570796f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-830f</value>
+        <value>348.8f</value>
+        <value>-3560.031f</value>
+      </Translate>
+      <UnitConfigName type="string">TwnObj_GanonGrudgeSolid_Eyeball_A_01</UnitConfigName>
+    </value>
+    <value HashId="-642337539" SRTHash="-2138910483">
+      <Rotate type="array">
+        <value>3.003508f</value>
+        <value>-0.3917769f</value>
+        <value>-2.992794f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-918.7258f</value>
+        <value>312.2232f</value>
+        <value>-3703.618f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="-622198019" OnlyOne="true" SRTHash="-1601978389">
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeWall_C_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-591845550" SRTHash="0" Scale="1.6f">
+      <Rotate type="array">
+        <value>2.184322E-07f</value>
+        <value>-0.7709352f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-809.5933f</value>
+        <value>341.7097f</value>
+        <value>-3577.656f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_M</UnitConfigName>
+    </value>
+    <value HashId="-561280803" Rotate="-1.570796f" SRTHash="-1559299830" Scale="0.6f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1780805972">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-822.5f</value>
+        <value>353.8f</value>
+        <value>-3533.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="-546825922" SRTHash="116286568">
+      <Rotate type="array">
+        <value>2.337266f</value>
+        <value>-1.303632f</value>
+        <value>-2.16373f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-701.8103f</value>
+        <value>332.7947f</value>
+        <value>-3649.306f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_03_Far</UnitConfigName>
+    </value>
+    <value HashId="-490389260" SRTHash="115194956">
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>1.110223E-16f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-823.5203f</value>
+        <value>345f</value>
+        <value>-3515.327f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-470896474" SRTHash="-1300944940">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-237107724">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>1.995874f</value>
+        <value>-0.2565092f</value>
+        <value>-3.053277f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-204.879f</value>
+        <value>354.826f</value>
+        <value>-2805.12f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_27</UnitConfigName>
+    </value>
+    <value HashId="-465805827" SRTHash="594415794">
+      <LinksToObj type="array">
+        <value DestUnitHashId="206798590">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>3.101592f</value>
+        <value>0.8072828f</value>
+        <value>3.132866f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-667.0104f</value>
+        <value>337.3386f</value>
+        <value>-3670.478f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="-410375347" OnlyOne="true" SRTHash="648310136">
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeWall_C_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-408758045" SRTHash="725513772">
+      <Translate type="array">
+        <value>-128.61f</value>
+        <value>197.6983f</value>
+        <value>-3291.166f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="-406778968" SRTHash="-322225655">
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>1.110223E-16f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-844.6735f</value>
+        <value>345f</value>
+        <value>-3540.294f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-400568269" SRTHash="1741861203">
+      <Rotate type="array">
+        <value>2.568213f</value>
+        <value>-0.05550147f</value>
+        <value>-3.005986f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-120.7976f</value>
+        <value>261.6459f</value>
+        <value>-3046.139f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_11_Far</UnitConfigName>
+    </value>
+    <value HashId="-383379991" OnlyOne="true" SRTHash="-1068106438">
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeParts_C_04_Far</UnitConfigName>
+    </value>
+    <value HashId="-380333823" SRTHash="0" Scale="2f">
+      <Rotate type="array">
+        <value>-0.5400001f</value>
+        <value>1.481551f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-835.3349f</value>
+        <value>341.9435f</value>
+        <value>-3563.481f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_M</UnitConfigName>
+    </value>
+    <value HashId="-377665178" SRTHash="449904790">
+      <Translate type="array">
+        <value>-220.8154f</value>
+        <value>210.0634f</value>
+        <value>-3260.41f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="-368706545" Rotate="1.047198f" SRTHash="866405674">
+      <Translate type="array">
+        <value>-827.366f</value>
+        <value>341.3f</value>
+        <value>-3533.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="-316545899" Rotate="0.9600003f" SRTHash="-2123047920">
+      <_Parameters FortressEatPer="-1" IsCreateStalPart="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <EquipItem1 type="string">Weapon_Spear_012</EquipItem1>
+        <RideHorseName type="string">GameRomHorseBone</RideHorseName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-72075948">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-992.6f</value>
+        <value>327.8309f</value>
+        <value>-3627.108f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Bokoblin_Bone_Junior</UnitConfigName>
+    </value>
+    <value HashId="-307941797" SRTHash="-1774700378">
+      <LinksToObj type="array">
+        <value DestUnitHashId="78235255">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-2.73302f</value>
+        <value>-0.6607527f</value>
+        <value>2.957596f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-624.2375f</value>
+        <value>232.2554f</value>
+        <value>-2938.608f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockDeathMt_D_L_03</UnitConfigName>
+    </value>
+    <value HashId="-305759475" SRTHash="752425653">
+      <LinksToObj type="array">
+        <value DestUnitHashId="2008879641">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.7857963f</value>
+        <value>0.7890648f</value>
+        <value>0.06719883f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-456.4455f</value>
+        <value>185.2561f</value>
+        <value>-3112.884f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_C_01</UnitConfigName>
+    </value>
+    <value HashId="-283618561" SRTHash="652120844">
+      <Rotate type="array">
+        <value>-1.577346f</value>
+        <value>-0.8473045f</value>
+        <value>-0.08261945f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-677.4679f</value>
+        <value>317.2389f</value>
+        <value>-3497.204f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_14_Far</UnitConfigName>
+    </value>
+    <value HashId="-280327815" SRTHash="1969762273">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-76463697">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-772.5f</value>
+        <value>345f</value>
+        <value>-3520f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeLadder_Top_A_01</UnitConfigName>
+    </value>
+    <value HashId="-270512564" SRTHash="850473116">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1574539700">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-827.866f</value>
+        <value>348.6134f</value>
+        <value>-3560f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-237107724" SRTHash="-1300944940">
+      <Rotate type="array">
+        <value>1.995874f</value>
+        <value>-0.2565092f</value>
+        <value>-3.053277f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-204.879f</value>
+        <value>354.826f</value>
+        <value>-2805.12f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="-233697622" OnlyOne="true" Rotate="-1.570796f" SRTHash="63650779">
+      <Translate type="array">
+        <value>-765f</value>
+        <value>340f</value>
+        <value>-3475f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeGround_B_04_Far</UnitConfigName>
+    </value>
+    <value HashId="-232068452" SRTHash="0" Scale="1.2f">
+      <Rotate type="array">
+        <value>-3.141592f</value>
+        <value>-0.6443791f</value>
+        <value>1.556175f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-844.6141f</value>
+        <value>344.1261f</value>
+        <value>-3547.686f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-209988012" SRTHash="583772677">
+      <Translate type="array">
+        <value>-437.1924f</value>
+        <value>210.3051f</value>
+        <value>-3139.806f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="-201178821" OnlyOne="true" SRTHash="-1068106438">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-383379991">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeParts_C_04</UnitConfigName>
+    </value>
+    <value HashId="-194861431" SRTHash="-1051998477">
+      <LinksToObj type="array">
+        <value DestUnitHashId="2093683804">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02533011f</value>
+        <value>0.2750395f</value>
+        <value>0.1205761f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-854.0105f</value>
+        <value>333.8239f</value>
+        <value>-3305.132f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="-172874701" SRTHash="0" Scale="0.9999f">
+      <Rotate type="array">
+        <value>-3.141592f</value>
+        <value>-0.04018495f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-855.1234f</value>
+        <value>348.2007f</value>
+        <value>-3550.671f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-158801592" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1031163339">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1410331978">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-825f</value>
+        <value>348.2f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-150292103" Rotate="-2.003183f" SRTHash="-939776961">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="914646713">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-873.1065f</value>
+        <value>337.7759f</value>
+        <value>-3315.652f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-111964528" SRTHash="0">
+      <Rotate type="array">
+        <value>0.03259379f</value>
+        <value>-0.397312f</value>
+        <value>0.2479881f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-799.4454f</value>
+        <value>344.3686f</value>
+        <value>-3542.24f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeRib_LL</UnitConfigName>
+    </value>
+    <value HashId="-108117955" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-906978146">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-826.5f</value>
+        <value>341.3002f</value>
+        <value>-3533f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-106598682" SRTHash="-2138910483">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-642337539">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>3.003508f</value>
+        <value>-0.3917769f</value>
+        <value>-2.992794f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-918.7258f</value>
+        <value>312.2232f</value>
+        <value>-3703.618f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_END_D_27</UnitConfigName>
+    </value>
+    <value HashId="-103557058" SRTHash="486930522">
+      <Rotate type="array">
+        <value>3.01942f</value>
+        <value>-0.4195213f</value>
+        <value>-3.119873f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-894.4283f</value>
+        <value>333.1448f</value>
+        <value>-3688.007f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_CliffDeathMt_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="-87930173" SRTHash="-92399170">
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>1.110223E-16f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-830.2859f</value>
+        <value>345f</value>
+        <value>-3515.327f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeFence_A_01</UnitConfigName>
+    </value>
+    <value HashId="-76463697" SRTHash="1969762273">
+      <Translate type="array">
+        <value>-772.5f</value>
+        <value>345f</value>
+        <value>-3520f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeLadder_Top_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-72075948" SRTHash="0">
+      <Translate type="array">
+        <value>-1045.138f</value>
+        <value>326.2711f</value>
+        <value>-3549.534f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="-68380970" SRTHash="-1735325584">
+      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1625916167">
+          <_Parameters>
+            <Pivot X="0f" Y="0.15f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-82.04562f</value>
+        <value>200.1847f</value>
+        <value>-3319.906f</value>
+      </Translate>
+      <UnitConfigName type="string">Item_Fruit_I</UnitConfigName>
+    </value>
+    <value HashId="-60659150" Rotate="-0.2583987f" SRTHash="0">
+      <Translate type="array">
+        <value>-809.9739f</value>
+        <value>341.55f</value>
+        <value>-3563.673f</value>
+      </Translate>
+      <UnitConfigName type="string">EfLocater_GrudgeSolid_L</UnitConfigName>
+    </value>
+    <value HashId="-45264009" OnlyOne="true" SRTHash="1145460185">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-733594535">
+          <DefinitionName type="string">PlacementLOD</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-820.5f</value>
+        <value>340.3f</value>
+        <value>-3535f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_HugeMazeParts_C_03</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array">
+    <value HashId="704738878" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="25.30084f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f">
+            <WaitASKeyName type="string">Search</WaitASKeyName>
+          </_Parameters>
+          <Translate type="array">
+            <value>-752.3f</value>
+            <value>340.3128f</value>
+            <value>-3542f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="20.30221f" PrevDistance="25.30084f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-752.1f</value>
+            <value>340.3128f</value>
+            <value>-3567.3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="9.800316f" PrevDistance="20.30221f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="120f" />
+          <Translate type="array">
+            <value>-772.4f</value>
+            <value>340.3128f</value>
+            <value>-3567.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="9.800316f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f">
+            <WaitASKeyName type="string">GroundSearch</WaitASKeyName>
+          </_Parameters>
+          <Translate type="array">
+            <value>-772.3f</value>
+            <value>340.3128f</value>
+            <value>-3577.4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-762.275f</value>
+        <value>340.3128f</value>
+        <value>-3563.575f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="753869155" IsClosed="true">
+      <RailPoints type="array">
+        <value NextDistance="10.91639f" PrevDistance="12.09791f" Rotate="-0.1999904f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-483.5233f</value>
+            <value>252.7924f</value>
+            <value>-3151.331f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="10.40656f" PrevDistance="10.91639f" Rotate="-0.1999904f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-488.8929f</value>
+            <value>244.0267f</value>
+            <value>-3147.657f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="12.09791f" PrevDistance="10.40656f" Rotate="-0.1999904f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-493.1567f</value>
+            <value>252.7924f</value>
+            <value>-3144.013f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-488.5243f</value>
+        <value>249.8705f</value>
+        <value>-3147.667f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="970081690" IsClosed="true">
+      <RailPoints type="array">
+        <value NextDistance="10.91639f" PrevDistance="12.09791f" Rotate="-0.1999904f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-478.2108f</value>
+            <value>241.5736f</value>
+            <value>-3155.738f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="10.40656f" PrevDistance="10.91639f" Rotate="-0.1999904f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-483.5804f</value>
+            <value>232.808f</value>
+            <value>-3152.063f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="12.09791f" PrevDistance="10.40656f" Rotate="-0.1999904f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-487.8442f</value>
+            <value>241.5736f</value>
+            <value>-3148.419f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-483.2118f</value>
+        <value>238.6517f</value>
+        <value>-3152.073f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1133391722" IsClosed="true">
+      <RailPoints type="array">
+        <value NextDistance="10.91639f" PrevDistance="12.09791f" Rotate="-0.1999904f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-490.2187f</value>
+            <value>241.5736f</value>
+            <value>-3146.628f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="10.40656f" PrevDistance="10.91639f" Rotate="-0.1999904f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-495.5883f</value>
+            <value>232.808f</value>
+            <value>-3142.954f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="12.09791f" PrevDistance="10.40656f" Rotate="-0.1999904f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-499.852f</value>
+            <value>241.5736f</value>
+            <value>-3139.31f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-495.2196f</value>
+        <value>238.6517f</value>
+        <value>-3142.964f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1319069573" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="115.1372f" PrevDistance="0f">
+          <ControlPoints type="array">
+            <value type="array">
+              <value>5.199982f</value>
+              <value>1.099991f</value>
+              <value>-16.3999f</value>
+            </value>
+            <value type="array">
+              <value>-5.199982f</value>
+              <value>-1.099991f</value>
+              <value>16.3999f</value>
+            </value>
+          </ControlPoints>
+          <Junctions type="array">
+            <value HashId="-1626742453" Index="9" />
+          </Junctions>
+          <Translate type="array">
+            <value>0f</value>
+            <value>240f</value>
+            <value>-3450f</value>
+          </Translate>
+          <UnitConfigName type="string">ConnectablePoint</UnitConfigName>
+        </value>
+        <value NextDistance="121.793f" PrevDistance="115.1372f">
+          <ControlPoints type="array">
+            <value type="array">
+              <value>38.5f</value>
+              <value>-5f</value>
+              <value>-33f</value>
+            </value>
+            <value type="array">
+              <value>-38.5f</value>
+              <value>5f</value>
+              <value>33f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-83f</value>
+            <value>225f</value>
+            <value>-3373.5f</value>
+          </Translate>
+          <UnitConfigName type="string">ConnectablePoint</UnitConfigName>
+        </value>
+        <value NextDistance="117.5803f" PrevDistance="121.793f">
+          <ControlPoints type="array">
+            <value type="array">
+              <value>37f</value>
+              <value>-5.5f</value>
+              <value>-40.5f</value>
+            </value>
+            <value type="array">
+              <value>-37f</value>
+              <value>5.5f</value>
+              <value>40.5f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-164.5f</value>
+            <value>225f</value>
+            <value>-3283.5f</value>
+          </Translate>
+          <UnitConfigName type="string">ConnectablePoint</UnitConfigName>
+        </value>
+        <value NextDistance="111.199f" PrevDistance="117.5803f">
+          <ControlPoints type="array">
+            <value type="array">
+              <value>57f</value>
+              <value>-8f</value>
+              <value>-6f</value>
+            </value>
+            <value type="array">
+              <value>-57f</value>
+              <value>8f</value>
+              <value>6f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-266.5f</value>
+            <value>225f</value>
+            <value>-3235.5f</value>
+          </Translate>
+          <UnitConfigName type="string">ConnectablePoint</UnitConfigName>
+        </value>
+        <value NextDistance="234.4266f" PrevDistance="111.199f">
+          <ControlPoints type="array">
+            <value type="array">
+              <value>50.5f</value>
+              <value>-8.5f</value>
+              <value>-5f</value>
+            </value>
+            <value type="array">
+              <value>-50.5f</value>
+              <value>8.5f</value>
+              <value>5f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-362.5f</value>
+            <value>225f</value>
+            <value>-3186.5f</value>
+          </Translate>
+          <UnitConfigName type="string">ConnectablePoint</UnitConfigName>
+        </value>
+        <value NextDistance="248.2674f" PrevDistance="234.4266f">
+          <ControlPoints type="array">
+            <value type="array">
+              <value>53f</value>
+              <value>0f</value>
+              <value>-16f</value>
+            </value>
+            <value type="array">
+              <value>-53f</value>
+              <value>0f</value>
+              <value>16f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-455.5f</value>
+            <value>412.5f</value>
+            <value>-3106f</value>
+          </Translate>
+          <UnitConfigName type="string">ConnectablePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="248.2674f">
+          <ControlPoints type="array">
+            <value type="array">
+              <value>101.2f</value>
+              <value>-43.10004f</value>
+              <value>-15.69995f</value>
+            </value>
+            <value type="array">
+              <value>-101.2f</value>
+              <value>43.10004f</value>
+              <value>15.69995f</value>
+            </value>
+          </ControlPoints>
+          <Junctions type="array">
+            <value HashId="-1512730905" Index="0" />
+          </Junctions>
+          <Translate type="array">
+            <value>-540f</value>
+            <value>600f</value>
+            <value>-3000f</value>
+          </Translate>
+          <UnitConfigName type="string">ConnectablePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-267.4286f</value>
+        <value>307.5f</value>
+        <value>-3233.572f</value>
+      </Translate>
+      <UniqueName type="string">Dragon_Fire_MainRoute</UniqueName>
+      <UnitConfigName type="string">Connectable</UnitConfigName>
+    </value>
+    <value HashId="-847921100" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="9.300083f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f">
+            <WaitASKeyName type="string">GroundSearch</WaitASKeyName>
+          </_Parameters>
+          <Translate type="array">
+            <value>-743f</value>
+            <value>340.3f</value>
+            <value>-3497.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="29.90142f" PrevDistance="9.300083f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-752.3f</value>
+            <value>340.3244f</value>
+            <value>-3497.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="29.90142f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f">
+            <WaitASKeyName type="string">Search</WaitASKeyName>
+          </_Parameters>
+          <Translate type="array">
+            <value>-752.6f</value>
+            <value>340.3f</value>
+            <value>-3527.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-749.3f</value>
+        <value>340.3081f</value>
+        <value>-3507.567f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+  </Rails>
+</yaml>
