@@ -80,8 +80,10 @@ def parseAAMP(data, offset=0x34, datatype='node'):
 
 
 if __name__ == '__main__':
-    
-    f=open('cooking/Item_Plant_J.bgparamlist','rb')
-    data = f.read()
-    f.close()
-    pprint.pprint(parseAAMP(data))
+    import os
+    for filename in os.listdir('horse'):
+        print(filename)
+        f=open('horse/'+filename,'rb')
+        data = f.read()
+        f.close()
+        pprint.pprint(parseAAMP(data)['SUBLISTS'][4][2:-2])
