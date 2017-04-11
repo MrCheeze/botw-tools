@@ -61,7 +61,7 @@ for child in root[0]:
         if boost_type == 'None':
             boost_level = 0
         duration = default_durations[boost_type]
-        ingredients[name] = [boost_type, boost_level, duration, half_hearts_restored/2, 0]
+        ingredients[name] = [boost_type, boost_level, duration, half_hearts_restored/2, float('-inf')]
         
 results = []
 
@@ -72,13 +72,17 @@ for name in set(list(ingredients) + list(spices)):
         boost_data[1] += boost_data2[1]
         boost_data[2] += boost_data2[2]
         boost_data[3] += boost_data2[3]
-        boost_data[4] += boost_data2[4]
+        boost_data[4] = max(boost_data[4],boost_data2[4])
     elif name in spices:
         boost_data = spices[name]
     else:
         boost_data = ingredients[name]
     boost_data = boost_data + [name]
-    results.append('%s Lv. %d (%d seconds), %g hearts, %d%% crit chance - %s' % tuple(boost_data))
+    if boost_data[-2] == float('-inf'):
+        boost_data[-2] = ''
+        results.append('%s Lv. %d (%d seconds), %g hearts - %s%s' % tuple(boost_data))
+    else:
+        results.append('%s Lv. %d (%d seconds), %g hearts, %g%% crit chance - %s' % tuple(boost_data))
 
 for result in sorted(results):
     print(result)

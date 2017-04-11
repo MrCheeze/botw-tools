@@ -56,23 +56,13 @@ def parseAAMP(data, offset=0x34, datatype='node'):
         return struct.unpack('<f',data[offset:offset+4])
     elif datatype == 6:
         return struct.unpack('<f',data[offset:offset+4])
-    elif datatype == 7:
-        try:
-            return data[offset:].split(b'\0',1)[0].decode('ascii')
-        except UnicodeDecodeError:
-            return data[offset:].split(b'\0',1)[0]
-    elif datatype == 8:
+    elif datatype in (7, 8, 0xF, 0x14):
         try:
             return data[offset:].split(b'\0',1)[0].decode('ascii')
         except UnicodeDecodeError:
             return data[offset:].split(b'\0',1)[0]
     elif datatype == 0x11:
         return struct.unpack('<I',data[offset:offset+4])[0]
-    elif datatype == 0x14:
-        try:
-            return data[offset:].split(b'\0',1)[0].decode('ascii')
-        except UnicodeDecodeError:
-            return data[offset:].split(b'\0',1)[0]
     else:
         raise UnknownNodeTypeException('0x%X: 0x%02X' % (offset, datatype))
 
@@ -80,10 +70,7 @@ def parseAAMP(data, offset=0x34, datatype='node'):
 
 
 if __name__ == '__main__':
-    import os
-    for filename in os.listdir('horse'):
-        print(filename)
-        f=open('horse/'+filename,'rb')
-        data = f.read()
-        f.close()
-        pprint.pprint(parseAAMP(data)['SUBLISTS'][4][2:-2])
+    f=open('Item_Ore_A.bmodellist','rb')
+    data = f.read()
+    f.close()
+    pprint.pprint(parseAAMP(data))

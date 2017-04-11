@@ -4,368 +4,418 @@ For a BigHit or GreatHit (i.e. for a chest item), the item you receive depends p
 
 ----- Ganondorf -----
 Normal - x5
-100.0% - Barrel
+100.0% - Barrel (4 damage)
+Expected rupees - 0.0
 
 SmallHit - x1-2
- 60.0% - Bomb Barrel
- 40.0% - Bokoblin Guts
+ 60.0% - Bomb Barrel (4 damage)
+ 40.0% - Bokoblin Guts (20 rupees)
+Expected rupees - 12.0
 
 BigHit(Normal) - x1
- 30.0% - Amber
- 13.0% - Opal
-  5.0% - Topaz
-  5.0% - Sapphire
-  5.0% - Ruby
-  1.0% - Diamond
-  1.0% - Star Fragment
- 10.0% - Luminous Stone
- 30.0% - Traveler's Claymore (Damage: 10)
+ 30.0% - Amber (30 rupees)
+ 13.0% - Opal (60 rupees)
+  5.0% - Topaz (180 rupees)
+  5.0% - Sapphire (260 rupees)
+  5.0% - Ruby (210 rupees)
+  1.0% - Diamond (500 rupees)
+  1.0% - Star Fragment (300 rupees)
+ 10.0% - Luminous Stone (70 rupees)
+ 30.0% - Traveler's Claymore (10 damage)
+Expected rupees - 64.3
 
 BigHit(Parasail) - x1
-  5.0% - Amber
- 12.0% - Opal
- 10.0% - Topaz
- 10.0% - Sapphire
- 10.0% - Ruby
-  2.0% - Diamond
-  2.0% - Star Fragment
- 10.0% - Luminous Stone
- 10.0% - Soldier's Claymore (Damage: 20)
- 14.0% - Golden Claymore (Damage: 28)
- 10.0% - Moblin Guts
-  5.0% - Lizalfos Tail
+  5.0% - Amber (30 rupees)
+ 12.0% - Opal (60 rupees)
+ 10.0% - Topaz (180 rupees)
+ 10.0% - Sapphire (260 rupees)
+ 10.0% - Ruby (210 rupees)
+  2.0% - Diamond (500 rupees)
+  2.0% - Star Fragment (300 rupees)
+ 10.0% - Luminous Stone (70 rupees)
+ 10.0% - Soldier's Claymore (20 damage)
+ 14.0% - Golden Claymore (28 damage)
+ 10.0% - Moblin Guts (25 rupees)
+  5.0% - Lizalfos Tail (28 rupees)
+Expected rupees - 100.6
 
 BigHit(Remain) - x1
-  5.0% - Amber
- 12.0% - Opal
- 12.0% - Topaz
- 12.0% - Sapphire
- 12.0% - Ruby
-  2.0% - Diamond
-  2.0% - Star Fragment
- 10.0% - Luminous Stone
- 10.0% - Soldier's Claymore (Damage: 20)
- 20.0% - Golden Claymore (Damage: 28)
-  3.0% - Lynel Guts
+  5.0% - Amber (30 rupees)
+ 12.0% - Opal (60 rupees)
+ 12.0% - Topaz (180 rupees)
+ 12.0% - Sapphire (260 rupees)
+ 12.0% - Ruby (210 rupees)
+  2.0% - Diamond (500 rupees)
+  2.0% - Star Fragment (300 rupees)
+ 10.0% - Luminous Stone (70 rupees)
+ 10.0% - Soldier's Claymore (20 damage)
+ 20.0% - Golden Claymore (28 damage)
+  3.0% - Lynel Guts (200 rupees)
+Expected rupees - 115.7
 
 GreatHit(Normal) - x1
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x1
-100.0% - Knight's Claymore (Damage: 38)
+100.0% - Knight's Claymore (38 damage)
+Expected rupees - 0.0
 
 GreatHit(Remain) - x1
- 75.0% - Knight's Claymore (Damage: 38)
- 25.0% - Sword of the Six Sages (Damage: 48)
+ 75.0% - Knight's Claymore (38 damage)
+ 25.0% - Sword of the Six Sages (48 damage)
+Expected rupees - 0.0
 
 ----- Toon Link (Smash/Wind Waker) -----
 Normal - x8
- 34.0% - Hyrule Bass
- 10.0% - Staminoka Bass
-  5.0% - Chillfin Trout
-  5.0% - Sizzlefin Trout
-  5.0% - Voltfin Trout
-  5.0% - Stealthfin Trout
- 12.0% - Mighty Carp
- 12.0% - Armored Carp
-  6.0% - Mighty Porgy
-  6.0% - Armored Porgy
+ 34.0% - Hyrule Bass (6 rupees)
+ 10.0% - Staminoka Bass (18 rupees)
+  5.0% - Chillfin Trout (6 rupees)
+  5.0% - Sizzlefin Trout (6 rupees)
+  5.0% - Voltfin Trout (6 rupees)
+  5.0% - Stealthfin Trout (10 rupees)
+ 12.0% - Mighty Carp (10 rupees)
+ 12.0% - Armored Carp (10 rupees)
+  6.0% - Mighty Porgy (10 rupees)
+  6.0% - Armored Porgy (10 rupees)
+Expected rupees - 70.72
 
 SmallHit - x1-2
- 30.0% - Hearty Bass
- 40.0% - Hearty Salmon
+ 30.0% - Hearty Bass (18 rupees)
+ 40.0% - Hearty Salmon (10 rupees)
  30.0% - Arrow x5
+Expected rupees - 14.1
 
 BigHit(Normal) - x1
  10.0% - Fire Arrow x5
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
- 30.0% - Boomerang (Damage: 8)
- 30.0% - Traveler's Sword (Damage: 5)
+ 30.0% - Boomerang (8 damage)
+ 30.0% - Traveler's Sword (5 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 25.0% - Boomerang (Damage: 8)
- 15.0% - Soldier's Broadsword (Damage: 14)
+ 25.0% - Boomerang (8 damage)
+ 15.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 25.0% - Boomerang (Damage: 8)
- 15.0% - Soldier's Broadsword (Damage: 14)
+ 25.0% - Boomerang (8 damage)
+ 15.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
- 40.0% - Cap of the Wind
- 30.0% - Tunic of the Wind
- 30.0% - Trousers of the Wind
+ 40.0% - Cap of the Wind (125 rupees)
+ 30.0% - Tunic of the Wind (125 rupees)
+ 30.0% - Trousers of the Wind (125 rupees)
+Expected rupees - 125.0
 
 GreatHit(Parasail) - x1
- 40.0% - Cap of the Wind
- 20.0% - Tunic of the Wind
- 20.0% - Trousers of the Wind
-  5.0% - Knight's Broadsword (Damage: 26)
- 15.0% - Sea-Breeze Boomerang (Damage: 8)
+ 40.0% - Cap of the Wind (125 rupees)
+ 20.0% - Tunic of the Wind (125 rupees)
+ 20.0% - Trousers of the Wind (125 rupees)
+  5.0% - Knight's Broadsword (26 damage)
+ 15.0% - Sea-Breeze Boomerang (20 damage)
+Expected rupees - 100.0
 
 GreatHit(Remain) - x1
- 40.0% - Cap of the Wind
- 20.0% - Tunic of the Wind
- 20.0% - Trousers of the Wind
-  5.0% - Knight's Broadsword (Damage: 26)
- 15.0% - Sea-Breeze Boomerang (Damage: 8)
+ 40.0% - Cap of the Wind (125 rupees)
+ 20.0% - Tunic of the Wind (125 rupees)
+ 20.0% - Trousers of the Wind (125 rupees)
+  5.0% - Knight's Broadsword (26 damage)
+ 15.0% - Sea-Breeze Boomerang (20 damage)
+Expected rupees - 100.0
 
 ----- Sheik -----
 Normal - x8
- 35.0% - Hylian Shroom
-  5.0% - Stamella Shroom
- 10.0% - Chillshroom
- 10.0% - Sunshroom
- 10.0% - Zapshroom
- 10.0% - Rushroom
-  5.0% - Razorshroom
-  5.0% - Ironshroom
- 10.0% - Silent Shroom
+ 35.0% - Hylian Shroom (3 rupees)
+  5.0% - Stamella Shroom (5 rupees)
+ 10.0% - Chillshroom (4 rupees)
+ 10.0% - Sunshroom (4 rupees)
+ 10.0% - Zapshroom (4 rupees)
+ 10.0% - Rushroom (3 rupees)
+  5.0% - Razorshroom (5 rupees)
+  5.0% - Ironshroom (5 rupees)
+ 10.0% - Silent Shroom (3 rupees)
+Expected rupees - 28.8
 
 SmallHit - x1-2
- 35.0% - Endura Shroom
- 20.0% - Hearty Truffle
- 10.0% - Big Hearty Truffle
+ 35.0% - Endura Shroom (6 rupees)
+ 20.0% - Hearty Truffle (6 rupees)
+ 10.0% - Big Hearty Truffle (15 rupees)
  35.0% - Arrow x5
+Expected rupees - 7.2
 
 BigHit(Normal) - x1
  10.0% - Fire Arrow x5
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
- 30.0% - Eightfold Blade (Damage: 15)
+ 30.0% - Eightfold Blade (15 damage)
  30.0% - Shield of the Mind's Eye
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  10.0% - Fire Arrow x5
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
- 20.0% - Eightfold Blade (Damage: 15)
+ 20.0% - Eightfold Blade (15 damage)
  20.0% - Shield of the Mind's Eye
- 20.0% - Eightfold Longblade (Damage: 32)
+ 20.0% - Eightfold Longblade (32 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  10.0% - Fire Arrow x5
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
- 20.0% - Eightfold Blade (Damage: 15)
+ 20.0% - Eightfold Blade (15 damage)
  10.0% - Shield of the Mind's Eye
- 10.0% - Eightfold Longblade (Damage: 32)
- 10.0% - Phrenic Bow (Damage: 10)
- 10.0% - Serpentine Spear (Damage: 12)
+ 10.0% - Eightfold Longblade (32 damage)
+ 10.0% - Phrenic Bow (10 damage)
+ 10.0% - Serpentine Spear (12 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
- 40.0% - Sheik's Mask
- 30.0% - Eightfold Blade (Damage: 15)
+ 40.0% - Sheik's Mask (125 rupees)
+ 30.0% - Eightfold Blade (15 damage)
  30.0% - Shield of the Mind's Eye
+Expected rupees - 50.0
 
 GreatHit(Parasail) - x1
- 40.0% - Sheik's Mask
- 30.0% - Eightfold Blade (Damage: 15)
+ 40.0% - Sheik's Mask (125 rupees)
+ 30.0% - Eightfold Blade (15 damage)
  30.0% - Shield of the Mind's Eye
+Expected rupees - 50.0
 
 GreatHit(Remain) - x1
- 40.0% - Sheik's Mask
- 20.0% - Edge of Duality (Damage: 50)
- 10.0% - Eightfold Blade (Damage: 15)
+ 40.0% - Sheik's Mask (125 rupees)
+ 20.0% - Edge of Duality (50 damage)
+ 10.0% - Eightfold Blade (15 damage)
  10.0% - Shield of the Mind's Eye
- 10.0% - Phrenic Bow (Damage: 10)
- 10.0% - Serpentine Spear (Damage: 12)
+ 10.0% - Phrenic Bow (10 damage)
+ 10.0% - Serpentine Spear (12 damage)
+Expected rupees - 50.0
 
 ----- Unknown/Unused -----
 Normal - x8
- 34.0% - Hyrule Bass
- 10.0% - Staminoka Bass
-  5.0% - Chillfin Trout
-  5.0% - Sizzlefin Trout
-  5.0% - Voltfin Trout
-  5.0% - Stealthfin Trout
- 12.0% - Mighty Carp
- 12.0% - Armored Carp
-  6.0% - Mighty Porgy
-  6.0% - Armored Porgy
+ 34.0% - Hyrule Bass (6 rupees)
+ 10.0% - Staminoka Bass (18 rupees)
+  5.0% - Chillfin Trout (6 rupees)
+  5.0% - Sizzlefin Trout (6 rupees)
+  5.0% - Voltfin Trout (6 rupees)
+  5.0% - Stealthfin Trout (10 rupees)
+ 12.0% - Mighty Carp (10 rupees)
+ 12.0% - Armored Carp (10 rupees)
+  6.0% - Mighty Porgy (10 rupees)
+  6.0% - Armored Porgy (10 rupees)
+Expected rupees - 70.72
 
 SmallHit - x1-2
- 30.0% - Hearty Bass
- 30.0% - Hearty Salmon
+ 30.0% - Hearty Bass (18 rupees)
+ 30.0% - Hearty Salmon (10 rupees)
  40.0% - Arrow x5
+Expected rupees - 12.6
 
 BigHit(Normal) - x1
- 20.0% - Traveler's Spear (Damage: 3)
- 20.0% - Traveler's Sword (Damage: 5)
- 20.0% - Traveler's Claymore (Damage: 10)
+ 20.0% - Traveler's Spear (3 damage)
+ 20.0% - Traveler's Sword (5 damage)
+ 20.0% - Traveler's Claymore (10 damage)
  10.0% - Fire Arrow x5
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
- 20.0% - Soldier's Spear (Damage: 7)
- 20.0% - Soldier's Broadsword (Damage: 14)
- 20.0% - Soldier's Claymore (Damage: 20)
+ 20.0% - Soldier's Spear (7 damage)
+ 20.0% - Soldier's Broadsword (14 damage)
+ 20.0% - Soldier's Claymore (20 damage)
  10.0% - Fire Arrow x5
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
- 20.0% - Soldier's Spear (Damage: 7)
- 20.0% - Soldier's Broadsword (Damage: 14)
- 20.0% - Soldier's Claymore (Damage: 20)
+ 20.0% - Soldier's Spear (7 damage)
+ 20.0% - Soldier's Broadsword (14 damage)
+ 20.0% - Soldier's Claymore (20 damage)
  10.0% - Fire Arrow x5
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
+Expected rupees - 0.0
 
 GreatHit(Normal) - x0
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x1
- 30.0% - Knight's Halberd (Damage: 15)
- 40.0% - Knight's Broadsword (Damage: 26)
- 30.0% - Knight's Claymore (Damage: 38)
+ 30.0% - Knight's Halberd (13 damage)
+ 40.0% - Knight's Broadsword (26 damage)
+ 30.0% - Knight's Claymore (38 damage)
+Expected rupees - 0.0
 
 GreatHit(Remain) - x1
- 20.0% - Royal Halberd (Damage: 26)
- 20.0% - Royal Broadsword (Damage: 36)
- 20.0% - Royal Claymore (Damage: 52)
- 15.0% - Knight's Halberd (Damage: 15)
- 15.0% - Knight's Broadsword (Damage: 26)
- 10.0% - Knight's Claymore (Damage: 38)
+ 20.0% - Royal Halberd (26 damage)
+ 20.0% - Royal Broadsword (36 damage)
+ 20.0% - Royal Claymore (52 damage)
+ 15.0% - Knight's Halberd (13 damage)
+ 15.0% - Knight's Broadsword (26 damage)
+ 10.0% - Knight's Claymore (38 damage)
+Expected rupees - 0.0
 
 ----- Unknown/Unused -----
 Normal - x8
- 35.0% - Hyrule Herb
- 10.0% - Cool Safflina
- 10.0% - Warm Safflina
- 10.0% - Electric Safflina
- 10.0% - Swift Carrot
-  5.0% - Swift Violet
-  5.0% - Mighty Thistle
-  5.0% - Armoranth
-  5.0% - Blue Nightshade
-  5.0% - Fortified Pumpkin
+ 35.0% - Hyrule Herb (3 rupees)
+ 10.0% - Cool Safflina (3 rupees)
+ 10.0% - Warm Safflina (3 rupees)
+ 10.0% - Electric Safflina (3 rupees)
+ 10.0% - Swift Carrot (4 rupees)
+  5.0% - Swift Violet (10 rupees)
+  5.0% - Mighty Thistle (5 rupees)
+  5.0% - Armoranth (5 rupees)
+  5.0% - Blue Nightshade (4 rupees)
+  5.0% - Fortified Pumpkin (5 rupees)
+Expected rupees - 30.4
 
 SmallHit - x1-2
- 30.0% - Hearty Radish
- 10.0% - Big Hearty Radish
- 40.0% - Endura Carrot
- 20.0% - Silent Princess
+ 30.0% - Hearty Radish (8 rupees)
+ 10.0% - Big Hearty Radish (15 rupees)
+ 40.0% - Endura Carrot (30 rupees)
+ 20.0% - Silent Princess (10 rupees)
+Expected rupees - 26.85
 
 BigHit(Normal) - x1
- 20.0% - Traveler's Bow (Damage: 5)
+ 20.0% - Traveler's Bow (5 damage)
  20.0% - Traveler's Shield
- 20.0% - Amber
- 18.0% - Opal
-  5.0% - Topaz
-  5.0% - Sapphire
-  5.0% - Ruby
-  1.0% - Diamond
-  1.0% - Star Fragment
-  5.0% - Luminous Stone
+ 20.0% - Amber (30 rupees)
+ 18.0% - Opal (60 rupees)
+  5.0% - Topaz (180 rupees)
+  5.0% - Sapphire (260 rupees)
+  5.0% - Ruby (210 rupees)
+  1.0% - Diamond (500 rupees)
+  1.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+Expected rupees - 60.8
 
 BigHit(Parasail) - x1
-  5.0% - Amber
- 24.0% - Opal
-  8.0% - Topaz
-  8.0% - Sapphire
-  8.0% - Ruby
-  1.0% - Diamond
-  1.0% - Star Fragment
-  5.0% - Luminous Stone
- 20.0% - Soldier’s Bow (Damage: 14)
- 20.0% - Soldier’s Shield
+  5.0% - Amber (30 rupees)
+ 24.0% - Opal (60 rupees)
+  8.0% - Topaz (180 rupees)
+  8.0% - Sapphire (260 rupees)
+  8.0% - Ruby (210 rupees)
+  1.0% - Diamond (500 rupees)
+  1.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+ 20.0% - Soldier's Bow (14 damage)
+ 20.0% - Soldier's Shield
+Expected rupees - 79.4
 
 BigHit(Remain) - x1
- 20.0% - Opal
- 10.0% - Topaz
- 10.0% - Sapphire
- 10.0% - Ruby
-  2.0% - Diamond
-  2.0% - Star Fragment
-  6.0% - Luminous Stone
- 20.0% - Soldier’s Bow (Damage: 14)
- 20.0% - Soldier’s Shield
+ 20.0% - Opal (60 rupees)
+ 10.0% - Topaz (180 rupees)
+ 10.0% - Sapphire (260 rupees)
+ 10.0% - Ruby (210 rupees)
+  2.0% - Diamond (500 rupees)
+  2.0% - Star Fragment (300 rupees)
+  6.0% - Luminous Stone (70 rupees)
+ 20.0% - Soldier's Bow (14 damage)
+ 20.0% - Soldier's Shield
+Expected rupees - 97.2
 
 GreatHit(Normal) - x1
- 40.0% - Amber
- 10.0% - Opal
- 10.0% - Topaz
- 10.0% - Sapphire
- 10.0% - Ruby
-  5.0% - Diamond
-  5.0% - Star Fragment
- 10.0% - Luminous Stone
+ 40.0% - Amber (30 rupees)
+ 10.0% - Opal (60 rupees)
+ 10.0% - Topaz (180 rupees)
+ 10.0% - Sapphire (260 rupees)
+ 10.0% - Ruby (210 rupees)
+  5.0% - Diamond (500 rupees)
+  5.0% - Star Fragment (300 rupees)
+ 10.0% - Luminous Stone (70 rupees)
+Expected rupees - 130.0
 
 GreatHit(Parasail) - x1
- 20.0% - Knight's Bow (Damage: 26)
+ 20.0% - Knight's Bow (26 damage)
  20.0% - Knight's Shield
- 15.0% - Topaz
- 15.0% - Sapphire
- 15.0% - Ruby
-  5.0% - Diamond
-  5.0% - Star Fragment
-  5.0% - Luminous Stone
+ 15.0% - Topaz (180 rupees)
+ 15.0% - Sapphire (260 rupees)
+ 15.0% - Ruby (210 rupees)
+  5.0% - Diamond (500 rupees)
+  5.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+Expected rupees - 141.0
 
 GreatHit(Remain) - x1
- 20.0% - Royal Bow (Damage: 38)
+ 20.0% - Royal Bow (38 damage)
  20.0% - Royal Shield
- 15.0% - Topaz
- 15.0% - Sapphire
- 15.0% - Ruby
-  5.0% - Diamond
-  5.0% - Star Fragment
-  5.0% - Luminous Stone
+ 15.0% - Topaz (180 rupees)
+ 15.0% - Sapphire (260 rupees)
+ 15.0% - Ruby (210 rupees)
+  5.0% - Diamond (500 rupees)
+  5.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+Expected rupees - 141.0
 
 ----- Unknown/Unused -----
 Normal - x10
- 80.0% - Raw Meat
- 15.0% - Raw Prime Meat
-  5.0% - Raw Gourmet Meat
+ 80.0% - Raw Meat (8 rupees)
+ 15.0% - Raw Prime Meat (15 rupees)
+  5.0% - Raw Gourmet Meat (35 rupees)
+Expected rupees - 104.0
 
 BigHit - x10
- 25.0% - Seared Gourmet Steak
- 25.0% - Roasted Whole Bird
- 25.0% - Raw Gourmet Meat
- 25.0% - Raw Whole Bird
+ 25.0% - Seared Gourmet Steak (35 rupees)
+ 25.0% - Roasted Whole Bird (35 rupees)
+ 25.0% - Raw Gourmet Meat (35 rupees)
+ 25.0% - Raw Whole Bird (35 rupees)
+Expected rupees - 350.0
 
 BigHit(Normal) - x0
+Expected rupees - 0.0
 
 BigHit(Parasail) - x0
+Expected rupees - 0.0
 
 BigHit(Remain) - x0
+Expected rupees - 0.0
 
 GreatHit(Normal) - x0
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x0
+Expected rupees - 0.0
 
 GreatHit(Remain) - x0
+Expected rupees - 0.0
 
 ----- Smash Link -----
 Normal - x8
- 15.0% - Apple
- 10.0% - Palm Fruit
- 10.0% - Wildberry
- 10.0% - Acorn
- 10.0% - Chickaloo Tree Nut
- 10.0% - Hydromelon
- 10.0% - Spicy Pepper
- 10.0% - Voltfruit
- 10.0% - Fleet-Lotus Seeds
-  5.0% - Mighty Bananas
+ 15.0% - Apple (3 rupees)
+ 10.0% - Palm Fruit (4 rupees)
+ 10.0% - Wildberry (3 rupees)
+ 10.0% - Acorn (2 rupees)
+ 10.0% - Chickaloo Tree Nut (3 rupees)
+ 10.0% - Hydromelon (4 rupees)
+ 10.0% - Spicy Pepper (3 rupees)
+ 10.0% - Voltfruit (4 rupees)
+ 10.0% - Fleet-Lotus Seeds (5 rupees)
+  5.0% - Mighty Bananas (5 rupees)
+Expected rupees - 28.0
 
 SmallHit - x1-2
- 40.0% - Hearty Durian
+ 40.0% - Hearty Durian (15 rupees)
  60.0% - Arrow x5
+Expected rupees - 9.0
 
 BigHit(Normal) - x1
  15.0% - Fire Arrow x5
@@ -373,494 +423,566 @@ BigHit(Normal) - x1
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
  20.0% - Traveler's Shield
- 20.0% - Traveler's Sword (Damage: 5)
+ 20.0% - Traveler's Sword (5 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
- 20.0% - Soldier's Broadsword (Damage: 14)
+ 20.0% - Soldier's Shield
+ 20.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
- 20.0% - Soldier's Broadsword (Damage: 14)
+ 20.0% - Soldier's Shield
+ 20.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
- 40.0% - Cap of Twilight
- 30.0% - Tunic of Twilight
- 30.0% - Trousers of Twilight
+ 40.0% - Cap of Twilight (125 rupees)
+ 30.0% - Tunic of Twilight (125 rupees)
+ 30.0% - Trousers of Twilight (125 rupees)
+Expected rupees - 125.0
 
 GreatHit(Parasail) - x1
- 30.0% - Cap of Twilight
- 20.0% - Tunic of Twilight
- 20.0% - Trousers of Twilight
+ 30.0% - Cap of Twilight (125 rupees)
+ 20.0% - Tunic of Twilight (125 rupees)
+ 20.0% - Trousers of Twilight (125 rupees)
  15.0% - Knight's Shield
- 15.0% - Knight's Broadsword (Damage: 26)
+ 15.0% - Knight's Broadsword (26 damage)
+Expected rupees - 87.5
 
 GreatHit(Remain) - x1
- 30.0% - Cap of Twilight
- 20.0% - Tunic of Twilight
- 20.0% - Trousers of Twilight
+ 30.0% - Cap of Twilight (125 rupees)
+ 20.0% - Tunic of Twilight (125 rupees)
+ 20.0% - Trousers of Twilight (125 rupees)
  15.0% - Knight's Shield
- 15.0% - Knight's Broadsword (Damage: 26)
+ 15.0% - Knight's Broadsword (26 damage)
+Expected rupees - 87.5
 
 ----- Archer Link -----
 Normal - x8
- 12.0% - Hyrule Bass
- 10.0% - Staminoka Bass
-  5.0% - Chillfin Trout
-  5.0% - Sizzlefin Trout
-  5.0% - Voltfin Trout
-  5.0% - Stealthfin Trout
-  8.0% - Mighty Carp
-  8.0% - Armored Carp
-  6.0% - Mighty Porgy
-  6.0% - Armored Porgy
- 12.0% - Raw Meat
-  3.0% - Raw Prime Meat
- 12.0% - Raw Bird Drumstick
-  3.0% - Raw Bird Thigh
+ 12.0% - Hyrule Bass (6 rupees)
+ 10.0% - Staminoka Bass (18 rupees)
+  5.0% - Chillfin Trout (6 rupees)
+  5.0% - Sizzlefin Trout (6 rupees)
+  5.0% - Voltfin Trout (6 rupees)
+  5.0% - Stealthfin Trout (10 rupees)
+  8.0% - Mighty Carp (10 rupees)
+  8.0% - Armored Carp (10 rupees)
+  6.0% - Mighty Porgy (10 rupees)
+  6.0% - Armored Porgy (10 rupees)
+ 12.0% - Raw Meat (8 rupees)
+  3.0% - Raw Prime Meat (15 rupees)
+ 12.0% - Raw Bird Drumstick (8 rupees)
+  3.0% - Raw Bird Thigh (15 rupees)
+Expected rupees - 76.32
 
 SmallHit - x1-2
- 25.0% - Hearty Bass
- 25.0% - Hearty Salmon
- 10.0% - Raw Gourmet Meat
- 10.0% - Raw Whole Bird
+ 25.0% - Hearty Bass (18 rupees)
+ 25.0% - Hearty Salmon (10 rupees)
+ 10.0% - Raw Gourmet Meat (35 rupees)
+ 10.0% - Raw Whole Bird (35 rupees)
  30.0% - Arrow x5
+Expected rupees - 21.0
 
 BigHit(Normal) - x1
  10.0% - Fire Arrow x5
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
- 30.0% - Soldier’s Bow (Damage: 14)
- 30.0% - Traveler's Bow (Damage: 5)
+ 30.0% - Soldier's Bow (14 damage)
+ 30.0% - Traveler's Bow (5 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  20.0% - Fire Arrow x5
  20.0% - Ice Arrow x5
  20.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 25.0% - Soldier’s Bow (Damage: 14)
+ 25.0% - Soldier's Bow (14 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  20.0% - Fire Arrow x5
  20.0% - Ice Arrow x5
  20.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 25.0% - Soldier’s Bow (Damage: 14)
+ 25.0% - Soldier's Bow (14 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x1
-100.0% - Knight's Bow (Damage: 26)
+100.0% - Knight's Bow (26 damage)
+Expected rupees - 0.0
 
 GreatHit(Remain) - x1
- 70.0% - Knight's Bow (Damage: 26)
- 20.0% - Royal Bow (Damage: 38)
- 10.0% - Falcon Bow (Damage: 20)
+ 70.0% - Knight's Bow (26 damage)
+ 20.0% - Royal Bow (38 damage)
+ 10.0% - Falcon Bow (20 damage)
+Expected rupees - 0.0
 
 ----- Rider Link -----
 Normal - x8
- 35.0% - Hylian Shroom
-  5.0% - Stamella Shroom
- 10.0% - Chillshroom
- 10.0% - Sunshroom
- 10.0% - Zapshroom
- 10.0% - Rushroom
-  5.0% - Razorshroom
-  5.0% - Ironshroom
- 10.0% - Silent Shroom
+ 35.0% - Hylian Shroom (3 rupees)
+  5.0% - Stamella Shroom (5 rupees)
+ 10.0% - Chillshroom (4 rupees)
+ 10.0% - Sunshroom (4 rupees)
+ 10.0% - Zapshroom (4 rupees)
+ 10.0% - Rushroom (3 rupees)
+  5.0% - Razorshroom (5 rupees)
+  5.0% - Ironshroom (5 rupees)
+ 10.0% - Silent Shroom (3 rupees)
+Expected rupees - 28.8
 
 SmallHit - x1-2
- 35.0% - Endura Shroom
-  5.0% - Big Hearty Truffle
- 20.0% - Hearty Truffle
+ 35.0% - Endura Shroom (6 rupees)
+  5.0% - Big Hearty Truffle (15 rupees)
+ 20.0% - Hearty Truffle (6 rupees)
  40.0% - Arrow x5
+Expected rupees - 6.075
 
 BigHit(Normal) - x1
  10.0% - Fire Arrow x5
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
- 30.0% - Traveler's Sword (Damage: 5)
- 30.0% - Soldier's Broadsword (Damage: 14)
+ 30.0% - Traveler's Sword (5 damage)
+ 30.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  20.0% - Fire Arrow x5
  20.0% - Ice Arrow x5
  20.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 25.0% - Soldier's Broadsword (Damage: 14)
+ 25.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  20.0% - Fire Arrow x5
  20.0% - Ice Arrow x5
  20.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 25.0% - Soldier's Broadsword (Damage: 14)
+ 25.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x1
- 30.0% - Knight's Broadsword (Damage: 26)
+ 30.0% - Knight's Broadsword (26 damage)
  35.0% - Traveler's Saddle
  35.0% - Traveler's Bridle
+Expected rupees - 0.0
 
 GreatHit(Remain) - x1
- 20.0% - Royal Broadsword (Damage: 36)
- 30.0% - Knight's Broadsword (Damage: 26)
- 10.0% - Moonlight Scimitar (Damage: 25)
+ 20.0% - Royal Broadsword (36 damage)
+ 30.0% - Knight's Broadsword (26 damage)
+ 10.0% - Moonlight Scimitar (25 damage)
  20.0% - Traveler's Saddle
  20.0% - Traveler's Bridle
+Expected rupees - 0.0
 
 ----- BotW Zelda -----
 Normal - x8
- 35.0% - Hyrule Herb
- 10.0% - Cool Safflina
- 10.0% - Warm Safflina
- 10.0% - Electric Safflina
- 10.0% - Swift Carrot
-  5.0% - Swift Violet
-  5.0% - Mighty Thistle
-  5.0% - Armoranth
-  5.0% - Fortified Pumpkin
-  5.0% - Blue Nightshade
+ 35.0% - Hyrule Herb (3 rupees)
+ 10.0% - Cool Safflina (3 rupees)
+ 10.0% - Warm Safflina (3 rupees)
+ 10.0% - Electric Safflina (3 rupees)
+ 10.0% - Swift Carrot (4 rupees)
+  5.0% - Swift Violet (10 rupees)
+  5.0% - Mighty Thistle (5 rupees)
+  5.0% - Armoranth (5 rupees)
+  5.0% - Fortified Pumpkin (5 rupees)
+  5.0% - Blue Nightshade (4 rupees)
+Expected rupees - 30.4
 
 SmallHit - x2-3
- 30.0% - Hearty Radish
- 10.0% - Big Hearty Radish
- 40.0% - Endura Carrot
- 20.0% - Silent Princess
+ 30.0% - Hearty Radish (8 rupees)
+ 10.0% - Big Hearty Radish (15 rupees)
+ 40.0% - Endura Carrot (30 rupees)
+ 20.0% - Silent Princess (10 rupees)
+Expected rupees - 44.75
 
 BigHit(Normal) - x1
- 20.0% - Amber
- 20.0% - Opal
-  5.0% - Topaz
-  5.0% - Sapphire
-  5.0% - Ruby
-  1.0% - Diamond
-  1.0% - Star Fragment
-  3.0% - Luminous Stone
+ 20.0% - Amber (30 rupees)
+ 20.0% - Opal (60 rupees)
+  5.0% - Topaz (180 rupees)
+  5.0% - Sapphire (260 rupees)
+  5.0% - Ruby (210 rupees)
+  1.0% - Diamond (500 rupees)
+  1.0% - Star Fragment (300 rupees)
+  3.0% - Luminous Stone (70 rupees)
  20.0% - Traveler's Shield
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Shield
+Expected rupees - 60.6
 
 BigHit(Parasail) - x1
- 15.0% - Amber
- 33.0% - Opal
-  5.0% - Topaz
-  5.0% - Sapphire
-  5.0% - Ruby
-  1.0% - Diamond
-  1.0% - Star Fragment
-  5.0% - Luminous Stone
- 30.0% - Soldier’s Shield
+ 15.0% - Amber (30 rupees)
+ 33.0% - Opal (60 rupees)
+  5.0% - Topaz (180 rupees)
+  5.0% - Sapphire (260 rupees)
+  5.0% - Ruby (210 rupees)
+  1.0% - Diamond (500 rupees)
+  1.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+ 30.0% - Soldier's Shield
+Expected rupees - 68.3
 
 BigHit(Remain) - x1
- 15.0% - Amber
- 33.0% - Opal
-  5.0% - Topaz
-  5.0% - Sapphire
-  5.0% - Ruby
-  1.0% - Diamond
-  1.0% - Star Fragment
-  5.0% - Luminous Stone
- 30.0% - Soldier’s Shield
+ 15.0% - Amber (30 rupees)
+ 33.0% - Opal (60 rupees)
+  5.0% - Topaz (180 rupees)
+  5.0% - Sapphire (260 rupees)
+  5.0% - Ruby (210 rupees)
+  1.0% - Diamond (500 rupees)
+  1.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+ 30.0% - Soldier's Shield
+Expected rupees - 68.3
 
 GreatHit(Normal) - x1
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x1
 100.0% - Knight's Shield
+Expected rupees - 0.0
 
 GreatHit(Remain) - x1
  30.0% - Royal Shield
  60.0% - Knight's Shield
  10.0% - Radiant Shield
+Expected rupees - 0.0
 
 ----- Guardian -----
 Normal - x4
 100.0% - Iron Box
+Expected rupees - 0.0
 
 SmallHit - x1-2
 100.0% - Iron Box
+Expected rupees - 0.0
 
 BigHit(Normal) - x1
  20.0% - Rusty Shield
- 20.0% - Rusty Halberd (Damage: 5)
- 20.0% - Rusty Broadsword (Damage: 6)
- 20.0% - Rusty Claymore (Damage: 12)
+ 20.0% - Rusty Halberd (5 damage)
+ 20.0% - Rusty Broadsword (6 damage)
+ 20.0% - Rusty Claymore (12 damage)
   5.0% - Guardian Shield
-  5.0% - Guardian Spear (Damage: 10)
-  5.0% - Guardian Sword (Damage: 20)
-  5.0% - Ancient Battle Axe (Damage: 30)
+  5.0% - Guardian Spear (10 damage)
+  5.0% - Guardian Sword (20 damage)
+  5.0% - Ancient Battle Axe (30 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  25.0% - Guardian Shield
- 25.0% - Guardian Spear (Damage: 10)
- 25.0% - Guardian Sword (Damage: 20)
- 25.0% - Ancient Battle Axe (Damage: 30)
+ 25.0% - Guardian Spear (10 damage)
+ 25.0% - Guardian Sword (20 damage)
+ 25.0% - Ancient Battle Axe (30 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  10.0% - Guardian Shield+
   3.0% - Guardian Shield++
- 10.0% - Guardian Spear+ (Damage: 15)
-  3.0% - Guardian Spear++ (Damage: 20)
- 10.0% - Guardian Sword+ (Damage: 30)
-  3.0% - Guardian Sword++ (Damage: 40)
- 10.0% - Ancient Battle Axe+ (Damage: 45)
-  3.0% - Ancient Battle Axe++ (Damage: 60)
+ 10.0% - Guardian Spear+ (15 damage)
+  3.0% - Guardian Spear++ (20 damage)
+ 10.0% - Guardian Sword+ (30 damage)
+  3.0% - Guardian Sword++ (40 damage)
+ 10.0% - Ancient Battle Axe+ (45 damage)
+  3.0% - Ancient Battle Axe++ (60 damage)
  12.0% - Guardian Shield
- 12.0% - Guardian Spear (Damage: 10)
- 12.0% - Guardian Sword (Damage: 20)
- 12.0% - Ancient Battle Axe (Damage: 30)
+ 12.0% - Guardian Spear (10 damage)
+ 12.0% - Guardian Sword (20 damage)
+ 12.0% - Ancient Battle Axe (30 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
- 95.0% - Ancient Core
-  5.0% - Giant Ancient Core
+ 95.0% - Ancient Core (80 rupees)
+  5.0% - Giant Ancient Core (200 rupees)
+Expected rupees - 86.0
 
 GreatHit(Parasail) - x1
  15.0% - Ancient Arrow
   5.0% - Ancient Arrow x3
- 75.0% - Ancient Core
-  5.0% - Giant Ancient Core
+ 75.0% - Ancient Core (80 rupees)
+  5.0% - Giant Ancient Core (200 rupees)
+Expected rupees - 70.0
 
 GreatHit(Remain) - x1
  15.0% - Ancient Arrow
   5.0% - Ancient Arrow x3
- 75.0% - Ancient Core
-  5.0% - Giant Ancient Core
+ 75.0% - Ancient Core (80 rupees)
+  5.0% - Giant Ancient Core (200 rupees)
+Expected rupees - 70.0
 
 ----- Bokoblin -----
 Normal - x6-8
- 90.0% - Raw Meat
- 10.0% - Raw Prime Meat
+ 90.0% - Raw Meat (8 rupees)
+ 10.0% - Raw Prime Meat (15 rupees)
+Expected rupees - 60.9
 
 SmallHit - x1
- 20.0% - Raw Gourmet Meat
- 80.0% - Bokoblin Guts
+ 20.0% - Raw Gourmet Meat (35 rupees)
+ 80.0% - Bokoblin Guts (20 rupees)
+Expected rupees - 23.0
 
 BigHit(Normal) - x1
- 10.0% - Boko Bow (Damage: 4)
- 10.0% - Spiked Boko Bow (Damage: 12)
+ 10.0% - Boko Bow (4 damage)
+ 10.0% - Spiked Boko Bow (12 damage)
  10.0% - Boko Shield
  10.0% - Spiked Boko Shield
- 10.0% - Boko Spear (Damage: 2)
- 10.0% - Spiked Boko Spear (Damage: 6)
- 10.0% - Boko Club (Damage: 2)
- 10.0% - Spiked Boko Club (Damage: 12)
- 10.0% - Boko Bat (Damage: 6)
- 10.0% - Spiked Boko Bat (Damage: 18)
+ 10.0% - Boko Spear (2 damage)
+ 10.0% - Spiked Boko Spear (6 damage)
+ 10.0% - Boko Club (4 damage)
+ 10.0% - Spiked Boko Club (12 damage)
+ 10.0% - Boko Bat (6 damage)
+ 10.0% - Spiked Boko Bat (18 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
- 20.0% - Spiked Boko Bow (Damage: 12)
+ 20.0% - Spiked Boko Bow (12 damage)
  20.0% - Spiked Boko Shield
- 20.0% - Spiked Boko Spear (Damage: 6)
- 20.0% - Spiked Boko Club (Damage: 12)
- 20.0% - Spiked Boko Bat (Damage: 18)
+ 20.0% - Spiked Boko Spear (6 damage)
+ 20.0% - Spiked Boko Club (12 damage)
+ 20.0% - Spiked Boko Bat (18 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
- 20.0% - Spiked Boko Bow (Damage: 12)
+ 20.0% - Spiked Boko Bow (12 damage)
  20.0% - Spiked Boko Shield
- 20.0% - Spiked Boko Spear (Damage: 6)
- 20.0% - Spiked Boko Club (Damage: 12)
- 20.0% - Spiked Boko Bat (Damage: 18)
+ 20.0% - Spiked Boko Spear (6 damage)
+ 20.0% - Spiked Boko Club (12 damage)
+ 20.0% - Spiked Boko Bat (18 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x0
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x1
- 20.0% - Dragon Bone Boko Bow (Damage: 24)
+ 20.0% - Dragon Bone Boko Bow (24 damage)
  20.0% - Dragonbone Boko Shield
- 20.0% - Dragonbone Boko Spear (Damage: 12)
- 20.0% - Dragonbone Boko Club (Damage: 24)
- 20.0% - Dragonbone Boko Bat (Damage: 36)
+ 20.0% - Dragonbone Boko Spear (12 damage)
+ 20.0% - Dragonbone Boko Club (24 damage)
+ 20.0% - Dragonbone Boko Bat (36 damage)
+Expected rupees - 0.0
 
 GreatHit(Remain) - x1
- 20.0% - Dragon Bone Boko Bow (Damage: 24)
+ 20.0% - Dragon Bone Boko Bow (24 damage)
  20.0% - Dragonbone Boko Shield
- 20.0% - Dragonbone Boko Spear (Damage: 12)
- 20.0% - Dragonbone Boko Club (Damage: 24)
- 20.0% - Dragonbone Boko Bat (Damage: 36)
+ 20.0% - Dragonbone Boko Spear (12 damage)
+ 20.0% - Dragonbone Boko Club (24 damage)
+ 20.0% - Dragonbone Boko Bat (36 damage)
+Expected rupees - 0.0
 
 ----- Ocarina of Time Link -----
 Normal - x6-8
- 90.0% - Raw Meat
- 10.0% - Raw Prime Meat
+ 90.0% - Raw Meat (8 rupees)
+ 10.0% - Raw Prime Meat (15 rupees)
+Expected rupees - 60.9
 
 SmallHit - x1
- 20.0% - Raw Gourmet Meat
+ 20.0% - Raw Gourmet Meat (35 rupees)
  80.0% - Arrow x5
+Expected rupees - 7.0
 
 BigHit(Normal) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 40.0% - Traveler's Claymore (Damage: 10)
+ 40.0% - Traveler's Claymore (10 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 40.0% - Soldier's Claymore (Damage: 20)
+ 40.0% - Soldier's Claymore (20 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 40.0% - Soldier's Claymore (Damage: 20)
+ 40.0% - Soldier's Claymore (20 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
- 40.0% - Cap of Time
- 30.0% - Tunic of Time
- 30.0% - Trousers of Time
+ 40.0% - Cap of Time (125 rupees)
+ 30.0% - Tunic of Time (125 rupees)
+ 30.0% - Trousers of Time (125 rupees)
+Expected rupees - 125.0
 
 GreatHit(Parasail) - x1
- 40.0% - Cap of Time
- 20.0% - Tunic of Time
- 20.0% - Trousers of Time
- 20.0% - Knight's Claymore (Damage: 38)
+ 40.0% - Cap of Time (125 rupees)
+ 20.0% - Tunic of Time (125 rupees)
+ 20.0% - Trousers of Time (125 rupees)
+ 20.0% - Knight's Claymore (38 damage)
+Expected rupees - 100.0
 
 GreatHit(Remain) - x1
- 30.0% - Cap of Time
- 20.0% - Tunic of Time
- 20.0% - Trousers of Time
- 20.0% - Knight's Claymore (Damage: 38)
- 10.0% - Biggoron's Sword (Damage: 50)
+ 30.0% - Cap of Time (125 rupees)
+ 20.0% - Tunic of Time (125 rupees)
+ 20.0% - Trousers of Time (125 rupees)
+ 20.0% - Knight's Claymore (38 damage)
+ 10.0% - Biggoron's Sword (50 damage)
+Expected rupees - 87.5
 
 ----- Unreleased Majora's Mask Link -----
 Normal - x8
- 35.0% - Hylian Shroom
-  5.0% - Stamella Shroom
- 10.0% - Chillshroom
- 10.0% - Sunshroom
- 10.0% - Zapshroom
- 10.0% - Rushroom
-  5.0% - Razorshroom
-  5.0% - Ironshroom
- 10.0% - Silent Shroom
+ 35.0% - Hylian Shroom (3 rupees)
+  5.0% - Stamella Shroom (5 rupees)
+ 10.0% - Chillshroom (4 rupees)
+ 10.0% - Sunshroom (4 rupees)
+ 10.0% - Zapshroom (4 rupees)
+ 10.0% - Rushroom (3 rupees)
+  5.0% - Razorshroom (5 rupees)
+  5.0% - Ironshroom (5 rupees)
+ 10.0% - Silent Shroom (3 rupees)
+Expected rupees - 28.8
 
 SmallHit - x1-2
- 35.0% - Endura Shroom
- 20.0% - Hearty Truffle
-  5.0% - Big Hearty Truffle
+ 35.0% - Endura Shroom (6 rupees)
+ 20.0% - Hearty Truffle (6 rupees)
+  5.0% - Big Hearty Truffle (15 rupees)
  40.0% - Arrow x5
+Expected rupees - 6.075
 
 BigHit(Normal) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 40.0% - Traveler's Claymore (Damage: 10)
+ 40.0% - Traveler's Claymore (10 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 40.0% - Soldier's Claymore (Damage: 20)
+ 40.0% - Soldier's Claymore (20 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 40.0% - Soldier's Claymore (Damage: 20)
+ 40.0% - Soldier's Claymore (20 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
- 40.0% - Fierce Deity Mask
- 30.0% - Fierce Deity Armor
- 30.0% - Fierce Deity Boots
+ 40.0% - Fierce Deity Mask (125 rupees)
+ 30.0% - Fierce Deity Armor (125 rupees)
+ 30.0% - Fierce Deity Boots (125 rupees)
+Expected rupees - 125.0
 
 GreatHit(Parasail) - x1
- 40.0% - Fierce Deity Mask
- 20.0% - Fierce Deity Armor
- 20.0% - Fierce Deity Boots
- 20.0% - Knight's Broadsword (Damage: 26)
+ 40.0% - Fierce Deity Mask (125 rupees)
+ 20.0% - Fierce Deity Armor (125 rupees)
+ 20.0% - Fierce Deity Boots (125 rupees)
+ 20.0% - Knight's Broadsword (26 damage)
+Expected rupees - 100.0
 
 GreatHit(Remain) - x1
- 10.0% - Fierce Deity Sword (Damage: 60)
- 25.0% - Fierce Deity Mask
- 25.0% - Fierce Deity Armor
- 25.0% - Fierce Deity Boots
- 15.0% - Knight's Broadsword (Damage: 26)
+ 10.0% - Fierce Deity Sword (60 damage)
+ 25.0% - Fierce Deity Mask (125 rupees)
+ 25.0% - Fierce Deity Armor (125 rupees)
+ 25.0% - Fierce Deity Boots (125 rupees)
+ 15.0% - Knight's Broadsword (26 damage)
+Expected rupees - 93.75
 
 ----- Smash Zelda -----
 Normal - x8
- 35.0% - Hyrule Herb
- 10.0% - Cool Safflina
- 10.0% - Warm Safflina
- 10.0% - Electric Safflina
- 10.0% - Swift Carrot
-  5.0% - Swift Violet
-  5.0% - Mighty Thistle
-  5.0% - Armoranth
-  5.0% - Fortified Pumpkin
-  5.0% - Blue Nightshade
+ 35.0% - Hyrule Herb (3 rupees)
+ 10.0% - Cool Safflina (3 rupees)
+ 10.0% - Warm Safflina (3 rupees)
+ 10.0% - Electric Safflina (3 rupees)
+ 10.0% - Swift Carrot (4 rupees)
+  5.0% - Swift Violet (10 rupees)
+  5.0% - Mighty Thistle (5 rupees)
+  5.0% - Armoranth (5 rupees)
+  5.0% - Fortified Pumpkin (5 rupees)
+  5.0% - Blue Nightshade (4 rupees)
+Expected rupees - 30.4
 
 SmallHit - x1-2
- 30.0% - Hearty Radish
- 10.0% - Big Hearty Radish
- 40.0% - Endura Carrot
- 20.0% - Silent Princess
+ 30.0% - Hearty Radish (8 rupees)
+ 10.0% - Big Hearty Radish (15 rupees)
+ 40.0% - Endura Carrot (30 rupees)
+ 20.0% - Silent Princess (10 rupees)
+Expected rupees - 26.85
 
 BigHit(Normal) - x1
- 25.0% - Amber
- 18.0% - Opal
-  5.0% - Topaz
-  5.0% - Sapphire
-  5.0% - Ruby
-  1.0% - Diamond
-  1.0% - Star Fragment
-  5.0% - Luminous Stone
- 35.0% - Traveler's Bow (Damage: 5)
+ 25.0% - Amber (30 rupees)
+ 18.0% - Opal (60 rupees)
+  5.0% - Topaz (180 rupees)
+  5.0% - Sapphire (260 rupees)
+  5.0% - Ruby (210 rupees)
+  1.0% - Diamond (500 rupees)
+  1.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+ 35.0% - Traveler's Bow (5 damage)
+Expected rupees - 62.3
 
 BigHit(Parasail) - x1
-  5.0% - Amber
- 30.0% - Opal
-  8.0% - Topaz
-  8.0% - Sapphire
-  8.0% - Ruby
-  2.0% - Diamond
-  2.0% - Star Fragment
-  5.0% - Luminous Stone
- 32.0% - Soldier’s Bow (Damage: 14)
+  5.0% - Amber (30 rupees)
+ 30.0% - Opal (60 rupees)
+  8.0% - Topaz (180 rupees)
+  8.0% - Sapphire (260 rupees)
+  8.0% - Ruby (210 rupees)
+  2.0% - Diamond (500 rupees)
+  2.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+ 32.0% - Soldier's Bow (14 damage)
+Expected rupees - 91.0
 
 BigHit(Remain) - x1
-  5.0% - Amber
- 30.0% - Opal
-  8.0% - Topaz
-  8.0% - Sapphire
-  8.0% - Ruby
-  2.0% - Diamond
-  2.0% - Star Fragment
-  5.0% - Luminous Stone
- 32.0% - Soldier’s Bow (Damage: 14)
+  5.0% - Amber (30 rupees)
+ 30.0% - Opal (60 rupees)
+  8.0% - Topaz (180 rupees)
+  8.0% - Sapphire (260 rupees)
+  8.0% - Ruby (210 rupees)
+  2.0% - Diamond (500 rupees)
+  2.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+ 32.0% - Soldier's Bow (14 damage)
+Expected rupees - 91.0
 
 GreatHit(Normal) - x1
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x1
-100.0% - Knight's Bow (Damage: 26)
+100.0% - Knight's Bow (26 damage)
+Expected rupees - 0.0
 
 GreatHit(Remain) - x1
- 10.0% - Twilight Bow (Damage: 30)
- 30.0% - Royal Bow (Damage: 38)
- 60.0% - Knight's Bow (Damage: 26)
+ 10.0% - Twilight Bow (30 damage)
+ 30.0% - Royal Bow (38 damage)
+ 60.0% - Knight's Bow (26 damage)
+Expected rupees - 0.0
 
 ----- Unreleased Skyward Sword Link -----
 Normal - x4
 100.0% - Wooden Box
+Expected rupees - 0.0
 
 SmallHit - x2-4
  20.0% - Arrow x5
  80.0% - Arrow
+Expected rupees - 0.0
 
 BigHit(Normal) - x1
  15.0% - Fire Arrow x5
@@ -868,51 +990,59 @@ BigHit(Normal) - x1
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
  20.0% - Traveler's Shield
- 20.0% - Traveler's Sword (Damage: 5)
+ 20.0% - Traveler's Sword (5 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
- 20.0% - Soldier's Broadsword (Damage: 14)
+ 20.0% - Soldier's Shield
+ 20.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
- 20.0% - Soldier's Broadsword (Damage: 14)
+ 20.0% - Soldier's Shield
+ 20.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
- 40.0% - Cap of the Sky
- 30.0% - Tunic of the Sky
- 30.0% - Trousers of the Sky
+ 40.0% - Cap of the Sky (125 rupees)
+ 30.0% - Tunic of the Sky (125 rupees)
+ 30.0% - Trousers of the Sky (125 rupees)
+Expected rupees - 125.0
 
 GreatHit(Parasail) - x1
- 30.0% - Cap of the Sky
- 20.0% - Tunic of the Sky
- 20.0% - Trousers of the Sky
+ 30.0% - Cap of the Sky (125 rupees)
+ 20.0% - Tunic of the Sky (125 rupees)
+ 20.0% - Trousers of the Sky (125 rupees)
  15.0% - Knight's Shield
- 15.0% - Knight's Broadsword (Damage: 26)
+ 15.0% - Knight's Broadsword (26 damage)
+Expected rupees - 87.5
 
 GreatHit(Remain) - x1
- 20.0% - Cap of the Sky
- 15.0% - Tunic of the Sky
- 15.0% - Trousers of the Sky
+ 20.0% - Cap of the Sky (125 rupees)
+ 15.0% - Tunic of the Sky (125 rupees)
+ 15.0% - Trousers of the Sky (125 rupees)
  20.0% - Knight's Shield
- 20.0% - Knight's Broadsword (Damage: 26)
- 10.0% - Goddess Sword (Damage: 28)
+ 20.0% - Knight's Broadsword (26 damage)
+ 10.0% - Goddess Sword (28 damage)
+Expected rupees - 62.5
 
 ----- 8-Bit Link -----
 Normal - x5
-100.0% - Barrel
+100.0% - Barrel (4 damage)
+Expected rupees - 0.0
 
 SmallHit - x1-3
- 30.0% - Bomb Barrel
+ 30.0% - Bomb Barrel (4 damage)
  70.0% - Arrow x5
+Expected rupees - 0.0
 
 BigHit(Normal) - x1
  15.0% - Fire Arrow x5
@@ -920,248 +1050,285 @@ BigHit(Normal) - x1
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
  20.0% - Traveler's Shield
- 20.0% - Traveler's Sword (Damage: 5)
+ 20.0% - Traveler's Sword (5 damage)
+Expected rupees - 0.0
 
 BigHit(Parasail) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
- 20.0% - Soldier's Broadsword (Damage: 14)
+ 20.0% - Soldier's Shield
+ 20.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 BigHit(Remain) - x1
  15.0% - Fire Arrow x5
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
- 20.0% - Soldier's Broadsword (Damage: 14)
+ 20.0% - Soldier's Shield
+ 20.0% - Soldier's Broadsword (14 damage)
+Expected rupees - 0.0
 
 GreatHit(Normal) - x1
- 40.0% - Cap of the Hero
- 30.0% - Tunic of the Hero
- 30.0% - Trousers of the Hero
+ 40.0% - Cap of the Hero (125 rupees)
+ 30.0% - Tunic of the Hero (125 rupees)
+ 30.0% - Trousers of the Hero (125 rupees)
+Expected rupees - 125.0
 
 GreatHit(Parasail) - x1
- 30.0% - Cap of the Hero
- 20.0% - Tunic of the Hero
- 20.0% - Trousers of the Hero
+ 30.0% - Cap of the Hero (125 rupees)
+ 20.0% - Tunic of the Hero (125 rupees)
+ 20.0% - Trousers of the Hero (125 rupees)
  15.0% - Knight's Shield
- 15.0% - Knight's Broadsword (Damage: 26)
+ 15.0% - Knight's Broadsword (26 damage)
+Expected rupees - 87.5
 
 GreatHit(Remain) - x1
- 30.0% - Cap of the Hero
- 15.0% - Tunic of the Hero
- 15.0% - Trousers of the Hero
+ 30.0% - Cap of the Hero (125 rupees)
+ 15.0% - Tunic of the Hero (125 rupees)
+ 15.0% - Trousers of the Hero (125 rupees)
  15.0% - Knight's Shield
- 15.0% - Knight's Broadsword (Damage: 26)
- 10.0% - Sword (Damage: 22)
+ 15.0% - Knight's Broadsword (26 damage)
+ 10.0% - Sword (22 damage)
+Expected rupees - 75.0
 
 ----- Toon Zelda -----
 Normal - x8
- 35.0% - Hyrule Herb
- 10.0% - Cool Safflina
- 10.0% - Warm Safflina
- 10.0% - Electric Safflina
- 10.0% - Swift Carrot
-  5.0% - Swift Violet
-  5.0% - Mighty Thistle
-  5.0% - Armoranth
-  5.0% - Fortified Pumpkin
-  5.0% - Blue Nightshade
+ 35.0% - Hyrule Herb (3 rupees)
+ 10.0% - Cool Safflina (3 rupees)
+ 10.0% - Warm Safflina (3 rupees)
+ 10.0% - Electric Safflina (3 rupees)
+ 10.0% - Swift Carrot (4 rupees)
+  5.0% - Swift Violet (10 rupees)
+  5.0% - Mighty Thistle (5 rupees)
+  5.0% - Armoranth (5 rupees)
+  5.0% - Fortified Pumpkin (5 rupees)
+  5.0% - Blue Nightshade (4 rupees)
+Expected rupees - 30.4
 
 SmallHit - x1-2
- 35.0% - Hearty Radish
- 10.0% - Big Hearty Radish
- 35.0% - Endura Carrot
- 20.0% - Silent Princess
+ 35.0% - Hearty Radish (8 rupees)
+ 10.0% - Big Hearty Radish (15 rupees)
+ 35.0% - Endura Carrot (30 rupees)
+ 20.0% - Silent Princess (10 rupees)
+Expected rupees - 25.2
 
 BigHit(Normal) - x1
- 23.0% - Amber
- 20.0% - Opal
-  5.0% - Topaz
-  5.0% - Sapphire
-  5.0% - Ruby
-  1.0% - Diamond
-  1.0% - Star Fragment
-  5.0% - Luminous Stone
+ 23.0% - Amber (30 rupees)
+ 20.0% - Opal (60 rupees)
+  5.0% - Topaz (180 rupees)
+  5.0% - Sapphire (260 rupees)
+  5.0% - Ruby (210 rupees)
+  1.0% - Diamond (500 rupees)
+  1.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
  30.0% - Traveler's Shield
-  5.0% - Soldier’s Shield
+  5.0% - Soldier's Shield
+Expected rupees - 62.9
 
 BigHit(Parasail) - x1
- 10.0% - Amber
- 32.0% - Opal
-  8.0% - Topaz
-  8.0% - Sapphire
-  8.0% - Ruby
-  2.0% - Diamond
-  2.0% - Star Fragment
-  5.0% - Luminous Stone
- 25.0% - Soldier’s Shield
+ 10.0% - Amber (30 rupees)
+ 32.0% - Opal (60 rupees)
+  8.0% - Topaz (180 rupees)
+  8.0% - Sapphire (260 rupees)
+  8.0% - Ruby (210 rupees)
+  2.0% - Diamond (500 rupees)
+  2.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+ 25.0% - Soldier's Shield
+Expected rupees - 93.7
 
 BigHit(Remain) - x1
- 10.0% - Amber
- 32.0% - Opal
-  8.0% - Topaz
-  8.0% - Sapphire
-  8.0% - Ruby
-  2.0% - Diamond
-  2.0% - Star Fragment
-  5.0% - Luminous Stone
- 25.0% - Soldier’s Shield
+ 10.0% - Amber (30 rupees)
+ 32.0% - Opal (60 rupees)
+  8.0% - Topaz (180 rupees)
+  8.0% - Sapphire (260 rupees)
+  8.0% - Ruby (210 rupees)
+  2.0% - Diamond (500 rupees)
+  2.0% - Star Fragment (300 rupees)
+  5.0% - Luminous Stone (70 rupees)
+ 25.0% - Soldier's Shield
+Expected rupees - 93.7
 
 GreatHit(Normal) - x0
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x1
 100.0% - Knight's Shield
+Expected rupees - 0.0
 
 GreatHit(Remain) - x1
  60.0% - Knight's Shield
  30.0% - Royal Shield
  10.0% - Hero's Shield
+Expected rupees - 0.0
 
 ----- Non-Zelda Series Amiibo -----
 Normal - x3-5
-  5.0% - Raw Meat
- 10.0% - Hyrule Herb
-  5.0% - Cool Safflina
-  5.0% - Warm Safflina
-  5.0% - Electric Safflina
-  5.0% - Mighty Thistle
-  5.0% - Armoranth
-  5.0% - Blue Nightshade
- 10.0% - Apple
-  5.0% - Acorn
-  5.0% - Hylian Shroom
-  5.0% - Chillshroom
-  5.0% - Sunshroom
-  5.0% - Zapshroom
-  5.0% - Silent Shroom
-  5.0% - Rushroom
-  5.0% - Razorshroom
-  5.0% - Ironshroom
+  5.0% - Raw Meat (8 rupees)
+ 10.0% - Hyrule Herb (3 rupees)
+  5.0% - Cool Safflina (3 rupees)
+  5.0% - Warm Safflina (3 rupees)
+  5.0% - Electric Safflina (3 rupees)
+  5.0% - Mighty Thistle (5 rupees)
+  5.0% - Armoranth (5 rupees)
+  5.0% - Blue Nightshade (4 rupees)
+ 10.0% - Apple (3 rupees)
+  5.0% - Acorn (2 rupees)
+  5.0% - Hylian Shroom (3 rupees)
+  5.0% - Chillshroom (4 rupees)
+  5.0% - Sunshroom (4 rupees)
+  5.0% - Zapshroom (4 rupees)
+  5.0% - Silent Shroom (3 rupees)
+  5.0% - Rushroom (3 rupees)
+  5.0% - Razorshroom (5 rupees)
+  5.0% - Ironshroom (5 rupees)
+Expected rupees - 15.2
 
 SmallHit - x1
-  5.0% - Raw Prime Meat
-  5.0% - Hearty Truffle
- 90.0% - Raw Meat
+  5.0% - Raw Prime Meat (15 rupees)
+  5.0% - Hearty Truffle (6 rupees)
+ 90.0% - Raw Meat (8 rupees)
+Expected rupees - 8.25
 
 BigHit(Normal) - x1
-100.0% - Raw Meat
+100.0% - Raw Meat (8 rupees)
+Expected rupees - 8.0
 
 BigHit(Parasail) - x1
-100.0% - Raw Meat
+100.0% - Raw Meat (8 rupees)
+Expected rupees - 8.0
 
 BigHit(Remain) - x1
-100.0% - Raw Meat
+100.0% - Raw Meat (8 rupees)
+Expected rupees - 8.0
 
 GreatHit(Normal) - x0
+Expected rupees - 0.0
 
 GreatHit(Parasail) - x1
+Expected rupees - 0.0
 
 GreatHit(Remain) - x1
+Expected rupees - 0.0
 
 ----- Barrel -----
 Amiibo - x1-2
  38.0% - Arrow
   2.0% - Arrow x10
  10.0% - Arrow x5
- 50.0% - Apple
+ 50.0% - Apple (3 rupees)
+Expected rupees - 2.25
 
 Amiibo_Burnout - x1-2
- 50.0% - Baked Apple
+ 50.0% - Baked Apple (3 rupees)
+Expected rupees - 2.25
 
 Amiibo_After - x1-2
  20.0% - Arrow
   2.0% - Arrow x10
   8.0% - Arrow x5
- 20.7% - Apple
+ 20.7% - Apple (3 rupees)
+Expected rupees - 0.9315
 
 Amiibo_After2 - x1-2
- 40.0% - Green Rupee
- 35.0% - Blue Rupee
- 19.7% - Red Rupee
-  4.0% - Purple Rupee
-  1.0% - Silver Rupee
-  0.3% - Gold Rupee
+ 40.0% - Green Rupee (1 rupees)
+ 35.0% - Blue Rupee (5 rupees)
+ 19.7% - Red Rupee (20 rupees)
+  4.0% - Purple Rupee (50 rupees)
+  1.0% - Silver Rupee (100 rupees)
+  0.3% - Gold Rupee (300 rupees)
+Expected rupees - 14.985
 
 Amiibo_After_Burnout - x1-2
- 40.0% - Baked Apple
+ 40.0% - Baked Apple (3 rupees)
+Expected rupees - 1.8
 
 Amiibo_After_Burnout2 - x1-2
- 40.0% - Green Rupee
- 35.0% - Blue Rupee
- 19.7% - Red Rupee
-  4.0% - Purple Rupee
-  1.0% - Silver Rupee
-  0.3% - Gold Rupee
+ 40.0% - Green Rupee (1 rupees)
+ 35.0% - Blue Rupee (5 rupees)
+ 19.7% - Red Rupee (20 rupees)
+  4.0% - Purple Rupee (50 rupees)
+  1.0% - Silver Rupee (100 rupees)
+  0.3% - Gold Rupee (300 rupees)
+Expected rupees - 14.985
 
 ----- Wooden Box -----
 Amiibo - x2-3
  25.0% - Arrow
   5.0% - Arrow x10
  20.0% - Arrow x5
- 50.0% - Apple
+ 50.0% - Apple (3 rupees)
+Expected rupees - 3.75
 
 Amiibo_Burnout - x2-3
- 50.0% - Baked Apple
+ 50.0% - Baked Apple (3 rupees)
+Expected rupees - 3.75
 
 Amiibo_After - x1-2
  20.0% - Arrow
  10.0% - Arrow x5
- 20.0% - Apple
+ 20.0% - Apple (3 rupees)
   5.0% - Arrow x10
+Expected rupees - 0.9
 
 Amiibo_After2 - x1-2
- 40.0% - Green Rupee
- 30.0% - Blue Rupee
- 20.0% - Red Rupee
-  6.7% - Purple Rupee
-  3.0% - Silver Rupee
-  0.3% - Gold Rupee
+ 40.0% - Green Rupee (1 rupees)
+ 30.0% - Blue Rupee (5 rupees)
+ 20.0% - Red Rupee (20 rupees)
+  6.7% - Purple Rupee (50 rupees)
+  3.0% - Silver Rupee (100 rupees)
+  0.3% - Gold Rupee (300 rupees)
+Expected rupees - 19.725
 
 Amiibo_After_Burnout - x1-2
- 40.0% - Baked Apple
+ 40.0% - Baked Apple (3 rupees)
+Expected rupees - 1.8
 
 Amiibo_After_Burnout2 - x1-2
- 40.0% - Green Rupee
- 30.0% - Blue Rupee
- 20.0% - Red Rupee
-  6.7% - Purple Rupee
-  3.0% - Silver Rupee
-  0.3% - Gold Rupee
+ 40.0% - Green Rupee (1 rupees)
+ 30.0% - Blue Rupee (5 rupees)
+ 20.0% - Red Rupee (20 rupees)
+  6.7% - Purple Rupee (50 rupees)
+  3.0% - Silver Rupee (100 rupees)
+  0.3% - Gold Rupee (300 rupees)
+Expected rupees - 19.725
 
 ----- Iron Box -----
 Amiibo - x1-3
  50.0% - Arrow
   2.0% - Arrow x10
   9.0% - Arrow x5
- 18.0% - Flint
- 20.0% - Amber
-  1.0% - Opal
+ 18.0% - Flint (5 rupees)
+ 20.0% - Amber (30 rupees)
+  1.0% - Opal (60 rupees)
+Expected rupees - 15.0
 
 Amiibo2 - x1
- 35.0% - Ancient Screw
- 35.0% - Ancient Spring
- 15.0% - Ancient Gear
- 15.0% - Ancient Shaft
+ 35.0% - Ancient Screw (12 rupees)
+ 35.0% - Ancient Spring (15 rupees)
+ 15.0% - Ancient Gear (30 rupees)
+ 15.0% - Ancient Shaft (40 rupees)
+Expected rupees - 19.95
 
 Amiibo_After - x1-3
  33.0% - Arrow
  10.0% - Arrow x5
   2.0% - Arrow x10
- 21.0% - Amber
- 15.5% - Opal
- 12.0% - Flint
-  2.0% - Topaz
-  2.0% - Sapphire
-  2.0% - Ruby
-  0.5% - Diamond
+ 21.0% - Amber (30 rupees)
+ 15.5% - Opal (60 rupees)
+ 12.0% - Flint (5 rupees)
+  2.0% - Topaz (180 rupees)
+  2.0% - Sapphire (260 rupees)
+  2.0% - Ruby (210 rupees)
+  0.5% - Diamond (500 rupees)
+Expected rupees - 63.4
 
 Amiibo_After2 - x1
- 20.0% - Ancient Screw
- 20.0% - Ancient Spring
- 30.0% - Ancient Gear
- 30.0% - Ancient Shaft
- 
+ 20.0% - Ancient Screw (12 rupees)
+ 20.0% - Ancient Spring (15 rupees)
+ 30.0% - Ancient Gear (30 rupees)
+ 30.0% - Ancient Shaft (40 rupees)
+Expected rupees - 26.4
