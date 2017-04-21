@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="61087062" SRTHash="1441239742">
+      <_Parameters FieldBodyGroup="0" />
+      <Scale type="array">
+        <value>2f</value>
+        <value>10f</value>
+        <value>2f</value>
+      </Scale>
+      <Translate type="array">
+        <value>123f</value>
+        <value>19f</value>
+        <value>27f</value>
+      </Translate>
+      <UnitConfigName type="string">AscendingCurrent_Side</UnitConfigName>
+    </value>
+    <value HashId="327580459" SRTHash="-392288139">
+      <Translate type="array">
+        <value>125.5f</value>
+        <value>-2f</value>
+        <value>26.5f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="484731645" OnlyOne="true" SRTHash="-163843441">
+      <Scale type="array">
+        <value>39.26022f</value>
+        <value>19.92745f</value>
+        <value>7.80089f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-1.971882f</value>
+        <value>30.57813f</value>
+        <value>-18.66096f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="500361230" SRTHash="928376745">
+      <_Parameters FieldBodyGroup="0" />
+      <Scale type="array">
+        <value>2f</value>
+        <value>10f</value>
+        <value>2f</value>
+      </Scale>
+      <Translate type="array">
+        <value>29f</value>
+        <value>17f</value>
+        <value>27f</value>
+      </Translate>
+      <UnitConfigName type="string">AscendingCurrent_Side</UnitConfigName>
+    </value>
+    <value HashId="1204638339" OnlyOne="true" SRTHash="945658775" Scale="1.5f">
+      <Translate type="array">
+        <value>15.5f</value>
+        <value>17f</value>
+        <value>-77f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MapModel_A_01</UnitConfigName>
+    </value>
+    <value HashId="1213521060" OnlyOne="true" SRTHash="-500569239">
+      <Scale type="array">
+        <value>3f</value>
+        <value>25f</value>
+        <value>3f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-21.5f</value>
+        <value>-15f</value>
+      </Translate>
+      <UnitConfigName type="string">AscendingCurrent_Slow</UnitConfigName>
+    </value>
+    <value HashId="1956851136" SRTHash="355919067">
+      <_Parameters FieldBodyGroup="0" />
+      <Scale type="array">
+        <value>2f</value>
+        <value>10f</value>
+        <value>2f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-123f</value>
+        <value>19f</value>
+        <value>27f</value>
+      </Translate>
+      <UnitConfigName type="string">AscendingCurrent_Side</UnitConfigName>
+    </value>
+    <value HashId="-1682763894" OnlyOne="true" Rotate="3.141593f" SRTHash="-2016182539">
+      <_Parameters BeamRange="0f" IsAnnihilateDungeonEnemy="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Spear_013</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>5.364418E-07f</value>
+        <value>-2.75f</value>
+        <value>62.4375f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Guardian_Mini_Junior_Dark</UnitConfigName>
+    </value>
+    <value HashId="-1636916425" SRTHash="-1046003916">
+      <Translate type="array">
+        <value>-44f</value>
+        <value>-15f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="-425898162" OnlyOne="true" Rotate="1.748456E-07f" SRTHash="1656005288">
+      <Translate type="array">
+        <value>1.976808E-06f</value>
+        <value>3.100001f</value>
+        <value>-72.66406f</value>
+      </Translate>
+      <UnitConfigName type="string">DungeonResetPosTag</UnitConfigName>
+    </value>
+    <value HashId="-203650782" SRTHash="562182475">
+      <_Parameters FieldBodyGroup="0" />
+      <Scale type="array">
+        <value>2f</value>
+        <value>10f</value>
+        <value>2f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-29f</value>
+        <value>17f</value>
+        <value>27f</value>
+      </Translate>
+      <UnitConfigName type="string">AscendingCurrent_Side</UnitConfigName>
+    </value>
+    <value HashId="-189706949" SRTHash="-537137332">
+      <_Parameters FieldBodyGroup="0" />
+      <Scale type="array">
+        <value>4f</value>
+        <value>25f</value>
+        <value>4f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-36.5f</value>
+        <value>-21.5f</value>
+        <value>63.5f</value>
+      </Translate>
+      <UnitConfigName type="string">AscendingCurrent_Side</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

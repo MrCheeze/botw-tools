@@ -1,0 +1,5025 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3" LocationPosX="0f" LocationPosZ="0f" LocationSize="2000f">
+  <Objs type="array">
+    <value HashId="2906364" SRTHash="-1332803602">
+      <Translate type="array">
+        <value>-13f</value>
+        <value>3f</value>
+        <value>-17.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LookTag</UnitConfigName>
+    </value>
+    <value HashId="14526661" Rotate="-3.141593f" SRTHash="-609567229">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22.5f</value>
+        <value>0f</value>
+        <value>0.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="21329359" SRTHash="878277383">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="32387787" OnlyOne="true" SRTHash="-1839558248">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Sword_035</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-13f</value>
+        <value>0f</value>
+        <value>-23f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Dungeon_Iron</UnitConfigName>
+    </value>
+    <value HashId="60992837" Rotate="-3.141593f" SRTHash="-300312581">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-19.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="124292966" SRTHash="-172911153">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="910884090">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1921797346">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1665419745">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1829244800">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>8.5f</value>
+        <value>12.00023f</value>
+        <value>-19.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="161092823" SRTHash="-54326449">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">EntryPoint0</EventFlowEntryName>
+        <EventFlowName type="string">Demo024_0</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="2124227649">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="745328422">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1711335891">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-23f</value>
+        <value>0f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="162292473" Rotate="-1.570796f" SRTHash="2046092791">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>0f</value>
+        <value>-8.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Up_01</UnitConfigName>
+    </value>
+    <value HashId="202832383" SRTHash="-1474247335">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="205157130" Rotate="1.570796f" SRTHash="972360127">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Cross_01</UnitConfigName>
+    </value>
+    <value HashId="216406874" SRTHash="-1981535101">
+      <_Parameters SharpWeaponJudgeType="0" WaitTime="40f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1725626042">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-18.5f</value>
+        <value>0f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
+    <value HashId="234130665" Rotate="-1.570796f" SRTHash="-1005151328">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="294149555" SRTHash="-1211095834">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1595672767">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1616781169">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="961647391">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2016689048">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="997117974">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1375576937">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1805354816">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1834650510">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1931947842">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1583034330">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-25.5f</value>
+        <value>0f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="310757209" SRTHash="1003074769">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="124292966">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1232121298">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>7f</value>
+        <value>12.5f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="311200486" SRTHash="1983032616">
+      <Translate type="array">
+        <value>-13f</value>
+        <value>0f</value>
+        <value>-20.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ShutterFenceFrame_A</UnitConfigName>
+    </value>
+    <value HashId="323464558" SRTHash="607187384">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1077120271">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0.149196f</value>
+        <value>-0.001620885f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>8f</value>
+        <value>10.5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchElectric0</UnitConfigName>
+    </value>
+    <value HashId="351075529" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-280764396">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>0f</value>
+        <value>-19.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="358227919" SRTHash="823024433">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>3f</value>
+        <value>4f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="366710908" SRTHash="-2048623403">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-18.5f</value>
+        <value>0f</value>
+        <value>0.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="404515285" SRTHash="1303013990">
+      <_Parameters MoveAxis="1" MoveDis="5f" MoveSpeed="0.5f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>4f</value>
+        <value>-22.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SS_object_ShutterFenceOnly00</UnitConfigName>
+    </value>
+    <value HashId="459160653" SRTHash="-527719631">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1258623792">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1386042460">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1125750026">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="932264623">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-301916569">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-459849138">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1861267549">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1204086857">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="792354059">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2043727931">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>23.5f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="465868292" SRTHash="-1360276224">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>1f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="467168125" SRTHash="-1929888828">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>26f</value>
+        <value>3f</value>
+        <value>-3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="476546124" SRTHash="864586977">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>2f</value>
+        <value>4f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="482142007" SRTHash="1401446449">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3f</value>
+        <value>4f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="488549674" SRTHash="1574635554">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>1.570796f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-6f</value>
+        <value>2f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="489982590" SRTHash="-738732123">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1401429406">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="404515285">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>4f</value>
+        <value>-32.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="490752633" Rotate="1.570796f" SRTHash="-17659026">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>0f</value>
+        <value>-8.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="530106259" SRTHash="-1759891318">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1327251884">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-220011648">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>24f</value>
+        <value>0f</value>
+        <value>-11.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="578049173" SRTHash="1693514742">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="585804340" Rotate="1.570796f" SRTHash="757197667">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>-3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="592427390" Rotate="1.570796f" SRTHash="-1503275184">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-2.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Cross_01</UnitConfigName>
+    </value>
+    <value HashId="594043148" SRTHash="1414924746">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>4f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="603340151" SRTHash="775834510">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1067596641">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1486537240">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1193171566">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-801079562">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="14526661">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="888780893">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="366710908">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1570527858">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="2078853620">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1490530008">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-436228024">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-359611113">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-25f</value>
+        <value>0f</value>
+        <value>-2.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="617807259" SRTHash="1268156670">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>23f</value>
+        <value>5.5f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="654029784" SRTHash="-91798085">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1318408143">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-78336085">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-13.5f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="671492105" Rotate="1.570796f" SRTHash="1555867577">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="675146904" SRTHash="1481925240">
+      <_Parameters IncrementSave="false" MakeSaveFlag="1" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-296557281">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="2140338647">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-778138912">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>4f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="721488703" SRTHash="1469067401">
+      <Translate type="array">
+        <value>18f</value>
+        <value>2f</value>
+        <value>-15f</value>
+      </Translate>
+      <UnitConfigName type="string">LookTag</UnitConfigName>
+    </value>
+    <value HashId="728101909" Rotate="1.570796f" SRTHash="878408606">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>13f</value>
+        <value>0f</value>
+        <value>-5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="745328422" SRTHash="-554232090">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1480242042">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1802456088">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-23f</value>
+        <value>0f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="745979503" SRTHash="-933801429">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>-1.570796f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>6f</value>
+        <value>2f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="746470321" Rotate="3.141593f" SRTHash="329730879">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>1f</value>
+        <value>4f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="761225079" Rotate="-3.141593f" SRTHash="-234236439">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2f</value>
+        <value>4f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Consent_01</UnitConfigName>
+    </value>
+    <value HashId="770924269" SRTHash="546688060">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>6.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="774777729" SRTHash="2083368556">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>0f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="792354059" SRTHash="-1269668487">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-3.141593f</value>
+        <value>2.78064E-17f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>22f</value>
+        <value>2f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="803987621" SRTHash="935389145">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-40008967">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1431383201">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-373789400">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1868111603">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1670571905">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1767354527">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-769157472">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1109361772">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>20f</value>
+        <value>0f</value>
+        <value>-6f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="832069496" SRTHash="551078001">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1033419248">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-94166801">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1646538438">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-15084466">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="728101909">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1966242283">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1141418613">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1599177212">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-254012758">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>15.5f</value>
+        <value>0f</value>
+        <value>7f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="869814345" SRTHash="-665530861">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1279093887">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="958028125">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>6f</value>
+        <value>4f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="878950966" SRTHash="-2006119084">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>2f</value>
+        <value>4f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Consent_01</UnitConfigName>
+    </value>
+    <value HashId="888780893" SRTHash="-1480521629">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22.5f</value>
+        <value>0f</value>
+        <value>0.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="889602976" SRTHash="1814474245">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>26f</value>
+        <value>3f</value>
+        <value>-7f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="910884090" SRTHash="327830251">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>7.391153E-17f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>8f</value>
+        <value>4f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="926203289" SRTHash="-283179269">
+      <Translate type="array">
+        <value>0f</value>
+        <value>6f</value>
+        <value>-20.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LookTag</UnitConfigName>
+    </value>
+    <value HashId="932264623" SRTHash="1023640831">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>20.5f</value>
+        <value>0f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Up_01</UnitConfigName>
+    </value>
+    <value HashId="961647391" Rotate="1.570796f" SRTHash="143559859">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="966908197" OnlyOne="true" SRTHash="2127311547">
+      <_Parameters MoveAxis="1" MoveDis="5f" MoveSpeed="0.5f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>18f</value>
+        <value>0f</value>
+        <value>-18.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchShutterFenceWide</UnitConfigName>
+    </value>
+    <value HashId="967349402" SRTHash="-1619614139">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-738366871">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2f</value>
+        <value>5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="969053218" SRTHash="-460866920">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>7.391153E-17f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="997117974" Rotate="-1.570796f" SRTHash="105999054">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16.5f</value>
+        <value>0f</value>
+        <value>6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="1007868083" SRTHash="-522046445">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3f</value>
+        <value>4f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1018087389" Rotate="-3.141593f" SRTHash="1658312923">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-13.5f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="1033419248" Rotate="-1.570796f" SRTHash="1078282031">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>10f</value>
+        <value>0f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="1076551987" SRTHash="-1786334254">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2070070479">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="761225079">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1879684811">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1018087389">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1368253044">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="465868292">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1958446063">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1582931048">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="482142007">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3.5f</value>
+        <value>4.000226f</value>
+        <value>1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1077120271" SRTHash="-1734724658">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="967349402">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>5f</value>
+        <value>4f</value>
+        <value>-21.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1083412789" SRTHash="234566818">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1394634428">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-588945323">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="774777729">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1274993390">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="205157130">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-761164417">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-458386899">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1099083218">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-573066537">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2012248734">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1204841643">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-26.5f</value>
+        <value>0f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1099083218" Rotate="1.570796f" SRTHash="-1765114868">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1103424749" SRTHash="-1102140471">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22.5f</value>
+        <value>0f</value>
+        <value>-15f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1109361772" SRTHash="55009222">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>15.5f</value>
+        <value>0f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1155490015" SRTHash="-34202005">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="832069496">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1484862210">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>0f</value>
+        <value>8.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="1180443748" Rotate="-1.570796f" SRTHash="-1717418827">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>4f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="1197361430" SRTHash="-517394524">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">EntryPoint0</EventFlowEntryName>
+        <EventFlowName type="string">Demo024_0</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="926203289">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-564717396">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1711335891">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2f</value>
+        <value>4f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="1199059379" SRTHash="1764741461">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>-1.570796f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-6f</value>
+        <value>2f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="1204086857" SRTHash="-1964465967">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-3.141593f</value>
+        <value>2.78064E-17f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>22f</value>
+        <value>3f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1204841643" SRTHash="294576858">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-14.5f</value>
+        <value>0f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1225375055" Rotate="1.570796f" SRTHash="-807764106">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>1f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="1258623792" SRTHash="-1695570387">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>26f</value>
+        <value>3f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="1294403703" SRTHash="-1176591857">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>9f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Consent_01</UnitConfigName>
+    </value>
+    <value HashId="1318408143" SRTHash="1824798461">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1166727990">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="234130665">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1796665744">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1103424749">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1460492488">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="2113896005">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-29392384">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-519123706">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1599976766">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-755791323">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1922107581">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1667970929">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-13.5f</value>
+        <value>0f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1320133644" SRTHash="-16823963">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="967349402">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5f</value>
+        <value>4f</value>
+        <value>-21.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1338170406" SRTHash="778150209">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.224671E-17f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-6f</value>
+        <value>3f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="1375503182" SRTHash="215387369">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="603340151">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1650327057">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-25f</value>
+        <value>0f</value>
+        <value>-5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="1386042460" Rotate="-1.570796f" SRTHash="388610268">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>4f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="1392764331" Rotate="1.570796f" SRTHash="1601790658">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>24f</value>
+        <value>0f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="1431383201" SRTHash="1764143808">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16.5f</value>
+        <value>0f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="1460492488" Rotate="1.570796f" SRTHash="-563025727">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="1490530008" Rotate="-1.570796f" SRTHash="-2111411768">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>-5.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1532226060" Rotate="1.570796f" SRTHash="1693392830">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>4f</value>
+        <value>-6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="1543386626" Rotate="1.570796f" SRTHash="-1708754677">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-1.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1543912361" SRTHash="463807063">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="966908197">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-183772741">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>18f</value>
+        <value>0f</value>
+        <value>-17.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1547220410" SRTHash="1498563222">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4f</value>
+        <value>3f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1548332976" SRTHash="1669020473">
+      <LinksToObj type="array">
+        <value DestUnitHashId="2133144734">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>4f</value>
+        <value>12.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LookTag</UnitConfigName>
+    </value>
+    <value HashId="1570527858" Rotate="-1.570796f" SRTHash="380667899">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16.5f</value>
+        <value>0f</value>
+        <value>-1.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1580142443" SRTHash="655944080">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="1583034330" SRTHash="-572603198">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-18.5f</value>
+        <value>0f</value>
+        <value>7f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1594985731" OnlyOne="true" SRTHash="145090504">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="489982590">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>4f</value>
+        <value>-33f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_GoalShield_A</UnitConfigName>
+    </value>
+    <value HashId="1599976766" Rotate="1.570796f" SRTHash="338847184">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1612931665" Rotate="3.141593f" SRTHash="1588813460">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>5f</value>
+        <value>4f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="1616781169" Rotate="1.570796f" SRTHash="-1589858392">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1625154300" SRTHash="-878924557">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-778138912">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>4f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1630620358" SRTHash="1959560314">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>3f</value>
+        <value>4f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="1665419745" SRTHash="-1470359354">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>8f</value>
+        <value>5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="1667886742" Rotate="1.570796f" SRTHash="-1744509078">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-5.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="1708714630" SRTHash="1889908069">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>2f</value>
+        <value>4f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Consent_01</UnitConfigName>
+    </value>
+    <value HashId="1711335891" OnlyOne="true" SRTHash="0">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <RotateFieldBodyGroup00 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup01 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup02 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup03 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup04 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup05 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup06 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup07 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup08 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup09 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup10 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup11 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup12 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup13 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup14 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup15 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup00 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup01 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup02 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup03 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup04 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup05 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup06 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup07 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup08 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup09 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup10 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup11 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup12 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup13 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup14 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup15 X="0f" Y="0f" Z="0f" />
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnMrgPrt_Dungeon060</UnitConfigName>
+    </value>
+    <value HashId="1736390885" SRTHash="1492129535">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>7.391153E-17f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>26.5f</value>
+        <value>2f</value>
+        <value>-15.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1743452093" Rotate="1.570796f" SRTHash="96451913">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1755313925" SRTHash="985466794">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1928528685">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1609365273">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>4f</value>
+        <value>8.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="1767354527" Rotate="1.570796f" SRTHash="1156047815">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>17.5f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="1780018149" SRTHash="1598203203">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">GoalExit</EventFlowEntryName>
+        <EventFlowName type="string">Demo033_1</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+        <value DestUnitHashId="1711335891">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>4f</value>
+        <value>-31f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="1791069640" Rotate="-3.141593f" SRTHash="2039674304">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2f</value>
+        <value>4f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Consent_01</UnitConfigName>
+    </value>
+    <value HashId="1796665744" SRTHash="1220819324">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-21.5f</value>
+        <value>0f</value>
+        <value>-15f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1802456088" SRTHash="1303013990">
+      <_Parameters MoveAxis="1" MoveDis="5f" MoveSpeed="0.5f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23f</value>
+        <value>0f</value>
+        <value>-20.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SS_object_ShutterFenceOnly00</UnitConfigName>
+    </value>
+    <value HashId="1829244800" SRTHash="525557513">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>7.391153E-17f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>8f</value>
+        <value>5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1841305504" SRTHash="1389260961">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="745979503">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="594043148">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-466506938">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1199059379">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="746470321">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1612931665">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1549940368">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1338170406">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="488549674">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1929736066">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2.5f</value>
+        <value>4.000226f</value>
+        <value>-15.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1861267549" Rotate="3.141593f" SRTHash="-784460413">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>25f</value>
+        <value>4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1868111603" Rotate="1.570796f" SRTHash="1417102702">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>14.5f</value>
+        <value>0f</value>
+        <value>-3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1879684811" SRTHash="120013583">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Up_01</UnitConfigName>
+    </value>
+    <value HashId="1880471104" SRTHash="-2027177054">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4f</value>
+        <value>3f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1917659144" Rotate="1.570796f" SRTHash="-410849747">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>0f</value>
+        <value>-9.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1922107581" Rotate="1.570796f" SRTHash="-2038844213">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1928528685" SRTHash="1527185406">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1203552963">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1791069640">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-554871006">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="2120908990">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="60992837">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-705616276">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1996181047">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-466339081">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2135595143">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-317405534">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1982397356">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1007868083">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3.5f</value>
+        <value>4f</value>
+        <value>9f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1929736066" SRTHash="-1277548785">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>6f</value>
+        <value>3f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="1960713594" SRTHash="0">
+      <Translate type="array">
+        <value>0f</value>
+        <value>5.5f</value>
+        <value>-29.25f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="1966242283" Rotate="1.570796f" SRTHash="789482023">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>13f</value>
+        <value>0f</value>
+        <value>-3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1996181047" SRTHash="939345808">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>1f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="1999333482" SRTHash="283867521">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="311200486">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-567899528">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-13f</value>
+        <value>0f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2012085516" Rotate="1.570796f" SRTHash="-839153358">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>-11f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="2078853620" Rotate="-1.570796f" SRTHash="1325770369">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16.5f</value>
+        <value>0f</value>
+        <value>-2.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="2113896005" Rotate="1.570796f" SRTHash="-2071715566">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>-11f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="2120908990" SRTHash="1329254916">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-19.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="2124227649" SRTHash="-1793070483">
+      <Translate type="array">
+        <value>-23f</value>
+        <value>3f</value>
+        <value>-17.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LookTag</UnitConfigName>
+    </value>
+    <value HashId="2133144734" SRTHash="0">
+      <Translate type="array">
+        <value>0f</value>
+        <value>4f</value>
+        <value>12.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="2140338647" OnlyOne="true" SRTHash="865924496">
+      <_Parameters TerritoryArea="0f" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>7f</value>
+        <value>-33f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriest001</UnitConfigName>
+    </value>
+    <value HashId="-2145978591" Rotate="1.570796f" SRTHash="2102333682">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>0f</value>
+        <value>-10.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-2135595143" SRTHash="1804816759">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-13.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-2070070479" Rotate="-3.141593f" SRTHash="1812779205">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3f</value>
+        <value>4f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="-2043727931" Rotate="1.570796f" SRTHash="-157781454">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>4f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="-2016689048" Rotate="1.570796f" SRTHash="-1190424209">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-2012248734" SRTHash="-1644576554">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-19.5f</value>
+        <value>0f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-1982397356" SRTHash="-1772190060">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-18.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1974534956" SRTHash="907076188">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1940943911">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.769755f</value>
+        <value>-1.570796f</value>
+        <value>-1.198958f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>26.5f</value>
+        <value>4.5f</value>
+        <value>-15.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchElectric0</UnitConfigName>
+    </value>
+    <value HashId="-1962978026" SRTHash="435346138">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-19.5f</value>
+        <value>0f</value>
+        <value>-6.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-1958446063" SRTHash="804130710">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-1953720605" SRTHash="-642720265">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-940103710">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1048026436">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>10f</value>
+        <value>0.5f</value>
+        <value>-9.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="-1940943911" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1916169043">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>26.5f</value>
+        <value>4.5f</value>
+        <value>-15.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1931947842" SRTHash="2096262638">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22.5f</value>
+        <value>0f</value>
+        <value>7f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-1927071539" SRTHash="-1813530667">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1890996058">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-19.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchElectric0</UnitConfigName>
+    </value>
+    <value HashId="-1921797346" SRTHash="-1529761171">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>8f</value>
+        <value>9f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Consent_01</UnitConfigName>
+    </value>
+    <value HashId="-1916169043" SRTHash="2067175646">
+      <_Parameters SharpWeaponJudgeType="0" WaitTime="40f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1033720310">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>24f</value>
+        <value>0f</value>
+        <value>-17.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
+    <value HashId="-1915427629" Rotate="3.141593f" SRTHash="-138845229">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Up_01</UnitConfigName>
+    </value>
+    <value HashId="-1914705051" Rotate="1.570796f" SRTHash="-2139363576">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>2.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1890996058" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="216406874">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-19.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1834650510" Rotate="1.570796f" SRTHash="390878213">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1824209824" Rotate="-3.141593f" SRTHash="-1901316674">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>25f</value>
+        <value>0f</value>
+        <value>-12.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-1816425059" OnlyOne="true" SRTHash="-376039716">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1594985731">
+          <DefinitionName type="string">PhysSystemGroup</DefinitionName>
+        </value>
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>4f</value>
+        <value>-33f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_GoalSystem_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1805354816" Rotate="1.570796f" SRTHash="1653507689">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16.5f</value>
+        <value>0f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-1796527761" OnlyOne="true" SRTHash="892625114">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-8.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BaseRoom60x60x20_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1757158059" SRTHash="-730039377">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4f</value>
+        <value>2f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1755213685" SRTHash="147380030">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>25f</value>
+        <value>0f</value>
+        <value>-15.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Up_01</UnitConfigName>
+    </value>
+    <value HashId="-1725626042" SRTHash="476354549">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="161092823">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-18.5f</value>
+        <value>0.5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1670571905" Rotate="1.570796f" SRTHash="910446026">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>14.5f</value>
+        <value>0f</value>
+        <value>-5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-1667970929" Rotate="1.570796f" SRTHash="773550154">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>-13f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1661287348" SRTHash="-334733827">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4f</value>
+        <value>2f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1646538438" Rotate="1.570796f" SRTHash="-587403133">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>10f</value>
+        <value>0f</value>
+        <value>-1f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-1639396001" SRTHash="-108599022">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">EntryPoint0</EventFlowEntryName>
+        <EventFlowName type="string">Demo024_0</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="2906364">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1999333482">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1711335891">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-13f</value>
+        <value>0f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-1609125428" SRTHash="2026672470">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>7.391153E-17f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>26.5f</value>
+        <value>3f</value>
+        <value>-15.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Consent_01</UnitConfigName>
+    </value>
+    <value HashId="-1600010976" SRTHash="-867568946">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1841305504">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-640700349">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-0.5f</value>
+        <value>4f</value>
+        <value>-15.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="-1599177212" SRTHash="1873808608">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>11f</value>
+        <value>0f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1595672767" Rotate="-3.141593f" SRTHash="-396428109">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22.5f</value>
+        <value>0f</value>
+        <value>7f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-1582931048" SRTHash="207028870">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-13.5f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-1549940368" SRTHash="1633206718">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-3.141593f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>6f</value>
+        <value>3f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="-1544996963" Rotate="1.570796f" SRTHash="-1450129948">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-0.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1543448357" SRTHash="-1184509815">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1197361430">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3.5f</value>
+        <value>4.000226f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1486537240" Rotate="3.141593f" SRTHash="1141071368">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22.5f</value>
+        <value>0f</value>
+        <value>-3.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-1480242042" SRTHash="1983032616">
+      <Translate type="array">
+        <value>-23f</value>
+        <value>0f</value>
+        <value>-20.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ShutterFenceFrame_A</UnitConfigName>
+    </value>
+    <value HashId="-1479802567" SRTHash="-827656135">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1406262736">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1362591531">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>12f</value>
+        <value>-22f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="-1406262736" SRTHash="1572863988">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-560834451">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="969053218">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="202832383">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1294403703">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>12.00023f</value>
+        <value>-19.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1401429406" Rotate="-3.141593f" SRTHash="892728205">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
+        <EventFlowEntryName type="string">Demo033_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo033_0</EventFlowName>
+        <TraversePos X="0f" Y="5.5f" Z="-29.25f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1625154300">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-459805690">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+        <value DestUnitHashId="1711335891">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>5.5f</value>
+        <value>-29.25f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-1394634428" SRTHash="-1647780650">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-13.5f</value>
+        <value>0f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-1380544986" SRTHash="239769845">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>13f</value>
+        <value>5.5f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="-1380137494" SRTHash="-25155644">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="459160653">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1310550475">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>26f</value>
+        <value>0f</value>
+        <value>0.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="-1375576937" Rotate="-1.570796f" SRTHash="-425193138">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16.5f</value>
+        <value>0f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Cross_01</UnitConfigName>
+    </value>
+    <value HashId="-1368253044" SRTHash="-693598343">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>2f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1327251884" SRTHash="-2058813265">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="467168125">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-993010824">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1532226060">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-480955822">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1736390885">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1917659144">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2145978591">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="490752633">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="162292473">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-265360078">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1268339441">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1180443748">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="889602976">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-958084070">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1128553465">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1824209824">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1392764331">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1755213685">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1609125428">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>21.5f</value>
+        <value>0f</value>
+        <value>-10.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1308076431" Rotate="1.570796f" SRTHash="-1907385871">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>-13f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1288111799" OnlyOne="true" SRTHash="-1586897157">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="2140338647">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>4f</value>
+        <value>-33.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="-1279093887" SRTHash="133422225">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1630620358">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1708714630">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1142675690">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="578049173">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1580142443">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="476546124">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1547220410">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1661287348">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="770924269">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3.5f</value>
+        <value>4f</value>
+        <value>9f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1274993390" Rotate="3.141593f" SRTHash="-1302305672">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-19.5f</value>
+        <value>0f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-1268339441" Rotate="1.570796f" SRTHash="1114054481">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>4f</value>
+        <value>-5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-1251631460" SRTHash="415868061">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">EntryPoint0</EventFlowEntryName>
+        <EventFlowName type="string">Demo024_0</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="721488703">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1543912361">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1711335891">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>20.5f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-1237012919" SRTHash="365001999">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="294149555">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-2048535786">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-25.5f</value>
+        <value>0f</value>
+        <value>5.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="-1203552963" Rotate="-3.141593f" SRTHash="-1852177219">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3f</value>
+        <value>4f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="-1200054698" SRTHash="1495504986">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1083412789">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1940676803">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-26.5f</value>
+        <value>0f</value>
+        <value>-10f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="-1193171566" SRTHash="-1807836376">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-17.5f</value>
+        <value>0f</value>
+        <value>-3.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-1166727990" Rotate="-1.570796f" SRTHash="-662811830">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>0f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Consent_01</UnitConfigName>
+    </value>
+    <value HashId="-1153329752" SRTHash="56369433">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-18f</value>
+        <value>5.5f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="-1142675690" Rotate="3.141593f" SRTHash="716761835">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Up_01</UnitConfigName>
+    </value>
+    <value HashId="-1141418613" Rotate="1.570796f" SRTHash="1156047815">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>10f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-1128553465" SRTHash="-796883071">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>25f</value>
+        <value>0f</value>
+        <value>-12.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-1125750026" Rotate="3.141593f" SRTHash="-1529932012">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>23f</value>
+        <value>4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Down_01</UnitConfigName>
+    </value>
+    <value HashId="-1100258719" SRTHash="1983032616">
+      <Translate type="array">
+        <value>0f</value>
+        <value>4f</value>
+        <value>-22.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ShutterFenceFrame_A</UnitConfigName>
+    </value>
+    <value HashId="-1067596641" Rotate="1.570796f" SRTHash="407044333">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>-5.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-1052533025" SRTHash="-926841972">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-274673120">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="358272647">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>0f</value>
+        <value>-5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="-1033720310" SRTHash="-1869445784">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1251631460">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>22f</value>
+        <value>0f</value>
+        <value>-17.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-993010824" Rotate="1.570796f" SRTHash="-1043332637">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>4f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-958084070" SRTHash="374414688">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>0f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>26f</value>
+        <value>2f</value>
+        <value>-7f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-940103710" SRTHash="1049911816">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-388373792">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1743452093">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-100039414">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1915427629">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="358227919">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-913062900">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="21329359">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1225375055">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="585804340">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-901007870">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="2012085516">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1757158059">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1880471104">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="878950966">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="671492105">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1308076431">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>10f</value>
+        <value>0f</value>
+        <value>-7f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-913062900" SRTHash="-2061098750">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>2f</value>
+        <value>4f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-901007870" Rotate="1.570796f" SRTHash="997120120">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>-7f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-886467093" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1780018149">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>5.5f</value>
+        <value>-29.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-801079562" Rotate="-1.570796f" SRTHash="-272757972">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16.5f</value>
+        <value>0f</value>
+        <value>-0.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-791989841" SRTHash="-1522507029">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1320133644">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>-0.05612281f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>10.5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchElectric0</UnitConfigName>
+    </value>
+    <value HashId="-778138912" OnlyOne="true" SRTHash="978075651">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1594985731">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>7f</value>
+        <value>4f</value>
+        <value>-34.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-769157472" Rotate="1.570796f" SRTHash="-1263292348">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>14.5f</value>
+        <value>0f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-761164417" Rotate="1.570796f" SRTHash="-870669000">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-758732717" OnlyOne="true" Rotate="-3.141593f" SRTHash="-1323267158">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <EventFlowEntryName type="string">Demo008_3</EventFlowEntryName>
+        <EventFlowName type="string">Demo008_3</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1548332976">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="2133144734">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>14f</value>
+        <value>17.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_EntranceElevator_A_01</UnitConfigName>
+    </value>
+    <value HashId="-755791323" Rotate="1.570796f" SRTHash="-777435204">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>0f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-745510670" SRTHash="1816269807">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-14.5f</value>
+        <value>0f</value>
+        <value>-6.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-738366871" SRTHash="-696656838">
+      <_Parameters SharpWeaponJudgeType="0" WaitTime="40f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1543448357">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>4.5f</value>
+        <value>4f</value>
+        <value>-19f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
+    <value HashId="-735267290" Rotate="-1.570796f" SRTHash="-58547069">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-0.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Cross_01</UnitConfigName>
+    </value>
+    <value HashId="-705616276" SRTHash="-336557345">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>2f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-664624747" SRTHash="889397767">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-13.5f</value>
+        <value>0f</value>
+        <value>-6.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-588945323" Rotate="-1.570796f" SRTHash="-1009585189">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-12.5f</value>
+        <value>0f</value>
+        <value>-11f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-573165211" SRTHash="-1934732098">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="803987621">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-797311896">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>19.5f</value>
+        <value>0f</value>
+        <value>-3.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="-573066537" Rotate="1.570796f" SRTHash="218679473">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-13f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-567899528" SRTHash="1303013990">
+      <_Parameters MoveAxis="1" MoveDis="5f" MoveSpeed="0.5f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-13f</value>
+        <value>0f</value>
+        <value>-20.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SS_object_ShutterFenceOnly00</UnitConfigName>
+    </value>
+    <value HashId="-566037904" SRTHash="-1220747738">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">IsInside_Dungeon</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-758732717">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>6f</value>
+        <value>4f</value>
+        <value>14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-564717396" SRTHash="-706834217">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1100258719">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="404515285">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2f</value>
+        <value>4f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-560834451" SRTHash="649667731">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>7.391153E-17f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>4f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-554871006" SRTHash="1142752235">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Up_01</UnitConfigName>
+    </value>
+    <value HashId="-519123706" SRTHash="1810692028">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-15f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-480955822" SRTHash="548759038">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>7.391153E-17f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>26.5f</value>
+        <value>3f</value>
+        <value>-15.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-466506938" SRTHash="1552991394">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-5f</value>
+        <value>4f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-466339081" SRTHash="1060800383">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-459849138" Rotate="3.141593f" SRTHash="-488065403">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>24f</value>
+        <value>4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-459805690" OnlyOne="true" Rotate="-3.141593f" SRTHash="995529659">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>5.5f</value>
+        <value>-29.25f</value>
+      </Translate>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="-458386899" Rotate="-1.570796f" SRTHash="1834063812">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Consent_01</UnitConfigName>
+    </value>
+    <value HashId="-436228024" SRTHash="-654041342">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22.5f</value>
+        <value>0f</value>
+        <value>-3.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-405811531" OnlyOne="true" SRTHash="-1930244898">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="2133144734">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>4f</value>
+        <value>17.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Warpin_2x2_01</UnitConfigName>
+    </value>
+    <value HashId="-388373792" Rotate="1.570796f" SRTHash="669273397">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-380633655" SRTHash="2014214565">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1639396001">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-17f</value>
+        <value>0.5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-373789400" Rotate="-3.141593f" SRTHash="-1351692282">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>15.5f</value>
+        <value>0f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-359611113" SRTHash="1253627354">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-18.5f</value>
+        <value>0f</value>
+        <value>-3.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-317405534" SRTHash="1804816759">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-17.5f</value>
+        <value>0f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_02</UnitConfigName>
+    </value>
+    <value HashId="-301916569" Rotate="-3.141593f" SRTHash="1865974627">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>20.5f</value>
+        <value>0f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-296557281" OnlyOne="true" SRTHash="1456738101" Scale="0.7f">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-886467093">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1960713594">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>5.5f</value>
+        <value>-29.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_GoalExit</UnitConfigName>
+    </value>
+    <value HashId="-280764396" SRTHash="1720216523">
+      <_Parameters SharpWeaponJudgeType="0" WaitTime="40f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-380633655">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-17f</value>
+        <value>0f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
+    <value HashId="-274673120" SRTHash="589032075">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-664624747">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-745510670">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-4676530">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1667886742">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="592427390">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1544996963">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-735267290">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-148297028">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1914705051">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1543386626">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-137944415">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1962978026">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>0f</value>
+        <value>-3f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-270511129" SRTHash="-1121924589">
+      <_Parameters IsDisplayOnUI="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1076551987">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-686540687">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>4f</value>
+        <value>1.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Test_ElectricCable</UnitConfigName>
+    </value>
+    <value HashId="-265360078" Rotate="1.570796f" SRTHash="-1515053911">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>24f</value>
+        <value>0f</value>
+        <value>-13.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-254012758" Rotate="1.570796f" SRTHash="2057013617">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>13f</value>
+        <value>0f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-183772741" OnlyOne="true" SRTHash="888879238">
+      <Translate type="array">
+        <value>18f</value>
+        <value>0f</value>
+        <value>-18.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ShutterFenceFrame_A_02</UnitConfigName>
+    </value>
+    <value HashId="-148297028" Rotate="-1.570796f" SRTHash="1535590554">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>2.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-137944415" Rotate="1.570796f" SRTHash="1216976035">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20.5f</value>
+        <value>0f</value>
+        <value>-4.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-100039414" Rotate="-1.570796f" SRTHash="-467128767">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>0f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-98301861" SRTHash="-943760443">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="351075529">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>0f</value>
+        <value>-19.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchElectric0</UnitConfigName>
+    </value>
+    <value HashId="-94166801" Rotate="1.570796f" SRTHash="1944977342">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>10f</value>
+        <value>0f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+    <value HashId="-40008967" Rotate="-1.570796f" SRTHash="667623487">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>17.5f</value>
+        <value>0f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-29392384" Rotate="-1.570796f" SRTHash="-171764879">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-23.5f</value>
+        <value>0f</value>
+        <value>-11f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_End_01</UnitConfigName>
+    </value>
+    <value HashId="-15084466" Rotate="-1.570796f" SRTHash="-837391654">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>13f</value>
+        <value>0f</value>
+        <value>-3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Turn_01</UnitConfigName>
+    </value>
+    <value HashId="-4676530" SRTHash="-1556746649">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>0f</value>
+        <value>-6.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ElectricWire_B_Straight_01</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array">
+    <value HashId="358272647" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="8f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-12.5f</value>
+            <value>0f</value>
+            <value>-6.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="10f" PrevDistance="8f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-20.5f</value>
+            <value>0f</value>
+            <value>-6.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="10f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-20.5f</value>
+            <value>0f</value>
+            <value>3.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-17.83333f</value>
+        <value>0f</value>
+        <value>-3.166667f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="958028125" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="3f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>1f</value>
+            <value>4f</value>
+            <value>5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="3f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>4f</value>
+            <value>5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4.5f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>0f</value>
+            <value>5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="4.5f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>8.5f</value>
+            <value>0f</value>
+            <value>5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>4.375f</value>
+        <value>2f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1048026436" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="18f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>7.5f</value>
+            <value>0f</value>
+            <value>-15f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="3.5f" PrevDistance="18f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>7.5f</value>
+            <value>0f</value>
+            <value>3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="3.5f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>0f</value>
+            <value>3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>4f</value>
+            <value>3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>4f</value>
+            <value>3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>4.6f</value>
+        <value>1.6f</value>
+        <value>-0.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1232121298" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="7f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>10f</value>
+            <value>-18f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="7f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>3f</value>
+            <value>-18f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>8f</value>
+        <value>6.5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1310550475" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="2f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>2f</value>
+            <value>2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="2f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>4f</value>
+            <value>2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>4f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>22f</value>
+            <value>4f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="2.5f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>22f</value>
+            <value>0f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="2.5f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>19.5f</value>
+            <value>0f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>23.58333f</value>
+        <value>2.333333f</value>
+        <value>3.333333f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1650327057" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="3f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-23.5f</value>
+            <value>0f</value>
+            <value>-6.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="7f" PrevDistance="3f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-23.5f</value>
+            <value>0f</value>
+            <value>-3.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="7f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-16.5f</value>
+            <value>0f</value>
+            <value>-3.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="7f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-16.5f</value>
+            <value>0f</value>
+            <value>0.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="7f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-23.5f</value>
+            <value>0f</value>
+            <value>0.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-20.7f</value>
+        <value>0f</value>
+        <value>-2.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-2048535786" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="5f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-23.5f</value>
+            <value>0f</value>
+            <value>2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="7f" PrevDistance="5f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-23.5f</value>
+            <value>0f</value>
+            <value>7f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="7f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-16.5f</value>
+            <value>0f</value>
+            <value>7f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-16.5f</value>
+            <value>0f</value>
+            <value>3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-20f</value>
+        <value>0f</value>
+        <value>4.75f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1940676803" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="7f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-20.5f</value>
+            <value>0f</value>
+            <value>-19f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="8f" PrevDistance="7f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-20.5f</value>
+            <value>0f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="2f" PrevDistance="8f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-12.5f</value>
+            <value>0f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-12.5f</value>
+            <value>0f</value>
+            <value>-10f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-16.5f</value>
+        <value>0f</value>
+        <value>-13.25f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1609365273" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="3f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-1f</value>
+            <value>4f</value>
+            <value>5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="3f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>4f</value>
+            <value>5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="16.5f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>0f</value>
+            <value>5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="16.5f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-20.5f</value>
+            <value>0f</value>
+            <value>5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-7.375f</value>
+        <value>2f</value>
+        <value>5f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1484862210" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="7f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>10f</value>
+            <value>0f</value>
+            <value>5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="3f" PrevDistance="7f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>10f</value>
+            <value>0f</value>
+            <value>-2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="3f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>13f</value>
+            <value>0f</value>
+            <value>-2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>13f</value>
+            <value>0f</value>
+            <value>-6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>11.5f</value>
+        <value>0f</value>
+        <value>-1.25f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1362591531" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="7f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>10f</value>
+            <value>-18f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="7f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>3f</value>
+            <value>-18f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6.5f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-797311896" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="4f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>14.5f</value>
+            <value>0f</value>
+            <value>-6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="3f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>14.5f</value>
+            <value>0f</value>
+            <value>-2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="6f" PrevDistance="3f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>17.5f</value>
+            <value>0f</value>
+            <value>-2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>17.5f</value>
+            <value>0f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>-1.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-686540687" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="3f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-1f</value>
+            <value>4f</value>
+            <value>3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="3f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>4f</value>
+            <value>3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="10.5f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>0f</value>
+            <value>3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="10.5f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-14.5f</value>
+            <value>0f</value>
+            <value>3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-5.875f</value>
+        <value>2f</value>
+        <value>3f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-640700349" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="2f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-6f</value>
+            <value>2f</value>
+            <value>-15f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="2f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-6f</value>
+            <value>2f</value>
+            <value>-17f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="12f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-6f</value>
+            <value>4f</value>
+            <value>-17f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="2f" PrevDistance="12f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>6f</value>
+            <value>4f</value>
+            <value>-17f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="2f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>6f</value>
+            <value>2f</value>
+            <value>-17f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>6f</value>
+            <value>2f</value>
+            <value>-15f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>0f</value>
+        <value>2.666667f</value>
+        <value>-16.33333f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-220011648" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="4f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>4f</value>
+            <value>-15.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="2f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>0f</value>
+            <value>-15.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="3f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>24f</value>
+            <value>0f</value>
+            <value>-15.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="2f" PrevDistance="3f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>24f</value>
+            <value>0f</value>
+            <value>-12.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="5.5f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>0f</value>
+            <value>-12.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="5.5f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>0f</value>
+            <value>-7f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="4f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>4f</value>
+            <value>-7f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="2f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>4f</value>
+            <value>-3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="2f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>26f</value>
+            <value>2f</value>
+            <value>-3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>25.55556f</value>
+        <value>1.555556f</value>
+        <value>-10.16667f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-78336085" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="4f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-15.5f</value>
+            <value>0f</value>
+            <value>-19f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="8f" PrevDistance="4f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-15.5f</value>
+            <value>0f</value>
+            <value>-15f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="5f" PrevDistance="8f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-23.5f</value>
+            <value>0f</value>
+            <value>-15f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="5f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-23.5f</value>
+            <value>0f</value>
+            <value>-10f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-19.5f</value>
+        <value>0f</value>
+        <value>-14.75f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+  </Rails>
+</yaml>

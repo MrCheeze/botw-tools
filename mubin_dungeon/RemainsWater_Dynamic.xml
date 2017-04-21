@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="173947799" SRTHash="-2018217838">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">Access</EventFlowEntryName>
+        <EventFlowName type="string">Demo044_0</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>-19f</value>
+        <value>12f</value>
+        <value>-6.5f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="182139020" SRTHash="-1218873258">
+      <_Parameters Direction="4" WindSpeed="12f">
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>250f</value>
+        <value>150f</value>
+        <value>40f</value>
+      </Scale>
+      <Translate type="array">
+        <value>3f</value>
+        <value>31.5f</value>
+        <value>273f</value>
+      </Translate>
+      <UnitConfigName type="string">PointWindSetTag</UnitConfigName>
+    </value>
+    <value HashId="316439410" Rotate="-0.9800006f" SRTHash="1221840367">
+      <Scale type="array">
+        <value>1f</value>
+        <value>6.281f</value>
+        <value>3.08f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-14.06856f</value>
+        <value>18.95f</value>
+        <value>-70.45213f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="360873530" Rotate="-0.2800001f" SRTHash="-1905314993">
+      <Scale type="array">
+        <value>1f</value>
+        <value>6.280972f</value>
+        <value>3.080208f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-24.16867f</value>
+        <value>18.8875f</value>
+        <value>-54.95049f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="598529802" OnlyOne="true" SRTHash="-1215043731">
+      <_Parameters FieldBodyGroup="2" />
+      <Translate type="array">
+        <value>0f</value>
+        <value>33.5f</value>
+        <value>-22.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_IbutsuWaterWheel_A_02</UnitConfigName>
+    </value>
+    <value HashId="810427046" Rotate="-1.570796f" SRTHash="1203963246">
+      <_Parameters BeamRange="0f" IsAnnihilateDungeonEnemy="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_013</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>30f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Guardian_Mini_Junior_Dark</UnitConfigName>
+    </value>
+    <value HashId="921071606" Rotate="0.2000002f" SRTHash="1281164015">
+      <Scale type="array">
+        <value>1f</value>
+        <value>6.281f</value>
+        <value>3.08f</value>
+      </Scale>
+      <Translate type="array">
+        <value>24.43641f</value>
+        <value>18.95f</value>
+        <value>-54.62487f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="996206242" Rotate="3.141593f" SRTHash="1460885945">
+      <_Parameters BeamRange="0f" IsAnnihilateDungeonEnemy="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Spear_013</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>50f</value>
+        <value>43f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Guardian_Mini_Junior_Dark</UnitConfigName>
+    </value>
+    <value HashId="1597174292" Rotate="1.340004f" SRTHash="1156189849">
+      <Scale type="array">
+        <value>1f</value>
+        <value>6.281f</value>
+        <value>3.08f</value>
+      </Scale>
+      <Translate type="array">
+        <value>4.695902f</value>
+        <value>18.95f</value>
+        <value>-74.29195f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="1740297395" OnlyOne="true" SRTHash="-1713585454" Scale="1.45f">
+      <Translate type="array">
+        <value>45.5f</value>
+        <value>9.5f</value>
+        <value>-15.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MapModel_A_01</UnitConfigName>
+    </value>
+    <value HashId="1773991481" Rotate="0.5200001f" SRTHash="1360005055">
+      <Scale type="array">
+        <value>1f</value>
+        <value>6.281f</value>
+        <value>3.08f</value>
+      </Scale>
+      <Translate type="array">
+        <value>20.44446f</value>
+        <value>18.95f</value>
+        <value>-63.8084f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="1948126713" SRTHash="-1749934308">
+      <Translate type="array">
+        <value>4f</value>
+        <value>43f</value>
+        <value>11.5f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="2109693091" OnlyOne="true" SRTHash="-1331970399">
+      <_Parameters FlowSpeedFactor="1f" RiseLength="3.5f" RiseSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>0f</value>
+        <value>39f</value>
+        <value>-38.88281f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_IbutsuWaterPlane_A_06</UnitConfigName>
+    </value>
+    <value HashId="2110680702" OnlyOne="true" Rotate="1.570796f" SRTHash="345842409">
+      <_Parameters BeamRange="0f" IsAnnihilateDungeonEnemy="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-21f</value>
+        <value>12f</value>
+        <value>9f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Guardian_Mini_Baby_Dark</UnitConfigName>
+    </value>
+    <value HashId="-1989620047" SRTHash="1832817932">
+      <_Parameters AirWallCollision="0" EnableCharacterOn="false">
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>8f</value>
+        <value>1.6f</value>
+        <value>10f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>24.1f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallForE3</UnitConfigName>
+    </value>
+    <value HashId="-1825796657" Rotate="-0.5800002f" SRTHash="-1813634520">
+      <Scale type="array">
+        <value>1f</value>
+        <value>6.281f</value>
+        <value>3.08f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-20.24905f</value>
+        <value>18.95f</value>
+        <value>-63.68514f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="-1759900444" Rotate="0.9600006f" SRTHash="-531903363">
+      <Scale type="array">
+        <value>1f</value>
+        <value>6.281f</value>
+        <value>3.08f</value>
+      </Scale>
+      <Translate type="array">
+        <value>14.05727f</value>
+        <value>18.95f</value>
+        <value>-70.47913f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="-937330364" Rotate="-1.400004f" SRTHash="1419183717">
+      <Scale type="array">
+        <value>1f</value>
+        <value>6.281f</value>
+        <value>3.08f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-5.002328f</value>
+        <value>18.95f</value>
+        <value>-74.25035f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallCurseGanon</UnitConfigName>
+    </value>
+    <value HashId="-827547790" SRTHash="-928229450">
+      <_Parameters Direction="6" WindSpeed="12f">
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>40f</value>
+        <value>150f</value>
+        <value>200f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-106f</value>
+        <value>31.5f</value>
+        <value>50f</value>
+      </Translate>
+      <UnitConfigName type="string">PointWindSetTag</UnitConfigName>
+    </value>
+    <value HashId="-824430422" OnlyOne="true" SRTHash="2041138887">
+      <_Parameters FieldBodyGroup="1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-0.5f</value>
+        <value>52f</value>
+        <value>6.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_WallSpike_B_01</UnitConfigName>
+    </value>
+    <value HashId="-791799015" OnlyOne="true" SRTHash="-1492780062">
+      <Scale type="array">
+        <value>15f</value>
+        <value>10f</value>
+        <value>17f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>67f</value>
+        <value>74.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SoundOcclusionTagRemainsWater</UnitConfigName>
+    </value>
+    <value HashId="-677527209" OnlyOne="true" SRTHash="282558719">
+      <_Parameters FlowSpeedFactor="1f" SoundInDoorType="0" WaterMaterial="0" WaterfallAngle="90f" WaterfallLength="0f" WaterfallRadius="0f" WaterfallThickness="1f" />
+      <Scale type="array">
+        <value>400f</value>
+        <value>100f</value>
+        <value>1000f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-18.5f</value>
+        <value>300f</value>
+      </Translate>
+      <UnitConfigName type="string">BoxWaterCancelIceMaker</UnitConfigName>
+    </value>
+    <value HashId="-424532041" SRTHash="-1061349922">
+      <_Parameters Direction="2" WindSpeed="12f">
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>40f</value>
+        <value>150f</value>
+        <value>200f</value>
+      </Scale>
+      <Translate type="array">
+        <value>107.5f</value>
+        <value>31.5f</value>
+        <value>50f</value>
+      </Translate>
+      <UnitConfigName type="string">PointWindSetTag</UnitConfigName>
+    </value>
+    <value HashId="-244663474" SRTHash="1025539601">
+      <_Parameters AirWallCollision="0" EnableCharacterOn="false">
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>4f</value>
+        <value>1.6f</value>
+        <value>4f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-11.5f</value>
+        <value>24.1f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">AirWallForE3</UnitConfigName>
+    </value>
+    <value HashId="-39416161" SRTHash="512257863">
+      <_Parameters Direction="0" WindSpeed="12f">
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>250f</value>
+        <value>150f</value>
+        <value>40f</value>
+      </Scale>
+      <Translate type="array">
+        <value>4f</value>
+        <value>31.5f</value>
+        <value>-154.7344f</value>
+      </Translate>
+      <UnitConfigName type="string">PointWindSetTag</UnitConfigName>
+    </value>
+    <value HashId="-29556967" OnlyOne="true" SRTHash="-1235812496">
+      <_Parameters FlowSpeedFactor="1f" RiseLength="5f" RiseSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-13.5f</value>
+        <value>11.55f</value>
+        <value>-3.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_IbutsuWaterPlane_A_02</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

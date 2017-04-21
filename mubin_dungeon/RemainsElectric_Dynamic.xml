@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="75890609" SRTHash="-115782840">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>14.5f</value>
+        <value>131f</value>
+        <value>8.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="91216696" SRTHash="-1274948358">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>-0.6981317f</value>
+        <value>4.674611E-17f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>16.5f</value>
+        <value>131.5f</value>
+        <value>7.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="183090620" Rotate="3.141593f" SRTHash="-1778054058">
+      <_Parameters BeamRange="0f" IsAnnihilateDungeonEnemy="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Lsword_013</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>31f</value>
+        <value>100f</value>
+        <value>24f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Guardian_Mini_Junior_Dark</UnitConfigName>
+    </value>
+    <value HashId="546768127" OnlyOne="true" SRTHash="-1773777215">
+      <Translate type="array">
+        <value>19.5f</value>
+        <value>72f</value>
+        <value>5.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MapModel_A_01</UnitConfigName>
+    </value>
+    <value HashId="791680943" Rotate="3.141593f" SRTHash="-540081597">
+      <_Parameters BeamRange="0f" IsAnnihilateDungeonEnemy="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">ElectricArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Spear_013</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>72f</value>
+        <value>40f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Guardian_Mini_Junior_Dark</UnitConfigName>
+    </value>
+    <value HashId="1026151083" Rotate="0.8726646f" SRTHash="1972302">
+      <_Parameters EnableRevival="false" IsEnemyLiftable="true" IsInGround="false" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>14.5f</value>
+        <value>131f</value>
+        <value>-5f</value>
+      </Translate>
+      <UnitConfigName type="string">TreasureLocaterKibako</UnitConfigName>
+    </value>
+    <value HashId="1390987854" Rotate="-0.5235988f" SRTHash="1519748838">
+      <_Parameters EnableRevival="false" IsEnemyLiftable="true" IsInGround="false" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>13f</value>
+        <value>131f</value>
+        <value>-7.5f</value>
+      </Translate>
+      <UnitConfigName type="string">TreasureLocaterKibako</UnitConfigName>
+    </value>
+    <value HashId="-2145745748" OnlyOne="true" SRTHash="40549530">
+      <Translate type="array">
+        <value>0f</value>
+        <value>72.5f</value>
+        <value>-1f</value>
+      </Translate>
+      <UnitConfigName type="string">DungeonResetPosTag</UnitConfigName>
+    </value>
+    <value HashId="-1228972750" Rotate="3.141593f" SRTHash="-114071343">
+      <_Parameters BeamRange="0f" IsAnnihilateDungeonEnemy="false" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_013</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-30f</value>
+        <value>100f</value>
+        <value>1f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Guardian_Mini_Junior_Dark</UnitConfigName>
+    </value>
+    <value HashId="-1062157846" SRTHash="-922544561">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>131f</value>
+        <value>6.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Barrel</UnitConfigName>
+    </value>
+    <value HashId="-765444584" Rotate="0.3490658f" SRTHash="827290388">
+      <_Parameters EnableRevival="false" IsEnemyLiftable="true" IsInGround="false" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>131f</value>
+        <value>-7.5f</value>
+      </Translate>
+      <UnitConfigName type="string">TreasureLocaterKibako</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

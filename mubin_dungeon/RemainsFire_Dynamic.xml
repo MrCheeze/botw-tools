@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="874446482" OnlyOne="true" SRTHash="-312645511">
+      <Translate type="array">
+        <value>11.5f</value>
+        <value>14.44533f</value>
+        <value>64f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MapModel_A_01</UnitConfigName>
+    </value>
+    <value HashId="2056626628" SRTHash="-417972131">
+      <Translate type="array">
+        <value>12.5f</value>
+        <value>0f</value>
+        <value>25.5f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="-2078026294" SRTHash="1689086969">
+      <_Parameters FieldBodyGroup="0" SharpWeaponJudgeType="0" SwitchTorchSpType="2">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>3f</value>
+        <value>0f</value>
+        <value>33f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_AncientReactor_B_01_on</UnitConfigName>
+    </value>
+    <value HashId="-1476845902" SRTHash="1644722566">
+      <_Parameters FieldBodyGroup="0" SharpWeaponJudgeType="0" SwitchTorchSpType="2">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3f</value>
+        <value>0f</value>
+        <value>33f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_AncientReactor_B_01_on</UnitConfigName>
+    </value>
+    <value HashId="-596889352" SRTHash="-1461024693">
+      <Translate type="array">
+        <value>-4.5f</value>
+        <value>0f</value>
+        <value>-44.5f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

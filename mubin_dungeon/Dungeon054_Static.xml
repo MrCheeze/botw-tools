@@ -1,0 +1,1259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3" LocationPosX="0f" LocationPosZ="0f" LocationSize="2000f">
+  <Objs type="array">
+    <value HashId="5545398" SRTHash="1630595499">
+      <Translate type="array">
+        <value>-6f</value>
+        <value>-8f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="69528014" SRTHash="-544409266">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">OnlySE</EventFlowEntryName>
+        <EventFlowName type="string">Demo024_2</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+        <value DestUnitHashId="1625150774">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>2f</value>
+        <value>61f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="182860413" OnlyOne="true" Rotate="-3.141593f" SRTHash="995529659">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>12f</value>
+        <value>11.5f</value>
+        <value>-23.25f</value>
+      </Translate>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="226974367" SRTHash="-1791354076">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="69528014">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-8.5f</value>
+        <value>2f</value>
+        <value>64.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="249075372" Rotate="1.570796f" SRTHash="1848701813">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>4.5f</value>
+        <value>78.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="298541694" OnlyOne="true" Rotate="3.141593f" SRTHash="909067263">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1190316723">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-34f</value>
+        <value>0f</value>
+        <value>34f</value>
+      </Translate>
+      <UnitConfigName type="string">BlockCrackFixed4x4x4</UnitConfigName>
+    </value>
+    <value HashId="393155234" OnlyOne="true" SRTHash="934297190">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Item_Ore_E</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>16f</value>
+        <value>10f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Dungeon_Iron</UnitConfigName>
+    </value>
+    <value HashId="445862047" Rotate="1.570796f" SRTHash="829356493">
+      <Translate type="array">
+        <value>-10f</value>
+        <value>-8f</value>
+        <value>-12.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="482977903" Rotate="-1.570796f" SRTHash="-202355023">
+      <LinksToObj type="array">
+        <value DestUnitHashId="661233902">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>7f</value>
+        <value>0f</value>
+        <value>62f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="496840254" SRTHash="1481925240">
+      <_Parameters IncrementSave="false" MakeSaveFlag="1" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1854363572">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-72753878">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1573434391">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>17.5f</value>
+        <value>10f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="502723934" Rotate="-1.570796f" SRTHash="-1196392366">
+      <Translate type="array">
+        <value>-10f</value>
+        <value>-8f</value>
+        <value>-40.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="557210210" SRTHash="-202355023">
+      <Translate type="array">
+        <value>-29f</value>
+        <value>0f</value>
+        <value>19f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="580835005" Rotate="-3.141593f" SRTHash="1348846986">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>6f</value>
+        <value>-4f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="641519528" SRTHash="-380792267">
+      <Translate type="array">
+        <value>-10f</value>
+        <value>-8f</value>
+        <value>-20.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="661233902" SRTHash="0">
+      <Translate type="array">
+        <value>7f</value>
+        <value>0f</value>
+        <value>62f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="810886332" SRTHash="-172385069">
+      <Translate type="array">
+        <value>34f</value>
+        <value>-8f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="856505263" Rotate="-1.570796f" SRTHash="-391436502">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-58f</value>
+        <value>-4f</value>
+        <value>18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="862652088" SRTHash="1598203203">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">GoalExit</EventFlowEntryName>
+        <EventFlowName type="string">Demo033_1</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+        <value DestUnitHashId="1625150774">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>6.5f</value>
+        <value>10f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="979708496" Rotate="1.570796f" SRTHash="2120046374">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1190316723">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-34f</value>
+        <value>4f</value>
+        <value>34f</value>
+      </Translate>
+      <UnitConfigName type="string">BlockCrack4x4x4</UnitConfigName>
+    </value>
+    <value HashId="998563335" SRTHash="-1615071773">
+      <Translate type="array">
+        <value>14f</value>
+        <value>-8f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="1059618006" Rotate="-1.570796f" SRTHash="130147669">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>15.5f</value>
+        <value>4.5f</value>
+        <value>78.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="1081179954" Rotate="-3.141593f" SRTHash="892728205">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
+        <EventFlowEntryName type="string">Demo033_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo033_0</EventFlowName>
+        <TraversePos X="12f" Y="11.5f" Z="-23.25f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1460300657">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="182860413">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+        <value DestUnitHashId="1625150774">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>12f</value>
+        <value>11.5f</value>
+        <value>-23.25f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="1108641265" SRTHash="-785699304">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-11f</value>
+        <value>8f</value>
+        <value>11f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="1167951611" Rotate="1.570796f" SRTHash="315237077">
+      <Translate type="array">
+        <value>-38f</value>
+        <value>-8f</value>
+        <value>70f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="1193529986" SRTHash="635539566">
+      <Translate type="array">
+        <value>-42f</value>
+        <value>-8f</value>
+        <value>6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="1211059264" Rotate="-1.570796f" SRTHash="-409068920">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>15.5f</value>
+        <value>4.5f</value>
+        <value>62.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="1243135621" SRTHash="0">
+      <Translate type="array">
+        <value>12f</value>
+        <value>11.5f</value>
+        <value>-23.25f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="1253285972" SRTHash="-738732123">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1081179954">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>4.5f</value>
+        <value>10f</value>
+        <value>-26.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1349423224" SRTHash="0">
+      <Translate type="array">
+        <value>-13f</value>
+        <value>10f</value>
+        <value>11f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="1379210723" SRTHash="827698915">
+      <Translate type="array">
+        <value>-38f</value>
+        <value>-8f</value>
+        <value>58f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="1460300657" SRTHash="-878924557">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1573434391">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>17.5f</value>
+        <value>10f</value>
+        <value>-26f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1540675294" SRTHash="-1422127920">
+      <Translate type="array">
+        <value>-30f</value>
+        <value>-8f</value>
+        <value>-8.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="1573434391" OnlyOne="true" SRTHash="978075651">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1682278610">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>19f</value>
+        <value>10f</value>
+        <value>-28.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="1592569618" SRTHash="1508174778">
+      <LinksToObj type="array">
+        <value DestUnitHashId="482977903">
+          <_Parameters Friction="200000f" LimitAngMax="0f" LimitAngMin="-80f" TauFactor="1f">
+            <Axis X="1f" Y="0f" Z="0f" />
+            <Pivot X="0f" Y="-0.35f" Z="2.7f" />
+          </_Parameters>
+          <DefinitionName type="string">LimitHingeCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2016625218">
+          <_Parameters RadiusA="1f" RadiusB="1f">
+            <AxisA X="1f" Y="0f" Z="0f" />
+            <AxisB X="1f" Y="0f" Z="0f" />
+            <PivotA X="-3f" Y="0f" Z="0f" />
+            <PivotB X="3f" Y="0f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">CogWheelCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="661233902">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>4.371139E-08f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>3f</value>
+        <value>6.1f</value>
+        <value>57f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DoorIron_A_R</UnitConfigName>
+    </value>
+    <value HashId="1605208982" Rotate="-3.141593f" SRTHash="344751855">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>18f</value>
+        <value>-4f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="1617437236" SRTHash="-301033210">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>14f</value>
+        <value>10f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="1625150774" OnlyOne="true" SRTHash="0">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <RotateFieldBodyGroup00 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup01 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup02 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup03 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup04 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup05 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup06 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup07 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup08 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup09 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup10 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup11 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup12 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup13 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup14 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup15 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup00 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup01 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup02 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup03 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup04 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup05 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup06 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup07 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup08 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup09 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup10 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup11 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup12 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup13 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup14 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup15 X="0f" Y="0f" Z="0f" />
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnMrgPrt_Dungeon054</UnitConfigName>
+    </value>
+    <value HashId="1640823481" Rotate="-1.570796f" SRTHash="-1366257591">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-38f</value>
+        <value>-4f</value>
+        <value>78f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="1646173017" Rotate="-1.570796f" SRTHash="1469991750">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-38f</value>
+        <value>-4f</value>
+        <value>50f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="1672021277" Rotate="-3.141593f" SRTHash="-445334495">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-50f</value>
+        <value>-4f</value>
+        <value>6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="1682278610" OnlyOne="true" SRTHash="145090504">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1253285972">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>12f</value>
+        <value>10f</value>
+        <value>-27f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_GoalShield_A</UnitConfigName>
+    </value>
+    <value HashId="1854363572" OnlyOne="true" SRTHash="1456738101" Scale="0.7f">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1629654449">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>12f</value>
+        <value>11.5f</value>
+        <value>-23.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_GoalExit</UnitConfigName>
+    </value>
+    <value HashId="1885989393" Rotate="1.570796f" SRTHash="-1101615977">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15.5f</value>
+        <value>4.5f</value>
+        <value>62.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="1923727721" SRTHash="11264202">
+      <Translate type="array">
+        <value>-38f</value>
+        <value>-6f</value>
+        <value>54f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="1933483153" OnlyOne="true" SRTHash="-376039716">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1682278610">
+          <DefinitionName type="string">PhysSystemGroup</DefinitionName>
+        </value>
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>12f</value>
+        <value>10f</value>
+        <value>-27f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_GoalSystem_A_01</UnitConfigName>
+    </value>
+    <value HashId="1946629349" SRTHash="1241268794">
+      <Translate type="array">
+        <value>-26f</value>
+        <value>-6f</value>
+        <value>-8.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="1970955126" SRTHash="-1220747738">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">IsInside_Dungeon</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-916236769">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>6f</value>
+        <value>0f</value>
+        <value>81.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1974123389" Rotate="-1.570796f" SRTHash="1801917793">
+      <Translate type="array">
+        <value>-58f</value>
+        <value>-8f</value>
+        <value>42f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="2042129072" Rotate="1.570796f" SRTHash="-1526881924">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Bow_001</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-48.5f</value>
+        <value>0f</value>
+        <value>26.5f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Dungeon_Stone</UnitConfigName>
+    </value>
+    <value HashId="2048870090" Rotate="-3.141593f" SRTHash="-919681054">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26f</value>
+        <value>-4f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="-2111415818" SRTHash="1501429166">
+      <Translate type="array">
+        <value>30f</value>
+        <value>-6f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2016625218" OnlyOne="true" SRTHash="-2096458012">
+      <LinksToObj type="array">
+        <value DestUnitHashId="482977903">
+          <_Parameters Friction="200000f" LimitAngMax="80f" LimitAngMin="0f" TauFactor="1f">
+            <Axis X="1f" Y="0f" Z="0f" />
+            <Pivot X="0f" Y="-0.35f" Z="-2.7f" />
+          </_Parameters>
+          <DefinitionName type="string">LimitHingeCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="661233902">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>4.371139E-08f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3f</value>
+        <value>6.1f</value>
+        <value>57f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DoorIron_A</UnitConfigName>
+    </value>
+    <value HashId="-2016407757" Rotate="3.141593f" SRTHash="-849362580">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-13f</value>
+        <value>10f</value>
+        <value>11f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="-1852800799" Rotate="-1.570796f" SRTHash="1045473142">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>12f</value>
+        <value>10f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="-1793681191" SRTHash="2057944006">
+      <Translate type="array">
+        <value>-10f</value>
+        <value>-6f</value>
+        <value>-28.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1766162955" SRTHash="-1145114876">
+      <Translate type="array">
+        <value>2f</value>
+        <value>-6f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1741015699" Rotate="-3.141593f" SRTHash="312908443">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-50f</value>
+        <value>-4f</value>
+        <value>47f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1682017998" SRTHash="-1541989976">
+      <Translate type="array">
+        <value>-54f</value>
+        <value>-6f</value>
+        <value>6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1639065483" OnlyOne="true" SRTHash="-1930244898">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1001722097">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>84.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Warpin_2x2_01</UnitConfigName>
+    </value>
+    <value HashId="-1631786313" OnlyOne="true" SRTHash="1906772374">
+      <_Parameters Count="1" DefaultBasicSignal="false" ForceCalcInEvent="false" IsMagneGrabbed="0" IsSendMessage="false" IsStopFromStopTimer="0">
+        <ActorName type="string">DgnObj_DoorIron_A</ActorName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-482567147">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+        <value DestUnitHashId="226974367">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-8.5f</value>
+        <value>2f</value>
+        <value>67.5f</value>
+      </Translate>
+      <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
+    </value>
+    <value HashId="-1629654449" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="862652088">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>12f</value>
+        <value>11.5f</value>
+        <value>-23.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1564381969" SRTHash="-195546301">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-13f</value>
+        <value>8f</value>
+        <value>9f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="-1540635216" Rotate="-3.141593f" SRTHash="253924957">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2f</value>
+        <value>-4f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1476711963" Rotate="-1.570796f" SRTHash="948199413">
+      <Translate type="array">
+        <value>-58f</value>
+        <value>-8f</value>
+        <value>10f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1413993466" Rotate="-1.570796f" SRTHash="814186133">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-58f</value>
+        <value>-4f</value>
+        <value>34f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1316403213" SRTHash="1836212351">
+      <LinksToObj type="array">
+        <value DestUnitHashId="557210210">
+          <_Parameters Friction="5000f" LimitAngMax="0f" LimitAngMin="-80f" TauFactor="1f">
+            <Axis X="1f" Y="0f" Z="0f" />
+            <Pivot X="0f" Y="-0.35f" Z="2.7f" />
+          </_Parameters>
+          <DefinitionName type="string">LimitHingeCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1190316723">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>4.371139E-08f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-34f</value>
+        <value>6.1f</value>
+        <value>23f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DoorIron_A_R</UnitConfigName>
+    </value>
+    <value HashId="-1241537222" SRTHash="537458935">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1190316723">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-34f</value>
+        <value>8f</value>
+        <value>34f</value>
+      </Translate>
+      <UnitConfigName type="string">BlockCrack4x4x4</UnitConfigName>
+    </value>
+    <value HashId="-1196044620" Rotate="3.141593f" SRTHash="1933899085">
+      <Translate type="array">
+        <value>-42f</value>
+        <value>-8f</value>
+        <value>46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1190316723" SRTHash="0">
+      <Translate type="array">
+        <value>-34f</value>
+        <value>0f</value>
+        <value>34f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="-1158372347" Rotate="-1.570796f" SRTHash="-843093449">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-38f</value>
+        <value>-4f</value>
+        <value>62f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1155183688" SRTHash="1633563864">
+      <Translate type="array">
+        <value>22f</value>
+        <value>-6f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1064673424" Rotate="1.570796f" SRTHash="-371444836">
+      <Translate type="array">
+        <value>-38f</value>
+        <value>-8f</value>
+        <value>86f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1039735542" Rotate="3.141593f" SRTHash="-1203782084">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-13f</value>
+        <value>10f</value>
+        <value>9f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="-1001722097" SRTHash="0">
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>79.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="-982834925" Rotate="-1.570796f" SRTHash="-1970158600">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-13f</value>
+        <value>8f</value>
+        <value>11f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="-963741851" OnlyOne="true" SRTHash="-644515271">
+      <LinksToObj type="array">
+        <value DestUnitHashId="298541694">
+          <_Parameters Friction="5000f" LimitAngMax="0f" LimitAngMin="-80f" TauFactor="1f">
+            <Axis X="0f" Y="0f" Z="1f" />
+            <Pivot X="-2.7f" Y="-0.35f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">LimitHingeCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1190316723">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>1.570796f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-34f</value>
+        <value>6.1f</value>
+        <value>29f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DoorIron_A_02</UnitConfigName>
+    </value>
+    <value HashId="-920993596" SRTHash="-1164150301">
+      <Translate type="array">
+        <value>-54f</value>
+        <value>-8f</value>
+        <value>46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-916236769" OnlyOne="true" Rotate="-3.141593f" SRTHash="-1323267158">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <EventFlowEntryName type="string">Demo008_3</EventFlowEntryName>
+        <EventFlowName type="string">Demo008_3</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-252810534">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1001722097">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>10f</value>
+        <value>84.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_EntranceElevator_A_01</UnitConfigName>
+    </value>
+    <value HashId="-882000233" Rotate="-1.570796f" SRTHash="2025091278">
+      <Translate type="array">
+        <value>-58f</value>
+        <value>-8f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="-867220757" SRTHash="1059624928">
+      <Translate type="array">
+        <value>34f</value>
+        <value>-4f</value>
+        <value>-3.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-708420487" Rotate="3.141593f" SRTHash="1845787004">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-11f</value>
+        <value>8f</value>
+        <value>9f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="-681773684" Rotate="-1.570796f" SRTHash="570379840">
+      <Translate type="array">
+        <value>-34f</value>
+        <value>-8f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="-618156290" SRTHash="-1676012626">
+      <Translate type="array">
+        <value>34f</value>
+        <value>-4f</value>
+        <value>-11.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-596635566" Rotate="-1.570796f" SRTHash="820180763">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-11f</value>
+        <value>10f</value>
+        <value>9f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="-589519587" Rotate="3.141593f" SRTHash="-1748976876">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">PutRupee_Gold</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-14f</value>
+        <value>2f</value>
+        <value>15f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Dungeon_Stone</UnitConfigName>
+    </value>
+    <value HashId="-482567147" OnlyOne="true" SRTHash="541846692">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>4f</value>
+        <value>1f</value>
+        <value>2f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>62f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-429795409" SRTHash="-2142217234">
+      <Translate type="array">
+        <value>-18f</value>
+        <value>-8f</value>
+        <value>-8.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="-321730199" OnlyOne="true" SRTHash="-1586897157">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-72753878">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>6.5f</value>
+        <value>10f</value>
+        <value>-27.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="-298506806" SRTHash="-1725046132">
+      <Translate type="array">
+        <value>-34f</value>
+        <value>-6f</value>
+        <value>-6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-280334529" Rotate="-1.570796f" SRTHash="-944608276">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-10f</value>
+        <value>-4f</value>
+        <value>-24.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="-254328923" Rotate="1.570796f" SRTHash="2099684841">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1349423224">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-11f</value>
+        <value>10f</value>
+        <value>11f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_A</UnitConfigName>
+    </value>
+    <value HashId="-252810534" OnlyOne="true" SRTHash="1669020473">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1001722097">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>79.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LookTag</UnitConfigName>
+    </value>
+    <value HashId="-202555285" Rotate="-1.570796f" SRTHash="-59035883">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-10f</value>
+        <value>-4f</value>
+        <value>-32.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="-72753878" OnlyOne="true" SRTHash="865924496">
+      <_Parameters TerritoryArea="0f" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1243135621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>12f</value>
+        <value>13f</value>
+        <value>-27f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriest001</UnitConfigName>
+    </value>
+    <value HashId="-39597185" SRTHash="1738124966">
+      <Translate type="array">
+        <value>10f</value>
+        <value>-6f</value>
+        <value>-46f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-37077137" OnlyOne="true" SRTHash="-263807808">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-48f</value>
+        <value>0f</value>
+        <value>10.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BaseRoom160x160x80_A_01</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

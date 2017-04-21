@@ -1,0 +1,4889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="30753418" SRTHash="-1140903556">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0.7853982f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>30.1f</value>
+        <value>8f</value>
+        <value>29.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="46442946" SRTHash="1562979758">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>0f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="61082829" SRTHash="184140899">
+      <Translate type="array">
+        <value>0f</value>
+        <value>12f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="62767635" Rotate="-1.570796f" SRTHash="-2047833888">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8.5f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Under_01</UnitConfigName>
+    </value>
+    <value HashId="77995283" SRTHash="-434241001">
+      <Translate type="array">
+        <value>-0.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="85900773" Rotate="1.570796f" SRTHash="1267157737">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16f</value>
+        <value>0f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="87695258" SRTHash="1308294684">
+      <Translate type="array">
+        <value>2.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="102339488" SRTHash="-829503846">
+      <Translate type="array">
+        <value>-6.5f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="110023893" Rotate="-1.570796f" SRTHash="812090974">
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_RoadCurve4x4_01</UnitConfigName>
+    </value>
+    <value HashId="117872829" SRTHash="369590531">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>18f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="122378742" SRTHash="-1494004856">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_01</UnitConfigName>
+    </value>
+    <value HashId="136335848" SRTHash="868948086">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>36.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_03</UnitConfigName>
+    </value>
+    <value HashId="151342756" SRTHash="1069570611">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>15f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="152606130" SRTHash="437174547">
+      <Translate type="array">
+        <value>0f</value>
+        <value>23f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="160001636" Rotate="1.570796f" SRTHash="-2000429456">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15.99f</value>
+        <value>6f</value>
+        <value>32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="168563441" SRTHash="1710314441">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>26f</value>
+        <value>-27f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandlePoleB_01</UnitConfigName>
+    </value>
+    <value HashId="179966386" Rotate="-3.141593f" SRTHash="-711999344">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>0f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="184611178" SRTHash="1770185612">
+      <Translate type="array">
+        <value>-30f</value>
+        <value>6f</value>
+        <value>-10f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="189296763" Rotate="1.570796f" SRTHash="-646652344">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>20.01f</value>
+        <value>6f</value>
+        <value>32.00781f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="192759845" SRTHash="945876778">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.038023E-07f</value>
+        <value>9.603881E-08f</value>
+        <value>-0.8053982f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3.5f</value>
+        <value>10f</value>
+        <value>-14.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_03</UnitConfigName>
+    </value>
+    <value HashId="209718467" SRTHash="1019733380">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>26f</value>
+        <value>-36.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandlePoleB_01</UnitConfigName>
+    </value>
+    <value HashId="213005710" SRTHash="-147447479">
+      <Translate type="array">
+        <value>8f</value>
+        <value>25f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="227177950" Rotate="-1.570796f" SRTHash="120296471">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>26f</value>
+        <value>-29f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_hrl_Fence4x6_01</UnitConfigName>
+    </value>
+    <value HashId="244098999" Rotate="1.570796f" SRTHash="-289464844">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>-6f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="251596124" SRTHash="-632178037">
+      <Translate type="array">
+        <value>-2f</value>
+        <value>43.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="252004489" SRTHash="720700008">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>47f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_01</UnitConfigName>
+    </value>
+    <value HashId="252719902" SRTHash="891424931">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>1.224606E-16f</value>
+        <value>2.356194f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>18f</value>
+        <value>7.5f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_02</UnitConfigName>
+    </value>
+    <value HashId="272050148" Rotate="1.570796f" SRTHash="-757675991">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-32.13f</value>
+        <value>6f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="273242105" SRTHash="-1406967519">
+      <Translate type="array">
+        <value>6.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="296521859" SRTHash="-1319424902">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>32.03125f</value>
+        <value>6f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="301282949" SRTHash="-1027402337">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0.7853982f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-9f</value>
+        <value>30f</value>
+        <value>-31.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="331968603" SRTHash="1929764661">
+      <Translate type="array">
+        <value>-10f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="338670063" SRTHash="998662359">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>15f</value>
+        <value>49f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Top_01</UnitConfigName>
+    </value>
+    <value HashId="345132046" SRTHash="1199220239">
+      <Translate type="array">
+        <value>8f</value>
+        <value>18f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="349694571" SRTHash="577028596">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>48.5f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_GoalSystemCenter_01</UnitConfigName>
+    </value>
+    <value HashId="370768502" Rotate="1.570796f" SRTHash="746845328">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>34f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="376270280" SRTHash="-1675637847">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>1.224606E-16f</value>
+        <value>-2.356194f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>17.5f</value>
+        <value>19.5f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_03</UnitConfigName>
+    </value>
+    <value HashId="390012457" Rotate="1.570796f" SRTHash="275512139">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>38f</value>
+        <value>-29f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="397227055" SRTHash="920324612">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>0f</value>
+        <value>44.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_03</UnitConfigName>
+    </value>
+    <value HashId="399216024" SRTHash="467199952">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>24f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="402487430" SRTHash="1691724064">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Pillar_A_02</UnitConfigName>
+    </value>
+    <value HashId="411011810" SRTHash="533998532">
+      <Translate type="array">
+        <value>-2f</value>
+        <value>39.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="415212178" Rotate="1.570796f" SRTHash="1411911553">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>30f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="417334920" SRTHash="149128412">
+      <Translate type="array">
+        <value>-0.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="428286495" SRTHash="1308510388">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.378223f</value>
+        <value>-1.570796f</value>
+        <value>1.378223f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>30.02344f</value>
+        <value>9f</value>
+        <value>12.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="429989689" SRTHash="249623642">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31f</value>
+        <value>6f</value>
+        <value>-32.005f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="458756778" SRTHash="1917749292">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>24f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="463750691" SRTHash="-1059551744">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="480647916" SRTHash="705468734">
+      <Translate type="array">
+        <value>-2f</value>
+        <value>49.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="487933871" Rotate="-3.141593f" SRTHash="1517834905">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>12f</value>
+        <value>0f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="488877231" SRTHash="1339619964">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="492787982" Rotate="-3.141593f" SRTHash="-694209713">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>0f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="501656906" Rotate="-1.570796f" SRTHash="-1614297103">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>27f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="510766058" SRTHash="-2021267133">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.95313f</value>
+        <value>6f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="525517338" Rotate="3.141593f" SRTHash="1723566593">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>13.5f</value>
+        <value>9.5f</value>
+        <value>30.00781f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_04</UnitConfigName>
+    </value>
+    <value HashId="533969233" Rotate="3.141593f" SRTHash="152736773">
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="538767295" SRTHash="-891394711">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>0.7853982f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-10f</value>
+        <value>21f</value>
+        <value>-24.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_02</UnitConfigName>
+    </value>
+    <value HashId="584992811" Rotate="-1.570796f" SRTHash="935830642">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>26f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_hrl_Fence4x6_01</UnitConfigName>
+    </value>
+    <value HashId="587453687" OnlyOne="true" SRTHash="-1937673286">
+      <Translate type="array">
+        <value>5.960464E-08f</value>
+        <value>6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_RoadTJunction4x4_01</UnitConfigName>
+    </value>
+    <value HashId="590950880" Rotate="-1.570796f" SRTHash="-523968106">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>26f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_hrl_Fence4x6_01</UnitConfigName>
+    </value>
+    <value HashId="597020510" SRTHash="-245773228">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.687739E-08f</value>
+        <value>5.625796E-09f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>19.5f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="598693602" SRTHash="-1769264607">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0.7853982f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4.5f</value>
+        <value>16.5f</value>
+        <value>-14.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_04</UnitConfigName>
+    </value>
+    <value HashId="621182808" Rotate="3.141593f" SRTHash="411890121">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>32.02f</value>
+        <value>6f</value>
+        <value>20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="635405209" Rotate="1.570796f" SRTHash="-920102847">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4f</value>
+        <value>47f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="644557068" Rotate="1.570796f" SRTHash="1543140206">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_RoadCurve4x4_01</UnitConfigName>
+    </value>
+    <value HashId="646952393" Rotate="-1.570796f" SRTHash="339395628">
+      <Translate type="array">
+        <value>16f</value>
+        <value>-6f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="656784819" Rotate="-3.141593f" SRTHash="1729215397">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>0f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="657076846" Rotate="1.570796f" SRTHash="-44488706">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16f</value>
+        <value>0f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="664031971" SRTHash="993457252">
+      <Translate type="array">
+        <value>-4.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="665630334" Rotate="-1.570796f" SRTHash="-1822438037">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="665996379" SRTHash="-639411276">
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="672950812" SRTHash="5877404">
+      <Translate type="array">
+        <value>8f</value>
+        <value>6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="677595906" SRTHash="1838666265">
+      <Translate type="array">
+        <value>8f</value>
+        <value>6f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="694950401" Rotate="-1.570796f" SRTHash="42860503">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="702095583" SRTHash="-828177177">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-27f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="702451933" SRTHash="2130888218">
+      <Translate type="array">
+        <value>4f</value>
+        <value>12f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="711565484" Rotate="1.570796f" SRTHash="2098725690">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>-6f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="722551466" Rotate="1.570796f" SRTHash="-1648349566">
+      <Translate type="array">
+        <value>-11f</value>
+        <value>29f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="723692194" Rotate="1.570796f" SRTHash="-2007152336">
+      <Translate type="array">
+        <value>-11f</value>
+        <value>23f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="739599474" Rotate="3.141593f" SRTHash="1384724641">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>31.97656f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="742876128" SRTHash="1376518445">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>-0.7853983f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>10f</value>
+        <value>11f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_02</UnitConfigName>
+    </value>
+    <value HashId="744737274" Rotate="-1.570796f" SRTHash="-447415795">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="760555413" SRTHash="-732118756">
+      <Translate type="array">
+        <value>-14f</value>
+        <value>6f</value>
+        <value>-22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="762339179" SRTHash="771437007">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>41f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_04</UnitConfigName>
+    </value>
+    <value HashId="771737622" SRTHash="1191703087">
+      <Translate type="array">
+        <value>12f</value>
+        <value>-6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="783054538" SRTHash="850463306">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="788678877" Rotate="-1.570796f" SRTHash="-1704014462">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>26f</value>
+        <value>-29f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_hrl_Fence4x6_01</UnitConfigName>
+    </value>
+    <value HashId="799778935" Rotate="1.570796f" SRTHash="-1679486127">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>38f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="812642518" Rotate="1.570796f" SRTHash="-1523260162">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>34f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="815317772" Rotate="-3.141593f" SRTHash="-1085748049">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="820875552" Rotate="-3.141593f" SRTHash="686305081">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>0f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="825634977" SRTHash="2050981237">
+      <Translate type="array">
+        <value>0f</value>
+        <value>6f</value>
+        <value>20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_RoadEnd4x4_01</UnitConfigName>
+    </value>
+    <value HashId="830947540" SRTHash="457390671">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>12f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="839214742" SRTHash="1321991722">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>49f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Top_01</UnitConfigName>
+    </value>
+    <value HashId="839985271" SRTHash="1571321457">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>32.01563f</value>
+        <value>6f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="843057623" SRTHash="856758538">
+      <Translate type="array">
+        <value>30f</value>
+        <value>6f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="854972856" Rotate="-1.570796f" SRTHash="-2076063635">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8.5f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Under_01</UnitConfigName>
+    </value>
+    <value HashId="862456550" SRTHash="-865916630">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Under_01</UnitConfigName>
+    </value>
+    <value HashId="865988848" SRTHash="-2041055372">
+      <Translate type="array">
+        <value>8f</value>
+        <value>12f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="870009272" Rotate="1.570796f" SRTHash="833663293">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>30f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="890833254" SRTHash="-2084965953">
+      <Translate type="array">
+        <value>-18f</value>
+        <value>6f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="894779818" SRTHash="1493007321">
+      <Translate type="array">
+        <value>30f</value>
+        <value>6f</value>
+        <value>14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="895735221" SRTHash="2034894163">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-19f</value>
+        <value>47f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_01</UnitConfigName>
+    </value>
+    <value HashId="896025925" SRTHash="-2077514344">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>-0.8053983f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-29.9375f</value>
+        <value>10.5f</value>
+        <value>-11f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_03</UnitConfigName>
+    </value>
+    <value HashId="898561853" SRTHash="-239810213">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>2f</value>
+        <value>55.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="898913645" SRTHash="-429087248">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>24f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="928705992" SRTHash="22416769">
+      <Translate type="array">
+        <value>-2f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="963026490" SRTHash="-2009811745">
+      <Translate type="array">
+        <value>-14f</value>
+        <value>6f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="977380137" SRTHash="342459383">
+      <Translate type="array">
+        <value>4f</value>
+        <value>18f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1008131446" SRTHash="213656079">
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1014391895" SRTHash="1905665320">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>31f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1015010654" SRTHash="-2051807452">
+      <Translate type="array">
+        <value>-8.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1015095366" SRTHash="1677145128">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0.7853982f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-29.95313f</value>
+        <value>9.5f</value>
+        <value>2.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="1026467347" Rotate="-1.570796f" SRTHash="1064302981">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="1047168424" SRTHash="1082638029">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>3.442273E-18f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>12.5f</value>
+        <value>9f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="1056620815" Rotate="1.570796f" SRTHash="1504430670">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>-6f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1071925531" SRTHash="1674657627">
+      <Translate type="array">
+        <value>0f</value>
+        <value>35f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1074022451" Rotate="1.570796f" SRTHash="-779006768">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>34f</value>
+        <value>-29f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1077146906" SRTHash="1467610370">
+      <Translate type="array">
+        <value>16f</value>
+        <value>-6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1094887064" Rotate="1.570796f" SRTHash="-97133466">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>34f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1100593466" SRTHash="-756253009">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>0.7853982f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>29.875f</value>
+        <value>14.5f</value>
+        <value>3.15625f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_04</UnitConfigName>
+    </value>
+    <value HashId="1107534580" SRTHash="-1102208782">
+      <Translate type="array">
+        <value>-22f</value>
+        <value>6f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1108573804" SRTHash="-1835870733">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>6.657903E-08f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-29.95313f</value>
+        <value>8f</value>
+        <value>4.203125f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="1113360418" SRTHash="-1814635239">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>5.557721E-08f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>9f</value>
+        <value>27.5f</value>
+        <value>-34.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="1116694058" SRTHash="-996231950">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>27f</value>
+        <value>51f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="1119566258" Rotate="1.570796f" SRTHash="703386601">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>38f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1120791591" Rotate="1.570796f" SRTHash="1829708628">
+      <Translate type="array">
+        <value>8f</value>
+        <value>6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1128202229" Rotate="-1.570796f" SRTHash="690084563">
+      <Translate type="array">
+        <value>11f</value>
+        <value>39f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1131170528" SRTHash="1812384206">
+      <Translate type="array">
+        <value>-22f</value>
+        <value>6f</value>
+        <value>-26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1135790450" SRTHash="1868739335">
+      <Translate type="array">
+        <value>4f</value>
+        <value>0f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1143692633" Rotate="1.570796f" SRTHash="-163642525">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>6f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="1154639303" Rotate="3.141593f" SRTHash="493430354">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>32.03125f</value>
+        <value>6f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="1171637180" SRTHash="-2007634820">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>12f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1188204747" SRTHash="1124243252">
+      <Translate type="array">
+        <value>-2.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1190865005" SRTHash="152409355">
+      <Translate type="array">
+        <value>8f</value>
+        <value>19f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1191108584" SRTHash="-119587580">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>31f</value>
+        <value>49f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Top_01</UnitConfigName>
+    </value>
+    <value HashId="1211413398" SRTHash="-260482817">
+      <Translate type="array">
+        <value>8.5f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1213329772" SRTHash="-1923637977">
+      <Translate type="array">
+        <value>4.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1218969082" Rotate="1.570796f" SRTHash="-628394458">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16f</value>
+        <value>0f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="1222131594" SRTHash="1666205196">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>26f</value>
+        <value>-27f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandlePoleB_01</UnitConfigName>
+    </value>
+    <value HashId="1224442051" SRTHash="1865974287">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>37f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1228581430" SRTHash="1403609307">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1231220767" Rotate="1.570796f" SRTHash="1866116879">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>38f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1240171144" Rotate="1.570796f" SRTHash="-1846561953">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>30f</value>
+        <value>-29f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1261123715" SRTHash="-242053596">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>47f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="1268723137" Rotate="3.141593f" SRTHash="-1072606943">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>8f</value>
+        <value>29.96094f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_05</UnitConfigName>
+    </value>
+    <value HashId="1273952856" Rotate="3.141593f" SRTHash="-2114073758">
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1295131338" SRTHash="-1591333869">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>20.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_03</UnitConfigName>
+    </value>
+    <value HashId="1346181213" SRTHash="-812199315">
+      <Translate type="array">
+        <value>-26f</value>
+        <value>6f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1360708055" Rotate="-3.141593f" SRTHash="720072836">
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1360927988" SRTHash="1147499926">
+      <Translate type="array">
+        <value>2f</value>
+        <value>39.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1388430315" Rotate="-1.570796f" SRTHash="240286212">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>6.5f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Under_01</UnitConfigName>
+    </value>
+    <value HashId="1389156313" Rotate="1.570796f" SRTHash="538185698">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>-6f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1407918894" SRTHash="672553548">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2f</value>
+        <value>61.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="1409201075" SRTHash="-487578567">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.97656f</value>
+        <value>6f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="1411911559" SRTHash="-1368655196">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>5.276431E-08f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-9f</value>
+        <value>28.5f</value>
+        <value>-34.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_07</UnitConfigName>
+    </value>
+    <value HashId="1415989926" SRTHash="88001812">
+      <Translate type="array">
+        <value>-30f</value>
+        <value>6f</value>
+        <value>6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1421930032" Rotate="3.141593f" SRTHash="-1208017601">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>6f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1428260478" SRTHash="876249764">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>24f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="1430422905" Rotate="1.570796f" SRTHash="1114672323">
+      <Translate type="array">
+        <value>-12f</value>
+        <value>6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_RoadEnd4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1444781477" SRTHash="1899957013">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>25f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1454659865" Rotate="-1.570796f" SRTHash="-253425373">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>31.85156f</value>
+        <value>6f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="1464146194" SRTHash="-242373266">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>49f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Top_01</UnitConfigName>
+    </value>
+    <value HashId="1476901091" SRTHash="135331503">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1480394683" SRTHash="1178377902">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>1.570796f</value>
+        <value>3.900109E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-30f</value>
+        <value>8.5f</value>
+        <value>20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_01</UnitConfigName>
+    </value>
+    <value HashId="1483379588" SRTHash="1087671498">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>24f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="1483468259" SRTHash="285464254">
+      <Translate type="array">
+        <value>2f</value>
+        <value>49.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1484066045" Rotate="-1.570796f" SRTHash="-1011960777">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="1489112253" Rotate="-1.570796f" SRTHash="1985774991">
+      <Translate type="array">
+        <value>16f</value>
+        <value>-6f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1503301358" Rotate="-1.570796f" SRTHash="-1337145948">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>26f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_hrl_Fence4x6_01</UnitConfigName>
+    </value>
+    <value HashId="1523970928" SRTHash="2104837983">
+      <Translate type="array">
+        <value>0f</value>
+        <value>18f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1542037604" SRTHash="1329829567">
+      <Translate type="array">
+        <value>8f</value>
+        <value>37f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1571317185" Rotate="-1.570796f" SRTHash="-2033613425">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="1572695970" SRTHash="1594353202">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>-6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1587340633" SRTHash="952105857">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>1.108673E-16f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>10f</value>
+        <value>14f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="1591695789" SRTHash="691507735">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0.8053984f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>30.00781f</value>
+        <value>9.75f</value>
+        <value>-21.25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_03</UnitConfigName>
+    </value>
+    <value HashId="1613807063" OnlyOne="true" SRTHash="1626491422">
+      <Translate type="array">
+        <value>0f</value>
+        <value>37.5f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Center_01</UnitConfigName>
+    </value>
+    <value HashId="1614976479" SRTHash="-1001849256">
+      <Translate type="array">
+        <value>-30f</value>
+        <value>6f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1615964332" SRTHash="-651430302">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Under_01</UnitConfigName>
+    </value>
+    <value HashId="1619805805" Rotate="1.570796f" SRTHash="-720861581">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>38f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1627380763" SRTHash="-1102676658">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>12f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1638176544" SRTHash="100101377">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>26f</value>
+        <value>-18.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandlePoleB_01</UnitConfigName>
+    </value>
+    <value HashId="1646222268" SRTHash="-1054312834">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>0f</value>
+        <value>52.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_03</UnitConfigName>
+    </value>
+    <value HashId="1658517278" SRTHash="-1588875443">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1662833846" SRTHash="-950376663">
+      <Translate type="array">
+        <value>8f</value>
+        <value>12f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1666947220" Rotate="-3.141593f" SRTHash="-115023499">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1671685097" SRTHash="169479308">
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1672686520" SRTHash="525540464">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.828597E-07f</value>
+        <value>5.625796E-09f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>8f</value>
+        <value>7f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_02</UnitConfigName>
+    </value>
+    <value HashId="1688254455" Rotate="3.141593f" SRTHash="-1353556741">
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1703138880" Rotate="3.141593f" SRTHash="1755775456">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>6f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1708313722" SRTHash="1575153255">
+      <Translate type="array">
+        <value>-30f</value>
+        <value>6f</value>
+        <value>-26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1713160387" SRTHash="45130362">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>28.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_03</UnitConfigName>
+    </value>
+    <value HashId="1716523196" SRTHash="1468697948">
+      <Translate type="array">
+        <value>-3.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1723285347" SRTHash="-1843326772">
+      <Translate type="array">
+        <value>14f</value>
+        <value>6f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1726884996" SRTHash="-800022701">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>42.5f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_GoalSystemCenter_02</UnitConfigName>
+    </value>
+    <value HashId="1734243654" Rotate="3.141593f" SRTHash="1936539599">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>32.02f</value>
+        <value>6f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="1735200914" Rotate="-1.570796f" SRTHash="-1489817886">
+      <Translate type="array">
+        <value>16f</value>
+        <value>-6f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1735537535" Rotate="3.141593f" SRTHash="-1143924587">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>6f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1738656476" SRTHash="-1333872633">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>43f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1758041131" SRTHash="-995856983">
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1758664631" SRTHash="-787917182">
+      <Translate type="array">
+        <value>14f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1788373714" SRTHash="2061985659">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>7.391153E-17f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-28f</value>
+        <value>8.5f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="1800824655" Rotate="-1.570796f" SRTHash="1849748730">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-6.5f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Under_01</UnitConfigName>
+    </value>
+    <value HashId="1805849932" Rotate="-1.570796f" SRTHash="-1952055806">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="1807839178" SRTHash="-56120116">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_01</UnitConfigName>
+    </value>
+    <value HashId="1811569197" SRTHash="1868615584">
+      <Translate type="array">
+        <value>-18f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1816701984" SRTHash="-1411970751">
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1818898607" Rotate="1.570796f" SRTHash="-1792696003">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>30f</value>
+        <value>-29f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1826110170" SRTHash="754934251">
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>-10f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1831330275" SRTHash="-82827068">
+      <Translate type="array">
+        <value>6f</value>
+        <value>6f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1833119811" SRTHash="746883923">
+      <Translate type="array">
+        <value>4f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1836422635" Rotate="1.570796f" SRTHash="90470480">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1837205344" SRTHash="-259515943">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>-22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Pillar_A_02</UnitConfigName>
+    </value>
+    <value HashId="1841956645" SRTHash="1813162614">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>0f</value>
+        <value>36.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_03</UnitConfigName>
+    </value>
+    <value HashId="1848758199" SRTHash="946340437">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.96094f</value>
+        <value>6f</value>
+        <value>20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="1851815256" Rotate="1.570796f" SRTHash="-1801875450">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4.01f</value>
+        <value>6f</value>
+        <value>31.97656f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="1853976489" SRTHash="1374390234">
+      <Translate type="array">
+        <value>30f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="1855394590" SRTHash="2101422516">
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1865294477" SRTHash="1452862017">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>29f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_04</UnitConfigName>
+    </value>
+    <value HashId="1879918985" SRTHash="1696256506">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="1882324253" SRTHash="1101091111">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.95313f</value>
+        <value>6f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="1884225105" Rotate="-1.570796f" SRTHash="710219869">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>26f</value>
+        <value>-22.2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="1886584252" Rotate="1.570796f" SRTHash="-1487237012">
+      <Translate type="array">
+        <value>-11f</value>
+        <value>35f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1896686192" Rotate="-1.570796f" SRTHash="-1669748408">
+      <Translate type="array">
+        <value>11f</value>
+        <value>45f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1904086819" SRTHash="-1928819655">
+      <Translate type="array">
+        <value>-6.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1906347338" Rotate="1.570796f" SRTHash="-1048663499">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16f</value>
+        <value>0f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="1907458721" Rotate="1.570796f" SRTHash="-1765412159">
+      <Translate type="array">
+        <value>-32f</value>
+        <value>6f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="1907622865" SRTHash="1604716251">
+      <Translate type="array">
+        <value>0f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="1910203754" SRTHash="-2044457957">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-11f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="1920454864" Rotate="1.570796f" SRTHash="-1820627265">
+      <Translate type="array">
+        <value>4f</value>
+        <value>6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1935415317" Rotate="-1.570796f" SRTHash="1362005754">
+      <Translate type="array">
+        <value>16f</value>
+        <value>-6f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1941551239" SRTHash="-45942415">
+      <Translate type="array">
+        <value>2f</value>
+        <value>26f</value>
+        <value>-22.2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="1942224983" Rotate="-3.141593f" SRTHash="-856955313">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1951488049" SRTHash="1327763321">
+      <Translate type="array">
+        <value>2f</value>
+        <value>39.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1963954288" Rotate="3.141593f" SRTHash="2008866950">
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1967619768" SRTHash="-1950905090">
+      <Translate type="array">
+        <value>4f</value>
+        <value>6f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="1973872104" Rotate="1.570796f" SRTHash="-1536378075">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-28f</value>
+        <value>6f</value>
+        <value>32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="1986172432" Rotate="3.141593f" SRTHash="-1412893138">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>6f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="1987613434" SRTHash="-70661827">
+      <Translate type="array">
+        <value>8.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="1988378984" Rotate="-3.141593f" SRTHash="-1479666670">
+      <Translate type="array">
+        <value>4f</value>
+        <value>-6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="2005061523" SRTHash="-1086211651">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>24f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="2019240823" Rotate="-3.141593f" SRTHash="1279978259">
+      <Translate type="array">
+        <value>0f</value>
+        <value>-6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="2027160299" SRTHash="1570582088">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>21f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="2028485657" Rotate="-3.141593f" SRTHash="606943181">
+      <Translate type="array">
+        <value>20.4f</value>
+        <value>18f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_NetFloorSupport_01</UnitConfigName>
+    </value>
+    <value HashId="2030571174" SRTHash="577505868">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>44.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_03</UnitConfigName>
+    </value>
+    <value HashId="2040008313" Rotate="1.570796f" SRTHash="-1788021283">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>34f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="2040210969" Rotate="3.141593f" SRTHash="-2039011829">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-20f</value>
+        <value>6f</value>
+        <value>31.98438f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="2045998712" SRTHash="-1077708299">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Under_01</UnitConfigName>
+    </value>
+    <value HashId="2049355440" OnlyOne="true" SRTHash="1668588999">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>31f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkC_02</UnitConfigName>
+    </value>
+    <value HashId="2049524347" Rotate="1.570796f" SRTHash="-1964399856">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>34f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="2049758104" SRTHash="1738933054">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2f</value>
+        <value>55.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="2053988293" Rotate="3.141593f" SRTHash="-58714713">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>6f</value>
+        <value>31.97656f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="2066552383" SRTHash="-1130060206">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="2071351513" SRTHash="-771860404">
+      <Translate type="array">
+        <value>0.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="2077731970" SRTHash="-1492237926">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2f</value>
+        <value>61.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="2082121290" SRTHash="609860560">
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="2093241012" Rotate="-1.570796f" SRTHash="-734648514">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>26f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_hrl_Fence4x6_01</UnitConfigName>
+    </value>
+    <value HashId="2109291990" SRTHash="1329829567">
+      <Translate type="array">
+        <value>8f</value>
+        <value>43f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="2111212008" Rotate="-1.570796f" SRTHash="-1885153153">
+      <Translate type="array">
+        <value>11f</value>
+        <value>21f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="2112021975" SRTHash="854686954">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>32f</value>
+        <value>6f</value>
+        <value>20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="2112337090" SRTHash="452881408">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.090534E-16f</value>
+        <value>0f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>8f</value>
+        <value>22f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_07</UnitConfigName>
+    </value>
+    <value HashId="2113625109" SRTHash="1519977502">
+      <Translate type="array">
+        <value>30f</value>
+        <value>6f</value>
+        <value>-26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="2118536094" Rotate="1.570796f" SRTHash="200278417">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="2124161816" SRTHash="1089570210">
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="2139081217" SRTHash="1106277213">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4f</value>
+        <value>35f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_04</UnitConfigName>
+    </value>
+    <value HashId="2144663800" Rotate="1.570796f" SRTHash="1011691263">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.99f</value>
+        <value>6f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="2147435485" SRTHash="-886349605">
+      <Translate type="array">
+        <value>-2f</value>
+        <value>39.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-2141622137" SRTHash="-1430168450">
+      <Translate type="array">
+        <value>-22f</value>
+        <value>6f</value>
+        <value>14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-2139600633" SRTHash="-1811130004">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>2f</value>
+        <value>61.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="-2136597435" SRTHash="597188021">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>18f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-2129590871" Rotate="3.141593f" SRTHash="789353600">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>6f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-2093696754" SRTHash="129116867">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>-6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-2088553227" Rotate="-1.570796f" SRTHash="461094211">
+      <Translate type="array">
+        <value>11f</value>
+        <value>33f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-2075057315" Rotate="1.570796f" SRTHash="1798481005">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>30f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="-2073100191" SRTHash="143986445">
+      <Translate type="array">
+        <value>-22f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="-2039575862" SRTHash="-261598796">
+      <Translate type="array">
+        <value>8.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-2037305940" Rotate="-3.141593f" SRTHash="945311656">
+      <Translate type="array">
+        <value>12f</value>
+        <value>-6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-2003236617" Rotate="-1.570796f" SRTHash="466680037">
+      <Translate type="array">
+        <value>16f</value>
+        <value>-6f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1996524747" Rotate="-1.570796f" SRTHash="-1352921448">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>26f</value>
+        <value>-30.2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1995081083" SRTHash="901169393">
+      <Translate type="array">
+        <value>1.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1991138344" Rotate="1.570796f" SRTHash="1606523143">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-32.00625f</value>
+        <value>6f</value>
+        <value>28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-1986418203" Rotate="3.141593f" SRTHash="-1728150739">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>31.80469f</value>
+        <value>6f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-1966040502" SRTHash="1781948795">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>2f</value>
+        <value>55.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="-1964408247" Rotate="1.570796f" SRTHash="-1085983089">
+      <Translate type="array">
+        <value>-11f</value>
+        <value>41f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1963776142" Rotate="-1.570796f" SRTHash="-5863497">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>26f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_hrl_Fence4x6_01</UnitConfigName>
+    </value>
+    <value HashId="-1938175186" OnlyOne="true" SRTHash="1879791484">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>11.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_01</UnitConfigName>
+    </value>
+    <value HashId="-1937791179" SRTHash="488773564">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>12f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-1931483503" SRTHash="1977856768">
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1928842896" SRTHash="-1772357953">
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1925350063" Rotate="3.141593f" SRTHash="-498125325">
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-1922742487" Rotate="1.570796f" SRTHash="-673740303">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>10f</value>
+        <value>19f</value>
+        <value>-24.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-1917477794" Rotate="-1.570796f" SRTHash="-497589457">
+      <Translate type="array">
+        <value>8f</value>
+        <value>26f</value>
+        <value>-34f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1911886876" SRTHash="1929871453">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-2.356194f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>15f</value>
+        <value>11f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_01</UnitConfigName>
+    </value>
+    <value HashId="-1895699080" SRTHash="-1426348832">
+      <Translate type="array">
+        <value>8f</value>
+        <value>12f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1891295047" SRTHash="-2105527668">
+      <Translate type="array">
+        <value>8f</value>
+        <value>18f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1890148036" SRTHash="544958823">
+      <Translate type="array">
+        <value>3.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1875618123" Rotate="-1.570796f" SRTHash="1124910866">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-19f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-1868023174" OnlyOne="true" Rotate="-3.141593f" SRTHash="955776311">
+      <Translate type="array">
+        <value>0f</value>
+        <value>6f</value>
+        <value>21f</value>
+      </Translate>
+      <UnitConfigName type="string">DungeonResetPosTag</UnitConfigName>
+    </value>
+    <value HashId="-1860487295" SRTHash="-1065981286">
+      <Translate type="array">
+        <value>0.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1858329172" SRTHash="-1919282336">
+      <Translate type="array">
+        <value>14f</value>
+        <value>6f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1846247142" SRTHash="-1225386122">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4f</value>
+        <value>35f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_04</UnitConfigName>
+    </value>
+    <value HashId="-1844579609" Rotate="-1.570796f" SRTHash="-1079292928">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>31.86719f</value>
+        <value>6f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-1838153567" SRTHash="1920088780">
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1827272444" SRTHash="-637759652">
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1816554732" Rotate="-1.570796f" SRTHash="-1931668753">
+      <Translate type="array">
+        <value>16f</value>
+        <value>-6f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1808182469" SRTHash="-2004664834">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>5.557721E-08f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>9f</value>
+        <value>26f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-1806655635" Rotate="1.570796f" SRTHash="2112025415">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>-6f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1800691324" SRTHash="990817174">
+      <Translate type="array">
+        <value>2f</value>
+        <value>26f</value>
+        <value>-30.2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1799652679" SRTHash="-558631592">
+      <Translate type="array">
+        <value>8f</value>
+        <value>6f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1793651500" SRTHash="1457900971">
+      <Translate type="array">
+        <value>30f</value>
+        <value>6f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1792420885" SRTHash="71323225">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-1788966154" SRTHash="723221740">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>18f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1777032486" SRTHash="1442693266">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>40.5f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_GoalSystemCenter_01</UnitConfigName>
+    </value>
+    <value HashId="-1771865316" Rotate="1.570796f" SRTHash="129799815">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>34f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="-1749742644" SRTHash="-1940543036">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.090534E-16f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>8f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_07</UnitConfigName>
+    </value>
+    <value HashId="-1741594488" SRTHash="-711059891">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>19f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1740830721" Rotate="1.570796f" SRTHash="1323208265">
+      <Translate type="array">
+        <value>-32f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1736747543" SRTHash="-686180102">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.378223f</value>
+        <value>-1.570796f</value>
+        <value>1.378223f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>29.80469f</value>
+        <value>8f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_07</UnitConfigName>
+    </value>
+    <value HashId="-1735770228" SRTHash="474626441">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-27f</value>
+        <value>51f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="-1725025842" Rotate="3.141593f" SRTHash="-1695982852">
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-1723539526" SRTHash="1005396456">
+      <Translate type="array">
+        <value>-2f</value>
+        <value>49.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1711173915" SRTHash="1906247628">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-1699738225" SRTHash="-1802066904">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-32f</value>
+        <value>6f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-1693903934" Rotate="-1.570796f" SRTHash="1124416611">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>11f</value>
+        <value>26f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-1678132635" SRTHash="1920766329">
+      <Translate type="array">
+        <value>2f</value>
+        <value>43.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1673985794" Rotate="3.141593f" SRTHash="2131752642">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>6f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-1660708003" SRTHash="-1508514696">
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1657882586" Rotate="-1.570796f" SRTHash="-1306412585">
+      <Translate type="array">
+        <value>16f</value>
+        <value>-6f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1633061645" SRTHash="1467401435">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Pillar_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1630905337" Rotate="-1.570796f" SRTHash="375651471">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>26f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_hrl_Fence4x6_01</UnitConfigName>
+    </value>
+    <value HashId="-1628884952" SRTHash="928220396">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>26f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-1628412840" Rotate="-3.141593f" SRTHash="1344858177">
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_RoadCurve4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-1621705976" SRTHash="1750667444">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1607974830" SRTHash="1456702822">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_01</UnitConfigName>
+    </value>
+    <value HashId="-1605145728" SRTHash="-506542292">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>41f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_04</UnitConfigName>
+    </value>
+    <value HashId="-1604981888" SRTHash="-259550433">
+      <Translate type="array">
+        <value>8f</value>
+        <value>18f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1583128776" SRTHash="2117769588">
+      <Translate type="array">
+        <value>2f</value>
+        <value>26f</value>
+        <value>-38.2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1582473941" SRTHash="-124835856">
+      <Translate type="array">
+        <value>0f</value>
+        <value>6f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1580357307" SRTHash="-1544563751">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>2f</value>
+        <value>61.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="-1578808697" SRTHash="1280497391">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>26f</value>
+        <value>-18.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandlePoleB_01</UnitConfigName>
+    </value>
+    <value HashId="-1574338424" SRTHash="-1521779988">
+      <Translate type="array">
+        <value>-8.5f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1572795370" OnlyOne="true" SRTHash="-2046985231">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>18.5f</value>
+        <value>18f</value>
+        <value>28.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x1Top_01</UnitConfigName>
+    </value>
+    <value HashId="-1566357538" Rotate="-1.570796f" SRTHash="-1066273507">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>11f</value>
+        <value>26f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-1515953786" SRTHash="439317058">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1503375796" SRTHash="-1797870897">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>12f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1502354328" Rotate="1.570796f" SRTHash="-1354570219">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>38f</value>
+        <value>-17f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="-1497112031" SRTHash="-915708469">
+      <Translate type="array">
+        <value>3.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1476308038" SRTHash="653151182">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16f</value>
+        <value>0f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_01</UnitConfigName>
+    </value>
+    <value HashId="-1448179029" Rotate="1.570796f" SRTHash="263185039">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>30f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="-1433347554" Rotate="1.570796f" SRTHash="-1650590965">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>-6f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1425893788" SRTHash="-1844461901">
+      <Translate type="array">
+        <value>-4.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1410710594" SRTHash="-458486699">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>-0.7853982f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-10f</value>
+        <value>7.5f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_05</UnitConfigName>
+    </value>
+    <value HashId="-1403436724" Rotate="3.141593f" SRTHash="236450572">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>32.00781f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-1378172689" SRTHash="88804609">
+      <Translate type="array">
+        <value>0f</value>
+        <value>41f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1372461151" SRTHash="-419723108">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>26.5f</value>
+        <value>9f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-1369487132" SRTHash="-1817037573">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>11f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-1358531641" SRTHash="427701867">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>6f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-1333294900" SRTHash="373827330">
+      <Translate type="array">
+        <value>30f</value>
+        <value>6f</value>
+        <value>6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1316966689" SRTHash="1078860983">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_RoadCurve4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-1316318797" OnlyOne="true" SRTHash="1602288654">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>52.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_02</UnitConfigName>
+    </value>
+    <value HashId="-1311569206" SRTHash="1783953109">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>24f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="-1309512331" SRTHash="-1931981892">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1293964187" SRTHash="1959267148">
+      <Translate type="array">
+        <value>8f</value>
+        <value>-6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1281966053" SRTHash="1717400928">
+      <Translate type="array">
+        <value>8f</value>
+        <value>18f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1254919719" SRTHash="-563836268">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22f</value>
+        <value>6f</value>
+        <value>-22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Pillar_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1247317036" SRTHash="758844309">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-10f</value>
+        <value>13.5f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-1226700670" Rotate="-1.570796f" SRTHash="323433722">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>26f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-1212035684" SRTHash="-101737387">
+      <Translate type="array">
+        <value>-1.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1210193269" SRTHash="635800412">
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1208670645" SRTHash="-91853202">
+      <Translate type="array">
+        <value>0f</value>
+        <value>-6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1204362856" SRTHash="-638516167">
+      <Translate type="array">
+        <value>2f</value>
+        <value>49.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1195114653" Rotate="1.570796f" SRTHash="475764613">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.95313f</value>
+        <value>6f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-1177968383" Rotate="1.570796f" SRTHash="-850067292">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16f</value>
+        <value>0f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-1175034626" SRTHash="-2146771347">
+      <Translate type="array">
+        <value>-6.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1169119988" SRTHash="1723553589">
+      <Translate type="array">
+        <value>8f</value>
+        <value>12f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1152309288" Rotate="-1.570796f" SRTHash="-1880997475">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-1144871050" SRTHash="408051488">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>1.224606E-16f</value>
+        <value>2.376194f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-17f</value>
+        <value>7.5f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_03</UnitConfigName>
+    </value>
+    <value HashId="-1140629537" SRTHash="-1139660743">
+      <Translate type="array">
+        <value>8f</value>
+        <value>6f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1130109893" SRTHash="630149638">
+      <Translate type="array">
+        <value>8f</value>
+        <value>31f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1129439483" Rotate="3.141593f" SRTHash="494522519">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>6f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-1102884206" SRTHash="-1736860680">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>26f</value>
+        <value>-36.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandlePoleB_01</UnitConfigName>
+    </value>
+    <value HashId="-1099310966" SRTHash="146372391">
+      <Translate type="array">
+        <value>-22f</value>
+        <value>6f</value>
+        <value>6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1095834194" OnlyOne="true" SRTHash="-356154101">
+      <Translate type="array">
+        <value>0f</value>
+        <value>54.5f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_GoalSystemTop_01</UnitConfigName>
+    </value>
+    <value HashId="-1093691451" SRTHash="-216891066">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>50.5f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_GoalSystemCenter_02</UnitConfigName>
+    </value>
+    <value HashId="-1093357757" Rotate="-1.570796f" SRTHash="-1479019307">
+      <Translate type="array">
+        <value>-4f</value>
+        <value>26f</value>
+        <value>-38.2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="-1084731221" Rotate="-3.141593f" SRTHash="1728034919">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>13f</value>
+        <value>10f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_07</UnitConfigName>
+    </value>
+    <value HashId="-1075793012" SRTHash="687432158">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-11f</value>
+        <value>51f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="-1068115038" Rotate="-3.141593f" SRTHash="-304450572">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4f</value>
+        <value>0f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-1065221603" SRTHash="1632969200">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4f</value>
+        <value>24f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="-1063712511" SRTHash="461957891">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1046310764" SRTHash="826037788">
+      <Translate type="array">
+        <value>1.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1038791558" SRTHash="-1868711170">
+      <Translate type="array">
+        <value>16f</value>
+        <value>-6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-1016554068" Rotate="1.570796f" SRTHash="-224211154">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>6f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-1009899464" SRTHash="-477684551">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Under_01</UnitConfigName>
+    </value>
+    <value HashId="-994721745" SRTHash="619934659">
+      <Translate type="array">
+        <value>8f</value>
+        <value>0f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-988197278" SRTHash="1777025618">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>26f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-964282854" SRTHash="927394163">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>7.391153E-17f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-15f</value>
+        <value>10f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-956365249" SRTHash="1889580814">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>19f</value>
+        <value>51f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="-941708319" Rotate="1.570796f" SRTHash="-1226819866">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>30f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="-932904128" Rotate="3.141593f" SRTHash="1759539131">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>32.00625f</value>
+        <value>6f</value>
+        <value>28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-931559266" SRTHash="2001863353">
+      <Translate type="array">
+        <value>-2f</value>
+        <value>6f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-925071169" SRTHash="913954645">
+      <Translate type="array">
+        <value>-22f</value>
+        <value>6f</value>
+        <value>-10f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-915340047" SRTHash="-844662463">
+      <Translate type="array">
+        <value>-30f</value>
+        <value>6f</value>
+        <value>14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-907361236" SRTHash="1283171847">
+      <Translate type="array">
+        <value>-26f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-895300265" SRTHash="1824048307">
+      <Translate type="array">
+        <value>6f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-887327092" SRTHash="-516131623">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>12f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-867015647" Rotate="1.570796f" SRTHash="862123851">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-11f</value>
+        <value>26f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-841643513" SRTHash="2032110527">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>4f</value>
+        <value>23f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_04</UnitConfigName>
+    </value>
+    <value HashId="-838456293" SRTHash="379535737">
+      <Translate type="array">
+        <value>-1.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-836885042" SRTHash="-476132530">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>1.224606E-16f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-29f</value>
+        <value>8f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-835830373" SRTHash="56323078">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>18f</value>
+        <value>-24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-833673802" Rotate="1.570796f" SRTHash="785567643">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.95313f</value>
+        <value>6f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-832325117" SRTHash="241197329">
+      <Translate type="array">
+        <value>2.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-830164556" SRTHash="-1354690613">
+      <Translate type="array">
+        <value>-22f</value>
+        <value>6f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-823561077" SRTHash="755958464">
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>-26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-823294376" SRTHash="1411015274">
+      <Translate type="array">
+        <value>-3.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-814641797" SRTHash="1646223557">
+      <Translate type="array">
+        <value>30f</value>
+        <value>6f</value>
+        <value>22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-811049395" OnlyOne="true" Rotate="-1.570796f" SRTHash="-1912209585">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>11f</value>
+        <value>51f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_02</UnitConfigName>
+    </value>
+    <value HashId="-797247035" SRTHash="-312595127">
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-787440262" SRTHash="-1309257825">
+      <Translate type="array">
+        <value>0f</value>
+        <value>29f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-777746391" Rotate="-1.570796f" SRTHash="659691985">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>9f</value>
+        <value>31f</value>
+        <value>-34f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-775424817" Rotate="1.570796f" SRTHash="1864025922">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>31.97656f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-773071014" Rotate="1.570796f" SRTHash="-1160254000">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.99219f</value>
+        <value>6f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-766671834" SRTHash="1373815400">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-754584998" SRTHash="693867172">
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-743888051" SRTHash="-1431291827">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>19f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-733231776" Rotate="1.570796f" SRTHash="-1873557579">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>6f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-705901904" SRTHash="-1647534179">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-3.141592f</value>
+        <value>-1.570796f</value>
+        <value>4.53961E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-29.98438f</value>
+        <value>8.5f</value>
+        <value>-5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-678314679" SRTHash="-1108635738">
+      <Translate type="array">
+        <value>4f</value>
+        <value>-6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-673966333" Rotate="-1.570796f" SRTHash="565089121">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>26f</value>
+        <value>-40f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-670459484" SRTHash="-2115025973">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>11f</value>
+        <value>47f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_01</UnitConfigName>
+    </value>
+    <value HashId="-667348670" SRTHash="1071636310">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>4f</value>
+        <value>47f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_04</UnitConfigName>
+    </value>
+    <value HashId="-666045017" SRTHash="-1477768290">
+      <Translate type="array">
+        <value>30f</value>
+        <value>6f</value>
+        <value>-10f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-662855618" SRTHash="460438289">
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-661584038" SRTHash="1917606516">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.687739E-08f</value>
+        <value>5.625796E-09f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>2.5f</value>
+        <value>13f</value>
+        <value>-14.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-631535452" SRTHash="2027335639">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.687739E-08f</value>
+        <value>5.625796E-09f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-0.5f</value>
+        <value>28f</value>
+        <value>-38f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-574512554" Rotate="1.570796f" SRTHash="1573518182">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-11f</value>
+        <value>47f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-568735404" SRTHash="1888712617">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>24f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="-556657776" Rotate="-1.570796f" SRTHash="468229718">
+      <Translate type="array">
+        <value>11f</value>
+        <value>27f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-553530153" SRTHash="1784530565">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>10.5f</value>
+        <value>-14f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_01</UnitConfigName>
+    </value>
+    <value HashId="-547505068" Rotate="3.141593f" SRTHash="-130028268">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>28f</value>
+        <value>6f</value>
+        <value>31.99f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-545837836" Rotate="-1.570796f" SRTHash="1100579700">
+      <Translate type="array">
+        <value>12f</value>
+        <value>6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_RoadEnd4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-529745326" SRTHash="-1494647330">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.090534E-16f</value>
+        <value>0f</value>
+        <value>-2.356194f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-16.5f</value>
+        <value>9f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_07</UnitConfigName>
+    </value>
+    <value HashId="-510948011" Rotate="3.141593f" SRTHash="525697719">
+      <Translate type="array">
+        <value>16f</value>
+        <value>6f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-509805331" Rotate="1.570796f" SRTHash="468939990">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-11f</value>
+        <value>26f</value>
+        <value>-36f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-494344621" SRTHash="-516783211">
+      <Translate type="array">
+        <value>-2f</value>
+        <value>43.5f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-482718240" SRTHash="1744580822">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>32.02344f</value>
+        <value>6f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-476874804" SRTHash="-1776955205">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>31f</value>
+        <value>6f</value>
+        <value>-32.005f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-472607428" Rotate="1.570796f" SRTHash="2037217498">
+      <Translate type="array">
+        <value>12f</value>
+        <value>6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-471612092" Rotate="-1.570796f" SRTHash="-653831299">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>31.99062f</value>
+        <value>6f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-470557809" SRTHash="-1101158383">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570797f</value>
+        <value>-0.7853982f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>10f</value>
+        <value>20.5f</value>
+        <value>-20.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_05</UnitConfigName>
+    </value>
+    <value HashId="-439679785" Rotate="1.570796f" SRTHash="1849470333">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>34f</value>
+        <value>-29f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="-438189312" Rotate="1.570796f" SRTHash="1134580241">
+      <Translate type="array">
+        <value>-12f</value>
+        <value>6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Road4x4_01</UnitConfigName>
+    </value>
+    <value HashId="-431196429" SRTHash="1840739510">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>18f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-428522105" SRTHash="-265066029">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.828597E-07f</value>
+        <value>5.625796E-09f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-19f</value>
+        <value>11.5f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_02</UnitConfigName>
+    </value>
+    <value HashId="-427819024" Rotate="-1.570796f" SRTHash="1053187936">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-407949046" Rotate="1.570796f" SRTHash="-2022343124">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>6f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-405182431" SRTHash="210645792">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-402337860" Rotate="1.570796f" SRTHash="-577920567">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>38f</value>
+        <value>-21f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="-402235503" SRTHash="-884402312">
+      <Translate type="array">
+        <value>6.5f</value>
+        <value>34f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-390576585" Rotate="3.141593f" SRTHash="904013865">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>12f</value>
+        <value>6f</value>
+        <value>32.00781f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-369037895" SRTHash="920046203">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>24f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="-359562016" Rotate="-1.570796f" SRTHash="138822457">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-353118972" Rotate="3.141593f" SRTHash="-590422896">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-19f</value>
+        <value>9.5f</value>
+        <value>30.01563f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-346301631" Rotate="1.570796f" SRTHash="1477264924">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16f</value>
+        <value>0f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-330376156" SRTHash="-818824191">
+      <Translate type="array">
+        <value>30f</value>
+        <value>6f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-326379396" SRTHash="-1205232592">
+      <Translate type="array">
+        <value>-2.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-303580268" SRTHash="-433689077">
+      <Translate type="array">
+        <value>-30f</value>
+        <value>6f</value>
+        <value>-18f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-289775653" Rotate="3.141593f" SRTHash="-364070542">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>32.02344f</value>
+        <value>6f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-287937814" SRTHash="-1550081050">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>1.570796f</value>
+        <value>2.111533E-07f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-30.14063f</value>
+        <value>6.5f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_05</UnitConfigName>
+    </value>
+    <value HashId="-273335084" SRTHash="-1134307664">
+      <Translate type="array">
+        <value>-10f</value>
+        <value>6f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-251100927" SRTHash="1611030744">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>8f</value>
+        <value>24f</value>
+        <value>-16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x2Top_01</UnitConfigName>
+    </value>
+    <value HashId="-247448857" SRTHash="-1787918884">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>-0.7853982f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-10f</value>
+        <value>9.5f</value>
+        <value>-16.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_WallMarkB_06</UnitConfigName>
+    </value>
+    <value HashId="-239840954" SRTHash="1485756365">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31f</value>
+        <value>49f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Top_01</UnitConfigName>
+    </value>
+    <value HashId="-237270169" SRTHash="-1608091008">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-15f</value>
+        <value>49f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x4Top_01</UnitConfigName>
+    </value>
+    <value HashId="-227886986" SRTHash="765070734">
+      <Translate type="array">
+        <value>-30f</value>
+        <value>6f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="-225950121" SRTHash="448243651">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>29f</value>
+        <value>-41f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_04</UnitConfigName>
+    </value>
+    <value HashId="-213511413" SRTHash="-1774645952">
+      <Translate type="array">
+        <value>2f</value>
+        <value>43.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_01</UnitConfigName>
+    </value>
+    <value HashId="-200145067" Rotate="1.570796f" SRTHash="-1606947781">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.98f</value>
+        <value>6f</value>
+        <value>20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_02</UnitConfigName>
+    </value>
+    <value HashId="-188310050" SRTHash="381941092">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-31.99219f</value>
+        <value>6f</value>
+        <value>-20f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4Wainscot_01</UnitConfigName>
+    </value>
+    <value HashId="-188021868" SRTHash="2005681784">
+      <Translate type="array">
+        <value>6.5f</value>
+        <value>38f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-179969192" Rotate="-1.570796f" SRTHash="1395571048">
+      <Translate type="array">
+        <value>-8f</value>
+        <value>26f</value>
+        <value>-34f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover4x8_01</UnitConfigName>
+    </value>
+    <value HashId="-177469461" Rotate="1.570796f" SRTHash="-1099818064">
+      <Translate type="array">
+        <value>9.5f</value>
+        <value>30f</value>
+        <value>-25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="-175116776" SRTHash="1296340487">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2f</value>
+        <value>55.5f</value>
+        <value>2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_02</UnitConfigName>
+    </value>
+    <value HashId="-170116893" Rotate="-3.141593f" SRTHash="1357357179">
+      <Translate type="array">
+        <value>8f</value>
+        <value>-6f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-165568928" Rotate="-3.141593f" SRTHash="765876491">
+      <Translate type="array">
+        <value>16.6f</value>
+        <value>18f</value>
+        <value>30f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_NetFloorSupport_01</UnitConfigName>
+    </value>
+    <value HashId="-163450747" SRTHash="-737126813">
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-16.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+    <value HashId="-147882072" Rotate="1.570796f" SRTHash="890309215">
+      <Translate type="array">
+        <value>-9.5f</value>
+        <value>38f</value>
+        <value>-29f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Fence4x6_02</UnitConfigName>
+    </value>
+    <value HashId="-138940176" SRTHash="-1382636944">
+      <Translate type="array">
+        <value>22f</value>
+        <value>6f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-110130696" Rotate="1.570796f" SRTHash="-1846773029">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-16f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-99712453" SRTHash="-155025684">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>0f</value>
+        <value>28.5f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CeilingPillarA_03</UnitConfigName>
+    </value>
+    <value HashId="-93215820" SRTHash="1260976267">
+      <Translate type="array">
+        <value>-8.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-89790594" SRTHash="-1694910270">
+      <Translate type="array">
+        <value>14f</value>
+        <value>6f</value>
+        <value>-22f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BoxCover8x8_01</UnitConfigName>
+    </value>
+    <value HashId="-83620566" Rotate="-1.570796f" SRTHash="-129680122">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>16f</value>
+        <value>0f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Top_02</UnitConfigName>
+    </value>
+    <value HashId="-40137446" SRTHash="1260015494">
+      <Translate type="array">
+        <value>4.5f</value>
+        <value>30f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box1x1x4Center_01</UnitConfigName>
+    </value>
+    <value HashId="-5476416" Rotate="1.570796f" SRTHash="538185698">
+      <Translate type="array">
+        <value>-16f</value>
+        <value>-6f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Box4x4x6Center_03</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

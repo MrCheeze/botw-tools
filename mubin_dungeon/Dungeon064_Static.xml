@@ -1,0 +1,3292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3" LocationPosX="0f" LocationPosZ="0f" LocationSize="2000f">
+  <Objs type="array">
+    <value HashId="9806322" SRTHash="1299246434">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">OnlySE</EventFlowEntryName>
+        <EventFlowName type="string">Demo024_2</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="283588576">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5f</value>
+        <value>28.5f</value>
+        <value>-20.5f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="116927697" SRTHash="-1632105950">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="666082970">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-4f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="229704575" SRTHash="1481801599">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="579306416">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="241378766" SRTHash="-1266195566">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="54952731">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="283588576" OnlyOne="true" SRTHash="0">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <RotateFieldBodyGroup00 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup01 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup02 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup03 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup04 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup05 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup06 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup07 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup08 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup09 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup10 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup11 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup12 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup13 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup14 X="0f" Y="0f" Z="0f" />
+        <RotateFieldBodyGroup15 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup00 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup01 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup02 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup03 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup04 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup05 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup06 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup07 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup08 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup09 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup10 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup11 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup12 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup13 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup14 X="0f" Y="0f" Z="0f" />
+        <TransFieldBodyGroup15 X="0f" Y="0f" Z="0f" />
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnMrgPrt_Dungeon064</UnitConfigName>
+    </value>
+    <value HashId="303553314" SRTHash="1555675526">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1398259288">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-4f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="337061506" SRTHash="-661797370">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="4158197">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-4f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="369632110" SRTHash="-966792280">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>50f</value>
+        <value>40f</value>
+        <value>50f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-50f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="441434234" SRTHash="-646881757">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1858606129">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-4f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="448931478" SRTHash="707290902">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1500839628">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-4f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="535911372" SRTHash="-1081471293">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1851291657">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-4f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="550566379" SRTHash="-738732123">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="907441996">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>26f</value>
+        <value>-31.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="609334399" SRTHash="223485042">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="607451541">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-4f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="693726311" OnlyOne="true" SRTHash="-1586897157">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-437031687">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>26f</value>
+        <value>-32.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="694640720" SRTHash="2011792362">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-23f</value>
+        <value>53f</value>
+        <value>-33f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="717442137" SRTHash="-1232229842">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="778813864">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-4f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="736383461" SRTHash="121935522">
+      <Translate type="array">
+        <value>-31f</value>
+        <value>7f</value>
+        <value>-32.005f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_05</UnitConfigName>
+    </value>
+    <value HashId="854920107" SRTHash="927861839">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1730213826">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-4f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="907441996" Rotate="-3.141593f" SRTHash="892728205">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
+        <EventFlowEntryName type="string">Demo033_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo033_0</EventFlowName>
+        <TraversePos X="0f" Y="27.5f" Z="-28.25f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-88311854">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="2130082088">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+        <value DestUnitHashId="283588576">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>27.5f</value>
+        <value>-28.25f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="938641443" SRTHash="-1031114317">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1397923867">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-4f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="998585083" SRTHash="-1682235849">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="897658903">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-4f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1018643348" OnlyOne="true" SRTHash="1669020473">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-57553462">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>6f</value>
+        <value>21f</value>
+      </Translate>
+      <UnitConfigName type="string">LookTag</UnitConfigName>
+    </value>
+    <value HashId="1023204352" SRTHash="188934119">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-204194281">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-4f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1028647252" SRTHash="931555517">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="576365972">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-4f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1048472915" SRTHash="1794783273">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-15f</value>
+        <value>49f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="1060076380" SRTHash="549049499">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1808887561">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-4f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1197764825" SRTHash="814263516">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1605486837">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1252843656" SRTHash="1879401195">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1130334771">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-4f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1281013598" SRTHash="1727311059">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1143735833">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1286171586" SRTHash="1826579609">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="594396">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1393394509" OnlyOne="true" SRTHash="86752414">
+      <_Parameters FieldBodyGroup="0" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>34.5f</value>
+        <value>0f</value>
+        <value>-28f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_hrl_Box4x4x6_01</UnitConfigName>
+    </value>
+    <value HashId="1415595860" SRTHash="-1011210308">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="943187020">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-4f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1462902029" SRTHash="-180404620">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="537008842">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-4f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1464338198" SRTHash="93044937">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="9806322">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2.5f</value>
+        <value>28.5f</value>
+        <value>-19.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1529308494" SRTHash="783629778">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-136592603">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-4f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1542777311" SRTHash="-1220747738">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">IsInside_Dungeon</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1172098758">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>6f</value>
+        <value>6f</value>
+        <value>23f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1572089906" SRTHash="1870930583">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="265117345">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-4f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1575287924" SRTHash="-808245098">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1937826274">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-4f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1593693063" OnlyOne="true" SRTHash="-1231981583">
+      <LinksToObj type="array">
+        <value DestUnitHashId="369632110">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>24.5f</value>
+        <value>6f</value>
+        <value>0.5f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="1618241627" SRTHash="1126603148">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-2076151417">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-4f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1660288662" OnlyOne="true" SRTHash="145090504">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="550566379">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>26f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_GoalShield_A</UnitConfigName>
+    </value>
+    <value HashId="1691935345" OnlyOne="true" SRTHash="888879238">
+      <Translate type="array">
+        <value>0f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_ShutterFenceFrame_A_02</UnitConfigName>
+    </value>
+    <value HashId="1711453771" SRTHash="-189034481">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-27f</value>
+        <value>51f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="1768337937" SRTHash="-820133961" Scale="6f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-3.5f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1780282178" OnlyOne="true" SRTHash="-1930244898">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-57553462">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>6f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_Warpin_2x2_01</UnitConfigName>
+    </value>
+    <value HashId="1861346327" SRTHash="316848322">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1474586084">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-4f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1864555477" SRTHash="1405518693">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1662315016">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-4f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="1949528113" OnlyOne="true" SRTHash="1456738101" Scale="0.7f">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-853979319">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>27.5f</value>
+        <value>-28.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_GoalExit</UnitConfigName>
+    </value>
+    <value HashId="2016277800" SRTHash="39710805">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1994191326">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-4f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="2069940460" SRTHash="1155932341">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="601381774">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-4f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="2084145758" SRTHash="-1320712259">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1409704450">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-4f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="2130082088" OnlyOne="true" Rotate="-3.141593f" SRTHash="995529659">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>27.5f</value>
+        <value>-28.25f</value>
+      </Translate>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="2138170997" SRTHash="-766248071">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1518338252">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-4f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-2139049462" SRTHash="1720051441">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1407050897">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-4f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-2080828428" SRTHash="1538961040">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>23f</value>
+        <value>53f</value>
+        <value>-33f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="-2078006347" SRTHash="-466816660">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1400494042">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-4f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-2066641866" SRTHash="-1652137922">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="806021226">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-4f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-1778799504" SRTHash="1952624149">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-2115002554">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-1769447224" SRTHash="-767293131">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1464338198">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>8f</value>
+        <value>2f</value>
+        <value>4f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>27.5f</value>
+        <value>-19f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1671968759" Rotate="3.141593f" SRTHash="1976823088">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>20f</value>
+        <value>22.5f</value>
+        <value>28.8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="-1586672985" OnlyOne="true" SRTHash="-1957411305">
+      <LinksToObj type="array">
+        <value DestUnitHashId="1768337937">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-0.5f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">SoundProxyDungeonMoveTag_StoneBox</UnitConfigName>
+    </value>
+    <value HashId="-1552607431" OnlyOne="true" SRTHash="-515295876">
+      <_Parameters Count="1" DefaultBasicSignal="false" ForceCalcInEvent="false" IsMagneGrabbed="0" IsSendMessage="false" IsStopFromStopTimer="0">
+        <ActorName type="string">DgnObj_BoxStone_B</ActorName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-730716241">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+        <value DestUnitHashId="-441338739">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>25.5f</value>
+        <value>5.75f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
+    </value>
+    <value HashId="-1527322959" SRTHash="59755171">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-2016898822">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-4f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-1491367726" SRTHash="-1580830874">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="225106694">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-4f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-1483616244" SRTHash="403406222">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-2023397709">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-4f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-1468865809" OnlyOne="true" SRTHash="2127311547">
+      <_Parameters MoveAxis="1" MoveDis="5f" MoveSpeed="0.5f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>26f</value>
+        <value>-14.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchShutterFenceWide</UnitConfigName>
+    </value>
+    <value HashId="-1419655130" SRTHash="353765242">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="2034134700">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-4f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-1375370625" SRTHash="30255713">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1143095797">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-4f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-1369440760" OnlyOne="true" SRTHash="-376039716">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1660288662">
+          <DefinitionName type="string">PhysSystemGroup</DefinitionName>
+        </value>
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>26f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_GoalSystem_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1307216890" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1468865809">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1691935345">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>37.5f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1302562378" SRTHash="1481925240">
+      <_Parameters IncrementSave="false" MakeSaveFlag="1" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1949528113">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-437031687">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-327485067">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>26f</value>
+        <value>-35f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1208788066" SRTHash="1375152403">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>7.5f</value>
+        <value>28f</value>
+        <value>-13f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="-1199054869" SRTHash="1442449109">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1588239018">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-4f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-1172098758" OnlyOne="true" Rotate="-3.141593f" SRTHash="-1323267158">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <EventFlowEntryName type="string">Demo008_3</EventFlowEntryName>
+        <EventFlowName type="string">Demo008_3</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1018643348">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-57553462">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>16f</value>
+        <value>26f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_EntranceElevator_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1136070822" SRTHash="345169276">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>27f</value>
+        <value>51f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1123818911" OnlyOne="true" Rotate="-1.570796f" SRTHash="-68141157">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-905653513">
+          <_Parameters Friction="0f" LimitTransMax="21.5f" LimitTransMin="-10f">
+            <Axis X="0f" Y="1f" Z="0f" />
+            <Pivot X="0f" Y="0f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">SliderCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_BoxStone_B</UnitConfigName>
+    </value>
+    <value HashId="-1101125670" SRTHash="2029228413">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-7.5f</value>
+        <value>28f</value>
+        <value>-13f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_CandleStandA_01</UnitConfigName>
+    </value>
+    <value HashId="-1011704100" OnlyOne="true" SRTHash="-189104893">
+      <_Parameters CameraPattern="1" CameraPower="0.5f" CameraRange="100f" FieldBodyGroup="0" InitDgnMoveDis="0f" InitDgnPriority="0" MoveDis="0.1f" MoveSpeed="2f" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1586672985">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-0.5f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DungeonMoveTag</UnitConfigName>
+    </value>
+    <value HashId="-905653513" OnlyOne="true" SRTHash="-493327207">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>0.5f</value>
+        <value>14.5f</value>
+        <value>-1f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="-853979319" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-260473141">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>27.5f</value>
+        <value>-28.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-850447337" SRTHash="-1624178128">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1787569212">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-4f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-831259260" SRTHash="-717680892">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-398101392">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-4f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-730716241" SRTHash="-1306920788">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Cylinder</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1f</value>
+        <value>-0.5f</value>
+        <value>4.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-695543498" OnlyOne="true" SRTHash="-1856038977">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>0f</value>
+        <value>29f</value>
+        <value>-60f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_Hrl_BaseRoom60x180x20_B_01</UnitConfigName>
+    </value>
+    <value HashId="-653498101" SRTHash="0">
+      <Translate type="array">
+        <value>0f</value>
+        <value>-4f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="-578678082" SRTHash="1847123113">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>-3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>15f</value>
+        <value>49f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_02</UnitConfigName>
+    </value>
+    <value HashId="-565932166" SRTHash="0">
+      <Translate type="array">
+        <value>0f</value>
+        <value>27.5f</value>
+        <value>-28.25f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="-441338739" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1011704100">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>25.5f</value>
+        <value>5.75f</value>
+        <value>-2f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-437031687" OnlyOne="true" SRTHash="865924496">
+      <_Parameters TerritoryArea="0f" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>29f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriest001</UnitConfigName>
+    </value>
+    <value HashId="-410524001" OnlyOne="true" Rotate="3.141593f" SRTHash="546873069">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">PutRupee_Silver</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>18.5f</value>
+        <value>19f</value>
+        <value>29f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Dungeon_Stone</UnitConfigName>
+    </value>
+    <value HashId="-336692943" SRTHash="2132191485">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1602439640">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-4f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-327485067" OnlyOne="true" SRTHash="978075651">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1660288662">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>7f</value>
+        <value>26f</value>
+        <value>-33.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-278087733" OnlyOne="true" SRTHash="-1639050306">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1307216890">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>3.141593f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>0f</value>
+        <value>37.5f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchElectric0</UnitConfigName>
+    </value>
+    <value HashId="-269104516" SRTHash="1095987938">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1470766728">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-4f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-260473141" SRTHash="1598203203">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">GoalExit</EventFlowEntryName>
+        <EventFlowName type="string">Demo033_1</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+        <value DestUnitHashId="283588576">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-5.5f</value>
+        <value>26f</value>
+        <value>-30f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-207542617" OnlyOne="true" SRTHash="-1639291920">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1123818911">
+          <DefinitionName type="string">FixedCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>7.450581E-08f</value>
+        <value>9.999999f</value>
+        <value>3.72529E-08f</value>
+      </Translate>
+      <UnitConfigName type="string">ElectricGenerator_Dynamic</UnitConfigName>
+    </value>
+    <value HashId="-197921714" SRTHash="2062271850">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-2022182787">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-4f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-175707862" SRTHash="-815568940">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-306912325">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-4f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-93813021" SRTHash="306014444">
+      <_Parameters RailMoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-653498101">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-191190278">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-4f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_RailLift_Box</UnitConfigName>
+    </value>
+    <value HashId="-88311854" SRTHash="-878924557">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-327485067">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-565932166">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>5.5f</value>
+        <value>26f</value>
+        <value>-31f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-57553462" SRTHash="0">
+      <Translate type="array">
+        <value>0f</value>
+        <value>6f</value>
+        <value>21f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="-56097197" SRTHash="1466149475">
+      <Translate type="array">
+        <value>31f</value>
+        <value>7f</value>
+        <value>-32.005f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_PartitionWall_A_05</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array">
+    <value HashId="594396" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>-4f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>2f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-1f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="4158197" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>-4f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>2f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-1f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="54952731" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>-4f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>2f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-1f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="225106694" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>-4f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>2f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-1f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="265117345" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>-4f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>2f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-1f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="537008842" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>-4f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>2f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-1f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="576365972" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>-4f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>2f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-1f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="579306416" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>-4f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>2f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-1f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="601381774" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>-4f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>2f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-1f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="607451541" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>-4f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>2f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-1f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="666082970" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>-4f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>2f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-1f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="778813864" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>-4f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>2f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-1f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="806021226" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>-4f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>2f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-1f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="897658903" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>-4f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>2f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-1f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="943187020" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>-4f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>2f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-1f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1130334771" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>-4f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>2f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-1f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1143735833" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>-4f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>2f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-1f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1397923867" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>-4f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>2f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-1f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1398259288" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>-4f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>2f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-1f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1400494042" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>-4f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>2f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-1f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1409704450" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>-4f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>2f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-1f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1470766728" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>-4f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>2f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-1f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1474586084" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>-4f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>2f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-1f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1518338252" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>-4f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>2f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-1f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1602439640" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>-4f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>2f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-1f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1605486837" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>-4f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>2f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-1f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1662315016" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>-4f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>2f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-1f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1851291657" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>-4f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>2f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-1f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="2034134700" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>-4f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>2f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-1f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-2115002554" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>-4f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>2f</value>
+            <value>4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-1f</value>
+        <value>4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-2076151417" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>-4f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>2f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-1f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-2023397709" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>-4f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>2f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-1f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-2022182787" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>-4f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>12f</value>
+            <value>2f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>12f</value>
+        <value>-1f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-2016898822" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>-4f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>2f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-1f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1994191326" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>-4f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>2f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-1f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1937826274" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>-4f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>0f</value>
+            <value>2f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>0f</value>
+        <value>-1f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1858606129" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>-4f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>2f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-1f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1808887561" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>-4f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>2f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-1f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1787569212" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>-4f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-12f</value>
+            <value>2f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-12f</value>
+        <value>-1f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1730213826" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>-4f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>2f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-1f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1588239018" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>-4f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>4f</value>
+            <value>2f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>4f</value>
+        <value>-1f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1500839628" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>-4f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>2f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-1f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1407050897" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>-4f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>2f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-1f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1143095797" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>-4f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>2f</value>
+            <value>8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-1f</value>
+        <value>8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-398101392" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>-4f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>2f</value>
+            <value>0f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-1f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-306912325" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>-4f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>8f</value>
+            <value>2f</value>
+            <value>-4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>8f</value>
+        <value>-1f</value>
+        <value>-4f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-204194281" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>-4f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-4f</value>
+            <value>2f</value>
+            <value>12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-4f</value>
+        <value>-1f</value>
+        <value>12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-191190278" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>-4f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>2f</value>
+            <value>-8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-1f</value>
+        <value>-8f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-136592603" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="6f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="180f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>-4f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="6f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="30f" />
+          <Translate type="array">
+            <value>-8f</value>
+            <value>2f</value>
+            <value>-12f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-8f</value>
+        <value>-1f</value>
+        <value>-12f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+  </Rails>
+</yaml>
