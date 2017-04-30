@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <string256_data type="array">
+    <value DeleteRev="-1" HashValue="1017120663" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">dummy_string256</DataName>
+      <InitValue type="string">
+      </InitValue>
+      <MaxValue type="string">
+      </MaxValue>
+      <MinValue type="string">
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="1188193974" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">SaveLocationName</DataName>
+      <InitValue type="string">
+      </InitValue>
+      <MaxValue type="string">
+      </MaxValue>
+      <MinValue type="string">
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-227599870" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">SaveDistrictName</DataName>
+      <InitValue type="string">
+      </InitValue>
+      <MaxValue type="string">
+      </MaxValue>
+      <MinValue type="string">
+      </MinValue>
+    </value>
+  </string256_data>
+</yaml>

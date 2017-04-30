@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <string_data type="array">
+    <value DeleteRev="-1" HashValue="524256885" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">dummy_string</DataName>
+      <InitValue type="string">test</InitValue>
+      <MaxValue type="string">
+      </MaxValue>
+      <MinValue type="string">
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-2130277839" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">PlayerName</DataName>
+      <InitValue type="string">
+      </InitValue>
+      <MaxValue type="string">
+      </MaxValue>
+      <MinValue type="string">
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-653019287" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">PlayerSavePosMapType</DataName>
+      <InitValue type="string">MainField</InitValue>
+      <MaxValue type="string">
+      </MaxValue>
+      <MinValue type="string">
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="200187462" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">PlayerSavePosMapName</DataName>
+      <InitValue type="string">D-6</InitValue>
+      <MaxValue type="string">
+      </MaxValue>
+      <MinValue type="string">
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1467683417" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">App_DungeonRadar_DungeonDistance</DataName>
+      <InitValue type="string">
+      </InitValue>
+      <MaxValue type="string">
+      </MaxValue>
+      <MinValue type="string">
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-978933684" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">ScoreStringBuffer</DataName>
+      <InitValue type="string">
+      </InitValue>
+      <MaxValue type="string">
+      </MaxValue>
+      <MinValue type="string">
+      </MinValue>
+    </value>
+  </string_data>
+</yaml>
