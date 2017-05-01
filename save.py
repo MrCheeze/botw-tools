@@ -213,9 +213,6 @@ if __name__ == '__main__':
         parsed_data = parseSave(sys.argv[1])
         print(parsed_data['DATE'])
         print(parsed_data['HEADER'])
-        for x in ('WM_BloodyDay','WM_BloodyMoonTimer','WM_NumberOfDays',
-                  'WM_Time','WM_TimeDivision','WM_bloodyEndReserveTimer'):
-            print(x, parsed_data['MAIN'][x])
         if len(sys.argv) == 3:
             f = open(sys.argv[2],'w')
             json.dump(parsed_data, f, sort_keys=True, indent=4)
