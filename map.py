@@ -14,7 +14,8 @@ objects = {}
 for filename in os.listdir('mubin'):
     root = ET.parse('mubin/'+filename).getroot()
 
-    dropactor_objs = root.findall('./*/value')
+    dropactor_objs = (root.findall('./*/value') +
+                      root.findall('./Rails/*/RailPoints/value'))
 
     for actor in dropactor_objs:
         name = actor.findall('./UnitConfigName')[0].text

@@ -1,5 +1,6 @@
 import struct
 import pprint
+import sys
 
 class UnknownNodeTypeException(Exception):
     pass
@@ -70,7 +71,7 @@ def parseAAMP(data, offset=0x34, datatype='node'):
 
 
 if __name__ == '__main__':
-    f=open('Item_Ore_A.bmodellist','rb')
+    f=open(sys.argv[1],'rb')
     data = f.read()
     f.close()
     pprint.pprint(parseAAMP(data))

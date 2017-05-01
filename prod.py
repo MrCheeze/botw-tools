@@ -2,6 +2,7 @@ import struct
 import pprint
 import os
 import json
+import sys
 
 def parseProd(data):
 
@@ -33,6 +34,4 @@ def parseProd(data):
             objects[name].append((x,y,z))
         offset += 0x10 + cluster_size
     return objects
-
-
 
