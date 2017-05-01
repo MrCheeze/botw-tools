@@ -120,8 +120,96 @@ def parseSaveFile(savefile, skip_bools=False):
 
     return parsed_data
 
+def writeSave(json_data, savefile_folder):
+    writeSaveFile(json_data['HEADER'], savefile_folder + '/caption.sav')
+    writeSaveFile(json_data['MAIN'], savefile_folder + '/game_data.sav')
+
+def writeSaveFile(json_data, savefile):
+    f = open(savefile,'rb')
+    data = list(f.read())
+    f.close()
+    assert data[:0xC] == list(b'\x00\x00\x24\xee\xff\xff\xff\xff\x00\x00\x00\x01')
+    assert data[-4:] == list(b'\xff\xff\xff\xff')
+
+    i = 0xC
+    while i < len(data)-4:
+        hashvalue = struct.unpack('>i', bytes(data[i:i+4]))[0]
+        if str(hashvalue) not in gamedata:
+            i += 8
+            continue
+        datatype, name = gamedata[str(hashvalue)]
+        value = json_data[name]
+        if datatype=='s32':
+            data[i+4:i+8] = struct.pack('>i', value)
+            i += 8
+        elif datatype=='bool':
+            data[i+4:i+8] = struct.pack('>i', value)
+            i += 8
+        elif datatype=='string256':
+            value += '\0' * (256 - len(value))
+            for j in range(256//4):
+                data[i+4+j*8:i+8+j*8] = value[j*4:j*4+4].encode('ascii')
+            i += 256*2
+        elif datatype=='s32_array':
+            data[i+4:i+8] = struct.pack('>i', value[0])
+            json_data[name] = json_data[name][1:]
+            i += 8
+        elif datatype=='string64_array':
+            value[0] += '\0' * (64 - len(value[0]))
+            for j in range(64//4):
+                data[i+4+j*8:i+8+j*8] = value[0][j*4:j*4+4].encode('ascii')
+            json_data[name] = json_data[name][1:]
+            i += 64*2
+        elif datatype=='f32':
+            data[i+4:i+8] = struct.pack('>f', value)
+            i += 8
+        elif datatype=='string':
+            value += '\0' * (32 - len(value))
+            for j in range(32//4):
+                data[i+4+j*8:i+8+j*8] = value[j*4:j*4+4].encode('ascii')
+            i += 32*2
+        elif datatype=='string64':
+            value += '\0' * (64 - len(value))
+            for j in range(64//4):
+                data[i+4+j*8:i+8+j*8] = value[j*4:j*4+4].encode('ascii')
+            i += 64*2
+        elif datatype=='vector3f':
+            for j in range(3):
+                data[i+4+j*8:i+8+j*8] = struct.pack('>f', value[j])
+            i += 3*8
+        elif datatype=='string256_array':
+            value[0] += '\0' * (256 - len(value[0]))
+            for j in range(256//4):
+                data[i+4+j*8:i+8+j*8] = value[0][j*4:j*4+4].encode('ascii')
+            json_data[name] = json_data[name][1:]
+            i += 256*2
+        elif datatype=='bool_array':
+            data[i+4:i+8] = struct.pack('>i', value[0])
+            json_data[name] = json_data[name][1:]
+            i += 8
+        elif datatype=='vector2f_array':
+            for j in range(2):
+                data[i+4+j*8:i+8+j*8] = struct.pack('>f', value[0][j])
+            json_data[name] = json_data[name][1:]
+            i += 2*8
+        elif datatype=='f32_array':
+            data[i+4:i+8] = struct.pack('>f', value[0])
+            json_data[name] = json_data[name][1:]
+            i += 8
+        elif datatype=='vector3f_array':
+            for j in range(3):
+                data[i+4+j*8:i+8+j*8] = struct.pack('>f', value[0][j])
+            json_data[name] = json_data[name][1:]
+            i += 3*8
+        else:
+            print('%08X'%hashvalue, hashvalue, datatype, name)
+            raise UnknownNodeTypeException(datatype)
+    f = open(savefile,'wb')
+    f.write(bytes(data))
+    f.close()
+
 if __name__ == '__main__':
-    if 2 <= len(sys.argv) <= 3:
+    if 2 <= len(sys.argv) <= 3 and os.path.isdir(sys.argv[1]):
         parsed_data = parseSave(sys.argv[1])
         print(parsed_data['DATE'])
         print(parsed_data['HEADER'])
@@ -133,6 +221,12 @@ if __name__ == '__main__':
             json.dump(parsed_data, f, sort_keys=True, indent=4)
             f.close()
             print('Save dumped to ' + sys.argv[2])
+    elif len(sys.argv) == 3:
+        f=open(sys.argv[1])
+        json_data = json.load(f)
+        f.close()
+        writeSave(json_data, sys.argv[2])
     else:
-        print('Usage: python save.py savefolder [outfile.json]')
+        print('Usage: save.py savefolder [outfile.json]\n'
+              '       save.py infile.json savefolder')
 
