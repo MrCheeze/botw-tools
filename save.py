@@ -23,7 +23,7 @@ def parseSaveFile(savefile, skip_bools=False):
     f = open(savefile,'rb')
     data = f.read()
     f.close()
-    assert data[:0xC] == b'\x00\x00\x24\xee\xff\xff\xff\xff\x00\x00\x00\x01'
+    assert data[4:0xC] == b'\xff\xff\xff\xff\x00\x00\x00\x01'
     assert data[-4:] == b'\xff\xff\xff\xff'
 
     parsed_data = {}
@@ -128,7 +128,8 @@ def writeSaveFile(json_data, savefile):
     f = open(savefile,'rb')
     data = list(f.read())
     f.close()
-    assert data[:0xC] == list(b'\x00\x00\x24\xee\xff\xff\xff\xff\x00\x00\x00\x01')
+
+    assert data[4:0xC] == list(b'\xff\xff\xff\xff\x00\x00\x00\x01')
     assert data[-4:] == list(b'\xff\xff\xff\xff')
 
     i = 0xC
