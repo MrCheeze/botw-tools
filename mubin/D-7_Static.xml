@@ -634,6 +634,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowScaffold_D_01_Far</UnitConfigName>
     </value>
+    <value HashId="193601390" SRTHash="-1182377673">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">HasAoCVer1</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="759164510">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1449.908f</value>
+        <value>318.3719f</value>
+        <value>2034.82f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="198961194" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -2389,6 +2406,18 @@
         <value>2266.095f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RockOrange_A_L_02</UnitConfigName>
+    </value>
+    <value HashId="759164510" Rotate="0.1745329f" SRTHash="-607326476">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_BombArrow_A_02</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1451.488f</value>
+        <value>317.606f</value>
+        <value>2028.067f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
     </value>
     <value HashId="761695002" SRTHash="-492113970">
       <_Parameters SharpWeaponJudgeType="0" WaitTime="30f">
