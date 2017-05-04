@@ -1,0 +1,989 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <vector3f_data type="array">
+    <value DeleteRev="-1" HashValue="-1542741757" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">PlayerSavePos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-1130f</value>
+          <value>237.4f</value>
+          <value>1914.5f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>10000f</value>
+          <value>10000f</value>
+          <value>10000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-10000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-106944676" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">Horse_Pos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>5000f</value>
+          <value>4000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-5000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="507971504" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" ResetType="0">
+      <DataName type="string">MapApp_PointGuidePoint</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-560f</value>
+          <value>0f</value>
+          <value>1695f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>5000f</value>
+          <value>4000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-5000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1741970943" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">Last_Ridden_Horse_Pos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>5000f</value>
+          <value>4000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-5000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="657168516" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">Horse_Pos_For_Map</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>5000f</value>
+          <value>4000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-5000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="318661223" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_01_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-2050f</value>
+          <value>0f</value>
+          <value>-2560f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="58918942" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_02_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-1870f</value>
+          <value>0f</value>
+          <value>-1150f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1166486538" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_03_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-2770f</value>
+          <value>0f</value>
+          <value>1224.288f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="561634540" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_04_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-2770f</value>
+          <value>0f</value>
+          <value>2640f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1736308988" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_05_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>6f</value>
+          <value>0f</value>
+          <value>-2380f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1979748995" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_06_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-110f</value>
+          <value>0f</value>
+          <value>150f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="805615253" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_07_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-1000f</value>
+          <value>0f</value>
+          <value>1900f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="1686926600" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_08_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>1017f</value>
+          <value>0f</value>
+          <value>1715f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-579359008" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_09_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-30f</value>
+          <value>0f</value>
+          <value>2963f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="91039774" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_10_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>2100f</value>
+          <value>0f</value>
+          <value>-2380f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1130957834" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_11_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>2580f</value>
+          <value>0f</value>
+          <value>-2400f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1377068657" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_12_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>2490f</value>
+          <value>0f</value>
+          <value>-167f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="336609895" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_13_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>1810f</value>
+          <value>0f</value>
+          <value>1730f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1894691459" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_14_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>2190f</value>
+          <value>0f</value>
+          <value>2900f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="921343637" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" ResetType="0">
+      <DataName type="string">MapTower_15_OpenCenterPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>-2080f</value>
+          <value>0f</value>
+          <value>-90f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>100000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-100000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-589829231" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_BirdMan_HillTower_CurrentPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>10000f</value>
+          <value>10000f</value>
+          <value>10000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-10000f</value>
+          <value>-10000f</value>
+          <value>-10000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-901566109" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_BirdMan_HillTower_StartPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>10000f</value>
+          <value>10000f</value>
+          <value>10000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-10000f</value>
+          <value>-10000f</value>
+          <value>-10000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-237583588" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_BirdMan_HillTower_VectorFromStartToCurrent</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>10000f</value>
+          <value>10000f</value>
+          <value>10000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-10000f</value>
+          <value>-10000f</value>
+          <value>-10000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1420955067" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_smashGolf_FirstSpeed_Vec3</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-255f</value>
+          <value>-255f</value>
+          <value>-255f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-2111775611" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_smashGolf_Speed_Vec3</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-255f</value>
+          <value>-255f</value>
+          <value>-255f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1080516238" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_LastBallPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>5000f</value>
+          <value>5000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-5000f</value>
+          <value>-5000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-597534475" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_NowBallPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>5000f</value>
+          <value>5000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-5000f</value>
+          <value>-5000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="129027753" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_LastShotTransVec</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-255f</value>
+          <value>-255f</value>
+          <value>-255f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-933748079" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_GoalFlagPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>5000f</value>
+          <value>5000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-5000f</value>
+          <value>-5000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1764326020" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_BallToGoalFlag</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>5000f</value>
+          <value>5000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-5000f</value>
+          <value>-5000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="1065075582" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">WolfLink_CurrentPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>5000f</value>
+          <value>4000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-5000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1231858581" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_ShieldSurfing_MapPinDataBuffer</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>10000f</value>
+          <value>10000f</value>
+          <value>10000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-10000f</value>
+          <value>-10000f</value>
+          <value>-10000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-2022208055" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">ShootingStarPosition</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>4000f</value>
+          <value>4000f</value>
+          <value>4000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-4000f</value>
+          <value>-4000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-947838568" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">Demo_PlayerPosition</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>10000f</value>
+          <value>100000f</value>
+          <value>100000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-10000f</value>
+          <value>-100000f</value>
+          <value>-100000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-410698143" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_CameraPos0</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-4000f</value>
+          <value>-4000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="1769866479" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_CameraAt0</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-4000f</value>
+          <value>-4000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-1870524681" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_CameraPos1</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-4000f</value>
+          <value>-4000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="511259769" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_CameraAt1</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-4000f</value>
+          <value>-4000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="160128845" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_CameraPos2</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-4000f</value>
+          <value>-4000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="-2022677053" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_CameraAt2</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-4000f</value>
+          <value>-4000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="46727947" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">MiniGame_SmashGolf_ReturnCameraPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>255f</value>
+          <value>255f</value>
+          <value>255f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-4000f</value>
+          <value>-4000f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
+  </vector3f_data>
+</yaml>
