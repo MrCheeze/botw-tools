@@ -22,7 +22,7 @@ for actor in actors:
     total_dmg = attack * durability
     if name in object_names:
         name = object_names[name] + ' (' + name + ')'
-    results.append('total_dmg=%5d, attack=%3d, durability=%3d, name=%s' % (total_dmg, attack, durability, name))
+    results.append('total_dmg=%5d, attack=%3d, durability=%3d, name=%s' % (0, attack, durability, name))
 results.sort(reverse=True)
 
 for result in results:
