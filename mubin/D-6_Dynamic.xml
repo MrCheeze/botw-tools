@@ -19083,7 +19083,7 @@
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
     </value>
     <value HashId="-684759226" Rotate="2.56f" SRTHash="-529670525">
-      <_Parameters IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="1" TerritoryArea="75f">
+      <_Parameters DisableRankUpForHardMode="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="1" TerritoryArea="75f">
         <ArrowName type="string">NormalArrow</ArrowName>
         <DropTable type="string">Normal</DropTable>
         <EquipItem1 type="string">Default</EquipItem1>

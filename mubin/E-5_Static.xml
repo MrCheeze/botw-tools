@@ -327,6 +327,40 @@
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinHouse_A_03_Far</UnitConfigName>
     </value>
+    <value HashId="97797813" Rotate="-0.7231852f" SRTHash="1530525655">
+      <_Parameters IsHardModeActor="true" MoveDis="5f" ReactHorn="false" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1674174284">
+          <_Parameters>
+            <Pos X="0f" Y="4f" Z="0f" />
+            <Rot X="0f" Y="0f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">ModelBind</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1000695435">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1796147494">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1434331418">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1674174284">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-756.0833f</value>
+        <value>170.35f</value>
+        <value>310.6645f</value>
+      </Translate>
+      <UniqueName type="string">Manager</UniqueName>
+      <UnitConfigName type="string">AirOcta_Tag</UnitConfigName>
+    </value>
     <value HashId="101813753" Rotate="0.6632251f" SRTHash="-1651396452">
       <Translate type="array">
         <value>-23.04449f</value>
@@ -420,6 +454,24 @@
         <value>983.3999f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_ScaffoldWood_A_03</UnitConfigName>
+    </value>
+    <value HashId="135294763" Rotate="2.639998f" SRTHash="931816317">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_174_Head</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1605930842">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-744.0352f</value>
+        <value>132.5766f</value>
+        <value>890.1279f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
     </value>
     <value HashId="135986837" Rotate="-0.01681409f" SRTHash="-72518962">
       <LinksToObj type="array">
@@ -654,6 +706,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinGate_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="282644996" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="433239886">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-770.5f</value>
+        <value>171.4531f</value>
+        <value>303f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="295307916" Rotate="1.3f" SRTHash="649457376">
       <LinksToObj type="array">
         <value DestUnitHashId="1339471195">
@@ -691,6 +760,39 @@
       </Translate>
       <UniqueName type="string">TowerTerminalBody06</UniqueName>
       <UnitConfigName type="string">FldObj_DownloadTerminalBody_A_01</UnitConfigName>
+    </value>
+    <value HashId="308577396" Rotate="-2.231761f" SRTHash="773163762">
+      <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="446845466">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2092944357">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="446845466">
+          <_Parameters>
+            <Pivot X="0f" Y="-1.5f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-774.8497f</value>
+        <value>172.5765f</value>
+        <value>296.5628f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
     </value>
     <value HashId="308649020" SRTHash="-1559181171">
       <LinksToObj type="array">
@@ -846,6 +948,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinDebris_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="342279145" SRTHash="-527237092">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku03_Open02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1476192384">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-22.41321f</value>
+        <value>142.9172f</value>
+        <value>212.3658f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="351780682" Rotate="-2.86f" SRTHash="-430754913">
       <LinksToObj type="array">
         <value DestUnitHashId="1409188551">
@@ -999,6 +1118,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinLookoutSmall_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="399414464" SRTHash="-1322855684">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku03_Open01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1476192384">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-22.9104f</value>
+        <value>142.9165f</value>
+        <value>214.1259f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="401450496" SRTHash="-2099516906">
       <LinksToObj type="array">
         <value DestUnitHashId="-1322888488">
@@ -1043,6 +1179,40 @@
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
+    <value HashId="416380429" Rotate="-2.624776f" SRTHash="1530525655">
+      <_Parameters IsHardModeActor="true" MoveDis="5f" ReactHorn="false" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2127359988">
+          <_Parameters>
+            <Pos X="0f" Y="4f" Z="0f" />
+            <Rot X="0f" Y="0f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">ModelBind</DefinitionName>
+        </value>
+        <value DestUnitHashId="-648042035">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1980381598">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1216027042">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2127359988">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-768.4228f</value>
+        <value>166.75f</value>
+        <value>322.9814f</value>
+      </Translate>
+      <UniqueName type="string">Manager</UniqueName>
+      <UnitConfigName type="string">AirOcta_Tag</UnitConfigName>
+    </value>
     <value HashId="432762547" Rotate="2.777994f" SRTHash="866405674">
       <Translate type="array">
         <value>-965.224f</value>
@@ -1050,6 +1220,27 @@
         <value>722.4314f</value>
       </Translate>
       <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="433239886" Rotate="0.3600083f" SRTHash="-476611435">
+      <_Parameters FortressEatPer="-1" IsHardModeActor="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="45f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="150f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Bow_003</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-770.5f</value>
+        <value>171.4531f</value>
+        <value>303f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Bokoblin_Guard_Junior_TreeHouseTop</UnitConfigName>
     </value>
     <value HashId="439066070" Rotate="1.151057f" SRTHash="-1537171584">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -1092,6 +1283,21 @@
         <value>106.9138f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="446845466" Rotate="-1.446363f" SRTHash="-892064981">
+      <_Parameters IsHardModeActor="true" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-770.4825f</value>
+        <value>170.95f</value>
+        <value>301.2886f</value>
+      </Translate>
+      <UniqueName type="string">Board</UniqueName>
+      <UnitConfigName type="string">Obj_BoardWood_Triangle_01</UnitConfigName>
     </value>
     <value HashId="450370964" Rotate="-1.976191f" SRTHash="-161556986" Scale="2.75f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -1179,6 +1385,15 @@
         <value>150.6708f</value>
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
+    </value>
+    <value HashId="501042235" SRTHash="0">
+      <_Parameters IsHardModeActor="true" />
+      <Translate type="array">
+        <value>-770.5f</value>
+        <value>171.4531f</value>
+        <value>303f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
     </value>
     <value HashId="523715686" SRTHash="210126595" Scale="0.5f">
       <_Parameters SharpWeaponJudgeType="0" WaitTime="30f">
@@ -1576,6 +1791,37 @@
       <UniqueName type="string">Demo008_0_PlayerEndPos</UniqueName>
       <UnitConfigName type="string">ForceSetPosDirAutoSaveAnchor</UnitConfigName>
     </value>
+    <value HashId="618732538" SRTHash="959583299">
+      <_Parameters IsHardModeActor="true" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1674174284">
+          <_Parameters>
+            <Pivot X="-6f" Y="-0.1f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="446845466">
+          <_Parameters>
+            <Pivot X="6f" Y="-0.2f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>3.005974f</value>
+        <value>0.5023249f</value>
+        <value>2.786163f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-763.545f</value>
+        <value>169.7734f</value>
+        <value>304.6113f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DLC_FlyShield_Wood_A_02</UnitConfigName>
+    </value>
     <value HashId="621420520" SRTHash="-1234137883" Scale="0.1f">
       <Translate type="array">
         <value>-363.2491f</value>
@@ -1810,6 +2056,23 @@
       </Translate>
       <UnitConfigName type="string">LookTag</UnitConfigName>
     </value>
+    <value HashId="710992272" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="97797813">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-756.0833f</value>
+        <value>170.35f</value>
+        <value>310.6645f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="711620800" Rotate="-1.665693f" SRTHash="1756222472">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -1828,6 +2091,23 @@
         <value>173.1337f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="711678924" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1569363628">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-760.727f</value>
+        <value>166.2f</value>
+        <value>317.4363f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="713236151" Rotate="-3.141593f" SRTHash="592464209">
       <Translate type="array">
@@ -2091,6 +2371,23 @@
         <value>643.2377f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinLookout_A_01</UnitConfigName>
+    </value>
+    <value HashId="788951913" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1434331418">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-752.1287f</value>
+        <value>168.9766f</value>
+        <value>316.3915f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="790817800" SRTHash="-1537171584">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -3085,6 +3382,39 @@
       </Translate>
       <UnitConfigName type="string">EventTag</UnitConfigName>
     </value>
+    <value HashId="1120857051" Rotate="2.480628f" SRTHash="-677322711">
+      <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="446845466">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2092944357">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="446845466">
+          <_Parameters>
+            <Pivot X="0f" Y="-1.5f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-766.5295f</value>
+        <value>172.6078f</value>
+        <value>294.8229f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
+    </value>
     <value HashId="1130860009" Rotate="-0.01681409f" SRTHash="-72518962">
       <Translate type="array">
         <value>-728.7767f</value>
@@ -3186,6 +3516,39 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffGrayParts_A_08_Far</UnitConfigName>
     </value>
+    <value HashId="1216027042" Rotate="-1.05398f" SRTHash="-1588260575">
+      <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2127359988">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="416380429">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2127359988">
+          <_Parameters>
+            <Pivot X="0f" Y="-1.5f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-775.1237f</value>
+        <value>165.3766f</value>
+        <value>324.8614f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
+    </value>
     <value HashId="1222271100" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -3231,6 +3594,29 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="1243080332" SRTHash="-1795148620">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_171_Lower</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1530240238">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.07997018f</value>
+        <value>0.1057084f</value>
+        <value>-0.1467964f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-507.268f</value>
+        <value>129.9986f</value>
+        <value>609.9507f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
+    </value>
     <value HashId="1245269231" Rotate="1.570796f" SRTHash="-392173563">
       <LinksToObj type="array">
         <value DestUnitHashId="536288941">
@@ -3267,6 +3653,17 @@
         <value>442.0801f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_MapTowerStairWood_A_01</UnitConfigName>
+    </value>
+    <value HashId="1252293646" SRTHash="-1871314910">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku04_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-504.8315f</value>
+        <value>144.8781f</value>
+        <value>614.8953f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1256922639" SRTHash="-1537171584">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -3558,6 +3955,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_ScaffoldWood_B_01_Far</UnitConfigName>
     </value>
+    <value HashId="1346175264" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-648042035">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-760.9369f</value>
+        <value>165.4078f</value>
+        <value>324.1616f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1349125264" SRTHash="-1218336543">
       <Translate type="array">
         <value>-731.5181f</value>
@@ -3788,6 +4202,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="1432064985" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1980381598">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-765.7261f</value>
+        <value>165.3765f</value>
+        <value>317.139f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1433598966" Rotate="0.2135272f" SRTHash="1756222472">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -3829,6 +4260,39 @@
         <value>393.6505f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="1434331418" Rotate="0.8476111f" SRTHash="-1588260575">
+      <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1674174284">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="97797813">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1674174284">
+          <_Parameters>
+            <Pivot X="0f" Y="-1.5f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-752.1287f</value>
+        <value>168.9766f</value>
+        <value>316.3915f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
     </value>
     <value HashId="1439211901" Rotate="1.570796f" SRTHash="360672785">
       <LinksToObj type="array">
@@ -3992,6 +4456,17 @@
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinDebris_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="1491939334" SRTHash="-319823231">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku03_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-745.6791f</value>
+        <value>150.261f</value>
+        <value>889.3562f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1509537741" SRTHash="69180551" Scale="0.5f">
       <Translate type="array">
         <value>-708.2506f</value>
@@ -4059,6 +4534,25 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="1530240238" SRTHash="-783686048">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-38154965">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-523581329">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-503.5792f</value>
+        <value>137.8964f</value>
+        <value>612.7375f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1533273864" Rotate="-2.62f" SRTHash="360672785">
       <Translate type="array">
         <value>-568.7287f</value>
@@ -4113,6 +4607,23 @@
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
     </value>
+    <value HashId="1536546342" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1120857051">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-766.5295f</value>
+        <value>172.6078f</value>
+        <value>294.8229f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1540105313" SRTHash="1513934793">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -4146,6 +4657,23 @@
         <value>916.5614f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="1552275629" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1674174284">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-756.0833f</value>
+        <value>167.35f</value>
+        <value>310.6645f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1557738037" Rotate="-2.302978f" SRTHash="255467045">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
@@ -4182,6 +4710,18 @@
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinStraightWall_A_05_Far</UnitConfigName>
     </value>
+    <value HashId="1562536451" SRTHash="1762261934">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">TreasureHunt_touzoku03_RemainingBox</EventFlowEntryName>
+        <EventFlowName type="string">Obj_Diary_touzoku_01</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>-743.8384f</value>
+        <value>145.0363f</value>
+        <value>887.984f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="1567443030" Rotate="2.292356f" SRTHash="1756222472">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -4200,6 +4740,40 @@
         <value>184.8553f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="1580094904" SRTHash="784397402">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">TreasureHunt_touzoku03_RemainingBox</EventFlowEntryName>
+        <EventFlowName type="string">Obj_Diary_touzoku_01</EventFlowName>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.03654977f</value>
+        <value>-0.008110961f</value>
+        <value>-0.4367086f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-22.21378f</value>
+        <value>142.9364f</value>
+        <value>208.3236f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="1593001183" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="308577396">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-774.8497f</value>
+        <value>172.5765f</value>
+        <value>296.5628f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1594730596" SRTHash="925382884" Scale="1.183388f">
       <LinksToObj type="array">
@@ -4234,6 +4808,30 @@
         <value>-643.2875f</value>
         <value>147.1881f</value>
         <value>876.8702f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1605930842" SRTHash="-2014092355">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1658754025">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1562536451">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.2358115f</value>
+        <value>0.003119998f</value>
+        <value>-0.02633756f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-749.2253f</value>
+        <value>143.1383f</value>
+        <value>887.0958f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
@@ -4409,6 +5007,23 @@
         <value>171.0609f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="1658754025" SRTHash="827689402">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku03_Open01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-721921338">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-745.9924f</value>
+        <value>148.7134f</value>
+        <value>890.7196f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1671315409" Rotate="2.230792f" SRTHash="-854625290">
       <LinksToObj type="array">
@@ -4771,6 +5386,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinDebris_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="1827415060" SRTHash="37800651">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku03_Open03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-721921338">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-745.4952f</value>
+        <value>148.7141f</value>
+        <value>888.9595f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1829383456" Rotate="1.570796f" SRTHash="-320995218">
       <Translate type="array">
         <value>-783.3124f</value>
@@ -4786,6 +5418,23 @@
         <value>217.434f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinStraightWall_A_03_Far</UnitConfigName>
+    </value>
+    <value HashId="1839977564" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2018106643">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-771.5f</value>
+        <value>171.3306f</value>
+        <value>300f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1847904004" Rotate="-2.981593f" SRTHash="1257667284">
       <Translate type="array">
@@ -5682,6 +6331,21 @@
       </Translate>
       <UnitConfigName type="string">LocationTag</UnitConfigName>
     </value>
+    <value HashId="-2127359988" Rotate="-2.624776f" SRTHash="-892064981">
+      <_Parameters IsHardModeActor="true" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-768.4228f</value>
+        <value>163.75f</value>
+        <value>322.9814f</value>
+      </Translate>
+      <UniqueName type="string">Board</UniqueName>
+      <UnitConfigName type="string">Obj_BoardWood_Triangle_01</UnitConfigName>
+    </value>
     <value HashId="-2116711615" OnlyOne="true" SRTHash="277237436">
       <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="false" IsLazyTraverse="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -5697,6 +6361,40 @@
         <value>419.7637f</value>
       </Translate>
       <UnitConfigName type="string">Weapon_Bow_071</UnitConfigName>
+    </value>
+    <value HashId="-2092944357" Rotate="-1.446363f" SRTHash="1530525655">
+      <_Parameters IsHardModeActor="true" MoveDis="5f" ReactHorn="false" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="446845466">
+          <_Parameters>
+            <Pos X="0f" Y="4f" Z="0f" />
+            <Rot X="0f" Y="0f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">ModelBind</DefinitionName>
+        </value>
+        <value DestUnitHashId="1120857051">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="308577396">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-739615820">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="446845466">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-770.4825f</value>
+        <value>173.95f</value>
+        <value>301.2886f</value>
+      </Translate>
+      <UniqueName type="string">Manager</UniqueName>
+      <UnitConfigName type="string">AirOcta_Tag</UnitConfigName>
     </value>
     <value HashId="-2080724807" Rotate="0.09607212f" SRTHash="1509784571">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
@@ -5873,6 +6571,23 @@
       </Translate>
       <UnitConfigName type="string">DgnObj_EntranceTerminal_A_01</UnitConfigName>
     </value>
+    <value HashId="-2018106643" Rotate="0.6600001f" SRTHash="-1284104339">
+      <_Parameters EnableRevival="false" IsHardModeActor="true" IsInGround="false" SharpWeaponJudgeType="3">
+        <DropActor type="string">Weapon_Lsword_003</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-771.5f</value>
+        <value>171.3306f</value>
+        <value>300f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
     <value HashId="-2014760888" SRTHash="1913559379">
       <LinksToObj type="array">
         <value DestUnitHashId="1926396174">
@@ -5961,6 +6676,39 @@
       </Translate>
       <UniqueName type="string">SeekTowerTerminal</UniqueName>
       <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="-1980381598" Rotate="2.873011f" SRTHash="773163762">
+      <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2127359988">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="416380429">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2127359988">
+          <_Parameters>
+            <Pivot X="0f" Y="-1.5f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-765.7261f</value>
+        <value>165.3765f</value>
+        <value>317.139f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
     </value>
     <value HashId="-1974593092" Rotate="0.7853982f" SRTHash="-1551620632">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -6137,6 +6885,29 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-1917368517" SRTHash="1454495417">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_174_Lower</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1853190733">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-2.838231f</value>
+        <value>1.075495f</value>
+        <value>-2.799778f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-31.14999f</value>
+        <value>129.9111f</value>
+        <value>211.6171f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
+    </value>
     <value HashId="-1913018309" Rotate="1.143811f" SRTHash="964883808">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
         <SaveFlag type="string">MapTower_07_Demo</SaveFlag>
@@ -6274,6 +7045,30 @@
         <value>207.9088f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinStraightWall_A_05</UnitConfigName>
+    </value>
+    <value HashId="-1853190733" SRTHash="733879592">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-435198696">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1580094904">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.611368f</value>
+        <value>0.01277151f</value>
+        <value>-0.04046563f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-26.0051f</value>
+        <value>139.9141f</value>
+        <value>213.8002f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1852758837" Rotate="-1.466995f" SRTHash="-1498161708">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -6551,6 +7346,39 @@
         <value>102.6727f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-1796147494" Rotate="-1.508584f" SRTHash="773163762">
+      <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1674174284">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="97797813">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1674174284">
+          <_Parameters>
+            <Pivot X="0f" Y="-1.5f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-762.4847f</value>
+        <value>168.9765f</value>
+        <value>310.0116f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
     </value>
     <value HashId="-1789239573" Rotate="-1.992389f" SRTHash="-484429201">
       <LinksToObj type="array">
@@ -6893,6 +7721,36 @@
       <UniqueName type="string">0</UniqueName>
       <UnitConfigName type="string">Enemy_GanonBeast</UnitConfigName>
     </value>
+    <value HashId="-1674174284" Rotate="-0.7231852f" SRTHash="-892064981">
+      <_Parameters IsHardModeActor="true" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-756.0833f</value>
+        <value>167.35f</value>
+        <value>310.6645f</value>
+      </Translate>
+      <UniqueName type="string">Board</UniqueName>
+      <UnitConfigName type="string">Obj_BoardWood_Triangle_01</UnitConfigName>
+    </value>
+    <value HashId="-1672796152" SRTHash="-797919390">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1252293646">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-504.8315f</value>
+        <value>144.2063f</value>
+        <value>614.8953f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1660897789" Rotate="-0.122173f" SRTHash="-868892394">
       <LinksToObj type="array">
         <value DestUnitHashId="1027669794">
@@ -7025,6 +7883,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="-1623909906" SRTHash="-1286263961">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku03_Open02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-721921338">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-746.7371f</value>
+        <value>148.7141f</value>
+        <value>888.499f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1622686010" SRTHash="1436419803" Scale="1.2f">
       <LinksToObj type="array">
         <value DestUnitHashId="667648830">
@@ -7090,6 +7965,23 @@
         <value>136.6507f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="-1597182327" SRTHash="-1693715238">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku04_Open02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1672796152">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-505.8894f</value>
+        <value>143.3313f</value>
+        <value>614.0381f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1597026332" Rotate="1.92f" SRTHash="-191931396" Scale="2f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -7165,6 +8057,23 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
     </value>
+    <value HashId="-1588239946" SRTHash="-239991673">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku04_Open01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1672796152">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-504.8812f</value>
+        <value>143.3313f</value>
+        <value>613.8239f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1585569933" SRTHash="836954991">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -7222,6 +8131,37 @@
         <value>390.4422f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="-1569363628" SRTHash="959583299">
+      <_Parameters IsHardModeActor="true" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2127359988">
+          <_Parameters>
+            <Pivot X="6f" Y="-0.1f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1674174284">
+          <_Parameters>
+            <Pivot X="-6f" Y="-0.2f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.755348f</value>
+        <value>-0.7881417f</value>
+        <value>-2.695981f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-760.727f</value>
+        <value>166.2f</value>
+        <value>317.4363f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DLC_FlyShield_Wood_A_02</UnitConfigName>
     </value>
     <value HashId="-1565555785" Rotate="0.16f" SRTHash="-757633401" Scale="0.3f">
       <_Parameters IncrementSave="false" MakeSaveFlag="2" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -7490,6 +8430,21 @@
         <value>523.5934f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinGate_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1476192384" SRTHash="998108521">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1163088726">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-22.59708f</value>
+        <value>143.7922f</value>
+        <value>212.7624f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1474575412" Rotate="0.16f" SRTHash="-925432741">
       <_Parameters SharpWeaponJudgeType="0">
@@ -7908,6 +8863,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinGate_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="-1324151996" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1000695435">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-757.3983f</value>
+        <value>169.0078f</value>
+        <value>303.2011f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1322888488" SRTHash="-2099516906">
       <Translate type="array">
         <value>-815.5084f</value>
@@ -8085,6 +9057,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinDebris_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="-1267361347" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1796147494">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-762.4847f</value>
+        <value>168.9765f</value>
+        <value>310.0116f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1249886473" Rotate="2.60447f" SRTHash="1509784571">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -8152,6 +9141,23 @@
         <value>898.7966f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="-1241315889" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="446845466">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-770.4825f</value>
+        <value>170.95f</value>
+        <value>301.2886f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1237539519" SRTHash="1536104691">
       <Rotate type="array">
@@ -8325,6 +9331,17 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeApple_A_M_01</UnitConfigName>
     </value>
+    <value HashId="-1163088726" SRTHash="-1083146688">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku03_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-22.59708f</value>
+        <value>144.4641f</value>
+        <value>212.7624f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1154040456" SRTHash="-1537171584">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -8448,6 +9465,23 @@
         <value>953.4766f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="-1112812855" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2127359988">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-768.4228f</value>
+        <value>163.75f</value>
+        <value>322.9814f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1110886272" SRTHash="-824658040">
       <LinksToObj type="array">
@@ -8641,6 +9675,40 @@
       </Translate>
       <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
+    <value HashId="-1058652942" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2092944357">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-770.4825f</value>
+        <value>173.95f</value>
+        <value>301.2886f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1058175314" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="618732538">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-763.545f</value>
+        <value>169.7734f</value>
+        <value>304.6113f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1051592353" Rotate="-0.122173f" SRTHash="-226812745">
       <LinksToObj type="array">
         <value DestUnitHashId="1651028724">
@@ -8829,6 +9897,39 @@
       </Translate>
       <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
+    <value HashId="-1000695435" Rotate="-3.07938f" SRTHash="-677322711">
+      <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1674174284">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="97797813">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1674174284">
+          <_Parameters>
+            <Pivot X="0f" Y="-1.5f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-757.3983f</value>
+        <value>169.0078f</value>
+        <value>303.2011f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
+    </value>
     <value HashId="-1000072724" SRTHash="1756222472">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -8847,6 +9948,23 @@
         <value>98.03647f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
+    </value>
+    <value HashId="-981422581" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-739615820">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-771.3079f</value>
+        <value>172.5766f</value>
+        <value>308.1991f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-980508689" Rotate="2.230792f" SRTHash="964883808">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -9177,6 +10295,23 @@
       </Translate>
       <UnitConfigName type="string">Item_Fruit_A</UnitConfigName>
     </value>
+    <value HashId="-884020236" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="416380429">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-768.4228f</value>
+        <value>166.75f</value>
+        <value>322.9814f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-877006928" SRTHash="36616695">
       <_Parameters IsEnemyLiftable="false" SharpWeaponJudgeType="0">
         <DropTable type="string">__none__</DropTable>
@@ -9296,6 +10431,23 @@
         <value>522.9632f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinGate_A_01</UnitConfigName>
+    </value>
+    <value HashId="-836208371" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1216027042">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-775.1237f</value>
+        <value>165.3766f</value>
+        <value>324.8614f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-825379668" Rotate="1.570796f" SRTHash="-1634301365">
       <LinksToObj type="array">
@@ -9475,6 +10627,39 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="-739615820" Rotate="0.1244335f" SRTHash="-1588260575">
+      <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="446845466">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2092944357">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="446845466">
+          <_Parameters>
+            <Pivot X="0f" Y="-1.5f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-771.3079f</value>
+        <value>172.5766f</value>
+        <value>308.1991f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
+    </value>
     <value HashId="-735898968" Rotate="2.092389f" SRTHash="1753118021">
       <Translate type="array">
         <value>-562.3152f</value>
@@ -9539,6 +10724,21 @@
         <value>975.1322f</value>
       </Translate>
       <UnitConfigName type="string">Enemy_Bokoblin_Junior</UnitConfigName>
+    </value>
+    <value HashId="-721921338" SRTHash="569185618">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1491939334">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-745.6791f</value>
+        <value>149.5891f</value>
+        <value>889.3562f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-709295533" Rotate="0.5f" SRTHash="-1448109757">
       <LinksToObj type="array">
@@ -9739,6 +10939,39 @@
         <value>185.9035f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeApple_A_M_01</UnitConfigName>
+    </value>
+    <value HashId="-648042035" Rotate="1.302215f" SRTHash="-677322711">
+      <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2127359988">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="416380429">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2127359988">
+          <_Parameters>
+            <Pivot X="0f" Y="-1.5f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">BAndSCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="501042235">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-760.9369f</value>
+        <value>165.4078f</value>
+        <value>324.1616f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
     </value>
     <value HashId="-638752038" SRTHash="275081717">
       <LinksToObj type="array">
@@ -10098,6 +11331,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-523581329" SRTHash="720230121">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">TreasureHunt_touzoku04_RemainingBox</EventFlowEntryName>
+        <EventFlowName type="string">Obj_Diary_touzoku_01</EventFlowName>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-507.9043f</value>
+        <value>144.7382f</value>
+        <value>616.2587f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="-522464242" SRTHash="-165973208" Scale="2f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
         <SaveFlag type="string">AttackedNPC_Set3_Saved1</SaveFlag>
@@ -10322,6 +11572,23 @@
         <value>898.0807f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinStraightWall_A_04</UnitConfigName>
+    </value>
+    <value HashId="-435198696" SRTHash="-559722067">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku03_Open03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1476192384">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-23.655f</value>
+        <value>142.9172f</value>
+        <value>211.9052f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-430709584" Rotate="-1.466995f" SRTHash="711283169">
       <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
@@ -11591,6 +12858,23 @@
         <value>912.641f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-38154965" SRTHash="-1972604668">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku04_Open03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1672796152">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-505.3804f</value>
+        <value>143.3313f</value>
+        <value>615.4055f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-36977769" Rotate="1.92f" SRTHash="1632445530" Scale="2f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />

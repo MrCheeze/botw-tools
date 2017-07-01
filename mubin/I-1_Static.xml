@@ -5014,6 +5014,23 @@
       </Translate>
       <UnitConfigName type="string">Obj_RockCover</UnitConfigName>
     </value>
+    <value HashId="-1538824863" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-398640127">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3683.5f</value>
+        <value>296f</value>
+        <value>-3481f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1533443045" SRTHash="836954991">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -7125,6 +7142,22 @@
         <value>-3471.111f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffDeathMt_D_10</UnitConfigName>
+    </value>
+    <value HashId="-398640127" SRTHash="-138045922">
+      <_Parameters DisableRankUpForHardMode="true" IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_060</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>3683.5f</value>
+        <value>296f</value>
+        <value>-3481f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Wizzrobe_Fire</UnitConfigName>
     </value>
     <value HashId="-395269769" Rotate="3.000001f" SRTHash="-167009311">
       <LinksToObj type="array">

@@ -17,6 +17,9 @@
       <value HashValue="-1601600756">
         <DataName type="string">SeakSensorPictureIndex</DataName>
       </value>
+      <value HashValue="-451782942">
+        <DataName type="string">AoC_HardMode_Enabled</DataName>
+      </value>
       <value HashValue="-376498252">
         <DataName type="string">FamouseValue</DataName>
       </value>
@@ -41,9 +44,12 @@
       <value HashValue="1801612287">
         <DataName type="string">LastSaveTime_Upper</DataName>
       </value>
+      <value HashValue="1836936580">
+        <DataName type="string">IsLogicalDelete</DataName>
+      </value>
     </value>
   </file_list>
   <save_info type="array">
-    <value directory_num="8" is_build_machine="true" revision="9608" />
+    <value directory_num="8" is_build_machine="true" revision="10688" />
   </save_info>
 </yaml>

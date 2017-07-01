@@ -2879,6 +2879,17 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffAkkare_A_11_Far</UnitConfigName>
     </value>
+    <value HashId="1788706820" SRTHash="-1785705645">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt02_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>4651.07f</value>
+        <value>160.6274f</value>
+        <value>-3561.21f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1792291780" Rotate="-0.5235988f" SRTHash="-999207352">
       <_Parameters ChaseRange="200f" IsSuspended="true" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -4689,6 +4700,24 @@
         <value>-3192.19f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffAkkare_A_10_Far</UnitConfigName>
+    </value>
+    <value HashId="-1246329642" OnlyOne="true" Rotate="-3.141593f" SRTHash="-90517131">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_WarpDLC</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1788706820">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>4655f</value>
+        <value>155.4969f</value>
+        <value>-3560.016f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc_long</UnitConfigName>
     </value>
     <value HashId="-1236668951" SRTHash="36616695">
       <_Parameters IsEnemyLiftable="false" SharpWeaponJudgeType="0">

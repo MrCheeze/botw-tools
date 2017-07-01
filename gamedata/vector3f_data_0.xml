@@ -985,5 +985,29 @@
         </value>
       </MinValue>
     </value>
+    <value DeleteRev="-1" HashValue="1374848585" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" ResetType="0">
+      <DataName type="string">WarpDLC_DestPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>5000f</value>
+          <value>1800f</value>
+          <value>4000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-5000f</value>
+          <value>-100f</value>
+          <value>-4000f</value>
+        </value>
+      </MinValue>
+    </value>
   </vector3f_data>
 </yaml>

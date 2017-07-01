@@ -4335,6 +4335,20 @@
       </Translate>
       <UnitConfigName type="string">EnvSeEmitPointBirdTemperate</UnitConfigName>
     </value>
+    <value HashId="674884071" SRTHash="472457573">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" />
+      <Rotate type="array">
+        <value>-0.03569909f</value>
+        <value>0.007699163f</value>
+        <value>0.4247882f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-505.3746f</value>
+        <value>136.2585f</value>
+        <value>1258.152f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="675631287" Rotate="1.992459f" SRTHash="-546601502">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -27215,6 +27229,15 @@
         <value>1216.555f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_A_01</UnitConfigName>
+    </value>
+    <value HashId="-570455370" OnlyOne="true" Rotate="-3.021593f" SRTHash="-1492398587">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>-260.9445f</value>
+        <value>114.4752f</value>
+        <value>1742.737f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Diary_touzoku_01</UnitConfigName>
     </value>
     <value HashId="-565848722" SRTHash="1326967458">
       <Rotate type="array">

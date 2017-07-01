@@ -130,5 +130,11 @@
     <value DeleteRev="-1" HashValue="1382171557" InitValue="0f" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="3.1416f" MinValue="-3.1416f" ResetType="0">
       <DataName type="string">Last_Ridden_Horse_RotY</DataName>
     </value>
+    <value DeleteRev="-1" HashValue="-1043600098" InitValue="0f" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="360f" MinValue="-360f" ResetType="0">
+      <DataName type="string">WarpDLC_DestDegree</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1684378501" InitValue="0f" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="1f" MinValue="0f" ResetType="0">
+      <DataName type="string">CameraZoom</DataName>
+    </value>
   </f32_data>
 </yaml>

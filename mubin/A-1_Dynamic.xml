@@ -1988,7 +1988,7 @@
       <UnitConfigName type="string">Obj_MineralBury_A_01</UnitConfigName>
     </value>
     <value HashId="1400816334" SRTHash="1025799770">
-      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
         <DropTable type="string">IceMeat</DropTable>
       </_Parameters>
       <Rotate type="array">
@@ -5516,7 +5516,7 @@
       <UnitConfigName type="string">Obj_RockSetSnow_A_05</UnitConfigName>
     </value>
     <value HashId="-954828893" SRTHash="826156329">
-      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
+      <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
         <DropTable type="string">HotMaterial</DropTable>
       </_Parameters>
       <Rotate type="array">

@@ -187,6 +187,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowLargeWall_D_01_Far</UnitConfigName>
     </value>
+    <value HashId="60964123" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1587019009">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4322f</value>
+        <value>473.5f</value>
+        <value>-3486.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="74784660" SRTHash="1998443599" Scale="1.5f">
       <Rotate type="array">
         <value>1.855651f</value>
@@ -5987,6 +6004,15 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-1587019009" SRTHash="1599227312">
+      <_Parameters IsHardModeActor="true" />
+      <Translate type="array">
+        <value>-4322f</value>
+        <value>473.5f</value>
+        <value>-3486.1f</value>
+      </Translate>
+      <UnitConfigName type="string">EnemyLookTag</UnitConfigName>
+    </value>
     <value HashId="-1585184462" SRTHash="990839769" Scale="1.2f">
       <Rotate type="array">
         <value>0f</value>
@@ -7078,6 +7104,27 @@
         <value>-3722.564f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-1089103017" Rotate="2.82879f" SRTHash="1163643403">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsHardModeActor="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Lsword_010</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1587019009">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4323.8f</value>
+        <value>474.1529f</value>
+        <value>-3480.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Moriblin_Junior</UnitConfigName>
     </value>
     <value HashId="-1086631128" SRTHash="203025373">
       <Rotate type="array">
@@ -8177,6 +8224,23 @@
         <value>-3202.125f</value>
       </Translate>
       <UnitConfigName type="string">GrassCutTag</UnitConfigName>
+    </value>
+    <value HashId="-566958946" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1089103017">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4323.8f</value>
+        <value>474.1529f</value>
+        <value>-3480.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-552986958" SRTHash="-995292279">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />

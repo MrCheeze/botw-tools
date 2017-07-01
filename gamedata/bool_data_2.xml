@@ -1870,5 +1870,386 @@
     <value DeleteRev="-1" HashValue="289593641" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">IsPlayed_Demo990_2</DataName>
     </value>
+    <value DeleteRev="-1" HashValue="-321189254" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Ready</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="958169769" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Activated</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-692812852" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Finish</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1980358188" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">HasAoCVer2</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1653495141" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_OnceRetire</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-438009888" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Battle</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-754068409" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Retire</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1117547306" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Active</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1882194860" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">Open_MasterSword_FullPower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1937358261" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">FirstTry_100enemy</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1034038022" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">FirstRetireAccess_100enemy</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-910520364" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">FirstWarpHole_100enemy</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-804119687" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ClearScene_1</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1226525379" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ClearScene_2</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1042053717" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ClearScene_3</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1602686986" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ClearScene_4</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-679485600" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ClearScene_5</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1316392666" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ClearScene_6</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="963755596" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ClearScene_7</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1446075427" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ClearScene_8</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-557214901" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ClearScene_9</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-174799202" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo200_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-195646295" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo201_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-166718736" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo202_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2129190298" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo202_1</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-137201465" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo203_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-224563646" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo204_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2074594077" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo205_1</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-254029797" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo207_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1383665982" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Armor_176_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1409288024" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">FirstRetireMessage_100enemy</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="460978702" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_VanishPreist</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-451782942" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">AoC_HardMode_Enabled</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1333535110" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Armor_171_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-907521240" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Armor_172_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="45383821" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Armor_173_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="531738677" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Armor_174_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-217051762" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Armor_171_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1591205335" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Armor_174_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1814714063" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Armor_171_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1041398122" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Armor_174_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1672255862" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsLastPlayHardMode</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-96076527" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo209_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1294508539" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo210_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-75000026" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo208_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-249972180" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo206_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="917116697" InitValue="1" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt01_Ready</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1414764826" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt01_Activated</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="47563315" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt01_Finish</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1308381235" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Obj_WarpDLC</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="811767618" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_ToDeku</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="614227877" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_VanishShield</DataName>
+    </value>
+    <value Category="3" DeleteRev="-1" HashValue="-1918774628" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsRegisteredPictureBook_Enemy_AirOctarock</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-105746356" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsNewPictureBook_Enemy_AirOctarock</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="430816511" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MiniGame100enemy_Ready</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1761960223" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MiniGame100enemy_Activated</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1267958485" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MiniGame100enemy_Finish</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2026077945" InitValue="0" IsEventAssociated="true" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MiniGame100enemy_Battle</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1311429982" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MiniGame100enemy_Retire</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="121769348" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt02_Ready</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-843972837" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt02_Activated</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1940208176" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt02_Finish</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1035960276" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MiniGame100enemy_FinishTimeCount</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1632659096" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Demo209</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1836936580" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsLogicalDelete</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2079843784" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku01_Ready</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2072247916" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku01_Activated</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-213090941" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku01_Finish</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1243610965" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku02_Ready</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-496920467" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku02_Activated</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2109962848" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku02_Finish</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-328665887" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku03_Ready</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="602884013" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku03_Activated</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1318487298" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku03_Finish</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="701483631" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku04_Ready</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="181686830" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku04_Activated</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1146326041" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku04_Finish</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1145221101" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku02_Step01</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="892491760" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku01_Step01</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2110937492" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku04_Step01</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1998016653" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku03_Step01</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-532956457" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku03_Open01</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2033380205" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku03_Open02</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="238410747" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku03_Open03</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-352406578" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku04_Open01</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1945625204" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku04_Open02</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="82891490" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku04_Open03</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-995366848" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt01_Step01</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1243934627" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt02_Step01</DataName>
+    </value>
+    <value Category="7" DeleteRev="-1" HashValue="-909065597" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsRegisteredPictureBook_Enemy_Bokoblin_Gold</DataName>
+    </value>
+    <value Category="7" DeleteRev="-1" HashValue="673227598" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsRegisteredPictureBook_Enemy_Lizalfos_Gold</DataName>
+    </value>
+    <value Category="7" DeleteRev="-1" HashValue="-587515836" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsRegisteredPictureBook_Enemy_Lynel_Gold</DataName>
+    </value>
+    <value Category="7" DeleteRev="-1" HashValue="906337727" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsRegisteredPictureBook_Enemy_Moriblin_Gold</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1882239307" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsNewPictureBook_Enemy_Bokoblin_Gold</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1849634682" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsNewPictureBook_Enemy_Lizalfos_Gold</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2123068103" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsNewPictureBook_Enemy_Lynel_Gold</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1880756617" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsNewPictureBook_Enemy_Moriblin_Gold</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1853386188" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Clear_Junior</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="435585732" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Clear_Middle</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="708946205" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Clear_Senior</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="961418522" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">FirstTry_100enemy_Middle</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="184106691" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">FirstTry_100enemy_Senior</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1574084698" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="2">
+      <DataName type="string">100enemy_ClearDark_1</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-992218656" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="2">
+      <DataName type="string">100enemy_ClearDark_2</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1277378186" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="2">
+      <DataName type="string">100enemy_ClearDark_3</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="767055061" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="2">
+      <DataName type="string">100enemy_ClearDark_4</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1522492483" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="2">
+      <DataName type="string">100enemy_ClearDark_5</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2024951141" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo299_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1313789519" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">GuideP_VisitMark</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="404648924" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo202_2</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1863926602" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo202_3</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1290456012" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsPlayed_Demo211_0</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1977133688" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Active2</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="48208622" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Active3</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1814352462" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Weapon_Sword_080</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-455336668" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">IsGet_Weapon_Sword_081</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1689856345" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_CurrentCourse_Junior</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="322422353" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_CurrentCourse_Middle</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="545320328" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_CurrentCourse_Senior</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="853803310" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">TreasureHunt_Aoc1_RunAutoOrder</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1345233827" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_IsPlayNow_ActivatedDemo</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="980508221" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_KillMasterSwordBaseAttention</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1079618257" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">100enemy_Sheath_BindUpdateSkip</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-289592776" InitValue="1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">NexIsPosTrackUploadAvailableCache</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="773570746" InitValue="1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">NexIsSaveDataUploadAvailableCache</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1723668412" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">Lock_OneHitDungeon002</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-297412398" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">Lock_OneHitDungeon003</DataName>
+    </value>
   </bool_data>
 </yaml>

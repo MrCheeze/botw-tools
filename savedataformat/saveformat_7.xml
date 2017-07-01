@@ -14,6 +14,9 @@
       <value HashValue="-1804382046">
         <DataName type="string">PlayReport_CtrlMode_Free</DataName>
       </value>
+      <value HashValue="-1764999699">
+        <DataName type="string">NexUniqueID_Upper</DataName>
+      </value>
       <value HashValue="-1567712603">
         <DataName type="string">MiniMapDirection</DataName>
       </value>
@@ -38,14 +41,50 @@
       <value HashValue="-814859259">
         <DataName type="string">BalloonTextOnOff</DataName>
       </value>
+      <value HashValue="-693573191">
+        <DataName type="string">PlayReport_AudioChannel_Other</DataName>
+      </value>
+      <value HashValue="-626232789">
+        <DataName type="string">PlayReport_AudioChannel_5_1ch</DataName>
+      </value>
+      <value HashValue="-289592776">
+        <DataName type="string">NexIsPosTrackUploadAvailableCache</DataName>
+      </value>
+      <value HashValue="-233416599">
+        <DataName type="string">NexsSaveDataUploadIntervalHoursCache</DataName>
+      </value>
+      <value HashValue="-167143086">
+        <DataName type="string">NexUniqueID_Lower</DataName>
+      </value>
       <value HashValue="264196425">
         <DataName type="string">TrackBlockFileNumber</DataName>
+      </value>
+      <value HashValue="412898726">
+        <DataName type="string">Option_LatestAoCVerPlayed</DataName>
+      </value>
+      <value HashValue="504178760">
+        <DataName type="string">NexPosTrackUploadIntervalHoursCache</DataName>
+      </value>
+      <value HashValue="575054104">
+        <DataName type="string">NexLastUploadTrackBlockHardIndex</DataName>
       </value>
       <value HashValue="599378626">
         <DataName type="string">MainScreenOnOff</DataName>
       </value>
+      <value HashValue="670047195">
+        <DataName type="string">PlayReport_AudioChannel_Stereo</DataName>
+      </value>
+      <value HashValue="773570746">
+        <DataName type="string">NexIsSaveDataUploadAvailableCache</DataName>
+      </value>
+      <value HashValue="793347381">
+        <DataName type="string">NexLastUploadSaveDataTime</DataName>
+      </value>
       <value HashValue="896275643">
         <DataName type="string">PlayReport_AllPlayTime</DataName>
+      </value>
+      <value HashValue="1255438376">
+        <DataName type="string">NexLastUploadTrackBlockIndex</DataName>
       </value>
       <value HashValue="1353442397">
         <DataName type="string">PlayReport_CtrlMode_Console_Ext</DataName>
@@ -53,20 +92,32 @@
       <value HashValue="1360556738">
         <DataName type="string">AmiiboItemOnOff</DataName>
       </value>
+      <value HashValue="1405761514">
+        <DataName type="string">TrackBlockFileNumber_Hard</DataName>
+      </value>
       <value HashValue="1492326399">
         <DataName type="string">StickSensitivity</DataName>
       </value>
       <value HashValue="1509390061">
         <DataName type="string">TextWindowChange</DataName>
       </value>
+      <value HashValue="1672255862">
+        <DataName type="string">IsLastPlayHardMode</DataName>
+      </value>
       <value HashValue="1910172969">
         <DataName type="string">PlayReport_CtrlMode_Console_FullKey</DataName>
+      </value>
+      <value HashValue="1917402036">
+        <DataName type="string">NexLastUploadTrackBlockTime</DataName>
       </value>
       <value HashValue="1988822082">
         <DataName type="string">PlayReport_CtrlMode_FullKey</DataName>
       </value>
       <value HashValue="2083386549">
         <DataName type="string">PlayReport_PlayTime_Console</DataName>
+      </value>
+      <value HashValue="2111171446">
+        <DataName type="string">PlayReport_AudioChannel_Mono</DataName>
       </value>
       <value HashValue="2115184598">
         <DataName type="string">CameraUpDownReverse</DataName>
@@ -77,6 +128,6 @@
     </value>
   </file_list>
   <save_info type="array">
-    <value directory_num="8" is_build_machine="true" revision="9608" />
+    <value directory_num="8" is_build_machine="true" revision="10688" />
   </save_info>
 </yaml>

@@ -8134,6 +8134,22 @@
       </Translate>
       <UnitConfigName type="string">FldObj_RockBeachWall_A_02_Far</UnitConfigName>
     </value>
+    <value HashId="-1992132993" SRTHash="1706045206">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsHardModeActor="true" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_007</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>3135.5f</value>
+        <value>240.5f</value>
+        <value>181f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Junior</UnitConfigName>
+    </value>
     <value HashId="-1990685831" SRTHash="-2063120303">
       <Translate type="array">
         <value>3531.2f</value>
@@ -14738,6 +14754,23 @@
         <value>320.5374f</value>
       </Translate>
       <UnitConfigName type="string">LookTag</UnitConfigName>
+    </value>
+    <value HashId="-550870" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1992132993">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3135.5f</value>
+        <value>240.5f</value>
+        <value>181f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-328902" SRTHash="-1328534710">
       <_Parameters SharpWeaponJudgeType="0">

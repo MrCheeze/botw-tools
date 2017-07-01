@@ -8701,7 +8701,7 @@
     <value DeleteRev="-1" HashValue="1038449" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">AncientLabo_AncientDoctor001_Wait</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-108597411" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-108597411" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">FindDungeon_1stClear</DataName>
     </value>
     <value DeleteRev="-1" HashValue="2055647798" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -9412,13 +9412,13 @@
     <value DeleteRev="-1" HashValue="1144992850" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">Find_Impa_Finish</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-591939283" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="false" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-591939283" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="false" MinValue="false" ResetType="0">
       <DataName type="string">Find_4Relic_2ndClear</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="1474773339" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="1474773339" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">Find_4Relic_1stClear</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1335668983" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1335668983" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">Find_4Relic_3rdClear</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-1915290513" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -9502,7 +9502,7 @@
     <value DeleteRev="-1" HashValue="332311254" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">DarkWoods_Activated</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1002216514" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1002216514" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">DarkWoods_Finish</DataName>
     </value>
     <value Category="2" DeleteRev="-1" HashValue="191274571" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -9982,7 +9982,7 @@
     <value DeleteRev="-1" HashValue="77302419" InitValue="0" IsEventAssociated="true" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">IsPlayed_Demo118_0</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="89776292" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="89776292" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">IsPlayed_Demo119_0</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-2077743541" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -10021,7 +10021,7 @@
     <value DeleteRev="-1" HashValue="523557913" InitValue="0" IsEventAssociated="true" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">IsPlayed_Demo124_0</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="519484974" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="519484974" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">IsPlayed_Demo125_0</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-2018708955" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -10042,7 +10042,7 @@
     <value DeleteRev="-1" HashValue="205724096" InitValue="0" IsEventAssociated="true" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">IsPlayed_Demo115_0</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="235251609" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="235251609" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">IsPlayed_Demo116_0</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-2048242564" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -10063,7 +10063,7 @@
     <value DeleteRev="-1" HashValue="436150002" InitValue="0" IsEventAssociated="true" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">IsPlayed_Demo121_0</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="465150123" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="465150123" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">IsPlayed_Demo122_0</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-2039572462" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">

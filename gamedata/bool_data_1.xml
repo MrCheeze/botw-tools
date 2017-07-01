@@ -2383,7 +2383,7 @@
     <value DeleteRev="-1" HashValue="-170415629" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MamonoShop_SelfCard</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="1450198373" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="1450198373" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">FirstInHyruleCastleBossRoom</DataName>
     </value>
     <value DeleteRev="-1" HashValue="849703521" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -3304,7 +3304,7 @@
     <value DeleteRev="-1" HashValue="-2134013992" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">Npc_Zora004_Talk</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="346292859" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="346292859" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">giant_dungeon</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-2140783373" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
@@ -4513,7 +4513,7 @@
     <value DeleteRev="-1" HashValue="-1658195644" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">DarkWoods_Necklace_Active</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1217134118" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1217134118" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">DarkWoods_Giant_Clear</DataName>
     </value>
     <value DeleteRev="-1" HashValue="2110620119" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -5293,7 +5293,7 @@
     <value DeleteRev="-1" HashValue="-1296099449" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">Npc_Zora126_MeetFirst</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1363889327" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1363889327" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">Find_4Relic_4thClear</DataName>
     </value>
     <value DeleteRev="-1" HashValue="459868370" InitValue="1" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -10258,16 +10258,16 @@
     <value DeleteRev="-1" HashValue="-1522595049" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">SortTypeArmorPouch</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-936434913" InitValue="1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-936434913" InitValue="1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">BattleArena_Level1</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="1361474213" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="1361474213" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">BattleArena_Level2</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="639713843" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="639713843" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">BattleArena_Level3</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1203382384" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1203382384" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">BattleArena_Level4</DataName>
     </value>
     <value DeleteRev="-1" HashValue="1451126115" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="2">

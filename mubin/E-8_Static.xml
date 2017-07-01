@@ -1752,6 +1752,23 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Bokoblin_Bone_Junior</UnitConfigName>
     </value>
+    <value HashId="878485557" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-950290791">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-567f</value>
+        <value>165f</value>
+        <value>3806f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="883078894" SRTHash="-864419689">
       <LinksToObj type="array">
         <value DestUnitHashId="1410042910">
@@ -6730,6 +6747,22 @@
         <value>3484.531f</value>
       </Translate>
       <UnitConfigName type="string">AnchorSleep</UnitConfigName>
+    </value>
+    <value HashId="-950290791" Rotate="-1.570796f" SRTHash="1585682842">
+      <_Parameters DisableRankUpForHardMode="true" IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_062</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-567f</value>
+        <value>165f</value>
+        <value>3806f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Wizzrobe_Electric</UnitConfigName>
     </value>
     <value HashId="-938320235" SRTHash="-1406304245">
       <Rotate type="array">

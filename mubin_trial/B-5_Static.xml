@@ -1,0 +1,966 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3" LocationPosX="-3500f" LocationPosZ="500f" LocationSize="1000f">
+  <Objs type="array">
+    <value HashId="248126105" SRTHash="194926821">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1202157668">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Scale type="array">
+        <value>1000f</value>
+        <value>2200f</value>
+        <value>1000f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>600f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="368423693" OnlyOne="true" Rotate="2.356194f" SRTHash="-1775256717">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>-3505.8f</value>
+        <value>1001.5f</value>
+        <value>505.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriestDlc006</UnitConfigName>
+    </value>
+    <value HashId="435937330" SRTHash="-479102994">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">100enemy_CurrentCourse_Junior</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="753456110">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1059893903">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="1534460190">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3574.63f</value>
+        <value>965.4844f</value>
+        <value>578.9458f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="491885038" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1376217760">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1002.211f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="605923728" SRTHash="898775966">
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1568023746">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1926.373f</value>
+        <value>1000f</value>
+        <value>608.9085f</value>
+      </Translate>
+      <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="678091953" Rotate="-3.141593f" SRTHash="-2003985285">
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1002.211f</value>
+        <value>500.615f</value>
+      </Translate>
+      <UniqueName type="string">MasterSword</UniqueName>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="693079752" OnlyOne="true" SRTHash="768002577">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1110f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_GoalChain_A_02</UnitConfigName>
+    </value>
+    <value HashId="728557518" SRTHash="-13223922">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1559377214">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3499f</value>
+        <value>1002.211f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="753456110" SRTHash="1663560881">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3573f</value>
+        <value>965.7734f</value>
+        <value>580.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Sword_070</UnitConfigName>
+    </value>
+    <value HashId="787722230" Rotate="0.7853982f" SRTHash="991109459">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3491.4f</value>
+        <value>1000.64f</value>
+        <value>508.6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_hrl_Pillar1x1x4_01</UnitConfigName>
+    </value>
+    <value HashId="804186257" Rotate="-3.141593f" SRTHash="-2003985285">
+      <Translate type="array">
+        <value>-3573f</value>
+        <value>964.7734f</value>
+        <value>581.115f</value>
+      </Translate>
+      <UniqueName type="string">MasterSword</UniqueName>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="833745373" Rotate="1.570796f" SRTHash="377741713">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1070598058">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>983.4124f</value>
+        <value>580.6f</value>
+      </Translate>
+      <UniqueName type="string">Base_2</UniqueName>
+      <UnitConfigName type="string">DgnObj_MasterSwordBase_100Enemy</UnitConfigName>
+    </value>
+    <value HashId="890685975" OnlyOne="true" SRTHash="-456970069">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1006.25f</value>
+        <value>492.3f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriestDlc001</UnitConfigName>
+    </value>
+    <value HashId="912120079" Rotate="-3.141593f" SRTHash="377741713">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="491885038">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1002.211f</value>
+        <value>500f</value>
+      </Translate>
+      <UniqueName type="string">Base_4</UniqueName>
+      <UnitConfigName type="string">DgnObj_MasterSwordBase_100Enemy</UnitConfigName>
+    </value>
+    <value HashId="971666374" SRTHash="-1248064814">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1559377214">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1001307602">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="1609829953">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500.452f</value>
+        <value>1002.492f</value>
+        <value>501.6844f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1103301631" SRTHash="1663560881">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1003.211f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Sword_070</UnitConfigName>
+    </value>
+    <value HashId="1120219264" Rotate="-3.141593f" SRTHash="-2003985285">
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1002.211f</value>
+        <value>500.615f</value>
+      </Translate>
+      <UniqueName type="string">MasterSword</UniqueName>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="1160321106" Rotate="1.570796f" SRTHash="-2003985285">
+      <Translate type="array">
+        <value>-3500.615f</value>
+        <value>983.4124f</value>
+        <value>580.6f</value>
+      </Translate>
+      <UniqueName type="string">MasterSword</UniqueName>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="1177494317" SRTHash="1663560881">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.570796f</value>
+        <value>-1.570796f</value>
+        <value>3.141593f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>984.4124f</value>
+        <value>580.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Sword_070</UnitConfigName>
+    </value>
+    <value HashId="1202157668" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1787865354">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>600f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1329933099" Rotate="-1.570796f" SRTHash="-1221054408">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3510.156f</value>
+        <value>981.2882f</value>
+        <value>580.6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_PriestRoom_A_03</UnitConfigName>
+    </value>
+    <value HashId="1401369788" OnlyOne="true" Rotate="0.2617994f" SRTHash="-70961668">
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>800f</value>
+        <value>498.25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_PriestRoomDome_A_01</UnitConfigName>
+    </value>
+    <value HashId="1412645177" SRTHash="618432096">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">100enemy_CurrentCourse_Senior</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1849237577">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3504.785f</value>
+        <value>982.1651f</value>
+        <value>585.0333f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1534460190" Rotate="-3.141593f" SRTHash="377741713">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1973808204">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3573f</value>
+        <value>964.7734f</value>
+        <value>580.5f</value>
+      </Translate>
+      <UniqueName type="string">Base_1</UniqueName>
+      <UnitConfigName type="string">DgnObj_MasterSwordBase_100Enemy</UnitConfigName>
+    </value>
+    <value HashId="1559377214" SRTHash="-525531866">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
+        <EventFlowEntryName type="string">Demo208_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo208_0</EventFlowName>
+        <TraversePos X="-3500f" Y="1002.211f" Z="500.615f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="678091953">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3499f</value>
+        <value>1002.211f</value>
+        <value>499f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="1607547604" OnlyOne="true" Rotate="-1.570796f" SRTHash="471616345">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>-3492.3f</value>
+        <value>1003.5f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriestDlc005</UnitConfigName>
+    </value>
+    <value HashId="1609829953" Rotate="-3.141593f" SRTHash="377741713">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="728557518">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1002.211f</value>
+        <value>500f</value>
+      </Translate>
+      <UniqueName type="string">Base_3</UniqueName>
+      <UnitConfigName type="string">DgnObj_MasterSwordBase_100Enemy</UnitConfigName>
+    </value>
+    <value HashId="1708874660" OnlyOne="true" Rotate="-0.7853982f" SRTHash="1344201975">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>-3494.2f</value>
+        <value>1005.5f</value>
+        <value>494.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriestDlc003</UnitConfigName>
+    </value>
+    <value HashId="1849237577" SRTHash="1055100512">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1329933099">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3504.636f</value>
+        <value>982.1651f</value>
+        <value>583.9106f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="1948439245" SRTHash="53198274">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">100enemy_CurrentCourse_Senior</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-222912413">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="971666374">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3501.28f</value>
+        <value>1002.688f</value>
+        <value>501.3782f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1973808204" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1059893903">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3573f</value>
+        <value>964.7734f</value>
+        <value>580.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2027842332" SRTHash="996134685">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">100enemy_VanishShield</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-28698190">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3494.5f</value>
+        <value>1000.115f</value>
+        <value>508.2969f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2104095858" Rotate="0.7853982f" SRTHash="1346490943">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3491.4f</value>
+        <value>1000.64f</value>
+        <value>491.4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_hrl_Pillar1x1x4_01</UnitConfigName>
+    </value>
+    <value HashId="-1983440642" OnlyOne="true" SRTHash="420250457">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3572.963f</value>
+        <value>962.6172f</value>
+        <value>573.0215f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_PriestRoom_A_04</UnitConfigName>
+    </value>
+    <value HashId="-1822309981" SRTHash="1400154416">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">100enemy_VanishPreist</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-559325016">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1607547604">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1708874660">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1366849535">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1802638991">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="368423693">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="890685975">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-280921547">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3496.516f</value>
+        <value>1000.23f</value>
+        <value>510.8761f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1802638991" OnlyOne="true" Rotate="1.570796f" SRTHash="811484414">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>-3507.7f</value>
+        <value>1003.5f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriestDlc004</UnitConfigName>
+    </value>
+    <value HashId="-1787865354" SRTHash="404683811">
+      <_Parameters IgnitedLevel="0" PaletteSel="40" TemperatureDirectDay="23f" TemperatureDirectNight="23f" TimeForSkyEnv="10" Weather="0" WeatherEff="-1" />
+      <Translate type="array">
+        <value>-3545.133f</value>
+        <value>-538.1875f</value>
+        <value>475.3087f</value>
+      </Translate>
+      <UnitConfigName type="string">EnduranceEnvChangeTag</UnitConfigName>
+    </value>
+    <value HashId="-1703541670" Rotate="3.141593f" SRTHash="-41884904">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
+        <EventFlowEntryName type="string">Demo207_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo207_0</EventFlowName>
+        <TraversePos X="-3500f" Y="1001.487f" Z="512f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1283278663">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-28698190">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1001.615f</value>
+        <value>508.75f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-1673003498" Rotate="0.7853982f" SRTHash="-154407190">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3508.75f</value>
+        <value>1000.64f</value>
+        <value>508.75f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_hrl_Pillar1x1x4_01</UnitConfigName>
+    </value>
+    <value HashId="-1620077924" SRTHash="-2072424678">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">100enemy_CurrentCourse_Middle</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1177494317">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1441481294">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="833745373">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3501.001f</value>
+        <value>983.8984f</value>
+        <value>582.1539f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1568023746" SRTHash="-1674677089" Scale="900f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>0f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1520045076" SRTHash="843685191">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">100enemy_CurrentCourse_Middle</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1849237577">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3503.77f</value>
+        <value>982.1651f</value>
+        <value>585.1227f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1454021451" SRTHash="-725330409" Scale="180f">
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>-1342f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">DungeonPit</UnitConfigName>
+    </value>
+    <value HashId="-1441481294" Rotate="-1.570796f" SRTHash="-525531866">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
+        <EventFlowEntryName type="string">Demo206_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo206_0</EventFlowName>
+        <TraversePos X="-3500.615f" Y="983.4124f" Z="580.6f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1160321106">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3499f</value>
+        <value>983.4124f</value>
+        <value>581.6f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-1376217760" SRTHash="-525531866">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
+        <EventFlowEntryName type="string">Demo206_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo206_0</EventFlowName>
+        <TraversePos X="-3500f" Y="1002.211f" Z="500.615f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1120219264">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3499f</value>
+        <value>1002.211f</value>
+        <value>499f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-1366849535" OnlyOne="true" Rotate="0.7853982f" SRTHash="-1904948544">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>-3505.8f</value>
+        <value>1005.5f</value>
+        <value>494.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriestDlc002</UnitConfigName>
+    </value>
+    <value HashId="-1328960607" SRTHash="1664086488">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1001307602">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3501f</value>
+        <value>1002.211f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="-1283278663" Rotate="3.141593f" SRTHash="241807053">
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1001.487f</value>
+        <value>512f</value>
+      </Translate>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="-1219649663" SRTHash="1664086488">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="753456110">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3574f</value>
+        <value>964.7734f</value>
+        <value>580.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="-1130632683" SRTHash="1171342200">
+      <_Parameters AutoSave="false" CalcMarginXMinus="0f" CalcMarginXPlus="0f" CalcMarginYMinus="0f" CalcMarginYPlus="0f" CalcMarginZMinus="0f" CalcMarginZPlus="0f" CameraPriority="1" CullingOption="0" ForceCalcInEvent="true" HideOutSide="true" HideRoomNum="-1" IsConnectNeighborArea="false" LoadMarginXMinus="0f" LoadMarginXPlus="0f" LoadMarginYMinus="0f" LoadMarginYPlus="0f" LoadMarginZMinus="0f" LoadMarginZPlus="0f" MarginSize="-1f">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>1200f</value>
+        <value>2400f</value>
+        <value>1200f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>700f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">AreaCulling_InnerHide</UnitConfigName>
+    </value>
+    <value HashId="-1082261144" SRTHash="706876397">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">100enemy_CurrentCourse_Senior</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-924589976">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3496.489f</value>
+        <value>982.0872f</value>
+        <value>575.5776f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1070598058" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1441481294">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>983.4124f</value>
+        <value>580.6f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1059893903" SRTHash="-525531866">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
+        <EventFlowEntryName type="string">Demo206_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo206_0</EventFlowName>
+        <TraversePos X="-3573f" Y="964.7734f" Z="581.115f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="804186257">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3572f</value>
+        <value>964.7734f</value>
+        <value>579.5f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="-1001307602" SRTHash="1663560881">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1003.211f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">Weapon_Sword_070</UnitConfigName>
+    </value>
+    <value HashId="-924589976" SRTHash="-843183405">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1000f</value>
+        <value>517.75f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_PriestRoom_A_03</UnitConfigName>
+    </value>
+    <value HashId="-811465937" SRTHash="-604008272">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">100enemy_Finish</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-760794217">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-222912413">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3501.925f</value>
+        <value>1002.492f</value>
+        <value>501.5562f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-760794217" SRTHash="1807796746">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="971666374">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3501.157f</value>
+        <value>1002.492f</value>
+        <value>501.9519f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="-630831216" SRTHash="1664086488">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1103301631">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3501f</value>
+        <value>1002.211f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="-578130110" Rotate="-1.570796f" SRTHash="1664086488">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1177494317">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>983.4124f</value>
+        <value>579.6f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="-559325016" OnlyOne="true" Rotate="-2.356194f" SRTHash="1695334652">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>-3494.2f</value>
+        <value>1001.5f</value>
+        <value>505.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_DungeonPriestDlc007</UnitConfigName>
+    </value>
+    <value HashId="-481351414" SRTHash="-738732123">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1703541670">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3507.5f</value>
+        <value>1000.115f</value>
+        <value>505.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-280921547" OnlyOne="true" SRTHash="408488480">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-481351414">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1003f</value>
+        <value>511f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_GoalExit</UnitConfigName>
+    </value>
+    <value HashId="-222912413" SRTHash="1918331147">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1103301631">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1376217760">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="912120079">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3501.339f</value>
+        <value>1002.492f</value>
+        <value>500.6805f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-87081167" Rotate="0.7853982f" SRTHash="-1813898196">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3508.6f</value>
+        <value>1000.64f</value>
+        <value>491.25f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_hrl_Pillar1x1x4_01</UnitConfigName>
+    </value>
+    <value HashId="-28698190" OnlyOne="true" SRTHash="-1255009596">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3500f</value>
+        <value>1000f</value>
+        <value>500f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_GoalShield_B</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

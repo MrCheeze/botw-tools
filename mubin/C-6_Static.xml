@@ -85,7 +85,7 @@
       <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
     </value>
     <value HashId="48957650" Rotate="-1.709203f" SRTHash="1582104577">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="13.26885f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="13.26885f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Sword_005</EquipItem1>
         <TraversePos X="-2187.75f" Y="168.5f" Z="1726f" />
       </_Parameters>
@@ -1256,7 +1256,7 @@
       <UnitConfigName type="string">FldObj_GerudoHighlandRock_A_01</UnitConfigName>
     </value>
     <value HashId="374760175" Rotate="1.047198f" SRTHash="-576300948">
-      <_Parameters FortressEatPer="0" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="0" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
       <LinksToObj type="array">
         <value DestUnitHashId="-835022072">
           <DefinitionName type="string">Reference</DefinitionName>
@@ -1705,7 +1705,7 @@
       <UnitConfigName type="string">KorokAnswerResponce</UnitConfigName>
     </value>
     <value HashId="547171185" Rotate="-2.879793f" SRTHash="-2061484115">
-      <_Parameters FortressEatPer="0" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="0" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
       <LinksToObj type="array">
         <value DestUnitHashId="-1663763213">
           <DefinitionName type="string">Reference</DefinitionName>
@@ -2590,7 +2590,7 @@
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
     </value>
     <value HashId="714828466" Rotate="1.047198f" SRTHash="-1230480432">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="7.163274f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="7.163274f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Spear_011</EquipItem1>
         <TraversePos X="-2098.25f" Y="228f" Z="1751.5f" />
       </_Parameters>
@@ -3581,7 +3581,7 @@
       <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
     </value>
     <value HashId="983496084" Rotate="-2.879793f" SRTHash="-596173348">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
       <Translate type="array">
         <value>-2063f</value>
         <value>215.0757f</value>
@@ -5122,7 +5122,7 @@
       <UnitConfigName type="string">FldObj_GerudoHighlandRock_A_01_Far</UnitConfigName>
     </value>
     <value HashId="1443097011" Rotate="1.469217f" SRTHash="-275433630">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Spear_011</EquipItem1>
       </_Parameters>
       <Translate type="array">
@@ -6623,7 +6623,7 @@
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1868231484" SRTHash="-1848205818">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Sword_005</EquipItem1>
         <EquipItem2 type="string">Weapon_Shield_005</EquipItem2>
       </_Parameters>
@@ -7829,7 +7829,7 @@
       <UnitConfigName type="string">EnemyFortressMgrTag</UnitConfigName>
     </value>
     <value HashId="-2035334494" Rotate="1.308997f" SRTHash="-1149730399">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="5.386968f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="5.386968f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Spear_011</EquipItem1>
         <TraversePos X="-2122.75f" Y="228.1201f" Z="1741.863f" />
       </_Parameters>
@@ -7984,7 +7984,7 @@
       <UnitConfigName type="string">FldObj_FallingRock_A_01</UnitConfigName>
     </value>
     <value HashId="-1990373530" Rotate="-2.849202f" SRTHash="749099601">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="13.42805f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="13.42805f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Sword_005</EquipItem1>
         <TraversePos X="-2184.25f" Y="191.8642f" Z="1732.5f" />
       </_Parameters>
@@ -8931,7 +8931,7 @@
       <UnitConfigName type="string">FldObj_GerudoHighlandRock_A_02_Far</UnitConfigName>
     </value>
     <value HashId="-1724282732" Rotate="-3.054326f" SRTHash="-1519449438">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
       <Translate type="array">
         <value>-2067.5f</value>
         <value>214.8646f</value>
@@ -9961,7 +9961,7 @@
       <UnitConfigName type="string">FldObj_CliffOrange_A_07_Far</UnitConfigName>
     </value>
     <value HashId="-1464344775" Rotate="1.3f" SRTHash="550908703">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
         <ArrowName type="string">NormalArrow</ArrowName>
         <EquipItem1 type="string">Weapon_Bow_003</EquipItem1>
       </_Parameters>
@@ -10777,7 +10777,7 @@
       <UnitConfigName type="string">FldObj_GerudoHighlandCliff_A_05_Far</UnitConfigName>
     </value>
     <value HashId="-1221539337" Rotate="3.141593f" SRTHash="528054285">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="12.58968f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="12.58968f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Sword_005</EquipItem1>
         <TraversePos X="-2060f" Y="211.464f" Z="1833f" />
       </_Parameters>
@@ -10924,7 +10924,7 @@
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1191493797" Rotate="-2.073007f" SRTHash="1240934181">
-      <_Parameters FortressEatPer="0" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="0" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
       <LinksToObj type="array">
         <value DestUnitHashId="-827033841">
           <DefinitionName type="string">Reference</DefinitionName>
@@ -11027,7 +11027,7 @@
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-1181704482" Rotate="-1.709203f" SRTHash="-2085075028">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="16.62265f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="16.62265f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Sword_005</EquipItem1>
         <TraversePos X="-2144.75f" Y="209.4434f" Z="1732.5f" />
       </_Parameters>
@@ -11864,7 +11864,7 @@
       <UnitConfigName type="string">Item_Fruit_B</UnitConfigName>
     </value>
     <value HashId="-986817810" Rotate="-0.7238052f" SRTHash="-469657722">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
         <ArrowName type="string">NormalArrow</ArrowName>
         <EquipItem1 type="string">Weapon_Bow_003</EquipItem1>
       </_Parameters>
@@ -12863,7 +12863,7 @@
       <UnitConfigName type="string">IceWall</UnitConfigName>
     </value>
     <value HashId="-664535065" Rotate="-0.4438048f" SRTHash="-505484654">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
         <ArrowName type="string">NormalArrow</ArrowName>
         <EquipItem1 type="string">Weapon_Bow_003</EquipItem1>
       </_Parameters>
@@ -13521,7 +13521,7 @@
       <UnitConfigName type="string">Item_Fruit_B</UnitConfigName>
     </value>
     <value HashId="-462202723" Rotate="0.3490658f" SRTHash="556359044">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="13.22167f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" TraverseRadiusXZ="13.22167f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Sword_005</EquipItem1>
         <TraversePos X="-2077.5f" Y="226.1268f" Z="1776.75f" />
       </_Parameters>
@@ -14021,7 +14021,7 @@
       <UnitConfigName type="string">AnchorAction1</UnitConfigName>
     </value>
     <value HashId="-334602752" Rotate="-2.394602f" SRTHash="546557935">
-      <_Parameters FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="-1" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Spear_011</EquipItem1>
       </_Parameters>
       <Translate type="array">
@@ -14291,7 +14291,7 @@
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="-261928830" Rotate="3.054326f" SRTHash="152590569">
-      <_Parameters FortressEatPer="0" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
+      <_Parameters DisableRankUpForHardMode="true" FortressEatPer="0" IsLazyTraverse="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f" />
       <LinksToObj type="array">
         <value DestUnitHashId="309769056">
           <DefinitionName type="string">Reference</DefinitionName>

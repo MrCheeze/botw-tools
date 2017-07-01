@@ -2430,6 +2430,17 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffDeathMt_D_27</UnitConfigName>
     </value>
+    <value HashId="-1726710027" Rotate="-1.839999f" SRTHash="-1008338734">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Spear_003</DropActor>
+      </_Parameters>
+      <Translate type="array">
+        <value>-577.5f</value>
+        <value>520.5f</value>
+        <value>-2600.5f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
     <value HashId="-1716461435" SRTHash="1841946809">
       <Rotate type="array">
         <value>2.96641f</value>
@@ -3876,6 +3887,15 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffCheeseWall_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="-370567666" SRTHash="-925323864">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <Translate type="array">
+        <value>-577f</value>
+        <value>525.5f</value>
+        <value>-2598.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-349262955" SRTHash="-621523570">
       <Translate type="array">
         <value>-835.002f</value>
@@ -3884,6 +3904,21 @@
       </Translate>
       <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
     </value>
+    <value HashId="-339375723" SRTHash="1447596489">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1726710027">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-576.5f</value>
+        <value>525.5f</value>
+        <value>-2601.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-338336182" SRTHash="79571807">
       <Translate type="array">
         <value>-802.2585f</value>
@@ -3891,6 +3926,27 @@
         <value>-2927.309f</value>
       </Translate>
       <UnitConfigName type="string">DragonDropItemTarget</UnitConfigName>
+    </value>
+    <value HashId="-335842077" SRTHash="1661385582">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">HasAoCVer1</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-339375723">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-370567666">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-578.5f</value>
+        <value>527.5f</value>
+        <value>-2601f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-335508016" Rotate="1.561596f" SRTHash="1420487519">
       <_Parameters FortressEatPer="-1" IsCreateStalPart="true" IsMimicry="false" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">

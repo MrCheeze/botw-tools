@@ -3595,6 +3595,23 @@
       </Translate>
       <UnitConfigName type="string">AnchorAction1</UnitConfigName>
     </value>
+    <value HashId="1372805551" SRTHash="0">
+      <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1992889235">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1137.5f</value>
+        <value>144.5f</value>
+        <value>-2624f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1376258272" SRTHash="518092282" Scale="10f">
       <_Parameters Count="1" DefaultBasicSignal="false" ForceCalcInEvent="true" IsMagneGrabbed="0" IsSendMessage="false" IsStopFromStopTimer="0">
         <ActorName type="string">RemoteBomb2</ActorName>
@@ -5212,6 +5229,22 @@
         <value>-2611.769f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_Snow_03</UnitConfigName>
+    </value>
+    <value HashId="1992889235" Rotate="-0.7853982f" SRTHash="-13014143">
+      <_Parameters DisableRankUpForHardMode="true" IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_061</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1137.5f</value>
+        <value>144.5f</value>
+        <value>-2624f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Wizzrobe_Ice</UnitConfigName>
     </value>
     <value HashId="2020971189" Rotate="2.443461f" SRTHash="-1509687920">
       <LinksToObj type="array">
