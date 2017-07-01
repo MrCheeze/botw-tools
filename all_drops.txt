@@ -569,6 +569,169 @@ Amiibo_After_Burnout2 - x1-2
 
 None - x0
 
+----- Barrel_100enemy -----
+Apple - x3
+ 30.0% - Apple
+
+Meat - x1
+ 50.0% - Seared Steak
+ 50.0% - Roasted Bird Drumstick
+
+Normal - x2
+ 10.0% - Apple
+  5.0% - Hylian Shroom
+
+Burnout - x2
+ 10.0% - Baked Apple
+  5.0% - Toasty Hylian Shroom
+
+Rare_1 - x1
+ 90.0% - Amber
+ 10.0% - Opal
+
+Arrow_1 - x1
+ 85.0% - Arrow x5
+  5.0% - Fire Arrow x5
+  5.0% - Ice Arrow x5
+  5.0% - Shock Arrow x5
+
+RareMaterial_1 - x1
+100.0% - Stamella Shroom
+
+RareMaterial_1_Burnout - x1
+100.0% - Toasty Stamella Shroom
+
+Chuchu_1 - x1
+100.0% - Chuchu
+
+ChuChu_Low - x1
+ 50.0% - Chuchu
+ 10.0% - Arrow x5
+ 10.0% - Apple
+
+ChuChu_Ice - x1
+ 60.0% - Ice Chuchu
+  5.0% - Fire Arrow x5
+ 10.0% - Arrow x5
+ 10.0% - Wildberry
+
+ChuChu_Electric - x1
+ 60.0% - Electric Chuchu
+ 10.0% - Arrow x5
+  5.0% - Shock Arrow x5
+ 10.0% - Voltfruit
+
+HotMaterial - x1-2
+100.0% - Sunshroom
+
+HotMaterial_Burnout - x1-2
+100.0% - Toasty Sunshroom
+
+IceMeat - x1
+ 30.0% - Icy Meat
+  5.0% - Icy Prime Meat
+ 20.0% - Frozen Bird Drumstick
+ 10.0% - Frozen Hearty Salmon
+ 20.0% - Frozen Trout
+
+IceMeat_Burnout - x1
+ 30.0% - Seared Steak
+  5.0% - Seared Prime Steak
+ 20.0% - Roasted Bird Drumstick
+ 10.0% - Roasted Hearty Salmon
+ 20.0% - Roasted Trout
+
+HotMaterial_All - x1-2
+ 20.0% - Sunshroom
+ 30.0% - Warm Safflina
+ 50.0% - Spicy Pepper
+
+HotMaterial_All_Burnout - x1-2
+ 20.0% - Toasty Sunshroom
+ 50.0% - Charred Pepper
+
+Amiibo - x1-2
+ 38.0% - Arrow
+  2.0% - Arrow x10
+ 10.0% - Arrow x5
+ 50.0% - Apple
+
+Amiibo_Burnout - x1-2
+ 50.0% - Baked Apple
+
+Amiibo_After - x1-2
+ 20.0% - Arrow
+  2.0% - Arrow x10
+  8.0% - Arrow x5
+ 20.7% - Apple
+
+Amiibo_After2 - x1-2
+ 40.0% - Green Rupee
+ 35.0% - Blue Rupee
+ 19.7% - Red Rupee
+  4.0% - Purple Rupee
+  1.0% - Silver Rupee
+  0.3% - Gold Rupee
+
+Amiibo_After_Burnout - x1-2
+ 40.0% - Baked Apple
+
+Amiibo_After_Burnout2 - x1-2
+ 40.0% - Green Rupee
+ 35.0% - Blue Rupee
+ 19.7% - Red Rupee
+  4.0% - Purple Rupee
+  1.0% - Silver Rupee
+  0.3% - Gold Rupee
+
+None - x0
+
+ArrowWood - x1
+100.0% - Arrow x5
+
+ArrowWood_Burnout - x0
+
+100enemy_Mushroom_Burnout - x1-2
+ 20.0% - Toasty Hylian Shroom
+ 15.0% - Toasty Endura Shroom
+ 15.0% - Toasty Stamella Shroom
+ 15.0% - Toasty Rushroom
+ 15.0% - Toasty Razorshroom
+ 10.0% - Toasty Ironshroom
+ 10.0% - Toasty Silent Shroom
+
+100enemy_Fruits_Burnout - x1-2
+ 20.0% - Baked Apple
+ 20.0% - Baked Palm Fruit
+ 20.0% - Roasted Wildberry
+ 20.0% - Roasted Lotus Seeds
+ 20.0% - Roasted Mighty Bananas
+
+100enemy_Fruits - x1-2
+ 20.0% - Apple
+ 20.0% - Palm Fruit
+ 20.0% - Wildberry
+ 20.0% - Fleet-Lotus Seeds
+ 20.0% - Mighty Bananas
+
+100enemy_Mushroom - x1-2
+ 20.0% - Hylian Shroom
+ 15.0% - Endura Shroom
+ 15.0% - Stamella Shroom
+ 15.0% - Rushroom
+ 15.0% - Razorshroom
+ 10.0% - Ironshroom
+ 10.0% - Silent Shroom
+
+ArrowFire - x1
+100.0% - Fire Arrow x5
+
+ArrowIce - x1
+100.0% - Ice Arrow x5
+
+ArrowElectric - x1
+100.0% - Shock Arrow x5
+
 ----- Barrel_CDungeon_A -----
 Normal - x1
  30.0% - Green Rupee
@@ -862,6 +1025,90 @@ Normal - x1
  33.0% - Ruby
  33.0% - Sapphire
   1.0% - Diamond
+
+Normal2 - x2-3
+ 20.0% - Amber
+  5.0% - Opal
+  1.0% - Topaz
+  1.0% - Ruby
+  1.0% - Sapphire
+  1.0% - Diamond
+
+Normal3 - x1
+100.0% - Bokoblin Guts
+
+Normal4 - x2-3
+100.0% - Bokoblin Fang
+
+Normal5 - x1
+100.0% - Bokoblin Horn
+
+----- Enemy_Bokoblin_Gold -----
+FireArrow - x2-3
+ 50.0% - Fire Arrow x10
+ 50.0% - Bokoblin Fang
+
+IceArrow - x2-3
+ 50.0% - Ice Arrow x10
+ 50.0% - Bokoblin Fang
+
+ElectricArrow - x2-3
+ 50.0% - Shock Arrow x10
+ 50.0% - Bokoblin Fang
+
+BombArrow_A - x2-3
+ 50.0% - Bomb Arrow x10
+ 50.0% - Bokoblin Fang
+
+FireArrow2 - x1-2
+ 30.0% - Amber
+ 20.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  5.0% - Diamond
+
+IceArrow2 - x1-2
+ 30.0% - Amber
+ 20.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  5.0% - Diamond
+
+ElectricArrow2 - x1-2
+ 30.0% - Amber
+ 20.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  5.0% - Diamond
+
+BombArrow_A2 - x1-2
+ 30.0% - Amber
+ 20.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  5.0% - Diamond
+
+FireArrow3 - x1
+100.0% - Bokoblin Guts
+
+IceArrow3 - x1
+100.0% - Bokoblin Guts
+
+ElectricArrow3 - x1
+100.0% - Bokoblin Guts
+
+BombArrow_A3 - x1
+100.0% - Bokoblin Guts
+
+Normal - x1
+ 32.0% - Topaz
+ 32.0% - Ruby
+ 32.0% - Sapphire
+  4.0% - Diamond
 
 Normal2 - x2-3
  20.0% - Amber
@@ -1562,6 +1809,94 @@ FireArrow2 - x1
 FireArrow3 - x2
 100.0% - Lizalfos Talon
 
+----- Enemy_Lizalfos_Gold -----
+Normal - x1-3
+ 32.0% - Topaz
+ 32.0% - Ruby
+ 32.0% - Sapphire
+  4.0% - Diamond
+
+Normal2 - x2
+ 15.0% - Amber
+  8.0% - Opal
+  2.0% - Topaz
+  2.0% - Ruby
+  2.0% - Sapphire
+  1.0% - Diamond
+
+Normal3 - x1
+100.0% - Lizalfos Tail
+
+Normal4 - x2
+100.0% - Lizalfos Talon
+
+Normal5 - x1
+100.0% - Lizalfos Horn
+
+FireArrow - x2
+ 80.0% - Fire Arrow x10
+ 20.0% - Lizalfos Talon
+
+IceArrow - x2
+ 80.0% - Ice Arrow x10
+ 20.0% - Lizalfos Talon
+
+ElectricArrow - x2
+ 80.0% - Shock Arrow x10
+ 20.0% - Lizalfos Talon
+
+BombArrow_A - x2
+ 80.0% - Bomb Arrow x10
+ 20.0% - Lizalfos Talon
+
+ZoraSpecial - x2
+ 70.0% - Arrow x5
+ 30.0% - Lizalfos Talon
+
+FireArrow2 - x1-2
+ 25.0% - Amber
+ 24.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  6.0% - Diamond
+
+IceArrow2 - x1-2
+ 25.0% - Amber
+ 24.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  6.0% - Diamond
+
+ElectricArrow2 - x1-2
+ 25.0% - Amber
+ 24.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  6.0% - Diamond
+
+BombArrow_A2 - x1-2
+ 25.0% - Amber
+ 24.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  6.0% - Diamond
+
+FireArrow3 - x1
+100.0% - Lizalfos Tail
+
+IceArrow3 - x1
+100.0% - Lizalfos Tail
+
+ElectricArrow3 - x1
+100.0% - Lizalfos Tail
+
+BombArrow_A3 - x1
+100.0% - Lizalfos Tail
+
 ----- Enemy_Lizalfos_Guard_Middle -----
 Normal - x1
  50.0% - Lizalfos Tail
@@ -1738,6 +2073,91 @@ BombArrow_A3 - x1
 BombArrow_A4 - x2
 100.0% - Lynel Horn
 
+----- Enemy_Lynel_Gold -----
+Normal - x2-3
+ 30.0% - Topaz
+ 25.0% - Ruby
+ 25.0% - Sapphire
+ 10.0% - Diamond
+ 10.0% - Star Fragment
+
+Normal2 - x1
+100.0% - Lynel Guts
+
+Normal3 - x3-4
+100.0% - Lynel Hoof
+
+Normal4 - x2
+100.0% - Lynel Horn
+
+FireArrow - x4
+ 50.0% - Fire Arrow x10
+ 50.0% - Lynel Hoof
+
+FireArrow2 - x2-3
+ 30.0% - Topaz
+ 25.0% - Sapphire
+ 25.0% - Ruby
+ 10.0% - Diamond
+ 10.0% - Star Fragment
+
+FireArrow3 - x1
+100.0% - Lynel Guts
+
+FireArrow4 - x2
+100.0% - Lynel Horn
+
+IceArrow - x4
+ 50.0% - Ice Arrow x10
+ 50.0% - Lynel Hoof
+
+IceArrow2 - x2-3
+ 30.0% - Topaz
+ 25.0% - Sapphire
+ 25.0% - Ruby
+ 10.0% - Diamond
+ 10.0% - Star Fragment
+
+IceArrow3 - x1
+100.0% - Lynel Guts
+
+IceArrow4 - x2
+100.0% - Lynel Horn
+
+ElectricArrow - x4
+ 50.0% - Shock Arrow x10
+ 50.0% - Lynel Hoof
+
+ElectricArrow2 - x2-3
+ 30.0% - Topaz
+ 25.0% - Sapphire
+ 25.0% - Ruby
+ 10.0% - Diamond
+ 10.0% - Star Fragment
+
+ElectricArrow3 - x1
+100.0% - Lynel Guts
+
+ElectricArrow4 - x2
+100.0% - Lynel Horn
+
+BombArrow_A - x4
+ 50.0% - Bomb Arrow x10
+ 50.0% - Lynel Hoof
+
+BombArrow_A2 - x2-3
+ 30.0% - Topaz
+ 25.0% - Sapphire
+ 25.0% - Ruby
+ 10.0% - Diamond
+ 10.0% - Star Fragment
+
+BombArrow_A3 - x1
+100.0% - Lynel Guts
+
+BombArrow_A4 - x2
+100.0% - Lynel Horn
+
 ----- Silver Moblin -----
 Normal - x1
  30.0% - Topaz
@@ -1822,6 +2242,90 @@ ElectricArrow3 - x1
 BombArrow_A3 - x1
 100.0% - Moblin Guts
 
+----- Enemy_Moriblin_Gold -----
+Normal - x1
+ 28.0% - Topaz
+ 28.0% - Ruby
+ 28.0% - Sapphire
+ 16.0% - Diamond
+
+Normal2 - x3-4
+ 10.0% - Amber
+  6.0% - Opal
+  1.0% - Topaz
+  1.0% - Ruby
+  1.0% - Sapphire
+  1.0% - Diamond
+
+Normal3 - x1
+100.0% - Moblin Guts
+
+Normal4 - x3-4
+100.0% - Moblin Fang
+
+Normal5 - x1
+100.0% - Moblin Horn
+
+FireArrow - x2-3
+ 50.0% - Fire Arrow x10
+ 50.0% - Moblin Fang
+
+IceArrow - x2-3
+ 50.0% - Ice Arrow x10
+ 50.0% - Moblin Fang
+
+ElectricArrow - x2-3
+ 50.0% - Shock Arrow x10
+ 50.0% - Moblin Fang
+
+BombArrow_A - x2-3
+ 50.0% - Bomb Arrow x10
+ 50.0% - Moblin Fang
+
+FireArrow2 - x2
+ 30.0% - Amber
+ 20.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  5.0% - Diamond
+
+IceArrow2 - x2
+ 30.0% - Amber
+ 20.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  5.0% - Diamond
+
+ElectricArrow2 - x2
+ 30.0% - Amber
+ 20.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  5.0% - Diamond
+
+BombArrow_A2 - x2
+ 30.0% - Amber
+ 20.0% - Opal
+ 20.0% - Topaz
+ 15.0% - Sapphire
+ 10.0% - Ruby
+  5.0% - Diamond
+
+FireArrow3 - x1
+100.0% - Moblin Guts
+
+IceArrow3 - x1
+100.0% - Moblin Guts
+
+ElectricArrow3 - x1
+100.0% - Moblin Guts
+
+BombArrow_A3 - x1
+100.0% - Moblin Guts
+
 ----- Molduga -----
 Normal - x2-4
 100.0% - Molduga Guts
@@ -1875,14 +2379,14 @@ Normal - x8-12
   2.5% - Ancient Core
   0.5% - Giant Ancient Core
 
------ Guardian_A_Leg -----
+----- Guardian Stalker -----
 Normal - x1-2
  55.0% - Ancient Screw
  30.0% - Ancient Spring
  10.0% - Ancient Gear
   5.0% - Ancient Shaft
 
------ Guardian_C_Propeller -----
+----- Guardian Skywatcher -----
 Normal - x2-3
  50.0% - Ancient Gear
  50.0% - Ancient Shaft
@@ -2175,8 +2679,8 @@ BigHit(Parasail) - x1
   1.0% - Diamond
   1.0% - Star Fragment
   5.0% - Luminous Stone
- 20.0% - Soldier’s Bow
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Bow
+ 20.0% - Soldier's Shield
 
 BigHit(Remain) - x1
  20.0% - Opal
@@ -2186,8 +2690,8 @@ BigHit(Remain) - x1
   2.0% - Diamond
   2.0% - Star Fragment
   6.0% - Luminous Stone
- 20.0% - Soldier’s Bow
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Bow
+ 20.0% - Soldier's Shield
 
 GreatHit(Normal) - x1
  40.0% - Amber
@@ -2273,7 +2777,7 @@ BigHit(Parasail) - x1
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Shield
  20.0% - Soldier's Broadsword
 
 BigHit(Remain) - x1
@@ -2281,7 +2785,7 @@ BigHit(Remain) - x1
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Shield
  20.0% - Soldier's Broadsword
 
 GreatHit(Normal) - x1
@@ -2332,7 +2836,7 @@ BigHit(Normal) - x1
  10.0% - Ice Arrow x5
  10.0% - Shock Arrow x5
  10.0% - Bomb Arrow x5
- 30.0% - Soldier’s Bow
+ 30.0% - Soldier's Bow
  30.0% - Traveler's Bow
 
 BigHit(Parasail) - x1
@@ -2340,14 +2844,14 @@ BigHit(Parasail) - x1
  20.0% - Ice Arrow x5
  20.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 25.0% - Soldier’s Bow
+ 25.0% - Soldier's Bow
 
 BigHit(Remain) - x1
  20.0% - Fire Arrow x5
  20.0% - Ice Arrow x5
  20.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 25.0% - Soldier’s Bow
+ 25.0% - Soldier's Bow
 
 GreatHit(Normal) - x1
 
@@ -2442,7 +2946,7 @@ BigHit(Normal) - x1
   1.0% - Star Fragment
   3.0% - Luminous Stone
  20.0% - Traveler's Shield
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Shield
 
 BigHit(Parasail) - x1
  15.0% - Amber
@@ -2453,7 +2957,7 @@ BigHit(Parasail) - x1
   1.0% - Diamond
   1.0% - Star Fragment
   5.0% - Luminous Stone
- 30.0% - Soldier’s Shield
+ 30.0% - Soldier's Shield
 
 BigHit(Remain) - x1
  15.0% - Amber
@@ -2464,7 +2968,7 @@ BigHit(Remain) - x1
   1.0% - Diamond
   1.0% - Star Fragment
   5.0% - Luminous Stone
- 30.0% - Soldier’s Shield
+ 30.0% - Soldier's Shield
 
 GreatHit(Normal) - x1
 
@@ -2724,7 +3228,7 @@ BigHit(Parasail) - x1
   2.0% - Diamond
   2.0% - Star Fragment
   5.0% - Luminous Stone
- 32.0% - Soldier’s Bow
+ 32.0% - Soldier's Bow
 
 BigHit(Remain) - x1
   5.0% - Amber
@@ -2735,7 +3239,7 @@ BigHit(Remain) - x1
   2.0% - Diamond
   2.0% - Star Fragment
   5.0% - Luminous Stone
- 32.0% - Soldier’s Bow
+ 32.0% - Soldier's Bow
 
 GreatHit(Normal) - x1
 
@@ -2768,7 +3272,7 @@ BigHit(Parasail) - x1
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Shield
  20.0% - Soldier's Broadsword
 
 BigHit(Remain) - x1
@@ -2776,7 +3280,7 @@ BigHit(Remain) - x1
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Shield
  20.0% - Soldier's Broadsword
 
 GreatHit(Normal) - x1
@@ -2820,7 +3324,7 @@ BigHit(Parasail) - x1
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Shield
  20.0% - Soldier's Broadsword
 
 BigHit(Remain) - x1
@@ -2828,7 +3332,7 @@ BigHit(Remain) - x1
  15.0% - Ice Arrow x5
  15.0% - Shock Arrow x5
  15.0% - Bomb Arrow x5
- 20.0% - Soldier’s Shield
+ 20.0% - Soldier's Shield
  20.0% - Soldier's Broadsword
 
 GreatHit(Normal) - x1
@@ -2880,7 +3384,7 @@ BigHit(Normal) - x1
   1.0% - Star Fragment
   5.0% - Luminous Stone
  30.0% - Traveler's Shield
-  5.0% - Soldier’s Shield
+  5.0% - Soldier's Shield
 
 BigHit(Parasail) - x1
  10.0% - Amber
@@ -2891,7 +3395,7 @@ BigHit(Parasail) - x1
   2.0% - Diamond
   2.0% - Star Fragment
   5.0% - Luminous Stone
- 25.0% - Soldier’s Shield
+ 25.0% - Soldier's Shield
 
 BigHit(Remain) - x1
  10.0% - Amber
@@ -2902,7 +3406,7 @@ BigHit(Remain) - x1
   2.0% - Diamond
   2.0% - Star Fragment
   5.0% - Luminous Stone
- 25.0% - Soldier’s Shield
+ 25.0% - Soldier's Shield
 
 GreatHit(Normal) - x0
 
@@ -3616,7 +4120,7 @@ Amiibo_After_Burnout2 - x1-2
   3.0% - Silver Rupee
   0.3% - Gold Rupee
 
------ Kibako_Contain_02 -----
+----- Iron Box -----
 Material1 - x1-2
  15.0% - Arrow x5
  60.0% - Apple
@@ -3768,6 +4272,331 @@ Ordin2 - x1-2
  20.0% - Blue Rupee
  10.0% - Red Rupee
   3.0% - Purple Rupee
+
+----- Kibako_Contain_100enemy -----
+Normal - x1-4
+ 55.0% - Apple
+ 10.0% - Acorn
+
+Normal2 - x1-2
+ 50.0% - Arrow
+  1.0% - Arrow x10
+  6.0% - Arrow x5
+
+Burnout - x1-2
+ 75.0% - Baked Apple
+ 25.0% - Roasted Acorn
+
+Material1 - x1-2
+ 15.0% - Arrow x5
+ 60.0% - Apple
+  2.0% - Arrow x10
+
+Fruit1 - x3-4
+ 50.0% - Apple
+ 23.0% - Palm Fruit
+ 10.0% - Voltfruit
+  2.0% - Hearty Durian
+ 10.0% - Hydromelon
+  5.0% - Mighty Bananas
+
+Fruit1_Burnout - x1-2
+ 50.0% - Baked Apple
+ 23.0% - Baked Palm Fruit
+ 10.0% - Roasted Wildberry
+  5.0% - Roasted Voltfruit
+  2.0% - Roasted Hearty Durian
+  5.0% - Roasted Hydromelon
+  5.0% - Roasted Mighty Bananas
+
+Ore1 - x1
+  1.0% - Diamond
+  2.0% - Ruby
+  2.0% - Sapphire
+  2.0% - Topaz
+  7.0% - Opal
+ 40.0% - Amber
+ 16.0% - Rock Salt
+ 30.0% - Flint
+
+Rare1 - x2-3
+  3.0% - Diamond
+ 10.0% - Sapphire
+ 10.0% - Ruby
+ 10.0% - Topaz
+ 17.0% - Opal
+ 30.0% - Amber
+ 20.0% - Flint
+
+Rare1_Burnout - x1-2
+  0.0% - Diamond
+  0.0% - Sapphire
+  0.0% - Ruby
+  0.0% - Topaz
+  0.0% - Opal
+  0.0% - Amber
+  0.0% - Flint
+
+Arrow1 - x1
+ 43.0% - Arrow
+ 20.0% - Arrow x5
+  8.0% - Fire Arrow
+  3.0% - Fire Arrow x5
+  8.0% - Ice Arrow
+  3.0% - Ice Arrow x5
+  8.0% - Shock Arrow
+  3.0% - Shock Arrow x5
+  4.0% - Arrow x10
+
+Arrow1_Burnout - x0
+
+100drop - x4
+ 50.0% - Apple
+ 50.0% - Arrow x5
+
+NormalHigh - x1-4
+ 40.0% - Apple
+ 10.0% - Acorn
+
+NormalHigh2 - x1-2
+ 50.0% - Arrow
+  1.0% - Arrow x10
+  5.0% - Arrow x5
+
+NormalHigh_Burnout - x1-2
+ 70.0% - Baked Apple
+ 30.0% - Roasted Acorn
+
+NoDrop - x0
+
+Gerudo - x1-3
+ 30.0% - Palm Fruit
+ 15.0% - Wildberry
+ 10.0% - Voltfruit
+
+Gerudo_Burnout - x1-3
+ 30.0% - Baked Palm Fruit
+ 15.0% - Roasted Wildberry
+ 10.0% - Roasted Voltfruit
+
+Tabanta - x1-4
+ 35.0% - Wildberry
+ 15.0% - Chickaloo Tree Nut
+ 30.0% - Arrow
+  2.0% - Arrow x10
+  5.0% - Arrow x5
+
+Tabanta_Burnout - x1-3
+ 50.0% - Roasted Wildberry
+ 50.0% - Roasted Tree Nut
+
+Ordin - x2-4
+ 15.0% - Amber
+ 20.0% - Flint
+  5.0% - Opal
+ 15.0% - Seared Steak
+  5.0% - Seared Prime Steak
+ 10.0% - Roasted Bird Drumstick
+  5.0% - Roasted Bird Thigh
+ 10.0% - Toasty Endura Shroom
+ 15.0% - Toasty Stamella Shroom
+
+Ordin_Burnout - x2-4
+ 15.0% - Amber
+ 20.0% - Flint
+  5.0% - Opal
+ 15.0% - Seared Steak
+  5.0% - Seared Prime Steak
+ 10.0% - Roasted Bird Drumstick
+  5.0% - Roasted Bird Thigh
+ 10.0% - Toasty Endura Shroom
+ 15.0% - Toasty Stamella Shroom
+
+Normal_First - x1-3
+ 63.0% - Arrow
+  2.0% - Arrow x10
+ 15.0% - Arrow x5
+ 20.0% - Roasted Bass
+
+Normal_First_Burnout - x1-3
+ 20.0% - Roasted Bass
+
+Castle_Arrow - x2-3
+ 10.0% - Arrow
+  6.0% - Arrow x10
+ 20.0% - Arrow x5
+ 10.0% - Fire Arrow
+  5.0% - Fire Arrow x5
+  1.0% - Fire Arrow x10
+ 10.0% - Ice Arrow
+  5.0% - Ice Arrow x5
+  1.0% - Ice Arrow x10
+ 10.0% - Shock Arrow
+  5.0% - Shock Arrow x5
+  1.0% - Shock Arrow x10
+ 10.0% - Bomb Arrow
+  5.0% - Bomb Arrow x5
+  1.0% - Bomb Arrow x10
+
+Castle_Arrow_Burnout - x0
+
+Castle_Mushroom - x3-4
+ 20.0% - Hylian Shroom
+ 10.0% - Endura Shroom
+ 10.0% - Stamella Shroom
+ 10.0% - Hearty Truffle
+ 10.0% - Big Hearty Truffle
+ 10.0% - Rushroom
+ 10.0% - Razorshroom
+ 10.0% - Ironshroom
+ 10.0% - Silent Shroom
+
+Castle_Mushroom_Burnout - x3-4
+ 20.0% - Toasty Hylian Shroom
+ 10.0% - Toasty Endura Shroom
+ 10.0% - Toasty Stamella Shroom
+ 10.0% - Toasted Hearty Truffle
+ 10.0% - Toasted Big Hearty Truffle
+ 10.0% - Toasty Rushroom
+ 10.0% - Toasty Razorshroom
+ 10.0% - Toasty Ironshroom
+ 10.0% - Toasty Silent Shroom
+
+Castle_Fruits - x3-4
+ 20.0% - Apple
+ 20.0% - Palm Fruit
+ 20.0% - Wildberry
+ 10.0% - Hearty Durian
+ 10.0% - Fleet-Lotus Seeds
+ 20.0% - Mighty Bananas
+
+Castle_Fruits_Burnout - x3-4
+ 20.0% - Baked Apple
+ 20.0% - Baked Palm Fruit
+ 20.0% - Roasted Wildberry
+ 10.0% - Roasted Hearty Durian
+ 10.0% - Roasted Lotus Seeds
+ 20.0% - Roasted Mighty Bananas
+
+Castle_Plants - x3-4
+ 20.0% - Hyrule Herb
+ 10.0% - Hearty Radish
+  5.0% - Big Hearty Radish
+ 20.0% - Swift Carrot
+  5.0% - Endura Carrot
+ 10.0% - Swift Violet
+ 10.0% - Mighty Thistle
+ 10.0% - Armoranth
+ 10.0% - Blue Nightshade
+
+Castle_Plants_Burnout - x3-4
+ 10.0% - Roasted Radish
+  5.0% - Roasted Big Radish
+ 20.0% - Roasted Swift Carrot
+  5.0% - Roasted Endura Carrot
+ 10.0% - Roasted Mighty Thistle
+ 10.0% - Roasted Armoranth
+
+Amiibo - x2-3
+ 25.0% - Arrow
+  5.0% - Arrow x10
+ 20.0% - Arrow x5
+ 50.0% - Apple
+
+Amiibo_Burnout - x2-3
+ 50.0% - Baked Apple
+
+Amiibo_After - x1-2
+ 20.0% - Arrow
+ 10.0% - Arrow x5
+ 20.0% - Apple
+  5.0% - Arrow x10
+
+Amiibo_After2 - x1-2
+ 40.0% - Green Rupee
+ 30.0% - Blue Rupee
+ 20.0% - Red Rupee
+  6.7% - Purple Rupee
+  3.0% - Silver Rupee
+  0.3% - Gold Rupee
+
+Amiibo_After_Burnout - x1-2
+ 40.0% - Baked Apple
+
+Amiibo_After_Burnout2 - x1-2
+ 40.0% - Green Rupee
+ 30.0% - Blue Rupee
+ 20.0% - Red Rupee
+  6.7% - Purple Rupee
+  3.0% - Silver Rupee
+  0.3% - Gold Rupee
+
+RawMeat - x2
+ 30.0% - Raw Meat
+ 20.0% - Raw Prime Meat
+ 30.0% - Raw Bird Drumstick
+ 20.0% - Raw Bird Thigh
+
+RawMeat_Burnout - x2
+ 30.0% - Seared Steak
+ 20.0% - Seared Prime Steak
+ 30.0% - Roasted Bird Drumstick
+ 20.0% - Seared Prime Steak
+
+ArrowWood - x2
+ 10.0% - Arrow x10
+ 50.0% - Arrow x5
+ 40.0% - Arrow
+
+ArrowWood_Burnout - x0
+
+100enemy_Fruits - x2-3
+ 20.0% - Apple
+ 20.0% - Palm Fruit
+ 20.0% - Wildberry
+ 20.0% - Fleet-Lotus Seeds
+ 20.0% - Mighty Bananas
+
+100enemy_Mushroom - x2-3
+ 20.0% - Hylian Shroom
+ 15.0% - Endura Shroom
+ 15.0% - Stamella Shroom
+ 10.0% - Rushroom
+ 15.0% - Razorshroom
+ 15.0% - Ironshroom
+ 10.0% - Silent Shroom
+
+100enemy_Mushroom_Burnout - x2-3
+ 20.0% - Toasty Hylian Shroom
+ 15.0% - Toasty Endura Shroom
+ 15.0% - Toasty Stamella Shroom
+ 10.0% - Toasty Rushroom
+ 15.0% - Toasty Razorshroom
+ 15.0% - Toasty Ironshroom
+ 10.0% - Toasty Silent Shroom
+
+100enemy_Fruits_Burnout - x2-3
+ 20.0% - Baked Apple
+ 20.0% - Baked Palm Fruit
+ 20.0% - Roasted Wildberry
+ 20.0% - Roasted Lotus Seeds
+ 20.0% - Roasted Mighty Bananas
+
+ArrowFire - x2
+ 60.0% - Fire Arrow x5
+ 40.0% - Fire Arrow
+
+ArrowIce - x2
+ 60.0% - Ice Arrow x5
+ 40.0% - Ice Arrow
+
+ArrowElectric - x2
+ 60.0% - Shock Arrow x5
+ 40.0% - Shock Arrow
+
+ArrowBomb - x2
+ 60.0% - Bomb Arrow x5
+ 40.0% - Bomb Arrow
 
 ----- Kokko -----
 Normal - x1
@@ -4339,7 +5168,7 @@ Normal - x1
   0.3% - Fairy
  10.0% - Restless Cricket
   5.0% - Hot-Footed Frog
-  5.0% - Animal_Insect_KimoP
+  5.0% - Removed(?) Insect
 
 Rupee - x1
  45.0% - Green Rupee
@@ -4360,7 +5189,7 @@ Ore - x1
 None - x0
 
 Kimo - x1
-100.0% - Animal_Insect_KimoP
+100.0% - Removed(?) Insect
 
 Rupee_High - x1
  50.0% - Blue Rupee
@@ -4372,7 +5201,7 @@ Rupee_High - x1
 Saihate - x1
  10.0% - Hightail Lizard
   2.0% - Hearty Lizard
- 30.0% - Animal_Insect_KimoP
+ 30.0% - Removed(?) Insect
   2.0% - Hearty Blueshell Snail
  10.0% - Razorclaw Crab
  10.0% - Ironshell Crab
@@ -4398,7 +5227,7 @@ RustSpear - x1
 
 RustShield - x1
  50.0% - Traveler's Shield
- 30.0% - Soldier’s Shield
+ 30.0% - Soldier's Shield
  15.0% - Knight's Shield
   5.0% - Royal Shield
 
@@ -4593,4 +5422,3 @@ Normal - x1-2
 
 Normal2 - x1
 100.0% - Wood
-
