@@ -2,7 +2,7 @@ When using an amiibo, various items will appear on the ground, along with a sing
 
 For a BigHit or GreatHit (i.e. for a chest item), the item you receive depends partly on your current progress in the game. Getting the Paraglider upgrades you from the Normal list to the Parasail list, and beating a single Divine Beast upgrades you to the Remain list.
 
------ Ganondorf -----
+----- Ganondorf (Item_Amiibo_DropTable_001) -----
 Normal - x5
 100.0% - Barrel (4 damage)
 Expected rupees - 0.0
@@ -65,7 +65,7 @@ GreatHit(Remain) - x1
  25.0% - Sword of the Six Sages (48 damage)
 Expected rupees - 0.0
 
------ Toon Link (Smash/Wind Waker) -----
+----- Toon Link (Item_Amiibo_DropTable_002) -----
 Normal - x8
  34.0% - Hyrule Bass (6 rupees)
  10.0% - Staminoka Bass (18 rupees)
@@ -134,7 +134,7 @@ GreatHit(Remain) - x1
  15.0% - Sea-Breeze Boomerang (20 damage)
 Expected rupees - 100.0
 
------ Sheik -----
+----- Sheik (Item_Amiibo_DropTable_003) -----
 Normal - x8
  35.0% - Hylian Shroom (3 rupees)
   5.0% - Stamella Shroom (5 rupees)
@@ -206,7 +206,7 @@ GreatHit(Remain) - x1
  10.0% - Serpentine Spear (12 damage)
 Expected rupees - 50.0
 
------ Unknown/Unused -----
+----- Unknown/Unused? (Item_Amiibo_DropTable_004) -----
 Normal - x8
  34.0% - Hyrule Bass (6 rupees)
  10.0% - Staminoka Bass (18 rupees)
@@ -274,7 +274,7 @@ GreatHit(Remain) - x1
  10.0% - Knight's Claymore (38 damage)
 Expected rupees - 0.0
 
------ Unknown/Unused -----
+----- Unknown/Unused? (Item_Amiibo_DropTable_005) -----
 Normal - x8
  35.0% - Hyrule Herb (3 rupees)
  10.0% - Cool Safflina (3 rupees)
@@ -366,7 +366,7 @@ GreatHit(Remain) - x1
   5.0% - Luminous Stone (70 rupees)
 Expected rupees - 141.0
 
------ Unknown/Unused -----
+----- Unknown/Unused? (Item_Amiibo_DropTable_006) -----
 Normal - x10
  80.0% - Raw Meat (8 rupees)
  15.0% - Raw Prime Meat (15 rupees)
@@ -398,7 +398,7 @@ Expected rupees - 0.0
 GreatHit(Remain) - x0
 Expected rupees - 0.0
 
------ Smash Link -----
+----- Smash Link (Item_Amiibo_DropTable_007) -----
 Normal - x8
  15.0% - Apple (3 rupees)
  10.0% - Palm Fruit (4 rupees)
@@ -466,7 +466,7 @@ GreatHit(Remain) - x1
  15.0% - Knight's Broadsword (26 damage)
 Expected rupees - 87.5
 
------ Archer Link -----
+----- Archer Link (Item_Amiibo_DropTable_008) -----
 Normal - x8
  12.0% - Hyrule Bass (6 rupees)
  10.0% - Staminoka Bass (18 rupees)
@@ -530,7 +530,7 @@ GreatHit(Remain) - x1
  10.0% - Falcon Bow (20 damage)
 Expected rupees - 0.0
 
------ Rider Link -----
+----- Rider Link (Item_Amiibo_DropTable_009) -----
 Normal - x8
  35.0% - Hylian Shroom (3 rupees)
   5.0% - Stamella Shroom (5 rupees)
@@ -592,7 +592,7 @@ GreatHit(Remain) - x1
  20.0% - Traveler's Bridle
 Expected rupees - 0.0
 
------ BotW Zelda -----
+----- BotW Zelda (Item_Amiibo_DropTable_010) -----
 Normal - x8
  35.0% - Hyrule Herb (3 rupees)
  10.0% - Cool Safflina (3 rupees)
@@ -663,7 +663,184 @@ GreatHit(Remain) - x1
  10.0% - Radiant Shield
 Expected rupees - 0.0
 
------ Guardian -----
+----- Daruk (Item_Amiibo_DropTable_012) -----
+Normal - x6-8
+ 60.0% - Rock Salt (2 rupees)
+ 30.0% - Flint (5 rupees)
+ 10.0% - Amber (30 rupees)
+Expected rupees - 39.9
+
+SmallHit - x1-2
+ 50.0% - Opal (60 rupees)
+ 20.0% - Luminous Stone (70 rupees)
+ 10.0% - Topaz (180 rupees)
+ 10.0% - Ruby (210 rupees)
+ 10.0% - Sapphire (260 rupees)
+Expected rupees - 163.5
+
+BigHit(Normal) - x1
+100.0% - Traveler's Claymore (10 damage)
+Expected rupees - 0.0
+
+BigHit(Parasail) - x1
+100.0% - Cobble Crusher (15 damage)
+Expected rupees - 0.0
+
+BigHit(Remain) - x1
+100.0% - Cobble Crusher (15 damage)
+Expected rupees - 0.0
+
+GreatHit(Normal) - x1
+Expected rupees - 0.0
+
+GreatHit(Parasail) - x1
+ 20.0% - Diamond (500 rupees)
+ 80.0% - Soldier's Claymore (20 damage)
+Expected rupees - 100.0
+
+GreatHit(Remain) - x1
+ 40.0% - Diamond (500 rupees)
+ 40.0% - Stone Smasher (42 damage)
+ 20.0% - Armor_183_Head (125 rupees)
+Expected rupees - 225.0
+
+----- Revali (Item_Amiibo_DropTable_013) -----
+Normal - x8
+ 20.0% - Apple (3 rupees)
+ 10.0% - Palm Fruit (4 rupees)
+ 15.0% - Wildberry (3 rupees)
+ 10.0% - Acorn (2 rupees)
+ 10.0% - Chickaloo Tree Nut (3 rupees)
+  5.0% - Hydromelon (4 rupees)
+  5.0% - Spicy Pepper (3 rupees)
+  5.0% - Voltfruit (4 rupees)
+  5.0% - Fleet-Lotus Seeds (5 rupees)
+  5.0% - Mighty Bananas (5 rupees)
+ 10.0% - Arrow x5
+Expected rupees - 24.0
+
+SmallHit - x1-2
+ 70.0% - Hearty Durian (15 rupees)
+ 30.0% - Bomb Arrow x5
+Expected rupees - 15.75
+
+BigHit(Normal) - x1
+100.0% - Traveler's Bow (5 damage)
+Expected rupees - 0.0
+
+BigHit(Parasail) - x1
+100.0% - Swallow Bow (9 damage)
+Expected rupees - 0.0
+
+BigHit(Remain) - x1
+100.0% - Swallow Bow (9 damage)
+Expected rupees - 0.0
+
+GreatHit(Normal) - x1
+Expected rupees - 0.0
+
+GreatHit(Parasail) - x1
+ 20.0% - Diamond (500 rupees)
+ 80.0% - Soldier's Bow (14 damage)
+Expected rupees - 100.0
+
+GreatHit(Remain) - x1
+ 40.0% - Diamond (500 rupees)
+ 40.0% - Falcon Bow (20 damage)
+ 20.0% - Armor_182_Head (125 rupees)
+Expected rupees - 225.0
+
+----- Mipha (Item_Amiibo_DropTable_014) -----
+Normal - x8
+ 34.0% - Hyrule Bass (6 rupees)
+ 10.0% - Staminoka Bass (18 rupees)
+  5.0% - Chillfin Trout (6 rupees)
+  5.0% - Sizzlefin Trout (6 rupees)
+  5.0% - Voltfin Trout (6 rupees)
+  5.0% - Stealthfin Trout (10 rupees)
+ 12.0% - Mighty Carp (10 rupees)
+ 12.0% - Armored Carp (10 rupees)
+  6.0% - Mighty Porgy (10 rupees)
+  6.0% - Armored Porgy (10 rupees)
+Expected rupees - 70.72
+
+SmallHit - x1-2
+ 50.0% - Hearty Bass (18 rupees)
+ 50.0% - Hearty Salmon (10 rupees)
+Expected rupees - 21.0
+
+BigHit(Normal) - x1
+100.0% - Traveler's Spear (3 damage)
+Expected rupees - 0.0
+
+BigHit(Parasail) - x1
+100.0% - Zora Spear (9 damage)
+Expected rupees - 0.0
+
+BigHit(Remain) - x1
+100.0% - Zora Spear (9 damage)
+Expected rupees - 0.0
+
+GreatHit(Normal) - x1
+Expected rupees - 0.0
+
+GreatHit(Parasail) - x1
+ 20.0% - Diamond (500 rupees)
+ 80.0% - Soldier's Spear (7 damage)
+Expected rupees - 100.0
+
+GreatHit(Remain) - x1
+ 40.0% - Diamond (500 rupees)
+ 40.0% - Silverscale Spear (12 damage)
+ 20.0% - Armor_181_Head (125 rupees)
+Expected rupees - 225.0
+
+----- Urbosa (Item_Amiibo_DropTable_015) -----
+Normal - x6-8
+ 40.0% - Raw Meat (8 rupees)
+ 10.0% - Raw Prime Meat (15 rupees)
+ 40.0% - Raw Bird Drumstick (8 rupees)
+ 10.0% - Raw Bird Thigh (15 rupees)
+Expected rupees - 65.8
+
+SmallHit - x1-2
+ 35.0% - Raw Gourmet Meat (35 rupees)
+ 35.0% - Raw Whole Bird (35 rupees)
+ 30.0% - Shock Arrow x5
+Expected rupees - 36.75
+
+BigHit(Normal) - x1
+ 50.0% - Traveler's Sword (5 damage)
+ 50.0% - Traveler's Shield
+Expected rupees - 0.0
+
+BigHit(Parasail) - x1
+ 50.0% - Gerudo Scimitar (16 damage)
+ 50.0% - Gerudo Shield
+Expected rupees - 0.0
+
+BigHit(Remain) - x1
+ 50.0% - Gerudo Scimitar (16 damage)
+ 50.0% - Gerudo Shield
+Expected rupees - 0.0
+
+GreatHit(Normal) - x1
+Expected rupees - 0.0
+
+GreatHit(Parasail) - x1
+ 20.0% - Diamond (500 rupees)
+ 40.0% - Soldier's Broadsword (14 damage)
+ 40.0% - Soldier's Shield
+Expected rupees - 100.0
+
+GreatHit(Remain) - x1
+ 40.0% - Diamond (500 rupees)
+ 20.0% - Moonlight Scimitar (25 damage)
+ 20.0% - Radiant Shield
+ 20.0% - Armor_184_Head (125 rupees)
+Expected rupees - 225.0
+
+----- Guardian (Item_Amiibo_DropTable_016) -----
 Normal - x4
 100.0% - Iron Box
 Expected rupees - 0.0
@@ -724,7 +901,7 @@ GreatHit(Remain) - x1
   5.0% - Giant Ancient Core (200 rupees)
 Expected rupees - 70.0
 
------ Bokoblin -----
+----- Bokoblin (Item_Amiibo_DropTable_017) -----
 Normal - x6-8
  90.0% - Raw Meat (8 rupees)
  10.0% - Raw Prime Meat (15 rupees)
@@ -783,7 +960,7 @@ GreatHit(Remain) - x1
  20.0% - Dragonbone Boko Bat (36 damage)
 Expected rupees - 0.0
 
------ Ocarina of Time Link -----
+----- Ocarina of Time Link (Item_Amiibo_DropTable_018) -----
 Normal - x6-8
  90.0% - Raw Meat (8 rupees)
  10.0% - Raw Prime Meat (15 rupees)
@@ -839,7 +1016,7 @@ GreatHit(Remain) - x1
  10.0% - Biggoron's Sword (50 damage)
 Expected rupees - 87.5
 
------ Unreleased Majora's Mask Link -----
+----- Unreleased Majora's Mask Link (Item_Amiibo_DropTable_019) -----
 Normal - x8
  35.0% - Hylian Shroom (3 rupees)
   5.0% - Stamella Shroom (5 rupees)
@@ -904,7 +1081,7 @@ GreatHit(Remain) - x1
  15.0% - Knight's Broadsword (26 damage)
 Expected rupees - 93.75
 
------ Smash Zelda -----
+----- Smash Zelda (Item_Amiibo_DropTable_020) -----
 Normal - x8
  35.0% - Hyrule Herb (3 rupees)
  10.0% - Cool Safflina (3 rupees)
@@ -974,7 +1151,7 @@ GreatHit(Remain) - x1
  60.0% - Knight's Bow (26 damage)
 Expected rupees - 0.0
 
------ Unreleased Skyward Sword Link -----
+----- Unreleased Skyward Sword Link (Item_Amiibo_DropTable_021) -----
 Normal - x4
 100.0% - Wooden Box
 Expected rupees - 0.0
@@ -1034,7 +1211,7 @@ GreatHit(Remain) - x1
  10.0% - Goddess Sword (28 damage)
 Expected rupees - 62.5
 
------ 8-Bit Link -----
+----- 8-Bit Link (Item_Amiibo_DropTable_022) -----
 Normal - x5
 100.0% - Barrel (4 damage)
 Expected rupees - 0.0
@@ -1094,7 +1271,7 @@ GreatHit(Remain) - x1
  10.0% - Sword (22 damage)
 Expected rupees - 75.0
 
------ Toon Zelda -----
+----- Toon Zelda (Item_Amiibo_DropTable_023) -----
 Normal - x8
  35.0% - Hyrule Herb (3 rupees)
  10.0% - Cool Safflina (3 rupees)
@@ -1165,7 +1342,7 @@ GreatHit(Remain) - x1
  10.0% - Hero's Shield
 Expected rupees - 0.0
 
------ Non-Zelda Series Amiibo -----
+----- Non-Zelda Series Amiibo (Item_Amiibo_DropTable_Common) -----
 Normal - x3-5
   5.0% - Raw Meat (8 rupees)
  10.0% - Hyrule Herb (3 rupees)
@@ -1214,7 +1391,7 @@ Expected rupees - 0.0
 GreatHit(Remain) - x1
 Expected rupees - 0.0
 
------ Barrel -----
+----- Barrel (Barrel) -----
 Amiibo - x1-2
  38.0% - Arrow
   2.0% - Arrow x10
@@ -1255,7 +1432,7 @@ Amiibo_After_Burnout2 - x1-2
   0.3% - Gold Rupee (300 rupees)
 Expected rupees - 14.985
 
------ Wooden Box -----
+----- Wooden Box (Kibako_Contain_01) -----
 Amiibo - x2-3
  25.0% - Arrow
   5.0% - Arrow x10
@@ -1296,7 +1473,7 @@ Amiibo_After_Burnout2 - x1-2
   0.3% - Gold Rupee (300 rupees)
 Expected rupees - 19.725
 
------ Iron Box -----
+----- Iron Box (Kibako_Contain_02) -----
 Amiibo - x1-3
  50.0% - Arrow
   2.0% - Arrow x10

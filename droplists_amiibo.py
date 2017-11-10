@@ -8,15 +8,19 @@ namefile.close()
 
 amiibos = [
     ("Item_Amiibo_DropTable_001.bdrop","Ganondorf"),
-    ("Item_Amiibo_DropTable_002.bdrop","Toon Link (Smash/Wind Waker)"),
+    ("Item_Amiibo_DropTable_002.bdrop","Toon Link"),
     ("Item_Amiibo_DropTable_003.bdrop","Sheik"),
-    ("Item_Amiibo_DropTable_004.bdrop","Unknown/Unused"),
-    ("Item_Amiibo_DropTable_005.bdrop","Unknown/Unused"),
-    ("Item_Amiibo_DropTable_006.bdrop","Unknown/Unused"),
+    ("Item_Amiibo_DropTable_004.bdrop","Unknown/Unused?"),
+    ("Item_Amiibo_DropTable_005.bdrop","Unknown/Unused?"),
+    ("Item_Amiibo_DropTable_006.bdrop","Unknown/Unused?"),
     ("Item_Amiibo_DropTable_007.bdrop","Smash Link"),
     ("Item_Amiibo_DropTable_008.bdrop","Archer Link"),
     ("Item_Amiibo_DropTable_009.bdrop","Rider Link"),
     ("Item_Amiibo_DropTable_010.bdrop","BotW Zelda"),
+    ("Item_Amiibo_DropTable_012.bdrop","Daruk"),
+    ("Item_Amiibo_DropTable_013.bdrop","Revali"),
+    ("Item_Amiibo_DropTable_014.bdrop","Mipha"),
+    ("Item_Amiibo_DropTable_015.bdrop","Urbosa"),
     ("Item_Amiibo_DropTable_016.bdrop","Guardian"),
     ("Item_Amiibo_DropTable_017.bdrop","Bokoblin"),
     ("Item_Amiibo_DropTable_018.bdrop","Ocarina of Time Link"),
@@ -53,7 +57,7 @@ for item in root.findall("./Actors/value[@attackPower]"):
 
 for filename, amiibo_name in amiibos:
 
-    print('----- %s -----' % amiibo_name)
+    print('----- %s (%s) -----' % (amiibo_name, filename.strip('.bdrop')))
     
     f=open('amiibo_bdrop/' + filename,'rb')
     data = f.read()
