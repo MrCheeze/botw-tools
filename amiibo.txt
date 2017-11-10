@@ -1,4 +1,4 @@
-When using an amiibo, various items will appear on the ground, along with a single item in a chest. The items on the ground will always be generated from the Normal list, but on occasion you will ALSO be given items from the SmallHit list. The item in the chest will sometimes be generated from the BigHit list, and sometimes from the GreatHit list. It's unclear whether getting a certain "Hit" is simply random, or if there are other factors at play.
+When using an amiibo, various items will appear on the ground, along with a single item in a chest. The items on the ground will always be generated from the Normal list, but on occasion you will ALSO be given items from the SmallHit list. The item in the chest will sometimes be generated from the BigHit list, and sometimes from the GreatHit list. The odds of getting a GreatHit instead of a BigHit appear from empirical testing to be 20%.
 
 For a BigHit or GreatHit (i.e. for a chest item), the item you receive depends partly on your current progress in the game. Getting the Paraglider upgrades you from the Normal list to the Parasail list, and beating a single Divine Beast upgrades you to the Remain list.
 
@@ -65,7 +65,7 @@ GreatHit(Remain) - x1
  25.0% - Sword of the Six Sages (48 damage)
 Expected rupees - 0.0
 
------ Toon Link (Item_Amiibo_DropTable_002) -----
+----- Toon/Wind Waker Link (Item_Amiibo_DropTable_002) -----
 Normal - x8
  34.0% - Hyrule Bass (6 rupees)
  10.0% - Staminoka Bass (18 rupees)
@@ -398,7 +398,7 @@ Expected rupees - 0.0
 GreatHit(Remain) - x0
 Expected rupees - 0.0
 
------ Smash Link (Item_Amiibo_DropTable_007) -----
+----- Smash/Twilight Link (Item_Amiibo_DropTable_007) -----
 Normal - x8
  15.0% - Apple (3 rupees)
  10.0% - Palm Fruit (4 rupees)
@@ -1016,7 +1016,7 @@ GreatHit(Remain) - x1
  10.0% - Biggoron's Sword (50 damage)
 Expected rupees - 87.5
 
------ Unreleased Majora's Mask Link (Item_Amiibo_DropTable_019) -----
+----- Majora's Mask Link (Item_Amiibo_DropTable_019) -----
 Normal - x8
  35.0% - Hylian Shroom (3 rupees)
   5.0% - Stamella Shroom (5 rupees)
@@ -1081,7 +1081,7 @@ GreatHit(Remain) - x1
  15.0% - Knight's Broadsword (26 damage)
 Expected rupees - 93.75
 
------ Smash Zelda (Item_Amiibo_DropTable_020) -----
+----- Smash/Twilight Zelda (Item_Amiibo_DropTable_020) -----
 Normal - x8
  35.0% - Hyrule Herb (3 rupees)
  10.0% - Cool Safflina (3 rupees)
@@ -1151,7 +1151,7 @@ GreatHit(Remain) - x1
  60.0% - Knight's Bow (26 damage)
 Expected rupees - 0.0
 
------ Unreleased Skyward Sword Link (Item_Amiibo_DropTable_021) -----
+----- Skyward Sword Link (Item_Amiibo_DropTable_021) -----
 Normal - x4
 100.0% - Wooden Box
 Expected rupees - 0.0
@@ -1271,7 +1271,7 @@ GreatHit(Remain) - x1
  10.0% - Sword (22 damage)
 Expected rupees - 75.0
 
------ Toon Zelda (Item_Amiibo_DropTable_023) -----
+----- Toon/Wind Waker Zelda (Item_Amiibo_DropTable_023) -----
 Normal - x8
  35.0% - Hyrule Herb (3 rupees)
  10.0% - Cool Safflina (3 rupees)
