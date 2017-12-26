@@ -1387,6 +1387,29 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteLumpRock_A_01</UnitConfigName>
     </value>
+    <value HashId="449459230" SRTHash="-943597721">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_178_Head</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-966866214">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.224582f</value>
+        <value>1.00243f</value>
+        <value>2.892535f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1288.069f</value>
+        <value>188.2981f</value>
+        <value>2451.235f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
+    </value>
     <value HashId="454168264" SRTHash="-995292279">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -3171,6 +3194,17 @@
         <value>2887.842f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreePalmJungle_A_LL_01</UnitConfigName>
+    </value>
+    <value HashId="1035494673" SRTHash="883644066" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku07_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>1287.082f</value>
+        <value>208.355f</value>
+        <value>2452.65f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1038401445" Rotate="2.619999f" SRTHash="53334222">
       <Translate type="array">
@@ -10170,6 +10204,21 @@
         <value>1325.465f</value>
         <value>198.7875f</value>
         <value>2456.62f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-966866214" SRTHash="-127482026" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1035494673">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>1287.082f</value>
+        <value>191.7222f</value>
+        <value>2450.439f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>

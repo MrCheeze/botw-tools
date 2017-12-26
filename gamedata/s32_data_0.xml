@@ -3775,7 +3775,7 @@
     <value DeleteRev="-1" HashValue="-1353137318" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65536" MinValue="-1" ResetType="0">
       <DataName type="string">PictureBookSize_Enemy_Golem_Ice</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1539713024" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="6" MinValue="-1" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1539713024" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="7" MinValue="-1" ResetType="0">
       <DataName type="string">PlayerEquipItemType</DataName>
     </value>
     <value DeleteRev="-1" HashValue="845314080" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
@@ -3880,7 +3880,7 @@
     <value DeleteRev="-1" HashValue="2138224891" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
       <DataName type="string">PorchTime_Armor_049_Lower</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-249563167" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="120" MinValue="0" ResetType="0">
+    <value DeleteRev="-1" HashValue="-249563167" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="124" MinValue="0" ResetType="0">
       <DataName type="string">DungeonClearSealNum</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-1164991508" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="2147483647" MinValue="-2147483648" ResetType="0">
@@ -6730,16 +6730,16 @@
     <value DeleteRev="-1" HashValue="-1299761530" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
       <DataName type="string">Defeated_Enemy_Octarock_Stone_Num</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="1721493462" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
+    <value DeleteRev="-1" HashValue="1721493462" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2" MinValue="0" ResetType="0">
       <DataName type="string">Defeated_Enemy_SiteBoss_Bow_Num</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1817386297" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1817386297" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2" MinValue="0" ResetType="0">
       <DataName type="string">Defeated_Enemy_SiteBoss_Lsword_Num</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1998942821" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1998942821" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2" MinValue="0" ResetType="0">
       <DataName type="string">Defeated_Enemy_SiteBoss_Spear_Num</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="1284360667" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
+    <value DeleteRev="-1" HashValue="1284360667" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2" MinValue="0" ResetType="0">
       <DataName type="string">Defeated_Enemy_SiteBoss_Sword_Num</DataName>
     </value>
     <value DeleteRev="-1" HashValue="1462833591" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
@@ -7582,11 +7582,68 @@
     <value DeleteRev="-1" HashValue="412898726" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
       <DataName type="string">Option_LatestAoCVerPlayed</DataName>
     </value>
+    <value DeleteRev="-1" HashValue="-718936724" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_175_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1689869278" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_177_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1105421712" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_175_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="972938411" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_177_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1779439351" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_178_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-928289154" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_178_Head</DataName>
+    </value>
     <value DeleteRev="-1" HashValue="1469585919" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65536" MinValue="-1" ResetType="0">
       <DataName type="string">PictureBookSize_Enemy_AirOctarock</DataName>
     </value>
     <value DeleteRev="-1" HashValue="1021182611" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
       <DataName type="string">Defeated_Enemy_AirOctarock_Num</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-394986439" InitValue="2" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">TreasureHunt03_RemainingBox</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1879827571" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_180_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1056472280" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_180_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1581111399" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_180_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-760177414" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_180_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1438712796" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_180_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-889497445" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_180_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1588804270" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_179_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1916808103" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_179_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="310742808" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_179_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="66567643" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_179_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-427381925" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_179_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2042425372" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_179_Upper</DataName>
     </value>
     <value DeleteRev="-1" HashValue="342345536" InitValue="3" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
       <DataName type="string">TreasureHunt_touzoku03_RemainingBox</DataName>
@@ -7669,11 +7726,95 @@
     <value DeleteRev="-1" HashValue="-167143086" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483648" ResetType="0">
       <DataName type="string">NexUniqueID_Lower</DataName>
     </value>
+    <value DeleteRev="-1" HashValue="571594626" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Weapon_Sword_502</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1769033931" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Weapon_Sword_502</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1843279537" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_177_Head_B</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="650031608" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_177_Head_B</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="549877184" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_185_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1824543615" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_185_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="201717696" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_185_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2105733815" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_185_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-133770365" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_185_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1732020420" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_185_Upper</DataName>
+    </value>
     <value DeleteRev="-1" HashValue="504178760" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="-1" ResetType="0">
       <DataName type="string">NexPosTrackUploadIntervalHoursCache</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-233416599" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="-1" ResetType="0">
       <DataName type="string">NexsSaveDataUploadIntervalHoursCache</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1917233415" InitValue="3" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">TreasureHunt04_RemainingBox</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1399723232" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon120</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-610870346" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon121</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1117751820" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon122</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="899201690" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon123</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1409536199" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon124</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-587522129" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon125</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1173507605" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon126</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="854949507" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon127</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1572183278" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon128</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-716352636" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon129</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1249191327" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon130</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1030886665" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon131</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1535425357" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon132</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="746818523" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon133</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1293476232" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon134</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-975163666" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon135</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1558806356" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="-2147483647" ResetType="0">
+      <DataName type="string">Location_Dungeon136</DataName>
     </value>
     <value DeleteRev="-1" HashValue="1590235117" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="255" MinValue="0" ResetType="0">
       <DataName type="string">PosTrackEndPointBlockNumber</DataName>
@@ -7683,6 +7824,309 @@
     </value>
     <value DeleteRev="-1" HashValue="-789946745" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="300" MinValue="0" ResetType="0">
       <DataName type="string">PosTrackEndPointPosIndex</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1836686160" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="65535" MinValue="0" ResetType="2">
+      <DataName type="string">BalladOfHeroes_CountClearDungeons</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-765698547" InitValue="4" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="4" MinValue="0" ResetType="0">
+      <DataName type="string">Counter_TerminalFinalTrial</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-608888698" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="65535" MinValue="0" ResetType="2">
+      <DataName type="string">BalladOfHeroes_CheckChampDungeon</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1258413027" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_178_Head_B</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-6380716" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_178_Head_B</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1533017261" InitValue="3" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">TreasureHunt_touzoku08_RemainingBox</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1151911978" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_181_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1036207480" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_182_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-157313315" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_183_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-342186395" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_184_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="434917215" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_181_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1619509775" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_182_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1411706452" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_183_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1226956524" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_184_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-903826037" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65536" MinValue="-1" ResetType="0">
+      <DataName type="string">PictureBookSize_Priest_Boss_Normal</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1642709970" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
+      <DataName type="string">Defeated_Priest_Boss_Normal_Num</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-865657533" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_168_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="121360102" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_169_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1504573586" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_186_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1829688523" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_187_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1671928290" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_188_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1459926459" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_189_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-696455225" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_190_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="488651874" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_191_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1682682164" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_192_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1357421929" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_193_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1307422161" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_194_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2035188108" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_195_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2428122" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_196_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-881205377" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_197_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="976186794" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_198_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-244072945" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Armor_199_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1859937738" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_168_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1518291345" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_169_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="82411495" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_186_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-810177470" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_187_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1055071895" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_188_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-171979470" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_189_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1959237454" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_190_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1080343317" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_191_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="957298245" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_192_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-229382688" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_193_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-279521960" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_194_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="604636925" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_195_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1566673837" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_196_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1774364662" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_197_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1735125725" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_198_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1405666950" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Armor_199_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1425589364" InitValue="3" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
+      <DataName type="string">bf2_collabo_remaining</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-775948746" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">BalladOfHeroRito_CountVoice</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1536476820" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">BalladOfHeroGoron_CountVoice</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1356825148" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">BalladOfHeroZora_CountVoice</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1001642690" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">BalladOfHeroGerudo_CountVoice</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1686138294" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65536" MinValue="-1" ResetType="0">
+      <DataName type="string">PictureBookSize_Enemy_Golem_Fire_R</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1286260179" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
+      <DataName type="string">Defeated_Enemy_Golem_Fire_R_Num</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-436213475" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Obj_DLC_HeroSoul_Gerudo</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="444109605" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Obj_DLC_HeroSoul_Goron</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1740811067" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Obj_DLC_HeroSoul_Rito</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-387544551" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Obj_DLC_HeroSoul_Zora</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="639270547" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Obj_DLC_HeroSoul_Gerudo</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-211698472" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Obj_DLC_HeroSoul_Goron</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-491283261" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Obj_DLC_HeroSoul_Rito</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1838398945" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Obj_DLC_HeroSoul_Zora</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1018759701" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65536" MinValue="-1" ResetType="0">
+      <DataName type="string">PictureBookSize_Enemy_SandwormR</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="727065427" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="10" MinValue="0" ResetType="0">
+      <DataName type="string">Defeated_Enemy_SandwormR_Num</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="111425447" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">CurseR_Wind_Challenge</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="897946880" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">CurseR_Fire_Challenge</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-76634493" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">CurseR_Electric_Challenge</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1754923997" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">CurseR_Water_Challenge</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1435932342" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_Attacked_006_DLC2nd_Item_Ore_H</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1305560143" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_Attacked_006_DLC2nd_Item_Ore_F</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="12540730" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_Attacked_006_DLC2nd_Item_Enemy_28</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1238514744" InitValue="-1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65536" MinValue="-1" ResetType="0">
+      <DataName type="string">PictureBookSize_Weapon_Sword_502</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1427564308" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">EquipTime_Weapon_Sword_503</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-511074397" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="2147483647" MinValue="0" ResetType="0">
+      <DataName type="string">PorchTime_Weapon_Sword_503</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="972787082" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_170_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1605888435" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_171_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-11984255" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_171_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1618180546" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_171_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="651977955" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_172_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-310331578" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_173_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-259684354" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_174_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1385099994" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_174_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-843798119" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_174_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1119017227" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_176_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-846125902" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_185_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-769256386" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_185_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1293700991" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_185_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="710658918" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">BalladOfHeroRito_BrokenTargetNum</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1672848088" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="65535" MinValue="0" ResetType="2">
+      <DataName type="string">BalladOfHeroes_ChainRing_Running</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-14094532" InitValue="4" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="0">
+      <DataName type="string">BalladOfHero_ChallengClearCount</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1217367098" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="9999" MinValue="0" ResetType="0">
+      <DataName type="string">STErrorCode</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1807983149" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_175_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1980888400" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_177_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2025371771" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_178_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1276875808" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_179_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1402746791" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_179_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-861508378" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_179_Lower</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1654868735" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_180_Head</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-522477786" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_180_Upper</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2145502311" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="65535" MinValue="0" ResetType="3">
+      <DataName type="string">Npc_AncientAssistant003_Armor_180_Lower</DataName>
     </value>
   </s32_data>
 </yaml>

@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
   <bool_data type="array">
-    <value DeleteRev="-1" HashValue="-1747081511" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
-      <DataName type="string">MainField_Enemy_Bokoblin_Guard_Junior_3399222830</DataName>
-    </value>
     <value DeleteRev="-1" HashValue="-1096052196" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_WeaponDrop_3418425290</DataName>
     </value>
@@ -6019,9 +6016,6 @@
     <value DeleteRev="-1" HashValue="1841064883" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Obj_ArrowNormal_A_01_509139581</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-400398459" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
-      <DataName type="string">MainField_Weapon_Sword_044_519444861</DataName>
-    </value>
     <value DeleteRev="-1" HashValue="-1770837940" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Animal_Fish_A_537655621</DataName>
     </value>
@@ -6402,9 +6396,6 @@
     </value>
     <value DeleteRev="-1" HashValue="1346318808" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Item_Material_04_1886488630</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="1878835360" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
-      <DataName type="string">MainField_Weapon_Sword_044_1910541071</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-907386345" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_TreasureSpot_00_1939112170</DataName>
@@ -6879,9 +6870,6 @@
     </value>
     <value DeleteRev="-1" HashValue="-801660956" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Item_Plant_A_3584233697</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="-1385931832" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
-      <DataName type="string">MainField_Weapon_Sword_044_3602277159</DataName>
     </value>
     <value DeleteRev="-1" HashValue="523967908" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_TBox_Field_Iron_3607058155</DataName>
@@ -12288,6 +12276,18 @@
     </value>
     <value DeleteRev="-1" HashValue="1586087871" InitValue="88" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Item_Plant_H_2252619276</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2136064666" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Keese_Fire_2256881913</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-32929573" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_2259596828</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-490506715" InitValue="88" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Item_Mushroom_E_2271434251</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="576486823" InitValue="88" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Obj_Mineral_A_01_2319717475</DataName>
     </value>
   </bool_data>
 </yaml>

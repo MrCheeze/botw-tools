@@ -3682,6 +3682,25 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffDeathMt_D_22_Far</UnitConfigName>
     </value>
+    <value HashId="1227993978" SRTHash="1685486111">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroGoron_ForDemo</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1639096900">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2090513554">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2339.848f</value>
+        <value>259.4622f</value>
+        <value>-1472.086f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1243938947" Rotate="0.1745329f" SRTHash="-241638243">
       <LinksToObj type="array">
         <value DestUnitHashId="1262424398">
@@ -5171,6 +5190,19 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffDeathMt_F_02</UnitConfigName>
     </value>
+    <value HashId="1639096900" SRTHash="1251726424">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0.22f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>2334.72f</value>
+        <value>251.5452f</value>
+        <value>-1472.429f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DeathMtRuinGuardian_A</UnitConfigName>
+    </value>
     <value HashId="1639237162" Rotate="-0.5415938f" SRTHash="-939776961">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -5776,6 +5808,32 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffDeathMt_D_19_Far</UnitConfigName>
     </value>
+    <value HashId="1846560612" SRTHash="-1135881919">
+      <Rotate type="array">
+        <value>-0.03296284f</value>
+        <value>0.4082831f</value>
+        <value>-0.1360118f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>2421.225f</value>
+        <value>222.3429f</value>
+        <value>-1320.264f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
+    <value HashId="1846679463" SRTHash="631193805">
+      <Rotate type="array">
+        <value>-0.03810846f</value>
+        <value>0.0526643f</value>
+        <value>0.1911872f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>2369.375f</value>
+        <value>222.8085f</value>
+        <value>-1355.041f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
+    </value>
     <value HashId="1849925248" SRTHash="-1588915747">
       <Rotate type="array">
         <value>-0.4466378f</value>
@@ -6130,6 +6188,19 @@
         <value>-2030.259f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffDeathMt_D_14_Far</UnitConfigName>
+    </value>
+    <value HashId="1977657546" SRTHash="1167941850">
+      <Rotate type="array">
+        <value>-0.259005f</value>
+        <value>0.6579741f</value>
+        <value>-0.4088617f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>2404.349f</value>
+        <value>224.153f</value>
+        <value>-1374.892f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
     </value>
     <value HashId="1977836587" Rotate="-2.530727f" SRTHash="1717858700">
       <Translate type="array">
@@ -6788,6 +6859,19 @@
         <value>-1253.65f</value>
       </Translate>
       <UnitConfigName type="string">Obj_RockDeathMt_D_L_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-2090513554" SRTHash="-700496754">
+      <Rotate type="array">
+        <value>-0.4917424f</value>
+        <value>0.008763545f</value>
+        <value>0.007816155f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>2336.729f</value>
+        <value>251.9487f</value>
+        <value>-1473.951f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_RuinGuardianArm_A_01</UnitConfigName>
     </value>
     <value HashId="-2083688620" SRTHash="-1455193301">
       <Translate type="array">
@@ -10923,6 +11007,31 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-853479910" SRTHash="-1587690648" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroGoron_ForDemo</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1846560612">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-408446720">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1846679463">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="1977657546">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2427.211f</value>
+        <value>249.5466f</value>
+        <value>-1314.08f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-847954993" Rotate="1.736194f" SRTHash="1604282330">
       <_Parameters>
         <GetUpDirection type="string">None</GetUpDirection>
@@ -12205,6 +12314,19 @@
         <value>-1850.375f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-408446720" SRTHash="-1093534953">
+      <Rotate type="array">
+        <value>-0.134881f</value>
+        <value>0.05485412f</value>
+        <value>0.2512341f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>2385.362f</value>
+        <value>218.1376f</value>
+        <value>-1305.279f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_RockSetDeathMt_C_04</UnitConfigName>
     </value>
     <value HashId="-405611042" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />

@@ -262,6 +262,22 @@
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStone_A_01</UnitConfigName>
     </value>
+    <value HashId="50650445" SRTHash="368605632" Scale="1.5f">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TraverseDist="150f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.07884354f</value>
+        <value>-0.002170844f</value>
+        <value>-0.05502325f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1228.9f</value>
+        <value>339.1f</value>
+        <value>2131f</value>
+      </Translate>
+      <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
+    </value>
     <value HashId="51530144" SRTHash="-41357506">
       <Rotate type="array">
         <value>0.1608953f</value>
@@ -1775,6 +1791,15 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
     </value>
+    <value HashId="272500404" Rotate="0.2999999f" SRTHash="-1912848379">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1196.1f</value>
+        <value>354.7f</value>
+        <value>2217.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_03</UnitConfigName>
+    </value>
     <value HashId="275050246" Rotate="-2.616052f" SRTHash="-1034854882" Scale="1.069418f">
       <Translate type="array">
         <value>-1231.417f</value>
@@ -2486,6 +2511,17 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="384559121" SRTHash="-1026753751">
+      <_Parameters InitBurnState="false" IsDrop="false" IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1231.4f</value>
+        <value>363.4f</value>
+        <value>2209.6f</value>
+      </Translate>
+      <UnitConfigName type="string">SignalFireWood</UnitConfigName>
+    </value>
     <value HashId="386476831" SRTHash="-1034854882" Scale="1.069418f">
       <Rotate type="array">
         <value>3.11568f</value>
@@ -2656,6 +2692,15 @@
         <value>2717.715f</value>
       </Translate>
       <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
+    </value>
+    <value HashId="408500007" Rotate="2.403185f" SRTHash="-2106828451">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1242.381f</value>
+        <value>360.4136f</value>
+        <value>2258.336f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_01</UnitConfigName>
     </value>
     <value HashId="408589826" Rotate="4.698924f" SRTHash="-1278028390" Scale="1.302383f">
       <Translate type="array">
@@ -3498,6 +3543,22 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="550632616" SRTHash="848178478">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1245.8f</value>
+        <value>356.5f</value>
+        <value>2174.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Senior</UnitConfigName>
+    </value>
     <value HashId="555042447" SRTHash="260322803" Scale="0.9637249f">
       <Rotate type="array">
         <value>-0.2676537f</value>
@@ -4082,6 +4143,20 @@
         <value>2885.554f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="646317268" SRTHash="-2091591141">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>-0.1100133f</value>
+        <value>-0.3723914f</value>
+        <value>0.06936453f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1246.2f</value>
+        <value>362.1f</value>
+        <value>2188.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_03</UnitConfigName>
     </value>
     <value HashId="646890307" Rotate="1.2f" SRTHash="897846735">
       <Translate type="array">
@@ -4747,6 +4822,15 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="736586201" Rotate="-1.02f" SRTHash="1882558628">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1226.7f</value>
+        <value>363.7f</value>
+        <value>2200.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_02</UnitConfigName>
+    </value>
     <value HashId="737428761" SRTHash="-560641464">
       <Rotate type="array">
         <value>0.3260084f</value>
@@ -4897,6 +4981,22 @@
       </Translate>
       <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
     </value>
+    <value HashId="763395535" SRTHash="1650356361" Scale="1.5f">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TraverseDist="150f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.07884354f</value>
+        <value>-0.002170844f</value>
+        <value>-0.05502325f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1330.4f</value>
+        <value>258.4f</value>
+        <value>2027.9f</value>
+      </Translate>
+      <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
+    </value>
     <value HashId="763904492" SRTHash="456748843" Scale="1.041813f">
       <Rotate type="array">
         <value>2.798651f</value>
@@ -4930,6 +5030,22 @@
         <value>2742.92f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStone_A_01</UnitConfigName>
+    </value>
+    <value HashId="767441505" SRTHash="-693631830">
+      <_Parameters IsEnemyLiftable="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.7169522f</value>
+        <value>-0.07297285f</value>
+        <value>-1.487351f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1233.8f</value>
+        <value>364.2f</value>
+        <value>2204.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_BarrelOld_A_01</UnitConfigName>
     </value>
     <value HashId="767795187" SRTHash="-1588736126">
       <Rotate type="array">
@@ -5011,6 +5127,15 @@
         <value>2824.466f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="784698203" Rotate="-1.799999f" SRTHash="-659555949">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1222.9f</value>
+        <value>363.2f</value>
+        <value>2216.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_01</UnitConfigName>
     </value>
     <value HashId="785799656" Rotate="-2.229332f" SRTHash="1677293824">
       <Translate type="array">
@@ -6062,6 +6187,22 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="922489664" SRTHash="-1664473790">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1196.7f</value>
+        <value>364.2f</value>
+        <value>2263.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
+    </value>
     <value HashId="925025555" SRTHash="1100609305" Scale="1.112014f">
       <Rotate type="array">
         <value>0.002103076f</value>
@@ -6153,6 +6294,22 @@
         <value>2647.825f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="947505869" SRTHash="-226389698">
+      <_Parameters IsEnemyLiftable="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>0.7888343f</value>
+        <value>-0.06787466f</value>
+        <value>1.482832f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1228.3f</value>
+        <value>362.9f</value>
+        <value>2228.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_BarrelOld_A_01</UnitConfigName>
     </value>
     <value HashId="947656413" SRTHash="-523740989" Scale="0.9111971f">
       <Rotate type="array">
@@ -6644,6 +6801,22 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="1045312616" SRTHash="1772140244">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1200.9f</value>
+        <value>366.6f</value>
+        <value>2259.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
+    </value>
     <value HashId="1048893096" SRTHash="-1492676688" Scale="1.114938f">
       <Rotate type="array">
         <value>-2.91677f</value>
@@ -6872,6 +7045,15 @@
         <value>2364.251f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RockYellowOcher_A_L_01</UnitConfigName>
+    </value>
+    <value HashId="1080164390" Rotate="2.763188f" SRTHash="-1390498054">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1249.197f</value>
+        <value>361.2782f</value>
+        <value>2248.973f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_01</UnitConfigName>
     </value>
     <value HashId="1082781565" SRTHash="660564219" Scale="1.063807f">
       <Rotate type="array">
@@ -7157,6 +7339,22 @@
         <value>2038.729f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RockOrangeStone_A_01</UnitConfigName>
+    </value>
+    <value HashId="1124191658" SRTHash="-535443632">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1209.7f</value>
+        <value>356.287f</value>
+        <value>2225.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Junior</UnitConfigName>
     </value>
     <value HashId="1124792023" SRTHash="-652301192">
       <Rotate type="array">
@@ -8940,6 +9138,20 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="1414214049" SRTHash="-695757948">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>-0.814489f</value>
+        <value>-1.179272f</value>
+        <value>0.6724611f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1202.4f</value>
+        <value>338.8f</value>
+        <value>2148.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_01</UnitConfigName>
+    </value>
     <value HashId="1419735425" Rotate="-0.7463685f" SRTHash="-1761837002" Scale="1.000019f">
       <Translate type="array">
         <value>-1231.496f</value>
@@ -9668,6 +9880,22 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
     </value>
+    <value HashId="1532782160" SRTHash="-889488685">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1287.5f</value>
+        <value>318.8f</value>
+        <value>2080.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
+    </value>
     <value HashId="1532822324" SRTHash="-1071952582" Scale="1.043305f">
       <Rotate type="array">
         <value>-3.131578f</value>
@@ -9706,6 +9934,20 @@
         <value>2918.593f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="1538590806" SRTHash="486392573">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>-3.095742f</value>
+        <value>-0.5197563f</value>
+        <value>-2.911545f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1209.1f</value>
+        <value>360.5f</value>
+        <value>2250.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_01</UnitConfigName>
     </value>
     <value HashId="1540948624" SRTHash="-1144466921">
       <Rotate type="array">
@@ -9818,6 +10060,17 @@
         <value>2121.354f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
+    </value>
+    <value HashId="1555130006" Rotate="-0.52f" SRTHash="1608500176">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1225.5f</value>
+        <value>364.075f</value>
+        <value>2216.5f</value>
+      </Translate>
+      <UnitConfigName type="string">KibakoSnowMountain_Contain_01</UnitConfigName>
     </value>
     <value HashId="1557299132" SRTHash="-362970185">
       <Rotate type="array">
@@ -10163,6 +10416,22 @@
         <value>2564.908f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="1609969362" SRTHash="1694491661">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1298.4f</value>
+        <value>318.8f</value>
+        <value>2065.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
     </value>
     <value HashId="1611421386" SRTHash="1653151916">
       <Rotate type="array">
@@ -10560,6 +10829,22 @@
         <value>2858.759f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_B_01</UnitConfigName>
+    </value>
+    <value HashId="1666280366" SRTHash="-917687541">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1233.9f</value>
+        <value>358.9f</value>
+        <value>2247.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Senior</UnitConfigName>
     </value>
     <value HashId="1666530861" Rotate="-1.48f" SRTHash="244840292">
       <Translate type="array">
@@ -11570,19 +11855,6 @@
         <value>2743.834f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStone_A_01</UnitConfigName>
-    </value>
-    <value HashId="1810637052" SRTHash="1916036075" Scale="1.049316f">
-      <Rotate type="array">
-        <value>-0.002845081f</value>
-        <value>0.09252646f</value>
-        <value>0.0841416f</value>
-      </Rotate>
-      <Translate type="array">
-        <value>-1235.863f</value>
-        <value>363.7608f</value>
-        <value>2202.98f</value>
-      </Translate>
-      <UnitConfigName type="string">Obj_Plant_CypressLow_B_01</UnitConfigName>
     </value>
     <value HashId="1813188672" SRTHash="775971604" Scale="0.9821359f">
       <Rotate type="array">
@@ -12996,18 +13268,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
-    <value HashId="2023388561" SRTHash="616567522" Scale="40f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1022.984f</value>
-        <value>287.1134f</value>
-        <value>2169.435f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="2028775841" SRTHash="-361601628">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -13207,6 +13467,15 @@
         <value>2506.22f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
+    </value>
+    <value HashId="2054128790" Rotate="-2.600001f" SRTHash="888888839">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1237.679f</value>
+        <value>360.2926f</value>
+        <value>2260.93f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_03</UnitConfigName>
     </value>
     <value HashId="2055360179" Rotate="-1.510796f" SRTHash="1410143283">
       <Translate type="array">
@@ -13816,18 +14085,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
     </value>
-    <value HashId="-2133049654" SRTHash="616567522" Scale="40f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1389.117f</value>
-        <value>317.4519f</value>
-        <value>2000.829f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="-2132152907" SRTHash="1385805532" Scale="0.8811234f">
       <Rotate type="array">
         <value>0.8718267f</value>
@@ -13929,18 +14186,6 @@
         <value>2974.547f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
-    </value>
-    <value HashId="-2111346642" SRTHash="616567522" Scale="40f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1038.788f</value>
-        <value>293.8972f</value>
-        <value>2260.06f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-2104793552" SRTHash="1685773690">
       <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
@@ -14279,6 +14524,20 @@
         <value>2450.584f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="-2067072359" SRTHash="1208506979">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>0.4741343f</value>
+        <value>1.180986f</value>
+        <value>0.3151214f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1230.1f</value>
+        <value>337.8f</value>
+        <value>2128.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_02</UnitConfigName>
     </value>
     <value HashId="-2066950382" SRTHash="-1379063879" Scale="0.9522206f">
       <Rotate type="array">
@@ -15469,6 +15728,22 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="-1839834282" SRTHash="-944434426">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1094.1f</value>
+        <value>322.6f</value>
+        <value>2177.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
+    </value>
     <value HashId="-1837696586" SRTHash="1360942606">
       <Rotate type="array">
         <value>-0.05284705f</value>
@@ -15541,6 +15816,22 @@
         <value>2383.091f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1830618899" Rotate="1.28f" SRTHash="1788632014">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1028.8f</value>
+        <value>291.9f</value>
+        <value>2214.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
     </value>
     <value HashId="-1829945809" SRTHash="-1859290321">
       <Rotate type="array">
@@ -16508,6 +16799,22 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="-1698544312" Rotate="-2.74f" SRTHash="987023944">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1200f</value>
+        <value>377.1f</value>
+        <value>2232.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
+    </value>
     <value HashId="-1697061885" SRTHash="0">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -16800,6 +17107,15 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_Snow_01</UnitConfigName>
     </value>
+    <value HashId="-1643703005" Rotate="-0.1800003f" SRTHash="-20565903">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1192f</value>
+        <value>354.5f</value>
+        <value>2217.3f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_02</UnitConfigName>
+    </value>
     <value HashId="-1642396410" Rotate="1.630796f" SRTHash="1752464037">
       <Translate type="array">
         <value>-1386.308f</value>
@@ -16883,6 +17199,22 @@
         <value>2247.627f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1626814501" SRTHash="720591800">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1195.3f</value>
+        <value>352.629f</value>
+        <value>2208.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Middle</UnitConfigName>
     </value>
     <value HashId="-1626233357" SRTHash="-257327036" Scale="1.088405f">
       <Rotate type="array">
@@ -17417,6 +17749,15 @@
         <value>2359.783f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
+    </value>
+    <value HashId="-1529405318" Rotate="0.05999997f" SRTHash="-1611685518">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1235.5f</value>
+        <value>362.3f</value>
+        <value>2189.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_01</UnitConfigName>
     </value>
     <value HashId="-1529070506" SRTHash="143979880" Scale="1.04749f">
       <Rotate type="array">
@@ -18159,19 +18500,6 @@
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
-    <value HashId="-1402657734" SRTHash="-1486153891" Scale="0.995605f">
-      <Rotate type="array">
-        <value>0.09103299f</value>
-        <value>-0.8666663f</value>
-        <value>-0.02199719f</value>
-      </Rotate>
-      <Translate type="array">
-        <value>-1231.113f</value>
-        <value>363.9644f</value>
-        <value>2204.25f</value>
-      </Translate>
-      <UnitConfigName type="string">Obj_Plant_CypressLow_B_01</UnitConfigName>
-    </value>
     <value HashId="-1402452051" SRTHash="2115336493" Scale="0.8650177f">
       <Rotate type="array">
         <value>3.075025f</value>
@@ -18438,6 +18766,15 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="-1351308564" Rotate="-0.96f" SRTHash="-1097697797">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1232.5f</value>
+        <value>362.9f</value>
+        <value>2190.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_02</UnitConfigName>
+    </value>
     <value HashId="-1350768207" SRTHash="883240433">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -18622,18 +18959,6 @@
         <value>2306.636f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_Snow_01</UnitConfigName>
-    </value>
-    <value HashId="-1319193192" Rotate="-0.48f" SRTHash="616567522" Scale="40f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1073.633f</value>
-        <value>327.2675f</value>
-        <value>2232.831f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-1312759808" SRTHash="-755862100" Scale="0.9595408f">
       <Rotate type="array">
@@ -19143,6 +19468,20 @@
         <value>2040.422f</value>
       </Translate>
       <UnitConfigName type="string">Obj_RockSetSnow_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1235975806" SRTHash="558129772">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>0.0465873f</value>
+        <value>0.8146611f</value>
+        <value>0.1460238f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1226.1f</value>
+        <value>348.1f</value>
+        <value>2162.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_01</UnitConfigName>
     </value>
     <value HashId="-1234708240" SRTHash="411443229">
       <Rotate type="array">
@@ -20057,6 +20396,22 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_Snow_01</UnitConfigName>
     </value>
+    <value HashId="-1074925186" SRTHash="-1546846148">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1150.6f</value>
+        <value>327.7f</value>
+        <value>2202.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
+    </value>
     <value HashId="-1072770163" SRTHash="-1890672480">
       <Rotate type="array">
         <value>2.929162f</value>
@@ -20197,6 +20552,20 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="-1043750804" SRTHash="1353725986">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>-3.010685f</value>
+        <value>-0.2737656f</value>
+        <value>-3.037183f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1211.8f</value>
+        <value>358.8f</value>
+        <value>2253f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_03</UnitConfigName>
+    </value>
     <value HashId="-1042056750" SRTHash="-1237650896" Scale="1.114938f">
       <Rotate type="array">
         <value>-0.5469278f</value>
@@ -20262,6 +20631,15 @@
         <value>2038.579f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
+    </value>
+    <value HashId="-1039367357" Rotate="-2.219999f" SRTHash="1773265188">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1224.5f</value>
+        <value>363f</value>
+        <value>2219.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_03</UnitConfigName>
     </value>
     <value HashId="-1038337618" SRTHash="-1424892497">
       <Rotate type="array">
@@ -21679,6 +22057,22 @@
       </Translate>
       <UnitConfigName type="string">FldObj_PierSnowProp_A_03</UnitConfigName>
     </value>
+    <value HashId="-846191575" SRTHash="1660798496">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1063.1f</value>
+        <value>322.6f</value>
+        <value>2311.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
+    </value>
     <value HashId="-844934112" SRTHash="-1328769604" Scale="0.9596547f">
       <Rotate type="array">
         <value>3.083411f</value>
@@ -22056,6 +22450,22 @@
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStone_A_01</UnitConfigName>
     </value>
+    <value HashId="-791299220" Rotate="2.06f" SRTHash="1147003109">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1021.2f</value>
+        <value>293.7f</value>
+        <value>2223.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
+    </value>
     <value HashId="-790281779" SRTHash="1416197667">
       <Rotate type="array">
         <value>3.102314f</value>
@@ -22431,6 +22841,15 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="-730755943" Rotate="-1.42f" SRTHash="1503518299">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1226.109f</value>
+        <value>363.7588f</value>
+        <value>2203.472f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_01</UnitConfigName>
+    </value>
     <value HashId="-726750685" SRTHash="-485360619" Scale="1.04831f">
       <Rotate type="array">
         <value>-0.1283421f</value>
@@ -22682,6 +23101,22 @@
         <value>2321.445f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RockOrangeStone_A_02</UnitConfigName>
+    </value>
+    <value HashId="-692369898" SRTHash="-1286908685">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1212.2f</value>
+        <value>351.4852f</value>
+        <value>2190.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Junior</UnitConfigName>
     </value>
     <value HashId="-689223090" SRTHash="-531473204">
       <Translate type="array">
@@ -23034,6 +23469,22 @@
         <value>2160.91f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="-634112129" SRTHash="-2026359625">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1204.1f</value>
+        <value>365.2f</value>
+        <value>2255.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
     </value>
     <value HashId="-632917521" SRTHash="-1260663320" Scale="0.9147356f">
       <Rotate type="array">
@@ -23896,6 +24347,20 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
     </value>
+    <value HashId="-506783187" SRTHash="-1621248784">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>-2.860649f</value>
+        <value>-1.167566f</value>
+        <value>2.982882f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1202.3f</value>
+        <value>337.6f</value>
+        <value>2143.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_03</UnitConfigName>
+    </value>
     <value HashId="-505846633" SRTHash="-1017169610">
       <Rotate type="array">
         <value>0.3168371f</value>
@@ -24261,6 +24726,15 @@
       </Translate>
       <UnitConfigName type="string">FldObj_RockYellowOcher_A_L_01</UnitConfigName>
     </value>
+    <value HashId="-445268466" Rotate="-3.139997f" SRTHash="-405855352">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1240.065f</value>
+        <value>360.5424f</value>
+        <value>2260.144f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_02</UnitConfigName>
+    </value>
     <value HashId="-444728576" SRTHash="-1761837002" Scale="1.000019f">
       <Rotate type="array">
         <value>3.051283f</value>
@@ -24487,6 +24961,20 @@
         <value>2030.728f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
+    </value>
+    <value HashId="-410710797" SRTHash="728859680">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>-0.0339836f</value>
+        <value>-0.09981945f</value>
+        <value>-0.06030056f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1222f</value>
+        <value>347.8f</value>
+        <value>2164.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_03</UnitConfigName>
     </value>
     <value HashId="-410694798" SRTHash="1079290609">
       <Rotate type="array">
@@ -25214,6 +25702,22 @@
       </Translate>
       <UnitConfigName type="string">FldObj_PierSnowProp_A_03</UnitConfigName>
     </value>
+    <value HashId="-278694918" SRTHash="-564983402">
+      <_Parameters IsEnemyLiftable="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-1.244306f</value>
+        <value>-0.009080012f</value>
+        <value>0.1162734f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1232f</value>
+        <value>361.9f</value>
+        <value>2233.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_BarrelOld_A_01</UnitConfigName>
+    </value>
     <value HashId="-277656616" Rotate="-1.832596f" SRTHash="-101716976">
       <Translate type="array">
         <value>-1924.431f</value>
@@ -25565,23 +26069,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
     </value>
-    <value HashId="-221441535" Rotate="1.919862f" SRTHash="-531595220">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Box</Shape>
-      </_Parameters>
-      <Scale type="array">
-        <value>8.5f</value>
-        <value>5f</value>
-        <value>5.5f</value>
-      </Scale>
-      <Translate type="array">
-        <value>-1291f</value>
-        <value>419.5f</value>
-        <value>2218.5f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="-220059947" SRTHash="1252398198" Scale="1.020149f">
       <Rotate type="array">
         <value>-3.015739f</value>
@@ -25821,23 +26308,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
     </value>
-    <value HashId="-175352154" SRTHash="2102475451">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Box</Shape>
-      </_Parameters>
-      <Scale type="array">
-        <value>6f</value>
-        <value>1f</value>
-        <value>6f</value>
-      </Scale>
-      <Translate type="array">
-        <value>-1038.456f</value>
-        <value>252.4434f</value>
-        <value>1997.942f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="-175311440" Rotate="2.921592f" SRTHash="-854888314">
       <Translate type="array">
         <value>-1922.451f</value>
@@ -25966,6 +26436,15 @@
         <value>2205.905f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
+    </value>
+    <value HashId="-150185930" Rotate="2.223186f" SRTHash="1513618819">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-1251.748f</value>
+        <value>361.7949f</value>
+        <value>2247.782f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_03</UnitConfigName>
     </value>
     <value HashId="-148223217" SRTHash="-1422043422" Scale="0.9013126f">
       <Rotate type="array">
@@ -27020,6 +27499,22 @@
         <value>2866.216f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_01</UnitConfigName>
+    </value>
+    <value HashId="-1293429" SRTHash="-1142075352">
+      <_Parameters IsCreateOnFace="false" IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1074f</value>
+        <value>322.6f</value>
+        <value>2297.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Ice_AllDay</UnitConfigName>
     </value>
   </Objs>
   <Rails type="array" />

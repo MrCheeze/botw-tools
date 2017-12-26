@@ -6827,17 +6827,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeBroadleaf_A_LL_Set_01</UnitConfigName>
     </value>
-    <value HashId="790279748" Rotate="-1.308997f" SRTHash="504799767" Scale="1.78413f">
-      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
-        <DropTable type="string">Normal</DropTable>
-      </_Parameters>
-      <Translate type="array">
-        <value>-278.3158f</value>
-        <value>300.81f</value>
-        <value>-1055.252f</value>
-      </Translate>
-      <UnitConfigName type="string">TwnObj_HyruleCastleObject_TableTorch_A_01</UnitConfigName>
-    </value>
     <value HashId="791489801" Rotate="3.840562f" SRTHash="1940520277">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -8195,17 +8184,6 @@
         <value>-995.2689f</value>
       </Translate>
       <UnitConfigName type="string">BoxWater</UnitConfigName>
-    </value>
-    <value HashId="982557814" SRTHash="780240311" Scale="1.17242f">
-      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
-        <DropTable type="string">Normal</DropTable>
-      </_Parameters>
-      <Translate type="array">
-        <value>-258.9816f</value>
-        <value>303.74f</value>
-        <value>-1081.592f</value>
-      </Translate>
-      <UnitConfigName type="string">TwnObj_HyruleCastleObject_BigTorch_B_01</UnitConfigName>
     </value>
     <value HashId="982964813" SRTHash="2138227756">
       <_Parameters IsEnemyLiftable="true" SharpWeaponJudgeType="0">
@@ -15008,17 +14986,6 @@
       </Translate>
       <UnitConfigName type="string">TwnObj_HyruleCity_Slope_A_01</UnitConfigName>
     </value>
-    <value HashId="1744484384" Rotate="-3.141593f" SRTHash="1473693036" Scale="1.70157f">
-      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
-        <DropTable type="string">Normal</DropTable>
-      </_Parameters>
-      <Translate type="array">
-        <value>-260.614f</value>
-        <value>299.819f</value>
-        <value>-1038.112f</value>
-      </Translate>
-      <UnitConfigName type="string">TwnObj_HyruleCastleObject_TableTorch_A_01</UnitConfigName>
-    </value>
     <value HashId="1744893020" SRTHash="1350012890">
       <Rotate type="array">
         <value>-0.1078933f</value>
@@ -15796,17 +15763,6 @@
         <value>-849.7222f</value>
       </Translate>
       <UnitConfigName type="string">FidObj_TorchStand_A_01</UnitConfigName>
-    </value>
-    <value HashId="1832890681" Rotate="-3.141593f" SRTHash="732640129" Scale="1.70157f">
-      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
-        <DropTable type="string">Normal</DropTable>
-      </_Parameters>
-      <Translate type="array">
-        <value>-247.3867f</value>
-        <value>299.819f</value>
-        <value>-1038.112f</value>
-      </Translate>
-      <UnitConfigName type="string">TwnObj_HyruleCastleObject_TableTorch_A_01</UnitConfigName>
     </value>
     <value HashId="1836072978" SRTHash="-1817216798">
       <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="true" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="true" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="1" Life="-1" SharpWeaponJudgeType="0" />
@@ -23090,17 +23046,6 @@
         <value>-110.3945f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_02</UnitConfigName>
-    </value>
-    <value HashId="-1584025177" Rotate="-1.832595f" SRTHash="-274762637" Scale="1.78413f">
-      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
-        <DropTable type="string">Normal</DropTable>
-      </_Parameters>
-      <Translate type="array">
-        <value>-229.6849f</value>
-        <value>300.81f</value>
-        <value>-1055.252f</value>
-      </Translate>
-      <UnitConfigName type="string">TwnObj_HyruleCastleObject_TableTorch_A_01</UnitConfigName>
     </value>
     <value HashId="-1580696559" SRTHash="-1890672480">
       <Rotate type="array">
@@ -32081,17 +32026,6 @@
       </Translate>
       <UnitConfigName type="string">Barrel</UnitConfigName>
     </value>
-    <value HashId="-515788629" Rotate="-1.308997f" SRTHash="-751952016" Scale="1.78413f">
-      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
-        <DropTable type="string">Normal</DropTable>
-      </_Parameters>
-      <Translate type="array">
-        <value>-229.6941f</value>
-        <value>300.81f</value>
-        <value>-1068.28f</value>
-      </Translate>
-      <UnitConfigName type="string">TwnObj_HyruleCastleObject_TableTorch_A_01</UnitConfigName>
-    </value>
     <value HashId="-515275695" SRTHash="-2132460733">
       <Translate type="array">
         <value>-238.2597f</value>
@@ -32431,17 +32365,6 @@
         <value>-810.5479f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_02</UnitConfigName>
-    </value>
-    <value HashId="-474958118" SRTHash="-796807515" Scale="1.17242f">
-      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
-        <DropTable type="string">Normal</DropTable>
-      </_Parameters>
-      <Translate type="array">
-        <value>-249.0191f</value>
-        <value>303.74f</value>
-        <value>-1081.592f</value>
-      </Translate>
-      <UnitConfigName type="string">TwnObj_HyruleCastleObject_BigTorch_B_01</UnitConfigName>
     </value>
     <value HashId="-472199170" Rotate="2.261593f" SRTHash="-969424745">
       <Translate type="array">
@@ -33225,17 +33148,6 @@
         <value>-441.3382f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeBurned_A_01</UnitConfigName>
-    </value>
-    <value HashId="-378159165" Rotate="-1.832595f" SRTHash="-605454804" Scale="1.78413f">
-      <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
-        <DropTable type="string">Normal</DropTable>
-      </_Parameters>
-      <Translate type="array">
-        <value>-278.3065f</value>
-        <value>300.81f</value>
-        <value>-1068.28f</value>
-      </Translate>
-      <UnitConfigName type="string">TwnObj_HyruleCastleObject_TableTorch_A_01</UnitConfigName>
     </value>
     <value HashId="-377595380" Rotate="5.729687f" SRTHash="-1735986889">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">

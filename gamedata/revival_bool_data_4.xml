@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
   <bool_data type="array">
-    <value DeleteRev="-1" HashValue="-2136064666" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
-      <DataName type="string">MainField_Enemy_Keese_Fire_2256881913</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="-32929573" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_TBox_Field_Iron_2259596828</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="-490506715" InitValue="88" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_Item_Mushroom_E_2271434251</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="576486823" InitValue="88" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_Obj_Mineral_A_01_2319717475</DataName>
-    </value>
     <value DeleteRev="-1" HashValue="-1088116494" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_Enemy_Golem_Little_2379919319</DataName>
     </value>
@@ -12288,6 +12276,18 @@
     </value>
     <value DeleteRev="-1" HashValue="-320827117" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_OreDrop0_Enemy_Golem_Junior_3873221297</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-502826558" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_OreDrop1_Enemy_Golem_Junior_3873221297</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-248561487" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_OreDrop2_Enemy_Golem_Junior_3873221297</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1642983702" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Golem_Junior_3873221297</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1112622941" InitValue="108" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Obj_Mineral_A_01_3881606160</DataName>
     </value>
   </bool_data>
 </yaml>

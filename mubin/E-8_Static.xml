@@ -5840,6 +5840,24 @@
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
     </value>
+    <value HashId="-1452078952" Rotate="1.350798f" SRTHash="990903419">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_175_Upper</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-322963416">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-164.3279f</value>
+        <value>97.54435f</value>
+        <value>3078.888f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
+    </value>
     <value HashId="-1443117478" Rotate="2.094395f" SRTHash="-846435646">
       <Translate type="array">
         <value>-375.5921f</value>
@@ -6864,6 +6882,17 @@
         <value>3487.132f</value>
       </Translate>
       <UnitConfigName type="string">AnchorSleep</UnitConfigName>
+    </value>
+    <value HashId="-880234539" SRTHash="1460177006" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku06_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-131.3235f</value>
+        <value>125.6481f</value>
+        <value>3079.92f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-878152289" OnlyOne="true" Rotate="0.12f" SRTHash="-600842761">
       <_Parameters TerritoryArea="0f" TraverseRadiusXZ="23.92972f">
@@ -8090,6 +8119,21 @@
         <value>3803.004f</value>
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
+    </value>
+    <value HashId="-322963416" SRTHash="1910023467" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-880234539">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-131.3235f</value>
+        <value>109.0153f</value>
+        <value>3077.709f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-322250017" SRTHash="-182953672" Scale="0.25f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" PulseLength="5" SaveFlagOnOffType="0" />

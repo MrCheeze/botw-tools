@@ -136,5 +136,8 @@
     <value DeleteRev="-1" HashValue="-1684378501" InitValue="0f" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="1f" MinValue="0f" ResetType="0">
       <DataName type="string">CameraZoom</DataName>
     </value>
+    <value DeleteRev="-1" HashValue="-1951373839" InitValue="1000f" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="1000f" MinValue="0f" ResetType="0">
+      <DataName type="string">Motorcycle_Energy</DataName>
+    </value>
   </f32_data>
 </yaml>

@@ -8747,6 +8747,29 @@
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
+    <value HashId="1777801040" SRTHash="273210107">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_177_Head</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1110671300">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-1.615478f</value>
+        <value>1.159891f</value>
+        <value>-1.140358f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>830.4326f</value>
+        <value>134.0305f</value>
+        <value>2438.381f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
+    </value>
     <value HashId="1780754280" Rotate="0.04359877f" SRTHash="-838960844" Scale="0.9299999f">
       <_Parameters KorokFlowerColorNum="0" />
       <Translate type="array">
@@ -15950,6 +15973,21 @@
       </Translate>
       <UnitConfigName type="string">DgnObj_EntranceShutter_A_01</UnitConfigName>
     </value>
+    <value HashId="-1110671300" SRTHash="-1660540695" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-644694899">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>884.1372f</value>
+        <value>166.9211f</value>
+        <value>2415.538f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1110376975" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -18029,6 +18067,17 @@
         <value>2744.343f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RuinStoneWall_A_03_Far</UnitConfigName>
+    </value>
+    <value HashId="-644694899" SRTHash="-116596855" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku05_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>884.1372f</value>
+        <value>183.5539f</value>
+        <value>2417.749f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-631374429" Rotate="4.640122f" SRTHash="475288636">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">

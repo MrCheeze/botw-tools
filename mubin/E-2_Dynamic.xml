@@ -3422,6 +3422,22 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeGhost_A_04</UnitConfigName>
     </value>
+    <value HashId="-1726710027" SRTHash="-1963894706">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Weapon_Spear_003</DropActor>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.47238f</value>
+        <value>-1.224831f</value>
+        <value>-2.442469f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-577.4961f</value>
+        <value>490.6641f</value>
+        <value>-2600.513f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
     <value HashId="-1705345344" SRTHash="1261307425">
       <Rotate type="array">
         <value>0.2855725f</value>

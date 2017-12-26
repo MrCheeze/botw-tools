@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
   <bool_data type="array">
-    <value DeleteRev="-1" HashValue="-1919264498" InitValue="126" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_Item_Mushroom_D_3036181844</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="829309857" InitValue="126" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_Item_Material_04_3048685174</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="-461527862" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_TBox_Field_Stone_3079508418</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="160963309" InitValue="126" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_Item_Mushroom_M_3082496530</DataName>
-    </value>
     <value DeleteRev="-1" HashValue="-96325091" InitValue="126" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Item_Mushroom_A_3097559041</DataName>
     </value>
@@ -12288,6 +12276,18 @@
     </value>
     <value DeleteRev="-1" HashValue="-710231531" InitValue="0" IsEventAssociated="true" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_Enemy_Bokoblin_Middle_2120870626</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1142506656" InitValue="144" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Obj_LiftRockWhite_A_01_2302850735</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1801698593" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2328299118</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2044546581" InitValue="0" IsEventAssociated="true" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Bokoblin_Senior_2328299118</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1240086125" InitValue="0" IsEventAssociated="true" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Enemy_2335430415</DataName>
     </value>
   </bool_data>
 </yaml>

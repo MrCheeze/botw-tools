@@ -4092,6 +4092,29 @@
       </Translate>
       <UnitConfigName type="string">Item_Fruit_G</UnitConfigName>
     </value>
+    <value HashId="849119559" SRTHash="-949229824">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">GameRomHorseSaddle_10</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1382924286">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.314977f</value>
+        <value>-0.4171779f</value>
+        <value>0.3760263f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>812.9907f</value>
+        <value>185.9102f</value>
+        <value>3700.966f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
+    </value>
     <value HashId="850253890" SRTHash="633200477">
       <Rotate type="array">
         <value>2.720727f</value>
@@ -4104,6 +4127,16 @@
         <value>3278.299f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteLumpRock_A_01</UnitConfigName>
+    </value>
+    <value HashId="853158282" OnlyOne="true" SRTHash="1769511964">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>527.7661f</value>
+        <value>154.5128f</value>
+        <value>3458.074f</value>
+      </Translate>
+      <UniqueName type="string">UmayadoBook_09_01</UniqueName>
+      <UnitConfigName type="string">TwnObj_UmayadoBook_09</UnitConfigName>
     </value>
     <value HashId="855861416" SRTHash="0">
       <_Parameters LocationPriority="1">
@@ -4670,6 +4703,17 @@
         <value>3167.031f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhite_A_03_Far</UnitConfigName>
+    </value>
+    <value HashId="969840725" SRTHash="406186993">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt03_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>808.7018f</value>
+        <value>199.0718f</value>
+        <value>3706.783f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="971801201" SRTHash="1257283389">
       <_Parameters HiddenKorokBodyColor="4" HiddenKorokLeftPlantType="1" HiddenKorokMaskType="8" HiddenKorokRightPlantType="1" IsAppearCheck="false" IsHiddenKorokLiftAppear="true" IsInvisibleKorok="false" KorokEventStartWaitFrame="20" RailMoveSpeed="0.1f" TerritoryArea="0f">
@@ -6573,6 +6617,18 @@
       </Translate>
       <UnitConfigName type="string">AnchorAction2</UnitConfigName>
     </value>
+    <value HashId="1378052786" SRTHash="1646813189">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">TreasureHunt03_RemainingBox</EventFlowEntryName>
+        <EventFlowName type="string">TreasureHunt03</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>806.278f</value>
+        <value>195.5544f</value>
+        <value>3705.419f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="1378311114" Rotate="-3f" SRTHash="-1474436933">
       <LinksToObj type="array">
         <value DestUnitHashId="-775329975">
@@ -6603,6 +6659,30 @@
         <value>3512.264f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteEdgeParts_A_03</UnitConfigName>
+    </value>
+    <value HashId="1382924286" SRTHash="38141113">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1332259765">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1378052786">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.04930804f</value>
+        <value>0.003689891f</value>
+        <value>-0.1493585f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>807.4746f</value>
+        <value>193.4976f</value>
+        <value>3705.509f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1384356691" Rotate="-2.12f" SRTHash="-916399603" Scale="0.98f">
       <LinksToObj type="array">
@@ -13415,6 +13495,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-1521037391" SRTHash="694936288">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt03_Open02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1010937308">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>809.3483f</value>
+        <value>197.525f</value>
+        <value>3707.89f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1519115698" SRTHash="1695681192">
       <LinksToObj type="array">
         <value DestUnitHashId="-1513561867">
@@ -14338,6 +14435,23 @@
         <value>3720.111f</value>
       </Translate>
       <UnitConfigName type="string">GreatFairyBeforeRevival</UnitConfigName>
+    </value>
+    <value HashId="-1332259765" SRTHash="253187977">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt03_Open01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1010937308">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>808.652f</value>
+        <value>197.525f</value>
+        <value>3705.712f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1330477426" Rotate="2.600002f" SRTHash="228384184">
       <_Parameters EffectDispSize="1.5f" IsNoResponceSound="false">
@@ -15903,6 +16017,21 @@
         <value>3476.661f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStartingBlock_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1010937308" SRTHash="1768624461">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="969840725">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>808.7018f</value>
+        <value>198.4f</value>
+        <value>3706.783f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1009603912" SRTHash="2115673534" Scale="0.7f">
       <LinksToObj type="array">

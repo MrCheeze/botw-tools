@@ -84,6 +84,23 @@
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
+    <value HashId="28756875" Rotate="2.355849f" SRTHash="-784978549">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="841579911">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1241.159f</value>
+        <value>434.9031f</value>
+        <value>2195.808f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
     <value HashId="38035274" Rotate="-1.7f" SRTHash="1513454765">
       <_Parameters IsNoAppearEffect="false" IsTargetWarp="false" KorokTargetAppearFrame="-1" KorokTargetVanishFrame="-1" RailMoveSpeed="0.3f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -235,6 +252,27 @@
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
+    <value HashId="80844072" Rotate="-0.6351269f" SRTHash="1138327628">
+      <_Parameters FortressEatPer="-1" IsIchigekiActor="true" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" NearCreateAppearID="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_007</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">LizalfosPipe</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1359670284">
+          <DefinitionName type="string">LifeZero</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1229.1f</value>
+        <value>361.7574f</value>
+        <value>2232.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Ice</UnitConfigName>
+    </value>
     <value HashId="90503961" SRTHash="1765926676">
       <Rotate type="array">
         <value>-0.3235283f</value>
@@ -347,6 +385,17 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeBaobab_A_02</UnitConfigName>
     </value>
+    <value HashId="103250014" Rotate="0.1494115f" SRTHash="-282563920">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1214.754f</value>
+        <value>340.463f</value>
+        <value>2118.988f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_WarpPointSP</UnitConfigName>
+    </value>
     <value HashId="113262231" Rotate="2.163185f" SRTHash="604741487">
       <_Parameters>
         <GetUpDirection type="string">None</GetUpDirection>
@@ -375,6 +424,20 @@
         <value>2543.203f</value>
       </Translate>
       <UnitConfigName type="string">BottomTag</UnitConfigName>
+    </value>
+    <value HashId="122107047" Rotate="0.1494115f" SRTHash="899526784">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2106755420">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1214.78f</value>
+        <value>352.8659f</value>
+        <value>2111.25f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
     <value HashId="124794558" SRTHash="-1074296819">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -591,6 +654,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="174427250" SRTHash="606787032" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2101662324">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1236f</value>
+        <value>434.7031f</value>
+        <value>2192f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="176155286" SRTHash="-240040561">
       <LinksToObj type="array">
         <value DestUnitHashId="1895570501">
@@ -699,6 +779,65 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="193660642" SRTHash="337333697" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1236140447">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.0003833259f</value>
+        <value>1.063145E-05f</value>
+        <value>0.05545527f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1045.061f</value>
+        <value>251.2285f</value>
+        <value>1997.097f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="194046408" SRTHash="-861079377">
+      <_Parameters IsEnemyLiftable="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-981432370">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.01133487f</value>
+        <value>0.09857117f</value>
+        <value>1.452796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1193.8f</value>
+        <value>355.6f</value>
+        <value>2218.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_BarrelOld_A_01</UnitConfigName>
+    </value>
+    <value HashId="196521852" SRTHash="1860755702" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_00</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-494970215">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1180.843f</value>
+        <value>375.5981f</value>
+        <value>2146.955f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="198961194" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -780,6 +919,34 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Chuchu_Electric_Middle</UnitConfigName>
     </value>
+    <value HashId="216166727" Rotate="0.1494115f" SRTHash="882955965">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1216.123f</value>
+        <value>339.5f</value>
+        <value>2109.896f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_ChampionsDungeonEntrance_A_01</UnitConfigName>
+    </value>
+    <value HashId="216449787" SRTHash="337333697" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1321452934">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1044.056f</value>
+        <value>297.4676f</value>
+        <value>2259.53f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
     <value HashId="222878857" SRTHash="-269670184" Scale="1.5f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -836,6 +1003,60 @@
         <value>2262.315f</value>
       </Translate>
       <UnitConfigName type="string">Enemy_Bokoblin_Middle</UnitConfigName>
+    </value>
+    <value HashId="225341532" SRTHash="-496457495">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-403955479">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1235.337f</value>
+        <value>365.7642f</value>
+        <value>2197.827f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="226639294" Rotate="0.1494115f" SRTHash="536013132">
+      <_Parameters>
+        <Shape type="string">Capsule</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>10f</value>
+        <value>25f</value>
+        <value>10f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-1216.272f</value>
+        <value>354.5f</value>
+        <value>2108.907f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_SweepCollision</UnitConfigName>
+    </value>
+    <value HashId="227631095" SRTHash="-1466129659" Scale="2.5f">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TraverseDist="150f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-530282325">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-1.762064f</value>
+        <value>-0.9709359f</value>
+        <value>1.63858f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1030.7f</value>
+        <value>314.7f</value>
+        <value>2300.3f</value>
+      </Translate>
+      <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
     </value>
     <value HashId="230178539" SRTHash="-1649083437">
       <LinksToObj type="array">
@@ -1063,6 +1284,17 @@
       </Translate>
       <UnitConfigName type="string">FldObj_SkullRockSand_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="305053180" Rotate="2.165611f" SRTHash="1508595467">
+      <_Parameters>
+        <GetUpDirection type="string">None</GetUpDirection>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1223.666f</value>
+        <value>348.4407f</value>
+        <value>2160.592f</value>
+      </Translate>
+      <UnitConfigName type="string">AnchorAction1</UnitConfigName>
+    </value>
     <value HashId="311620516" Rotate="-3.141593f" SRTHash="1257283389">
       <_Parameters HiddenKorokBodyColor="3" HiddenKorokLeftPlantType="1" HiddenKorokMaskType="5" HiddenKorokRightPlantType="0" IsAppearCheck="false" IsHiddenKorokLiftAppear="false" IsInvisibleKorok="false" KorokEventStartWaitFrame="45" RailMoveSpeed="0.1f" TerritoryArea="0f">
         <PlacementType type="string">Ground</PlacementType>
@@ -1184,6 +1416,29 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="334724676" Rotate="-2.301592f" SRTHash="-685434196">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1594020511">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="1669808649">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-408081818">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1223.48f</value>
+        <value>352.1172f</value>
+        <value>2162.277f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="340871421" Rotate="-0.1745329f" SRTHash="-817848648">
       <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -1219,6 +1474,22 @@
         <value>-1648.5f</value>
         <value>152.3242f</value>
         <value>2539f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="354126018" SRTHash="885225172" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-574789926">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1238.815f</value>
+        <value>370.1641f</value>
+        <value>2205.819f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
@@ -1310,6 +1581,17 @@
         <value>2082.778f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RiverEdge_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="377639621" SRTHash="2085236840" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_05</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1193.337f</value>
+        <value>359.1572f</value>
+        <value>2221.285f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="378837304" Rotate="-1.06f" SRTHash="-553737275">
       <Translate type="array">
@@ -1442,6 +1724,15 @@
         <value>2146.931f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="403189644" Rotate="-2.992181f" SRTHash="-981467705">
+      <Translate type="array">
+        <value>-1215.2f</value>
+        <value>340.5f</value>
+        <value>2116.7f</value>
+      </Translate>
+      <UniqueName type="string">Demo008_9_PlayerEndPos</UniqueName>
+      <UnitConfigName type="string">ForceSetPosDirAutoSaveAnchor</UnitConfigName>
     </value>
     <value HashId="405235473" SRTHash="-2076815356">
       <LinksToObj type="array">
@@ -1721,6 +2012,24 @@
       </Translate>
       <UnitConfigName type="string">LinkTagNone</UnitConfigName>
     </value>
+    <value HashId="496594316" Rotate="0.1494112f" SRTHash="-387393472">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">Dungeon02_Appear</EventFlowEntryName>
+        <EventFlowName type="string">BalladOfHeroes</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1312744689">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1215.1f</value>
+        <value>340.6f</value>
+        <value>2118.5f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="497417515" SRTHash="-939776961">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -1893,6 +2202,22 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="562644145" SRTHash="559405858" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-193200963">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1196.854f</value>
+        <value>359.9141f</value>
+        <value>2224.241f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="564587269" SRTHash="236950900">
       <_Parameters ApplyForceValue="2.5f" ForceType="1" TriggerType="0" />
       <LinksToObj type="array">
@@ -1917,6 +2242,22 @@
         <value>2725.465f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_07_Far</UnitConfigName>
+    </value>
+    <value HashId="573450205" SRTHash="527940439" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-627443342">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1240.682f</value>
+        <value>370.1641f</value>
+        <value>2193.561f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="577541103" SRTHash="0">
       <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -1952,6 +2293,23 @@
         <value>1964.7f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_03</UnitConfigName>
+    </value>
+    <value HashId="578556795" SRTHash="-1438968352">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1534223063">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1218.334f</value>
+        <value>352.9465f</value>
+        <value>2172.893f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="578943040" SRTHash="1116635615">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -2008,6 +2366,22 @@
         <value>2381.205f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="605669213" SRTHash="-1008092131">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1341.9f</value>
+        <value>353.3f</value>
+        <value>2272.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Middle</UnitConfigName>
     </value>
     <value HashId="607051520" SRTHash="-1340148797">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -2113,6 +2487,21 @@
         <value>2387.76f</value>
       </Translate>
       <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="633598556" SRTHash="0">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-476071799">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1234.3f</value>
+        <value>365.4f</value>
+        <value>2191.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="636410909" SRTHash="109621062">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -2293,6 +2682,22 @@
         <value>2309.558f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteWall_A_01</UnitConfigName>
+    </value>
+    <value HashId="686607516" Rotate="0.7853982f" SRTHash="1296166247">
+      <_Parameters FortressEatPer="-1" IsCreateStalPart="true" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1398.2f</value>
+        <value>316.1284f</value>
+        <value>2006.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Bokoblin_Bone_Junior_AllDay</UnitConfigName>
     </value>
     <value HashId="701021357" Rotate="1.016127f" SRTHash="-301128281" Scale="2f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -2608,6 +3013,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_01</UnitConfigName>
     </value>
+    <value HashId="776119113" SRTHash="1460000225" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1597135702">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1062.939f</value>
+        <value>332.3254f</value>
+        <value>2235.968f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="778889616" Rotate="1.280001f" SRTHash="1825234782">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -2804,7 +3226,7 @@
           </_Parameters>
           <DefinitionName type="string">BAndSCs</DefinitionName>
         </value>
-        <value DestUnitHashId="-514745107">
+        <value DestUnitHashId="-1858377630">
           <DefinitionName type="string">SyncLink</DefinitionName>
         </value>
       </LinksToObj>
@@ -2847,6 +3269,17 @@
         <value>2212.365f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_03</UnitConfigName>
+    </value>
+    <value HashId="834504555" SRTHash="98017637">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_04</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1234.4f</value>
+        <value>368.1f</value>
+        <value>2169.9f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="837020107" Rotate="0.8799998f" SRTHash="1948158524">
       <LinksToObj type="array">
@@ -2892,6 +3325,38 @@
         <value>2329.122f</value>
       </Translate>
       <UnitConfigName type="string">TwnObj_TempleOfTime_WallSnow_C_04_Far</UnitConfigName>
+    </value>
+    <value HashId="841579911" Rotate="2.355849f" SRTHash="-1747752456">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-185744255">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1242.05f</value>
+        <value>434.9031f</value>
+        <value>2194.698f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="851699744" SRTHash="-1105901760" Scale="3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Finish</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="953329830">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1226.981f</value>
+        <value>418.8271f</value>
+        <value>2206.077f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
     <value HashId="853922484" Rotate="0.8799998f" SRTHash="908719852">
       <_Parameters InitMotionStatus="0" IsPlayerPut="false" SharpWeaponJudgeType="0">
@@ -3043,6 +3508,24 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_17</UnitConfigName>
     </value>
+    <value HashId="904449491" SRTHash="-484881357" Scale="15f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="834504555">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1234.5f</value>
+        <value>348.6f</value>
+        <value>2174f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="904765919" SRTHash="-939776961">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -3108,6 +3591,22 @@
         <value>2349.758f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="935714617" Rotate="-1.570796f" SRTHash="5708214">
+      <_Parameters FortressEatPer="-1" IsCreateStalPart="true" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1384.3f</value>
+        <value>317.678f</value>
+        <value>1997.8f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Bokoblin_Bone_Junior_AllDay</UnitConfigName>
     </value>
     <value HashId="936061630" Rotate="-3.141593f" SRTHash="1999688624" Scale="2f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -3188,6 +3687,25 @@
         <value>2219.522f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowTop_D_01_Far</UnitConfigName>
+    </value>
+    <value HashId="953329830" SRTHash="1846845899" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1453425346">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="2138053323">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1224.312f</value>
+        <value>417.6397f</value>
+        <value>2206.68f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="957940621" Rotate="-1.058577f" SRTHash="-194106293">
       <LinksToObj type="array">
@@ -3333,6 +3851,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagNone</UnitConfigName>
     </value>
+    <value HashId="1020077675" Rotate="-2.301592f" SRTHash="2101999108">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Kasshiwa_Appear2</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="334724676">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1224.48f</value>
+        <value>352.1172f</value>
+        <value>2162.777f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="1020197407" SRTHash="1304002568" Scale="1.5f">
       <LinksToObj type="array">
         <value DestUnitHashId="-2077775570">
@@ -3390,6 +3925,15 @@
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
+    <value HashId="1025235896" SRTHash="0">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1347.5f</value>
+        <value>305.8f</value>
+        <value>2081.2f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
     <value HashId="1034472920" Rotate="0.9600001f" SRTHash="1257283389">
       <_Parameters HiddenKorokBodyColor="0" HiddenKorokLeftPlantType="0" HiddenKorokMaskType="3" HiddenKorokRightPlantType="2" IsAppearCheck="false" IsHiddenKorokLiftAppear="true" IsInvisibleKorok="false" KorokEventStartWaitFrame="20" RailMoveSpeed="0.1f" TerritoryArea="0f">
         <PlacementType type="string">Ground</PlacementType>
@@ -3423,7 +3967,7 @@
           </_Parameters>
           <DefinitionName type="string">BAndSCs</DefinitionName>
         </value>
-        <value DestUnitHashId="-514745107">
+        <value DestUnitHashId="-1858377630">
           <DefinitionName type="string">SyncLink</DefinitionName>
         </value>
       </LinksToObj>
@@ -3433,6 +3977,23 @@
         <value>2135.977f</value>
       </Translate>
       <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
+    </value>
+    <value HashId="1035804458" SRTHash="230025526">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_04</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1694415348">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1232.755f</value>
+        <value>364.9228f</value>
+        <value>2196.074f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1037089066" SRTHash="-1246388540">
       <Rotate type="array">
@@ -3568,6 +4129,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWall_A_34</UnitConfigName>
     </value>
+    <value HashId="1048072942" SRTHash="1790242470">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_05</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-821118926">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1219.959f</value>
+        <value>364.1848f</value>
+        <value>2249.175f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1050069920" SRTHash="2128595464">
       <_Parameters EffectDispSize="1f" IsNoResponceSound="false">
         <EffectDIspOffset X="0f" Y="0.5f" Z="0f" />
@@ -3624,6 +4202,20 @@
         <value>2349.758f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_01</UnitConfigName>
+    </value>
+    <value HashId="1051275529" SRTHash="-1095307059" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2133049654">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1389.623f</value>
+        <value>326.491f</value>
+        <value>2000.437f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1053752560" SRTHash="854334566">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -3687,6 +4279,27 @@
         <value>2384.593f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1076490875" Rotate="-1.06015f" SRTHash="-1289311047">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="1">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1312744689">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="2101925488">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1220.478f</value>
+        <value>346.5f</value>
+        <value>2127.603f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="1086843994" Rotate="-1.471276f" SRTHash="-105656694">
       <LinksToObj type="array">
@@ -3799,6 +4412,24 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowScaffold_D_01_Far</UnitConfigName>
     </value>
+    <value HashId="1115844810" SRTHash="579875108" Scale="20f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1286849947">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1090.2f</value>
+        <value>322.6f</value>
+        <value>2255.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="1116013200" Rotate="-0.1053973f" SRTHash="-1284104339">
       <_Parameters EnableRevival="false" IsHardModeActor="true" IsInGround="false" SharpWeaponJudgeType="2">
         <DropActor type="string">Weapon_Lsword_003</DropActor>
@@ -3868,6 +4499,47 @@
       </Translate>
       <UnitConfigName type="string">FldObj_RockOrange_A_L_02</UnitConfigName>
     </value>
+    <value HashId="1159081045" SRTHash="733211158" Scale="12f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1584861099">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1038.4f</value>
+        <value>250.2768f</value>
+        <value>2012.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1164063706" Rotate="0.1494115f" SRTHash="-1754243463">
+      <_Parameters IncrementSave="false" MakeSaveFlag="2" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1321694778">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="103250014">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="216166727">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1215.222f</value>
+        <value>340.5f</value>
+        <value>2114.777f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1169389413" SRTHash="-362586482">
       <Translate type="array">
         <value>-1945.664f</value>
@@ -3917,6 +4589,23 @@
         <value>1947.174f</value>
       </Translate>
       <UnitConfigName type="string">TwnObj_TempleOfTime_WallSnow_C_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1184940013" Rotate="2.201592f" SRTHash="481909955">
+      <_Parameters ApplyForceValue="5f" ForceType="0" IsIchigekiActor="true" TriggerType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1221004436">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-807233655">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1227.1f</value>
+        <value>352.4f</value>
+        <value>2175.1f</value>
+      </Translate>
+      <UnitConfigName type="string">MoveTriggerTag</UnitConfigName>
     </value>
     <value HashId="1186197490" Rotate="2.957295f" SRTHash="906934454">
       <LinksToObj type="array">
@@ -3983,6 +4672,17 @@
         <value>2009.563f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_22</UnitConfigName>
+    </value>
+    <value HashId="1193794945" SRTHash="1058882445">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_06</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1214f</value>
+        <value>381.7f</value>
+        <value>2259f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1195789257" Rotate="1.917789f" SRTHash="773163762">
       <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
@@ -4246,6 +4946,25 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Lizalfos_Electric</UnitConfigName>
     </value>
+    <value HashId="1236140447" SRTHash="-1095307059" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-175352154">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.0003833259f</value>
+        <value>1.063145E-05f</value>
+        <value>0.05545527f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1040.346f</value>
+        <value>256.498f</value>
+        <value>1997.095f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1237125895" SRTHash="-657272068" Scale="0.5f">
       <_Parameters SharpWeaponJudgeType="0" WaitTime="7f">
         <DropTable type="string">Normal</DropTable>
@@ -4373,6 +5092,34 @@
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
     </value>
+    <value HashId="1257657425" SRTHash="-498906248">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Capsule</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-997897682">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.021478f</value>
+        <value>-0.4171355f</value>
+        <value>-0.1996763f</value>
+      </Rotate>
+      <Scale type="array">
+        <value>25f</value>
+        <value>10f</value>
+        <value>25f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-1402.538f</value>
+        <value>305.6541f</value>
+        <value>1998.03f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="1258441806" Rotate="-0.52f" SRTHash="581261435">
       <LinksToObj type="array">
         <value DestUnitHashId="-710682020">
@@ -4412,6 +5159,17 @@
         <value>-1058.977f</value>
         <value>249.1729f</value>
         <value>2019.845f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1269017945" Rotate="2.355849f" SRTHash="-1707261688">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1243.292f</value>
+        <value>435.4578f</value>
+        <value>2191.003f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
@@ -4508,6 +5266,52 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_18</UnitConfigName>
     </value>
+    <value HashId="1286849947" SRTHash="1556588188">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1289247628">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1309562262">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1088.6f</value>
+        <value>328.9f</value>
+        <value>2252.2f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1289247628" SRTHash="683719711">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1076.9f</value>
+        <value>326.3f</value>
+        <value>2255.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Junior</UnitConfigName>
+    </value>
+    <value HashId="1292099349" SRTHash="1436506907" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_01</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1224.208f</value>
+        <value>366.0776f</value>
+        <value>2244.184f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1294194296" SRTHash="-707456666">
       <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" OnCliff="true" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
         <ArrowName type="string">NormalArrow</ArrowName>
@@ -4588,6 +5392,31 @@
       </Translate>
       <UnitConfigName type="string">PlayerForbidHangTag</UnitConfigName>
     </value>
+    <value HashId="1321452934" SRTHash="-1095307059" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2111346642">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1039.056f</value>
+        <value>302.4676f</value>
+        <value>2259.53f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1321694778" Rotate="0.1494115f" SRTHash="-1943641237">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1215.557f</value>
+        <value>340.5002f</value>
+        <value>2113.653f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_EntranceShutterSP</UnitConfigName>
+    </value>
     <value HashId="1328046355" SRTHash="107470521">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
         <SaveFlag type="string">IsGet_PlayerStole2</SaveFlag>
@@ -4614,6 +5443,21 @@
         <value>2678.833f</value>
       </Translate>
       <UnitConfigName type="string">Obj_LiftRockGerudo_A_01</UnitConfigName>
+    </value>
+    <value HashId="1336989381" Rotate="-1.06015f" SRTHash="1353352400">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="496594316">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1218.67f</value>
+        <value>346.5f</value>
+        <value>2123.697f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1337473148" Rotate="-2.54f" SRTHash="170581806">
       <Translate type="array">
@@ -4648,6 +5492,22 @@
         <value>2317.235f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1342546971" SRTHash="1986453734">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1037.3f</value>
+        <value>250.2884f</value>
+        <value>2012.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Middle</UnitConfigName>
     </value>
     <value HashId="1348525125" SRTHash="36616695">
       <_Parameters IsEnemyLiftable="false" SharpWeaponJudgeType="0">
@@ -4697,6 +5557,17 @@
         <value>2422.223f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="1359670284" SRTHash="-1078920210" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_06</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1229.428f</value>
+        <value>365.1508f</value>
+        <value>2232.51f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1362061271" SRTHash="926493405">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -4932,6 +5803,25 @@
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStoneLift_A_01</UnitConfigName>
     </value>
+    <value HashId="1418348895" SRTHash="-744020303">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-795680372">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="605669213">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1346.4f</value>
+        <value>353.4f</value>
+        <value>2275.4f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1418524756" Rotate="-1.7f" SRTHash="-1098004843" Scale="2f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -4959,6 +5849,17 @@
         <value>2408.55f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteWall_A_03_Far</UnitConfigName>
+    </value>
+    <value HashId="1427360152" Rotate="-1.06015f" SRTHash="-599334222">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Lock_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1206.9f</value>
+        <value>346.5f</value>
+        <value>2128.9f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1427562147" Rotate="-1.189473f" SRTHash="-907769209">
       <Translate type="array">
@@ -5053,6 +5954,27 @@
         <value>2446.927f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1448457085" SRTHash="-1085834686" Scale="2.2f">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TraverseDist="150f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-194856672">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.07884354f</value>
+        <value>-0.002170844f</value>
+        <value>-0.05502325f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1229.4f</value>
+        <value>365.5f</value>
+        <value>2196.9f</value>
+      </Translate>
+      <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
     </value>
     <value HashId="1449120336" Rotate="-2.125465f" SRTHash="767407825">
       <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
@@ -5261,6 +6183,40 @@
       <UniqueName type="string">BrokenSnowBall_D7_2</UniqueName>
       <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
     </value>
+    <value HashId="1490078893" SRTHash="1120631091" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2101662324">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1236f</value>
+        <value>438.7031f</value>
+        <value>2192f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1497732063" SRTHash="1460000225" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-674589636">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1017.824f</value>
+        <value>288.9337f</value>
+        <value>2170.115f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1499427625" Rotate="-2.14f" SRTHash="1772467376">
       <Translate type="array">
         <value>-977.3809f</value>
@@ -5432,6 +6388,44 @@
         <value>2212.263f</value>
       </Translate>
       <UnitConfigName type="string">KorokAnswerResponce</UnitConfigName>
+    </value>
+    <value HashId="1534223063" Rotate="-1.721591f" SRTHash="-782490751">
+      <_Parameters ApplyForceValue="8f" ForceType="0" IsIchigekiActor="true" TriggerType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1221004436">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-807233655">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1219.8f</value>
+        <value>352.4f</value>
+        <value>2172.7f</value>
+      </Translate>
+      <UnitConfigName type="string">MoveTriggerTag</UnitConfigName>
+    </value>
+    <value HashId="1534716454" SRTHash="-679676944" Scale="3f">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TraverseDist="150f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2088619621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.07884354f</value>
+        <value>-0.002170844f</value>
+        <value>-0.05502325f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1217.4f</value>
+        <value>362.3f</value>
+        <value>2241.8f</value>
+      </Translate>
+      <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
     </value>
     <value HashId="1541011184" Rotate="0.441592f" SRTHash="1324596190">
       <Translate type="array">
@@ -5610,6 +6604,28 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_22</UnitConfigName>
     </value>
+    <value HashId="1579702214" SRTHash="1460000225" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-794341339">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.1394497f</value>
+        <value>-0.003782226f</value>
+        <value>0.05414392f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1286.407f</value>
+        <value>417.6235f</value>
+        <value>2219.637f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1582805261" Rotate="-0.4184069f" SRTHash="1257283389">
       <_Parameters HiddenKorokBodyColor="0" HiddenKorokLeftPlantType="0" HiddenKorokMaskType="7" HiddenKorokRightPlantType="1" IsAppearCheck="false" IsHiddenKorokLiftAppear="false" IsInvisibleKorok="false" KorokEventStartWaitFrame="45" RailMoveSpeed="0.1f" TerritoryArea="0f">
         <PlacementType type="string">Ground</PlacementType>
@@ -5764,6 +6780,40 @@
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
+    <value HashId="1626775828" SRTHash="1124470152">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0" WaitTime="60f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2014497214">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1415.4f</value>
+        <value>312.4f</value>
+        <value>2069.4f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
+    <value HashId="1631762072" SRTHash="263271239" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_06</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2101662324">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1236f</value>
+        <value>428.7031f</value>
+        <value>2192f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1644971513" Rotate="-0.4f" SRTHash="-1598433214">
       <LinksToObj type="array">
         <value DestUnitHashId="137229653">
@@ -5776,6 +6826,23 @@
         <value>2067.239f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_07</UnitConfigName>
+    </value>
+    <value HashId="1663953679" SRTHash="344759337" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_04</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2101662324">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1236f</value>
+        <value>432.7031f</value>
+        <value>2192f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1665399355" Rotate="-0.1745329f" SRTHash="-1667066126">
       <_Parameters>
@@ -5805,6 +6872,18 @@
         <value>2281.615f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_05</UnitConfigName>
+    </value>
+    <value HashId="1669808649" SRTHash="729278774" Scale="5f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1223.666f</value>
+        <value>348.3842f</value>
+        <value>2160.592f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="1670402009" SRTHash="-1711075239">
       <LinksToObj type="array">
@@ -5866,6 +6945,17 @@
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStoneLift_A_01</UnitConfigName>
     </value>
+    <value HashId="1678784732" SRTHash="-1899502448" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_03</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1238.994f</value>
+        <value>370.1641f</value>
+        <value>2200.061f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1681873561" Rotate="1.118407f" SRTHash="-1186984604">
       <Translate type="array">
         <value>-1055.639f</value>
@@ -5920,6 +7010,23 @@
         <value>2403.457f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1694415348" Rotate="2.499999f" SRTHash="-243790430">
+      <_Parameters ApplyForceValue="3f" ForceType="0" IsIchigekiActor="true" TriggerType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1082409725">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1659667218">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1232.1f</value>
+        <value>364.4f</value>
+        <value>2195.3f</value>
+      </Translate>
+      <UnitConfigName type="string">MoveTriggerTag</UnitConfigName>
     </value>
     <value HashId="1696922853" Rotate="-0.5235988f" SRTHash="1169358776">
       <_Parameters Count="1" DefaultBasicSignal="false" ForceCalcInEvent="false" IsMagneGrabbed="0" IsSendMessage="false" IsStopFromStopTimer="0">
@@ -6014,6 +7121,21 @@
         <value>1962.996f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="1758499746" SRTHash="0">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2119514214">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1417.8f</value>
+        <value>312.4f</value>
+        <value>2069.4f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1759354359" Rotate="-3.141593f" SRTHash="1825234782">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0" />
@@ -6215,6 +7337,22 @@
       </Translate>
       <UnitConfigName type="string">GameRomHorse00L</UnitConfigName>
     </value>
+    <value HashId="1799219781" SRTHash="556284382" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-729742415">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1213.707f</value>
+        <value>372.9325f</value>
+        <value>2259.892f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1808172217" Rotate="-3.141593f" SRTHash="-1703160571" Scale="2f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -6238,6 +7376,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_01_Far</UnitConfigName>
     </value>
+    <value HashId="1809944847" Rotate="-1.06015f" SRTHash="757242408">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-8769308">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1228.3f</value>
+        <value>344.8f</value>
+        <value>2113.7f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1809945329" Rotate="1.832596f" SRTHash="1683793131">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -6253,6 +7408,17 @@
         <value>1999.5f</value>
       </Translate>
       <UnitConfigName type="string">Obj_FireWoodBundle</UnitConfigName>
+    </value>
+    <value HashId="1816181322" SRTHash="1677884943" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_00</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1233.681f</value>
+        <value>374.7477f</value>
+        <value>2204.205f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1817496152" SRTHash="2072483778">
       <Rotate type="array">
@@ -6506,6 +7672,27 @@
         <value>2173.068f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_22_Far</UnitConfigName>
+    </value>
+    <value HashId="1896830638" SRTHash="1282599306">
+      <_Parameters IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_049</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1816181322">
+          <DefinitionName type="string">LifeZero</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1233.7f</value>
+        <value>369.3f</value>
+        <value>2204.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Wizzrobe_Ice_Senior</UnitConfigName>
     </value>
     <value HashId="1899828930" SRTHash="-1968269037">
       <_Parameters RopeAlwaysUpdateRigidParam="false" RopeFlag="0" SharpWeaponJudgeType="0">
@@ -6856,6 +8043,15 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeBaobab_A_02</UnitConfigName>
     </value>
+    <value HashId="1989419736" SRTHash="1608504947">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1241.1f</value>
+        <value>362.6188f</value>
+        <value>2187.9f</value>
+      </Translate>
+      <UnitConfigName type="string">EnemyLookTag</UnitConfigName>
+    </value>
     <value HashId="1991661436" SRTHash="1811008892">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -6968,6 +8164,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWall_A_34</UnitConfigName>
     </value>
+    <value HashId="2018466419" SRTHash="516570130">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0" WaitTime="66f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1758499746">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1417.8f</value>
+        <value>312.4f</value>
+        <value>2069.4f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
     <value HashId="2019085655" SRTHash="0">
       <_Parameters IsHardModeActor="true" />
       <Translate type="array">
@@ -6976,6 +8189,18 @@
         <value>2132.5f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="2023388561" SRTHash="616567522" Scale="40f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1022.984f</value>
+        <value>287.1134f</value>
+        <value>2169.435f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="2023901366" SRTHash="0">
       <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -6991,6 +8216,33 @@
         <value>-1091.287f</value>
         <value>281.9578f</value>
         <value>2135.977f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2036924223" SRTHash="1323068652">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_03</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1209.3f</value>
+        <value>365f</value>
+        <value>2169.9f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2042233059" SRTHash="-350242362" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="80844072">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1231.018f</value>
+        <value>366.6797f</value>
+        <value>2229.374f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
@@ -7079,6 +8331,42 @@
         <value>2025.498f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2089139663" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-728355989">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-660205207">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1215.2f</value>
+        <value>336.9f</value>
+        <value>2116.7f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2089563764" SRTHash="337333697" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1051275529">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1394.623f</value>
+        <value>321.491f</value>
+        <value>2000.437f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
     <value HashId="2089738254" SRTHash="931295352">
       <_Parameters Count="1" DefaultBasicSignal="false" ForceCalcInEvent="false" IsMagneGrabbed="0" IsSendMessage="false" IsStopFromStopTimer="0">
@@ -7208,6 +8496,21 @@
       </Translate>
       <UnitConfigName type="string">EnemyLookTag</UnitConfigName>
     </value>
+    <value HashId="2101925488" Rotate="-1.06015f" SRTHash="439534780">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1336989381">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1219.603f</value>
+        <value>346.5f</value>
+        <value>2125.595f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
     <value HashId="2106660751" Rotate="0.6000001f" SRTHash="-873894457">
       <Translate type="array">
         <value>-1437.813f</value>
@@ -7215,6 +8518,24 @@
         <value>2110.961f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStone_A_01</UnitConfigName>
+    </value>
+    <value HashId="2111093711" SRTHash="1440131308" Scale="22f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-893328210">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1206.1f</value>
+        <value>347.2f</value>
+        <value>2193.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="2118833789" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -7277,6 +8598,41 @@
         <value>2378.205f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2135865876" SRTHash="-1120816911" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_00</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2101662324">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1236f</value>
+        <value>440.7031f</value>
+        <value>2192f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="2138053323" SRTHash="754456324" Scale="80f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1339798793">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1229.4f</value>
+        <value>325.3f</value>
+        <value>2212.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="2145817904" Rotate="2.441592f" SRTHash="1530525655">
       <_Parameters IsHardModeActor="true" MoveDis="12f" ReactHorn="true" />
@@ -7431,6 +8787,18 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhite_A_03</UnitConfigName>
     </value>
+    <value HashId="-2133049654" SRTHash="616567522" Scale="40f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1389.117f</value>
+        <value>317.4519f</value>
+        <value>2000.829f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="-2129598617" SRTHash="-1197815221">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -7446,6 +8814,45 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="-2126640127" SRTHash="-1765497646">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1920869207">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="2018466419">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1626775828">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1417.4f</value>
+        <value>307.4f</value>
+        <value>2072.2f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-2119514214" SRTHash="-383325076">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1418.6f</value>
+        <value>306f</value>
+        <value>2076.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Senior</UnitConfigName>
+    </value>
     <value HashId="-2118738322" SRTHash="-694226110">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -7460,6 +8867,18 @@
         <value>-1511.663f</value>
         <value>258f</value>
         <value>1926.112f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-2111346642" SRTHash="616567522" Scale="40f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1038.788f</value>
+        <value>293.8972f</value>
+        <value>2260.06f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
@@ -7503,6 +8922,84 @@
         <value>2371.253f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-2106755420" Rotate="-0.3741873f" SRTHash="291600752">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-338434767">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1213.252f</value>
+        <value>340.5002f</value>
+        <value>2115.531f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_EntranceTerminalSP</UnitConfigName>
+    </value>
+    <value HashId="-2101662324" Rotate="2.355849f" SRTHash="1316609523">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1269017945">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="841579911">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1672948285">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1240.245f</value>
+        <value>434.9031f</value>
+        <value>2194.058f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-2101255217" Rotate="-2.699999f" SRTHash="-718761320">
+      <_Parameters ApplyForceValue="6f" ForceType="0" IsIchigekiActor="true" TriggerType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1639025401">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1025235896">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1345f</value>
+        <value>307.1f</value>
+        <value>2086f</value>
+      </Translate>
+      <UnitConfigName type="string">MoveTriggerTag</UnitConfigName>
+    </value>
+    <value HashId="-2096285091" Rotate="0.1494115f" SRTHash="616567522" Scale="30f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1216.116f</value>
+        <value>342.1262f</value>
+        <value>2109.913f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-2088619621" SRTHash="0">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1219.1f</value>
+        <value>363.2f</value>
+        <value>2247f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
     </value>
     <value HashId="-2087658211" SRTHash="-940257698">
       <LinksToObj type="array">
@@ -7561,6 +9058,23 @@
         <value>2742.937f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-2083733721" Rotate="-1.571285f" SRTHash="-1535028719">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_07</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2101255217">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1344.337f</value>
+        <value>307.5554f</value>
+        <value>2088.048f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-2078244879" Rotate="-1.320377f" SRTHash="1537361800">
       <LinksToObj type="array">
@@ -7712,6 +9226,23 @@
         <value>1982.814f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_06</UnitConfigName>
+    </value>
+    <value HashId="-2061359331" SRTHash="1631215890">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_00</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1321404595">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1036.498f</value>
+        <value>315.5984f</value>
+        <value>2302.68f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-2058539620" SRTHash="0">
       <Translate type="array">
@@ -7871,6 +9402,21 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_Snow_03</UnitConfigName>
     </value>
+    <value HashId="-2014497214" SRTHash="0">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1010235335">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1415.4f</value>
+        <value>312.4f</value>
+        <value>2069.4f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-2012591374" Rotate="-3.141593f" SRTHash="1825234782">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -8002,6 +9548,34 @@
       </Translate>
       <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
     </value>
+    <value HashId="-1983368380" Rotate="-0.3741873f" SRTHash="622396212">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0.8000584f">
+        <EventFlowEntryName type="string">Demo008_9_Ex</EventFlowEntryName>
+        <EventFlowName type="string">Demo008_9</EventFlowName>
+        <TraversePos X="-1214.409f" Y="340.5f" Z="2116.581f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-896698176">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="1164063706">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1054327520">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="403189644">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1213.252f</value>
+        <value>340.5f</value>
+        <value>2115.531f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="-1978218285" Rotate="-1.64f" SRTHash="-550923947">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -8075,6 +9649,22 @@
         <value>2751.687f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-1958811920" Rotate="0.7853982f" SRTHash="-1269197685">
+      <_Parameters FortressEatPer="-1" IsCreateStalPart="true" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_019</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1031.8f</value>
+        <value>286.736f</value>
+        <value>2163.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Bokoblin_Bone_Junior_AllDay</UnitConfigName>
     </value>
     <value HashId="-1941841948" SRTHash="2075583769">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -8165,6 +9755,22 @@
       </Translate>
       <UnitConfigName type="string">DgnObj_EntranceElevator_A_01</UnitConfigName>
     </value>
+    <value HashId="-1920869207" SRTHash="-1517606868">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1415.7f</value>
+        <value>304.7f</value>
+        <value>2069.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Junior</UnitConfigName>
+    </value>
     <value HashId="-1918047496" Rotate="-1.7f" SRTHash="-644088472" Scale="2f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -8199,6 +9805,17 @@
         <value>-1662.582f</value>
         <value>91.82269f</value>
         <value>2375.93f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1890582161" SRTHash="1641658975" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_04</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1240.293f</value>
+        <value>369.5611f</value>
+        <value>2191.044f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
@@ -8339,6 +9956,15 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Bokoblin_Senior</UnitConfigName>
     </value>
+    <value HashId="-1858377630" SRTHash="0">
+      <_Parameters IsHardModeActor="true" />
+      <Translate type="array">
+        <value>-1098.9f</value>
+        <value>280.7f</value>
+        <value>2137.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
     <value HashId="-1857484457" Rotate="2.82f" SRTHash="2123722269">
       <Translate type="array">
         <value>-1473.732f</value>
@@ -8436,6 +10062,28 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Chuchu_Ice_Junior</UnitConfigName>
     </value>
+    <value HashId="-1836951720" SRTHash="337333697" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-794341339">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.1394497f</value>
+        <value>-0.003782226f</value>
+        <value>0.05414392f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1296.392f</value>
+        <value>417.0823f</value>
+        <value>2219.6f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
     <value HashId="-1830931982" SRTHash="-2088813453">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
         <SaveFlag type="string">FindDungeon_AllClear</SaveFlag>
@@ -8464,6 +10112,40 @@
         <value>2587.794f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteWall_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-1828752731" Rotate="-0.2800003f" SRTHash="1328044871">
+      <_Parameters ApplyForceValue="5f" ForceType="0" IsIchigekiActor="true" TriggerType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1534716454">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2088619621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1216f</value>
+        <value>363.1f</value>
+        <value>2236.7f</value>
+      </Translate>
+      <UnitConfigName type="string">MoveTriggerTag</UnitConfigName>
+    </value>
+    <value HashId="-1828727190" Rotate="-2.301592f" SRTHash="46579366">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Finish</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="334724676">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1224.48f</value>
+        <value>352.1172f</value>
+        <value>2161.777f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNOr</UnitConfigName>
     </value>
     <value HashId="-1828625458" SRTHash="-1814005354" Scale="1.5f">
       <LinksToObj type="array">
@@ -8587,6 +10269,23 @@
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
     </value>
+    <value HashId="-1779461311" SRTHash="337333697" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-674589636">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1027.824f</value>
+        <value>288.9337f</value>
+        <value>2170.115f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
     <value HashId="-1777868124" SRTHash="0">
       <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
         <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
@@ -8626,7 +10325,7 @@
           </_Parameters>
           <DefinitionName type="string">BAndSCs</DefinitionName>
         </value>
-        <value DestUnitHashId="-514745107">
+        <value DestUnitHashId="-1858377630">
           <DefinitionName type="string">SyncLink</DefinitionName>
         </value>
       </LinksToObj>
@@ -8718,6 +10417,23 @@
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
     </value>
+    <value HashId="-1756862156" SRTHash="816866248" Scale="5f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Lock_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1672948285">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1228.969f</value>
+        <value>425.6147f</value>
+        <value>2212.003f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
     <value HashId="-1756691115" SRTHash="426620579">
       <LinksToObj type="array">
         <value DestUnitHashId="-960953429">
@@ -8799,6 +10515,24 @@
         <value>2377.949f</value>
       </Translate>
       <UnitConfigName type="string">BarrelBomb2</UnitConfigName>
+    </value>
+    <value HashId="-1746184582" SRTHash="-1545783364" Scale="15f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="2036924223">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1208.3f</value>
+        <value>344.9f</value>
+        <value>2165.3f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-1744998683" Rotate="0.9200014f" SRTHash="1169358776">
       <_Parameters Count="1" DefaultBasicSignal="false" ForceCalcInEvent="false" IsMagneGrabbed="0" IsSendMessage="false" IsStopFromStopTimer="0">
@@ -8938,6 +10672,33 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteWall_A_03</UnitConfigName>
     </value>
+    <value HashId="-1711184642" SRTHash="-1859425736" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_00</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-815121268">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1256.786f</value>
+        <value>365.3185f</value>
+        <value>2140.008f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1707049240" SRTHash="-7548010">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_01</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1191.8f</value>
+        <value>380.8f</value>
+        <value>2158.3f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1697671665" Rotate="-3f" SRTHash="1714707432">
       <LinksToObj type="array">
         <value DestUnitHashId="168425692">
@@ -8974,6 +10735,25 @@
         <value>2856.045f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1686706763" SRTHash="1349850080">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1958811920">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-802123426">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1027.5f</value>
+        <value>292f</value>
+        <value>2165f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1685280472" Rotate="2.7f" SRTHash="806936564" Scale="12f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -9015,7 +10795,7 @@
         <value DestUnitHashId="-1439695646">
           <DefinitionName type="string">Reference</DefinitionName>
         </value>
-        <value DestUnitHashId="-514745107">
+        <value DestUnitHashId="-1858377630">
           <DefinitionName type="string">SyncLink</DefinitionName>
         </value>
       </LinksToObj>
@@ -9059,6 +10839,18 @@
         <value>2370.905f</value>
       </Translate>
       <UnitConfigName type="string">Rope</UnitConfigName>
+    </value>
+    <value HashId="-1672948285" SRTHash="-459136865" Scale="90f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1229.4f</value>
+        <value>332.8f</value>
+        <value>2212.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-1668239783" Rotate="-2.46f" SRTHash="-491079076" Scale="25f">
       <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
@@ -9135,6 +10927,15 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_07_Far</UnitConfigName>
     </value>
+    <value HashId="-1659667218" SRTHash="0">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1232.1f</value>
+        <value>364.4f</value>
+        <value>2195.3f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
     <value HashId="-1658840614" Rotate="0.3615932f" SRTHash="-1542140190">
       <LinksToObj type="array">
         <value DestUnitHashId="1384693565">
@@ -9147,6 +10948,14 @@
         <value>2977.338f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1658688113" Rotate="0.1494115f" SRTHash="1632761533">
+      <Translate type="array">
+        <value>-1214.635f</value>
+        <value>339.5f</value>
+        <value>2119.784f</value>
+      </Translate>
+      <UnitConfigName type="string">LookTagAoC</UnitConfigName>
     </value>
     <value HashId="-1657286796" Rotate="-1.209473f" SRTHash="-2046035365">
       <Translate type="array">
@@ -9186,6 +10995,24 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-1648814203" SRTHash="-1338437960" Scale="20f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2126640127">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1415.7f</value>
+        <value>302.2f</value>
+        <value>2069.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="-1644801581" Rotate="2.941592f" SRTHash="2119042383">
       <Translate type="array">
         <value>-1128.364f</value>
@@ -9201,6 +11028,27 @@
         <value>2164.901f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_14_Far</UnitConfigName>
+    </value>
+    <value HashId="-1639025401" SRTHash="1667793525" Scale="3f">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TraverseDist="150f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1025235896">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-1.762064f</value>
+        <value>-0.9709359f</value>
+        <value>1.63858f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1347.5f</value>
+        <value>305.8f</value>
+        <value>2081.2f</value>
+      </Translate>
+      <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
     </value>
     <value HashId="-1633806531" Rotate="0.1543757f" SRTHash="-236777899" Scale="0.8f">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -9405,6 +11253,20 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_10_Far</UnitConfigName>
     </value>
+    <value HashId="-1597135702" SRTHash="-1095307059" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1319193192">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1067.939f</value>
+        <value>337.3254f</value>
+        <value>2235.968f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1594089422" Rotate="-0.4409578f" SRTHash="-1149273339" Scale="1.078922f">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -9415,6 +11277,39 @@
         <value>2673.757f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeBaobab_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1594020511" Rotate="-1.047198f" SRTHash="30250205">
+      <_Parameters TerritoryArea="0f" TraverseRadiusXZ="0f">
+        <TraversePos X="-1223.666f" Y="348.4407f" Z="2160.592f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="305053180">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1219.496f</value>
+        <value>349.0368f</value>
+        <value>2160.34f</value>
+      </Translate>
+      <UniqueName type="string">BalladOfHeroes02</UniqueName>
+      <UnitConfigName type="string">Npc_Musician_AoC_BalladOfHeroes</UnitConfigName>
+    </value>
+    <value HashId="-1590586803" SRTHash="468805424" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1746184582">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1208.288f</value>
+        <value>361.1731f</value>
+        <value>2165.29f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1589248729" Rotate="0.6000001f" SRTHash="1712588801" Scale="0.1f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -9427,6 +11322,21 @@
         <value>2110.883f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1584861099" SRTHash="1264344900">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1342546971">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1036.2f</value>
+        <value>250.3f</value>
+        <value>2015.9f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1578389625" Rotate="1.348059f" SRTHash="481181524" Scale="0.8715503f">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -9838,6 +11748,15 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_05_Far</UnitConfigName>
     </value>
+    <value HashId="-1453425346" SRTHash="-2070935135">
+      <_Parameters NonAutoPlacementAnimal="true" NonAutoPlacementBird="true" NonAutoPlacementEnemy="true" NonAutoPlacementFish="true" NonAutoPlacementInsect="true" NonAutoPlacementMaterial="true" NonEnemySearchPlayer="true" />
+      <Translate type="array">
+        <value>-1224.5f</value>
+        <value>416.5f</value>
+        <value>2207f</value>
+      </Translate>
+      <UnitConfigName type="string">PlayerInAreaAutoEnemyForbidTag</UnitConfigName>
+    </value>
     <value HashId="-1441074052" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -9856,7 +11775,7 @@
     <value HashId="-1439695646" Rotate="-2.156811f" SRTHash="1635010755">
       <_Parameters IsHardModeActor="true" />
       <LinksToObj type="array">
-        <value DestUnitHashId="-514745107">
+        <value DestUnitHashId="-1858377630">
           <DefinitionName type="string">SyncLink</DefinitionName>
         </value>
       </LinksToObj>
@@ -9941,6 +11860,20 @@
         <value>2461.83f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWall_A_33_Far</UnitConfigName>
+    </value>
+    <value HashId="-1400915660" Rotate="-0.12f" SRTHash="1015090588">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-981432370">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1194.1f</value>
+        <value>354.7f</value>
+        <value>2218f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_DLC_ShieldFenceSnow_A_M_01</UnitConfigName>
     </value>
     <value HashId="-1400140261" SRTHash="1535292950" Scale="1.2f">
       <LinksToObj type="array">
@@ -10164,6 +12097,38 @@
       </Translate>
       <UnitConfigName type="string">Npc_Assassin_007</UnitConfigName>
     </value>
+    <value HashId="-1339798793" SRTHash="1148075769">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1453425346">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1224.5f</value>
+        <value>414.5f</value>
+        <value>2207f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-1339672854" SRTHash="1460000225" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1051275529">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1384.623f</value>
+        <value>321.491f</value>
+        <value>2000.437f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1337805811" Rotate="-0.129102f" SRTHash="1317295435">
       <Translate type="array">
         <value>-1289.256f</value>
@@ -10226,6 +12191,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteWall_A_03</UnitConfigName>
     </value>
+    <value HashId="-1321404595" Rotate="1.883185f" SRTHash="1475759069">
+      <_Parameters ApplyForceValue="7f" ForceType="0" IsIchigekiActor="true" TriggerType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="227631095">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-530282325">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1034.5f</value>
+        <value>315.8f</value>
+        <value>2301.8f</value>
+      </Translate>
+      <UnitConfigName type="string">MoveTriggerTag</UnitConfigName>
+    </value>
     <value HashId="-1321138254" Rotate="2.62f" SRTHash="1139622734">
       <LinksToObj type="array">
         <value DestUnitHashId="-471853402">
@@ -10239,6 +12221,18 @@
       </Translate>
       <UnitConfigName type="string">FldObj_RiverEdge_A_02</UnitConfigName>
     </value>
+    <value HashId="-1319193192" Rotate="-0.48f" SRTHash="616567522" Scale="40f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1073.633f</value>
+        <value>327.2675f</value>
+        <value>2232.831f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="-1314472033" Rotate="-1.92f" SRTHash="67627922">
       <LinksToObj type="array">
         <value DestUnitHashId="1808444358">
@@ -10251,6 +12245,37 @@
         <value>2142.29f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_01</UnitConfigName>
+    </value>
+    <value HashId="-1312744689" Rotate="-1.06015f" SRTHash="-760917149">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1427360152">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1208.9f</value>
+        <value>346.5f</value>
+        <value>2128.9f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-1309562262" SRTHash="412482410">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1093f</value>
+        <value>330.6f</value>
+        <value>2253.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Middle</UnitConfigName>
     </value>
     <value HashId="-1304345664" SRTHash="-194131976" Scale="1.2f">
       <LinksToObj type="array">
@@ -10269,6 +12294,15 @@
         <value>2322.502f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HyliaStoneRuinDebris_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1299728552" SRTHash="0">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1234.3f</value>
+        <value>365.4f</value>
+        <value>2191.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
     </value>
     <value HashId="-1299166070" SRTHash="1576854488">
       <Rotate type="array">
@@ -10383,6 +12417,22 @@
         <value>2164.939f</value>
       </Translate>
       <UnitConfigName type="string">Enemy_Bokoblin_Junior</UnitConfigName>
+    </value>
+    <value HashId="-1277631020" SRTHash="1277292073" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1896830638">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1234.033f</value>
+        <value>374.9688f</value>
+        <value>2201.264f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1271615162" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -10581,6 +12631,22 @@
         <value>2164.901f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_14</UnitConfigName>
+    </value>
+    <value HashId="-1221004436" SRTHash="-1070340956" Scale="2f">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TraverseDist="150f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-807233655">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1223.9f</value>
+        <value>352.1f</value>
+        <value>2172.7f</value>
+      </Translate>
+      <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
     </value>
     <value HashId="-1209175040" Rotate="1.261592f" SRTHash="1825234782">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0" />
@@ -10831,6 +12897,27 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Guardian_A_Fixed_Sand</UnitConfigName>
     </value>
+    <value HashId="-1163377328" Rotate="0.164873f" SRTHash="251812172">
+      <_Parameters FortressEatPer="-1" IsIchigekiActor="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Sword_019</EquipItem1>
+        <EquipItem2 type="string">Weapon_Shield_004</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1292099349">
+          <DefinitionName type="string">LifeZero</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1224.2f</value>
+        <value>359.6912f</value>
+        <value>2244.3f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
     <value HashId="-1149577158" Rotate="-3.138405f" SRTHash="-990757082">
       <LinksToObj type="array">
         <value DestUnitHashId="-1849688999">
@@ -10926,6 +13013,62 @@
       </Translate>
       <UnitConfigName type="string">DgnObj_EntranceShutter_A_01</UnitConfigName>
     </value>
+    <value HashId="-1128706594" Rotate="-1.06015f" SRTHash="-921702315">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Lock_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="496594316">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-748215130">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2106755420">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="1321694778">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1068994087">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="216166727">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="103250014">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1658688113">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1983368380">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2096285091">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="226639294">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1217.9f</value>
+        <value>374.2f</value>
+        <value>2138.4f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1125814813" SRTHash="2109456436" Scale="0.8f">
       <_Parameters IsEnemyLiftable="true" IsFixedPlace="true" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -10942,6 +13085,17 @@
       </Translate>
       <UniqueName type="string">BrokenSnowBall_D7_1</UniqueName>
       <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
+    </value>
+    <value HashId="-1123222341" SRTHash="-99266737">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_02</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1212.1f</value>
+        <value>366.7f</value>
+        <value>2174.6f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1118983411" SRTHash="-362586482">
       <Rotate type="array">
@@ -11016,6 +13170,22 @@
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
     </value>
+    <value HashId="-1096991647" SRTHash="-1977893762" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1163377328">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1227.026f</value>
+        <value>365.7344f</value>
+        <value>2240.553f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1093435729" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -11062,6 +13232,27 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_01</UnitConfigName>
     </value>
+    <value HashId="-1082409725" SRTHash="742813139" Scale="1.4f">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="true" IsIchigekiActor="true" SharpWeaponJudgeType="0" TraverseDist="150f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1659667218">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.07884354f</value>
+        <value>-0.002170844f</value>
+        <value>-0.05502325f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1229.9f</value>
+        <value>364.1f</value>
+        <value>2192.5f</value>
+      </Translate>
+      <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
+    </value>
     <value HashId="-1079134397" SRTHash="594648905">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -11095,6 +13286,41 @@
         <value>2701.554f</value>
       </Translate>
       <UnitConfigName type="string">Npc_HiddenKorokFly</UnitConfigName>
+    </value>
+    <value HashId="-1068994087" Rotate="0.1494115f" SRTHash="-1174495398">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <EventFlowEntryName type="string">Demo603_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo603_0</EventFlowName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1658688113">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1216.123f</value>
+        <value>340.5002f</value>
+        <value>2109.896f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_EntranceElevatorSP</UnitConfigName>
+    </value>
+    <value HashId="-1068711323" SRTHash="1460000225" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1321452934">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1034.056f</value>
+        <value>297.4676f</value>
+        <value>2259.53f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1067746495" SRTHash="-657272068" Scale="0.5f">
       <_Parameters SharpWeaponJudgeType="0" WaitTime="7f">
@@ -11204,6 +13430,15 @@
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
     </value>
+    <value HashId="-1054327520" Rotate="-2.992181f" SRTHash="1257667284">
+      <Translate type="array">
+        <value>-1215.2f</value>
+        <value>340.5f</value>
+        <value>2116.7f</value>
+      </Translate>
+      <UniqueName type="string">Demo008_9_PlayerEndPos</UniqueName>
+      <UnitConfigName type="string">PosAfterDemoSkip</UnitConfigName>
+    </value>
     <value HashId="-1054084291" Rotate="-0.58f" SRTHash="1527533019">
       <LinksToObj type="array">
         <value DestUnitHashId="721459670">
@@ -11278,6 +13513,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWall_A_33</UnitConfigName>
     </value>
+    <value HashId="-1032682401" SRTHash="-737916919" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2101662324">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1236f</value>
+        <value>436.7031f</value>
+        <value>2192f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1030681994" Rotate="0.2199999f" SRTHash="-2107917187">
       <LinksToObj type="array">
         <value DestUnitHashId="-435131565">
@@ -11343,6 +13595,22 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowScaffold_D_01_Far</UnitConfigName>
     </value>
+    <value HashId="-1010235335" SRTHash="1282492930">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1420.3f</value>
+        <value>304.5f</value>
+        <value>2066.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Middle</UnitConfigName>
+    </value>
     <value HashId="-1004840420" Rotate="-1.12f" SRTHash="-764554091">
       <_Parameters ApplyForceValue="10f" ForceType="1" TriggerType="0" />
       <LinksToObj type="array">
@@ -11385,6 +13653,25 @@
         <value>1916.459f</value>
       </Translate>
       <UnitConfigName type="string">TwnObj_TempleOfTime_WallSnow_C_04_Far</UnitConfigName>
+    </value>
+    <value HashId="-997897682" SRTHash="-1955979891">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="686607516">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="935714617">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1395.1f</value>
+        <value>320.1f</value>
+        <value>1999.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-996025984" SRTHash="1751023574">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -11438,6 +13725,22 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWall_A_19</UnitConfigName>
     </value>
+    <value HashId="-987221415" SRTHash="1121478239" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Defeat_OneHitDungeon002</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-778930248">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1236.994f</value>
+        <value>370.1641f</value>
+        <value>2200.061f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-984816484" Rotate="-1.7f" SRTHash="-1931981321">
       <_Parameters IsNoAppearEffect="false" IsTargetWarp="false" KorokTargetAppearFrame="-1" KorokTargetVanishFrame="-1" RailMoveSpeed="0.3f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -11471,6 +13774,15 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeBaobab_A_02</UnitConfigName>
     </value>
+    <value HashId="-981432370" SRTHash="0">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1194.1f</value>
+        <value>354.7f</value>
+        <value>2218f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
     <value HashId="-977198280" Rotate="-0.5235988f" SRTHash="1408793019" Scale="0.1f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -11493,6 +13805,28 @@
         <value>2028f</value>
       </Translate>
       <UnitConfigName type="string">LocationTag</UnitConfigName>
+    </value>
+    <value HashId="-973578617" SRTHash="-1703124331" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_02</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1236.874f</value>
+        <value>370.3158f</value>
+        <value>2209.12f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-970115184" Rotate="-1.571285f" SRTHash="165047441">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_00</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1011.838f</value>
+        <value>297.1047f</value>
+        <value>2265.992f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-968476892" Rotate="2.6f" SRTHash="-1925828405">
       <LinksToObj type="array">
@@ -11558,6 +13892,28 @@
         <value>2259.34f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_05_Far</UnitConfigName>
+    </value>
+    <value HashId="-954136964" SRTHash="1460000225" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1236140447">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.0003833259f</value>
+        <value>1.063145E-05f</value>
+        <value>0.05545527f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1035.077f</value>
+        <value>251.7828f</value>
+        <value>1997.097f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-951131817" Rotate="1.383189f" SRTHash="-765940647">
       <_Parameters FortressEatPer="-1" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
@@ -11760,6 +14116,25 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteWall_A_01</UnitConfigName>
     </value>
+    <value HashId="-896698176" Rotate="2.767405f" SRTHash="968218481">
+      <Translate type="array">
+        <value>-1213.618f</value>
+        <value>340.5f</value>
+        <value>2116.462f</value>
+      </Translate>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="-893328210" SRTHash="-683419644">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_05</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1190.8f</value>
+        <value>381.7f</value>
+        <value>2203.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-892110339" SRTHash="-1034123843">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -11826,6 +14201,27 @@
       </Translate>
       <UniqueName type="string">BrokenSnowBall_D7_3</UniqueName>
       <UnitConfigName type="string">BrokenSnowBall</UnitConfigName>
+    </value>
+    <value HashId="-873647047" Rotate="0.1494115f" SRTHash="837625636">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">MapTower_07_Demo</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="122107047">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2106755420">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1217.168f</value>
+        <value>353.3615f</value>
+        <value>2111.583f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-872211172" SRTHash="836954991">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -12128,6 +14524,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="-821118926" Rotate="2.861592f" SRTHash="829625191">
+      <_Parameters ApplyForceValue="5f" ForceType="0" IsIchigekiActor="true" TriggerType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1534716454">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2088619621">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1219.1f</value>
+        <value>363.2f</value>
+        <value>2247f</value>
+      </Translate>
+      <UnitConfigName type="string">MoveTriggerTag</UnitConfigName>
+    </value>
     <value HashId="-817767775" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -12155,6 +14568,24 @@
         <value>2757.634f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_07</UnitConfigName>
+    </value>
+    <value HashId="-815121268" SRTHash="1575213342" Scale="30f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1123222341">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1256.8f</value>
+        <value>333.3f</value>
+        <value>2140f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-813044347" Rotate="-1.7f" SRTHash="-966691954" Scale="2f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -12188,6 +14619,15 @@
       </Translate>
       <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
     </value>
+    <value HashId="-807233655" SRTHash="0">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1227.1f</value>
+        <value>352.4f</value>
+        <value>2175.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
     <value HashId="-806323441" Rotate="2.074395f" SRTHash="1861072048">
       <LinksToObj type="array">
         <value DestUnitHashId="460378647">
@@ -12201,6 +14641,22 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_17</UnitConfigName>
     </value>
+    <value HashId="-802123426" Rotate="-1.570796f" SRTHash="1511092755">
+      <_Parameters FortressEatPer="-1" IsCreateStalPart="true" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1028.2f</value>
+        <value>286.7261f</value>
+        <value>2161.3f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Bokoblin_Bone_Junior_AllDay</UnitConfigName>
+    </value>
     <value HashId="-800453042" OnlyOne="true" Rotate="2.741968f" SRTHash="1024899675">
       <LinksToObj type="array">
         <value DestUnitHashId="-104854477">
@@ -12213,6 +14669,59 @@
         <value>2153f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_WaterFallFirst_A_01</UnitConfigName>
+    </value>
+    <value HashId="-797289567" SRTHash="-2002900575" Scale="10f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-970115184">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1011.3f</value>
+        <value>295.7f</value>
+        <value>2266.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-795680372" SRTHash="1265354619">
+      <_Parameters IsDrop="false" IsIchigekiActor="true" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1349.8f</value>
+        <value>351.4f</value>
+        <value>2281.4f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Chuchu_Ice_Junior</UnitConfigName>
+    </value>
+    <value HashId="-794341339" SRTHash="-1095307059" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-221441535">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.1394497f</value>
+        <value>-0.003782226f</value>
+        <value>0.05414392f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-1291.67f</value>
+        <value>422.297f</value>
+        <value>2220.313f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-793382661" SRTHash="809899777">
       <_Parameters SharpWeaponJudgeType="0" WaitTime="20f">
@@ -12254,6 +14763,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWall_A_33_Far</UnitConfigName>
     </value>
+    <value HashId="-790360703" SRTHash="-1257803895" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_05</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2101662324">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1236f</value>
+        <value>430.7031f</value>
+        <value>2192f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-780101694" SRTHash="0">
       <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
         <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
@@ -12270,6 +14796,27 @@
         <value>2134.1f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-778930248" Rotate="2.184872f" SRTHash="100954886">
+      <_Parameters FortressEatPer="-1" IsIchigekiActor="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Spear_001</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1678784732">
+          <DefinitionName type="string">LifeZero</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1238.9f</value>
+        <value>363.6895f</value>
+        <value>2199.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
     </value>
     <value HashId="-778874041" Rotate="0.9600001f" SRTHash="1825234782">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0" />
@@ -12289,6 +14836,23 @@
         <value>-1466.193f</value>
         <value>421.167f</value>
         <value>2952.966f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-777883202" SRTHash="286544778" Scale="3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Kasshiwa_Appear2</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="953329830">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1222.104f</value>
+        <value>418.4407f</value>
+        <value>2207.191f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
@@ -12356,6 +14920,24 @@
         <value>2750.717f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-748215130" Rotate="0.1999999f" SRTHash="480929077" Scale="30f">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="2089139663">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1215.2f</value>
+        <value>336.9f</value>
+        <value>2116.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-746410995" SRTHash="-1173710606">
       <Rotate type="array">
@@ -12465,6 +15047,24 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhite_A_03</UnitConfigName>
     </value>
+    <value HashId="-729742415" SRTHash="1506609013" Scale="20f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1193794945">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1213.7f</value>
+        <value>352.1f</value>
+        <value>2259.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="-728737315" Rotate="-2.823597f" SRTHash="-301128281" Scale="2f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -12476,6 +15076,17 @@
         <value>2355.218f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-728355989" SRTHash="0">
+      <_Parameters IncrementSave="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Location_Dungeon122</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1215.2f</value>
+        <value>336.9f</value>
+        <value>2116.7f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-715837614" Rotate="-1.2f" SRTHash="-1028391507">
       <Translate type="array">
@@ -12518,6 +15129,22 @@
         <value>1964.7f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_03_Far</UnitConfigName>
+    </value>
+    <value HashId="-695657411" SRTHash="363134925" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="2111093711">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1206.097f</value>
+        <value>370.5449f</value>
+        <value>2193.691f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-689343609" Rotate="0.9599999f" SRTHash="-1165798092">
       <Translate type="array">
@@ -12574,6 +15201,20 @@
       </Translate>
       <UnitConfigName type="string">Npc_HiddenKorokFly</UnitConfigName>
     </value>
+    <value HashId="-674589636" SRTHash="-1095307059" Scale="2f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="2023388561">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1022.824f</value>
+        <value>293.9337f</value>
+        <value>2170.115f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-662972121" Rotate="5.253152f" SRTHash="267534842">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -12584,6 +15225,17 @@
         <value>2317.792f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_Snow_03</UnitConfigName>
+    </value>
+    <value HashId="-660205207" SRTHash="0">
+      <_Parameters LocationPriority="1">
+        <MessageID type="string">Dungeon122</MessageID>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1215.2f</value>
+        <value>336.9f</value>
+        <value>2116.7f</value>
+      </Translate>
+      <UnitConfigName type="string">LocationTag</UnitConfigName>
     </value>
     <value HashId="-658968830" SRTHash="1833300668">
       <_Parameters SharpWeaponJudgeType="0" WaitTime="4f">
@@ -12726,6 +15378,30 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_10_Far</UnitConfigName>
     </value>
+    <value HashId="-627443342" OnlyOne="true" Rotate="-2.818312f" SRTHash="1986775768">
+      <_Parameters FortressEatPer="-1" IsIchigekiActor="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">IceArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Weapon_Bow_001</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1989419736">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1890582161">
+          <DefinitionName type="string">LifeZero</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1240.3f</value>
+        <value>363.0634f</value>
+        <value>2191f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Moriblin_Dark</UnitConfigName>
+    </value>
     <value HashId="-625010882" SRTHash="1257283389">
       <_Parameters HiddenKorokBodyColor="3" HiddenKorokLeftPlantType="1" HiddenKorokMaskType="1" HiddenKorokRightPlantType="2" IsAppearCheck="false" IsHiddenKorokLiftAppear="true" IsInvisibleKorok="false" KorokEventStartWaitFrame="20" RailMoveSpeed="0.1f" TerritoryArea="0f">
         <PlacementType type="string">Ground</PlacementType>
@@ -12736,6 +15412,22 @@
         <value>2322.776f</value>
       </Translate>
       <UnitConfigName type="string">Npc_HiddenKorokGround</UnitConfigName>
+    </value>
+    <value HashId="-621936413" SRTHash="1153737793" Scale="3f">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_EnemyDead_Snow_03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="904449491">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1234.501f</value>
+        <value>365.3888f</value>
+        <value>2173.996f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-617706603" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -12781,7 +15473,7 @@
         <EquipItem4 type="string">Default</EquipItem4>
       </_Parameters>
       <LinksToObj type="array">
-        <value DestUnitHashId="-514745107">
+        <value DestUnitHashId="-1858377630">
           <DefinitionName type="string">SyncLink</DefinitionName>
         </value>
       </LinksToObj>
@@ -12791,6 +15483,35 @@
         <value>2137.1f</value>
       </Translate>
       <UnitConfigName type="string">Enemy_Bokoblin_Guard_Junior_TreeHouseTop</UnitConfigName>
+    </value>
+    <value HashId="-601871745" Rotate="-1.571285f" SRTHash="756009717">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_07</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1341.5f</value>
+        <value>309.5f</value>
+        <value>2074.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-586094576" SRTHash="-1405162770" Scale="15f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1686706763">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1022.5f</value>
+        <value>287f</value>
+        <value>2162.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-584528780" Rotate="2.703187f" SRTHash="1635010755">
       <_Parameters IsHardModeActor="true" />
@@ -12835,6 +15556,27 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-574789926" Rotate="0.2216872f" SRTHash="382702725">
+      <_Parameters FortressEatPer="-1" IsIchigekiActor="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-973578617">
+          <DefinitionName type="string">LifeZero</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1236.9f</value>
+        <value>363.7832f</value>
+        <value>2209.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Moriblin_Senior</UnitConfigName>
+    </value>
     <value HashId="-573704911" SRTHash="1154390170">
       <LinksToObj type="array">
         <value DestUnitHashId="298542593">
@@ -12875,6 +15617,27 @@
         <value>1995.388f</value>
       </Translate>
       <UnitConfigName type="string">Enemy_Bokoblin_Junior</UnitConfigName>
+    </value>
+    <value HashId="-570175532" Rotate="-0.4579796f" SRTHash="-576364790">
+      <_Parameters EnableRevival="false" IsIchigekiActor="true" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_IceArrow_A_02</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="633598556">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1299728552">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1234.3f</value>
+        <value>365.4f</value>
+        <value>2191.5f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Wood</UnitConfigName>
     </value>
     <value HashId="-569540237" SRTHash="19292764">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -12949,6 +15712,24 @@
         <value>2029.677f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RiverEdge_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-553477056" SRTHash="1742230122" Scale="10f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-601871745">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1360.4f</value>
+        <value>272.6f</value>
+        <value>2018f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-551209315" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -13036,6 +15817,15 @@
       </Translate>
       <UnitConfigName type="string">Npc_HiddenKorokFly</UnitConfigName>
     </value>
+    <value HashId="-530282325" SRTHash="0">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1034.5f</value>
+        <value>315.8f</value>
+        <value>2301.8f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
     <value HashId="-528451586" SRTHash="1893252087">
       <LinksToObj type="array">
         <value DestUnitHashId="-1015994640">
@@ -13122,15 +15912,6 @@
       </Translate>
       <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
     </value>
-    <value HashId="-514745107" SRTHash="0">
-      <_Parameters IsHardModeActor="true" />
-      <Translate type="array">
-        <value>-1098.9f</value>
-        <value>280.7f</value>
-        <value>2137.1f</value>
-      </Translate>
-      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
-    </value>
     <value HashId="-509471533" Rotate="2.741968f" SRTHash="1728065973">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -13183,6 +15964,41 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Chuchu_Ice_Junior</UnitConfigName>
     </value>
+    <value HashId="-498505510" SRTHash="-110696796">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_06</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1828752731">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1215.557f</value>
+        <value>363.5934f</value>
+        <value>2235.148f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-494970215" SRTHash="99232701" Scale="40f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1707049240">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1181.1f</value>
+        <value>331.9f</value>
+        <value>2147f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="-493536193" SRTHash="0">
       <_Parameters LocationPriority="1">
         <MessageID type="string">Dungeon001</MessageID>
@@ -13223,6 +16039,23 @@
         <value>1920.174f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-488070185" SRTHash="337333697" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1597135702">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1072.939f</value>
+        <value>332.3254f</value>
+        <value>2235.968f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
     <value HashId="-487466861" Rotate="1.211765f" SRTHash="744431037" Scale="0.8f">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -13275,6 +16108,22 @@
         <value>3000.721f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-476071799" Rotate="-0.22f" SRTHash="1899740675">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1299728552">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1234.3f</value>
+        <value>363.3645f</value>
+        <value>2191.5f</value>
+      </Translate>
+      <UnitConfigName type="string">KibakoSnowMountain_Contain_01</UnitConfigName>
     </value>
     <value HashId="-471853402" Rotate="2.62f" SRTHash="1139622734">
       <Translate type="array">
@@ -13597,6 +16446,18 @@
       </Translate>
       <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
     </value>
+    <value HashId="-408081818" SRTHash="-447041046" Scale="5f">
+      <_Parameters IsStopWithoutReductionY="false" SpotBgmLifeScaleMargin="0f">
+        <Shape type="string">Sphere</Shape>
+        <Sound type="string">MusicianSpotBgm</Sound>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1223.666f</value>
+        <value>348.3842f</value>
+        <value>2160.592f</value>
+      </Translate>
+      <UnitConfigName type="string">MusicianSpotBgmTag</UnitConfigName>
+    </value>
     <value HashId="-407942113" Rotate="1.570796f" SRTHash="-373534304">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -13611,6 +16472,23 @@
         <value>2013.405f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-403955479" Rotate="1.759992f" SRTHash="-509716768">
+      <_Parameters ApplyForceValue="5f" ForceType="0" IsIchigekiActor="true" TriggerType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1448457085">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-194856672">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1233.4f</value>
+        <value>366f</value>
+        <value>2197.7f</value>
+      </Translate>
+      <UnitConfigName type="string">MoveTriggerTag</UnitConfigName>
     </value>
     <value HashId="-403203052" SRTHash="-656273279">
       <Rotate type="array">
@@ -13693,6 +16571,24 @@
         <value>2750.952f</value>
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
+    </value>
+    <value HashId="-369054571" SRTHash="1422912579" Scale="35f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false" IsIchigekiActor="true">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1418348895">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1359.4f</value>
+        <value>360.3f</value>
+        <value>2279.2f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-366583614" SRTHash="-571669583">
       <Rotate type="array">
@@ -13797,6 +16693,21 @@
         <value>2169.08f</value>
       </Translate>
       <UnitConfigName type="string">Enemy_Bokoblin_Junior</UnitConfigName>
+    </value>
+    <value HashId="-338434767" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1983368380">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1213.252f</value>
+        <value>340.5002f</value>
+        <value>2115.531f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-326395458" Rotate="-2.343185f" SRTHash="806936564" Scale="12f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
@@ -13970,6 +16881,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="-285636564" SRTHash="-725679352">
+      <_Parameters IncrementSave="false" IsIchigekiActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Ichigeki_PushSnowBall_01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1184940013">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1228.424f</value>
+        <value>354.0936f</value>
+        <value>2176.144f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-281925023" SRTHash="-1106225080">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
         <SaveFlag type="string">IsGet_PlayerStole2</SaveFlag>
@@ -14130,6 +17058,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagNone</UnitConfigName>
     </value>
+    <value HashId="-221441535" Rotate="1.919862f" SRTHash="-531595220">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>8.5f</value>
+        <value>5f</value>
+        <value>5.5f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-1291f</value>
+        <value>419.5f</value>
+        <value>2218.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="-219626677" SRTHash="1310556077" Scale="0.8f">
       <_Parameters SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
         <DropActor type="string">Item_Roast_01</DropActor>
@@ -14289,6 +17234,15 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_07</UnitConfigName>
     </value>
+    <value HashId="-194856672" SRTHash="0">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1233.4f</value>
+        <value>366f</value>
+        <value>2197.7f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
     <value HashId="-193501239" Rotate="0.05999998f" SRTHash="-873894457">
       <Translate type="array">
         <value>-1385.006f</value>
@@ -14296,6 +17250,30 @@
         <value>2750.717f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStone_A_01</UnitConfigName>
+    </value>
+    <value HashId="-193200963" Rotate="-1.958311f" SRTHash="-340176318">
+      <_Parameters FortressEatPer="-1" IsIchigekiActor="true" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" NearCreateAppearID="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">LizalfosPipe</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-24351385">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="377639621">
+          <DefinitionName type="string">LifeZero</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1192.8f</value>
+        <value>355.6631f</value>
+        <value>2221.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Lizalfos_Ice</UnitConfigName>
     </value>
     <value HashId="-191369845" Rotate="2.384779f" SRTHash="-102635355">
       <LinksToObj type="array">
@@ -14317,6 +17295,15 @@
         <value>2050.513f</value>
       </Translate>
       <UnitConfigName type="string">Obj_RaftWood_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="-185744255" SRTHash="1161114795">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1245.078f</value>
+        <value>435.8324f</value>
+        <value>2193.882f</value>
+      </Translate>
+      <UnitConfigName type="string">BattleBgmRequestFinishTag</UnitConfigName>
     </value>
     <value HashId="-181389734" SRTHash="459927122" Scale="1.153619f">
       <Rotate type="array">
@@ -14353,6 +17340,23 @@
         <value>2638.47f</value>
       </Translate>
       <UnitConfigName type="string">Npc_HiddenKorokFly</UnitConfigName>
+    </value>
+    <value HashId="-175352154" SRTHash="2102475451">
+      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>6f</value>
+        <value>1f</value>
+        <value>6f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-1038.456f</value>
+        <value>252.4434f</value>
+        <value>1997.942f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-175238217" SRTHash="0">
       <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -14955,6 +17959,15 @@
       </Translate>
       <UnitConfigName type="string">KorokAnswerResponce</UnitConfigName>
     </value>
+    <value HashId="-24351385" SRTHash="-1207975688">
+      <_Parameters IsIchigekiActor="true" />
+      <Translate type="array">
+        <value>-1197.1f</value>
+        <value>355.7f</value>
+        <value>2218.8f</value>
+      </Translate>
+      <UnitConfigName type="string">EnemyLookTag</UnitConfigName>
+    </value>
     <value HashId="-19081371" SRTHash="1580567827">
       <_Parameters SharpWeaponJudgeType="0" WaitTime="4f">
         <DropTable type="string">Normal</DropTable>
@@ -15040,6 +18053,23 @@
         <value>2447.825f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-8769308" SRTHash="-2051443427">
+      <_Parameters SharpWeaponJudgeType="0" WaitTime="90f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1336989381">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1221.296f</value>
+        <value>340.5f</value>
+        <value>2117.723f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
     </value>
     <value HashId="-3190930" SRTHash="-1566943939">
       <_Parameters SharpWeaponJudgeType="0">

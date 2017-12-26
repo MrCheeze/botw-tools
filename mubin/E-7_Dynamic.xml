@@ -160,6 +160,15 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_B_01</UnitConfigName>
     </value>
+    <value HashId="63314877" Rotate="-0.7853981f" SRTHash="141775719">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-717f</value>
+        <value>189.7697f</value>
+        <value>2090.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_03</UnitConfigName>
+    </value>
     <value HashId="63495403" SRTHash="395661637" Scale="1.5f">
       <Rotate type="array">
         <value>0.04373018f</value>
@@ -655,6 +664,17 @@
       </Translate>
       <UnitConfigName type="string">FldObj_RockGashamahi_A_06</UnitConfigName>
     </value>
+    <value HashId="194438888" Rotate="1.308997f" SRTHash="1737745632">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-797f</value>
+        <value>190.1602f</value>
+        <value>2113f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
     <value HashId="198448645" SRTHash="-210572063" Scale="1.5f">
       <Rotate type="array">
         <value>0.02129604f</value>
@@ -694,6 +714,15 @@
         <value>2814.904f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_01</UnitConfigName>
+    </value>
+    <value HashId="208668553" Rotate="-3.141593f" SRTHash="1321804868">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-789f</value>
+        <value>190f</value>
+        <value>2161f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_01</UnitConfigName>
     </value>
     <value HashId="208848281" Rotate="0.5f" SRTHash="-6841609">
       <Translate type="array">
@@ -1092,6 +1121,22 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_01</UnitConfigName>
     </value>
+    <value HashId="396262437" Rotate="0.4000002f" SRTHash="-786473266">
+      <_Parameters IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" PatternID="-1" SharpWeaponJudgeType="0" SubUnitNum="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-899.6f</value>
+        <value>181.3f</value>
+        <value>2253.3f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Swarm_AllDay</UnitConfigName>
+    </value>
     <value HashId="397492654" Rotate="-1.66f" SRTHash="-671429813">
       <_Parameters IsCreateOnFace="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
         <ArrowName type="string">NormalArrow</ArrowName>
@@ -1349,6 +1394,17 @@
         <value>2266.771f</value>
       </Translate>
       <UnitConfigName type="string">Item_Mushroom_A</UnitConfigName>
+    </value>
+    <value HashId="511396668" Rotate="2.094395f" SRTHash="-476647641">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-793.5f</value>
+        <value>190.1588f</value>
+        <value>2150.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
     </value>
     <value HashId="516445081" SRTHash="1920854350">
       <Rotate type="array">
@@ -1683,6 +1739,17 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteLumpRock_A_03</UnitConfigName>
     </value>
+    <value HashId="641050480" Rotate="2.356194f" SRTHash="-1471754054">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-771.5f</value>
+        <value>189.622f</value>
+        <value>2118f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
     <value HashId="661123349" Rotate="1.184326f" SRTHash="1528156522" Scale="0.892578f">
       <Translate type="array">
         <value>-766.3047f</value>
@@ -1727,6 +1794,28 @@
         <value>2082.148f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_01</UnitConfigName>
+    </value>
+    <value HashId="680681940" Rotate="-1.047198f" SRTHash="-1031160939">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-785.5f</value>
+        <value>189.4807f</value>
+        <value>2137.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
+    <value HashId="681172013" Rotate="-0.7853982f" SRTHash="-1253022183">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-745.5f</value>
+        <value>189.1995f</value>
+        <value>2133f</value>
+      </Translate>
+      <UnitConfigName type="string">Kibako_Contain_01</UnitConfigName>
     </value>
     <value HashId="687505768" Rotate="5.040059f" SRTHash="-1388982075" Scale="1.06511f">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -1957,6 +2046,18 @@
         <value>2592.071f</value>
       </Translate>
       <UnitConfigName type="string">SpotBgmTag</UnitConfigName>
+    </value>
+    <value HashId="748914894" Rotate="0.5235988f" SRTHash="-1835826950">
+      <_Parameters EnableRevival="false" IsIchigekiActor="true" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Obj_ArrowBundle_A_02</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-778.5f</value>
+        <value>196.2478f</value>
+        <value>2125f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Wood</UnitConfigName>
     </value>
     <value HashId="750603940" SRTHash="-1911747007">
       <Rotate type="array">
@@ -2446,6 +2547,26 @@
         <value>2909.932f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_KorokStone_A_01</UnitConfigName>
+    </value>
+    <value HashId="901243398" Rotate="-0.7853982f" SRTHash="-1510963092">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-751f</value>
+        <value>189.3997f</value>
+        <value>2104.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_02</UnitConfigName>
+    </value>
+    <value HashId="901605841" SRTHash="745127888">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="false" IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-772f</value>
+        <value>189.4577f</value>
+        <value>2115.5f</value>
+      </Translate>
+      <UnitConfigName type="string">BarrelBomb3</UnitConfigName>
     </value>
     <value HashId="904868023" SRTHash="-440107780">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
@@ -3108,6 +3229,15 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_01</UnitConfigName>
     </value>
+    <value HashId="1138987057" Rotate="-2.879793f" SRTHash="-676102703">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-745.5f</value>
+        <value>189f</value>
+        <value>2137f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_01</UnitConfigName>
+    </value>
     <value HashId="1139534015" SRTHash="-1402642429">
       <_Parameters IsEnemyLiftable="true" IsFixedPlace="false" SharpWeaponJudgeType="0" />
       <Rotate type="array">
@@ -3143,6 +3273,20 @@
         <value>2543.492f</value>
       </Translate>
       <UnitConfigName type="string">Enemy_Lizalfos_Junior</UnitConfigName>
+    </value>
+    <value HashId="1155361686" SRTHash="238931043">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>1.570797f</value>
+        <value>1.390798f</value>
+        <value>1.570797f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-814.4f</value>
+        <value>190.7f</value>
+        <value>2121f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_01</UnitConfigName>
     </value>
     <value HashId="1155687024" SRTHash="-2119176078">
       <Rotate type="array">
@@ -3594,6 +3738,17 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeWhiteBirch_A_03</UnitConfigName>
     </value>
+    <value HashId="1288156384" Rotate="2.618179f" SRTHash="-1724928329">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-791f</value>
+        <value>190.0773f</value>
+        <value>2153f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
     <value HashId="1297362523" SRTHash="-549798555">
       <Rotate type="array">
         <value>-0.0007562154f</value>
@@ -3737,6 +3892,17 @@
         <value>3004.352f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_02</UnitConfigName>
+    </value>
+    <value HashId="1331370401" Rotate="-2.879793f" SRTHash="1639461246">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-783f</value>
+        <value>190.4619f</value>
+        <value>2115.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
     </value>
     <value HashId="1339947119" Rotate="-1.66f" SRTHash="-1140196660">
       <_Parameters IsCreateOnFace="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="1" TerritoryArea="0f">
@@ -4050,6 +4216,28 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Wizzrobe_Fire</UnitConfigName>
     </value>
+    <value HashId="1480088564" SRTHash="1621509540">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-812.5f</value>
+        <value>196.2586f</value>
+        <value>2108.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
+    <value HashId="1480709632" SRTHash="818977451">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="false" IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-743.5f</value>
+        <value>189.2139f</value>
+        <value>2132.5f</value>
+      </Translate>
+      <UnitConfigName type="string">BarrelBomb3</UnitConfigName>
+    </value>
     <value HashId="1485862375" Rotate="1.604601f" SRTHash="1293112140">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -4292,6 +4480,17 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_01</UnitConfigName>
     </value>
+    <value HashId="1598838722" SRTHash="-891544312">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="false" IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-811.3f</value>
+        <value>190.0643f</value>
+        <value>2127f</value>
+      </Translate>
+      <UnitConfigName type="string">BarrelBomb3</UnitConfigName>
+    </value>
     <value HashId="1600301366" Rotate="0.42375f" SRTHash="-645574919" Scale="1.5f">
       <Translate type="array">
         <value>-489.5432f</value>
@@ -4525,18 +4724,6 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteScaffold_A_02</UnitConfigName>
     </value>
-    <value HashId="1683878821" Rotate="0.05999999f" SRTHash="-759412359" Scale="100f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-897.5555f</value>
-        <value>179.4229f</value>
-        <value>2219.446f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="1685954391" Rotate="4.030747f" SRTHash="-225420897">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -4639,6 +4826,22 @@
         <value>2342.21f</value>
       </Translate>
       <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
+    </value>
+    <value HashId="1724278018" SRTHash="-1064542526">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.890765f</value>
+        <value>1.261407f</value>
+        <value>3.00074f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-797.6f</value>
+        <value>190.2114f</value>
+        <value>2141.1f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
     </value>
     <value HashId="1726992809" SRTHash="216611828" Scale="0.976074f">
       <Rotate type="array">
@@ -4850,6 +5053,17 @@
       </Translate>
       <UnitConfigName type="string">TBox_Field_Stone</UnitConfigName>
     </value>
+    <value HashId="1795962963" Rotate="-2.617994f" SRTHash="-707861752">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-764f</value>
+        <value>189.2789f</value>
+        <value>2153f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
     <value HashId="1810169384" Rotate="0.05079734f" SRTHash="-1228431981">
       <Translate type="array">
         <value>-470.0756f</value>
@@ -4902,6 +5116,15 @@
         <value>2204.607f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_WeaponStand_A_01</UnitConfigName>
+    </value>
+    <value HashId="1845164554" Rotate="-2.094395f" SRTHash="-1440771154">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-742f</value>
+        <value>189f</value>
+        <value>2134.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_03</UnitConfigName>
     </value>
     <value HashId="1845610571" SRTHash="-1577327561" Scale="0.851563f">
       <Rotate type="array">
@@ -5160,6 +5383,17 @@
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
+    <value HashId="1969838400" Rotate="0.7853982f" SRTHash="763032201">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-798.5f</value>
+        <value>190.141f</value>
+        <value>2116f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
     <value HashId="1975144773" SRTHash="0">
       <Rotate type="array">
         <value>3.128906f</value>
@@ -5319,6 +5553,17 @@
         <value>3008.984f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeBroadleaf_A_L</UnitConfigName>
+    </value>
+    <value HashId="2054321218" Rotate="0.2617994f" SRTHash="284141968">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-801f</value>
+        <value>190.2642f</value>
+        <value>2118f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
     </value>
     <value HashId="2055262337" Rotate="0.02000039f" SRTHash="344591906">
       <_Parameters TurnActorNearEnemy="true" />
@@ -6107,6 +6352,20 @@
       </Translate>
       <UnitConfigName type="string">GrassCutTag</UnitConfigName>
     </value>
+    <value HashId="-1909768025" SRTHash="-899795920">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Rotate type="array">
+        <value>2.899434f</value>
+        <value>1.156949f</value>
+        <value>2.893217f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-812.1f</value>
+        <value>189.9f</value>
+        <value>2127.1f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_03</UnitConfigName>
+    </value>
     <value HashId="-1908683914" Rotate="0.8081583f" SRTHash="-1401922743" Scale="1.000232f">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -6300,6 +6559,17 @@
       </Translate>
       <UnitConfigName type="string">FldObj_RockGashamahi_A_07</UnitConfigName>
     </value>
+    <value HashId="-1840480070" SRTHash="412166539">
+      <_Parameters IsEnemyLiftable="true" IsFixedPlace="false" IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-761f</value>
+        <value>189.2209f</value>
+        <value>2136.5f</value>
+      </Translate>
+      <UnitConfigName type="string">BarrelBomb3</UnitConfigName>
+    </value>
     <value HashId="-1839680294" SRTHash="-960827355">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -6344,6 +6614,15 @@
         <value>2968.789f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1833529136" Rotate="2.617994f" SRTHash="1039872846">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-792.5f</value>
+        <value>189.9346f</value>
+        <value>2160f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_02</UnitConfigName>
     </value>
     <value HashId="-1826229339" SRTHash="-1287972920">
       <_Parameters SharpWeaponJudgeType="0">
@@ -7227,6 +7506,17 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_01</UnitConfigName>
     </value>
+    <value HashId="-1527399793" SRTHash="378230097">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0" TurnActorNearEnemy="true">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-761.5f</value>
+        <value>189.2119f</value>
+        <value>2138.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Kibako_Contain_01</UnitConfigName>
+    </value>
     <value HashId="-1524322256" SRTHash="0">
       <Rotate type="array">
         <value>-0.2322998f</value>
@@ -7563,17 +7853,14 @@
       </Translate>
       <UnitConfigName type="string">Item_Mushroom_A</UnitConfigName>
     </value>
-    <value HashId="-1426786379" Rotate="-2.8f" SRTHash="-759412359" Scale="100f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
+    <value HashId="-1426461104" Rotate="-1.570796f" SRTHash="-2037807311">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
       <Translate type="array">
-        <value>-647f</value>
-        <value>190.1171f</value>
-        <value>2194.719f</value>
+        <value>-713f</value>
+        <value>189f</value>
+        <value>2127f</value>
       </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_01</UnitConfigName>
     </value>
     <value HashId="-1422402361" SRTHash="-1519563976" Scale="1.25f">
       <Rotate type="array">
@@ -7659,6 +7946,17 @@
         <value>2273.703f</value>
       </Translate>
       <UnitConfigName type="string">TwnObj_TempleOfTime_WallPlant_B_03</UnitConfigName>
+    </value>
+    <value HashId="-1403618846" Rotate="-2.356194f" SRTHash="-1117928094">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-785.5f</value>
+        <value>190.4502f</value>
+        <value>2117f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
     </value>
     <value HashId="-1403614995" Rotate="-1.519999f" SRTHash="980103221">
       <Translate type="array">
@@ -8473,6 +8771,17 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeWhiteBirch_A_03</UnitConfigName>
     </value>
+    <value HashId="-1120144055" Rotate="-0.7853984f" SRTHash="1142129033">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-783.5f</value>
+        <value>189.4929f</value>
+        <value>2140f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
     <value HashId="-1117336767" SRTHash="-475582263">
       <Translate type="array">
         <value>-914.3207f</value>
@@ -8524,6 +8833,15 @@
         <value>2909.996f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1092673361" Rotate="-0.5235988f" SRTHash="-1104911737">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-767.5f</value>
+        <value>189.5f</value>
+        <value>2106f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_03</UnitConfigName>
     </value>
     <value HashId="-1089945479" SRTHash="1175466460" Scale="15f">
       <_Parameters Direction="3" WindSpeed="10f">
@@ -9028,6 +9346,22 @@
       </Translate>
       <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
     </value>
+    <value HashId="-897632480" SRTHash="1021511532">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>2.959738f</value>
+        <value>0.9891319f</value>
+        <value>3.037247f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-805.6f</value>
+        <value>189.8441f</value>
+        <value>2147.4f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
     <value HashId="-892026179" Rotate="1.16f" SRTHash="-773796614">
       <Translate type="array">
         <value>14.77148f</value>
@@ -9232,6 +9566,15 @@
       </Translate>
       <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
     </value>
+    <value HashId="-822948471" Rotate="-1.832596f" SRTHash="-1930673360">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-713.5f</value>
+        <value>189f</value>
+        <value>2130f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_02</UnitConfigName>
+    </value>
     <value HashId="-817413777" Rotate="0.1635602f" SRTHash="-1493453753">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -9296,6 +9639,15 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhiteLumpRock_A_03</UnitConfigName>
     </value>
+    <value HashId="-786848540" Rotate="-1.308997f" SRTHash="-1323512507">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-749f</value>
+        <value>189f</value>
+        <value>2107.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_03</UnitConfigName>
+    </value>
     <value HashId="-775990101" SRTHash="2144535612">
       <Translate type="array">
         <value>-682.2101f</value>
@@ -9353,6 +9705,15 @@
         <value>2027.351f</value>
       </Translate>
       <UnitConfigName type="string">RockSetWhite_A_02</UnitConfigName>
+    </value>
+    <value HashId="-749870004" Rotate="-1.047198f" SRTHash="-446105088">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-715f</value>
+        <value>189.5f</value>
+        <value>2093f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_01</UnitConfigName>
     </value>
     <value HashId="-749713376" Rotate="2.483186f" SRTHash="-1939884344">
       <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" OnCliff="false" OnCliffTurn="true" RotAngle="60f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="150f">
@@ -9469,6 +9830,15 @@
         <value>2011.506f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffWhite_A_S_02</UnitConfigName>
+    </value>
+    <value HashId="-717324917" Rotate="-0.2617993f" SRTHash="786690506">
+      <_Parameters IsIchigekiActor="true" TurnActorNearEnemy="true" />
+      <Translate type="array">
+        <value>-771.5f</value>
+        <value>189.5f</value>
+        <value>2106f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_ShieldFenceWood_A_M_01</UnitConfigName>
     </value>
     <value HashId="-716610509" Rotate="1.04895f" SRTHash="0">
       <Translate type="array">
@@ -9605,6 +9975,17 @@
         <value>2295.165f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_BankingFlat_A_02</UnitConfigName>
+    </value>
+    <value HashId="-651807885" Rotate="1.570796f" SRTHash="70576780">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-806.5f</value>
+        <value>196.6315f</value>
+        <value>2104f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
     </value>
     <value HashId="-648733787" SRTHash="1573766337">
       <Rotate type="array">
@@ -9859,6 +10240,22 @@
         <value>2307.953f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_01</UnitConfigName>
+    </value>
+    <value HashId="-572250763" Rotate="-2.843186f" SRTHash="-1810311916">
+      <_Parameters IsIchigekiActor="true" IsNearCreate="false" LevelSensorMode="0" PatternID="-1" SharpWeaponJudgeType="0" SubUnitNum="0" TerritoryArea="0f">
+        <ArrowName type="string">NormalArrow</ArrowName>
+        <DropTable type="string">Normal</DropTable>
+        <EquipItem1 type="string">Default</EquipItem1>
+        <EquipItem2 type="string">Default</EquipItem2>
+        <EquipItem3 type="string">Default</EquipItem3>
+        <EquipItem4 type="string">Default</EquipItem4>
+      </_Parameters>
+      <Translate type="array">
+        <value>-882.2f</value>
+        <value>203.8f</value>
+        <value>2303.9f</value>
+      </Translate>
+      <UnitConfigName type="string">Enemy_Keese_Swarm_AllDay</UnitConfigName>
     </value>
     <value HashId="-569378396" Rotate="3.009919f" SRTHash="-2048481729">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -10404,6 +10801,17 @@
         <value>2905.826f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RockGashamahi_A_06</UnitConfigName>
+    </value>
+    <value HashId="-421048920" Rotate="-1.570796f" SRTHash="1304081813">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-788.5f</value>
+        <value>190.0097f</value>
+        <value>2126.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
     </value>
     <value HashId="-420030983" Rotate="-3.090796f" SRTHash="-370688520">
       <Translate type="array">
@@ -11008,6 +11416,17 @@
         <value>40.54492f</value>
         <value>142.5589f</value>
         <value>2776.475f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
+    </value>
+    <value HashId="-233549336" Rotate="2.412988f" SRTHash="-217488766">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-803.4f</value>
+        <value>189.6891f</value>
+        <value>2150.2f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
     </value>
@@ -11619,6 +12038,17 @@
         <value>2958f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_01</UnitConfigName>
+    </value>
+    <value HashId="-45431141" Rotate="-2.356194f" SRTHash="-819372192">
+      <_Parameters IsIchigekiActor="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-761.5f</value>
+        <value>189.2666f</value>
+        <value>2151.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FenceWoodDamage_A_01</UnitConfigName>
     </value>
     <value HashId="-42072277" SRTHash="-710589724" Scale="1.5f">
       <Rotate type="array">

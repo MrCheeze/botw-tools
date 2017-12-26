@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
   <bool_data type="array">
-    <value DeleteRev="-1" HashValue="180471501" InitValue="42" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_Item_Mushroom_C_2172534384</DataName>
-    </value>
     <value DeleteRev="-1" HashValue="1031169742" InitValue="42" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Animal_Insect_E_2176333733</DataName>
     </value>
@@ -12288,6 +12285,9 @@
     </value>
     <value DeleteRev="-1" HashValue="330193196" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_WeaponDrop_3399222830</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1747081511" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Bokoblin_Guard_Junior_3399222830</DataName>
     </value>
   </bool_data>
 </yaml>

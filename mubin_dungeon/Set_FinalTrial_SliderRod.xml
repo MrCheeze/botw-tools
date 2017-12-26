@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="909381876" SRTHash="1458889403" Scale="1.056546f">
+      <_Parameters FieldBodyGroup="4" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570795f</value>
+        <value>0f</value>
+        <value>-1.570797f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SliderBlockConcaveDisk_A_04</UnitConfigName>
+    </value>
+    <value HashId="911014095" SRTHash="1849071841">
+      <_Parameters FieldBodyGroup="4" />
+      <Translate type="array">
+        <value>1.787151f</value>
+        <value>-4.070313f</value>
+        <value>3.021282f</value>
+      </Translate>
+      <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="930301458" Rotate="-1.570796f" SRTHash="977651639">
+      <_Parameters FieldBodyGroup="4" GearRatio="0f" JoinSystemGroup="false" RegistFromBeginning="false" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1376072907">
+          <_Parameters Friction="1000000f" LimitTransMax="3.5f" LimitTransMin="-0.5f">
+            <Axis X="0f" Y="0f" Z="1f" />
+            <Pivot X="0f" Y="0f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">SliderCs</DefinitionName>
+        </value>
+        <value DestUnitHashId="1376072907">
+          <DefinitionName type="string">PhysSystemGroup</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3.043761f</value>
+        <value>-1.773438f</value>
+        <value>0.03576279f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SliderBlockIron_A_01</UnitConfigName>
+    </value>
+    <value HashId="1376072907" SRTHash="-1927439998" Scale="0.9637198f">
+      <_Parameters FieldBodyGroup="4" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="911014095">
+          <_Parameters Friction="1000000f" LimitTransMax="5f" LimitTransMin="0f">
+            <Axis X="0f" Y="0f" Z="1f" />
+            <Pivot X="0f" Y="0f" Z="0f" />
+          </_Parameters>
+          <DefinitionName type="string">SliderCs</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>-1.570797f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-2.139137f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SliderBlockConcaveDisk_A_03</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

@@ -1203,6 +1203,29 @@
       </Translate>
       <UnitConfigName type="string">Npc_HiddenKorokGround</UnitConfigName>
     </value>
+    <value HashId="696414052" SRTHash="-1681129281">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_185_Upper</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="914115660">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.293294E-07f</value>
+        <value>-1.439999f</value>
+        <value>0.08000069f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>3636f</value>
+        <value>302f</value>
+        <value>-3520f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Collabo</UnitConfigName>
+    </value>
     <value HashId="696502641" Rotate="0.6599999f" SRTHash="224274404">
       <LinksToObj type="array">
         <value DestUnitHashId="-890555133">
@@ -1598,6 +1621,25 @@
         <value>-3425.316f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffDeathMt_D_14_Far</UnitConfigName>
+    </value>
+    <value HashId="914115660" SRTHash="397197149">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-186618883">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-773841067">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3636f</value>
+        <value>306f</value>
+        <value>-3519.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="928501901" Rotate="0.8399998f" SRTHash="-2078627210">
       <Translate type="array">
@@ -2023,6 +2065,23 @@
         <value>-3545.061f</value>
       </Translate>
       <UnitConfigName type="string">TreasureSpot_00</UnitConfigName>
+    </value>
+    <value HashId="1188908273" SRTHash="-625490279">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">bf2_collabo_open03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1310604339">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3636f</value>
+        <value>308f</value>
+        <value>-3519.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1195738943" SRTHash="1825234782">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0" />
@@ -3246,6 +3305,23 @@
         <value>-3433.583f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RuinGuardian_A_Dynamic</UnitConfigName>
+    </value>
+    <value HashId="1741268014" SRTHash="-510811755">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">bf2_collabo_open01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1310604339">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3637.5f</value>
+        <value>308f</value>
+        <value>-3519.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1747472084" SRTHash="1458100062">
       <Rotate type="array">
@@ -5391,6 +5467,21 @@
       </Translate>
       <UnitConfigName type="string">FldObj_FissureValley_A_04</UnitConfigName>
     </value>
+    <value HashId="-1310604339" SRTHash="-42029638">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-772589819">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3636f</value>
+        <value>310f</value>
+        <value>-3519.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1291321984" Rotate="2.019997f" SRTHash="-950915312">
       <Translate type="array">
         <value>3620.839f</value>
@@ -6494,6 +6585,34 @@
       </Translate>
       <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
     </value>
+    <value HashId="-773841067" SRTHash="-299503953">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="1">
+        <SaveFlag type="string">bf2_collabo_open02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1310604339">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3634.5f</value>
+        <value>308f</value>
+        <value>-3519.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-772589819" SRTHash="-955520594">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">bf2_collabo_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>3636f</value>
+        <value>312f</value>
+        <value>-3519.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-772326900" SRTHash="-2077551225">
       <LinksToObj type="array">
         <value DestUnitHashId="466500090">
@@ -6833,6 +6952,22 @@
         <value>-3383.226f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_AkkarePlant_A_01</UnitConfigName>
+    </value>
+    <value HashId="-577194140" Rotate="0.26f" SRTHash="-1383816153">
+      <_Parameters>
+        <collaboSSFalloutFlagName type="string">CollaborationShootingStar_Xenoblade2_1_2_fallout</collaboSSFalloutFlagName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-140234929">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3321f</value>
+        <value>300.0859f</value>
+        <value>-3429f</value>
+      </Translate>
+      <UnitConfigName type="string">CollaboShootingStarArea</UnitConfigName>
     </value>
     <value HashId="-565389691" SRTHash="1825234782">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0" />
@@ -7317,6 +7452,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffAkkareEnd_B_02</UnitConfigName>
     </value>
+    <value HashId="-330451940" SRTHash="-1471085400">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">CollaborationShootingStar_Xenoblade2_1_2_fallout</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="696414052">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3634f</value>
+        <value>305f</value>
+        <value>-3520.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-321103258" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -7617,6 +7769,18 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffDeathMt_C_08_Far</UnitConfigName>
     </value>
+    <value HashId="-186618883" SRTHash="142478595">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">bf2_collabo_remaining</EventFlowEntryName>
+        <EventFlowName type="string">bf2_collabo</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>3633.5f</value>
+        <value>307.5f</value>
+        <value>-3519.5f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="-175484930" SRTHash="-1759152117">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -7752,6 +7916,18 @@
         <value>-3147.465f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_IvyBurn_A_01</UnitConfigName>
+    </value>
+    <value HashId="-140234929" Rotate="0.4400001f" SRTHash="161643533" Scale="16f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>3322.594f</value>
+        <value>299.3125f</value>
+        <value>-3423.125f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-136976307" SRTHash="109553883">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">

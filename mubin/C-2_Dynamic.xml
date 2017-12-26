@@ -4109,22 +4109,6 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Golem_Little_Ice</UnitConfigName>
     </value>
-    <value HashId="1565581210" SRTHash="0">
-      <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
-        <DropTable type="string">Normal</DropTable>
-      </_Parameters>
-      <Rotate type="array">
-        <value>1.070801f</value>
-        <value>-0.2762451f</value>
-        <value>-0.1235352f</value>
-      </Rotate>
-      <Translate type="array">
-        <value>-2664.512f</value>
-        <value>655.6172f</value>
-        <value>-2732.707f</value>
-      </Translate>
-      <UnitConfigName type="string">Item_Plant_O</UnitConfigName>
-    </value>
     <value HashId="1570182572" SRTHash="0">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>

@@ -1009,5 +1009,53 @@
         </value>
       </MinValue>
     </value>
+    <value DeleteRev="-1" HashValue="-1144586309" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">BalladOfHeroRito_DragonDemoCameraPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>10000f</value>
+          <value>10000f</value>
+          <value>10000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-10000f</value>
+          <value>-10000f</value>
+          <value>-10000f</value>
+        </value>
+      </MinValue>
+    </value>
+    <value DeleteRev="-1" HashValue="2141744600" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" ResetType="0">
+      <DataName type="string">BalladOfHeroRito_DragonDemoCameraViewPos</DataName>
+      <InitValue type="array">
+        <value type="array">
+          <value>0f</value>
+          <value>0f</value>
+          <value>0f</value>
+        </value>
+      </InitValue>
+      <MaxValue type="array">
+        <value type="array">
+          <value>10000f</value>
+          <value>10000f</value>
+          <value>10000f</value>
+        </value>
+      </MaxValue>
+      <MinValue type="array">
+        <value type="array">
+          <value>-10000f</value>
+          <value>-10000f</value>
+          <value>-10000f</value>
+        </value>
+      </MinValue>
+    </value>
   </vector3f_data>
 </yaml>

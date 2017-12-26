@@ -5758,19 +5758,6 @@
       </Translate>
       <UnitConfigName type="string">TwnObj_Village_ZoraPot_A_M_Act_01</UnitConfigName>
     </value>
-    <value HashId="1597086243" Rotate="-1.652609f" SRTHash="758572384">
-      <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
-        <ArrowName type="string">BombArrow_A</ArrowName>
-        <DropTable type="string">ZoraSpecial</DropTable>
-        <EquipItem1 type="string">Weapon_Bow_006</EquipItem1>
-      </_Parameters>
-      <Translate type="array">
-        <value>3269.7f</value>
-        <value>535.2455f</value>
-        <value>-988.6f</value>
-      </Translate>
-      <UnitConfigName type="string">Enemy_Lizalfos_Junior</UnitConfigName>
-    </value>
     <value HashId="1600475479" SRTHash="1902223117">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>

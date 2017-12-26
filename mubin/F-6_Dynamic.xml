@@ -2483,6 +2483,20 @@
       </Translate>
       <UnitConfigName type="string">EnvSeEmitPointBirdTemperate</UnitConfigName>
     </value>
+    <value HashId="259884141" OnlyOne="true" SRTHash="-778923327">
+      <_Parameters TerritoryArea="0f" />
+      <Rotate type="array">
+        <value>-0.1847885f</value>
+        <value>0.8501096f</value>
+        <value>-0.3514222f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>441.088f</value>
+        <value>116.3553f</value>
+        <value>1957.08f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_Diary_touzoku_02</UnitConfigName>
+    </value>
     <value HashId="260583995" Rotate="-1.022827f" SRTHash="1435457973" Scale="0.869141f">
       <Translate type="array">
         <value>205.5273f</value>

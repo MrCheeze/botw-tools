@@ -2587,6 +2587,24 @@
       </Translate>
       <UnitConfigName type="string">TwnObj_Village_SheikerCliff_A_01</UnitConfigName>
     </value>
+    <value HashId="874076729" SRTHash="1907968185">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1550148308">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-401889259">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2998.969f</value>
+        <value>514.9283f</value>
+        <value>179.4919f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="875506168" Rotate="-1.36f" SRTHash="1632445530" Scale="2f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -2768,6 +2786,23 @@
         <value>887.6069f</value>
       </Translate>
       <UnitConfigName type="string">TwnObj_Village_SheikerCliff_A_01</UnitConfigName>
+    </value>
+    <value HashId="930691844" SRTHash="1234963395">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">MiniGame_HillTower_BirdMan_Game</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="874076729">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3000.954f</value>
+        <value>514.9283f</value>
+        <value>180.1638f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
     <value HashId="935848866" Rotate="-0.4f" SRTHash="-346977421" Scale="135f">
       <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
@@ -4784,6 +4819,18 @@
       </Translate>
       <UnitConfigName type="string">Obj_RockSetGray_A_L_01</UnitConfigName>
     </value>
+    <value HashId="1550148308" SRTHash="1624749654">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">ToBattle</EventFlowEntryName>
+        <EventFlowName type="string">BalladOfHeroZora</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>2996.563f</value>
+        <value>514.2598f</value>
+        <value>179.8196f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="1554461631" SRTHash="-793715182">
       <Rotate type="array">
         <value>3.041593f</value>
@@ -5747,6 +5794,21 @@
       </Translate>
       <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
+    <value HashId="1902573835" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1550148308">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2996.638f</value>
+        <value>514.5544f</value>
+        <value>180.9446f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1907262324" Rotate="1.308997f" SRTHash="-892064981">
       <_Parameters IsHardModeActor="true" />
       <LinksToObj type="array">
@@ -6555,6 +6617,23 @@
         <value>794.3307f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="2091636552" SRTHash="1110119089">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroZora_Seek3rdDungeon</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="874076729">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>3000.969f</value>
+        <value>514.9283f</value>
+        <value>178.8981f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="2106963372" SRTHash="-939776961">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -7570,6 +7649,29 @@
         <value>373.0918f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-1850754343" SRTHash="-1760163761">
+      <_Parameters Count="1" DefaultBasicSignal="false" ForceCalcInEvent="false" IsMagneGrabbed="0" IsSendMessage="false" IsStopFromStopTimer="0">
+        <ActorName type="string">GameROMPlayer</ActorName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1902573835">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1032076675">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+        <value DestUnitHashId="-629866741">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>2996.638f</value>
+        <value>514.5544f</value>
+        <value>180.9446f</value>
+      </Translate>
+      <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
     </value>
     <value HashId="-1850071560" SRTHash="-1466288288">
       <Rotate type="array">

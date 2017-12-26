@@ -7243,9 +7243,6 @@
     <value DeleteRev="-1" HashValue="-237382829" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_Enemy_Golem_Little_Ice_1559084423</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="526842644" InitValue="36" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_Item_Plant_O_1565581210</DataName>
-    </value>
     <value DeleteRev="-1" HashValue="-1244927494" InitValue="36" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Item_Plant_O_1570182572</DataName>
     </value>
@@ -12288,6 +12285,9 @@
     </value>
     <value DeleteRev="-1" HashValue="-1996930211" InitValue="42" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Animal_Insect_E_2167763824</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="180471501" InitValue="42" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Item_Mushroom_C_2172534384</DataName>
     </value>
   </bool_data>
 </yaml>

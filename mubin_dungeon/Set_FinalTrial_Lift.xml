@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="259027730" SRTHash="-855695741">
+      <_Parameters FieldBodyGroup="15" MoveAxis="1" MoveDis="5f" MoveSpeed="1f" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-722428073">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0.6226883f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_StartPointShutter</UnitConfigName>
+    </value>
+    <value HashId="396437688" SRTHash="-1708587363">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Box</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>10f</value>
+        <value>10f</value>
+        <value>15f</value>
+      </Scale>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>14f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="763416755" SRTHash="2114223829">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">FinalTrial_Lift_MoveDown</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1479056214">
+          <DefinitionName type="string">ForbidAttention</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-0.9999999f</value>
+        <value>0.6268168f</value>
+        <value>5.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="910893177" SRTHash="1493787658">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
+        <EventFlowEntryName type="string">Demo642_0</EventFlowEntryName>
+        <EventFlowName type="string">Demo642_0</EventFlowName>
+        <TraversePos X="-3.0625f" Y="-48.5275f" Z="7.3436f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1489170763">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="259027730">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1539252066">
+          <DefinitionName type="string">DemoMember</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3.0625f</value>
+        <value>0.4725f</value>
+        <value>6.3436f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
+    <value HashId="1424685301" SRTHash="-1239982098">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">FinalTrial_Lift_MoveDown</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-702914299">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4.560444f</value>
+        <value>0.4675217f</value>
+        <value>13.43221f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1828330288" SRTHash="1504068392">
+      <_Parameters FieldBodyGroup="15" />
+      <Translate type="array">
+        <value>0f</value>
+        <value>0.6226883f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_StartPointShutterFrame</UnitConfigName>
+    </value>
+    <value HashId="-2036687539" Rotate="3.141593f" SRTHash="2085999363">
+      <_Parameters FieldBodyGroup="15" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-722428073">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExLift_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1904396721" SRTHash="73319357">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="910893177">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3.5f</value>
+        <value>0.4680023f</value>
+        <value>9f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1539252066" SRTHash="-1122365275">
+      <_Parameters CameraPattern="1" CameraPower="0f" CameraRange="1f" FieldBodyGroup="15" InitDgnMoveDis="0f" InitDgnPriority="0" MoveDis="-49f" MoveSpeed="0.05f" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-765242146">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-722428073">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0.4296875f</value>
+        <value>0.9680023f</value>
+        <value>22.73438f</value>
+      </Translate>
+      <UnitConfigName type="string">DungeonMoveTag</UnitConfigName>
+    </value>
+    <value HashId="-1489170763" Rotate="3.141593f" SRTHash="-1874773908">
+      <Translate type="array">
+        <value>-3.0625f</value>
+        <value>-48.5275f</value>
+        <value>7.3436f</value>
+      </Translate>
+      <UnitConfigName type="string">DestinationAnchor</UnitConfigName>
+    </value>
+    <value HashId="-1479056214" SRTHash="-1394118515">
+      <_Parameters FieldBodyGroup="15" RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-722428073">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3.0625f</value>
+        <value>0.4725304f</value>
+        <value>6.3436f</value>
+      </Translate>
+      <UniqueName type="string">LiftTerminal</UniqueName>
+      <UnitConfigName type="string">FldObj_DownloadTerminal_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1212353129" SRTHash="1743780588">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">FinalTrial_LiftShutter_Open</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-760242060">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-4.897466f</value>
+        <value>0.4675217f</value>
+        <value>11.78989f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-904488002" SRTHash="-210376553">
+      <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1904396721">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3.0625f</value>
+        <value>1.6725f</value>
+        <value>6.3436f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_GoalExit</UnitConfigName>
+    </value>
+    <value HashId="-765242146" SRTHash="505762730">
+      <LinksToObj type="array">
+        <value DestUnitHashId="396437688">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0f</value>
+        <value>4f</value>
+        <value>16f</value>
+      </Translate>
+      <UnitConfigName type="string">SoundProxyDungeonMoveTag_FinalTrialStartLift</UnitConfigName>
+    </value>
+    <value HashId="-760242060" Rotate="-3.141593f" SRTHash="247085055">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="259027730">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>0.4296875f</value>
+        <value>1.968002f</value>
+        <value>11.23438f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-722428073" SRTHash="0">
+      <Translate type="array">
+        <value>0f</value>
+        <value>0.6226883f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="-702914299" SRTHash="887434544">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1539252066">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1.917741f</value>
+        <value>0.7302437f</value>
+        <value>15.04771f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-93435392" Rotate="3.141593f" SRTHash="717584939">
+      <_Parameters FieldBodyGroup="15" />
+      <Translate type="array">
+        <value>0f</value>
+        <value>0.5060043f</value>
+        <value>22.5f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_FirstShrineBed_A_01</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

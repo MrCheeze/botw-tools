@@ -12965,6 +12965,17 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_02</UnitConfigName>
     </value>
+    <value HashId="-450956321" SRTHash="-1438150018">
+      <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="false" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>2949.9f</value>
+        <value>2000f</value>
+        <value>72.92999f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_Weapon_Sword_502</UnitConfigName>
+    </value>
     <value HashId="-449758214" Rotate="3.006002f" SRTHash="240918342">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>

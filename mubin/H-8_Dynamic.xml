@@ -321,19 +321,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
     </value>
-    <value HashId="125241582" SRTHash="8872094">
-      <Scale type="array">
-        <value>1.426173f</value>
-        <value>2.716614f</value>
-        <value>1.730157f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2864.461f</value>
-        <value>114.4622f</value>
-        <value>3474.41f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="127359351" Rotate="0.5f" SRTHash="-2057350665">
       <Translate type="array">
         <value>2946.063f</value>
@@ -863,19 +850,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeTropicalLow_A_01</UnitConfigName>
     </value>
-    <value HashId="333689067" Rotate="-0.72f" SRTHash="1738874821">
-      <Scale type="array">
-        <value>1.905991f</value>
-        <value>4.430247f</value>
-        <value>2.871586f</value>
-      </Scale>
-      <Translate type="array">
-        <value>3000.653f</value>
-        <value>109.7435f</value>
-        <value>3434.9f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="334747935" Rotate="2.720646f" SRTHash="142782661">
       <Translate type="array">
         <value>2602.391f</value>
@@ -1181,19 +1155,6 @@
         <value>3810.058f</value>
       </Translate>
       <UnitConfigName type="string">Kibako_Contain_01</UnitConfigName>
-    </value>
-    <value HashId="433676146" Rotate="0.5000001f" SRTHash="-840063511">
-      <Scale type="array">
-        <value>2.144409f</value>
-        <value>4.325939f</value>
-        <value>1.959635f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2859.574f</value>
-        <value>109.6555f</value>
-        <value>3460.203f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="434011088" SRTHash="-932215366">
       <Rotate type="array">
@@ -2435,19 +2396,6 @@
       </Translate>
       <UnitConfigName type="string">TwnObj_Village_FishingFence_A_01</UnitConfigName>
     </value>
-    <value HashId="816036273" Rotate="0.48f" SRTHash="-112399041">
-      <Scale type="array">
-        <value>1.208616f</value>
-        <value>3.971292f</value>
-        <value>1.494719f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2899.96f</value>
-        <value>111.1625f</value>
-        <value>3417.547f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="816491712" Rotate="1.996497f" SRTHash="1271420537">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -3504,19 +3452,6 @@
       </Translate>
       <UnitConfigName type="string">Weapon_Lsword_020</UnitConfigName>
     </value>
-    <value HashId="1155947199" Rotate="0.56f" SRTHash="215241652">
-      <Scale type="array">
-        <value>5.971027f</value>
-        <value>3.646446f</value>
-        <value>1f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2877.203f</value>
-        <value>115.4592f</value>
-        <value>3385.844f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="1163342134" SRTHash="1705838697">
       <Rotate type="array">
         <value>-3.001593f</value>
@@ -4041,19 +3976,6 @@
         <value>3935.066f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_Coral_A_01</UnitConfigName>
-    </value>
-    <value HashId="1296773759" SRTHash="-1805238394">
-      <Scale type="array">
-        <value>6.39124f</value>
-        <value>3.297759f</value>
-        <value>1.730157f</value>
-      </Scale>
-      <Translate type="array">
-        <value>3023.824f</value>
-        <value>116.8718f</value>
-        <value>3424.985f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="1304742839" SRTHash="0">
       <Rotate type="array">
@@ -4694,19 +4616,6 @@
       </Translate>
       <UnitConfigName type="string">FldObj_Coral_A_03</UnitConfigName>
     </value>
-    <value HashId="1464375524" Rotate="1.04f" SRTHash="-838205675">
-      <Scale type="array">
-        <value>2.734495f</value>
-        <value>4.170967f</value>
-        <value>7.332994f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2876.924f</value>
-        <value>115.7065f</value>
-        <value>3378.749f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="1470441213" Rotate="0.7f" SRTHash="-2134615010">
       <Translate type="array">
         <value>2820.592f</value>
@@ -5036,19 +4945,6 @@
         <value>3023.938f</value>
       </Translate>
       <UnitConfigName type="string">EnvSeEmitPointBirdWet</UnitConfigName>
-    </value>
-    <value HashId="1550790434" Rotate="0.7f" SRTHash="-1769657066">
-      <Scale type="array">
-        <value>8.283688f</value>
-        <value>3.712011f</value>
-        <value>1.429153f</value>
-      </Scale>
-      <Translate type="array">
-        <value>3012.589f</value>
-        <value>115.8607f</value>
-        <value>3430.209f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="1557436462" Rotate="2.441593f" SRTHash="1434744978">
       <Translate type="array">
@@ -5644,19 +5540,6 @@
         <value>3458.135f</value>
       </Translate>
       <UnitConfigName type="string">TwnObj_Village_FishingFence_A_01</UnitConfigName>
-    </value>
-    <value HashId="1731104792" Rotate="0.8999999f" SRTHash="-797633175">
-      <Scale type="array">
-        <value>2.734495f</value>
-        <value>4.170967f</value>
-        <value>5.383922f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2866.899f</value>
-        <value>115.7065f</value>
-        <value>3372.024f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="1732831609" Rotate="0.1504221f" SRTHash="-1680094387">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -7036,19 +6919,6 @@
       </Translate>
       <UnitConfigName type="string">FldObj_RockBeach_A_M_02</UnitConfigName>
     </value>
-    <value HashId="-2106562071" Rotate="1.34f" SRTHash="-413539622">
-      <Scale type="array">
-        <value>2.734495f</value>
-        <value>4.170967f</value>
-        <value>5.896522f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2847.91f</value>
-        <value>115.7065f</value>
-        <value>3362.028f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="-2101743063" SRTHash="229773522">
       <_Parameters AddParam="0" AddSpecialFlag="0" EnemyOwnItem="false" IsCreateSharpWeapon="false" IsEmitLandNoise="false" IsFixedPlace="false" IsPlayerPut="false" IsWeaponCreateByRawLife="false" LevelSensorMode="0" Life="-1" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -7180,19 +7050,6 @@
       </Translate>
       <UnitConfigName type="string">FldObj_RuinStoneWall_A_05</UnitConfigName>
     </value>
-    <value HashId="-2072201589" Rotate="-0.2200001f" SRTHash="2059384667">
-      <Scale type="array">
-        <value>0.7794628f</value>
-        <value>4.430247f</value>
-        <value>3.855062f</value>
-      </Scale>
-      <Translate type="array">
-        <value>3006.223f</value>
-        <value>109.7435f</value>
-        <value>3438.415f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="-2066541438" SRTHash="1037349721">
       <Rotate type="array">
         <value>2.016539f</value>
@@ -7213,19 +7070,6 @@
         <value>3525.082f</value>
       </Translate>
       <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
-    </value>
-    <value HashId="-2054845241" Rotate="-0.16f" SRTHash="-1046154426">
-      <Scale type="array">
-        <value>5.220009f</value>
-        <value>3.849102f</value>
-        <value>2.117587f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2966.984f</value>
-        <value>113.9062f</value>
-        <value>3404.891f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-2052081783" Rotate="0.1600001f" SRTHash="1399338350">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -8347,19 +8191,6 @@
       </Translate>
       <UnitConfigName type="string">FldObj_Ground_FironeBeach_A_02</UnitConfigName>
     </value>
-    <value HashId="-1690004157" Rotate="0.6399999f" SRTHash="-1518983333">
-      <Scale type="array">
-        <value>1.50962f</value>
-        <value>4.018975f</value>
-        <value>2.460314f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2861.416f</value>
-        <value>108.9362f</value>
-        <value>3419.682f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="-1689150143" Rotate="1.570796f" SRTHash="537770874">
       <Translate type="array">
         <value>2032.325f</value>
@@ -8391,19 +8222,6 @@
         <value>3427.679f</value>
       </Translate>
       <UnitConfigName type="string">TwnObj_Village_Fishing_FireTorchOn_A_01</UnitConfigName>
-    </value>
-    <value HashId="-1666655925" Rotate="0.8999997f" SRTHash="1217029263">
-      <Scale type="array">
-        <value>2.734495f</value>
-        <value>4.170967f</value>
-        <value>8.554889f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2837.064f</value>
-        <value>115.7065f</value>
-        <value>3356.084f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-1664744147" SRTHash="-1307372101" Scale="0.9f">
       <Rotate type="array">
@@ -8569,19 +8387,6 @@
       </Translate>
       <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
     </value>
-    <value HashId="-1614723181" Rotate="0.09999999f" SRTHash="-558230346">
-      <Scale type="array">
-        <value>5.035234f</value>
-        <value>3.372265f</value>
-        <value>2.251698f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2923.009f</value>
-        <value>108.6771f</value>
-        <value>3444.513f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="-1614525162" Rotate="-1.540002f" SRTHash="-960365293">
       <Translate type="array">
         <value>2848.181f</value>
@@ -8597,19 +8402,6 @@
         <value>3777.532f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_Coral_A_01</UnitConfigName>
-    </value>
-    <value HashId="-1606763910" SRTHash="-84298000">
-      <Scale type="array">
-        <value>1.417233f</value>
-        <value>3.908707f</value>
-        <value>5.741549f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2987.943f</value>
-        <value>112.1722f</value>
-        <value>3409.789f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-1605404870" SRTHash="0">
       <Rotate type="array">
@@ -8775,19 +8567,6 @@
         <value>3378.43f</value>
       </Translate>
       <UnitConfigName type="string">EnvSeEmitPointInsectSubtoropical</UnitConfigName>
-    </value>
-    <value HashId="-1548956049" Rotate="0.24f" SRTHash="161335157">
-      <Scale type="array">
-        <value>2.874566f</value>
-        <value>4.85344f</value>
-        <value>2.874566f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2846.056f</value>
-        <value>109.3563f</value>
-        <value>3439.97f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-1547391138" Rotate="-2.1f" SRTHash="-1884771217">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -8957,19 +8736,6 @@
         <value>3865.5f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
-    <value HashId="-1507146018" Rotate="0.4799999f" SRTHash="-156398383">
-      <Scale type="array">
-        <value>13.32028f</value>
-        <value>3.771616f</value>
-        <value>2.683831f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2942.582f</value>
-        <value>113.1389f</value>
-        <value>3399.246f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-1500909597" SRTHash="-43103921">
       <_Parameters EnableNoEntryAreaCheck="true" IsLocatorCreate="false" SharpWeaponJudgeType="0">
@@ -9587,19 +9353,6 @@
       </Translate>
       <UnitConfigName type="string">TwnObj_Village_FishingLongTorch_A_02</UnitConfigName>
     </value>
-    <value HashId="-1254625048" Rotate="-0.2999999f" SRTHash="1736405233">
-      <Scale type="array">
-        <value>1.724196f</value>
-        <value>3.968311f</value>
-        <value>3.333522f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2872.592f</value>
-        <value>110.0567f</value>
-        <value>3430.337f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="-1253598569" SRTHash="-817204556">
       <Translate type="array">
         <value>2494.013f</value>
@@ -9645,19 +9398,6 @@
         <value>3164.095f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_BankingFlat_A_04</UnitConfigName>
-    </value>
-    <value HashId="-1240261408" Rotate="-0.6199999f" SRTHash="-1677805087">
-      <Scale type="array">
-        <value>6.120039f</value>
-        <value>3.381206f</value>
-        <value>1.298023f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2867.191f</value>
-        <value>109.9585f</value>
-        <value>3424.851f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-1239140386" SRTHash="892295971">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
@@ -9776,7 +9516,7 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_01</UnitConfigName>
     </value>
-    <value HashId="-1214209582" Rotate="0.32f" SRTHash="-969550705">
+    <value HashId="-1214209582" Rotate="0.32f" SRTHash="1199404557">
       <Scale type="array">
         <value>2.15931f</value>
         <value>4.218651f</value>
@@ -9787,7 +9527,7 @@
         <value>121.969f</value>
         <value>3343.819f</value>
       </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
+      <UnitConfigName type="string">AirWallHorseExceptMotorcycle</UnitConfigName>
     </value>
     <value HashId="-1212806820" Rotate="1.099296f" SRTHash="-1818667856">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
@@ -10254,19 +9994,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_01</UnitConfigName>
     </value>
-    <value HashId="-1101776123" SRTHash="-1256556750">
-      <Scale type="array">
-        <value>8.927418f</value>
-        <value>4.34084f</value>
-        <value>3.104044f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2923.219f</value>
-        <value>111.3708f</value>
-        <value>3404.722f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="-1093679668" Rotate="2.799999f" SRTHash="2030615267">
       <_Parameters SharpWeaponJudgeType="0" SwitchTorchSpType="0">
         <DropTable type="string">Normal</DropTable>
@@ -10533,7 +10260,7 @@
       </Translate>
       <UnitConfigName type="string">EnvSeEmitPointInsectTropical</UnitConfigName>
     </value>
-    <value HashId="-973825091" Rotate="-0.6399999f" SRTHash="1196471608">
+    <value HashId="-973825091" Rotate="-0.6399999f" SRTHash="1383035755">
       <Scale type="array">
         <value>3.56896f</value>
         <value>2.490116f</value>
@@ -10544,7 +10271,7 @@
         <value>119.2529f</value>
         <value>3377.72f</value>
       </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
+      <UnitConfigName type="string">AirWallHorseExceptMotorcycle</UnitConfigName>
     </value>
     <value HashId="-971315010" Rotate="1.570796f" SRTHash="1488173510">
       <Translate type="array">
@@ -10756,19 +10483,6 @@
         <value>3387.455f</value>
       </Translate>
       <UnitConfigName type="string">TwnObj_Village_FishingTorchPole_A_01</UnitConfigName>
-    </value>
-    <value HashId="-904547882" Rotate="1.06f" SRTHash="-2112376843">
-      <Scale type="array">
-        <value>4.308058f</value>
-        <value>4.170967f</value>
-        <value>5.896522f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2856.998f</value>
-        <value>115.7065f</value>
-        <value>3367.177f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-900983362" Rotate="2.08f" SRTHash="-1712912458">
       <Translate type="array">
@@ -12640,19 +12354,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_A_02</UnitConfigName>
     </value>
-    <value HashId="-306285352" Rotate="-0.7f" SRTHash="868218316">
-      <Scale type="array">
-        <value>8.066131f</value>
-        <value>3.324581f</value>
-        <value>2.341105f</value>
-      </Scale>
-      <Translate type="array">
-        <value>3002.325f</value>
-        <value>112.6038f</value>
-        <value>3430.268f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
-    </value>
     <value HashId="-300835375" SRTHash="-334122780">
       <Rotate type="array">
         <value>3.067515f</value>
@@ -12689,19 +12390,6 @@
         <value>3404.368f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreePalmBeach_A_01</UnitConfigName>
-    </value>
-    <value HashId="-292196724" Rotate="-0.02000001f" SRTHash="58767231">
-      <Scale type="array">
-        <value>8.802248f</value>
-        <value>3.849102f</value>
-        <value>2.117587f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2979.941f</value>
-        <value>113.9062f</value>
-        <value>3405.729f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-291745511" SRTHash="-1806084862">
       <Translate type="array">
@@ -12879,19 +12567,6 @@
         <value>3469.539f</value>
       </Translate>
       <UnitConfigName type="string">TwnObj_Village_FishingLamp_A_02</UnitConfigName>
-    </value>
-    <value HashId="-228444059" Rotate="0.92f" SRTHash="544983303">
-      <Scale type="array">
-        <value>4.099442f</value>
-        <value>5.196167f</value>
-        <value>7.812811f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2957.737f</value>
-        <value>112.8678f</value>
-        <value>3398.387f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-219970987" SRTHash="450150171">
       <Rotate type="array">
@@ -13174,19 +12849,6 @@
         <value>3535.472f</value>
       </Translate>
       <UnitConfigName type="string">Obj_LiftRockWhite_Korok_A_01</UnitConfigName>
-    </value>
-    <value HashId="-131706823" Rotate="-0.72f" SRTHash="1020495016">
-      <Scale type="array">
-        <value>2.192093f</value>
-        <value>3.217293f</value>
-        <value>6.188584f</value>
-      </Scale>
-      <Translate type="array">
-        <value>2864.515f</value>
-        <value>110.393f</value>
-        <value>3415.265f</value>
-      </Translate>
-      <UnitConfigName type="string">AirWallHorse</UnitConfigName>
     </value>
     <value HashId="-128754833" Rotate="-1.476262f" SRTHash="616025057">
       <Translate type="array">

@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
   <bool_data type="array">
-    <value DeleteRev="-1" HashValue="1142506656" InitValue="144" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_Obj_LiftRockWhite_A_01_2302850735</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="-1801698593" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
-      <DataName type="string">MainField_WeaponDrop_2328299118</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="-2044546581" InitValue="0" IsEventAssociated="true" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
-      <DataName type="string">MainField_Enemy_Bokoblin_Senior_2328299118</DataName>
-    </value>
-    <value DeleteRev="-1" HashValue="-1240086125" InitValue="0" IsEventAssociated="true" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_TBox_Field_Enemy_2335430415</DataName>
-    </value>
     <value DeleteRev="-1" HashValue="741789475" InitValue="144" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_Item_Fruit_G_2358544705</DataName>
     </value>
@@ -8506,9 +8494,6 @@
     <value DeleteRev="-1" HashValue="-926025484" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_Enemy_Bokoblin_Guard_Junior_TreeHouseTop_3683406634</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-869981219" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
-      <DataName type="string">MainField_TBox_Field_Iron_2568257269</DataName>
-    </value>
     <value DeleteRev="-1" HashValue="435874628" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_TBox_Field_Wood_1613917961</DataName>
     </value>
@@ -9637,6 +9622,15 @@
     <value DeleteRev="-1" HashValue="867282692" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_Enemy_Lynel_Senior_1288562591</DataName>
     </value>
+    <value DeleteRev="-1" HashValue="-1704370459" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_1836215605</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-35848378" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_4057292846</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="490745900" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_1082925680</DataName>
+    </value>
     <value DeleteRev="-1" HashValue="764168611" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_WeaponDrop_465634981</DataName>
     </value>
@@ -10120,6 +10114,9 @@
     <value DeleteRev="-1" HashValue="-1119243685" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">AocField_TBox_Dungeon_Stone_2509086549</DataName>
     </value>
+    <value DeleteRev="-1" HashValue="2072316503" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_1235062787</DataName>
+    </value>
     <value DeleteRev="-1" HashValue="708298988" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MainField_TBox_Field_Wood_1123805299</DataName>
     </value>
@@ -10476,6 +10473,900 @@
     </value>
     <value DeleteRev="-1" HashValue="1182110458" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
       <DataName type="string">MainField_Enemy_Bokoblin_Guard_Junior_TreeHouseTop_3326313096</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-181417866" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_2834046538</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="404333742" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_2854684637</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1139441674" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_3905342825</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1432992885" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Iron_4075460597</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1290264108" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_2785472328</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1715397163" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_777293012</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2090558812" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Iron_1562844085</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1988146614" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_1595995997</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2055029626" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_1845804999</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="643233096" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_3557894572</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1863074317" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_3263521738</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2119076535" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Iron_2937439544</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2007580558" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_1178751663</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-495693536" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_1684141149</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1719806547" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_1767425600</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="957733184" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_2505803514</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1555132477" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_2691561845</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1038155377" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_3421764729</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2048839480" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_3694474462</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1191656070" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_ShutterKey_3935156699</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1375466412" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Baby_4236723694</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="673123811" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_3155326400</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1902090445" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Senior_4054545056</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1677169094" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_2056438385</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1108532734" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_137569538</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-148882520" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_75015941</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1016589436" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_1951330841</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1301080" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_81579026</DataName>
+    </value>
+    <value Category="9" DeleteRev="-1" HashValue="1691760458" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_IsDefeat_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2015848676" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="748614973" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_3998603479</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1740214820" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_FldObj_DownloadTerminal_A_02_3795431218</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1754961194" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_80844072</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1605898944" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Ice_80844072</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-479347340" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_922489664</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1079504675" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_1045312616</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1880447102" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Wizzrobe_Ice_Senior_1896830638</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="561216349" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_2188211876</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-623888659" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_2596422984</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1840093789" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3131589968</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="863005485" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Moriblin_Senior_3131589968</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-406630434" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_3660855167</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="627715047" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3667523954</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="784506522" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Moriblin_Dark_3667523954</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1759283540" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3720177370</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-906065956" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Moriblin_Senior_3720177370</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1280778720" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_4101766333</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="236037604" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Ice_4101766333</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="239038332" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_1584160939</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1197090332" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_2392017071</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="831676076" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_3754531071</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-968116148" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Obj_BreakBoxIron_39716498</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-168727258" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_392220592</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="63696482" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_570137918</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-697001473" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_706821037</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-52934035" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_899133649</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1335089638" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Obj_BreakBoxIron_1107583140</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-151737903" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Obj_BreakBoxIron_1218892010</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="953890772" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_KibakoDesert_Contain_01_1270682185</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-854468061" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_1473719602</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1323118217" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_1872971899</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-484265026" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2109811747</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1229174028" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Senior_2109811747</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-224547952" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2542308349</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-933552200" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2553054293</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-119748356" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_2558805923</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-380420870" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2699982531</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-653388155" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_BoarMeat_3033628520</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1302536446" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3077603964</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1722392355" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3258908224</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1279564696" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3308273825</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1901566108" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3350822698</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="438320331" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Dark_3350822698</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="292201908" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Obj_BreakBoxIron_3450258279</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-983430587" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_KibakoDesert_Contain_01_3463600360</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-493103207" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3573940731</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-709938910" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Obj_BreakBoxIron_3589790085</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1891167142" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_BeeHome_3689599694</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1642497592" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3837491176</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1351352458" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_KibakoDesert_Contain_01_4039926275</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2051374450" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Obj_BreakBoxIron_4248269579</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1390542403" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_641591931</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-870848614" InitValue="78" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Kibako_Contain_01_681172013</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="357990956" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_1854979353</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1554031230" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_1981490593</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="822761710" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2477880917</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-885492541" InitValue="78" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Kibako_Contain_01_2767567503</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-939387897" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3176024268</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1955245659" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Fire_Guard_Ambush_3176024268</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="117204839" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3498361990</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="226090506" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3791177034</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1823904489" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3884172536</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1211969684" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_4095109193</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="189429046" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Fire_Guard_Ambush_4095109193</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1104460727" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_2842888344</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-507602646" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_1777801040</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1878419066" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_849119559</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="105294778" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_449459230</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="916341444" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_142903821</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-302764564" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_1174572224</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="537913581" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Aoc_2234779324</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1551420568" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_380254426</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-831181266" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_3191234662</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2030674397" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_3972500225</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="319841147" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainFieldDungeon_Enemy_Guardian_Mini_Baby_75300787</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1235017451" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_DgnObj_RemainsTerminalBody_A_739019744</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1991766503" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_FldObj_DownloadTerminal_A_01_853644093</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1663524069" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_FldObj_Terminal_A_01_1034151893</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1952628995" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_FldObj_Terminal_A_01_2323349588</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2099846741" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_DgnObj_RemainsTerminalBody_A_2614422625</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-902746896" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_FldObj_DownloadTerminal_A_01_3154640188</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1251234376" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_Enemy_SiteBoss_Sword_R_2614505010</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-74739919" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_Enemy_SiteBoss_Lsword_R_1834311798</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2117406096" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_Enemy_SiteBoss_Spear_R_3121090412</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-341407054" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_Enemy_SiteBoss_Bow_R_2264649476</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1969128236" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Swarm_AllDay_4046668124</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1896029983" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Iron_1344934344</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="565113336" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_FldObj_Terminal_A_01_914672295</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1976327714" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_DgnObj_RemainsTerminalBody_A_4197370425</DataName>
+    </value>
+    <value Category="10" DeleteRev="-1" HashValue="69842114" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_IsDefeat_Enemy_Golem_Fire_R_667761767</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-904624850" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_OreDrop0_Enemy_Golem_Fire_R_667761767</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-160143834" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_OreDrop1_Enemy_Golem_Fire_R_667761767</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1294646466" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_OreDrop2_Enemy_Golem_Fire_R_667761767</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-814123727" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Golem_Fire_R_667761767</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="774766761" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_DgnObj_RemainsTerminalBody_A_1212716246</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-716724728" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_FldObj_Terminal_A_01_2229441608</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-529217719" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Wood_275527884</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-831142543" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Guard_Junior_570137918</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1550048701" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Senior_1872971899</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1421841165" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Dark_3077603964</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1862288442" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Middle_3258908224</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1173176463" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Middle_3308273825</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1750031649" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Middle_3837491176</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1725008172" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_1326377705</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2121777185" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Wood_748914894</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1478596119" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Moriblin_Senior_3498361990</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-345554058" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_2159283347</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-980080746" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_193315814</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1421677652" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_1_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1449333619" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_2_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1473703534" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_3_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1407130941" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_4_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1421677652" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_1_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1449333619" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_2_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1473703534" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_3_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1407130941" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_4_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1022323396" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_TBox_Dungeon_Stone_2495386238</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1120885286" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_1095169988</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="887886975" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Junior_2959864704</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="825194312" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Middle_3869978581</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1056429942" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_1256859984</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1537655085" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_BeeHome_511765858</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-468281198" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_BeeHome_544216469</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-397153953" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Guardian_A_Fixed_Moss_855470103</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1735449745" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Senior_1473719602</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1138163888" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Weapon_Sword_033_1676587413</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="744328783" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Weapon_Spear_007_2071334341</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="285134812" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Weapon_Shield_007_2541299404</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-180192048" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Guard_Junior_LongVisibility_2699982531</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1065020638" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Weapon_Sword_007_3969772776</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="804005383" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_2329034066</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="218566747" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_TBox_Dungeon_Stone_1443111722</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-634914597" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_TBox_Dungeon_Stone_3964443978</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1027538719" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Collabo_1367988891</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1013528320" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Collabo_696414052</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="903861146" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_NoReaction_Collabo_3715709569</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1510039922" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Iron_1630334883</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1093829305" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">CDungeon_TBox_Dungeon_Stone_3187836279</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1009900644" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Junior_1124191658</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2144960092" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Middle_2668152795</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1306950718" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3516037048</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="322669902" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Moriblin_Senior_3516037048</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1775551486" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Junior_3602597398</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="347716287" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Wood_3724791764</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1219572391" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Wood_1832321748</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-546001347" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_FldObj_DownloadTerminal_A_02_461624416</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1659807711" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_DgnObj_EntranceTerminalSP_133673022</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1039638600" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Weapon_Sword_043_1371640367</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2028242158" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_TBox_Dungeon_Stone_1773704879</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="690177526" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_TBox_Dungeon_Stone_3768423375</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1644271881" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Middle_605669213</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2100305841" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Middle_1342546971</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="263284501" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_1532782160</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="492007950" InitValue="62" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_KibakoSnowMountain_Contain_01_1555130006</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="84272539" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_1609969362</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-627493618" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Junior_3499286924</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-153505786" InitValue="62" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_KibakoSnowMountain_Contain_01_3818895497</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="511319381" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Junior_1289247628</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1499474588" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Middle_2985405034</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1158950028" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_3448775721</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-632595495" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_4293673867</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-373312060" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_BeeHome_902227698</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-973825185" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Middle_1812966703</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-717627614" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Electric_Middle_3520836035</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="182424081" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Junior_3742246923</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1042773385" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Electric_Junior_4131598004</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1277343772" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2336155376</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1372375300" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Bone_Junior_AllDay_2336155376</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2017258312" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3492843870</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1708300896" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Bone_Junior_AllDay_3492843870</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-372503729" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_286156549</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1988799578" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Lizalfos_Electric_286156549</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-761345602" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_1996824004</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="187181626" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Lizalfos_Electric_1996824004</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2025868486" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2085140467</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1586057406" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Lizalfos_Electric_2085140467</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2112588782" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2224623027</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1537382294" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Lizalfos_Electric_2224623027</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-519581891" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2253356130</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="951135417" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Lizalfos_Electric_2253356130</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2027656682" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Swarm_AllDay_396262437</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-487338350" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Swarm_AllDay_1057732685</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="582659676" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_1289245973</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1062526788" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Bone_Junior_AllDay_1289245973</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1318074656" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_1831034516</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1400784904" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Bone_Junior_AllDay_1831034516</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-256533904" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Weapon_Spear_021_3036810205</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="669602632" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Swarm_AllDay_3722716533</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1657300038" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainFieldDungeon_Enemy_Guardian_Mini_Baby_352151020</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="905947219" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainFieldDungeon_Enemy_Guardian_Mini_Baby_2143711343</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1383988099" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainFieldDungeon_Enemy_Guardian_Mini_Baby_2857104190</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="446694880" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainFieldDungeon_Enemy_Guardian_Mini_Baby_3913174827</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="884042554" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_686607516</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1842353962" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Bone_Junior_AllDay_686607516</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="373455124" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_935714617</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1327695108" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Bone_Junior_AllDay_935714617</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1119954645" InitValue="28" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Item_Fruit_H_849521657</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-605907089" InitValue="28" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Item_Fruit_H_2669234128</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-724280871" InitValue="28" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Item_Fruit_H_2882698505</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1594985764" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_2455133014</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1549500376" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_3220042110</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-33154649" InitValue="76" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_BeeHome_768494273</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-986550772" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Middle_2779549592</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1735299721" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Fire_Junior_2787670927</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="427421639" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3002321673</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="77045471" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Bone_Junior_AllDay_3002321673</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1645173734" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_3010425640</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="2145463038" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Bone_Junior_AllDay_3010425640</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-539909820" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Fire_Senior_3323374617</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2021487691" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Fire_Junior_3973316133</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="365273379" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2323694143</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-864861529" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Lizalfos_Electric_2323694143</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1210808288" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_AllDay_1318247557</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="224695899" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_AllDay_1338072565</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="895807831" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_AllDay_2431854881</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2115601889" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Guardian_A_Fixed_Moss_2788519301</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-500423989" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Swarm_AllDay_2897381425</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1316941889" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_AllDay_3362121203</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="655061026" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Fire_AllDay_3675361416</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="887738722" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Fire_AllDay_4201866831</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="547685425" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_TBox_Dungeon_Stone_2364301542</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-616903957" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Junior_641591931</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1758965210" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Junior_1854979353</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-334580658" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2373891178</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="442011817" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Middle_2373891178</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="756750532" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Guard_Junior_LongVisibility_2477880917</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="292068896" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Guard_Junior_LongVisibility_3791177034</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="387161505" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_4285959998</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-515524282" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Middle_4285959998</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1201050777" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainFieldDungeon_Enemy_Guardian_C_Clean_1946794493</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-56790841" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainFieldDungeon_Enemy_Guardian_B_Clean_2967750331</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1868467942" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_980184898</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1426180950" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Guardian_B_Clean_1550048722</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1466537899" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Guardian_C_Clean_1848346668</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="489585189" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Guardian_C_Clean_2034860870</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1806888173" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Enemy_Guardian_C_Clean_2467561810</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-427443636" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Junior_980184898</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-929356284" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_1137377869</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1256584718" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Junior_1137377869</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1923577729" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_WeaponDrop_2245273807</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1424911355" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Electric_2245273807</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-869981219" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_TBox_Field_Iron_2568257269</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-808580959" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Senior_550632616</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-307432724" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Senior_1666280366</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-211164806" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_2464348397</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-908605284" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Keese_Ice_AllDay_3503668076</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="946659753" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Senior_2175453082</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1050611771" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Junior_2374098089</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-568692569" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Chuchu_Ice_Middle_3284731961</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-179115001" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Middle_DetachLineBeam_277374830</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1588082757" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Middle_DetachLineBeam_3123233469</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-265233799" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Junior_DetachLineBeam_3152492066</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-631148152" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">CDungeon_Enemy_Guardian_Mini_Junior_DetachLineBeam_4151612428</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="190409629" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_TBox_Dungeon_Iron_FinalTrial_3675721223</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1382735904" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_5_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1354032903" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainField_Necklace_6_Enemy_SandwormR_1755179653</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1115326910" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainFieldDungeon_FldObj_DownloadTerminal_A_02_3161119825</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="496546607" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Guard_Junior_392220592</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1951827222" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Guard_Junior_2542308349</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1318072638" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Guard_Junior_2553054293</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1683028253" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Guard_Junior_3573940731</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1890046659" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Lizalfos_Guard_Junior_LongVisibility_3884172536</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1048252038" InitValue="28" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Item_Fruit_H_312130033</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-2033259267" InitValue="28" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Item_Fruit_H_900528999</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1605348695" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Junior_706821037</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="-1963163333" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+      <DataName type="string">MainField_Enemy_Bokoblin_Junior_899133649</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1118027581" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainFieldDungeon_Enemy_Guardian_Mini_Junior_DetachLineBeam_322787571</DataName>
+    </value>
+    <value DeleteRev="-1" HashValue="1586734346" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="1">
+      <DataName type="string">MainFieldDungeon_Enemy_Guardian_Mini_Junior_Wipe_DetachLineBeam_1312685095</DataName>
     </value>
   </bool_data>
 </yaml>

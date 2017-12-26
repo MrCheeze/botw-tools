@@ -16,6 +16,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="8853070" SRTHash="1835079955">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Ready</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1886025372">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3665f</value>
+        <value>336f</value>
+        <value>-1318.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="9330677" SRTHash="771183890">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
         <SaveFlag type="string">Rito_BrosRock_Ready</SaveFlag>
@@ -62,6 +79,25 @@
         <value>-1575.741f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowTunnel_A_01</UnitConfigName>
+    </value>
+    <value HashId="20033248" SRTHash="1102232611" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="803065910">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="1718740902">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3658.46f</value>
+        <value>531.9432f</value>
+        <value>-1315.814f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="20695549" SRTHash="1968299220">
       <Rotate type="array">
@@ -508,6 +544,21 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_11</UnitConfigName>
     </value>
+    <value HashId="94988641" SRTHash="-1868233480">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="2102279056">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3628f</value>
+        <value>518.5f</value>
+        <value>-1805f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="95163600" SRTHash="-1282976912">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -802,6 +853,29 @@
         <value>-1328.973f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="126573816" SRTHash="-217683376">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-626221224">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="699792705">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-825136029">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3646f</value>
+        <value>333f</value>
+        <value>-1316f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="131324539" Rotate="-0.46f" SRTHash="-279488471">
       <_Parameters>
@@ -1721,6 +1795,20 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_11</UnitConfigName>
     </value>
+    <value HashId="257771120" SRTHash="829186242">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="671548036">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3627f</value>
+        <value>521f</value>
+        <value>-1808f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="259824489" Rotate="-0.3600348f" SRTHash="2014039989">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -1806,6 +1894,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="267856362" SRTHash="2116825125">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Seek3rdDungeon</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1687017085">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3663.546f</value>
+        <value>645.8491f</value>
+        <value>-1852.301f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="269892453" SRTHash="1452032801" Scale="0.6f">
       <LinksToObj type="array">
         <value DestUnitHashId="-899212712">
@@ -1831,6 +1936,29 @@
         <value>-1934.355f</value>
       </Translate>
       <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
+    </value>
+    <value HashId="274025835" SRTHash="-379675511">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1215993135">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-788465844">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="2098558936">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3663f</value>
+        <value>333f</value>
+        <value>-1324f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="275400586" SRTHash="-560534598">
       <Rotate type="array">
@@ -3317,6 +3445,21 @@
       <UniqueName type="string">Brosrock_Activated_Npc_HighMountain032</UniqueName>
       <UnitConfigName type="string">Npc_HighMountain032</UnitConfigName>
     </value>
+    <value HashId="521354672" OnlyOne="true" SRTHash="-1210171256" Scale="2f">
+      <_Parameters AllwaysOnCamDir="-1f" AllwaysOnDisFromPlayer="22f" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1130479401">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3628.8f</value>
+        <value>517f</value>
+        <value>-1811.6f</value>
+      </Translate>
+      <UnitConfigName type="string">ViewfrustumCheckTag</UnitConfigName>
+    </value>
     <value HashId="525038523" Rotate="-2.361593f" SRTHash="1892455224">
       <Translate type="array">
         <value>-3293.662f</value>
@@ -3335,6 +3478,23 @@
         <value>-1366.506f</value>
       </Translate>
       <UnitConfigName type="string">Npc_HiddenKorokGround</UnitConfigName>
+    </value>
+    <value HashId="526892251" SRTHash="1671249414" Scale="5f">
+      <_Parameters IsStopWithoutReductionY="false" SpotBgmLifeScaleMargin="0f">
+        <Shape type="string">Sphere</Shape>
+        <Sound type="string">AccoRevaliSpotBgm</Sound>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1331098103">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3628.8f</value>
+        <value>516f</value>
+        <value>-1811.6f</value>
+      </Translate>
+      <UnitConfigName type="string">MusicianSpotBgmTag</UnitConfigName>
     </value>
     <value HashId="527465805" SRTHash="1676805501" Scale="1.2f">
       <Rotate type="array">
@@ -3886,6 +4046,23 @@
       </Translate>
       <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
     </value>
+    <value HashId="615690406" SRTHash="1969237493">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Ready</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="274025835">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3662f</value>
+        <value>334.5f</value>
+        <value>-1324.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="621918121" Rotate="-2.139678f" SRTHash="-621523570">
       <Translate type="array">
         <value>-3953.111f</value>
@@ -3937,6 +4114,22 @@
         <value>-1238.987f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_Windmill_A_01</UnitConfigName>
+    </value>
+    <value HashId="630408895" Rotate="3.141593f" SRTHash="393553903">
+      <_Parameters>
+        <GetUpDirection type="string">None</GetUpDirection>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1331098103">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3628.8f</value>
+        <value>515.9962f</value>
+        <value>-1811.6f</value>
+      </Translate>
+      <UnitConfigName type="string">AnchorAction1</UnitConfigName>
     </value>
     <value HashId="632747758" SRTHash="-54071084" Scale="80f">
       <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
@@ -4096,6 +4289,23 @@
       </Translate>
       <UnitConfigName type="string">ConstraintDummy</UnitConfigName>
     </value>
+    <value HashId="665251233" SRTHash="-908998488">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Finish</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1772953823">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3571.5f</value>
+        <value>276.5f</value>
+        <value>-1818.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
     <value HashId="670089094" Rotate="-1.54f" SRTHash="1459143062">
       <Translate type="array">
         <value>-3240.942f</value>
@@ -4103,6 +4313,25 @@
         <value>-1895.915f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_04_Far</UnitConfigName>
+    </value>
+    <value HashId="671548036" OnlyOne="true" Rotate="3.141593f" SRTHash="-183015980">
+      <_Parameters TerritoryArea="0f" TraverseRadiusXZ="0f">
+        <TraversePos X="-3628.8f" Y="515.9962f" Z="-1811.6f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="630408895">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1331098103">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3628.5f</value>
+        <value>516f</value>
+        <value>-1810.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_Musician_AoC_HeroRito</UnitConfigName>
     </value>
     <value HashId="675060418" SRTHash="-68366693" Scale="0.6f">
       <Rotate type="array">
@@ -4185,6 +4414,20 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_05</UnitConfigName>
     </value>
+    <value HashId="693860075" Rotate="-0.1563309f" SRTHash="1208364682">
+      <_Parameters SharpWeaponJudgeType="0">
+        <ClearFlag type="string">Clear_Dungeon129</ClearFlag>
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_1</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3662.103f</value>
+        <value>321.5483f</value>
+        <value>-1314.66f</value>
+      </Translate>
+      <UniqueName type="string">Rito</UniqueName>
+      <UnitConfigName type="string">FldObj_DLC_HeroMapRelief_Mark_A_03</UnitConfigName>
+    </value>
     <value HashId="694990180" SRTHash="109707458">
       <LinksToObj type="array">
         <value DestUnitHashId="1060006579">
@@ -4221,6 +4464,24 @@
         <value>-1508.577f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_I</UnitConfigName>
+    </value>
+    <value HashId="699792705" SRTHash="2009292615" Scale="13f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1831808503">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3662.103f</value>
+        <value>321.5f</value>
+        <value>-1314.66f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="700977242" SRTHash="903049996">
       <Rotate type="array">
@@ -4502,6 +4763,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_DominoStone_A_L_03</UnitConfigName>
     </value>
+    <value HashId="744812057" SRTHash="-293874989" Scale="3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Seek3rdDungeon</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="20033248">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3658.078f</value>
+        <value>532.2234f</value>
+        <value>-1314.17f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
     <value HashId="749380842" OnlyOne="true" SRTHash="596494696">
       <Scale type="array">
         <value>800f</value>
@@ -4703,6 +4981,24 @@
         <value>-1022f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_11</UnitConfigName>
+    </value>
+    <value HashId="803065910" SRTHash="-595241137" Scale="283f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1197080004">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3654.32f</value>
+        <value>327.7946f</value>
+        <value>-1308.017f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="812797476" Rotate="0.1961942f" SRTHash="1425737637">
       <_Parameters>
@@ -5004,6 +5300,18 @@
       </Translate>
       <UnitConfigName type="string">DgnObj_EntranceTerminalSP</UnitConfigName>
     </value>
+    <value HashId="864843329" OnlyOne="true" Rotate="-0.1563309f" SRTHash="-1817339541">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_1</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3662.103f</value>
+        <value>321.5483f</value>
+        <value>-1314.66f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DLC_HeroMap_D_02</UnitConfigName>
+    </value>
     <value HashId="867194412" SRTHash="-795087716">
       <LinksToObj type="array">
         <value DestUnitHashId="2108538706">
@@ -5146,6 +5454,27 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeSnowberry_A</UnitConfigName>
     </value>
+    <value HashId="886959429" SRTHash="222638074" Scale="50f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1922151513">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1331098103">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3629f</value>
+        <value>515.5f</value>
+        <value>-1811.5f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="892802504" SRTHash="1333142259">
       <Translate type="array">
         <value>-3611.07f</value>
@@ -5153,6 +5482,17 @@
         <value>-2059.116f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_05_Far</UnitConfigName>
+    </value>
+    <value HashId="899953445" Rotate="-2.239996f" SRTHash="252354044">
+      <_Parameters>
+        <GetUpDirection type="string">None</GetUpDirection>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3654.32f</value>
+        <value>320.4977f</value>
+        <value>-1308.017f</value>
+      </Translate>
+      <UnitConfigName type="string">AnchorAction1</UnitConfigName>
     </value>
     <value HashId="900830635" OnlyOne="true" Rotate="2.640001f" SRTHash="-1172341454">
       <_Parameters ArmorDyeColor="0" SharpWeaponJudgeType="0" ShopSellType="-2">
@@ -6749,6 +7089,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowRock_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="1187858460" SRTHash="-873960708">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Activated</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1772953823">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3571.5f</value>
+        <value>276.5f</value>
+        <value>-1816.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1189493566" SRTHash="1787615001" Scale="0.8f">
       <Rotate type="array">
         <value>-0.07329718f</value>
@@ -7388,7 +7745,7 @@
       </Translate>
       <UnitConfigName type="string">Item_Fruit_I</UnitConfigName>
     </value>
-    <value HashId="1324152375" OnlyOne="true" Rotate="1.852527f" SRTHash="-1061151723">
+    <value HashId="1324152375" Rotate="1.852527f" SRTHash="-1061151723">
       <_Parameters TerritoryArea="0f" TraverseRadiusXZ="6.964332f">
         <TraversePos X="-3571.966f" Y="272.9922f" Z="-1819.825f" />
       </_Parameters>
@@ -7676,6 +8033,23 @@
         <value>-1737.86f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1366205001" SRTHash="-790555902">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">MiniGame_HillTower_BirdMan_Game</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1687017085">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3663.593f</value>
+        <value>645.8491f</value>
+        <value>-1853.855f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
     <value HashId="1370175871" SRTHash="1577854022">
       <LinksToObj type="array">
@@ -9371,6 +9745,23 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_03</UnitConfigName>
     </value>
+    <value HashId="1619042704" SRTHash="1375286474">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">Npc_Musician_Come</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="2102279056">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3632f</value>
+        <value>521f</value>
+        <value>-1806f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1619559263" SRTHash="1374745422">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -9555,6 +9946,23 @@
         <value>-1814.82f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagXOr</UnitConfigName>
+    </value>
+    <value HashId="1640637921" SRTHash="984222405">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Capsule</Shape>
+      </_Parameters>
+      <Scale type="array">
+        <value>15f</value>
+        <value>30f</value>
+        <value>15f</value>
+      </Scale>
+      <Translate type="array">
+        <value>-3619.902f</value>
+        <value>521.3514f</value>
+        <value>-1834.285f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="1647092182" Rotate="-2.541455f" SRTHash="-1735325584">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
@@ -9872,6 +10280,15 @@
         <value>-1316.979f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1718740902" SRTHash="-1086686783">
+      <_Parameters NonAutoPlacementAnimal="true" NonAutoPlacementBird="false" NonAutoPlacementEnemy="true" NonAutoPlacementFish="false" NonAutoPlacementInsect="false" NonAutoPlacementMaterial="false" NonEnemySearchPlayer="false" />
+      <Translate type="array">
+        <value>-3664f</value>
+        <value>379.5f</value>
+        <value>-1325.5f</value>
+      </Translate>
+      <UnitConfigName type="string">PlayerInAreaAutoEnemyForbidTag</UnitConfigName>
     </value>
     <value HashId="1723877485" OnlyOne="true" Rotate="-1.48f" SRTHash="102683046">
       <_Parameters TerritoryArea="0f" TraverseRadiusXZ="42.16306f">
@@ -10191,6 +10608,35 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_11</UnitConfigName>
     </value>
+    <value HashId="1756656566" SRTHash="2119313996">
+      <_Parameters Count="1" DefaultBasicSignal="false" ForceCalcInEvent="false" IsMagneGrabbed="0" IsSendMessage="false" IsStopFromStopTimer="0">
+        <ActorName type="string">GameROMPlayer</ActorName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-564476107">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="236148410">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+        <value DestUnitHashId="-673908438">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+        <value DestUnitHashId="1622755915">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+        <value DestUnitHashId="1640637921">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3664.281f</value>
+        <value>644.4063f</value>
+        <value>-1850.319f</value>
+      </Translate>
+      <UnitConfigName type="string">ActorObserverTag</UnitConfigName>
+    </value>
     <value HashId="1759326426" Rotate="-0.05999991f" SRTHash="2014685177" Scale="2f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -10232,6 +10678,20 @@
         <value>-2036.212f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_16_Far</UnitConfigName>
+    </value>
+    <value HashId="1772953823" SRTHash="-1440815771">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1324152375">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3571f</value>
+        <value>275.5f</value>
+        <value>-1817.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1778358843" Rotate="0.5199999f" SRTHash="450208313">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -11023,6 +11483,23 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_03</UnitConfigName>
     </value>
+    <value HashId="1920974368" SRTHash="1728111639">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_DieCurse</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1834856332">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3629f</value>
+        <value>524f</value>
+        <value>-1815f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="1922527000" Rotate="2.94f" SRTHash="-611633160" Scale="0.85f">
       <Translate type="array">
         <value>-3606.531f</value>
@@ -11108,6 +11585,17 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_04</UnitConfigName>
     </value>
+    <value HashId="1941251236" SRTHash="-347088041">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_DemoObj01</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3619.758f</value>
+        <value>527.4025f</value>
+        <value>-1780.364f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1944138354" OnlyOne="true" Rotate="1.14f" SRTHash="-1829335500">
       <_Parameters TerritoryArea="0f" TraverseRadiusXZ="2.119075f">
         <TraversePos X="-3605.931f" Y="289.4611f" Z="-1853.896f" />
@@ -11158,6 +11646,20 @@
         <value>-1144.564f</value>
       </Translate>
       <UnitConfigName type="string">Obj_RockSetYellow_A_L_01_Far</UnitConfigName>
+    </value>
+    <value HashId="1955290707" Rotate="-0.1563309f" SRTHash="1974191537">
+      <_Parameters SharpWeaponJudgeType="0">
+        <ClearFlag type="string">Clear_Dungeon127</ClearFlag>
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_1</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3662.103f</value>
+        <value>321.5483f</value>
+        <value>-1314.66f</value>
+      </Translate>
+      <UniqueName type="string">Rito</UniqueName>
+      <UnitConfigName type="string">FldObj_DLC_HeroMapRelief_Mark_A_01</UnitConfigName>
     </value>
     <value HashId="1960382769" Rotate="2.530727f" SRTHash="1512592015">
       <_Parameters>
@@ -11331,6 +11833,18 @@
         <value>-1669.429f</value>
       </Translate>
       <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
+    <value HashId="1980617405" OnlyOne="true" Rotate="-0.1563309f" SRTHash="1230031880">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_1</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3662.103f</value>
+        <value>321.5483f</value>
+        <value>-1314.66f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DLC_HeroMap_D_03</UnitConfigName>
     </value>
     <value HashId="1980656837" SRTHash="-1002033673">
       <Rotate type="array">
@@ -12062,6 +12576,18 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="2098558936" SRTHash="-1832826017" Scale="5f">
+      <_Parameters IsStopWithoutReductionY="false" SpotBgmLifeScaleMargin="0f">
+        <Shape type="string">Sphere</Shape>
+        <Sound type="string">MusicianSpotBgm</Sound>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3654.32f</value>
+        <value>323.4311f</value>
+        <value>-1308.017f</value>
+      </Translate>
+      <UnitConfigName type="string">MusicianSpotBgmTag</UnitConfigName>
+    </value>
     <value HashId="2100769835" SRTHash="937428947" Scale="5f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -12075,6 +12601,21 @@
         <value>-2100.51f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="2102279056" SRTHash="151308154">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="257771120">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSigOnOnly</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3630.5f</value>
+        <value>520f</value>
+        <value>-1807f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="2108538706" SRTHash="-795087716">
       <Rotate type="array">
@@ -12404,6 +12945,15 @@
         <value>-1797.646f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeSnowberry_A</UnitConfigName>
+    </value>
+    <value HashId="2145876151" OnlyOne="true" Rotate="-2.063185f" SRTHash="1960518870">
+      <_Parameters TerritoryArea="0f" />
+      <Translate type="array">
+        <value>-3613.215f</value>
+        <value>324.9381f</value>
+        <value>-1826.462f</value>
+      </Translate>
+      <UnitConfigName type="string">TwnObj_UmayadoHeroBook_03</UnitConfigName>
     </value>
     <value HashId="-2147137774" Rotate="-1.940003f" SRTHash="-216319714">
       <_Parameters SharpWeaponJudgeType="0">
@@ -12963,6 +13513,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_04</UnitConfigName>
     </value>
+    <value HashId="-2053572635" SRTHash="-1749816258">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Seek3rdDungeon</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="274025835">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3664f</value>
+        <value>334.5f</value>
+        <value>-1324.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNOr</UnitConfigName>
+    </value>
     <value HashId="-2052328821" Rotate="2.159108f" SRTHash="-2101236802">
       <LinksToObj type="array">
         <value DestUnitHashId="-1888552046">
@@ -13244,6 +13811,18 @@
         <value>-1033.647f</value>
       </Translate>
       <UnitConfigName type="string">Weapon_Lsword_020</UnitConfigName>
+    </value>
+    <value HashId="-2010098178" OnlyOne="true" Rotate="-0.1563309f" SRTHash="526535985">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_1</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3662.103f</value>
+        <value>321.5483f</value>
+        <value>-1314.66f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DLC_HeroMap_D_01</UnitConfigName>
     </value>
     <value HashId="-2009052472" Rotate="-2.04f" SRTHash="-1429268115" Scale="0.85f">
       <LinksToObj type="array">
@@ -13868,6 +14447,21 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-1922151513" SRTHash="260659892">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-625431809">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3630.5f</value>
+        <value>566.5f</value>
+        <value>-1812f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="-1921929807" SRTHash="813720713" Scale="0.6f">
       <Rotate type="array">
         <value>-0.7635786f</value>
@@ -14115,6 +14709,45 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_04_Far</UnitConfigName>
     </value>
+    <value HashId="-1886025372" SRTHash="-2088122953">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1039763337">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="1955290707">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="693860075">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1866251022">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="1980617405">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2010098178">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="864843329">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3664.5f</value>
+        <value>334.5f</value>
+        <value>-1317f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1885082280" Rotate="-3.123186f" SRTHash="-1165507316">
       <_Parameters TerritoryArea="0f" TraverseRadiusXZ="27.71455f">
         <TraversePos X="-3626.047f" Y="306.7215f" Z="-1807.461f" />
@@ -14232,6 +14865,20 @@
         <value>-1505.33f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeConiferous_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1866251022" Rotate="-0.1563309f" SRTHash="1316421173">
+      <_Parameters SharpWeaponJudgeType="0">
+        <ClearFlag type="string">Clear_Dungeon128</ClearFlag>
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_1</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3662.103f</value>
+        <value>321.5483f</value>
+        <value>-1314.66f</value>
+      </Translate>
+      <UniqueName type="string">Rito</UniqueName>
+      <UnitConfigName type="string">FldObj_DLC_HeroMapRelief_Mark_A_02</UnitConfigName>
     </value>
     <value HashId="-1865410730" Rotate="1.354533f" SRTHash="1890006416" Scale="5f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -14498,6 +15145,45 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-1834856332" SRTHash="303364022">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-27448894">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="526892251">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="886959429">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-625431809">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="671548036">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="521354672">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="257771120">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3628f</value>
+        <value>522.5f</value>
+        <value>-1814f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1833061480" SRTHash="0">
       <Translate type="array">
         <value>-3570.77f</value>
@@ -14505,6 +15191,21 @@
         <value>-1048.559f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
+    <value HashId="-1831808503" SRTHash="507849610">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-828955753">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3647f</value>
+        <value>331.5f</value>
+        <value>-1312f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="-1829908947" Rotate="0.5799999f" SRTHash="-458317502">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -15484,6 +16185,24 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-1687017085" SRTHash="-1529767617">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1240660491">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1874402206">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3665.546f</value>
+        <value>645.8491f</value>
+        <value>-1852.301f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1683712349" Rotate="2.324424f" SRTHash="-1073213680">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -15622,6 +16341,27 @@
         <value>-3481.184f</value>
         <value>306.253f</value>
         <value>-1071.329f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1652044211" SRTHash="-1339855792">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Finish</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="521354672">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-123346783">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3625.5f</value>
+        <value>518.5f</value>
+        <value>-1810f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
@@ -16581,6 +17321,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowRock_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="-1477684637" SRTHash="-611123267">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Finish</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1834856332">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3627f</value>
+        <value>524f</value>
+        <value>-1815f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNOr</UnitConfigName>
+    </value>
     <value HashId="-1477590613" Rotate="-0.7853982f" SRTHash="-1074767922">
       <_Parameters>
         <GetUpDirection type="string">None</GetUpDirection>
@@ -16797,6 +17554,23 @@
         <value>-1556.426f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-1436085872" SRTHash="1332687383" Scale="3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Ready</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="20033248">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3660.333f</value>
+        <value>531.7982f</value>
+        <value>-1315.749f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1432870813" Rotate="2.993443f" SRTHash="2014039989">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -17324,6 +18098,14 @@
       </Translate>
       <UnitConfigName type="string">Item_Fruit_I</UnitConfigName>
     </value>
+    <value HashId="-1331098103" SRTHash="0">
+      <Translate type="array">
+        <value>-3628.5f</value>
+        <value>516f</value>
+        <value>-1810.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNone</UnitConfigName>
+    </value>
     <value HashId="-1326427120" Rotate="2.631377f" SRTHash="-2101236802">
       <LinksToObj type="array">
         <value DestUnitHashId="-1170907895">
@@ -17839,6 +18621,18 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_08</UnitConfigName>
     </value>
+    <value HashId="-1240660491" SRTHash="491678310">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">ToBattle</EventFlowEntryName>
+        <EventFlowName type="string">BalladOfHeroRito</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3667.202f</value>
+        <value>645.3369f</value>
+        <value>-1851.973f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="-1239362902" SRTHash="836954991">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -17888,6 +18682,23 @@
         <value>-1788.321f</value>
       </Translate>
       <UnitConfigName type="string">AnchorAction1</UnitConfigName>
+    </value>
+    <value HashId="-1236669084" SRTHash="1688006872">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Activated</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="126573816">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3647f</value>
+        <value>334.5f</value>
+        <value>-1317f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNOr</UnitConfigName>
     </value>
     <value HashId="-1235224002" SRTHash="-1209569294">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="true" SaveFlagOnOffType="0">
@@ -18086,6 +18897,22 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="-1215993135" OnlyOne="true" SRTHash="-1565083009">
+      <_Parameters TerritoryArea="0f" TraverseRadiusXZ="0f">
+        <TraversePos X="-3654.32f" Y="320.4977f" Z="-1308.017f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="899953445">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3653.701f</value>
+        <value>321.4881f</value>
+        <value>-1316.234f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_Musician_AoC_HeroRitoRelief</UnitConfigName>
+    </value>
     <value HashId="-1212277469" SRTHash="-1317316736">
       <LinksToObj type="array">
         <value DestUnitHashId="-1278032954">
@@ -18175,6 +19002,21 @@
         <value>-1793.153f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowTunnel_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1197080004" SRTHash="-2127438923">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1718740902">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3665f</value>
+        <value>378f</value>
+        <value>-1325f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="-1195580775" SRTHash="0">
       <_Parameters LocationPriority="1">
@@ -18520,6 +19362,21 @@
         <value>-1075.476f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_Bokoblin_Bone</UnitConfigName>
+    </value>
+    <value HashId="-1130479401" SRTHash="-1559859424">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="2102279056">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3631f</value>
+        <value>518.5f</value>
+        <value>-1809.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
     <value HashId="-1130138519" SRTHash="1143231967" Scale="0.8f">
       <LinksToObj type="array">
@@ -19065,6 +19922,19 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_03</UnitConfigName>
     </value>
+    <value HashId="-1039763337" Rotate="-0.1563309f" SRTHash="-2105695427">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_1</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3662.103f</value>
+        <value>321.5483f</value>
+        <value>-1314.66f</value>
+      </Translate>
+      <UniqueName type="string">Rito</UniqueName>
+      <UnitConfigName type="string">FldObj_DLC_HeroMapRelief_A_01</UnitConfigName>
+    </value>
     <value HashId="-1032428527" Rotate="-0.4f" SRTHash="-465277959">
       <LinksToObj type="array">
         <value DestUnitHashId="1865035051">
@@ -19334,7 +20204,7 @@
       </Translate>
       <UnitConfigName type="string">Obj_RockSetYellow_A_L_01</UnitConfigName>
     </value>
-    <value HashId="-990306742" OnlyOne="true" SRTHash="-955989377">
+    <value HashId="-990306742" SRTHash="-955989377">
       <_Parameters SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
       </_Parameters>
@@ -19967,6 +20837,23 @@
       </Translate>
       <UnitConfigName type="string">WallCrack</UnitConfigName>
     </value>
+    <value HashId="-866518309" SRTHash="587756720">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroes_Step03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="2145876151">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3612.649f</value>
+        <value>325.3338f</value>
+        <value>-1826.237f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-865209403" SRTHash="0">
       <_Parameters LocationPriority="1">
         <MessageID type="string">Dungeon035</MessageID>
@@ -20219,6 +21106,21 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_ChiliPepper_A_01</UnitConfigName>
     </value>
+    <value HashId="-828955753" SRTHash="-1641767296">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-626221224">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3644f</value>
+        <value>332f</value>
+        <value>-1312.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="-827704466" Rotate="0.5000001f" SRTHash="2014685177" Scale="2f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -20247,6 +21149,24 @@
         <value>-1815.7f</value>
       </Translate>
       <UnitConfigName type="string">AnchorAction1</UnitConfigName>
+    </value>
+    <value HashId="-825136029" SRTHash="-415215226" Scale="7f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1831808503">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3654.32f</value>
+        <value>320.5f</value>
+        <value>-1308.017f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-818560002" Rotate="1.290796f" SRTHash="-476611435">
       <_Parameters FortressEatPer="-1" IsHardModeActor="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="45f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="150f">
@@ -20418,6 +21338,18 @@
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
     </value>
+    <value HashId="-788465844" SRTHash="-1388334278" Scale="5f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3654.32f</value>
+        <value>323.4311f</value>
+        <value>-1308.017f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="-785872775" SRTHash="-988538650" Scale="0.9f">
       <LinksToObj type="array">
         <value DestUnitHashId="135801776">
@@ -20489,6 +21421,23 @@
         <value>-1049.538f</value>
       </Translate>
       <UnitConfigName type="string">EfLocater_GrudgeSolid_M</UnitConfigName>
+    </value>
+    <value HashId="-759915785" SRTHash="556819546">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Ready</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="126573816">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3645f</value>
+        <value>334.5f</value>
+        <value>-1317f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="-750479161" Rotate="-0.2935699f" SRTHash="2014039989">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -21386,6 +22335,18 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-626221224" SRTHash="1562657177">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">Ready_Npc_Musician_AoC_HeroRitoRelief_Talk</EventFlowEntryName>
+        <EventFlowName type="string">BalladOfHeroRito</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>-3642.5f</value>
+        <value>332f</value>
+        <value>-1313.5f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
+    </value>
     <value HashId="-625969833" SRTHash="1895044722" Scale="0.9f">
       <LinksToObj type="array">
         <value DestUnitHashId="-1178270961">
@@ -21403,6 +22364,20 @@
         <value>-995.3167f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_04</UnitConfigName>
+    </value>
+    <value HashId="-625431809" SRTHash="-612455903">
+      <_Parameters NonAutoPlacementAnimal="true" NonAutoPlacementBird="true" NonAutoPlacementEnemy="true" NonAutoPlacementFish="true" NonAutoPlacementInsect="true" NonAutoPlacementMaterial="true" NonEnemySearchPlayer="true" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1331098103">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3631f</value>
+        <value>568f</value>
+        <value>-1813f</value>
+      </Translate>
+      <UnitConfigName type="string">PlayerInAreaAutoEnemyForbidTag</UnitConfigName>
     </value>
     <value HashId="-625415327" SRTHash="-183970816">
       <LinksToObj type="array">
@@ -21650,6 +22625,21 @@
         <value>-1310.596f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffYellowWall_A_09_Far</UnitConfigName>
+    </value>
+    <value HashId="-564476107" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1240660491">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3664.281f</value>
+        <value>644.4063f</value>
+        <value>-1850.319f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-562286840" SRTHash="1955303176">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -23832,6 +24822,23 @@
       </Translate>
       <UnitConfigName type="string">AnchorAction1</UnitConfigName>
     </value>
+    <value HashId="-123346783" SRTHash="-445054971">
+      <_Parameters SharpWeaponJudgeType="0" WaitTime="15f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="94988641">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3625.5f</value>
+        <value>517f</value>
+        <value>-1806.5f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
     <value HashId="-121233218" SRTHash="1848916953">
       <LinksToObj type="array">
         <value DestUnitHashId="1091349379">
@@ -24440,6 +25447,23 @@
         <value>-1691.757f</value>
       </Translate>
       <UnitConfigName type="string">Obj_RockYellow_A_L_04_Far</UnitConfigName>
+    </value>
+    <value HashId="-27448894" SRTHash="-1805192425" Scale="5f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1331098103">
+          <DefinitionName type="string">SyncLink</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-3628.8f</value>
+        <value>516f</value>
+        <value>-1811.6f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-24431453" SRTHash="1426749793">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">

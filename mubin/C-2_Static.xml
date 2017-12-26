@@ -14,6 +14,20 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowLargeWall_D_03_Far</UnitConfigName>
     </value>
+    <value HashId="3465279" Rotate="1.140005f" SRTHash="664544758" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2022926593">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2672.72f</value>
+        <value>609.4651f</value>
+        <value>-2680.244f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="10369499" SRTHash="1969055781">
       <Rotate type="array">
         <value>-3.101593f</value>
@@ -171,6 +185,23 @@
         <value>-2263.799f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_20</UnitConfigName>
+    </value>
+    <value HashId="44370672" SRTHash="1990406051">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="1">
+        <SaveFlag type="string">bf2_collabo_open03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1565403032">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2606.5f</value>
+        <value>594.5f</value>
+        <value>-2651.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="44753240" SRTHash="1884093263">
       <LinksToObj type="array">
@@ -788,6 +819,26 @@
         <value>-2348.126f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_27_Far</UnitConfigName>
+    </value>
+    <value HashId="157553182" Rotate="2.445407f" SRTHash="1557918777">
+      <_Parameters ChainRingOrbitSpeed="0.25f" GimmickTimeLimit="12f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1697573221">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="1416120414">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2195.085f</value>
+        <value>443.887f</value>
+        <value>-3156.53f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing_Last</UnitConfigName>
     </value>
     <value HashId="161463398" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -1472,6 +1523,18 @@
       </Translate>
       <UnitConfigName type="string">FldObj_WaterFall_A_M_01</UnitConfigName>
     </value>
+    <value HashId="301616043" Rotate="0.62f" SRTHash="-1916179762" Scale="20f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2775.723f</value>
+        <value>826.5f</value>
+        <value>-2899.094f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="301935449" SRTHash="-1151642412">
       <LinksToObj type="array">
         <value DestUnitHashId="-1930150677">
@@ -1811,6 +1874,34 @@
         <value>-2747.75f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeSnowberry_A</UnitConfigName>
+    </value>
+    <value HashId="384260326" Rotate="-2.821593f" SRTHash="-1455479526">
+      <_Parameters ChainRingOrbitSpeed="1f" GimmickTimeLimit="15f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1728451741">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-620144395">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1515448418">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-28580746">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2399.8f</value>
+        <value>514.9f</value>
+        <value>-2800.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
     </value>
     <value HashId="385245781" SRTHash="-182953672" Scale="0.25f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" PulseLength="5" SaveFlagOnOffType="0" />
@@ -2205,6 +2296,20 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="477525157" Rotate="1.300001f" SRTHash="-1548975930" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-660816825">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2431.5f</value>
+        <value>479.2f</value>
+        <value>-2967.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="478586502" SRTHash="-182953672" Scale="0.25f">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" PulseLength="5" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -2446,6 +2551,21 @@
         <value>-2543.876f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="515538914" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1537836261">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2239f</value>
+        <value>447.7f</value>
+        <value>-3118.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="518157969" SRTHash="407998159">
       <Rotate type="array">
@@ -2738,6 +2858,20 @@
       <UniqueName type="string">Board</UniqueName>
       <UnitConfigName type="string">FldObj_DLC_FlyShield_A_Snow_02</UnitConfigName>
     </value>
+    <value HashId="574154659" Rotate="1.360009f" SRTHash="1940451953" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="672617802">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2252f</value>
+        <value>458.8f</value>
+        <value>-3116.7f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="582023711" SRTHash="-344386228">
       <Rotate type="array">
         <value>0.7691413f</value>
@@ -2900,6 +3034,20 @@
         <value>-1985.478f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_18</UnitConfigName>
+    </value>
+    <value HashId="605071552" Rotate="-2.643186f" SRTHash="-1752933816" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="384260326">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2382.1f</value>
+        <value>530.8f</value>
+        <value>-2764.4f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="606510339" Rotate="0.96f" SRTHash="-1137771843">
       <Translate type="array">
@@ -3147,6 +3295,34 @@
       </Translate>
       <UnitConfigName type="string">LinkTagNone</UnitConfigName>
     </value>
+    <value HashId="672617802" Rotate="1.985402f" SRTHash="1314786624">
+      <_Parameters ChainRingOrbitSpeed="1.4f" GimmickTimeLimit="9f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1995492676">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="515538914">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="157553182">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1859817922">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2239f</value>
+        <value>447.7f</value>
+        <value>-3118.1f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
+    </value>
     <value HashId="679791395" Rotate="1.063806f" SRTHash="-677322711">
       <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
         <ArrowName type="string">NormalArrow</ArrowName>
@@ -3294,6 +3470,21 @@
       </Translate>
       <UnitConfigName type="string">LookTag</UnitConfigName>
     </value>
+    <value HashId="689655302" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-660816825">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2379.9f</value>
+        <value>473.6f</value>
+        <value>-3090.8f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="691966810" SRTHash="-528166115">
       <LinksToObj type="array">
         <value DestUnitHashId="248764577">
@@ -3365,6 +3556,17 @@
         <value>-2130.024f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="708427058" Rotate="1.540001f" SRTHash="626042642" Scale="3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_RingSurfingSuccess</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2189.065f</value>
+        <value>447.7776f</value>
+        <value>-3151.794f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="710268928" SRTHash="-1034123843">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -3808,6 +4010,23 @@
         <value>-2897.906f</value>
       </Translate>
       <UnitConfigName type="string">Obj_IcicleMountainCover_A_01</UnitConfigName>
+    </value>
+    <value HashId="802273206" Rotate="0.4f" SRTHash="-467690592" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_Activated</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1075004508">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2781.295f</value>
+        <value>683.3401f</value>
+        <value>-2810.623f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="805098367" SRTHash="1318448622">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -4440,6 +4659,21 @@
       </Translate>
       <UnitConfigName type="string">FldObj_MapTowerStairWood_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="926074474" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1618718649">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2575.1f</value>
+        <value>578.9235f</value>
+        <value>-2648f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="931101927" SRTHash="974832147" Scale="1.2f">
       <Rotate type="array">
         <value>3.041593f</value>
@@ -4574,6 +4808,34 @@
         <value>-2880.361f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
+    </value>
+    <value HashId="951023121" Rotate="2.730795f" SRTHash="-1867609579">
+      <_Parameters ChainRingOrbitSpeed="1.4f" GimmickTimeLimit="15f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="689655302">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1500851538">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1537836261">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1591410937">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2379.9f</value>
+        <value>473.6f</value>
+        <value>-3090.8f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
     </value>
     <value HashId="952209516" SRTHash="-702356558">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -5223,6 +5485,21 @@
         <value>-2299.197f</value>
       </Translate>
       <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
+    <value HashId="1085019290" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2022926593">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2478.8f</value>
+        <value>557.9f</value>
+        <value>-2650.4f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1087310173" Rotate="3.007061f" SRTHash="1806128058">
       <_Parameters RemainsTerminalIndex="-1" RemainsTerminalType="-1" SharpWeaponJudgeType="0">
@@ -6602,6 +6879,24 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_03</UnitConfigName>
     </value>
+    <value HashId="1367988891" Rotate="-1.932389f" SRTHash="791304787">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_185_Lower</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1852173391">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2605f</value>
+        <value>583f</value>
+        <value>-2652f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Collabo</UnitConfigName>
+    </value>
     <value HashId="1368417517" SRTHash="-358664944">
       <LinksToObj type="array">
         <value DestUnitHashId="-1294912882">
@@ -6980,6 +7275,21 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowLargeWall_D_02_Far</UnitConfigName>
     </value>
+    <value HashId="1416120414" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="672617802">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2195.085f</value>
+        <value>443.887f</value>
+        <value>-3156.53f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1421171764" Rotate="-2.094395f" SRTHash="-1110022579">
       <Translate type="array">
         <value>-2172.134f</value>
@@ -7199,6 +7509,21 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_19_Far</UnitConfigName>
     </value>
+    <value HashId="1466856225" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="384260326">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2424.8f</value>
+        <value>498.5f</value>
+        <value>-2891.6f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1471421726" Rotate="-2.752526f" SRTHash="-105080390">
       <_Parameters SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -7394,6 +7719,20 @@
         <value>-2039.5f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1500851538" Rotate="1.360009f" SRTHash="-1193622942" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1537836261">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2322.5f</value>
+        <value>466.9f</value>
+        <value>-3114.8f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="1502609530" SRTHash="777403747" Scale="0.8f">
       <LinksToObj type="array">
@@ -7723,6 +8062,20 @@
         <value>-1910.269f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowLargeWall_D_02_Far</UnitConfigName>
+    </value>
+    <value HashId="1581842250" Rotate="-2.443184f" SRTHash="78044499" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1618718649">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2753.674f</value>
+        <value>647.142f</value>
+        <value>-2736.264f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="1586512265" SRTHash="-378515781">
       <Rotate type="array">
@@ -8130,6 +8483,21 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="1674148282" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1515448418">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2429.206f</value>
+        <value>489.012f</value>
+        <value>-2961.431f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1676699705" SRTHash="1007196811" Scale="1.2f">
       <Rotate type="array">
         <value>2.632629f</value>
@@ -8289,6 +8657,24 @@
       </Translate>
       <UnitConfigName type="string">EnemyNoticeTag</UnitConfigName>
     </value>
+    <value HashId="1697573221" Rotate="1.540001f" SRTHash="1589645457" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1430608006">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1075004508">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2196.5f</value>
+        <value>452.2f</value>
+        <value>-3151.7f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="1698637910" SRTHash="1275925413" Scale="0.8f">
       <LinksToObj type="array">
         <value DestUnitHashId="1613343381">
@@ -8306,6 +8692,17 @@
         <value>-2916.624f</value>
       </Translate>
       <UnitConfigName type="string">Obj_IcicleMountainCover_A_01</UnitConfigName>
+    </value>
+    <value HashId="1699644721" SRTHash="404832077">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">bf2_collabo_Finish</SaveFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2605f</value>
+        <value>598f</value>
+        <value>-2651.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1707182761" SRTHash="-505645606">
       <LinksToObj type="array">
@@ -8422,6 +8819,20 @@
         <value>-2575.526f</value>
       </Translate>
       <UnitConfigName type="string">Item_Fruit_B</UnitConfigName>
+    </value>
+    <value HashId="1728451741" Rotate="2.761597f" SRTHash="-2014437017" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1515448418">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2400.5f</value>
+        <value>509.5f</value>
+        <value>-2852.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="1737263182" SRTHash="-1747564789">
       <Rotate type="array">
@@ -8683,6 +9094,20 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_19_Far</UnitConfigName>
     </value>
+    <value HashId="1784008046" Rotate="-2.643186f" SRTHash="-2052446256" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1463872792">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2374.5f</value>
+        <value>537.3f</value>
+        <value>-2721.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="1789946959" Rotate="1.661593f" SRTHash="-301128281" Scale="2f">
       <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
         <CameraSet type="string">-</CameraSet>
@@ -8928,6 +9353,25 @@
         <value>-2856.11f</value>
       </Translate>
       <UnitConfigName type="string">Obj_RockSetSnow_A_01</UnitConfigName>
+    </value>
+    <value HashId="1852173391" SRTHash="-1439028415">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1057895992">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="44370672">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2605f</value>
+        <value>592.5f</value>
+        <value>-2651.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1852703443" SRTHash="468202844">
       <Rotate type="array">
@@ -9431,6 +9875,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_GerudoHighlandRock_C_04_Far</UnitConfigName>
     </value>
+    <value HashId="1919530050" SRTHash="1091006783">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">bf2_collabo_open02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1565403032">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2605f</value>
+        <value>594.5f</value>
+        <value>-2651.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1925044310" SRTHash="866214781">
       <Rotate type="array">
         <value>0.9132757f</value>
@@ -9758,6 +10219,20 @@
         <value>-2072.541f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowLargeWall_D_02</UnitConfigName>
+    </value>
+    <value HashId="1995492676" Rotate="1.360009f" SRTHash="1835633664" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="157553182">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2216.042f</value>
+        <value>443.2386f</value>
+        <value>-3131.247f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="1996549817" SRTHash="-538471837">
       <LinksToObj type="array">
@@ -10439,6 +10914,21 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-2146075124" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1714063454">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2380.6f</value>
+        <value>525.2547f</value>
+        <value>-2727.6f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-2144892086" Rotate="0.5000003f" SRTHash="-476611435">
       <_Parameters FortressEatPer="-1" IsHardModeActor="true" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="45f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="150f">
         <ArrowName type="string">BombArrow_A</ArrowName>
@@ -11008,6 +11498,34 @@
         <value>-2132.703f</value>
       </Translate>
       <UnitConfigName type="string">Obj_LiftRockWhite_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2022926593" Rotate="1.430796f" SRTHash="-958685305">
+      <_Parameters ChainRingOrbitSpeed="0.9f" GimmickTimeLimit="25f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="926074474">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-739371069">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-231320646">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="483855988">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2575.1f</value>
+        <value>578.9235f</value>
+        <value>-2648f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
     </value>
     <value HashId="-2019431121" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -12890,6 +13408,34 @@
       </Translate>
       <UnitConfigName type="string">Obj_IcicleMountain_A_L_03</UnitConfigName>
     </value>
+    <value HashId="-1714063454" Rotate="2.256194f" SRTHash="1008225988">
+      <_Parameters ChainRingOrbitSpeed="1f" GimmickTimeLimit="12f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1784008046">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-987705191">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1463872792">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="2130060545">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2401.8f</value>
+        <value>542.6f</value>
+        <value>-2671.8f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
+    </value>
     <value HashId="-1710747115" SRTHash="866214781">
       <Rotate type="array">
         <value>-0.9763373f</value>
@@ -13013,6 +13559,23 @@
         <value>-2263.403f</value>
       </Translate>
       <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
+    </value>
+    <value HashId="-1686934207" SRTHash="-457996782">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">CollaborationShootingStar_Xenoblade2_1_3_fallout</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1367988891">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2607f</value>
+        <value>589f</value>
+        <value>-2652.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1683342620" SRTHash="1605293613">
       <LinksToObj type="array">
@@ -13348,6 +13911,34 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_01_Far</UnitConfigName>
     </value>
+    <value HashId="-1618718649" Rotate="0.8800001f" SRTHash="1822878138">
+      <_Parameters ChainRingOrbitSpeed="0.8f" GimmickTimeLimit="15f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1399354875">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="3465279">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2022926593">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="1060284620">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2747.4f</value>
+        <value>636.861f</value>
+        <value>-2727.3f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
+    </value>
     <value HashId="-1612083311" Rotate="1.047198f" SRTHash="455908343">
       <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true" TraverseRadiusXZ="0f">
         <EventFlowEntryName type="string">Demo004_0_01</EventFlowEntryName>
@@ -13467,6 +14058,20 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-1575811301" Rotate="-2.643186f" SRTHash="-1733917016" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1714063454">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2420.3f</value>
+        <value>547.1f</value>
+        <value>-2677.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="-1573053625" SRTHash="1370097070">
       <Rotate type="array">
         <value>3.008834f</value>
@@ -13505,6 +14110,21 @@
         <value>-2391.497f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-1565403032" SRTHash="-2077142037">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1699644721">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2605f</value>
+        <value>596.5f</value>
+        <value>-2651.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1564305990" Rotate="-0.5999998f" SRTHash="-369204000">
       <_Parameters FortressEatPer="-1" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
@@ -13639,6 +14259,34 @@
         <value>-2287.526f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_18_Far</UnitConfigName>
+    </value>
+    <value HashId="-1537836261" Rotate="1.725401f" SRTHash="-1685316503">
+      <_Parameters ChainRingOrbitSpeed="1.4f" GimmickTimeLimit="12f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="574154659">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1202465087">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="672617802">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1677638664">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2300f</value>
+        <value>456.5531f</value>
+        <value>-3116.6f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
     </value>
     <value HashId="-1536122232" Rotate="1.043802f" SRTHash="-481964135">
       <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
@@ -13816,6 +14464,34 @@
         <value>-2262.463f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1515448418" Rotate="-2.906991f" SRTHash="474597068">
+      <_Parameters ChainRingOrbitSpeed="1.2f" GimmickTimeLimit="12f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1466856225">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="477525157">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-660816825">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-741767542">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2424.8f</value>
+        <value>498.5f</value>
+        <value>-2891.6f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
     </value>
     <value HashId="-1513775540" SRTHash="-1238321976">
       <_Parameters IsDrop="false" IsNearCreate="true" IsWatchKeeping="false" LevelSensorMode="0" NearCreateAppearID="0" NearCreateAppearType="0" RotAngle="0f" SharpWeaponJudgeType="1" TerritoryArea="0f" WaitTime="1f">
@@ -14057,6 +14733,34 @@
       </Translate>
       <UnitConfigName type="string">Obj_RockSetSnow_A_01</UnitConfigName>
     </value>
+    <value HashId="-1463872792" Rotate="-2.619999f" SRTHash="739165001">
+      <_Parameters ChainRingOrbitSpeed="1.2f" GimmickTimeLimit="12f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="605071552">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2146075124">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="384260326">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-2042669701">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2380.6f</value>
+        <value>525.2547f</value>
+        <value>-2727.6f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
+    </value>
     <value HashId="-1463212571" SRTHash="-1892029770" Scale="0.8f">
       <Rotate type="array">
         <value>0.8463753f</value>
@@ -14121,6 +14825,23 @@
         <value>-2494.23f</value>
       </Translate>
       <UnitConfigName type="string">Item_Chilled_02</UnitConfigName>
+    </value>
+    <value HashId="-1430608006" Rotate="1.540001f" SRTHash="-879240824">
+      <_Parameters SharpWeaponJudgeType="0" WaitTime="75f">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="708427058">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2195.292f</value>
+        <value>447.7776f</value>
+        <value>-3151.794f</value>
+      </Translate>
+      <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
     </value>
     <value HashId="-1423253826" Rotate="-0.8800006f" SRTHash="493809155" Scale="1.2f">
       <Translate type="array">
@@ -14228,6 +14949,21 @@
         <value>-2069.469f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_01</UnitConfigName>
+    </value>
+    <value HashId="-1399354875" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1075004508">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2747.4f</value>
+        <value>636.861f</value>
+        <value>-2727.3f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1395631125" SRTHash="-1837878434">
       <Rotate type="array">
@@ -15215,6 +15951,21 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_07_Far</UnitConfigName>
     </value>
+    <value HashId="-1202465087" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="951023121">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2300f</value>
+        <value>456.5531f</value>
+        <value>-3116.6f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1199063846" SRTHash="-257845190">
       <Rotate type="array">
         <value>-0.835946f</value>
@@ -15736,6 +16487,30 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowLargeWall_D_02</UnitConfigName>
     </value>
+    <value HashId="-1075004508" Rotate="0.44f" SRTHash="1317198052">
+      <_Parameters ChainRingOrbitSpeed="0.8f" GimmickTimeLimit="999f" IsBillboard="true" IsFirstNode="true" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1581842250">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1618718649">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-102212374">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2792.1f</value>
+        <value>665.5f</value>
+        <value>-2810.6f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
+    </value>
     <value HashId="-1074889782" Rotate="1.72f" SRTHash="123847947">
       <_Parameters FortressEatPer="-1" IsMimicry="false" IsNearCreate="false" IsWatchKeeping="false" LevelSensorMode="0" OnCliff="false" OnCliffTurn="true" RotAngle="0f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="1f">
         <EquipItem1 type="string">Weapon_Spear_008</EquipItem1>
@@ -15821,6 +16596,18 @@
         <value>-2110.83f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1057895992" SRTHash="1608669492">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">bf2_collabo_remaining</EventFlowEntryName>
+        <EventFlowName type="string">bf2_collabo</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>-2607.5f</value>
+        <value>593.5f</value>
+        <value>-2651.5f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
     </value>
     <value HashId="-1053653359" SRTHash="-1152711087" Scale="1.2f">
       <_Parameters IsEnemyLiftable="true" IsFixedPlace="false" SharpWeaponJudgeType="0">
@@ -16021,6 +16808,21 @@
       </Translate>
       <UnitConfigName type="string">LinkTagNone</UnitConfigName>
     </value>
+    <value HashId="-987705191" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-231320646">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2401.8f</value>
+        <value>542.6f</value>
+        <value>-2671.8f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-983261722" Rotate="1.26f" SRTHash="1145306325">
       <Translate type="array">
         <value>-2748.789f</value>
@@ -16028,6 +16830,23 @@
         <value>-2542.417f</value>
       </Translate>
       <UnitConfigName type="string">Obj_RockSetSnow_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-982897744" SRTHash="-1591674126">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">bf2_collabo_open01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1565403032">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2603.5f</value>
+        <value>594.5f</value>
+        <value>-2651.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-981269020" SRTHash="-550121126" Scale="0.8f">
       <_Parameters IsEnemyLiftable="true" IsFixedPlace="false" SharpWeaponJudgeType="0">
@@ -17030,6 +17849,20 @@
       </Translate>
       <UnitConfigName type="string">FldObj_MapTowerStairWood_A_01</UnitConfigName>
     </value>
+    <value HashId="-739371069" Rotate="2.260006f" SRTHash="784040406" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-231320646">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2507.3f</value>
+        <value>589.9f</value>
+        <value>-2630.1f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="-734344649" Rotate="1.570796f" SRTHash="-785714350" Scale="3f">
       <_Parameters BluffThunderOff="false" CloudShadowOff="false" FogMinusCorrection="false" IgnitedLevel="0" PSelSpeed="0" PaletteSel="-1" TemperatureDay="-25f" TemperatureDirectDay="99999.9f" TemperatureDirectNight="99999.9f" TemperatureNight="-34f" Weather="0" WeatherEff="-1" />
       <Translate type="array">
@@ -17399,6 +18232,34 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Golem_Little_Ice</UnitConfigName>
     </value>
+    <value HashId="-660816825" Rotate="2.470793f" SRTHash="676463366">
+      <_Parameters ChainRingOrbitSpeed="1.2f" GimmickTimeLimit="12f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1674148282">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-520110996">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="951023121">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="-1294653611">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2429.206f</value>
+        <value>489.012f</value>
+        <value>-2961.431f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
+    </value>
     <value HashId="-659907672" Rotate="-2.039998f" SRTHash="551983803" Scale="1.1f">
       <Translate type="array">
         <value>-2925.762f</value>
@@ -17563,6 +18424,21 @@
         <value>-2954.351f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffSnowWall_D_05_Far</UnitConfigName>
+    </value>
+    <value HashId="-620144395" SRTHash="0">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1463872792">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2399.8f</value>
+        <value>514.9f</value>
+        <value>-2800.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-619537520" SRTHash="-465213077">
       <Rotate type="array">
@@ -18169,6 +19045,20 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-520110996" Rotate="1.300001f" SRTHash="-2092303720" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="951023121">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2394.9f</value>
+        <value>477.4f</value>
+        <value>-3024f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="-515777509" SRTHash="-1214141860">
       <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
         <DropActor type="string">Weapon_Shield_003</DropActor>
@@ -18236,6 +19126,58 @@
         <value>-2001.636f</value>
       </Translate>
       <UnitConfigName type="string">Obj_RockSetSnow_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-507316943" Rotate="0.4f" SRTHash="-1881474113" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroRito_AppearDungeon03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1075004508">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1618718649">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-2022926593">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-231320646">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1714063454">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="384260326">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1515448418">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-660816825">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1537836261">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="157553182">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="951023121">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1463872792">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+        <value DestUnitHashId="672617802">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2792.108f</value>
+        <value>697.1995f</value>
+        <value>-2820.146f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-506018113" SRTHash="0">
       <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
@@ -18356,6 +19298,22 @@
       </Translate>
       <UniqueName type="string">Board</UniqueName>
       <UnitConfigName type="string">FldObj_DLC_FlyShield_A_Snow_01</UnitConfigName>
+    </value>
+    <value HashId="-492706657" Rotate="-1.32f" SRTHash="-913261351">
+      <_Parameters>
+        <collaboSSFalloutFlagName type="string">CollaborationShootingStar_Xenoblade2_1_3_fallout</collaboSSFalloutFlagName>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="301616043">
+          <DefinitionName type="string">AreaCol</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-2783.556f</value>
+        <value>842.5f</value>
+        <value>-2895.5f</value>
+      </Translate>
+      <UnitConfigName type="string">CollaboShootingStarArea</UnitConfigName>
     </value>
     <value HashId="-486124456" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -19682,6 +20640,34 @@
       </Translate>
       <UnitConfigName type="string">Enemy_AirOctarock</UnitConfigName>
     </value>
+    <value HashId="-231320646" Rotate="1.790795f" SRTHash="-1888947649">
+      <_Parameters ChainRingOrbitSpeed="0.9f" GimmickTimeLimit="15f" IsBillboard="true" IsFirstNode="false" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1085019290">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1575811301">
+          <DefinitionName type="string">GimmickSuccess</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1714063454">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <LinksToRail type="array">
+        <value DestUnitHashId="167144394">
+          <DefinitionName type="string">GuideRef</DefinitionName>
+        </value>
+      </LinksToRail>
+      <Translate type="array">
+        <value>-2478.8f</value>
+        <value>557.9f</value>
+        <value>-2650.4f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC_ChallengeChainRing</UnitConfigName>
+    </value>
     <value HashId="-225969809" SRTHash="728500091">
       <Rotate type="array">
         <value>-0.3199999f</value>
@@ -20807,6 +21793,210 @@
     </value>
   </Objs>
   <Rails type="array">
+    <value HashId="167144394" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="22.28524f" PrevDistance="0f" Rotate="1.790795f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2478.8f</value>
+            <value>557.9f</value>
+            <value>-2650.4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="42.87357f" PrevDistance="22.28524f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-2.5f</value>
+              <value>0.5999756f</value>
+              <value>0.4001465f</value>
+            </value>
+            <value type="array">
+              <value>2.5f</value>
+              <value>-0.5999756f</value>
+              <value>-0.3999023f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2457.2f</value>
+            <value>553.6f</value>
+            <value>-2653.8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="17.28834f" PrevDistance="42.87357f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-10.3999f</value>
+              <value>1.299988f</value>
+              <value>4.400146f</value>
+            </value>
+            <value type="array">
+              <value>10.40015f</value>
+              <value>-1.299988f</value>
+              <value>-4.399902f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2416.6f</value>
+            <value>543.8f</value>
+            <value>-2663.1f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="17.28834f" Rotate="2.576194f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2401.8f</value>
+            <value>542.6f</value>
+            <value>-2671.8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2438.6f</value>
+        <value>549.475f</value>
+        <value>-2659.775f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="483855988" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="55.13026f" PrevDistance="0f" Rotate="1.430796f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2575.1f</value>
+            <value>578.9235f</value>
+            <value>-2648f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="43.94789f" PrevDistance="55.13026f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-15.8999f</value>
+              <value>3.299988f</value>
+              <value>0.3000488f</value>
+            </value>
+            <value type="array">
+              <value>15.90015f</value>
+              <value>-3.299988f</value>
+              <value>-0.3000488f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2521.3f</value>
+            <value>567.4f</value>
+            <value>-2644.8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="43.94789f" Rotate="1.790795f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-3.5625f</value>
+              <value>0.6875f</value>
+              <value>0.453125f</value>
+            </value>
+            <value type="array">
+              <value>3.5625f</value>
+              <value>-0.6875f</value>
+              <value>-0.453125f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2478.8f</value>
+            <value>557.9f</value>
+            <value>-2650.4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2525.067f</value>
+        <value>568.0745f</value>
+        <value>-2647.733f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="1060284620" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="53.28938f" PrevDistance="0f" Rotate="0.8800001f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2747.4f</value>
+            <value>636.861f</value>
+            <value>-2727.3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="112.1464f" PrevDistance="53.28938f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-7.272705f</value>
+              <value>2.747864f</value>
+              <value>-4.887207f</value>
+            </value>
+            <value type="array">
+              <value>7.272705f</value>
+              <value>-2.747864f</value>
+              <value>4.886963f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2707.273f</value>
+            <value>619.2479f</value>
+            <value>-2696.987f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="35.16261f" PrevDistance="112.1464f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-7.852539f</value>
+              <value>2.213562f</value>
+              <value>-3.042236f</value>
+            </value>
+            <value type="array">
+              <value>7.852295f</value>
+              <value>-2.213562f</value>
+              <value>3.041992f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2608.748f</value>
+            <value>586.3865f</value>
+            <value>-2654.758f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="35.16261f" Rotate="1.430796f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2575.1f</value>
+            <value>578.9235f</value>
+            <value>-2648f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2659.63f</value>
+        <value>605.3547f</value>
+        <value>-2681.761f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
     <value HashId="1094788496" IsClosed="false">
       <RailPoints type="array">
         <value NextDistance="46.53145f" PrevDistance="0f" Rotate="0.8799986f">
@@ -20865,6 +22055,77 @@
       </Translate>
       <UnitConfigName type="string">Guide</UnitConfigName>
     </value>
+    <value HashId="1859817922" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="11.94461f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2239f</value>
+            <value>447.7f</value>
+            <value>-3118.1f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="32.36192f" PrevDistance="11.94461f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-9.099854f</value>
+              <value>1.400024f</value>
+              <value>6.899902f</value>
+            </value>
+            <value type="array">
+              <value>9.100098f</value>
+              <value>-1.400024f</value>
+              <value>-6.899902f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2229.1f</value>
+            <value>447.4f</value>
+            <value>-3124.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="15.02952f" PrevDistance="32.36192f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-3.5f</value>
+              <value>0.1000061f</value>
+              <value>3.600098f</value>
+            </value>
+            <value type="array">
+              <value>3.5f</value>
+              <value>-0.1000061f</value>
+              <value>-3.599854f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2204.9f</value>
+            <value>442.2f</value>
+            <value>-3145.3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="15.02952f" Rotate="2.445407f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2195.085f</value>
+            <value>443.887f</value>
+            <value>-3156.53f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2217.021f</value>
+        <value>445.2968f</value>
+        <value>-3136.108f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
     <value HashId="2008690764" IsClosed="false">
       <RailPoints type="array">
         <value NextDistance="62.98046f" PrevDistance="0f" Rotate="-0.9399997f">
@@ -20891,6 +22152,172 @@
         <value>-2712.265f</value>
         <value>406.4924f</value>
         <value>-1979.914f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="2130060545" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="21.42091f" PrevDistance="0f" Rotate="2.576194f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2401.8f</value>
+            <value>542.6f</value>
+            <value>-2671.8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="25.56243f" PrevDistance="21.42091f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-3.300049f</value>
+              <value>1.599976f</value>
+              <value>5.699951f</value>
+            </value>
+            <value type="array">
+              <value>3.300049f</value>
+              <value>-1.599976f</value>
+              <value>-5.699951f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2386.7f</value>
+            <value>538.2f</value>
+            <value>-2686.2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="19.97202f" PrevDistance="25.56243f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-1.300049f</value>
+              <value>2.299988f</value>
+              <value>7f</value>
+            </value>
+            <value type="array">
+              <value>1.300049f</value>
+              <value>-2.299988f</value>
+              <value>-7f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2378f</value>
+            <value>530.9f</value>
+            <value>-2709f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="19.97202f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>2f</value>
+              <value>-0.09686279f</value>
+              <value>3.100098f</value>
+            </value>
+            <value type="array">
+              <value>-2f</value>
+              <value>0.09686279f</value>
+              <value>-3.099854f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2380.6f</value>
+            <value>525.2547f</value>
+            <value>-2727.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2386.775f</value>
+        <value>534.2387f</value>
+        <value>-2698.65f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-2042669701" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="25.01596f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>0.2001953f</value>
+              <value>0.003112793f</value>
+              <value>0.4001465f</value>
+            </value>
+            <value type="array">
+              <value>-0.1999512f</value>
+              <value>-0.003112793f</value>
+              <value>-0.3999023f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2380.6f</value>
+            <value>525.2547f</value>
+            <value>-2727.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="29.30602f" PrevDistance="25.01596f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>0.9001465f</value>
+              <value>0.2000122f</value>
+              <value>4.100098f</value>
+            </value>
+            <value type="array">
+              <value>-0.8999023f</value>
+              <value>-0.2000122f</value>
+              <value>-4.100098f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2392.6f</value>
+            <value>524.9f</value>
+            <value>-2749.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="23.48569f" PrevDistance="29.30602f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>1.099854f</value>
+              <value>1.399963f</value>
+              <value>6.599854f</value>
+            </value>
+            <value type="array">
+              <value>-1.100098f</value>
+              <value>-1.399963f</value>
+              <value>-6.600098f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2394.2f</value>
+            <value>520.5f</value>
+            <value>-2778.4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="23.48569f" Rotate="-2.921593f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2399.8f</value>
+            <value>514.9f</value>
+            <value>-2800.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2391.8f</value>
+        <value>521.3887f</value>
+        <value>-2764f</value>
       </Translate>
       <UnitConfigName type="string">Guide</UnitConfigName>
     </value>
@@ -21639,6 +23066,278 @@
       </Translate>
       <UnitConfigName type="string">Route</UnitConfigName>
     </value>
+    <value HashId="-1677638664" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="53.21428f" PrevDistance="0f" Rotate="2.076193f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2300f</value>
+            <value>456.5531f</value>
+            <value>-3116.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="8.508597f" PrevDistance="53.21428f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-7f</value>
+              <value>1.100006f</value>
+              <value>0.1999512f</value>
+            </value>
+            <value type="array">
+              <value>7f</value>
+              <value>-1.100006f</value>
+              <value>-0.1999512f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2247.3f</value>
+            <value>449.2f</value>
+            <value>-3117.2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="8.508597f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2239f</value>
+            <value>447.7f</value>
+            <value>-3118.1f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2262.1f</value>
+        <value>451.1511f</value>
+        <value>-3117.3f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1591410937" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="28.56979f" PrevDistance="0f" Rotate="2.210795f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2379.9f</value>
+            <value>473.6f</value>
+            <value>-3090.8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="24.24483f" PrevDistance="28.56979f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-5.800049f</value>
+              <value>0.9000244f</value>
+              <value>1.699951f</value>
+            </value>
+            <value type="array">
+              <value>5.800049f</value>
+              <value>-0.9000244f</value>
+              <value>-1.699951f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2359f</value>
+            <value>468.3f</value>
+            <value>-3109.3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="36.53461f" PrevDistance="24.24483f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-5.299805f</value>
+              <value>1f</value>
+              <value>0.5f</value>
+            </value>
+            <value type="array">
+              <value>5.300049f</value>
+              <value>-1f</value>
+              <value>-0.5f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2335.6f</value>
+            <value>464.4f</value>
+            <value>-3114.2f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="36.53461f" Rotate="2.076193f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2300f</value>
+            <value>456.5531f</value>
+            <value>-3116.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2343.625f</value>
+        <value>465.7133f</value>
+        <value>-3107.725f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-1294653611" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="27.95437f" PrevDistance="0f" Rotate="2.470793f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2429.206f</value>
+            <value>489.012f</value>
+            <value>-2961.431f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="26.93048f" PrevDistance="27.95437f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-1.144043f</value>
+              <value>0.4595642f</value>
+              <value>2.906006f</value>
+            </value>
+            <value type="array">
+              <value>1.144043f</value>
+              <value>-0.4595642f</value>
+              <value>-2.905762f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2415.644f</value>
+            <value>485.3596f</value>
+            <value>-2985.594f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="42.68075f" PrevDistance="26.93048f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2412.8f</value>
+            <value>481.7f</value>
+            <value>-3012.1f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="45.90619f" PrevDistance="42.68075f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-5.800049f</value>
+              <value>0.8000183f</value>
+              <value>12.3999f</value>
+            </value>
+            <value type="array">
+              <value>5.800049f</value>
+              <value>-0.8000183f</value>
+              <value>-12.40015f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2406.8f</value>
+            <value>477.3f</value>
+            <value>-3053.9f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="45.90619f" Rotate="2.210795f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2379.9f</value>
+            <value>473.6f</value>
+            <value>-3090.8f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2408.87f</value>
+        <value>481.3943f</value>
+        <value>-3020.765f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-741767542" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="50.46991f" PrevDistance="0f" Rotate="-2.906991f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2424.8f</value>
+            <value>498.5f</value>
+            <value>-2891.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="11.23238f" PrevDistance="50.46991f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>0.5f</value>
+              <value>0.2999878f</value>
+              <value>1.900146f</value>
+            </value>
+            <value type="array">
+              <value>-0.5f</value>
+              <value>-0.2999878f</value>
+              <value>-1.899902f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2436.4f</value>
+            <value>492.1f</value>
+            <value>-2940.3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="13.21731f" PrevDistance="11.23238f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-0.6999512f</value>
+              <value>0.5999756f</value>
+              <value>4.600098f</value>
+            </value>
+            <value type="array">
+              <value>0.6999512f</value>
+              <value>-0.5999756f</value>
+              <value>-4.599854f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2437.2f</value>
+            <value>490.4f</value>
+            <value>-2951.3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="13.21731f" Rotate="2.470793f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2429.206f</value>
+            <value>489.012f</value>
+            <value>-2961.431f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2431.901f</value>
+        <value>492.503f</value>
+        <value>-2936.158f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
     <value HashId="-616436917" IsClosed="false">
       <RailPoints type="array">
         <value NextDistance="151.4795f" PrevDistance="0f" Rotate="-1.76f">
@@ -21665,6 +23364,127 @@
         <value>-2937.515f</value>
         <value>294.2453f</value>
         <value>-2123.572f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-102212374" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="19.35053f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2792.1f</value>
+            <value>665.5f</value>
+            <value>-2810.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="51.76873f" PrevDistance="19.35053f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-1.847168f</value>
+              <value>1.39032f</value>
+              <value>-4.133301f</value>
+            </value>
+            <value type="array">
+              <value>1.847412f</value>
+              <value>-1.39032f</value>
+              <value>4.133301f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2785.047f</value>
+            <value>661.0903f</value>
+            <value>-2793.133f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="28.92277f" PrevDistance="51.76873f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>-3.700195f</value>
+              <value>2.399963f</value>
+              <value>-5.400146f</value>
+            </value>
+            <value type="array">
+              <value>3.699951f</value>
+              <value>-2.399963f</value>
+              <value>5.399902f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2765.9f</value>
+            <value>646.3f</value>
+            <value>-2747.4f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="28.92277f" Rotate="0.8800001f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2747.4f</value>
+            <value>636.861f</value>
+            <value>-2727.3f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2772.612f</value>
+        <value>652.4378f</value>
+        <value>-2769.608f</value>
+      </Translate>
+      <UnitConfigName type="string">Guide</UnitConfigName>
+    </value>
+    <value HashId="-28580746" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="32.0686f" PrevDistance="0f" Rotate="-2.921593f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2399.8f</value>
+            <value>514.9f</value>
+            <value>-2800.5f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="64.17349f" PrevDistance="32.0686f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <ControlPoints type="array">
+            <value type="array">
+              <value>1.599854f</value>
+              <value>0.7999878f</value>
+              <value>4.900146f</value>
+            </value>
+            <value type="array">
+              <value>-1.600098f</value>
+              <value>-0.7999878f</value>
+              <value>-4.899902f</value>
+            </value>
+          </ControlPoints>
+          <Translate type="array">
+            <value>-2411.7f</value>
+            <value>508.6f</value>
+            <value>-2829.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="64.17349f" Rotate="-2.906991f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-2424.8f</value>
+            <value>498.5f</value>
+            <value>-2891.6f</value>
+          </Translate>
+          <UnitConfigName type="string">GuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Bezier</RailType>
+      <Translate type="array">
+        <value>-2412.1f</value>
+        <value>507.3333f</value>
+        <value>-2840.567f</value>
       </Translate>
       <UnitConfigName type="string">Guide</UnitConfigName>
     </value>

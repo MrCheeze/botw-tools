@@ -2011,7 +2011,7 @@
     <value DeleteRev="-1" HashValue="-1859794541" InitValue="0" IsEventAssociated="true" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MiniGame_ParasailArchery_Playing</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1771922664" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1771922664" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">MiniGame_ParasailArchery_Start</DataName>
     </value>
     <value DeleteRev="-1" HashValue="1805790378" InitValue="1" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -4102,7 +4102,7 @@
     <value DeleteRev="-1" HashValue="-576582984" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">HatenoNPC012_MountainFirst</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="476935007" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="476935007" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">Wind_Relic_Parashawl_Fail_AreaInAppear</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-565920134" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -8548,7 +8548,7 @@
     <value DeleteRev="-1" HashValue="1942700350" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">CompleteDungeon_Activated</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-433918205" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-433918205" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">CompleteDungeon_Finish</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-11868283" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
@@ -8869,7 +8869,7 @@
     <value DeleteRev="-1" HashValue="1499760973" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">Npc_HatenoGate003_second</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="401869177" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="401869177" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="2">
       <DataName type="string">DisableDraw_ChildDevice</DataName>
     </value>
     <value DeleteRev="-1" HashValue="2067985627" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="false" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="2">
@@ -10060,7 +10060,7 @@
     <value DeleteRev="-1" HashValue="610147493" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="true" IsProgramWritable="true" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">Npc_OldKorok_Bow09</DataName>
     </value>
-    <value DeleteRev="-1" HashValue="-1127589860" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="false" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
+    <value DeleteRev="-1" HashValue="-1127589860" InitValue="0" IsEventAssociated="false" IsOneTrigger="false" IsProgramReadable="true" IsProgramWritable="true" IsSave="false" MaxValue="true" MinValue="false" ResetType="0">
       <DataName type="string">BloodyMoonProhibition</DataName>
     </value>
     <value DeleteRev="-1" HashValue="-1933114209" InitValue="0" IsEventAssociated="false" IsOneTrigger="true" IsProgramReadable="false" IsProgramWritable="false" IsSave="true" MaxValue="true" MinValue="false" ResetType="0">

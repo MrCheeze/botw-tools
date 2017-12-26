@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yaml xmlns:yamlconv="yamlconv" yamlconv:endianness="big" yamlconv:offsetCount="3">
+  <Objs type="array">
+    <value HashId="124612308" Rotate="-1.570796f" SRTHash="2099920122">
+      <Translate type="array">
+        <value>-58.5f</value>
+        <value>19.5f</value>
+        <value>-37.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_ShutterFenceFrame_A_01</UnitConfigName>
+    </value>
+    <value HashId="133014003" SRTHash="-996891154">
+      <_Parameters FieldBodyGroup="8" />
+      <Rotate type="array">
+        <value>1.598268f</value>
+        <value>-0.5229468f</value>
+        <value>1.515833f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-86.95026f</value>
+        <value>28.47418f</value>
+        <value>13.36396f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SwordLight_A_01</UnitConfigName>
+    </value>
+    <value HashId="160737850" SRTHash="-758756480">
+      <Rotate type="array">
+        <value>-2.879793f</value>
+        <value>4.37114E-08f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>34.58565f</value>
+        <value>28.31828f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="301463335" OnlyOne="true" Rotate="-1.570796f" SRTHash="-37318721">
+      <_Parameters FieldBodyGroup="14" />
+      <Translate type="array">
+        <value>-6.476488f</value>
+        <value>17.4843f</value>
+        <value>-25.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuObj_Shaft_E_01</UnitConfigName>
+    </value>
+    <value HashId="335010268" Rotate="1.570796f" SRTHash="-1944640939">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>30.45f</value>
+        <value>11.5f</value>
+        <value>-29.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="594179588" Rotate="3.141593f" SRTHash="-1623131222">
+      <Translate type="array">
+        <value>48.45054f</value>
+        <value>4.459992f</value>
+        <value>31.57785f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SwordLight_A_01</UnitConfigName>
+    </value>
+    <value HashId="611961546" SRTHash="-1084284990">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>3.981919E-07f</value>
+        <value>2.282504E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>2.556979f</value>
+        <value>29.40964f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="626717455" Rotate="-1.570796f" SRTHash="-1113404249">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-62f</value>
+        <value>16.5f</value>
+        <value>-23.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="657186736" OnlyOne="true" Rotate="1.570796f" SRTHash="1900486313">
+      <_Parameters FieldBodyGroup="12" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-52f</value>
+        <value>11.25f</value>
+        <value>-25.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_E_Scaffold_A_02</UnitConfigName>
+    </value>
+    <value HashId="878396334" Rotate="3.141593f" SRTHash="601280632" Scale="14f">
+      <_Parameters FlowSpeedFactor="1f" SoundInDoorType="1" WaterMaterial="2" WaterfallAngle="65f" WaterfallLength="2f" WaterfallRadius="7f" WaterfallThickness="0.7f" />
+      <Translate type="array">
+        <value>61.435f</value>
+        <value>9.617188f</value>
+        <value>53.47377f</value>
+      </Translate>
+      <UnitConfigName type="string">BoxWater</UnitConfigName>
+    </value>
+    <value HashId="927304423" SRTHash="495906859">
+      <Rotate type="array">
+        <value>-1.308997f</value>
+        <value>3.981919E-07f</value>
+        <value>2.282504E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>13.77204f</value>
+        <value>39.91745f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="944463570" SRTHash="586409286" Scale="0.85f">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-5.1f</value>
+        <value>26.8f</value>
+        <value>-18.2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="960635942" OnlyOne="true" Rotate="3.141593f" SRTHash="98934471">
+      <_Parameters FieldBodyGroup="5" />
+      <Translate type="array">
+        <value>-43.0625f</value>
+        <value>23f</value>
+        <value>-25.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_E_Shaft_A_01</UnitConfigName>
+    </value>
+    <value HashId="988142151" Rotate="3.141593f" SRTHash="69826126">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-93.09f</value>
+        <value>23f</value>
+        <value>-10.6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="1034377819" SRTHash="1075868004">
+      <Rotate type="array">
+        <value>-1.797689f</value>
+        <value>2.642631E-07f</value>
+        <value>3.696907E-07f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>21.6197f</value>
+        <value>40.39402f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="1146724482" SRTHash="-882692420">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-92.5f</value>
+        <value>14f</value>
+        <value>-32f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="1218175000" SRTHash="647423528">
+      <Rotate type="array">
+        <value>-2.356194f</value>
+        <value>1.891526E-07f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.90261f</value>
+        <value>29.3083f</value>
+        <value>36.6607f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="1232705232" SRTHash="-1316768968">
+      <Translate type="array">
+        <value>60.93145f</value>
+        <value>3.740115f</value>
+        <value>9.021445f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_D_DeathMtLavaFall_A_01</UnitConfigName>
+    </value>
+    <value HashId="1340673261" SRTHash="659746468">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-111.5f</value>
+        <value>17f</value>
+        <value>-27.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="1403432862" Rotate="1.570796f" SRTHash="1013808426">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>30.45f</value>
+        <value>11.5f</value>
+        <value>-21.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="1412935396" Rotate="-3.141593f" SRTHash="1999333859">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-105f</value>
+        <value>14f</value>
+        <value>-17.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="1443901223" OnlyOne="true" SRTHash="409703447">
+      <_Parameters FieldBodyGroup="2" />
+      <Rotate type="array">
+        <value>5.827448E-08f</value>
+        <value>-0.6021386f</value>
+        <value>1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-34.7f</value>
+        <value>18.5f</value>
+        <value>24f</value>
+      </Translate>
+      <UnitConfigName type="string">ElectricGenerator</UnitConfigName>
+    </value>
+    <value HashId="1461906133" Rotate="3.141593f" SRTHash="1358010288">
+      <Translate type="array">
+        <value>42.53648f</value>
+        <value>4.459992f</value>
+        <value>31.57785f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SwordLight_A_01</UnitConfigName>
+    </value>
+    <value HashId="1586530525" Rotate="-3.141593f" SRTHash="-2145492634">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-74f</value>
+        <value>15.5f</value>
+        <value>-13.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="1963347712" SRTHash="1391480320">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>68.01875f</value>
+        <value>24.64063f</value>
+        <value>-38.89375f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1999480500" Rotate="-3.141593f" SRTHash="1354943928">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-111.5f</value>
+        <value>17f</value>
+        <value>-23.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1984791763" SRTHash="156000631">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>34.33594f</value>
+        <value>22.25f</value>
+        <value>-39.04531f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1978640785" Rotate="3.141593f" SRTHash="-1733483107">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-56f</value>
+        <value>23f</value>
+        <value>-12.4f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1954854404" OnlyOne="true" Rotate="1.570796f" SRTHash="137102491">
+      <_Parameters FieldBodyGroup="12" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-52f</value>
+        <value>11.25f</value>
+        <value>-25.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_E_Scaffold_A_03</UnitConfigName>
+    </value>
+    <value HashId="-1938235407" Rotate="3.141593f" SRTHash="-827383285">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-61.90625f</value>
+        <value>24.27344f</value>
+        <value>42.45f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1920645897" Rotate="0.6283185f" SRTHash="1353165139">
+      <Translate type="array">
+        <value>-71f</value>
+        <value>19.5f</value>
+        <value>-37.125f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SwordLight_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1773142227" Rotate="3.141593f" SRTHash="-427194014">
+      <Translate type="array">
+        <value>61.43145f</value>
+        <value>3.740115f</value>
+        <value>38.96676f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_D_DeathMtLavaFall_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1768775645" SRTHash="-1099818112">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>3.981919E-07f</value>
+        <value>2.282504E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>2.174166f</value>
+        <value>27.35495f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1751612072" SRTHash="275661260">
+      <Rotate type="array">
+        <value>2.321288f</value>
+        <value>1.820212E-08f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>29.36384f</value>
+        <value>11.15574f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1686233297" SRTHash="2093673961">
+      <Rotate type="array">
+        <value>2.879793f</value>
+        <value>8.682674E-08f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.84375f</value>
+        <value>34.12471f</value>
+        <value>18.41461f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1644676457" SRTHash="1414930686" Scale="14f">
+      <_Parameters FlowSpeedFactor="1f" SoundInDoorType="1" WaterMaterial="2" WaterfallAngle="65f" WaterfallLength="2f" WaterfallRadius="7f" WaterfallThickness="0.7f" />
+      <Translate type="array">
+        <value>60.935f</value>
+        <value>9.617188f</value>
+        <value>-5.534039f</value>
+      </Translate>
+      <UnitConfigName type="string">BoxWater</UnitConfigName>
+    </value>
+    <value HashId="-1541574576" Rotate="3.141593f" SRTHash="-377943271">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>34.22656f</value>
+        <value>34.58594f</value>
+        <value>-20.41406f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1525351820" SRTHash="-114898475" Scale="0.85f">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>5.1f</value>
+        <value>26.8f</value>
+        <value>-18.2f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1440138692" OnlyOne="true" SRTHash="35114508">
+      <_Parameters FieldBodyGroup="10" />
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>-1.265364f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>50.61808f</value>
+        <value>1.998488f</value>
+        <value>24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_Cylinder_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1396805684" SRTHash="-1320389729">
+      <Rotate type="array">
+        <value>1.308997f</value>
+        <value>4.613392E-08f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>13.71735f</value>
+        <value>8.015053f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1240836970" SRTHash="1683062337">
+      <Rotate type="array">
+        <value>1.832596f</value>
+        <value>4.613392E-08f</value>
+        <value>0f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>22.38142f</value>
+        <value>7.753391f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1119822670" Rotate="-1.570796f" SRTHash="1079318103">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-117.11f</value>
+        <value>11.5f</value>
+        <value>-30.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1118687617" OnlyOne="true" SRTHash="-397558048">
+      <_Parameters FieldBodyGroup="10" SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>0f</value>
+        <value>-1.265364f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>50.61808f</value>
+        <value>1.998488f</value>
+        <value>24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_WallSpike_A_01</UnitConfigName>
+    </value>
+    <value HashId="-1117326535" OnlyOne="true" SRTHash="-674301470">
+      <Translate type="array">
+        <value>66.94814f</value>
+        <value>9.682752f</value>
+        <value>24.01005f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC2_DungeonFire_Effect</UnitConfigName>
+    </value>
+    <value HashId="-978656067" OnlyOne="true" SRTHash="1020106314">
+      <Rotate type="array">
+        <value>0.05235692f</value>
+        <value>2.391045E-10f</value>
+        <value>9.131547E-09f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-80.17422f</value>
+        <value>37.99913f</value>
+        <value>-26.75218f</value>
+      </Translate>
+      <UnitConfigName type="string">DLC2_DungeonWater_Effect</UnitConfigName>
+    </value>
+    <value HashId="-858239931" SRTHash="-506405798">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>3.981919E-07f</value>
+        <value>2.282504E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>1.908541f</value>
+        <value>23.29245f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="-831504732" Rotate="-1.570796f" SRTHash="1953893800">
+      <Translate type="array">
+        <value>93.17188f</value>
+        <value>23f</value>
+        <value>-15.35938f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SwordLight_A_01</UnitConfigName>
+    </value>
+    <value HashId="-740504583" SRTHash="251774697">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>3.981919E-07f</value>
+        <value>2.282504E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>2.556979f</value>
+        <value>19.40183f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="-716613669" SRTHash="2099920122">
+      <Translate type="array">
+        <value>45.5f</value>
+        <value>4.480768f</value>
+        <value>34.13281f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_ShutterFenceFrame_A_01</UnitConfigName>
+    </value>
+    <value HashId="-673129080" Rotate="3.141593f" SRTHash="1839333468">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-74f</value>
+        <value>23f</value>
+        <value>-10.6f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-672906318" SRTHash="-1509084866">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-61.90625f</value>
+        <value>24.27344f</value>
+        <value>5.55f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-643463796" Rotate="-0.6283185f" SRTHash="1168423497">
+      <Translate type="array">
+        <value>-65f</value>
+        <value>19.5f</value>
+        <value>-37.125f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SwordLight_A_01</UnitConfigName>
+    </value>
+    <value HashId="-588536528" OnlyOne="true" SRTHash="-949894820">
+      <Translate type="array">
+        <value>0f</value>
+        <value>0f</value>
+        <value>0f</value>
+      </Translate>
+      <UnitConfigName type="string">Obj_MapModel_A_01</UnitConfigName>
+    </value>
+    <value HashId="-544166779" SRTHash="1907966181">
+      <_Parameters FieldBodyGroup="8" />
+      <Rotate type="array">
+        <value>1.575188f</value>
+        <value>-0.5235808f</value>
+        <value>1.562012f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>-86.99323f</value>
+        <value>22.72377f</value>
+        <value>10.04029f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SwordLight_A_01</UnitConfigName>
+    </value>
+    <value HashId="-471529868" Rotate="-1.570796f" SRTHash="1545598129">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <Translate type="array">
+        <value>-117.11f</value>
+        <value>11.5f</value>
+        <value>-20.5f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuEx_Candle_A_01</UnitConfigName>
+    </value>
+    <value HashId="-456324221" Rotate="-1.570796f" SRTHash="1924187897">
+      <Translate type="array">
+        <value>93.17188f</value>
+        <value>23f</value>
+        <value>-19.75781f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_SwordLight_A_01</UnitConfigName>
+    </value>
+    <value HashId="-96609150" OnlyOne="true" SRTHash="1127373784">
+      <_Parameters FieldBodyGroup="6" GearRatio="1f" JoinSystemGroup="true" RegistFromBeginning="true" />
+      <Rotate type="array">
+        <value>1.570796f</value>
+        <value>1.260002f</value>
+        <value>-1.570796f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>98.9f</value>
+        <value>18.5f</value>
+        <value>24f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_Hole_A_02</UnitConfigName>
+    </value>
+    <value HashId="-94552014" SRTHash="-1162298325">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>3.981919E-07f</value>
+        <value>2.282504E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>1.908541f</value>
+        <value>25.34714f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+    <value HashId="-129886" SRTHash="-42686189">
+      <Rotate type="array">
+        <value>0f</value>
+        <value>3.981919E-07f</value>
+        <value>2.282504E-08f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>69.9026f</value>
+        <value>2.174166f</value>
+        <value>21.31589f</value>
+      </Translate>
+      <UnitConfigName type="string">DgnObj_DLC_IbutsuExD_FireBox_A_01</UnitConfigName>
+    </value>
+  </Objs>
+  <Rails type="array" />
+</yaml>

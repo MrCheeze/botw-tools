@@ -19961,6 +19961,36 @@
       </Translate>
       <UnitConfigName type="string">Route</UnitConfigName>
     </value>
+    <value HashId="633786463" IsClosed="false">
+      <RailPoints type="array">
+        <value NextDistance="15f" PrevDistance="0f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" MoveSpeed="0.1f" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-1102.2f</value>
+            <value>500f</value>
+            <value>980f</value>
+          </Translate>
+          <UnitConfigName type="string">RemainGuidePoint</UnitConfigName>
+        </value>
+        <value NextDistance="0f" PrevDistance="15f">
+          <_Parameters IsAdjustPosAndDirToPoint="false" MoveSpeed="0.1f" WaitFrame="0f" />
+          <Translate type="array">
+            <value>-1102.2f</value>
+            <value>500f</value>
+            <value>965f</value>
+          </Translate>
+          <UnitConfigName type="string">RemainGuidePoint</UnitConfigName>
+        </value>
+      </RailPoints>
+      <RailType type="string">Linear</RailType>
+      <Translate type="array">
+        <value>-1102.2f</value>
+        <value>500f</value>
+        <value>972.5f</value>
+      </Translate>
+      <UniqueName type="string">FinalTrialDefault</UniqueName>
+      <UnitConfigName type="string">RemainGuide</UnitConfigName>
+    </value>
     <value HashId="757217104" IsClosed="true">
       <RailPoints type="array">
         <value NextDistance="50.39472f" PrevDistance="77.41636f" Rotate="-1.56f">

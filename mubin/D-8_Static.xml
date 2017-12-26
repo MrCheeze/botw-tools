@@ -156,6 +156,44 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_03</UnitConfigName>
     </value>
+    <value HashId="73923603" SRTHash="1832429503">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2078936691">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="1322978484">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-851785541">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1521f</value>
+        <value>436.5f</value>
+        <value>2912f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="82166658" SRTHash="-293298776">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-811030780">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1515.5f</value>
+        <value>437f</value>
+        <value>2927f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="83228119" Rotate="-0.3400003f" SRTHash="1094710254" Scale="1.079498f">
       <Translate type="array">
         <value>-1581.846f</value>
@@ -241,6 +279,24 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeSnow_A_03_Far</UnitConfigName>
     </value>
+    <value HashId="127234324" SRTHash="1352186233" Scale="283f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-889039209">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1527f</value>
+        <value>440.8071f</value>
+        <value>2915f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="131938426" Rotate="-1.181592f" SRTHash="894653151" Scale="1.052987f">
       <Translate type="array">
         <value>-1241.521f</value>
@@ -264,6 +320,23 @@
         <value>3671.94f</value>
       </Translate>
       <UnitConfigName type="string">IceWall</UnitConfigName>
+    </value>
+    <value HashId="189582132" SRTHash="-640371408">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroGerudo_Ready</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2098423353">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1517f</value>
+        <value>440f</value>
+        <value>2923f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="198404933" SRTHash="-1279713493">
       <Rotate type="array">
@@ -1230,6 +1303,18 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="646246824" OnlyOne="true" Rotate="-1.047198f" SRTHash="1451582938">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_3</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1536.5f</value>
+        <value>426f</value>
+        <value>2919f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DLC_HeroMap_A_03</UnitConfigName>
+    </value>
     <value HashId="654066342" SRTHash="300113120">
       <Rotate type="array">
         <value>-3.136821f</value>
@@ -1817,6 +1902,24 @@
       <UniqueName type="string">Demo008_0_PlayerEndPos</UniqueName>
       <UnitConfigName type="string">PosAfterDemoSkip</UnitConfigName>
     </value>
+    <value HashId="914989134" SRTHash="-1910183471" Scale="7f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-603793612">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1527.1f</value>
+        <value>425f</value>
+        <value>2915.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="916566943" Rotate="-1.78f" SRTHash="-1199744882">
       <Translate type="array">
         <value>-1419.715f</value>
@@ -1879,6 +1982,18 @@
         <value>3414.265f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_03_Far</UnitConfigName>
+    </value>
+    <value HashId="947713114" OnlyOne="true" Rotate="-1.047198f" SRTHash="218170354">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_3</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1536.5f</value>
+        <value>426f</value>
+        <value>2919f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DLC_HeroMap_A_01</UnitConfigName>
     </value>
     <value HashId="950894296" Rotate="-2.760001f" SRTHash="-1855409339">
       <LinksToObj type="array">
@@ -2409,6 +2524,18 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="1322978484" SRTHash="-213097713" Scale="5f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1527.1f</value>
+        <value>425.5f</value>
+        <value>2915.7f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
     <value HashId="1326841958" SRTHash="0">
       <_Parameters LocationPriority="1">
         <MessageID type="string">Dungeon103</MessageID>
@@ -2668,6 +2795,23 @@
         <value>3691.927f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_RockOrangePillar_A_02</UnitConfigName>
+    </value>
+    <value HashId="1459263707" SRTHash="-1271472443">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroGerudo_Ready</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="73923603">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1520f</value>
+        <value>438f</value>
+        <value>2911f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="1469438240" Rotate="-1.245538f" SRTHash="-13767546">
       <_Parameters>
@@ -3040,6 +3184,23 @@
         <value>3575.921f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="1638286057" SRTHash="-2086281658" Scale="3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroGerudo_Seek3rdDungeon</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-76992068">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1518.694f</value>
+        <value>652.2617f</value>
+        <value>2911.576f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
     <value HashId="1644418828" Rotate="0.2092031f" SRTHash="2127213704">
       <LinksToObj type="array">
@@ -3655,6 +3816,17 @@
       </Translate>
       <UnitConfigName type="string">SwitchTimeLag</UnitConfigName>
     </value>
+    <value HashId="1972953265" SRTHash="757952394">
+      <_Parameters>
+        <GetUpDirection type="string">None</GetUpDirection>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1527.1f</value>
+        <value>425.3035f</value>
+        <value>2915.7f</value>
+      </Translate>
+      <UnitConfigName type="string">AnchorAction1</UnitConfigName>
+    </value>
     <value HashId="1986757007" SRTHash="-1554626600">
       <Rotate type="array">
         <value>3.125239f</value>
@@ -3784,6 +3956,19 @@
         <value>3447.5f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HugeMazeLadder_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="2063961774" Rotate="-1.047198f" SRTHash="889503586">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_3</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1536.5f</value>
+        <value>426f</value>
+        <value>2919f</value>
+      </Translate>
+      <UniqueName type="string">Gerudo</UniqueName>
+      <UnitConfigName type="string">FldObj_DLC_HeroMapRelief_A_01</UnitConfigName>
     </value>
     <value HashId="2064002312" Rotate="0.4f" SRTHash="339239151">
       <LinksToObj type="array">
@@ -4118,6 +4303,29 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeTop_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="-2098423353" SRTHash="290636868">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-811030780">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-877970477">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="914989134">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1516f</value>
+        <value>438.5f</value>
+        <value>2924.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-2081740977" SRTHash="-1181582085">
       <Rotate type="array">
         <value>2.301593f</value>
@@ -4145,6 +4353,22 @@
         <value>3506.31f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-2078936691" OnlyOne="true" SRTHash="-1388316471">
+      <_Parameters TerritoryArea="0f" TraverseRadiusXZ="0f">
+        <TraversePos X="-1527.1f" Y="425.3035f" Z="2915.7f" />
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1972953265">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1527f</value>
+        <value>425.1508f</value>
+        <value>2915f</value>
+      </Translate>
+      <UnitConfigName type="string">Npc_Musician_AoC_HeroGerudoRelief</UnitConfigName>
     </value>
     <value HashId="-2064965866" Rotate="0.4363323f" SRTHash="506524522">
       <Translate type="array">
@@ -4471,6 +4695,18 @@
         <value>3716.425f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeSnow_A_05</UnitConfigName>
+    </value>
+    <value HashId="-1927200289" OnlyOne="true" Rotate="-1.047198f" SRTHash="2014907535">
+      <_Parameters SharpWeaponJudgeType="0">
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_3</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1536.5f</value>
+        <value>426f</value>
+        <value>2919f</value>
+      </Translate>
+      <UnitConfigName type="string">FldObj_DLC_HeroMap_A_02</UnitConfigName>
     </value>
     <value HashId="-1924576557" SRTHash="2063000023">
       <Rotate type="array">
@@ -5226,6 +5462,20 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeSnow_A_03_Far</UnitConfigName>
     </value>
+    <value HashId="-1486876278" Rotate="-1.047198f" SRTHash="-378852909">
+      <_Parameters SharpWeaponJudgeType="0">
+        <ClearFlag type="string">Clear_Dungeon133</ClearFlag>
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_3</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1536.5f</value>
+        <value>426f</value>
+        <value>2919f</value>
+      </Translate>
+      <UniqueName type="string">Gerudo</UniqueName>
+      <UnitConfigName type="string">FldObj_DLC_HeroMapRelief_Mark_A_03</UnitConfigName>
+    </value>
     <value HashId="-1479112308" SRTHash="-1499624554">
       <_Parameters GiantRoamType="1" IsCreateStalPart="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
         <EquipItem3 type="string">Weapon_Sword_030</EquipItem3>
@@ -5356,6 +5606,15 @@
         <value>3228.195f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeTop_A_02</UnitConfigName>
+    </value>
+    <value HashId="-1436494811" SRTHash="-1219492981">
+      <_Parameters NonAutoPlacementAnimal="true" NonAutoPlacementBird="false" NonAutoPlacementEnemy="true" NonAutoPlacementFish="false" NonAutoPlacementInsect="false" NonAutoPlacementMaterial="false" NonEnemySearchPlayer="false" />
+      <Translate type="array">
+        <value>-1526.5f</value>
+        <value>480.5f</value>
+        <value>2912.5f</value>
+      </Translate>
+      <UnitConfigName type="string">PlayerInAreaAutoEnemyForbidTag</UnitConfigName>
     </value>
     <value HashId="-1431365452" OnlyOne="true" SRTHash="-80661363">
       <LinksToObj type="array">
@@ -5655,6 +5914,45 @@
         <value>3457.5f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HugeMazeParts_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="-1279350853" SRTHash="-967578480">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="2063961774">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1486876278">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1927200289">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="947713114">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1011804395">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="646246824">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1100655591">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1535.5f</value>
+        <value>441f</value>
+        <value>2918f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1275023871" SRTHash="1159663274">
       <LinksToObj type="array">
@@ -5992,6 +6290,20 @@
       </Translate>
       <UnitConfigName type="string">Npc_HiddenKorokGround</UnitConfigName>
     </value>
+    <value HashId="-1100655591" Rotate="-1.047198f" SRTHash="1052572808">
+      <_Parameters SharpWeaponJudgeType="0">
+        <ClearFlag type="string">Clear_Dungeon121</ClearFlag>
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_3</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1536.5f</value>
+        <value>426f</value>
+        <value>2919f</value>
+      </Translate>
+      <UniqueName type="string">Gerudo</UniqueName>
+      <UnitConfigName type="string">FldObj_DLC_HeroMapRelief_Mark_A_02</UnitConfigName>
+    </value>
     <value HashId="-1077777957" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -6146,6 +6458,20 @@
         <value>3691.06f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeSnow_A_05</UnitConfigName>
+    </value>
+    <value HashId="-1011804395" Rotate="-1.047198f" SRTHash="1656699716">
+      <_Parameters SharpWeaponJudgeType="0">
+        <ClearFlag type="string">Clear_Dungeon134</ClearFlag>
+        <DropTable type="string">Normal</DropTable>
+        <OpenFlag type="string">IsPlayed_Demo610_3</OpenFlag>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1536.5f</value>
+        <value>426f</value>
+        <value>2919f</value>
+      </Translate>
+      <UniqueName type="string">Gerudo</UniqueName>
+      <UnitConfigName type="string">FldObj_DLC_HeroMapRelief_Mark_A_01</UnitConfigName>
     </value>
     <value HashId="-1004076739" Rotate="0.4363323f" SRTHash="251492123">
       <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
@@ -6398,6 +6724,23 @@
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
+    <value HashId="-899289634" SRTHash="561931912">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroGerudo_Ready</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1279350853">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1536.5f</value>
+        <value>443.5f</value>
+        <value>2917f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="-889677657" Rotate="-0.8399998f" SRTHash="1407110281">
       <LinksToObj type="array">
         <value DestUnitHashId="1089065938">
@@ -6410,6 +6753,21 @@
         <value>3369.174f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWall_A_03</UnitConfigName>
+    </value>
+    <value HashId="-889039209" SRTHash="1423914787">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1436494811">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1527.5f</value>
+        <value>478.5f</value>
+        <value>2913.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
     </value>
     <value HashId="-883720050" OnlyOne="true" SRTHash="-34529611">
       <LinksToObj type="array">
@@ -6431,6 +6789,24 @@
         <value>3457.5f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_HugeMazeWall_A_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-877970477" SRTHash="875601995" Scale="13f">
+      <_Parameters AutoSave="false" CameraPriority="1" ForceCalcInEvent="false">
+        <CameraSet type="string">-</CameraSet>
+        <Shape type="string">Sphere</Shape>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-603793612">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1536.5f</value>
+        <value>426.5f</value>
+        <value>2919f</value>
+      </Translate>
+      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-874528206" SRTHash="-1554626600">
       <LinksToObj type="array">
@@ -6563,6 +6939,18 @@
       </Translate>
       <UnitConfigName type="string">LinkTagPulse</UnitConfigName>
     </value>
+    <value HashId="-851785541" SRTHash="332323004" Scale="5f">
+      <_Parameters IsStopWithoutReductionY="false" SpotBgmLifeScaleMargin="0f">
+        <Shape type="string">Sphere</Shape>
+        <Sound type="string">MusicianSpotBgm</Sound>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1527.1f</value>
+        <value>425.5f</value>
+        <value>2915.7f</value>
+      </Translate>
+      <UnitConfigName type="string">MusicianSpotBgmTag</UnitConfigName>
+    </value>
     <value HashId="-845161839" Rotate="-0.3f" SRTHash="10811973">
       <Translate type="array">
         <value>-1387.769f</value>
@@ -6612,6 +7000,18 @@
         <value>3003.462f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWall_A_19</UnitConfigName>
+    </value>
+    <value HashId="-811030780" SRTHash="-2122451596">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">Ready_Npc_Musician_AoC_HeroGerudoRelief_Talk</EventFlowEntryName>
+        <EventFlowName type="string">BalladOfHeroGerudo</EventFlowName>
+      </_Parameters>
+      <Translate type="array">
+        <value>-1514f</value>
+        <value>438f</value>
+        <value>2926f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
     </value>
     <value HashId="-810998158" Rotate="-0.6000001f" SRTHash="1931607307">
       <Translate type="array">
@@ -7009,6 +7409,21 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrange_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="-603793612" SRTHash="-1703818713">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="82166658">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1518.5f</value>
+        <value>437f</value>
+        <value>2926.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
     <value HashId="-602744572" Rotate="-3.023186f" SRTHash="80948631">
       <Translate type="array">
         <value>-1344.764f</value>
@@ -7028,6 +7443,23 @@
         <value>3241.895f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-589703821" SRTHash="1642843721">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroGerudo_Seek3rdDungeon</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="73923603">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1522f</value>
+        <value>438f</value>
+        <value>2911f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNOr</UnitConfigName>
     </value>
     <value HashId="-579828841" SRTHash="612777024">
       <LinksToObj type="array">
@@ -7783,6 +8215,23 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWall_A_33_Far</UnitConfigName>
     </value>
+    <value HashId="-203400940" SRTHash="-1066465954">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroGerudo_Activated</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2098423353">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1515f</value>
+        <value>440f</value>
+        <value>2923f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagNOr</UnitConfigName>
+    </value>
     <value HashId="-201628452" Rotate="-2.268583f" SRTHash="252782096">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="1">
         <SaveFlag type="string">SecretofObject_Step1</SaveFlag>
@@ -7927,6 +8376,23 @@
       </Translate>
       <UnitConfigName type="string">Enemy_Guardian_A_Fixed_Snow</UnitConfigName>
     </value>
+    <value HashId="-110372727" SRTHash="-1766461016" Scale="3f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHeroGerudo_Ready</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-76992068">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1520.2f</value>
+        <value>652.4529f</value>
+        <value>2911.048f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-109387299" SRTHash="1723826542" Scale="2.520943f">
       <LinksToObj type="array">
         <value DestUnitHashId="-1028934295">
@@ -8022,6 +8488,25 @@
         <value>4011.818f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffOrangeWallEnd_A_33</UnitConfigName>
+    </value>
+    <value HashId="-76992068" SRTHash="-206555008" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="127234324">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+        <value DestUnitHashId="-1436494811">
+          <_Parameters AppearFade="false" />
+          <DefinitionName type="string">Create</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>-1519.96f</value>
+        <value>654.1575f</value>
+        <value>2910.765f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-63111002" Rotate="-1.78f" SRTHash="-1199744882">
       <LinksToObj type="array">

@@ -3431,6 +3431,27 @@
       </Translate>
       <UnitConfigName type="string">AnchorAction1_Rain</UnitConfigName>
     </value>
+    <value HashId="1406700828" SRTHash="481197691" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHero_ForDemo</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="922716078">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.7689019f</value>
+        <value>0.3369287f</value>
+        <value>-0.7958924f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1471.512f</value>
+        <value>573.5603f</value>
+        <value>-1543.493f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1410126527" SRTHash="-1280610978">
       <LinksToObj type="array">
         <value DestUnitHashId="-2002179785">
@@ -4822,6 +4843,27 @@
         <value>-1773.763f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeBroadleaf_B_L_01</UnitConfigName>
+    </value>
+    <value HashId="1816582647" SRTHash="481197691" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">BalladOfHero_ForDemo</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-63702994">
+          <DefinitionName type="string">Delete</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>0.7689019f</value>
+        <value>0.3369287f</value>
+        <value>-0.7958924f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1471.512f</value>
+        <value>573.5603f</value>
+        <value>-1543.493f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1818121843" SRTHash="742288426">
       <_Parameters TerritoryArea="0f" TraverseRadiusXZ="24.3066f">

@@ -3288,6 +3288,9 @@
     </value>
     <value HashId="1423270545" OnlyOne="true" SRTHash="118046521">
       <LinksToObj type="array">
+        <value DestUnitHashId="2126285571">
+          <DefinitionName type="string">Reference</DefinitionName>
+        </value>
         <value DestUnitHashId="-59115770">
           <DefinitionName type="string">PlacementLOD</DefinitionName>
         </value>
@@ -4858,6 +4861,14 @@
         <value>-3836.697f</value>
       </Translate>
       <UnitConfigName type="string">ChangeWeatherTag</UnitConfigName>
+    </value>
+    <value HashId="2126285571" OnlyOne="true" SRTHash="-1294957606">
+      <Translate type="array">
+        <value>-4419.184f</value>
+        <value>-499.973f</value>
+        <value>-3499.143f</value>
+      </Translate>
+      <UnitConfigName type="string">DragonFireEffectHolder</UnitConfigName>
     </value>
     <value HashId="2126570045" SRTHash="0">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />

@@ -1333,6 +1333,28 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreePalmJungle_A_LL_01</UnitConfigName>
     </value>
+    <value HashId="124834638" SRTHash="-1964837096" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Open02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-822413814">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1016.876f</value>
+        <value>132.9692f</value>
+        <value>3242.865f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="125866025" SRTHash="-95677308">
       <LinksToObj type="array">
         <value DestUnitHashId="-910211728">
@@ -1540,6 +1562,24 @@
         <value>3298.73f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffTropicsWall_A_06_Far</UnitConfigName>
+    </value>
+    <value HashId="142903821" Rotate="0.24f" SRTHash="847629222">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_180_Head</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1864731195">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>1669.188f</value>
+        <value>209.3382f</value>
+        <value>3163.018f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
     </value>
     <value HashId="143346958" Rotate="0.8600001f" SRTHash="878662577">
       <Translate type="array">
@@ -1822,6 +1862,23 @@
         <value>3246.662f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="169737548" SRTHash="1653634450" Scale="5f">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">TreasureHunt_touzoku08_RemainingBox</EventFlowEntryName>
+        <EventFlowName type="string">Obj_Diary_touzoku_02</EventFlowName>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.2205633f</value>
+        <value>-0.01407433f</value>
+        <value>-0.1269442f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1675.861f</value>
+        <value>226.9277f</value>
+        <value>3165.738f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
     </value>
     <value HashId="170743998" Rotate="2.750799f" SRTHash="-1588260575">
       <_Parameters IsHardModeActor="true" IsNearCreate="false" LevelSensorMode="0" NearCreateAppearID="0" SharpWeaponJudgeType="0" TerritoryArea="0f">
@@ -6017,6 +6074,28 @@
         <value>3036.213f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_TreeRootTropical_A_L_04</UnitConfigName>
+    </value>
+    <value HashId="598580757" SRTHash="-1989447436" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Open03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-206285906">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1840.958f</value>
+        <value>208.5011f</value>
+        <value>3362.452f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="600024288" Rotate="0.7f" SRTHash="232455007">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -12048,6 +12127,22 @@
       </Translate>
       <UnitConfigName type="string">TBox_Field_Iron</UnitConfigName>
     </value>
+    <value HashId="1170133047" SRTHash="1026685320" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Finish</SaveFlag>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1662.538f</value>
+        <value>238.8261f</value>
+        <value>3157.678f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1170538191" SRTHash="-1786003391" Scale="0.8f">
       <Rotate type="array">
         <value>1.886303f</value>
@@ -12068,6 +12163,24 @@
         <value>3293.269f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffTropicsWall_A_02_Far</UnitConfigName>
+    </value>
+    <value HashId="1174572224" Rotate="-2.759995f" SRTHash="1613777016">
+      <_Parameters EnableRevival="false" IsInGround="false" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_180_Upper</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="1820913025">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Translate type="array">
+        <value>1026.206f</value>
+        <value>119.1767f</value>
+        <value>3239.885f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
     </value>
     <value HashId="1175332100" Rotate="2.06047f" SRTHash="976589232" Scale="1.1018f">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -12347,6 +12460,28 @@
         <value>3189.5f</value>
       </Translate>
       <UnitConfigName type="string">Enemy_Lizalfos_Guard_Junior_LongVisibility</UnitConfigName>
+    </value>
+    <value HashId="1200465440" SRTHash="1317095564" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Open01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-766433183">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1662.538f</value>
+        <value>223.3261f</value>
+        <value>3164.936f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="1200690306" SRTHash="1444312280" Scale="1.1f">
       <Rotate type="array">
@@ -13657,6 +13792,23 @@
         <value>3611.361f</value>
       </Translate>
       <UnitConfigName type="string">DgnObj_EntranceShutter_A_01</UnitConfigName>
+    </value>
+    <value HashId="1301482964" SRTHash="-1337497384" Scale="5f">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">TreasureHunt_touzoku08_RemainingBox</EventFlowEntryName>
+        <EventFlowName type="string">Obj_Diary_touzoku_02</EventFlowName>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.2205633f</value>
+        <value>-0.01407433f</value>
+        <value>-0.1269442f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1030.199f</value>
+        <value>136.5708f</value>
+        <value>3243.668f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
     </value>
     <value HashId="1306502455" SRTHash="232455007">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -18994,6 +19146,30 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="1820913025" SRTHash="367839775" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1301482964">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="124834638">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1024.095f</value>
+        <value>132.9692f</value>
+        <value>3242.865f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="1822930406" SRTHash="-769721078">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -21629,6 +21805,22 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="2067835088" SRTHash="-441812711" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Finish</SaveFlag>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1840.958f</value>
+        <value>224.0011f</value>
+        <value>3355.195f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="2070879947" SRTHash="0">
       <_Parameters IncrementSave="false" IsHardModeActor="true" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
         <SaveFlag type="string">AoC_HardMode_Enabled</SaveFlag>
@@ -23371,6 +23563,29 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeTropical_A_LL_01</UnitConfigName>
     </value>
+    <value HashId="-2060187972" SRTHash="1326308556">
+      <_Parameters EnableRevival="false" IsInGround="true" SharpWeaponJudgeType="0">
+        <DropActor type="string">Armor_180_Lower</DropActor>
+        <DropTable type="string">Normal</DropTable>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1500018826">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>2.723728f</value>
+        <value>-0.5659759f</value>
+        <value>-2.924972f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1832.85f</value>
+        <value>160.0836f</value>
+        <value>3355.488f</value>
+      </Translate>
+      <UnitConfigName type="string">TBox_Field_Iron_NoReaction_Aoc</UnitConfigName>
+    </value>
     <value HashId="-2058424828" Rotate="1.599996f" SRTHash="-299577451">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -23905,6 +24120,23 @@
         <value>3356.991f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeGiant_A_01</UnitConfigName>
+    </value>
+    <value HashId="-2011018003" SRTHash="2067449010" Scale="5f">
+      <_Parameters IsEndlessEvent="false" LaunchEventByOffSignal="false" LaunchEventByOnSignal="true">
+        <EventFlowEntryName type="string">TreasureHunt_touzoku08_RemainingBox</EventFlowEntryName>
+        <EventFlowName type="string">Obj_Diary_touzoku_02</EventFlowName>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.2205633f</value>
+        <value>-0.01407433f</value>
+        <value>-0.1269442f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1854.281f</value>
+        <value>212.1027f</value>
+        <value>3363.254f</value>
+      </Translate>
+      <UnitConfigName type="string">EventTag</UnitConfigName>
     </value>
     <value HashId="-2008500069" Rotate="-0.3490659f" SRTHash="-775573804">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
@@ -25540,6 +25772,30 @@
       </Translate>
       <UnitConfigName type="string">LinkTagNAnd</UnitConfigName>
     </value>
+    <value HashId="-1864731195" SRTHash="1058685574" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="169737548">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="1200465440">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1669.757f</value>
+        <value>223.3261f</value>
+        <value>3164.936f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1864353414" SRTHash="836954991">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -26559,6 +26815,22 @@
         <value>3204.038f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagOr</UnitConfigName>
+    </value>
+    <value HashId="-1774473445" SRTHash="1891021366" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Finish</SaveFlag>
+      </_Parameters>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1016.876f</value>
+        <value>148.4692f</value>
+        <value>3235.608f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-1773522930" Rotate="-0.4f" SRTHash="-995292279">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
@@ -29195,6 +29467,30 @@
       </Translate>
       <UnitConfigName type="string">FldObj_TreeRootTropical_A_L_02</UnitConfigName>
     </value>
+    <value HashId="-1500018826" SRTHash="914532393" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-2011018003">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+        <value DestUnitHashId="598580757">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1848.177f</value>
+        <value>208.5011f</value>
+        <value>3362.452f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1496142756" SRTHash="204274090" Scale="0.7999f">
       <Rotate type="array">
         <value>-0.1039946f</value>
@@ -30866,6 +31162,28 @@
       <UniqueName type="string">TowerTerminalBody14</UniqueName>
       <UnitConfigName type="string">FldObj_DownloadTerminalBody_A_01</UnitConfigName>
     </value>
+    <value HashId="-1350129992" SRTHash="-1400955525" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Open02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-206285906">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1830.083f</value>
+        <value>208.5011f</value>
+        <value>3355.195f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-1349876487" SRTHash="585704187">
       <Rotate type="array">
         <value>-3.101593f</value>
@@ -30954,6 +31272,28 @@
         <value>1786f</value>
         <value>168.5f</value>
         <value>3464.5f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
+    <value HashId="-1340258458" SRTHash="-475897407" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Open03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-766433183">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1651.663f</value>
+        <value>223.3261f</value>
+        <value>3157.678f</value>
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
@@ -36233,6 +36573,28 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffTropicsWall_A_01</UnitConfigName>
     </value>
+    <value HashId="-861666967" SRTHash="769140358" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Open03</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-822413814">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1006.001f</value>
+        <value>132.9692f</value>
+        <value>3235.608f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-861286555" SRTHash="-1265898760" Scale="0.8f">
       <Rotate type="array">
         <value>0.01499524f</value>
@@ -36743,6 +37105,26 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffTropicsWall_A_03</UnitConfigName>
     </value>
+    <value HashId="-822413814" SRTHash="5877581" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="-1774473445">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1016.876f</value>
+        <value>140.2505f</value>
+        <value>3235.608f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-819964275" Rotate="1.344778f" SRTHash="-135274221">
       <_Parameters FortressEatPer="-1" IsNearCreate="false" IsWatchKeeping="true" LevelSensorMode="0" RotAngle="60f" SharpWeaponJudgeType="0" TerritoryArea="0f" WaitTime="150f">
         <ArrowName type="string">NormalArrow</ArrowName>
@@ -37247,6 +37629,28 @@
       </Translate>
       <UnitConfigName type="string">FldObj_CliffTropicsScaffold_A_01_Far</UnitConfigName>
     </value>
+    <value HashId="-784122746" SRTHash="-980012244" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Open01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-206285906">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1840.958f</value>
+        <value>208.5011f</value>
+        <value>3355.195f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-784074614" Rotate="-1.52f" SRTHash="-1026980761">
       <Translate type="array">
         <value>1719.022f</value>
@@ -37370,6 +37774,26 @@
         <value>3263.689f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_CliffTropicsWall_A_03_Far</UnitConfigName>
+    </value>
+    <value HashId="-766433183" SRTHash="2062454485" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="1170133047">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1662.538f</value>
+        <value>230.6073f</value>
+        <value>3157.678f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-765743998" Rotate="2.8f" SRTHash="-1235824608">
       <Translate type="array">
@@ -38216,6 +38640,28 @@
         <value>3195.09f</value>
       </Translate>
       <UnitConfigName type="string">Area</UnitConfigName>
+    </value>
+    <value HashId="-659515844" SRTHash="-531061144" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Open02</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-766433183">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1662.538f</value>
+        <value>223.3261f</value>
+        <value>3157.678f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-658597044" SRTHash="-696757736" Scale="1.2f">
       <Rotate type="array">
@@ -42704,6 +43150,26 @@
       </Translate>
       <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
+    <value HashId="-206285906" SRTHash="-864346254" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
+      <LinksToObj type="array">
+        <value DestUnitHashId="2067835088">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1840.958f</value>
+        <value>215.7824f</value>
+        <value>3355.195f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
+    </value>
     <value HashId="-205294178" Rotate="-0.8999999f" SRTHash="-399226616">
       <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0" />
       <LinksToObj type="array">
@@ -44110,6 +44576,28 @@
         <value>3547.006f</value>
       </Translate>
       <UnitConfigName type="string">FldObj_TreeRootTropical_A_L_01_Far</UnitConfigName>
+    </value>
+    <value HashId="-88252463" SRTHash="-101806532" Scale="5f">
+      <_Parameters IncrementSave="false" MakeSaveFlag="0" NoChangeSignal="false" SaveFlagOnOffType="0">
+        <SaveFlag type="string">TreasureHunt_touzoku08_Open01</SaveFlag>
+      </_Parameters>
+      <LinksToObj type="array">
+        <value DestUnitHashId="-822413814">
+          <_Parameters NoAutoDemoMember="false" />
+          <DefinitionName type="string">BasicSig</DefinitionName>
+        </value>
+      </LinksToObj>
+      <Rotate type="array">
+        <value>-0.02446919f</value>
+        <value>-0.0006412286f</value>
+        <value>-0.05239649f</value>
+      </Rotate>
+      <Translate type="array">
+        <value>1016.876f</value>
+        <value>132.9692f</value>
+        <value>3235.608f</value>
+      </Translate>
+      <UnitConfigName type="string">LinkTagAnd</UnitConfigName>
     </value>
     <value HashId="-86679939" SRTHash="711455732" Scale="1.2f">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">

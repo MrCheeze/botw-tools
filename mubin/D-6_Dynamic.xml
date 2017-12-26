@@ -6493,18 +6493,6 @@
       </Translate>
       <UnitConfigName type="string">Item_Mushroom_D</UnitConfigName>
     </value>
-    <value HashId="1290135739" SRTHash="-794792408" Scale="60f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1441.509f</value>
-        <value>193.673f</value>
-        <value>1616.877f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="1291592005" SRTHash="1944187879" Scale="0.795f">
       <Rotate type="array">
         <value>-2.754827f</value>
@@ -12215,18 +12203,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_B_01</UnitConfigName>
     </value>
-    <value HashId="-1962605549" SRTHash="-871925603" Scale="60f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1441.266f</value>
-        <value>301.3015f</value>
-        <value>1994.124f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="-1956832077" Rotate="5.896219f" SRTHash="141565619" Scale="1.035203f">
       <_Parameters AngleY="0f" CutRate="0f" SharpWeaponJudgeType="0">
         <DropTable type="string">Normal</DropTable>
@@ -12854,18 +12830,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeBroadleaf_A_L</UnitConfigName>
     </value>
-    <value HashId="-1831584235" Rotate="-0.05999999f" SRTHash="-759412359" Scale="100f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1206.545f</value>
-        <value>188.028f</value>
-        <value>1641.223f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="-1830166237" SRTHash="-1421908368">
       <Translate type="array">
         <value>-1961.883f</value>
@@ -13016,18 +12980,6 @@
         <value>1118.275f</value>
       </Translate>
       <UnitConfigName type="string">Obj_TreeBroadleaf_A_L</UnitConfigName>
-    </value>
-    <value HashId="-1817111711" Rotate="-2.563185f" SRTHash="-759412359" Scale="100f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1278.454f</value>
-        <value>289.8044f</value>
-        <value>1674.527f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-1814571208" SRTHash="0">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
@@ -15801,18 +15753,6 @@
       </Translate>
       <UnitConfigName type="string">TwnObj_TempleOfTime_WallPlant_B_03</UnitConfigName>
     </value>
-    <value HashId="-1313996568" Rotate="-3.064786f" SRTHash="-794792408" Scale="60f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1459.436f</value>
-        <value>252.3809f</value>
-        <value>1788.53f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="-1312767181" SRTHash="-1376104160">
       <Rotate type="array">
         <value>0.1568189f</value>
@@ -15950,18 +15890,6 @@
       </Translate>
       <UnitConfigName type="string">Obj_TreeBroadleafRoot_A_M_01</UnitConfigName>
     </value>
-    <value HashId="-1277991271" SRTHash="-240492881" Scale="75f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1087.753f</value>
-        <value>175.7265f</value>
-        <value>1663.179f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
-    </value>
     <value HashId="-1275169932" SRTHash="966867840" Scale="1.079274f">
       <Rotate type="array">
         <value>0.1843771f</value>
@@ -16064,18 +15992,6 @@
         <value>1079.137f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_CypressLow_A_01</UnitConfigName>
-    </value>
-    <value HashId="-1260625684" SRTHash="616567522" Scale="40f">
-      <_Parameters AutoSave="true" CameraPriority="1" ForceCalcInEvent="false">
-        <CameraSet type="string">-</CameraSet>
-        <Shape type="string">Sphere</Shape>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1144.541f</value>
-        <value>255.5407f</value>
-        <value>1766.497f</value>
-      </Translate>
-      <UnitConfigName type="string">Area</UnitConfigName>
     </value>
     <value HashId="-1260471440" SRTHash="1119086554">
       <Rotate type="array">
@@ -19081,25 +18997,6 @@
         <value>1611.27f</value>
       </Translate>
       <UnitConfigName type="string">Obj_Plant_HopBush_C_02</UnitConfigName>
-    </value>
-    <value HashId="-684759226" Rotate="2.56f" SRTHash="-529670525">
-      <_Parameters DisableRankUpForHardMode="true" IsNearCreate="false" LevelSensorMode="0" SharpWeaponJudgeType="1" TerritoryArea="75f">
-        <ArrowName type="string">NormalArrow</ArrowName>
-        <DropTable type="string">Normal</DropTable>
-        <EquipItem1 type="string">Default</EquipItem1>
-        <EquipItem2 type="string">Default</EquipItem2>
-        <EquipItem3 type="string">Default</EquipItem3>
-        <EquipItem4 type="string">Default</EquipItem4>
-        <GolemSleepType type="string">SleepForward_A</GolemSleepType>
-        <GolemWeakPointLocation type="string">Point_A</GolemWeakPointLocation>
-        <UniqueNameMessageLabel type="string">Golem_[D-6]D72F6746</UniqueNameMessageLabel>
-      </_Parameters>
-      <Translate type="array">
-        <value>-1087.753f</value>
-        <value>179.1354f</value>
-        <value>1663.179f</value>
-      </Translate>
-      <UnitConfigName type="string">Enemy_Golem_Junior</UnitConfigName>
     </value>
     <value HashId="-682947709" SRTHash="-163985289">
       <_Parameters InitMotionStatus="0" IsEnemyLiftable="true" IsPlayerPut="false" SharpWeaponJudgeType="0">
