@@ -959,6 +959,9 @@ Electronic - x1
 Electronic2 - x1
  30.0% - Yellow Chuchu Jelly
 
+----- Dummy -----
+Normal - x0
+
 ----- Silver Bokoblin -----
 FireArrow - x2-3
  50.0% - Fire Arrow x10
@@ -1043,7 +1046,7 @@ Normal4 - x2-3
 Normal5 - x1
 100.0% - Bokoblin Horn
 
------ Enemy_Bokoblin_Gold -----
+----- Golden Bokoblin -----
 FireArrow - x2-3
  50.0% - Fire Arrow x10
  50.0% - Bokoblin Fang
@@ -1809,7 +1812,7 @@ FireArrow2 - x1
 FireArrow3 - x2
 100.0% - Lizalfos Talon
 
------ Enemy_Lizalfos_Gold -----
+----- Golden Lizalfos -----
 Normal - x1-3
  32.0% - Topaz
  32.0% - Ruby
@@ -1897,7 +1900,7 @@ ElectricArrow3 - x1
 BombArrow_A3 - x1
 100.0% - Lizalfos Tail
 
------ Enemy_Lizalfos_Guard_Middle -----
+----- Blue Lizalfos -----
 Normal - x1
  50.0% - Lizalfos Tail
  50.0% - Arrow x10
@@ -2073,7 +2076,7 @@ BombArrow_A3 - x1
 BombArrow_A4 - x2
 100.0% - Lynel Horn
 
------ Enemy_Lynel_Gold -----
+----- Golden Lynel -----
 Normal - x2-3
  30.0% - Topaz
  25.0% - Ruby
@@ -2242,7 +2245,7 @@ ElectricArrow3 - x1
 BombArrow_A3 - x1
 100.0% - Moblin Guts
 
------ Enemy_Moriblin_Gold -----
+----- Golden Moblin -----
 Normal - x1
  28.0% - Topaz
  28.0% - Ruby
@@ -2335,6 +2338,10 @@ Normal2 - x5-10
 
 Normal3 - x1-2
 100.0% - Treasure Chest
+
+----- Molduking -----
+Normal - x3
+100.0% - TBox_Field_Iron_SandwormR
 
 ----- FireWizzrobe -----
 Normal - x1
@@ -2979,6 +2986,151 @@ GreatHit(Remain) - x1
  30.0% - Royal Shield
  60.0% - Knight's Shield
  10.0% - Radiant Shield
+
+----- Item_Amiibo_DropTable_012 -----
+Normal - x6-8
+ 60.0% - Rock Salt
+ 30.0% - Flint
+ 10.0% - Amber
+
+SmallHit - x1-2
+ 50.0% - Opal
+ 20.0% - Luminous Stone
+ 10.0% - Topaz
+ 10.0% - Ruby
+ 10.0% - Sapphire
+
+BigHit(Normal) - x1
+100.0% - Traveler's Claymore
+
+BigHit(Parasail) - x1
+100.0% - Cobble Crusher
+
+BigHit(Remain) - x1
+100.0% - Cobble Crusher
+
+GreatHit(Normal) - x1
+
+GreatHit(Parasail) - x1
+ 20.0% - Diamond
+ 80.0% - Soldier's Claymore
+
+GreatHit(Remain) - x1
+ 40.0% - Diamond
+ 40.0% - Stone Smasher
+ 20.0% - Vah Rudania Divine Helm
+
+----- Item_Amiibo_DropTable_013 -----
+Normal - x8
+ 20.0% - Apple
+ 10.0% - Palm Fruit
+ 15.0% - Wildberry
+ 10.0% - Acorn
+ 10.0% - Chickaloo Tree Nut
+  5.0% - Hydromelon
+  5.0% - Spicy Pepper
+  5.0% - Voltfruit
+  5.0% - Fleet-Lotus Seeds
+  5.0% - Mighty Bananas
+ 10.0% - Arrow x5
+
+SmallHit - x1-2
+ 70.0% - Hearty Durian
+ 30.0% - Bomb Arrow x5
+
+BigHit(Normal) - x1
+100.0% - Traveler's Bow
+
+BigHit(Parasail) - x1
+100.0% - Swallow Bow
+
+BigHit(Remain) - x1
+100.0% - Swallow Bow
+
+GreatHit(Normal) - x1
+
+GreatHit(Parasail) - x1
+ 20.0% - Diamond
+ 80.0% - Soldier's Bow
+
+GreatHit(Remain) - x1
+ 40.0% - Diamond
+ 40.0% - Falcon Bow
+ 20.0% - Vah Medoh Divine Helm
+
+----- Item_Amiibo_DropTable_014 -----
+Normal - x8
+ 34.0% - Hyrule Bass
+ 10.0% - Staminoka Bass
+  5.0% - Chillfin Trout
+  5.0% - Sizzlefin Trout
+  5.0% - Voltfin Trout
+  5.0% - Stealthfin Trout
+ 12.0% - Mighty Carp
+ 12.0% - Armored Carp
+  6.0% - Mighty Porgy
+  6.0% - Armored Porgy
+
+SmallHit - x1-2
+ 50.0% - Hearty Bass
+ 50.0% - Hearty Salmon
+
+BigHit(Normal) - x1
+100.0% - Traveler's Spear
+
+BigHit(Parasail) - x1
+100.0% - Zora Spear
+
+BigHit(Remain) - x1
+100.0% - Zora Spear
+
+GreatHit(Normal) - x1
+
+GreatHit(Parasail) - x1
+ 20.0% - Diamond
+ 80.0% - Soldier's Spear
+
+GreatHit(Remain) - x1
+ 40.0% - Diamond
+ 40.0% - Silverscale Spear
+ 20.0% - Vah Ruta Divine Helm
+
+----- Item_Amiibo_DropTable_015 -----
+Normal - x6-8
+ 40.0% - Raw Meat
+ 10.0% - Raw Prime Meat
+ 40.0% - Raw Bird Drumstick
+ 10.0% - Raw Bird Thigh
+
+SmallHit - x1-2
+ 35.0% - Raw Gourmet Meat
+ 35.0% - Raw Whole Bird
+ 30.0% - Shock Arrow x5
+
+BigHit(Normal) - x1
+ 50.0% - Traveler's Sword
+ 50.0% - Traveler's Shield
+
+BigHit(Parasail) - x1
+ 50.0% - Gerudo Scimitar
+ 50.0% - Gerudo Shield
+
+BigHit(Remain) - x1
+ 50.0% - Gerudo Scimitar
+ 50.0% - Gerudo Shield
+
+GreatHit(Normal) - x1
+
+GreatHit(Parasail) - x1
+ 20.0% - Diamond
+ 40.0% - Soldier's Broadsword
+ 40.0% - Soldier's Shield
+
+GreatHit(Remain) - x1
+ 40.0% - Diamond
+ 20.0% - Moonlight Scimitar
+ 20.0% - Radiant Shield
+ 20.0% - Vah Naboris Divine Helm
 
 ----- Item_Amiibo_DropTable_016 -----
 Normal - x4
@@ -5146,7 +5298,7 @@ BombArrow_A3 - x1
 
 ----- Wood -----
 Normal - x1
-100.0% - FireWoodFromBundle
+100.0% - Wood
 
 ----- Obj_LiftRockWhite_A_01 -----
 Rupee_Low - x1
@@ -5351,6 +5503,15 @@ Normal - x1
   2.0% - Royal Shield
   3.0% - Gerudo Shield
   5.0% - Gerudo Scimitar
+
+----- TBox_Field_SandwormR -----
+Normal - x1
+ 25.0% - Golden Bow
+ 15.0% - Gerudo Shield
+ 25.0% - Royal Bow
+ 15.0% - Royal Shield
+ 12.0% - Royal Guard's Bow
+  8.0% - Royal Guard's Shield
 
 ----- ThunderWizzrobe -----
 Normal - x1
