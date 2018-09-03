@@ -45,8 +45,8 @@ for folder, _, files in os.walk('terrain_water'):
                 f.read(1)
                 material = int.from_bytes(f.read(1),'little') * 32
                 angle = int(math.atan2(y_flow, x_flow) * 128/math.pi + 128)
-                magnitude = int(math.hypot(x_flow, y_flow) / 182) # chosen based on maximum flow that exists in practice
-                img.putpixel((x,y), (height, 255, 255))
+                magnitude = int(23*math.log(1+math.hypot(x_flow, y_flow)))
+                img.putpixel((x,y), (angle, magnitude//2, height//2+64))
         f.close()
     i += 1
 img.convert("RGB").save('heightmap_water.png')
