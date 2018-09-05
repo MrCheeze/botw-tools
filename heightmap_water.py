@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 import os
 import math
 
@@ -22,6 +22,8 @@ for folder, _, files in os.walk('terrain_water'):
               4,5,5,3,4,5][i] * 0x80
     
     for file in files:
+        if file == '.gitignore':
+            continue
         tile = int(file[-13:-11],0x10)%4
         if tile == 0:
             x_mid = 0
@@ -46,8 +48,8 @@ for folder, _, files in os.walk('terrain_water'):
                 material = int.from_bytes(f.read(1),'little') * 32
                 angle = int(math.atan2(y_flow, x_flow) * 128/math.pi + 128)
                 magnitude = int(23*math.log(1+math.hypot(x_flow, y_flow)))
-                img.putpixel((x,y), (angle, magnitude//2, height//2+64))
+                img.putpixel((x,y), (height, 255, 255))
         f.close()
     i += 1
-img.convert("RGB").save('heightmap_water.png')
+img.convert("RGB").filter(ImageFilter.FIND_EDGES).save('heightmap_water.png')
             
