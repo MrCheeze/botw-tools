@@ -1,5 +1,5 @@
-When using an amiibo, various items will appear on the ground, along with a single item in a chest. The items on the ground will always be generated from the Normal list, but on occasion you will ALSO be given items from the SmallHit list. The item in the chest will sometimes be generated from the BigHit list, and sometimes from the GreatHit list. The odds of getting a GreatHit instead of a BigHit appear from empirical testing to be 20%.
-
+When using an amiibo, various items will appear on the ground, along with a single item in a chest. The items on the ground will always be generated from the Normal list, but 20% of the time you will ALSO be given items from the SmallHit list. Separately, the item in the chest will come 20% of the time from the GreatHit list, and the rest of the time from the BigHit list. GreatHit odds will be boosted to 100% if it is the 5th time or later that you are scanning that individual amiibo.
+ 
 For a BigHit or GreatHit (i.e. for a chest item), the item you receive depends partly on your current progress in the game. Getting the Paraglider upgrades you from the Normal list to the Parasail list, and beating a single Divine Beast upgrades you to the Remain list.
 
 ----- Ganondorf (Item_Amiibo_DropTable_001) -----
