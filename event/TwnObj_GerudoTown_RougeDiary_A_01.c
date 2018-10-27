@@ -79,15 +79,14 @@ void Talk() {
                 goto Event3
             }
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Finished'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_Helmet_Finish'}) {
-                goto Event28
-            } else {
-                goto Event15
-            }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Finished'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_Helmet_Finish'}) {
+            goto Event28
         } else {
-            goto Event13
+            goto Event15
         }
+    } else {
+        goto Event13
     }
 }

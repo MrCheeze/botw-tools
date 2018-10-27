@@ -55,48 +55,21 @@ void Talk() {
             Npc_DeathEastHatago_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_002:NewText_02'})
             goto Event75
         }
-      case 2:
-        Event74:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_DeathEastHatago_002.IsOnInstEventFlag() {
             goto Event75
         } else {
             Npc_DeathEastHatago_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_002:NewText_04'})
             goto Event75
         }
-      case 3:
-        goto Event74
-      case 4:
-        goto Event74
-      case 5:
-        goto Event74
-      case 6:
-        goto Event74
-      case 7:
-        goto Event74
-      case 8:
-        goto Event74
-      case 9:
-        goto Event74
-      case 10:
-        goto Event74
-      case 11:
-        goto Event74
-      case 12:
-        goto Event74
-      case 13:
-        goto Event74
     }
 }
 
 void Near() {
     switch Npc_DeathEastHatago_002.CheckActorAction13() {
-      case 0:
-        Event85:
+      case [0, 1]:
         Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_002:Near_03', 'IsChecked': False})
-      case 1:
-        goto Event85
-      case 2:
-        Event83:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         switch EventSystemActor.RandomChoice3() {
           case 0:
             Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_002:Near_00'})
@@ -105,27 +78,5 @@ void Near() {
           case 2:
             Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_002:Near_02'})
         }
-      case 3:
-        goto Event83
-      case 4:
-        goto Event83
-      case 5:
-        goto Event83
-      case 6:
-        goto Event83
-      case 7:
-        goto Event83
-      case 8:
-        goto Event83
-      case 9:
-        goto Event83
-      case 10:
-        goto Event83
-      case 11:
-        goto Event83
-      case 12:
-        goto Event83
-      case 13:
-        goto Event83
     }
 }

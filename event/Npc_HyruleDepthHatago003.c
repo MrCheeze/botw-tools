@@ -35,37 +35,34 @@ void Talk() {
                     EventSystemActor.Demo_WaitFrame({'Frame': 10, 'IsWaitFinish': True})
                     Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Ask01'})
                     goto Event17
-                } else {
-                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Meat_11', 'Count': 1}) {
-                        Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer02', 'IsCloseMessageDialog': False})
-                        if !EventSystemActor.GeneralChoice2() {
-                            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'ASName': 'TalkHandOver', 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                            EventSystemActor.Demo_WaitFrame({'Frame': 10, 'IsWaitFinish': True})
-                            EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Item_Meat_11', 'Value': -1, 'IsWaitFinish': True})
+                } else
+                if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Meat_11', 'Count': 1}) {
+                    Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer02', 'IsCloseMessageDialog': False})
+                    if !EventSystemActor.GeneralChoice2() {
+                        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'ASName': 'TalkHandOver', 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                        EventSystemActor.Demo_WaitFrame({'Frame': 10, 'IsWaitFinish': True})
+                        EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Item_Meat_11', 'Value': -1, 'IsWaitFinish': True})
 
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
 
-                            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'Carnivorous_Boy_Stuffed'})
-                            Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer03', 'IsCloseMessageDialog': True})
-                        } else {
-                            Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer05', 'IsCloseMessageDialog': True})
-                            goto Event43
-                        }
+                        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'Carnivorous_Boy_Stuffed'})
+                        Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer03', 'IsCloseMessageDialog': True})
                     } else {
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Roast_45'}) {
-                            Event22:
-                            Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer01', 'IsCloseMessageDialog': True})
-                            goto Event43
-                        } else {
-                            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_D_06'}) {
-                                goto Event22
-                            } else {
-                                Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer00', 'IsCloseMessageDialog': True})
-                                goto Event43
-                            }
-                        }
+                        Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer05', 'IsCloseMessageDialog': True})
+                        goto Event43
                     }
+                } else
+                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Roast_45'}) {
+                    Event22:
+                    Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer01', 'IsCloseMessageDialog': True})
+                    goto Event43
+                } else
+                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_D_06'}) {
+                    goto Event22
+                } else {
+                    Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer00', 'IsCloseMessageDialog': True})
+                    goto Event43
                 }
               case 1:
                 Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Answer06', 'IsCloseMessageDialog': True})
@@ -85,35 +82,28 @@ void Talk() {
                     goto Event35
                 }
             }
+        } else
+        if Npc_HyruleDepthHatago003.IsArriveAnchorForRain() {
+            goto Event14
         } else {
-            if Npc_HyruleDepthHatago003.IsArriveAnchorForRain() {
-                goto Event14
-            } else {
-                Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Talk01'})
-                goto Event14
-            }
+            Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Talk01'})
+            goto Event14
         }
-    } else {
-        switch EventSystemActor.CheckWeather() {
-          case 0:
-            Event10:
-            if Npc_HyruleDepthHatago003.IsOnInstEventFlag() {
-                goto Event14
-            } else {
-                Npc_HyruleDepthHatago003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                goto Event14
-            }
-          case 1:
-            Event8:
-            if Npc_HyruleDepthHatago003.IsArriveAnchorForRain() {
-                goto Event10
-            } else {
-                Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Talk02', 'IsCloseMessageDialog': True})
-            }
-          case 2:
-            goto Event8
-          case 3:
-            goto Event8
+    } else
+    switch EventSystemActor.CheckWeather() {
+      case 0:
+        Event10:
+        if Npc_HyruleDepthHatago003.IsOnInstEventFlag() {
+            goto Event14
+        } else {
+            Npc_HyruleDepthHatago003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            goto Event14
+        }
+      case [1, 2, 3]:
+        if Npc_HyruleDepthHatago003.IsArriveAnchorForRain() {
+            goto Event10
+        } else {
+            Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Talk02', 'IsCloseMessageDialog': True})
         }
     }
 }
@@ -121,22 +111,16 @@ void Talk() {
 void Near() {
     if Npc_HyruleDepthHatago003.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
         Npc_HyruleDepthHatago003.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Near01', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
-    } else {
-        switch EventSystemActor.CheckWeather() {
-          case 0:
-            Event1:
-            Npc_HyruleDepthHatago003.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Near00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
-          case 1:
-            Event2:
-            if Npc_HyruleDepthHatago003.IsArriveAnchorForRain() {
-                goto Event1
-            } else {
-                Npc_HyruleDepthHatago003.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:RunRain00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
-            }
-          case 2:
-            goto Event2
-          case 3:
-            goto Event2
+    } else
+    switch EventSystemActor.CheckWeather() {
+      case 0:
+        Event1:
+        Npc_HyruleDepthHatago003.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Near00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
+      case [1, 2, 3]:
+        if Npc_HyruleDepthHatago003.IsArriveAnchorForRain() {
+            goto Event1
+        } else {
+            Npc_HyruleDepthHatago003.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:RunRain00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
         }
     }
 }

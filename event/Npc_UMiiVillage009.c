@@ -24,20 +24,14 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_UMiiVillage009.CheckActorAction13() {
-      case 0:
-        Event84:
+      case [0, 1]:
 
         call HagiAction1()
 
-      case 1:
-        goto Event84
-      case 2:
-        Event80:
+      case [2, 3]:
 
         call HagiAction2()
 
-      case 3:
-        goto Event80
     }
 }
 
@@ -45,34 +39,12 @@ void Near() {
     Event107:
     if !EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC010_Meeting'}) {
         switch Npc_UMiiVillage009.CheckActorAction13() {
-          case 0:
+          case [0, 1, 2]:
             Event72:
             Npc_UMiiVillage009.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:near00', 'IsChecked': False, 'DispFrame': 90})
-          case 1:
-            goto Event72
-          case 2:
-            goto Event72
-          case 3:
+          case [3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
             Event68:
             Npc_UMiiVillage009.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:near01', 'IsChecked': False, 'DispFrame': 90})
-          case 4:
-            goto Event68
-          case 5:
-            goto Event68
-          case 6:
-            goto Event68
-          case 7:
-            goto Event68
-          case 8:
-            goto Event68
-          case 9:
-            goto Event68
-          case 10:
-            goto Event68
-          case 12:
-            goto Event68
-          case 13:
-            goto Event68
         }
     }
 }
@@ -82,8 +54,7 @@ void Hagi_Richmans_Ready() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_UMiiVillage009.CheckActorAction13() {
-      case 0:
-        Event37:
+      case [0, 1]:
         if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC009_Ote'}) {
             Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk12', 'IsCloseMessageDialog': False})
             Event28:
@@ -101,42 +72,36 @@ void Hagi_Richmans_Ready() {
                 Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk01'})
                 EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
             }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC009_First'}) {
-                Event18:
-                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk03'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC009_First'}) {
+            Event18:
+            Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk03'})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk04'})
+                EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
+                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk05'})
                 if !EventSystemActor.GeneralChoice2() {
-                    Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk04'})
-                    EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
-                    Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk05'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk02', 'IsCloseMessageDialog': False})
-                        goto Event28
-                    } else {
-                        goto Event21
-                    }
+                    Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk02', 'IsCloseMessageDialog': False})
+                    goto Event28
                 } else {
                     goto Event21
                 }
             } else {
-                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk00'})
-                if !EventSystemActor.GeneralChoice2() {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiVillage_NPC009_First'})
-                    goto Event18
-                } else {
-                    goto Event21
-                }
+                goto Event21
+            }
+        } else {
+            Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk00'})
+            if !EventSystemActor.GeneralChoice2() {
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiVillage_NPC009_First'})
+                goto Event18
+            } else {
+                goto Event21
             }
         }
-      case 1:
-        goto Event37
-      case 2:
-        Event82:
+      case [2, 3]:
 
         call HagiAction2()
 
-      case 3:
-        goto Event82
     }
 }
 
@@ -145,8 +110,7 @@ void Hagi_Richmans_Finish() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_UMiiVillage009.CheckActorAction13() {
-      case 0:
-        Event44:
+      case [0, 1]:
         if Npc_UMiiVillage009.IsOnInstEventFlag() {
             Event9:
             Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk15'})
@@ -175,15 +139,10 @@ void Hagi_Richmans_Finish() {
             Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk16'})
             goto Event9
         }
-      case 1:
-        goto Event44
-      case 2:
-        Event81:
+      case [2, 3]:
 
         call HagiAction2()
 
-      case 3:
-        goto Event81
     }
 }
 
@@ -221,78 +180,42 @@ void NearActorsNear() {
 void HagiAction2() {
     if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_GiveCake_Finish'}) {
         Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk24'})
+    } else
+    if !EventSystemActor.RandomChoice2() {
+        Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk27'})
     } else {
-        if !EventSystemActor.RandomChoice2() {
-            Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk27'})
-        } else {
-            Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk23'})
-        }
+        Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk23'})
     }
 }
 
 void HagiAction1() {
     if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_GiveCake_Finish'}) {
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event83:
+          case [0, 1, 2, 3]:
             Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk26'})
-          case 1:
-            goto Event83
-          case 2:
-            goto Event83
-          case 3:
-            goto Event83
-          case 4:
-            Event98:
+          case [4, 5]:
             Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk28'})
-          case 5:
-            goto Event98
-          case 6:
-            Event96:
+          case [6, 7]:
             Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk29'})
-          case 7:
-            goto Event96
         }
+    } else
+    if Npc_UMiiVillage009.IsOnInstEventFlag() {
+        Event60:
+        Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk22'})
     } else {
-        if Npc_UMiiVillage009.IsOnInstEventFlag() {
-            Event60:
-            Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk22'})
-        } else {
-            Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk16'})
-            goto Event60
-        }
+        Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk16'})
+        goto Event60
     }
 }
 
 void NearChallenge() {
     if !EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC010_Meeting'}) {
         switch Npc_UMiiVillage009.CheckActorAction13() {
-          case 0:
-            Event92:
+          case [0, 1]:
             Npc_UMiiVillage009.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:near00', 'DispFrame': 300, 'IsChecked': True})
-          case 1:
-            goto Event92
           case 2:
             goto Event72
-          case 3:
-            goto Event68
-          case 4:
-            goto Event68
-          case 5:
-            goto Event68
-          case 6:
-            goto Event68
-          case 7:
-            goto Event68
-          case 8:
-            goto Event68
-          case 9:
-            goto Event68
-          case 10:
-            goto Event68
-          case 12:
-            goto Event68
-          case 13:
+          case [3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
             goto Event68
         }
     }

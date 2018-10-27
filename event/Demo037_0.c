@@ -64,20 +64,17 @@ void ForestFog_FadeOut() {
         EventSystemActor.Demo_WarpPlayerToDestination({'DestinationX': 'Arg_DestinationX', 'DestinationY': 'Arg_DestinationY', 'DestinationZ': 'Arg_DestinationZ', 'DirectionY': 'Arg_DestinationDirY', 'IsWaitFinish': True})
         GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
         GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': False})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        goto Event31
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
+        goto Event31
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
+        goto Event60
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            goto Event31
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
-                goto Event31
-            } else {
-                if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-                    goto Event60
-                } else {
-                    goto Event31
-                }
-            }
-        }
+        goto Event31
     }
 }
 

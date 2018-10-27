@@ -28,13 +28,9 @@ void Notify_Gyro() {
               case 0:
                 Event5:
                 TipsSystemActor.Demo_TipsDisplayOK({'IsWaitFinish': True})
-              case 1:
+              case [1, 2, 3]:
                 Event6:
                 TipsSystemActor.Demo_TipsDisplayNG({'IsWaitFinish': True})
-              case 2:
-                goto Event6
-              case 3:
-                goto Event6
             }
         } else {
             goto Event5

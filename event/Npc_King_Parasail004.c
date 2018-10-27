@@ -54,32 +54,29 @@ void Talk() {
                 Event152:
                 if !EventSystemActor.GeneralChoice2() {
                     Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Kotsu01'})
+                } else
+                Event210:
+                if Npc_King_Parasail004.IsOnInstEventFlag() {
+                    Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:GoodBye00', 'IsCloseMessageDialog': True})
                 } else {
-                    Event210:
-                    if Npc_King_Parasail004.IsOnInstEventFlag() {
-                        Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:GoodBye00', 'IsCloseMessageDialog': True})
-                    } else {
-                        Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:GoodBye01'})
-                    }
+                    Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:GoodBye01'})
                 }
             } else {
                 Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk01', 'ASName': 'Point'})
                 goto Event152
             }
+        } else
+        if Npc_King_Parasail004.CheckActorAction({'ActionName': 'Root/Terror'}) {
+            Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+            Event158:
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Kotsu00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Parasail004_Talk'})
+            } else
+            goto Event210
         } else {
-            if Npc_King_Parasail004.CheckActorAction({'ActionName': 'Root/Terror'}) {
-                Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                Event158:
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Kotsu00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Parasail004_Talk'})
-                } else {
-                    goto Event210
-                }
-            } else {
-                Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Point'})
-                goto Event158
-            }
+            Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Point'})
+            goto Event158
         }
     } else {
 
@@ -237,23 +234,20 @@ void Appear11_Camera() {
         GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ReviseModeEnd': 0, 'ActorIgnoringCollision': -1, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'Accept1FrameDelay': True, 'StartCalcOnly': False, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': -658.2183837890625, 'Pattern1PosY': 173.86329650878906, 'Pattern1PosZ': 1521.6600341796875, 'Pattern1AtX': -663.1732177734375, 'Pattern1AtY': 174.03469848632812, 'Pattern1AtZ': 1521.010986328125, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
         Event268:
         GameRomCamera.Demo_Talk({'IsWaitFinish': False, 'CameraReset': False, 'NoConnect': False})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Fujibayashi'}) {
+        GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'TargetActor1': -1, 'IsWaitFinish': True, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': -463.837890625, 'Pattern1PosY': 180.65170288085938, 'Pattern1PosZ': 1992.748046875, 'Pattern1AtX': -459.5528869628906, 'Pattern1AtY': 180.82310485839844, 'Pattern1AtZ': 1990.177001953125, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        goto Event268
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Iwamoto'}) {
+        GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': -927.5952758789062, 'Pattern1PosY': 274.943115234375, 'Pattern1PosZ': 2304.0849609375, 'Pattern1AtX': -925.0244140625, 'Pattern1AtY': 275.114501953125, 'Pattern1AtZ': 2308.3701171875, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        goto Event268
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Tominaga'}) {
+        GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': -1420.633056640625, 'Pattern1PosY': 338.1449890136719, 'Pattern1PosZ': 1983.64404296875, 'Pattern1AtX': -1424.009033203125, 'Pattern1AtY': 338.31640625, 'Pattern1AtZ': 1987.3289794921875, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        goto Event268
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Fujibayashi'}) {
-            GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'TargetActor1': -1, 'IsWaitFinish': True, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': -463.837890625, 'Pattern1PosY': 180.65170288085938, 'Pattern1PosZ': 1992.748046875, 'Pattern1AtX': -459.5528869628906, 'Pattern1AtY': 180.82310485839844, 'Pattern1AtZ': 1990.177001953125, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            goto Event268
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Iwamoto'}) {
-                GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': -927.5952758789062, 'Pattern1PosY': 274.943115234375, 'Pattern1PosZ': 2304.0849609375, 'Pattern1AtX': -925.0244140625, 'Pattern1AtY': 275.114501953125, 'Pattern1AtZ': 2308.3701171875, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                goto Event268
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Tominaga'}) {
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': -1420.633056640625, 'Pattern1PosY': 338.1449890136719, 'Pattern1PosZ': 1983.64404296875, 'Pattern1AtX': -1424.009033203125, 'Pattern1AtY': 338.31640625, 'Pattern1AtZ': 1987.3289794921875, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    goto Event268
-                } else {
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'ReviseModeEnd': 0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'Pattern1PosX': 2.562865972518921, 'Pattern1PosY': 0.7665860056877136, 'Pattern1PosZ': 6.106354236602783, 'Pattern1AtX': -0.008057000115513802, 'Pattern1AtY': 0.9379879832267761, 'Pattern1AtZ': 1.8213809728622437, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    goto Event268
-                }
-            }
-        }
+        GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'ReviseModeEnd': 0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'Pattern1PosX': 2.562865972518921, 'Pattern1PosY': 0.7665860056877136, 'Pattern1PosZ': 6.106354236602783, 'Pattern1AtX': -0.008057000115513802, 'Pattern1AtY': 0.9379879832267761, 'Pattern1AtZ': 1.8213809728622437, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        goto Event268
     }
 }

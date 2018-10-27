@@ -51,72 +51,70 @@ void Ready_Npc_SouthHateru006_Talk() {
 
         call Npc_SouthHateru006.Talk()
 
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_Retry'}) {
-            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_08', 'IsCloseMessageDialog': False})
-            Event145:
-            switch EventSystemActor.GeneralChoice4() {
-              case 0:
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_Retry'}) {
+        Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_08', 'IsCloseMessageDialog': False})
+        Event145:
+        switch EventSystemActor.GeneralChoice4() {
+          case 0:
+            if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_Retry'}) {
+                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_20'})
+                Event174:
                 if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_Retry'}) {
-                    Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_20'})
-                    Event174:
-                    if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_Retry'}) {
-                        Event143:
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'HutagoHatago_Ch_001_timeover'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HutagoHatago_Ch_001_NowPlaying'})
+                    Event143:
+                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'HutagoHatago_Ch_001_timeover'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HutagoHatago_Ch_001_NowPlaying'})
 
-                        call Common.DisableSaveAndWarp()
+                    call Common.DisableSaveAndWarp()
 
-                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'HorseGet'})
-                    } else {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HutagoHatago_Ch_001_Retry'})
-                        goto Event143
-                    }
+                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'HorseGet'})
                 } else {
-                    Event132:
-                    Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_12', 'IsCloseMessageDialog': True})
-                    GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1744.107666015625, 'Pattern1PosY': 124.03303527832031, 'Pattern1PosZ': 1941.5382080078125, 'Pattern1AtX': 1746.8472900390625, 'Pattern1AtY': 123.5798568725586, 'Pattern1AtZ': 1946.1021728515625, 'Pattern1Fovy': 48.72278594970703, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Count': 30.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'StartCalcOnly': True, 'ReviseModeEnd': 2, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_03', 'IsCloseMessageDialog': True})
-                    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'ReviseMode': 0, 'CollisionInterpolateSkip': True})
-                    Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_04', 'IsCloseMessageDialog': True})
-                    goto Event174
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HutagoHatago_Ch_001_Retry'})
+                    goto Event143
                 }
-              case 1:
-                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk03'})
-                Event183:
-                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_19'})
-                goto Event145
-              case 2:
-                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_16'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk04'})
-                    goto Event183
-                } else {
-                    Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_18'})
-                    goto Event183
-                }
-              case 3:
-                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_14'})
-            }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Hutago_Hatago_Ch_001_Tutorial'}) {
-                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_13', 'IsCloseMessageDialog': False})
-                goto Event145
             } else {
-                Npc_SouthHateru006.Demo_Talk({'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_01', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_10'})
-                if !EventSystemActor.GeneralChoice2() {
-                    goto Event132
-                } else {
-                    Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_11'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Hutago_Hatago_Ch_001_Tutorial'})
-                }
+                Event132:
+                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_12', 'IsCloseMessageDialog': True})
+                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1744.107666015625, 'Pattern1PosY': 124.03303527832031, 'Pattern1PosZ': 1941.5382080078125, 'Pattern1AtX': 1746.8472900390625, 'Pattern1AtY': 123.5798568725586, 'Pattern1AtZ': 1946.1021728515625, 'Pattern1Fovy': 48.72278594970703, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Count': 30.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'StartCalcOnly': True, 'ReviseModeEnd': 2, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_03', 'IsCloseMessageDialog': True})
+                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'ReviseMode': 0, 'CollisionInterpolateSkip': True})
+                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_04', 'IsCloseMessageDialog': True})
+                goto Event174
             }
+          case 1:
+            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk03'})
+            Event183:
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_19'})
+            goto Event145
+          case 2:
+            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_16'})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk04'})
+                goto Event183
+            } else {
+                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_18'})
+                goto Event183
+            }
+          case 3:
+            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_14'})
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Hutago_Hatago_Ch_001_Tutorial'}) {
+        Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_13', 'IsCloseMessageDialog': False})
+        goto Event145
+    } else {
+        Npc_SouthHateru006.Demo_Talk({'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_01', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+        Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_10'})
+        if !EventSystemActor.GeneralChoice2() {
+            goto Event132
+        } else {
+            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HutagoHatago_Ch_001:Talk_11'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Hutago_Hatago_Ch_001_Tutorial'})
         }
     }
 }
@@ -133,13 +131,12 @@ void HorseGet_Npc_SouthHateru006_EachFrame() {
     Event74:
     if EventTimerTag.CheckMiniGameTimeOver() {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Failed'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_HorseIn'}) {
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_HorseIn'}) {
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
-        } else {
-            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-            goto Event74
-        }
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event74
     }
 }
 
@@ -233,9 +230,8 @@ void Failed_Npc_SouthHateru006_StepStart() {
                 goto Event122
             }
         }
-    } else {
-        goto Event214
-    }
+    } else
+    goto Event214
 }
 
 void Ready_Npc_SouthHateru006_Near() {

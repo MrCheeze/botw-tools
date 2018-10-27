@@ -74,64 +74,35 @@ void Ready_Npc_HyruleWestHatago006_Talk() {
 
         Npc_HyruleWestHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago006:talk01'})
         Npc_HyruleWestHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago006:talk06'})
-    } else {
-        switch Npc_HyruleWestHatago006.CheckActorAction13() {
+    } else
+    switch Npc_HyruleWestHatago006.CheckActorAction13() {
+      case [0, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
+
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+
+        Event99:
+        Npc_HyruleWestHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago006:talk00'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BloodyMoonRelief_NPC_Talk'})
+      case 1:
+        Event100:
+
+        call InitTalk.InitTalk({'Arg_Turn': 5, 'Arg_Greeting': 'NotAndNot'})
+
+        Npc_HyruleWestHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago006:talk05', 'ASName': 'Act_SitChair_Wait'})
+        Npc_HyruleWestHatago006.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        goto Event99
+      case 3:
+        switch EventSystemActor.CheckWeather() {
           case 0:
-            Event101:
-
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
-
-            Event99:
-            Npc_HyruleWestHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago006:talk00'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BloodyMoonRelief_NPC_Talk'})
-          case 1:
-            Event100:
 
             call InitTalk.InitTalk({'Arg_Turn': 5, 'Arg_Greeting': 'NotAndNot'})
 
-            Npc_HyruleWestHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago006:talk05', 'ASName': 'Act_SitChair_Wait'})
-            Npc_HyruleWestHatago006.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_HyruleWestHatago006.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago006:talk04', 'ASName': 'Act_GoatCare', 'IsCloseMessageDialog': True})
+            Npc_HyruleWestHatago006.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'IsConfront': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
             goto Event99
-          case 2:
-            goto Event101
-          case 3:
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-
-                call InitTalk.InitTalk({'Arg_Turn': 5, 'Arg_Greeting': 'NotAndNot'})
-
-                Npc_HyruleWestHatago006.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago006:talk04', 'ASName': 'Act_GoatCare', 'IsCloseMessageDialog': True})
-                Npc_HyruleWestHatago006.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'IsConfront': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                goto Event99
-              case 1:
-                Event129:
-                Npc_HyruleWestHatago006.Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'SitOnObject'})
-                goto Event100
-              case 2:
-                goto Event129
-              case 3:
-                goto Event129
-            }
-          case 4:
-            goto Event101
-          case 5:
-            goto Event101
-          case 6:
-            goto Event101
-          case 7:
-            goto Event101
-          case 8:
-            goto Event101
-          case 9:
-            goto Event101
-          case 10:
-            goto Event101
-          case 11:
-            goto Event101
-          case 12:
-            goto Event101
-          case 13:
-            goto Event101
+          case [1, 2, 3]:
+            Npc_HyruleWestHatago006.Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'SitOnObject'})
+            goto Event100
         }
     }
 }
@@ -159,13 +130,12 @@ void Step1_Lithograph_EachFrame() {
         } else {
             goto Event44
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonReliefOn'}) {
+        goto Event44
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonReliefOn'}) {
-            goto Event44
-        } else {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BloodyMoonReliefOn'})
-            goto Event44
-        }
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BloodyMoonReliefOn'})
+        goto Event44
     }
 }
 
@@ -251,12 +221,9 @@ void Ready_Talk() {
             Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk04'})
             Event120:
             Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk14'})
-            if !EventSystemActor.GeneralChoice2() {
-                Event71:
+            if EventSystemActor.GeneralChoice2() in [0, 1] {
                 Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk05'})
                 goto Event72
-            } else {
-                goto Event71
             }
         } else {
             Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk16'})

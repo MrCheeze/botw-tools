@@ -124,14 +124,9 @@ void Water_Relic_RainStop_Talk() {
                 Event89:
                 Npc_Zora037.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora037:talk19'})
                 goto Event54
-              case 1:
-                Event73:
+              case [1, 2, 3]:
                 Npc_Zora037.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora037:talk10'})
                 goto Event82
-              case 2:
-                goto Event73
-              case 3:
-                goto Event73
             }
         }
     } else {

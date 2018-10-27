@@ -22,33 +22,15 @@ void Near() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event15:
+          case [0, 1]:
             Npc_Road_017.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_017:Near00'})
-          case 1:
-            goto Event15
-          case 2:
-            Event20:
+          case [2, 3, 4, 5]:
             Npc_Road_017.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_017:Near02'})
-          case 3:
-            goto Event20
-          case 4:
-            goto Event20
-          case 5:
-            goto Event20
-          case 6:
-            Event21:
+          case [6, 7]:
             Npc_Road_017.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_017:Near03'})
-          case 7:
-            goto Event21
         }
-      case 1:
-        Event18:
+      case [1, 2, 3]:
         Npc_Road_017.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_017:Near04'})
-      case 2:
-        goto Event18
-      case 3:
-        goto Event18
     }
 }
 
@@ -97,7 +79,7 @@ void RetMSG_Futa_01() {
     call Rest()
 
     switch Npc_Road_017.CheckActorAction13() {
-      case 0:
+      case [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         Event82:
         if Npc_Road_017.IsOnInstEventFlag() {
             Npc_Road_017.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_017:RetMSG_Futa_02_1'})
@@ -115,30 +97,6 @@ void RetMSG_Futa_01() {
             Npc_Road_017.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_017:MSG_Futa_01'})
             goto Event66
         }
-      case 2:
-        goto Event82
-      case 3:
-        goto Event82
-      case 4:
-        goto Event82
-      case 5:
-        goto Event82
-      case 6:
-        goto Event82
-      case 7:
-        goto Event82
-      case 8:
-        goto Event82
-      case 9:
-        goto Event82
-      case 10:
-        goto Event82
-      case 11:
-        goto Event82
-      case 12:
-        goto Event82
-      case 13:
-        goto Event82
     }
 }
 
@@ -147,34 +105,10 @@ void MSG_Futa_02() {
     call Rest()
 
     switch Npc_Road_017.CheckActorAction13() {
-      case 0:
+      case [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         goto Event82
       case 1:
         goto Event78
-      case 2:
-        goto Event82
-      case 3:
-        goto Event82
-      case 4:
-        goto Event82
-      case 5:
-        goto Event82
-      case 6:
-        goto Event82
-      case 7:
-        goto Event82
-      case 8:
-        goto Event82
-      case 9:
-        goto Event82
-      case 10:
-        goto Event82
-      case 11:
-        goto Event82
-      case 12:
-        goto Event82
-      case 13:
-        goto Event82
     }
 }
 
@@ -255,20 +189,15 @@ void Rest() {
 
             call Rest_End()
 
-          case 1:
+          case [1, 2, 3]:
             Event52:
             Npc_Road_017.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_017:Rest_01'})
             goto Event54
-          case 2:
-            goto Event52
-          case 3:
-            goto Event52
         }
-    } else {
-        if Npc_Road_017.IsArriveAnchorForRain() {
-            Npc_Road_017.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_017:Rest_02'})
-            goto Event54
-        }
+    } else
+    if Npc_Road_017.IsArriveAnchorForRain() {
+        Npc_Road_017.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_017:Rest_02'})
+        goto Event54
     }
 }
 
@@ -280,12 +209,7 @@ void Rain() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    switch EventSystemActor.CheckWeather() {
-      case 1:
-        goto Event52
-      case 2:
-        goto Event52
-      case 3:
+    if EventSystemActor.CheckWeather() in [1, 2, 3] {
         goto Event52
     }
 }

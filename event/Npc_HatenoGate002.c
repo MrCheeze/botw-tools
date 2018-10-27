@@ -21,15 +21,9 @@ void Talk() {
         if !EventSystemActor.GeneralChoice2() {
             Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk05', 'IsCloseMessageDialog': True})
             Event12:
-            switch EventSystemActor.CheckWeather() {
-              case 1:
-                Event14:
+            if EventSystemActor.CheckWeather() in [1, 2, 3] {
                 EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
                 Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk07'})
-              case 2:
-                goto Event14
-              case 3:
-                goto Event14
             }
         } else {
             Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk06', 'IsCloseMessageDialog': True})

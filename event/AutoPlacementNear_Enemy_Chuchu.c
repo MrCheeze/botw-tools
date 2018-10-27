@@ -12,12 +12,8 @@ void EntryPoint0() {
         if AutoPlacement.EcoAreaActorName({'ActorName': 'Enemy_Chuchu_Junior'}) {
             Event293:
             if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
-                switch AutoPlacement.GroundMat() {
-                  case 0:
-                    Event267:
-                    switch AutoPlacement.TimeType() {
-                      case 0:
-                        Event260:
+                if AutoPlacement.GroundMat() in [0, 1, 2, 3, 5, 6, 9, 12, 14] {
+                    if AutoPlacement.TimeType() in [0, 2] {
                         if !AutoPlacement.PlayerRideHorse() {
                             AutoPlacement.NearCreate({'WaitFrame': 1})
                             if AutoPlacement.GroundNorm({'Angle': 10.0}) {
@@ -28,25 +24,7 @@ void EntryPoint0() {
                                 }
                             }
                         }
-                      case 2:
-                        goto Event260
                     }
-                  case 1:
-                    goto Event267
-                  case 2:
-                    goto Event267
-                  case 3:
-                    goto Event267
-                  case 5:
-                    goto Event267
-                  case 6:
-                    goto Event267
-                  case 9:
-                    goto Event267
-                  case 12:
-                    goto Event267
-                  case 14:
-                    goto Event267
                 }
             }
         }
@@ -68,12 +46,8 @@ void EntryPoint1() {
         if AutoPlacement.EcoAreaActorName({'ActorName': 'Enemy_Chuchu_Fire_Junior'}) {
             Event294:
             if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
-                switch AutoPlacement.GroundMat() {
-                  case 0:
-                    Event279:
-                    switch AutoPlacement.TimeType() {
-                      case 0:
-                        Event274:
+                if AutoPlacement.GroundMat() in [0, 1, 2, 3, 5, 6, 9, 12, 14] {
+                    if AutoPlacement.TimeType() in [0, 2] {
                         if !AutoPlacement.PlayerRideHorse() {
                             AutoPlacement.NearCreate({'WaitFrame': 1})
                             if AutoPlacement.GroundNorm({'Angle': 10.0}) {
@@ -84,25 +58,7 @@ void EntryPoint1() {
                                 }
                             }
                         }
-                      case 2:
-                        goto Event274
                     }
-                  case 1:
-                    goto Event279
-                  case 2:
-                    goto Event279
-                  case 3:
-                    goto Event279
-                  case 5:
-                    goto Event279
-                  case 6:
-                    goto Event279
-                  case 9:
-                    goto Event279
-                  case 12:
-                    goto Event279
-                  case 14:
-                    goto Event279
                 }
             }
         }

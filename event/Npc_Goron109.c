@@ -11,7 +11,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Goron109.CheckActorAction13() {
-      case 0:
+      case [0, 10]:
         Event12:
         Npc_Goron109.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Goron109:Talk04'})
         Npc_Goron109.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
@@ -27,19 +27,9 @@ void Talk() {
                 Npc_Goron109.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
                 Npc_Goron109.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron109:Talk01'})
             }
-          case 1:
-            goto Event12
-          case 2:
-            goto Event12
-          case 3:
-            goto Event12
-          case 4:
-            goto Event12
-          case 5:
+          case [1, 2, 3, 4, 5]:
             goto Event12
         }
-      case 10:
-        goto Event12
       case 11:
         Npc_Goron109.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Goron109:Talk03', 'ASName': ''})
     }

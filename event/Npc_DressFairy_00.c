@@ -132,25 +132,23 @@ void DressFairyTalk() {
                                     Npc_DressFairy_00.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk05'})
                                     if !EventSystemActor.GeneralChoice2() {
                                         goto Event57
+                                    } else
+                                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'LessThanOrEqualTo', 'Value': 3}) {
+                                        Npc_DressFairy_00.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk02', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+                                        Event269:
+                                        EventSystemActor.Demo_FlagOFF({'FlagName': 'GreatFairy_Rank1_Talk', 'IsWaitFinish': True})
+
+                                        call ExitDressFairy_00()
+
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy1_AllRevival'}) {
+
+                                        call KuchuraBye()
+
                                     } else {
-                                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'LessThanOrEqualTo', 'Value': 3}) {
-                                            Npc_DressFairy_00.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk02', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                                            Event269:
-                                            EventSystemActor.Demo_FlagOFF({'FlagName': 'GreatFairy_Rank1_Talk', 'IsWaitFinish': True})
-
-                                            call ExitDressFairy_00()
-
-                                        } else {
-                                            if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy1_AllRevival'}) {
-
-                                                call KuchuraBye()
-
-                                            } else {
-                                                Npc_DressFairy_00.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk16', 'IsCloseMessageDialog': False})
-                                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GreatFairy1_AllRevival'})
-                                                goto Event269
-                                            }
-                                        }
+                                        Npc_DressFairy_00.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk16', 'IsCloseMessageDialog': False})
+                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GreatFairy1_AllRevival'})
+                                        goto Event269
                                     }
                                 } else {
                                     Npc_DressFairy_00.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk07'})
@@ -162,14 +160,13 @@ void DressFairyTalk() {
                                         goto Event269
                                     }
                                 }
+                            } else
+                            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'GreatFairy_ArmorRank', 'Operator': 'Equal', 'Value': 2}) {
+                                Npc_DressFairy_00.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk50'})
+                                EventSystemActor.Demo_FlagON({'FlagName': 'GreatFairy_Rank1_Talk', 'IsWaitFinish': True})
+                                goto Event250
                             } else {
-                                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'GreatFairy_ArmorRank', 'Operator': 'Equal', 'Value': 2}) {
-                                    Npc_DressFairy_00.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk50'})
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'GreatFairy_Rank1_Talk', 'IsWaitFinish': True})
-                                    goto Event250
-                                } else {
-                                    goto Event251
-                                }
+                                goto Event251
                             }
                         } else {
 
@@ -177,27 +174,24 @@ void DressFairyTalk() {
 
                             goto Event65
                         }
-                    } else {
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'Equal', 'Value': 2}) {
+                    } else
+                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'Equal', 'Value': 2}) {
 
-                            call KuchuraSelectCloth({'ArmorProcessingRank': 3})
+                        call KuchuraSelectCloth({'ArmorProcessingRank': 3})
 
-                            goto Event86
-                        } else {
-                            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'Equal', 'Value': 3}) {
+                        goto Event86
+                    } else
+                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'Equal', 'Value': 3}) {
 
-                                call KuchuraSelectCloth({'ArmorProcessingRank': 4})
+                        call KuchuraSelectCloth({'ArmorProcessingRank': 4})
 
-                                goto Event86
-                            } else {
-                                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Value': 4, 'Operator': 'GreaterThanOrEqualTo'}) {
+                        goto Event86
+                    } else
+                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Value': 4, 'Operator': 'GreaterThanOrEqualTo'}) {
 
-                                    call KuchuraSelectCloth({'ArmorProcessingRank': 5})
+                        call KuchuraSelectCloth({'ArmorProcessingRank': 5})
 
-                                    goto Event86
-                                }
-                            }
-                        }
+                        goto Event86
                     }
                 } else {
                     Event11:
@@ -207,48 +201,40 @@ void DressFairyTalk() {
                     call ExitDressFairy_00()
 
                 }
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'Equal', 'Value': 2}) {
+                Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk13'})
+                goto Event10
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'Equal', 'Value': 3}) {
+                Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk14'})
+                goto Event10
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Value': 4, 'Operator': 'GreaterThanOrEqualTo'}) in [1, 0] {
+                Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk15'})
+                goto Event10
+            }
+        } else
+        if !EventSystemActor.HasPouchItemByPouchCategory({'Count': 1, 'Category': 4}) {
+            Event247:
+            Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk47', 'IsWaitFinish': True})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_DressFairy_00.Demo_TalkNoMessageStepper({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk10'})
+                goto Event65
             } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'Equal', 'Value': 2}) {
-                    Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk13'})
-                    goto Event10
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Operator': 'Equal', 'Value': 3}) {
-                        Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk14'})
-                        goto Event10
-                    } else {
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'FairyRevivalNum', 'Value': 4, 'Operator': 'GreaterThanOrEqualTo'}) {
-                            Event165:
-                            Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk15'})
-                            goto Event10
-                        } else {
-                            goto Event165
-                        }
-                    }
-                }
+
+                call KuchuraBye()
+
             }
         } else {
-            if !EventSystemActor.HasPouchItemByPouchCategory({'Count': 1, 'Category': 4}) {
-                Event247:
-                Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk47', 'IsWaitFinish': True})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_DressFairy_00.Demo_TalkNoMessageStepper({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk10'})
-                    goto Event65
-                } else {
-
-                    call KuchuraBye()
-
-                }
-            } else {
-                Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk11'})
-                goto Event156
-            }
+            Npc_DressFairy_00.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DressFairy_00:Talk11'})
+            goto Event156
         }
+    } else
+    if Npc_DressFairy_00.CheckHasManifactureArmor() {
+        goto Event158
     } else {
-        if Npc_DressFairy_00.CheckHasManifactureArmor() {
-            goto Event158
-        } else {
-            goto Event247
-        }
+        goto Event247
     }
 }
 

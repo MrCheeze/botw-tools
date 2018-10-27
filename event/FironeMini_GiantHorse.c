@@ -41,14 +41,11 @@ void Ready_Npc_FaronWoods008_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_FaronWoods008.IsOwnedHorseAssociated({'IsRidden': False}) {
-      case 0:
-        Event74:
+      case [0, 1, 3, 4]:
         switch Npc_FaronWoods008.CheckTypeOfWildHorseAssociated() {
-          case 0:
-            Event50:
+          case [0, 1, 2, 4, 5, 6, 7]:
             switch Npc_FaronWoods008.CheckActorAction13() {
-              case 0:
-                Event59:
+              case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
                 if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_GiantHorse_IsTalked'}) {
                     Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk02'})
                     Event67:
@@ -85,42 +82,14 @@ void Ready_Npc_FaronWoods008_Talk() {
                     Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk13'})
                     goto Event67
                 }
-              case 1:
-                goto Event59
-              case 2:
-                goto Event59
-              case 3:
-                goto Event59
-              case 4:
-                goto Event59
-              case 5:
-                goto Event59
-              case 6:
-                goto Event59
-              case 7:
-                goto Event59
-              case 8:
-                goto Event59
-              case 9:
-                goto Event59
-              case 10:
-                goto Event59
               case 11:
                 Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk11'})
                 Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk12'})
-              case 12:
-                goto Event59
-              case 13:
-                goto Event59
             }
-          case 1:
-            goto Event50
-          case 2:
-            goto Event50
           case 3:
             Event75:
             switch Npc_FaronWoods008.CheckActorAction13() {
-              case 0:
+              case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
                 Event77:
                 Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk01'})
                 if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_GiantHorse_IsTalked'}) {
@@ -148,51 +117,13 @@ void Ready_Npc_FaronWoods008_Talk() {
                     Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk14'})
                     goto Event80
                 }
-              case 1:
-                goto Event77
-              case 2:
-                goto Event77
-              case 3:
-                goto Event77
-              case 4:
-                goto Event77
-              case 5:
-                goto Event77
-              case 6:
-                goto Event77
-              case 7:
-                goto Event77
-              case 8:
-                goto Event77
-              case 9:
-                goto Event77
-              case 10:
-                goto Event77
               case 11:
                 Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk11'})
                 goto Event77
-              case 12:
-                goto Event77
-              case 13:
-                goto Event77
             }
-          case 4:
-            goto Event50
-          case 5:
-            goto Event50
-          case 6:
-            goto Event50
-          case 7:
-            goto Event50
         }
-      case 1:
-        goto Event74
       case 2:
         goto Event75
-      case 3:
-        goto Event74
-      case 4:
-        goto Event74
     }
 }
 
@@ -201,67 +132,23 @@ void Finish_Npc_FaronWoods008_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_FaronWoods008.CheckActorAction13() {
-      case 0:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
         Event31:
         switch Npc_FaronWoods008.IsOwnedHorseAssociated({'IsRidden': False}) {
-          case 0:
-            Event33:
+          case [0, 1, 3, 4]:
             switch Npc_FaronWoods008.CheckTypeOfWildHorseAssociated() {
-              case 0:
-                Event19:
+              case [0, 1, 2, 4, 5, 6, 7]:
                 Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk08'})
-              case 1:
-                goto Event19
-              case 2:
-                goto Event19
               case 3:
                 Event7:
                 Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk01'})
                 goto Event96
-              case 4:
-                goto Event19
-              case 5:
-                goto Event19
-              case 6:
-                goto Event19
-              case 7:
-                goto Event19
             }
-          case 1:
-            goto Event33
           case 2:
             goto Event7
-          case 3:
-            goto Event33
-          case 4:
-            goto Event33
         }
-      case 1:
-        goto Event31
-      case 2:
-        goto Event31
-      case 3:
-        goto Event31
-      case 4:
-        goto Event31
-      case 5:
-        goto Event31
-      case 6:
-        goto Event31
-      case 7:
-        goto Event31
-      case 8:
-        goto Event31
-      case 9:
-        goto Event31
-      case 10:
-        goto Event31
       case 11:
         Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk11'})
-        goto Event31
-      case 12:
-        goto Event31
-      case 13:
         goto Event31
     }
 }
@@ -279,36 +166,16 @@ void Finish_Npc_FaronWoods008_Near() {
     switch Npc_FaronWoods008.CheckActorAction13() {
       case 1:
         switch Npc_FaronWoods008.IsOwnedHorseAssociated({'IsRidden': False}) {
-          case 0:
-            Event56:
+          case [0, 1, 3, 4]:
             switch Npc_FaronWoods008.CheckTypeOfWildHorseAssociated() {
-              case 0:
-                Event57:
+              case [0, 1, 2, 4, 5, 6, 7]:
                 Npc_FaronWoods008.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:Near03'})
-              case 1:
-                goto Event57
-              case 2:
-                goto Event57
               case 3:
                 Event52:
                 Npc_FaronWoods008.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:Near02', 'DispFrame': 300, 'IsChecked': True})
-              case 4:
-                goto Event57
-              case 5:
-                goto Event57
-              case 6:
-                goto Event57
-              case 7:
-                goto Event57
             }
-          case 1:
-            goto Event56
           case 2:
             goto Event52
-          case 3:
-            goto Event56
-          case 4:
-            goto Event56
         }
       case 11:
         Npc_FaronWoods008.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:Near01', 'DispFrame': 300, 'IsChecked': True})

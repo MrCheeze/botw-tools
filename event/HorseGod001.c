@@ -103,8 +103,7 @@ void HorseGodTalk() {
                                         EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
                                         if EventSystemActor.CheckFlag({'FlagName': 'Horse_IsSelected'}) {
                                             switch EventSystemActor.CheckHorseDeadCause() {
-                                              case 0:
-                                                Event59:
+                                              case [0, 4]:
                                                 HorseGod001.Demo_EndHorseReception({'IsWaitFinish': True})
                                                 HorseGod001.Demo_Talk({'MessageId': 'EventFlowMsg/HorseGod001:talk_11', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait'})
                                                 Event27:
@@ -142,8 +141,6 @@ void HorseGodTalk() {
                                                 HorseGod001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HorseGod001:talk_14_02', 'ASName': 'Angry_Talk'})
                                                 HorseGod001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HorseGod001:talk_14_03', 'ASName': 'Wait'})
                                                 goto Event27
-                                              case 4:
-                                                goto Event59
                                             }
                                         } else {
                                             HorseGod001.Demo_Talk({'MessageId': 'EventFlowMsg/HorseGod001:talk_06', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait'})

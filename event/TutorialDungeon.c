@@ -17,13 +17,12 @@ void SideStep_Npc_TutorialDungeon_EachFrame() {
     Event2:
     if EventSystemActor.CheckFlag({'FlagName': 'ClearTutorial_SideStep'}) {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'BackStep'})
+    } else
+    if EventTimerTag.CheckElapsedTimeOfMiniGame({'Threshold': 40}) {
+        EventSystemActor.Demo_AdvanceQuest({'StepName': 'SideStepWarning', 'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False})
     } else {
-        if EventTimerTag.CheckElapsedTimeOfMiniGame({'Threshold': 40}) {
-            EventSystemActor.Demo_AdvanceQuest({'StepName': 'SideStepWarning', 'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False})
-        } else {
-            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-            goto Event2
-        }
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event2
     }
 }
 
@@ -38,13 +37,12 @@ void BackStep_Npc_TutorialDungeon_EachFrame() {
     Event17:
     if EventSystemActor.CheckFlag({'FlagName': 'ClearTutorial_BackStep'}) {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'GuardJust'})
+    } else
+    if EventTimerTag.CheckElapsedTimeOfMiniGame({'Threshold': 40}) {
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'BackStepWarning'})
     } else {
-        if EventTimerTag.CheckElapsedTimeOfMiniGame({'Threshold': 40}) {
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'BackStepWarning'})
-        } else {
-            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-            goto Event17
-        }
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event17
     }
 }
 
@@ -59,13 +57,12 @@ void GuardJust_Npc_TutorialDungeon_EachFrame() {
     Event26:
     if EventSystemActor.CheckFlag({'FlagName': 'ClearTutorial_GuardJust'}) {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'SpinAttack'})
+    } else
+    if EventTimerTag.CheckElapsedTimeOfMiniGame({'Threshold': 40}) {
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'GuardJustWarning'})
     } else {
-        if EventTimerTag.CheckElapsedTimeOfMiniGame({'Threshold': 40}) {
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'GuardJustWarning'})
-        } else {
-            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-            goto Event26
-        }
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event26
     }
 }
 
@@ -80,13 +77,12 @@ void SpinAttack_Npc_TutorialDungeon_EachFrame() {
     Event35:
     if EventSystemActor.CheckFlag({'FlagName': 'ClearTutorial_SpinAttack'}) {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
+    } else
+    if EventTimerTag.CheckElapsedTimeOfMiniGame({'Threshold': 40}) {
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'SpinAttackWarning'})
     } else {
-        if EventTimerTag.CheckElapsedTimeOfMiniGame({'Threshold': 40}) {
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'SpinAttackWarning'})
-        } else {
-            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-            goto Event35
-        }
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event35
     }
 }
 

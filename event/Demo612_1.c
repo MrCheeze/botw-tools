@@ -138,14 +138,9 @@ void Demo612_1_End() {
       case 2:
         Npc_Musician_AoC_HeroRito.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo612_Grow_003'})
         goto Event29
-      case 3:
-        Event138:
+      case [3, 4, 5]:
         Npc_Musician_AoC_HeroRito.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo612_Grow_004'})
         goto Event29
-      case 4:
-        goto Event138
-      case 5:
-        goto Event138
     }
 }
 
@@ -183,14 +178,9 @@ void Demo612_1_C03() {
       case 2:
         Npc_Musician_AoC_HeroRito.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo612_030', 'ASName': 'Demo612_1-Turn-Npc_Rito_Musician-A-1'})
         goto Event143
-      case 3:
-        Event113:
+      case [3, 4, 5]:
         Npc_Musician_AoC_HeroRito.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo612_040', 'ASName': 'Demo612_1-Turn-Npc_Rito_Musician-A-1'})
         goto Event143
-      case 4:
-        goto Event113
-      case 5:
-        goto Event113
     }
 }
 

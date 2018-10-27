@@ -63,24 +63,23 @@ void Talk() {
         } else {
             goto Event21
         }
-    } else {
-        if Npc_TamourHatago002.IsOnInstEventFlag() {
-            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk12'})
-            Event17:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk16'})
-                Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk11'})
-                Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk05'})
-                Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk07'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Higakkare_NPC002_First', 'IsWaitFinish': True})
-                goto Event25
-            } else {
-                goto Event18
-            }
+    } else
+    if Npc_TamourHatago002.IsOnInstEventFlag() {
+        Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk12'})
+        Event17:
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk16'})
+            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk11'})
+            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk05'})
+            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk07'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Higakkare_NPC002_First', 'IsWaitFinish': True})
+            goto Event25
         } else {
-            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk01'})
-            goto Event17
+            goto Event18
         }
+    } else {
+        Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk01'})
+        goto Event17
     }
 }
 
@@ -90,43 +89,22 @@ void NobotanHello() {
 
     if Npc_TamourHatago002.IsOnInstEventFlag() {
         Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk00'})
-    } else {
-        switch Npc_TamourHatago002.CheckActorAction13() {
-          case 0:
-            Event7:
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event10:
-                Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk02'})
-              case 1:
-                goto Event10
-              case 2:
-                Event11:
-                Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk03'})
-              case 3:
-                goto Event11
-              case 4:
-                goto Event11
-              case 5:
-                goto Event11
-              case 6:
-                Event12:
-                Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk04'})
-              case 7:
-                goto Event12
-            }
-          case 1:
-            goto Event7
-          case 10:
-            goto Event7
-          case 11:
-            if !EventSystemActor.RandomChoice2() {
-                Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk17'})
-            } else {
-                Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk06'})
-            }
-          case 12:
-            goto Event7
+    } else
+    switch Npc_TamourHatago002.CheckActorAction13() {
+      case [0, 1, 10, 12]:
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk02'})
+          case [2, 3, 4, 5]:
+            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk03'})
+          case [6, 7]:
+            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk04'})
+        }
+      case 11:
+        if !EventSystemActor.RandomChoice2() {
+            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk17'})
+        } else {
+            Npc_TamourHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago002:talk06'})
         }
     }
 }

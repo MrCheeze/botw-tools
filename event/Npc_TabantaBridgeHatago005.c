@@ -19,12 +19,7 @@ void Talk() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         Npc_TabantaBridgeHatago005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago005:talk01', 'IsBecomingSpeaker': True})
-      case 1:
-        Event20:
+      case [1, 2, 3]:
         Npc_TabantaBridgeHatago005.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago005:talk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-      case 2:
-        goto Event20
-      case 3:
-        goto Event20
     }
 }

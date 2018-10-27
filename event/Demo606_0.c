@@ -93,20 +93,10 @@ void Demo606_0() {
 
             fork {
                 switch EventSystemActor.CountFlag4({'GameDataFlagNo4': '', 'GameDataFlagNo0': 'Lock_OneHitDungeon001', 'GameDataFlagNo1': 'Lock_OneHitDungeon002', 'GameDataFlagNo2': 'Lock_OneHitDungeon003', 'GameDataFlagNo3': 'Lock_OneHitDungeon004'}) {
-                  case 0:
-                    Event56:
+                  case [0, 1, 2, 3]:
                     EventSystemActor[Doshi].Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo606_0:Talk01'})
-                  case 1:
-                    goto Event56
-                  case 2:
-                    goto Event56
-                  case 3:
-                    goto Event56
-                  case 4:
-                    Event23:
+                  case [4, 5]:
                     EventSystemActor[Doshi].Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo606_0:Talk02'})
-                  case 5:
-                    goto Event23
                 }
             } {
                 GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Demo606_0-C02-Link-A-0', 'NoErrorCheck': True, 'IsOneTimeEndKeep': True})

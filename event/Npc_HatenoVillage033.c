@@ -14,8 +14,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_HatenoVillage033.CheckActorAction13() {
-      case 0:
-        Event72:
+      case [0, 1]:
 
         call TamanaBlueFire()
 
@@ -36,8 +35,7 @@ void Talk() {
                           case 3:
                             Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk27'})
                         }
-                      case 1:
-                        Event74:
+                      case [1, 2, 3]:
                         Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk19'})
                         if !EventSystemActor.GeneralChoice2() {
                             Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk20'})
@@ -52,36 +50,18 @@ void Talk() {
                         } else {
                             Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk07'})
                         }
-                      case 2:
-                        goto Event74
-                      case 3:
-                        goto Event74
                     }
-                } else {
-                    switch EventSystemActor.CheckTimeType() {
-                      case 0:
-                        Event31:
-                        Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk15'})
-                        goto Event73
-                      case 1:
-                        goto Event31
-                      case 2:
-                        Event32:
-                        Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk16'})
-                        goto Event73
-                      case 3:
-                        goto Event32
-                      case 4:
-                        goto Event32
-                      case 5:
-                        goto Event32
-                      case 6:
-                        Event30:
-                        Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk17'})
-                        goto Event73
-                      case 7:
-                        goto Event30
-                    }
+                } else
+                switch EventSystemActor.CheckTimeType() {
+                  case [0, 1]:
+                    Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk15'})
+                    goto Event73
+                  case [2, 3, 4, 5]:
+                    Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk16'})
+                    goto Event73
+                  case [6, 7]:
+                    Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk17'})
+                    goto Event73
                 }
             } else {
                 Npc_HatenoVillage033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage033:talk09'})
@@ -106,8 +86,6 @@ void Talk() {
             call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Item_Material_04'})
 
         }
-      case 1:
-        goto Event72
       case 10:
 
         call TamanaBlueFire()

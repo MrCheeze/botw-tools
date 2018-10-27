@@ -76,17 +76,16 @@ void StepOnTheFlowers() {
                 call Restart()
 
                 EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': 1})
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': 1, 'Operator': 'LessThanOrEqualTo'}) {
+
+                call OkobaTalkCam()
+
+                Npc_Challenge093Lady.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/DontDamageFlower:Fail_2', 'IsOverWriteLabelActorName': False})
+                goto Event36
             } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': 1, 'Operator': 'LessThanOrEqualTo'}) {
-
-                    call OkobaTalkCam()
-
-                    Npc_Challenge093Lady.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/DontDamageFlower:Fail_2', 'IsOverWriteLabelActorName': False})
-                    goto Event36
-                } else {
-                    EventSystemActor.Demo_CallDemo({'DemoName': 'Demo331_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo331_0', 'EndFade': 0})
-                    EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': -2})
-                }
+                EventSystemActor.Demo_CallDemo({'DemoName': 'Demo331_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo331_0', 'EndFade': 0})
+                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': -2})
             }
         } else {
 

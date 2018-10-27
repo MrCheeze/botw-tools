@@ -18,8 +18,7 @@ void Talk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_kokiri006_Talk'}) {
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event61:
+          case [0, 1, 4, 5, 6, 7]:
             Npc_kokiri006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri006:Npc_kokiri006_Talk020'})
             Event41:
             Npc_kokiri006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri006:Npc_kokiri006_Talk030'})
@@ -62,22 +61,9 @@ void Talk() {
               case 2:
                 goto Event119
             }
-          case 1:
-            goto Event61
-          case 2:
-            Event88:
+          case [2, 3]:
             Npc_kokiri006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri006:Npc_kokiri006_Talk010'})
             goto Event41
-          case 3:
-            goto Event88
-          case 4:
-            goto Event61
-          case 5:
-            goto Event61
-          case 6:
-            goto Event61
-          case 7:
-            goto Event61
         }
     } else {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_kokiri006_Talk'})

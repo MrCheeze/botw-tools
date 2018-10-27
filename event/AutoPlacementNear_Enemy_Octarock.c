@@ -9,12 +9,8 @@ params: None
 void EntryPoint0() {
     if AutoPlacement.EcoAreaActorName({'ActorName': 'Enemy_Octarock_Snow'}) {
         if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
-            switch AutoPlacement.GroundMat() {
-              case 9:
-                Event10:
-                switch AutoPlacement.TimeType() {
-                  case 1:
-                    Event3:
+            if AutoPlacement.GroundMat() in [9, 14] {
+                if AutoPlacement.TimeType() in [1, 4] {
                     if !AutoPlacement.PlayerRideHorse() {
                         AutoPlacement.NearCreate({'WaitFrame': 1})
                         if AutoPlacement.GroundNorm({'Angle': 10.0}) {
@@ -23,11 +19,7 @@ void EntryPoint0() {
                             }
                         }
                     }
-                  case 4:
-                    goto Event3
                 }
-              case 14:
-                goto Event10
             }
         }
     }

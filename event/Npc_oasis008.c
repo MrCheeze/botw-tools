@@ -33,27 +33,13 @@ void Talk() {
         if Npc_oasis008.IsOnInstEventFlag() {
             Event65:
             Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_18'})
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                goto Event65
-              case 1:
-                goto Event65
-              case 2:
-                Event132:
-                Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_23'})
-                goto Event65
-              case 3:
-                goto Event132
-              case 4:
-                goto Event132
-              case 5:
-                goto Event65
-              case 6:
-                goto Event65
-              case 7:
-                goto Event65
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1, 5, 6, 7]:
+            goto Event65
+          case [2, 3, 4]:
+            Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_23'})
+            goto Event65
         }
       case 1:
         Event64:
@@ -89,27 +75,13 @@ void Talk() {
         if Npc_oasis008.IsOnInstEventFlag() {
             Event60:
             Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_16'})
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                goto Event60
-              case 1:
-                goto Event60
-              case 2:
-                goto Event60
-              case 3:
-                goto Event60
-              case 4:
-                goto Event60
-              case 5:
-                Event142:
-                Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_25'})
-                goto Event60
-              case 6:
-                goto Event142
-              case 7:
-                goto Event142
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1, 2, 3, 4]:
+            goto Event60
+          case [5, 6, 7]:
+            Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_25'})
+            goto Event60
         }
       case 11:
         Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_17'})
@@ -156,61 +128,60 @@ void NearActorsTalk() {
                 Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_11'})
             }
 
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Deliver'}) {
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Deliver'}) {
 
-                fork {
-                    Npc_oasis008.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'ActorName': 'Npc_oasis021', 'FaceId': 2, 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_03'})
-                } {
-                    Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                }
-
-
-                fork {
-                    Npc_oasis008.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'ActorName': 'Npc_oasis021', 'FaceId': 2, 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                } {
-                    Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_oasis021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_07'})
-                }
-
-
-                fork {
-                    Npc_oasis008.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'ActorName': 'Npc_oasis021', 'FaceId': 2, 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_08'})
-                } {
-                    Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                }
-
-            } else {
-
-                fork {
-                    Npc_oasis008.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                }
-
-
-                fork {
-                    Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_oasis021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_02'})
-                }
-
-
-                fork {
-                    Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_04'})
-                }
-
-
-                fork {
-                    Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_oasis021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_05'})
-                }
-
-
-                fork {
-                    Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_06'})
-                }
-
+            fork {
+                Npc_oasis008.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'ActorName': 'Npc_oasis021', 'FaceId': 2, 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_03'})
+            } {
+                Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
             }
+
+
+            fork {
+                Npc_oasis008.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'ActorName': 'Npc_oasis021', 'FaceId': 2, 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            } {
+                Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_oasis021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_07'})
+            }
+
+
+            fork {
+                Npc_oasis008.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'ActorName': 'Npc_oasis021', 'FaceId': 2, 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_08'})
+            } {
+                Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            }
+
+        } else {
+
+            fork {
+                Npc_oasis008.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            }
+
+
+            fork {
+                Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_oasis021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_02'})
+            }
+
+
+            fork {
+                Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_04'})
+            }
+
+
+            fork {
+                Npc_oasis021.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_oasis021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_05'})
+            }
+
+
+            fork {
+                Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_06'})
+            }
+
         }
     }
 }
@@ -228,25 +199,12 @@ void uwasa1() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event129:
+      case [0, 1]:
         Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_20'})
-      case 1:
-        goto Event129
-      case 2:
-        Event130:
+      case [2, 3, 4]:
         Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_21'})
-      case 3:
-        goto Event130
-      case 4:
-        goto Event130
-      case 5:
-        Event131:
+      case [5, 6, 7]:
         Npc_oasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis008:Talk_22'})
-      case 6:
-        goto Event131
-      case 7:
-        goto Event131
     }
 }
 

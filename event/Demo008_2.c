@@ -178,32 +178,31 @@ void Demo008_2_Sub_ToDungeonFloor() {
 
             EventSystemActor.Demo_OpenDungeonTitle({'SubMstxt': 'StaticMsg/Dungeon', 'IsWaitFinish': False})
             EventSystemActor.Demo_SetEnterDungeonFlag({'IsWaitFinish': True})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'First_CDungeon'}) {
-                Event100:
-                switch EventSystemActor.WhatDungeonType() {
-                  case 0:
-                    if !EventSystemActor.CheckEventCancel() {
-                        EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo008_2:talk00'})
-                        Event98:
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'First_CDungeon_Riddle'})
-                        goto Event105
-                    } else {
-                        goto Event98
-                    }
-                  case 1:
-                    EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo008_2:talk01'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'First_CDungeon_Enemy'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'First_CDungeon'}) {
+            Event100:
+            switch EventSystemActor.WhatDungeonType() {
+              case 0:
+                if !EventSystemActor.CheckEventCancel() {
+                    EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo008_2:talk00'})
+                    Event98:
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'First_CDungeon_Riddle'})
                     goto Event105
-                  case 2:
-                    EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo008_2:talk02'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'First_CDungeon_Prize'})
-                    goto Event105
+                } else {
+                    goto Event98
                 }
-            } else {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
-                goto Event100
+              case 1:
+                EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo008_2:talk01'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'First_CDungeon_Enemy'})
+                goto Event105
+              case 2:
+                EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo008_2:talk02'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'First_CDungeon_Prize'})
+                goto Event105
             }
+        } else {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
+            goto Event100
         }
     } else {
         GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ASName': 'Demo008_2-C03-Link-A-0', 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'IsWaitFinish': False, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})

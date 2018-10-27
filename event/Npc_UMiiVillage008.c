@@ -85,28 +85,14 @@ void MokusenHello() {
       case 12:
         if Npc_UMiiVillage008.IsOnInstEventFlag() {
             Npc_UMiiVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage008:talk04'})
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event14:
-                Npc_UMiiVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage008:talk01'})
-              case 1:
-                goto Event14
-              case 2:
-                Event5:
-                Npc_UMiiVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage008:talk02'})
-              case 3:
-                goto Event5
-              case 4:
-                goto Event5
-              case 5:
-                goto Event5
-              case 6:
-                Event15:
-                Npc_UMiiVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage008:talk03'})
-              case 7:
-                goto Event15
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_UMiiVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage008:talk01'})
+          case [2, 3, 4, 5]:
+            Npc_UMiiVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage008:talk02'})
+          case [6, 7]:
+            Npc_UMiiVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage008:talk03'})
         }
     }
 }

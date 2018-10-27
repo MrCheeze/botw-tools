@@ -88,22 +88,16 @@ void Near() {
             } else {
                 Npc_HatenoVillage029.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage029:near00', 'IsChecked': False, 'DispFrame': 90})
             }
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                Event18:
-                Npc_HatenoVillage029.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage029:near02', 'IsChecked': False, 'DispFrame': 90})
-              case 1:
-                Event38:
-                if Npc_HatenoVillage029.IsArriveAnchorForRain() {
-                    goto Event18
-                } else {
-                    Npc_HatenoVillage029.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage029:near05'})
-                }
-              case 2:
-                goto Event38
-              case 3:
-                goto Event38
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            Event18:
+            Npc_HatenoVillage029.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage029:near02', 'IsChecked': False, 'DispFrame': 90})
+          case [1, 2, 3]:
+            if Npc_HatenoVillage029.IsArriveAnchorForRain() {
+                goto Event18
+            } else {
+                Npc_HatenoVillage029.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage029:near05'})
             }
         }
     }

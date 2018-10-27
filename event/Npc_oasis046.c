@@ -28,84 +28,64 @@ void Talk() {
                         call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_oasis046")})
 
                         Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_03', 'IsOverWriteLabelActorName': False})
+                    } else
+                    if !EventSystemActor.RandomChoice2() {
+                        Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_03', 'IsOverWriteLabelActorName': False})
                     } else {
-                        if !EventSystemActor.RandomChoice2() {
-                            Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_03', 'IsOverWriteLabelActorName': False})
-                        } else {
-                            Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_13'})
-                        }
+                        Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_13'})
                     }
-                } else {
-                    if Npc_oasis046.IsOnInstEventFlag() {
-                        Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_17'})
+                } else
+                if Npc_oasis046.IsOnInstEventFlag() {
+                    Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_17'})
+                    goto Event2
+                } else
+                switch EventSystemActor.CheckTimeType() {
+                  case [0, 1]:
+                    Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_01', 'IsOverWriteLabelActorName': False})
+                    Event40:
+                    if !EventSystemActor.GeneralChoice2() {
+                        Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_14'})
                         goto Event2
                     } else {
-                        switch EventSystemActor.CheckTimeType() {
-                          case 0:
-                            Event7:
-                            Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_01', 'IsOverWriteLabelActorName': False})
-                            Event40:
-                            if !EventSystemActor.GeneralChoice2() {
-                                Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_14'})
-                                goto Event2
-                            } else {
-                                Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_15'})
-                                goto Event2
-                            }
-                          case 1:
-                            goto Event7
-                          case 2:
-                            Event37:
-                            Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_12'})
-                            goto Event40
-                          case 3:
-                            goto Event37
-                          case 4:
-                            goto Event37
-                          case 5:
-                            Event1:
-                            Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_10'})
-                            goto Event40
-                          case 6:
-                            goto Event1
-                          case 7:
-                            goto Event1
-                        }
+                        Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_15'})
+                        goto Event2
                     }
+                  case [2, 3, 4]:
+                    Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_12'})
+                    goto Event40
+                  case [5, 6, 7]:
+                    Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_10'})
+                    goto Event40
                 }
+            } else
+            if Npc_oasis046.IsOnInstEventFlag() {
+                Event64:
+                Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_24'})
+                Event68:
+                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis046_talk', 'IsWaitFinish': True})
+                goto Event2
             } else {
-                if Npc_oasis046.IsOnInstEventFlag() {
-                    Event64:
-                    Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_24'})
-                    Event68:
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis046_talk', 'IsWaitFinish': True})
-                    goto Event2
-                } else {
 
-                    call hello()
+                call hello()
 
-                    goto Event64
-                }
+                goto Event64
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis046_talk'}) {
+            goto Event45
+        } else
+        if Npc_oasis046.IsOnInstEventFlag() {
+            Event63:
+            Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_23'})
+            goto Event68
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis046_talk'}) {
-                goto Event45
-            } else {
-                if Npc_oasis046.IsOnInstEventFlag() {
-                    Event63:
-                    Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_23'})
-                    goto Event68
-                } else {
 
-                    call hello()
+            call hello()
 
-                    goto Event63
-                }
-            }
+            goto Event63
         }
-    } else {
-        goto Event45
-    }
+    } else
+    goto Event45
 }
 
 void Near() {
@@ -141,24 +121,11 @@ void ClerkAsk() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event60:
+      case [0, 1]:
         Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_20'})
-      case 1:
-        goto Event60
-      case 2:
-        Event61:
+      case [2, 3, 4]:
         Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_21'})
-      case 3:
-        goto Event61
-      case 4:
-        goto Event61
-      case 5:
-        Event59:
+      case [5, 6, 7]:
         Npc_oasis046.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis046:Talk_22'})
-      case 6:
-        goto Event59
-      case 7:
-        goto Event59
     }
 }

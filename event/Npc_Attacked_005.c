@@ -14,8 +14,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_Attacked_005.CheckTerrorLevel() {
-      case 0:
-        Event3:
+      case [0, 1, 2, 4]:
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
@@ -70,14 +69,9 @@ void Talk() {
                 goto Event45
             }
         }
-      case 1:
-        goto Event3
-      case 2:
-        goto Event3
       case 3:
         switch Npc_Attacked_005.CheckResultOfNPCConflict() {
-          case 0:
-            Event12:
+          case [0, 1]:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 6})
 
@@ -92,17 +86,14 @@ void Talk() {
                 } else {
                     goto Event17
                 }
+            } else
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Material_08'}) {
+                Npc_Attacked_005.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Attacked_005:Talk00', 'IsCloseMessageDialog': False})
+                goto Event17
             } else {
-                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Material_08'}) {
-                    Npc_Attacked_005.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Attacked_005:Talk00', 'IsCloseMessageDialog': False})
-                    goto Event17
-                } else {
-                    Npc_Attacked_005.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Attacked_005:Talk00_1'})
-                    goto Event43
-                }
+                Npc_Attacked_005.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Attacked_005:Talk00_1'})
+                goto Event43
             }
-          case 1:
-            goto Event12
           case 2:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
@@ -121,8 +112,6 @@ void Talk() {
 
             goto Event36
         }
-      case 4:
-        goto Event3
       case 5:
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})

@@ -47,36 +47,13 @@ void Ready_Npc_DeathEastHatago_002_Talk() {
             Npc_DeathEastHatago_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:NewText_02'})
             goto Event8
         }
-      case 2:
-        Event63:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_DeathEastHatago_002.IsOnInstEventFlag() {
             goto Event64
         } else {
             Npc_DeathEastHatago_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:NewText_04'})
             goto Event8
         }
-      case 3:
-        goto Event63
-      case 4:
-        goto Event63
-      case 5:
-        goto Event63
-      case 6:
-        goto Event63
-      case 7:
-        goto Event63
-      case 8:
-        goto Event63
-      case 9:
-        goto Event63
-      case 10:
-        goto Event63
-      case 11:
-        goto Event63
-      case 12:
-        goto Event63
-      case 13:
-        goto Event63
     }
 }
 
@@ -121,42 +98,16 @@ void Finish_Npc_DeathEastHatago_002_Talk() {
             Npc_DeathEastHatago_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:NewText_02'})
             goto Event26
         }
-      case 2:
-        goto Event26
-      case 3:
-        goto Event26
-      case 4:
-        goto Event26
-      case 5:
-        goto Event26
-      case 6:
-        goto Event26
-      case 7:
-        goto Event26
-      case 8:
-        goto Event26
-      case 9:
-        goto Event26
-      case 10:
-        goto Event26
-      case 11:
-        goto Event26
-      case 12:
-        goto Event26
-      case 13:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         goto Event26
     }
 }
 
 void Ready_Npc_DeathEastHatago_002_Near() {
     switch Npc_DeathEastHatago_002.CheckActorAction13() {
-      case 0:
-        Event69:
+      case [0, 1]:
         Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_03'})
-      case 1:
-        goto Event69
-      case 2:
-        Event67:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         switch EventSystemActor.RandomChoice3() {
           case 0:
             Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_00', 'DispFrame': 300, 'IsChecked': True})
@@ -165,41 +116,15 @@ void Ready_Npc_DeathEastHatago_002_Near() {
           case 2:
             Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_02'})
         }
-      case 3:
-        goto Event67
-      case 4:
-        goto Event67
-      case 5:
-        goto Event67
-      case 6:
-        goto Event67
-      case 7:
-        goto Event67
-      case 8:
-        goto Event67
-      case 9:
-        goto Event67
-      case 10:
-        goto Event67
-      case 11:
-        goto Event67
-      case 12:
-        goto Event67
-      case 13:
-        goto Event67
     }
 }
 
 void Finish_Npc_DeathEastHatago_002_Near() {
     if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_X', 'Count': 10}) {
         switch Npc_DeathEastHatago_002.CheckActorAction13() {
-          case 0:
-            Event74:
+          case [0, 1]:
             Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_03', 'IsChecked': True})
-          case 1:
-            goto Event74
-          case 2:
-            Event72:
+          case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
             switch EventSystemActor.RandomChoice3() {
               case 0:
                 Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_00', 'DispFrame': 300, 'IsChecked': True})
@@ -208,68 +133,19 @@ void Finish_Npc_DeathEastHatago_002_Near() {
               case 2:
                 Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_02', 'IsChecked': True})
             }
-          case 3:
-            goto Event72
-          case 4:
-            goto Event72
-          case 5:
-            goto Event72
-          case 6:
-            goto Event72
-          case 7:
-            goto Event72
-          case 8:
-            goto Event72
-          case 9:
-            goto Event72
-          case 10:
-            goto Event72
-          case 11:
-            goto Event72
-          case 12:
-            goto Event72
-          case 13:
-            goto Event72
         }
-    } else {
-        switch Npc_DeathEastHatago_002.CheckActorAction13() {
+    } else
+    switch Npc_DeathEastHatago_002.CheckActorAction13() {
+      case [0, 1]:
+        Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_03', 'IsChecked': False})
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
+        switch EventSystemActor.RandomChoice3() {
           case 0:
-            Event88:
-            Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_03', 'IsChecked': False})
+            Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_00', 'DispFrame': 300, 'IsChecked': False})
           case 1:
-            goto Event88
+            Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_00', 'DispFrame': 300, 'IsChecked': False})
           case 2:
-            Event86:
-            switch EventSystemActor.RandomChoice3() {
-              case 0:
-                Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_00', 'DispFrame': 300, 'IsChecked': False})
-              case 1:
-                Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_00', 'DispFrame': 300, 'IsChecked': False})
-              case 2:
-                Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_02', 'IsChecked': False})
-            }
-          case 3:
-            goto Event86
-          case 4:
-            goto Event86
-          case 5:
-            goto Event86
-          case 6:
-            goto Event86
-          case 7:
-            goto Event86
-          case 8:
-            goto Event86
-          case 9:
-            goto Event86
-          case 10:
-            goto Event86
-          case 11:
-            goto Event86
-          case 12:
-            goto Event86
-          case 13:
-            goto Event86
+            Npc_DeathEastHatago_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'MessageId': 'EventFlowMsg/SanrokuMini_Lizard:Near_02', 'IsChecked': False})
         }
     }
 }

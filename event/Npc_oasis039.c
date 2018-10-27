@@ -38,8 +38,7 @@ void Talk() {
         call InitTalk.InitTalkOnEvent({'Arg_Turn': 0, 'Self': ActorIdentifier(name="Npc_oasis039")})
 
         Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis039:Talk_06'})
-      case 1:
-        Event28:
+      case [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_oasis039.CheckActorAction({'ActionName': 'Root/Terror'}) {
             goto Event25
         } else {
@@ -49,30 +48,6 @@ void Talk() {
             call Npc_oasis038.Talk()
 
         }
-      case 2:
-        goto Event28
-      case 3:
-        goto Event28
-      case 4:
-        goto Event28
-      case 5:
-        goto Event28
-      case 6:
-        goto Event28
-      case 7:
-        goto Event28
-      case 8:
-        goto Event28
-      case 9:
-        goto Event28
-      case 10:
-        goto Event28
-      case 11:
-        goto Event28
-      case 12:
-        goto Event28
-      case 13:
-        goto Event28
     }
 }
 

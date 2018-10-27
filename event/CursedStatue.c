@@ -64,38 +64,23 @@ void DungeonAppear() {
 void Ready_Npc_HatenoGate001_Talk() {
     Event41:
     switch Npc_HatenoGate001.CheckTerrorLevel() {
-      case 0:
-        Event58:
+      case [0, 1, 2]:
 
         call Npc_HatenoGate001.Talk()
 
-      case 1:
-        goto Event58
-      case 2:
-        goto Event58
-      case 3:
-        Event43:
+      case [3, 4, 5]:
         switch Npc_HatenoGate001.CheckResultOfNPCConflict() {
-          case 0:
-            Event82:
+          case [0, 1, 2]:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})
 
             Npc_HatenoGate001.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CursedStatue:Talk09', 'IsWaitFinish': True})
-          case 1:
-            goto Event82
-          case 2:
-            goto Event82
           case 3:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
 
             Npc_HatenoGate001.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/CursedStatue:Talk08', 'ASName': 'Detect'})
         }
-      case 4:
-        goto Event43
-      case 5:
-        goto Event43
     }
 }
 

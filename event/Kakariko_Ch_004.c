@@ -50,19 +50,10 @@ void Ready_Npc_Kakariko016_Talk() {
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
         switch Npc_Kakariko016.CheckActorAction13() {
-          case 0:
-            Event50:
+          case [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
 
             call Npc_Kakariko016.Talk()
 
-          case 1:
-            goto Event50
-          case 2:
-            goto Event50
-          case 3:
-            goto Event50
-          case 4:
-            goto Event50
           case 5:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko_016_first'}) {
                 Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk13'})
@@ -76,22 +67,6 @@ void Ready_Npc_Kakariko016_Talk() {
                 Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk26'})
                 EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Kakariko_016_first'})
             }
-          case 6:
-            goto Event50
-          case 7:
-            goto Event50
-          case 8:
-            goto Event50
-          case 9:
-            goto Event50
-          case 10:
-            goto Event50
-          case 11:
-            goto Event50
-          case 12:
-            goto Event50
-          case 13:
-            goto Event50
         }
     } else {
         goto Event0
@@ -106,20 +81,16 @@ void Finish_Npc_Kakariko016_Talk() {
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
         switch Npc_Kakariko016.CheckActorAction13() {
-          case 0:
-            Event32:
+          case [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
             if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_E', 'Count': 1}) {
                 switch Npc_Kakariko016.CheckActorAction13() {
-                  case 0:
-                    Event33:
+                  case [0, 1]:
                     Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk11', 'ASName': ''})
                     Event69:
                     if !EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_004_First'}) {
                         Event67:
                         EventSystemActor.Demo_FlagON({'FlagName': 'Kakariko_Ch_004_First', 'IsWaitFinish': True})
                     }
-                  case 1:
-                    goto Event33
                   case 4:
                     if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_016in015house'}) {
                         Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk24', 'ASName': ''})
@@ -134,45 +105,20 @@ void Finish_Npc_Kakariko016_Talk() {
                 call Npc_Kakariko016.Talk()
 
             }
-          case 1:
-            goto Event32
-          case 2:
-            goto Event32
-          case 3:
-            goto Event32
-          case 4:
-            goto Event32
           case 5:
             if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Hotaru_Short'}) {
                 Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk10'})
-            } else {
-                if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_E', 'Count': 1}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_004_First'}) {
-                        Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk21'})
-                    } else {
-                        Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk12'})
-                        goto Event67
-                    }
+            } else
+            if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_E', 'Count': 1}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_004_First'}) {
+                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk21'})
                 } else {
-                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk07'})
+                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk12'})
+                    goto Event67
                 }
+            } else {
+                Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk07'})
             }
-          case 6:
-            goto Event32
-          case 7:
-            goto Event32
-          case 8:
-            goto Event32
-          case 9:
-            goto Event32
-          case 10:
-            goto Event32
-          case 11:
-            goto Event32
-          case 12:
-            goto Event32
-          case 13:
-            goto Event32
         }
     } else {
         goto Event10

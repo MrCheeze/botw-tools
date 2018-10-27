@@ -110,14 +110,13 @@ void Talk() {
                 goto Event72
             }
         }
+    } else
+    if Npc_SmallOasis004.IsOnInstEventFlag() {
+        Npc_SmallOasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis004:Talk18'})
+        goto Event70
     } else {
-        if Npc_SmallOasis004.IsOnInstEventFlag() {
-            Npc_SmallOasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis004:Talk18'})
-            goto Event70
-        } else {
-            Npc_SmallOasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis004:Talk01', 'IsOverWriteLabelActorName': False})
-            goto Event70
-        }
+        Npc_SmallOasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis004:Talk01', 'IsOverWriteLabelActorName': False})
+        goto Event70
     }
 }
 

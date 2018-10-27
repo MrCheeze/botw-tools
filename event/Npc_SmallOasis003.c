@@ -59,14 +59,13 @@ void Talk() {
             Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_15'})
             goto Event17
         }
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
+        Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_14'})
+        goto Event17
     } else {
-        if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
-            Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_14'})
-            goto Event17
-        } else {
-            Npc_SmallOasis003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-            goto Event17
-        }
+        Npc_SmallOasis003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+        goto Event17
     }
 }
 
@@ -75,9 +74,7 @@ void Near() {
 }
 
 void Sell() {
-    switch Npc_SmallOasis003.CheckPlacedItemSaled() {
-      case 0:
-        Event64:
+    if Npc_SmallOasis003.CheckPlacedItemSaled() in [0, 1, 2] {
         switch EventSystemActor.RandomChoice4() {
           case 0:
             Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_09'})
@@ -88,10 +85,6 @@ void Sell() {
           case 3:
             Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_18'})
         }
-      case 1:
-        goto Event64
-      case 2:
-        goto Event64
     }
 }
 

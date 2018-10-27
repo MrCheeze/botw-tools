@@ -19,8 +19,7 @@ void Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Water_Relic_Finished'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'Normal_PrinceTalk01'}) {
             switch Npc_ZoraB001.CheckActorAction13() {
-              case 0:
-                Event5:
+              case [0, 1, 8]:
                 Npc_ZoraB001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ZoraB001:talk02'})
                 if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'}) {
                     if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_Activated'}) {
@@ -34,10 +33,6 @@ void Talk() {
                         }
                     }
                 }
-              case 1:
-                goto Event5
-              case 8:
-                goto Event5
               case 9:
                 if EventSystemActor.CheckFlag({'FlagName': 'Normal_PrinceTalk02'}) {
                     Npc_ZoraB001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})

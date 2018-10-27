@@ -95,13 +95,10 @@ void Talk() {
 
 void Near() {
     switch Npc_Goron014.CheckActorAction13() {
-      case 0:
-        Event53:
+      case [0, 10]:
         Npc_Goron014.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron014:near02', 'IsChecked': False, 'DispFrame': 90})
       case 1:
         Npc_Goron014.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron014:near00', 'IsChecked': False, 'DispFrame': 90})
-      case 10:
-        goto Event53
       case 11:
         Npc_Goron014.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron014:near01', 'IsChecked': False, 'DispFrame': 90})
     }

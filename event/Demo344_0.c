@@ -202,8 +202,7 @@ void Demo344_0() {
 
                     Event34:
                     Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_007', 'ASName': '', 'IsCloseMessageDialog': True})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Event125:
+                    if EventSystemActor.GeneralChoice2() in [0, 1] {
                         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ASName': 'TalkingS', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ClothWarpMode': -1})
                         GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ClothWarpMode': -1, 'ASName': 'Talk', 'IsWaitFinish': False})
                         Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_008', 'IsCloseMessageDialog': True, 'ASName': 'Talk_Sad'})
@@ -367,29 +366,28 @@ void Demo344_0() {
                                         if EventSystemActor.CheckFlag({'FlagName': 'Find_Impa_Finish'}) {
                                             Event48:
                                             Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_016', 'IsCloseMessageDialog': True})
+                                        } else
+                                        if EventSystemActor.CheckFlag({'FlagName': '3Relic_ZeldaVoice'}) {
+                                            goto Event48
                                         } else {
-                                            if EventSystemActor.CheckFlag({'FlagName': '3Relic_ZeldaVoice'}) {
-                                                goto Event48
-                                            } else {
-                                                Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_040'})
+                                            Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_040'})
+                                            if !EventSystemActor.GeneralChoice2() {
+                                                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ASName': 'TalkingS', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ClothWarpMode': -1})
+                                                GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ClothWarpMode': -1, 'IsWaitFinish': False, 'ASName': 'Talk'})
+
+                                                fork {
+                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                                                    EventControllerRumble.Demo_RumbleSmall({'IsWaitFinish': False, 'Count': 2})
+                                                } {
+                                                    Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_041', 'ASName': 'Talk_Surprised', 'IsCloseMessageDialog': True})
+                                                }
+
                                                 if !EventSystemActor.GeneralChoice2() {
-                                                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ASName': 'TalkingS', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ClothWarpMode': -1})
-                                                    GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ClothWarpMode': -1, 'IsWaitFinish': False, 'ASName': 'Talk'})
-
-                                                    fork {
-                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                                                        EventControllerRumble.Demo_RumbleSmall({'IsWaitFinish': False, 'Count': 2})
-                                                    } {
-                                                        Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_041', 'ASName': 'Talk_Surprised', 'IsCloseMessageDialog': True})
-                                                    }
-
-                                                    if !EventSystemActor.GeneralChoice2() {
-                                                        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'ASName': 'TalkingL', 'NoErrorCheck': False, 'ClothWarpMode': -1})
-                                                        Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_042', 'ASName': '', 'IsCloseMessageDialog': True})
-                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                                                        Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_043', 'IsCloseMessageDialog': False})
-                                                        goto Event48
-                                                    }
+                                                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'ASName': 'TalkingL', 'NoErrorCheck': False, 'ClothWarpMode': -1})
+                                                    Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_042', 'ASName': '', 'IsCloseMessageDialog': True})
+                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                                                    Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_R_043', 'IsCloseMessageDialog': False})
+                                                    goto Event48
                                                 }
                                             }
                                         }
@@ -581,23 +579,21 @@ void Demo344_0() {
                                                 }
                                             }
                                         }
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': '3Relic_ZeldaVoice'}) {
+                                        goto Event709
                                     } else {
-                                        if EventSystemActor.CheckFlag({'FlagName': '3Relic_ZeldaVoice'}) {
-                                            goto Event709
-                                        } else {
-                                            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_R_011'})
-                                            goto Event315
-                                        }
+                                        Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_R_011'})
+                                        goto Event315
                                     }
+                                } else
+                                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo051_0'}) {
+                                    goto Event522
                                 } else {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo051_0'}) {
-                                        goto Event522
-                                    } else {
-                                        GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': False, 'TargetActor': 1, 'SceneName': 'C01-2', 'IsWaitFinish': False, 'ActorName': '', 'UniqueName': '', 'TargetActorPosReferenceMode': 1, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'TargetActorDirReferenceMode': 1})
-                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-                                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EndFade': 0, 'DemoName': 'Demo051_0', 'EntryPointName': 'Demo051_0_Water'})
-                                        goto Event522
-                                    }
+                                    GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': False, 'TargetActor': 1, 'SceneName': 'C01-2', 'IsWaitFinish': False, 'ActorName': '', 'UniqueName': '', 'TargetActorPosReferenceMode': 1, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'TargetActorDirReferenceMode': 1})
+                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+                                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EndFade': 0, 'DemoName': 'Demo051_0', 'EntryPointName': 'Demo051_0_Water'})
+                                    goto Event522
                                 }
                             } else {
                                 Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Talk_Prince_Normal', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_R_008'})
@@ -606,8 +602,6 @@ void Demo344_0() {
                         } else {
                             goto Event249
                         }
-                    } else {
-                        goto Event125
                     }
                 } else {
                     GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ASName': 'TalkingL', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ClothWarpMode': -1})

@@ -93,13 +93,8 @@ void found_fairy() {
         } else {
             NPC_artist_009.Demo_Talk({'MessageId': 'EventFlowMsg/FairyFountain:Npc_artist009_F_003', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
         }
-      case 1:
-        Event61:
+      case [1, 2, 3]:
         NPC_artist_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FairyFountain:Npc_artist009_F_011'})
         goto Event8
-      case 2:
-        goto Event61
-      case 3:
-        goto Event61
     }
 }

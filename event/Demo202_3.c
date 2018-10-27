@@ -109,14 +109,13 @@ void Demo202_3() {
                 EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon02'})
                 Event12:
                 SceneSoundCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'BgmCtrlType': 'StartWithFade', 'SeCtrlType': 'None'})
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
+                EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon01'})
+                goto Event12
             } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-                    EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon01'})
-                    goto Event12
-                } else {
-                    EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon'})
-                    goto Event12
-                }
+                EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon'})
+                goto Event12
             }
         } else {
             EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 2})
@@ -189,14 +188,13 @@ void Demo202_3() {
         if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 2}) {
             EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon02'})
             goto Event12
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
+            EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon01'})
+            goto Event12
         } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-                EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon01'})
-                goto Event12
-            } else {
-                EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon'})
-                goto Event12
-            }
+            EventSystemActor.Demo_OpenDungeonTitleSetLabel({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'LabelName': 'EnduranceDungeon'})
+            goto Event12
         }
     }
 }

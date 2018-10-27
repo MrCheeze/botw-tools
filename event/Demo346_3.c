@@ -174,18 +174,16 @@ void Demo346_3() {
         } else {
             GameRomCamera.Demo_ReturnSavePoint_1({'Count': 0.0, 'ReviseMode': 1, 'IsWaitFinish': True, 'CollisionInterpolateSkip': True})
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
+        GameROMPlayer.Demo_ReserveParashawlStart({'IsWaitFinish': False})
+        Event101:
+        GameROMPlayer.Demo_StopInAir({'IsWaitFinish': False, 'NoFixed': False})
+        goto Event96
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
+        goto Event101
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
-            GameROMPlayer.Demo_ReserveParashawlStart({'IsWaitFinish': False})
-            Event101:
-            GameROMPlayer.Demo_StopInAir({'IsWaitFinish': False, 'NoFixed': False})
-            goto Event96
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
-                goto Event101
-            } else {
-                goto Event99
-            }
-        }
+        goto Event99
     }
 }

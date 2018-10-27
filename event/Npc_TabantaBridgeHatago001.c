@@ -17,8 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_TabantaBridgeHatago001.CheckActorAction13() {
-      case 0:
-        Event25:
+      case [0, 2, 4, 6, 8, 9, 10, 11, 12, 13]:
         Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk005'})
         Event8:
         Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk100'})
@@ -57,50 +56,24 @@ void Talk() {
           case 0:
             Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk000'})
             goto Event8
-          case 1:
+          case [1, 2, 3]:
             Event17:
             Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk004'})
             goto Event8
-          case 2:
-            goto Event17
-          case 3:
-            goto Event17
         }
-      case 2:
-        goto Event25
       case 3:
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk001'})
             goto Event8
-          case 1:
-            goto Event17
-          case 2:
-            goto Event17
-          case 3:
+          case [1, 2, 3]:
             goto Event17
         }
-      case 4:
-        goto Event25
       case 5:
         Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk002'})
         goto Event8
-      case 6:
-        goto Event25
       case 7:
         Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk003'})
         goto Event8
-      case 8:
-        goto Event25
-      case 9:
-        goto Event25
-      case 10:
-        goto Event25
-      case 11:
-        goto Event25
-      case 12:
-        goto Event25
-      case 13:
-        goto Event25
     }
 }

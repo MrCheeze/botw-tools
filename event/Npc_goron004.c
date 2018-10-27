@@ -27,8 +27,7 @@ void Talk() {
         Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk17', 'ASName': 'Talk_Salesclerk'})
         Event58:
         switch EventSystemActor.GeneralChoice4() {
-          case 0:
-            Event62:
+          case [0, 2]:
             Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk13', 'ASName': 'Talk_Salesclerk'})
             Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk21', 'ASName': 'Talk_Salesclerk', 'IsCloseMessageDialog': True})
             Event70:
@@ -40,16 +39,12 @@ void Talk() {
             call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_goron004")})
 
             goto Event70
-          case 2:
-            goto Event62
           case 3:
             Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk22', 'ASName': 'Talk_Salesclerk'})
         }
-      case 1:
-        Event24:
+      case [1, 2, 3, 4]:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event18:
+          case [0, 1, 2, 3, 4, 5]:
             Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_goron004:talk00', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Salesclerk'})
             Event19:
             switch EventSystemActor.GeneralChoice4() {
@@ -64,12 +59,9 @@ void Talk() {
                   case 2:
                     Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk15', 'ASName': 'Talk_Salesclerk', 'IsCloseMessageDialog': True})
                     goto Event68
-                  case 3:
-                    Event56:
+                  case [3, 4]:
                     Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk16', 'ASName': 'Talk_Salesclerk', 'IsCloseMessageDialog': True})
                     goto Event68
-                  case 4:
-                    goto Event56
                 }
               case 1:
 
@@ -84,29 +76,10 @@ void Talk() {
               case 3:
                 Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_goron004:talk02', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Salesclerk'})
             }
-          case 1:
-            goto Event18
-          case 2:
-            goto Event18
-          case 3:
-            goto Event18
-          case 4:
-            goto Event18
-          case 5:
-            goto Event18
-          case 6:
-            Event22:
+          case [6, 7]:
             Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_goron004:talk01', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Salesclerk'})
             goto Event19
-          case 7:
-            goto Event22
         }
-      case 2:
-        goto Event24
-      case 3:
-        goto Event24
-      case 4:
-        goto Event24
     }
 }
 
@@ -129,16 +102,15 @@ void Near() {
 void Sell() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_goron004_SoldOut'}) {
         Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk10', 'ASName': 'Talk_Salesclerk'})
-    } else {
-        if !EventSystemActor.RandomChoice2() {
-            Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk11', 'ASName': 'Talk_Salesclerk'})
-            Event73:
-            if !GameROMPlayer.ComparePlayerFireResistantLevel() {
-                Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Salesclerk', 'MessageId': 'EventFlowMsg/Npc_goron004:talk24'})
-            }
-        } else {
-            Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk12', 'ASName': 'Talk_Salesclerk'})
-            goto Event73
+    } else
+    if !EventSystemActor.RandomChoice2() {
+        Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk11', 'ASName': 'Talk_Salesclerk'})
+        Event73:
+        if !GameROMPlayer.ComparePlayerFireResistantLevel() {
+            Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Salesclerk', 'MessageId': 'EventFlowMsg/Npc_goron004:talk24'})
         }
+    } else {
+        Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk12', 'ASName': 'Talk_Salesclerk'})
+        goto Event73
     }
 }

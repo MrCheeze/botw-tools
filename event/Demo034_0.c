@@ -114,69 +114,60 @@ void Demo034_0_1() {
         call GetUtuwa()
 
         TwnObj_GoddesStatue_A_02.Demo_XLinkEventFade({'IsWaitFinish': True, 'SLinkKey': '', 'ELinkKey': 'Aureole'})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Hateno'}) {
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Hateno'}) {
 
-            call Camera_SmallGoddess({'MapAreaID': 'I-7', 'WarpDestPosName': 'GoddessHateno'})
+        call Camera_SmallGoddess({'MapAreaID': 'I-7', 'WarpDestPosName': 'GoddessHateno'})
 
-            goto Event419
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Uotori'}) {
+        goto Event419
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Uotori'}) {
 
-                call Camera_SmallGoddess({'WarpDestPosName': 'GoddessUotori', 'MapAreaID': 'H-8'})
+        call Camera_SmallGoddess({'WarpDestPosName': 'GoddessUotori', 'MapAreaID': 'H-8'})
 
-                goto Event419
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Kakariko'}) {
+        goto Event419
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Kakariko'}) {
 
-                    call Camera_SmallGoddess({'MapAreaID': 'G-5', 'WarpDestPosName': 'GoddessKakariko'})
+        call Camera_SmallGoddess({'MapAreaID': 'G-5', 'WarpDestPosName': 'GoddessKakariko'})
 
-                    goto Event419
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Gerudo'}) {
+        goto Event419
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Gerudo'}) {
 
-                        call Camera_SmallGoddess({'WarpDestPosName': 'GoddessGerudo', 'MapAreaID': 'B-7'})
+        call Camera_SmallGoddess({'WarpDestPosName': 'GoddessGerudo', 'MapAreaID': 'B-7'})
 
-                        goto Event419
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Goron'}) {
+        goto Event419
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Goron'}) {
 
-                            call Camera_SmallGoddess({'WarpDestPosName': 'GoddessGoron', 'MapAreaID': 'G-2'})
+        call Camera_SmallGoddess({'WarpDestPosName': 'GoddessGoron', 'MapAreaID': 'G-2'})
 
-                            goto Event419
-                        } else {
-                            if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Zora'}) {
+        goto Event419
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Zora'}) {
 
-                                call Camera_SmallGoddess({'WarpDestPosName': 'GoddessZora', 'MapAreaID': 'I-4'})
+        call Camera_SmallGoddess({'WarpDestPosName': 'GoddessZora', 'MapAreaID': 'I-4'})
 
-                                goto Event419
-                            } else {
-                                if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Hateno'}) {
+        goto Event419
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Hateno'}) {
 
-                                    call Camera_SmallGoddess({'WarpDestPosName': 'GoddessHateno', 'MapAreaID': 'I-7'})
+        call Camera_SmallGoddess({'WarpDestPosName': 'GoddessHateno', 'MapAreaID': 'I-7'})
 
-                                    goto Event419
-                                } else {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Rito'}) {
+        goto Event419
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Rito'}) {
 
-                                        call Camera_SmallGoddess({'WarpDestPosName': 'GoddessRito', 'MapAreaID': 'B-3'})
+        call Camera_SmallGoddess({'WarpDestPosName': 'GoddessRito', 'MapAreaID': 'B-3'})
 
-                                        goto Event419
-                                    } else {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Korok'}) {
+        goto Event419
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_Korok'}) {
 
-                                            call Camera_SmallGoddess({'WarpDestPosName': 'GoddessKorok', 'MapAreaID': 'F-2'})
+        call Camera_SmallGoddess({'WarpDestPosName': 'GoddessKorok', 'MapAreaID': 'F-2'})
 
-                                            goto Event419
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        goto Event419
     }
 }
 
@@ -245,16 +236,14 @@ void GetMatome() {
         } {
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_SpaGoddess_Talking'}) {
                 GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorDirReferenceMode': 1, 'TargetActor': 3, 'TargetActorPosReferenceMode': 1, 'Accept1FrameDelay': False, 'ActorName': 'TwnObj_GoddesStatue_A_10', 'SceneName': 'C01-6', 'IsWaitFinish': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_FirstColony010_Talking'}) {
+                GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'SceneName': 'C01-1', 'ActorName': 'TwnObj_GoddesStatue_A_01', 'IsWaitFinish': False, 'TargetActor': 3, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_SuperGoddess_Talking'}) {
+                GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActor': 3, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'SceneName': 'C01-5', 'ActorName': 'TwnObj_SuperGoddesStatue_A_01', 'Accept1FrameDelay': False, 'IsWaitFinish': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_FirstColony010_Talking'}) {
-                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'SceneName': 'C01-1', 'ActorName': 'TwnObj_GoddesStatue_A_01', 'IsWaitFinish': False, 'TargetActor': 3, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_SuperGoddess_Talking'}) {
-                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActor': 3, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'SceneName': 'C01-5', 'ActorName': 'TwnObj_SuperGoddesStatue_A_01', 'Accept1FrameDelay': False, 'IsWaitFinish': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                    } else {
-                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'ActorName': 'TwnObj_GoddesStatue_A_02', 'SceneName': 'C01-3', 'IsWaitFinish': False, 'TargetActor': 3, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'Accept1FrameDelay': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                    }
-                }
+                GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'ActorName': 'TwnObj_GoddesStatue_A_02', 'SceneName': 'C01-3', 'IsWaitFinish': False, 'TargetActor': 3, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'Accept1FrameDelay': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
             }
         }
 
@@ -314,136 +303,132 @@ void GetUtuwa() {
 
         call GetAndFinish()
 
-    } else {
-        if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
-            Event25:
-            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk01'})
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_FirstColony010_First'}) {
-                if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_DungeonClearSeal', 'Count': 4}) {
-                    Event517:
-                    EventSystemActor.Demo_SetDispStaminaGauge({'IsDisplay': True, 'IsDisplayEx': False, 'IsWaitFinish': True})
-                    Event22:
-                    Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk07'})
-                    Event27:
-                    switch EventSystemActor.GeneralChoice3() {
-                      case 0:
-                        if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
-                            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk04'})
-                            Event30:
+    } else
+    if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
+        Event25:
+        Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk01'})
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_FirstColony010_First'}) {
+            if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_DungeonClearSeal', 'Count': 4}) {
+                Event517:
+                EventSystemActor.Demo_SetDispStaminaGauge({'IsDisplay': True, 'IsDisplayEx': False, 'IsWaitFinish': True})
+                Event22:
+                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk07'})
+                Event27:
+                switch EventSystemActor.GeneralChoice3() {
+                  case 0:
+                    if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
+                        Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk04'})
+                        Event30:
+                        switch EventSystemActor.GeneralChoice3() {
+                          case 0:
+                            EventSystemActor.Demo_SetDispStaminaGauge({'IsDisplayEx': False, 'IsDisplay': False, 'IsWaitFinish': True})
+
+                            call GetMatome({'AppearFlagName': 'Npc_FirstColony010_AppearHeart', 'FirstGetUtsuwaFlag': 'Npc_FirstColony010_Heart', 'IsGet_Utuwa': 'IsGet_Obj_HeartUtuwa_A_01', 'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': 'Obj_HeartUtuwa_A_01', 'Obj_Utuwa': ActorIdentifier(name="Obj_HeartUtuwa_A_01")})
+
+                            EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
+                            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 124}) {
+                                Event701:
+                                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk33'})
+                                Event145:
+
+                                call GetAndFinish()
+
+                            } else
+                            if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
+                                Event43:
+                                if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_DungeonClearSeal', 'Count': 4}) {
+                                    GameROMPlayer.Demo_Talk({'GreetingType': 'NotAndNot', 'IsWaitFinish': False})
+                                    Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk13'})
+                                    goto Event517
+                                } else {
+                                    goto Event145
+                                }
+                            } else {
+                                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk15'})
+                                goto Event43
+                            }
+                          case 1:
+                            Event45:
+                            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk14'})
+                            goto Event27
+                          case 2:
+                            Event144:
+
+                            call GetAndFinish()
+
+                        }
+                    } else {
+                        Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk15'})
+                        if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
+                            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk19'})
+                            Event31:
                             switch EventSystemActor.GeneralChoice3() {
                               case 0:
+                                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FirstColony010_ChoiceGanbari', 'IsWaitFinish': True})
                                 EventSystemActor.Demo_SetDispStaminaGauge({'IsDisplayEx': False, 'IsDisplay': False, 'IsWaitFinish': True})
 
-                                call GetMatome({'AppearFlagName': 'Npc_FirstColony010_AppearHeart', 'FirstGetUtsuwaFlag': 'Npc_FirstColony010_Heart', 'IsGet_Utuwa': 'IsGet_Obj_HeartUtuwa_A_01', 'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': 'Obj_HeartUtuwa_A_01', 'Obj_Utuwa': ActorIdentifier(name="Obj_HeartUtuwa_A_01")})
+                                call GetMatome({'AppearFlagName': 'Npc_FirstColony010_AppearStamina', 'FirstGetUtsuwaFlag': 'Npc_FirstColony010_Stamina', 'IsGet_Utuwa': 'IsGet_Obj_StaminaUtuwa_A_01', 'ActorName': 'Obj_StaminaUtuwa_A_01', 'CheckTargetActorName': 'Obj_StaminaUtuwa_A_01', 'Obj_Utuwa': ActorIdentifier(name="Obj_StaminaUtuwa_A_01")})
 
-                                EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
+                                EventSystemActor.Demo_RecoverPlayerEnergy({'IsWaitFinish': True})
                                 if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 124}) {
-                                    Event701:
-                                    Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk33'})
-                                    Event145:
-
-                                    call GetAndFinish()
-
+                                    goto Event701
+                                } else
+                                if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
+                                    goto Event43
                                 } else {
-                                    if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
-                                        Event43:
-                                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_DungeonClearSeal', 'Count': 4}) {
-                                            GameROMPlayer.Demo_Talk({'GreetingType': 'NotAndNot', 'IsWaitFinish': False})
-                                            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk13'})
-                                            goto Event517
-                                        } else {
-                                            goto Event145
-                                        }
-                                    } else {
-                                        Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk15'})
-                                        goto Event43
-                                    }
+                                    Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk16'})
+                                    goto Event43
                                 }
                               case 1:
-                                Event45:
-                                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk14'})
-                                goto Event27
+                                goto Event45
                               case 2:
-                                Event144:
-
-                                call GetAndFinish()
-
+                                goto Event144
                             }
                         } else {
-                            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk15'})
-                            if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
-                                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk19'})
-                                Event31:
-                                switch EventSystemActor.GeneralChoice3() {
-                                  case 0:
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FirstColony010_ChoiceGanbari', 'IsWaitFinish': True})
-                                    EventSystemActor.Demo_SetDispStaminaGauge({'IsDisplayEx': False, 'IsDisplay': False, 'IsWaitFinish': True})
+                            Event334:
 
-                                    call GetMatome({'AppearFlagName': 'Npc_FirstColony010_AppearStamina', 'FirstGetUtsuwaFlag': 'Npc_FirstColony010_Stamina', 'IsGet_Utuwa': 'IsGet_Obj_StaminaUtuwa_A_01', 'ActorName': 'Obj_StaminaUtuwa_A_01', 'CheckTargetActorName': 'Obj_StaminaUtuwa_A_01', 'Obj_Utuwa': ActorIdentifier(name="Obj_StaminaUtuwa_A_01")})
+                            call GetAndFinish()
 
-                                    EventSystemActor.Demo_RecoverPlayerEnergy({'IsWaitFinish': True})
-                                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 124}) {
-                                        goto Event701
-                                    } else {
-                                        if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
-                                            goto Event43
-                                        } else {
-                                            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk16'})
-                                            goto Event43
-                                        }
-                                    }
-                                  case 1:
-                                    goto Event45
-                                  case 2:
-                                    goto Event144
-                                }
-                            } else {
-                                Event334:
-
-                                call GetAndFinish()
-
-                            }
                         }
-                      case 1:
-                        if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
-                            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk05'})
-                            goto Event31
-                        } else {
-                            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk16'})
-                            if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
-                                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk18'})
-                                goto Event30
-                            } else {
-                                goto Event334
-                            }
-                        }
-                      case 2:
-                        goto Event334
                     }
-                } else {
-                    Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk09'})
-                    Event26:
-                    Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk02'})
-                    goto Event206
+                  case 1:
+                    if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
+                        Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk05'})
+                        goto Event31
+                    } else {
+                        Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk16'})
+                        if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
+                            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk18'})
+                            goto Event30
+                        } else {
+                            goto Event334
+                        }
+                    }
+                  case 2:
+                    goto Event334
                 }
             } else {
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FirstColony010_First', 'IsWaitFinish': True})
                 Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk09'})
-                if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_DungeonClearSeal', 'Count': 4}) {
-                    Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk12'})
-                    goto Event22
-                } else {
-                    goto Event26
-                }
+                Event26:
+                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk02'})
+                goto Event206
             }
         } else {
-            if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
-                goto Event25
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FirstColony010_First', 'IsWaitFinish': True})
+            Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk09'})
+            if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_DungeonClearSeal', 'Count': 4}) {
+                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk12'})
+                goto Event22
             } else {
-                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk17'})
-                goto Event295
+                goto Event26
             }
         }
+    } else
+    if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
+        goto Event25
+    } else {
+        Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk17'})
+        goto Event295
     }
 }
 
@@ -576,20 +561,18 @@ void Demo034_0_3() {
         Event541:
         EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_SpaGoddess_Talking'})
         TwnObj_GoddesStatue_A_10.Demo_XLinkEventFade({'IsWaitFinish': True, 'SLinkKey': '', 'ELinkKey': 'Aureole'})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_BraveSpa'}) {
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_BraveSpa'}) {
 
-            call 3SpaGoddess({'OpenDoorFlagName': 'Enemy_Dragon_Electric_DoorOpen', 'WarpDestMapName': 'F-7', 'WarpDestPosName': 'GoddessBraveSpa', 'TalkFirstFlagName': 'NPC_GoddessStatue_BraveSpa_First'})
+        call 3SpaGoddess({'OpenDoorFlagName': 'Enemy_Dragon_Electric_DoorOpen', 'WarpDestMapName': 'F-7', 'WarpDestPosName': 'GoddessBraveSpa', 'TalkFirstFlagName': 'NPC_GoddessStatue_BraveSpa_First'})
 
-            goto Event541
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_WisdomSpa'}) {
+        goto Event541
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_WisdomSpa'}) {
 
-                call 3SpaGoddess({'OpenDoorFlagName': 'Enemy_Dragon_Ice_DoorOpen', 'WarpDestMapName': 'I-6', 'WarpDestPosName': 'GoddessWisdomSpa', 'TalkFirstFlagName': 'NPC_GoddessStatue_WisdomSpa_First'})
+        call 3SpaGoddess({'OpenDoorFlagName': 'Enemy_Dragon_Ice_DoorOpen', 'WarpDestMapName': 'I-6', 'WarpDestPosName': 'GoddessWisdomSpa', 'TalkFirstFlagName': 'NPC_GoddessStatue_WisdomSpa_First'})
 
-                goto Event541
-            }
-        }
+        goto Event541
     }
 }
 
@@ -615,42 +598,37 @@ void 3SpaGoddess() {
 
             call GetUtuwa()
 
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Enemy_Dragon_Ice_DoorOpen'}) {
+            Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk30'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Enemy_Dragon_Ice_DropItem'}) {
+            Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk32'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Enemy_Dragon_Ice_GrudgeDestroyDemoEnd'}) {
+            Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk23'})
+            Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk24'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Enemy_Dragon_Ice_DoorOpen'}) {
-                Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk30'})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Enemy_Dragon_Ice_DropItem'}) {
-                    Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk32'})
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Enemy_Dragon_Ice_GrudgeDestroyDemoEnd'}) {
-                        Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk23'})
-                        Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk24'})
-                    } else {
-                        Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk22'})
-                    }
-                }
-            }
+            Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk22'})
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'OpenDoorFlagName'}) {
+        goto Event686
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'TalkFirstFlagName'}) {
+        Event692:
+        if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_BraveSpa'}) {
+            Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk28'})
+            Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk31'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'MouthofDragon_Step1', 'IsWaitFinish': True})
+        } else {
+            Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk27'})
+            Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk31'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'HigakkareMini_RedDragon_Step1', 'IsWaitFinish': True})
         }
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'OpenDoorFlagName'}) {
-            goto Event686
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'TalkFirstFlagName'}) {
-                Event692:
-                if EventSystemActor.CheckFlag({'FlagName': 'NPC_GoddessStatue_BraveSpa'}) {
-                    Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk28'})
-                    Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk31'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'MouthofDragon_Step1', 'IsWaitFinish': True})
-                } else {
-                    Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk27'})
-                    Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk31'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'HigakkareMini_RedDragon_Step1', 'IsWaitFinish': True})
-                }
-            } else {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TalkFirstFlagName'})
-                Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk20'})
-                goto Event692
-            }
-        }
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TalkFirstFlagName'})
+        Starter[test].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk20'})
+        goto Event692
     }
 }

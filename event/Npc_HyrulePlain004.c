@@ -19,42 +19,16 @@ void Talk() {
     switch Npc_HyrulePlain004.CheckActorAction13() {
       case 0:
         Npc_HyrulePlain004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyrulePlain004:Talk_0003', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-      case 1:
-        Event14:
+      case [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13]:
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_HyrulePlain004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyrulePlain004:Talk_0004', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-          case 1:
-            Event15:
+          case [1, 2, 3]:
             Npc_HyrulePlain004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyrulePlain004:Talk_0001', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-          case 2:
-            goto Event15
-          case 3:
-            goto Event15
         }
-      case 2:
-        goto Event14
-      case 3:
-        goto Event14
-      case 4:
-        goto Event14
-      case 5:
-        goto Event14
-      case 6:
-        goto Event14
-      case 7:
-        goto Event14
-      case 8:
-        goto Event14
-      case 9:
-        goto Event14
       case 10:
         Npc_HyrulePlain004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyrulePlain004:Talk_0002', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
       case 11:
         Npc_HyrulePlain004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyrulePlain004:Talk_0000', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-      case 12:
-        goto Event14
-      case 13:
-        goto Event14
     }
 }

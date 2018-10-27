@@ -216,80 +216,79 @@ void Ready_Npc_oasis038_Talk() {
             call nothanks()
 
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis038_First'}) {
-            Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0028', 'IsCloseMessageDialog': False})
-            Event277:
-            switch EventSystemActor.GeneralChoice4() {
-              case 0:
-                goto Event524
-              case 1:
-                Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0006', 'IsCloseMessageDialog': False})
-                Event734:
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis038_First', 'IsWaitFinish': True})
-                Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0009', 'IsCloseMessageDialog': True})
-                goto Event277
-              case 2:
-                Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0008'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis038_First'}) {
+        Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0028', 'IsCloseMessageDialog': False})
+        Event277:
+        switch EventSystemActor.GeneralChoice4() {
+          case 0:
+            goto Event524
+          case 1:
+            Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0006', 'IsCloseMessageDialog': False})
+            Event734:
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis038_First', 'IsWaitFinish': True})
+            Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0009', 'IsCloseMessageDialog': True})
+            goto Event277
+          case 2:
+            Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0008'})
+
+            fork {
+                Npc_oasis038.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0000', 'IsCloseMessageDialog': False, 'ASName': 'Act_Champion_Wait'})
+            } {
+                Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 1, 'ActorName': 'Npc_oasis038', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            }
+
+
+            fork {
+                Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0029', 'IsCloseMessageDialog': True})
+            } {
+                Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 1, 'ActorName': 'Npc_oasis038', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            }
+
+
+            fork {
+                Npc_oasis038.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0]})
+            } {
+                Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0]})
+            }
+
+            goto Event734
+          case 3:
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+
+            fork {
+                Npc_oasis038.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'ASName': 'Talk_Almost', 'MorphingFrame': -1.0})
+                EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
+            } {
+                Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 1, 'ActorName': 'Npc_oasis038', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            }
+
+            if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': True, 'CheckLower': True, 'CheckType': 'GerudoCloth'}) {
 
                 fork {
-                    Npc_oasis038.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0000', 'IsCloseMessageDialog': False, 'ASName': 'Act_Champion_Wait'})
-                } {
-                    Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 1, 'ActorName': 'Npc_oasis038', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                }
-
-
-                fork {
-                    Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0029', 'IsCloseMessageDialog': True})
-                } {
-                    Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 1, 'ActorName': 'Npc_oasis038', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                }
-
-
-                fork {
-                    Npc_oasis038.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0]})
+                    Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0010'})
                 } {
                     Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0]})
                 }
 
-                goto Event734
-              case 3:
-                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                Event274:
+                Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0011'})
+                Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0012'})
+                goto Event735
+            } else {
 
                 fork {
-                    Npc_oasis038.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'ASName': 'Talk_Almost', 'MorphingFrame': -1.0})
-                    EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
+                    Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0027'})
                 } {
-                    Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 1, 'ActorName': 'Npc_oasis038', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                    Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0]})
                 }
 
-                if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': True, 'CheckLower': True, 'CheckType': 'GerudoCloth'}) {
-
-                    fork {
-                        Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0010'})
-                    } {
-                        Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0]})
-                    }
-
-                    Event274:
-                    Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0011'})
-                    Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0012'})
-                    goto Event735
-                } else {
-
-                    fork {
-                        Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0027'})
-                    } {
-                        Npc_oasis039.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0]})
-                    }
-
-                    goto Event274
-                }
+                goto Event274
             }
-        } else {
-            Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0005', 'IsCloseMessageDialog': False})
-            goto Event277
         }
+    } else {
+        Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Talk_0005', 'IsCloseMessageDialog': False})
+        goto Event277
     }
 }
 
@@ -606,14 +605,13 @@ void Miss() {
 
                                     EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': False})
                                 }
+                            } else
+                            if EventSystemActor.CheckRupee({'Value': 50}) {
+                                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                                EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': False, 'Value': -50})
+                                goto Event479
                             } else {
-                                if EventSystemActor.CheckRupee({'Value': 50}) {
-                                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                                    EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': False, 'Value': -50})
-                                    goto Event479
-                                } else {
-                                    goto Event480
-                                }
+                                goto Event480
                             }
                         } else {
                             Event611:
@@ -627,27 +625,25 @@ void Miss() {
                     } else {
                         goto Event611
                     }
+                } else
+                Event786:
+                if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
+                    Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SunazarashiRace_mini:Npc_oasis039_Miss02'})
+                    Event496:
+
+                    call Common.EnableSaveAndWarp()
+
+                    EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': False})
                 } else {
-                    Event786:
-                    if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
-                        Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SunazarashiRace_mini:Npc_oasis039_Miss02'})
-                        Event496:
-
-                        call Common.EnableSaveAndWarp()
-
-                        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': False})
-                    } else {
-                        Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SunazarashiRace:Npc_oasis039_S2_006'})
-                        goto Event496
-                    }
+                    Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SunazarashiRace:Npc_oasis039_S2_006'})
+                    goto Event496
                 }
             } else {
                 Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Npc_oasis039_S2_005', 'IsCloseMessageDialog': False})
                 if !EventSystemActor.GeneralChoice2() {
                     goto Event609
-                } else {
-                    goto Event786
-                }
+                } else
+                goto Event786
             }
         } else {
             EventSystemActor.Demo_RollbackQuest({'QuestName': 'SunazarashiRace', 'StepName': 'Step1', 'IsWaitFinish': True})
@@ -776,32 +772,30 @@ void AfterGoal() {
             } else {
                 EventSystemActor.Demo_RollbackQuest({'QuestName': 'SunazarashiRace', 'StepName': 'Step1', 'IsWaitFinish': True})
             }
-        } else {
-            Event624:
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'SunazarashiRace_GateCnt', 'Operator': 'GreaterThanOrEqualTo', 'Value': 7}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
-                    if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 80}) {
-                        Event623:
-                        Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Npc_oasis038_AfterGoal_010', 'IsCloseMessageDialog': True, 'ASName': ''})
-                        goto Event642
-                    } else {
-                        Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/SunazarashiRace_mini:Npc_oasis039_AfterGoal_040'})
-
-                        call SunazarashiRace_mini.GetRupee_Quite()
-
-                        goto Event642
-                    }
+        } else
+        Event624:
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'SunazarashiRace_GateCnt', 'Operator': 'GreaterThanOrEqualTo', 'Value': 7}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
+                if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 80}) {
+                    Event623:
+                    Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Npc_oasis038_AfterGoal_010', 'IsCloseMessageDialog': True, 'ASName': ''})
+                    goto Event642
                 } else {
-                    goto Event623
+                    Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/SunazarashiRace_mini:Npc_oasis039_AfterGoal_040'})
+
+                    call SunazarashiRace_mini.GetRupee_Quite()
+
+                    goto Event642
                 }
             } else {
-                Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Npc_oasis038_AfterGoal_020', 'IsCloseMessageDialog': True, 'ASName': ''})
-                goto Event642
+                goto Event623
             }
+        } else {
+            Npc_oasis039.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SunazarashiRace:Npc_oasis038_AfterGoal_020', 'IsCloseMessageDialog': True, 'ASName': ''})
+            goto Event642
         }
-    } else {
-        goto Event624
-    }
+    } else
+    goto Event624
 }
 
 void nothanks() {

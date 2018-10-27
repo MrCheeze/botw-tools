@@ -17,11 +17,9 @@ void Ready_Npc_RitoHatago001_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_RitoHatago001.CheckActorAction13() {
-      case 0:
-        Event51:
+      case [0, 2]:
         Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk06'})
-      case 1:
-        Event54:
+      case [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk03', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -40,41 +38,16 @@ void Ready_Npc_RitoHatago001_Talk() {
                 Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                 goto Event59
             }
-          case 1:
-            Event56:
+          case [1, 3]:
             Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             goto Event44
           case 2:
             Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             goto Event44
-          case 3:
-            goto Event56
         }
-      case 2:
-        goto Event51
       case 3:
         Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk10'})
         goto Event44
-      case 4:
-        goto Event54
-      case 5:
-        goto Event54
-      case 6:
-        goto Event54
-      case 7:
-        goto Event54
-      case 8:
-        goto Event54
-      case 9:
-        goto Event54
-      case 10:
-        goto Event54
-      case 11:
-        goto Event54
-      case 12:
-        goto Event54
-      case 13:
-        goto Event54
     }
 }
 
@@ -83,11 +56,9 @@ void Finish_Npc_RitoHatago001_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_RitoHatago001.CheckActorAction13() {
-      case 0:
-        Event69:
+      case [0, 2]:
         Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk06'})
-      case 1:
-        Event71:
+      case [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         switch EventSystemActor.CheckWeather() {
           case 0:
             Event79:
@@ -115,17 +86,10 @@ void Finish_Npc_RitoHatago001_Talk() {
             } else {
                 Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk18', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             }
-          case 1:
-            Event78:
+          case [1, 2, 3]:
             Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk13', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             goto Event79
-          case 2:
-            goto Event78
-          case 3:
-            goto Event78
         }
-      case 2:
-        goto Event69
       case 3:
         if Npc_RitoHatago001.IsOnInstEventFlag() {
             goto Event79
@@ -133,26 +97,6 @@ void Finish_Npc_RitoHatago001_Talk() {
             Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk11', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             goto Event79
         }
-      case 4:
-        goto Event71
-      case 5:
-        goto Event71
-      case 6:
-        goto Event71
-      case 7:
-        goto Event71
-      case 8:
-        goto Event71
-      case 9:
-        goto Event71
-      case 10:
-        goto Event71
-      case 11:
-        goto Event71
-      case 12:
-        goto Event71
-      case 13:
-        goto Event71
     }
 }
 

@@ -62,25 +62,24 @@ void Ready_Npc_Hunters_Lost_Talk() {
         } else {
             goto Event20
         }
-    } else {
-        if Npc_Hunters_Lost.IsOnInstEventFlag() {
-            Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_012'})
-            Event36:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_010'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'SetugenUmayadoMini_Umahonephoto_Activated', 'IsWaitFinish': True})
-            } else {
-                Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_011'})
-            }
+    } else
+    if Npc_Hunters_Lost.IsOnInstEventFlag() {
+        Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_012'})
+        Event36:
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_010'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'SetugenUmayadoMini_Umahonephoto_Activated', 'IsWaitFinish': True})
         } else {
-            Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_006'})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_008'})
-                goto Event36
-            } else {
-                Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_007'})
-                Npc_Hunters_Lost.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-            }
+            Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_011'})
+        }
+    } else {
+        Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_006'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_008'})
+            goto Event36
+        } else {
+            Npc_Hunters_Lost.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SetugenUmayadoMini_Umahonephoto:NPC_Umahonephoto001_R_007'})
+            Npc_Hunters_Lost.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
         }
     }
 }

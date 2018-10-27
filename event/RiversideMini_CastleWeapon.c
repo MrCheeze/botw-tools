@@ -36,147 +36,140 @@ void Ready_Npc_RiverSideHatago002_Talk() {
             } else {
                 Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_sleep02'})
             }
+        } else
+        if Npc_RiverSideHatago002.IsOnInstEventFlag() {
+            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_sleep01'})
         } else {
-            if Npc_RiverSideHatago002.IsOnInstEventFlag() {
-                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_sleep01'})
+            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_sleep00'})
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'RiversideMini_CastleWeapon_Activated'}) {
+        if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_047', 'Count': 1}) {
+            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponSword', 'IsCloseMessageDialog': True})
+            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_047'}) {
+                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkWeaponShowSword', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                Event34:
+                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeapon00'})
+                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeapon01'})
+                if EventSystemActor.CheckFlag({'FlagName': 'RiversideMini_CastleWeapon_ShowedShield'}) {
+                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'ActorName': 'Npc_RiverSideHatago002', 'PosOffset': [0.0, 0.0, 0.0], 'IsUseSlowTurn': True, 'IsTurnToLookAtPos': False})
+                    Event149:
+                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeapon02'})
+                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
+
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RiversideMini_CastleWeapon_Finish'})
+                } else {
+                    goto Event149
+                }
             } else {
-                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_sleep00'})
+
+                call Common.ShowSword({'PorchItemName_Weapon': 'Weapon_Sword_047'})
+
+                goto Event34
             }
+        } else
+        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_047'}) {
+            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponLSword', 'IsCloseMessageDialog': True})
+            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Lsword_047'}) {
+                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkWeaponShowLsword', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                goto Event34
+            } else {
+
+                call Common.ShowLargeSword({'PorchItemName_Weapon': 'Weapon_Lsword_047'})
+
+                goto Event34
+            }
+        } else
+        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Spear_047'}) {
+            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponSpear', 'IsCloseMessageDialog': True})
+            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Spear_047'}) {
+                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkWeaponShowSpear', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                goto Event34
+            } else {
+
+                call Common.ShowSpear({'PorchItemName_Weapon': 'Weapon_Spear_047'})
+
+                goto Event34
+            }
+        } else
+        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_033'}) {
+            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponBow', 'IsCloseMessageDialog': True})
+            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_033'}) {
+                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkWeaponShowBow', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                goto Event34
+            } else {
+
+                call Common.ShowBow({'PorchItemName_Weapon': 'Weapon_Bow_033'})
+
+                goto Event34
+            }
+        } else
+        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_033'}) {
+            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponShield', 'IsCloseMessageDialog': True})
+
+            call ShowShield({'PorchItemName_Shield': 'Weapon_Shield_033'})
+
+            EventSystemActor.Demo_FlagON({'FlagName': 'RiversideMini_CastleWeapon_ShowedShield', 'IsWaitFinish': True})
+            goto Event34
+        } else
+        if Npc_RiverSideHatago002.IsOnInstEventFlag() {
+            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hint01'})
+            Event158:
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect00'})
+                Event175:
+                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect03'})
+                switch EventSystemActor.GeneralChoice4() {
+                  case 0:
+                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintGoron'})
+                    Event171:
+                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect02'})
+                    if !EventSystemActor.GeneralChoice2() {
+                        goto Event175
+                    } else {
+                        Event160:
+                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hint02'})
+                    }
+                  case 1:
+                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintRito'})
+                    goto Event171
+                  case 2:
+                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintZora'})
+                    goto Event171
+                  case 3:
+                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect01'})
+                    Event176:
+                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect04'})
+                    switch EventSystemActor.GeneralChoice3() {
+                      case 0:
+                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintGerudo'})
+                        Event173:
+                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect02'})
+                        if !EventSystemActor.GeneralChoice2() {
+                            goto Event176
+                        } else {
+                            goto Event160
+                        }
+                      case 1:
+                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintShiekah'})
+                        goto Event173
+                      case 2:
+                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelf'})
+                    }
+                }
+            } else {
+                goto Event160
+            }
+        } else {
+            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hint00'})
+            goto Event158
         }
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'RiversideMini_CastleWeapon_Activated'}) {
-            if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_047', 'Count': 1}) {
-                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponSword', 'IsCloseMessageDialog': True})
-                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_047'}) {
-                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkWeaponShowSword', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                    Event34:
-                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeapon00'})
-                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeapon01'})
-                    if EventSystemActor.CheckFlag({'FlagName': 'RiversideMini_CastleWeapon_ShowedShield'}) {
-                        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'ActorName': 'Npc_RiverSideHatago002', 'PosOffset': [0.0, 0.0, 0.0], 'IsUseSlowTurn': True, 'IsTurnToLookAtPos': False})
-                        Event149:
-                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeapon02'})
-                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
-
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RiversideMini_CastleWeapon_Finish'})
-                    } else {
-                        goto Event149
-                    }
-                } else {
-
-                    call Common.ShowSword({'PorchItemName_Weapon': 'Weapon_Sword_047'})
-
-                    goto Event34
-                }
-            } else {
-                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_047'}) {
-                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponLSword', 'IsCloseMessageDialog': True})
-                    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Lsword_047'}) {
-                        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkWeaponShowLsword', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                        goto Event34
-                    } else {
-
-                        call Common.ShowLargeSword({'PorchItemName_Weapon': 'Weapon_Lsword_047'})
-
-                        goto Event34
-                    }
-                } else {
-                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Spear_047'}) {
-                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponSpear', 'IsCloseMessageDialog': True})
-                        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Spear_047'}) {
-                            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkWeaponShowSpear', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                            goto Event34
-                        } else {
-
-                            call Common.ShowSpear({'PorchItemName_Weapon': 'Weapon_Spear_047'})
-
-                            goto Event34
-                        }
-                    } else {
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_033'}) {
-                            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponBow', 'IsCloseMessageDialog': True})
-                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_033'}) {
-                                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkWeaponShowBow', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                                goto Event34
-                            } else {
-
-                                call Common.ShowBow({'PorchItemName_Weapon': 'Weapon_Bow_033'})
-
-                                goto Event34
-                            }
-                        } else {
-                            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_033'}) {
-                                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_showWeaponShield', 'IsCloseMessageDialog': True})
-
-                                call ShowShield({'PorchItemName_Shield': 'Weapon_Shield_033'})
-
-                                EventSystemActor.Demo_FlagON({'FlagName': 'RiversideMini_CastleWeapon_ShowedShield', 'IsWaitFinish': True})
-                                goto Event34
-                            } else {
-                                if Npc_RiverSideHatago002.IsOnInstEventFlag() {
-                                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hint01'})
-                                    Event158:
-                                    if !EventSystemActor.GeneralChoice2() {
-                                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect00'})
-                                        Event175:
-                                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect03'})
-                                        switch EventSystemActor.GeneralChoice4() {
-                                          case 0:
-                                            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintGoron'})
-                                            Event171:
-                                            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect02'})
-                                            if !EventSystemActor.GeneralChoice2() {
-                                                goto Event175
-                                            } else {
-                                                Event160:
-                                                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hint02'})
-                                            }
-                                          case 1:
-                                            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintRito'})
-                                            goto Event171
-                                          case 2:
-                                            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintZora'})
-                                            goto Event171
-                                          case 3:
-                                            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect01'})
-                                            Event176:
-                                            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect04'})
-                                            switch EventSystemActor.GeneralChoice3() {
-                                              case 0:
-                                                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintGerudo'})
-                                                Event173:
-                                                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelect02'})
-                                                if !EventSystemActor.GeneralChoice2() {
-                                                    goto Event176
-                                                } else {
-                                                    goto Event160
-                                                }
-                                              case 1:
-                                                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintShiekah'})
-                                                goto Event173
-                                              case 2:
-                                                Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hintSelf'})
-                                            }
-                                        }
-                                    } else {
-                                        goto Event160
-                                    }
-                                } else {
-                                    Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_hint00'})
-                                    goto Event158
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        } else {
-            Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_00'})
-            EventSystemActor.Demo_FlagON({'FlagName': 'RiversideMini_CastleWeapon_Activated', 'IsWaitFinish': True})
-        }
+        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_00'})
+        EventSystemActor.Demo_FlagON({'FlagName': 'RiversideMini_CastleWeapon_Activated', 'IsWaitFinish': True})
     }
 }
 
@@ -196,29 +189,24 @@ void Finish_Npc_RiverSideHatago002_Near() {
     if Npc_RiverSideHatago002.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
         Event214:
         Npc_RiverSideHatago002.Demo_TalkASync({'DispFrame': 300, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/RiversideMini_CastleWeapon:talk_near01', 'IsChecked': False})
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_047', 'Count': 1}) {
+        Event154:
+        Npc_RiverSideHatago002.Demo_TalkASync({'IsChecked': True, 'DispFrame': 300, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/RiversideMini_CastleWeapon:talk_near01'})
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_047'}) {
+        goto Event154
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Spear_047'}) {
+        goto Event154
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_033'}) {
+        goto Event154
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_033'}) {
+        goto Event154
     } else {
-        if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_047', 'Count': 1}) {
-            Event154:
-            Npc_RiverSideHatago002.Demo_TalkASync({'IsChecked': True, 'DispFrame': 300, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/RiversideMini_CastleWeapon:talk_near01'})
-        } else {
-            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_047'}) {
-                goto Event154
-            } else {
-                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Spear_047'}) {
-                    goto Event154
-                } else {
-                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_033'}) {
-                        goto Event154
-                    } else {
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_033'}) {
-                            goto Event154
-                        } else {
-                            goto Event214
-                        }
-                    }
-                }
-            }
-        }
+        goto Event214
     }
 }
 

@@ -32,11 +32,10 @@ void Near() {
     if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_DevilSeal_Finish'}) {
         Event525:
         TwnObj_DemonStatue_A_01.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo035_0:near00', 'DispFrame': 90, 'IsChecked': False})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_DevilSeal_Activated'}) {
+        goto Event525
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_DevilSeal_Activated'}) {
-            goto Event525
-        } else {
-            TwnObj_DemonStatue_A_01.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo035_0:near00', 'DispFrame': 300, 'IsChecked': True})
-        }
+        TwnObj_DemonStatue_A_01.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo035_0:near00', 'DispFrame': 300, 'IsChecked': True})
     }
 }

@@ -100,33 +100,31 @@ void Demo300_0() {
 
         call Get_MasterSword.NukiGameFinish()
 
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_FirstFailure'}) {
-            if !EventSystemActor.ComparePlayerHeart({'Threshold': 1}) {
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'Get_MasterSword_Heart52', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Get_MasterSword_Heart40'})
-                EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsGetDemo': False, 'IsDisplay': False, 'IsDisplayEx': False})
-                SceneSoundCtrlTag.Demo_SetEndProc({'IsWaitFinish': True, 'CtrlType': 'SkipAll'})
-            } else {
-                Event6:
-
-                call Get_MasterSword.NukiGameCancel()
-
-            }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_FirstFailure'}) {
+        if !EventSystemActor.ComparePlayerHeart({'Threshold': 1}) {
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'Get_MasterSword_Heart52', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Get_MasterSword_Heart40'})
+            EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsGetDemo': False, 'IsDisplay': False, 'IsDisplayEx': False})
+            SceneSoundCtrlTag.Demo_SetEndProc({'IsWaitFinish': True, 'CtrlType': 'SkipAll'})
         } else {
-            if !EventSystemActor.ComparePlayerHeart({'Threshold': 2}) {
-                TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo300_0:Deku_FirstFailure00', 'IsWaitFinish': False})
-                GameROMPlayer.Demo_PlayerPullSwordFirstFail({'IsWaitFinish': True})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ASName': 'Demo300_0-C02-Link-A-1', 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ClothWarpMode': -1})
-                GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'IsValid': True, 'ObjectId': 0, 'ActorName': 'TwnObj_MasterSwordBase_A_01', 'IsWaitFinish': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 1.2000000476837158, 0.0]})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            Event6:
 
-                call Get_MasterSword.NukiGameFirstFailure()
+            call Get_MasterSword.NukiGameCancel()
 
-            } else {
-                goto Event6
-            }
         }
+    } else
+    if !EventSystemActor.ComparePlayerHeart({'Threshold': 2}) {
+        TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo300_0:Deku_FirstFailure00', 'IsWaitFinish': False})
+        GameROMPlayer.Demo_PlayerPullSwordFirstFail({'IsWaitFinish': True})
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ASName': 'Demo300_0-C02-Link-A-1', 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ClothWarpMode': -1})
+        GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'IsValid': True, 'ObjectId': 0, 'ActorName': 'TwnObj_MasterSwordBase_A_01', 'IsWaitFinish': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 1.2000000476837158, 0.0]})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+
+        call Get_MasterSword.NukiGameFirstFailure()
+
+    } else {
+        goto Event6
     }
 }
 

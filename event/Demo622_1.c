@@ -163,32 +163,29 @@ void Demo622_1_C03_Rest() {
         call Demo622_1_C03_2nd()
 
         EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'IsWaitFinish': True, 'Value': 2})
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'Equal', 'Value': 2}) {
+
+        call Demo622_1_C03_3rd()
+
+        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'IsWaitFinish': True, 'Value': 3})
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'Equal', 'Value': 3}) {
+
+        call Demo622_1_C03_4th()
+
+        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'IsWaitFinish': True, 'Value': 4})
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'Equal', 'Value': 4}) {
+
+        call Demo622_1_C03_5th()
+
+        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'IsWaitFinish': True, 'Value': 5})
     } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'Equal', 'Value': 2}) {
 
-            call Demo622_1_C03_3rd()
+        call Demo622_1_C03_6th()
 
-            EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'IsWaitFinish': True, 'Value': 3})
-        } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'Equal', 'Value': 3}) {
-
-                call Demo622_1_C03_4th()
-
-                EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'IsWaitFinish': True, 'Value': 4})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'Equal', 'Value': 4}) {
-
-                    call Demo622_1_C03_5th()
-
-                    EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'IsWaitFinish': True, 'Value': 5})
-                } else {
-
-                    call Demo622_1_C03_6th()
-
-                    EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'IsWaitFinish': True, 'Value': 1})
-                }
-            }
-        }
+        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'IsWaitFinish': True, 'Value': 1})
     }
 }
 

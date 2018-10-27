@@ -134,21 +134,12 @@ void Demo346_5_SubFlow() {
                 switch EventSystemActor.RandomChoice8() {
                   case 0:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_00', 'DispFrame': 90})
-                  case 1:
-                    Event176:
+                  case [1, 2]:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_01', 'DispFrame': 90})
-                  case 2:
-                    goto Event176
-                  case 3:
-                    Event175:
+                  case [3, 4]:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_02', 'DispFrame': 90})
-                  case 4:
-                    goto Event175
-                  case 5:
-                    Event234:
+                  case [5, 6]:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_03'})
-                  case 6:
-                    goto Event234
                   case 7:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_04'})
                 }
@@ -161,16 +152,15 @@ void Demo346_5_SubFlow() {
             GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'ReviseMode': 0, 'CollisionInterpolateSkip': False, 'Count': 0.0})
             Npc_FollowGoron[YunBo_Bridge].Demo_ForceChangeForDroneAlert({'IsWaitFinish': False})
             RemainsFire[RemainsFire_Battle].Demo_ForceChangeForDroneAlert({'IsWaitFinish': False})
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+            GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+            GameROMPlayer.Demo_Join({'IsWaitFinish': True})
+            goto Event85
         } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-                GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                GameROMPlayer.Demo_Join({'IsWaitFinish': True})
-                goto Event85
-            } else {
-                GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-                goto Event85
-            }
+            GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+            GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
+            goto Event85
         }
     } else {
         EventBgmCtrlTag.Demo_Ctrl({'CtrlType': 'RemainsFireBattleBgm_Alert', 'IsWaitFinish': True})
@@ -192,21 +182,12 @@ void Demo346_5_SubFlow() {
                 switch EventSystemActor.RandomChoice8() {
                   case 0:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_00', 'DispFrame': 90})
-                  case 1:
-                    Event236:
+                  case [1, 2]:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_01', 'DispFrame': 90})
-                  case 2:
-                    goto Event236
-                  case 3:
-                    Event235:
+                  case [3, 4]:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_02', 'DispFrame': 90})
-                  case 4:
-                    goto Event235
-                  case 5:
-                    Event240:
+                  case [5, 6]:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_03'})
-                  case 6:
-                    goto Event240
                   case 7:
                     Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Search_04'})
                 }
@@ -253,37 +234,35 @@ void Demo346_5_SubFlow() {
                     Npc_FollowGoron[YunBo_Bridge].Demo_ForceChangeForDroneAlert({'IsWaitFinish': False})
                 }
 
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle1stAttack'}) {
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle1stAttack'}) {
 
-                    fork {
-                        GameRomCamera.Demo_CameraAnimFlow({'TargetActor': 3, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'IsWaitFinish': False, 'TargetActorPosReferenceMode': 1, 'SceneName': 'C04-1', 'TargetActorDirReferenceMode': 1, 'ActorName': 'FldObj_LavaPlane_A_04', 'UniqueName': '', 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                    } {
-                        RemainsFire[RemainsFire_Battle].Demo_AnimMatrixDriven({'ASSlot': 0, 'SequenceBank': 0, 'IsIgnoreSame': False, 'IsChangeable': False, 'ASName': 'Place2_TailAttack', 'IsWaitFinish': False, 'StartFrame': -1.0})
-                    }
-
-                    goto Event224
-                } else {
-
-                    fork {
-                        GameRomCamera.Demo_CameraAnimFlow({'TargetActor': 3, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'IsWaitFinish': False, 'SceneName': 'C04-0', 'TargetActorDirReferenceMode': 1, 'TargetActorPosReferenceMode': 1, 'UniqueName': '', 'ActorName': 'FldObj_LavaPlane_A_04', 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                    } {
-                        RemainsFire[RemainsFire_Battle].Demo_AnimMatrixDriven({'ASSlot': 0, 'SequenceBank': 0, 'IsIgnoreSame': False, 'IsChangeable': False, 'ASName': 'Place1_TailAttack', 'IsWaitFinish': False, 'StartFrame': -1.0})
-                    }
-
-                    goto Event224
+                fork {
+                    GameRomCamera.Demo_CameraAnimFlow({'TargetActor': 3, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'IsWaitFinish': False, 'TargetActorPosReferenceMode': 1, 'SceneName': 'C04-1', 'TargetActorDirReferenceMode': 1, 'ActorName': 'FldObj_LavaPlane_A_04', 'UniqueName': '', 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+                } {
+                    RemainsFire[RemainsFire_Battle].Demo_AnimMatrixDriven({'ASSlot': 0, 'SequenceBank': 0, 'IsIgnoreSame': False, 'IsChangeable': False, 'ASName': 'Place2_TailAttack', 'IsWaitFinish': False, 'StartFrame': -1.0})
                 }
-            }
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-                GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                GameROMPlayer.Demo_Join({'IsWaitFinish': True})
-                goto Event52
+
+                goto Event224
             } else {
-                GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-                goto Event52
+
+                fork {
+                    GameRomCamera.Demo_CameraAnimFlow({'TargetActor': 3, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'IsWaitFinish': False, 'SceneName': 'C04-0', 'TargetActorDirReferenceMode': 1, 'TargetActorPosReferenceMode': 1, 'UniqueName': '', 'ActorName': 'FldObj_LavaPlane_A_04', 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+                } {
+                    RemainsFire[RemainsFire_Battle].Demo_AnimMatrixDriven({'ASSlot': 0, 'SequenceBank': 0, 'IsIgnoreSame': False, 'IsChangeable': False, 'ASName': 'Place1_TailAttack', 'IsWaitFinish': False, 'StartFrame': -1.0})
+                }
+
+                goto Event224
             }
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+            GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+            GameROMPlayer.Demo_Join({'IsWaitFinish': True})
+            goto Event52
+        } else {
+            GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+            GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
+            goto Event52
         }
     }
 }

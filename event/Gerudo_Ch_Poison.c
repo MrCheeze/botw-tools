@@ -92,22 +92,21 @@ void Ready_Npc_oasis016_Talk() {
 
                 goto Event114
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis016_First'}) {
+
+            call hello()
+
+            Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk00', 'ASName': 'Talk_Cry'})
+            Event77:
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_Poison_Activated'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis016_First'}) {
 
-                call hello()
+            call hello()
 
-                Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk00', 'ASName': 'Talk_Cry'})
-                Event77:
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_Poison_Activated'})
-            } else {
-
-                call hello()
-
-                Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Cry', 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk19'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis016_First', 'IsWaitFinish': True})
-                goto Event77
-            }
+            Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Cry', 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk19'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis016_First', 'IsWaitFinish': True})
+            goto Event77
         }
       case 10:
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk02'})
@@ -131,12 +130,8 @@ void Step1_Npc_oasis016_Talk() {
 
 void Step1_Npc_oasis016_Near() {
     Event167:
-    switch Npc_oasis016.CheckActorAction13() {
-      case 5:
-        Event81:
+    if Npc_oasis016.CheckActorAction13() in [5, 10] {
         Npc_oasis016.Demo_TalkASync({'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Near00', 'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False})
-      case 10:
-        goto Event81
     }
 }
 
@@ -145,8 +140,7 @@ void Finish_Npc_oasis016_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_oasis016.CheckActorAction13() {
-      case 2:
-        Event195:
+      case [2, 3, 10]:
         if Npc_oasis016.IsOnInstEventFlag() {
             Event93:
             Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk07'})
@@ -168,10 +162,6 @@ void Finish_Npc_oasis016_Talk() {
 
             goto Event93
         }
-      case 3:
-        goto Event195
-      case 10:
-        goto Event195
       case 11:
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk16'})
     }
@@ -307,61 +297,29 @@ void Finish_Npc_OasisWaterChannel_Talk() {
 }
 
 void Finish_Npc_oasis016_Near() {
-    switch Npc_oasis016.CheckActorAction13() {
-      case 2:
-        Event170:
+    if Npc_oasis016.CheckActorAction13() in [2, 3, 10] {
         Npc_oasis016.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Near01', 'DispFrame': 300})
-      case 3:
-        goto Event170
-      case 10:
-        goto Event170
     }
 }
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event178:
+      case [0, 1]:
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk20', 'ASName': ''})
-      case 1:
-        goto Event178
-      case 2:
-        Event179:
+      case [2, 3, 4]:
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk21', 'ASName': ''})
-      case 3:
-        goto Event179
-      case 4:
-        goto Event179
-      case 5:
-        Event180:
+      case [5, 6, 7]:
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk22', 'ASName': ''})
-      case 6:
-        goto Event180
-      case 7:
-        goto Event180
     }
 }
 
 void hello_finish() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event189:
+      case [0, 1]:
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk23'})
-      case 1:
-        goto Event189
-      case 2:
-        Event190:
+      case [2, 3, 4]:
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk24'})
-      case 3:
-        goto Event190
-      case 4:
-        goto Event190
-      case 5:
-        Event191:
+      case [5, 6, 7]:
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk25'})
-      case 6:
-        goto Event191
-      case 7:
-        goto Event191
     }
 }

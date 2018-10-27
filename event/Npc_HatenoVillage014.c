@@ -59,12 +59,11 @@ void Near() {
     Event185:
     if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC014_Ride'}) {
         Npc_HatenoVillage014.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:near00'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC014_Back'}) {
+        Npc_HatenoVillage014.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:near01'})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC014_Back'}) {
-            Npc_HatenoVillage014.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:near01'})
-        } else {
-            Npc_HatenoVillage014.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:near02', 'IsChecked': False, 'DispFrame': 90})
-        }
+        Npc_HatenoVillage014.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:near02', 'IsChecked': False, 'DispFrame': 90})
     }
 }
 
@@ -216,33 +215,15 @@ void TsukimiHello() {
         switch EventSystemActor.CheckWeather() {
           case 0:
             switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event171:
+              case [0, 1]:
                 Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk31'})
-              case 1:
-                goto Event171
-              case 2:
-                Event173:
+              case [2, 3, 4, 5]:
                 Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk32'})
-              case 3:
-                goto Event173
-              case 4:
-                goto Event173
-              case 5:
-                goto Event173
-              case 6:
-                Event174:
+              case [6, 7]:
                 Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk33'})
-              case 7:
-                goto Event174
             }
-          case 1:
-            Event175:
+          case [1, 2, 3]:
             Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk34'})
-          case 2:
-            goto Event175
-          case 3:
-            goto Event175
         }
     }
 }
@@ -254,12 +235,11 @@ void TsukimiThink() {
         } else {
             Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk23', 'ASName': 'Wait'})
         }
+    } else
+    if !EventSystemActor.RandomChoice2() {
+        Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait', 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk26'})
     } else {
-        if !EventSystemActor.RandomChoice2() {
-            Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait', 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk26'})
-        } else {
-            Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk18', 'ASName': ''})
-        }
+        Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk18', 'ASName': ''})
     }
 }
 
@@ -289,13 +269,12 @@ void TsukimiMatome() {
             } else {
                 goto Event147
             }
-        } else {
-            if !EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC014_Back'}) {
+        } else
+        if !EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC014_Back'}) {
 
-                call Inn_Talk()
+            call Inn_Talk()
 
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-            }
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         }
     }
 }

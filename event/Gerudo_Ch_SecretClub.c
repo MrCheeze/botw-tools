@@ -40,19 +40,19 @@ void BackDoor() {
             Event29:
             Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_16'})
             switch EventSystemActor.GeneralChoice4() {
-              case 0:
+              case [0, 1, 3]:
                 Event39:
                 Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_12'})
                 switch EventSystemActor.GeneralChoice4() {
-                  case 0:
+                  case [0, 1, 3]:
                     Event42:
                     Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_13'})
                     switch EventSystemActor.GeneralChoice4() {
-                      case 0:
+                      case [0, 1, 3]:
                         Event46:
                         Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_19'})
                         switch EventSystemActor.GeneralChoice4() {
-                          case 0:
+                          case [0, 1, 2]:
                             Event48:
                             Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_15'})
                             GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
@@ -61,10 +61,6 @@ void BackDoor() {
                             EventSystemActor.Demo_FlagOFF({'FlagName': 'Gerudo_Ch_SecretClub_CodeB', 'IsWaitFinish': True})
                             EventSystemActor.Demo_FlagOFF({'FlagName': 'Gerudo_Ch_SecretClub_CodeC', 'IsWaitFinish': True})
                             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SecretClub_Activated'})
-                          case 1:
-                            goto Event48
-                          case 2:
-                            goto Event48
                           case 3:
                             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SecretClub_CodeD'})
                             if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_CodeA'}) {
@@ -84,28 +80,16 @@ void BackDoor() {
                                 goto Event48
                             }
                         }
-                      case 1:
-                        goto Event46
                       case 2:
                         EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeC', 'IsWaitFinish': True})
                         goto Event46
-                      case 3:
-                        goto Event46
                     }
-                  case 1:
-                    goto Event42
                   case 2:
                     EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeB', 'IsWaitFinish': True})
                     goto Event42
-                  case 3:
-                    goto Event42
                 }
-              case 1:
-                goto Event39
               case 2:
                 EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeA', 'IsWaitFinish': True})
-                goto Event39
-              case 3:
                 goto Event39
             }
         }

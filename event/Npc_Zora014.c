@@ -117,8 +117,7 @@ void Water_Relic_Step5_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Zora014.CheckActorAction13() {
-      case 2:
-        Event86:
+      case [2, 3, 10]:
         Npc_Zora014.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'FaceId': 1, 'IsConfront': True})
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora014_NormalFirst'}) {
             if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'}) {
@@ -140,10 +139,6 @@ void Water_Relic_Step5_Talk() {
                 Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk19'})
             }
         }
-      case 3:
-        goto Event86
-      case 10:
-        goto Event86
       case 11:
         Event71:
         Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk17'})
@@ -165,8 +160,7 @@ void Npc_Zora014_GetArrow_Talk() {
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora014_RainFirst'}) {
                 Event43:
                 switch Npc_Zora014.CheckActorAction13() {
-                  case 2:
-                    Event65:
+                  case [2, 3]:
 
                     call SegonEtcFirst()
 
@@ -182,8 +176,6 @@ void Npc_Zora014_GetArrow_Talk() {
                         Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora014:talk12', 'ASName': ''})
                         goto Event64
                     }
-                  case 3:
-                    goto Event65
                   case 10:
 
                     call SegonEtcFirst()
@@ -199,16 +191,11 @@ void Npc_Zora014_GetArrow_Talk() {
                 EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora014_RainFirst', 'IsWaitFinish': True})
                 Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk16'})
             }
-          case 1:
-            goto Event43
-          case 2:
-            goto Event43
-          case 3:
+          case [1, 2, 3]:
             goto Event43
         }
-    } else {
-        goto Event43
-    }
+    } else
+    goto Event43
 }
 
 void SegonExplain() {
@@ -235,18 +222,17 @@ void Talk_Segon_Steal_Demo() {
             Event112:
             Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk26', 'IsCloseMessageDialog': True})
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora014_First'}) {
+        goto Event110
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora014_First'}) {
-            goto Event110
-        } else {
-            Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk25', 'IsCloseMessageDialog': True})
-            Npc_Zora014.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 1, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-            Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Zora014:talk31'})
+        Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk25', 'IsCloseMessageDialog': True})
+        Npc_Zora014.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 1, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Zora014:talk31'})
 
-            call SegonExplain()
+        call SegonExplain()
 
-            Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk30'})
-            goto Event112
-        }
+        Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk30'})
+        goto Event112
     }
 }

@@ -120,33 +120,29 @@ void Demo_045_0() {
             GameROMPlayer.Demo_ResetBoneCtrl({'IsWaitFinish': True, 'ResetTarget': 0})
         }
 
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy2_Talk'}) {
+        goto Event32
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy3_Talk'}) {
+        goto Event32
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy4_Talk'}) {
+        goto Event32
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy5_Talk'}) {
+        goto Event32
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy2_Talk'}) {
-            goto Event32
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy3_Talk'}) {
-                goto Event32
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy4_Talk'}) {
-                    goto Event32
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy5_Talk'}) {
-                        goto Event32
-                    } else {
 
-                        fork {
-                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosY': 2.988555908203125, 'Pattern1PosZ': 17.280059814453125, 'Pattern1AtY': 6.198546886444092, 'Pattern1AtZ': 4.809967041015625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'TwnObj_FairySpringClose_A_01', 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'IsWaitFinish': True, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'UniqueName1': 'CameraRelativeActor', 'Accept1FrameDelay': False, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                        } {
-                            EventSystemActor.Demo_WarpPlayerToAnchor({'AnchorName': 'DestinationAnchor', 'UniqueName': 'BudStandPos', 'IsWaitFinish': False})
-                            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'DemoWait', 'IsWaitFinish': False, 'MorphingFrame': 0.0, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
-                            GameROMPlayer.Demo_ResetBoneCtrl({'IsWaitFinish': True, 'ResetTarget': 0})
-                        }
-
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                    }
-                }
-            }
+        fork {
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosY': 2.988555908203125, 'Pattern1PosZ': 17.280059814453125, 'Pattern1AtY': 6.198546886444092, 'Pattern1AtZ': 4.809967041015625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'TwnObj_FairySpringClose_A_01', 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'IsWaitFinish': True, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'UniqueName1': 'CameraRelativeActor', 'Accept1FrameDelay': False, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        } {
+            EventSystemActor.Demo_WarpPlayerToAnchor({'AnchorName': 'DestinationAnchor', 'UniqueName': 'BudStandPos', 'IsWaitFinish': False})
+            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'DemoWait', 'IsWaitFinish': False, 'MorphingFrame': 0.0, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
+            GameROMPlayer.Demo_ResetBoneCtrl({'IsWaitFinish': True, 'ResetTarget': 0})
         }
+
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
     }
 }
 

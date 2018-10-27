@@ -110,267 +110,250 @@ void Talk() {
                 call FullCompReward()
 
             }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_CameraBoy_Buy_First'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_CameraBoy_Bought'}) {
-                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk88'})
-                    Event572:
-                    switch EventSystemActor.GeneralChoice4() {
-                      case 0:
-                        if EventSystemActor.CheckFlag({'FlagName': 'GameClear'}) {
-                            Event597:
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_CameraBoy_Buy_First'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_CameraBoy_Bought'}) {
+                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk88'})
+                Event572:
+                switch EventSystemActor.GeneralChoice4() {
+                  case 0:
+                    if EventSystemActor.CheckFlag({'FlagName': 'GameClear'}) {
+                        Event597:
+                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shop_IsSelectPurchase'})
+                        Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:Com_Talk_00'})
+                        Event457:
+
+                        call OpenYorozu2D()
+
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_Are'}) {
+                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk95'})
+                        if !EventSystemActor.GeneralChoice2() {
                             EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
                             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shop_IsSelectPurchase'})
-                            Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:Com_Talk_00'})
-                            Event457:
-
-                            call OpenYorozu2D()
-
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk40', 'IsCloseMessageDialog': True})
+                            goto Event457
                         } else {
-                            if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_Are'}) {
-                                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk95'})
-                                if !EventSystemActor.GeneralChoice2() {
-                                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shop_IsSelectPurchase'})
-                                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk40', 'IsCloseMessageDialog': True})
-                                    goto Event457
-                                } else {
-                                    goto Event63
-                                }
-                            } else {
-                                goto Event597
-                            }
-                        }
-                      case 1:
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk90'})
-                        Event579:
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk93', 'IsCloseMessageDialog': False})
-                        goto Event572
-                      case 2:
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk94'})
-                        goto Event579
-                      case 3:
-                        goto Event63
-                    }
-                } else {
-                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk47'})
-                    Event264:
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk29'})
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk57', 'IsCloseMessageDialog': True})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_CameraBoy_ChoiceA'})
-                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo032_0', 'EntryPointName': 'Demo032_0', 'EndFade': 0})
-                        Npc_AncientDoctor.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                        Event269:
-                        if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_CameraBoy_Bought'}) {
-                            if EventSystemActor.CheckPictureBookVacancy({'Category': 'Creature', 'VacancyNum': 1}) {
-                                Event550:
-                                Npc_AncientAssistant001.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk55'})
-                                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk66'})
-                                Event328:
-                                EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-                            } else {
-                                if EventSystemActor.CheckPictureBookVacancy({'Category': 'Enemy', 'VacancyNum': 1}) {
-                                    goto Event550
-                                } else {
-                                    if EventSystemActor.CheckPictureBookVacancy({'Category': 'Material', 'VacancyNum': 1}) {
-                                        goto Event550
-                                    } else {
-                                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Weapon', 'VacancyNum': 1}) {
-                                            goto Event550
-                                        } else {
-                                            if EventSystemActor.CheckPictureBookVacancy({'Category': 'Others', 'VacancyNum': 1}) {
-                                                goto Event550
-                                            } else {
-                                                if EventSystemActor.CheckFlag({'FlagName': 'GameClear'}) {
-                                                    if EventSystemActor.CheckPictureBookVacancy({'VacancyNum': 1, 'Category': 'Boss'}) {
-                                                        goto Event550
-                                                    } else {
-
-                                                        call FullCompReward()
-
-                                                    }
-                                                } else {
-                                                    if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_Are'}) {
-                                                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk87', 'IsCloseMessageDialog': False})
-                                                        Event563:
-                                                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk86'})
-                                                    } else {
-                                                        EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_Are', 'IsWaitFinish': True})
-                                                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk85', 'IsCloseMessageDialog': False})
-                                                        goto Event563
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        } else {
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-
-                            call Common.ShowSheikPad({'Self': ActorIdentifier(name="Npc_AncientAssistant001")})
-
-                            Npc_AncientAssistant001.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk52', 'ASName': 'Talk_WatchLink', 'IsCloseMessageDialog': True, 'IsWaitFinish': True})
-                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk06'})
-                            if EventSystemActor.CheckPictureBookVacancy({'Category': 'Creature', 'VacancyNum': 1}) {
-                                Event184:
-                                Npc_AncientAssistant001.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk61'})
-                                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk65', 'IsCloseMessageDialog': True})
-                                Event270:
-                                Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsValid': False, 'FaceId': 1, 'IsConfront': True})
-                                Npc_AncientDoctor.Demo_PlayASForDemo({'IsWaitFinish': False, 'ASName': 'Talk_Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 3778.0927734375, 'Pattern1PosY': 358.3380126953125, 'Pattern1PosZ': 2130.44873046875, 'Pattern1AtX': 3775.895751953125, 'Pattern1AtY': 357.9323425292969, 'Pattern1AtZ': 2128.446533203125, 'Pattern1Fovy': 54.999996185302734, 'Count': 20.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk41', 'IsCloseMessageDialog': True})
-
-                                call SimonCamera()
-
-                                Npc_AncientAssistant001.Demo_BecomeSpeaker({'IsWaitFinish': True})
-                                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk56'})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_CameraBoy_Bought'})
-                                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'HatenoMini_CameraBoy_BuyPicture'})
-                                goto Event328
-                            } else {
-                                if EventSystemActor.CheckPictureBookVacancy({'Category': 'Enemy', 'VacancyNum': 1}) {
-                                    goto Event184
-                                } else {
-                                    if EventSystemActor.CheckPictureBookVacancy({'Category': 'Material', 'VacancyNum': 1}) {
-                                        goto Event184
-                                    } else {
-                                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Weapon', 'VacancyNum': 1}) {
-                                            goto Event184
-                                        } else {
-                                            if EventSystemActor.CheckPictureBookVacancy({'Category': 'Others', 'VacancyNum': 1}) {
-                                                goto Event184
-                                            } else {
-                                                if EventSystemActor.CheckFlag({'FlagName': 'GameClear'}) {
-                                                    if EventSystemActor.CheckPictureBookVacancy({'VacancyNum': 1, 'Category': 'Boss'}) {
-                                                        goto Event184
-                                                    } else {
-
-                                                        call FullCompReward()
-
-                                                    }
-                                                } else {
-                                                    EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_Are', 'IsWaitFinish': True})
-                                                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk85', 'IsCloseMessageDialog': False})
-                                                    GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                                                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk86'})
-                                                    goto Event270
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                            goto Event63
                         }
                     } else {
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk39'})
+                        goto Event597
                     }
+                  case 1:
+                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk90'})
+                    Event579:
+                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk93', 'IsCloseMessageDialog': False})
+                    goto Event572
+                  case 2:
+                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk94'})
+                    goto Event579
+                  case 3:
+                    goto Event63
                 }
             } else {
-                EventSystemActor.Demo_FlagON({'FlagName': 'HatenoMini_CameraBoy_Buy_First', 'IsWaitFinish': True})
-                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk43'})
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk54', 'IsCloseMessageDialog': False})
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk89', 'IsCloseMessageDialog': False})
-                Event574:
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk90', 'IsCloseMessageDialog': False})
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk91', 'IsCloseMessageDialog': False})
+                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk47'})
+                Event264:
                 if !EventSystemActor.GeneralChoice2() {
-                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk92'})
-                    Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'FaceId': 1, 'IsValid': False})
+                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk29'})
+                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk57', 'IsCloseMessageDialog': True})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_CameraBoy_ChoiceA'})
+                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo032_0', 'EntryPointName': 'Demo032_0', 'EndFade': 0})
+                    Npc_AncientDoctor.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+                    Event269:
+                    if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_CameraBoy_Bought'}) {
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Creature', 'VacancyNum': 1}) {
+                            Event550:
+                            Npc_AncientAssistant001.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk55'})
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk66'})
+                            Event328:
+                            EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
+                        } else
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Enemy', 'VacancyNum': 1}) {
+                            goto Event550
+                        } else
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Material', 'VacancyNum': 1}) {
+                            goto Event550
+                        } else
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Weapon', 'VacancyNum': 1}) {
+                            goto Event550
+                        } else
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Others', 'VacancyNum': 1}) {
+                            goto Event550
+                        } else
+                        if EventSystemActor.CheckFlag({'FlagName': 'GameClear'}) {
+                            if EventSystemActor.CheckPictureBookVacancy({'VacancyNum': 1, 'Category': 'Boss'}) {
+                                goto Event550
+                            } else {
 
-                    call PuruaCameraSmall()
+                                call FullCompReward()
 
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk44', 'IsCloseMessageDialog': True})
-                    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 0, 'ActorName': 'Npc_AncientAssistant001', 'IsWaitFinish': True, 'IsValid': False, 'FaceId': 0, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
-
-                    fork {
-                        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 0.0})
-                    } {
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk45'})
-                    }
-
-                    goto Event264
-                } else {
-                    goto Event574
-                }
-            }
-        }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'CarryingBlueFireEXMini_Activated'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'CarryingBlueFireEXMini_Permit'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor001_Irregular'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_IrregularFirst'}) {
-                        goto Event89
-                    } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_IrregularFirst', 'IsWaitFinish': True})
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk42'})
-                    }
-                } else {
-                    goto Event89
-                }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_First'}) {
-                    goto Event89
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_GetOut'}) {
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk02'})
-                        Event111:
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk01', 'IsOverWriteLabelActorName': False})
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk03', 'IsOverWriteLabelActorName': False})
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk04', 'IsOverWriteLabelActorName': False})
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk24', 'IsCloseMessageDialog': True})
-                        Npc_AncientAssistant001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ActorName': 'Npc_AncientDoctor', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'FaceId': 1, 'ObjectId': 1, 'IsConfront': True})
-                        GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk07', 'IsOverWriteLabelActorName': False, 'ASName': 'Hello', 'IsCloseMessageDialog': True})
-                        Npc_AncientAssistant001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk08', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                        Npc_AncientAssistant001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ActorName': 'Npc_AncientDoctor', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'FaceId': 1, 'ObjectId': 1, 'IsConfront': True})
-                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk10', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                        GameROMPlayer.Demo_LookAtObject({'ObjectId': 0, 'IsWaitFinish': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_AncientDoctor'})
-                        Npc_AncientDoctor.Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': False})
-                        Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 3, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 20.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
-
-                        call PuruaCamera()
-
-                        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk51', 'ASName': 'Talk_Special', 'IsCloseMessageDialog': True})
-                        Npc_AncientAssistant001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 1, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                        Npc_AncientAssistant001.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-
-                        fork {
-                            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 0.0})
-                        } {
-                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk11', 'IsOverWriteLabelActorName': False})
-                        } {
-                            GameROMPlayer.Demo_LookAtObject({'ObjectId': 0, 'IsWaitFinish': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_AncientAssistant001'})
+                            }
+                        } else
+                        if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_Are'}) {
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk87', 'IsCloseMessageDialog': False})
+                            Event563:
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk86'})
+                        } else {
+                            EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_Are', 'IsWaitFinish': True})
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk85', 'IsCloseMessageDialog': False})
+                            goto Event563
                         }
-
-                        EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_First', 'IsWaitFinish': True})
-                        Npc_AncientDoctor.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:near00', 'IsChecked': False, 'DispFrame': 90})
                     } else {
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
 
-                        call ShowPadForSimon()
+                        call Common.ShowSheikPad({'Self': ActorIdentifier(name="Npc_AncientAssistant001")})
 
-                        goto Event111
+                        Npc_AncientAssistant001.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk52', 'ASName': 'Talk_WatchLink', 'IsCloseMessageDialog': True, 'IsWaitFinish': True})
+                        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk06'})
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Creature', 'VacancyNum': 1}) {
+                            Event184:
+                            Npc_AncientAssistant001.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk61'})
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk65', 'IsCloseMessageDialog': True})
+                            Event270:
+                            Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsValid': False, 'FaceId': 1, 'IsConfront': True})
+                            Npc_AncientDoctor.Demo_PlayASForDemo({'IsWaitFinish': False, 'ASName': 'Talk_Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 3778.0927734375, 'Pattern1PosY': 358.3380126953125, 'Pattern1PosZ': 2130.44873046875, 'Pattern1AtX': 3775.895751953125, 'Pattern1AtY': 357.9323425292969, 'Pattern1AtZ': 2128.446533203125, 'Pattern1Fovy': 54.999996185302734, 'Count': 20.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk41', 'IsCloseMessageDialog': True})
+
+                            call SimonCamera()
+
+                            Npc_AncientAssistant001.Demo_BecomeSpeaker({'IsWaitFinish': True})
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk56'})
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_CameraBoy_Bought'})
+                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'HatenoMini_CameraBoy_BuyPicture'})
+                            goto Event328
+                        } else
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Enemy', 'VacancyNum': 1}) {
+                            goto Event184
+                        } else
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Material', 'VacancyNum': 1}) {
+                            goto Event184
+                        } else
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Weapon', 'VacancyNum': 1}) {
+                            goto Event184
+                        } else
+                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Others', 'VacancyNum': 1}) {
+                            goto Event184
+                        } else
+                        if EventSystemActor.CheckFlag({'FlagName': 'GameClear'}) {
+                            if EventSystemActor.CheckPictureBookVacancy({'VacancyNum': 1, 'Category': 'Boss'}) {
+                                goto Event184
+                            } else {
+
+                                call FullCompReward()
+
+                            }
+                        } else {
+                            EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_Are', 'IsWaitFinish': True})
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk85', 'IsCloseMessageDialog': False})
+                            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+                            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk86'})
+                            goto Event270
+                        }
                     }
+                } else {
+                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk39'})
                 }
             }
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_GetOut'}) {
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk26'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'HatenoMini_CameraBoy_Buy_First', 'IsWaitFinish': True})
+            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk43'})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk54', 'IsCloseMessageDialog': False})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk89', 'IsCloseMessageDialog': False})
+            Event574:
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk90', 'IsCloseMessageDialog': False})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk91', 'IsCloseMessageDialog': False})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk92'})
+                Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'FaceId': 1, 'IsValid': False})
+
+                call PuruaCameraSmall()
+
+                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk44', 'IsCloseMessageDialog': True})
+                GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 0, 'ActorName': 'Npc_AncientAssistant001', 'IsWaitFinish': True, 'IsValid': False, 'FaceId': 0, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
+
+                fork {
+                    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 0.0})
+                } {
+                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk45'})
+                }
+
+                goto Event264
             } else {
-                EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_GetOut', 'IsWaitFinish': True})
-
-                call ShowPadForSimon()
-
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk25'})
+                goto Event574
             }
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'CarryingBlueFireEXMini_Activated'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'CarryingBlueFireEXMini_Permit'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor001_Irregular'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_IrregularFirst'}) {
+                    goto Event89
+                } else {
+                    EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_IrregularFirst', 'IsWaitFinish': True})
+                    Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk42'})
+                }
+            } else {
+                goto Event89
+            }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_First'}) {
+            goto Event89
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_GetOut'}) {
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk02'})
+            Event111:
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk01', 'IsOverWriteLabelActorName': False})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk03', 'IsOverWriteLabelActorName': False})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk04', 'IsOverWriteLabelActorName': False})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk24', 'IsCloseMessageDialog': True})
+            Npc_AncientAssistant001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ActorName': 'Npc_AncientDoctor', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'FaceId': 1, 'ObjectId': 1, 'IsConfront': True})
+            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk07', 'IsOverWriteLabelActorName': False, 'ASName': 'Hello', 'IsCloseMessageDialog': True})
+            Npc_AncientAssistant001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk08', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+            Npc_AncientAssistant001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ActorName': 'Npc_AncientDoctor', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'FaceId': 1, 'ObjectId': 1, 'IsConfront': True})
+            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk10', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+            GameROMPlayer.Demo_LookAtObject({'ObjectId': 0, 'IsWaitFinish': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_AncientDoctor'})
+            Npc_AncientDoctor.Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': False})
+            Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 3, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 20.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
+
+            call PuruaCamera()
+
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk51', 'ASName': 'Talk_Special', 'IsCloseMessageDialog': True})
+            Npc_AncientAssistant001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 1, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_AncientAssistant001.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+
+            fork {
+                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 0.0})
+            } {
+                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk11', 'IsOverWriteLabelActorName': False})
+            } {
+                GameROMPlayer.Demo_LookAtObject({'ObjectId': 0, 'IsWaitFinish': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_AncientAssistant001'})
+            }
+
+            EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_First', 'IsWaitFinish': True})
+            Npc_AncientDoctor.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:near00', 'IsChecked': False, 'DispFrame': 90})
+        } else {
+
+            call ShowPadForSimon()
+
+            goto Event111
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_GetOut'}) {
+        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk26'})
+    } else {
+        EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientAssistant001_GetOut', 'IsWaitFinish': True})
+
+        call ShowPadForSimon()
+
+        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk25'})
     }
 }
 
@@ -442,32 +425,17 @@ void Simon_Hello() {
             Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk60'})
             goto Event545
         }
-    } else {
-        if Npc_AncientAssistant001.IsOnInstEventFlag() {
-            Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk15'})
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event59:
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk12', 'IsOverWriteLabelActorName': False})
-              case 1:
-                goto Event59
-              case 2:
-                Event60:
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk13', 'IsOverWriteLabelActorName': False})
-              case 3:
-                goto Event60
-              case 4:
-                goto Event60
-              case 5:
-                goto Event60
-              case 6:
-                Event61:
-                Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk14', 'IsOverWriteLabelActorName': False})
-              case 7:
-                goto Event61
-            }
-        }
+    } else
+    if Npc_AncientAssistant001.IsOnInstEventFlag() {
+        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk15'})
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case [0, 1]:
+        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk12', 'IsOverWriteLabelActorName': False})
+      case [2, 3, 4, 5]:
+        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk13', 'IsOverWriteLabelActorName': False})
+      case [6, 7]:
+        Npc_AncientAssistant001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk14', 'IsOverWriteLabelActorName': False})
     }
 }
 
@@ -547,53 +515,49 @@ void OpenYorozu2D() {
                                 if EventSystemActor.HasEnoughPayment() {
                                     Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:Com_Talk_30'})
                                     goto Event205
-                                } else {
-                                    Event609:
-                                    switch EventSystemActor.RandomChoice4() {
-                                      case 0:
-                                        Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk100'})
-                                        goto Event359
-                                      case 1:
-                                        Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk101'})
-                                        goto Event359
-                                      case 2:
-                                        Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk102'})
-                                        goto Event359
-                                      case 3:
-                                        Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk103'})
-                                        goto Event359
-                                    }
+                                } else
+                                Event609:
+                                switch EventSystemActor.RandomChoice4() {
+                                  case 0:
+                                    Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk100'})
+                                    goto Event359
+                                  case 1:
+                                    Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk101'})
+                                    goto Event359
+                                  case 2:
+                                    Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk102'})
+                                    goto Event359
+                                  case 3:
+                                    Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk103'})
+                                    goto Event359
                                 }
                               case 1:
                                 Npc_AncientAssistant001.Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': True})
                                 if EventSystemActor.HasEnoughPayment() {
                                     Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:Com_Talk_34', 'IsOverWriteLabelActorName': False})
                                     goto Event205
-                                } else {
-                                    goto Event609
-                                }
+                                } else
+                                goto Event609
                               case 2:
                                 goto Event209
                             }
                         }
-                    } else {
-                        goto Event609
-                    }
-                } else {
-                    switch EventSystemActor.RandomChoice4() {
-                      case 0:
-                        Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk96'})
-                        goto Event359
-                      case 1:
-                        Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk97'})
-                        goto Event359
-                      case 2:
-                        Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk98'})
-                        goto Event359
-                      case 3:
-                        Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk99'})
-                        goto Event359
-                    }
+                    } else
+                    goto Event609
+                } else
+                switch EventSystemActor.RandomChoice4() {
+                  case 0:
+                    Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk96'})
+                    goto Event359
+                  case 1:
+                    Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk97'})
+                    goto Event359
+                  case 2:
+                    Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk98'})
+                    goto Event359
+                  case 3:
+                    Npc_AncientAssistant001.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant001:talk99'})
+                    goto Event359
                 }
             } else {
                 goto Event209

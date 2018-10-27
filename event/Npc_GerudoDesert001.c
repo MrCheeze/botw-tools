@@ -22,11 +22,10 @@ void Talk() {
         } else {
             Npc_GerudoDesert001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert001:Talk_02'})
         }
+    } else
+    if Npc_GerudoDesert001.IsOnInstEventFlag() {
+        Npc_GerudoDesert001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert001:Talk_03'})
     } else {
-        if Npc_GerudoDesert001.IsOnInstEventFlag() {
-            Npc_GerudoDesert001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert001:Talk_03'})
-        } else {
-            Npc_GerudoDesert001.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert001:Talk_01', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        }
+        Npc_GerudoDesert001.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert001:Talk_01', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
     }
 }

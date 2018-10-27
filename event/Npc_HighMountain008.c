@@ -39,37 +39,20 @@ void Talk() {
         } else {
             goto Event19
         }
-    } else {
-        if EventSystemActor.HasPorchItem({'PorchItemName': 'Armor_009_Head', 'Count': 1}) {
-            goto Event19
-        } else {
-            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_009_Lower'}) {
-                goto Event19
-            } else {
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event3:
-                    Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk00'})
-                    goto Event40
-                  case 1:
-                    goto Event3
-                  case 2:
-                    goto Event3
-                  case 3:
-                    goto Event3
-                  case 4:
-                    goto Event3
-                  case 5:
-                    goto Event3
-                  case 6:
-                    Event10:
-                    Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk01'})
-                    goto Event40
-                  case 7:
-                    goto Event10
-                }
-            }
-        }
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Armor_009_Head', 'Count': 1}) {
+        goto Event19
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_009_Lower'}) {
+        goto Event19
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case [0, 1, 2, 3, 4, 5]:
+        Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk00'})
+        goto Event40
+      case [6, 7]:
+        Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk01'})
+        goto Event40
     }
 }
 
@@ -92,16 +75,15 @@ void ClerkAsk() {
 void Sell() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_HighMountain008_SoldOut'}) {
         Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk11'})
-    } else {
-        switch EventSystemActor.RandomChoice4() {
-          case 0:
-            Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:Com_Talk_11'})
-          case 1:
-            Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:Com_Talk_11b'})
-          case 2:
-            Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:Com_Talk_11c'})
-          case 3:
-            Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:Com_Talk_11d'})
-        }
+    } else
+    switch EventSystemActor.RandomChoice4() {
+      case 0:
+        Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:Com_Talk_11'})
+      case 1:
+        Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:Com_Talk_11b'})
+      case 2:
+        Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:Com_Talk_11c'})
+      case 3:
+        Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:Com_Talk_11d'})
     }
 }

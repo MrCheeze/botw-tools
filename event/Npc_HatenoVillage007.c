@@ -14,8 +14,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_HatenoVillage007.CheckActorAction13() {
-      case 0:
-        Event73:
+      case [0, 1, 12]:
 
         call NararaBlueFire()
 
@@ -43,55 +42,45 @@ void Talk() {
                             Event57:
                             Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk18', 'IsCloseMessageDialog': True})
                             goto Event71
-                        } else {
-                            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_C'}) {
-                                Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk12'})
-                                goto Event57
-                            } else {
-                                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_B'}) {
-                                    Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk13'})
-                                    goto Event57
-                                } else {
-                                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_D'}) {
-                                        Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk14'})
-                                        goto Event57
-                                    } else {
-                                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_E'}) {
-                                            Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk15'})
-                                            goto Event57
-                                        } else {
-                                            if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_F', 'Count': 1}) {
-                                                Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk16'})
-                                                goto Event57
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    } else {
+                        } else
                         if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_C'}) {
-                            goto Event49
-                        } else {
-                            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_B'}) {
-                                goto Event49
-                            } else {
-                                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_D'}) {
-                                    goto Event49
-                                } else {
-                                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_E'}) {
-                                        goto Event49
-                                    } else {
-                                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_F', 'Count': 1}) {
-                                            goto Event49
-                                        } else {
-                                            Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk25'})
-                                            goto Event71
-                                        }
-                                    }
-                                }
-                            }
+                            Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk12'})
+                            goto Event57
+                        } else
+                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_B'}) {
+                            Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk13'})
+                            goto Event57
+                        } else
+                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_D'}) {
+                            Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk14'})
+                            goto Event57
+                        } else
+                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_E'}) {
+                            Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk15'})
+                            goto Event57
+                        } else
+                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_F', 'Count': 1}) {
+                            Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk16'})
+                            goto Event57
                         }
+                    } else
+                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_C'}) {
+                        goto Event49
+                    } else
+                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_B'}) {
+                        goto Event49
+                    } else
+                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_D'}) {
+                        goto Event49
+                    } else
+                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Ore_E'}) {
+                        goto Event49
+                    } else
+                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_F', 'Count': 1}) {
+                        goto Event49
+                    } else {
+                        Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk25'})
+                        goto Event71
                     }
                   case 3:
                     Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk22', 'ASName': 'Hello'})
@@ -103,17 +92,10 @@ void Talk() {
                 Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk21'})
                 goto Event64
             }
-          case 1:
-            Event31:
+          case [1, 2, 3]:
             Npc_HatenoVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:talk07'})
             goto Event66
-          case 2:
-            goto Event31
-          case 3:
-            goto Event31
         }
-      case 1:
-        goto Event73
       case 10:
 
         call NararaBlueFire()
@@ -140,28 +122,21 @@ void Talk() {
 
             goto Event39
         }
-      case 12:
-        goto Event73
     }
 }
 
 void Near() {
     switch Npc_HatenoVillage007.CheckActorAction13() {
-      case 0:
-        Event16:
+      case [0, 1, 12]:
         if EventSystemActor.CheckPlayerWeaponFired({'CheckFireType': 2}) {
             Npc_HatenoVillage007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:near00', 'IsChecked': False, 'DispFrame': 90})
         } else {
             Npc_HatenoVillage007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:near02', 'IsChecked': False, 'DispFrame': 90})
         }
-      case 1:
-        goto Event16
       case 10:
         Npc_HatenoVillage007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:near01', 'IsChecked': False, 'DispFrame': 90})
       case 11:
         Npc_HatenoVillage007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage007:near03', 'IsChecked': False, 'DispFrame': 90})
-      case 12:
-        goto Event16
     }
 }
 

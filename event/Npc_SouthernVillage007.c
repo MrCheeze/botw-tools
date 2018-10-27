@@ -17,32 +17,19 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_SouthernVillage007.CheckActorAction13() {
-      case 0:
-        Event3:
+      case [0, 1, 4]:
         Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:talk02'})
-      case 1:
-        goto Event3
-      case 2:
-        Event18:
+      case [2, 3]:
         if EventSystemActor.CheckFlag({'FlagName': 'UotoriMini_RecipieSea_FinishDay'}) {
             switch EventSystemActor.CheckWeather() {
               case 0:
                 Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:talk04'})
-              case 1:
-                Event22:
+              case [1, 2, 3]:
                 Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:talk03'})
-              case 2:
-                goto Event22
-              case 3:
-                goto Event22
             }
         } else {
             Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:talk01'})
         }
-      case 3:
-        goto Event18
-      case 4:
-        goto Event3
       case 5:
         Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:talk00'})
       case 6:
@@ -58,23 +45,12 @@ void Talk() {
 
 void Near() {
     switch Npc_SouthernVillage007.CheckActorAction13() {
-      case 1:
-        Event5:
+      case [1, 3, 5]:
         Npc_SouthernVillage007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:Near00', 'IsChecked': False, 'DispFrame': 90})
       case 2:
-        switch EventSystemActor.CheckWeather() {
-          case 1:
-            Event14:
+        if EventSystemActor.CheckWeather() in [1, 2, 3] {
             Npc_SouthernVillage007.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:Near02'})
-          case 2:
-            goto Event14
-          case 3:
-            goto Event14
         }
-      case 3:
-        goto Event5
-      case 5:
-        goto Event5
       case 6:
         Npc_SouthernVillage007.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:Near03'})
       case 10:

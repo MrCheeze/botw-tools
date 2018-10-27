@@ -108,48 +108,43 @@ void Ready_Npc_Gaman01_Talk() {
                 Npc_Gaman02.Demo_Talk({'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman02_R_006', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
                 Npc_Gaman03.Demo_Talk({'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman03_R_006', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Activated'}) {
+            Npc_Gaman01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_20'})
+            goto Event52
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Activated'}) {
-                Npc_Gaman01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_20'})
-                goto Event52
-            } else {
-                Event51:
-                Npc_Gaman01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman01_R_003', 'IsOverWriteLabelActorName': False})
-                goto Event52
-            }
+            Event51:
+            Npc_Gaman01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman01_R_003', 'IsOverWriteLabelActorName': False})
+            goto Event52
         }
+    } else
+    if Npc_Gaman02.IsOnInstEventFlag() {
+        goto Event483
+    } else
+    if Npc_Gaman03.IsOnInstEventFlag() {
+        goto Event483
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Finish'}) {
+        Npc_Gaman01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_00'})
+        Npc_Gaman02.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_01'})
+        Npc_Gaman03.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_02'})
+        Event48:
+        Npc_Gaman01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman01_R_002', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
+        Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman02_R_002', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
+        Npc_Gaman03.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman03_R_002', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
+        goto Event10
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Activated'}) {
+        Npc_Gaman01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_10'})
+        Npc_Gaman02.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_11'})
+        Npc_Gaman03.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_12'})
+        goto Event48
     } else {
-        if Npc_Gaman02.IsOnInstEventFlag() {
-            goto Event483
-        } else {
-            if Npc_Gaman03.IsOnInstEventFlag() {
-                goto Event483
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Finish'}) {
-                    Npc_Gaman01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_00'})
-                    Npc_Gaman02.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_01'})
-                    Npc_Gaman03.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_02'})
-                    Event48:
-                    Npc_Gaman01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman01_R_002', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-                    Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman02_R_002', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-                    Npc_Gaman03.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman03_R_002', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-                    goto Event10
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Activated'}) {
-                        Npc_Gaman01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_10'})
-                        Npc_Gaman02.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_11'})
-                        Npc_Gaman03.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_12'})
-                        goto Event48
-                    } else {
-                        Event45:
-                        Npc_Gaman01.Demo_Talk({'ASName': '', 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman01_R_001', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-                        Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman02_R_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-                        Npc_Gaman03.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman03_R_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-                        goto Event48
-                    }
-                }
-            }
-        }
+        Event45:
+        Npc_Gaman01.Demo_Talk({'ASName': '', 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman01_R_001', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
+        Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman02_R_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
+        Npc_Gaman03.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman03_R_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
+        goto Event48
     }
 }
 
@@ -198,23 +193,21 @@ void EntryPoint1() {
         GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
         EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
         Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Goron', 'CheckLower': False, 'CheckHead': False, 'CheckUpper': True}) {
+        goto Event642
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Goron', 'CheckUpper': False, 'CheckHead': False, 'CheckLower': True}) {
+        goto Event642
     } else {
-        if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Goron', 'CheckLower': False, 'CheckHead': False, 'CheckUpper': True}) {
-            goto Event642
-        } else {
-            if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Goron', 'CheckUpper': False, 'CheckHead': False, 'CheckLower': True}) {
-                goto Event642
-            } else {
-                Npc_Gaman01.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S2_001', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 30.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
-                EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
-                EventBgmCtrlTag.Demo_Start({'BgmName': 'GamanContestBgm', 'IsWaitFinish': True})
+        Npc_Gaman01.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S2_001', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 30.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
+        EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
+        EventBgmCtrlTag.Demo_Start({'BgmName': 'GamanContestBgm', 'IsWaitFinish': True})
 
-                call Common.DisableSaveAndWarp()
+        call Common.DisableSaveAndWarp()
 
-                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'Gaman', 'StepName': 'Gaman_Step2_2'})
-            }
-        }
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'Gaman', 'StepName': 'Gaman_Step2_2'})
     }
 }
 
@@ -292,17 +285,15 @@ void Ready_Npc_Gaman02_Talk() {
         Event93:
         Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman02_R_007', 'IsOverWriteLabelActorName': False})
         goto Event51
+    } else
+    if Npc_Gaman02.IsOnInstEventFlag() {
+        goto Event93
+    } else
+    if Npc_Gaman03.IsOnInstEventFlag() {
+        goto Event93
     } else {
-        if Npc_Gaman02.IsOnInstEventFlag() {
-            goto Event93
-        } else {
-            if Npc_Gaman03.IsOnInstEventFlag() {
-                goto Event93
-            } else {
-                Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman02_R_007', 'IsOverWriteLabelActorName': False})
-                goto Event45
-            }
-        }
+        Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman02_R_007', 'IsOverWriteLabelActorName': False})
+        goto Event45
     }
 }
 
@@ -316,17 +307,15 @@ void Ready_Npc_Gaman03_Talk() {
         Event106:
         Npc_Gaman03.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman03_R_007', 'IsOverWriteLabelActorName': False, 'ASName': ''})
         goto Event51
+    } else
+    if Npc_Gaman02.IsOnInstEventFlag() {
+        goto Event106
+    } else
+    if Npc_Gaman03.IsOnInstEventFlag() {
+        goto Event106
     } else {
-        if Npc_Gaman02.IsOnInstEventFlag() {
-            goto Event106
-        } else {
-            if Npc_Gaman03.IsOnInstEventFlag() {
-                goto Event106
-            } else {
-                Npc_Gaman03.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman03_R_007', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                goto Event45
-            }
-        }
+        Npc_Gaman03.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman03_R_007', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+        goto Event45
     }
 }
 
@@ -379,29 +368,26 @@ void Gaman_Step2_Failed_Npc_Gaman01_StepStart() {
         call Common.EnableSaveAndWarp()
 
         EventSystemActor.Demo_RollbackQuest({'QuestName': 'Gaman', 'StepName': 'Step2', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckUpper': True, 'CheckType': 'Goron', 'CheckHead': False, 'CheckLower': False}) {
+        goto Event637
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': True, 'CheckType': 'Goron', 'CheckHead': False, 'CheckUpper': False}) {
+        goto Event637
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
+        Npc_Gaman01.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_01_02'})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_02_02'})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        goto Event573
     } else {
-        if EventSystemActor.CheckEquipArmorSeriesType({'CheckUpper': True, 'CheckType': 'Goron', 'CheckHead': False, 'CheckLower': False}) {
-            goto Event637
-        } else {
-            if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': True, 'CheckType': 'Goron', 'CheckHead': False, 'CheckUpper': False}) {
-                goto Event637
-            } else {
-                if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
-                    Npc_Gaman01.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_01_02'})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_02_02'})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    goto Event573
-                } else {
-                    Npc_Gaman01.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_01_01', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_02_01', 'IsOverWriteLabelActorName': False})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    Npc_Gaman03.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_03_01', 'IsOverWriteLabelActorName': False})
-                    goto Event463
-                }
-            }
-        }
+        Npc_Gaman01.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_01_01', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        Npc_Gaman02.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_02_01', 'IsOverWriteLabelActorName': False})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        Npc_Gaman03.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gaman:Event_S1_003_03_01', 'IsOverWriteLabelActorName': False})
+        goto Event463
     }
 }
 
@@ -570,64 +556,50 @@ void Step1_2_Successed_StepStart() {
         call Common.EnableSaveAndWarp()
 
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'Gaman', 'StepName': 'Step2'})
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_037_Head'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_074_Head'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_075_Head'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_076_Head'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_011_Upper'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_037_Upper'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_074_Upper'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_075_Upper'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_076_Upper'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_011_Upper'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_037_Upper'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_074_Upper'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_075_Upper'}) {
+        goto Event665
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_076_Upper'}) {
+        goto Event665
     } else {
-        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_037_Head'}) {
-            goto Event665
-        } else {
-            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_074_Head'}) {
-                goto Event665
-            } else {
-                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_075_Head'}) {
-                    goto Event665
-                } else {
-                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_076_Head'}) {
-                        goto Event665
-                    } else {
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_011_Upper'}) {
-                            goto Event665
-                        } else {
-                            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_037_Upper'}) {
-                                goto Event665
-                            } else {
-                                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_074_Upper'}) {
-                                    goto Event665
-                                } else {
-                                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_075_Upper'}) {
-                                        goto Event665
-                                    } else {
-                                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_076_Upper'}) {
-                                            goto Event665
-                                        } else {
-                                            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_011_Upper'}) {
-                                                goto Event665
-                                            } else {
-                                                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_037_Upper'}) {
-                                                    goto Event665
-                                                } else {
-                                                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_074_Upper'}) {
-                                                        goto Event665
-                                                    } else {
-                                                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_075_Upper'}) {
-                                                            goto Event665
-                                                        } else {
-                                                            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_076_Upper'}) {
-                                                                goto Event665
-                                                            } else {
-                                                                goto Event470
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        goto Event470
     }
 }
 
@@ -636,13 +608,12 @@ void GamanCheck() {
     Event370:
     if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Step1_Failed'}) {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Step1_2_Failed', 'QuestName': 'Gaman'})
+    } else
+    if EventTimerTag.CheckMiniGameTimeOver() {
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': '', 'QuestName': ''})
     } else {
-        if EventTimerTag.CheckMiniGameTimeOver() {
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': '', 'QuestName': ''})
-        } else {
-            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-            goto Event370
-        }
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event370
     }
 }
 
@@ -726,25 +697,21 @@ void GamanCheck2() {
     if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckType': 'Goron', 'CheckUpper': False, 'CheckLower': False}) {
         Event414:
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'Gaman', 'StepName': 'Gaman_Step2_Failed'})
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Goron', 'CheckLower': False, 'CheckUpper': True, 'CheckHead': False}) {
+        goto Event414
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Goron', 'CheckUpper': False, 'CheckHead': False, 'CheckLower': True}) {
+        goto Event414
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Step2_Failed'}) {
+        goto Event414
+    } else
+    if EventTimerTag.CheckMiniGameTimeOver() {
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': '', 'QuestName': ''})
     } else {
-        if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Goron', 'CheckLower': False, 'CheckUpper': True, 'CheckHead': False}) {
-            goto Event414
-        } else {
-            if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Goron', 'CheckUpper': False, 'CheckHead': False, 'CheckLower': True}) {
-                goto Event414
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Step2_Failed'}) {
-                    goto Event414
-                } else {
-                    if EventTimerTag.CheckMiniGameTimeOver() {
-                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': '', 'QuestName': ''})
-                    } else {
-                        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                        goto Event635
-                    }
-                }
-            }
-        }
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event635
     }
 }
 

@@ -17,8 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_HyrulePlain005.CheckActorAction13() {
-      case 0:
-        Event22:
+      case [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_HyrulePlain005.IsOnInstEventFlag() {
             Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk11'})
             Event25:
@@ -32,74 +31,31 @@ void Talk() {
               case 3:
                 Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk05'})
             }
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event19:
-                    Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk08'})
-                    Event6:
-                    Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk01'})
-                    Event13:
-                    Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk03'})
-                    Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk04'})
-                    goto Event25
-                  case 1:
-                    goto Event19
-                  case 2:
-                    Event20:
-                    Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk09'})
-                    goto Event6
-                  case 3:
-                    goto Event20
-                  case 4:
-                    Event21:
-                    Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk10'})
-                    goto Event6
-                  case 5:
-                    goto Event21
-                  case 6:
-                    goto Event21
-                  case 7:
-                    goto Event21
-                }
-              case 1:
-                Event9:
-                Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk00'})
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            switch EventSystemActor.CheckTimeType() {
+              case [0, 1]:
+                Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk08'})
+                Event6:
+                Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk01'})
+                Event13:
+                Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk03'})
+                Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk04'})
+                goto Event25
+              case [2, 3]:
+                Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk09'})
                 goto Event6
-              case 2:
-                goto Event9
-              case 3:
-                goto Event9
+              case [4, 5, 6, 7]:
+                Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk10'})
+                goto Event6
             }
+          case [1, 2, 3]:
+            Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk00'})
+            goto Event6
         }
-      case 1:
-        goto Event22
-      case 2:
-        goto Event22
       case 3:
         Npc_HyrulePlain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain005:talk02'})
         goto Event13
-      case 4:
-        goto Event22
-      case 5:
-        goto Event22
-      case 6:
-        goto Event22
-      case 7:
-        goto Event22
-      case 8:
-        goto Event22
-      case 9:
-        goto Event22
-      case 10:
-        goto Event22
-      case 11:
-        goto Event22
-      case 12:
-        goto Event22
-      case 13:
-        goto Event22
     }
 }

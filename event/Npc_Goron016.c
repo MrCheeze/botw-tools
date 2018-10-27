@@ -45,87 +45,60 @@ void Talk() {
                 Event75:
                 Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk07', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
             }
-        } else {
-            if !EventSystemActor.GeneralChoice2() {
-                Event102:
-                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk28', 'IsCloseMessageDialog': True})
-            } else {
-                goto Event102
-            }
+        } else
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
+            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk28', 'IsCloseMessageDialog': True})
         }
-      case 1:
-        Event67:
+      case [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13]:
         if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
             if EventSystemActor.CheckFlag({'FlagName': 'Get_GoronWeapon'}) {
 
                 call GoronSword3Repair()
 
+            } else
+            Event73:
+            switch EventSystemActor.RandomChoice4() {
+              case 0:
+                goto Event79
+              case 1:
+                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk08', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+              case 2:
+                goto Event75
+              case 3:
+                Event74:
+                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk06', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+            }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron016_First'}) {
+            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk03', 'IsOverWriteLabelActorName': False})
+            if !EventSystemActor.GeneralChoice2() {
+                goto Event73
             } else {
-                Event73:
-                switch EventSystemActor.RandomChoice4() {
-                  case 0:
-                    goto Event79
-                  case 1:
-                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk08', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                  case 2:
-                    goto Event75
-                  case 3:
-                    Event74:
-                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk06', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                }
+                Event66:
+                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk02', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
             }
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron016_First'}) {
-                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk03', 'IsOverWriteLabelActorName': False})
-                if !EventSystemActor.GeneralChoice2() {
-                    goto Event73
-                } else {
-                    Event66:
-                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk02', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+            EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron016_First', 'IsWaitFinish': True})
+            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk00', 'IsOverWriteLabelActorName': False})
+            if !EventSystemActor.GeneralChoice2() {
+                switch EventSystemActor.RandomChoice4() {
+                  case 0:
+                    goto Event74
+                  case 1:
+                    goto Event75
+                  case 2:
+                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk01', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                  case 3:
+                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk09', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
                 }
             } else {
-                EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron016_First', 'IsWaitFinish': True})
-                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk00', 'IsOverWriteLabelActorName': False})
-                if !EventSystemActor.GeneralChoice2() {
-                    switch EventSystemActor.RandomChoice4() {
-                      case 0:
-                        goto Event74
-                      case 1:
-                        goto Event75
-                      case 2:
-                        Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk01', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                      case 3:
-                        Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk09', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                    }
-                } else {
-                    goto Event66
-                }
+                goto Event66
             }
         }
-      case 2:
-        goto Event67
-      case 3:
-        goto Event67
-      case 4:
-        goto Event67
-      case 5:
-        goto Event67
-      case 6:
-        goto Event67
-      case 7:
-        goto Event67
-      case 8:
-        goto Event67
-      case 9:
-        goto Event67
       case 10:
         Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk04', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
       case 11:
         Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk05', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-      case 12:
-        goto Event67
-      case 13:
-        goto Event67
     }
 }
 
@@ -134,71 +107,67 @@ void GoronSword3Repair() {
         Event7:
         if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_054'}) {
             Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk12', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+        } else
+        if !EventSystemActor.CheckExistActor({'ActorName': 'Weapon_Lsword_054', 'IsCheckEquipStand': True, 'IsCheckLife': False}) {
+            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk13', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
         } else {
-            if !EventSystemActor.CheckExistActor({'ActorName': 'Weapon_Lsword_054', 'IsCheckEquipStand': True, 'IsCheckLife': False}) {
-                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk13', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-            } else {
-                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk14', 'IsOverWriteLabelActorName': False})
-                if EventSystemActor.HasPorchItem({'Count': 5, 'PorchItemName': 'Item_Ore_I'}) {
-                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_A', 'Count': 1}) {
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
+            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk14', 'IsOverWriteLabelActorName': False})
+            if EventSystemActor.HasPorchItem({'Count': 5, 'PorchItemName': 'Item_Ore_I'}) {
+                if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_A', 'Count': 1}) {
+                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
+                        if !EventSystemActor.GeneralChoice2() {
+                            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk23', 'IsOverWriteLabelActorName': False})
                             if !EventSystemActor.GeneralChoice2() {
-                                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk23', 'IsOverWriteLabelActorName': False})
-                                if !EventSystemActor.GeneralChoice2() {
-                                    SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk25', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                                    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo'})
-                                    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': True, 'Sound': 'Demo_Cmn_Blackout'})
-                                    EventSystemActor.Demo_DeletePorchItemInEquip({'IsWaitFinish': True, 'DeleteNum': 1, 'PorchItemName': 'Weapon_Lsword_036'})
-                                    EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -5, 'PorchItemName': 'Item_Ore_I'})
-                                    EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -1, 'PorchItemName': 'Item_Ore_A'})
-                                    EventSystemActor.Demo_AdvanceTime({'IsWaitFinish': True, 'DestTime': 0, 'DirectTime': -1, 'PassTime': -1, 'ActReset': True})
-                                    Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo'})
-                                    SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'BgmCtrlType': 'Start', 'IsWaitFinish': True})
-                                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk26', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+                                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk25', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                                Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo'})
+                                SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': True, 'Sound': 'Demo_Cmn_Blackout'})
+                                EventSystemActor.Demo_DeletePorchItemInEquip({'IsWaitFinish': True, 'DeleteNum': 1, 'PorchItemName': 'Weapon_Lsword_036'})
+                                EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -5, 'PorchItemName': 'Item_Ore_I'})
+                                EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -1, 'PorchItemName': 'Item_Ore_A'})
+                                EventSystemActor.Demo_AdvanceTime({'IsWaitFinish': True, 'DestTime': 0, 'DirectTime': -1, 'PassTime': -1, 'ActReset': True})
+                                Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo'})
+                                SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'BgmCtrlType': 'Start', 'IsWaitFinish': True})
+                                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk26', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
 
-                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Lsword_054'})
+                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Lsword_054'})
 
-                                    EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-                                } else {
-                                    Event94:
-                                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk24', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                                }
+                                EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
                             } else {
-                                goto Event94
+                                Event94:
+                                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk24', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
                             }
                         } else {
-                            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk15', 'IsOverWriteLabelActorName': False})
-                            Event91:
-                            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk21', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                            goto Event94
                         }
                     } else {
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
-                            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk16', 'IsOverWriteLabelActorName': False})
-                            goto Event91
-                        } else {
-                            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk17', 'IsOverWriteLabelActorName': False})
-                            goto Event91
-                        }
+                        Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk15', 'IsOverWriteLabelActorName': False})
+                        Event91:
+                        Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk21', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
                     }
+                } else
+                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
+                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk16', 'IsOverWriteLabelActorName': False})
+                    goto Event91
                 } else {
-                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_A', 'Count': 1}) {
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
-                            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk18', 'IsOverWriteLabelActorName': False})
-                            goto Event91
-                        } else {
-                            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk19', 'IsOverWriteLabelActorName': False})
-                            goto Event91
-                        }
-                    } else {
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
-                            Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk20', 'IsOverWriteLabelActorName': False})
-                            goto Event91
-                        } else {
-                            goto Event91
-                        }
-                    }
+                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk17', 'IsOverWriteLabelActorName': False})
+                    goto Event91
                 }
+            } else
+            if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_A', 'Count': 1}) {
+                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
+                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk18', 'IsOverWriteLabelActorName': False})
+                    goto Event91
+                } else {
+                    Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk19', 'IsOverWriteLabelActorName': False})
+                    goto Event91
+                }
+            } else
+            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
+                Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk20', 'IsOverWriteLabelActorName': False})
+                goto Event91
+            } else {
+                goto Event91
             }
         }
     } else {

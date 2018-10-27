@@ -20,26 +20,14 @@ void Talk() {
 
 void Near() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event10:
+      case [0, 1]:
         Npc_Road_031.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:Near00'})
-      case 1:
-        goto Event10
-      case 2:
-        Event11:
+      case [2, 3]:
         Npc_Road_031.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:Near01'})
-      case 3:
-        goto Event11
-      case 4:
-        Event12:
+      case [4, 5]:
         Npc_Road_031.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:Near02'})
-      case 5:
-        goto Event12
-      case 6:
-        Event13:
+      case [6, 7]:
         Npc_Road_031.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:Near03'})
-      case 7:
-        goto Event13
     }
 }
 
@@ -81,12 +69,9 @@ void RetMSG_Gerud_00() {
     call Rest()
 
     switch Npc_Road_031.CheckActorAction13() {
-      case 0:
+      case [0, 1]:
         goto Event82
-      case 1:
-        goto Event82
-      case 2:
-        Event87:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_031.IsOnInstEventFlag() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:RetMSG_Gerud_00_1'})
             goto Event33
@@ -94,28 +79,6 @@ void RetMSG_Gerud_00() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:RetMSG_Gerud_00'})
             goto Event33
         }
-      case 3:
-        goto Event87
-      case 4:
-        goto Event87
-      case 5:
-        goto Event87
-      case 6:
-        goto Event87
-      case 7:
-        goto Event87
-      case 8:
-        goto Event87
-      case 9:
-        goto Event87
-      case 10:
-        goto Event87
-      case 11:
-        goto Event87
-      case 12:
-        goto Event87
-      case 13:
-        goto Event87
     }
 }
 
@@ -163,8 +126,7 @@ void RetMSG_Gerud_02() {
     call Rest()
 
     switch Npc_Road_031.CheckActorAction13() {
-      case 0:
-        Event84:
+      case [0, 1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_031.IsOnInstEventFlag() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:RetMSG_Gerud_03_1'})
             goto Event33
@@ -172,10 +134,7 @@ void RetMSG_Gerud_02() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:RetMSG_Gerud_03'})
             goto Event33
         }
-      case 1:
-        goto Event84
-      case 2:
-        Event85:
+      case [2, 3]:
         if Npc_Road_031.IsOnInstEventFlag() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:RetMSG_Gerud_02_1'})
             goto Event33
@@ -183,28 +142,6 @@ void RetMSG_Gerud_02() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:RetMSG_Gerud_02'})
             goto Event33
         }
-      case 3:
-        goto Event85
-      case 4:
-        goto Event84
-      case 5:
-        goto Event84
-      case 6:
-        goto Event84
-      case 7:
-        goto Event84
-      case 8:
-        goto Event84
-      case 9:
-        goto Event84
-      case 10:
-        goto Event84
-      case 11:
-        goto Event84
-      case 12:
-        goto Event84
-      case 13:
-        goto Event84
     }
 }
 
@@ -213,8 +150,7 @@ void MSG_Gerud_03() {
     call Rest()
 
     switch Npc_Road_031.CheckActorAction13() {
-      case 0:
-        Event78:
+      case [0, 1]:
         if Npc_Road_031.IsOnInstEventFlag() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:MSG_Gerud_04_1'})
             goto Event33
@@ -222,10 +158,7 @@ void MSG_Gerud_03() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:MSG_Gerud_04'})
             goto Event33
         }
-      case 1:
-        goto Event78
-      case 2:
-        Event79:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_031.IsOnInstEventFlag() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:MSG_Gerud_03_1'})
             goto Event33
@@ -233,28 +166,6 @@ void MSG_Gerud_03() {
             Npc_Road_031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_031:MSG_Gerud_03'})
             goto Event33
         }
-      case 3:
-        goto Event79
-      case 4:
-        goto Event79
-      case 5:
-        goto Event79
-      case 6:
-        goto Event79
-      case 7:
-        goto Event79
-      case 8:
-        goto Event79
-      case 9:
-        goto Event79
-      case 10:
-        goto Event79
-      case 11:
-        goto Event79
-      case 12:
-        goto Event79
-      case 13:
-        goto Event79
     }
 }
 

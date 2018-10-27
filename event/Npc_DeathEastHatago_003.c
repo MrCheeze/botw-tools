@@ -26,8 +26,7 @@ void Talk() {
         Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk07'})
         Event135:
         switch EventSystemActor.HasCookResultInPorch({'Count': 3, 'PorchItemName': 'Item_Cook_C_17', 'CookEffectType': 'Fireproof'}) {
-          case 2:
-            Event49:
+          case [2, 1]:
             Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk23'})
             Event141:
             EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
@@ -47,23 +46,13 @@ void Talk() {
                             switch GameROMPlayer.ComparePlayerFireResistantLevel() {
                               case 0:
                                 switch EventSystemActor.HasCookResultInPorch({'Count': 3, 'CookEffectType': 'Fireproof', 'PorchItemName': 'Item_Cook_C_17'}) {
-                                  case 2:
-                                    Event126:
+                                  case [2, 1]:
                                     Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk25'})
-                                  case 1:
-                                    goto Event126
                                   case 0:
                                     Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk26'})
                                 }
-                              case 1:
-                                Event157:
+                              case [1, 2, 3, 4]:
                                 Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk28'})
-                              case 2:
-                                goto Event157
-                              case 3:
-                                goto Event157
-                              case 4:
-                                goto Event157
                             }
                         } else {
                             Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk14'})
@@ -134,134 +123,87 @@ void Talk() {
                 switch GameROMPlayer.ComparePlayerFireResistantLevel() {
                   case 0:
                     switch EventSystemActor.HasCookResultInPorch({'Count': 3, 'PorchItemName': 'Item_Cook_C_17', 'CookEffectType': 'Fireproof'}) {
-                      case 2:
-                        Event25:
+                      case [2, 1]:
                         Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk19'})
                         Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk20'})
-                      case 1:
-                        goto Event25
                       case 0:
                         Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk12'})
                     }
-                  case 1:
-                    Event155:
+                  case [1, 2, 3, 4]:
                     Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk19'})
                     Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk27'})
-                  case 2:
-                    goto Event155
-                  case 3:
-                    goto Event155
-                  case 4:
-                    goto Event155
                 }
             }
-          case 1:
-            goto Event49
           case 0:
             Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk18', 'IsCloseMessageDialog': False})
             Event124:
             Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk21', 'IsCloseMessageDialog': False})
             goto Event141
         }
-    } else {
-        switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event37:
-            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk00'})
-            Event92:
-            if EventSystemActor.CheckFlag({'FlagName': 'Johnny_UnburnedMedicineBuy'}) {
-                goto Event135
-            } else {
-                Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk04'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk05'})
-                    switch GameROMPlayer.ComparePlayerFireResistantLevel() {
-                      case 0:
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Johnny_UnburnedMedicineBuy', 'IsWaitFinish': True})
-                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk08'})
-                        if !EventSystemActor.GeneralChoice2() {
-                            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk09', 'IsCloseMessageDialog': False})
-                            switch EventSystemActor.HasCookResultInPorch({'Count': 3, 'CookEffectType': 'Fireproof', 'PorchItemName': 'Item_Cook_C_17'}) {
-                              case 2:
-                                Event172:
-                                Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk19'})
-                                Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk20'})
-                                Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk31'})
-                              case 1:
-                                goto Event172
-                              case 0:
-                                Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk30'})
-                                goto Event124
-                            }
-                        } else {
-                            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk11', 'IsCloseMessageDialog': False})
-                            switch EventSystemActor.HasCookResultInPorch({'Count': 3, 'CookEffectType': 'Fireproof', 'PorchItemName': 'Item_Cook_C_17'}) {
-                              case 2:
-                                goto Event172
-                              case 1:
-                                goto Event172
-                              case 0:
-                                Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk32'})
-                                goto Event124
-                            }
-                        }
-                      case 1:
-                        Event6:
-                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk10'})
-                      case 2:
-                        goto Event6
-                      case 3:
-                        goto Event6
-                      case 4:
-                        goto Event6
-                    }
-                } else {
-                    Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk06'})
-                    switch GameROMPlayer.ComparePlayerFireResistantLevel() {
-                      case 0:
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case [0, 1]:
+        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk00'})
+        Event92:
+        if EventSystemActor.CheckFlag({'FlagName': 'Johnny_UnburnedMedicineBuy'}) {
+            goto Event135
+        } else {
+            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk04'})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk05'})
+                switch GameROMPlayer.ComparePlayerFireResistantLevel() {
+                  case 0:
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Johnny_UnburnedMedicineBuy', 'IsWaitFinish': True})
+                    Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk08'})
+                    if !EventSystemActor.GeneralChoice2() {
+                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk09', 'IsCloseMessageDialog': False})
                         switch EventSystemActor.HasCookResultInPorch({'Count': 3, 'CookEffectType': 'Fireproof', 'PorchItemName': 'Item_Cook_C_17'}) {
-                          case 2:
-                            Event168:
+                          case [2, 1]:
+                            Event172:
                             Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk19'})
                             Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk20'})
                             Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk31'})
-                          case 1:
-                            goto Event168
                           case 0:
-                            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk29'})
-                            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk33'})
+                            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk30'})
+                            goto Event124
                         }
-                      case 1:
-                        Event167:
-                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk19'})
-                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk27'})
-                      case 2:
-                        goto Event167
-                      case 3:
-                        goto Event167
-                      case 4:
-                        goto Event167
+                    } else {
+                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk11', 'IsCloseMessageDialog': False})
+                        switch EventSystemActor.HasCookResultInPorch({'Count': 3, 'CookEffectType': 'Fireproof', 'PorchItemName': 'Item_Cook_C_17'}) {
+                          case [2, 1]:
+                            goto Event172
+                          case 0:
+                            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk32'})
+                            goto Event124
+                        }
                     }
+                  case [1, 2, 3, 4]:
+                    Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk10'})
+                }
+            } else {
+                Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk06'})
+                switch GameROMPlayer.ComparePlayerFireResistantLevel() {
+                  case 0:
+                    switch EventSystemActor.HasCookResultInPorch({'Count': 3, 'CookEffectType': 'Fireproof', 'PorchItemName': 'Item_Cook_C_17'}) {
+                      case [2, 1]:
+                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk19'})
+                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk20'})
+                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk31'})
+                      case 0:
+                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk29'})
+                        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk33'})
+                    }
+                  case [1, 2, 3, 4]:
+                    Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk19'})
+                    Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk27'})
                 }
             }
-          case 1:
-            goto Event37
-          case 2:
-            Event39:
-            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk01'})
-            goto Event92
-          case 3:
-            goto Event39
-          case 4:
-            Event40:
-            Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk02'})
-            goto Event92
-          case 5:
-            goto Event40
-          case 6:
-            goto Event40
-          case 7:
-            goto Event40
         }
+      case [2, 3]:
+        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk01'})
+        goto Event92
+      case [4, 5, 6, 7]:
+        Npc_DeathEastHatago_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_DeathEastHatago_003:talk02'})
+        goto Event92
     }
 }

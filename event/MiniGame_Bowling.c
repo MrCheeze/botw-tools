@@ -298,24 +298,21 @@ void Finish_Npc_Bowling_StepStart() {
             } else {
                 goto Event566
             }
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 4, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_01', 'ASName': ''})
+            goto Event352
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 7, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_02', 'ASName': ''})
+            goto Event352
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 9, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_03', 'ASName': ''})
+            goto Event352
         } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 4, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
-                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_01', 'ASName': ''})
-                goto Event352
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 7, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
-                    Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_02', 'ASName': ''})
-                    goto Event352
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 9, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
-                        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_03', 'ASName': ''})
-                        goto Event352
-                    } else {
-                        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_04', 'ASName': ''})
-                        goto Event352
-                    }
-                }
-            }
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_04', 'ASName': ''})
+            goto Event352
         }
     } else {
         GameDataCalcMachine.Demo_GameDataCopyInt({'GameDataIntSrcName': 'MiniGame_Bowling_BreakPinNum', 'GameDataIntDstName': 'MiniGame_Bowling_BreakPinNumFirst', 'IsWaitFinish': True})
@@ -354,24 +351,21 @@ void Finish_Npc_Bowling_StepStart() {
             Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': ''})
             Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_10', 'ASName': ''})
             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'RollPrepare'})
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 4, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNumFirst'}) {
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_06', 'ASName': ''})
+            goto Event428
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 7, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNumFirst'}) {
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_07', 'ASName': ''})
+            goto Event428
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 9, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNumFirst'}) {
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_08', 'ASName': ''})
+            goto Event428
         } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 4, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNumFirst'}) {
-                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_06', 'ASName': ''})
-                goto Event428
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 7, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNumFirst'}) {
-                    Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_07', 'ASName': ''})
-                    goto Event428
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 9, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNumFirst'}) {
-                        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_08', 'ASName': ''})
-                        goto Event428
-                    } else {
-                        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_09', 'ASName': ''})
-                        goto Event352
-                    }
-                }
-            }
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_09', 'ASName': ''})
+            goto Event352
         }
     }
 }
@@ -396,63 +390,59 @@ void Destruct() {
 void Prize() {
     if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 1, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
         Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_00', 'IsCloseMessageDialog': False, 'ASName': ''})
-    } else {
-        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum', 'Value': 6}) {
-            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_01', 'ASName': ''})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum', 'Value': 6}) {
+        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_01', 'ASName': ''})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum', 'Value': 8}) {
+        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_02', 'IsCloseMessageDialog': True, 'ASName': ''})
+        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+
+        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 9, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
+        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_03', 'IsCloseMessageDialog': False, 'ASName': ''})
+        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_Bowling_BreakPinNumFirst', 'Value': 10, 'Operator': 'Equal'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_GetPrizeRod'}) {
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_09'})
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
+
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
         } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum', 'Value': 8}) {
-                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_02', 'IsCloseMessageDialog': True, 'ASName': ''})
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_04', 'ASName': ''})
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Sword_049'}) {
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Sword_049'})
+
+                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_05', 'IsCloseMessageDialog': False, 'ASName': ''})
+                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_06', 'ASName': ''})
+                EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_Bowling_GetPrizeRod', 'IsWaitFinish': True})
+            } else {
+                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_07', 'ASName': ''})
                 EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
 
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
 
                 EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 9, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
-                    Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_03', 'IsCloseMessageDialog': False, 'ASName': ''})
-                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
-
-                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_Bowling_BreakPinNumFirst', 'Value': 10, 'Operator': 'Equal'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_GetPrizeRod'}) {
-                            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_09'})
-                            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
-
-                            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                        } else {
-                            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_04', 'ASName': ''})
-                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Sword_049'}) {
-
-                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Sword_049'})
-
-                                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_05', 'IsCloseMessageDialog': False, 'ASName': ''})
-                                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_06', 'ASName': ''})
-                                EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_Bowling_GetPrizeRod', 'IsWaitFinish': True})
-                            } else {
-                                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_07', 'ASName': ''})
-                                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
-
-                                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                            }
-                        }
-                    } else {
-                        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_08'})
-                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
-
-                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                    }
-                }
             }
         }
+    } else {
+        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_Bowling:prize_08'})
+        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+
+        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
     }
 }
 
@@ -519,37 +509,33 @@ void RollPrepare_Npc_Bowling_EachFrame() {
                         EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_Bowling_isBombUsed', 'IsWaitFinish': True})
                         Event733:
                         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'RollResult'})
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInRollingArea'}) {
+                        goto Event733
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInArea'}) {
+                        Event501:
+                        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+                        goto Event697
                     } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInRollingArea'}) {
-                            goto Event733
-                        } else {
-                            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInArea'}) {
-                                Event501:
-                                EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                                goto Event697
-                            } else {
-                                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'RollResult'})
-                            }
-                        }
+                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'RollResult'})
                     }
+                } else
+                if EventSystemActor.CheckPlayerState({'PlayerState': 21}) {
+                    goto Event501
                 } else {
-                    if EventSystemActor.CheckPlayerState({'PlayerState': 21}) {
-                        goto Event501
-                    } else {
-                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'IfOutOfArea'})
-                    }
+                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'IfOutOfArea'})
                 }
             } else {
                 Event665:
                 EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_Bowling_isUsedDirtyWay'})
                 EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'RollResult'})
             }
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_Bowling_BreakPinNum', 'Value': 0, 'Operator': 'Equal'}) {
+            goto Event500
         } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_Bowling_BreakPinNum', 'Value': 0, 'Operator': 'Equal'}) {
-                goto Event500
-            } else {
-                goto Event665
-            }
+            goto Event665
         }
     } else {
         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
@@ -595,20 +581,19 @@ void RollResult_Npc_Bowling_StepStart() {
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_RollResult'}) {
             Event813:
             EventSystemActor[TimeOut].Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
-        } else {
-            if EventSystemActor[TimeOut].CheckGameDataInt({'Operator': 'GreaterThan', 'GameDataIntName': 'MiniGame_BirdMan_HillTower_CurrentTime_Miliseconds', 'Value': 300}) {
-                Event811:
-                if EventSystemActor[TimeOut].CheckFlag({'FlagName': 'MiniGame_Bowling_isPinStable'}) {
-                    goto Event813
-                } else {
-                    EventSystemActor[TimeOut].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                    goto Event811
-                }
+        } else
+        if EventSystemActor[TimeOut].CheckGameDataInt({'Operator': 'GreaterThan', 'GameDataIntName': 'MiniGame_BirdMan_HillTower_CurrentTime_Miliseconds', 'Value': 300}) {
+            Event811:
+            if EventSystemActor[TimeOut].CheckFlag({'FlagName': 'MiniGame_Bowling_isPinStable'}) {
+                goto Event813
             } else {
-                EventSystemActor[TimeOut].Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'MiniGame_BirdMan_HillTower_CurrentTime_Miliseconds', 'Value': 1})
                 EventSystemActor[TimeOut].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                goto Event833
+                goto Event811
             }
+        } else {
+            EventSystemActor[TimeOut].Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'MiniGame_BirdMan_HillTower_CurrentTime_Miliseconds', 'Value': 1})
+            EventSystemActor[TimeOut].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+            goto Event833
         }
     } {
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isBombUsed'}) {
@@ -616,64 +601,56 @@ void RollResult_Npc_Bowling_StepStart() {
             if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_RollResult'}) {
                 Event784:
                 EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isBombIsInArea'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isBombIsInResultArea'}) {
-                        GameRomCamera.Demo_MovePosFlow({'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'Pattern1PosX': -2009.010009765625, 'Pattern1PosY': 375.3800048828125, 'Pattern1PosZ': -2126.449951171875, 'Pattern1AtX': -1997.6700439453125, 'Pattern1AtY': 367.2799987792969, 'Pattern1AtZ': -2131.080078125, 'Pattern1Fovy': 50.0, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Count': 1.0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
-                        Event750:
-                        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isPinStable'}) {
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isBombIsInArea'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isBombIsInResultArea'}) {
+                    GameRomCamera.Demo_MovePosFlow({'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'Pattern1PosX': -2009.010009765625, 'Pattern1PosY': 375.3800048828125, 'Pattern1PosZ': -2126.449951171875, 'Pattern1AtX': -1997.6700439453125, 'Pattern1AtY': 367.2799987792969, 'Pattern1AtZ': -2131.080078125, 'Pattern1Fovy': 50.0, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Count': 1.0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
+                    Event750:
+                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isPinStable'}) {
+                        goto Event784
+                    } else {
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+                        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_RollResult'}) {
                             goto Event784
-                        } else {
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_RollResult'}) {
-                                goto Event784
-                            } else {
-                                goto Event750
-                            }
-                        }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isBombIsInRollingArea'}) {
-                            GameRomCamera.Demo_MovePosFlow({'ActorIgnoringCollision': -1, 'FovyAppendMode': 1, 'Pattern1Fovy': 50.0, 'Count': 1.0, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'IsWaitFinish': True, 'Pattern1PosX': -2063.110107421875, 'Pattern1PosY': 389.510009765625, 'Pattern1PosZ': -2102.280029296875, 'AtAppendMode': 1, 'Pattern1AtX': -2021.4200439453125, 'Pattern1AtY': 369.739990234375, 'Pattern1AtZ': -2119.860107421875, 'TargetActor1': -1, 'ActorName1': '', 'TargetActor2': -1, 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            goto Event815
-                        } else {
-                            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                            goto Event815
-                        }
-                    }
-                } else {
-                    EventSystemActor.Demo_WaitFrame({'Frame': 75, 'IsWaitFinish': True})
-                    goto Event750
-                }
-            }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isUsedDirtyWay'}) {
-                GameRomCamera.Demo_MovePosFlow({'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'Pattern1PosX': -2009.010009765625, 'Pattern1PosY': 375.3800048828125, 'Pattern1PosZ': -2126.449951171875, 'Pattern1AtX': -1997.6700439453125, 'Pattern1AtY': 367.2799987792969, 'Pattern1AtZ': -2131.080078125, 'Pattern1Fovy': 50.0, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Count': 1.0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                goto Event750
-            } else {
-                Event814:
-                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_RollResult'}) {
-                    goto Event784
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInArea'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInResultArea'}) {
-                            GameRomCamera.Demo_MovePosFlow({'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'Pattern1PosX': -2009.010009765625, 'Pattern1PosY': 375.3800048828125, 'Pattern1PosZ': -2126.449951171875, 'Pattern1AtX': -1997.6700439453125, 'Pattern1AtY': 367.2799987792969, 'Pattern1AtZ': -2131.080078125, 'Pattern1Fovy': 50.0, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Count': 1.0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            goto Event814
-                        } else {
-                            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInRollingArea'}) {
-                                GameRomCamera.Demo_PolarCoordPlayerRelative({'OtherActor': 3, 'ActorNameForOtherActor': 'SnowBowl', 'UniqueNameForOtherActor': 'bowling_ball', 'ActorIgnoringCollision': -1, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'Time': 1.0, 'IsWaitFinish': True, 'ReverseOrder': True, 'LngOffset': 0.0, 'LatOffset': 30.0, 'AtCalcMode': 1, 'AtParam': [0.0, 0.0, 0.0], 'RadiusOffset': 12.0, 'ReviseMode': 2})
-                                goto Event814
-                            } else {
-                                EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                                goto Event814
-                            }
-                        }
-                    } else {
+                        } else
                         goto Event750
                     }
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isBombIsInRollingArea'}) {
+                    GameRomCamera.Demo_MovePosFlow({'ActorIgnoringCollision': -1, 'FovyAppendMode': 1, 'Pattern1Fovy': 50.0, 'Count': 1.0, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'IsWaitFinish': True, 'Pattern1PosX': -2063.110107421875, 'Pattern1PosY': 389.510009765625, 'Pattern1PosZ': -2102.280029296875, 'AtAppendMode': 1, 'Pattern1AtX': -2021.4200439453125, 'Pattern1AtY': 369.739990234375, 'Pattern1AtZ': -2119.860107421875, 'TargetActor1': -1, 'ActorName1': '', 'TargetActor2': -1, 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                    goto Event815
+                } else {
+                    EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+                    goto Event815
                 }
+            } else {
+                EventSystemActor.Demo_WaitFrame({'Frame': 75, 'IsWaitFinish': True})
+                goto Event750
             }
-        }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isUsedDirtyWay'}) {
+            GameRomCamera.Demo_MovePosFlow({'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'Pattern1PosX': -2009.010009765625, 'Pattern1PosY': 375.3800048828125, 'Pattern1PosZ': -2126.449951171875, 'Pattern1AtX': -1997.6700439453125, 'Pattern1AtY': 367.2799987792969, 'Pattern1AtZ': -2131.080078125, 'Pattern1Fovy': 50.0, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Count': 1.0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+            goto Event750
+        } else
+        Event814:
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_RollResult'}) {
+            goto Event784
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInArea'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInResultArea'}) {
+                GameRomCamera.Demo_MovePosFlow({'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'Pattern1PosX': -2009.010009765625, 'Pattern1PosY': 375.3800048828125, 'Pattern1PosZ': -2126.449951171875, 'Pattern1AtX': -1997.6700439453125, 'Pattern1AtY': 367.2799987792969, 'Pattern1AtZ': -2131.080078125, 'Pattern1Fovy': 50.0, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Count': 1.0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                goto Event814
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInRollingArea'}) {
+                GameRomCamera.Demo_PolarCoordPlayerRelative({'OtherActor': 3, 'ActorNameForOtherActor': 'SnowBowl', 'UniqueNameForOtherActor': 'bowling_ball', 'ActorIgnoringCollision': -1, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'Time': 1.0, 'IsWaitFinish': True, 'ReverseOrder': True, 'LngOffset': 0.0, 'LatOffset': 30.0, 'AtCalcMode': 1, 'AtParam': [0.0, 0.0, 0.0], 'RadiusOffset': 12.0, 'ReviseMode': 2})
+                goto Event814
+            } else {
+                EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+                goto Event814
+            }
+        } else
+        goto Event750
     }
 
 }

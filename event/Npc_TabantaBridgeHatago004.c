@@ -17,7 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_TabantaBridgeHatago004.CheckActorAction13() {
-      case 0:
+      case [0, 2]:
         Event8:
         Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk01', 'ASName': ''})
         Event25:
@@ -29,8 +29,7 @@ void Talk() {
                 Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk04'})
             }
         }
-      case 1:
-        Event4:
+      case [1, 4, 5, 6, 7, 8, 9, 12, 13]:
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk00', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Farmer', 'IsCloseMessageDialog': True})
@@ -50,53 +49,27 @@ void Talk() {
             } else {
                 goto Event8
             }
-          case 1:
+          case [1, 2, 3]:
             Event3:
             Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk70'})
             Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk71'})
             if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo128_0'}) {
                 goto Event23
             }
-          case 2:
-            goto Event3
-          case 3:
-            goto Event3
         }
-      case 2:
-        goto Event8
       case 3:
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk40'})
-          case 1:
-            goto Event3
-          case 2:
-            goto Event3
-          case 3:
+          case [1, 2, 3]:
             goto Event3
         }
-      case 4:
-        goto Event4
-      case 5:
-        goto Event4
-      case 6:
-        goto Event4
-      case 7:
-        goto Event4
-      case 8:
-        goto Event4
-      case 9:
-        goto Event4
       case 10:
         Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk61'})
         goto Event25
       case 11:
         Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk60'})
         Npc_TabantaBridgeHatago004.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-      case 12:
-        goto Event4
-      case 13:
-        goto Event4
     }
 }
 
@@ -109,16 +82,11 @@ void NearActorsTalk() {
         Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk50'})
         Npc_TabantaBridgeHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago004:talk55'})
         goto Event25
-      case 1:
-        Event40:
+      case [1, 2, 3]:
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
         goto Event3
-      case 2:
-        goto Event40
-      case 3:
-        goto Event40
     }
 }
 

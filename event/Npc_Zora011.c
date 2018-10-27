@@ -51,50 +51,41 @@ void Talk() {
                         } else {
                             Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk33'})
                         }
-                    } else {
-                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 4}) {
-                            Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk26', 'IsCloseMessageDialog': False})
-                            EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'Npc_Zora011_HaveFrog', 'Value': 4, 'IsWaitFinish': True})
-                            Event159:
-                            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                            Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk28', 'IsCloseMessageDialog': False})
-                            Event155:
-                            switch EventSystemActor.CheckWeather() {
-                              case 0:
-                                Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk32'})
-                                Event158:
-                                Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk31'})
-                              case 1:
-                                Event157:
-                                Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk30'})
-                                goto Event158
-                              case 2:
-                                goto Event157
-                              case 3:
-                                goto Event157
-                            }
-                        } else {
-                            if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 3}) {
-                                Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk25', 'IsCloseMessageDialog': False})
-                                EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'Npc_Zora011_HaveFrog', 'Value': 3, 'IsWaitFinish': True})
-                                goto Event159
-                            } else {
-                                if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 2}) {
-                                    Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk24', 'IsCloseMessageDialog': False})
-                                    EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'Npc_Zora011_HaveFrog', 'Value': 2, 'IsWaitFinish': True})
-                                    goto Event159
-                                } else {
-                                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 1}) {
-                                        Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk23', 'IsCloseMessageDialog': False})
-                                        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'Npc_Zora011_HaveFrog', 'Value': 1, 'IsWaitFinish': True})
-                                        goto Event159
-                                    } else {
-                                        Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk22'})
-                                        goto Event155
-                                    }
-                                }
-                            }
+                    } else
+                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 4}) {
+                        Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk26', 'IsCloseMessageDialog': False})
+                        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'Npc_Zora011_HaveFrog', 'Value': 4, 'IsWaitFinish': True})
+                        Event159:
+                        EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+                        Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk28', 'IsCloseMessageDialog': False})
+                        Event155:
+                        switch EventSystemActor.CheckWeather() {
+                          case 0:
+                            Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk32'})
+                            Event158:
+                            Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk31'})
+                          case [1, 2, 3]:
+                            Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk30'})
+                            goto Event158
                         }
+                    } else
+                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 3}) {
+                        Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk25', 'IsCloseMessageDialog': False})
+                        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'Npc_Zora011_HaveFrog', 'Value': 3, 'IsWaitFinish': True})
+                        goto Event159
+                    } else
+                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 2}) {
+                        Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk24', 'IsCloseMessageDialog': False})
+                        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'Npc_Zora011_HaveFrog', 'Value': 2, 'IsWaitFinish': True})
+                        goto Event159
+                    } else
+                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 1}) {
+                        Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk23', 'IsCloseMessageDialog': False})
+                        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'Npc_Zora011_HaveFrog', 'Value': 1, 'IsWaitFinish': True})
+                        goto Event159
+                    } else {
+                        Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk22'})
+                        goto Event155
                     }
                   case 1:
                     Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk16', 'IsCloseMessageDialog': True})
@@ -177,47 +168,35 @@ void Near() {
             if EventSystemActor.CheckFlag({'FlagName': 'Zora_FlogMini_Finish'}) {
                 Event100:
                 switch Npc_Zora011.CheckActorAction13() {
-                  case 0:
-                    Event104:
+                  case [0, 1]:
                     Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Zora011:near01', 'IsChecked': False})
-                  case 1:
-                    goto Event104
                   case 12:
                     Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near00', 'DispFrame': 90, 'IsChecked': False})
                 }
-            } else {
-                switch Npc_Zora011.CheckActorAction13() {
-                  case 0:
-                    Event178:
-                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 5}) {
-                        Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near01', 'DispFrame': 300, 'IsChecked': True})
-                    } else {
-                        Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near01', 'DispFrame': 300, 'IsChecked': False})
-                    }
-                  case 1:
-                    goto Event178
-                  case 12:
-                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 5}) {
-                        Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near00', 'DispFrame': 300, 'IsChecked': True})
-                    } else {
-                        Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near00', 'DispFrame': 300, 'IsChecked': False})
-                    }
+            } else
+            switch Npc_Zora011.CheckActorAction13() {
+              case [0, 1]:
+                if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 5}) {
+                    Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near01', 'DispFrame': 300, 'IsChecked': True})
+                } else {
+                    Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near01', 'DispFrame': 300, 'IsChecked': False})
+                }
+              case 12:
+                if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_A', 'Count': 5}) {
+                    Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near00', 'DispFrame': 300, 'IsChecked': True})
+                } else {
+                    Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near00', 'DispFrame': 300, 'IsChecked': False})
                 }
             }
-        } else {
-            switch Npc_Zora011.CheckActorAction13() {
-              case 0:
-                Event183:
-                Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near01', 'DispFrame': 300, 'IsChecked': True})
-              case 1:
-                goto Event183
-              case 12:
-                Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near00', 'DispFrame': 300, 'IsChecked': True})
-            }
+        } else
+        switch Npc_Zora011.CheckActorAction13() {
+          case [0, 1]:
+            Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near01', 'DispFrame': 300, 'IsChecked': True})
+          case 12:
+            Npc_Zora011.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora011:near00', 'DispFrame': 300, 'IsChecked': True})
         }
-    } else {
-        goto Event100
-    }
+    } else
+    goto Event100
 }
 
 void FrogPonteReady() {
@@ -225,8 +204,7 @@ void FrogPonteReady() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Zora011.CheckActorAction13() {
-      case 0:
-        Event89:
+      case [0, 1, 12]:
         if Npc_Zora011.IsOnInstEventFlag() {
             Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk01', 'IsCloseMessageDialog': False})
             Event98:
@@ -254,14 +232,10 @@ void FrogPonteReady() {
                 }
             }
         }
-      case 1:
-        goto Event89
       case 10:
         Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk03', 'IsCloseMessageDialog': False})
       case 11:
         Npc_Zora011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora011:talk04', 'IsCloseMessageDialog': False})
-      case 12:
-        goto Event89
     }
 }
 

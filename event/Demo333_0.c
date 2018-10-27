@@ -42,14 +42,13 @@ void Demo333_Cut1() {
             GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'FovyCalcMode': 1, 'OtherActor': 3, 'AtParam': [0.0, 3.700000047683716, 0.0], 'FovyParam': 35.0, 'AtCalcMode': 1, 'ReverseOrder': True, 'UniqueNameForOtherActor': 'UniqueName', 'ReviseMode': 2, 'ActorIgnoringCollision': 0, 'LatOffset': 17.1299991607666, 'Time': 30.0, 'RadiusOffset': 17.0, 'LngOffset': 0.0, 'ActorNameForOtherActor': 'Enemy_Guardian_A_Fixed_Moss'})
             Event35:
             EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Guardian_BootUp_2_Cam'}) {
+            GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'FovyCalcMode': 1, 'OtherActor': 3, 'AtParam': [0.0, 3.700000047683716, 0.0], 'FovyParam': 35.0, 'AtCalcMode': 1, 'ReverseOrder': True, 'UniqueNameForOtherActor': 'UniqueName', 'ReviseMode': 2, 'ActorIgnoringCollision': 0, 'Time': 30.0, 'ActorNameForOtherActor': 'Enemy_Guardian_A_Fixed_Moss', 'LngOffset': 15.0, 'LatOffset': 5.0, 'RadiusOffset': 20.0})
+            goto Event35
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Guardian_BootUp_2_Cam'}) {
-                GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'FovyCalcMode': 1, 'OtherActor': 3, 'AtParam': [0.0, 3.700000047683716, 0.0], 'FovyParam': 35.0, 'AtCalcMode': 1, 'ReverseOrder': True, 'UniqueNameForOtherActor': 'UniqueName', 'ReviseMode': 2, 'ActorIgnoringCollision': 0, 'Time': 30.0, 'ActorNameForOtherActor': 'Enemy_Guardian_A_Fixed_Moss', 'LngOffset': 15.0, 'LatOffset': 5.0, 'RadiusOffset': 20.0})
-                goto Event35
-            } else {
-                GameRomCamera.Demo_MovePosFlow({'FovyAppendMode': 1, 'IsWaitFinish': True, 'LatShiftRange': 0.0, 'StartCalcOnly': False, 'Count': 30.0, 'Pattern1AtX': 0.0, 'Pattern1AtY': 3.700000047683716, 'PosAppendMode': 0, 'Pattern1PosX': 0.0, 'Pattern1PosY': 0.0, 'Cushion': 0.30000001192092896, 'Pattern1Fovy': 35.0, 'Pattern1PosZ': 5.0, 'Pattern1AtZ': 0.0, 'LngShiftRange': 30.0, 'TargetActor1': 3, 'TargetActor2': 1, 'AtAppendMode': 2, 'ActorName2': '', 'UniqueName2': '', 'UniqueName1': 'UniqueName', 'MotionMode': 1, 'ActorIgnoringCollision': 0, 'ReviseModeEnd': 2, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ActorName1': 'Enemy_Guardian_A_Fixed_Moss', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                goto Event35
-            }
+            GameRomCamera.Demo_MovePosFlow({'FovyAppendMode': 1, 'IsWaitFinish': True, 'LatShiftRange': 0.0, 'StartCalcOnly': False, 'Count': 30.0, 'Pattern1AtX': 0.0, 'Pattern1AtY': 3.700000047683716, 'PosAppendMode': 0, 'Pattern1PosX': 0.0, 'Pattern1PosY': 0.0, 'Cushion': 0.30000001192092896, 'Pattern1Fovy': 35.0, 'Pattern1PosZ': 5.0, 'Pattern1AtZ': 0.0, 'LngShiftRange': 30.0, 'TargetActor1': 3, 'TargetActor2': 1, 'AtAppendMode': 2, 'ActorName2': '', 'UniqueName2': '', 'UniqueName1': 'UniqueName', 'MotionMode': 1, 'ActorIgnoringCollision': 0, 'ReviseModeEnd': 2, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ActorName1': 'Enemy_Guardian_A_Fixed_Moss', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+            goto Event35
         }
     }
 

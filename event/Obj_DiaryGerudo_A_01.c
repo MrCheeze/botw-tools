@@ -34,12 +34,11 @@ void Talk() {
                         Obj_DiaryGerudo_A_01.Demo_Talk({'MessageId': 'EventFlowMsg/Obj_DiaryGerudo_A_01:talk03', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
                         if !EventSystemActor.GeneralChoice2() {
                             goto Event5
-                        } else {
-                            Event18:
-                            if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Step1'}) {
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'SecretofObject_Finish', 'IsWaitFinish': True})
-                                }
+                        } else
+                        Event18:
+                        if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'}) {
+                            if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Step1'}) {
+                                EventSystemActor.Demo_FlagON({'FlagName': 'SecretofObject_Finish', 'IsWaitFinish': True})
                             }
                         }
                     } else {
@@ -69,9 +68,8 @@ void Talk() {
               case 2:
                 goto Event18
             }
-        } else {
-            goto Event18
-        }
+        } else
+        goto Event18
     } else {
         goto Event7
     }

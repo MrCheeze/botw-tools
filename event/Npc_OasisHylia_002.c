@@ -20,24 +20,21 @@ void Talk() {
         if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': True, 'CheckHead': False, 'CheckUpper': False, 'CheckType': 'Snow'}) {
             Event4:
             Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_002:Talk_09'})
+        } else
+        if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': True, 'CheckHead': False, 'CheckUpper': False, 'CheckType': 'Desert'}) {
+            goto Event4
         } else {
-            if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': True, 'CheckHead': False, 'CheckUpper': False, 'CheckType': 'Desert'}) {
-                goto Event4
-            } else {
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_002:Talk_10'})
-            }
+            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_002:Talk_10'})
         }
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': True, 'CheckHead': False, 'CheckUpper': False, 'CheckType': 'Snow'}) {
+        Event11:
+        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_002:Talk_08'})
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': True, 'CheckHead': False, 'CheckUpper': False, 'CheckType': 'Desert'}) {
+        goto Event11
     } else {
-        if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': True, 'CheckHead': False, 'CheckUpper': False, 'CheckType': 'Snow'}) {
-            Event11:
-            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_002:Talk_08'})
-        } else {
-            if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': True, 'CheckHead': False, 'CheckUpper': False, 'CheckType': 'Desert'}) {
-                goto Event11
-            } else {
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_002:Talk_11'})
-            }
-        }
+        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_002:Talk_11'})
     }
 }
 

@@ -91,14 +91,13 @@ void Demo348_1() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
         Event52:
         RemainsWind[RemainsWind_Battle].Demo_SkipInitializeMtx({'IsWaitFinish': False})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo051_0'}) {
+        goto Event57
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo051_0'}) {
-            goto Event57
-        } else {
 
-            call Demo051_0.Demo051_0()
+        call Demo051_0.Demo051_0()
 
-            goto Event52
-        }
+        goto Event52
     }
 }

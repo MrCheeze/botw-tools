@@ -55,14 +55,8 @@ queries: []
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
 void Near() {
-    switch Npc_oasis050[Pauda_Karakara].CheckActorAction13() {
-      case 0:
-        Event41:
+    if Npc_oasis050[Pauda_Karakara].CheckActorAction13() in [0, 1, 10] {
         Npc_oasis050[Pauda_Karakara].Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:near00', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        goto Event41
-      case 10:
-        goto Event41
     }
 }
 
@@ -71,8 +65,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_oasis050[Pauda_Karakara].CheckActorAction13() {
-      case 0:
-        Event27:
+      case [0, 1, 10]:
         if Npc_oasis050[Pauda_Karakara].IsOnInstEventFlag() {
             Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk16', 'IsOverWriteLabelActorName': False, 'ASName': ''})
             Event180:
@@ -122,146 +115,121 @@ void Talk() {
                     Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_oasis050:talk50'})
                     goto Event183
                 }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis050_BoyHunt'}) {
-                    Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk17', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                    Event12:
-                    if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_LookFor02'}) {
-                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk11', 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': ''})
-                        if !EventSystemActor.GeneralChoice2() {
-                            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk56', 'IsCloseMessageDialog': True, 'ASName': ''})
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis050_BoyHunt'}) {
+                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk17', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                Event12:
+                if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_LookFor02'}) {
+                    Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk11', 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': ''})
+                    if !EventSystemActor.GeneralChoice2() {
+                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk56', 'IsCloseMessageDialog': True, 'ASName': ''})
 
-                            fork {
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk12', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'IsWaitFinish': True})
-                            } {
-                                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkingL', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'IsOneTimeEndKeep': False})
-                            }
-
-                            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                            Npc_oasis050[Pauda_Karakara].Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'Stand'})
-
-                            fork {
-                                Npc_oasis050[Pauda_Karakara].Demo_PlayASForDemo({'ASName': 'Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                            } {
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                            }
-
-                            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk37', 'ASName': 'Wait'})
-
-                            fork {
-                                EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestPosName': 'PaudaMove', 'WarpDestMapName': 'B-7'})
-                            } {
-                                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3267.998046875, 'Pattern1PosY': 130.78208923339844, 'Pattern1PosZ': 2577.76904296875, 'Pattern1AtX': -3269.808349609375, 'Pattern1AtY': 130.78208923339844, 'Pattern1AtZ': 2582.742919921875, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            }
-
-                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3261.79248046875, 'Pattern1PosY': 130.6988067626953, 'Pattern1PosZ': 2584.458251953125, 'Pattern1AtX': -3266.852783203125, 'Pattern1AtY': 130.53311157226562, 'Pattern1AtZ': 2584.249755859375, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'IsWaitFinish': False, 'ReviseModeEnd': 0, 'Count': 300.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            Npc_oasis050[Pauda_Karakara].Demo_MoveToAnchor({'AnchorName': 'AnchorAction4', 'AnchorUniqueName': 'Go_Ichikara', 'ASKeyName': 'Walk', 'IsWaitFinish': False, 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
-
-                            fork {
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 240})
-                                Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-                            } {
-                                EventBgmCtrlTag.Demo_StartAndKeep({'IsWaitFinish': True, 'BgmName': 'MovingIchikaraBgm'})
-                            }
-
-                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3269.95166015625, 'Pattern1PosY': 130.57945251464844, 'Pattern1PosZ': 2577.193603515625, 'Pattern1AtX': -3270.015625, 'Pattern1AtY': 130.7779083251953, 'Pattern1AtZ': 2582.32373046875, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_MakeVillage_Invite02'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiVillage_NPC050_Reward'})
-                            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'Location_UMiiVillageShopBougu'})
-                            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-                        } else {
-                            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk01', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                        fork {
+                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk12', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'IsWaitFinish': True})
+                        } {
+                            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkingL', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'IsOneTimeEndKeep': False})
                         }
+
+                        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+                        Npc_oasis050[Pauda_Karakara].Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'Stand'})
+
+                        fork {
+                            Npc_oasis050[Pauda_Karakara].Demo_PlayASForDemo({'ASName': 'Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+                        } {
+                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                        }
+
+                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk37', 'ASName': 'Wait'})
+
+                        fork {
+                            EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestPosName': 'PaudaMove', 'WarpDestMapName': 'B-7'})
+                        } {
+                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3267.998046875, 'Pattern1PosY': 130.78208923339844, 'Pattern1PosZ': 2577.76904296875, 'Pattern1AtX': -3269.808349609375, 'Pattern1AtY': 130.78208923339844, 'Pattern1AtZ': 2582.742919921875, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                        }
+
+                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3261.79248046875, 'Pattern1PosY': 130.6988067626953, 'Pattern1PosZ': 2584.458251953125, 'Pattern1AtX': -3266.852783203125, 'Pattern1AtY': 130.53311157226562, 'Pattern1AtZ': 2584.249755859375, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'IsWaitFinish': False, 'ReviseModeEnd': 0, 'Count': 300.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                        Npc_oasis050[Pauda_Karakara].Demo_MoveToAnchor({'AnchorName': 'AnchorAction4', 'AnchorUniqueName': 'Go_Ichikara', 'ASKeyName': 'Walk', 'IsWaitFinish': False, 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
+
+                        fork {
+                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 240})
+                            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+                        } {
+                            EventBgmCtrlTag.Demo_StartAndKeep({'IsWaitFinish': True, 'BgmName': 'MovingIchikaraBgm'})
+                        }
+
+                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3269.95166015625, 'Pattern1PosY': 130.57945251464844, 'Pattern1PosZ': 2577.193603515625, 'Pattern1AtX': -3270.015625, 'Pattern1AtY': 130.7779083251953, 'Pattern1AtZ': 2582.32373046875, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_MakeVillage_Invite02'})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiVillage_NPC050_Reward'})
+                        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'Location_UMiiVillageShopBougu'})
+                        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
                     } else {
-                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk10', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk01', 'IsOverWriteLabelActorName': False, 'ASName': ''})
                     }
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis050_First'}) {
-                        Event121:
-                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk19', 'ASName': ''})
-                        if !EventSystemActor.GeneralChoice2() {
-                            Event16:
-                            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk06', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                            if !EventSystemActor.GeneralChoice2() {
-                                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk07', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                                Event20:
-                                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk09', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis050_BoyHunt'})
-                                goto Event12
-                            } else {
-                                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk08', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                                goto Event20
-                            }
-                        } else {
-                            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk18', 'ASName': ''})
-                            goto Event16
-                        }
-                    } else {
-                        if Npc_oasis050[Pauda_Karakara].IsOnInstEventFlag() {
-                            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk03', 'ASName': ''})
-                            Event5:
-                            if !EventSystemActor.GeneralChoice2() {
-                                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk02', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                                if !EventSystemActor.GeneralChoice2() {
-                                    Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk05', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis050_First', 'IsWaitFinish': True})
-                                    goto Event121
-                                } else {
-                                    Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk16', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                                }
-                            } else {
-                                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk04', 'IsOverWriteLabelActorName': False})
-                            }
-                        } else {
-                            Npc_oasis050[Pauda_Karakara].Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis050:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                            goto Event5
-                        }
-                    }
+                    Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk10', 'IsOverWriteLabelActorName': False, 'ASName': ''})
                 }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis050_First'}) {
+                Event121:
+                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk19', 'ASName': ''})
+                if !EventSystemActor.GeneralChoice2() {
+                    Event16:
+                    Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk06', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                    if !EventSystemActor.GeneralChoice2() {
+                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk07', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                        Event20:
+                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk09', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis050_BoyHunt'})
+                        goto Event12
+                    } else {
+                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk08', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                        goto Event20
+                    }
+                } else {
+                    Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk18', 'ASName': ''})
+                    goto Event16
+                }
+            } else
+            if Npc_oasis050[Pauda_Karakara].IsOnInstEventFlag() {
+                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk03', 'ASName': ''})
+                Event5:
+                if !EventSystemActor.GeneralChoice2() {
+                    Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk02', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                    if !EventSystemActor.GeneralChoice2() {
+                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk05', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis050_First', 'IsWaitFinish': True})
+                        goto Event121
+                    } else {
+                        Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk16', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                    }
+                } else {
+                    Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk04', 'IsOverWriteLabelActorName': False})
+                }
+            } else {
+                Npc_oasis050[Pauda_Karakara].Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis050:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                goto Event5
             }
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event36:
-                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk13', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                goto Event180
-              case 1:
-                goto Event36
-              case 2:
-                Event35:
-                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk14', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                goto Event180
-              case 3:
-                goto Event35
-              case 4:
-                goto Event35
-              case 5:
-                goto Event35
-              case 6:
-                Event34:
-                Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk15', 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                goto Event180
-              case 7:
-                goto Event34
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk13', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+            goto Event180
+          case [2, 3, 4, 5]:
+            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk14', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+            goto Event180
+          case [6, 7]:
+            Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk15', 'IsOverWriteLabelActorName': False, 'ASName': ''})
+            goto Event180
         }
-      case 1:
-        goto Event27
-      case 10:
-        goto Event27
       case 11:
         Npc_oasis050[Pauda_Karakara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk49', 'ASName': ''})
     }
 }
 
 void Npc_oasis050_Go_Near() {
-    switch Npc_oasis050[Pauda_Ichikara].CheckActorAction13() {
-      case 8:
-        Event88:
+    if Npc_oasis050[Pauda_Ichikara].CheckActorAction13() in [8, 9] {
         Npc_oasis050[Pauda_Ichikara].Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_oasis050:near01', 'IsChecked': False, 'DispFrame': 90})
-      case 9:
-        goto Event88
     }
 }
 
@@ -299,76 +267,61 @@ void Npc_oasis050_Go_Talk() {
                     Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk21', 'ASName': ''})
                     goto Event204
                 }
-            } else {
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event106:
-                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk29', 'ASName': ''})
-                    Event103:
-                    if EventSystemActor.CheckFlag({'FlagName': 'Ichikara_NPC050_First'}) {
-                        Event100:
-                        if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Invite03'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Wood04'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Finish'}) {
-                                    Event300:
-                                    if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_FinishFirst'}) {
-                                        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk36'})
-                                    } else {
-                                        Event299:
-                                        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk61'})
-                                        EventSystemActor.Demo_FlagON({'FlagName': 'UMiiVillage_NPC050_FinishFirst', 'IsWaitFinish': True})
-                                    }
+            } else
+            switch EventSystemActor.CheckTimeType() {
+              case [0, 1]:
+                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk29', 'ASName': ''})
+                Event103:
+                if EventSystemActor.CheckFlag({'FlagName': 'Ichikara_NPC050_First'}) {
+                    Event100:
+                    if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Invite03'}) {
+                        if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Wood04'}) {
+                            if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Finish'}) {
+                                Event300:
+                                if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_FinishFirst'}) {
+                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk36'})
                                 } else {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_Married'}) {
-                                        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk42', 'ASName': ''})
-                                        if !EventSystemActor.GeneralChoice2() {
-                                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk43', 'ASName': ''})
-                                        } else {
-                                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk44', 'ASName': ''})
-                                        }
-                                    } else {
-                                        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk34', 'ASName': ''})
-                                        if !EventSystemActor.GeneralChoice2() {
-                                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk39', 'ASName': ''})
-                                            Event306:
-                                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk41', 'ASName': ''})
-                                            EventSystemActor.Demo_FlagON({'FlagName': 'UMiiVillage_NPC050_Married', 'IsWaitFinish': True})
-                                        } else {
-                                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk40', 'ASName': ''})
-                                            goto Event306
-                                        }
-                                    }
+                                    Event299:
+                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk61'})
+                                    EventSystemActor.Demo_FlagON({'FlagName': 'UMiiVillage_NPC050_FinishFirst', 'IsWaitFinish': True})
+                                }
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_Married'}) {
+                                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk42', 'ASName': ''})
+                                if !EventSystemActor.GeneralChoice2() {
+                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk43', 'ASName': ''})
+                                } else {
+                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk44', 'ASName': ''})
                                 }
                             } else {
-                                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk32', 'IsCloseMessageDialog': False, 'ASName': ''})
+                                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk34', 'ASName': ''})
+                                if !EventSystemActor.GeneralChoice2() {
+                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk39', 'ASName': ''})
+                                    Event306:
+                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk41', 'ASName': ''})
+                                    EventSystemActor.Demo_FlagON({'FlagName': 'UMiiVillage_NPC050_Married', 'IsWaitFinish': True})
+                                } else {
+                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk40', 'ASName': ''})
+                                    goto Event306
+                                }
                             }
                         } else {
-                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk25', 'ASName': ''})
+                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk32', 'IsCloseMessageDialog': False, 'ASName': ''})
                         }
                     } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Ichikara_NPC050_First', 'IsWaitFinish': True})
-                        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk24', 'ASName': ''})
-                        goto Event100
+                        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk25', 'ASName': ''})
                     }
-                  case 1:
-                    goto Event106
-                  case 2:
-                    Event107:
-                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk30', 'ASName': ''})
-                    goto Event103
-                  case 3:
-                    goto Event107
-                  case 4:
-                    goto Event107
-                  case 5:
-                    Event108:
-                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk31', 'ASName': ''})
-                    goto Event103
-                  case 6:
-                    goto Event108
-                  case 7:
-                    goto Event108
+                } else {
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Ichikara_NPC050_First', 'IsWaitFinish': True})
+                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk24', 'ASName': ''})
+                    goto Event100
                 }
+              case [2, 3, 4]:
+                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk30', 'ASName': ''})
+                goto Event103
+              case [5, 6, 7]:
+                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk31', 'ASName': ''})
+                goto Event103
             }
           case 2:
             Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk23', 'ASName': ''})
@@ -391,17 +344,16 @@ void ClerkAsk() {
 void Sell() {
     if EventSystemActor.CheckFlag({'FlagName': 'Ichikara_NPC050_SoldOut'}) {
         Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk26'})
-    } else {
-        switch EventSystemActor.RandomChoice4() {
-          case 0:
-            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:Com_Talk_11'})
-          case 1:
-            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:Com_Talk_11b'})
-          case 2:
-            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:Com_Talk_11c'})
-          case 3:
-            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:Com_Talk_11d'})
-        }
+    } else
+    switch EventSystemActor.RandomChoice4() {
+      case 0:
+        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:Com_Talk_11'})
+      case 1:
+        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:Com_Talk_11b'})
+      case 2:
+        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:Com_Talk_11c'})
+      case 3:
+        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:Com_Talk_11d'})
     }
 }
 
@@ -456,76 +408,59 @@ void Npc_oasis050_2() {
                     Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk21', 'ASName': ''})
                     goto Event290
                 }
-            } else {
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event251:
-                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk29', 'ASName': ''})
-                    Event248:
-                    if EventSystemActor.CheckFlag({'FlagName': 'Ichikara_NPC050_First'}) {
-                        Event278:
-                        if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Invite05'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Marry'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Finish'}) {
-                                    goto Event300
+            } else
+            switch EventSystemActor.CheckTimeType() {
+              case [0, 1]:
+                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk29', 'ASName': ''})
+                Event248:
+                if EventSystemActor.CheckFlag({'FlagName': 'Ichikara_NPC050_First'}) {
+                    Event278:
+                    if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Invite05'}) {
+                        if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Marry'}) {
+                            if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Finish'}) {
+                                goto Event300
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_FinishFirst'}) {
+                                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk35'})
+                            } else {
+                                goto Event299
+                            }
+                        } else
+                        if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_Married'}) {
+                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk46'})
+                            if EventSystemActor.CheckTime({'Hour': 5, 'ConditionType': 'ge', 'Minute': 0}) {
+                                if EventSystemActor.CheckTime({'Hour': 21, 'ConditionType': 'le', 'Minute': 0}) {
+                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk48'})
                                 } else {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_FinishFirst'}) {
-                                        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk35'})
-                                    } else {
-                                        goto Event299
-                                    }
+                                    Event284:
+                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk47'})
                                 }
                             } else {
-                                if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_Married'}) {
-                                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk46'})
-                                    if EventSystemActor.CheckTime({'Hour': 5, 'ConditionType': 'ge', 'Minute': 0}) {
-                                        if EventSystemActor.CheckTime({'Hour': 21, 'ConditionType': 'le', 'Minute': 0}) {
-                                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk48'})
-                                        } else {
-                                            Event284:
-                                            Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk47'})
-                                        }
-                                    } else {
-                                        goto Event284
-                                    }
-                                } else {
-                                    Event281:
-
-                                    call PaudaMarried()
-
-                                }
+                                goto Event284
                             }
                         } else {
-                            if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_Married'}) {
-                                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk45'})
-                            } else {
-                                goto Event281
-                            }
+                            Event281:
+
+                            call PaudaMarried()
+
                         }
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC050_Married'}) {
+                        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk45'})
                     } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Ichikara_NPC050_First', 'IsWaitFinish': True})
-                        Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk24', 'ASName': ''})
-                        goto Event278
+                        goto Event281
                     }
-                  case 1:
-                    goto Event251
-                  case 2:
-                    Event252:
-                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk30', 'ASName': ''})
-                    goto Event248
-                  case 3:
-                    goto Event252
-                  case 4:
-                    goto Event252
-                  case 5:
-                    Event253:
-                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk31', 'ASName': ''})
-                    goto Event248
-                  case 6:
-                    goto Event253
-                  case 7:
-                    goto Event253
+                } else {
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Ichikara_NPC050_First', 'IsWaitFinish': True})
+                    Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk24', 'ASName': ''})
+                    goto Event278
                 }
+              case [2, 3, 4]:
+                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk30', 'ASName': ''})
+                goto Event248
+              case [5, 6, 7]:
+                Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk31', 'ASName': ''})
+                goto Event248
             }
           case 2:
             Npc_oasis050[Pauda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis050:talk23', 'ASName': ''})

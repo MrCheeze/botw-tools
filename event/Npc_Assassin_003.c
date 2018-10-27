@@ -36,8 +36,7 @@ void Talk() {
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
         Npc_Assassin_003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Assassin_003:Talk06', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': ''})
-        if !EventSystemActor.GeneralChoice2() {
-            Event18:
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
             Npc_Assassin_003.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
 
             call Demo023_0.BustUp_PlayerHide()
@@ -47,8 +46,6 @@ void Talk() {
 
             call Henshin()
 
-        } else {
-            goto Event18
         }
     } else {
 
@@ -57,8 +54,7 @@ void Talk() {
         Npc_Assassin_003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Assassin_003:Talk00', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': ''})
         Npc_Assassin_003.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
         Npc_Assassin_003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Assassin_003:Talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk'})
-        if !EventSystemActor.GeneralChoice2() {
-            Event5:
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
             Npc_Assassin_003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Assassin_003:Talk02', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Talk'})
 
             call Demo023_0.BustUp_PlayerHide()
@@ -77,8 +73,6 @@ void Talk() {
                 Npc_Assassin_003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Assassin_003:Talk05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk'})
                 goto Event10
             }
-        } else {
-            goto Event5
         }
     }
 }

@@ -39,32 +39,21 @@ void Talk() {
                   case 0:
                     Npc_ZoraGoron_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ZoraGoron_001:talk08', 'IsCloseMessageDialog': True})
                     goto Event15
-                  case 1:
-                    Event11:
+                  case [1, 2, 3]:
                     Npc_ZoraGoron_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ZoraGoron_001:talk07', 'IsCloseMessageDialog': True})
                     goto Event15
-                  case 2:
-                    goto Event11
-                  case 3:
-                    goto Event11
                 }
               case 3:
                 Npc_ZoraGoron_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ZoraGoron_001:talk05'})
             }
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                Npc_ZoraGoron_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ZoraGoron_001:talk12'})
-                goto Event6
-              case 1:
-                Event21:
-                Npc_ZoraGoron_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ZoraGoron_001:talk13'})
-                goto Event6
-              case 2:
-                goto Event21
-              case 3:
-                goto Event21
-            }
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            Npc_ZoraGoron_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ZoraGoron_001:talk12'})
+            goto Event6
+          case [1, 2, 3]:
+            Npc_ZoraGoron_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ZoraGoron_001:talk13'})
+            goto Event6
         }
     } else {
         Npc_ZoraGoron_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ZoraGoron_001:talk00'})

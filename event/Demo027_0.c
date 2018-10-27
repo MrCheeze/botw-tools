@@ -121,21 +121,18 @@ void Para4_WarpPlayer() {
         EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DestinationX': -664.5951538085938, 'DestinationY': 173.09690856933594, 'DestinationZ': 1519.8734130859375, 'DirectionY': 51.566001892089844})
         Event102:
         GameROMPlayer.Demo_LookAtObject({'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_King_Parasail004', 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Fujibayashi'}) {
-            EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': -90.0, 'DestinationX': -457.7188415527344, 'DestinationY': 180.02589416503906, 'DestinationZ': 1990.182373046875})
-            goto Event102
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Iwamoto'}) {
-                EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': -180.0, 'DestinationX': -925.0302734375, 'DestinationY': 274.1745910644531, 'DestinationZ': 2310.201904296875})
-                goto Event102
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Tominaga'}) {
-                    EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': 106.56189727783203, 'DestinationX': -1425.76123046875, 'DestinationY': 337.5956115722656, 'DestinationZ': 1987.843017578125})
-                    goto Event102
-                }
-            }
-        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Fujibayashi'}) {
+        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': -90.0, 'DestinationX': -457.7188415527344, 'DestinationY': 180.02589416503906, 'DestinationZ': 1990.182373046875})
+        goto Event102
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Iwamoto'}) {
+        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': -180.0, 'DestinationX': -925.0302734375, 'DestinationY': 274.1745910644531, 'DestinationZ': 2310.201904296875})
+        goto Event102
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Tominaga'}) {
+        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': 106.56189727783203, 'DestinationX': -1425.76123046875, 'DestinationY': 337.5956115722656, 'DestinationZ': 1987.843017578125})
+        goto Event102
     }
 }
 
@@ -144,20 +141,17 @@ void Para5_WarpPlayer() {
         EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DestinationX': -664.5951538085938, 'DestinationY': 173.09690856933594, 'DestinationZ': 1519.8734130859375, 'DirectionY': 51.566001892089844})
         Event111:
         GameROMPlayer.Demo_LookAtObject({'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_King_Parasail005', 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Fujibayashi'}) {
-            EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': -90.0, 'DestinationX': -457.7188415527344, 'DestinationY': 180.02589416503906, 'DestinationZ': 1990.182373046875})
-            goto Event111
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Iwamoto'}) {
-                EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': -180.0, 'DestinationX': -925.0302734375, 'DestinationY': 274.1745910644531, 'DestinationZ': 2310.201904296875})
-                goto Event111
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Tominaga'}) {
-                    EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': 106.56189727783203, 'DestinationX': -1425.76123046875, 'DestinationY': 337.5956115722656, 'DestinationZ': 1987.843017578125})
-                    goto Event111
-                }
-            }
-        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Fujibayashi'}) {
+        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': -90.0, 'DestinationX': -457.7188415527344, 'DestinationY': 180.02589416503906, 'DestinationZ': 1990.182373046875})
+        goto Event111
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Iwamoto'}) {
+        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': -180.0, 'DestinationX': -925.0302734375, 'DestinationY': 274.1745910644531, 'DestinationZ': 2310.201904296875})
+        goto Event111
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Tominaga'}) {
+        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': False, 'DirectionY': 106.56189727783203, 'DestinationX': -1425.76123046875, 'DestinationY': 337.5956115722656, 'DestinationZ': 1987.843017578125})
+        goto Event111
     }
 }

@@ -46,24 +46,18 @@ void Talk() {
           case 2:
             Npc_HighMountain025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain025:talk05'})
         }
-      case 2:
-        Event48:
+      case [2, 3]:
         Npc_HighMountain025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain025:talk13'})
-      case 3:
-        goto Event48
     }
 }
 
 void Near() {
     Event39:
     switch Npc_HighMountain025.CheckActorAction13() {
-      case 0:
-        Event47:
+      case [0, 2]:
         Npc_HighMountain025.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain025:near02', 'IsChecked': False, 'DispFrame': 90})
       case 1:
         Npc_HighMountain025.Demo_TalkToPlayer({'IsWaitFinish': True, 'ASKeyName': 'Act_ToutingSp', 'MessageId': 'EventFlowMsg/Npc_HighMountain025:near01'})
-      case 2:
-        goto Event47
     }
 }
 
@@ -92,32 +86,13 @@ void Bare_Hello() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event30:
+          case [0, 1, 2, 3, 4, 5]:
             Npc_HighMountain025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain025:talk00'})
-          case 1:
-            goto Event30
-          case 2:
-            goto Event30
-          case 3:
-            goto Event30
-          case 4:
-            goto Event30
-          case 5:
-            goto Event30
-          case 6:
-            Event35:
+          case [6, 7]:
             Npc_HighMountain025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain025:talk01'})
-          case 7:
-            goto Event35
         }
-      case 1:
-        Event32:
+      case [1, 2, 3]:
         Npc_HighMountain025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain025:talk06'})
-      case 2:
-        goto Event32
-      case 3:
-        goto Event32
     }
 }
 

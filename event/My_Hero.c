@@ -47,13 +47,12 @@ void FirstTalk() {
                 Npc_HyruleDepthHatago006.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:FirstGoodBye01', 'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True})
                 goto Event23
             }
+        } else
+        if !EventSystemActor.HasPorchItemByCategory({'Category': 5, 'Count': 1}) {
+            goto Event7
         } else {
-            if !EventSystemActor.HasPorchItemByCategory({'Category': 5, 'Count': 1}) {
-                goto Event7
-            } else {
-                Npc_HyruleDepthHatago006.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:NoSword00', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True})
-                goto Event20
-            }
+            Npc_HyruleDepthHatago006.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:NoSword00', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True})
+            goto Event20
         }
       case 1:
         if !EventSystemActor.HasPorchItemByCategory({'Category': 3, 'Count': 1}) {
@@ -66,13 +65,12 @@ void FirstTalk() {
                 Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:NomalSword01', 'IsBecomingSpeaker': True})
                 goto Event20
             }
+        } else
+        if !EventSystemActor.HasPorchItemByCategory({'Category': 5, 'Count': 1}) {
+            goto Event13
         } else {
-            if !EventSystemActor.HasPorchItemByCategory({'Category': 5, 'Count': 1}) {
-                goto Event13
-            } else {
-                Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:NoSword01', 'IsBecomingSpeaker': True})
-                goto Event20
-            }
+            Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:NoSword01', 'IsBecomingSpeaker': True})
+            goto Event20
         }
       case 2:
         Npc_HyruleDepthHatago006.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:FirstGoodBye00', 'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True})
@@ -101,44 +99,37 @@ void Talk() {
                 Event31:
                 Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:GoodBye00', 'IsCloseMessageDialog': True})
             }
-        } else {
-            if Npc_HyruleDepthHatago006.IsOnInstEventFlag() {
-                Event27:
-                Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk01'})
-                Event26:
-                switch EventSystemActor.GeneralChoice3() {
-                  case 0:
-                    Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk02'})
-                    goto Event27
-                  case 1:
-                    Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk03'})
-                    goto Event27
-                  case 2:
-                    goto Event31
-                }
-            } else {
-                Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk00', 'IsCloseMessageDialog': False})
-                goto Event26
+        } else
+        if Npc_HyruleDepthHatago006.IsOnInstEventFlag() {
+            Event27:
+            Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk01'})
+            Event26:
+            switch EventSystemActor.GeneralChoice3() {
+              case 0:
+                Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk02'})
+                goto Event27
+              case 1:
+                Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk03'})
+                goto Event27
+              case 2:
+                goto Event31
             }
+        } else {
+            Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk00', 'IsCloseMessageDialog': False})
+            goto Event26
         }
-      case 1:
-        Event52:
+      case [1, 2, 3]:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_HyruleDepthHatago006_InUmayado'}) {
             goto Event21
+        } else
+        if Npc_HyruleDepthHatago006.IsArriveAnchorForRain() {
+            goto Event21
         } else {
-            if Npc_HyruleDepthHatago006.IsArriveAnchorForRain() {
-                goto Event21
-            } else {
 
-                call InitTalk.InitTalk({'Arg_Turn': 2, 'Arg_Greeting': 'NotAndNot'})
+            call InitTalk.InitTalk({'Arg_Turn': 2, 'Arg_Greeting': 'NotAndNot'})
 
-                Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Run_Rain00', 'IsCloseMessageDialog': True})
-            }
+            Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Run_Rain00', 'IsCloseMessageDialog': True})
         }
-      case 2:
-        goto Event52
-      case 3:
-        goto Event52
     }
 }
 
@@ -153,21 +144,15 @@ void Near() {
             } else {
                 Npc_HyruleDepthHatago006.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Near00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
             }
-          case 1:
-            Event56:
+          case [1, 2, 3]:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_HyruleDepthHatago006_InUmayado'}) {
                 goto Event47
+            } else
+            if Npc_HyruleDepthHatago006.IsArriveAnchorForRain() {
+                goto Event47
             } else {
-                if Npc_HyruleDepthHatago006.IsArriveAnchorForRain() {
-                    goto Event47
-                } else {
-                    Npc_HyruleDepthHatago006.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Near01'})
-                }
+                Npc_HyruleDepthHatago006.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Near01'})
             }
-          case 2:
-            goto Event56
-          case 3:
-            goto Event56
         }
     } else {
         goto Event46

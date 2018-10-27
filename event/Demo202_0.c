@@ -81,8 +81,7 @@ params: {'IsGrounding': False, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0, 'IsWorld':
 void Demo202_0() {
     GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 4, 'IsValid': True, 'FaceId': 2})
     switch EventSystemActor.CheckMasterSwordState() {
-      case 0:
-        Event107:
+      case [0, 2]:
         if EventSystemActor.CheckFlag({'FlagName': '100enemy_Clear_Junior'}) {
             if EventSystemActor.CheckFlag({'FlagName': '100enemy_Clear_Middle'}) {
                 if EventSystemActor.CheckFlag({'FlagName': '100enemy_Clear_Senior'}) {
@@ -203,12 +202,7 @@ void Demo202_0() {
         } else {
             goto Event115
         }
-      case 1:
-        Event119:
+      case [1, 3]:
         NPC_GodVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/100enemy:talk20'})
-      case 2:
-        goto Event107
-      case 3:
-        goto Event119
     }
 }

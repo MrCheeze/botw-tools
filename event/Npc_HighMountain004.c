@@ -78,23 +78,22 @@ void Talk() {
                     Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk19'})
                     goto Event113
                 }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC004_First_Clear'}) {
-                    Event47:
-                    Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk42'})
-                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_070', 'Count': 1}) {
-                        Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk27', 'IsCloseMessageDialog': True})
-                    } else {
-                        Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk28'})
-
-                        call Karn_MSword()
-
-                    }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC004_First_Clear'}) {
+                Event47:
+                Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk42'})
+                if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_070', 'Count': 1}) {
+                    Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk27', 'IsCloseMessageDialog': True})
                 } else {
-                    Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk23'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC004_First_Clear', 'IsWaitFinish': True})
-                    goto Event47
+                    Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk28'})
+
+                    call Karn_MSword()
+
                 }
+            } else {
+                Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk23'})
+                EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC004_First_Clear', 'IsWaitFinish': True})
+                goto Event47
             }
         }
     } else {
@@ -116,27 +115,26 @@ void WindRelic_Karn_Ready() {
             Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk03'})
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_NPC004_SelfTalk'})
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC004_First'}) {
-            Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk41'})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2.378906011581421, 'Pattern1PosY': 1.2916560173034668, 'Pattern1PosZ': 0.8508300185203552, 'Pattern1AtX': -1.0080569982528687, 'Pattern1AtY': 0.3939819931983948, 'Pattern1AtZ': -0.296875, 'Pattern1Fovy': 41.717342376708984, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk09'})
-            Event56:
-            if !EventSystemActor.GeneralChoice2() {
-                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -1.1728520393371582, 'Pattern1PosY': 1.580291986465454, 'Pattern1PosZ': 3.427733898162842, 'Pattern1AtX': 0.11596699804067612, 'Pattern1AtY': 1.9885560274124146, 'Pattern1AtZ': 0.4465329945087433, 'Pattern1Fovy': 51.58906555175781, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_HighMountain004', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk01'})
-                goto Event98
-            } else {
-                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -1.1728520393371582, 'Pattern1PosY': 1.580291986465454, 'Pattern1PosZ': 3.427733898162842, 'Pattern1AtX': 0.11596699804067612, 'Pattern1AtY': 1.9885560274124146, 'Pattern1AtZ': 0.4465329945087433, 'Pattern1Fovy': 51.58906555175781, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_HighMountain004', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk02'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC004_First', 'IsWaitFinish': True})
-            }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC004_First'}) {
+        Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk41'})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2.378906011581421, 'Pattern1PosY': 1.2916560173034668, 'Pattern1PosZ': 0.8508300185203552, 'Pattern1AtX': -1.0080569982528687, 'Pattern1AtY': 0.3939819931983948, 'Pattern1AtZ': -0.296875, 'Pattern1Fovy': 41.717342376708984, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk09'})
+        Event56:
+        if !EventSystemActor.GeneralChoice2() {
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -1.1728520393371582, 'Pattern1PosY': 1.580291986465454, 'Pattern1PosZ': 3.427733898162842, 'Pattern1AtX': 0.11596699804067612, 'Pattern1AtY': 1.9885560274124146, 'Pattern1AtZ': 0.4465329945087433, 'Pattern1Fovy': 51.58906555175781, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_HighMountain004', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+            Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk01'})
+            goto Event98
         } else {
-            Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk00'})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2.378906011581421, 'Pattern1PosY': 1.2916560173034668, 'Pattern1PosZ': 0.8508300185203552, 'Pattern1AtX': -1.0080569982528687, 'Pattern1AtY': 0.3939819931983948, 'Pattern1AtZ': -0.296875, 'Pattern1Fovy': 41.717342376708984, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk21'})
-            goto Event56
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -1.1728520393371582, 'Pattern1PosY': 1.580291986465454, 'Pattern1PosZ': 3.427733898162842, 'Pattern1AtX': 0.11596699804067612, 'Pattern1AtY': 1.9885560274124146, 'Pattern1AtZ': 0.4465329945087433, 'Pattern1Fovy': 51.58906555175781, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_HighMountain004', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+            Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk02'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC004_First', 'IsWaitFinish': True})
         }
+    } else {
+        Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk00'})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2.378906011581421, 'Pattern1PosY': 1.2916560173034668, 'Pattern1PosZ': 0.8508300185203552, 'Pattern1AtX': -1.0080569982528687, 'Pattern1AtY': 0.3939819931983948, 'Pattern1AtZ': -0.296875, 'Pattern1Fovy': 41.717342376708984, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk21'})
+        goto Event56
     }
 }
 
@@ -232,16 +230,14 @@ void WindRelic_Karn_Finish_near() {
 void Karn_MSword() {
     if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'MsterSword_TalkLv', 'Value': 4}) {
         Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk32', 'IsCloseMessageDialog': True})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'MsterSword_TalkLv', 'Value': 3}) {
+        Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk31', 'IsCloseMessageDialog': True})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'MsterSword_TalkLv', 'Value': 2}) {
+        Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk30', 'IsCloseMessageDialog': True})
     } else {
-        if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'MsterSword_TalkLv', 'Value': 3}) {
-            Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk31', 'IsCloseMessageDialog': True})
-        } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'MsterSword_TalkLv', 'Value': 2}) {
-                Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk30', 'IsCloseMessageDialog': True})
-            } else {
-                Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk29', 'IsCloseMessageDialog': True})
-            }
-        }
+        Npc_HighMountain004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain004:talk29', 'IsCloseMessageDialog': True})
     }
 }
 

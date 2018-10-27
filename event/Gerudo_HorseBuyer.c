@@ -46,7 +46,7 @@ void Ready_Npc_HorseBuyer_Talk() {
             Npc_HorseBuyer.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk16'})
             Event40:
             switch Npc_HorseBuyer.IsOwnedHorseAssociated({'IsRidden': True}) {
-              case 0:
+              case [0, 1, 4]:
                 Event42:
                 Npc_HorseBuyer.Demo_Talk({'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk06', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True})
                 EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'QuestName': '', 'StepName': ''})
@@ -77,19 +77,11 @@ void Ready_Npc_HorseBuyer_Talk() {
                 } else {
                     goto Event46
                 }
-              case 1:
-                goto Event42
-              case 2:
-                Event41:
+              case [2, 3]:
                 switch Npc_HorseBuyer.CheckTypeOfWildHorseAssociated() {
-                  case 0:
+                  case [0, 1, 2]:
                     goto Event42
-                  case 1:
-                    goto Event42
-                  case 2:
-                    goto Event42
-                  case 3:
-                    Event19:
+                  case [3, 4, 5, 6, 7]:
                     Npc_HorseBuyer.Demo_Talk({'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk08', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                     if !EventSystemActor.GeneralChoice2() {
                         Npc_HorseBuyer.Demo_Talk({'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk10', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -97,19 +89,7 @@ void Ready_Npc_HorseBuyer_Talk() {
                     } else {
                         Npc_HorseBuyer.Demo_Talk({'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk09', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                     }
-                  case 4:
-                    goto Event19
-                  case 5:
-                    goto Event19
-                  case 6:
-                    goto Event19
-                  case 7:
-                    goto Event19
                 }
-              case 3:
-                goto Event41
-              case 4:
-                goto Event42
             }
         } else {
             Npc_HorseBuyer.Demo_Talk({'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -128,7 +108,7 @@ void Finish_Npc_HorseBuyer_Talk() {
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
         switch Npc_HorseBuyer.IsOwnedHorseAssociated({'IsRidden': True}) {
-          case 0:
+          case [0, 1, 4]:
             Event5:
             Npc_HorseBuyer.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk02'})
             if !EventSystemActor.GeneralChoice2() {
@@ -143,33 +123,22 @@ void Finish_Npc_HorseBuyer_Talk() {
             } else {
                 goto Event10
             }
-          case 1:
-            goto Event5
           case 2:
             Event25:
             Npc_HorseBuyer.Demo_Talk({'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk11', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
           case 3:
             switch Npc_HorseBuyer.CheckTypeOfWildHorseAssociated() {
-              case 0:
-                goto Event5
-              case 1:
-                goto Event5
-              case 2:
+              case [0, 1, 2]:
                 goto Event5
               case 3:
                 goto Event25
               case 4:
                 Npc_HorseBuyer.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk14'})
-              case 5:
-                Event54:
+              case [5, 6]:
                 Npc_HorseBuyer.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk15'})
-              case 6:
-                goto Event54
               case 7:
                 Npc_HorseBuyer.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Talk01'})
             }
-          case 4:
-            goto Event5
         }
     } else {
         LastRiddenHorse_ForEvent.Demo_Idling({'IsWaitFinish': False})
@@ -184,33 +153,17 @@ void Ready_Npc_HorseBuyer_Near() {
 
 void Finish_Npc_HorseBuyer_Near() {
     switch Npc_HorseBuyer.IsOwnedHorseAssociated({'IsRidden': True}) {
-      case 0:
-        goto Event34
-      case 1:
+      case [0, 1, 4]:
         goto Event34
       case 2:
         Event35:
         Npc_HorseBuyer.Demo_TalkASync({'IsChecked': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_HorseBuyer:Near_01', 'DispFrame': 90})
       case 3:
         switch Npc_HorseBuyer.CheckTypeOfWildHorseAssociated() {
-          case 0:
+          case [0, 1, 2]:
             goto Event34
-          case 1:
-            goto Event34
-          case 2:
-            goto Event34
-          case 3:
-            goto Event35
-          case 4:
-            goto Event35
-          case 5:
-            goto Event35
-          case 6:
-            goto Event35
-          case 7:
+          case [3, 4, 5, 6, 7]:
             goto Event35
         }
-      case 4:
-        goto Event34
     }
 }

@@ -21,24 +21,18 @@ void Talk() {
 
         Event23:
         Npc_HyruleDepthHatago006.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:MasterTalk05', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True})
-      case 1:
-        Event26:
+      case [1, 2, 3]:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_HyruleDepthHatago006_InUmayado'}) {
             goto Event0
+        } else
+        if Npc_HyruleDepthHatago006.IsArriveAnchorForRain() {
+            goto Event0
         } else {
-            if Npc_HyruleDepthHatago006.IsArriveAnchorForRain() {
-                goto Event0
-            } else {
 
-                call InitTalk.InitTalk({'Arg_Turn': 2, 'Arg_Greeting': 'NotAndNot'})
+            call InitTalk.InitTalk({'Arg_Turn': 2, 'Arg_Greeting': 'NotAndNot'})
 
-                goto Event23
-            }
+            goto Event23
         }
-      case 2:
-        goto Event26
-      case 3:
-        goto Event26
     }
 }
 
@@ -47,20 +41,14 @@ void Near() {
       case 0:
         Event22:
         Npc_HyruleDepthHatago006.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Near00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        Event30:
+      case [1, 2, 3]:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_HyruleDepthHatago006_InUmayado'}) {
             goto Event22
+        } else
+        if Npc_HyruleDepthHatago006.IsArriveAnchorForRain() {
+            goto Event22
         } else {
-            if Npc_HyruleDepthHatago006.IsArriveAnchorForRain() {
-                goto Event22
-            } else {
-                Npc_HyruleDepthHatago006.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Near01'})
-            }
+            Npc_HyruleDepthHatago006.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Near01'})
         }
-      case 2:
-        goto Event30
-      case 3:
-        goto Event30
     }
 }

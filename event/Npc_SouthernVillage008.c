@@ -17,20 +17,14 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_SouthernVillage008.CheckActorAction13() {
-      case 0:
-        Event2:
+      case [0, 1]:
         Npc_SouthernVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage008:talk00'})
-      case 1:
-        goto Event2
-      case 2:
-        Event19:
+      case [2, 3]:
         if EventSystemActor.CheckFlag({'FlagName': 'UotoriMini_RecipeSea_Activated'}) {
             Npc_SouthernVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage008:talk07'})
         } else {
             Npc_SouthernVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage008:talk06'})
         }
-      case 3:
-        goto Event19
       case 4:
         if EventSystemActor.CheckFlag({'FlagName': 'UotoriMini_RecipeSea_Finish'}) {
             Npc_SouthernVillage008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage008:talk05'})

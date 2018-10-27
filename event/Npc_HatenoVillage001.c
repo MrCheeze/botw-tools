@@ -102,20 +102,14 @@ void Talk() {
                             goto Event88
                         }
                     }
-                } else {
-                    switch EventSystemActor.CheckWeather() {
-                      case 0:
-                        Npc_HatenoVillage001.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage001:talk38'})
-                        goto Event227
-                      case 1:
-                        Event243:
-                        Npc_HatenoVillage001.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage001:talk41'})
-                        goto Event227
-                      case 2:
-                        goto Event243
-                      case 3:
-                        goto Event243
-                    }
+                } else
+                switch EventSystemActor.CheckWeather() {
+                  case 0:
+                    Npc_HatenoVillage001.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage001:talk38'})
+                    goto Event227
+                  case [1, 2, 3]:
+                    Npc_HatenoVillage001.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage001:talk41'})
+                    goto Event227
                 }
             } else {
                 EventSystemActor.Demo_FlagON({'FlagName': 'HatenoNPC001_First', 'IsWaitFinish': True})
@@ -424,12 +418,10 @@ void SelectColor() {
                             Npc_HatenoVillage001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage001:talk46', 'IsCloseMessageDialog': True})
                             goto Event145
                         }
-                    } else {
-                        goto Event115
-                    }
-                } else {
+                    } else
                     goto Event115
-                }
+                } else
+                goto Event115
               case 2:
                 Event137:
                 Npc_HatenoVillage001.Demo_OpenMessageDialog({'MessageId': 'EventFlowMsg/Npc_HatenoVillage001:talk29', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})

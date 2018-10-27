@@ -175,23 +175,20 @@ void PaySuitableRupee() {
         } else {
             goto Event1007
         }
-    } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Operator': 'Equal', 'Value': 500}) {
-            EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -500})
-            EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Value': 1000})
-            goto Event1136
-        } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Operator': 'Equal', 'Value': 1000}) {
-                EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -1000})
-                EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Value': 10000})
-                goto Event1136
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Operator': 'Equal', 'Value': 10000}) {
-                    EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -10000})
-                    EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Value': 100})
-                    goto Event1136
-                }
-            }
-        }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Operator': 'Equal', 'Value': 500}) {
+        EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -500})
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Value': 1000})
+        goto Event1136
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Operator': 'Equal', 'Value': 1000}) {
+        EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -1000})
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Value': 10000})
+        goto Event1136
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Operator': 'Equal', 'Value': 10000}) {
+        EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -10000})
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Value': 100})
+        goto Event1136
     }
 }

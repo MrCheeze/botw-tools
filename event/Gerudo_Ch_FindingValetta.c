@@ -123,12 +123,11 @@ void Finish_Npc_GerudoDesert004_Talk() {
         } else {
             Npc_GerudoDesert004[town02].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_FindingValetta:talk05'})
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Varetta_first_lady'}) {
+        goto Event109
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Varetta_first_lady'}) {
-            goto Event109
-        } else {
-            Npc_GerudoDesert004[town02].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert004:Talk01'})
-        }
+        Npc_GerudoDesert004[town02].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert004:Talk01'})
     }
 }
 
@@ -225,20 +224,19 @@ void Step2_Npc_GerudoDesert004_Talk() {
                 EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
                 EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_FindingValetta_Step2'})
                 Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo'})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Varetta_first_lady'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Varetta_first'}) {
-                        Npc_GerudoDesert004[desert01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/Gerudo_Ch_FindingValetta:Valetta_talk08'})
-                        goto Event93
-                    } else {
-                        Event103:
-                        Npc_GerudoDesert004[desert01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_FindingValetta:Valetta_talk05', 'ASName': 'Talk'})
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Electric_Relic_Varetta_first', 'IsWaitFinish': True})
-                        goto Event93
-                    }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Varetta_first_lady'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Varetta_first'}) {
+                    Npc_GerudoDesert004[desert01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/Gerudo_Ch_FindingValetta:Valetta_talk08'})
+                    goto Event93
                 } else {
-                    goto Event103
+                    Event103:
+                    Npc_GerudoDesert004[desert01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_FindingValetta:Valetta_talk05', 'ASName': 'Talk'})
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Electric_Relic_Varetta_first', 'IsWaitFinish': True})
+                    goto Event93
                 }
+            } else {
+                goto Event103
             }
         } else {
             Npc_GerudoDesert004[desert01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_FindingValetta:Valetta_talk04', 'ASName': 'Act_Exhaustion'})

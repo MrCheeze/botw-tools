@@ -214,7 +214,7 @@ void Demo033_0() {
                 Event260:
                 if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 3}) {
                     switch EventSystemActor.CheckE3Mode() {
-                      case 0:
+                      case [0, 3]:
                         Event47:
                         EventSystemActor.Demo_IncreaseGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Value': 1, 'IsWaitFinish': True})
                         EventSystemActor.Demo_EventCancelStart({'IsWaitFinish': True, 'ShowLogo': True})
@@ -245,30 +245,23 @@ void Demo033_0() {
                                 EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_1'})
                                 Event3:
                                 EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
-                            } else {
-                                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
-                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
-                                    switch EventSystemActor.CheckE3Mode() {
-                                      case 0:
-                                        goto Event3
-                                      case 1:
-                                        Event170:
-                                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo985_0', 'EntryPointName': 'Demo985_0', 'EndFade': 0})
-                                      case 2:
-                                        goto Event170
-                                      case 3:
-                                        goto Event3
-                                    }
-                                } else {
+                            } else
+                            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
+                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
+                                switch EventSystemActor.CheckE3Mode() {
+                                  case [0, 3]:
                                     goto Event3
+                                  case [1, 2]:
+                                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo985_0', 'EntryPointName': 'Demo985_0', 'EndFade': 0})
                                 }
+                            } else {
+                                goto Event3
                             }
                         } else {
                             SoundTriggerTag.Demo_SoundTriggerFade({'Sound': 'Demo033_0_PriestVanish', 'IsWaitFinish': True})
                             goto Event207
                         }
-                      case 1:
-                        Event262:
+                      case [1, 2]:
                         EventSystemActor.Demo_IncreaseGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Value': 1, 'IsWaitFinish': True})
 
                         fork {
@@ -294,35 +287,24 @@ void Demo033_0() {
                             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_1'})
                             Event233:
                             EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
-                        } else {
-                            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
-                                switch EventSystemActor.CheckE3Mode() {
-                                  case 0:
-                                    goto Event233
-                                  case 1:
-                                    Event247:
-                                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo985_0', 'EntryPointName': 'Demo985_0', 'EndFade': 0})
-                                  case 2:
-                                    goto Event247
-                                  case 3:
-                                    goto Event233
-                                }
-                            } else {
+                        } else
+                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
+                            switch EventSystemActor.CheckE3Mode() {
+                              case [0, 3]:
                                 goto Event233
+                              case [1, 2]:
+                                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo985_0', 'EntryPointName': 'Demo985_0', 'EndFade': 0})
                             }
+                        } else {
+                            goto Event233
                         }
-                      case 2:
-                        goto Event262
-                      case 3:
-                        goto Event47
                     }
                 } else {
                     goto Event47
                 }
-            } else {
-                goto Event260
-            }
+            } else
+            goto Event260
         } else {
             GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'ASName': 'DemoWait', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
             EventSystemActor.Demo_KillUIScreen({'IsWaitFinish': True, 'ScreenName': 'MainDungeon_00'})
@@ -356,23 +338,20 @@ void ItemGetCheck() {
             GameROMPlayer.Demo_Idling({'IsWaitFinish': False, 'DisablePhysics': False})
             EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo033_0:talk07'})
         }
-    } else {
-        if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon038'}) {
-            if !EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_Magnetglove'}) {
-                goto Event219
-            }
-        } else {
-            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon041'}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_RemoteBomb'}) {
-                    goto Event219
-                }
-            } else {
-                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon065'}) {
-                    if !EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_IceMaker'}) {
-                        goto Event219
-                    }
-                }
-            }
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon038'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_Magnetglove'}) {
+            goto Event219
+        }
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon041'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_RemoteBomb'}) {
+            goto Event219
+        }
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon065'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_IceMaker'}) {
+            goto Event219
         }
     }
 }

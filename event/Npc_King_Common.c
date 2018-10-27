@@ -205,13 +205,12 @@ void FirstTalk() {
                 Npc_King_Vagrant001[Anataha(Self)].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
                 EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
             }
+        } else
+        if !GameROMPlayer.IsEquippedWithLowerBody() {
+            Npc_King_Vagrant001[Anataha(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Common:FirstTalk02'})
+            goto Event244
         } else {
-            if !GameROMPlayer.IsEquippedWithLowerBody() {
-                Npc_King_Vagrant001[Anataha(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Common:FirstTalk02'})
-                goto Event244
-            } else {
-                goto Event238
-            }
+            goto Event238
         }
     } else {
         GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
@@ -245,11 +244,10 @@ void BOKANGI_Get() {
     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Get_Vagrant_BOKANGI'})
     if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': False, 'CheckLower': False, 'CheckType': 'Winter', 'CheckUpper': True}) {
         Npc_King_Vagrant001[BOKANGI_Get(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Common:Bokangi10', 'IsCloseMessageDialog': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant003_BOKANGI'}) {
+        Npc_King_Vagrant001[BOKANGI_Get(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Common:Bokangi11'})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant003_BOKANGI'}) {
-            Npc_King_Vagrant001[BOKANGI_Get(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Common:Bokangi11'})
-        } else {
-            Npc_King_Vagrant001[BOKANGI_Get(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Common:Bokangi13'})
-        }
+        Npc_King_Vagrant001[BOKANGI_Get(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Common:Bokangi13'})
     }
 }

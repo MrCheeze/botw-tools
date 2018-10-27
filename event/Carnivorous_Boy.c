@@ -68,20 +68,18 @@ void Talk() {
                         goto Event31
                     }
                 }
+            } else
+            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Roast_45'}) {
+                Event27:
+                Npc_HyruleDepthHatago003.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Challenge03', 'IsWaitFinish': True})
+                goto Event28
+            } else
+            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_D_06'}) {
+                goto Event27
             } else {
-                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Roast_45'}) {
-                    Event27:
-                    Npc_HyruleDepthHatago003.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Challenge03', 'IsWaitFinish': True})
-                    goto Event28
-                } else {
-                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_D_06'}) {
-                        goto Event27
-                    } else {
 
-                        call MeatCheck()
+                call MeatCheck()
 
-                    }
-                }
             }
         } else {
             Npc_HyruleDepthHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Challenge00'})
@@ -130,27 +128,22 @@ void MeatCheck() {
         Event47:
         Npc_HyruleDepthHatago003.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago003:Challenge04', 'IsWaitFinish': True})
         goto Event28
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Roast_40'}) {
+        goto Event47
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_D_05'}) {
+        goto Event47
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Meat_01'}) {
+        goto Event47
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Roast_01'}) {
+        goto Event47
+    } else
+    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_D_04'}) {
+        goto Event47
     } else {
-        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Roast_40'}) {
-            goto Event47
-        } else {
-            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_D_05'}) {
-                goto Event47
-            } else {
-                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Meat_01'}) {
-                    goto Event47
-                } else {
-                    if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Roast_01'}) {
-                        goto Event47
-                    } else {
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_D_04'}) {
-                            goto Event47
-                        } else {
-                            goto Event29
-                        }
-                    }
-                }
-            }
-        }
+        goto Event29
     }
 }

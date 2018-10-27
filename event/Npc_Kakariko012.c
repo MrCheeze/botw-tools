@@ -61,44 +61,29 @@ void Talk() {
                 Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Talk00'})
             }
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+        Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:FirstTalk01', 'IsCloseMessageDialog': False})
+        Event348:
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Talk', 'IsWaitFinish': True})
+        goto Event248
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-            Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:FirstTalk01', 'IsCloseMessageDialog': False})
-            Event348:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Talk', 'IsWaitFinish': True})
-            goto Event248
-        } else {
-            Npc_Kakariko012.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Kakariko012:FirstTalk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-            goto Event348
-        }
+        Npc_Kakariko012.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Kakariko012:FirstTalk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+        goto Event348
     }
 }
 
 void Near() {
     if !EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko012_SoldOut'}) {
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event73:
+          case [0, 1, 2, 3, 4, 5]:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Kakariko012.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Near00', 'DispFrame': 90, 'IsChecked': False})
             } else {
                 Npc_Kakariko012.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Near01', 'DispFrame': 90, 'IsChecked': False})
             }
-          case 1:
-            goto Event73
-          case 2:
-            goto Event73
-          case 3:
-            goto Event73
-          case 4:
-            goto Event73
-          case 5:
-            goto Event73
-          case 6:
-            Event69:
+          case [6, 7]:
             Npc_Kakariko012.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Near02', 'DispFrame': 90, 'IsChecked': False})
-          case 7:
-            goto Event69
         }
     }
 }
@@ -129,8 +114,7 @@ void ClerkAsk() {
     call InitTalk.InitTalkSell_ReturnArrivalAnchor({'Arg_Turn': 0})
 
     EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Talk', 'IsWaitFinish': True})
-    if Argument.IsWeapon() {
-        Event366:
+    if Argument.IsWeapon() in [1, 0] {
         EventSystemActor.Demo_NoDeleteCurrent({'IsWaitFinish': True})
         if !EventSystemActor.RandomChoice2() {
             Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:ClerkAsk00', 'IsOverWriteLabelActorName': False})
@@ -155,8 +139,6 @@ void ClerkAsk() {
             Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Com_Talk_60', 'IsOverWriteLabelActorName': False})
             goto Event359
         }
-    } else {
-        goto Event366
     }
 }
 
@@ -176,7 +158,6 @@ void SheikahSuitsDemo() {
             EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Talk', 'IsWaitFinish': True})
             goto Event346
         }
-    } else {
-        goto Event353
-    }
+    } else
+    goto Event353
 }

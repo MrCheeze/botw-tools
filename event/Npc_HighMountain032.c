@@ -53,24 +53,9 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_HighMountain032[Brosrock_Ready_Npc_HighMountain032].CheckActorAction13() {
-      case 0:
-        Event11:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 10, 12, 13]:
         Npc_HighMountain032[Brosrock_Ready_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_020'})
         Npc_HighMountain032[Brosrock_Ready_Npc_HighMountain032].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-      case 1:
-        goto Event11
-      case 2:
-        goto Event11
-      case 3:
-        goto Event11
-      case 4:
-        goto Event11
-      case 5:
-        goto Event11
-      case 6:
-        goto Event11
-      case 7:
-        goto Event11
       case 8:
         Npc_HighMountain032[Brosrock_Ready_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_010'})
         Npc_HighMountain032[Brosrock_Ready_Npc_HighMountain032].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
@@ -90,14 +75,8 @@ void Talk() {
             Npc_HighMountain032[Brosrock_Ready_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_000'})
             goto Event5
         }
-      case 10:
-        goto Event11
       case 11:
         Npc_HighMountain032[Brosrock_Ready_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_030'})
-      case 12:
-        goto Event11
-      case 13:
-        goto Event11
     }
 }
 
@@ -107,74 +86,26 @@ void Rito_BrosRock_Finish_Talk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Musician_Come'}) {
         switch Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].CheckActorAction13() {
-          case 0:
-            Event21:
+          case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13]:
             Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_210'})
             Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-          case 1:
-            goto Event21
-          case 2:
-            goto Event21
-          case 3:
-            goto Event21
-          case 4:
-            goto Event21
-          case 5:
-            goto Event21
-          case 6:
-            goto Event21
-          case 7:
-            goto Event21
-          case 8:
-            goto Event21
-          case 9:
-            goto Event21
           case 10:
             Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_220'})
             Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
           case 11:
             Event13:
             Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_030'})
-          case 12:
-            goto Event21
-          case 13:
-            goto Event21
         }
-    } else {
-        switch Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].CheckActorAction13() {
-          case 0:
-            Event27:
-            Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_110'})
-            Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-          case 1:
-            goto Event27
-          case 2:
-            goto Event27
-          case 3:
-            goto Event27
-          case 4:
-            goto Event27
-          case 5:
-            goto Event27
-          case 6:
-            goto Event27
-          case 7:
-            Event29:
-            Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_120'})
-            Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-          case 8:
-            goto Event27
-          case 9:
-            goto Event27
-          case 10:
-            goto Event29
-          case 11:
-            goto Event13
-          case 12:
-            goto Event27
-          case 13:
-            goto Event27
-        }
+    } else
+    switch Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].CheckActorAction13() {
+      case [0, 1, 2, 3, 4, 5, 6, 8, 9, 12, 13]:
+        Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_110'})
+        Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
+      case [7, 10]:
+        Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_120'})
+        Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
+      case 11:
+        goto Event13
     }
 }
 
@@ -209,19 +140,18 @@ void Rito_BrosRock_Finish_NearActorsTalk() {
         } else {
             Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_200'})
         }
+    } else
+    if Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].IsOnInstEventFlag() {
+        Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_105'})
     } else {
-        if Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].IsOnInstEventFlag() {
-            Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_105'})
-        } else {
-            Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_100'})
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-                Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_102'})
-              case 1:
-                Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_103'})
-              case 2:
-                Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_104'})
-            }
+        Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_100'})
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_102'})
+          case 1:
+            Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_103'})
+          case 2:
+            Npc_HighMountain032[Brosrock_Finish_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain032:Talk_104'})
         }
     }
 }

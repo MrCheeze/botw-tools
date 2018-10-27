@@ -72,11 +72,7 @@ void Water_Relic_RainStop_Talk() {
             Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk15'})
             goto Event36
         }
-      case 1:
-        goto Event36
-      case 2:
-        goto Event36
-      case 3:
+      case [1, 2, 3]:
         goto Event36
     }
 }
@@ -101,12 +97,9 @@ void Water_Relic_Finished_Talk() {
         Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk22'})
         Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk23'})
         Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk04'})
-        if !EventSystemActor.GeneralChoice2() {
-            Event59:
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
             Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk05'})
             goto Event51
-        } else {
-            goto Event59
         }
     }
 }
@@ -118,28 +111,14 @@ void RitobanHello() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora031_First'}) {
         if Npc_Zora031.IsOnInstEventFlag() {
             Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk03'})
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event5:
-                Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk00'})
-              case 1:
-                goto Event5
-              case 2:
-                Event23:
-                Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk01'})
-              case 3:
-                goto Event23
-              case 4:
-                goto Event23
-              case 5:
-                goto Event23
-              case 6:
-                Event24:
-                Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk02'})
-              case 7:
-                goto Event24
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk00'})
+          case [2, 3, 4, 5]:
+            Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk01'})
+          case [6, 7]:
+            Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk02'})
         }
     } else {
         EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora031_First', 'IsWaitFinish': True})
@@ -148,8 +127,7 @@ void RitobanHello() {
             Event83:
             Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk23'})
             Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk04'})
-            if !EventSystemActor.GeneralChoice2() {
-                Event29:
+            if EventSystemActor.GeneralChoice2() in [0, 1] {
                 Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk05', 'IsCloseMessageDialog': True})
                 Npc_Zora037.Demo_LookAtObject({'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 75.0, 'ObjectId': 1, 'ActorName': 'Npc_Zora031', 'FaceId': 2, 'IsValid': True})
 
@@ -163,8 +141,6 @@ void RitobanHello() {
                 Npc_Zora031.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'TurnDirection': 0.0, 'IsValid': True, 'FaceId': 1, 'IsConfront': True})
                 Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk06'})
                 EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-            } else {
-                goto Event29
             }
         } else {
             Npc_Zora031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora031:talk17'})

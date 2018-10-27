@@ -44,9 +44,7 @@ void Talk() {
 }
 
 void anche_fire() {
-    switch Npc_GerudoDesert003.CheckActorAction13() {
-      case 0:
-        Event47:
+    if Npc_GerudoDesert003.CheckActorAction13() in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13] {
 
         fork {
             SceneSoundCtrlTag.Demo_NotifyTalk({'CtrlType': 'BeginTalk', 'IsWaitFinish': True})
@@ -67,14 +65,13 @@ void anche_fire() {
             if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Gerudo_CarryIce_Angry', 'Operator': 'Equal', 'Value': 0}) {
                 Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert003:Talk_05', 'IsCloseMessageDialog': True})
                 EventSystemActor.Demo_IncreaseGameDataInt({'GameDataIntName': 'Gerudo_CarryIce_Angry', 'Value': 1, 'IsWaitFinish': True})
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Gerudo_CarryIce_Angry', 'Operator': 'Equal', 'Value': 1}) {
+                Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert003:Talk_06', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_IncreaseGameDataInt({'GameDataIntName': 'Gerudo_CarryIce_Angry', 'Value': 1, 'IsWaitFinish': True})
             } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Gerudo_CarryIce_Angry', 'Operator': 'Equal', 'Value': 1}) {
-                    Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert003:Talk_06', 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_IncreaseGameDataInt({'GameDataIntName': 'Gerudo_CarryIce_Angry', 'Value': 1, 'IsWaitFinish': True})
-                } else {
-                    Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert003:Talk_07', 'IsCloseMessageDialog': True})
-                    Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert003:Talk_10'})
-                }
+                Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert003:Talk_07', 'IsCloseMessageDialog': True})
+                Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert003:Talk_10'})
             }
         }
 
@@ -82,63 +79,13 @@ void anche_fire() {
         EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 0, 'AdditionalResetActor': '', 'IsResetCamera': False})
         EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'B-7', 'IsWaitFinish': True, 'WarpDestPosName': 'Anche_Fire_GetOut'})
         EventSystemActor.Demo_FlagOFF({'FlagName': 'Gerudo_CarryIce_fireworks_ice', 'IsWaitFinish': True})
-      case 1:
-        goto Event47
-      case 2:
-        goto Event47
-      case 3:
-        goto Event47
-      case 4:
-        goto Event47
-      case 5:
-        goto Event47
-      case 6:
-        goto Event47
-      case 7:
-        goto Event47
-      case 8:
-        goto Event47
-      case 9:
-        goto Event47
-      case 10:
-        goto Event47
-      case 12:
-        goto Event47
-      case 13:
-        goto Event47
     }
 }
 
 void anche_fire_out() {
-    switch Npc_GerudoDesert003.CheckActorAction13() {
-      case 0:
-        Event30:
+    if Npc_GerudoDesert003.CheckActorAction13() in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13] {
         Npc_GerudoDesert003.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_GerudoDesert003:Talk_08', 'DispFrame': 90, 'IsChecked': False})
         EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_CarryIce_fireworks_ice', 'IsWaitFinish': True})
-      case 1:
-        goto Event30
-      case 2:
-        goto Event30
-      case 3:
-        goto Event30
-      case 4:
-        goto Event30
-      case 5:
-        goto Event30
-      case 6:
-        goto Event30
-      case 7:
-        goto Event30
-      case 8:
-        goto Event30
-      case 9:
-        goto Event30
-      case 10:
-        goto Event30
-      case 12:
-        goto Event30
-      case 13:
-        goto Event30
     }
 }
 

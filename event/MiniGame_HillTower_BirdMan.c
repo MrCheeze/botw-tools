@@ -196,16 +196,14 @@ void Game_Npc_Minigame_BirdMan001_EachFrame() {
         Event9:
         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
         goto Event96
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Retire'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_BirdMan_HillTower_HasPlayerLeftStartArea'}) {
+        goto Event9
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Retire'})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_BirdMan_HillTower_HasPlayerLeftStartArea'}) {
-                goto Event9
-            } else {
-                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Flying'})
-            }
-        }
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Flying'})
     }
 }
 
@@ -225,16 +223,14 @@ void Flying_Npc_Minigame_BirdMan001_EachFrame() {
             EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
             goto Event394
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
+        goto Event213
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 21}) {
+        goto Event213
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
-            goto Event213
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 21}) {
-                goto Event213
-            } else {
-                goto Event415
-            }
-        }
+        goto Event415
     }
 }
 
@@ -319,47 +315,43 @@ void Finish_Npc_Minigame_BirdMan001_StepStart() {
                         Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_22'})
                         goto Event267
                     }
+                } else
+                if EventSystemActor.CheckGameDataFloat({'Operator': 'LessThan', 'Value': 450.0, 'GameDataFloatName': 'MiniGame_BirdMan_HillTower_CurrentDistance'}) {
+                    Event266:
+                    GameDataCalcMachine.Demo_GameDataCopyFloat({'GameDataFloatSrcName': 'MiniGame_BirdMan_HillTower_CurrentDistance', 'GameDataFloatDstName': 'MiniGame_BirdMan_HillTower_RecordDistance', 'IsWaitFinish': True})
+                    goto Event267
                 } else {
-                    if EventSystemActor.CheckGameDataFloat({'Operator': 'LessThan', 'Value': 450.0, 'GameDataFloatName': 'MiniGame_BirdMan_HillTower_CurrentDistance'}) {
-                        Event266:
-                        GameDataCalcMachine.Demo_GameDataCopyFloat({'GameDataFloatSrcName': 'MiniGame_BirdMan_HillTower_CurrentDistance', 'GameDataFloatDstName': 'MiniGame_BirdMan_HillTower_RecordDistance', 'IsWaitFinish': True})
-                        goto Event267
-                    } else {
-                        Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_21'})
-                        goto Event266
-                    }
+                    Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_21'})
+                    goto Event266
                 }
             } else {
                 GameDataCalcMachine.Demo_GameDataCopyFloat({'GameDataFloatSrcName': 'MiniGame_BirdMan_HillTower_CurrentDistance', 'GameDataFloatDstName': 'MiniGame_BirdMan_HillTower_RecordDistance', 'IsWaitFinish': True})
                 EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HillTower_BirdMan_FinishedOnce', 'IsWaitFinish': True})
                 goto Event267
             }
+        } else
+        if EventSystemActor.CheckGameDataFloat({'GameDataFloatName': 'MiniGame_BirdMan_HillTower_CurrentDistance', 'Operator': 'LessThan', 'Value': 600.0}) {
+            Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_19', 'ASName': ''})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+            goto Event288
         } else {
-            if EventSystemActor.CheckGameDataFloat({'GameDataFloatName': 'MiniGame_BirdMan_HillTower_CurrentDistance', 'Operator': 'LessThan', 'Value': 600.0}) {
-                Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_19', 'ASName': ''})
+            Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_20', 'ASName': ''})
 
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'PutRupee_Purple'})
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'PutRupee_Silver'})
 
-                goto Event288
-            } else {
-                Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_20', 'ASName': ''})
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'PutRupee_Silver'})
-
-                goto Event288
-            }
+            goto Event288
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 2}) {
+        goto Event337
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
+        goto Event337
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 2}) {
-            goto Event337
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-                GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-                goto Event337
-            } else {
-                goto Event337
-            }
-        }
+        goto Event337
     }
 }
 

@@ -194,12 +194,11 @@ void Demo712_PlayerWait() {
     GameROMPlayer.Demo_DisableUnequipInEvent({'IsWaitFinish': False})
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'ASName': 'DemoWaitAttention', 'NoErrorCheck': False, 'ClothWarpMode': -2})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        GameROMPlayer.Demo_Join({'IsWaitFinish': False})
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            GameROMPlayer.Demo_Join({'IsWaitFinish': False})
-        } else {
-            GameROMPlayer.Demo_StopInAir({'IsWaitFinish': False, 'NoFixed': False})
-        }
+        GameROMPlayer.Demo_StopInAir({'IsWaitFinish': False, 'NoFixed': False})
     }
 }
 

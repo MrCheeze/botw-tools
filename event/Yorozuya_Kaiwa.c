@@ -122,9 +122,8 @@ void Yorozuya_Kaitori() {
                 Npc_Kakariko010[Yorozuya_Kaitori(Self)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_16', 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 0})
                 goto Event246
             }
-        } else {
-            goto Event246
-        }
+        } else
+        goto Event246
     }
 }
 
@@ -156,21 +155,20 @@ void Yorozuya_Kounyu_Rain() {
                                             if Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].IsSoldOut({'TableName': 'Current'}) {
                                                 Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_36'})
                                                 goto Event15
-                                            } else {
-                                                switch EventSystemActor.RandomChoice4() {
-                                                  case 0:
-                                                    Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11'})
-                                                    goto Event15
-                                                  case 1:
-                                                    Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11b'})
-                                                    goto Event15
-                                                  case 2:
-                                                    Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11c'})
-                                                    goto Event15
-                                                  case 3:
-                                                    Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11d'})
-                                                    goto Event15
-                                                }
+                                            } else
+                                            switch EventSystemActor.RandomChoice4() {
+                                              case 0:
+                                                Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11'})
+                                                goto Event15
+                                              case 1:
+                                                Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11b'})
+                                                goto Event15
+                                              case 2:
+                                                Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11c'})
+                                                goto Event15
+                                              case 3:
+                                                Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11d'})
+                                                goto Event15
                                             }
                                         } else {
                                             Event50:
@@ -197,17 +195,16 @@ void Yorozuya_Kounyu_Rain() {
                                                     Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_08'})
                                                     goto Event15
                                                 }
-                                            } else {
-                                                if EventSystemActor.HasEnoughPayment() {
-                                                    if EventSystemActor.CheckItemShopPorchVacancy() {
-                                                        Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_30', 'IsOverWriteLabelActorName': True})
-                                                        goto Event134
-                                                    } else {
-                                                        goto Event53
-                                                    }
+                                            } else
+                                            if EventSystemActor.HasEnoughPayment() {
+                                                if EventSystemActor.CheckItemShopPorchVacancy() {
+                                                    Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_30', 'IsOverWriteLabelActorName': True})
+                                                    goto Event134
                                                 } else {
-                                                    goto Event52
+                                                    goto Event53
                                                 }
+                                            } else {
+                                                goto Event52
                                             }
                                           case 1:
                                             Npc_Kakariko010[Yorozuya_KounyuSetTbl(Self2)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': True})
@@ -249,8 +246,7 @@ void Yorozuya_Kounyu_Rain() {
             Npc_Kakariko010[Yorozuya_Kounyu(Self2)].Demo_TalkNoCloseDialog({'IsWaitFinish': True, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_12'})
             goto Event15
         }
-      case 1:
-        Event264:
+      case [1, 2, 3]:
         if Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].IsSoldOut({'TableName': 'Rain'}) {
             Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_37'})
             if !EventSystemActor.GeneralChoice2() {
@@ -273,21 +269,20 @@ void Yorozuya_Kounyu_Rain() {
                                             if Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].IsSoldOut({'TableName': 'Current'}) {
                                                 Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_36'})
                                                 goto Event202
-                                            } else {
-                                                switch EventSystemActor.RandomChoice4() {
-                                                  case 0:
-                                                    Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11'})
-                                                    goto Event202
-                                                  case 1:
-                                                    Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11b'})
-                                                    goto Event202
-                                                  case 2:
-                                                    Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11c'})
-                                                    goto Event202
-                                                  case 3:
-                                                    Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11d'})
-                                                    goto Event202
-                                                }
+                                            } else
+                                            switch EventSystemActor.RandomChoice4() {
+                                              case 0:
+                                                Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11'})
+                                                goto Event202
+                                              case 1:
+                                                Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11b'})
+                                                goto Event202
+                                              case 2:
+                                                Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11c'})
+                                                goto Event202
+                                              case 3:
+                                                Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_11d'})
+                                                goto Event202
                                             }
                                         } else {
                                             Event209:
@@ -314,17 +309,16 @@ void Yorozuya_Kounyu_Rain() {
                                                     Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 1, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_08'})
                                                     goto Event202
                                                 }
-                                            } else {
-                                                if EventSystemActor.HasEnoughPayment() {
-                                                    if EventSystemActor.CheckItemShopPorchVacancy() {
-                                                        Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_30', 'IsOverWriteLabelActorName': True})
-                                                        goto Event220
-                                                    } else {
-                                                        goto Event212
-                                                    }
+                                            } else
+                                            if EventSystemActor.HasEnoughPayment() {
+                                                if EventSystemActor.CheckItemShopPorchVacancy() {
+                                                    Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_30', 'IsOverWriteLabelActorName': True})
+                                                    goto Event220
                                                 } else {
-                                                    goto Event211
+                                                    goto Event212
                                                 }
+                                            } else {
+                                                goto Event211
                                             }
                                           case 1:
                                             Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': True})
@@ -366,10 +360,6 @@ void Yorozuya_Kounyu_Rain() {
             Npc_Kakariko010[Yorozuya_Kounyu_Rain(Self2)].Demo_TalkNoCloseDialog({'IsWaitFinish': True, 'IsOverWriteLabelActorName': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_20'})
             goto Event202
         }
-      case 2:
-        goto Event264
-      case 3:
-        goto Event264
     }
 }
 
@@ -453,9 +443,8 @@ void Zucchi_Kaitori() {
                 Npc_TripMaster_00[Zucchi_Kaitori(Self)].Demo_TalkNoCloseDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_16', 'IsOverWriteLabelActorName': False})
                 goto Event57
             }
-        } else {
-            goto Event250
-        }
+        } else
+        goto Event250
     }
 }
 
@@ -485,21 +474,20 @@ void Zucchi_Konyu() {
                                             Event314:
                                             Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': False})
                                             goto Event68
-                                        } else {
-                                            switch EventSystemActor.RandomChoice4() {
-                                              case 0:
-                                                Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_11', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 1})
-                                                goto Event314
-                                              case 1:
-                                                Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_11b', 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 1})
-                                                goto Event314
-                                              case 2:
-                                                Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_11c', 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 1})
-                                                goto Event314
-                                              case 3:
-                                                Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_11d', 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 1})
-                                                goto Event314
-                                            }
+                                        } else
+                                        switch EventSystemActor.RandomChoice4() {
+                                          case 0:
+                                            Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_11', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 1})
+                                            goto Event314
+                                          case 1:
+                                            Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_11b', 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 1})
+                                            goto Event314
+                                          case 2:
+                                            Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_11c', 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 1})
+                                            goto Event314
+                                          case 3:
+                                            Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_11d', 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 1})
+                                            goto Event314
                                         }
                                     } else {
                                         Event82:
@@ -518,21 +506,20 @@ void Zucchi_Konyu() {
                                                     goto Event148
                                                 }
                                             }
-                                        } else {
-                                            if EventSystemActor.HasEnoughPayment() {
-                                                if EventSystemActor.CheckItemShopPorchVacancy() {
-                                                    Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_31'})
-                                                    goto Event148
-                                                } else {
-                                                    Event85:
-                                                    Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_TalkNoCloseDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_09'})
-                                                    goto Event314
-                                                }
+                                        } else
+                                        if EventSystemActor.HasEnoughPayment() {
+                                            if EventSystemActor.CheckItemShopPorchVacancy() {
+                                                Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_31'})
+                                                goto Event148
                                             } else {
-                                                Event84:
-                                                Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_TalkNoCloseDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_08'})
+                                                Event85:
+                                                Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_TalkNoCloseDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_09'})
                                                 goto Event314
                                             }
+                                        } else {
+                                            Event84:
+                                            Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_TalkNoCloseDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_08'})
+                                            goto Event314
                                         }
                                       case 1:
                                         Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': True})

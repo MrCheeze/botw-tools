@@ -65,9 +65,8 @@ void Talk() {
                     goto Event52
                 }
             }
-        } else {
-            goto Event36
-        }
+        } else
+        goto Event36
     } else {
         Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis001:Talk021'})
         goto Event46

@@ -44,101 +44,75 @@ void Talk() {
                 call GoodBye()
 
             }
-        } else {
-            if Npc_FaronWoods007.IsAwakened() {
-                Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk07'})
-                Event19:
-                Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk08'})
-                goto Event18
-            } else {
-                switch EventSystemActor.CheckWeather() {
-                  case 0:
-                    switch EventSystemActor.CheckTimeType() {
-                      case 0:
-                        Event31:
-                        Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk02'})
-                        goto Event19
-                      case 1:
-                        goto Event31
-                      case 2:
-                        Event32:
-                        Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk03'})
-                        goto Event19
-                      case 3:
-                        goto Event32
-                      case 4:
-                        goto Event32
-                      case 5:
-                        goto Event32
-                      case 6:
-                        Event30:
-                        Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk04'})
-                        goto Event19
-                      case 7:
-                        goto Event30
-                    }
-                  case 1:
-                    Event28:
-                    Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk05'})
-                    goto Event19
-                  case 2:
-                    goto Event28
-                  case 3:
-                    Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk06'})
-                    goto Event19
-                }
-            }
-        }
-    } else {
+        } else
+        if Npc_FaronWoods007.IsAwakened() {
+            Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk07'})
+            Event19:
+            Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk08'})
+            goto Event18
+        } else
         switch EventSystemActor.CheckWeather() {
           case 0:
-            Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:FirstTalk00'})
-            Event11:
+            switch EventSystemActor.CheckTimeType() {
+              case [0, 1]:
+                Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk02'})
+                goto Event19
+              case [2, 3, 4, 5]:
+                Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk03'})
+                goto Event19
+              case [6, 7]:
+                Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk04'})
+                goto Event19
+            }
+          case [1, 2]:
+            Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk05'})
+            goto Event19
+          case 3:
+            Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Talk06'})
+            goto Event19
+        }
+    } else
+    switch EventSystemActor.CheckWeather() {
+      case 0:
+        Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:FirstTalk00'})
+        Event11:
+        if !EventSystemActor.GeneralChoice2() {
+
+            call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_FaronWoods007")})
+
+            Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:FirstTalk02'})
+            Event13:
             if !EventSystemActor.GeneralChoice2() {
 
-                call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_FaronWoods007")})
+                call Yorozuya_Kaiwa.Yorozuya_Kounyu_Rain({'Self2': ActorIdentifier(name="Npc_FaronWoods007")})
 
-                Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:FirstTalk02'})
-                Event13:
-                if !EventSystemActor.GeneralChoice2() {
-
-                    call Yorozuya_Kaiwa.Yorozuya_Kounyu_Rain({'Self2': ActorIdentifier(name="Npc_FaronWoods007")})
-
-                    Event33:
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods007_talk'}) {
-                        Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:GoodBye01'})
-                    } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FaronWoods007_talk', 'IsWaitFinish': True})
-                        Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:GoodBye00'})
-                    }
+                Event33:
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods007_talk'}) {
+                    Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:GoodBye01'})
                 } else {
-                    goto Event33
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FaronWoods007_talk', 'IsWaitFinish': True})
+                    Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:GoodBye00'})
                 }
-            } else {
-                Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:FirstTalk01'})
-                goto Event13
-            }
-          case 1:
-            Event40:
-            Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:FirstTalk00_Rain'})
-            goto Event11
-          case 2:
-            goto Event40
-          case 3:
-            goto Event40
+            } else
+            goto Event33
+        } else {
+            Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:FirstTalk01'})
+            goto Event13
         }
+      case [1, 2, 3]:
+        Npc_FaronWoods007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:FirstTalk00_Rain'})
+        goto Event11
     }
 }
 
 void Near() {
     if Npc_FaronWoods007.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
         Npc_FaronWoods007.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Near02', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods007_talk'}) {
+        Npc_FaronWoods007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Near01', 'IsChecked': False, 'DispFrame': 90})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods007_talk'}) {
-            Npc_FaronWoods007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Near01', 'IsChecked': False, 'DispFrame': 90})
-        } else {
-            Npc_FaronWoods007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Near00', 'IsChecked': False, 'DispFrame': 90})
-        }
+        Npc_FaronWoods007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods007:Near00', 'IsChecked': False, 'DispFrame': 90})
     }
 }
 

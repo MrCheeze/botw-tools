@@ -17,8 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_NorthHatelHatago001.CheckActorAction13() {
-      case 0:
-        Event46:
+      case [0, 2]:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_NorthHatelHatago001_Talk'}) {
             Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk001'})
         } else {
@@ -30,27 +29,19 @@ void Talk() {
           case 0:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_NorthHatelHatago001_Talk2'}) {
                 Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk004'})
+            } else
+            if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+                Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk030'})
+                Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk002'})
+                Event60:
+                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_NorthHatelHatago001_Talk2', 'IsWaitFinish': True})
             } else {
-                if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-                    Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk030'})
-                    Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk002'})
-                    Event60:
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_NorthHatelHatago001_Talk2', 'IsWaitFinish': True})
-                } else {
-                    Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk003'})
-                    goto Event60
-                }
+                Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk003'})
+                goto Event60
             }
-          case 1:
-            Event57:
+          case [1, 2, 3]:
             Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk005'})
-          case 2:
-            goto Event57
-          case 3:
-            goto Event57
         }
-      case 2:
-        goto Event46
       case 3:
         Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago001:talk100'})
     }

@@ -32,29 +32,19 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_Strange_Beacon.CheckActorAction13() {
-      case 0:
-        Event30:
+      case [0, 10]:
         switch Npc_Strange_Beacon.CheckTerrorLevel() {
           case 0:
 
             call InitTalk.InitTalkOnEvent({'Self': ActorIdentifier(name="Npc_Strange_Beacon"), 'Arg_Turn': 6})
 
             Npc_Strange_Beacon.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Strange_Beacon_CookSet:Text004', 'ASName': ''})
-          case 1:
-            Event31:
+          case [1, 2, 3, 4, 5]:
 
             call InitTalk.InitTalkOnEvent({'Self': ActorIdentifier(name="Npc_Strange_Beacon"), 'Arg_Turn': 6})
 
             Npc_Strange_Beacon.Demo_PlayASForDemo({'ASName': 'GuardUnequip', 'IsWaitFinish': True, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'TargetIndex': 0, 'IsIgnoreSame': True})
             Npc_Strange_Beacon.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Strange_Beacon_CookSet:Text004', 'ASName': ''})
-          case 2:
-            goto Event31
-          case 3:
-            goto Event31
-          case 4:
-            goto Event31
-          case 5:
-            goto Event31
         }
       case 1:
 
@@ -76,8 +66,6 @@ void Talk() {
         } else {
             Npc_Strange_Beacon.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Strange_Beacon_CookSet:Text001', 'ASName': 'Guard'})
         }
-      case 10:
-        goto Event30
       case 11:
 
         call InitTalk.InitTalkOnEvent({'Self': ActorIdentifier(name="Npc_Strange_Beacon"), 'Arg_Turn': 5})

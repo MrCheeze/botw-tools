@@ -140,14 +140,9 @@ void Ready_Npc_FaronWoods009_Talk() {
                                     EventSystemActor.Demo_AppearNumTargets({'IsWaitFinish': True, 'GameDataIntTargetCounter': 'MiniGame_HorsebackArchery_BreakTargetNum'})
                                     EventBgmCtrlTag.Demo_Start({'BgmName': 'GameHuntBgm', 'IsWaitFinish': True})
                                     EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Game'})
-                                  case 1:
-                                    Event470:
+                                  case [1, 2, 3]:
                                     Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Rain', 'IsCloseMessageDialog': True, 'ASName': ''})
                                     goto Event612
-                                  case 2:
-                                    goto Event470
-                                  case 3:
-                                    goto Event470
                                 }
                             } else {
                                 Event411:
@@ -284,79 +279,75 @@ void Game_Npc_FaronWoods009_EachFrame() {
         } else {
             goto Event344
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
+        goto Event85
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
+        goto Event85
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
-            goto Event85
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
-                goto Event85
-            } else {
-                goto Event344
-            }
-        }
+        goto Event344
     }
 }
 
 void Result() {
     if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_HorsebackArchery_BreakTargetNum', 'Operator': 'LessThan', 'Value': 12}) {
         Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameResult_00_00'})
-    } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_HorsebackArchery_BreakTargetNum', 'Operator': 'LessThan', 'Value': 20}) {
-            Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameResult_01_00'})
-            if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Obj_ArrowNormal_A_01', 'Count': 15}) {
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_HorsebackArchery_BreakTargetNum', 'Operator': 'LessThan', 'Value': 20}) {
+        Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameResult_01_00'})
+        if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Obj_ArrowNormal_A_01', 'Count': 15}) {
 
-                call GetDemo.GetManyItemsByName({'IsInvalidOpenPouch': False, 'ShowDialogTargetActorName': 'Obj_ArrowBundle_A_10', 'IncreaseTargetActorName': 'Obj_ArrowNormal_A_01', 'GetNumber': 15})
+            call GetDemo.GetManyItemsByName({'IsInvalidOpenPouch': False, 'ShowDialogTargetActorName': 'Obj_ArrowBundle_A_10', 'IncreaseTargetActorName': 'Obj_ArrowNormal_A_01', 'GetNumber': 15})
+
+        } else {
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+
+        }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_HorsebackArchery_BreakTargetNum', 'Operator': 'LessThan', 'Value': 23}) {
+        Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameResult_02_00'})
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins'}) {
+            if EventSystemActor.CheckAddPorchItem({'Count': 10, 'PorchItemName': 'Obj_BombArrow_A_01'}) {
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_BombArrow_A_03'})
 
             } else {
 
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
 
             }
         } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_HorsebackArchery_BreakTargetNum', 'Operator': 'LessThan', 'Value': 23}) {
-                Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameResult_02_00'})
-                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins'}) {
-                    if EventSystemActor.CheckAddPorchItem({'Count': 10, 'PorchItemName': 'Obj_BombArrow_A_01'}) {
 
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_BombArrow_A_03'})
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'GameRomHorseReins_03'})
 
-                    } else {
+            EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins', 'IsWaitFinish': True})
+        }
+    } else {
+        Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameResult_03_00'})
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseSaddle'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins'}) {
+                if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Obj_BombArrow_A_01', 'Count': 20}) {
 
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_BombArrow_A_04'})
 
-                    }
                 } else {
 
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'GameRomHorseReins_03'})
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
 
-                    EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins', 'IsWaitFinish': True})
                 }
             } else {
-                Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameResult_03_00'})
-                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseSaddle'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins'}) {
-                        if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Obj_BombArrow_A_01', 'Count': 20}) {
 
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_BombArrow_A_04'})
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'GameRomHorseReins_03'})
 
-                        } else {
-
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
-
-                        }
-                    } else {
-
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'GameRomHorseReins_03'})
-
-                        EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins', 'IsWaitFinish': True})
-                    }
-                } else {
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'GameRomHorseSaddle_03'})
-
-                    EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseSaddle', 'IsWaitFinish': True})
-                }
+                EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins', 'IsWaitFinish': True})
             }
+        } else {
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'GameRomHorseSaddle_03'})
+
+            EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseSaddle', 'IsWaitFinish': True})
         }
     }
 }
@@ -484,13 +475,8 @@ void Ready_Npc_FaronWoods009_Near() {
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_FaronWoods009.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Near00'})
-          case 1:
-            Event458:
+          case [1, 2, 3]:
             Npc_FaronWoods009.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Near02'})
-          case 2:
-            goto Event458
-          case 3:
-            goto Event458
         }
       case 11:
         Npc_FaronWoods009.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Near01'})
@@ -532,8 +518,7 @@ void CheckHorseRide() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
         if !EventSystemActor.CheckFlag({'FlagName': 'Horse_Is_LastRidden_Owned'}) {
             switch Npc_FaronWoods009.CheckTypeOfWildHorseAssociated() {
-              case 0:
-                Event552:
+              case [0, 1, 2, 3, 7]:
                 Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:WildHouse_00', 'ASName': ''})
                 if !EventSystemActor.GeneralChoice2() {
                     Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Register_00', 'ASName': ''})
@@ -583,22 +568,9 @@ void CheckHorseRide() {
                     Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Accompany_02', 'IsCloseMessageDialog': True, 'ASName': ''})
                     goto Event570
                 }
-              case 1:
-                goto Event552
-              case 2:
-                goto Event552
-              case 3:
-                goto Event552
-              case 4:
-                Event608:
+              case [4, 5, 6]:
                 Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:NoHouse', 'ASName': ''})
                 goto Event601
-              case 5:
-                goto Event608
-              case 6:
-                goto Event608
-              case 7:
-                goto Event552
             }
         }
     } else {

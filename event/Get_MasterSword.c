@@ -86,12 +86,9 @@ void NukiGameStart() {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': True, 'StepName': 'Finish', 'QuestName': 'Get_MasterSword'})
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 150})
         EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-      case 1:
-        Event87:
+      case [1, 2]:
         TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Talk01', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk'})
         goto Event231
-      case 2:
-        goto Event87
     }
 }
 
@@ -196,41 +193,37 @@ void NukiGameDekuHint() {
                     TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel03', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True})
                     goto Event89
                 }
-            } else {
-                if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 10}) {
-                    TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel00', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True})
+            } else
+            if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 10}) {
+                TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel00', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True})
+                goto Event89
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_Heart40'}) {
+                TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel01', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': False})
+                if !EventSystemActor.ComparePlayerHeart({'Threshold': 4}) {
+                    TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel01_2', 'IsCloseMessageDialog': True})
                     goto Event89
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_Heart40'}) {
-                        TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel01', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': False})
-                        if !EventSystemActor.ComparePlayerHeart({'Threshold': 4}) {
-                            TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel01_2', 'IsCloseMessageDialog': True})
-                            goto Event89
-                        } else {
-                            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                            goto Event89
-                        }
-                    } else {
-                        Event108:
-                        TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel05', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True})
-                        goto Event89
-                    }
+                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                    goto Event89
                 }
-            }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_Heart52'}) {
-                goto Event108
             } else {
-                TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel02', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True})
+                Event108:
+                TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel05', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True})
                 goto Event89
             }
-        }
-    } else {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_FirstCancel'}) {
-            EventSystemActor.Demo_FlagON({'FlagName': 'Get_MasterSword_FirstCancel', 'IsWaitFinish': True})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-            TwnObj_Village_Korok_DekuTree_A_01.Demo_OpenMessageDialog({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel06', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_Heart52'}) {
+            goto Event108
+        } else {
+            TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel02', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True})
             goto Event89
         }
+    } else
+    if !EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_FirstCancel'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Get_MasterSword_FirstCancel', 'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+        TwnObj_Village_Korok_DekuTree_A_01.Demo_OpenMessageDialog({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Get_MasterSword:Deku_Cancel06', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 0, 'ASName': 'Face_C_Talk', 'IsCloseMessageDialog': True})
+        goto Event89
     }
 }

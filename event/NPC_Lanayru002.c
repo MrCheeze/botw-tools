@@ -96,46 +96,31 @@ void Talk() {
                         Event12:
                         NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_03'})
                         goto Event13
-                      case 1:
-                        Event18:
+                      case [1, 2, 3]:
                         GameRomCamera.Demo_ReturnSavePoint_1({'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'IsWaitFinish': True, 'Count': 45.0})
                         goto Event12
-                      case 2:
-                        goto Event18
-                      case 3:
-                        goto Event18
                     }
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'NPC_Lanayru001_First'}) {
+                    goto Event39
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'NPC_Lanayru001_First'}) {
-                        goto Event39
-                    } else {
-                        NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_02', 'IsCloseMessageDialog': True, 'ASName': ''})
-                        goto Event28
-                    }
+                    NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_02', 'IsCloseMessageDialog': True, 'ASName': ''})
+                    goto Event28
                 }
-              case 1:
-                Event19:
+              case [1, 2, 3]:
                 GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1395.367431640625, 'Pattern1PosY': 130.8083038330078, 'Pattern1PosZ': -751.7801513671875, 'Pattern1AtX': 1400.0611572265625, 'Pattern1AtY': 131.96707153320312, 'Pattern1AtZ': -750.97216796875, 'Pattern1Fovy': 50.00001907348633, 'Count': 45.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
                 goto Event38
-              case 2:
-                goto Event19
-              case 3:
-                goto Event19
             }
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_Lanayru001_First'}) {
+        NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_09'})
+        goto Event6
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'NPC_Lanayru001_First'}) {
-            NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_09'})
+        NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_00'})
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
+            NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_01', 'IsCloseMessageDialog': True})
             goto Event6
-        } else {
-            NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_00'})
-            if !EventSystemActor.GeneralChoice2() {
-                Event4:
-                NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_01', 'IsCloseMessageDialog': True})
-                goto Event6
-            } else {
-                goto Event4
-            }
         }
     }
 }

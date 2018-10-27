@@ -93,9 +93,8 @@ void NPC_Goron003_Explain_Talk() {
             Npc_goron003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron003:talk03'})
             goto Event20
         }
-    } else {
-        goto Event16
-    }
+    } else
+    goto Event16
 }
 
 void Near() {

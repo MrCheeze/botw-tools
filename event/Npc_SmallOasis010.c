@@ -38,37 +38,22 @@ void Talk() {
                     Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_15'})
                     goto Event2
                 }
-            } else {
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event1:
-                    Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_10'})
-                    Event27:
-                    Npc_SmallOasis010.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
-                    if EventSystemActor.CheckFlag({'FlagName': 'Oasis_Fruits_SoldOut'}) {
-                        Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_14'})
-                        goto Event2
-                    } else {
-                        Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_11'})
-                        goto Event2
-                    }
-                  case 1:
-                    Event7:
-                    Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_01'})
-                    goto Event27
-                  case 2:
-                    goto Event7
-                  case 3:
-                    goto Event7
-                  case 4:
-                    goto Event7
-                  case 5:
-                    goto Event7
-                  case 6:
-                    goto Event1
-                  case 7:
-                    goto Event1
+            } else
+            switch EventSystemActor.CheckTimeType() {
+              case [0, 6, 7]:
+                Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_10'})
+                Event27:
+                Npc_SmallOasis010.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
+                if EventSystemActor.CheckFlag({'FlagName': 'Oasis_Fruits_SoldOut'}) {
+                    Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_14'})
+                    goto Event2
+                } else {
+                    Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_11'})
+                    goto Event2
                 }
+              case [1, 2, 3, 4, 5]:
+                Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_01'})
+                goto Event27
             }
         } else {
             Npc_SmallOasis010.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
@@ -82,9 +67,8 @@ void Talk() {
                 Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_21'})
             }
         }
-    } else {
-        goto Event38
-    }
+    } else
+    goto Event38
 }
 
 void Near() {
@@ -93,8 +77,7 @@ void Near() {
 
 void Sell() {
     switch Npc_SmallOasis010.CheckPlacedItemSaled() {
-      case 0:
-        Event41:
+      case [0, 2]:
         switch EventSystemActor.RandomChoice3() {
           case 0:
             Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_06'})
@@ -105,8 +88,6 @@ void Sell() {
         }
       case 1:
         Npc_SmallOasis010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis010:Talk_07'})
-      case 2:
-        goto Event41
     }
 }
 

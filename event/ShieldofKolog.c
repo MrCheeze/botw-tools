@@ -113,27 +113,24 @@ void Step010_Npc_Kokiri011_Talk() {
                         EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Weapon_Sword_025', 'Value': 1, 'IsWaitFinish': True})
                         goto Event177
                     }
+                } else
+                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_013'}) {
+                    goto Event322
                 } else {
-                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_013'}) {
-                        goto Event322
-                    } else {
-                        Event9:
-                        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/ShieldofKolog:Npc_Kokiri011_S10_031', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-                    }
+                    Event9:
+                    Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/ShieldofKolog:Npc_Kokiri011_S10_031', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
                 }
-            } else {
-                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_023'}) {
-                    goto Event398
-                } else {
-                    goto Event9
-                }
-            }
-        } else {
-            if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Weapon_Sword_025', 'Count': 1}) {
-                goto Event397
+            } else
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_023'}) {
+                goto Event398
             } else {
                 goto Event9
             }
+        } else
+        if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Weapon_Sword_025', 'Count': 1}) {
+            goto Event397
+        } else {
+            goto Event9
         }
     } else {
         Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/ShieldofKolog:Npc_Kokiri011_S10_061', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
@@ -199,33 +196,29 @@ void Finish_Npc_Kokiri011_EachFrame() {
         if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'}) {
             EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
             goto Event420
-        } else {
-            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_025'}) {
-                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_023'}) {
-                    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_013'}) {
-                        Event100:
-                        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                        goto Event420
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_025'}) {
+            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_023'}) {
+                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_013'}) {
+                    Event100:
+                    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+                    goto Event420
+                } else
+                Event421:
+                if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Step010'}) {
+                    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'}) {
+                        goto Event100
                     } else {
-                        Event421:
-                        if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Step010'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'}) {
-                                goto Event100
-                            } else {
-                                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'ShieldofKolog', 'ForceRunTelop': False, 'StepName': 'Retire'})
-                            }
-                        } else {
-                            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                            goto Event420
-                        }
+                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'ShieldofKolog', 'ForceRunTelop': False, 'StepName': 'Retire'})
                     }
                 } else {
-                    goto Event421
+                    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+                    goto Event420
                 }
-            } else {
-                goto Event421
-            }
-        }
+            } else
+            goto Event421
+        } else
+        goto Event421
     } else {
         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
         goto Event420
@@ -279,12 +272,10 @@ void JumpForestFog() {
                         } else {
                             goto Event301
                         }
-                    } else {
-                        goto Event304
-                    }
-                } else {
-                    goto Event303
-                }
+                    } else
+                    goto Event304
+                } else
+                goto Event303
             } else {
                 EventSystemActor.Demo_RollbackQuest({'QuestName': 'ShieldofKolog', 'IsWaitFinish': True, 'StepName': 'Step010'})
                 goto Event312
@@ -434,12 +425,10 @@ void Retire_ItemNone() {
                     } else {
                         goto Event98
                     }
-                } else {
-                    goto Event181
-                }
-            } else {
-                goto Event180
-            }
+                } else
+                goto Event181
+            } else
+            goto Event180
         } else {
             EventSystemActor.Demo_RollbackQuest({'QuestName': 'ShieldofKolog', 'IsWaitFinish': True, 'StepName': 'Step010'})
             goto Event266

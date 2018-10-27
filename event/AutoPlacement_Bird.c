@@ -30,18 +30,8 @@ void EntryPoint0() {
                 if !AutoPlacement.WaterDepth({'Depth': 0.30000001192092896}) {
                     if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
                         if !AutoPlacement.WaterDepth({'Depth': 0.4000000059604645}) {
-                            switch AutoPlacement.GroundMat() {
-                              case 0:
-                                Event137:
+                            if AutoPlacement.GroundMat() in [0, 3, 5, 8, 12] {
                                 AutoPlacement.CreateData({'MinNum': 1, 'GroupRadius': 10.0, 'OffsetPosY': 0.0, 'RideList': '', 'MaxNum': 3, 'EquipWeaponActorCount': -1, 'Mimicry': False})
-                              case 3:
-                                goto Event137
-                              case 5:
-                                goto Event137
-                              case 8:
-                                goto Event137
-                              case 12:
-                                goto Event137
                             }
                         }
                     }
@@ -50,16 +40,8 @@ void EntryPoint0() {
         } {
             if AutoPlacement.EcoAreaActorName({'ActorName': 'Animal_Heron_B'}) {
                 if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
-                    switch AutoPlacement.GroundMat() {
-                      case 0:
-                        Event161:
+                    if AutoPlacement.GroundMat() in [0, 3, 5, 12] {
                         AutoPlacement.CreateData({'MinNum': 1, 'GroupRadius': 10.0, 'OffsetPosY': 0.0, 'RideList': '', 'MaxNum': 3, 'EquipWeaponActorCount': -1, 'Mimicry': False})
-                      case 3:
-                        goto Event161
-                      case 5:
-                        goto Event161
-                      case 12:
-                        goto Event161
                     }
                 }
             }
@@ -74,30 +56,16 @@ void EntryPoint0() {
         } {
             if AutoPlacement.EcoAreaActorName({'ActorName': 'Animal_Ptarmigan_A'}) {
                 if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
-                    switch AutoPlacement.GroundMat() {
-                      case 9:
-                        Event40:
+                    if AutoPlacement.GroundMat() in [9, 10, 14] {
                         AutoPlacement.CreateData({'MinNum': 1, 'GroupRadius': 10.0, 'OffsetPosY': 0.0, 'RideList': '', 'EquipWeaponActorCount': -1, 'Mimicry': False, 'MaxNum': 2})
-                      case 10:
-                        goto Event40
-                      case 14:
-                        goto Event40
                     }
                 }
             }
         } {
             if AutoPlacement.EcoAreaActorName({'ActorName': 'Animal_Ptarmigan_B'}) {
                 if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
-                    switch AutoPlacement.GroundMat() {
-                      case 0:
-                        Event165:
+                    if AutoPlacement.GroundMat() in [0, 1, 2, 12] {
                         AutoPlacement.CreateData({'MinNum': 1, 'GroupRadius': 10.0, 'OffsetPosY': 0.0, 'RideList': '', 'EquipWeaponActorCount': -1, 'Mimicry': False, 'MaxNum': 2})
-                      case 1:
-                        goto Event165
-                      case 2:
-                        goto Event165
-                      case 12:
-                        goto Event165
                     }
                 }
             }

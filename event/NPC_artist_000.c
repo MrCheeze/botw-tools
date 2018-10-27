@@ -67,15 +67,14 @@ void FirstTalk() {
             NPC_artist_005[FirstTalk(Self)].Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsWaitFinish': True, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/NPC_artist_000:Talk09'})
             Event3:
             NPC_artist_005[FirstTalk(Self)].Demo_Talk({'MessageId': 'EventFlowMsg/NPC_artist_000:Talk02', 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsWaitFinish': True, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': False})
+        } else
+        if NPC_artist_005[FirstTalk(Self)].CheckActorAction({'ActionName': 'Root/Timeline/Action2/到着'}) {
+            goto Event38
         } else {
-            if NPC_artist_005[FirstTalk(Self)].CheckActorAction({'ActionName': 'Root/Timeline/Action2/到着'}) {
-                goto Event38
-            } else {
 
-                call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-                goto Event33
-            }
+            goto Event33
         }
     } else {
 
@@ -123,17 +122,15 @@ void Talk_Artist() {
 
     if NPC_artist_000[Talk_Artist(Self)].IsOnInstEventFlag() {
         NPC_artist_000[Talk_Artist(Self)].Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsWaitFinish': True, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/NPC_artist_000:Talk11'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Artist_FirstFirstTalk'}) {
+        Event50:
+        NPC_artist_000[Talk_Artist(Self)].Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsWaitFinish': True, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/NPC_artist_000:Talk12'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Artist_FirstFirstFirstTalk'}) {
+        goto Event50
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Artist_FirstFirstTalk'}) {
-            Event50:
-            NPC_artist_000[Talk_Artist(Self)].Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsWaitFinish': True, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/NPC_artist_000:Talk12'})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Artist_FirstFirstFirstTalk'}) {
-                goto Event50
-            } else {
-                NPC_artist_000[Talk_Artist(Self)].Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsWaitFinish': True, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/NPC_artist_000:Talk10'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Artist_FirstFirstFirstTalk', 'IsWaitFinish': True})
-            }
-        }
+        NPC_artist_000[Talk_Artist(Self)].Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsWaitFinish': True, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/NPC_artist_000:Talk10'})
+        EventSystemActor.Demo_FlagON({'FlagName': 'Artist_FirstFirstFirstTalk', 'IsWaitFinish': True})
     }
 }

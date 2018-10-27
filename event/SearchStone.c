@@ -143,180 +143,164 @@ void Step1_Npc_SouthernVillage014_Talk() {
                 } else {
                     Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_020'})
                 }
-            } else {
-                if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_03'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_03'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
 
-                        call LookPicture3_3({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
+                    call LookPicture3_3({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
 
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
-                        goto Event18
-                    } else {
-                        if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
+                    goto Event18
+                } else
+                if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
 
-                            call LookPicture3_2({'ActorName': 'FldObj_SearchStone_A_03', 'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName_000': 'FldObj_SearchStone_A_04'})
+                    call LookPicture3_2({'ActorName': 'FldObj_SearchStone_A_03', 'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName_000': 'FldObj_SearchStone_A_04'})
 
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
-                            goto Event18
-                        } else {
-
-                            call LookPicture2_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
-
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
-                            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_007'})
-                        }
-                    }
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
+                    goto Event18
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
-                        Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_018'})
-                    } else {
-                        if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
 
-                            call LookPicture2_2({'ActorName': 'FldObj_SearchStone_A_04', 'Self': ActorIdentifier(name="Npc_SouthernVillage014")})
+                    call LookPicture2_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
 
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
-                            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_008'})
-                        } else {
-                            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_018'})
-                        }
-                    }
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
+                    Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_007'})
                 }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_018'})
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
+
+                call LookPicture2_2({'ActorName': 'FldObj_SearchStone_A_04', 'Self': ActorIdentifier(name="Npc_SouthernVillage014")})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_008'})
+            } else {
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_018'})
             }
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_02'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone3end'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
+
+                    call LookPicture3_3({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02'})
+
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
+                    goto Event18
+                } else
+                if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
+
+                    call LookPicture3_2({'ActorName_000': 'FldObj_SearchStone_A_04', 'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02'})
+
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
+                    goto Event18
+                } else {
+
+                    call LookPicture2_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02'})
+
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
+                    Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_007'})
+                }
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_03'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
+
+                    call LookPicture3_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02', 'ActorName_000': 'FldObj_SearchStone_A_03'})
+
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
+                    goto Event18
+                } else
+                if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
+
+                    call LookPicture3({'ActorName': 'FldObj_SearchStone_A_02', 'ActorName_000': 'FldObj_SearchStone_A_03', 'ActorName_001': 'FldObj_SearchStone_A_04', 'Self': ActorIdentifier(name="Npc_SouthernVillage014")})
+
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
+                    goto Event18
+                } else {
+
+                    call LookPicture2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02', 'ActorName_000': 'FldObj_SearchStone_A_03'})
+
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
+                    Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_007'})
+                }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
+
+                call LookPicture2_2({'ActorName': 'FldObj_SearchStone_A_02', 'Self': ActorIdentifier(name="Npc_SouthernVillage014")})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_008'})
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
+
+                call LookPicture2({'ActorName': 'FldObj_SearchStone_A_02', 'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName_000': 'FldObj_SearchStone_A_04'})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_008'})
+            } else {
+
+                call LookPicture1({'ActorName': 'FldObj_SearchStone_A_02', 'Self': ActorIdentifier(name="Npc_SouthernVillage014")})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_005'})
+            }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone3end'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_019'})
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
+
+                call LookPicture2_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_04'})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_009'})
+            } else {
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_019'})
+            }
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_03'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
+
+                call LookPicture2_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_009'})
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
+
+                call LookPicture2({'ActorName_000': 'FldObj_SearchStone_A_04', 'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_009'})
+            } else {
+
+                call LookPicture1({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
+                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_004'})
+            }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
+            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_018'})
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
+
+            call LookPicture1({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_04'})
+
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
+            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_006'})
         } else {
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_02'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone3end'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
-
-                        call LookPicture3_3({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02'})
-
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
-                        goto Event18
-                    } else {
-                        if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
-
-                            call LookPicture3_2({'ActorName_000': 'FldObj_SearchStone_A_04', 'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02'})
-
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
-                            goto Event18
-                        } else {
-
-                            call LookPicture2_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02'})
-
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
-                            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_007'})
-                        }
-                    }
-                } else {
-                    if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_03'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
-
-                            call LookPicture3_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02', 'ActorName_000': 'FldObj_SearchStone_A_03'})
-
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
-                            goto Event18
-                        } else {
-                            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
-
-                                call LookPicture3({'ActorName': 'FldObj_SearchStone_A_02', 'ActorName_000': 'FldObj_SearchStone_A_03', 'ActorName_001': 'FldObj_SearchStone_A_04', 'Self': ActorIdentifier(name="Npc_SouthernVillage014")})
-
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
-                                goto Event18
-                            } else {
-
-                                call LookPicture2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_02', 'ActorName_000': 'FldObj_SearchStone_A_03'})
-
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
-                                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_007'})
-                            }
-                        }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
-
-                            call LookPicture2_2({'ActorName': 'FldObj_SearchStone_A_02', 'Self': ActorIdentifier(name="Npc_SouthernVillage014")})
-
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
-                            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_008'})
-                        } else {
-                            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
-
-                                call LookPicture2({'ActorName': 'FldObj_SearchStone_A_02', 'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName_000': 'FldObj_SearchStone_A_04'})
-
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
-                                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_008'})
-                            } else {
-
-                                call LookPicture1({'ActorName': 'FldObj_SearchStone_A_02', 'Self': ActorIdentifier(name="Npc_SouthernVillage014")})
-
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone2end'})
-                                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_005'})
-                            }
-                        }
-                    }
-                }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone3end'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
-                        Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_019'})
-                    } else {
-                        if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
-
-                            call LookPicture2_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_04'})
-
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
-                            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_009'})
-                        } else {
-                            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_019'})
-                        }
-                    }
-                } else {
-                    if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_03'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
-
-                            call LookPicture2_2({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
-
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
-                            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_009'})
-                        } else {
-                            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
-
-                                call LookPicture2({'ActorName_000': 'FldObj_SearchStone_A_04', 'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
-
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
-                                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_009'})
-                            } else {
-
-                                call LookPicture1({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_03'})
-
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone3end'})
-                                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_004'})
-                            }
-                        }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_Stone4end'}) {
-                            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_018'})
-                        } else {
-                            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_SearchStone_A_04'}) {
-
-                                call LookPicture1({'Self': ActorIdentifier(name="Npc_SouthernVillage014"), 'ActorName': 'FldObj_SearchStone_A_04'})
-
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SearchStone_Stone4end'})
-                                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_006'})
-                            } else {
-                                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_015'})
-                                Npc_SouthernVillage014.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_R_011', 'IsCloseMessageDialog': False})
-                            }
-                        }
-                    }
-                }
-            }
+            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_015'})
+            Npc_SouthernVillage014.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_R_011', 'IsCloseMessageDialog': False})
         }
     } else {
         Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SearchStone:Npc_SouthernVillage014_S1_002', 'IsCloseMessageDialog': False})
@@ -373,13 +357,12 @@ void EntryPoint0() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo016_0', 'EntryPointName': 'DungeonArrival', 'IsWaitFinish': False, 'EndFade': 0})
         EventSystemActor.Demo_FlagON({'FlagName': 'SearchStone_Finish', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_PlayerPlace02'}) {
+        Npc_SouthernVillage014.Demo_MoveToAnchor({'AnchorName': 'DestinationAnchor', 'IsWaitFinish': True, 'AnchorUniqueName': 'I-8_01', 'IsTurnToAnchorDir': False, 'ASKeyName': 'Run', 'IsAlignmentAnchor': True})
+        goto Event60
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_PlayerPlace02'}) {
-            Npc_SouthernVillage014.Demo_MoveToAnchor({'AnchorName': 'DestinationAnchor', 'IsWaitFinish': True, 'AnchorUniqueName': 'I-8_01', 'IsTurnToAnchorDir': False, 'ASKeyName': 'Run', 'IsAlignmentAnchor': True})
-            goto Event60
-        } else {
-            goto Event40
-        }
+        goto Event40
     }
 }
 

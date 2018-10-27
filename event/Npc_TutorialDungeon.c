@@ -25,14 +25,12 @@ void EachFrame() {
             Event3:
             if EventTimerTag.CheckMiniGameTimeOver() {
                 EventSystemActor.Demo_FlagON({'FlagName': 'ClearTutorial_SpinAttack', 'IsWaitFinish': True})
-            } else {
-                goto Event2
-            }
+            } else
+            goto Event2
         } else {
             EventSystemActor.Demo_MiniGameTime({'CountMode': 1, 'IsWaitFinish': True, 'IsShowTimeUI': True, 'MaxTime': -1, 'CountStartTime': 300})
             goto Event3
         }
-    } else {
-        goto Event3
-    }
+    } else
+    goto Event3
 }

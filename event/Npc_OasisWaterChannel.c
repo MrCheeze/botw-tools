@@ -65,24 +65,11 @@ void Gerudo_Ch_Poison_Finish_Talk() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event13:
+      case [0, 1]:
         Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk19', 'ASName': ''})
-      case 1:
-        goto Event13
-      case 2:
-        Event14:
+      case [2, 3, 4]:
         Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk20', 'ASName': ''})
-      case 3:
-        goto Event14
-      case 4:
-        goto Event14
-      case 5:
-        Event15:
+      case [5, 6, 7]:
         Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk21', 'ASName': ''})
-      case 6:
-        goto Event15
-      case 7:
-        goto Event15
     }
 }

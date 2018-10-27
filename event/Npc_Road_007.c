@@ -16,34 +16,17 @@ void Near() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event13:
+          case [0, 1]:
             Npc_Road_007.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:Near00'})
-          case 1:
-            goto Event13
-          case 2:
-            Event14:
+          case [2, 3]:
             Npc_Road_007.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:Near01'})
-          case 3:
-            goto Event14
-          case 4:
-            Event15:
+          case [4, 5]:
             Npc_Road_007.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:Near02'})
-          case 5:
-            goto Event15
-          case 6:
-            Event16:
+          case [6, 7]:
             Npc_Road_007.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:Near03'})
-          case 7:
-            goto Event16
         }
-      case 1:
-        Event12:
+      case [1, 2, 3]:
         Npc_Road_007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Road_007:Near04', 'DispFrame': 90, 'IsChecked': False})
-      case 2:
-        goto Event12
-      case 3:
-        goto Event12
     }
 }
 
@@ -69,44 +52,18 @@ void RetMSG_Orud_00() {
     call Rest2()
 
     switch Npc_Road_007.CheckActorAction13() {
-      case 0:
-        Event93:
+      case [0, 1]:
         if Npc_Road_007.IsOnInstEventFlag() {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:RetMSG_Orud_00_1'})
         } else {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:RetMSG_Orud_00'})
         }
-      case 1:
-        goto Event93
-      case 2:
-        Event98:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_007.IsOnInstEventFlag() {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:RetMSG_Orud_01_1'})
         } else {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:RetMSG_Orud_01'})
         }
-      case 3:
-        goto Event98
-      case 4:
-        goto Event98
-      case 5:
-        goto Event98
-      case 6:
-        goto Event98
-      case 7:
-        goto Event98
-      case 8:
-        goto Event98
-      case 9:
-        goto Event98
-      case 10:
-        goto Event98
-      case 11:
-        goto Event98
-      case 12:
-        goto Event98
-      case 13:
-        goto Event98
     }
 }
 
@@ -139,44 +96,18 @@ void MSG_Orud_03() {
     call Rest2()
 
     switch Npc_Road_007.CheckActorAction13() {
-      case 0:
-        Event88:
+      case [0, 1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_007.IsOnInstEventFlag() {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:MSG_Orud_03_1'})
         } else {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:MSG_Orud_03'})
         }
-      case 1:
-        goto Event88
-      case 2:
-        Event84:
+      case [2, 3]:
         if Npc_Road_007.IsOnInstEventFlag() {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:MSG_Orud_04_1'})
         } else {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:MSG_Orud_04'})
         }
-      case 3:
-        goto Event84
-      case 4:
-        goto Event88
-      case 5:
-        goto Event88
-      case 6:
-        goto Event88
-      case 7:
-        goto Event88
-      case 8:
-        goto Event88
-      case 9:
-        goto Event88
-      case 10:
-        goto Event88
-      case 11:
-        goto Event88
-      case 12:
-        goto Event88
-      case 13:
-        goto Event88
     }
 }
 
@@ -224,14 +155,13 @@ void Rest() {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:Rest_01'})
             goto Event59
         }
+    } else
+    if Npc_Road_007.IsOnInstEventFlag() {
+        Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_1'})
+        goto Event59
     } else {
-        if Npc_Road_007.IsOnInstEventFlag() {
-            Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_1'})
-            goto Event59
-        } else {
-            Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
-            goto Event59
-        }
+        Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
+        goto Event59
     }
 }
 

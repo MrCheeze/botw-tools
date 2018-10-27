@@ -23,8 +23,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_TabantaHatago003.CheckActorAction13() {
-      case 0:
-        Event46:
+      case [0, 10]:
         Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0100'})
         Npc_TabantaHatago003.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
       case 1:
@@ -32,87 +31,76 @@ void Talk() {
           case 0:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_TabantaHatago003_Talk'}) {
                 Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0054'})
-            } else {
-                if Npc_TabantaHatago003.IsOnInstEventFlag() {
-                    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
-                        Event6:
-                        Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0001'})
-                        if !EventSystemActor.GeneralChoice2() {
-                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
-                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0050'})
-                                Event28:
-                                if !EventSystemActor.GeneralChoice2() {
-                                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                                    GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkWeaponShowSword', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                                    Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0052'})
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_TabantaHatago003_Talk', 'IsWaitFinish': True})
-                                } else {
-                                    Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0053'})
-                                }
+            } else
+            if Npc_TabantaHatago003.IsOnInstEventFlag() {
+                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
+                    Event6:
+                    Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0001'})
+                    if !EventSystemActor.GeneralChoice2() {
+                        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
+                            Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0050'})
+                            Event28:
+                            if !EventSystemActor.GeneralChoice2() {
+                                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkWeaponShowSword', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0052'})
+                                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_TabantaHatago003_Talk', 'IsWaitFinish': True})
                             } else {
-                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0002'})
+                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0053'})
                             }
                         } else {
-                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
-                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0051'})
-                                goto Event28
-                            } else {
-                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0003'})
-                            }
+                            Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0002'})
                         }
+                    } else
+                    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
+                        Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0051'})
+                        goto Event28
                     } else {
-                        Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0004', 'ASName': ''})
+                        Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0003'})
                     }
                 } else {
-                    goto Event6
+                    Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0004', 'ASName': ''})
                 }
+            } else {
+                goto Event6
             }
-          case 1:
-            Event43:
+          case [1, 2, 3]:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_TabantaHatago003_Talk'}) {
                 Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0054', 'ASName': 'Act_StandReclineWait'})
-            } else {
-                if Npc_TabantaHatago003.IsOnInstEventFlag() {
-                    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
-                        Event13:
-                        Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0001', 'ASName': 'Act_StandReclineWait'})
-                        if !EventSystemActor.GeneralChoice2() {
-                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
-                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0050', 'ASName': 'Act_StandReclineWait'})
-                                Event39:
-                                if !EventSystemActor.GeneralChoice2() {
-                                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                                    GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkWeaponShowSword', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                                    Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0052', 'ASName': 'Act_StandReclineWait'})
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_TabantaHatago003_Talk', 'IsWaitFinish': True})
-                                } else {
-                                    Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0053', 'ASName': 'Act_StandReclineWait'})
-                                }
+            } else
+            if Npc_TabantaHatago003.IsOnInstEventFlag() {
+                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
+                    Event13:
+                    Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0001', 'ASName': 'Act_StandReclineWait'})
+                    if !EventSystemActor.GeneralChoice2() {
+                        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
+                            Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0050', 'ASName': 'Act_StandReclineWait'})
+                            Event39:
+                            if !EventSystemActor.GeneralChoice2() {
+                                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkWeaponShowSword', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0052', 'ASName': 'Act_StandReclineWait'})
+                                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_TabantaHatago003_Talk', 'IsWaitFinish': True})
                             } else {
-                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0002', 'ASName': 'Act_StandReclineWait'})
+                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0053', 'ASName': 'Act_StandReclineWait'})
                             }
                         } else {
-                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
-                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0051', 'ASName': 'Act_StandReclineWait'})
-                                goto Event39
-                            } else {
-                                Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0003', 'ASName': 'Act_StandReclineWait'})
-                            }
+                            Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0002', 'ASName': 'Act_StandReclineWait'})
                         }
+                    } else
+                    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
+                        Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0051', 'ASName': 'Act_StandReclineWait'})
+                        goto Event39
                     } else {
-                        Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0004', 'ASName': 'Act_StandReclineWait'})
+                        Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0003', 'ASName': 'Act_StandReclineWait'})
                     }
                 } else {
-                    goto Event13
+                    Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_0004', 'ASName': 'Act_StandReclineWait'})
                 }
+            } else {
+                goto Event13
             }
-          case 2:
-            goto Event43
-          case 3:
-            goto Event43
         }
-      case 10:
-        goto Event46
       case 11:
         Npc_TabantaHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:talk_1000'})
         Npc_TabantaHatago003.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
@@ -121,14 +109,8 @@ void Talk() {
 
 void Near() {
     if !Npc_TabantaHatago003.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
-        switch EventSystemActor.CheckWeather() {
-          case 1:
-            Event20:
+        if EventSystemActor.CheckWeather() in [1, 2, 3] {
             Npc_TabantaHatago003.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:near_0001', 'DispFrame': 90, 'IsChecked': False})
-          case 2:
-            goto Event20
-          case 3:
-            goto Event20
         }
     }
 }

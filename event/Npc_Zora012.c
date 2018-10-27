@@ -118,33 +118,18 @@ void AnteHello() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Zora012.CheckActorAction13() {
-      case 0:
-        Event31:
+      case [0, 12]:
         if Npc_Zora012.IsOnInstEventFlag() {
             Event32:
             Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk03', 'IsCloseMessageDialog': False})
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event28:
-                Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk00', 'IsCloseMessageDialog': False})
-              case 1:
-                goto Event28
-              case 2:
-                Event29:
-                Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk01', 'IsCloseMessageDialog': False})
-              case 3:
-                goto Event29
-              case 4:
-                goto Event29
-              case 5:
-                goto Event29
-              case 6:
-                Event30:
-                Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk02', 'IsCloseMessageDialog': False})
-              case 7:
-                goto Event30
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk00', 'IsCloseMessageDialog': False})
+          case [2, 3, 4, 5]:
+            Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk01', 'IsCloseMessageDialog': False})
+          case [6, 7]:
+            Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk02', 'IsCloseMessageDialog': False})
         }
       case 1:
         EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Zora012_Mom', 'IsWaitFinish': True})
@@ -165,8 +150,6 @@ void AnteHello() {
       case 11:
         Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk04', 'IsCloseMessageDialog': False})
         EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-      case 12:
-        goto Event31
     }
 }
 
@@ -175,40 +158,19 @@ void AnteHello2() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Zora012.CheckActorAction13() {
-      case 0:
-        Event101:
+      case [0, 1, 8, 9, 12]:
         if Npc_Zora012.IsOnInstEventFlag() {
             Event102:
             Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk03', 'IsCloseMessageDialog': False})
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event98:
-                Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk00', 'IsCloseMessageDialog': False})
-              case 1:
-                goto Event98
-              case 2:
-                Event99:
-                Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk01', 'IsCloseMessageDialog': False})
-              case 3:
-                goto Event99
-              case 4:
-                goto Event99
-              case 5:
-                goto Event99
-              case 6:
-                Event100:
-                Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk02', 'IsCloseMessageDialog': False})
-              case 7:
-                goto Event100
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk00', 'IsCloseMessageDialog': False})
+          case [2, 3, 4, 5]:
+            Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk01', 'IsCloseMessageDialog': False})
+          case [6, 7]:
+            Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk02', 'IsCloseMessageDialog': False})
         }
-      case 1:
-        goto Event101
-      case 8:
-        goto Event101
-      case 9:
-        goto Event101
       case 10:
         if Npc_Zora012.IsOnInstEventFlag() {
             goto Event102
@@ -218,8 +180,6 @@ void AnteHello2() {
       case 11:
         Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk04', 'IsCloseMessageDialog': False})
         EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-      case 12:
-        goto Event101
     }
 }
 

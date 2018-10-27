@@ -17,8 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event14:
+      case [0, 1]:
         if Npc_oasis019.IsOnInstEventFlag() {
             Npc_oasis019.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis019:Npc_oasis019_010'})
             Event10:
@@ -27,10 +26,7 @@ void Talk() {
             Npc_oasis019.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis019:Npc_oasis019_008'})
             goto Event10
         }
-      case 1:
-        goto Event14
-      case 2:
-        Event13:
+      case [2, 3, 4]:
         if Npc_oasis019.IsOnInstEventFlag() {
             Npc_oasis019.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis019:Npc_oasis019_010'})
             Event0:
@@ -39,12 +35,7 @@ void Talk() {
             Npc_oasis019.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis019:Npc_oasis019_007'})
             goto Event0
         }
-      case 3:
-        goto Event13
-      case 4:
-        goto Event13
-      case 5:
-        Event12:
+      case [5, 6, 7]:
         if Npc_oasis019.IsOnInstEventFlag() {
             Npc_oasis019.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis019:Npc_oasis019_010'})
             Event11:
@@ -53,10 +44,6 @@ void Talk() {
             Npc_oasis019.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis019:Npc_oasis019_009'})
             goto Event11
         }
-      case 6:
-        goto Event12
-      case 7:
-        goto Event12
     }
 }
 

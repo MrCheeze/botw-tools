@@ -70,12 +70,11 @@ void PlayerWait() {
     GameROMPlayer.Demo_DisableUnequipInEvent({'IsWaitFinish': False})
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'ASName': 'DemoWaitAttention', 'NoErrorCheck': False, 'ClothWarpMode': -2})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        GameROMPlayer.Demo_Join({'IsWaitFinish': False})
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            GameROMPlayer.Demo_Join({'IsWaitFinish': False})
-        } else {
-            GameROMPlayer.Demo_StopInAir({'IsWaitFinish': False, 'NoFixed': False})
-        }
+        GameROMPlayer.Demo_StopInAir({'IsWaitFinish': False, 'NoFixed': False})
     }
 }
 
@@ -105,49 +104,34 @@ void Escape() {
     call PlayerWait()
 
     if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWind'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
-            Event59:
+        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) in [1, 0] {
 
             call RemainsResetFlag()
 
             EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EvflName': '', 'EntryPointName': '', 'WarpDestMapName': 'MainField/B-3', 'WarpDestPosName': 'Clear_RemainsWind'})
-        } else {
-            goto Event59
         }
-    } else {
-        if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWater'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_Finish'}) {
-                Event68:
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWater'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_Finish'}) in [1, 0] {
 
-                call RemainsResetFlag()
+            call RemainsResetFlag()
 
-                EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EvflName': '', 'EntryPointName': '', 'WarpDestPosName': 'Clear_RemainsWater', 'WarpDestMapName': 'MainField/H-5'})
-            } else {
-                goto Event68
-            }
-        } else {
-            if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsFire'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) {
-                    Event71:
-
-                    call RemainsResetFlag()
-
-                    EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EvflName': '', 'EntryPointName': '', 'WarpDestPosName': 'Clear_RemainsFire', 'WarpDestMapName': 'MainField/H-2'})
-                } else {
-                    goto Event71
-                }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
-                    Event74:
-
-                    call RemainsResetFlag()
-
-                    EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EvflName': '', 'EntryPointName': '', 'WarpDestPosName': 'Clear_RemainsElectric', 'WarpDestMapName': 'MainField/C-7'})
-                } else {
-                    goto Event74
-                }
-            }
+            EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EvflName': '', 'EntryPointName': '', 'WarpDestPosName': 'Clear_RemainsWater', 'WarpDestMapName': 'MainField/H-5'})
         }
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsFire'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) in [1, 0] {
+
+            call RemainsResetFlag()
+
+            EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EvflName': '', 'EntryPointName': '', 'WarpDestPosName': 'Clear_RemainsFire', 'WarpDestMapName': 'MainField/H-2'})
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) in [1, 0] {
+
+        call RemainsResetFlag()
+
+        EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EvflName': '', 'EntryPointName': '', 'WarpDestPosName': 'Clear_RemainsElectric', 'WarpDestMapName': 'MainField/C-7'})
     }
 }
 
@@ -234,22 +218,21 @@ void RemainsSetFlag_Wind() {
         EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_06'})
         Event93:
         GameROMPlayer.Demo_UpdateEquip({'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurseR_Wind_Challenge', 'Value': 6, 'Operator': 'LessThanOrEqualTo'}) {
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_B'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_O'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_06'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
+        goto Event93
     } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurseR_Wind_Challenge', 'Value': 6, 'Operator': 'LessThanOrEqualTo'}) {
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_B'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_O'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_06'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
-            goto Event93
-        } else {
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_B'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_O'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_06'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
-            EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'PorchItemName01': 'Animal_Insect_B', 'SetNum': 1, 'PorchItemName02': 'Item_Enemy_14', 'PorchItemName04': 'Item_PlantGet_Q', 'PorchItemName03': 'Item_Mushroom_O', 'PorchItemName05': ''})
-            EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'PorchItemName01': 'Animal_Insect_B', 'SetNum': 1, 'PorchItemName02': 'Item_Enemy_14', 'PorchItemName04': 'Item_PlantGet_Q', 'PorchItemName03': 'Item_Mushroom_O', 'PorchItemName05': ''})
-            goto Event93
-        }
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_B'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_O'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_06'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
+        EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'PorchItemName01': 'Animal_Insect_B', 'SetNum': 1, 'PorchItemName02': 'Item_Enemy_14', 'PorchItemName04': 'Item_PlantGet_Q', 'PorchItemName03': 'Item_Mushroom_O', 'PorchItemName05': ''})
+        EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'PorchItemName01': 'Animal_Insect_B', 'SetNum': 1, 'PorchItemName02': 'Item_Enemy_14', 'PorchItemName04': 'Item_PlantGet_Q', 'PorchItemName03': 'Item_Mushroom_O', 'PorchItemName05': ''})
+        goto Event93
     }
 }
 
@@ -273,22 +256,21 @@ void RemainsSetFlag_Water() {
         EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_E'})
         EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_E'})
         goto Event93
+    } else
+    if EventSystemActor.CheckGameDataInt({'Value': 6, 'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'CurseR_Water_Challenge'}) {
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_FishGet_A'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_E'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_E'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
+        goto Event93
     } else {
-        if EventSystemActor.CheckGameDataInt({'Value': 6, 'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'CurseR_Water_Challenge'}) {
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_FishGet_A'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_E'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_E'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
-            goto Event93
-        } else {
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_FishGet_A'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_E'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_E'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
-            EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'SetNum': 1, 'PorchItemName02': 'Item_Material_07', 'PorchItemName03': 'Item_Material_05', 'PorchItemName04': 'Item_Material_06', 'PorchItemName01': 'Item_FishGet_K', 'PorchItemName05': ''})
-            EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'PorchItemName01': 'Animal_Insect_S', 'PorchItemName02': 'Item_Enemy_00', 'PorchItemName05': '', 'SetNum': 1, 'PorchItemName03': 'Animal_Insect_A', 'PorchItemName04': 'Item_Enemy_01'})
-            goto Event93
-        }
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_FishGet_A'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_E'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_E'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
+        EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'SetNum': 1, 'PorchItemName02': 'Item_Material_07', 'PorchItemName03': 'Item_Material_05', 'PorchItemName04': 'Item_Material_06', 'PorchItemName01': 'Item_FishGet_K', 'PorchItemName05': ''})
+        EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'PorchItemName01': 'Animal_Insect_S', 'PorchItemName02': 'Item_Enemy_00', 'PorchItemName05': '', 'SetNum': 1, 'PorchItemName03': 'Animal_Insect_A', 'PorchItemName04': 'Item_Enemy_01'})
+        goto Event93
     }
 }
 
@@ -311,22 +293,21 @@ void RemainsSetFlag_Fire() {
         EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_38'})
         EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_03'})
         goto Event93
+    } else
+    if EventSystemActor.CheckGameDataInt({'Value': 6, 'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'CurseR_Fire_Challenge'}) {
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_01'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_38'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_03'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
+        goto Event93
     } else {
-        if EventSystemActor.CheckGameDataInt({'Value': 6, 'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'CurseR_Fire_Challenge'}) {
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_01'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_38'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_03'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
-            goto Event93
-        } else {
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_01'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_38'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_03'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
-            EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'SetNum': 1, 'PorchItemName01': 'Item_Meat_01', 'PorchItemName02': 'Item_Material_07', 'PorchItemName03': 'Item_Material_05', 'PorchItemName04': 'Item_Material_06', 'PorchItemName05': 'Item_PlantGet_B'})
-            EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'SetNum': 1, 'PorchItemName01': 'Animal_Insect_P', 'PorchItemName02': 'Item_Enemy_08', 'PorchItemName03': 'Item_Mushroom_M', 'PorchItemName04': 'Item_PlantGet_H', 'PorchItemName05': 'Item_FishGet_G'})
-            goto Event93
-        }
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_01'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_38'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Roast_03'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
+        EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'SetNum': 1, 'PorchItemName01': 'Item_Meat_01', 'PorchItemName02': 'Item_Material_07', 'PorchItemName03': 'Item_Material_05', 'PorchItemName04': 'Item_Material_06', 'PorchItemName05': 'Item_PlantGet_B'})
+        EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'SetNum': 1, 'PorchItemName01': 'Animal_Insect_P', 'PorchItemName02': 'Item_Enemy_08', 'PorchItemName03': 'Item_Mushroom_M', 'PorchItemName04': 'Item_PlantGet_H', 'PorchItemName05': 'Item_FishGet_G'})
+        goto Event93
     }
 }
 
@@ -350,22 +331,21 @@ void RemainsSetFlag_Electric() {
         EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_H'})
         EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_01'})
         goto Event93
+    } else
+    if EventSystemActor.CheckGameDataInt({'Value': 6, 'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'CurseR_Electric_Challenge'}) {
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_C'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_H'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_01'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
+        goto Event93
     } else {
-        if EventSystemActor.CheckGameDataInt({'Value': 6, 'Operator': 'LessThanOrEqualTo', 'GameDataIntName': 'CurseR_Electric_Challenge'}) {
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_C'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_H'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_01'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
-            goto Event93
-        } else {
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_C'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_H'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_01'})
-            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
-            EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'SetNum': 1, 'PorchItemName01': 'Item_Meat_01', 'PorchItemName02': 'Item_Material_07', 'PorchItemName03': 'Item_Material_05', 'PorchItemName04': 'Item_Material_06', 'PorchItemName05': 'Item_PlantGet_B'})
-            EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'PorchItemName01': 'Animal_Insect_I', 'PorchItemName02': 'Item_Enemy_03', 'PorchItemName04': '', 'PorchItemName05': '', 'SetNum': 1, 'PorchItemName03': 'Animal_Insect_R'})
-            goto Event93
-        }
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Fruit_C'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Mushroom_H'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Item_Meat_01'})
+        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': 1, 'PorchItemName': 'Animal_Insect_F'})
+        EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'SetNum': 1, 'PorchItemName01': 'Item_Meat_01', 'PorchItemName02': 'Item_Material_07', 'PorchItemName03': 'Item_Material_05', 'PorchItemName04': 'Item_Material_06', 'PorchItemName05': 'Item_PlantGet_B'})
+        EventSystemActor.Demo_SetCookItem({'IsWaitFinish': True, 'PorchItemName01': 'Animal_Insect_I', 'PorchItemName02': 'Item_Enemy_03', 'PorchItemName04': '', 'PorchItemName05': '', 'SetNum': 1, 'PorchItemName03': 'Animal_Insect_R'})
+        goto Event93
     }
 }
 

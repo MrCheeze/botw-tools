@@ -34,8 +34,7 @@ void Talk() {
         switch Npc_OasisStudent_C.CheckActorAction13() {
           case 0:
             Npc_OasisStudent_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_C:talk03'})
-          case 1:
-            Event1:
+          case [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
             Npc_OasisStudent_C.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_OasisStudent_C:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_OasisStudent_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_C:talk04'})
@@ -52,26 +51,6 @@ void Talk() {
             } else {
                 Npc_OasisStudent_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_C:talk07', 'ASName': ''})
             }
-          case 4:
-            goto Event1
-          case 5:
-            goto Event1
-          case 6:
-            goto Event1
-          case 7:
-            goto Event1
-          case 8:
-            goto Event1
-          case 9:
-            goto Event1
-          case 10:
-            goto Event1
-          case 11:
-            goto Event1
-          case 12:
-            goto Event1
-          case 13:
-            goto Event1
         }
     } else {
 
@@ -87,25 +66,12 @@ void NearActorsTalk() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event18:
+      case [0, 1]:
         Npc_OasisStudent_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_C:talk08'})
-      case 1:
-        goto Event18
-      case 2:
-        Event19:
+      case [2, 3, 4]:
         Npc_OasisStudent_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_C:talk09'})
-      case 3:
-        goto Event19
-      case 4:
-        goto Event19
-      case 5:
-        Event20:
+      case [5, 6, 7]:
         Npc_OasisStudent_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_C:talk10'})
-      case 6:
-        goto Event20
-      case 7:
-        goto Event20
     }
 }
 

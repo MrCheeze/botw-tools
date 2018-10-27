@@ -27,31 +27,30 @@ void Ready_Npc_NorthHatelHatago001_Talk() {
             Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_11', 'ASName': 'Wait'})
             EventSystemActor.Demo_AdvanceQuest({'QuestName': 'isso_treasure_mini', 'IsWaitFinish': True, 'StepName': 'Step2', 'ForceRunTelop': False})
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'isso_treasure_mini_FirstTalk'}) {
+
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+
+        Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_28', 'ASName': ''})
+        Event14:
+        Npc_NorthHatelHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_01', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+        Npc_NorthHatelHatago001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 1, 'ActorName': 'TBox_Field_Iron', 'UniqueName': 'isso_treasure', 'FaceId': 2, 'IsValid': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsConfront': True})
+        Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_11', 'ASName': 'Wait'})
+        EventSystemActor.Demo_FlagON({'FlagName': 'isso_treasure_mini_Activated', 'IsWaitFinish': True})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'isso_treasure_mini_FirstTalk'}) {
 
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+        call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
 
-            Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_28', 'ASName': ''})
-            Event14:
-            Npc_NorthHatelHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_01', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-            Npc_NorthHatelHatago001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 1, 'ActorName': 'TBox_Field_Iron', 'UniqueName': 'isso_treasure', 'FaceId': 2, 'IsValid': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsConfront': True})
-            Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_11', 'ASName': 'Wait'})
-            EventSystemActor.Demo_FlagON({'FlagName': 'isso_treasure_mini_Activated', 'IsWaitFinish': True})
+        Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_10', 'IsCloseMessageDialog': True, 'ASName': 'Act_TreasureHunter'})
+        Npc_NorthHatelHatago001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'IsConfront': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'FaceId': 2})
+        Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_20', 'ASName': 'Wait'})
+        Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_00'})
+        if !EventSystemActor.GeneralChoice2() {
+            goto Event14
         } else {
-
-            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
-
-            Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_10', 'IsCloseMessageDialog': True, 'ASName': 'Act_TreasureHunter'})
-            Npc_NorthHatelHatago001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'IsConfront': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'FaceId': 2})
-            Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_20', 'ASName': 'Wait'})
-            Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_00'})
-            if !EventSystemActor.GeneralChoice2() {
-                goto Event14
-            } else {
-                Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_27'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'isso_treasure_mini_FirstTalk', 'IsWaitFinish': True})
-            }
+            Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_27'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'isso_treasure_mini_FirstTalk', 'IsWaitFinish': True})
         }
     }
 }
@@ -60,12 +59,11 @@ void Ready_Npc_NorthHatelHatago001_Near() {
     if EventSystemActor.CheckFlag({'FlagName': 'isso_treasure_mini_boxout'}) {
         Event273:
         Npc_NorthHatelHatago001.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': True, 'DispFrame': 300, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_18'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'isso_treasure_mini_open'}) {
+        goto Event273
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'isso_treasure_mini_open'}) {
-            goto Event273
-        } else {
-            Npc_NorthHatelHatago001.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': True, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_26', 'DispFrame': 300})
-        }
+        Npc_NorthHatelHatago001.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': True, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_26', 'DispFrame': 300})
     }
 }
 
@@ -99,16 +97,15 @@ void isso_treasure() {
                 EventSystemActor.Demo_AdvanceQuest({'QuestName': 'isso_treasure_mini', 'ForceRunTelop': True, 'StepName': 'Finish', 'IsWaitFinish': True})
                 goto Event252
             }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'isso_treasure_mini_Activated'}) {
-                Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_23'})
-                if !EventSystemActor.CheckFlag({'FlagName': 'isso_treasure_mini_Step1'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'isso_treasure_mini_Step1'})
-                }
-            } else {
-                Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_30'})
-                EventSystemActor.Demo_AdvanceQuest({'QuestName': 'isso_treasure_mini', 'ForceRunTelop': False, 'IsWaitFinish': True, 'StepName': 'Step2'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'isso_treasure_mini_Activated'}) {
+            Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_23'})
+            if !EventSystemActor.CheckFlag({'FlagName': 'isso_treasure_mini_Step1'}) {
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'isso_treasure_mini_Step1'})
             }
+        } else {
+            Npc_NorthHatelHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/isso_treasure_mini:NewText_30'})
+            EventSystemActor.Demo_AdvanceQuest({'QuestName': 'isso_treasure_mini', 'ForceRunTelop': False, 'IsWaitFinish': True, 'StepName': 'Step2'})
         }
     }
 }

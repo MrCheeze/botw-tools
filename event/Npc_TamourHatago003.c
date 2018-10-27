@@ -43,30 +43,22 @@ void Talk() {
                         Npc_TamourHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago003:talk11', 'IsCloseMessageDialog': True})
                         Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
                         switch EventSystemActor.RandomChoice4() {
-                          case 0:
-                            Event34:
+                          case [0, 1]:
                             switch EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 10}) {
-                              case 0:
-                                Event33:
+                              case [0, 1]:
                                 EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 5})
                                 EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
                                 EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
                                 Npc_TamourHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago003:talk12'})
                                 Event31:
                                 Npc_TamourHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago003:talk09'})
-                              case 1:
-                                goto Event33
                               case 2:
                                 Event39:
                                 Npc_TamourHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago003:talk12'})
                                 Npc_TamourHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago003:talk14'})
                                 goto Event31
                             }
-                          case 1:
-                            goto Event34
-                          case 2:
-                            goto Event39
-                          case 3:
+                          case [2, 3]:
                             goto Event39
                         }
                     } else {

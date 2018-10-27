@@ -52,53 +52,49 @@ void Ready_Npc_kokiri012_Talk() {
                             EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': -1})
                             Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk060'})
                             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_RodShiren_Finish'})
+                        } else
+                        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_049'}) {
+                            Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk041', 'IsCloseMessageDialog': True})
+                            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkWeaponShowSword', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                            Npc_kokiri012.Demo_PlayASForDemo({'ASName': 'Surprised', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+                            Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk040', 'IsCloseMessageDialog': False})
+                            goto Event24
                         } else {
-                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_049'}) {
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk041', 'IsCloseMessageDialog': True})
-                                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkWeaponShowSword', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                                Npc_kokiri012.Demo_PlayASForDemo({'ASName': 'Surprised', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk040', 'IsCloseMessageDialog': False})
-                                goto Event24
-                            } else {
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk020', 'IsCloseMessageDialog': True})
-                                goto Event55
-                            }
+                            Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk020', 'IsCloseMessageDialog': True})
+                            goto Event55
                         }
-                    } else {
-                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_061', 'Count': 1}) {
-                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_061'}) {
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk031', 'IsCloseMessageDialog': True})
-                                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkWeaponShowSword', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                                Npc_kokiri012.Demo_PlayASForDemo({'ASName': 'Surprised', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk030', 'IsCloseMessageDialog': False})
-                                Event22:
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk050', 'IsCloseMessageDialog': True})
-                                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
-
-                                goto Event28
-                            } else {
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk020', 'IsCloseMessageDialog': True})
-
-                                call Common.ShowSword({'PorchItemName_Weapon': 'Weapon_Sword_061'})
-
-                                Npc_kokiri012.Demo_PlayASForDemo({'ASName': 'Surprised', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk030', 'IsCloseMessageDialog': False})
-                                goto Event22
-                            }
-                        } else {
-                            if Npc_kokiri012.IsOnInstEventFlag() {
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk010'})
-                            } else {
-                                Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk000'})
-                            }
-                        }
-                    }
-                } else {
+                    } else
                     if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_061', 'Count': 1}) {
-                        goto Event37
+                        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_061'}) {
+                            Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk031', 'IsCloseMessageDialog': True})
+                            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkWeaponShowSword', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                            Npc_kokiri012.Demo_PlayASForDemo({'ASName': 'Surprised', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+                            Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk030', 'IsCloseMessageDialog': False})
+                            Event22:
+                            Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk050', 'IsCloseMessageDialog': True})
+                            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+
+                            goto Event28
+                        } else {
+                            Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk020', 'IsCloseMessageDialog': True})
+
+                            call Common.ShowSword({'PorchItemName_Weapon': 'Weapon_Sword_061'})
+
+                            Npc_kokiri012.Demo_PlayASForDemo({'ASName': 'Surprised', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+                            Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk030', 'IsCloseMessageDialog': False})
+                            goto Event22
+                        }
+                    } else
+                    if Npc_kokiri012.IsOnInstEventFlag() {
+                        Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk010'})
+                    } else {
+                        Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_F_Talk000'})
                     }
+                } else
+                if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_061', 'Count': 1}) {
+                    goto Event37
                 }
             } else {
                 Npc_kokiri012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_R_Talk030'})
@@ -129,11 +125,10 @@ void Finish_Npc_kokiri012_Talk() {
 void Finish_Npc_kokiri012_Near() {
     if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_049', 'Count': 1}) {
         goto Event2
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_061', 'Count': 1}) {
+        goto Event2
     } else {
-        if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Sword_061', 'Count': 1}) {
-            goto Event2
-        } else {
-            Npc_kokiri012.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_R_Near000', 'DispFrame': 90, 'IsChecked': False})
-        }
+        Npc_kokiri012.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/KorokMini_RodShiren:Npc_kokiri012_R_Near000', 'DispFrame': 90, 'IsChecked': False})
     }
 }

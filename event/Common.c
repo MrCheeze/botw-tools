@@ -260,24 +260,22 @@ void Lookpicture_for_Ch_SnowBoots() {
 void AirStartUP_Player() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        GameROMPlayer.Demo_Join({'IsWaitFinish': True})
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            GameROMPlayer.Demo_Join({'IsWaitFinish': True})
-        } else {
-            GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        }
+        GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
     }
 }
 
 void AirStartUP_Player2() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        GameROMPlayer.Demo_Join({'IsWaitFinish': True})
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            GameROMPlayer.Demo_Join({'IsWaitFinish': True})
-        } else {
-            GameROMPlayer.Demo_PlayerAirWait({'IsWaitFinish': True})
-        }
+        GameROMPlayer.Demo_PlayerAirWait({'IsWaitFinish': True})
     }
 }
 
@@ -285,11 +283,10 @@ void AirStartUP_Player_NoDrop() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_DisableUnliftInEvent({'IsWaitFinish': True})
         GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        GameROMPlayer.Demo_Join({'IsWaitFinish': True})
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            GameROMPlayer.Demo_Join({'IsWaitFinish': True})
-        } else {
-            GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        }
+        GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
     }
 }

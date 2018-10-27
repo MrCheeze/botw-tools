@@ -127,20 +127,17 @@ void PlayerCheck() {
 
         call Common.AirStartUP_Player()
 
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        goto Event103
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
+        goto Event103
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
+        GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'ASName': 'LookAround', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            goto Event103
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
-                goto Event103
-            } else {
-                if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
-                    GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'ASName': 'LookAround', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-                } else {
-                    goto Event103
-                }
-            }
-        }
+        goto Event103
     }
 }

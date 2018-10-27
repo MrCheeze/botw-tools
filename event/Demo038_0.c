@@ -88,19 +88,16 @@ void ForestFogSafe() {
             EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
             SceneSoundCtrlTag.Demo_CustomDuckingStop({'IsWaitFinish': True})
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        goto Event46
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
+        goto Event46
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
+        goto Event49
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            goto Event46
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
-                goto Event46
-            } else {
-                if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-                    goto Event49
-                } else {
-                    goto Event46
-                }
-            }
-        }
+        goto Event46
     }
 }

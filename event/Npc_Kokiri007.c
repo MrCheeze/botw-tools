@@ -24,12 +24,11 @@ void Talk() {
                 } else {
                     Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri007:Npc_Kokiri007_Before_Talk000'})
                 }
+            } else
+            if Npc_Kokiri007.IsOnInstEventFlag() {
+                Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri007:Npc_Kokiri007_Before_Talk003'})
             } else {
-                if Npc_Kokiri007.IsOnInstEventFlag() {
-                    Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri007:Npc_Kokiri007_Before_Talk003'})
-                } else {
-                    Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri007:Npc_Kokiri007_Before_Talk001'})
-                }
+                Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri007:Npc_Kokiri007_Before_Talk001'})
             }
         } else {
             Event19:
@@ -55,13 +54,12 @@ void Near() {
     if EventSystemActor.CheckFlag({'FlagName': 'KorokMini_UMAShiren_Activated'}) {
         Event8:
         Npc_Kokiri007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Near000', 'DispFrame': 300, 'IsChecked': True})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo104_0'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_Camera'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Activated'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Ready'})
-                    goto Event8
-                }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo104_0'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_Camera'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Activated'}) {
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Ready'})
+                goto Event8
             }
         }
     }

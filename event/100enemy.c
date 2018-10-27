@@ -45,12 +45,11 @@ void Start() {
         Event286:
         if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 2}) {
             EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'WarpDestMapName': 'AocField/B-2', 'WarpDestPosName': 'Night_1', 'EvflName': 'Demo202_3', 'EntryPointName': 'Demo202_3'})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
+            EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'WarpDestMapName': 'AocField/A-1', 'WarpDestPosName': 'Air_2', 'EvflName': 'Demo202_2', 'EntryPointName': 'Demo202_2'})
         } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-                EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'WarpDestMapName': 'AocField/A-1', 'WarpDestPosName': 'Air_2', 'EvflName': 'Demo202_2', 'EntryPointName': 'Demo202_2'})
-            } else {
-                EventSystemActor.Demo_ChangeScene({'WarpDestPosName': 'Entrance_1', 'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'EvflName': 'Demo202_1', 'EntryPointName': 'Demo202_1', 'WarpDestMapName': 'AocField/A-1'})
-            }
+            EventSystemActor.Demo_ChangeScene({'WarpDestPosName': 'Entrance_1', 'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'EvflName': 'Demo202_1', 'EntryPointName': 'Demo202_1', 'WarpDestMapName': 'AocField/A-1'})
         }
     } else {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Battle', 'QuestName': '100enemy'})
@@ -96,37 +95,34 @@ void RetireBattle() {
         EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': 'MiniGame100enemy', 'StepName': 'Ready'})
         Event189:
         EventSystemActor.Demo_ChangeScene({'WarpDestMapName': 'MainField/F-2', 'WarpDestPosName': 'MasterSword', 'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'EvflName': 'Demo205_1', 'EntryPointName': 'Demo205_1'})
-    } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 2}) {
-            Event331:
-            EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'StepName': 'Active3'})
-            goto Event189
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 2}) {
+        Event331:
+        EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'StepName': 'Active3'})
+        goto Event189
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_SwordPower_StartTmp', 'Operator': 'GreaterThan', 'Value': 10}) {
+            goto Event331
         } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_SwordPower_StartTmp', 'Operator': 'GreaterThan', 'Value': 10}) {
-                    goto Event331
-                } else {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': '100enemy_Clear_Middle'})
-                    EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'MasterSword_Add_Power', 'IsWaitFinish': True, 'Value': 20})
-                    EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'StepName': 'Active2'})
-                    goto Event189
-                }
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_SwordPower_StartTmp', 'Operator': 'GreaterThan', 'Value': 0}) {
-                    if EventSystemActor.CheckFlag({'FlagName': '100enemy_Clear_Middle'}) {
-                        goto Event331
-                    } else {
-                        EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'StepName': 'Active2'})
-                        goto Event189
-                    }
-                } else {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': '100enemy_Clear_Junior'})
-                    EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'MasterSword_Add_Power', 'IsWaitFinish': True, 'Value': 10})
-                    EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'StepName': 'Active', 'QuestName': '100enemy'})
-                    goto Event189
-                }
-            }
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': '100enemy_Clear_Middle'})
+            EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'MasterSword_Add_Power', 'IsWaitFinish': True, 'Value': 20})
+            EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'StepName': 'Active2'})
+            goto Event189
         }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_SwordPower_StartTmp', 'Operator': 'GreaterThan', 'Value': 0}) {
+        if EventSystemActor.CheckFlag({'FlagName': '100enemy_Clear_Middle'}) {
+            goto Event331
+        } else {
+            EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'StepName': 'Active2'})
+            goto Event189
+        }
+    } else {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': '100enemy_Clear_Junior'})
+        EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'MasterSword_Add_Power', 'IsWaitFinish': True, 'Value': 10})
+        EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'StepName': 'Active', 'QuestName': '100enemy'})
+        goto Event189
     }
 }
 
@@ -175,14 +171,12 @@ void WarpIn() {
 
         call MiniGame100enemy.Start_MiniGame()
 
-    } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 2}) {
-            EventSystemActor.Demo_FlagON({'FlagName': 'FirstTry_100enemy_Senior', 'IsWaitFinish': True})
-        } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-                EventSystemActor.Demo_FlagON({'FlagName': 'FirstTry_100enemy_Middle', 'IsWaitFinish': True})
-            }
-        }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 2}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'FirstTry_100enemy_Senior', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'FirstTry_100enemy_Middle', 'IsWaitFinish': True})
     }
 }
 
@@ -198,13 +192,9 @@ void ClearJuniorMiddle() {
     if !EventSystemActor.CheckFlag({'FlagName': '100enemy_Finish'}) {
         if EventSystemActor.CheckFlag({'FlagName': '100enemy_Clear_Middle'}) {
             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'ForceRunTelop': False, 'StepName': 'Active3'})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': '100enemy_Clear_Junior'}) {
-                Event314:
-                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'ForceRunTelop': False, 'StepName': 'Active2'})
-            } else {
-                goto Event314
-            }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': '100enemy_Clear_Junior'}) in [1, 0] {
+            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'ForceRunTelop': False, 'StepName': 'Active2'})
         }
     }
 }

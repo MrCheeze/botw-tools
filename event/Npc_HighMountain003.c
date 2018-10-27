@@ -54,60 +54,58 @@ void Talk() {
                 Event59:
                 Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk51'})
             }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'RitoRabitMountain_Finish'}) {
-                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk60', 'ASName': '', 'IsCloseMessageDialog': True})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkingS', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'RitoRabitMountain_Finish'}) {
+            Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk60', 'ASName': '', 'IsCloseMessageDialog': True})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkingS', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+            Npc_HighMountain003.Demo_ChangePosture({'IsWaitFinish': False, 'Posture': 'Stand'})
+            Npc_HighMountain003.Demo_TurnAndLookToObject({'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': True, 'IsConfront': True, 'FaceId': 2, 'IsValid': True})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+            Event85:
+            Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk61', 'ASName': '', 'IsCloseMessageDialog': True})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkingL', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+            Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk62'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RitoRabitMountain_Talk'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'RitoRabitMountain_Activated'}) {
+            Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk58'})
+            if !EventSystemActor.GeneralChoice2() {
+                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
                 Npc_HighMountain003.Demo_ChangePosture({'IsWaitFinish': False, 'Posture': 'Stand'})
-                Npc_HighMountain003.Demo_TurnAndLookToObject({'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': True, 'IsConfront': True, 'FaceId': 2, 'IsValid': True})
+                Npc_HighMountain003.Demo_TurnAndLookToObject({'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': True, 'IsConfront': True, 'IsValid': True, 'FaceId': 2})
                 EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                Event85:
-                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk61', 'ASName': '', 'IsCloseMessageDialog': True})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkingL', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk62'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RitoRabitMountain_Talk'})
+                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk53', 'IsCloseMessageDialog': True})
+
+                call Look()
+
+                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk59', 'IsCloseMessageDialog': True, 'ASName': ''})
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'RitoRabitMountain_Activated'}) {
-                    Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk58'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                        Npc_HighMountain003.Demo_ChangePosture({'IsWaitFinish': False, 'Posture': 'Stand'})
-                        Npc_HighMountain003.Demo_TurnAndLookToObject({'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': True, 'IsConfront': True, 'IsValid': True, 'FaceId': 2})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                        Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk53', 'IsCloseMessageDialog': True})
+                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk59', 'ASName': ''})
+            }
+        } else {
+            Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk50'})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk52', 'IsCloseMessageDialog': True})
+                Npc_HighMountain003.Demo_ChangePosture({'IsWaitFinish': False, 'Posture': 'Stand'})
+                Npc_HighMountain003.Demo_TurnAndLookToObject({'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': True, 'IsConfront': True, 'IsValid': True, 'FaceId': 2})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk53', 'IsCloseMessageDialog': False})
+                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk54', 'IsCloseMessageDialog': False})
+                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk55'})
+                Npc_HighMountain003.Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': False})
 
-                        call Look()
+                call Look()
 
-                        Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk59', 'IsCloseMessageDialog': True, 'ASName': ''})
-                    } else {
-                        Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk59', 'ASName': ''})
-                    }
-                } else {
-                    Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk50'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk52', 'IsCloseMessageDialog': True})
-                        Npc_HighMountain003.Demo_ChangePosture({'IsWaitFinish': False, 'Posture': 'Stand'})
-                        Npc_HighMountain003.Demo_TurnAndLookToObject({'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': True, 'IsConfront': True, 'IsValid': True, 'FaceId': 2})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                        Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk53', 'IsCloseMessageDialog': False})
-                        Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk54', 'IsCloseMessageDialog': False})
-                        Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk55'})
-                        Npc_HighMountain003.Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': False})
-
-                        call Look()
-
-                        Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk57', 'IsCloseMessageDialog': True})
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'RitoRabitMountain_FlyTraining'})
-                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': True, 'StepName': '', 'QuestName': 'RitoRabitMountain'})
-                        if EventSystemActor.CheckFlag({'FlagName': 'Open_Dungeon087'}) {
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
-                            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkingS', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                            goto Event85
-                        }
-                    } else {
-                        goto Event59
-                    }
+                Npc_HighMountain003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain003:talk57', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'RitoRabitMountain_FlyTraining'})
+                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': True, 'StepName': '', 'QuestName': 'RitoRabitMountain'})
+                if EventSystemActor.CheckFlag({'FlagName': 'Open_Dungeon087'}) {
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
+                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkingS', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                    goto Event85
                 }
+            } else {
+                goto Event59
             }
         }
       case 10:

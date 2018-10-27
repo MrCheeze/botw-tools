@@ -67,35 +67,29 @@ void Talk() {
             Npc_Assassin_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_010:Talk02'})
             goto Event5
         }
+    } else
+    if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_Gerudo'}) {
+        Event32:
+        Npc_Assassin_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_010:Talk04'})
+        goto Event41
+    } else
+    if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_GerudoDesert_Entrance'}) {
+        goto Event32
+    } else
+    if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_Oasis'}) {
+        goto Event32
+    } else
+    if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_Assassin'}) {
+        goto Event32
+    } else
+    if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_GerudoHatago'}) {
+        goto Event32
+    } else
+    if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_MapTower04'}) {
+        goto Event32
     } else {
-        if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_Gerudo'}) {
-            Event32:
-            Npc_Assassin_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_010:Talk04'})
-            goto Event41
-        } else {
-            if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_GerudoDesert_Entrance'}) {
-                goto Event32
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_Oasis'}) {
-                    goto Event32
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_Assassin'}) {
-                        goto Event32
-                    } else {
-                        if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_GerudoHatago'}) {
-                            goto Event32
-                        } else {
-                            if EventSystemActor.CheckGameDataInt({'Value': 0, 'Operator': 'GreaterThan', 'GameDataIntName': 'Location_MapTower04'}) {
-                                goto Event32
-                            } else {
-                                Npc_Assassin_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_010:Talk03'})
-                                goto Event41
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        Npc_Assassin_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_010:Talk03'})
+        goto Event41
     }
 }
 

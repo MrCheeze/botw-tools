@@ -40,8 +40,7 @@ void Talk() {
         Npc_OasisSoldier_B.Demo_Join({'IsWaitFinish': True})
         Npc_OasisSoldier_A.Demo_Join({'IsWaitFinish': True})
         goto Event5
-      case 2:
-        Event15:
+      case [2, 3]:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasissoldier_C_first'}) {
             if !EventSystemActor.RandomChoice2() {
                 Npc_OasisSoldier_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_C:talk03'})
@@ -52,8 +51,6 @@ void Talk() {
             Npc_OasisSoldier_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_C:talk06'})
             EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasissoldier_C_first', 'IsWaitFinish': True})
         }
-      case 3:
-        goto Event15
     }
 }
 

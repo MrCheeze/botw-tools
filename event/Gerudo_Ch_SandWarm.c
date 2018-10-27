@@ -48,7 +48,7 @@ void Ready_Npc_oasis028_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_oasis028.CheckActorAction13() {
-      case 0:
+      case [0, 2, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
         Event77:
         if Npc_oasis028.IsOnInstEventFlag() {
             Event53:
@@ -76,31 +76,11 @@ void Ready_Npc_oasis028_Talk() {
         Npc_OasisSoldier_A.Demo_Join({'IsWaitFinish': True})
         Npc_OasisSoldier_B.Demo_Join({'IsWaitFinish': True})
         goto Event77
-      case 2:
-        goto Event77
       case 3:
         Npc_oasis036.Demo_Join({'IsWaitFinish': True})
         goto Event77
-      case 4:
-        goto Event77
-      case 5:
-        goto Event77
-      case 6:
-        goto Event77
-      case 7:
-        goto Event77
-      case 8:
-        goto Event77
-      case 9:
-        goto Event77
-      case 10:
-        goto Event77
       case 11:
         Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_12'})
-      case 12:
-        goto Event77
-      case 13:
-        goto Event77
     }
 }
 
@@ -110,8 +90,7 @@ void Finish_Npc_oasis028_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_oasis028.CheckActorAction13() {
-      case 0:
-        Event9:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
         if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Enemy_25', 'Count': 1}) {
             if Npc_oasis028.IsOnInstEventFlag() {
                 Event8:
@@ -142,85 +121,36 @@ void Finish_Npc_oasis028_Talk() {
 
                 goto Event8
             }
-        } else {
-            if Npc_oasis028.IsOnInstEventFlag() {
-                Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_17'})
-                Event20:
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_06'})
-                } else {
-                    Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_19'})
-                }
+        } else
+        if Npc_oasis028.IsOnInstEventFlag() {
+            Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_17'})
+            Event20:
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_06'})
             } else {
-
-                call hello()
-
-                Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_03'})
-                goto Event20
+                Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_19'})
             }
+        } else {
+
+            call hello()
+
+            Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_03'})
+            goto Event20
         }
-      case 1:
-        goto Event9
-      case 2:
-        goto Event9
-      case 3:
-        goto Event9
-      case 4:
-        goto Event9
-      case 5:
-        goto Event9
-      case 6:
-        goto Event9
-      case 7:
-        goto Event9
-      case 8:
-        goto Event9
-      case 9:
-        goto Event9
-      case 10:
-        goto Event9
       case 11:
         Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_12'})
-      case 12:
-        goto Event9
-      case 13:
-        goto Event9
     }
 }
 
 void Ready_Npc_oasis028_Near() {
     Event40:
     switch Npc_oasis028.CheckActorAction13() {
-      case 0:
-        Event6:
+      case [0, 2, 4, 5, 6, 8, 9, 10, 12, 13]:
         Npc_oasis028.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:near_00', 'IsChecked': True, 'DispFrame': 300})
-      case 1:
-        Event41:
+      case [1, 3, 7]:
         Npc_oasis028.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:near_02', 'DispFrame': 300})
-      case 2:
-        goto Event6
-      case 3:
-        goto Event41
-      case 4:
-        goto Event6
-      case 5:
-        goto Event6
-      case 6:
-        goto Event6
-      case 7:
-        goto Event41
-      case 8:
-        goto Event6
-      case 9:
-        goto Event6
-      case 10:
-        goto Event6
       case 11:
         Npc_oasis028.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:near_00', 'DispFrame': 90, 'IsChecked': False})
-      case 12:
-        goto Event6
-      case 13:
-        goto Event6
     }
 }
 
@@ -236,45 +166,21 @@ void Finish_Npc_oasis028_NearActorsNear() {
 void Finish_Npc_oasis028_Near() {
     Event68:
     switch Npc_oasis028.CheckActorAction13() {
-      case 0:
-        Event66:
+      case [0, 2, 4, 5, 6, 8, 9, 10, 12, 13]:
         if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Enemy_25', 'Count': 1}) {
             Npc_oasis028.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:near_00', 'IsChecked': True, 'DispFrame': 300})
         } else {
             Event64:
             Npc_oasis028.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:near_00', 'DispFrame': 90, 'IsChecked': False})
         }
-      case 1:
-        Event71:
+      case [1, 3, 7]:
         if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Enemy_25', 'Count': 1}) {
             Npc_oasis028.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:near_02', 'DispFrame': 300})
         } else {
             Npc_oasis028.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:near_02', 'DispFrame': 90, 'IsChecked': False})
         }
-      case 2:
-        goto Event66
-      case 3:
-        goto Event71
-      case 4:
-        goto Event66
-      case 5:
-        goto Event66
-      case 6:
-        goto Event66
-      case 7:
-        goto Event71
-      case 8:
-        goto Event66
-      case 9:
-        goto Event66
-      case 10:
-        goto Event66
       case 11:
         goto Event64
-      case 12:
-        goto Event66
-      case 13:
-        goto Event66
     }
 }
 
@@ -293,25 +199,12 @@ void Finish_Npc_oasis028_NearActorsTalk() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event49:
+      case [0, 1]:
         Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_13'})
-      case 1:
-        goto Event49
-      case 2:
-        Event51:
+      case [2, 3, 4]:
         Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_15'})
-      case 3:
-        goto Event51
-      case 4:
-        goto Event51
-      case 5:
-        Event50:
+      case [5, 6, 7]:
         Npc_oasis028.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SandWarm:Talk_14'})
-      case 6:
-        goto Event50
-      case 7:
-        goto Event50
     }
 }
 

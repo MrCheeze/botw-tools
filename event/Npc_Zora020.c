@@ -19,8 +19,7 @@ void Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora020_Talk'}) {
         Event126:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event158:
+          case [0, 1, 2, 3, 4, 5]:
             Npc_Zora020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora020:talk03'})
             Event217:
             EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': True, 'IsGetDemo': False})
@@ -110,22 +109,9 @@ void Talk() {
               case 3:
                 goto Event147
             }
-          case 1:
-            goto Event158
-          case 2:
-            goto Event158
-          case 3:
-            goto Event158
-          case 4:
-            goto Event158
-          case 5:
-            goto Event158
-          case 6:
-            Event128:
+          case [6, 7]:
             Npc_Zora020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora020:talk04'})
             goto Event217
-          case 7:
-            goto Event128
         }
     } else {
         EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora020_Talk', 'IsWaitFinish': True})
@@ -142,19 +128,14 @@ void Water_Relic_RainStop_Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora020_Talk'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora020_RainFirst'}) {
             goto Event126
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora020_RainFirst', 'IsWaitFinish': True})
-                Npc_Zora020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora020:talk06'})
-                goto Event217
-              case 1:
-                goto Event126
-              case 2:
-                goto Event126
-              case 3:
-                goto Event126
-            }
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora020_RainFirst', 'IsWaitFinish': True})
+            Npc_Zora020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora020:talk06'})
+            goto Event217
+          case [1, 2, 3]:
+            goto Event126
         }
     } else {
         EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora020_Talk', 'IsWaitFinish': True})

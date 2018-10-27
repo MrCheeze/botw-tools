@@ -208,17 +208,13 @@ void Demo604_0_C06() {
         Event212:
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
         switch EventSystemActor.CountFlag4({'GameDataFlagNo1': 'Clear_Dungeon122', 'GameDataFlagNo0': 'Clear_Dungeon120', 'GameDataFlagNo2': 'Clear_Dungeon123', 'GameDataFlagNo3': 'Clear_Dungeon135', 'GameDataFlagNo4': ''}) {
-          case 0:
+          case [0, 1, 3, 5]:
             Event0:
             EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
-          case 1:
-            goto Event0
           case 2:
 
             call Kass_CheckDungeon()
 
-            goto Event0
-          case 3:
             goto Event0
           case 4:
             if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroes_Step03'}) {
@@ -231,25 +227,17 @@ void Demo604_0_C06() {
                 EventSystemActor.Demo_SwitchPlayerEquipment({'PorchItemName_Weapon': 'Weapon_Sword_503', 'IsWaitFinish': True, 'UnequipWeapon': False, 'UnequipShield': False, 'UnequipBow': False, 'UnequipArmorHead': False, 'UnequipArmorUpper': False, 'UnequipArmorLower': False, 'PorchItemName_Shield': '', 'PorchItemName_Bow': '', 'PorchItemName_ArmorHead': '', 'PorchItemName_ArmorUpper': '', 'PorchItemName_ArmorLower': '', 'PorchItemName_Arrow': ''})
                 if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon120'}) {
                     EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0'})
-                } else {
-                    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon122'}) {
-                        EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-1'})
-                    } else {
-                        if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon123'}) {
-                            EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-2'})
-                        } else {
-                            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon135'}) {
-                                Event237:
-                                EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-3'})
-                            } else {
-                                goto Event237
-                            }
-                        }
-                    }
+                } else
+                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon122'}) {
+                    EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-1'})
+                } else
+                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon123'}) {
+                    EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-2'})
+                } else
+                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon135'}) in [1, 0] {
+                    EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-3'})
                 }
             }
-          case 5:
-            goto Event0
         }
     } else {
         SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
@@ -286,17 +274,14 @@ void Demo604_0_C01() {
 void Kass_CheckDungeon() {
     if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon120'}) {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Kasshiwa_Appear1'})
-    } else {
-        if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon122'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Kasshiwa_Appear2'})
-        } else {
-            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon123'}) {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Kasshiwa_Appear3'})
-            } else {
-                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon135'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Kasshiwa_Appear4'})
-                }
-            }
-        }
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon122'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Kasshiwa_Appear2'})
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon123'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Kasshiwa_Appear3'})
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon135'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Kasshiwa_Appear4'})
     }
 }

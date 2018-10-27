@@ -121,13 +121,11 @@ void SelectIncreasePorch() {
             Npc_OldKorok[SelectIncreasePorch(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk32', 'IsOverWriteLabelActorName': False})
             EventSystemActor.Demo_DisappearNumKorokNuts({'IsWaitFinish': True})
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Fld_5th'}) {
-            Npc_OldKorok[SelectIncreasePorch(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk83'})
-        } else {
-            goto Event351
-        }
-    }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Fld_5th'}) {
+        Npc_OldKorok[SelectIncreasePorch(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk83'})
+    } else
+    goto Event351
 }
 
 void SubFlowWeapon() {
@@ -633,115 +631,111 @@ void Talk() {
         } else {
             Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk07', 'IsOverWriteLabelActorName': False})
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_GetNuts'}) {
-            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk60'})
-            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk61'})
-            switch EventSystemActor.GeneralChoice4() {
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_GetNuts'}) {
+        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk60'})
+        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk61'})
+        switch EventSystemActor.GeneralChoice4() {
+          case 0:
+            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk62', 'IsCloseMessageDialog': True})
+            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo707_0', 'EntryPointName': 'Demo707_0_Weapon_KoroguWoods', 'EndFade': 0})
+            Npc_OldKorok.Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ClothWarpMode': -2, 'ASName': 'Act_Minister_Samba_Wait', 'MorphingFrame': -1.0})
+            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'MuteOff', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+            Event776:
+            GameRomCamera.Demo_ReturnSavePoint_1({'Count': 30.0, 'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
+            switch EventSystemActor.RandomChoice4() {
               case 0:
-                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk62', 'IsCloseMessageDialog': True})
-                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo707_0', 'EntryPointName': 'Demo707_0_Weapon_KoroguWoods', 'EndFade': 0})
-                Npc_OldKorok.Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ClothWarpMode': -2, 'ASName': 'Act_Minister_Samba_Wait', 'MorphingFrame': -1.0})
-                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'MuteOff', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                Event776:
-                GameRomCamera.Demo_ReturnSavePoint_1({'Count': 30.0, 'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
-                switch EventSystemActor.RandomChoice4() {
-                  case 0:
-                    Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk64'})
-                    Event771:
-                    Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk68'})
-                  case 1:
-                    Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk65'})
-                    goto Event771
-                  case 2:
-                    Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk66'})
-                    goto Event771
-                  case 3:
-                    Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk67'})
-                    goto Event771
-                }
+                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk64'})
+                Event771:
+                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk68'})
               case 1:
-                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk62', 'IsCloseMessageDialog': True})
-                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo707_0', 'EntryPointName': 'Demo707_0_Bow_KoroguWoods', 'EndFade': 0})
-                Npc_OldKorok.Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ClothWarpMode': -2, 'ASName': 'Act_Minister_Samba_Wait', 'MorphingFrame': -1.0})
-                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'MuteOff', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                goto Event776
+                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk65'})
+                goto Event771
               case 2:
-                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk62', 'IsCloseMessageDialog': True})
-                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo707_0', 'EntryPointName': 'Demo707_0_Shield_KoroguWoods', 'EndFade': 0})
-                Npc_OldKorok.Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ClothWarpMode': -2, 'ASName': 'Act_Minister_Samba_Wait', 'MorphingFrame': -1.0})
-                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'MuteOff', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                goto Event776
+                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk66'})
+                goto Event771
               case 3:
-                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk05', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk67'})
+                goto Event771
             }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_Complete'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_First'}) {
-                    Event731:
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_900First'}) {
-                        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk58'})
-                        Event227:
-                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_FullComp'}) {
-                            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk57'})
+          case 1:
+            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk62', 'IsCloseMessageDialog': True})
+            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo707_0', 'EntryPointName': 'Demo707_0_Bow_KoroguWoods', 'EndFade': 0})
+            Npc_OldKorok.Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ClothWarpMode': -2, 'ASName': 'Act_Minister_Samba_Wait', 'MorphingFrame': -1.0})
+            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'MuteOff', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+            goto Event776
+          case 2:
+            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk62', 'IsCloseMessageDialog': True})
+            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo707_0', 'EntryPointName': 'Demo707_0_Shield_KoroguWoods', 'EndFade': 0})
+            Npc_OldKorok.Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': 0, 'ClothWarpMode': -2, 'ASName': 'Act_Minister_Samba_Wait', 'MorphingFrame': -1.0})
+            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'MuteOff', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+            goto Event776
+          case 3:
+            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk05', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_Complete'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_First'}) {
+            Event731:
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_900First'}) {
+                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk58'})
+                Event227:
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_FullComp'}) {
+                    Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk57'})
 
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_ProofKorok'})
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_ProofKorok'})
 
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_OldKorok_GetNuts'})
-                            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk59'})
-                        } else {
-                            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk46'})
-                            if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_KorokNuts', 'Count': 1}) {
-                                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk63'})
-                                Event314:
-                                EventSystemActor.Demo_AppearNumKorokNuts({'IsWaitFinish': True})
-                                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk01', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-
-                                call PouchSelect({'Xman': ActorIdentifier(name="Npc_OldKorok")})
-
-                            }
-                        }
-                    } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OldKorok_900First', 'IsWaitFinish': True})
-                        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk24'})
-                        goto Event227
-                    }
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_OldKorok_GetNuts'})
+                    Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk59'})
                 } else {
-                    Npc_OldKorok.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk90'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OldKorok_First', 'IsWaitFinish': True})
-                    goto Event731
+                    Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk46'})
+                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_KorokNuts', 'Count': 1}) {
+                        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk63'})
+                        Event314:
+                        EventSystemActor.Demo_AppearNumKorokNuts({'IsWaitFinish': True})
+                        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk01', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+
+                        call PouchSelect({'Xman': ActorIdentifier(name="Npc_OldKorok")})
+
+                    }
                 }
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_FullComp'}) {
-                    Npc_OldKorok.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk13', 'IsWaitFinish': True})
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_First'}) {
-                        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk60'})
-                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_KorokNuts', 'Count': 1}) {
-                            goto Event314
-                        } else {
-                            Event499:
-                            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk53', 'IsOverWriteLabelActorName': False})
-                        }
-                    } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OldKorok_First', 'IsWaitFinish': True})
-                        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk00'})
-                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_KorokNuts', 'Count': 1}) {
-                            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk70'})
-                            goto Event314
-                        } else {
-                            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk69'})
-                            goto Event499
-                        }
-                    }
-                }
+                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OldKorok_900First', 'IsWaitFinish': True})
+                Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk24'})
+                goto Event227
             }
+        } else {
+            Npc_OldKorok.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk90'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OldKorok_First', 'IsWaitFinish': True})
+            goto Event731
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_FullComp'}) {
+        Npc_OldKorok.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk13', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_First'}) {
+        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk60'})
+        if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_KorokNuts', 'Count': 1}) {
+            goto Event314
+        } else {
+            Event499:
+            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk53', 'IsOverWriteLabelActorName': False})
+        }
+    } else {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OldKorok_First', 'IsWaitFinish': True})
+        Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk00'})
+        if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_KorokNuts', 'Count': 1}) {
+            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk70'})
+            goto Event314
+        } else {
+            Npc_OldKorok.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk69'})
+            goto Event499
         }
     }
 }
@@ -755,16 +749,14 @@ void DistributeAndDemo707_0_Weapon() {
     if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Finish'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Rvs_Talking'}) {
             EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Weapon_Rvs', 'EndFade': 0})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Wet_Talking'}) {
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Weapon_WetLand', 'EndFade': 0})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_For_Talking'}) {
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Weapon_Forest', 'EndFade': 0})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Wet_Talking'}) {
-                EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Weapon_WetLand', 'EndFade': 0})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_For_Talking'}) {
-                    EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Weapon_Forest', 'EndFade': 0})
-                } else {
-                    EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Weapon_KoroguWoods', 'EndFade': 0})
-                }
-            }
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Weapon_KoroguWoods', 'EndFade': 0})
         }
     } else {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Weapon_Kakariko', 'EndFade': 0})
@@ -775,16 +767,14 @@ void DistributeAndDemo707_0_Bow() {
     if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Finish'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Rvs_Talking'}) {
             EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Bow_Rvs', 'EndFade': 0})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Wet_Talking'}) {
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Bow_WetLand', 'EndFade': 0})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_For_Talking'}) {
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Bow_Forest', 'EndFade': 0})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Wet_Talking'}) {
-                EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Bow_WetLand', 'EndFade': 0})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_For_Talking'}) {
-                    EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Bow_Forest', 'EndFade': 0})
-                } else {
-                    EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Bow_KoroguWoods', 'EndFade': 0})
-                }
-            }
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Bow_KoroguWoods', 'EndFade': 0})
         }
     } else {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Bow_Kakariko', 'EndFade': 0})
@@ -795,16 +785,14 @@ void DistributeAndDemo707_0_Shield() {
     if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Finish'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Rvs_Talking'}) {
             EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Shield_Rvs', 'EndFade': 0})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Wet_Talking'}) {
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Shield_WetLand', 'EndFade': 0})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_For_Talking'}) {
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Shield_Forest', 'EndFade': 0})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Wet_Talking'}) {
-                EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Shield_WetLand', 'EndFade': 0})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_For_Talking'}) {
-                    EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Shield_Forest', 'EndFade': 0})
-                } else {
-                    EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Shield_KoroguWoods', 'EndFade': 0})
-                }
-            }
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Shield_KoroguWoods', 'EndFade': 0})
         }
     } else {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo707_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo707_0_Shield_Kakariko', 'EndFade': 0})

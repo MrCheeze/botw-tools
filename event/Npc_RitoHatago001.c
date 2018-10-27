@@ -22,16 +22,10 @@ void Talk() {
           case 0:
             Event28:
             Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago001:talk_05'})
-          case 1:
-            Event59:
+          case [1, 2, 3]:
             Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago001:talk18'})
-          case 2:
-            goto Event59
-          case 3:
-            goto Event59
         }
-      case 1:
-        Event57:
+      case [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         switch EventSystemActor.CheckWeather() {
           case 0:
             Event32:
@@ -52,15 +46,10 @@ void Talk() {
             } else {
                 Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago001:talk19'})
             }
-          case 1:
-            Event54:
+          case [1, 2, 3]:
             Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_RitoHatago001:talk_00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago001:talk17'})
             goto Event34
-          case 2:
-            goto Event54
-          case 3:
-            goto Event54
         }
       case 2:
         goto Event28
@@ -71,25 +60,5 @@ void Talk() {
             Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago001:talk_10'})
             goto Event32
         }
-      case 4:
-        goto Event57
-      case 5:
-        goto Event57
-      case 6:
-        goto Event57
-      case 7:
-        goto Event57
-      case 8:
-        goto Event57
-      case 9:
-        goto Event57
-      case 10:
-        goto Event57
-      case 11:
-        goto Event57
-      case 12:
-        goto Event57
-      case 13:
-        goto Event57
     }
 }

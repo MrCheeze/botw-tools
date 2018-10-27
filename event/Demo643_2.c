@@ -278,20 +278,18 @@ void RemainsTerminalMainFlow_After() {
         Event73:
         SceneBgmCtrlTag.Demo_Ctrl({'CtrlType': 'Remains_MsgClose', 'IsWaitFinish': True})
         EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 2, 'GameDataIntName': 'Counter_TerminalFinalTrial'}) {
+        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo643_2:talk01'})
+        goto Event73
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 1, 'GameDataIntName': 'Counter_TerminalFinalTrial'}) {
+        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo643_2:talk02'})
+        goto Event73
     } else {
-        if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 2, 'GameDataIntName': 'Counter_TerminalFinalTrial'}) {
-            NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo643_2:talk01'})
-            goto Event73
-        } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 1, 'GameDataIntName': 'Counter_TerminalFinalTrial'}) {
-                NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo643_2:talk02'})
-                goto Event73
-            } else {
-                NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo643_2:talk03'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Access_AllTerminalFinalTrial'})
-                goto Event73
-            }
-        }
+        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo643_2:talk03'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Access_AllTerminalFinalTrial'})
+        goto Event73
     }
 }
 
@@ -322,11 +320,10 @@ void DoorCameraUp() {
 void EnemyAppearFlagOn() {
     if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_EnemyAppear_2'}) {
         EventSystemActor.Demo_FlagON({'FlagName': 'FinalTrial_EnemyAppear_3', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_EnemyAppear_1'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'FinalTrial_EnemyAppear_2', 'IsWaitFinish': True})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_EnemyAppear_1'}) {
-            EventSystemActor.Demo_FlagON({'FlagName': 'FinalTrial_EnemyAppear_2', 'IsWaitFinish': True})
-        } else {
-            EventSystemActor.Demo_FlagON({'FlagName': 'FinalTrial_EnemyAppear_1', 'IsWaitFinish': True})
-        }
+        EventSystemActor.Demo_FlagON({'FlagName': 'FinalTrial_EnemyAppear_1', 'IsWaitFinish': True})
     }
 }

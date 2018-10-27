@@ -137,14 +137,13 @@ void DungeonArrival_DLC() {
             GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': False})
             GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
+        GameROMPlayer.Demo_VisibleOff({'IsWaitFinish': False})
+        goto Event100
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-            GameROMPlayer.Demo_VisibleOff({'IsWaitFinish': False})
-            goto Event100
-        } else {
-            GameROMPlayer.Demo_StopInAir({'NoFixed': True, 'IsWaitFinish': False})
-            goto Event100
-        }
+        GameROMPlayer.Demo_StopInAir({'NoFixed': True, 'IsWaitFinish': False})
+        goto Event100
     }
 }
 
@@ -268,13 +267,12 @@ void Demo602_0_CDungeonAnm() {
         if EventSystemActor.CheckFlag({'FlagName': 'Demo602_0_DungeonArrival_Snow'}) {
             DgnObj_DLC_ChampionsDungeonEntrance_A_01.Demo_XLinkEventCreate({'IsWaitFinish': True, 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'Demo602_0_DungeonArrival_Snow', 'SLinkKey': 'Demo602_0_DungeonArrival_Snow'})
             EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Demo602_0_DungeonArrival_Snow'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Demo602_0_DungeonArrival_Water'}) {
+            DgnObj_DLC_ChampionsDungeonEntrance_A_01.Demo_XLinkEventCreate({'IsWaitFinish': True, 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'Demo602_0_DungeonArrival_Water', 'SLinkKey': 'Demo602_0_DungeonArrival_Water'})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Demo602_0_DungeonArrival_Water'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Demo602_0_DungeonArrival_Water'}) {
-                DgnObj_DLC_ChampionsDungeonEntrance_A_01.Demo_XLinkEventCreate({'IsWaitFinish': True, 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'Demo602_0_DungeonArrival_Water', 'SLinkKey': 'Demo602_0_DungeonArrival_Water'})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Demo602_0_DungeonArrival_Water'})
-            } else {
-                DgnObj_DLC_ChampionsDungeonEntrance_A_01.Demo_XLinkEventCreate({'IsWaitFinish': True, 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'Demo602_0_DungeonArrival_Normal', 'SLinkKey': 'Demo602_0_DungeonArrival_Normal'})
-            }
+            DgnObj_DLC_ChampionsDungeonEntrance_A_01.Demo_XLinkEventCreate({'IsWaitFinish': True, 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'Demo602_0_DungeonArrival_Normal', 'SLinkKey': 'Demo602_0_DungeonArrival_Normal'})
         }
     } {
         EventSystemActor[Shake].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
@@ -321,14 +319,13 @@ void DungeonArrival_DLC_Water() {
             GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': False})
             GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
+        GameROMPlayer.Demo_VisibleOff({'IsWaitFinish': False})
+        goto Event420
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-            GameROMPlayer.Demo_VisibleOff({'IsWaitFinish': False})
-            goto Event420
-        } else {
-            GameROMPlayer.Demo_StopInAir({'NoFixed': True, 'IsWaitFinish': False})
-            goto Event420
-        }
+        GameROMPlayer.Demo_StopInAir({'NoFixed': True, 'IsWaitFinish': False})
+        goto Event420
     }
 }
 

@@ -28,43 +28,37 @@ void Talk() {
 
         if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC004_Fukuya'}) {
             Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk07'})
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk00'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Event145:
-                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                    Npc_HatenoVillage004.Demo_LookAtObject({'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2})
-                    Event66:
-                    Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk02'})
-                    Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk19'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoNPC004_OK'})
-                } else {
-                    Event67:
-                    Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk01'})
-                }
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk00'})
+            if !EventSystemActor.GeneralChoice2() {
+                Event145:
+                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                Npc_HatenoVillage004.Demo_LookAtObject({'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2})
+                Event66:
+                Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk02'})
+                Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk19'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoNPC004_OK'})
+            } else {
+                Event67:
+                Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk01'})
+            }
+          case [1, 2, 3]:
+            Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk22'})
+            switch EventSystemActor.GeneralChoice4() {
               case 1:
-                Event140:
-                Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk22'})
-                switch EventSystemActor.GeneralChoice4() {
-                  case 1:
-                    goto Event145
-                  case 2:
-                    Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk20'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_HatenoVillage004.Demo_ChangePostureWithAS({'IsWaitFinish': True, 'Posture': 'Stand'})
-                        goto Event66
-                    } else {
-                        goto Event67
-                    }
-                  case 3:
+                goto Event145
+              case 2:
+                Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk20'})
+                if !EventSystemActor.GeneralChoice2() {
+                    Npc_HatenoVillage004.Demo_ChangePostureWithAS({'IsWaitFinish': True, 'Posture': 'Stand'})
+                    goto Event66
+                } else {
                     goto Event67
                 }
-              case 2:
-                goto Event140
               case 3:
-                goto Event140
+                goto Event67
             }
         }
     }
@@ -171,27 +165,8 @@ void HatenoNPC004_Fukuya_Talk() {
 void HatenoNPC004_OK_Near() {
     Event110:
     switch Npc_HatenoVillage004.CheckActorAction13() {
-      case 0:
-        Event111:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]:
         Npc_HatenoVillage004.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:near02', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        goto Event111
-      case 2:
-        goto Event111
-      case 3:
-        goto Event111
-      case 4:
-        goto Event111
-      case 5:
-        goto Event111
-      case 6:
-        goto Event111
-      case 7:
-        goto Event111
-      case 8:
-        goto Event111
-      case 9:
-        goto Event111
       case 10:
         Event115:
         Npc_HatenoVillage004.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:near03', 'IsChecked': False, 'DispFrame': 90})
@@ -243,14 +218,13 @@ void Sotetsu_BlueFire() {
                 Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk10'})
                 goto Event120
             }
+        } else
+        if Npc_HatenoVillage004.IsOnInstEventFlag() {
+            Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk18'})
+            goto Event120
         } else {
-            if Npc_HatenoVillage004.IsOnInstEventFlag() {
-                Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk18'})
-                goto Event120
-            } else {
-                Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk17'})
-                goto Event120
-            }
+            Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk17'})
+            goto Event120
         }
     } else {
 

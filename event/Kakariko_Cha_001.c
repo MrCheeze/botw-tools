@@ -38,19 +38,10 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Ready_Npc_Kakariko003_Talk() {
     switch Npc_Kakariko003.CheckActorAction13() {
-      case 0:
-        Event10:
+      case [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
 
         call Npc_Kakariko003.Talk()
 
-      case 1:
-        goto Event10
-      case 2:
-        goto Event10
-      case 3:
-        goto Event10
-      case 4:
-        goto Event10
       case 5:
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
@@ -98,30 +89,10 @@ void Ready_Npc_Kakariko003_Talk() {
                 Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk10', 'IsCloseMessageDialog': True, 'ASName': ''})
                 goto Event1
             }
-          case 1:
+          case [1, 2, 3]:
             Event68:
             Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Kakariko003:Talk41'})
-          case 2:
-            goto Event68
-          case 3:
-            goto Event68
         }
-      case 6:
-        goto Event10
-      case 7:
-        goto Event10
-      case 8:
-        goto Event10
-      case 9:
-        goto Event10
-      case 10:
-        goto Event10
-      case 11:
-        goto Event10
-      case 12:
-        goto Event10
-      case 13:
-        goto Event10
     }
 }
 
@@ -137,19 +108,10 @@ void Finish_Npc_Kakariko003_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Kakariko003.CheckActorAction13() {
-      case 0:
-        Event24:
+      case [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
 
         call Npc_Kakariko003.Talk()
 
-      case 1:
-        goto Event24
-      case 2:
-        goto Event24
-      case 3:
-        goto Event24
-      case 4:
-        goto Event24
       case 5:
         switch EventSystemActor.CheckWeather() {
           case 0:
@@ -164,37 +126,16 @@ void Finish_Npc_Kakariko003_Talk() {
                 } else {
                     Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko003:Talk39', 'ASName': ''})
                 }
+            } else
+            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_PlantGet_M'}) {
+                Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk04'})
+                goto Event100
             } else {
-                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_PlantGet_M'}) {
-                    Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk04'})
-                    goto Event100
-                } else {
-                    Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk03', 'ASName': ''})
-                }
+                Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk03', 'ASName': ''})
             }
-          case 1:
-            goto Event68
-          case 2:
-            goto Event68
-          case 3:
+          case [1, 2, 3]:
             goto Event68
         }
-      case 6:
-        goto Event24
-      case 7:
-        goto Event24
-      case 8:
-        goto Event24
-      case 9:
-        goto Event24
-      case 10:
-        goto Event24
-      case 11:
-        goto Event24
-      case 12:
-        goto Event24
-      case 13:
-        goto Event24
     }
 }
 

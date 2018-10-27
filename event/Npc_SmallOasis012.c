@@ -72,54 +72,27 @@ void Electric_Relic_Finished_Talk() {
         Npc_SmallOasis012[town01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_006', 'IsCloseMessageDialog': True, 'ASName': ''})
         EventSystemActor.Demo_WaitFrame({'Frame': 90, 'IsWaitFinish': True})
         Npc_SmallOasis012[town01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_007', 'ASName': ''})
-    } else {
-        switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event41:
-            Npc_SmallOasis012[town01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_011', 'ASName': ''})
-            goto Event18
-          case 1:
-            goto Event41
-          case 2:
-            Event42:
-            Npc_SmallOasis012[town01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_012', 'ASName': ''})
-            goto Event18
-          case 3:
-            goto Event42
-          case 4:
-            goto Event42
-          case 5:
-            Event43:
-            Npc_SmallOasis012[town01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_013', 'ASName': ''})
-            goto Event18
-          case 6:
-            goto Event43
-          case 7:
-            goto Event43
-        }
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case [0, 1]:
+        Npc_SmallOasis012[town01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_011', 'ASName': ''})
+        goto Event18
+      case [2, 3, 4]:
+        Npc_SmallOasis012[town01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_012', 'ASName': ''})
+        goto Event18
+      case [5, 6, 7]:
+        Npc_SmallOasis012[town01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_013', 'ASName': ''})
+        goto Event18
     }
 }
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event35:
+      case [0, 1]:
         Npc_SmallOasis012.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_008'})
-      case 1:
-        goto Event35
-      case 2:
-        Event36:
+      case [2, 3, 4]:
         Npc_SmallOasis012.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_009'})
-      case 3:
-        goto Event36
-      case 4:
-        goto Event36
-      case 5:
-        Event37:
+      case [5, 6, 7]:
         Npc_SmallOasis012.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis012:Talk_010'})
-      case 6:
-        goto Event37
-      case 7:
-        goto Event37
     }
 }

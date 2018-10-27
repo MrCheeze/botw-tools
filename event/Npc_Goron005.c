@@ -61,24 +61,12 @@ void Talk() {
           case 0:
             Npc_Goron005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron005:talk00', 'IsOverWriteLabelActorName': False, 'ASName': 'Hello'})
             goto Event46
-          case 1:
-            Event12:
+          case [1, 2, 3, 4, 5]:
             Npc_Goron005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron005:talk01', 'IsOverWriteLabelActorName': False, 'ASName': 'Hello'})
             goto Event46
-          case 2:
-            goto Event12
-          case 3:
-            goto Event12
-          case 4:
-            goto Event12
-          case 5:
-            goto Event12
-          case 6:
-            Event45:
+          case [6, 7]:
             Npc_Goron005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron005:talk02', 'IsOverWriteLabelActorName': False, 'ASName': 'Hello'})
             goto Event46
-          case 7:
-            goto Event45
         }
     }
 }
@@ -89,9 +77,7 @@ void Near() {
 }
 
 void Sell() {
-    switch Npc_Goron005.CheckPlacedItemSaled() {
-      case 0:
-        Event25:
+    if Npc_Goron005.CheckPlacedItemSaled() in [0, 1, 2] {
         switch EventSystemActor.RandomChoice4() {
           case 0:
             Npc_Goron005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron005:Com_Talk_11'})
@@ -102,10 +88,6 @@ void Sell() {
           case 3:
             Npc_Goron005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron005:Com_Talk_11c'})
         }
-      case 1:
-        goto Event25
-      case 2:
-        goto Event25
     }
 }
 

@@ -57,8 +57,7 @@ void Talk() {
 
         Event90:
         switch Npc_Kakariko006.CheckActorAction13() {
-          case 0:
-            Event69:
+          case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko006_first'}) {
                 Event92:
                 switch Npc_Kakariko006.CheckActorAction13() {
@@ -88,13 +87,8 @@ void Talk() {
                         switch EventSystemActor.CheckWeather() {
                           case 0:
                             Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk43'})
-                          case 1:
-                            Event238:
+                          case [1, 2, 3]:
                             Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk46'})
-                          case 2:
-                            goto Event238
-                          case 3:
-                            goto Event238
                         }
                     } else {
                         Npc_Kakariko006.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -110,26 +104,18 @@ void Talk() {
                         Event109:
                         if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_006in006house'}) {
                             Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk23'})
-                        } else {
-                            switch EventSystemActor.CheckWeather() {
-                              case 0:
-                                Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk22'})
-                              case 1:
-                                Event236:
-                                Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk45'})
-                              case 2:
-                                goto Event236
-                              case 3:
-                                goto Event236
-                            }
+                        } else
+                        switch EventSystemActor.CheckWeather() {
+                          case 0:
+                            Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk22'})
+                          case [1, 2, 3]:
+                            Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk45'})
                         }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Ready'}) {
-                            Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk47'})
-                        } else {
-                            goto Event109
-                        }
-                    }
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Ready'}) {
+                        Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk47'})
+                    } else
+                    goto Event109
                   case 11:
                     Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk37'})
                   case 12:
@@ -160,42 +146,34 @@ void Talk() {
                                 goto Event127
                             }
                         }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko006_detected'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko006_r_after_detected'}) {
-                                Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk52'})
-                                Event345:
-                                if !EventSystemActor.GeneralChoice2() {
-                                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                                    GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                                    Npc_Kakariko006.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'IsValid': True, 'FaceId': 2, 'TurnPosition': [1835.5, 260.1199951171875, 896.97998046875], 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1847.643798828125, 'Pattern1PosY': 253.89329528808594, 'Pattern1PosZ': 977.2902221679688, 'Pattern1AtX': 1847.382568359375, 'Pattern1AtY': 254.41734313964844, 'Pattern1AtZ': 972.481689453125, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': True, 'MotionMode': 0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 2, 'ActorIgnoringCollision': -1, 'Count': 45.0, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                                    Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk12', 'IsCloseMessageDialog': True})
-                                    GameRomCamera.Demo_ReturnSavePoint_1({'Count': 0.0, 'IsWaitFinish': True, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
-                                } else {
-                                    Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk13'})
-                                }
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko006_detected'}) {
+                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko006_r_after_detected'}) {
+                            Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk52'})
+                            Event345:
+                            if !EventSystemActor.GeneralChoice2() {
+                                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+                                Npc_Kakariko006.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'IsValid': True, 'FaceId': 2, 'TurnPosition': [1835.5, 260.1199951171875, 896.97998046875], 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1847.643798828125, 'Pattern1PosY': 253.89329528808594, 'Pattern1PosZ': 977.2902221679688, 'Pattern1AtX': 1847.382568359375, 'Pattern1AtY': 254.41734313964844, 'Pattern1AtZ': 972.481689453125, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': True, 'MotionMode': 0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 2, 'ActorIgnoringCollision': -1, 'Count': 45.0, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                                Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk12', 'IsCloseMessageDialog': True})
+                                GameRomCamera.Demo_ReturnSavePoint_1({'Count': 0.0, 'IsWaitFinish': True, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
                             } else {
-                                Event98:
-                                switch EventSystemActor.CheckWeather() {
-                                  case 0:
-                                    Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk10'})
-                                    goto Event345
-                                  case 1:
-                                    Event117:
-                                    Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk26'})
-                                    goto Event345
-                                  case 2:
-                                    goto Event117
-                                  case 3:
-                                    goto Event117
-                                }
+                                Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk13'})
                             }
-                        } else {
-                            goto Event98
+                        } else
+                        Event98:
+                        switch EventSystemActor.CheckWeather() {
+                          case 0:
+                            Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk10'})
+                            goto Event345
+                          case [1, 2, 3]:
+                            Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk26'})
+                            goto Event345
                         }
-                    }
+                    } else
+                    goto Event98
                 }
             } else {
 
@@ -241,32 +219,8 @@ void Talk() {
                     Npc_Kakariko006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk39'})
                 }
             }
-          case 1:
-            goto Event69
-          case 2:
-            goto Event69
-          case 3:
-            goto Event69
-          case 4:
-            goto Event69
-          case 5:
-            goto Event69
-          case 6:
-            goto Event69
-          case 7:
-            goto Event69
-          case 8:
-            goto Event69
-          case 9:
-            goto Event69
-          case 10:
-            goto Event69
           case 11:
             goto Event92
-          case 12:
-            goto Event69
-          case 13:
-            goto Event69
         }
     } else {
         goto Event327
@@ -279,13 +233,8 @@ void Near() {
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_Kakariko006.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Near05', 'IsChecked': False, 'DispFrame': 90})
-          case 1:
-            Event134:
+          case [1, 2, 3]:
             Npc_Kakariko006.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Near06', 'IsChecked': False, 'DispFrame': 90})
-          case 2:
-            goto Event134
-          case 3:
-            goto Event134
         }
       case 1:
         switch EventSystemActor.CheckWeather() {
@@ -295,13 +244,8 @@ void Near() {
             } else {
                 Npc_Kakariko006.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_Kakariko006:Near00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
             }
-          case 1:
-            Event240:
+          case [1, 2, 3]:
             Npc_Kakariko006.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Near01'})
-          case 2:
-            goto Event240
-          case 3:
-            goto Event240
         }
       case 2:
         Event135:
@@ -458,8 +402,7 @@ void FirstTalk() {
     call InitTalk.InitTalkOnEvent({'Arg_Turn': 0, 'Self': ActorIdentifier(name="Npc_Kakariko006")})
 
     switch Npc_Kakariko006.CheckActorAction13() {
-      case 0:
-        Event357:
+      case [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         Npc_Kakariko006.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk48', 'IsWaitFinish': True, 'ASName': ''})
         Event339:
         EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
@@ -470,30 +413,6 @@ void FirstTalk() {
       case 1:
         Npc_Kakariko006.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko006:Talk48', 'ASName': 'Talk_Farmer', 'IsWaitFinish': True})
         goto Event339
-      case 2:
-        goto Event357
-      case 3:
-        goto Event357
-      case 4:
-        goto Event357
-      case 5:
-        goto Event357
-      case 6:
-        goto Event357
-      case 7:
-        goto Event357
-      case 8:
-        goto Event357
-      case 9:
-        goto Event357
-      case 10:
-        goto Event357
-      case 11:
-        goto Event357
-      case 12:
-        goto Event357
-      case 13:
-        goto Event357
     }
 }
 
@@ -510,36 +429,11 @@ void OnlyCheck() {
 
 void HatakeFirst() {
     switch Npc_Kakariko006.CheckActorAction13() {
-      case 0:
+      case [0, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         Event328:
         Npc_Kakariko006.Demo_BecomeSpeaker({'IsWaitFinish': True})
-      case 1:
-        Event329:
+      case [1, 3]:
         Npc_Kakariko006.Demo_ChangePostureWithAS({'IsWaitFinish': True, 'Posture': 'Stand'})
-        goto Event328
-      case 2:
-        goto Event328
-      case 3:
-        goto Event329
-      case 4:
-        goto Event328
-      case 5:
-        goto Event328
-      case 6:
-        goto Event328
-      case 7:
-        goto Event328
-      case 8:
-        goto Event328
-      case 9:
-        goto Event328
-      case 10:
-        goto Event328
-      case 11:
-        goto Event328
-      case 12:
-        goto Event328
-      case 13:
         goto Event328
     }
 }

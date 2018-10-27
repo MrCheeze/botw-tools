@@ -27,8 +27,7 @@ void Talk() {
             call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
             switch Npc_SouthHateru007.CheckActorAction13() {
-              case 0:
-                Event142:
+              case [0, 1, 8, 9, 12, 13]:
                 if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 21}) {
                     if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 22}) {
                         Event52:
@@ -83,13 +82,9 @@ void Talk() {
 
                         }
                     }
-                } else {
-                    goto Event52
-                }
-              case 1:
-                goto Event142
-              case 2:
-                Event61:
+                } else
+                goto Event52
+              case [2, 3, 4, 5, 6, 7]:
                 if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 2}) {
                     if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
                         if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 21}) {
@@ -100,14 +95,13 @@ void Talk() {
                                         Event163:
                                         Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Talk03_1'})
                                         goto Event71
+                                    } else
+                                    if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Timeline/Action4/移動'}) {
+                                        goto Event163
                                     } else {
-                                        if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Timeline/Action4/移動'}) {
-                                            goto Event163
-                                        } else {
-                                            Event57:
-                                            Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Talk03', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                                            goto Event71
-                                        }
+                                        Event57:
+                                        Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Talk03', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+                                        goto Event71
                                     }
                                 } else {
                                     goto Event57
@@ -123,136 +117,99 @@ void Talk() {
                     } else {
                         goto Event58
                     }
-                } else {
-                    goto Event164
-                }
-              case 3:
-                goto Event61
-              case 4:
-                goto Event61
-              case 5:
-                goto Event61
-              case 6:
-                goto Event61
-              case 7:
-                goto Event61
-              case 8:
-                goto Event142
-              case 9:
-                goto Event142
+                } else
+                goto Event164
               case 10:
                 Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Talk06', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
                 goto Event71
               case 11:
                 Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Talk07', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                 goto Event71
-              case 12:
-                goto Event142
-              case 13:
-                goto Event142
             }
-          case 1:
-            Event103:
+          case [1, 2, 3]:
             if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
                 goto Event0
+            } else
+            if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/移動'}) {
+                goto Event0
+            } else
+            if Npc_SouthHateru007.IsArriveAnchorForRain() {
+
+                call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
+
+                Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Rain00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+                goto Event71
             } else {
-                if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/移動'}) {
-                    goto Event0
-                } else {
-                    if Npc_SouthHateru007.IsArriveAnchorForRain() {
-
-                        call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
-
-                        Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Rain00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                        goto Event71
-                    } else {
-
-                        call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})
-
-                        Event69:
-                        Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Rain01', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                    }
-                }
-            }
-          case 2:
-            goto Event103
-          case 3:
-            goto Event103
-        }
-    } else {
-        if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Terror'}) {
-            Event135:
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                Event130:
 
                 call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})
 
-                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk01_1', 'ASName': ''})
-                Npc_SouthHateru007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
-                Event37:
-                Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                switch EventSystemActor.GeneralChoice3() {
-                  case 0:
-                    Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk03'})
-                    Event42:
-                    Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk06', 'IsCloseMessageDialog': True})
-                    GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                    GameRomCamera.Demo_BustUpFront({'UseImaginaryLineAngle': True, 'NearSide': True, 'Count': 0.0, 'StartCalcOnly': True, 'IsWaitFinish': True, 'Lng': 30.0, 'PlayerRelative': False, 'CancelDrawOther': False, 'LatReverse': False, 'LngReverse': False, 'Offset': [0.0, -0.20000000298023224, 0.20000000298023224], 'Lat': 10.0})
-                    Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk07', 'ASName': '', 'IsCloseMessageDialog': True})
-                    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': False, 'ReviseMode': 0, 'Count': 0.0})
-                    Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk08', 'IsCloseMessageDialog': True, 'ASName': ''})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_SouthHateru007_001', 'IsWaitFinish': True})
-                  case 1:
-                    Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk04'})
-                    goto Event42
-                  case 2:
-                    Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk05'})
-                    goto Event42
-                }
-              case 1:
-                Event123:
-                if Npc_SouthHateru007.IsArriveAnchorForRain() {
-                    if Npc_SouthHateru007.IsOnInstEventFlag() {
-                        goto Event130
-                    } else {
-                        Event133:
-
-                        call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
-
-                        Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk00', 'ASName': 'Wait', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                        Npc_SouthHateru007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
-                        Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk01', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                        goto Event37
-                    }
-                } else {
-
-                    call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})
-
-                    goto Event69
-                }
-              case 2:
-                goto Event123
-              case 3:
-                goto Event123
-            }
-        } else {
-            if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
-                switch EventSystemActor.CheckWeather() {
-                  case 0:
-                    goto Event133
-                  case 1:
-                    goto Event123
-                  case 2:
-                    goto Event123
-                  case 3:
-                    goto Event123
-                }
-            } else {
-                goto Event135
+                Event69:
+                Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Rain01', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
             }
         }
-    }
+    } else
+    if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Terror'}) {
+        Event135:
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            Event130:
+
+            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})
+
+            Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk01_1', 'ASName': ''})
+            Npc_SouthHateru007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
+            Event37:
+            Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+            switch EventSystemActor.GeneralChoice3() {
+              case 0:
+                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk03'})
+                Event42:
+                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk06', 'IsCloseMessageDialog': True})
+                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+                GameRomCamera.Demo_BustUpFront({'UseImaginaryLineAngle': True, 'NearSide': True, 'Count': 0.0, 'StartCalcOnly': True, 'IsWaitFinish': True, 'Lng': 30.0, 'PlayerRelative': False, 'CancelDrawOther': False, 'LatReverse': False, 'LngReverse': False, 'Offset': [0.0, -0.20000000298023224, 0.20000000298023224], 'Lat': 10.0})
+                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk07', 'ASName': '', 'IsCloseMessageDialog': True})
+                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': False, 'ReviseMode': 0, 'Count': 0.0})
+                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk08', 'IsCloseMessageDialog': True, 'ASName': ''})
+                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_SouthHateru007_001', 'IsWaitFinish': True})
+              case 1:
+                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk04'})
+                goto Event42
+              case 2:
+                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk05'})
+                goto Event42
+            }
+          case [1, 2, 3]:
+            Event123:
+            if Npc_SouthHateru007.IsArriveAnchorForRain() {
+                if Npc_SouthHateru007.IsOnInstEventFlag() {
+                    goto Event130
+                } else {
+                    Event133:
+
+                    call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
+
+                    Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk00', 'ASName': 'Wait', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                    Npc_SouthHateru007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
+                    Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:FirstTalk01', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                    goto Event37
+                }
+            } else {
+
+                call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})
+
+                goto Event69
+            }
+        }
+    } else
+    if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            goto Event133
+          case [1, 2, 3]:
+            goto Event123
+        }
+    } else
+    goto Event135
 }
 
 void Near() {
@@ -264,43 +221,30 @@ void Near() {
             } else {
                 Npc_SouthHateru007.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Near01', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
             }
-        } else {
-            if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/移動'}) {
-                Npc_SouthHateru007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Near05', 'IsChecked': False, 'DispFrame': 90})
-            } else {
-                switch EventSystemActor.CheckWeather() {
-                  case 0:
-                    Npc_SouthHateru007.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Near02', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
-                  case 1:
-                    Event32:
-                    if Npc_SouthHateru007.IsArriveAnchorForRain() {
-                        Npc_SouthHateru007.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Near03', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
-                    } else {
-                        Event31:
-                        Npc_SouthHateru007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Near04', 'IsChecked': False, 'DispFrame': 90})
-                    }
-                  case 2:
-                    goto Event32
-                  case 3:
-                    goto Event32
-                }
-            }
-        }
-    } else {
+        } else
+        if Npc_SouthHateru007.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/移動'}) {
+            Npc_SouthHateru007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Near05', 'IsChecked': False, 'DispFrame': 90})
+        } else
         switch EventSystemActor.CheckWeather() {
           case 0:
-            goto Event14
-          case 1:
-            Event125:
+            Npc_SouthHateru007.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Near02', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
+          case [1, 2, 3]:
             if Npc_SouthHateru007.IsArriveAnchorForRain() {
-                goto Event14
+                Npc_SouthHateru007.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Near03', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
             } else {
-                goto Event31
+                Event31:
+                Npc_SouthHateru007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Near04', 'IsChecked': False, 'DispFrame': 90})
             }
-          case 2:
-            goto Event125
-          case 3:
-            goto Event125
+        }
+    } else
+    switch EventSystemActor.CheckWeather() {
+      case 0:
+        goto Event14
+      case [1, 2, 3]:
+        if Npc_SouthHateru007.IsArriveAnchorForRain() {
+            goto Event14
+        } else {
+            goto Event31
         }
     }
 }
@@ -359,19 +303,18 @@ void BloodyMoon_EachFrame() {
         } else {
             goto Event24
         }
-    } else {
-        if EventSystemActor.CheckTime({'Minute': 30, 'ConditionType': 'ge', 'Hour': 0}) {
-            if EventSystemActor.CheckTime({'Minute': 30, 'ConditionType': 'ge', 'Hour': 23}) {
-                Event23:
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_SouthHateru007_BloodyMoon'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_SouthHateru007_BloodyMoon_After'})
-                goto Event24
-            } else {
-                goto Event90
-            }
+    } else
+    if EventSystemActor.CheckTime({'Minute': 30, 'ConditionType': 'ge', 'Hour': 0}) {
+        if EventSystemActor.CheckTime({'Minute': 30, 'ConditionType': 'ge', 'Hour': 23}) {
+            Event23:
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_SouthHateru007_BloodyMoon'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_SouthHateru007_BloodyMoon_After'})
+            goto Event24
         } else {
-            goto Event23
+            goto Event90
         }
+    } else {
+        goto Event23
     }
 }
 
@@ -384,123 +327,115 @@ void Moon() {
       case 0:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_SouthHateru007_BloodyMoon_After'}) {
             Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon00_After'})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'WM_BloodyDay'}) {
-                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
-                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
-                        if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 22}) {
-                            Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon00'})
-                        } else {
-                            Event162:
-                            Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon00_Befor'})
-                        }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'WM_BloodyDay'}) {
+            if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
+                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
+                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 22}) {
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon00'})
                     } else {
-                        goto Event162
+                        Event162:
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon00_Befor'})
                     }
                 } else {
-                    Event50:
-                    switch EventSystemActor.WhatMoonName() {
-                      case 0:
-                        if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
-                            if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
-                                Event126:
-                                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon00_Full'})
-                            } else {
-                                Event74:
-                                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon01'})
-                            }
-                        } else {
-                            goto Event126
-                        }
-                      case 1:
-                        if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
-                            if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
-                                goto Event74
-                            } else {
-                                Event75:
-                                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon02'})
-                            }
-                        } else {
-                            goto Event74
-                        }
-                      case 2:
-                        if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
-                            if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
-                                goto Event75
-                            } else {
-                                Event76:
-                                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon03'})
-                            }
-                        } else {
-                            goto Event75
-                        }
-                      case 3:
-                        if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
-                            if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
-                                goto Event76
-                            } else {
-                                Event77:
-                                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon04'})
-                            }
-                        } else {
-                            goto Event76
-                        }
-                      case 4:
-                        if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
-                            if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
-                                goto Event77
-                            } else {
-                                Event78:
-                                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon05'})
-                            }
-                        } else {
-                            goto Event77
-                        }
-                      case 5:
-                        if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
-                            if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
-                                goto Event78
-                            } else {
-                                Event79:
-                                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon06'})
-                            }
-                        } else {
-                            goto Event78
-                        }
-                      case 6:
-                        if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
-                            if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
-                                goto Event79
-                            } else {
-                                Event80:
-                                Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon07'})
-                            }
-                        } else {
-                            goto Event79
-                        }
-                      case 7:
-                        if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
-                            if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
-                                goto Event80
-                            } else {
-                                goto Event126
-                            }
-                        } else {
-                            goto Event80
-                        }
-                    }
+                    goto Event162
                 }
-            } else {
-                goto Event50
+            } else
+            Event50:
+            switch EventSystemActor.WhatMoonName() {
+              case 0:
+                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
+                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
+                        Event126:
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon00_Full'})
+                    } else {
+                        Event74:
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon01'})
+                    }
+                } else {
+                    goto Event126
+                }
+              case 1:
+                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
+                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
+                        goto Event74
+                    } else {
+                        Event75:
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon02'})
+                    }
+                } else {
+                    goto Event74
+                }
+              case 2:
+                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
+                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
+                        goto Event75
+                    } else {
+                        Event76:
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon03'})
+                    }
+                } else {
+                    goto Event75
+                }
+              case 3:
+                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
+                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
+                        goto Event76
+                    } else {
+                        Event77:
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon04'})
+                    }
+                } else {
+                    goto Event76
+                }
+              case 4:
+                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
+                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
+                        goto Event77
+                    } else {
+                        Event78:
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon05'})
+                    }
+                } else {
+                    goto Event77
+                }
+              case 5:
+                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
+                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
+                        goto Event78
+                    } else {
+                        Event79:
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon06'})
+                    }
+                } else {
+                    goto Event78
+                }
+              case 6:
+                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
+                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
+                        goto Event79
+                    } else {
+                        Event80:
+                        Npc_SouthHateru007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Moon07'})
+                    }
+                } else {
+                    goto Event79
+                }
+              case 7:
+                if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 3}) {
+                    if EventSystemActor.CheckTime({'Minute': 0, 'ConditionType': 'ge', 'Hour': 12}) {
+                        goto Event80
+                    } else {
+                        goto Event126
+                    }
+                } else {
+                    goto Event80
+                }
             }
-        }
-      case 1:
-        Event106:
+        } else
+        goto Event50
+      case [1, 2, 3]:
         Npc_SouthHateru007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru007:Rain02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-      case 2:
-        goto Event106
-      case 3:
-        goto Event106
     }
 }
 

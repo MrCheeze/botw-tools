@@ -49,8 +49,7 @@ void Talk() {
 
     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MamonoShop_DarkSeries'})
     switch Npc_MamonoShop.CheckActorAction13() {
-      case 2:
-        Event184:
+      case [2, 3, 4, 5]:
         if EventSystemActor.CheckFlag({'FlagName': 'KirutonDokuro_Delete'}) {
             if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_DefaultFlow'}) {
                 if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Black', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
@@ -145,17 +144,16 @@ void Talk() {
                                                                             Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk29', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                                                                             goto Event667
                                                                         }
-                                                                    } else {
-                                                                        if EventSystemActor.HasEnoughPayment() {
-                                                                            if EventSystemActor.CheckItemShopPorchVacancy() {
-                                                                                Npc_MamonoShop.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk69'})
-                                                                                goto Event112
-                                                                            } else {
-                                                                                goto Event132
-                                                                            }
+                                                                    } else
+                                                                    if EventSystemActor.HasEnoughPayment() {
+                                                                        if EventSystemActor.CheckItemShopPorchVacancy() {
+                                                                            Npc_MamonoShop.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk69'})
+                                                                            goto Event112
                                                                         } else {
-                                                                            goto Event106
+                                                                            goto Event132
                                                                         }
+                                                                    } else {
+                                                                        goto Event106
                                                                     }
                                                                   case 1:
                                                                     Npc_MamonoShop.Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': True})
@@ -204,14 +202,13 @@ void Talk() {
 
                                                                 call OpenBuyWindow()
 
+                                                            } else
+                                                            if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_FirstTalk'}) {
+                                                                goto Event128
                                                             } else {
-                                                                if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_FirstTalk'}) {
-                                                                    goto Event128
-                                                                } else {
-                                                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_FirstTalk'})
-                                                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Change'})
-                                                                    goto Event128
-                                                                }
+                                                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_FirstTalk'})
+                                                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Change'})
+                                                                goto Event128
                                                             }
                                                         } else {
                                                             Event127:
@@ -251,14 +248,13 @@ void Talk() {
 
                                                 call MainBranchFirst()
 
+                                            } else
+                                            if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_Change'}) {
+
+                                                call MainBranch()
+
                                             } else {
-                                                if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_Change'}) {
-
-                                                    call MainBranch()
-
-                                                } else {
-                                                    goto Event511
-                                                }
+                                                goto Event511
                                             }
                                         }
                                     } else {
@@ -310,124 +306,120 @@ void Talk() {
 
                         goto Event685
                     }
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_Forward'}) {
+
+                    call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
+
+                    goto Event685
                 } else {
+
+                    call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
+
+
+                    call KirutonBack()
+
+                    goto Event685
+                }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_4PointFirst'}) {
+                if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Black', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
                     if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_Forward'}) {
 
                         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
 
-                        goto Event685
+                        Npc_MamonoShop.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk98'})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_DarkSeries'})
+                        Event682:
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Forward'})
+                        Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk01'})
+                        if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_MamonoMaterial'}) {
+                            Event582:
+                            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk03'})
+                            Event134:
+                            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk00'})
+                            switch EventSystemActor.GeneralChoice4() {
+                              case 0:
+                                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk05'})
+                                if !EventSystemActor.HasPorchItemByCategory({'Category': 11, 'Count': 1}) {
+                                    goto Event216
+                                } else {
+                                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk15'})
+                                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk18'})
+                                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Forward'})
+                                }
+                              case 1:
+
+                                call WhatsMamo()
+
+                                goto Event134
+                              case 2:
+
+                                call WhatsMamonoSozai()
+
+                                goto Event134
+                              case 3:
+                                Event214:
+                                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk09'})
+                                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk02'})
+                            }
+                        } else
+                        if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_WhatsMamo'}) {
+                            goto Event582
+                        } else {
+                            Event1:
+                            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk82'})
+                            switch EventSystemActor.GeneralChoice3() {
+                              case 0:
+
+                                call WhatsMamo()
+
+                                Event555:
+                                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk76'})
+                                goto Event134
+                              case 1:
+
+                                call WhatsMamonoSozai()
+
+                                goto Event555
+                              case 2:
+                                goto Event214
+                            }
+                        }
                     } else {
 
                         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
 
 
-                        call KirutonBack()
+                        call KirutonBack_Dark()
 
-                        goto Event685
+                        goto Event682
                     }
-                }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_4PointFirst'}) {
-                    if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'Black', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_Forward'}) {
-
-                            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
-
-                            Npc_MamonoShop.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk98'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_DarkSeries'})
-                            Event682:
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Forward'})
-                            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk01'})
-                            if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_MamonoMaterial'}) {
-                                Event582:
-                                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk03'})
-                                Event134:
-                                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk00'})
-                                switch EventSystemActor.GeneralChoice4() {
-                                  case 0:
-                                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk05'})
-                                    if !EventSystemActor.HasPorchItemByCategory({'Category': 11, 'Count': 1}) {
-                                        goto Event216
-                                    } else {
-                                        Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk15'})
-                                        Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk18'})
-                                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Forward'})
-                                    }
-                                  case 1:
-
-                                    call WhatsMamo()
-
-                                    goto Event134
-                                  case 2:
-
-                                    call WhatsMamonoSozai()
-
-                                    goto Event134
-                                  case 3:
-                                    Event214:
-                                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk09'})
-                                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk02'})
-                                }
-                            } else {
-                                if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_WhatsMamo'}) {
-                                    goto Event582
-                                } else {
-                                    Event1:
-                                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk82'})
-                                    switch EventSystemActor.GeneralChoice3() {
-                                      case 0:
-
-                                        call WhatsMamo()
-
-                                        Event555:
-                                        Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk76'})
-                                        goto Event134
-                                      case 1:
-
-                                        call WhatsMamonoSozai()
-
-                                        goto Event555
-                                      case 2:
-                                        goto Event214
-                                    }
-                                }
-                            }
-                        } else {
-
-                            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
-
-
-                            call KirutonBack_Dark()
-
-                            goto Event682
-                        }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_Forward'}) {
-
-                            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
-
-                            goto Event682
-                        } else {
-
-                            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
-
-
-                            call KirutonBack()
-
-                            goto Event682
-                        }
-                    }
-                } else {
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'MamonoShop_Forward'}) {
 
                     call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
 
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_4PointFirst'})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk40'})
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk95'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Forward'})
-                    goto Event1
+                    goto Event682
+                } else {
+
+                    call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
+
+
+                    call KirutonBack()
+
+                    goto Event682
                 }
+            } else {
+
+                call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_4PointFirst'})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
+                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk40'})
+                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk95'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Forward'})
+                goto Event1
             }
         } else {
 
@@ -441,9 +433,7 @@ void Talk() {
                 if !EventSystemActor.GeneralChoice2() {
                     Event155:
                     Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk46'})
-                    switch EventSystemActor.GeneralChoice4() {
-                      case 0:
-                        Event157:
+                    if EventSystemActor.GeneralChoice4() in [0, 1, 2, 3] {
                         Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk47'})
                         Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk48'})
                         Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk39'})
@@ -458,25 +448,18 @@ void Talk() {
                         Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
                         SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'BgmCtrlType': 'StartWithFade', 'IsWaitFinish': True})
                         GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'TalkSurprise', 'IsWaitFinish': True, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
-                      case 1:
-                        goto Event157
-                      case 2:
-                        goto Event157
-                      case 3:
-                        goto Event157
                     }
+                } else
+                Event493:
+                if !EventSystemActor.RandomChoice2() {
+                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk74'})
+                    Event154:
+                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk45'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_StopTalk'})
+                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Forward'})
                 } else {
-                    Event493:
-                    if !EventSystemActor.RandomChoice2() {
-                        Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk74'})
-                        Event154:
-                        Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk45'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_StopTalk'})
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MamonoShop_Forward'})
-                    } else {
-                        Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk75'})
-                        goto Event154
-                    }
+                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk75'})
+                    goto Event154
                 }
             } else {
                 EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
@@ -491,19 +474,11 @@ void Talk() {
                 Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk44'})
                 if !EventSystemActor.GeneralChoice2() {
                     goto Event155
-                } else {
-                    goto Event493
-                }
+                } else
+                goto Event493
             }
         }
-      case 3:
-        goto Event184
-      case 4:
-        goto Event184
-      case 5:
-        goto Event184
-      case 6:
-        Event686:
+      case [6, 7, 8, 9]:
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
 
@@ -512,12 +487,6 @@ void Talk() {
         Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_OpenStop'})
         goto Event204
-      case 7:
-        goto Event686
-      case 8:
-        goto Event686
-      case 9:
-        goto Event686
     }
 }
 
@@ -599,28 +568,26 @@ void BeatGiant() {
 
             call MainBranch()
 
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'DefeatedForestGiantNum', 'Value': 40}) {
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk63'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk203'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk64'})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_ProofGiantKiller'})
+
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk204'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk65'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_BigEnemy_Giant_Finish'})
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 0, 'GameDataIntName': 'DefeatedForestGiantNum'}) {
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk202'})
+            goto Event370
         } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'DefeatedForestGiantNum', 'Value': 40}) {
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk63'})
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk203'})
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk64'})
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_ProofGiantKiller'})
-
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk204'})
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk65'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_BigEnemy_Giant_Finish'})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 0, 'GameDataIntName': 'DefeatedForestGiantNum'}) {
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk202'})
-                    goto Event370
-                } else {
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk61'})
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk201'})
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk62'})
-                    goto Event370
-                }
-            }
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk61'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk201'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk62'})
+            goto Event370
         }
     } else {
         Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk200'})
@@ -640,28 +607,26 @@ void BeatGolem() {
 
             call MainBranch()
 
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'DefeatedGolemNum', 'Value': 40}) {
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk63'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk103'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk64'})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_ProofGolemKiller'})
+
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk104'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk65'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_BigEnemy_Golem_Finish'})
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 0, 'GameDataIntName': 'DefeatedGolemNum'}) {
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk102'})
+            goto Event394
         } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'DefeatedGolemNum', 'Value': 40}) {
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk63'})
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk103'})
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk64'})
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_ProofGolemKiller'})
-
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk104'})
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk65'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_BigEnemy_Golem_Finish'})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 0, 'GameDataIntName': 'DefeatedGolemNum'}) {
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk102'})
-                    goto Event394
-                } else {
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk61'})
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk101'})
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk62'})
-                    goto Event394
-                }
-            }
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk61'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk101'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk62'})
+            goto Event394
         }
     } else {
         Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk100'})
@@ -717,28 +682,26 @@ void BeatSandworm() {
 
             call MainBranch()
 
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 4, 'GameDataIntName': 'DefeatedSandwormNum'}) {
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk63'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk303'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk64'})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_ProofSandwormKiller'})
+
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk304'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk65'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_BigEnemy_Sandworm_Finish'})
+        } else
+        if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 0, 'GameDataIntName': 'DefeatedSandwormNum'}) {
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk302'})
+            goto Event305
         } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 4, 'GameDataIntName': 'DefeatedSandwormNum'}) {
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk63'})
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk303'})
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk64'})
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_ProofSandwormKiller'})
-
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk304'})
-                Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk65'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MamonoShop_BigEnemy_Sandworm_Finish'})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 0, 'GameDataIntName': 'DefeatedSandwormNum'}) {
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk302'})
-                    goto Event305
-                } else {
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk61'})
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk301'})
-                    Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk62'})
-                    goto Event305
-                }
-            }
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk61'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk301'})
+            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk62'})
+            goto Event305
         }
     } else {
         Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk300'})
@@ -840,18 +803,17 @@ void StartShopBuyMamo() {
         } else {
             EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Shop_IsSelectPurchase'})
         }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentMamo', 'Operator': 'LessThanOrEqualTo', 'Value': 9}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shop_IsSelectPurchase'})
+        Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk72', 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+        Event749:
+        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+        goto Event658
     } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentMamo', 'Operator': 'LessThanOrEqualTo', 'Value': 9}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shop_IsSelectPurchase'})
-            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk72', 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            Event749:
-            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-            goto Event658
-        } else {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shop_IsSelectPurchase'})
-            Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk21', 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            goto Event749
-        }
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shop_IsSelectPurchase'})
+        Npc_MamonoShop.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_MamonoShop:talk21', 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+        goto Event749
     }
 }
 

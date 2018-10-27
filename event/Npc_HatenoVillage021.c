@@ -38,8 +38,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_HatenoVillage021.CheckActorAction13() {
-      case 0:
-        Event106:
+      case [0, 12]:
 
         call SefaroBlueFire()
 
@@ -144,8 +143,6 @@ void Talk() {
 
             goto Event112
         }
-      case 12:
-        goto Event106
     }
 }
 

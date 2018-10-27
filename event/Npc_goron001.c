@@ -44,8 +44,7 @@ void Talk() {
 
     Event90:
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event91:
+      case [0, 1, 2, 3, 4, 5]:
         Npc_goron001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron001:Talk11'})
         Event124:
         EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
@@ -173,22 +172,9 @@ void Talk() {
           case 3:
             goto Event52
         }
-      case 1:
-        goto Event91
-      case 2:
-        goto Event91
-      case 3:
-        goto Event91
-      case 4:
-        goto Event91
-      case 5:
-        goto Event91
-      case 6:
-        Event92:
+      case [6, 7]:
         Npc_goron001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron001:Talk12'})
         goto Event124
-      case 7:
-        goto Event92
     }
 }
 

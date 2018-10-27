@@ -50,21 +50,20 @@ void EatEnd() {
                 Npc_oasis047[town].Demo_Talk({'MessageId': 'EventFlowMsg/Animal_SunazarashiSP_C:talk08', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                 goto Event32
             }
-        } else {
-            switch EventSystemActor.RandomChoice4() {
-              case 0:
-                Npc_oasis047[town].Demo_Talk({'MessageId': 'EventFlowMsg/Animal_SunazarashiSP_C:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                goto Event32
-              case 1:
-                Npc_oasis047[town].Demo_Talk({'MessageId': 'EventFlowMsg/Animal_SunazarashiSP_C:talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                goto Event32
-              case 2:
-                Npc_oasis047[town].Demo_Talk({'MessageId': 'EventFlowMsg/Animal_SunazarashiSP_C:talk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                goto Event32
-              case 3:
-                Npc_oasis047[town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Animal_SunazarashiSP_C:talk03'})
-                goto Event32
-            }
+        } else
+        switch EventSystemActor.RandomChoice4() {
+          case 0:
+            Npc_oasis047[town].Demo_Talk({'MessageId': 'EventFlowMsg/Animal_SunazarashiSP_C:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            goto Event32
+          case 1:
+            Npc_oasis047[town].Demo_Talk({'MessageId': 'EventFlowMsg/Animal_SunazarashiSP_C:talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            goto Event32
+          case 2:
+            Npc_oasis047[town].Demo_Talk({'MessageId': 'EventFlowMsg/Animal_SunazarashiSP_C:talk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            goto Event32
+          case 3:
+            Npc_oasis047[town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Animal_SunazarashiSP_C:talk03'})
+            goto Event32
         }
     } else {
         goto Event20

@@ -45,13 +45,9 @@ void Talk() {
 
 void Near() {
     switch Npc_UMiiVillage031.CheckActorAction13() {
-      case 6:
-        Event481:
+      case [6, 7]:
         Npc_UMiiVillage031.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:near04'})
-      case 7:
-        goto Event481
-      case 8:
-        Event2:
+      case [8, 9]:
         switch EventSystemActor.RandomChoice4() {
           case 0:
             Npc_UMiiVillage031.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:near00', 'DispFrame': 90, 'IsChecked': False})
@@ -62,8 +58,6 @@ void Near() {
           case 3:
             Npc_UMiiVillage031.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:near03', 'DispFrame': 90, 'IsChecked': False})
         }
-      case 9:
-        goto Event2
     }
 }
 
@@ -304,19 +298,18 @@ void LookFor04_IchikaraNPC031_Talk() {
             Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk47'})
             goto Event378
         }
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_FireWoodBundle', 'Count': 50}) {
+        Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk41'})
+
+        call GiveMaterials()
+
+        EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Obj_FireWoodBundle', 'IsWaitFinish': True, 'Value': -50})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Wood04_OK'})
+        goto Event179
     } else {
-        if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_FireWoodBundle', 'Count': 50}) {
-            Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk41'})
-
-            call GiveMaterials()
-
-            EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Obj_FireWoodBundle', 'IsWaitFinish': True, 'Value': -50})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Wood04_OK'})
-            goto Event179
-        } else {
-            Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk42'})
-            Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk15'})
-        }
+        Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk42'})
+        Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk15'})
     }
 }
 
@@ -358,20 +351,18 @@ void Marry_IchikaraNPC031_Talk() {
                 } else {
                     Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk59'})
                 }
+            } else
+            Event416:
+            if Npc_UMiiVillage031.IsOnInstEventFlag() {
+                Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk29'})
+                Event417:
+                Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk28'})
             } else {
-                Event416:
-                if Npc_UMiiVillage031.IsOnInstEventFlag() {
-                    Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk29'})
-                    Event417:
-                    Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk28'})
-                } else {
-                    Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk27'})
-                    goto Event417
-                }
+                Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk27'})
+                goto Event417
             }
-        } else {
-            goto Event416
-        }
+        } else
+        goto Event416
     } else {
         EventSystemActor.Demo_FlagON({'FlagName': 'UMiiVillage_NPC031_Marry_First', 'IsWaitFinish': True})
         Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk57'})
@@ -429,12 +420,11 @@ void EnokidaHello_Ichikara() {
 
     if Npc_UMiiVillage031.IsOnInstEventFlag() {
         Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk91'})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+        Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk90'})
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-            Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk90'})
-        } else {
-            Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk86'})
-        }
+        Npc_UMiiVillage031.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage031:talk86'})
     }
 }
 

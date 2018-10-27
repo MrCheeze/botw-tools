@@ -110,9 +110,8 @@ void Ready_Npc_oasis027_Talk() {
                     Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_02', 'ASName': ''})
                     goto Event71
                 }
-            } else {
-                goto Event47
-            }
+            } else
+            goto Event47
         } else {
             Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_10', 'ASName': ''})
             goto Event41
@@ -189,24 +188,11 @@ void Ready_Npc_oasis027_Near() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event76:
+      case [0, 1]:
         Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_14'})
-      case 1:
-        goto Event76
-      case 2:
-        Event77:
+      case [2, 3, 4]:
         Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_15'})
-      case 3:
-        goto Event77
-      case 4:
-        goto Event77
-      case 5:
-        Event78:
+      case [5, 6, 7]:
         Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_16'})
-      case 6:
-        goto Event78
-      case 7:
-        goto Event78
     }
 }

@@ -39,35 +39,12 @@ void Talk() {
 void Near() {
     Event29:
     switch Npc_Goron015.CheckActorAction13() {
-      case 0:
-        Event28:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13]:
         Npc_Goron015.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:near00', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        goto Event28
-      case 2:
-        goto Event28
-      case 3:
-        goto Event28
-      case 4:
-        goto Event28
-      case 5:
-        goto Event28
-      case 6:
-        goto Event28
-      case 7:
-        goto Event28
-      case 8:
-        goto Event28
-      case 9:
-        goto Event28
       case 10:
         Npc_Goron015.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:near01', 'IsChecked': False, 'DispFrame': 90})
       case 11:
         Npc_Goron015.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:near02', 'IsChecked': False, 'DispFrame': 90})
-      case 12:
-        goto Event28
-      case 13:
-        goto Event28
     }
 }
 
@@ -76,55 +53,21 @@ void PikkeHello() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Goron015.CheckActorAction13() {
-      case 0:
-        Event6:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13]:
         if Npc_Goron015.IsOnInstEventFlag() {
             Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk11'})
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-                Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk03', 'IsOverWriteLabelActorName': False})
-            } else {
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event8:
-                    Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk00', 'IsOverWriteLabelActorName': False})
-                  case 1:
-                    goto Event8
-                  case 2:
-                    Event9:
-                    Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk01', 'IsOverWriteLabelActorName': False})
-                  case 3:
-                    goto Event9
-                  case 4:
-                    goto Event9
-                  case 5:
-                    goto Event9
-                  case 6:
-                    Event10:
-                    Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk02', 'IsOverWriteLabelActorName': False})
-                  case 7:
-                    goto Event10
-                }
-            }
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+            Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk03', 'IsOverWriteLabelActorName': False})
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk00', 'IsOverWriteLabelActorName': False})
+          case [2, 3, 4, 5]:
+            Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk01', 'IsOverWriteLabelActorName': False})
+          case [6, 7]:
+            Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk02', 'IsOverWriteLabelActorName': False})
         }
-      case 1:
-        goto Event6
-      case 2:
-        goto Event6
-      case 3:
-        goto Event6
-      case 4:
-        goto Event6
-      case 5:
-        goto Event6
-      case 6:
-        goto Event6
-      case 7:
-        goto Event6
-      case 8:
-        goto Event6
-      case 9:
-        goto Event6
       case 10:
         if !EventSystemActor.RandomChoice2() {
             Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk16', 'IsOverWriteLabelActorName': False, 'ASName': ''})
@@ -142,10 +85,6 @@ void PikkeHello() {
             Npc_Goron015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron015:talk14'})
             goto Event35
         }
-      case 12:
-        goto Event6
-      case 13:
-        goto Event6
     }
 }
 

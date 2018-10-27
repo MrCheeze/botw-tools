@@ -11,12 +11,9 @@ void EntryPoint0() {
     fork {
         if AutoPlacement.EcoAreaActorName({'ActorName': 'Enemy_Lizalfos_Electric'}) {
             if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
-                switch AutoPlacement.GroundMat() {
-                  case 3:
+                if AutoPlacement.GroundMat() in [3, 12] {
                     Event267:
-                    switch AutoPlacement.TimeType() {
-                      case 3:
-                        Event260:
+                    if AutoPlacement.TimeType() in [3, 5] {
                         if !AutoPlacement.PlayerRideHorse() {
                             AutoPlacement.NearCreate({'WaitFrame': 1})
                             if AutoPlacement.GroundNorm({'Angle': 10.0}) {
@@ -27,21 +24,14 @@ void EntryPoint0() {
                                 }
                             }
                         }
-                      case 5:
-                        goto Event260
                     }
-                  case 12:
-                    goto Event267
                 }
             }
         }
     } {
         if AutoPlacement.EcoAreaActorName({'ActorName': 'Enemy_Lizalfos_Ice'}) {
             if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
-                switch AutoPlacement.GroundMat() {
-                  case 9:
-                    goto Event267
-                  case 14:
+                if AutoPlacement.GroundMat() in [9, 14] {
                     goto Event267
                 }
             }

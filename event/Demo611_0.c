@@ -106,53 +106,42 @@ void Demo611_0_CheckDungeon() {
     if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon124'}) {
         Event130:
         EventSystemActor.Demo_SetGameDataInt({'Value': 1, 'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon'})
-    } else {
-        if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon125'}) {
-            goto Event130
-        } else {
-            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon126'}) {
-                goto Event130
-            } else {
-                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon127'}) {
-                    Event131:
-                    EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Value': 2})
-                } else {
-                    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon128'}) {
-                        goto Event131
-                    } else {
-                        if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon129'}) {
-                            goto Event131
-                        } else {
-                            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon130'}) {
-                                Event132:
-                                EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Value': 3})
-                            } else {
-                                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon131'}) {
-                                    goto Event132
-                                } else {
-                                    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon132'}) {
-                                        goto Event132
-                                    } else {
-                                        if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon121'}) {
-                                            Event133:
-                                            EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Value': 4})
-                                        } else {
-                                            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon133'}) {
-                                                goto Event133
-                                            } else {
-                                                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon134'}) {
-                                                    goto Event133
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon125'}) {
+        goto Event130
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon126'}) {
+        goto Event130
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon127'}) {
+        Event131:
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Value': 2})
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon128'}) {
+        goto Event131
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon129'}) {
+        goto Event131
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon130'}) {
+        Event132:
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Value': 3})
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon131'}) {
+        goto Event132
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon132'}) {
+        goto Event132
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon121'}) {
+        Event133:
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Value': 4})
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon133'}) {
+        goto Event133
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon134'}) {
+        goto Event133
     }
 }
 
@@ -165,18 +154,15 @@ void Demo611_0_C02() {
         fork {
             if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 1}) {
                 EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Zo_talk000'})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 2}) {
-                    EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Ri_talk000'})
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 3}) {
-                        EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Go_talk000'})
-                    } else {
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 4}) {
-                            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Ge_talk000'})
-                        }
-                    }
-                }
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 2}) {
+                EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Ri_talk000'})
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 3}) {
+                EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Go_talk000'})
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 4}) {
+                EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Ge_talk000'})
             }
         } {
             GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'IsWaitFinish': True, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'SceneName': 'C02-0', 'TargetActorPosReferenceMode': 0})
@@ -206,32 +192,29 @@ void Demo611_0_C04() {
             EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
             EventSystemActor.Demo_StartHeartDemo({'IsWaitFinish': True})
             GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ASName': 'DemoWait', 'IsIgnoreSame': True, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ClothWarpMode': -1})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 2}) {
+            EventSystemActor.Demo_SetupGetDemoModeNumUi({'AddNum': 1, 'IsWaitFinish': True, 'NumUiType': 4})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_DLC_HeroSeal_Rito'})
+
+            goto Event30
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 3}) {
+            EventSystemActor.Demo_SetupGetDemoModeNumUi({'AddNum': 1, 'IsWaitFinish': True, 'NumUiType': 2})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_DLC_HeroSeal_Goron'})
+
+            goto Event30
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 4}) {
+            EventSystemActor.Demo_SetupGetDemoModeNumUi({'AddNum': 1, 'IsWaitFinish': True, 'NumUiType': 5})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_DLC_HeroSeal_Gerudo'})
+
+            goto Event30
         } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 2}) {
-                EventSystemActor.Demo_SetupGetDemoModeNumUi({'AddNum': 1, 'IsWaitFinish': True, 'NumUiType': 4})
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_DLC_HeroSeal_Rito'})
-
-                goto Event30
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 3}) {
-                    EventSystemActor.Demo_SetupGetDemoModeNumUi({'AddNum': 1, 'IsWaitFinish': True, 'NumUiType': 2})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_DLC_HeroSeal_Goron'})
-
-                    goto Event30
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 4}) {
-                        EventSystemActor.Demo_SetupGetDemoModeNumUi({'AddNum': 1, 'IsWaitFinish': True, 'NumUiType': 5})
-
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_DLC_HeroSeal_Gerudo'})
-
-                        goto Event30
-                    } else {
-                        goto Event30
-                    }
-                }
-            }
+            goto Event30
         }
     } else {
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'ASName': 'DemoWait', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
@@ -261,80 +244,49 @@ void Demo611_0_AkashiCount() {
             EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_talk000'})
             EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_talk002'})
             goto Event251
-          case 2:
-            Event243:
+          case [2, 3, 4, 5]:
             GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'TargetActorPosReferenceMode': 0, 'SceneName': 'C05-1', 'IsWaitFinish': True})
             EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Zo_talk003'})
             goto Event251
-          case 3:
-            goto Event243
-          case 4:
-            goto Event243
-          case 5:
-            goto Event243
+        }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 2}) {
+        switch EventSystemActor.CountFlag4({'GameDataFlagNo0': 'Clear_Dungeon127', 'GameDataFlagNo1': 'Clear_Dungeon128', 'GameDataFlagNo2': 'Clear_Dungeon129', 'GameDataFlagNo3': '', 'GameDataFlagNo4': ''}) {
+          case 0:
+            goto Event256
+          case 1:
+            goto Event257
+          case [2, 3, 4, 5]:
+            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'IsWaitFinish': True, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'TargetActorPosReferenceMode': 0, 'SceneName': 'C05-1'})
+            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Ri_talk003'})
+            goto Event251
+        }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 3}) {
+        switch EventSystemActor.CountFlag4({'GameDataFlagNo0': 'Clear_Dungeon130', 'GameDataFlagNo1': 'Clear_Dungeon131', 'GameDataFlagNo2': 'Clear_Dungeon132', 'GameDataFlagNo3': '', 'GameDataFlagNo4': ''}) {
+          case 0:
+            goto Event256
+          case 1:
+            goto Event257
+          case [2, 3, 4, 5]:
+            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'IsWaitFinish': True, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'TargetActorPosReferenceMode': 0, 'SceneName': 'C05-1'})
+            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Go_talk003'})
+            goto Event251
+        }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 4}) {
+        switch EventSystemActor.CountFlag4({'GameDataFlagNo0': 'Clear_Dungeon121', 'GameDataFlagNo1': 'Clear_Dungeon133', 'GameDataFlagNo2': 'Clear_Dungeon134', 'GameDataFlagNo3': '', 'GameDataFlagNo4': ''}) {
+          case 0:
+            goto Event256
+          case 1:
+            goto Event257
+          case [2, 3, 4, 5]:
+            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'IsWaitFinish': True, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'TargetActorPosReferenceMode': 0, 'SceneName': 'C05-1'})
+            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Ge_talk003'})
+            goto Event251
         }
     } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 2}) {
-            switch EventSystemActor.CountFlag4({'GameDataFlagNo0': 'Clear_Dungeon127', 'GameDataFlagNo1': 'Clear_Dungeon128', 'GameDataFlagNo2': 'Clear_Dungeon129', 'GameDataFlagNo3': '', 'GameDataFlagNo4': ''}) {
-              case 0:
-                goto Event256
-              case 1:
-                goto Event257
-              case 2:
-                Event245:
-                GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'IsWaitFinish': True, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'TargetActorPosReferenceMode': 0, 'SceneName': 'C05-1'})
-                EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Ri_talk003'})
-                goto Event251
-              case 3:
-                goto Event245
-              case 4:
-                goto Event245
-              case 5:
-                goto Event245
-            }
-        } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 3}) {
-                switch EventSystemActor.CountFlag4({'GameDataFlagNo0': 'Clear_Dungeon130', 'GameDataFlagNo1': 'Clear_Dungeon131', 'GameDataFlagNo2': 'Clear_Dungeon132', 'GameDataFlagNo3': '', 'GameDataFlagNo4': ''}) {
-                  case 0:
-                    goto Event256
-                  case 1:
-                    goto Event257
-                  case 2:
-                    Event247:
-                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'IsWaitFinish': True, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'TargetActorPosReferenceMode': 0, 'SceneName': 'C05-1'})
-                    EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Go_talk003'})
-                    goto Event251
-                  case 3:
-                    goto Event247
-                  case 4:
-                    goto Event247
-                  case 5:
-                    goto Event247
-                }
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 4}) {
-                    switch EventSystemActor.CountFlag4({'GameDataFlagNo0': 'Clear_Dungeon121', 'GameDataFlagNo1': 'Clear_Dungeon133', 'GameDataFlagNo2': 'Clear_Dungeon134', 'GameDataFlagNo3': '', 'GameDataFlagNo4': ''}) {
-                      case 0:
-                        goto Event256
-                      case 1:
-                        goto Event257
-                      case 2:
-                        Event249:
-                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'IsWaitFinish': True, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'TargetActorPosReferenceMode': 0, 'SceneName': 'C05-1'})
-                        EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo611_0:Npc_DungeonPriest_Ge_talk003'})
-                        goto Event251
-                      case 3:
-                        goto Event249
-                      case 4:
-                        goto Event249
-                      case 5:
-                        goto Event249
-                    }
-                } else {
-                    goto Event251
-                }
-            }
-        }
+        goto Event251
     }
 }
 
@@ -370,21 +322,15 @@ void Demo611_0_C03() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
         if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 1}) {
             Npc_DungeonPriestDlc2nd001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'SLinkKey': 'ProofOut', 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'ProofOut_Water'})
-        } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 2}) {
-                Npc_DungeonPriestDlc2nd001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'SLinkKey': 'ProofOut', 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'ProofOut_Wind'})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 3}) {
-                    Npc_DungeonPriestDlc2nd001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'SLinkKey': 'ProofOut', 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'ProofOut_Fire'})
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 4}) {
-                        Event232:
-                        Npc_DungeonPriestDlc2nd001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'SLinkKey': 'ProofOut', 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'ProofOut_Electric'})
-                    } else {
-                        goto Event232
-                    }
-                }
-            }
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 2}) {
+            Npc_DungeonPriestDlc2nd001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'SLinkKey': 'ProofOut', 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'ProofOut_Wind'})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 3}) {
+            Npc_DungeonPriestDlc2nd001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'SLinkKey': 'ProofOut', 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'ProofOut_Fire'})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroes_CheckChampDungeon', 'Operator': 'Equal', 'Value': 4}) in [1, 0] {
+            Npc_DungeonPriestDlc2nd001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'SLinkKey': 'ProofOut', 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'ProofOut_Electric'})
         }
     } {
         GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': True, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ClothWarpMode': -1, 'ASName': 'Demo611_0-C06-Link-A-1'})

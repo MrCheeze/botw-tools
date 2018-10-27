@@ -21,13 +21,8 @@ void Talk() {
           case 0:
             Event5:
             Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago007:talk05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-          case 1:
-            Event6:
+          case [1, 2, 3]:
             Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago007:talk06', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-          case 2:
-            goto Event6
-          case 3:
-            goto Event6
         }
     } else {
         goto Event5

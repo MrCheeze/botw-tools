@@ -22,8 +22,7 @@ void Talk() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event53:
+          case [0, 1, 2, 3, 4, 5]:
             Npc_HighMountain020.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain020:talk12', 'ASName': ''})
             Event57:
             Npc_HighMountain020.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain020:talk13', 'IsWaitFinish': True, 'ASName': ''})
@@ -109,32 +108,16 @@ void Talk() {
                 Npc_HighMountain020.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain020:talk01', 'ASName': ''})
                 goto Event178
             }
-          case 1:
-            goto Event53
-          case 2:
-            goto Event53
-          case 3:
-            goto Event53
-          case 4:
-            goto Event53
-          case 5:
-            goto Event53
-          case 6:
-            Event54:
+          case [6, 7]:
             Npc_HighMountain020.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain020:talk11', 'ASName': ''})
             goto Event57
-          case 7:
-            goto Event54
         }
       case 1:
         Npc_HighMountain020.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain020:talk10', 'ASName': ''})
         goto Event57
-      case 2:
-        Event51:
+      case [2, 3]:
         Npc_HighMountain020.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain020:talk08', 'ASName': ''})
         goto Event57
-      case 3:
-        goto Event51
     }
 }
 

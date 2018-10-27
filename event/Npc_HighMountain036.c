@@ -23,18 +23,10 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_HighMountain036.CheckActorAction13() {
-      case 0:
+      case [0, 1, 2, 3, 4, 6, 7, 8, 10, 11, 12, 13]:
         Event63:
         Npc_HighMountain036.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'UniqueName': '', 'IsConfront': False, 'ActorName': ''})
         Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_011'})
-      case 1:
-        goto Event63
-      case 2:
-        goto Event63
-      case 3:
-        goto Event63
-      case 4:
-        goto Event63
       case 5:
         if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC036_CookForTalk'}) {
             Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_022'})
@@ -47,12 +39,6 @@ void Talk() {
                 Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_024'})
             }
         }
-      case 6:
-        goto Event63
-      case 7:
-        goto Event63
-      case 8:
-        goto Event63
       case 9:
         if Npc_HighMountain035[Reric_Finish_Npc_HighMountain035].CheckActorAction({'ActionName': 'Root/Timeline/Action5/到着'}) {
             if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC036_DifficultDaughtersTalk'}) {
@@ -77,14 +63,6 @@ void Talk() {
         } else {
             goto Event63
         }
-      case 10:
-        goto Event63
-      case 11:
-        goto Event63
-      case 12:
-        goto Event63
-      case 13:
-        goto Event63
     }
 }
 
@@ -93,17 +71,10 @@ void Clear_Rito_BrosRock_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_HighMountain036.CheckActorAction13() {
-      case 0:
-        Event22:
+      case [0, 1, 2, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
         Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_212'})
-      case 1:
-        goto Event22
-      case 2:
-        goto Event22
       case 3:
         Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_101', 'IsOverWriteLabelActorName': False})
-      case 4:
-        goto Event22
       case 5:
         if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC036_CookSetTalk'}) {
             Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_224'})
@@ -116,22 +87,6 @@ void Clear_Rito_BrosRock_Talk() {
                 Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_226'})
             }
         }
-      case 6:
-        goto Event22
-      case 7:
-        goto Event22
-      case 8:
-        goto Event22
-      case 9:
-        goto Event22
-      case 10:
-        goto Event22
-      case 11:
-        goto Event22
-      case 12:
-        goto Event22
-      case 13:
-        goto Event22
     }
 }
 
@@ -165,14 +120,8 @@ void Npc_Musician_Come_Talk() {
 
 void Near() {
     Event45:
-    switch EventSystemActor.CheckWeather() {
-      case 1:
-        Event57:
+    if EventSystemActor.CheckWeather() in [1, 2, 3] {
         Npc_HighMountain036.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_Near_Rain'})
-      case 2:
-        goto Event57
-      case 3:
-        goto Event57
     }
 }
 

@@ -18,12 +18,11 @@ void Talk() {
 
     if Npc_LakeSideHatago005.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
         Npc_LakeSideHatago005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_LakeSideHatago005:talk_02'})
+    } else
+    if Npc_LakeSideHatago005.IsOnInstEventFlag() {
+        Npc_LakeSideHatago005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_LakeSideHatago005:talk_01'})
     } else {
-        if Npc_LakeSideHatago005.IsOnInstEventFlag() {
-            Npc_LakeSideHatago005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_LakeSideHatago005:talk_01'})
-        } else {
-            WorldManagerControl.Demo_EventSetAddFogOff({'IsWaitFinish': True})
-            Npc_LakeSideHatago005.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_LakeSideHatago005:talk_00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        }
+        WorldManagerControl.Demo_EventSetAddFogOff({'IsWaitFinish': True})
+        Npc_LakeSideHatago005.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_LakeSideHatago005:talk_00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
     }
 }

@@ -43,8 +43,7 @@ void Talk() {
                   case 0:
                     Event12:
                     Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:talk06'})
-                  case 1:
-                    Event9:
+                  case [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
                     Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:talk04'})
                     if !EventSystemActor.GeneralChoice2() {
                         Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:talk12', 'IsCloseMessageDialog': True})
@@ -62,29 +61,8 @@ void Talk() {
                     Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:talk05'})
                   case 3:
                     Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:talk01'})
-                  case 4:
-                    goto Event9
-                  case 5:
-                    goto Event9
-                  case 6:
-                    goto Event9
-                  case 7:
-                    goto Event9
-                  case 8:
-                    goto Event9
-                  case 9:
-                    goto Event9
-                  case 10:
-                    goto Event9
-                  case 11:
-                    goto Event9
-                  case 12:
-                    goto Event9
-                  case 13:
-                    goto Event9
                 }
-              case 1:
-                Event10:
+              case [1, 2, 3]:
                 if Npc_HutagoHatago_Woman_01.IsArriveAnchorForRain() {
                     Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:talk08'})
                     if !EventSystemActor.GeneralChoice2() {
@@ -95,10 +73,6 @@ void Talk() {
                 } else {
                     Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:talk07'})
                 }
-              case 2:
-                goto Event10
-              case 3:
-                goto Event10
             }
         } else {
             Npc_HutagoHatago_Woman_01.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -116,37 +90,16 @@ void Talk() {
                     Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:talk13'})
                     goto Event50
                 }
-            } else {
-                switch Npc_HutagoHatago_Woman_01.CheckActorAction13() {
-                  case 0:
-                    goto Event12
-                  case 1:
-                    goto Event7
-                  case 2:
-                    Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:ByTheWay00'})
-                  case 3:
-                    Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:ByTheWay00'})
-                  case 4:
-                    goto Event7
-                  case 5:
-                    goto Event7
-                  case 6:
-                    goto Event7
-                  case 7:
-                    goto Event7
-                  case 8:
-                    goto Event7
-                  case 9:
-                    goto Event7
-                  case 10:
-                    goto Event7
-                  case 11:
-                    goto Event7
-                  case 12:
-                    goto Event7
-                  case 13:
-                    goto Event7
-                }
+            } else
+            switch Npc_HutagoHatago_Woman_01.CheckActorAction13() {
+              case 0:
+                goto Event12
+              case [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
+                goto Event7
+              case 2:
+                Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:ByTheWay00'})
+              case 3:
+                Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:ByTheWay00'})
             }
         }
     } else {
@@ -154,30 +107,17 @@ void Talk() {
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'NotAndDo'})
 
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event72:
+          case [0, 1]:
             Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:First_Greeting02'})
             Event63:
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_HutagoHatago_Woman_01_1stGreeting'})
             goto Event45
-          case 1:
-            goto Event72
-          case 2:
-            Event62:
+          case [2, 3, 4]:
             Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:First_Greeting00'})
             goto Event63
-          case 3:
-            goto Event62
-          case 4:
-            goto Event62
-          case 5:
-            Event71:
+          case [5, 6, 7]:
             Npc_HutagoHatago_Woman_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:First_Greeting01'})
             goto Event63
-          case 6:
-            goto Event71
-          case 7:
-            goto Event71
         }
     }
 }
@@ -191,13 +131,8 @@ void Near() {
           case 3:
             Npc_HutagoHatago_Woman_01.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:near00', 'IsChecked': False, 'DispFrame': 90})
         }
-      case 1:
-        Event44:
+      case [1, 2, 3]:
         Npc_HutagoHatago_Woman_01.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HutagoHatago_Woman_01:near02', 'IsChecked': False, 'DispFrame': 90})
-      case 2:
-        goto Event44
-      case 3:
-        goto Event44
     }
 }
 

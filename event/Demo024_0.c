@@ -122,20 +122,19 @@ void CDungeon056Entry1() {
             EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'CDungeon056_Room1_03'})
             SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
             GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'CDungeon056_Room1_02'}) {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'CDungeon056_Room1_02'})
-                if EventSystemActor.CheckFlag({'FlagName': 'CDungeon056_Room1_03'}) {
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'CDungeon056_Room1_03'})
-                    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
-                    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
-                } else {
-                    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
-                }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'CDungeon056_Room1_02'}) {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'CDungeon056_Room1_02'})
+            if EventSystemActor.CheckFlag({'FlagName': 'CDungeon056_Room1_03'}) {
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'CDungeon056_Room1_03'})
+                SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
+                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
             } else {
                 GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
             }
+        } else {
+            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
         }
     }
 }

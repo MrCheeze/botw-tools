@@ -26,8 +26,7 @@ void Talk() {
             if Npc_oasis014.IsOnInstEventFlag() {
                 Event12:
                 switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event36:
+                  case [0, 6, 7]:
                     if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Finished'}) {
                         if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis014_ShinjuGJ'}) {
                             Event13:
@@ -37,28 +36,26 @@ void Talk() {
                             Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_13'})
                             EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis014_ShinjuGJ', 'IsWaitFinish': True})
                         }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Deliver'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis014_GJ'}) {
-                                goto Event13
-                            } else {
-                                Event3:
-                                Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_11'})
-                                if !EventSystemActor.GeneralChoice2() {
-                                    Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_05'})
-                                    Event5:
-                                    Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_03'})
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis014_GJ', 'IsWaitFinish': True})
-                                } else {
-                                    goto Event5
-                                }
-                            }
-                        } else {
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Deliver'}) {
+                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis014_GJ'}) {
                             goto Event13
+                        } else {
+                            Event3:
+                            Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_11'})
+                            if !EventSystemActor.GeneralChoice2() {
+                                Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_05'})
+                                Event5:
+                                Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_03'})
+                                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis014_GJ', 'IsWaitFinish': True})
+                            } else {
+                                goto Event5
+                            }
                         }
+                    } else {
+                        goto Event13
                     }
-                  case 1:
-                    Event2:
+                  case [1, 2, 3, 4, 5]:
                     if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Deliver'}) {
                         if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Finished'}) {
                             if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis014_GJ'}) {
@@ -77,18 +74,6 @@ void Talk() {
                             Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_04'})
                         }
                     }
-                  case 2:
-                    goto Event2
-                  case 3:
-                    goto Event2
-                  case 4:
-                    goto Event2
-                  case 5:
-                    goto Event2
-                  case 6:
-                    goto Event36
-                  case 7:
-                    goto Event36
                 }
             } else {
 
@@ -96,22 +81,21 @@ void Talk() {
 
                 goto Event12
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Deliver'}) {
+
+            call hello()
+
+            Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_12'})
+            Event23:
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis014_First', 'IsWaitFinish': True})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Deliver'}) {
 
-                call hello()
+            call hello()
 
-                Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_12'})
-                Event23:
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis014_First', 'IsWaitFinish': True})
-            } else {
-
-                call hello()
-
-                Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_01'})
-                Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_10'})
-                goto Event23
-            }
+            Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_01'})
+            Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_10'})
+            goto Event23
         }
     } else {
 
@@ -123,25 +107,12 @@ void Talk() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event16:
+      case [0, 1]:
         Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_07'})
-      case 1:
-        goto Event16
-      case 2:
-        Event17:
+      case [2, 3, 4]:
         Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_08'})
-      case 3:
-        goto Event17
-      case 4:
-        goto Event17
-      case 5:
-        Event18:
+      case [5, 6, 7]:
         Npc_oasis014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis014:Talk_09'})
-      case 6:
-        goto Event18
-      case 7:
-        goto Event18
     }
 }
 

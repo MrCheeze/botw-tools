@@ -35,8 +35,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_SouthernVillage012.CheckActorAction13() {
-      case 0:
-        Event23:
+      case [0, 1, 10]:
         switch EventSystemActor.CheckWeather() {
           case 0:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_SourthernVillage012_IsTalked'}) {
@@ -49,8 +48,7 @@ void Talk() {
                         Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_06'})
                         Event40:
                         switch Npc_SouthernVillage012.CheckActorAction13() {
-                          case 0:
-                            Event43:
+                          case [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
                             Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_13'})
                             Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_04'})
                           case 1:
@@ -73,30 +71,6 @@ void Talk() {
                             GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'IsValid': True, 'ObjectId': 0, 'ActorName': 'Npc_SouthernVillage012', 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
                             GameRomCamera.Demo_PlayerHideOn({'IsWaitFinish': True})
                             Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_04'})
-                          case 2:
-                            goto Event43
-                          case 3:
-                            goto Event43
-                          case 4:
-                            goto Event43
-                          case 5:
-                            goto Event43
-                          case 6:
-                            goto Event43
-                          case 7:
-                            goto Event43
-                          case 8:
-                            goto Event43
-                          case 9:
-                            goto Event43
-                          case 10:
-                            goto Event43
-                          case 11:
-                            goto Event43
-                          case 12:
-                            goto Event43
-                          case 13:
-                            goto Event43
                         }
                     } else {
                         Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_07'})
@@ -110,23 +84,14 @@ void Talk() {
 
                 goto Event5
             }
-          case 1:
-            Event26:
+          case [1, 2, 3]:
             Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_05'})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_09'})
             } else {
                 Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_08'})
             }
-          case 2:
-            goto Event26
-          case 3:
-            goto Event26
         }
-      case 1:
-        goto Event23
-      case 10:
-        goto Event23
       case 11:
         Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_01', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
     }
@@ -135,33 +100,19 @@ void Talk() {
 void Near() {
     switch Npc_SouthernVillage012.CheckActorAction13() {
       case 0:
-        switch EventSystemActor.CheckWeather() {
-          case 1:
+        if EventSystemActor.CheckWeather() in [1, 2, 3] {
             Event19:
             Npc_SouthernVillage012.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:Near01'})
-          case 2:
-            goto Event19
-          case 3:
-            goto Event19
         }
       case 1:
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_SouthernVillage012.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:Near00'})
-          case 1:
-            goto Event19
-          case 2:
-            goto Event19
-          case 3:
+          case [1, 2, 3]:
             goto Event19
         }
       case 10:
-        switch EventSystemActor.CheckWeather() {
-          case 1:
-            goto Event19
-          case 2:
-            goto Event19
-          case 3:
+        if EventSystemActor.CheckWeather() in [1, 2, 3] {
             goto Event19
         }
       case 11:
@@ -171,24 +122,11 @@ void Near() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event35:
+      case [0, 1]:
         Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_10'})
-      case 1:
-        goto Event35
-      case 2:
-        Event36:
+      case [2, 3, 4]:
         Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_11'})
-      case 3:
-        goto Event36
-      case 4:
-        goto Event36
-      case 5:
-        Event37:
+      case [5, 6, 7]:
         Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_12'})
-      case 6:
-        goto Event37
-      case 7:
-        goto Event37
     }
 }

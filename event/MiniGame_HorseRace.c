@@ -79,8 +79,7 @@ void Ready_Npc_FaronWoods010_Talk() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         switch Npc_FaronWoods010.CheckActorAction13() {
-          case 0:
-            Event123:
+          case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13]:
             if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_PlayedRace'}) {
                 Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk01'})
                 Event14:
@@ -115,34 +114,15 @@ void Ready_Npc_FaronWoods010_Talk() {
                   case 2:
                     goto Event12
                 }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_First'}) {
+                Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk21'})
+                goto Event14
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_First'}) {
-                    Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk21'})
-                    goto Event14
-                } else {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorseRace_First', 'IsWaitFinish': True})
-                    Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk00'})
-                    goto Event14
-                }
+                EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorseRace_First', 'IsWaitFinish': True})
+                Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk00'})
+                goto Event14
             }
-          case 1:
-            goto Event123
-          case 2:
-            goto Event123
-          case 3:
-            goto Event123
-          case 4:
-            goto Event123
-          case 5:
-            goto Event123
-          case 6:
-            goto Event123
-          case 7:
-            goto Event123
-          case 8:
-            goto Event123
-          case 9:
-            goto Event123
           case 10:
             if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_PlayedRace'}) {
                 Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk28'})
@@ -151,22 +131,13 @@ void Ready_Npc_FaronWoods010_Talk() {
             }
           case 11:
             Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk29'})
-          case 12:
-            goto Event123
-          case 13:
-            goto Event123
         }
-      case 1:
-        Event169:
+      case [1, 2, 3]:
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_PlayedRace'}) {
             Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk26'})
         } else {
             Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk27'})
         }
-      case 2:
-        goto Event169
-      case 3:
-        goto Event169
     }
 }
 
@@ -208,20 +179,18 @@ void Game_Npc_FaronWoods010_EachFrame() {
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_CourseOut'}) {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_HorseRace_RetireCourseOut'})
             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Finish', 'QuestName': ''})
+        } else
+        if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 300}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_HorseRace_TimeUp'})
+            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Finish', 'QuestName': ''})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_Goal'}) {
+            EventSystemActor.Demo_StopEventMiniGameTime({'IsWaitFinish': True})
+            GameDataCalcMachine.Demo_MiniGameTimerWrite({'IsWaitFinish': True, 'GameDataIntNameMintues': 'MiniGame_HorseRace_ResultMinute', 'GameDataIntNameSeconds': 'MiniGame_HorseRace_ResultSecond', 'GameDataIntNameMiliseconds': 'MiniGame_HorseRace_ResultMiliSecond'})
+            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Finish', 'QuestName': ''})
         } else {
-            if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 300}) {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_HorseRace_TimeUp'})
-                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Finish', 'QuestName': ''})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_Goal'}) {
-                    EventSystemActor.Demo_StopEventMiniGameTime({'IsWaitFinish': True})
-                    GameDataCalcMachine.Demo_MiniGameTimerWrite({'IsWaitFinish': True, 'GameDataIntNameMintues': 'MiniGame_HorseRace_ResultMinute', 'GameDataIntNameSeconds': 'MiniGame_HorseRace_ResultSecond', 'GameDataIntNameMiliseconds': 'MiniGame_HorseRace_ResultMiliSecond'})
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Finish', 'QuestName': ''})
-                } else {
-                    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                    goto Event34
-                }
-            }
+            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+            goto Event34
         }
     } else {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_HorseRace_FallOff'})
@@ -285,48 +254,42 @@ void Finish_Npc_FaronWoods010_StepStart() {
 
                         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Ready', 'QuestName': ''})
                     }
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_TimeUp'}) {
-                        Event161:
-                        Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk24'})
-                        goto Event126
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_RetireCourseOut'}) {
-                            goto Event161
-                        } else {
-
-                            call Result()
-
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_HorseRace_GoaledRace'})
-                            goto Event126
-                        }
-                    }
-                }
-            } else {
+                } else
                 if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_TimeUp'}) {
-                    Npc_FaronWoods010.Demo_OpenMessageDialog({'ASName': 'Talk', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 3, 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk25', 'IsWaitFinish': False, 'IsBecomingSpeaker': True})
-                    goto Event230
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_RetireCourseOut'}) {
-                        Npc_FaronWoods010.Demo_OpenMessageDialog({'ASName': 'Talk', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 3, 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsWaitFinish': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk50'})
-                        goto Event230
-                    } else {
-                        Npc_FaronWoods010.Demo_OpenMessageDialog({'ASName': 'Talk', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 3, 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk22', 'IsWaitFinish': False, 'IsBecomingSpeaker': True})
-                        goto Event230
-                    }
-                }
-            }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_TimeUp'}) {
-                goto Event134
-            } else {
+                    Event161:
+                    Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk24'})
+                    goto Event126
+                } else
                 if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_RetireCourseOut'}) {
-                    goto Event134
+                    goto Event161
                 } else {
-                    EventSystemActor.Demo_MiniGameFinish({'TextType': 0, 'IsWaitFinish': True})
-                    goto Event134
+
+                    call Result()
+
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_HorseRace_GoaledRace'})
+                    goto Event126
                 }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_TimeUp'}) {
+                Npc_FaronWoods010.Demo_OpenMessageDialog({'ASName': 'Talk', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 3, 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk25', 'IsWaitFinish': False, 'IsBecomingSpeaker': True})
+                goto Event230
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_RetireCourseOut'}) {
+                Npc_FaronWoods010.Demo_OpenMessageDialog({'ASName': 'Talk', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 3, 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsWaitFinish': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk50'})
+                goto Event230
+            } else {
+                Npc_FaronWoods010.Demo_OpenMessageDialog({'ASName': 'Talk', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 3, 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk22', 'IsWaitFinish': False, 'IsBecomingSpeaker': True})
+                goto Event230
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_TimeUp'}) {
+            goto Event134
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorseRace_RetireCourseOut'}) {
+            goto Event134
+        } else {
+            EventSystemActor.Demo_MiniGameFinish({'TextType': 0, 'IsWaitFinish': True})
+            goto Event134
         }
     }
 }
@@ -458,27 +421,12 @@ void EntryTalk() {
                 Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk05'})
                 EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MiniGame_HorseRace_CreateObstacle'})
             }
-        } else {
-            switch Npc_FaronWoods010.CheckTypeOfWildHorseAssociated() {
-              case 0:
-                Event77:
-                Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk16'})
-              case 1:
-                goto Event77
-              case 2:
-                goto Event77
-              case 3:
-                goto Event77
-              case 4:
-                Event322:
-                Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk53'})
-              case 5:
-                goto Event322
-              case 6:
-                goto Event322
-              case 7:
-                goto Event77
-            }
+        } else
+        switch Npc_FaronWoods010.CheckTypeOfWildHorseAssociated() {
+          case [0, 1, 2, 3, 7]:
+            Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk16'})
+          case [4, 5, 6]:
+            Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk53'})
         }
     } else {
         Npc_FaronWoods010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:talk15'})
@@ -488,52 +436,20 @@ void EntryTalk() {
 void Ready_Npc_FaronWoods010_Near() {
     switch Npc_FaronWoods010.CheckActorAction13() {
       case 0:
-        switch EventSystemActor.CheckWeather() {
-          case 1:
-            Event175:
+        if EventSystemActor.CheckWeather() in [1, 2, 3] {
             Npc_FaronWoods010.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:Near03'})
-          case 2:
-            goto Event175
-          case 3:
-            goto Event175
         }
-      case 1:
-        Event162:
+      case [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13]:
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_FaronWoods010.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:Near00'})
-          case 1:
-            Event164:
+          case [1, 2, 3]:
             Npc_FaronWoods010.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:Near03'})
-          case 2:
-            goto Event164
-          case 3:
-            goto Event164
         }
-      case 2:
-        goto Event162
-      case 3:
-        goto Event162
-      case 4:
-        goto Event162
-      case 5:
-        goto Event162
-      case 6:
-        goto Event162
-      case 7:
-        goto Event162
-      case 8:
-        goto Event162
-      case 9:
-        goto Event162
       case 10:
         Npc_FaronWoods010.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:Near02'})
       case 11:
         Npc_FaronWoods010.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorseRace:Near01', 'IsChecked': False, 'DispFrame': 90})
-      case 12:
-        goto Event162
-      case 13:
-        goto Event162
     }
 }
 

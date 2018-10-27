@@ -14,8 +14,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_SmallOasis007.CheckActorAction13() {
-      case 0:
-        Event0:
+      case [0, 1, 10]:
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 6})
 
@@ -36,13 +35,8 @@ void Talk() {
                     Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis007:Talk_003'})
                 }
             }
-        } else {
-            goto Event12
-        }
-      case 1:
-        goto Event0
-      case 10:
-        goto Event0
+        } else
+        goto Event12
       case 11:
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})

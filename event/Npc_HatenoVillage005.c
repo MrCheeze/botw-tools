@@ -14,8 +14,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_HatenoVillage005.CheckActorAction13() {
-      case 0:
-        Event64:
+      case [0, 2, 4, 6]:
 
         call NatsuyukiBlueFire()
 
@@ -46,8 +45,7 @@ void Talk() {
             Npc_HatenoVillage005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage005:talk02'})
             goto Event26
         }
-      case 1:
-        Event62:
+      case [1, 3, 5, 7]:
 
         call NatsuyukiBlueFire()
 
@@ -65,18 +63,6 @@ void Talk() {
             Npc_HatenoVillage005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage005:talk02'})
             goto Event68
         }
-      case 2:
-        goto Event64
-      case 3:
-        goto Event62
-      case 4:
-        goto Event64
-      case 5:
-        goto Event62
-      case 6:
-        goto Event64
-      case 7:
-        goto Event62
       case 10:
 
         call NatsuyukiBlueFire()

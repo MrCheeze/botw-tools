@@ -71,18 +71,13 @@ void Talk() {
 void Near() {
     Event12:
     switch Npc_Goron018.CheckActorAction13() {
-      case 0:
-        Event11:
+      case [0, 1, 12]:
         Npc_Goron018.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:near00', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        goto Event11
       case 10:
         Npc_Goron018.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:near01', 'IsChecked': False, 'DispFrame': 90})
       case 11:
         Event15:
         Npc_Goron018.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:near02', 'IsChecked': False, 'DispFrame': 90})
-      case 12:
-        goto Event11
     }
 }
 
@@ -157,49 +152,31 @@ void ImportGem_Finish() {
 
 void Ramera_First() {
     switch Npc_Goron018.CheckActorAction13() {
-      case 0:
-        Event248:
+      case [0, 1, 10, 12]:
 
         call WomenClothing()
 
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event153:
+          case [0, 1]:
             if EventSystemActor.CheckPlayerState({'PlayerState': 18}) {
                 Event150:
                 Npc_Goron018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk00', 'IsOverWriteLabelActorName': False})
             } else {
                 Npc_Goron018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk05', 'IsOverWriteLabelActorName': False})
             }
-          case 1:
-            goto Event153
-          case 2:
-            Event252:
+          case [2, 3, 4]:
             if EventSystemActor.CheckPlayerState({'PlayerState': 18}) {
                 goto Event150
             } else {
                 Npc_Goron018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk06', 'IsOverWriteLabelActorName': False})
             }
-          case 3:
-            goto Event252
-          case 4:
-            goto Event252
-          case 5:
-            Event253:
+          case [5, 6, 7]:
             if EventSystemActor.CheckPlayerState({'PlayerState': 18}) {
                 goto Event150
             } else {
                 Npc_Goron018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk07', 'IsOverWriteLabelActorName': False})
             }
-          case 6:
-            goto Event253
-          case 7:
-            goto Event253
         }
-      case 1:
-        goto Event248
-      case 10:
-        goto Event248
       case 11:
         Event109:
         switch EventSystemActor.RandomChoice4() {
@@ -217,18 +194,14 @@ void Ramera_First() {
             Npc_Goron018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk38'})
             goto Event239
         }
-      case 12:
-        goto Event248
     }
 }
 
 void Ramera_Hello() {
     switch Npc_Goron018.CheckActorAction13() {
-      case 0:
-        Event6:
+      case [0, 1, 12]:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event44:
+          case [0, 1]:
             if Npc_Goron018.IsOnInstEventFlag() {
                 Event70:
                 switch EventSystemActor.RandomChoice4() {
@@ -252,35 +225,21 @@ void Ramera_Hello() {
                 Npc_Goron018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk16', 'IsOverWriteLabelActorName': False})
                 goto Event249
             }
-          case 1:
-            goto Event44
-          case 2:
-            Event250:
+          case [2, 3, 4, 5]:
             if Npc_Goron018.IsOnInstEventFlag() {
                 goto Event70
             } else {
                 Npc_Goron018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk17', 'IsOverWriteLabelActorName': False})
                 goto Event249
             }
-          case 3:
-            goto Event250
-          case 4:
-            goto Event250
-          case 5:
-            goto Event250
-          case 6:
-            Event251:
+          case [6, 7]:
             if Npc_Goron018.IsOnInstEventFlag() {
                 goto Event70
             } else {
                 Npc_Goron018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk18', 'IsOverWriteLabelActorName': False})
                 goto Event249
             }
-          case 7:
-            goto Event251
         }
-      case 1:
-        goto Event6
       case 10:
         if Npc_Goron018.IsOnInstEventFlag() {
             Npc_Goron018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk03', 'IsOverWriteLabelActorName': False})
@@ -291,8 +250,6 @@ void Ramera_Hello() {
         }
       case 11:
         goto Event109
-      case 12:
-        goto Event6
     }
 }
 
@@ -310,41 +267,37 @@ void Clear_RemainsFire_Talk() {
 
         call RameraSell({'MessageId': 'EventFlowMsg/Npc_Goron018:talk11', 'MessageId_000': 'EventFlowMsg/Npc_Goron018:talk42', 'PorchItemName': 'Item_Ore_A', 'Count': 10, 'Value': -10, 'GetRupee': 5500, 'MessageId_001': 'EventFlowMsg/Npc_Goron018:talk22'})
 
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron018_Ruby'}) {
-            Event113:
-            EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron018_Ruby', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron018_Ruby'}) {
+        Event113:
+        EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron018_Ruby', 'IsWaitFinish': True})
 
-            call RameraSell({'Count': 10, 'Value': -10, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk12', 'MessageId_000': 'EventFlowMsg/Npc_Goron018:talk43', 'PorchItemName': 'Item_Ore_B', 'GetRupee': 2300, 'MessageId_001': 'EventFlowMsg/Npc_Goron018:talk23'})
+        call RameraSell({'Count': 10, 'Value': -10, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk12', 'MessageId_000': 'EventFlowMsg/Npc_Goron018:talk43', 'PorchItemName': 'Item_Ore_B', 'GetRupee': 2300, 'MessageId_001': 'EventFlowMsg/Npc_Goron018:talk23'})
 
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron018_Sapphire'}) {
-                Event111:
-                EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron018_Sapphire', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron018_Sapphire'}) {
+        Event111:
+        EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron018_Sapphire', 'IsWaitFinish': True})
 
-                call RameraSell({'Count': 10, 'Value': -10, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk13', 'MessageId_000': 'EventFlowMsg/Npc_Goron018:talk44', 'PorchItemName': 'Item_Ore_C', 'GetRupee': 2900, 'MessageId_001': 'EventFlowMsg/Npc_Goron018:talk24'})
+        call RameraSell({'Count': 10, 'Value': -10, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk13', 'MessageId_000': 'EventFlowMsg/Npc_Goron018:talk44', 'PorchItemName': 'Item_Ore_C', 'GetRupee': 2900, 'MessageId_001': 'EventFlowMsg/Npc_Goron018:talk24'})
 
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron018_Topaz'}) {
-                    Event112:
-                    EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron018_Topaz', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron018_Topaz'}) {
+        Event112:
+        EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron018_Topaz', 'IsWaitFinish': True})
 
-                    call RameraSell({'Count': 10, 'Value': -10, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk14', 'MessageId_000': 'EventFlowMsg/Npc_Goron018:talk45', 'PorchItemName': 'Item_Ore_D', 'GetRupee': 2000, 'MessageId_001': 'EventFlowMsg/Npc_Goron018:talk25'})
+        call RameraSell({'Count': 10, 'Value': -10, 'MessageId': 'EventFlowMsg/Npc_Goron018:talk14', 'MessageId_000': 'EventFlowMsg/Npc_Goron018:talk45', 'PorchItemName': 'Item_Ore_D', 'GetRupee': 2000, 'MessageId_001': 'EventFlowMsg/Npc_Goron018:talk25'})
 
-                } else {
-                    switch EventSystemActor.RandomChoice4() {
-                      case 0:
-                        goto Event114
-                      case 1:
-                        goto Event113
-                      case 2:
-                        goto Event111
-                      case 3:
-                        goto Event112
-                    }
-                }
-            }
-        }
+    } else
+    switch EventSystemActor.RandomChoice4() {
+      case 0:
+        goto Event114
+      case 1:
+        goto Event113
+      case 2:
+        goto Event111
+      case 3:
+        goto Event112
     }
 }
 
@@ -404,26 +357,20 @@ void WomenClothing() {
 void ImportGem_ReadyNear() {
     Event255:
     switch Npc_Goron018.CheckActorAction13() {
-      case 0:
-        Event254:
+      case [0, 1, 12]:
         Npc_Goron018.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:near00', 'DispFrame': 300, 'IsChecked': True})
-      case 1:
-        goto Event254
       case 10:
         Npc_Goron018.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron018:near01', 'DispFrame': 300, 'IsChecked': True})
       case 11:
         goto Event15
-      case 12:
-        goto Event254
     }
 }
 
 void ImportGem_FinishNear() {
     if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_F', 'Count': 10}) {
         goto Event255
-    } else {
-        goto Event12
-    }
+    } else
+    goto Event12
 }
 
 void Clear_RemainsFire_Near() {

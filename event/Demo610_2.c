@@ -188,7 +188,7 @@ void Ready() {
 void Demo610_2_Sing() {
     if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_ReliefSong'}) {
         switch EventSystemActor.CountFlag4({'GameDataFlagNo4': '', 'GameDataFlagNo0': 'BalladOfHeroGerudo_ReliefSong', 'GameDataFlagNo1': 'BalladOfHeroZora_ReliefSong', 'GameDataFlagNo2': 'BalladOfHeroGoron_ReliefSong', 'GameDataFlagNo3': 'BalladOfHeroRito_ReliefSong'}) {
-          case 0:
+          case [0, 1]:
             Event29:
             EventBgmCtrlTag.Demo_Start({'IsWaitFinish': True, 'BgmName': 'AccoBallad01Bgm'})
 
@@ -196,8 +196,6 @@ void Demo610_2_Sing() {
 
             Event9:
             SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'WorldMuteOff', 'IsWaitFinish': True, 'BgmCtrlType': 'None'})
-          case 1:
-            goto Event29
           case 2:
             Event31:
             EventBgmCtrlTag.Demo_Start({'IsWaitFinish': True, 'BgmName': 'AccoBallad02Bgm'})
@@ -212,31 +210,24 @@ void Demo610_2_Sing() {
             call Demo610_2_C06()
 
             goto Event9
-          case 4:
+          case [4, 5]:
             Event32:
             EventBgmCtrlTag.Demo_Start({'IsWaitFinish': True, 'BgmName': 'AccoBallad04Bgm'})
 
             call Demo610_2_C06()
 
             goto Event9
-          case 5:
-            goto Event32
         }
-    } else {
-        switch EventSystemActor.CountFlag4({'GameDataFlagNo4': '', 'GameDataFlagNo0': 'BalladOfHeroGerudo_ReliefSong', 'GameDataFlagNo1': 'BalladOfHeroZora_ReliefSong', 'GameDataFlagNo2': 'BalladOfHeroGoron_ReliefSong', 'GameDataFlagNo3': 'BalladOfHeroRito_ReliefSong'}) {
-          case 0:
-            goto Event29
-          case 1:
-            goto Event31
-          case 2:
-            goto Event33
-          case 3:
-            goto Event32
-          case 4:
-            goto Event32
-          case 5:
-            goto Event32
-        }
+    } else
+    switch EventSystemActor.CountFlag4({'GameDataFlagNo4': '', 'GameDataFlagNo0': 'BalladOfHeroGerudo_ReliefSong', 'GameDataFlagNo1': 'BalladOfHeroZora_ReliefSong', 'GameDataFlagNo2': 'BalladOfHeroGoron_ReliefSong', 'GameDataFlagNo3': 'BalladOfHeroRito_ReliefSong'}) {
+      case 0:
+        goto Event29
+      case 1:
+        goto Event31
+      case 2:
+        goto Event33
+      case [3, 4, 5]:
+        goto Event32
     }
 }
 
@@ -354,8 +345,7 @@ void Demo610_2_C03_Musician_First() {
         Event344:
         GameRomCamera.Demo_CameraAnimFlowAbs({'IsWaitFinish': True, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C04-0'})
         Npc_Musician_AoC_HeroZoraRelief.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk14'})
-        if !EventSystemActor.GeneralChoice2() {
-            Event345:
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
             GameRomCamera.Demo_CameraAnimFlowAbs({'IsWaitFinish': True, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C05-0'})
             Npc_Musician_AoC_HeroZoraRelief.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk05'})
             Npc_Musician_AoC_HeroZoraRelief.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_First_030'})
@@ -370,8 +360,6 @@ void Demo610_2_C03_Musician_First() {
             Npc_Musician_AoC_HeroZoraRelief.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_First_060'})
             Npc_Musician_AoC_HeroZoraRelief.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo610_2:Npc_Musician_AoC_HeroZoraRelief_004', 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             EventSystemActor.Demo_FlagON({'FlagName': 'Musician_Relief_First', 'IsWaitFinish': True})
-        } else {
-            goto Event345
         }
     } else {
         Npc_Musician_AoC_HeroZoraRelief.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk16'})

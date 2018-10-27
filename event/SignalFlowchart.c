@@ -35,29 +35,26 @@ void AproachFirstFieldCliff() {
                 Event8:
                 EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
                 goto Event47
+            } else
+            if EventSystemActor.CheckAreaTransition({'CurrentAreaNo': 46, 'PostAreaNo': 50}) {
+                goto Event11
             } else {
-                if EventSystemActor.CheckAreaTransition({'CurrentAreaNo': 46, 'PostAreaNo': 50}) {
-                    goto Event11
-                } else {
-                    Event10:
-                    SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
-                    goto Event8
-                }
+                Event10:
+                SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
+                goto Event8
+            }
+        } else
+        if EventSystemActor.CheckAreaTransition({'CurrentAreaNo': 47, 'PostAreaNo': -47}) {
+            if EventSystemActor.CheckAreaTransition({'CurrentAreaNo': 47, 'PostAreaNo': 46}) {
+                goto Event11
+            } else
+            if EventSystemActor.CheckAreaTransition({'CurrentAreaNo': 47, 'PostAreaNo': 50}) {
+                goto Event11
+            } else {
+                goto Event10
             }
         } else {
-            if EventSystemActor.CheckAreaTransition({'CurrentAreaNo': 47, 'PostAreaNo': -47}) {
-                if EventSystemActor.CheckAreaTransition({'CurrentAreaNo': 47, 'PostAreaNo': 46}) {
-                    goto Event11
-                } else {
-                    if EventSystemActor.CheckAreaTransition({'CurrentAreaNo': 47, 'PostAreaNo': 50}) {
-                        goto Event11
-                    } else {
-                        goto Event10
-                    }
-                }
-            } else {
-                goto Event11
-            }
+            goto Event11
         }
     } else {
         goto Event11
@@ -85,29 +82,14 @@ void PlayerNakedness() {
 void PlayerUseStopTimer() {
     Event28:
     switch EventSystemActor.WhatCurrentItem() {
-      case 0:
-        Event30:
+      case [0, 1, 2, 3, 5, 6, 7, 8]:
         SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
         Event27:
         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
         goto Event28
-      case 1:
-        goto Event30
-      case 2:
-        goto Event30
-      case 3:
-        goto Event30
       case 4:
         SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
         goto Event27
-      case 5:
-        goto Event30
-      case 6:
-        goto Event30
-      case 7:
-        goto Event30
-      case 8:
-        goto Event30
     }
 }
 
@@ -137,13 +119,12 @@ void Gerudo_CostumeCheck() {
         Event54:
         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
         goto Event51
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Mans_Clothes_Shop'}) {
+        goto Event53
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Mans_Clothes_Shop'}) {
-            goto Event53
-        } else {
-            SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
-            goto Event54
-        }
+        SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
+        goto Event54
     }
 }
 
@@ -187,13 +168,12 @@ void Demo318_0() {
             Event64:
             EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
             goto Event68
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 17}) {
+            goto Event66
         } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 17}) {
-                goto Event66
-            } else {
-                SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
-                goto Event64
-            }
+            SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
+            goto Event64
         }
     } else {
         goto Event66
@@ -211,13 +191,12 @@ void BloodyMoonRelief() {
         } else {
             goto Event75
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonReliefOn'}) {
+        goto Event75
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonReliefOn'}) {
-            goto Event75
-        } else {
-            SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
-            goto Event75
-        }
+        SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
+        goto Event75
     }
 }
 
@@ -248,28 +227,24 @@ void NakedIsland() {
             Event83:
             EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
             goto Event86
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 2}) {
+            SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
+            goto Event83
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 17}) {
+            SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
+            goto Event83
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 19}) {
+            SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
+            goto Event83
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 25}) {
+            SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
+            goto Event83
         } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 2}) {
-                SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
-                goto Event83
-            } else {
-                if EventSystemActor.CheckPlayerState({'PlayerState': 17}) {
-                    SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
-                    goto Event83
-                } else {
-                    if EventSystemActor.CheckPlayerState({'PlayerState': 19}) {
-                        SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
-                        goto Event83
-                    } else {
-                        if EventSystemActor.CheckPlayerState({'PlayerState': 25}) {
-                            SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
-                            goto Event83
-                        } else {
-                            goto Event84
-                        }
-                    }
-                }
-            }
+            goto Event84
         }
     } else {
         SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
@@ -404,17 +379,15 @@ void Gaman_Failed_Check() {
         Event152:
         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
         goto Event156
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
+        goto Event153
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 7}) {
+        goto Event153
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
-            goto Event153
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 7}) {
-                goto Event153
-            } else {
-                SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
-                goto Event152
-            }
-        }
+        SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
+        goto Event152
     }
 }
 
@@ -432,12 +405,11 @@ void StatueOfZora_Check() {
             SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
             goto Event163
         }
+    } else
+    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Spear_050'}) {
+        goto Event158
     } else {
-        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Spear_050'}) {
-            goto Event158
-        } else {
-            goto Event159
-        }
+        goto Event159
     }
 }
 

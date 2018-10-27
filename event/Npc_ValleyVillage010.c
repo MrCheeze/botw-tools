@@ -33,8 +33,7 @@ void Talk() {
             if EventSystemActor.CheckFlag({'FlagName': 'Get_RitoWeapon'}) {
                 if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC010_Bow028_First'}) {
                     switch Npc_HighMountain001.CheckActorAction13() {
-                      case 0:
-                        Event152:
+                      case [0, 1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
                         Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk30'})
                         Event156:
                         EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
@@ -67,10 +66,7 @@ void Talk() {
                             Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk12'})
                             goto Event167
                         }
-                      case 1:
-                        goto Event152
-                      case 2:
-                        Event149:
+                      case [2, 3]:
                         switch EventSystemActor.CheckWeather() {
                           case 0:
                             if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
@@ -123,50 +119,19 @@ void Talk() {
                             } else {
                                 goto Event175
                             }
-                          case 1:
-                            Event153:
+                          case [1, 2, 3]:
                             Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk31'})
                             goto Event156
-                          case 2:
-                            goto Event153
-                          case 3:
-                            goto Event153
                         }
-                      case 3:
-                        goto Event149
-                      case 4:
-                        goto Event152
-                      case 5:
-                        goto Event152
-                      case 6:
-                        goto Event152
-                      case 7:
-                        goto Event152
-                      case 8:
-                        goto Event152
-                      case 9:
-                        goto Event152
-                      case 10:
-                        goto Event152
-                      case 11:
-                        goto Event152
-                      case 12:
-                        goto Event152
-                      case 13:
-                        goto Event152
                     }
                 } else {
                     Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk08', 'ASName': ''})
                     EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC010_Bow028_First', 'IsWaitFinish': True})
                     switch Npc_HighMountain001.CheckActorAction13() {
-                      case 0:
-                        Event150:
+                      case [0, 1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
                         Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk28'})
                         goto Event156
-                      case 1:
-                        goto Event150
-                      case 2:
-                        Event154:
+                      case [2, 3]:
                         switch EventSystemActor.CheckWeather() {
                           case 0:
                             if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
@@ -176,196 +141,97 @@ void Talk() {
                                 Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk13'})
                                 goto Event174
                             }
-                          case 1:
-                            Event151:
+                          case [1, 2, 3]:
                             Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk29'})
                             goto Event156
-                          case 2:
-                            goto Event151
-                          case 3:
-                            goto Event151
                         }
-                      case 3:
-                        goto Event154
-                      case 4:
-                        goto Event150
-                      case 5:
-                        goto Event150
-                      case 6:
-                        goto Event150
-                      case 7:
-                        goto Event150
-                      case 8:
-                        goto Event150
-                      case 9:
-                        goto Event150
-                      case 10:
-                        goto Event150
-                      case 11:
-                        goto Event150
-                      case 12:
-                        goto Event150
-                      case 13:
-                        goto Event150
                     }
                 }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC010_First_Clear'}) {
-                    switch EventSystemActor.RandomChoice4() {
-                      case 0:
-                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk02', 'ASName': ''})
-                        goto Event156
-                      case 1:
-                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk01', 'ASName': ''})
-                        goto Event156
-                      case 2:
-                        Event125:
-                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk03', 'ASName': ''})
-                        goto Event156
-                      case 3:
-                        goto Event125
-                    }
-                } else {
-                    Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk00', 'ASName': ''})
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC010_First_Clear'}) {
+                switch EventSystemActor.RandomChoice4() {
+                  case 0:
+                    Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk02', 'ASName': ''})
+                    goto Event156
+                  case 1:
                     Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk01', 'ASName': ''})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC010_First_Clear', 'IsWaitFinish': True})
+                    goto Event156
+                  case [2, 3]:
+                    Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk03', 'ASName': ''})
                     goto Event156
                 }
+            } else {
+                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk00', 'ASName': ''})
+                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk01', 'ASName': ''})
+                EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC010_First_Clear', 'IsWaitFinish': True})
+                goto Event156
             }
-        } else {
-            Event13:
-            if EventSystemActor.CheckFlag({'FlagName': 'Get_RitoWeapon'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC010_Bow028_First'}) {
-                    switch Npc_HighMountain001.CheckActorAction13() {
+        } else
+        Event13:
+        if EventSystemActor.CheckFlag({'FlagName': 'Get_RitoWeapon'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC010_Bow028_First'}) {
+                switch Npc_HighMountain001.CheckActorAction13() {
+                  case [0, 1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
+                    Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk30'})
+                  case [2, 3]:
+                    switch EventSystemActor.CheckWeather() {
                       case 0:
-                        Event114:
-                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk30'})
-                      case 1:
-                        goto Event114
-                      case 2:
-                        Event111:
-                        switch EventSystemActor.CheckWeather() {
-                          case 0:
-                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk07', 'ASName': ''})
-                            Event56:
-                            if !EventSystemActor.GeneralChoice2() {
-                                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                                Npc_ValleyVillage010[Teba_RitoVillage].Demo_ChangePostureWithAS({'IsWaitFinish': True, 'Posture': 'Stand'})
-                                Npc_ValleyVillage010[Teba_RitoVillage].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ActorName': 'Npc_HighMountain001', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 1, 'IsValid': True, 'IsConfront': True, 'FaceId': 2})
-                                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk25', 'ASName': ''})
-                                Npc_HighMountain001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ActorName': 'Npc_ValleyVillage010', 'UniqueName': 'Teba_RitoVillage', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 1, 'IsValid': True, 'IsConfront': True, 'FaceId': 2})
-                                Npc_HighMountain001.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain001:Talk_23', 'IsWaitFinish': True})
-                                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk26', 'ASName': ''})
-                                Npc_ValleyVillage010[Teba_RitoVillage].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'ActorName': '', 'IsValid': True, 'IsConfront': True, 'FaceId': 2})
-                                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk27', 'ASName': ''})
-                                Npc_HighMountain001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'IsValid': True, 'IsConfront': True, 'FaceId': 2})
-                                Npc_HighMountain001.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain001:Talk_24', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
-                                Fader.Demo_FadeOut({'IsWaitFinish': True, 'DispMode': 'Auto', 'Color': 1, 'Frame': 0})
-                                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo702_0', 'EndFade': 0})
-                            } else {
-                                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk10', 'ASName': ''})
-                            }
-                          case 1:
-                            Event115:
-                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk31'})
-                          case 2:
-                            goto Event115
-                          case 3:
-                            goto Event115
+                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk07', 'ASName': ''})
+                        Event56:
+                        if !EventSystemActor.GeneralChoice2() {
+                            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_ChangePostureWithAS({'IsWaitFinish': True, 'Posture': 'Stand'})
+                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ActorName': 'Npc_HighMountain001', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 1, 'IsValid': True, 'IsConfront': True, 'FaceId': 2})
+                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk25', 'ASName': ''})
+                            Npc_HighMountain001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ActorName': 'Npc_ValleyVillage010', 'UniqueName': 'Teba_RitoVillage', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 1, 'IsValid': True, 'IsConfront': True, 'FaceId': 2})
+                            Npc_HighMountain001.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain001:Talk_23', 'IsWaitFinish': True})
+                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk26', 'ASName': ''})
+                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'ActorName': '', 'IsValid': True, 'IsConfront': True, 'FaceId': 2})
+                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk27', 'ASName': ''})
+                            Npc_HighMountain001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'IsValid': True, 'IsConfront': True, 'FaceId': 2})
+                            Npc_HighMountain001.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HighMountain001:Talk_24', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
+                            Fader.Demo_FadeOut({'IsWaitFinish': True, 'DispMode': 'Auto', 'Color': 1, 'Frame': 0})
+                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo702_0', 'EndFade': 0})
+                        } else {
+                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk10', 'ASName': ''})
                         }
-                      case 3:
-                        goto Event111
-                      case 4:
-                        goto Event114
-                      case 5:
-                        goto Event114
-                      case 6:
-                        goto Event114
-                      case 7:
-                        goto Event114
-                      case 8:
-                        goto Event114
-                      case 9:
-                        goto Event114
-                      case 10:
-                        goto Event114
-                      case 11:
-                        goto Event114
-                      case 12:
-                        goto Event114
-                      case 13:
-                        goto Event114
-                    }
-                } else {
-                    Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk08', 'ASName': ''})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC010_Bow028_First', 'IsWaitFinish': True})
-                    switch Npc_HighMountain001.CheckActorAction13() {
-                      case 0:
-                        Event112:
-                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk28'})
-                      case 1:
-                        goto Event112
-                      case 2:
-                        Event116:
-                        switch EventSystemActor.CheckWeather() {
-                          case 0:
-                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk09', 'ASName': ''})
-                            goto Event56
-                          case 1:
-                            Event113:
-                            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk29'})
-                          case 2:
-                            goto Event113
-                          case 3:
-                            goto Event113
-                        }
-                      case 3:
-                        goto Event116
-                      case 4:
-                        goto Event112
-                      case 5:
-                        goto Event112
-                      case 6:
-                        goto Event112
-                      case 7:
-                        goto Event112
-                      case 8:
-                        goto Event112
-                      case 9:
-                        goto Event112
-                      case 10:
-                        goto Event112
-                      case 11:
-                        goto Event112
-                      case 12:
-                        goto Event112
-                      case 13:
-                        goto Event112
+                      case [1, 2, 3]:
+                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk31'})
                     }
                 }
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC010_First_Clear'}) {
-                    switch EventSystemActor.RandomChoice4() {
+                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk08', 'ASName': ''})
+                EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC010_Bow028_First', 'IsWaitFinish': True})
+                switch Npc_HighMountain001.CheckActorAction13() {
+                  case [0, 1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
+                    Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk28'})
+                  case [2, 3]:
+                    switch EventSystemActor.CheckWeather() {
                       case 0:
-                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk02', 'ASName': ''})
-                      case 1:
-                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk01', 'ASName': ''})
-                      case 2:
-                        Event12:
-                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk03', 'ASName': ''})
-                      case 3:
-                        goto Event12
+                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk09', 'ASName': ''})
+                        goto Event56
+                      case [1, 2, 3]:
+                        Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk29'})
                     }
-                } else {
-                    Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk00', 'ASName': ''})
-                    Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk01', 'ASName': ''})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC010_First_Clear', 'IsWaitFinish': True})
                 }
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Rito_NPC010_First_Clear'}) {
+            switch EventSystemActor.RandomChoice4() {
+              case 0:
+                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk02', 'ASName': ''})
+              case 1:
+                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk01', 'ASName': ''})
+              case [2, 3]:
+                Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk03', 'ASName': ''})
+            }
+        } else {
+            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk00', 'ASName': ''})
+            Npc_ValleyVillage010[Teba_RitoVillage].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_ValleyVillage010:talk01', 'ASName': ''})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC010_First_Clear', 'IsWaitFinish': True})
         }
-    } else {
-        goto Event13
-    }
+    } else
+    goto Event13
 }
 
 void Teba_WindRelic_Finished() {

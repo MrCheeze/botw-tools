@@ -20,7 +20,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_Attacked_008.CheckTerrorLevel() {
-      case 0:
+      case [0, 1, 2, 4]:
         Event3:
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
@@ -34,14 +34,9 @@ void Talk() {
 
             Npc_Attacked_008.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:GoodBye00', 'IsCloseMessageDialog': True, 'ASName': ''})
         }
-      case 1:
-        goto Event3
-      case 2:
-        goto Event3
       case 3:
         switch Npc_Attacked_008.CheckResultOfNPCConflict() {
-          case 0:
-            Event29:
+          case [0, 1]:
             if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 2, 'GameDataIntName': 'Npc_Attacked_009_AttackedState'}) {
                 goto Event3
             } else {
@@ -50,21 +45,14 @@ void Talk() {
 
                 goto Event5
             }
-          case 1:
-            goto Event29
-          case 2:
-            Event0:
+          case [2, 3]:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})
 
 
             call Npc_Road_Common.Atacked_Pair({'Flag': 'Npc_Attacked_008_CookReward', 'AttackedState': 'Npc_Attacked_009_AttackedState', 'Self': ActorIdentifier(name="Npc_Attacked_008"), 'Pair': ActorIdentifier(name="Npc_Attacked_009"), 'TerrorState': 'Npc_Attacked_009_TerrorState'})
 
-          case 3:
-            goto Event0
         }
-      case 4:
-        goto Event3
       case 5:
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})

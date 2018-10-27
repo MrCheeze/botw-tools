@@ -53,22 +53,10 @@ void Talk() {
     call HaruriHello()
 
     switch Npc_UMiiVillage010.CheckActorAction13() {
-      case 0:
+      case [0, 1, 2, 3, 4, 5, 10]:
         Event73:
         Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk25', 'IsCloseMessageDialog': False})
         Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk20'})
-      case 1:
-        goto Event73
-      case 2:
-        goto Event73
-      case 3:
-        goto Event73
-      case 4:
-        goto Event73
-      case 5:
-        goto Event73
-      case 10:
-        goto Event73
       case 11:
         if Npc_UMiiVillage010.IsOnInstEventFlag() {
             goto Event73
@@ -81,11 +69,8 @@ void Talk() {
 
 void Near() {
     switch Npc_UMiiVillage010.CheckActorAction13() {
-      case 4:
-        Event122:
+      case [4, 5]:
         Npc_UMiiVillage010.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:near02', 'IsChecked': False, 'DispFrame': 90})
-      case 5:
-        goto Event122
       case 10:
         Npc_UMiiVillage010.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:near03'})
       case 11:
@@ -98,41 +83,17 @@ void HaruriHello() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_UMiiVillage010.CheckActorAction13() {
-      case 0:
-        Event12:
+      case [0, 1, 2, 3, 4, 5]:
         if !Npc_UMiiVillage010.IsOnInstEventFlag() {
             switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event2:
+              case [0, 1]:
                 Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk02', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-              case 1:
-                goto Event2
-              case 2:
-                Event14:
+              case [2, 3, 4, 5]:
                 Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk03'})
-              case 3:
-                goto Event14
-              case 4:
-                goto Event14
-              case 5:
-                goto Event14
-              case 6:
-                Event15:
+              case [6, 7]:
                 Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk04'})
-              case 7:
-                goto Event15
             }
         }
-      case 1:
-        goto Event12
-      case 2:
-        goto Event12
-      case 3:
-        goto Event12
-      case 4:
-        goto Event12
-      case 5:
-        goto Event12
       case 10:
         if !Npc_UMiiVillage010.IsOnInstEventFlag() {
             Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk10'})
@@ -185,36 +146,8 @@ void NearActorsTalk() {
 void NearActorsNear() {
     Event146:
     if !EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC010_Meeting'}) {
-        switch Npc_UMiiVillage010.CheckActorAction13() {
-          case 0:
-            Event63:
+        if Npc_UMiiVillage010.CheckActorAction13() in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] {
             Npc_UMiiVillage010.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:near01', 'DispFrame': 90, 'IsChecked': False})
-          case 1:
-            goto Event63
-          case 2:
-            goto Event63
-          case 3:
-            goto Event63
-          case 4:
-            goto Event63
-          case 5:
-            goto Event63
-          case 6:
-            goto Event63
-          case 7:
-            goto Event63
-          case 8:
-            goto Event63
-          case 9:
-            goto Event63
-          case 10:
-            goto Event63
-          case 11:
-            goto Event63
-          case 12:
-            goto Event63
-          case 13:
-            goto Event63
         }
     }
 }
@@ -233,27 +166,13 @@ void GiveCake_Haruri_Ready() {
         Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk18', 'IsCloseMessageDialog': False})
         Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk22', 'IsCloseMessageDialog': False})
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event70:
+          case [0, 1, 2, 3, 4, 5]:
             Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk23'})
             Event147:
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_GiveCake_Give'})
-          case 1:
-            goto Event70
-          case 2:
-            goto Event70
-          case 3:
-            goto Event70
-          case 4:
-            goto Event70
-          case 5:
-            goto Event70
-          case 6:
-            Event69:
+          case [6, 7]:
             Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk24'})
             goto Event147
-          case 7:
-            goto Event69
         }
       case 1:
         Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk11'})
@@ -261,36 +180,11 @@ void GiveCake_Haruri_Ready() {
         EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'UMiiVillage_NPC010_OK'})
         Event112:
         switch Npc_UMiiVillage010.CheckActorAction13() {
-          case 0:
-            Event111:
+          case [0, 1]:
             Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk07'})
             Event49:
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiVillage_NPC010_Here'})
-          case 1:
-            goto Event111
-          case 2:
-            goto Event49
-          case 3:
-            goto Event49
-          case 4:
-            goto Event49
-          case 5:
-            goto Event49
-          case 6:
-            goto Event49
-          case 7:
-            goto Event49
-          case 8:
-            goto Event49
-          case 9:
-            goto Event49
-          case 10:
-            goto Event49
-          case 11:
-            goto Event49
-          case 12:
-            goto Event49
-          case 13:
+          case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
             goto Event49
         }
       case 2:
@@ -307,11 +201,8 @@ void GiveCake_Haruri_ReadyNear() {
 
 void GiveCake_Haruri_FinishNear() {
     switch Npc_UMiiVillage010.CheckActorAction13() {
-      case 4:
-        Event116:
+      case [4, 5]:
         Npc_UMiiVillage010.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:near02'})
-      case 5:
-        goto Event116
       case 10:
         Npc_UMiiVillage010.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:near03', 'IsChecked': True, 'DispFrame': 300})
       case 11:

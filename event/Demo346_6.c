@@ -345,17 +345,15 @@ void InitialSetting() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         Event428:
         GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': False})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
+        GameROMPlayer.Demo_ReserveParashawlStart({'IsWaitFinish': False})
+        Event433:
+        GameROMPlayer.Demo_StopInAir({'IsWaitFinish': False, 'NoFixed': False})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
+        goto Event433
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
-            GameROMPlayer.Demo_ReserveParashawlStart({'IsWaitFinish': False})
-            Event433:
-            GameROMPlayer.Demo_StopInAir({'IsWaitFinish': False, 'NoFixed': False})
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
-                goto Event433
-            } else {
-                goto Event428
-            }
-        }
+        goto Event428
     }
 }

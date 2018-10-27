@@ -17,19 +17,11 @@ void EntryPoint0() {
                     if AutoPlacement.EcoAreaActorName({'ActorName': 'Enemy_Dragon_Ice'}) {
                         if AutoPlacement.CheckGameData({'Label': 'Enemy_Dragon_Ice_ReturnToSky'}) {
                             if !AutoPlacement.RailDistance({'RailType': 0, 'NearOnly': True, 'RailName': 'Dragon_Ice_MainRoute', 'Distance': 2000.0}) {
-                                switch AutoPlacement.TimeType() {
-                                  case 0:
-                                    Event50:
+                                if AutoPlacement.TimeType() in [0, 5, 6, 7] {
                                     if !AutoPlacement.CheckGameData({'Label': 'Enemy_Dragon_Ice_Appearance_Today'}) {
                                         Event55:
                                         AutoPlacement.CreateData({'MinNum': 1, 'GroupRadius': 8.0, 'OffsetPosY': 0.0, 'RideList': '', 'MaxNum': 1, 'EquipWeaponActorCount': -1, 'Mimicry': False})
                                     }
-                                  case 5:
-                                    goto Event50
-                                  case 6:
-                                    goto Event50
-                                  case 7:
-                                    goto Event50
                                 }
                             }
                         }
@@ -37,18 +29,10 @@ void EntryPoint0() {
                 } {
                     if AutoPlacement.EcoAreaActorName({'ActorName': 'Enemy_Dragon_Fire'}) {
                         if !AutoPlacement.RailDistance({'RailType': 0, 'NearOnly': True, 'RailName': 'Dragon_Fire_MainRoute', 'Distance': 2000.0}) {
-                            switch AutoPlacement.TimeType() {
-                              case 0:
-                                Event52:
+                            if AutoPlacement.TimeType() in [0, 5, 6, 7] {
                                 if !AutoPlacement.CheckGameData({'Label': 'Enemy_Dragon_Fire_Appearance_Today'}) {
                                     goto Event55
                                 }
-                              case 5:
-                                goto Event52
-                              case 6:
-                                goto Event52
-                              case 7:
-                                goto Event52
                             }
                         }
                     }
@@ -56,18 +40,11 @@ void EntryPoint0() {
                     if AutoPlacement.EcoAreaActorName({'ActorName': 'Enemy_Dragon_Electric'}) {
                         if !AutoPlacement.RailDistance({'RailType': 0, 'RailName': 'Dragon_Electric_Start_LakeFloria', 'NearOnly': False, 'Distance': 1200.0}) {
                             Event37:
-                            switch AutoPlacement.TimeType() {
-                              case 0:
+                            if AutoPlacement.TimeType() in [0, 5, 6, 7] {
                                 Event54:
                                 if !AutoPlacement.CheckGameData({'Label': 'Enemy_Dragon_Electric_Appearance_Today'}) {
                                     goto Event55
                                 }
-                              case 5:
-                                goto Event54
-                              case 6:
-                                goto Event54
-                              case 7:
-                                goto Event54
                             }
                         }
                     }

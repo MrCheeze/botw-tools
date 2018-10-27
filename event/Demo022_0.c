@@ -100,14 +100,9 @@ void Demo022_0() {
                         goto Event22
                     }
                 }
-              case 1:
-                Event55:
+              case [1, 2, 3]:
                 Npc_ValleyVillage031.Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'DemoMsg/Demo022_0:talk08', 'IsOverWriteLabelActorName': False, 'ASName': 'Demo022_0-C01-Npc_Rito_Teba-A-0', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
                 goto Event22
-              case 2:
-                goto Event55
-              case 3:
-                goto Event55
             }
         } else {
             Npc_ValleyVillage031.Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Demo022_0-C01-Npc_Rito_Teba-A-0', 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo022_0:talk11', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})

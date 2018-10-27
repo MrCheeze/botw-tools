@@ -127,25 +127,23 @@ void Talk() {
                     call WarningClear()
 
                 }
-            } else {
-                if Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Timeline/Action5/到着'}) {
-                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Action5_01'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        goto Event52
-                    } else {
-                        goto Event68
-                    }
+            } else
+            if Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Timeline/Action5/到着'}) {
+                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Action5_01'})
+                if !EventSystemActor.GeneralChoice2() {
+                    goto Event52
                 } else {
-                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Action5_00'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        goto Event52
-                    } else {
-                        goto Event53
-                    }
+                    goto Event68
+                }
+            } else {
+                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Action5_00'})
+                if !EventSystemActor.GeneralChoice2() {
+                    goto Event52
+                } else {
+                    goto Event53
                 }
             }
-          case 1:
-            Event76:
+          case [1, 2, 3]:
             if Npc_FaronWoods006.IsArriveAnchorForRain() {
                 goto Event77
             } else {
@@ -154,126 +152,117 @@ void Talk() {
 
                 Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:RunRain00', 'IsCloseMessageDialog': True})
             }
-          case 2:
-            goto Event76
-          case 3:
-            goto Event76
         }
-    } else {
-        if Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Terror'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods006_WarningClear'}) {
+    } else
+    if Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Terror'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods006_WarningClear'}) {
 
-                call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 6})
+            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 6})
 
-                Event193:
-                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear01', 'IsCloseMessageDialog': False})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
-                Event229:
-                if Npc_FaronWoods006.IsOnInstEventFlag() {
-                    Event7:
-                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk02'})
-                    switch EventSystemActor.GeneralChoice3() {
-                      case 0:
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FaronWoods006_talk', 'IsWaitFinish': True})
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk03'})
-                        GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                        GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 286.6171875, 'Pattern1PosY': 120.06871032714844, 'Pattern1PosZ': 1519.3675537109375, 'Pattern1AtX': 289.35308837890625, 'Pattern1AtY': 119.47679901123047, 'Pattern1AtZ': 1513.718505859375, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': -1, 'IsWaitFinish': True, 'TargetActor2': -1, 'PosAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'StartCalcOnly': True, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'AtAppendMode': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk05', 'IsCloseMessageDialog': False})
-                        Event134:
-                        GameRomCamera.Demo_PlayerHideOn({'IsWaitFinish': True})
-                        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk06'})
-                        if !EventSystemActor.GeneralChoice2() {
-                            Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk07'})
-                            Event43:
-                            Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk09'})
-                        } else {
-                            goto Event43
-                        }
-                      case 1:
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FaronWoods006_talk', 'IsWaitFinish': True})
-                        GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                        GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 286.6171875, 'Pattern1PosY': 120.06871032714844, 'Pattern1PosZ': 1519.3675537109375, 'Pattern1AtX': 289.35308837890625, 'Pattern1AtY': 119.47679901123047, 'Pattern1AtZ': 1513.718505859375, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': -1, 'IsWaitFinish': True, 'TargetActor2': -1, 'PosAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'StartCalcOnly': True, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'AtAppendMode': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk04', 'IsCloseMessageDialog': False})
-                        goto Event134
-                      case 2:
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk08'})
-                    }
-                } else {
-                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk01_1'})
+            Event193:
+            Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear01', 'IsCloseMessageDialog': False})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
+            Event229:
+            if Npc_FaronWoods006.IsOnInstEventFlag() {
+                Event7:
+                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk02'})
+                switch EventSystemActor.GeneralChoice3() {
+                  case 0:
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FaronWoods006_talk', 'IsWaitFinish': True})
+                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk03'})
                     GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
                     GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-
-                    fork {
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk01_2'})
-                    } {
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 225.33218383789062, 'Pattern1PosY': 131.52032470703125, 'Pattern1PosZ': 1586.8834228515625, 'Pattern1AtX': 220.86978149414062, 'Pattern1AtY': 131.78062438964844, 'Pattern1AtZ': 1587.48779296875, 'Pattern1Fovy': 40.00001525878906, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': False, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'Count': 0.0, 'Cushion': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    }
-
-
-                    fork {
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk01_3'})
-                    } {
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 224.96121215820312, 'Pattern1PosY': 131.9342498779297, 'Pattern1PosZ': 1585.5947265625, 'Pattern1AtX': 220.86978149414062, 'Pattern1AtY': 131.78062438964844, 'Pattern1AtZ': 1587.48779296875, 'Pattern1Fovy': 40.00001525878906, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'StartCalcOnly': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': False, 'Cushion': 0.20000000298023224, 'IsWaitFinish': False, 'Count': 60.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    }
-
+                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 286.6171875, 'Pattern1PosY': 120.06871032714844, 'Pattern1PosZ': 1519.3675537109375, 'Pattern1AtX': 289.35308837890625, 'Pattern1AtY': 119.47679901123047, 'Pattern1AtZ': 1513.718505859375, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': -1, 'IsWaitFinish': True, 'TargetActor2': -1, 'PosAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'StartCalcOnly': True, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'AtAppendMode': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk05', 'IsCloseMessageDialog': False})
+                    Event134:
                     GameRomCamera.Demo_PlayerHideOn({'IsWaitFinish': True})
                     GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
-                    goto Event7
+                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk06'})
+                    if !EventSystemActor.GeneralChoice2() {
+                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk07'})
+                        Event43:
+                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk09'})
+                    } else {
+                        goto Event43
+                    }
+                  case 1:
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FaronWoods006_talk', 'IsWaitFinish': True})
+                    GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+                    GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 286.6171875, 'Pattern1PosY': 120.06871032714844, 'Pattern1PosZ': 1519.3675537109375, 'Pattern1AtX': 289.35308837890625, 'Pattern1AtY': 119.47679901123047, 'Pattern1AtZ': 1513.718505859375, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': -1, 'IsWaitFinish': True, 'TargetActor2': -1, 'PosAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'StartCalcOnly': True, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'AtAppendMode': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk04', 'IsCloseMessageDialog': False})
+                    goto Event134
+                  case 2:
+                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk08'})
                 }
             } else {
+                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk01_1'})
+                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+                GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
 
-                call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
-
-                if Npc_FaronWoods006.IsOnInstEventFlag() {
-                    goto Event193
-                } else {
-                    goto Event229
+                fork {
+                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk01_2'})
+                } {
+                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 225.33218383789062, 'Pattern1PosY': 131.52032470703125, 'Pattern1PosZ': 1586.8834228515625, 'Pattern1AtX': 220.86978149414062, 'Pattern1AtY': 131.78062438964844, 'Pattern1AtZ': 1587.48779296875, 'Pattern1Fovy': 40.00001525878906, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': False, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'Count': 0.0, 'Cushion': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
                 }
+
+
+                fork {
+                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk01_3'})
+                } {
+                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 224.96121215820312, 'Pattern1PosY': 131.9342498779297, 'Pattern1PosZ': 1585.5947265625, 'Pattern1AtX': 220.86978149414062, 'Pattern1AtY': 131.78062438964844, 'Pattern1AtZ': 1587.48779296875, 'Pattern1Fovy': 40.00001525878906, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'StartCalcOnly': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': False, 'Cushion': 0.20000000298023224, 'IsWaitFinish': False, 'Count': 60.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                }
+
+                GameRomCamera.Demo_PlayerHideOn({'IsWaitFinish': True})
+                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
+                goto Event7
             }
         } else {
-            if Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods006_WarningClear'}) {
-                    Event225:
 
-                    call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 6})
+            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
 
-                    if !EventSystemActor.RandomChoice2() {
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear01', 'IsCloseMessageDialog': True})
-                        Event190:
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                        goto Event229
-                    } else {
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear00', 'IsCloseMessageDialog': True})
-                        goto Event190
-                    }
-                } else {
-                    if Npc_FaronWoods006.IsOnInstEventFlag() {
-                        Event228:
-
-                        call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
-
-                        goto Event229
-                    } else {
-
-                        call InitTalk.InitTalkAngleDesignation({'Arg_Greeting': 'FollowAISchedule', 'Arg_Angle': 160.0})
-
-                        Npc_FaronWoods006.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk00', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Act_Lookfar'})
-                        Npc_FaronWoods006.Demo_TurnAndLookToObject({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'IsConfront': False})
-                        goto Event229
-                    }
-                }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods006_WarningClear'}) {
-                    goto Event225
-                } else {
-                    goto Event228
-                }
-            }
+            if Npc_FaronWoods006.IsOnInstEventFlag() {
+                goto Event193
+            } else
+            goto Event229
         }
+    } else
+    if Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods006_WarningClear'}) {
+            Event225:
+
+            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 6})
+
+            if !EventSystemActor.RandomChoice2() {
+                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear01', 'IsCloseMessageDialog': True})
+                Event190:
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                goto Event229
+            } else {
+                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear00', 'IsCloseMessageDialog': True})
+                goto Event190
+            }
+        } else
+        if Npc_FaronWoods006.IsOnInstEventFlag() {
+            Event228:
+
+            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
+
+            goto Event229
+        } else {
+
+            call InitTalk.InitTalkAngleDesignation({'Arg_Greeting': 'FollowAISchedule', 'Arg_Angle': 160.0})
+
+            Npc_FaronWoods006.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk00', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Act_Lookfar'})
+            Npc_FaronWoods006.Demo_TurnAndLookToObject({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'IsConfront': False})
+            goto Event229
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods006_WarningClear'}) {
+        goto Event225
+    } else {
+        goto Event228
     }
 }
 
@@ -285,17 +274,15 @@ void Near() {
         } else {
             Npc_FaronWoods006.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Near00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
         }
-    } else {
-        if Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Timeline/Wander/'}) {
-            Event223:
-            if !EventSystemActor.CheckWeather() {
-                goto Event38
-            }
-        } else {
-            if !Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Timeline/Action5/到着'}) {
-                goto Event223
-            }
+    } else
+    if Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Timeline/Wander/'}) {
+        Event223:
+        if !EventSystemActor.CheckWeather() {
+            goto Event38
         }
+    } else
+    if !Npc_FaronWoods006.CheckActorAction({'ActionName': 'Root/Timeline/Action5/到着'}) {
+        goto Event223
     }
 }
 

@@ -160,15 +160,14 @@ void Game_Npc_MiniGame_Golf_EachFrame() {
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_SmashGolf_Warned'}) {
             if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_SmashGolf_CancellArea'}) {
                 EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'ForceStop'})
+            } else
+            Event106:
+            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_SmashGolf_Smashing'}) {
+                EventSystemActor.Demo_DisappearGolfCount({'IsWaitFinish': True})
+                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'MoveBall'})
             } else {
-                Event106:
-                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_SmashGolf_Smashing'}) {
-                    EventSystemActor.Demo_DisappearGolfCount({'IsWaitFinish': True})
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'MoveBall'})
-                } else {
-                    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                    goto Event166
-                }
+                EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+                goto Event166
             }
         } else {
             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Warning'})
@@ -246,47 +245,44 @@ void MoveBall_Npc_MiniGame_Golf_StepStart() {
                 EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
                 if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_SmashGolf_Smashing'}) {
                     goto Event112
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_SmashGolf_JudgeOB'}) {
+                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Value': 20, 'Operator': 'LessThan'}) {
+                        Npc_MiniGame_Golf.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Judge_OB', 'ASName': '', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': False})
+                        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
+                        EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_SmashGolf_SetRetryPos'})
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
+                        GameRomCamera.Demo_GameCamera({'IsWaitFinish': False})
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
+                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MiniGame_SmashGolf_SetRetryPos'})
+                        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
+                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Game'})
+                    } else {
+                        Npc_MiniGame_Golf.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:StrokeOver'})
+                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
+                    }
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_SmashGolf_JudgeOB'}) {
+                    GameDataCalcMachine.Demo_ActorInfoToGameDataVec3({'ActorName': 'WoodBall_Golf', 'IsWaitFinish': True, 'ParameterName': 'Pos', 'GameDataVec3fToName': 'MiniGame_SmashGolf_NowBallPos', 'UniqueName': ''})
+                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Operator': 'GreaterThan', 'Value': 0}) {
+                        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_SmashGolf_CupIn'}) {
+                            SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': '', 'Sound': 'Demo_Minigame_Applause'})
+                            Npc_MiniGame_Golf.Demo_OpenMessageDialog({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_00', 'IsWaitFinish': False, 'CloseDialogOption': 3, 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_SmashGolf_Clear'})
+                            Npc_MiniGame_Golf.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_1', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
+                            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
+                        } else
+                        Event443:
                         if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Value': 20, 'Operator': 'LessThan'}) {
-                            Npc_MiniGame_Golf.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Judge_OB', 'ASName': '', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': False})
-                            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
-                            EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_SmashGolf_SetRetryPos'})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
-                            GameRomCamera.Demo_GameCamera({'IsWaitFinish': False})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MiniGame_SmashGolf_SetRetryPos'})
-                            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
+                            GameRomCamera.Demo_MovePosFlow({'TargetActor1': 3, 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorName1': 'WoodBall_Golf', 'TargetActor2': 1, 'Pattern1PosX': 0.0, 'Pattern1PosZ': 0.0, 'CollisionInterpolateSkip': False, 'ActorIgnoringCollision': -1, 'FovyAppendMode': 1, 'Pattern1PosY': 0.0, 'Accept1FrameDelay': False, 'Count': 0.0, 'MotionMode': 1, 'PosAppendMode': 1, 'StartCalcOnly': True, 'Cushion': 1.0, 'AtAppendMode': 3, 'Pattern1Fovy': 50.0, 'ReviseModeEnd': 1, 'IsWaitFinish': True, 'Pattern1AtY': 1.5, 'GameDataVec3fCameraPos': 'MiniGame_SmashGolf_ReturnCameraPos', 'GameDataVec3fCameraAt': ''})
                             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Game'})
                         } else {
                             Npc_MiniGame_Golf.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:StrokeOver'})
                             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
                         }
-                    } else {
-                        GameDataCalcMachine.Demo_ActorInfoToGameDataVec3({'ActorName': 'WoodBall_Golf', 'IsWaitFinish': True, 'ParameterName': 'Pos', 'GameDataVec3fToName': 'MiniGame_SmashGolf_NowBallPos', 'UniqueName': ''})
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Operator': 'GreaterThan', 'Value': 0}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_SmashGolf_CupIn'}) {
-                                SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': '', 'Sound': 'Demo_Minigame_Applause'})
-                                Npc_MiniGame_Golf.Demo_OpenMessageDialog({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_00', 'IsWaitFinish': False, 'CloseDialogOption': 3, 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_SmashGolf_Clear'})
-                                Npc_MiniGame_Golf.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_1', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
-                                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
-                            } else {
-                                Event443:
-                                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Value': 20, 'Operator': 'LessThan'}) {
-                                    GameRomCamera.Demo_MovePosFlow({'TargetActor1': 3, 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorName1': 'WoodBall_Golf', 'TargetActor2': 1, 'Pattern1PosX': 0.0, 'Pattern1PosZ': 0.0, 'CollisionInterpolateSkip': False, 'ActorIgnoringCollision': -1, 'FovyAppendMode': 1, 'Pattern1PosY': 0.0, 'Accept1FrameDelay': False, 'Count': 0.0, 'MotionMode': 1, 'PosAppendMode': 1, 'StartCalcOnly': True, 'Cushion': 1.0, 'AtAppendMode': 3, 'Pattern1Fovy': 50.0, 'ReviseModeEnd': 1, 'IsWaitFinish': True, 'Pattern1AtY': 1.5, 'GameDataVec3fCameraPos': 'MiniGame_SmashGolf_ReturnCameraPos', 'GameDataVec3fCameraAt': ''})
-                                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Game'})
-                                } else {
-                                    Npc_MiniGame_Golf.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:StrokeOver'})
-                                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
-                                }
-                            }
-                        } else {
-                            goto Event443
-                        }
-                    }
+                    } else
+                    goto Event443
                 }
             }
         }
@@ -472,34 +468,31 @@ void Result() {
             call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
 
             EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Operator': 'LessThanOrEqualTo', 'Value': 5}) {
+            Npc_MiniGame_Golf.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_High_1', 'ASName': '', 'IsWaitFinish': True})
+            Npc_MiniGame_Golf.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_High_2', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Operator': 'LessThanOrEqualTo', 'Value': 10}) {
+            Npc_MiniGame_Golf.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_Middle_1', 'IsWaitFinish': True, 'ASName': ''})
+            Npc_MiniGame_Golf.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_Middle_2', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Value': 20, 'Operator': 'LessThanOrEqualTo'}) {
+            Npc_MiniGame_Golf.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_Low_1', 'ASName': '', 'IsWaitFinish': True})
+            Npc_MiniGame_Golf.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_Low_2', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
         } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Operator': 'LessThanOrEqualTo', 'Value': 5}) {
-                Npc_MiniGame_Golf.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_High_1', 'ASName': '', 'IsWaitFinish': True})
-                Npc_MiniGame_Golf.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_High_2', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
-                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
-
-                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Operator': 'LessThanOrEqualTo', 'Value': 10}) {
-                    Npc_MiniGame_Golf.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_Middle_1', 'IsWaitFinish': True, 'ASName': ''})
-                    Npc_MiniGame_Golf.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_Middle_2', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_ShotCount', 'Value': 20, 'Operator': 'LessThanOrEqualTo'}) {
-                        Npc_MiniGame_Golf.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_Low_1', 'ASName': '', 'IsWaitFinish': True})
-                        Npc_MiniGame_Golf.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:Clear_Low_2', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
-                    } else {
-                        Event447:
-                        Npc_MiniGame_Golf.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:StrokeOver_Result'})
-                    }
-                }
-            }
+            Event447:
+            Npc_MiniGame_Golf.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_SmashGolf:StrokeOver_Result'})
         }
     } else {
         goto Event447
@@ -547,16 +540,12 @@ void SmashCamera() {
                     goto Event582
                 }
             }
-        } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_Camera2FrameCount', 'Value': 1, 'Operator': 'LessThanOrEqualTo'}) {
-                goto Event593
-            } else {
-                goto Event593
-            }
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_Camera2FrameCount', 'Value': 1, 'Operator': 'LessThanOrEqualTo'}) in [1, 0] {
+            goto Event593
         }
-    } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_SmashCameraPattern', 'Operator': 'Equal', 'Value': 1}) {
-            goto Event582
-        }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_SmashGolf_SmashCameraPattern', 'Operator': 'Equal', 'Value': 1}) {
+        goto Event582
     }
 }

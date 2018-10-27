@@ -39,123 +39,12 @@ void Talk() {
 
             call table()
 
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_Poison_Finish'}) {
-
-                fork {
-                    Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
-                    Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitSofa_Drink_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk13'})
-                } {
-                    Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                }
-
-
-                fork {
-                    Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_B', 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_A.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': 'Act_SitSofa_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk14'})
-                } {
-                    Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                }
-
-
-                fork {
-                    Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
-                    Npc_OasisMilk_A.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_B', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitSofa_Drink_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk15'})
-                }
-
-
-                fork {
-                    Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
-                    Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitSofa_Drink_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk16'})
-                } {
-                    Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                }
-
-
-                call camera()
-
-            } else {
-
-                fork {
-                    Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
-                    Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk06', 'ASName': 'Act_SitSofa_Drink_Talk'})
-                } {
-                    Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                }
-
-
-                fork {
-                    Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_B', 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_A.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk07', 'IsCloseMessageDialog': False, 'ASName': 'Act_SitSofa_Talk'})
-                } {
-                    Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                }
-
-
-                fork {
-                    Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
-                    Npc_OasisMilk_A.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_B', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk08', 'ASName': 'Act_SitSofa_Drink_Talk'})
-                }
-
-
-                fork {
-                    Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
-                    Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk09', 'ASName': 'Act_SitSofa_Drink_Talk'})
-                } {
-                    Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
-                } {
-                    Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
-                }
-
-
-                call camera()
-
-            }
-        }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Bar_SofaEdge'}) {
-
-            call table()
-
-        } else {
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_Poison_Finish'}) {
 
             fork {
                 Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
-                Npc_OasisMilk_A.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitSofa_Drink_Talk'})
+                Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitSofa_Drink_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk13'})
             } {
                 Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
                 Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
@@ -170,7 +59,7 @@ void Talk() {
                 Npc_OasisMilk_A.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
             } {
                 Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk01', 'ASName': 'Act_SitSofa_Talk'})
+                Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': 'Act_SitSofa_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk14'})
             } {
                 Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
                 Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
@@ -185,13 +74,13 @@ void Talk() {
                 Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
             } {
                 Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_B', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk02', 'ASName': 'Act_SitSofa_Drink_Talk'})
+                Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitSofa_Drink_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk15'})
             }
 
 
             fork {
                 Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
-                Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk03', 'ASName': 'Act_SitSofa_Drink_Talk'})
+                Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitSofa_Drink_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk16'})
             } {
                 Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
                 Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
@@ -203,8 +92,117 @@ void Talk() {
 
             call camera()
 
-            EventSystemActor.Demo_FlagON({'FlagName': 'SecretClub_rumor', 'IsWaitFinish': True})
+        } else {
+
+            fork {
+                Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
+                Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk06', 'ASName': 'Act_SitSofa_Drink_Talk'})
+            } {
+                Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
+            } {
+                Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+            }
+
+
+            fork {
+                Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_B', 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisMilk_A.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+            } {
+                Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk07', 'IsCloseMessageDialog': False, 'ASName': 'Act_SitSofa_Talk'})
+            } {
+                Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+            }
+
+
+            fork {
+                Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
+                Npc_OasisMilk_A.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+            } {
+                Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
+            } {
+                Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_B', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk08', 'ASName': 'Act_SitSofa_Drink_Talk'})
+            }
+
+
+            fork {
+                Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
+                Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk09', 'ASName': 'Act_SitSofa_Drink_Talk'})
+            } {
+                Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
+            } {
+                Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+            }
+
+
+            call camera()
+
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Bar_SofaEdge'}) {
+
+        call table()
+
+    } else {
+
+        fork {
+            Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
+            Npc_OasisMilk_A.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitSofa_Drink_Talk'})
+        } {
+            Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
+        } {
+            Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+        }
+
+
+        fork {
+            Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_B', 'IsValid': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_OasisMilk_A.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+        } {
+            Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk01', 'ASName': 'Act_SitSofa_Talk'})
+        } {
+            Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+        }
+
+
+        fork {
+            Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
+            Npc_OasisMilk_A.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+        } {
+            Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
+        } {
+            Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_B', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk02', 'ASName': 'Act_SitSofa_Drink_Talk'})
+        }
+
+
+        fork {
+            Npc_OasisMilk_A.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_C', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
+            Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk03', 'ASName': 'Act_SitSofa_Drink_Talk'})
+        } {
+            Npc_OasisMilk_B.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_OasisMilk_B.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Wait', 'MorphingFrame': -1.0})
+        } {
+            Npc_OasisMilk_C.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_A', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_OasisMilk_C.Demo_PlayASForDemo({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Act_SitSofa_Drink_Wait', 'MorphingFrame': -1.0})
+        }
+
+
+        call camera()
+
+        EventSystemActor.Demo_FlagON({'FlagName': 'SecretClub_rumor', 'IsWaitFinish': True})
     }
 }
 
@@ -227,19 +225,18 @@ void SecretTalk() {
             Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_12', 'ASName': 'Act_SitSofa_Drink_Talk'})
             Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_13', 'ASName': 'Act_SitSofa_Talk'})
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'SecretClub_rumor'}) {
+        Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_00', 'IsCloseMessageDialog': True, 'ASName': 'Act_SitSofa_Talk'})
+        Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_01', 'ASName': 'Act_SitSofa_Drink_Talk'})
+        Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_02', 'ASName': 'Act_SitSofa_Drink_Talk'})
+        Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_03', 'ASName': 'Act_SitSofa_Talk'})
+        Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_04', 'ASName': 'Act_SitSofa_Drink_Talk'})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'SecretClub_rumor'}) {
-            Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_00', 'IsCloseMessageDialog': True, 'ASName': 'Act_SitSofa_Talk'})
-            Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_01', 'ASName': 'Act_SitSofa_Drink_Talk'})
-            Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_02', 'ASName': 'Act_SitSofa_Drink_Talk'})
-            Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_03', 'ASName': 'Act_SitSofa_Talk'})
-            Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_04', 'ASName': 'Act_SitSofa_Drink_Talk'})
-        } else {
-            Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_05', 'ASName': 'Act_SitSofa_Drink_Talk'})
-            Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_06', 'ASName': 'Act_SitSofa_Talk'})
-            Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_07', 'ASName': 'Act_SitSofa_Drink_Talk'})
-            Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_08', 'ASName': 'Act_SitSofa_Drink_Talk'})
-        }
+        Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_05', 'ASName': 'Act_SitSofa_Drink_Talk'})
+        Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_06', 'ASName': 'Act_SitSofa_Talk'})
+        Npc_OasisMilk_A.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_07', 'ASName': 'Act_SitSofa_Drink_Talk'})
+        Npc_OasisMilk_C.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:Talk_08', 'ASName': 'Act_SitSofa_Drink_Talk'})
     }
 }
 
@@ -290,11 +287,8 @@ void table() {
       case 1:
         Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Act_SitSofa_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk19'})
         goto Event209
-      case 2:
-        Event212:
+      case [2, 3]:
         Npc_OasisMilk_B.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Act_SitSofa_Talk', 'MessageId': 'EventFlowMsg/Npc_OasisMilk_A:talk17'})
         goto Event209
-      case 3:
-        goto Event212
     }
 }

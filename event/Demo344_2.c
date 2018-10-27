@@ -233,30 +233,27 @@ void Demo344_2() {
                         Event26:
                         GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'TargetActor1': 1, 'TargetActor2': 3, 'ActorName2': 'Npc_ZoraB001', 'PosAppendMode': 2, 'Pattern1PosX': 0.0, 'Pattern1Fovy': 50.0, 'MotionMode': 1, 'AtAppendMode': 2, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1AtY': 1.600000023841858, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'Count': 30.0, 'Pattern1PosZ': -5.0, 'Pattern1PosY': 2.700000047683716, 'UniqueName2': '', 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
                     }
-                } else {
-                    Event272:
-                    if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': False, 'CheckHead': False, 'CheckType': 'Zora', 'CheckUpper': True}) {
-                        Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_002', 'ASName': 'Talk_Prince_Joy'})
-                        if EventSystemActor.CheckFlag({'FlagName': 'Retry_Check'}) {
-                            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_008', 'ASName': 'Talk_Surprised'})
-                            goto Event324
-                        } else {
-                            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Surprised', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_026'})
-                            goto Event324
-                        }
+                } else
+                Event272:
+                if EventSystemActor.CheckEquipArmorSeriesType({'CheckLower': False, 'CheckHead': False, 'CheckType': 'Zora', 'CheckUpper': True}) {
+                    Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_002', 'ASName': 'Talk_Prince_Joy'})
+                    if EventSystemActor.CheckFlag({'FlagName': 'Retry_Check'}) {
+                        Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_008', 'ASName': 'Talk_Surprised'})
+                        goto Event324
                     } else {
-                        Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_002', 'ASName': 'Talk_Prince_Joy'})
-                        Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Surprised', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_024'})
+                        Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Surprised', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_026'})
                         goto Event324
                     }
-                }
-            } else {
-                if EventSystemActor.HasPorchItem({'PorchItemName': 'ElectricArrow', 'Count': 20}) {
-                    goto Event267
                 } else {
-                    goto Event272
+                    Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_002', 'ASName': 'Talk_Prince_Joy'})
+                    Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Surprised', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_024'})
+                    goto Event324
                 }
-            }
+            } else
+            if EventSystemActor.HasPorchItem({'PorchItemName': 'ElectricArrow', 'Count': 20}) {
+                goto Event267
+            } else
+            goto Event272
         } else {
             EventBgmCtrlTag.Demo_Stop({'FadeSec': 3.0, 'IsWaitFinish': True, 'BgmName': 'ZoraPrinceTalkBgm'})
             Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_005', 'IsCloseMessageDialog': True, 'ASName': 'Talk_Prince_Think'})

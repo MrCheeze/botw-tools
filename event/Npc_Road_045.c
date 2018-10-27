@@ -22,34 +22,17 @@ void Near() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event101:
+          case [0, 1]:
             Npc_Road_045.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_045:Near00'})
-          case 1:
-            goto Event101
-          case 2:
-            Event100:
+          case [2, 3]:
             Npc_Road_045.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_045:Near01'})
-          case 3:
-            goto Event100
-          case 4:
-            Event6:
+          case [4, 5]:
             Npc_Road_045.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_045:Near02'})
-          case 5:
-            goto Event6
-          case 6:
-            Event7:
+          case [6, 7]:
             Npc_Road_045.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_045:Near03'})
-          case 7:
-            goto Event7
         }
-      case 1:
-        Event4:
+      case [1, 2, 3]:
         Npc_Road_045.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_045:Near04'})
-      case 2:
-        goto Event4
-      case 3:
-        goto Event4
     }
 }
 
@@ -125,16 +108,14 @@ void RetMSG_Ichika_04() {
     if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Invite05'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Marry'}) {
             goto Event129
+        } else
+        if Npc_Road_045.IsOnInstEventFlag() {
+            Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:RetMSG_Ichika_04_1'})
         } else {
-            if Npc_Road_045.IsOnInstEventFlag() {
-                Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:RetMSG_Ichika_04_1'})
-            } else {
-                Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:RetMSG_Ichika_04'})
-            }
+            Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:RetMSG_Ichika_04'})
         }
-    } else {
-        goto Event129
-    }
+    } else
+    goto Event129
 }
 
 void MSG_Ichika_04() {
@@ -144,16 +125,14 @@ void MSG_Ichika_04() {
     if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Invite05'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Marry'}) {
             goto Event114
+        } else
+        if Npc_Road_045.IsOnInstEventFlag() {
+            Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:MSG_Ichika_04_1'})
         } else {
-            if Npc_Road_045.IsOnInstEventFlag() {
-                Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:MSG_Ichika_04_1'})
-            } else {
-                Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:MSG_Ichika_04'})
-            }
+            Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:MSG_Ichika_04'})
         }
-    } else {
-        goto Event114
-    }
+    } else
+    goto Event114
 }
 
 void Rest() {
@@ -167,29 +146,22 @@ void Rest() {
             Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:Rest_00'})
             Event99:
             EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-          case 1:
-            Event85:
+          case [1, 2, 3]:
             Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:Rest_01'})
             goto Event99
-          case 2:
-            goto Event85
-          case 3:
-            goto Event85
         }
+    } else
+    if Npc_Road_045.IsArriveAnchorForRain() {
+        Event86:
+        Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:Rest_02'})
+        goto Event99
+    } else
+    if Npc_Road_045.IsOnInstEventFlag() {
+        Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_01'})
+        goto Event99
     } else {
-        if Npc_Road_045.IsArriveAnchorForRain() {
-            Event86:
-            Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_045:Rest_02'})
-            goto Event99
-        } else {
-            if Npc_Road_045.IsOnInstEventFlag() {
-                Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_01'})
-                goto Event99
-            } else {
-                Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
-                goto Event99
-            }
-        }
+        Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
+        goto Event99
     }
 }
 
@@ -199,9 +171,8 @@ void Rest2() {
 
     if Npc_Road_045.IsRest() {
         goto Event83
-    } else {
-        if Npc_Road_045.IsArriveAnchorForRain() {
-            goto Event86
-        }
+    } else
+    if Npc_Road_045.IsArriveAnchorForRain() {
+        goto Event86
     }
 }

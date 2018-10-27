@@ -47,22 +47,18 @@ void CustumNPC_0() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Self_HorseAssociationCustum.CheckTerrorLevel() {
-      case 0:
-        Event41:
+      case [0, 1, 2]:
         switch Self_HorseAssociationCustum.CheckActorAction13() {
-          case 0:
+          case [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
             Event42:
             Self_HorseAssociationCustum.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HorseAssociationCustum001:Talk00_01'})
           case 1:
             switch Self_HorseAssociationCustum.IsOwnedHorseAssociated({'IsRidden': False}) {
-              case 0:
-                Event38:
+              case [0, 1]:
                 OwnedHorse_ForEvent.Demo_Wait({'IsWaitFinish': False, 'IsAngryEnable': False, 'IsEatEnable': False, 'IsLoveEnable': False, 'HasToCue': False, 'IsNoMorph': False})
                 Self_HorseAssociationCustum.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HorseAssociationCustum001:Talk01', 'IsCloseMessageDialog': True})
                 Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
                 EventSystemActor.Demo_CallDemo({'DemoName': 'Demo012_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo012_0', 'EndFade': 0})
-              case 1:
-                goto Event38
               case 2:
                 Self_HorseAssociationCustum.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/HorseAssociationCustum001:Talk07', 'IsOverWriteLabelActorName': False})
               case 3:
@@ -70,40 +66,8 @@ void CustumNPC_0() {
               case 4:
                 Self_HorseAssociationCustum.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HorseAssociationCustum001:Talk23'})
             }
-          case 2:
-            goto Event42
-          case 3:
-            goto Event42
-          case 4:
-            goto Event42
-          case 5:
-            goto Event42
-          case 6:
-            goto Event42
-          case 7:
-            goto Event42
-          case 8:
-            goto Event42
-          case 9:
-            goto Event42
-          case 10:
-            goto Event42
-          case 11:
-            goto Event42
-          case 12:
-            goto Event42
-          case 13:
-            goto Event42
         }
-      case 1:
-        goto Event41
-      case 2:
-        goto Event41
-      case 3:
-        goto Event42
-      case 4:
-        goto Event42
-      case 5:
+      case [3, 4, 5]:
         goto Event42
     }
 }

@@ -121,20 +121,18 @@ void Finish_ItemPowerUp() {
 
                     call SelectPowerUp()
 
+                } else
+                if EventSystemActor.HasPorchItem({'Count': 3, 'PorchItemName': 'Item_Enemy_29'}) {
+                    goto Event488
+                } else
+                if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Enemy_30', 'Count': 3}) {
+                    goto Event488
                 } else {
-                    if EventSystemActor.HasPorchItem({'Count': 3, 'PorchItemName': 'Item_Enemy_29'}) {
-                        goto Event488
-                    } else {
-                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Enemy_30', 'Count': 3}) {
-                            goto Event488
-                        } else {
-                            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk45'})
+                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk45'})
 
-                            call PuruaExplain()
+                    call PuruaExplain()
 
-                            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk87'})
-                        }
-                    }
+                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk87'})
                 }
             } else {
                 EventSystemActor.Demo_FlagON({'FlagName': 'Hateno_SheikPad_PowerUp_First', 'IsWaitFinish': True})
@@ -187,12 +185,11 @@ void Near() {
     if EventSystemActor.CheckFlag({'FlagName': 'Hateno_SheikPad_PowerUp_Finish'}) {
         Event447:
         Npc_AncientDoctor.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:near00', 'IsChecked': False, 'DispFrame': 90})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Hateno_SheikPad_PowerUp_Activated'}) {
+        goto Event447
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Hateno_SheikPad_PowerUp_Activated'}) {
-            goto Event447
-        } else {
-            Npc_AncientDoctor.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:near00', 'DispFrame': 300, 'IsChecked': True})
-        }
+        Npc_AncientDoctor.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:near00', 'DispFrame': 300, 'IsChecked': True})
     }
 }
 
@@ -337,72 +334,55 @@ void PuruaGreeting() {
             } else {
                 Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk03', 'IsOverWriteLabelActorName': False})
             }
-        } else {
-            if Npc_AncientDoctor.IsOnInstEventFlag() {
-                if !EventSystemActor.RandomChoice2() {
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk09', 'ASName': 'Talk_Checkit'})
-                } else {
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk35', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Special'})
-                }
+        } else
+        if Npc_AncientDoctor.IsOnInstEventFlag() {
+            if !EventSystemActor.RandomChoice2() {
+                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk09', 'ASName': 'Talk_Checkit'})
             } else {
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event195:
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk32', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Checkit'})
-                  case 1:
-                    goto Event195
-                  case 2:
-                    Event194:
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk33', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Checkit2'})
-                  case 3:
-                    goto Event194
-                  case 4:
-                    goto Event194
-                  case 5:
-                    goto Event194
-                  case 6:
-                    Event193:
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk34', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Peace'})
-                  case 7:
-                    goto Event193
-                }
+                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk35', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Special'})
             }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk32', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Checkit'})
+          case [2, 3, 4, 5]:
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk33', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Checkit2'})
+          case [6, 7]:
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk34', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Peace'})
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_Diary_Read'}) {
-            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk12', 'IsOverWriteLabelActorName': False})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk13', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-                Event173:
-                Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-                NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk06'})
-                Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk15', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                GameROMPlayer.Demo_BindSheikPad({'IsWaitFinish': True})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'SheikPadLookPicture', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'ASName': 'SheikPadLookPictureLoop', 'NoErrorCheck': False})
-                EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_Diary_Read'}) {
+        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk12', 'IsOverWriteLabelActorName': False})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk13', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
+            Event173:
+            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+            NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk06'})
+            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk15', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+            GameROMPlayer.Demo_BindSheikPad({'IsWaitFinish': True})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'SheikPadLookPicture', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'ASName': 'SheikPadLookPictureLoop', 'NoErrorCheck': False})
+            EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
 
-                fork {
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'ASName': 'SheikPadLookPictureOff', 'NoErrorCheck': False})
-                    GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ASName': 'Talk'})
-                    GameROMPlayer.Demo_UnbindSheikPad({'IsWaitFinish': True})
-                } {
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk23', 'IsCloseMessageDialog': True})
-                }
-
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'AncientLabo_Diary_Read', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_AncientDoctor001_Damnation'})
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': False})
-            } else {
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk14', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-                goto Event173
+            fork {
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'ASName': 'SheikPadLookPictureOff', 'NoErrorCheck': False})
+                GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ASName': 'Talk'})
+                GameROMPlayer.Demo_UnbindSheikPad({'IsWaitFinish': True})
+            } {
+                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk23', 'IsCloseMessageDialog': True})
             }
+
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'AncientLabo_Diary_Read', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_AncientDoctor001_Damnation'})
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': False})
         } else {
-            goto Event30
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk14', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
+            goto Event173
         }
-    }
+    } else
+    goto Event30
 }
 
 void PuruaBye() {

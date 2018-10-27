@@ -60,15 +60,10 @@ void Talk() {
                         Npc_HatenoVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage013:talk08', 'IsCloseMessageDialog': True})
                         GameRomCamera.Demo_ReturnSavePoint_1({'Count': 0.0, 'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
                         goto Event95
-                      case 1:
-                        Event97:
+                      case [1, 2, 3]:
                         Npc_HatenoVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage013:talk07', 'IsCloseMessageDialog': False})
                         Npc_HatenoVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage013:talk08', 'IsCloseMessageDialog': True})
                         goto Event95
-                      case 2:
-                        goto Event97
-                      case 3:
-                        goto Event97
                     }
                   case 2:
                     Npc_HatenoVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage013:talk10', 'IsCloseMessageDialog': True})
@@ -140,14 +135,13 @@ void TokkuriBlueFire() {
                 Npc_HatenoVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage013:talk00'})
                 goto Event82
             }
+        } else
+        if Npc_HatenoVillage013.IsOnInstEventFlag() {
+            Npc_HatenoVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage013:talk16'})
+            goto Event94
         } else {
-            if Npc_HatenoVillage013.IsOnInstEventFlag() {
-                Npc_HatenoVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage013:talk16'})
-                goto Event94
-            } else {
-                Npc_HatenoVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage013:talk00'})
-                goto Event94
-            }
+            Npc_HatenoVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage013:talk00'})
+            goto Event94
         }
     } else {
 

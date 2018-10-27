@@ -421,20 +421,17 @@ void InitTalk_OldKorok() {
             } {
                 if EventSystemActor.CheckCurrentMap({'MapName': 'F-5'}) {
                     LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'IsWaitFinish': False, 'AnchorName': 'StartPos', 'UniqueName': 'OldKorok_WetlandsStable'})
+                } else
+                if EventSystemActor.CheckCurrentMap({'MapName': 'G-3'}) {
+                    LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'IsWaitFinish': False, 'AnchorName': 'StartPos', 'UniqueName': 'OldKorok_ForestStable'})
+                } else
+                if EventSystemActor.CheckCurrentMap({'MapName': 'F-6'}) {
+                    LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'IsWaitFinish': False, 'AnchorName': 'StartPos', 'UniqueName': 'OldKorok_RiversideStable'})
+                } else
+                if EventSystemActor.CheckCurrentMap({'MapName': 'F-2'}) {
+                    LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'IsWaitFinish': False, 'AnchorName': 'StartPos', 'UniqueName': 'OldKorokTalk'})
                 } else {
-                    if EventSystemActor.CheckCurrentMap({'MapName': 'G-3'}) {
-                        LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'IsWaitFinish': False, 'AnchorName': 'StartPos', 'UniqueName': 'OldKorok_ForestStable'})
-                    } else {
-                        if EventSystemActor.CheckCurrentMap({'MapName': 'F-6'}) {
-                            LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'IsWaitFinish': False, 'AnchorName': 'StartPos', 'UniqueName': 'OldKorok_RiversideStable'})
-                        } else {
-                            if EventSystemActor.CheckCurrentMap({'MapName': 'F-2'}) {
-                                LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'IsWaitFinish': False, 'AnchorName': 'StartPos', 'UniqueName': 'OldKorokTalk'})
-                            } else {
-                                LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'IsWaitFinish': False, 'AnchorName': 'StartPos', 'UniqueName': 'Quest_OldKorok_Help'})
-                            }
-                        }
-                    }
+                    LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'IsWaitFinish': False, 'AnchorName': 'StartPos', 'UniqueName': 'Quest_OldKorok_Help'})
                 }
             }
 
@@ -452,36 +449,32 @@ void InitTalk_OldKorok() {
             } else {
                 GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 871.8618774414062, 'Pattern1PosY': 133.0048065185547, 'Pattern1PosZ': 197.2057647705078, 'Pattern1AtX': 869.9359130859375, 'Pattern1AtY': 133.6060028076172, 'Pattern1AtZ': 202.52662658691406, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
             }
-        } else {
-            if EventSystemActor.CheckCurrentMap({'MapName': 'G-3'}) {
-                if EventSystemActor.CheckPlayerRideHorse() {
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1056.5120849609375, 'Pattern1PosY': 130.17068481445312, 'Pattern1PosZ': -1106.755126953125, 'Pattern1AtX': 1059.073486328125, 'Pattern1AtY': 130.59579467773438, 'Pattern1AtZ': -1104.1058349609375, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                } else {
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1057.2694091796875, 'Pattern1PosY': 129.26983642578125, 'Pattern1PosZ': -1107.0770263671875, 'Pattern1AtX': 1059.0958251953125, 'Pattern1AtY': 129.97705078125, 'Pattern1AtZ': -1104.311767578125, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                }
+        } else
+        if EventSystemActor.CheckCurrentMap({'MapName': 'G-3'}) {
+            if EventSystemActor.CheckPlayerRideHorse() {
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1056.5120849609375, 'Pattern1PosY': 130.17068481445312, 'Pattern1PosZ': -1106.755126953125, 'Pattern1AtX': 1059.073486328125, 'Pattern1AtY': 130.59579467773438, 'Pattern1AtZ': -1104.1058349609375, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
             } else {
-                if EventSystemActor.CheckCurrentMap({'MapName': 'F-6'}) {
-                    if EventSystemActor.CheckPlayerRideHorse() {
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 381.5234375, 'Pattern1PosY': 124.4677734375, 'Pattern1PosZ': 1037.630615234375, 'Pattern1AtX': 386.9939270019531, 'Pattern1AtY': 124.31391143798828, 'Pattern1AtZ': 1037.2203369140625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                    } else {
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 382.43255615234375, 'Pattern1PosY': 122.7572021484375, 'Pattern1PosZ': 1036.00146484375, 'Pattern1AtX': 386.9939270019531, 'Pattern1AtY': 123.64102172851562, 'Pattern1AtZ': 1037.2203369140625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                    }
-                } else {
-                    if EventSystemActor.CheckCurrentMap({'MapName': 'F-2'}) {
-                        if EventSystemActor.CheckPlayerRideHorse() {
-                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 463.4387512207031, 'Pattern1PosY': 251.75062561035156, 'Pattern1PosZ': -2106.995849609375, 'Pattern1AtX': 464.074951171875, 'Pattern1AtY': 252.1884002685547, 'Pattern1AtZ': -2110.45703125, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                        } else {
-                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 462.43804931640625, 'Pattern1PosY': 250.7890167236328, 'Pattern1PosZ': -2107.362548828125, 'Pattern1AtX': 464.074951171875, 'Pattern1AtY': 251.35585021972656, 'Pattern1AtZ': -2110.45703125, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                        }
-                    } else {
-                        if EventSystemActor.CheckPlayerRideHorse() {
-                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2.412169933319092, 'Pattern1PosY': 2.1528470516204834, 'Pattern1PosZ': 6.867919921875, 'Pattern1AtX': 0.21160900592803955, 'Pattern1AtY': 2.6527860164642334, 'Pattern1AtZ': 1.342041015625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_OldKorok_Help', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                        } else {
-                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2064.34326171875, 'Pattern1PosY': 189.1691131591797, 'Pattern1PosZ': 1418.918701171875, 'Pattern1AtX': 2068.912109375, 'Pattern1AtY': 190.1861114501953, 'Pattern1AtZ': 1421.064453125, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                        }
-                    }
-                }
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1057.2694091796875, 'Pattern1PosY': 129.26983642578125, 'Pattern1PosZ': -1107.0770263671875, 'Pattern1AtX': 1059.0958251953125, 'Pattern1AtY': 129.97705078125, 'Pattern1AtZ': -1104.311767578125, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
             }
+        } else
+        if EventSystemActor.CheckCurrentMap({'MapName': 'F-6'}) {
+            if EventSystemActor.CheckPlayerRideHorse() {
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 381.5234375, 'Pattern1PosY': 124.4677734375, 'Pattern1PosZ': 1037.630615234375, 'Pattern1AtX': 386.9939270019531, 'Pattern1AtY': 124.31391143798828, 'Pattern1AtZ': 1037.2203369140625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+            } else {
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 382.43255615234375, 'Pattern1PosY': 122.7572021484375, 'Pattern1PosZ': 1036.00146484375, 'Pattern1AtX': 386.9939270019531, 'Pattern1AtY': 123.64102172851562, 'Pattern1AtZ': 1037.2203369140625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+            }
+        } else
+        if EventSystemActor.CheckCurrentMap({'MapName': 'F-2'}) {
+            if EventSystemActor.CheckPlayerRideHorse() {
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 463.4387512207031, 'Pattern1PosY': 251.75062561035156, 'Pattern1PosZ': -2106.995849609375, 'Pattern1AtX': 464.074951171875, 'Pattern1AtY': 252.1884002685547, 'Pattern1AtZ': -2110.45703125, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+            } else {
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 462.43804931640625, 'Pattern1PosY': 250.7890167236328, 'Pattern1PosZ': -2107.362548828125, 'Pattern1AtX': 464.074951171875, 'Pattern1AtY': 251.35585021972656, 'Pattern1AtZ': -2110.45703125, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+            }
+        } else
+        if EventSystemActor.CheckPlayerRideHorse() {
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2.412169933319092, 'Pattern1PosY': 2.1528470516204834, 'Pattern1PosZ': 6.867919921875, 'Pattern1AtX': 0.21160900592803955, 'Pattern1AtY': 2.6527860164642334, 'Pattern1AtZ': 1.342041015625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_OldKorok_Help', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+        } else {
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2064.34326171875, 'Pattern1PosY': 189.1691131591797, 'Pattern1PosZ': 1418.918701171875, 'Pattern1AtX': 2068.912109375, 'Pattern1AtY': 190.1861114501953, 'Pattern1AtZ': 1421.064453125, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 2, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
         }
     }
 

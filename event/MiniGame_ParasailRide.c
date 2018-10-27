@@ -102,14 +102,9 @@ void Ready_Npc_FarthestIsland002_Talk() {
                             EventBgmCtrlTag.Demo_Start({'IsWaitFinish': True, 'BgmName': 'GameParasailBgm'})
                             EventSystemActor.Demo_AppearCheckPointNum({'IconType': 0, 'GameDataIntTargetCounter': 'MiniGame_ParasailRide_PassedTargetNum', 'IsWaitFinish': True})
                             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'StepName': '', 'ForceRunTelop': False})
-                          case 1:
-                            Event175:
+                          case [1, 2, 3]:
                             Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Rain_00'})
                             goto Event39
-                          case 2:
-                            goto Event175
-                          case 3:
-                            goto Event175
                         }
                     } else {
                         GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1Fovy': 50.0, 'Count': 20.0, 'ReviseModeEnd': 2, 'CollisionInterpolateSkip': True, 'Pattern1PosX': 4708.77978515625, 'Pattern1PosY': 211.17999267578125, 'Pattern1PosZ': 3744.81005859375, 'Pattern1AtX': 4707.60986328125, 'Pattern1AtY': 209.2899932861328, 'Pattern1AtZ': 3739.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
@@ -189,29 +184,25 @@ void WaitToTakeOff_Npc_FarthestIsland002_EachFrame() {
         Event51:
         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
         goto Event50
-    } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-            Event54:
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'StepName': '', 'ForceRunTelop': False})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        Event54:
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'StepName': '', 'ForceRunTelop': False})
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
+        goto Event54
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
+        goto Event54
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
+        if EventSystemActor.CheckPlayerState({'PlayerState': 27}) {
+            goto Event51
         } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
-                goto Event54
-            } else {
-                if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
-                    goto Event54
-                } else {
-                    if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
-                        if EventSystemActor.CheckPlayerState({'PlayerState': 27}) {
-                            goto Event51
-                        } else {
-                            goto Event54
-                        }
-                    } else {
-                        goto Event51
-                    }
-                }
-            }
+            goto Event54
         }
+    } else {
+        goto Event51
     }
 }
 
@@ -227,28 +218,24 @@ void Flying_Npc_FarthestIsland002_EachFrame() {
             EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
             if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ParasailRide_IsInStartArea'}) {
                 EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'WaitToTakeOff'})
-            } else {
-                goto Event233
-            }
+            } else
+            goto Event233
+        }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
+        goto Event232
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 21}) {
+        goto Event232
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
+        if EventSystemActor.CheckPlayerState({'PlayerState': 27}) {
+            goto Event235
+        } else {
+            goto Event232
         }
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
-            goto Event232
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 21}) {
-                goto Event232
-            } else {
-                if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
-                    if EventSystemActor.CheckPlayerState({'PlayerState': 27}) {
-                        goto Event235
-                    } else {
-                        goto Event232
-                    }
-                } else {
-                    goto Event235
-                }
-            }
-        }
+        goto Event235
     }
 }
 
@@ -324,17 +311,15 @@ void Finish_Npc_FarthestIsland002_StepStart() {
             call Exit()
 
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 2}) {
+        goto Event201
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
+        GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
+        goto Event201
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 2}) {
-            goto Event201
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
-                GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-                goto Event201
-            } else {
-                goto Event201
-            }
-        }
+        goto Event201
     }
 }
 
@@ -342,36 +327,33 @@ void Result() {
     if EventSystemActor.CheckGameDataInt({'Operator': 'LessThan', 'Value': 20, 'GameDataIntName': 'MiniGame_ParasailRide_PassedTargetNumTemp'}) {
         Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_00_00', 'IsCloseMessageDialog': False})
         Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_00_01'})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'LessThan', 'Value': 25, 'GameDataIntName': 'MiniGame_ParasailRide_PassedTargetNumTemp'}) {
+        Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_01_00'})
+        Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_01_01', 'IsCloseMessageDialog': True})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'LessThan', 'Value': 30, 'GameDataIntName': 'MiniGame_ParasailRide_PassedTargetNumTemp'}) {
+        Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_03_00'})
+        Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_03_01'})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'LessThan', 'GameDataIntName': 'MiniGame_ParasailRide_PassedTargetNumTemp', 'Value': 50}) {
+        Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_02_00'})
+        Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_02_01', 'IsCloseMessageDialog': True})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+
     } else {
-        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThan', 'Value': 25, 'GameDataIntName': 'MiniGame_ParasailRide_PassedTargetNumTemp'}) {
-            Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_01_00'})
-            Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_01_01', 'IsCloseMessageDialog': True})
+        Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_04_00'})
+        Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_04_01'})
 
-            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
 
-        } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'LessThan', 'Value': 30, 'GameDataIntName': 'MiniGame_ParasailRide_PassedTargetNumTemp'}) {
-                Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_03_00'})
-                Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_03_01'})
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
-
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'LessThan', 'GameDataIntName': 'MiniGame_ParasailRide_PassedTargetNumTemp', 'Value': 50}) {
-                    Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_02_00'})
-                    Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_02_01', 'IsCloseMessageDialog': True})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
-
-                } else {
-                    Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_04_00'})
-                    Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Result_04_01'})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
-
-                }
-            }
-        }
     }
 }
 
@@ -379,13 +361,8 @@ void Ready_Npc_FarthestIsland002_Near() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         Npc_FarthestIsland002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Near00'})
-      case 1:
-        Event168:
+      case [1, 2, 3]:
         Npc_FarthestIsland002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 90, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Near01'})
-      case 2:
-        goto Event168
-      case 3:
-        goto Event168
     }
 }
 

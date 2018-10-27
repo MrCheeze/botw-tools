@@ -17,31 +17,29 @@ void Talk() {
 
         call Gerudo_Ch_FindingValetta.Finish_Npc_oasis040_Talk()
 
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Deliver'}) {
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Deliver'}) {
+
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+
+        Npc_oasis040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis040:Npc_oasis040_002'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Activated'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_FirstTime'}) {
 
             call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-            Npc_oasis040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis040:Npc_oasis040_002'})
+            Npc_oasis040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis040:Npc_oasis040_003'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Activated'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_FirstTime'}) {
 
-                    call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+            call Electric_Relic.GetBack_Npc_oasis042_Talk()
 
-                    Npc_oasis040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis040:Npc_oasis040_003'})
-                } else {
-
-                    call Electric_Relic.GetBack_Npc_oasis042_Talk()
-
-                }
-            } else {
-
-                call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
-
-                Npc_oasis040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis040:Npc_oasis040_001', 'IsOverWriteLabelActorName': False})
-            }
         }
+    } else {
+
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+
+        Npc_oasis040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis040:Npc_oasis040_001', 'IsOverWriteLabelActorName': False})
     }
 }
 

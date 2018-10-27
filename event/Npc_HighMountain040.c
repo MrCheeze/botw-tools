@@ -22,61 +22,50 @@ void Talk() {
 
         call Flint_Sell({'Value': 1200, 'PorchItemName': 'Item_Ore_I', 'Value_000': -100})
 
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 50}) {
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk24'})
+
+        call Flint_Sell({'Value': 500, 'PorchItemName': 'Item_Ore_I', 'Value_000': -50})
+
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 30}) {
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk23'})
+
+        call Flint_Sell({'Value': 250, 'PorchItemName': 'Item_Ore_I', 'Value_000': -30})
+
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 10}) {
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk22'})
+
+        call Flint_Sell({'Value': 70, 'PorchItemName': 'Item_Ore_I', 'Value_000': -10})
+
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 5}) {
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk21'})
+
+        call Flint_Sell({'Value': 30, 'PorchItemName': 'Item_Ore_I', 'Value_000': -5})
+
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 1}) {
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk20', 'IsOverWriteLabelActorName': False})
+
+        call Flint_Sell({'Value': 5, 'PorchItemName': 'Item_Ore_I', 'Value_000': -1})
+
     } else {
-        if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 50}) {
-            Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
-            Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk24'})
-
-            call Flint_Sell({'Value': 500, 'PorchItemName': 'Item_Ore_I', 'Value_000': -50})
-
-        } else {
-            if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 30}) {
-                Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
-                Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk23'})
-
-                call Flint_Sell({'Value': 250, 'PorchItemName': 'Item_Ore_I', 'Value_000': -30})
-
-            } else {
-                if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 10}) {
-                    Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
-                    Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk22'})
-
-                    call Flint_Sell({'Value': 70, 'PorchItemName': 'Item_Ore_I', 'Value_000': -10})
-
-                } else {
-                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 5}) {
-                        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
-                        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk21'})
-
-                        call Flint_Sell({'Value': 30, 'PorchItemName': 'Item_Ore_I', 'Value_000': -5})
-
-                    } else {
-                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 1}) {
-                            Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk17'})
-                            Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk20', 'IsOverWriteLabelActorName': False})
-
-                            call Flint_Sell({'Value': 5, 'PorchItemName': 'Item_Ore_I', 'Value_000': -1})
-
-                        } else {
-                            Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk19'})
-                            Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk29', 'IsCloseMessageDialog': False})
-                        }
-                    }
-                }
-            }
-        }
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk19'})
+        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk29', 'IsCloseMessageDialog': False})
     }
 }
 
 void Near() {
-    switch Npc_HighMountain040.CheckActorAction13() {
-      case 0:
-        Event29:
+    if Npc_HighMountain040.CheckActorAction13() in [0, 1, 10] {
         Npc_HighMountain040.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:near01', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        goto Event29
-      case 10:
-        goto Event29
     }
 }
 
@@ -132,46 +121,24 @@ void Jougo_Hello() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_HighMountain040.CheckActorAction13() {
-      case 0:
-        Event14:
+      case [0, 1]:
         if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
             Event15:
             Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk11', 'IsOverWriteLabelActorName': False})
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event1:
-                    Npc_HighMountain040.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                  case 1:
-                    goto Event1
-                  case 2:
-                    Event4:
-                    Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk01', 'IsOverWriteLabelActorName': False})
-                  case 3:
-                    goto Event4
-                  case 4:
-                    goto Event4
-                  case 5:
-                    goto Event4
-                  case 6:
-                    Event5:
-                    Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk02', 'IsOverWriteLabelActorName': False})
-                  case 7:
-                    goto Event5
-                }
-              case 1:
-                Event8:
-                Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk03', 'IsOverWriteLabelActorName': False})
-              case 2:
-                goto Event8
-              case 3:
-                goto Event8
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            switch EventSystemActor.CheckTimeType() {
+              case [0, 1]:
+                Npc_HighMountain040.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+              case [2, 3, 4, 5]:
+                Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk01', 'IsOverWriteLabelActorName': False})
+              case [6, 7]:
+                Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk02', 'IsOverWriteLabelActorName': False})
             }
+          case [1, 2, 3]:
+            Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk03', 'IsOverWriteLabelActorName': False})
         }
-      case 1:
-        goto Event14
       case 10:
         if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
             goto Event15
@@ -185,30 +152,19 @@ void Jougo_Hello() {
 }
 
 void Ready_Flint_Husband_near() {
-    switch Npc_HighMountain040.CheckActorAction13() {
-      case 0:
+    if Npc_HighMountain040.CheckActorAction13() in [0, 1, 10] {
         Event91:
         Npc_HighMountain040.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:near00', 'DispFrame': 300, 'IsChecked': True})
-      case 1:
-        goto Event91
-      case 10:
-        goto Event91
     }
 }
 
 void Finish_Flint_Husband_near() {
-    switch Npc_HighMountain040.CheckActorAction13() {
-      case 0:
-        Event97:
+    if Npc_HighMountain040.CheckActorAction13() in [0, 1, 10] {
         if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 1}) {
             goto Event91
         } else {
             Npc_HighMountain040.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:near00', 'IsChecked': False, 'DispFrame': 90})
         }
-      case 1:
-        goto Event97
-      case 10:
-        goto Event97
     }
 }
 

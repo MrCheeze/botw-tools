@@ -37,8 +37,7 @@ void Talk_Before_Water_Relic_Finish() {
                 switch EventSystemActor.GeneralChoice4() {
                   case 0:
                     switch Npc_Zora126.CheckActorAction13() {
-                      case 0:
-                        Event99:
+                      case [0, 10]:
                         Npc_Zora126.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Zora126:talk35'})
                         Event96:
                         Npc_Zora126.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora126:talk33'})
@@ -52,8 +51,6 @@ void Talk_Before_Water_Relic_Finish() {
                         Npc_Zora126.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'FaceId': 2})
                         GameRomCamera.Demo_ReturnSavePoint_1({'Count': 15.0, 'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
                         goto Event96
-                      case 10:
-                        goto Event99
                     }
                   case 1:
                     Npc_Zora126.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora126:talk31', 'IsCloseMessageDialog': True})
@@ -69,7 +66,7 @@ void Talk_Before_Water_Relic_Finish() {
                 Npc_Zora126.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora126:talk13'})
                 goto Event87
             }
-          case 1:
+          case [1, 2, 3]:
             Event4:
             if Npc_Zora126.IsOnInstEventFlag() {
                 Event29:
@@ -80,14 +77,9 @@ void Talk_Before_Water_Relic_Finish() {
                 Npc_Zora126.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora126:talk00', 'IsCloseMessageDialog': False})
                 goto Event29
             }
-          case 2:
-            goto Event4
-          case 3:
-            goto Event4
         }
-    } else {
-        goto Event4
-    }
+    } else
+    goto Event4
 }
 
 void Talk_After_Bottle_Mes() {
@@ -174,15 +166,12 @@ void Talk_After_Bottle_Mes_NearActorsNear() {
 
 void Near() {
     switch Npc_Zora126.CheckActorAction13() {
-      case 0:
-        Event46:
+      case [0, 1]:
         if EventSystemActor.CheckFlag({'FlagName': 'Water_Relic_RainStop'}) {
             Npc_Zora126.Demo_TalkToPlayer({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora126:near02', 'ASKeyName': 'Act_Giggle'})
         } else {
             Npc_Zora126.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora126:near00', 'IsChecked': False, 'DispFrame': 90})
         }
-      case 1:
-        goto Event46
       case 11:
         Npc_Zora126.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora126:near01', 'IsChecked': False, 'DispFrame': 90})
     }

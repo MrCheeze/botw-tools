@@ -20,35 +20,27 @@ void Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'MarittaMini_BigWhales_Finish'}) {
         if Npc_HyruleWestHatago004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
             Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak01'})
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak00'})
-              case 1:
-                Event31:
-                if Npc_HyruleWestHatago004.IsOnInstEventFlag() {
-                    Event6:
-                    Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak02'})
-                } else {
-                    Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak03'})
-                    goto Event6
-                }
-              case 2:
-                goto Event31
-              case 3:
-                goto Event31
-            }
-        }
-    } else {
-        if Npc_HyruleWestHatago004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
-            Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak06'})
-        } else {
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak00'})
+          case [1, 2, 3]:
             if Npc_HyruleWestHatago004.IsOnInstEventFlag() {
-                Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak07'})
+                Event6:
+                Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak02'})
             } else {
-                Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak05'})
+                Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak03'})
+                goto Event6
             }
         }
+    } else
+    if Npc_HyruleWestHatago004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
+        Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak06'})
+    } else
+    if Npc_HyruleWestHatago004.IsOnInstEventFlag() {
+        Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak07'})
+    } else {
+        Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago004:talk-Orak05'})
     }
 }
 

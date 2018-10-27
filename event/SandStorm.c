@@ -50,62 +50,55 @@ void Ready_Npc_SmallOasis007_Talk() {
         } else {
             goto Event83
         }
-    } else {
-        switch Npc_SmallOasis007.CheckActorAction13() {
-          case 0:
-            Event11:
-            if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Activated'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Step1'}) {
-                    Event0:
+    } else
+    switch Npc_SmallOasis007.CheckActorAction13() {
+      case [0, 1, 10]:
+        if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Activated'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Step1'}) {
+                Event0:
 
-                    call InitTalk.InitTalk_ReturnArrivalAnchor({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+                call InitTalk.InitTalk_ReturnArrivalAnchor({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-                    Npc_SmallOasis007.Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'Stand'})
-                    Npc_SmallOasis007.Demo_Talk({'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_R_001', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Lookfar', 'IsCloseMessageDialog': False})
-                    Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_R_005', 'IsCloseMessageDialog': True, 'ASName': 'Act_Lookfar'})
-                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_Dungeon032'}) {
-                        if !EventSystemActor.CheckFlag({'FlagName': 'SandStorm_Activated'}) {
-                            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': True, 'StepName': '', 'QuestName': ''})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                            Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_F_012', 'ASName': 'Act_Lookfar'})
-                            Npc_SmallOasis007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                            Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_F_008'})
-                        }
-                    } else {
+                Npc_SmallOasis007.Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'Stand'})
+                Npc_SmallOasis007.Demo_Talk({'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_R_001', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Lookfar', 'IsCloseMessageDialog': False})
+                Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_R_005', 'IsCloseMessageDialog': True, 'ASName': 'Act_Lookfar'})
+                if EventSystemActor.CheckFlag({'FlagName': 'Clear_Dungeon032'}) {
+                    if !EventSystemActor.CheckFlag({'FlagName': 'SandStorm_Activated'}) {
+                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': True, 'StepName': '', 'QuestName': ''})
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                        Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_F_012', 'ASName': 'Act_Lookfar'})
                         Npc_SmallOasis007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
                         Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_F_008'})
-                        if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': True, 'CheckLower': True, 'CheckType': 'GerudoCloth'}) {
-                            Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_F_010', 'IsCloseMessageDialog': True})
-                            Event2:
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SandStorm_Activated'})
-                        } else {
-                            goto Event2
-                        }
                     }
                 } else {
-                    goto Event78
+                    Npc_SmallOasis007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                    Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_F_008'})
+                    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': True, 'CheckLower': True, 'CheckType': 'GerudoCloth'}) {
+                        Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_F_010', 'IsCloseMessageDialog': True})
+                        Event2:
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SandStorm_Activated'})
+                    } else {
+                        goto Event2
+                    }
                 }
             } else {
-                goto Event0
+                goto Event78
             }
-          case 1:
-            goto Event11
-          case 10:
-            goto Event11
-          case 11:
-
-            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
-
-            Npc_SmallOasis007.Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'SitOnObject'})
-            Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_R_002', 'IsOverWriteLabelActorName': False})
+        } else {
+            goto Event0
         }
+      case 11:
+
+        call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
+
+        Npc_SmallOasis007.Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'SitOnObject'})
+        Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_R_002', 'IsOverWriteLabelActorName': False})
     }
 }
 
 void Finish_Npc_SmallOasis007_Talk() {
     switch Npc_SmallOasis007.CheckActorAction13() {
-      case 0:
-        Event17:
+      case [0, 1, 10]:
         if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Activated'}) {
             if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Step1'}) {
                 Event80:
@@ -140,10 +133,6 @@ void Finish_Npc_SmallOasis007_Talk() {
         } else {
             goto Event80
         }
-      case 1:
-        goto Event17
-      case 10:
-        goto Event17
       case 11:
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})

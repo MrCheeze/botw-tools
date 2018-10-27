@@ -156,9 +156,8 @@ void Talk() {
                                                                                 EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko001_eiketu_first', 'IsWaitFinish': True})
                                                                                 goto Event1257
                                                                             }
-                                                                        } else {
-                                                                            goto Event1128
-                                                                        }
+                                                                        } else
+                                                                        goto Event1128
                                                                     }
                                                                 } else {
                                                                     Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20'})
@@ -168,179 +167,175 @@ void Talk() {
                                                             } else {
                                                                 goto Event511
                                                             }
-                                                        } else {
-                                                            if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Ready'}) {
-                                                                if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Finish'}) {
-                                                                    Event795:
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_18'})
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_18_ch4'})
-                                                                    Event796:
-                                                                    switch EventSystemActor.GeneralChoice4() {
-                                                                      case 0:
+                                                        } else
+                                                        if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Ready'}) {
+                                                            if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Finish'}) {
+                                                                Event795:
+                                                                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_18'})
+                                                                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_18_ch4'})
+                                                                Event796:
+                                                                switch EventSystemActor.GeneralChoice4() {
+                                                                  case 0:
 
-                                                                        call Explain_Ganon()
+                                                                    call Explain_Ganon()
 
-                                                                        Event810:
-                                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                                                                    Event810:
+                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
 
-                                                                        call Camera_2ppl_normal()
+                                                                    call Camera_2ppl_normal()
 
-                                                                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_19_ch4'})
-                                                                        goto Event796
-                                                                      case 1:
-
-                                                                        call Explain_Utsushie()
-
-                                                                        goto Event810
-                                                                      case 2:
-
-                                                                        call Explain_1man-nen-mae()
-
-                                                                        goto Event810
-                                                                      case 3:
-                                                                        goto Event811
-                                                                    }
-                                                                } else {
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20'})
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20_ch4b'})
+                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_19_ch4'})
                                                                     goto Event796
+                                                                  case 1:
+
+                                                                    call Explain_Utsushie()
+
+                                                                    goto Event810
+                                                                  case 2:
+
+                                                                    call Explain_1man-nen-mae()
+
+                                                                    goto Event810
+                                                                  case 3:
+                                                                    goto Event811
                                                                 }
                                                             } else {
-                                                                goto Event795
+                                                                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20'})
+                                                                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20_ch4b'})
+                                                                goto Event796
                                                             }
+                                                        } else {
+                                                            goto Event795
+                                                        }
+                                                    } else
+                                                    if EventSystemActor.CheckFlag({'FlagName': 'PictureMemory_Finish'}) {
+                                                        if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Ready'}) {
+                                                            if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Finish'}) {
+                                                                Event1142:
+                                                                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_00'})
+                                                                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_00_ch3'})
+                                                                Event1143:
+                                                                switch EventSystemActor.GeneralChoice3() {
+                                                                  case 0:
+
+                                                                    call Explain_Shinju()
+
+                                                                    Event1148:
+                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+
+                                                                    call Camera_2ppl_normal()
+
+                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_12_ch3'})
+                                                                    goto Event1143
+                                                                  case 1:
+
+                                                                    call Explain_1man-nen-mae()
+
+                                                                    goto Event1148
+                                                                  case 2:
+                                                                    goto Event811
+                                                                }
+                                                            } else {
+                                                                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20'})
+                                                                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20_ch3a'})
+                                                                goto Event1143
+                                                            }
+                                                        } else {
+                                                            goto Event1142
+                                                        }
+                                                    } else
+                                                    if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Ready'}) {
+                                                        if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Finish'}) {
+                                                            Event470:
+                                                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_00'})
+                                                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_00_ch4'})
+                                                            Event707:
+                                                            switch EventSystemActor.GeneralChoice4() {
+                                                              case 0:
+
+                                                                call Explain_Shinju()
+
+                                                                Event715:
+                                                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+
+                                                                call Camera_2ppl_normal()
+
+                                                                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_12_ch4'})
+                                                                goto Event707
+                                                              case 1:
+
+                                                                call Explain_Utsushie()
+
+                                                                goto Event715
+                                                              case 2:
+
+                                                                call Explain_1man-nen-mae()
+
+                                                                goto Event715
+                                                              case 3:
+                                                                goto Event811
+                                                            }
+                                                        } else {
+                                                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20'})
+                                                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20_ch4a'})
+                                                            goto Event707
                                                         }
                                                     } else {
-                                                        if EventSystemActor.CheckFlag({'FlagName': 'PictureMemory_Finish'}) {
-                                                            if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Ready'}) {
-                                                                if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Finish'}) {
-                                                                    Event1142:
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_00'})
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_00_ch3'})
-                                                                    Event1143:
-                                                                    switch EventSystemActor.GeneralChoice3() {
-                                                                      case 0:
+                                                        goto Event470
+                                                    }
+                                                } else
+                                                if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_4thClear'}) {
+                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:SecondTalk01'})
+                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:SecondTalk01_ch3'})
+                                                    Event1130:
+                                                    switch EventSystemActor.GeneralChoice3() {
+                                                      case 0:
 
-                                                                        call Explain_Shinju()
+                                                        call Explain_Hateno()
 
-                                                                        Event1148:
-                                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                                                        Event1134:
+                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
 
-                                                                        call Camera_2ppl_normal()
+                                                        call Camera_2ppl_normal()
 
-                                                                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_12_ch3'})
-                                                                        goto Event1143
-                                                                      case 1:
+                                                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Sukuitai00_ch3'})
+                                                        goto Event1130
+                                                      case 1:
 
-                                                                        call Explain_1man-nen-mae()
+                                                        call Explain_1man-nen-mae()
 
-                                                                        goto Event1148
-                                                                      case 2:
-                                                                        goto Event811
-                                                                    }
-                                                                } else {
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20'})
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20_ch3a'})
-                                                                    goto Event1143
-                                                                }
-                                                            } else {
-                                                                goto Event1142
-                                                            }
-                                                        } else {
-                                                            if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Ready'}) {
-                                                                if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Finish'}) {
-                                                                    Event470:
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_00'})
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_00_ch4'})
-                                                                    Event707:
-                                                                    switch EventSystemActor.GeneralChoice4() {
-                                                                      case 0:
-
-                                                                        call Explain_Shinju()
-
-                                                                        Event715:
-                                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-
-                                                                        call Camera_2ppl_normal()
-
-                                                                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_12_ch4'})
-                                                                        goto Event707
-                                                                      case 1:
-
-                                                                        call Explain_Utsushie()
-
-                                                                        goto Event715
-                                                                      case 2:
-
-                                                                        call Explain_1man-nen-mae()
-
-                                                                        goto Event715
-                                                                      case 3:
-                                                                        goto Event811
-                                                                    }
-                                                                } else {
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20'})
-                                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_20_ch4a'})
-                                                                    goto Event707
-                                                                }
-                                                            } else {
-                                                                goto Event470
-                                                            }
-                                                        }
+                                                        goto Event1134
+                                                      case 2:
+                                                        goto Event811
                                                     }
                                                 } else {
-                                                    if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_4thClear'}) {
-                                                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:SecondTalk01'})
-                                                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:SecondTalk01_ch3'})
-                                                        Event1130:
-                                                        switch EventSystemActor.GeneralChoice3() {
-                                                          case 0:
+                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:SecondTalk01'})
+                                                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:SecondTalk01_ch4'})
+                                                    Event427:
+                                                    switch EventSystemActor.GeneralChoice4() {
+                                                      case 0:
 
-                                                            call Explain_Hateno()
+                                                        call Explain_Hateno()
 
-                                                            Event1134:
-                                                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                                                        Event578:
+                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
 
-                                                            call Camera_2ppl_normal()
+                                                        call Camera_2ppl_normal()
 
-                                                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Sukuitai00_ch3'})
-                                                            goto Event1130
-                                                          case 1:
+                                                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Sukuitai00_ch4'})
+                                                        goto Event427
+                                                      case 1:
 
-                                                            call Explain_1man-nen-mae()
+                                                        call Explain_Shinju()
 
-                                                            goto Event1134
-                                                          case 2:
-                                                            goto Event811
-                                                        }
-                                                    } else {
-                                                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:SecondTalk01'})
-                                                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:SecondTalk01_ch4'})
-                                                        Event427:
-                                                        switch EventSystemActor.GeneralChoice4() {
-                                                          case 0:
+                                                        goto Event578
+                                                      case 2:
 
-                                                            call Explain_Hateno()
+                                                        call Explain_1man-nen-mae()
 
-                                                            Event578:
-                                                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-
-                                                            call Camera_2ppl_normal()
-
-                                                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Sukuitai00_ch4'})
-                                                            goto Event427
-                                                          case 1:
-
-                                                            call Explain_Shinju()
-
-                                                            goto Event578
-                                                          case 2:
-
-                                                            call Explain_1man-nen-mae()
-
-                                                            goto Event578
-                                                          case 3:
-                                                            goto Event811
-                                                        }
+                                                        goto Event578
+                                                      case 3:
+                                                        goto Event811
                                                     }
                                                 }
                                             }
@@ -352,59 +347,51 @@ void Talk() {
                                             EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Kakariko001_BeforeDemo_Shinju', 'IsWaitFinish': True})
                                             GameRomCamera.Demo_ReserveConnectTime({'InterpolateTime': 0.0, 'IsWaitFinish': True})
                                         }
-                                    } else {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_2ndClear'}) {
-                                            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko001_2Shinju'}) {
-                                                goto Event1585
-                                            } else {
-
-                                                call Find_4Relic_TwoOrMore()
-
-                                                Event1459:
-
-                                                call Find_4Relic_Next()
-
-                                                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Kakariko001_OhomeTalk'})
-                                                EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Kakariko001_BeforeDemo_Shinju', 'IsWaitFinish': True})
-                                                GameRomCamera.Demo_ReserveConnectTime({'InterpolateTime': 0.0, 'IsWaitFinish': True})
-                                            }
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_2ndClear'}) {
+                                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko001_2Shinju'}) {
+                                            goto Event1585
                                         } else {
-                                            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko001_1Shinju'}) {
-                                                goto Event1585
-                                            } else {
-                                                if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWind'}) {
-                                                    Event1481:
 
-                                                    call Find_4Relic_One()
+                                            call Find_4Relic_TwoOrMore()
 
-                                                    goto Event1459
-                                                } else {
-                                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
-                                                        goto Event1481
-                                                    } else {
-                                                        if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
-                                                            goto Event1481
-                                                        } else {
-                                                            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
-                                                                goto Event1481
-                                                            } else {
-                                                                goto Event1585
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
+                                            Event1459:
+
+                                            call Find_4Relic_Next()
+
+                                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Kakariko001_OhomeTalk'})
+                                            EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Kakariko001_BeforeDemo_Shinju', 'IsWaitFinish': True})
+                                            GameRomCamera.Demo_ReserveConnectTime({'InterpolateTime': 0.0, 'IsWaitFinish': True})
                                         }
-                                    }
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko001_1Shinju'}) {
+                                        goto Event1585
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWind'}) {
+                                        Event1481:
+
+                                        call Find_4Relic_One()
+
+                                        goto Event1459
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
+                                        goto Event1481
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
+                                        goto Event1481
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
+                                        goto Event1481
+                                    } else
+                                    goto Event1585
                                 } else {
 
                                     call PictureMemory_All()
 
                                     goto Event1104
                                 }
-                            } else {
-                                goto Event1104
-                            }
+                            } else
+                            goto Event1104
                         } else {
                             EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko001_BeforeDemo_Shinju', 'IsWaitFinish': True})
                             EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
@@ -447,72 +434,62 @@ void Talk() {
 
                                     goto Event1629
                                 }
-                            } else {
-                                if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_2ndClear'}) {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko001_2Shinju'}) {
-                                        goto Event1629
-                                    } else {
-
-                                        call Find_4Relic_TwoOrMore()
-
-                                        Event1569:
-
-                                        call Find_4Relic_Next()
-
-                                        goto Event1629
-                                    }
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_2ndClear'}) {
+                                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko001_2Shinju'}) {
+                                    goto Event1629
                                 } else {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko001_1Shinju'}) {
-                                        goto Event1629
-                                    } else {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWind'}) {
-                                            Event1570:
 
-                                            call Find_4Relic_One()
+                                    call Find_4Relic_TwoOrMore()
 
-                                            goto Event1569
-                                        } else {
-                                            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
-                                                goto Event1570
-                                            } else {
-                                                if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
-                                                    goto Event1570
-                                                } else {
-                                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
-                                                        goto Event1570
-                                                    } else {
-                                                        goto Event1629
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
+                                    Event1569:
+
+                                    call Find_4Relic_Next()
+
+                                    goto Event1629
                                 }
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko001_1Shinju'}) {
+                                goto Event1629
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWind'}) {
+                                Event1570:
+
+                                call Find_4Relic_One()
+
+                                goto Event1569
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
+                                goto Event1570
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
+                                goto Event1570
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
+                                goto Event1570
+                            } else {
+                                goto Event1629
                             }
                         }
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'Kakariko001_GaveChampionShirt'}) {
+                        goto Event1104
                     } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'Kakariko001_GaveChampionShirt'}) {
-                            goto Event1104
-                        } else {
 
-                            call Give_ChampionShirt()
+                        call Give_ChampionShirt()
 
-                            goto Event1104
-                        }
+                        goto Event1104
                     }
-                } else {
-                    goto Event1104
-                }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'CarryingBlueFireEXMini_Repaired'}) {
+                } else
+                goto Event1104
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'CarryingBlueFireEXMini_Repaired'}) {
 
-                    call Comp_CarryingBlueFireEXMini()
+                call Comp_CarryingBlueFireEXMini()
 
-                    goto Event1104
-                } else {
-                    goto Event1104
-                }
-            }
+                goto Event1104
+            } else
+            goto Event1104
         } else {
             EventSystemActor.Demo_FlagON({'FlagName': 'Kakariko001_NoCont', 'IsWaitFinish': True})
             Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:FirstTalk_consecutive'})
@@ -618,15 +595,14 @@ void Explain_Utsushie() {
         Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_17'})
         EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
         EventSystemActor.Demo_CloseItemMenu({'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Kakariko001_GaveChampionShirt'}) {
+        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_13'})
+        Event1256:
+        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Kakariko001_GaveChampionShirt'}) {
-            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_13'})
-            Event1256:
-            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-        } else {
-            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_19', 'IsCloseMessageDialog': True})
-            goto Event1256
-        }
+        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Talk_19', 'IsCloseMessageDialog': True})
+        goto Event1256
     }
 }
 
@@ -822,34 +798,31 @@ void Find_4Relic_Next() {
 
                     call Conclusion_B()
 
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_ExplainOne'}) {
-                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_Fire'})
-                        goto Event1456
-                    } else {
-                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_noko_Fire'})
-                        goto Event1456
-                    }
-                }
-            } else {
+                } else
                 if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_ExplainOne'}) {
-                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_Water'})
-                    goto Event1446
+                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_Fire'})
+                    goto Event1456
                 } else {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Find_4Relic_ExplainOne'})
-                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_noko_Water'})
-                    goto Event1446
+                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_noko_Fire'})
+                    goto Event1456
                 }
-            }
-        } else {
+            } else
             if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_ExplainOne'}) {
-                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_Electric'})
-                goto Event1445
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_Water'})
+                goto Event1446
             } else {
                 EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Find_4Relic_ExplainOne'})
-                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_noko_Electric'})
-                goto Event1445
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_noko_Water'})
+                goto Event1446
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_ExplainOne'}) {
+            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_Electric'})
+            goto Event1445
+        } else {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Find_4Relic_ExplainOne'})
+            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_05_noko_Electric'})
+            goto Event1445
         }
     } else {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Find_4Relic_ExplainOne'})
@@ -874,30 +847,27 @@ void Find_4Relic_One() {
                 Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_04_Wind'})
                 Event1465:
                 EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Kakariko001_1Shinju'})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
-                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_01'})
-                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_02_Electric'})
-                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_03'})
-                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_04_Electric'})
-                    goto Event1465
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
-                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_01'})
-                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_02_Water'})
-                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_03'})
-                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_04_Water'})
-                        goto Event1465
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
-                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_01'})
-                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_02_Fire'})
-                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_03'})
-                            Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_04_Fire'})
-                            goto Event1465
-                        }
-                    }
-                }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_01'})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_02_Electric'})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_03'})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_04_Electric'})
+                goto Event1465
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_01'})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_02_Water'})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_03'})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_04_Water'})
+                goto Event1465
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_01'})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_02_Fire'})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_03'})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju_04_Fire'})
+                goto Event1465
             }
         } else {
             Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Connective_Comp_Find_4Relic'})

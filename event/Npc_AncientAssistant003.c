@@ -60,35 +60,18 @@ void GuranettoHello() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_AncientAssistant003.CheckActorAction13() {
-      case 0:
-        Event6:
+      case [0, 1]:
         if Npc_AncientAssistant003.IsOnInstEventFlag() {
             Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk03'})
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event2:
-                Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk00', 'IsOverWriteLabelActorName': False})
-              case 1:
-                goto Event2
-              case 2:
-                Event3:
-                Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk01'})
-              case 3:
-                goto Event3
-              case 4:
-                goto Event3
-              case 5:
-                goto Event3
-              case 6:
-                Event7:
-                Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk02'})
-              case 7:
-                goto Event7
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk00', 'IsOverWriteLabelActorName': False})
+          case [2, 3, 4, 5]:
+            Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk01'})
+          case [6, 7]:
+            Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk02'})
         }
-      case 1:
-        goto Event6
       case 10:
         if !EventSystemActor.RandomChoice2() {
             Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk19'})
@@ -128,14 +111,13 @@ void GuranettoFlagSell() {
 
                             call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Normal_S'})
 
+                        } else
+                        if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
+                            goto Event88
                         } else {
-                            if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
-                                goto Event88
-                            } else {
 
-                                call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'TableName': 'Normal', 'Self2': ActorIdentifier(name="Npc_AncientAssistant003")})
+                            call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'TableName': 'Normal', 'Self2': ActorIdentifier(name="Npc_AncientAssistant003")})
 
-                            }
                         }
                     } else {
                         Event23:
@@ -154,14 +136,13 @@ void GuranettoFlagSell() {
 
                     call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_01_S'})
 
+                } else
+                if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
+                    goto Event90
                 } else {
-                    if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
-                        goto Event90
-                    } else {
 
-                        call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_01'})
+                    call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_01'})
 
-                    }
                 }
             }
         } else {
@@ -174,14 +155,13 @@ void GuranettoFlagSell() {
 
                     call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_C_01_S'})
 
+                } else
+                if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
+                    goto Event92
                 } else {
-                    if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
-                        goto Event92
-                    } else {
 
-                        call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_C_01'})
+                    call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_C_01'})
 
-                    }
                 }
             } else {
 
@@ -192,14 +172,13 @@ void GuranettoFlagSell() {
 
                     call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_03_S'})
 
+                } else
+                if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
+                    goto Event94
                 } else {
-                    if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
-                        goto Event94
-                    } else {
 
-                        call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_03'})
+                    call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_03'})
 
-                    }
                 }
             }
         }
@@ -214,14 +193,13 @@ void GuranettoFlagSell() {
 
                     call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_B_01_S'})
 
+                } else
+                if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
+                    goto Event48
                 } else {
-                    if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
-                        goto Event48
-                    } else {
 
-                        call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_B_01'})
+                    call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_B_01'})
 
-                    }
                 }
             } else {
 
@@ -232,14 +210,13 @@ void GuranettoFlagSell() {
 
                     call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_02_S'})
 
+                } else
+                if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
+                    goto Event98
                 } else {
-                    if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
-                        goto Event98
-                    } else {
 
-                        call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_02'})
+                    call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_02'})
 
-                    }
                 }
             }
         } else {
@@ -252,14 +229,13 @@ void GuranettoFlagSell() {
 
                     call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_B_02_S'})
 
+                } else
+                if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
+                    goto Event100
                 } else {
-                    if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
-                        goto Event100
-                    } else {
 
-                        call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_B_02'})
+                    call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_B_02'})
 
-                    }
                 }
             } else {
 
@@ -270,14 +246,13 @@ void GuranettoFlagSell() {
 
                     call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_04_S'})
 
+                } else
+                if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
+                    goto Event102
                 } else {
-                    if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
-                        goto Event102
-                    } else {
 
-                        call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_04'})
+                    call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Shop_A_04'})
 
-                    }
                 }
             }
         }

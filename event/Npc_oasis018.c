@@ -17,8 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_oasis018.CheckActorAction13() {
-      case 0:
-        Event21:
+      case [0, 2]:
         if Npc_oasis018.IsOnInstEventFlag() {
             Event6:
             Npc_oasis018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis018:Talk_05'})
@@ -39,19 +38,16 @@ void Talk() {
 
                 goto Event16
             }
+        } else
+        if Npc_oasis018.IsOnInstEventFlag() {
+            Event7:
+            Npc_oasis018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis018:Talk_04'})
         } else {
-            if Npc_oasis018.IsOnInstEventFlag() {
-                Event7:
-                Npc_oasis018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis018:Talk_04'})
-            } else {
 
-                call hello()
+            call hello()
 
-                goto Event7
-            }
+            goto Event7
         }
-      case 2:
-        goto Event21
       case 3:
         if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Mush_SoldOut'}) {
             if Npc_oasis018.IsOnInstEventFlag() {
@@ -68,16 +64,15 @@ void Talk() {
 
                 goto Event11
             }
+        } else
+        if Npc_oasis018.IsOnInstEventFlag() {
+            Event5:
+            Npc_oasis018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis018:Talk_06'})
         } else {
-            if Npc_oasis018.IsOnInstEventFlag() {
-                Event5:
-                Npc_oasis018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis018:Talk_06'})
-            } else {
 
-                call hello()
+            call hello()
 
-                goto Event5
-            }
+            goto Event5
         }
       case 4:
         if Npc_oasis018.IsOnInstEventFlag() {
@@ -116,24 +111,11 @@ void Talk() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event18:
+      case [0, 1]:
         Npc_oasis018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis018:Talk_13'})
-      case 1:
-        goto Event18
-      case 2:
-        Event19:
+      case [2, 3, 4]:
         Npc_oasis018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis018:Talk_14'})
-      case 3:
-        goto Event19
-      case 4:
-        goto Event19
-      case 5:
-        Event20:
+      case [5, 6, 7]:
         Npc_oasis018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis018:Talk_15'})
-      case 6:
-        goto Event20
-      case 7:
-        goto Event20
     }
 }

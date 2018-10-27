@@ -96,27 +96,24 @@ void C01() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_CameraBoy_ChoiceA'}) {
         NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text004'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Hateno_SheikSensorLv2_Choice'}) {
+        NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text001'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Hateno_StopTimerLv2_Choice'}) {
+        NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text002'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Hateno_RemoteBombLv2_Choice'}) {
+        NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text003'})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Hateno_SheikSensorLv2_Choice'}) {
-            NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text001'})
+        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text000', 'IsCloseMessageDialog': False})
+        if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
+            NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text014', 'IsCloseMessageDialog': False})
+            Event252:
+            NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text016'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Hateno_StopTimerLv2_Choice'}) {
-                NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text002'})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Hateno_RemoteBombLv2_Choice'}) {
-                    NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text003'})
-                } else {
-                    NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text000', 'IsCloseMessageDialog': False})
-                    if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
-                        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text014', 'IsCloseMessageDialog': False})
-                        Event252:
-                        NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text016'})
-                    } else {
-                        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text015', 'IsCloseMessageDialog': False})
-                        goto Event252
-                    }
-                }
-            }
+            NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text015', 'IsCloseMessageDialog': False})
+            goto Event252
         }
     }
 }
@@ -207,191 +204,180 @@ void Demo032_0() {
                 Event77:
                 Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
                 SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Start', 'IsWaitFinish': True, 'SeCtrlType': 'WorldMuteOff'})
-            } else {
-                if EventSystemActor.CheckPictureBookVacancy({'Category': 'Weapon', 'VacancyNum': 1}) {
-                    Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 3})
-                    goto Event227
-                } else {
-                    if EventSystemActor.CheckPictureBookVacancy({'Category': 'Creature', 'VacancyNum': 1}) {
-                        Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 0})
-                        goto Event227
-                    } else {
-                        if EventSystemActor.CheckPictureBookVacancy({'Category': 'Enemy', 'VacancyNum': 1}) {
-                            Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 1})
-                            goto Event227
-                        } else {
-                            if EventSystemActor.CheckPictureBookVacancy({'Category': 'Others', 'VacancyNum': 1}) {
-                                Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 4})
-                                goto Event227
-                            } else {
-                                if EventSystemActor.CheckPictureBookVacancy({'VacancyNum': 1, 'Category': 'Boss'}) {
-                                    Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 5})
-                                    goto Event227
-                                }
-                            }
-                        }
-                    }
-                }
+            } else
+            if EventSystemActor.CheckPictureBookVacancy({'Category': 'Weapon', 'VacancyNum': 1}) {
+                Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 3})
+                goto Event227
+            } else
+            if EventSystemActor.CheckPictureBookVacancy({'Category': 'Creature', 'VacancyNum': 1}) {
+                Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 0})
+                goto Event227
+            } else
+            if EventSystemActor.CheckPictureBookVacancy({'Category': 'Enemy', 'VacancyNum': 1}) {
+                Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 1})
+                goto Event227
+            } else
+            if EventSystemActor.CheckPictureBookVacancy({'Category': 'Others', 'VacancyNum': 1}) {
+                Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 4})
+                goto Event227
+            } else
+            if EventSystemActor.CheckPictureBookVacancy({'VacancyNum': 1, 'Category': 'Boss'}) {
+                Npc_AncientAssistant001.Demo_SellPictureBookUI({'IsWaitFinish': True, 'SellPicturePack': 5})
+                goto Event227
             }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Hateno_SheikSensorLv2_Choice'}) {
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Hateno_SheikSensorLv2_Choice'})
-
-                fork {
-                    EventSystemActor.Demo_ShiekSensorPlusDownload({'IsPlayerClose': False, 'IsWaitFinish': True})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                    NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text024', 'MessageOpenDelayTime': 0})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                    EventSystemActor.Demo_DownloadSensorMoveIcon({'IsWaitFinish': True})
-                } {
-
-                    call C04Camera_Return()
-
-                }
-
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
-                NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text018', 'MessageOpenDelayTime': 0})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_SheikSensorLv2'})
-                Event258:
-                EventSystemActor.Demo_CloseItemMenu({'IsWaitFinish': True})
-
-                call Demo041_0.SheikPadSetOff({'FldObj_DownloadTerminal_A_01': ActorIdentifier(name="FldObj_DownloadTerminal_A_01", sub_name="HatenoTanmatsu"), 'ShiekerStoneBindTargetUniqueName': 'HatenoTanmatsu', 'ShiekerStoneBindTargetActorName': 'FldObj_DownloadTerminal_A_01'})
-
-                Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
-                EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestMapName': 'I-7', 'WarpDestPosName': 'PuruaDemoFinished'})
-                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Talk', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': True})
-                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
-                EventSystemActor.Demo_WaitFrame({'Frame': 15, 'IsWaitFinish': True})
-
-                fork {
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                } {
-                    Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'FaceId': 1, 'IsValid': False})
-                } {
-                    GameROMPlayer.Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
-                }
-
-                GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_AncientDoctor', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                goto Event77
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Hateno_StopTimerLv2_Choice'}) {
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Hateno_StopTimerLv2_Choice'})
-
-                    fork {
-                        EventSystemActor.Demo_OpenItemDownloadDemo({'IsWaitFinish': True, 'IsEquip': True, 'IsPowerUp': True, 'IsPlayerClose': False, 'ItemType': 2})
-                    } {
-
-                        call C04Camera_Return()
-
-                    }
-
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
-                    NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text019', 'MessageOpenDelayTime': 0})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_StopTimerLv2'})
-                    EventSystemActor.Demo_PowerupRune({'RuneType': 2, 'IsWaitFinish': True})
-                    goto Event258
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Hateno_RemoteBombLv2_Choice'}) {
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Hateno_RemoteBombLv2_Choice'})
-
-                        fork {
-                            EventSystemActor.Demo_OpenItemDownloadDemo({'IsWaitFinish': True, 'IsEquip': True, 'IsPowerUp': True, 'IsPlayerClose': False, 'ItemType': 0})
-                        } {
-
-                            call C04Camera_Return()
-
-                        }
-
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
-                        NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text020', 'MessageOpenDelayTime': 0})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_RemoteBombLv2'})
-                        goto Event258
-                    } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_Camera', 'IsWaitFinish': True})
-                        EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_PictureBook', 'IsWaitFinish': True})
-                        EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_Album', 'IsWaitFinish': True})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_000'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_001'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_002'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_003'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_004'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_005'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_006'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_007'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_008'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_009'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_010'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_011'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_SheikPadLv2'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_Camera'})
-
-                        fork {
-                            EventSystemActor.Demo_OpenItemDownloadDemo({'IsWaitFinish': True, 'IsPowerUp': False, 'IsPlayerClose': False, 'ItemType': 4, 'IsEquip': True})
-                        } {
-
-                            call C04Camera_Return()
-
-                        }
-
-                        EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
-                        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text023', 'IsCloseMessageDialog': False, 'MessageOpenDelayTime': 0})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_Album'})
-                        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                        EventSystemActor.Demo_DownloadAlbum({'IsWaitFinish': True})
-                        EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_PictureBook'})
-                        EventSystemActor.Demo_DownloadPictureBook({'IsWaitFinish': True})
-                        EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                        if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
-                            Event321:
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
-                            NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text017', 'MessageOpenDelayTime': 0})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_SheikPadLv2'})
-                            goto Event258
-                        } else {
-                            EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_SheikSensor', 'IsWaitFinish': True})
-                            EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
-                            EventSystemActor.Demo_DownloadShiekSensor({'IsWaitFinish': True})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                            NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text022', 'IsCloseMessageDialog': True})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                            EventSystemActor.Demo_DownloadSensorMoveIcon({'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_AncientDoctor001_GetSSLv1'})
-                            EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_SheikSensor', 'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsStart_Obj_SheikSensor'})
-                            goto Event321
-                        }
-                    }
-                }
-            }
-        }
-    } else {
+        } else
         if EventSystemActor.CheckFlag({'FlagName': 'Hateno_SheikSensorLv2_Choice'}) {
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Hateno_SheikSensorLv2_Choice'})
 
-            call PuruaItemGo({'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text011'})
+            fork {
+                EventSystemActor.Demo_ShiekSensorPlusDownload({'IsPlayerClose': False, 'IsWaitFinish': True})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text024', 'MessageOpenDelayTime': 0})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                EventSystemActor.Demo_DownloadSensorMoveIcon({'IsWaitFinish': True})
+            } {
 
-            Event138:
-            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text008', 'IsCloseMessageDialog': False})
-            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text009', 'ASName': 'Talk_Checkit2'})
-            goto Event246
+                call C04Camera_Return()
+
+            }
+
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
+            NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text018', 'MessageOpenDelayTime': 0})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_SheikSensorLv2'})
+            Event258:
+            EventSystemActor.Demo_CloseItemMenu({'IsWaitFinish': True})
+
+            call Demo041_0.SheikPadSetOff({'FldObj_DownloadTerminal_A_01': ActorIdentifier(name="FldObj_DownloadTerminal_A_01", sub_name="HatenoTanmatsu"), 'ShiekerStoneBindTargetUniqueName': 'HatenoTanmatsu', 'ShiekerStoneBindTargetActorName': 'FldObj_DownloadTerminal_A_01'})
+
+            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
+            EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestMapName': 'I-7', 'WarpDestPosName': 'PuruaDemoFinished'})
+            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Talk', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': True})
+            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
+            EventSystemActor.Demo_WaitFrame({'Frame': 15, 'IsWaitFinish': True})
+
+            fork {
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+            } {
+                Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'FaceId': 1, 'IsValid': False})
+            } {
+                GameROMPlayer.Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
+            }
+
+            GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': False, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_AncientDoctor', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            goto Event77
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Hateno_StopTimerLv2_Choice'}) {
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Hateno_StopTimerLv2_Choice'})
+
+            fork {
+                EventSystemActor.Demo_OpenItemDownloadDemo({'IsWaitFinish': True, 'IsEquip': True, 'IsPowerUp': True, 'IsPlayerClose': False, 'ItemType': 2})
+            } {
+
+                call C04Camera_Return()
+
+            }
+
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
+            NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text019', 'MessageOpenDelayTime': 0})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_StopTimerLv2'})
+            EventSystemActor.Demo_PowerupRune({'RuneType': 2, 'IsWaitFinish': True})
+            goto Event258
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Hateno_RemoteBombLv2_Choice'}) {
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Hateno_RemoteBombLv2_Choice'})
+
+            fork {
+                EventSystemActor.Demo_OpenItemDownloadDemo({'IsWaitFinish': True, 'IsEquip': True, 'IsPowerUp': True, 'IsPlayerClose': False, 'ItemType': 0})
+            } {
+
+                call C04Camera_Return()
+
+            }
+
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
+            NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text020', 'MessageOpenDelayTime': 0})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_RemoteBombLv2'})
+            goto Event258
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Hateno_RemoteBombLv2_Choice'}) {
+            EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_Camera', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_PictureBook', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_Album', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_000'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_001'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_002'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_003'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_004'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_005'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_006'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_007'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_008'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_009'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_010'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_MemoryPhoto_011'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_SheikPadLv2'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_Camera'})
 
-                call PuruaItemGo({'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text012'})
+            fork {
+                EventSystemActor.Demo_OpenItemDownloadDemo({'IsWaitFinish': True, 'IsPowerUp': False, 'IsPlayerClose': False, 'ItemType': 4, 'IsEquip': True})
+            } {
 
-                goto Event138
+                call C04Camera_Return()
+
+            }
+
+            EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
+            NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text023', 'IsCloseMessageDialog': False, 'MessageOpenDelayTime': 0})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_Album'})
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+            EventSystemActor.Demo_DownloadAlbum({'IsWaitFinish': True})
+            EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_PictureBook'})
+            EventSystemActor.Demo_DownloadPictureBook({'IsWaitFinish': True})
+            EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+            if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
+                Event321:
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
+                NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text017', 'MessageOpenDelayTime': 0})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_Obj_SheikPadLv2'})
+                goto Event258
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Hateno_StopTimerLv2_Choice'}) {
-
-                    call PuruaItemGo({'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text013'})
-
-                    goto Event138
-                } else {
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text010', 'IsCloseMessageDialog': False})
-                    goto Event138
-                }
+                EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_SheikSensor', 'IsWaitFinish': True})
+                EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
+                EventSystemActor.Demo_DownloadShiekSensor({'IsWaitFinish': True})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text022', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                EventSystemActor.Demo_DownloadSensorMoveIcon({'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_AncientDoctor001_GetSSLv1'})
+                EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_SheikSensor', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsStart_Obj_SheikSensor'})
+                goto Event321
             }
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Hateno_SheikSensorLv2_Choice'}) {
+
+        call PuruaItemGo({'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text011'})
+
+        Event138:
+        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text008', 'IsCloseMessageDialog': False})
+        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text009', 'ASName': 'Talk_Checkit2'})
+        goto Event246
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Hateno_RemoteBombLv2_Choice'}) {
+
+        call PuruaItemGo({'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text012'})
+
+        goto Event138
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Hateno_StopTimerLv2_Choice'}) {
+
+        call PuruaItemGo({'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text013'})
+
+        goto Event138
+    } else {
+        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text010', 'IsCloseMessageDialog': False})
+        goto Event138
     }
 }
 

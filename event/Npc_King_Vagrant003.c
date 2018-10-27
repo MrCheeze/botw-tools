@@ -92,62 +92,47 @@ void Talk() {
                         goto Event153
                     }
                 }
-            } else {
-                Event92:
-                if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Value': 3, 'Operator': 'GreaterThanOrEqualTo'}) {
-                        Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant006:GoodBye03'})
-                    } else {
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'GreaterThanOrEqualTo', 'Value': 1}) {
-                            Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:GoodBye01'})
-                        } else {
-                            Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:GoodBye00'})
-                        }
-                    }
+            } else
+            Event92:
+            if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
+                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Value': 3, 'Operator': 'GreaterThanOrEqualTo'}) {
+                    Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant006:GoodBye03'})
+                } else
+                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'GreaterThanOrEqualTo', 'Value': 1}) {
+                    Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:GoodBye01'})
                 } else {
-                    Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:GoodBye04'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Vagrant003_BOKANGI'})
-
-                    call Npc_King_Common.BOKANGI_Get({'Self': ActorIdentifier(name="Npc_King_Vagrant003")})
-
-                    EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
+                    Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:GoodBye00'})
                 }
+            } else {
+                Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:GoodBye04'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Vagrant003_BOKANGI'})
+
+                call Npc_King_Common.BOKANGI_Get({'Self': ActorIdentifier(name="Npc_King_Vagrant003")})
+
+                EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
             }
         }
-    } else {
-        switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk02'})
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant003_Talk'}) {
-                goto Event107
-            } else {
-                Event76:
-                Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk00'})
-                goto Event146
-            }
-          case 1:
-            Event163:
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant003_Talk'}) {
-                Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk08'})
-                goto Event107
-            } else {
-                goto Event76
-            }
-          case 2:
-            goto Event163
-          case 3:
-            goto Event163
-          case 4:
-            goto Event163
-          case 5:
-            goto Event163
-          case 6:
-            Event21:
-            Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk03'})
-            goto Event127
-          case 7:
-            goto Event21
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case 0:
+        Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk02'})
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant003_Talk'}) {
+            goto Event107
+        } else {
+            Event76:
+            Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk00'})
+            goto Event146
         }
+      case [1, 2, 3, 4, 5]:
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant003_Talk'}) {
+            Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk08'})
+            goto Event107
+        } else {
+            goto Event76
+        }
+      case [6, 7]:
+        Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk03'})
+        goto Event127
     }
 }
 

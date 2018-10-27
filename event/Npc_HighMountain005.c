@@ -42,18 +42,9 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_HighMountain005.CheckActorAction13() {
-      case 0:
-        Event16:
+      case [0, 1, 2, 3, 10]:
         Npc_HighMountain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain005:talk06'})
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_NPC005_First_Clear'})
-      case 1:
-        goto Event16
-      case 2:
-        goto Event16
-      case 3:
-        goto Event16
-      case 10:
-        goto Event16
       case 11:
         Event150:
         if !EventSystemActor.RandomChoice2() {
@@ -204,27 +195,12 @@ void Rito_NPC010_GoTraining_Talk() {
 void Saki_Hello() {
     if Npc_HighMountain005.IsOnInstEventFlag() {
         Npc_HighMountain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain005:talk29'})
-    } else {
-        switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event61:
-            Npc_HighMountain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain005:talk16'})
-          case 1:
-            goto Event61
-          case 2:
-            goto Event61
-          case 3:
-            goto Event61
-          case 4:
-            goto Event61
-          case 5:
-            goto Event61
-          case 6:
-            Event62:
-            Npc_HighMountain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain005:talk17'})
-          case 7:
-            goto Event62
-        }
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case [0, 1, 2, 3, 4, 5]:
+        Npc_HighMountain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain005:talk16'})
+      case [6, 7]:
+        Npc_HighMountain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain005:talk17'})
     }
 }
 

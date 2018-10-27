@@ -65,11 +65,7 @@ void Talk() {
                                             } else {
                                                 goto Event43
                                             }
-                                          case 1:
-                                            goto Event42
-                                          case 2:
-                                            goto Event42
-                                          case 3:
+                                          case [1, 2, 3]:
                                             goto Event42
                                         }
                                     } else {
@@ -105,63 +101,31 @@ void Talk() {
                         goto Event25
                     }
                 }
-              case 1:
-                Event55:
+              case [1, 2, 3]:
                 Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk101'})
                 goto Event35
-              case 2:
-                goto Event55
-              case 3:
-                goto Event55
             }
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk000'})
-                Event40:
-                if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckLower': True, 'CheckType': 'GerudoCloth', 'CheckUpper': True}) {
-                    Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk002'})
-                    goto Event20
-                } else {
-                    Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk001'})
-                    goto Event20
-                }
-              case 1:
-                Event57:
-                Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk101'})
-                goto Event40
-              case 2:
-                goto Event57
-              case 3:
-                goto Event57
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk000'})
+            Event40:
+            if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckLower': True, 'CheckType': 'GerudoCloth', 'CheckUpper': True}) {
+                Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk002'})
+                goto Event20
+            } else {
+                Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk001'})
+                goto Event20
             }
+          case [1, 2, 3]:
+            Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk101'})
+            goto Event40
         }
-      case 2:
-        Event36:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
         Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk110'})
         Npc_NorthHateru005.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-      case 3:
-        goto Event36
-      case 4:
-        goto Event36
-      case 5:
-        goto Event36
-      case 6:
-        goto Event36
-      case 7:
-        goto Event36
-      case 8:
-        goto Event36
-      case 9:
-        goto Event36
-      case 10:
-        goto Event36
       case 11:
         Npc_NorthHateru005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHateru005:talk120'})
         Npc_NorthHateru005.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-      case 12:
-        goto Event36
-      case 13:
-        goto Event36
     }
 }

@@ -240,24 +240,10 @@ void WithoutTicle_Ch_On() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event100:
+      case [0, 1, 2, 3, 4]:
         Npc_oasis013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis013:Talk_02'})
-      case 1:
-        goto Event100
-      case 2:
-        goto Event100
-      case 3:
-        goto Event100
-      case 4:
-        goto Event100
-      case 5:
-        Event101:
+      case [5, 6, 7]:
         Npc_oasis013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis013:Talk_03'})
-      case 6:
-        goto Event101
-      case 7:
-        goto Event101
     }
 }
 

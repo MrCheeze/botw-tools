@@ -41,8 +41,7 @@ void Finish_Npc_SouthernVillage007_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_SouthernVillage007.CheckActorAction13() {
-      case 0:
-        Event113:
+      case [0, 1, 2, 3, 4]:
         if EventSystemActor.CheckFlag({'FlagName': 'UotoriMini_RecipieSea_PorchFull'}) {
             Event115:
             if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_N_01'}) {
@@ -59,69 +58,59 @@ void Finish_Npc_SouthernVillage007_Talk() {
             } else {
                 Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk17'})
             }
-        } else {
-            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Animal_Fish_K'}) {
-                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Material_06'}) {
-                    Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk11'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_SouthernVillage007.Demo_Talk({'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'PorchItemName': 'Item_Material_06', 'Value': -1})
-                        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -1, 'PorchItemName': 'Item_FishGet_K'})
-                        Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk04'})
-                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+        } else
+        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Animal_Fish_K'}) {
+            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Material_06'}) {
+                Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk11'})
+                if !EventSystemActor.GeneralChoice2() {
+                    Npc_SouthernVillage007.Demo_Talk({'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+                    EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'PorchItemName': 'Item_Material_06', 'Value': -1})
+                    EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -1, 'PorchItemName': 'Item_FishGet_K'})
+                    Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk04'})
+                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
 
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
 
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UotoriMini_RecipieSea_GetReward'})
-                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                        Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk02', 'IsCloseMessageDialog': True})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UotoriMini_RecipieSea_GetReward'})
+                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+                    Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk02', 'IsCloseMessageDialog': True})
 
-                        call CookingBGM()
+                    call CookingBGM()
 
-                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_N_01'}) {
+                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_N_01'}) {
 
-                            call Demo001_0.SetCookResult5({'CookMaterial_02': 'Item_Material_03', 'CookMaterial_03': 'Item_Material_06', 'CookMaterial_05': 'Item_Ore_H', 'CookMaterial_04': 'Item_FishGet_F', 'CookMaterial_01': 'Item_FishGet_K'})
+                        call Demo001_0.SetCookResult5({'CookMaterial_02': 'Item_Material_03', 'CookMaterial_03': 'Item_Material_06', 'CookMaterial_05': 'Item_Ore_H', 'CookMaterial_04': 'Item_FishGet_F', 'CookMaterial_01': 'Item_FishGet_K'})
 
-                            Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk19'})
-                            EventSystemActor.Demo_FlagON({'FlagName': 'UotoriMini_RecipieSea_FinishDay', 'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UotoriMini_RecipeSea_Finish'})
-                        } else {
-                            Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk17'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UotoriMini_RecipieSea_PorchFull'})
-                        }
+                        Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk19'})
+                        EventSystemActor.Demo_FlagON({'FlagName': 'UotoriMini_RecipieSea_FinishDay', 'IsWaitFinish': True})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UotoriMini_RecipeSea_Finish'})
                     } else {
-                        Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk12'})
+                        Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk17'})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UotoriMini_RecipieSea_PorchFull'})
                     }
                 } else {
-                    Event31:
-                    Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk13'})
+                    Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk12'})
                 }
             } else {
-                goto Event31
+                Event31:
+                Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk13'})
             }
+        } else {
+            goto Event31
         }
-      case 1:
-        goto Event113
-      case 2:
-        goto Event113
-      case 3:
-        goto Event113
-      case 4:
-        goto Event113
       case 5:
         if EventSystemActor.CheckFlag({'FlagName': 'UotoriMini_RecipieSea_PorchFull'}) {
             goto Event115
-        } else {
-            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Animal_Fish_K'}) {
-                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Material_06'}) {
-                    Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk15'})
-                } else {
-                    Event38:
-                    Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk16'})
-                }
+        } else
+        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Animal_Fish_K'}) {
+            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Material_06'}) {
+                Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk15'})
             } else {
-                goto Event38
+                Event38:
+                Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk16'})
             }
+        } else {
+            goto Event38
         }
       case 6:
         Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk26'})
@@ -136,21 +125,18 @@ void Finish_Npc_SouthernVillage007_Talk() {
 
 void Ready_Npc_SouthernVillage007_Talk() {
     switch Npc_SouthernVillage007.CheckActorAction13() {
-      case 0:
-        Event1:
+      case [0, 1, 3, 4]:
 
         call InitTalk.InitTalk_Pair({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule', 'Actor1': 'Npc_SouthernVillage007', 'Actor2': 'Npc_SouthernVillage008'})
 
         if EventSystemActor.CheckFlag({'FlagName': 'UotoriMini_RecipieSea_IsTalked'}) {
             Event105:
             switch Npc_SouthernVillage007.CheckActorAction13() {
-              case 0:
-                Event86:
+              case [0, 2, 3, 4]:
                 Npc_SouthernVillage007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_SouthernVillage008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
                 Event112:
                 switch Npc_SouthernVillage008.CheckActorAction13() {
-                  case 0:
-                    Event87:
+                  case [0, 1, 2, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
                     Npc_SouthernVillage008.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_SouthernVillage007', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'IsConfront': False})
                     Event3:
                     Npc_SouthernVillage007.Demo_Talk({'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -158,8 +144,7 @@ void Ready_Npc_SouthernVillage007_Talk() {
                     Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk21'})
                     Npc_SouthernVillage008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk22'})
                     switch Npc_SouthernVillage007.CheckActorAction13() {
-                      case 0:
-                        Event89:
+                      case [0, 2, 3, 4]:
                         Npc_SouthernVillage007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
                         Event24:
                         Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk08'})
@@ -174,109 +159,27 @@ void Ready_Npc_SouthernVillage007_Talk() {
                             } else {
                                 Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk10'})
                             }
-                          case 1:
-                            Event95:
+                          case [1, 2, 3]:
                             Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk24'})
                             goto Event93
-                          case 2:
-                            goto Event95
-                          case 3:
-                            goto Event95
                         }
-                      case 1:
-                        Event111:
+                      case [1, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
                         Npc_SouthernVillage007.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'FaceId': 2})
                         goto Event24
-                      case 2:
-                        goto Event89
-                      case 3:
-                        goto Event89
-                      case 4:
-                        goto Event89
-                      case 5:
-                        goto Event111
-                      case 6:
-                        goto Event111
-                      case 7:
-                        goto Event111
-                      case 8:
-                        goto Event111
-                      case 9:
-                        goto Event111
-                      case 10:
-                        goto Event111
-                      case 11:
-                        goto Event111
-                      case 12:
-                        goto Event111
-                      case 13:
-                        goto Event111
                     }
-                  case 1:
-                    goto Event87
-                  case 2:
-                    goto Event87
-                  case 3:
-                    Event109:
+                  case [3, 5]:
                     Npc_SouthernVillage008.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_SouthernVillage007', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
                     goto Event3
-                  case 4:
-                    goto Event87
-                  case 5:
-                    goto Event109
-                  case 6:
-                    goto Event87
-                  case 7:
-                    goto Event87
-                  case 8:
-                    goto Event87
-                  case 9:
-                    goto Event87
-                  case 10:
-                    goto Event87
-                  case 11:
-                    goto Event87
-                  case 12:
-                    goto Event87
-                  case 13:
-                    goto Event87
                 }
-              case 1:
-                Event108:
+              case [1, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
                 Npc_SouthernVillage007.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'ActorName': 'Npc_SouthernVillage008', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
                 goto Event112
-              case 2:
-                goto Event86
-              case 3:
-                goto Event86
-              case 4:
-                goto Event86
-              case 5:
-                goto Event108
-              case 6:
-                goto Event108
-              case 7:
-                goto Event108
-              case 8:
-                goto Event108
-              case 9:
-                goto Event108
-              case 10:
-                goto Event108
-              case 11:
-                goto Event108
-              case 12:
-                goto Event108
-              case 13:
-                goto Event108
             }
         } else {
             Npc_SouthernVillage007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_RecipeSea:talk03'})
             EventSystemActor.Demo_FlagON({'FlagName': 'UotoriMini_RecipieSea_IsTalked', 'IsWaitFinish': True})
             goto Event105
         }
-      case 1:
-        goto Event1
       case 2:
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
@@ -289,10 +192,6 @@ void Ready_Npc_SouthernVillage007_Talk() {
             EventSystemActor.Demo_FlagON({'FlagName': 'UotoriMini_RecipieSea_IsTalked', 'IsWaitFinish': True})
             goto Event134
         }
-      case 3:
-        goto Event1
-      case 4:
-        goto Event1
       case 5:
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
@@ -333,13 +232,8 @@ void Ready_Npc_SouthernVillage007_Near() {
           case 0:
             Event14:
             Npc_SouthernVillage007.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:Near00'})
-          case 1:
-            Event90:
+          case [1, 2, 3]:
             Npc_SouthernVillage007.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:Near04'})
-          case 2:
-            goto Event90
-          case 3:
-            goto Event90
         }
       case 3:
         goto Event14
@@ -356,8 +250,7 @@ void Ready_Npc_SouthernVillage007_Near() {
 
 void Finish_Npc_SouthernVillage007_Near() {
     switch Npc_SouthernVillage007.CheckActorAction13() {
-      case 1:
-        Event61:
+      case [1, 3, 5]:
         if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Animal_Fish_K'}) {
             if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_Material_06'}) {
                 Npc_SouthernVillage007.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:Near00'})
@@ -368,10 +261,6 @@ void Finish_Npc_SouthernVillage007_Near() {
         } else {
             goto Event66
         }
-      case 3:
-        goto Event61
-      case 5:
-        goto Event61
       case 6:
         Npc_SouthernVillage007.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage007:Near03'})
       case 10:

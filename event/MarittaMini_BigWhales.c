@@ -332,11 +332,10 @@ void Finish_Npc_HyruleWestHatago004_Near() {
         if !EventSystemActor.CheckFlag({'FlagName': 'Whales_Orak'}) {
             Npc_HyruleWestHatago004.Demo_TalkASync({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_02', 'DispFrame': 300, 'IsChecked': True, 'IsWaitFinish': True})
         }
-    } else {
-        if !EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_02'}) {
-            if !EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_01'}) {
-                Npc_HyruleWestHatago004.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_00', 'DispFrame': 90})
-            }
+    } else
+    if !EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_02'}) {
+        if !EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_01'}) {
+            Npc_HyruleWestHatago004.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_00', 'DispFrame': 90})
         }
     }
 }

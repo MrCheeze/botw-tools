@@ -61,27 +61,49 @@ def print_event(event,indent,alreadySeen,lines,neededLabels):
                 if key != 0 and key != 1:
                     isTrueFalse = False
             if isTrueFalse:
+                if 0 in event.data.cases and 1 in event.data.cases and event.data.cases[0].v.name == event.data.cases[1].v.name:
+                    isTrueFalse = False
+            if isTrueFalse:
                 key = list(event.data.cases.keys())[0]
                 lines.append(spaces+"if " + ('' if key else '!') + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") {\n")
                 print_event(event.data.cases[key].v,indent+1,alreadySeen,lines,neededLabels)
                 if len(event.data.cases) > 1:
+                    assert event.data.cases[0].v.name != event.data.cases[1].v.name
                     key = list(event.data.cases.keys())[1]
-                    lines.append(spaces+"} else {\n")
-                    print_event(event.data.cases[key].v,indent+1,alreadySeen,lines,neededLabels)
-                lines.append(spaces+"}\n")
-            elif len(event.data.cases) == 1:
-                key = list(event.data.cases.keys())[0]
-                lines.append(spaces+"if " + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") == "+str(key)+" {\n")
-                print_event(event.data.cases[key].v,indent+1,alreadySeen,lines,neededLabels)
-                lines.append(spaces+"}\n")
+                    if (isinstance(event.data.cases[key].v.data, SwitchEvent)):
+                        lines.append(spaces+"} else\n")
+                        print_event(event.data.cases[key].v,indent,alreadySeen,lines,neededLabels)
+                    else:
+                        lines.append(spaces+"} else {\n")
+                        print_event(event.data.cases[key].v,indent+1,alreadySeen,lines,neededLabels)
+                        lines.append(spaces+"}\n")
+                else:
+                    lines.append(spaces+"}\n")
             else:
-                lines.append(spaces+"switch " + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") {\n")
+                distinctCases = {}
                 for key in event.data.cases:
-                    lines.append(spaces+"  case "+str(key)+":\n")
-                    print_event(event.data.cases[key].v,indent+1,alreadySeen,lines,neededLabels)
-                lines.append(spaces+"}\n")
+                    if event.data.cases[key].v.name not in distinctCases:
+                        distinctCases[event.data.cases[key].v.name] = []
+                    distinctCases[event.data.cases[key].v.name].append(key)
+                distinctKeys = list(distinctCases.values())
+                    
+                if len(distinctKeys) == 1:
+                    key = distinctKeys[0]
+                    if len(key) == 1:
+                        lines.append(spaces+"if " + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") == "+str(key[0])+" {\n")
+                    else:
+                        lines.append(spaces+"if " + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") in "+str(key)+" {\n")
+                    print_event(event.data.cases[key[0]].v,indent+1,alreadySeen,lines,neededLabels)
+                    lines.append(spaces+"}\n")
+                else:
+                    lines.append(spaces+"switch " + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") {\n")
+                    for key in distinctKeys:
+                        lines.append(spaces+"  case "+str(key[0] if len(key)==1 else key)+":\n")
+                        print_event(event.data.cases[key[0]].v,indent+1,alreadySeen,lines,neededLabels)
+                    lines.append(spaces+"}\n")
     elif isinstance(event.data, ForkEvent):
         lines.append('\n'+spaces+"fork")
+        assert len(event.data.forks) == len(set([fork.v.name for fork in event.data.forks]))
         for fork in event.data.forks:
             lines.append(" {\n")
             print_event(fork.v,indent+1,alreadySeen,lines,neededLabels)

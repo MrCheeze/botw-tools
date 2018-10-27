@@ -56,17 +56,16 @@ void Ready_Npc_Musician_002_Near() {
     Event29:
     if EventSystemActor.CheckFlag({'FlagName': 'MouthofDragon_Finish'}) {
         Npc_Musician_002.Demo_TalkASync({'IsChecked': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MouthofDragon:Npc_Musician_002_R_Near2', 'DispFrame': 90})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'MouthofDragon_Activated'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Enemy_Dragon_Electric_DoorOpen'}) {
-                Event13:
-                Npc_Musician_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/MouthofDragon:Npc_Musician_002_R_Near0'})
-            } else {
-                Npc_Musician_002.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MouthofDragon:Npc_Musician_002_R_Near1', 'DispFrame': 90})
-            }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'MouthofDragon_Activated'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'Enemy_Dragon_Electric_DoorOpen'}) {
+            Event13:
+            Npc_Musician_002.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/MouthofDragon:Npc_Musician_002_R_Near0'})
         } else {
-            goto Event13
+            Npc_Musician_002.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MouthofDragon:Npc_Musician_002_R_Near1', 'DispFrame': 90})
         }
+    } else {
+        goto Event13
     }
 }
 

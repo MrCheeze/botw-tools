@@ -37,8 +37,7 @@ queries: []
 params: None
 
 void Multiple() {
-    if Argument.IsWeapon() {
-        Event67:
+    if Argument.IsWeapon() in [1, 0] {
         if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 1, 'GameDataIntName': 'Shop_PlacedItemStockNum'}) {
             Npc_Kakariko010[Multiple(Self)].Demo_ChangeChoiceNumFor3DShop({'IsWaitFinish': True})
             Npc_Kakariko010[Multiple(Self)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': False})
@@ -101,14 +100,11 @@ void Multiple() {
                 goto Event73
             }
         }
-    } else {
-        goto Event67
     }
 }
 
 void Single() {
-    if Argument.IsWeapon() {
-        Event85:
+    if Argument.IsWeapon() in [1, 0] {
         Npc_Kakariko010[Single(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_60', 'IsCloseMessageDialog': True})
         if !EventSystemActor.GeneralChoice2() {
 
@@ -121,14 +117,11 @@ void Single() {
             Npc_Kakariko010[Single(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_61'})
             EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         }
-    } else {
-        goto Event85
     }
 }
 
 void Armor() {
-    if Argument.IsWeapon() {
-        Event117:
+    if Argument.IsWeapon() in [1, 0] {
         EventSystemActor.Demo_NoDeleteCurrent({'IsWaitFinish': True})
         Npc_Kakariko010[Armor(Self)].Demo_ChangeChoiceNumFor3DShop({'IsWaitFinish': True})
         Npc_Kakariko010[Armor(Self)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': False})
@@ -146,8 +139,6 @@ void Armor() {
             Npc_Kakariko010[Armor(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_61'})
             EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         }
-    } else {
-        goto Event117
     }
 }
 
@@ -168,14 +159,13 @@ void Jewelry() {
 
                 call GetDemo.OpenOperationAndShortCutGuide({'CheckTargetActorName': 'Arg_CurrentActorName'})
 
+            } else
+            if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Arg_CurrentActorName', 'Count': 1}) {
+                goto Event143
             } else {
-                if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Arg_CurrentActorName', 'Count': 1}) {
-                    goto Event143
-                } else {
 
-                    call GetDemo.GetItemPouchFullWithNameByCurrent_VisibleOn_NoChkEquipItemType({'PorchItemName': 'Arg_CurrentActorName', 'Arg_IsInvalidOpenPouch': True, 'Current': ActorIdentifier(name="Argument")})
+                call GetDemo.GetItemPouchFullWithNameByCurrent_VisibleOn_NoChkEquipItemType({'PorchItemName': 'Arg_CurrentActorName', 'Arg_IsInvalidOpenPouch': True, 'Current': ActorIdentifier(name="Argument")})
 
-                }
             }
         } else {
             goto Event143

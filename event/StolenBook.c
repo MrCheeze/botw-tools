@@ -200,23 +200,21 @@ void Finish_Npc_Kakariko007_Talk() {
 
         call DiscoverPlayer_Npc_Kakariko007()
 
-    } else {
-        if Npc_Kakariko007.CheckActorAction({'ActionName': 'Root/Timeline/Action10/到着'}) {
-            Event37:
-            Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_001', 'IsOverWriteLabelActorName': False})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Talk02'})
-            } else {
-                Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Talk03'})
-            }
+    } else
+    if Npc_Kakariko007.CheckActorAction({'ActionName': 'Root/Timeline/Action10/到着'}) {
+        Event37:
+        Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_001', 'IsOverWriteLabelActorName': False})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Talk02'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Return_NPC007'}) {
-                Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_7'})
-                Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_3'})
-            } else {
-                goto Event37
-            }
+            Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Talk03'})
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Return_NPC007'}) {
+        Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_7'})
+        Npc_Kakariko007.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_3'})
+    } else {
+        goto Event37
     }
 }
 
@@ -252,31 +250,28 @@ void Finish_Npc_Kakariko016_Talk() {
             Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko012_S1_003_4', 'ASName': 'Wait'})
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_Conclusion_NPC016'})
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Alert_NPC016'}) {
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Alert_NPC016'}) {
 
-            call DiscoverPlayer_Npc_Kakariko016()
+        call DiscoverPlayer_Npc_Kakariko016()
 
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_SpeechBalloon_NPC016_1'}) {
+        Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko016_100'})
+
+        call NPC016_FalgResetByReturn()
+
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_Return_NPC016'})
+    } else
+    if Npc_Kakariko016.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
+        Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko012_S1_001', 'IsOverWriteLabelActorName': False})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Talk08'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_SpeechBalloon_NPC016_1'}) {
-                Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko016_100'})
-
-                call NPC016_FalgResetByReturn()
-
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_Return_NPC016'})
-            } else {
-                if Npc_Kakariko016.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
-                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko012_S1_001', 'IsOverWriteLabelActorName': False})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Talk08'})
-                    } else {
-                        Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Talk09'})
-                    }
-                } else {
-                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko016_101'})
-                }
-            }
+            Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Talk09'})
         }
+    } else {
+        Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko016_101'})
     }
 }
 
@@ -641,27 +636,25 @@ void Finish_Npc_Kakariko008_Talk() {
             Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_16'})
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_Conclusion_NPC008'})
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Alert_NPC008'}) {
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Alert_NPC008'}) {
 
-            call DiscoverPlayer_Npc_Kakariko008()
+        call DiscoverPlayer_Npc_Kakariko008()
 
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Conclusion_NPC008'}) {
+        Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_04'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_19'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_Conclusion_NPC008'}) {
-                Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_04'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_19'})
-                } else {
-                    Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_18'})
-                }
-            } else {
-                Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_04'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_06'})
-                } else {
-                    Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_07'})
-                }
-            }
+            Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_18'})
+        }
+    } else {
+        Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_04'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_06'})
+        } else {
+            Npc_Kakariko008.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko008_07'})
         }
     }
 }
@@ -889,14 +882,12 @@ void NPC007_FlagResetByMorning() {
     if Npc_Kakariko007.CheckActorAction({'ActionName': 'Root/Timeline/Action3/到着'}) {
         Event840:
         Npc_Kakariko007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_Near004', 'IsChecked': False, 'DispFrame': 90})
-    } else {
-        if Npc_Kakariko007.CheckActorAction({'ActionName': 'Root/Timeline/Action3/移動'}) {
-            goto Event840
-        } else {
-            if Npc_Kakariko007.CheckActorAction({'ActionName': 'Root/Timeline/Wander/'}) {
-                goto Event840
-            }
-        }
+    } else
+    if Npc_Kakariko007.CheckActorAction({'ActionName': 'Root/Timeline/Action3/移動'}) {
+        goto Event840
+    } else
+    if Npc_Kakariko007.CheckActorAction({'ActionName': 'Root/Timeline/Wander/'}) {
+        goto Event840
     }
 }
 
@@ -908,10 +899,9 @@ void NPC008_FlagResetByMorning() {
     if Npc_Kakariko008.CheckActorAction({'ActionName': 'Root/Timeline/Action3/到着'}) {
         Event849:
         Npc_Kakariko008.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/StolenBook:Near01'})
-    } else {
-        if Npc_Kakariko008.CheckActorAction({'ActionName': 'Root/Timeline/Wander/'}) {
-            goto Event849
-        }
+    } else
+    if Npc_Kakariko008.CheckActorAction({'ActionName': 'Root/Timeline/Wander/'}) {
+        goto Event849
     }
 }
 
@@ -923,10 +913,9 @@ void NPC016_FlagResetByMorning() {
     if Npc_Kakariko016.CheckActorAction({'ActionName': 'Root/Timeline/Action2/到着'}) {
         Event852:
         Npc_Kakariko016.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko012_S1_Near001'})
-    } else {
-        if Npc_Kakariko016.CheckActorAction({'ActionName': 'Root/Timeline/Wander/'}) {
-            goto Event852
-        }
+    } else
+    if Npc_Kakariko016.CheckActorAction({'ActionName': 'Root/Timeline/Wander/'}) {
+        goto Event852
     }
 }
 
@@ -983,15 +972,11 @@ void DoranGoHome() {
 
 void Ready_Npc_Kakariko006_Talk() {
     switch Npc_Kakariko006.CheckActorAction13() {
-      case 0:
-        Event944:
+      case [0, 1]:
 
         call Npc_Kakariko006.Talk()
 
-      case 1:
-        goto Event944
-      case 2:
-        Event1034:
+      case [2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13]:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko006_first'}) {
 
             call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
@@ -1002,14 +987,6 @@ void Ready_Npc_Kakariko006_Talk() {
             call Npc_Kakariko006.Talk()
 
         }
-      case 3:
-        goto Event1034
-      case 4:
-        goto Event1034
-      case 5:
-        goto Event1034
-      case 6:
-        goto Event1034
       case 7:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko006_first'}) {
 
@@ -1025,54 +1002,17 @@ void Ready_Npc_Kakariko006_Talk() {
             call Npc_Kakariko006.Talk()
 
         }
-      case 8:
-        goto Event1034
-      case 9:
-        goto Event1034
-      case 10:
-        goto Event1034
-      case 11:
-        goto Event1034
-      case 12:
-        goto Event1034
-      case 13:
-        goto Event1034
     }
 }
 
 void Ready_Npc_Kakariko006_Near() {
     switch Npc_Kakariko006.CheckActorAction13() {
-      case 0:
-        Event945:
+      case [0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13]:
 
         call Npc_Kakariko006.Near()
 
-      case 1:
-        goto Event945
-      case 2:
-        goto Event945
-      case 3:
-        goto Event945
-      case 4:
-        goto Event945
-      case 5:
-        goto Event945
-      case 6:
-        goto Event945
       case 7:
         Npc_Kakariko006.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko006_Near', 'DispFrame': 90, 'IsChecked': False})
-      case 8:
-        goto Event945
-      case 9:
-        goto Event945
-      case 10:
-        goto Event945
-      case 11:
-        goto Event945
-      case 12:
-        goto Event945
-      case 13:
-        goto Event945
     }
 }
 

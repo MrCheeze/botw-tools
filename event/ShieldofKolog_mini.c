@@ -131,52 +131,47 @@ void Ready_Npc_Kokiri011_Talk() {
                             } else {
                                 Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1014'})
                             }
-                        } else {
-                            Event137:
-                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_013'}) {
-                                Event191:
-                                if EventSystemActor.CheckRupee({'Value': 20}) {
+                        } else
+                        Event137:
+                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_013'}) {
+                            Event191:
+                            if EventSystemActor.CheckRupee({'Value': 20}) {
 
-                                    fork {
-                                        EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
-                                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                                    } {
-                                        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1013', 'IsCloseMessageDialog': False})
-                                        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_0002', 'IsCloseMessageDialog': False})
-                                    }
-
-                                    goto Event181
-                                } else {
-                                    Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1014'})
+                                fork {
+                                    EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
+                                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+                                } {
+                                    Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1013', 'IsCloseMessageDialog': False})
+                                    Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_0002', 'IsCloseMessageDialog': False})
                                 }
+
+                                goto Event181
                             } else {
-                                Event77:
-                                Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog:Npc_Kokiri011_S10_031'})
-                            }
-                        }
-                    } else {
-                        Event132:
-                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_023'}) {
-                            Event224:
-                            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_013'}) {
-                                goto Event191
-                            } else {
-                                goto Event137
+                                Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1014'})
                             }
                         } else {
-                            goto Event77
+                            Event77:
+                            Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog:Npc_Kokiri011_S10_031'})
                         }
-                    }
-                } else {
-                    if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Weapon_Sword_025', 'Count': 1}) {
-                        if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Shield_023', 'Count': 1}) {
-                            goto Event224
-                        } else {
-                            goto Event132
-                        }
+                    } else
+                    Event132:
+                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_023'}) {
+                        Event224:
+                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Bow_013'}) {
+                            goto Event191
+                        } else
+                        goto Event137
                     } else {
                         goto Event77
                     }
+                } else
+                if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Weapon_Sword_025', 'Count': 1}) {
+                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Weapon_Shield_023', 'Count': 1}) {
+                        goto Event224
+                    } else
+                    goto Event132
+                } else {
+                    goto Event77
                 }
             } else {
                 Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_0001'})
@@ -186,14 +181,13 @@ void Ready_Npc_Kokiri011_Talk() {
             Npc_Kokiri011.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_0004'})
             goto Event189
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_mini_Check_Talk'}) {
+        goto Event167
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_mini_Check_Talk'}) {
-            goto Event167
-        } else {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_mini_Check_Talk'})
-            Npc_Kokiri011.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_0000'})
-            goto Event189
-        }
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_mini_Check_Talk'})
+        Npc_Kokiri011.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_0000'})
+        goto Event189
     }
 }
 
@@ -287,24 +281,20 @@ void Finish_Npc_Kokiri011_EachFrame() {
                     if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_013'}) {
                         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
                         goto Event242
+                    } else
+                    Event249:
+                    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_mini_Activated'}) {
+                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Retire', 'QuestName': 'ShieldofKolog_mini'})
                     } else {
-                        Event249:
-                        if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_mini_Activated'}) {
-                            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Retire', 'QuestName': 'ShieldofKolog_mini'})
-                        } else {
-                            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                            goto Event242
-                        }
+                        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+                        goto Event242
                     }
-                } else {
-                    goto Event249
-                }
-            } else {
+                } else
                 goto Event249
-            }
-        } else {
+            } else
             goto Event249
-        }
+        } else
+        goto Event249
     } else {
         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
         goto Event242
@@ -412,38 +402,36 @@ void Goal_Npc_Kokiri011_StepStart() {
                                     Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait_Fly_Talk', 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1100', 'IsCloseMessageDialog': True})
                                     goto Event258
                                 }
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalShield'}) {
+                                goto Event201
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalBow'}) {
+                                goto Event201
                             } else {
-                                if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalShield'}) {
-                                    goto Event201
-                                } else {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalBow'}) {
-                                        goto Event201
+                                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+                                Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait_Fly_Talk', 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1102', 'IsCloseMessageDialog': False})
+                                if !EventSystemActor.GeneralChoice2() {
+                                    if EventSystemActor.CheckRupee({'Value': 10}) {
+                                        EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': False, 'Value': -10})
+                                        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Wait_Fly_Talk', 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1103'})
+                                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+                                        goto Event362
                                     } else {
-                                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-                                        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait_Fly_Talk', 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1102', 'IsCloseMessageDialog': False})
-                                        if !EventSystemActor.GeneralChoice2() {
-                                            if EventSystemActor.CheckRupee({'Value': 10}) {
-                                                EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': False, 'Value': -10})
-                                                Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Wait_Fly_Talk', 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1103'})
-                                                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                                                goto Event362
-                                            } else {
-                                                Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1014', 'IsCloseMessageDialog': False, 'ASName': 'Wait_Fly_Talk'})
-                                                Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1107', 'IsCloseMessageDialog': True, 'ASName': 'Wait_Fly_Talk'})
-                                                Npc_Kokiri011.Demo_PlayASForDemo({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Act_Fly_Escape'})
-                                                Npc_Kokiri011.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Act_Fly_Appearance', 'IsWaitFinish': True})
-                                                Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait_Fly_Talk', 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1100', 'IsCloseMessageDialog': True})
-                                                goto Event258
-                                            }
-                                        } else {
-                                            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-                                            Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1104', 'IsCloseMessageDialog': True, 'ASName': 'Wait_Fly_Talk'})
-                                            Npc_Kokiri011.Demo_PlayASForDemo({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Act_Fly_Escape'})
-                                            Npc_Kokiri011.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Act_Fly_Appearance', 'IsWaitFinish': True})
-                                            Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1105', 'IsCloseMessageDialog': True, 'ASName': 'Wait_Fly_Talk'})
-                                            goto Event258
-                                        }
+                                        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1014', 'IsCloseMessageDialog': False, 'ASName': 'Wait_Fly_Talk'})
+                                        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1107', 'IsCloseMessageDialog': True, 'ASName': 'Wait_Fly_Talk'})
+                                        Npc_Kokiri011.Demo_PlayASForDemo({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Act_Fly_Escape'})
+                                        Npc_Kokiri011.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Act_Fly_Appearance', 'IsWaitFinish': True})
+                                        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait_Fly_Talk', 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1100', 'IsCloseMessageDialog': True})
+                                        goto Event258
                                     }
+                                } else {
+                                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+                                    Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1104', 'IsCloseMessageDialog': True, 'ASName': 'Wait_Fly_Talk'})
+                                    Npc_Kokiri011.Demo_PlayASForDemo({'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Act_Fly_Escape'})
+                                    Npc_Kokiri011.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Act_Fly_Appearance', 'IsWaitFinish': True})
+                                    Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1105', 'IsCloseMessageDialog': True, 'ASName': 'Wait_Fly_Talk'})
+                                    goto Event258
                                 }
                             }
                         } else {
@@ -463,8 +451,7 @@ void Goal_Npc_Kokiri011_StepStart() {
             Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait_Fly_Talk', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1001_1'})
             goto Event162
         }
-      case 1:
-        Event69:
+      case [1, 2]:
         Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1000', 'IsCloseMessageDialog': False, 'ASName': 'Wait_Fly_Talk'})
         if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 120}) {
             Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1010', 'ASName': 'Wait_Fly_Talk', 'IsCloseMessageDialog': True})
@@ -477,8 +464,6 @@ void Goal_Npc_Kokiri011_StepStart() {
             Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog_mini:Talk_1002', 'IsCloseMessageDialog': False, 'ASName': 'Wait_Fly_Talk'})
             goto Event279
         }
-      case 2:
-        goto Event69
     }
 }
 

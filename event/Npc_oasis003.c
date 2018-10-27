@@ -39,8 +39,7 @@ void Questend_talk() {
     call RAIMEI_CK()
 
     switch Npc_oasis003[Rouge03].CheckActorAction13() {
-      case 0:
-        Event112:
+      case [0, 6, 7, 8]:
         if Npc_oasis003[Rouge03].IsOnInstEventFlag() {
             Npc_oasis003[Rouge03].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis003:Quest_finish_11'})
             Npc_oasis003[Rouge03].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis003:Quest_finish_02'})
@@ -100,8 +99,7 @@ void Questend_talk() {
             Npc_oasis003[Rouge03].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis003:Quest_finish_10'})
             goto Event153
         }
-      case 1:
-        Event96:
+      case [1, 9]:
         if EventSystemActor.CheckFlag({'FlagName': 'Get_GerudoWeapon'}) {
             if Npc_oasis003[Rouge03].IsOnInstEventFlag() {
                 Event25:
@@ -167,14 +165,6 @@ void Questend_talk() {
       case 5:
         Npc_oasis003[Rouge03].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis003:Quest_finish_07'})
         goto Event152
-      case 6:
-        goto Event112
-      case 7:
-        goto Event112
-      case 8:
-        goto Event112
-      case 9:
-        goto Event96
       case 10:
         Event116:
         if Npc_oasis003[Rouge03].IsOnInstEventFlag() {
@@ -235,31 +225,10 @@ void RAIMEI_CK() {
     if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': False, 'CheckLower': False, 'CheckType': 'Thunder'}) {
         if !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis003_Raimei_CK'}) {
             switch Npc_oasis003[Rouge03].CheckActorAction13() {
-              case 0:
-                Event91:
+              case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
                 Npc_oasis003[Rouge03].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis003:Raimei_CK_001'})
                 EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis003_Raimei_CK', 'IsWaitFinish': True})
                 goto Event153
-              case 1:
-                goto Event91
-              case 2:
-                goto Event91
-              case 3:
-                goto Event91
-              case 4:
-                goto Event91
-              case 5:
-                goto Event91
-              case 6:
-                goto Event91
-              case 7:
-                goto Event91
-              case 8:
-                goto Event91
-              case 9:
-                goto Event91
-              case 10:
-                goto Event91
               case 11:
                 Npc_oasis003[Rouge03].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis003:Quest_finish_09'})
             }
@@ -269,24 +238,11 @@ void RAIMEI_CK() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event105:
+      case [0, 1]:
         Npc_oasis003[Rouge03].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis003:hello'})
-      case 1:
-        goto Event105
-      case 2:
-        Event106:
+      case [2, 3, 4]:
         Npc_oasis003[Rouge03].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis003:hello_00'})
-      case 3:
-        goto Event106
-      case 4:
-        goto Event106
-      case 5:
-        Event107:
+      case [5, 6, 7]:
         Npc_oasis003[Rouge03].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis003:hello_01'})
-      case 6:
-        goto Event107
-      case 7:
-        goto Event107
     }
 }

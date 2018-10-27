@@ -149,39 +149,36 @@ void Ready_Npc_Goron_Camp001_Talk() {
             } else {
                 Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_10', 'IsOverWriteLabelActorName': False})
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Activated'}) {
+            Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_72'})
+            goto Event223
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Activated'}) {
-                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_72'})
-                goto Event223
-            } else {
-                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_33'})
-                goto Event223
-            }
+            Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_33'})
+            goto Event223
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Finish'}) {
+        Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/GoronCamp:Talk_50'})
+        if !EventSystemActor.GeneralChoice2() {
+            EventSystemActor.Demo_FlagON({'FlagName': 'GoronCamp_FirstTalk', 'IsWaitFinish': True})
+            Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_51'})
+            goto Event223
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Activated'}) {
+        Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/GoronCamp:Talk_70'})
+        if !EventSystemActor.GeneralChoice2() {
+            EventSystemActor.Demo_FlagON({'FlagName': 'GoronCamp_FirstTalk', 'IsWaitFinish': True})
+            Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_71'})
+            goto Event223
         }
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Finish'}) {
-            Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/GoronCamp:Talk_50'})
-            if !EventSystemActor.GeneralChoice2() {
-                EventSystemActor.Demo_FlagON({'FlagName': 'GoronCamp_FirstTalk', 'IsWaitFinish': True})
-                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_51'})
-                goto Event223
-            }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Activated'}) {
-                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/GoronCamp:Talk_70'})
-                if !EventSystemActor.GeneralChoice2() {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'GoronCamp_FirstTalk', 'IsWaitFinish': True})
-                    Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_71'})
-                    goto Event223
-                }
-            } else {
-                Npc_Goron_Camp001.Demo_Talk({'MessageId': 'EventFlowMsg/GoronCamp:Talk_00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                if !EventSystemActor.GeneralChoice2() {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'GoronCamp_FirstTalk', 'IsWaitFinish': True})
-                    Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_32'})
-                    goto Event223
-                }
-            }
+        Npc_Goron_Camp001.Demo_Talk({'MessageId': 'EventFlowMsg/GoronCamp:Talk_00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+        if !EventSystemActor.GeneralChoice2() {
+            EventSystemActor.Demo_FlagON({'FlagName': 'GoronCamp_FirstTalk', 'IsWaitFinish': True})
+            Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_32'})
+            goto Event223
         }
     }
 }
@@ -192,12 +189,11 @@ void Ready_Npc_Goron_Camp002_Talk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Finish'}) {
         Npc_Goron_Camp002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_55'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Activated'}) {
+        Npc_Goron_Camp002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_75'})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Activated'}) {
-            Npc_Goron_Camp002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_75'})
-        } else {
-            Npc_Goron_Camp002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_07', 'IsOverWriteLabelActorName': False})
-        }
+        Npc_Goron_Camp002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_07', 'IsOverWriteLabelActorName': False})
     }
 }
 
@@ -237,12 +233,11 @@ void Ready_Npc_Goron_Camp003_Talk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Finish'}) {
         Npc_Goron_Camp003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Sub_KO_Wait', 'MessageId': 'EventFlowMsg/GoronCamp:Talk_60'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Activated'}) {
+        Npc_Goron_Camp003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Sub_KO_Wait', 'MessageId': 'EventFlowMsg/GoronCamp:Talk_80'})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Activated'}) {
-            Npc_Goron_Camp003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Sub_KO_Wait', 'MessageId': 'EventFlowMsg/GoronCamp:Talk_80'})
-        } else {
-            Npc_Goron_Camp003.Demo_Talk({'MessageId': 'EventFlowMsg/GoronCamp:Talk_09', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Sub_KO_Wait'})
-        }
+        Npc_Goron_Camp003.Demo_Talk({'MessageId': 'EventFlowMsg/GoronCamp:Talk_09', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Sub_KO_Wait'})
     }
 }
 
@@ -287,14 +282,13 @@ void Finish_Goron_Camp() {
             if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 90}) {
                 Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_20', 'IsOverWriteLabelActorName': False})
                 goto Event58
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 30}) {
+                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_17', 'IsOverWriteLabelActorName': False})
+                goto Event58
             } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 30}) {
-                    Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_17', 'IsOverWriteLabelActorName': False})
-                    goto Event58
-                } else {
-                    Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_19', 'IsOverWriteLabelActorName': False})
-                    goto Event58
-                }
+                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_19', 'IsOverWriteLabelActorName': False})
+                goto Event58
             }
         }
     }

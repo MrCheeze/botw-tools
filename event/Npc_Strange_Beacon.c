@@ -35,8 +35,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Strange_Beacon.CheckActorAction13() {
-      case 0:
-        Event56:
+      case [0, 1, 13]:
         if EventSystemActor.CheckFlag({'FlagName': 'Strange_Beacon_First'}) {
             if EventSystemActor.CheckFlag({'FlagName': 'Strange_Beacon_Recipe'}) {
                 Event2:
@@ -86,16 +85,12 @@ void Talk() {
             Npc_Strange_Beacon.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Strange_Beacon:Talk_002', 'ASName': ''})
             goto Event33
         }
-      case 1:
-        goto Event56
       case 10:
         Event48:
         Npc_Strange_Beacon.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Strange_Beacon:Talk_054', 'ASName': ''})
       case 11:
         Event16:
         Npc_Strange_Beacon.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Strange_Beacon:Talk007', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-      case 13:
-        goto Event56
     }
 }
 
@@ -104,34 +99,27 @@ void Clear_Dungeon103_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Strange_Beacon.CheckActorAction13() {
-      case 0:
-        Event18:
+      case [0, 1, 13]:
         if Npc_Strange_Beacon.IsOnInstEventFlag() {
             if EventSystemActor.CheckFlag({'FlagName': 'Strange_Beacon_Recipe'}) {
                 goto Event2
             } else {
                 goto Event52
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Strange_Beacon_Recipe'}) {
+            goto Event2
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Strange_Beacon_First'}) {
+            Npc_Strange_Beacon.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Strange_Beacon:Talk_055', 'IsCloseMessageDialog': False, 'ASName': ''})
+            goto Event35
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Strange_Beacon_Recipe'}) {
-                goto Event2
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Strange_Beacon_First'}) {
-                    Npc_Strange_Beacon.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Strange_Beacon:Talk_055', 'IsCloseMessageDialog': False, 'ASName': ''})
-                    goto Event35
-                } else {
-                    goto Event8
-                }
-            }
+            goto Event8
         }
-      case 1:
-        goto Event18
       case 10:
         goto Event48
       case 11:
         goto Event16
-      case 13:
-        goto Event18
     }
 }
 

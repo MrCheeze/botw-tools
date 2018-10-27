@@ -166,59 +166,55 @@ void DownloadApp() {
 
                 goto Event14
             }
-        } else {
-            if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWater'}) {
-
-                fork {
-
-                    call PlayerLookAround()
-
-                } {
-                    NPC_CaptionVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo039_0:Demo039_0_Text007'})
-                }
-
-                goto Event14
-            } else {
-                if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsElectric'}) {
-
-                    fork {
-
-                        call PlayerLookAround()
-
-                    } {
-                        NPC_CaptionVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo039_0:Demo039_0_Text004', 'IsCloseMessageDialog': True})
-                    }
-
-                    goto Event14
-                } else {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RemainsFire_OpenWindow'})
-
-                    fork {
-
-                        call PlayerLookAround()
-
-                    } {
-                        NPC_CaptionVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo039_0:Demo039_0_Text011'})
-                    }
-
-                    SceneSoundCtrlTag.Demo_SetEndProc({'IsWaitFinish': True, 'CtrlType': 'SkipAll'})
-                    goto Event14
-                }
-            }
-        }
-    } else {
+        } else
         if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWater'}) {
-            EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_App_WaterRelic', 'IsWaitFinish': True})
-            goto Event100
-        } else {
-            if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsElectric'}) {
-                EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_App_ElectricRelic', 'IsWaitFinish': True})
-                goto Event100
-            } else {
-                EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_App_FireRelic', 'IsWaitFinish': True})
-                goto Event100
+
+            fork {
+
+                call PlayerLookAround()
+
+            } {
+                NPC_CaptionVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo039_0:Demo039_0_Text007'})
             }
+
+            goto Event14
+        } else
+        if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsElectric'}) {
+
+            fork {
+
+                call PlayerLookAround()
+
+            } {
+                NPC_CaptionVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo039_0:Demo039_0_Text004', 'IsCloseMessageDialog': True})
+            }
+
+            goto Event14
+        } else {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RemainsFire_OpenWindow'})
+
+            fork {
+
+                call PlayerLookAround()
+
+            } {
+                NPC_CaptionVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo039_0:Demo039_0_Text011'})
+            }
+
+            SceneSoundCtrlTag.Demo_SetEndProc({'IsWaitFinish': True, 'CtrlType': 'SkipAll'})
+            goto Event14
         }
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWater'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_App_WaterRelic', 'IsWaitFinish': True})
+        goto Event100
+    } else
+    if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsElectric'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_App_ElectricRelic', 'IsWaitFinish': True})
+        goto Event100
+    } else {
+        EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_App_FireRelic', 'IsWaitFinish': True})
+        goto Event100
     }
 }
 

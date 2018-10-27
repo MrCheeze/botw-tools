@@ -139,14 +139,13 @@ void WarpOut() {
             EventSystemActor[DispFloorNum].Demo_OpenEnduranceFloorNumber({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'GameDataIntFloorNum': '100enemy_Now_Floor_Number', 'LabelName': 'EnduranceDungeon02_floor'})
             Event112:
             SceneSoundCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'SeCtrlType': 'None', 'BgmCtrlType': 'StartWithFade'})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
+            EventSystemActor[DispFloorNum].Demo_OpenEnduranceFloorNumber({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'GameDataIntFloorNum': '100enemy_Now_Floor_Number', 'LabelName': 'EnduranceDungeon01_floor'})
+            goto Event112
         } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-                EventSystemActor[DispFloorNum].Demo_OpenEnduranceFloorNumber({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'GameDataIntFloorNum': '100enemy_Now_Floor_Number', 'LabelName': 'EnduranceDungeon01_floor'})
-                goto Event112
-            } else {
-                EventSystemActor[DispFloorNum].Demo_OpenEnduranceFloorNumber({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'GameDataIntFloorNum': '100enemy_Now_Floor_Number', 'LabelName': 'EnduranceDungeon_floor'})
-                goto Event112
-            }
+            EventSystemActor[DispFloorNum].Demo_OpenEnduranceFloorNumber({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'GameDataIntFloorNum': '100enemy_Now_Floor_Number', 'LabelName': 'EnduranceDungeon_floor'})
+            goto Event112
         }
     } else {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 2})

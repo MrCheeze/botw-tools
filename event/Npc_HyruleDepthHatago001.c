@@ -21,13 +21,9 @@ void Talk() {
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_HyruleDepthHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Talk03'})
-          case 1:
+          case [1, 2, 3]:
             Event27:
             Npc_HyruleDepthHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Talk05'})
-          case 2:
-            goto Event27
-          case 3:
-            goto Event27
         }
       case 1:
         if Npc_HyruleDepthHatago001.IsArriveAnchorForRain() {
@@ -43,22 +39,17 @@ void Talk() {
       case 12:
         if Npc_HyruleDepthHatago001.IsArriveAnchorForRain() {
             goto Event28
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                Npc_HyruleDepthHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_HyruleDepthHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Talk01', 'IsCloseMessageDialog': True})
-                } else {
-                    Npc_HyruleDepthHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Talk02'})
-                }
-              case 1:
-                goto Event27
-              case 2:
-                goto Event27
-              case 3:
-                goto Event27
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            Npc_HyruleDepthHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_HyruleDepthHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Talk01', 'IsCloseMessageDialog': True})
+            } else {
+                Npc_HyruleDepthHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Talk02'})
             }
+          case [1, 2, 3]:
+            goto Event27
         }
     }
 }
@@ -70,13 +61,9 @@ void Near() {
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_HyruleDepthHatago001.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Near00', 'IsChecked': False, 'DispFrame': 90})
-          case 1:
+          case [1, 2, 3]:
             Event12:
             Npc_HyruleDepthHatago001.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago001:Near_RunRain00', 'IsChecked': False, 'DispFrame': 90})
-          case 2:
-            goto Event12
-          case 3:
-            goto Event12
         }
       case 1:
         if Npc_HyruleDepthHatago001.IsArriveAnchorForRain() {
@@ -91,8 +78,7 @@ void Near() {
       case 12:
         if Npc_HyruleDepthHatago001.IsArriveAnchorForRain() {
             goto Event12
-        } else {
-            goto Event32
-        }
+        } else
+        goto Event32
     }
 }

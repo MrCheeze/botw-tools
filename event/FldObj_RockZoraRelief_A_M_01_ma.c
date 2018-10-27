@@ -49,70 +49,61 @@ void Check_SearchRelief() {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_01'})
             EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
         }
-    } else {
-        if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_02', 'ActorName': 'FldObj_RockZoraRelief_A_M_02_ma'}) {
-            if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_02'}) {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_02'})
-                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-            }
-        } else {
-            if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_03', 'ActorName': 'FldObj_RockZoraRelief_A_M_03_ma'}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_03'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_03'})
-                    EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                }
-            } else {
-                if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_04', 'ActorName': 'FldObj_RockZoraRelief_A_M_04_ma'}) {
-                    if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_04'}) {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_04'})
-                        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                    }
-                } else {
-                    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_05', 'ActorName': 'FldObj_RockZoraRelief_A_M_05_ma'}) {
-                        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_05'}) {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_05'})
-                            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                        }
-                    } else {
-                        if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_06', 'ActorName': 'FldObj_RockZoraRelief_A_M_06_ma'}) {
-                            if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_06'}) {
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_06'})
-                                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                            }
-                        } else {
-                            if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_07', 'ActorName': 'FldObj_RockZoraRelief_A_M_07_ma'}) {
-                                if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_07'}) {
-                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_07'})
-                                    EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                                }
-                            } else {
-                                if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_08', 'ActorName': 'FldObj_RockZoraRelief_A_M_08_ma'}) {
-                                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                                    GameROMPlayer.Demo_OpenMessageDialog({'IsWaitFinish': True, 'Label': 'Talk_ZoraRelief_Mess_08_01', 'Mstxt': 'EventFlowMsg/FldObj_RockZoraRelief_A_M_01_ma'})
-                                    if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_08'}) {
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_08'})
-                                        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                                    }
-                                } else {
-                                    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_09', 'ActorName': 'FldObj_RockZoraRelief_A_M_09_ma'}) {
-                                        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_09'}) {
-                                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_09'})
-                                            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                                        }
-                                    } else {
-                                        if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_10', 'ActorName': 'FldObj_RockZoraRelief_A_M_10_ma'}) {
-                                            if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
-                                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_10'})
-                                                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+    } else
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_02', 'ActorName': 'FldObj_RockZoraRelief_A_M_02_ma'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_02'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_02'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+        }
+    } else
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_03', 'ActorName': 'FldObj_RockZoraRelief_A_M_03_ma'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_03'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_03'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+        }
+    } else
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_04', 'ActorName': 'FldObj_RockZoraRelief_A_M_04_ma'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_04'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_04'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+        }
+    } else
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_05', 'ActorName': 'FldObj_RockZoraRelief_A_M_05_ma'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_05'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_05'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+        }
+    } else
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_06', 'ActorName': 'FldObj_RockZoraRelief_A_M_06_ma'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_06'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_06'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+        }
+    } else
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_07', 'ActorName': 'FldObj_RockZoraRelief_A_M_07_ma'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_07'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_07'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+        }
+    } else
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_08', 'ActorName': 'FldObj_RockZoraRelief_A_M_08_ma'}) {
+        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+        GameROMPlayer.Demo_OpenMessageDialog({'IsWaitFinish': True, 'Label': 'Talk_ZoraRelief_Mess_08_01', 'Mstxt': 'EventFlowMsg/FldObj_RockZoraRelief_A_M_01_ma'})
+        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_08'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_08'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+        }
+    } else
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_09', 'ActorName': 'FldObj_RockZoraRelief_A_M_09_ma'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_09'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_09'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+        }
+    } else
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_10', 'ActorName': 'FldObj_RockZoraRelief_A_M_10_ma'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_10'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
         }
     }
 }

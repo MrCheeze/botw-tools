@@ -103,8 +103,7 @@ void BossRoom0() {
                             if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_070'}) {
                                 EventSystemActor.Demo_RecoverMasterSword({'IsWaitFinish': True})
                                 Event50:
-                                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo142_0'}) {
-                                    Event146:
+                                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo142_0'}) in [1, 0] {
                                     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'LastBossIncompleteGanonGenerateFlag'})
                                     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
                                     SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
@@ -136,55 +135,43 @@ void BossRoom0() {
 
                                                             call Common.DisableSaveAndWarp()
 
+                                                        } else
+                                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_1'}) {
+                                                            goto Event66
+                                                        } else
+                                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_2'}) {
+                                                            goto Event66
+                                                        } else
+                                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_3'}) {
+                                                            goto Event66
                                                         } else {
-                                                            if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_1'}) {
-                                                                goto Event66
-                                                            } else {
-                                                                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_2'}) {
-                                                                    goto Event66
-                                                                } else {
-                                                                    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_3'}) {
-                                                                        goto Event66
-                                                                    } else {
-                                                                        goto Event155
-                                                                    }
-                                                                }
-                                                            }
+                                                            goto Event155
                                                         }
-                                                    } else {
-                                                        goto Event67
-                                                    }
-                                                } else {
-                                                    goto Event64
-                                                }
-                                            } else {
-                                                goto Event62
-                                            }
-                                        } else {
-                                            goto Event60
-                                        }
+                                                    } else
+                                                    goto Event67
+                                                } else
+                                                goto Event64
+                                            } else
+                                            goto Event62
+                                        } else
+                                        goto Event60
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
+                                        goto Event188
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
+                                        goto Event188
+                                    } else
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
+                                        goto Event188
                                     } else {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
-                                            goto Event188
-                                        } else {
-                                            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
-                                                goto Event188
-                                            } else {
-                                                if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
-                                                    goto Event188
-                                                } else {
-                                                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo142_0', 'EndFade': 1})
-                                                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWindGenerateFlag'})
-                                                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWaterGenerateFlag'})
-                                                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonFireGenerateFlag'})
-                                                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonElectricGenerateFlag'})
-                                                    goto Event155
-                                                }
-                                            }
-                                        }
+                                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo142_0', 'EndFade': 1})
+                                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWindGenerateFlag'})
+                                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWaterGenerateFlag'})
+                                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonFireGenerateFlag'})
+                                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonElectricGenerateFlag'})
+                                        goto Event155
                                     }
-                                } else {
-                                    goto Event146
                                 }
                             } else {
                                 EventSystemActor.Demo_RecoverMasterSword({'IsWaitFinish': True})
@@ -197,79 +184,75 @@ void BossRoom0() {
                             GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
                             goto Event50
                         }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo141_2'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'IsHyruleCastlePGanonElectricDead'}) {
-                                goto Event151
-                            }
-                        } else {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonElectricGenerateFlag'})
-                            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                            Fader.Demo_FadeOut({'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True})
-                            GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo141_2'})
-                            SceneBgmCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'CtrlType': 'CurseGanon_Elec_Start_FirstHalf'})
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWindGenerateFlag'})
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWaterGenerateFlag'})
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonFireGenerateFlag'})
-
-                            call Common.DisableSaveAndWarp()
-
-                        }
-                    }
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo141_1'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'IsHyruleCastlePGanonFireDead'}) {
-                            goto Event14
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo141_2'}) {
+                        if EventSystemActor.CheckFlag({'FlagName': 'IsHyruleCastlePGanonElectricDead'}) {
+                            goto Event151
                         }
                     } else {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonFireGenerateFlag'})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonElectricGenerateFlag'})
                         SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
                         Fader.Demo_FadeOut({'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True})
                         GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo141_1'})
-                        SceneBgmCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'CtrlType': 'CurseGanon_Fire_Start_FirstHalf'})
+                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo141_2'})
+                        SceneBgmCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'CtrlType': 'CurseGanon_Elec_Start_FirstHalf'})
                         EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWindGenerateFlag'})
                         EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWaterGenerateFlag'})
+                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonFireGenerateFlag'})
 
                         call Common.DisableSaveAndWarp()
 
                     }
-                }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo141_3'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'IsHyruleCastlePGanonWaterDead'}) {
-                        goto Event45
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo141_1'}) {
+                    if EventSystemActor.CheckFlag({'FlagName': 'IsHyruleCastlePGanonFireDead'}) {
+                        goto Event14
                     }
                 } else {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWaterGenerateFlag'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonFireGenerateFlag'})
                     SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
                     Fader.Demo_FadeOut({'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True})
                     GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo141_3'})
-                    SceneBgmCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'CtrlType': 'CurseGanon_Water_Start_FirstHalf'})
+                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo141_1'})
+                    SceneBgmCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'CtrlType': 'CurseGanon_Fire_Start_FirstHalf'})
                     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWindGenerateFlag'})
+                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWaterGenerateFlag'})
 
                     call Common.DisableSaveAndWarp()
 
                 }
-            }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo141_0'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'IsHyruleCastlePGanonWindDead'}) {
-                    goto Event42
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo141_3'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'IsHyruleCastlePGanonWaterDead'}) {
+                    goto Event45
                 }
             } else {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWindGenerateFlag'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWaterGenerateFlag'})
                 SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
                 Fader.Demo_FadeOut({'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True})
                 GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo141_0'})
-                SceneBgmCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'CtrlType': 'CurseGanon_Wind_Start_FirstHalf'})
+                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo141_3'})
+                SceneBgmCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'CtrlType': 'CurseGanon_Water_Start_FirstHalf'})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWindGenerateFlag'})
 
                 call Common.DisableSaveAndWarp()
 
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo141_0'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'IsHyruleCastlePGanonWindDead'}) {
+                goto Event42
+            }
+        } else {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonWindGenerateFlag'})
+            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+            Fader.Demo_FadeOut({'Frame': 0, 'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True})
+            GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
+            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo141_0'})
+            SceneBgmCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'CtrlType': 'CurseGanon_Wind_Start_FirstHalf'})
+
+            call Common.DisableSaveAndWarp()
+
         }
     } else {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FirstInHyruleCastleBossRoom'})

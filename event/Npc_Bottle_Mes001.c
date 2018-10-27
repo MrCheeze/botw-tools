@@ -125,36 +125,22 @@ void NearActorsNear() {
 void SatoSasanoHello() {
     if Npc_Bottle_Mes001.IsOnInstEventFlag() {
         Npc_Bottle_Mes001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Bottle_Mes001:talk03'})
-    } else {
-        switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event26:
-            Npc_Bottle_Mes001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Bottle_Mes001:talk00'})
-            Event31:
-            if !EventSystemActor.CheckFlag({'FlagName': 'Npc_Bottle_Mes001_NormalFirst'}) {
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Bottle_Mes001_NormalFirst', 'IsWaitFinish': True})
-                Npc_Bottle_Mes001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Bottle_Mes001:talk09'})
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-            }
-          case 1:
-            goto Event26
-          case 2:
-            Event27:
-            Npc_Bottle_Mes001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Bottle_Mes001:talk01'})
-            goto Event31
-          case 3:
-            goto Event27
-          case 4:
-            goto Event27
-          case 5:
-            goto Event27
-          case 6:
-            Event28:
-            Npc_Bottle_Mes001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Bottle_Mes001:talk02'})
-            goto Event31
-          case 7:
-            goto Event28
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case [0, 1]:
+        Npc_Bottle_Mes001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Bottle_Mes001:talk00'})
+        Event31:
+        if !EventSystemActor.CheckFlag({'FlagName': 'Npc_Bottle_Mes001_NormalFirst'}) {
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Bottle_Mes001_NormalFirst', 'IsWaitFinish': True})
+            Npc_Bottle_Mes001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Bottle_Mes001:talk09'})
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         }
+      case [2, 3, 4, 5]:
+        Npc_Bottle_Mes001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Bottle_Mes001:talk01'})
+        goto Event31
+      case [6, 7]:
+        Npc_Bottle_Mes001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Bottle_Mes001:talk02'})
+        goto Event31
     }
 }
 

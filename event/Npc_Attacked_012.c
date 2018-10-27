@@ -32,8 +32,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_Attacked_012.CheckTerrorLevel() {
-      case 0:
-        Event3:
+      case [0, 1, 2, 4]:
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
@@ -56,14 +55,9 @@ void Talk() {
             Npc_Attacked_012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_012:After02_2', 'ASName': 'Talk'})
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AttackedNPC_Set7_FirstTalk'})
         }
-      case 1:
-        goto Event3
-      case 2:
-        goto Event3
       case 3:
         switch Npc_Attacked_012.CheckResultOfNPCConflict() {
-          case 0:
-            Event12:
+          case [0, 1]:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 6})
 
@@ -86,8 +80,6 @@ void Talk() {
             } else {
                 goto Event8
             }
-          case 1:
-            goto Event12
           case 2:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})
@@ -102,8 +94,6 @@ void Talk() {
 
             goto Event17
         }
-      case 4:
-        goto Event3
       case 5:
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})

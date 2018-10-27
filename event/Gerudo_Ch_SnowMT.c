@@ -92,51 +92,49 @@ void Ready_Npc_OasisHylia_002_Talk() {
                 Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk29'})
                 goto Event120
             }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMt_First_lady0'}) {
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk40'})
-                Event30:
-                if !EventSystemActor.GeneralChoice2() {
-                    goto Event32
-                } else {
-                    Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk11'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SnowMt_First_lady0', 'IsWaitFinish': True})
-                }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMt_First_lady0'}) {
+            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk40'})
+            Event30:
+            if !EventSystemActor.GeneralChoice2() {
+                goto Event32
             } else {
-
-                call hello()
-
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk07'})
-                goto Event30
+                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk11'})
+                EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SnowMt_First_lady0', 'IsWaitFinish': True})
             }
+        } else {
+
+            call hello()
+
+            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk07'})
+            goto Event30
+        }
+    } else
+    Event36:
+    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMT_First'}) {
+        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk17'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk19', 'IsCloseMessageDialog': True})
+            Event34:
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk13'})
+                Event49:
+                EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SnowMT_First', 'IsWaitFinish': True})
+            } else {
+                Event51:
+                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk10'})
+                goto Event49
+            }
+        } else {
+            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk10'})
         }
     } else {
-        Event36:
-        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMT_First'}) {
-            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk17'})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk19', 'IsCloseMessageDialog': True})
-                Event34:
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk13'})
-                    Event49:
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SnowMT_First', 'IsWaitFinish': True})
-                } else {
-                    Event51:
-                    Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk10'})
-                    goto Event49
-                }
-            } else {
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk10'})
-            }
+        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk00'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk08'})
+            goto Event34
         } else {
-            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk00'})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk08'})
-                goto Event34
-            } else {
-                goto Event51
-            }
+            goto Event51
         }
     }
 }
@@ -202,70 +200,68 @@ void Finish_Npc_OasisHylia_002_Talk() {
                 Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk42'})
                 EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SnowMT_full'})
             }
-        } else {
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_RuinStatueKnight_SnowMT_01'}) {
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk05', 'IsCloseMessageDialog': True})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkHello', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk06', 'IsCloseMessageDialog': True})
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_RuinStatueKnight_SnowMT_01'}) {
+            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk05', 'IsCloseMessageDialog': True})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkHello', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk06', 'IsCloseMessageDialog': True})
 
-                call Common.LookPicture({'Self': ActorIdentifier(name="Npc_OasisHylia_002"), 'ActorName': 'FldObj_RuinStatueKnight_SnowMT_01'})
+            call Common.LookPicture({'Self': ActorIdentifier(name="Npc_OasisHylia_002"), 'ActorName': 'FldObj_RuinStatueKnight_SnowMT_01'})
 
-                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk14', 'IsCloseMessageDialog': True})
-                goto Event176
+            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk14', 'IsCloseMessageDialog': True})
+            goto Event176
+        } else
+        if Npc_OasisHylia_002.IsOnInstEventFlag() {
+            Event147:
+            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMT_boots_get'}) {
+                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk21'})
+                Event66:
+                switch EventSystemActor.GeneralChoice3() {
+                  case 0:
+                    Event67:
+                    Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk30'})
+                    Event69:
+                    Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk22', 'IsCloseMessageDialog': False})
+                    switch EventSystemActor.GeneralChoice3() {
+                      case 0:
+                        goto Event67
+                      case 1:
+                        Event68:
+                        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk16', 'IsCloseMessageDialog': True})
+                        goto Event69
+                      case 2:
+                        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk03'})
+                    }
+                  case 1:
+                    goto Event68
+                  case 2:
+                    Event125:
+                    Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk11'})
+                }
             } else {
-                if Npc_OasisHylia_002.IsOnInstEventFlag() {
-                    Event147:
-                    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMT_boots_get'}) {
-                        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk21'})
-                        Event66:
-                        switch EventSystemActor.GeneralChoice3() {
-                          case 0:
-                            Event67:
-                            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk30'})
-                            Event69:
-                            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk22', 'IsCloseMessageDialog': False})
-                            switch EventSystemActor.GeneralChoice3() {
-                              case 0:
-                                goto Event67
-                              case 1:
-                                Event68:
-                                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk16', 'IsCloseMessageDialog': True})
-                                goto Event69
-                              case 2:
-                                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk03'})
-                            }
-                          case 1:
-                            goto Event68
-                          case 2:
-                            Event125:
-                            Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk11'})
-                        }
+                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk35'})
+                if !EventSystemActor.GeneralChoice2() {
+                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Armor_140_Lower'}) {
+                        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk36', 'IsCloseMessageDialog': True})
+
+                        call GetDemo.GetItemByName({'CheckTargetActorName': 'Armor_140_Lower', 'IsInvalidOpenPouch': True})
+
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SnowMT_boots_get'})
+                        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk37'})
+                        goto Event66
                     } else {
-                        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk35'})
-                        if !EventSystemActor.GeneralChoice2() {
-                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Armor_140_Lower'}) {
-                                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk36', 'IsCloseMessageDialog': True})
-
-                                call GetDemo.GetItemByName({'CheckTargetActorName': 'Armor_140_Lower', 'IsInvalidOpenPouch': True})
-
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SnowMT_boots_get'})
-                                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk37'})
-                                goto Event66
-                            } else {
-                                Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk38'})
-                                goto Event66
-                            }
-                        } else {
-                            goto Event125
-                        }
+                        Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk38'})
+                        goto Event66
                     }
                 } else {
-
-                    call hello()
-
-                    goto Event147
+                    goto Event125
                 }
             }
+        } else {
+
+            call hello()
+
+            goto Event147
         }
     } else {
 
@@ -288,25 +284,12 @@ void Ready_Npc_OasisHylia_002_Near() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event114:
+      case [0, 1]:
         Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk26', 'IsCloseMessageDialog': True})
-      case 1:
-        goto Event114
-      case 2:
-        Event116:
+      case [2, 3, 4]:
         Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk28', 'IsCloseMessageDialog': True})
-      case 3:
-        goto Event116
-      case 4:
-        goto Event116
-      case 5:
-        Event115:
+      case [5, 6, 7]:
         Npc_OasisHylia_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SnowMT:Talk27', 'IsCloseMessageDialog': True})
-      case 6:
-        goto Event115
-      case 7:
-        goto Event115
     }
 }
 

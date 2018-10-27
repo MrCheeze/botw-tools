@@ -17,8 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch NPC_oasis004.CheckActorAction13() {
-      case 0:
-        Event15:
+      case [0, 1]:
         if NPC_oasis004.IsOnInstEventFlag() {
             Event1:
             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/NPC_oasis004:Talk_022'})
@@ -45,10 +44,7 @@ void Talk() {
             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_oasis004:Talk_006', 'IsCloseMessageDialog': True, 'ASName': ''})
             goto Event1
         }
-      case 1:
-        goto Event15
-      case 2:
-        Event29:
+      case [2, 3]:
         if NPC_oasis004.IsOnInstEventFlag() {
             Event28:
             if EventSystemActor.CheckFlag({'FlagName': 'NPC_oasis004_MeetingTerry'}) {
@@ -90,20 +86,13 @@ void Talk() {
             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/NPC_oasis004:Talk_018'})
             goto Event28
         }
-      case 3:
-        goto Event29
-      case 4:
-        Event8:
+      case [4, 5, 10]:
         NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_oasis004:Talk_020'})
         if !EventSystemActor.GeneralChoice2() {
             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_oasis004:Talk_002'})
         } else {
             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_oasis004:Talk_021'})
         }
-      case 5:
-        goto Event8
-      case 10:
-        goto Event8
       case 11:
         NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_oasis004:Talk_101'})
     }

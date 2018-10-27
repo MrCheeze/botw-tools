@@ -17,15 +17,12 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_Zora006.CheckActorAction13() {
-      case 0:
-        Event32:
+      case [0, 1]:
         if !EventSystemActor.RandomChoice2() {
             Npc_Zora006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora006:talk06', 'IsCloseMessageDialog': False})
         } else {
             Npc_Zora006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora006:talk05', 'IsCloseMessageDialog': False})
         }
-      case 1:
-        goto Event32
       case 2:
         if Npc_Zora006.IsOnInstEventFlag() {
             Npc_Zora006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora006:talk02', 'IsCloseMessageDialog': False})

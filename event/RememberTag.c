@@ -21,10 +21,9 @@ void Talk_Demo126_0() {
     EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
     if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'PictureMemory_Spot_Int', 'Operator': 'Equal', 'Value': 11}) {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PictureMemory_First1'})
-    } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'PictureMemory_Spot_Int', 'Operator': 'Equal', 'Value': 0}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PictureMemory_Find11'})
-        }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'PictureMemory_Spot_Int', 'Operator': 'Equal', 'Value': 0}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PictureMemory_Find11'})
     }
 }
 

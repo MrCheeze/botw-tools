@@ -17,7 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_SmallOasis002.CheckActorAction13() {
-      case 0:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
         Event23:
 
         call GinemaHello()
@@ -26,24 +26,10 @@ void Talk() {
             Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk12', 'ASName': ''})
             if !EventSystemActor.GeneralChoice2() {
                 switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event39:
+                  case [0, 1, 2, 3]:
                     Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk20', 'ASName': ''})
-                  case 1:
-                    goto Event39
-                  case 2:
-                    goto Event39
-                  case 3:
-                    goto Event39
-                  case 4:
-                    Event33:
+                  case [4, 5, 6, 7]:
                     Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk19', 'ASName': ''})
-                  case 5:
-                    goto Event33
-                  case 6:
-                    goto Event33
-                  case 7:
-                    goto Event33
                 }
             } else {
                 Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk15', 'ASName': ''})
@@ -64,26 +50,6 @@ void Talk() {
                 goto Event10
             }
         }
-      case 1:
-        goto Event23
-      case 2:
-        goto Event23
-      case 3:
-        goto Event23
-      case 4:
-        goto Event23
-      case 5:
-        goto Event23
-      case 6:
-        goto Event23
-      case 7:
-        goto Event23
-      case 8:
-        goto Event23
-      case 9:
-        goto Event23
-      case 10:
-        goto Event23
       case 11:
         if Npc_SmallOasis002.IsOnInstEventFlag() {
             goto Event23
@@ -91,35 +57,18 @@ void Talk() {
             Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk10', 'ASName': ''})
             goto Event23
         }
-      case 12:
-        goto Event23
-      case 13:
-        goto Event23
     }
 }
 
 void GinemaHello() {
     if !Npc_SmallOasis002.IsOnInstEventFlag() {
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event24:
+          case [0, 1]:
             Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk00', 'ASName': ''})
-          case 1:
-            goto Event24
-          case 2:
-            Event1:
+          case [2, 3, 4, 5]:
             Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk01', 'ASName': ''})
-          case 3:
-            goto Event1
-          case 4:
-            goto Event1
-          case 5:
-            goto Event1
-          case 6:
-            Event3:
+          case [6, 7]:
             Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk02', 'ASName': ''})
-          case 7:
-            goto Event3
         }
     }
 }

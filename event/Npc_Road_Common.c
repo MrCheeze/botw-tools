@@ -158,8 +158,7 @@ params: None
 
 void Atacked() {
     switch Npc_Road_001[Atacked(Self)].CheckResultOfNPCConflict() {
-      case 0:
-        Event23:
+      case [0, 1]:
         switch Npc_Road_001[Atacked(Self)].CheckRankOfEnemyAttackedNPC() {
           case 0:
             if !EventSystemActor.RandomChoice2() {
@@ -189,8 +188,6 @@ void Atacked() {
                 goto Event163
             }
         }
-      case 1:
-        goto Event23
       case 2:
         if !EventSystemActor.RandomChoice2() {
             Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Failed00', 'IsCloseMessageDialog': False})
@@ -207,22 +204,20 @@ void Atacked() {
                 Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
                 goto Event60
             }
+        } else
+        if !EventSystemActor.RandomChoice2() {
+            Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
+            goto Event60
         } else {
-            if !EventSystemActor.RandomChoice2() {
-                Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                goto Event60
-            } else {
-                Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                goto Event60
-            }
+            Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
+            goto Event60
         }
     }
 }
 
 void Atacked_Pair() {
     switch Npc_Attacked_008[Atacked_Pair(Self)].CheckResultOfNPCConflict() {
-      case 0:
-        Event62:
+      case [0, 1]:
         switch Npc_Attacked_008[Atacked_Pair(Self)].CheckRankOfEnemyAttackedNPC() {
           case 0:
             if !EventSystemActor.RandomChoice2() {
@@ -252,8 +247,6 @@ void Atacked_Pair() {
                 goto Event165
             }
         }
-      case 1:
-        goto Event62
       case 2:
         if !EventSystemActor.RandomChoice2() {
             Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Failed00'})
@@ -271,74 +264,62 @@ void Atacked_Pair() {
                     Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairFailed01', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
                     goto Event83
                 }
+            } else
+            if !EventSystemActor.RandomChoice2() {
+                Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairFailed00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
+                goto Event83
             } else {
-                if !EventSystemActor.RandomChoice2() {
-                    Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairFailed00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                    goto Event83
-                } else {
-                    Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairFailed01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                    goto Event83
-                }
+                Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairFailed01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
+                goto Event83
             }
-        } else {
-            switch Npc_Attacked_008[Atacked_Pair(Self)].CheckReceiveTerrorLevel() {
-              case 0:
-                Event446:
-                if EventSystemActor.CheckGameDataInt({'Value': 3, 'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'TerrorState'}) {
-                    if Npc_Attacked_008[Atacked_Pair(Self)].IsWeaponDrawn() {
-                        if !EventSystemActor.RandomChoice2() {
-                            Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked00', 'ASName': 'Guard'})
-                            goto Event83
-                        } else {
-                            Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked01', 'ASName': 'Guard'})
-                            goto Event83
-                        }
-                    } else {
-                        if !EventSystemActor.RandomChoice2() {
-                            Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked00', 'ASName': 'Detect'})
-                            goto Event83
-                        } else {
-                            Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked01', 'ASName': 'Detect'})
-                            goto Event83
-                        }
-                    }
-                } else {
-                    Event445:
-                    if Npc_Attacked_008[Atacked_Pair(Self)].IsWeaponDrawn() {
-                        Event81:
-                        Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked01', 'ASName': 'Guard'})
-                        goto Event83
-                    } else {
-                        Event138:
-                        Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked01', 'ASName': 'Detect'})
-                        goto Event83
-                    }
-                }
-              case 1:
-                goto Event446
-              case 2:
-                goto Event446
-              case 3:
+        } else
+        switch Npc_Attacked_008[Atacked_Pair(Self)].CheckReceiveTerrorLevel() {
+          case [0, 1, 2]:
+            if EventSystemActor.CheckGameDataInt({'Value': 3, 'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'TerrorState'}) {
                 if Npc_Attacked_008[Atacked_Pair(Self)].IsWeaponDrawn() {
                     if !EventSystemActor.RandomChoice2() {
-                        Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked00', 'ASName': 'Guard'})
+                        Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked00', 'ASName': 'Guard'})
                         goto Event83
                     } else {
-                        goto Event81
+                        Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked01', 'ASName': 'Guard'})
+                        goto Event83
                     }
+                } else
+                if !EventSystemActor.RandomChoice2() {
+                    Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked00', 'ASName': 'Detect'})
+                    goto Event83
                 } else {
-                    if !EventSystemActor.RandomChoice2() {
-                        Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked00', 'ASName': 'Detect'})
-                        goto Event83
-                    } else {
-                        goto Event138
-                    }
+                    Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked01', 'ASName': 'Detect'})
+                    goto Event83
                 }
-              case 4:
-                goto Event445
-              case 5:
-                goto Event445
+            } else
+            Event445:
+            if Npc_Attacked_008[Atacked_Pair(Self)].IsWeaponDrawn() {
+                Event81:
+                Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked01', 'ASName': 'Guard'})
+                goto Event83
+            } else {
+                Event138:
+                Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked01', 'ASName': 'Detect'})
+                goto Event83
             }
+          case 3:
+            if Npc_Attacked_008[Atacked_Pair(Self)].IsWeaponDrawn() {
+                if !EventSystemActor.RandomChoice2() {
+                    Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked00', 'ASName': 'Guard'})
+                    goto Event83
+                } else {
+                    goto Event81
+                }
+            } else
+            if !EventSystemActor.RandomChoice2() {
+                Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked00', 'ASName': 'Detect'})
+                goto Event83
+            } else {
+                goto Event138
+            }
+          case [4, 5]:
+            goto Event445
         }
     }
 }
@@ -347,8 +328,7 @@ void InitTalk_Npc_Road_Common() {
     switch Npc_Road_001[InitTalk_Npc_Road_Common(Self)].CheckTerrorLevel() {
       case 3:
         switch Npc_Road_001[InitTalk_Npc_Road_Common(Self)].CheckResultOfNPCConflict() {
-          case 0:
-            Event92:
+          case [0, 1]:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
 
@@ -359,8 +339,6 @@ void InitTalk_Npc_Road_Common() {
             Event141:
             Npc_Road_001[InitTalk_Npc_Road_Common(Self)].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
             EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-          case 1:
-            goto Event92
           case 2:
             Event124:
 
@@ -388,8 +366,7 @@ void InitTalk_Npc_Road_Common() {
 
 void Atacked_Road() {
     switch Npc_Road_001[Atacked_Road(Self)].CheckResultOfNPCConflict() {
-      case 0:
-        Event100:
+      case [0, 1]:
         switch Npc_Road_001[Atacked_Road(Self)].CheckRankOfEnemyAttackedNPC() {
           case 0:
             if !EventSystemActor.RandomChoice2() {
@@ -420,8 +397,6 @@ void Atacked_Road() {
                 goto Event122
             }
         }
-      case 1:
-        goto Event100
       case 2:
         if !EventSystemActor.RandomChoice2() {
             Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Failed00', 'IsCloseMessageDialog': True})
@@ -440,14 +415,13 @@ void Atacked_Road() {
                 Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
                 goto Event121
             }
+        } else
+        if !EventSystemActor.RandomChoice2() {
+            Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
+            goto Event121
         } else {
-            if !EventSystemActor.RandomChoice2() {
-                Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                goto Event121
-            } else {
-                Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                goto Event121
-            }
+            Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
+            goto Event121
         }
     }
 }
@@ -473,8 +447,7 @@ void InitTalk_Npc_Road_027() {
     switch Npc_Road_027[InitTalk_Npc_Road_027(Self)].CheckTerrorLevel() {
       case 3:
         switch Npc_Road_027[InitTalk_Npc_Road_027(Self)].CheckResultOfNPCConflict() {
-          case 0:
-            Event210:
+          case [0, 1]:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
 
@@ -488,8 +461,6 @@ void InitTalk_Npc_Road_027() {
             Event254:
             Npc_Road_027[InitTalk_Npc_Road_027(Self)].Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
             EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-          case 1:
-            goto Event210
           case 2:
             Event237:
 
@@ -517,8 +488,7 @@ void InitTalk_Npc_Road_027() {
 
 void Atacked_Road_NoReward() {
     switch Npc_Road_001[Atacked_Road_NoReward(Self)].CheckResultOfNPCConflict() {
-      case 0:
-        Event217:
+      case [0, 1]:
         switch Npc_Road_001[Atacked_Road_NoReward(Self)].CheckRankOfEnemyAttackedNPC() {
           case 0:
             if !EventSystemActor.RandomChoice2() {
@@ -546,8 +516,6 @@ void Atacked_Road_NoReward() {
                 goto Event235
             }
         }
-      case 1:
-        goto Event217
       case 2:
         if !EventSystemActor.RandomChoice2() {
             Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Failed00', 'IsCloseMessageDialog': True})
@@ -566,14 +534,13 @@ void Atacked_Road_NoReward() {
                 Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
                 goto Event234
             }
+        } else
+        if !EventSystemActor.RandomChoice2() {
+            Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
+            goto Event234
         } else {
-            if !EventSystemActor.RandomChoice2() {
-                Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                goto Event234
-            } else {
-                Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                goto Event234
-            }
+            Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
+            goto Event234
         }
     }
 }
@@ -586,7 +553,7 @@ void Cook() {
 
             call A_Cook_Fire({'Self': 'Self'})
 
-          case 1:
+          case [1, 2]:
             Event418:
             switch EventSystemActor.RandomChoice8() {
               case 0:
@@ -594,36 +561,34 @@ void Cook() {
 
                     call S_Cook_Stamina({'Self': 'Self'})
 
+                } else
+                if !EventSystemActor.RandomChoice2() {
+                    Event421:
+
+                    call N_Cook_Gambari({'Self': 'Self'})
+
                 } else {
-                    if !EventSystemActor.RandomChoice2() {
-                        Event421:
+                    Event422:
 
-                        call N_Cook_Gambari({'Self': 'Self'})
+                    call N_Cook_GoGo({'Self': 'Self'})
 
-                    } else {
-                        Event422:
-
-                        call N_Cook_GoGo({'Self': 'Self'})
-
-                    }
                 }
               case 1:
                 if !EventSystemActor.RandomChoice2() {
 
                     call S_Cook_Max({'Self': 'Self'})
 
+                } else
+                if !EventSystemActor.RandomChoice2() {
+                    Event423:
+
+                    call N_Cook_Quiet({'Self': 'Self'})
+
                 } else {
-                    if !EventSystemActor.RandomChoice2() {
-                        Event423:
+                    Event424:
 
-                        call N_Cook_Quiet({'Self': 'Self'})
+                    call N_Cook_Power({'Self': 'Self'})
 
-                    } else {
-                        Event424:
-
-                        call N_Cook_Power({'Self': 'Self'})
-
-                    }
                 }
               case 2:
                 goto Event421
@@ -647,141 +612,97 @@ void Cook() {
                     goto Event425
                 }
             }
+        }
+    } else
+    if Npc_Road_001[Cook(Self)].CheckMapArea({'MapAreaName': 'TamulPlateau'}) {
+        switch EventSystemActor.RandomChoice3() {
+          case 0:
+            goto Event396
+          case [1, 2]:
+            goto Event418
+        }
+    } else
+    Event398:
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'HeburaMountains'}) {
+        Event401:
+        switch EventSystemActor.RandomChoice3() {
+          case [0, 1]:
+            Event402:
+
+            call A_Cook_Hot({'Self': 'Self'})
+
           case 2:
             goto Event418
         }
-    } else {
-        if Npc_Road_001[Cook(Self)].CheckMapArea({'MapAreaName': 'TamulPlateau'}) {
+    } else
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'EldinMountains'}) {
+        goto Event401
+    } else
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'HyruleForest'}) {
+        goto Event401
+    } else
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'TabantaFrontier'}) {
+        switch EventSystemActor.RandomChoice3() {
+          case 0:
+            goto Event402
+          case [1, 2]:
+            goto Event418
+        }
+    } else
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'HyruleHill'}) {
+        switch EventSystemActor.RandomChoice3() {
+          case 0:
+
+            call A_Cook_Elec({'Self': 'Self'})
+
+          case [1, 2]:
+            goto Event418
+        }
+    } else
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'GerudoDesert'}) {
+        Event408:
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1, 2, 3, 4, 5]:
             switch EventSystemActor.RandomChoice3() {
-              case 0:
-                goto Event396
-              case 1:
-                goto Event418
+              case [0, 1]:
+
+                call A_Cook_Cold({'Self': 'Self'})
+
               case 2:
                 goto Event418
             }
-        } else {
-            Event398:
-            if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'HeburaMountains'}) {
-                Event401:
-                switch EventSystemActor.RandomChoice3() {
-                  case 0:
-                    Event402:
+          case [6, 7]:
+            switch EventSystemActor.RandomChoice3() {
+              case [0, 1]:
 
-                    call A_Cook_Hot({'Self': 'Self'})
+                call A_Cook_Hot({'Self': 'Self'})
 
-                  case 1:
-                    goto Event402
-                  case 2:
-                    goto Event418
-                }
-            } else {
-                if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'EldinMountains'}) {
-                    goto Event401
-                } else {
-                    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'HyruleForest'}) {
-                        goto Event401
-                    } else {
-                        if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'TabantaFrontier'}) {
-                            switch EventSystemActor.RandomChoice3() {
-                              case 0:
-                                goto Event402
-                              case 1:
-                                goto Event418
-                              case 2:
-                                goto Event418
-                            }
-                        } else {
-                            if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'HyruleHill'}) {
-                                switch EventSystemActor.RandomChoice3() {
-                                  case 0:
-
-                                    call A_Cook_Elec({'Self': 'Self'})
-
-                                  case 1:
-                                    goto Event418
-                                  case 2:
-                                    goto Event418
-                                }
-                            } else {
-                                if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'GerudoDesert'}) {
-                                    Event408:
-                                    switch EventSystemActor.CheckTimeType() {
-                                      case 0:
-                                        Event409:
-                                        switch EventSystemActor.RandomChoice3() {
-                                          case 0:
-                                            Event411:
-
-                                            call A_Cook_Cold({'Self': 'Self'})
-
-                                          case 1:
-                                            goto Event411
-                                          case 2:
-                                            goto Event418
-                                        }
-                                      case 1:
-                                        goto Event409
-                                      case 2:
-                                        goto Event409
-                                      case 3:
-                                        goto Event409
-                                      case 4:
-                                        goto Event409
-                                      case 5:
-                                        goto Event409
-                                      case 6:
-                                        Event410:
-                                        switch EventSystemActor.RandomChoice3() {
-                                          case 0:
-                                            Event412:
-
-                                            call A_Cook_Hot({'Self': 'Self'})
-
-                                          case 1:
-                                            goto Event412
-                                          case 2:
-                                            goto Event418
-                                        }
-                                      case 7:
-                                        goto Event410
-                                    }
-                                } else {
-                                    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'GerudoHighlands'}) {
-                                        goto Event408
-                                    } else {
-                                        if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'EastHateru'}) {
-                                            Event417:
-                                            switch EventSystemActor.RandomChoice3() {
-                                              case 0:
-
-                                                call A_Cook_Elec({'Self': 'Self'})
-
-                                              case 1:
-                                                goto Event418
-                                              case 2:
-                                                goto Event418
-                                            }
-                                        } else {
-                                            if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'FironeGrassland'}) {
-                                                goto Event417
-                                            } else {
-                                                if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'LanayruWetlands'}) {
-                                                    goto Event417
-                                                } else {
-                                                    goto Event418
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+              case 2:
+                goto Event418
             }
         }
-    }
+    } else
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'GerudoHighlands'}) {
+        goto Event408
+    } else
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'EastHateru'}) {
+        Event417:
+        switch EventSystemActor.RandomChoice3() {
+          case 0:
+
+            call A_Cook_Elec({'Self': 'Self'})
+
+          case [1, 2]:
+            goto Event418
+        }
+    } else
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'FironeGrassland'}) {
+        goto Event417
+    } else
+    if Npc_Road_001[Cook_NoFire(Self)].CheckMapArea({'MapAreaName': 'LanayruWetlands'}) {
+        goto Event417
+    } else
+    goto Event418
 }
 
 void S_Cook_Stamina() {
@@ -866,8 +787,7 @@ void N_Cook_Gambari() {
 
 void S_Cook_Max() {
     switch EventSystemActor.RandomChoice8() {
-      case 0:
-        Event279:
+      case [0, 1]:
         if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_D_01'}) {
 
             call Demo001_0.SetCookResult2({'CookMaterial_01': 'Item_Mushroom_F', 'CookMaterial_02': 'Item_Ore_H'})
@@ -878,10 +798,7 @@ void S_Cook_Max() {
             call Reward({'Self': 'Self'})
 
         }
-      case 1:
-        goto Event279
-      case 2:
-        Event281:
+      case [2, 3]:
         if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_H_01'}) {
 
             call Demo001_0.SetCookResult3({'CookMaterial_01': 'Animal_Fish_B', 'CookMaterial_02': 'Item_Ore_H', 'CookMaterial_03': 'Item_Material_06'})
@@ -889,10 +806,7 @@ void S_Cook_Max() {
         } else {
             goto Event376
         }
-      case 3:
-        goto Event281
-      case 4:
-        Event283:
+      case [4, 5]:
         if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_P_03'}) {
 
             call Demo001_0.SetCookResult3({'CookMaterial_01': 'Item_Plant_B', 'CookMaterial_02': 'Item_Meat_01', 'CookMaterial_03': 'Item_Material_02'})
@@ -900,8 +814,6 @@ void S_Cook_Max() {
         } else {
             goto Event376
         }
-      case 5:
-        goto Event283
       case 6:
         if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_G_14'}) {
 

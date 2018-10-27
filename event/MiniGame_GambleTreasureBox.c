@@ -143,14 +143,13 @@ void TreasureBoxSetUp() {
                 TBox_Field_Gamble[box3].Demo_SetTreasureBoxOpenAndClose({'IsSetOpen': 1, 'IsWaitFinish': True})
             }
 
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
+            TBox_Field_Gamble[box1].Demo_SetTreasure({'ActorName': 'PutRupee_Silver', 'IsWaitFinish': True})
+            goto Event54
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
-                TBox_Field_Gamble[box1].Demo_SetTreasure({'ActorName': 'PutRupee_Silver', 'IsWaitFinish': True})
-                goto Event54
-            } else {
-                TBox_Field_Gamble[box1].Demo_SetTreasure({'ActorName': 'PutRupee_Gold', 'IsWaitFinish': True})
-                goto Event54
-            }
+            TBox_Field_Gamble[box1].Demo_SetTreasure({'ActorName': 'PutRupee_Gold', 'IsWaitFinish': True})
+            goto Event54
         }
       case 1:
         EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'MiniGame_GambleTreasureBox_WinBoxNumber', 'Value': 2, 'IsWaitFinish': True})
@@ -160,14 +159,13 @@ void TreasureBoxSetUp() {
             TBox_Field_Gamble[box1].Demo_SetTreasure({'ActorName': 'PutRupee', 'IsWaitFinish': True})
             TBox_Field_Gamble[box3].Demo_SetTreasure({'ActorName': 'PutRupee', 'IsWaitFinish': True})
             goto Event61
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
+            TBox_Field_Gamble[box2].Demo_SetTreasure({'ActorName': 'PutRupee_Silver', 'IsWaitFinish': True})
+            goto Event49
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
-                TBox_Field_Gamble[box2].Demo_SetTreasure({'ActorName': 'PutRupee_Silver', 'IsWaitFinish': True})
-                goto Event49
-            } else {
-                TBox_Field_Gamble[box2].Demo_SetTreasure({'ActorName': 'PutRupee_Gold', 'IsWaitFinish': True})
-                goto Event49
-            }
+            TBox_Field_Gamble[box2].Demo_SetTreasure({'ActorName': 'PutRupee_Gold', 'IsWaitFinish': True})
+            goto Event49
         }
       case 2:
         EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'MiniGame_GambleTreasureBox_WinBoxNumber', 'Value': 3, 'IsWaitFinish': True})
@@ -177,14 +175,13 @@ void TreasureBoxSetUp() {
             TBox_Field_Gamble[box1].Demo_SetTreasure({'ActorName': 'PutRupee', 'IsWaitFinish': True})
             TBox_Field_Gamble[box2].Demo_SetTreasure({'ActorName': 'PutRupee', 'IsWaitFinish': True})
             goto Event61
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
+            TBox_Field_Gamble[box3].Demo_SetTreasure({'ActorName': 'PutRupee_Silver', 'IsWaitFinish': True})
+            goto Event59
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
-                TBox_Field_Gamble[box3].Demo_SetTreasure({'ActorName': 'PutRupee_Silver', 'IsWaitFinish': True})
-                goto Event59
-            } else {
-                TBox_Field_Gamble[box3].Demo_SetTreasure({'ActorName': 'PutRupee_Gold', 'IsWaitFinish': True})
-                goto Event59
-            }
+            TBox_Field_Gamble[box3].Demo_SetTreasure({'ActorName': 'PutRupee_Gold', 'IsWaitFinish': True})
+            goto Event59
         }
     }
 }
@@ -325,56 +322,51 @@ void Finish_Npc_SouthernVillageGambler_StepStart() {
                         call Common.EnableSaveAndWarp()
 
                     }
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
+                    Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk25'})
+                    goto Event109
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
-                        Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk25'})
-                        goto Event109
-                    } else {
-                        Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk26'})
-                        goto Event109
-                    }
+                    Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk26'})
+                    goto Event109
                 }
             } else {
                 Event68:
                 Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk23'})
                 goto Event109
             }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_Open2'}) {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_GambleTreasureBox_WinBoxNumber', 'Operator': 'Equal', 'Value': 2}) {
-                    goto Event77
-                } else {
-                    goto Event68
-                }
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_GambleTreasureBox_WinBoxNumber', 'Operator': 'Equal', 'Value': 3}) {
-                    goto Event77
-                } else {
-                    goto Event68
-                }
-            }
-        }
-    } else {
+        } else
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_Open2'}) {
-            goto Event144
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_Open3'}) {
-                goto Event144
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_GambleTreasureBox_WinBoxNumber', 'Operator': 'Equal', 'Value': 2}) {
+                goto Event77
             } else {
-
-                fork {
-                    Npc_SouthernVillageGambler.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    GameRomCamera.Demo_MovePosFlow({'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Pattern1PosX': 2969.340087890625, 'Pattern1PosY': 118.91999816894531, 'Pattern1PosZ': 3377.919921875, 'Pattern1AtX': 2970.81005859375, 'Pattern1AtY': 118.80999755859375, 'Pattern1AtZ': 3375.31005859375, 'Pattern1Fovy': 55.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk32'})
-                } {
-                    GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-                    EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': 2967.501953125, 'DestinationY': 117.75350189208984, 'DestinationZ': 3381.306884765625, 'DirectionY': 140.0})
-                    GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
-                }
-
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MiniGame_GambleTreasureBox_ChoiceBox'})
+                goto Event68
             }
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_GambleTreasureBox_WinBoxNumber', 'Operator': 'Equal', 'Value': 3}) {
+            goto Event77
+        } else {
+            goto Event68
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_Open2'}) {
+        goto Event144
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_Open3'}) {
+        goto Event144
+    } else {
+
+        fork {
+            Npc_SouthernVillageGambler.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            GameRomCamera.Demo_MovePosFlow({'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Pattern1PosX': 2969.340087890625, 'Pattern1PosY': 118.91999816894531, 'Pattern1PosZ': 3377.919921875, 'Pattern1AtX': 2970.81005859375, 'Pattern1AtY': 118.80999755859375, 'Pattern1AtZ': 3375.31005859375, 'Pattern1Fovy': 55.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+            Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk32'})
+        } {
+            GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
+            EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': 2967.501953125, 'DestinationY': 117.75350189208984, 'DestinationZ': 3381.306884765625, 'DirectionY': 140.0})
+            GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
+        }
+
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MiniGame_GambleTreasureBox_ChoiceBox'})
     }
 }
 

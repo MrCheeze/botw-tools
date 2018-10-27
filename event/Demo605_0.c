@@ -89,8 +89,7 @@ void Demo605_0_ChallengeON() {
         EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': '100enemy_Sheath_BindUpdateSkip'})
         Weapon_Sword_502.Demo_XLinkEventKill({'ELinkKey': 'DLC2_Demo605_0_Warp_Out', 'IsWaitFinish': True, 'SLinkKey': ''})
         switch EventSystemActor.CountFlag4({'GameDataFlagNo4': '', 'GameDataFlagNo0': 'Lock_OneHitDungeon001', 'GameDataFlagNo1': 'Lock_OneHitDungeon002', 'GameDataFlagNo2': 'Lock_OneHitDungeon003', 'GameDataFlagNo3': 'Lock_OneHitDungeon004'}) {
-          case 0:
-            Event150:
+          case [0, 1, 2, 3]:
             EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Retire_Dungeon04'})
             Event56:
             EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step02'})
@@ -142,24 +141,13 @@ void Demo605_0_ChallengeON() {
                         } else {
                             goto Event55
                         }
-                    } else {
-                        goto Event139
-                    }
-                } else {
-                    goto Event138
-                }
-            } else {
-                goto Event137
-            }
-          case 1:
-            goto Event150
-          case 2:
-            goto Event150
-          case 3:
-            goto Event150
-          case 4:
-            goto Event56
-          case 5:
+                    } else
+                    goto Event139
+                } else
+                goto Event138
+            } else
+            goto Event137
+          case [4, 5]:
             goto Event56
         }
     } else {

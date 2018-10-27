@@ -87,26 +87,17 @@ void INN_Extra() {
         EventSystemActor.Demo_RecoverPlayerEnergy({'IsWaitFinish': True})
         EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
         switch EventSystemActor.CheckExtraLifeOfPlayer({'Threshold': 3}) {
-          case 0:
-            Event200:
+          case [0, 1]:
             switch EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 0}) {
-              case 0:
-                Event195:
+              case [0, 1]:
                 EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'Value': 4, 'ProcessingMode': 0})
                 EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 0})
-              case 1:
-                goto Event195
               case 2:
                 EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 4})
             }
-          case 1:
-            goto Event200
           case 2:
-            if !EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 0}) {
-                Event194:
+            if EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 0}) in [0, 1] {
                 EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 0})
-            } else {
-                goto Event194
             }
         }
     } {
@@ -170,26 +161,17 @@ void INN_ExtraGoron() {
         EventSystemActor.Demo_RecoverPlayerEnergy({'IsWaitFinish': True})
         EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
         switch EventSystemActor.CheckExtraLifeOfPlayer({'Threshold': 11}) {
-          case 0:
-            Event135:
+          case [0, 1]:
             switch EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) {
-              case 0:
-                Event130:
+              case [0, 1]:
                 EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 12})
                 EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 5})
-              case 1:
-                goto Event130
               case 2:
                 EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 12})
             }
-          case 1:
-            goto Event135
           case 2:
-            if !EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) {
-                Event129:
+            if EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) in [0, 1] {
                 EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 5})
-            } else {
-                goto Event129
             }
         }
     } {
@@ -220,8 +202,7 @@ void INN_ExtraGerudo() {
         Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'DispMode': 'Auto', 'Frame': 0})
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
         switch EventSystemActor.RandomChoice4() {
-          case 0:
-            Event220:
+          case [0, 3]:
             Starter.Demo_Talk({'MessageId': 'DemoMsg/Demo007_2:Demo007_2_Text002', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
             Event329:
 
@@ -234,26 +215,17 @@ void INN_ExtraGerudo() {
             EventSystemActor.Demo_RecoverPlayerEnergy({'IsWaitFinish': True})
             EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
             switch EventSystemActor.CheckExtraLifeOfPlayer({'Threshold': 11}) {
-              case 0:
-                Event179:
+              case [0, 1]:
                 switch EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) {
-                  case 0:
-                    Event174:
+                  case [0, 1]:
                     EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 12})
                     EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 5})
-                  case 1:
-                    goto Event174
                   case 2:
                     EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 12})
                 }
-              case 1:
-                goto Event179
               case 2:
-                if !EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) {
-                    Event173:
+                if EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) in [0, 1] {
                     EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 5})
-                } else {
-                    goto Event173
                 }
             }
           case 1:
@@ -262,8 +234,6 @@ void INN_ExtraGerudo() {
           case 2:
             Starter.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo007_2:Demo007_2_Text008', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
             goto Event329
-          case 3:
-            goto Event220
         }
     } {
         SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
@@ -356,26 +326,17 @@ void INN_ExtraZora() {
         EventSystemActor.Demo_RecoverPlayerEnergy({'IsWaitFinish': True})
         EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
         switch EventSystemActor.CheckExtraLifeOfPlayer({'Threshold': 11}) {
-          case 0:
-            Event245:
+          case [0, 1]:
             switch EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) {
-              case 0:
-                Event240:
+              case [0, 1]:
                 EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 12})
                 EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 5})
-              case 1:
-                goto Event240
               case 2:
                 EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 12})
             }
-          case 1:
-            goto Event245
           case 2:
-            if !EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) {
-                Event239:
+            if EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) in [0, 1] {
                 EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 5})
-            } else {
-                goto Event239
             }
         }
     } {
@@ -415,26 +376,17 @@ void INN_ExtraRito() {
         EventSystemActor.Demo_RecoverPlayerEnergy({'IsWaitFinish': True})
         EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
         switch EventSystemActor.CheckExtraLifeOfPlayer({'Threshold': 11}) {
-          case 0:
-            Event282:
+          case [0, 1]:
             switch EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) {
-              case 0:
-                Event277:
+              case [0, 1]:
                 EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 12})
                 EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 5})
-              case 1:
-                goto Event277
               case 2:
                 EventSystemActor.Demo_SetExtraLifeOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 12})
             }
-          case 1:
-            goto Event282
           case 2:
-            if !EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) {
-                Event276:
+            if EventSystemActor.CheckExtraEnergyOfPlayer({'Threshold': 5}) in [0, 1] {
                 EventSystemActor.Demo_SetExtraEnergyOfPlayer({'IsWaitFinish': True, 'ProcessingMode': 0, 'Value': 5})
-            } else {
-                goto Event276
             }
         }
     } {

@@ -97,54 +97,48 @@ void Finish_Npc_AncientDoctor_Hateno_Talk() {
         Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk23', 'IsOverWriteLabelActorName': False})
         Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk31', 'ASName': 'Talk_SelfIntro'})
         EventSystemActor.Demo_FlagON({'FlagName': 'HatenoMini_BlueFire_Finish', 'IsWaitFinish': True})
-    } else {
-        switch Npc_AncientDoctor_Hateno.CheckActorAction13() {
-          case 0:
-            Event206:
-            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-            Npc_AncientDoctor_Hateno.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': '', 'AnchorName': 'AnchorAction1'})
-            Npc_AncientAssistant004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': '', 'AnchorName': 'AnchorAction1'})
-            EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'J-1', 'WarpDestPosName': 'AncientOvenFirst', 'IsWaitFinish': True})
-            GameRomCamera.Demo_Talk({'IsWaitFinish': True, 'CameraReset': False, 'NoConnect': True})
-            GameROMPlayer.Demo_PlayerTurnAndLookToObject({'FaceId': 1, 'ActorName': 'Npc_AncientDoctor_Hateno', 'IsWaitFinish': True, 'IsUseSlowTurn': False, 'ObjectId': 0, 'IsValid': False, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-            Event37:
-            if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor002_Naked_First'}) {
-                Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk00'})
-                if !EventSystemActor.GeneralChoice2() {
-                    if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-                        Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk02', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_WatchLink'})
-                        Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk24'})
-                        Event180:
+    } else
+    switch Npc_AncientDoctor_Hateno.CheckActorAction13() {
+      case [0, 2, 3]:
+        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+        Npc_AncientDoctor_Hateno.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': '', 'AnchorName': 'AnchorAction1'})
+        Npc_AncientAssistant004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': '', 'AnchorName': 'AnchorAction1'})
+        EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'J-1', 'WarpDestPosName': 'AncientOvenFirst', 'IsWaitFinish': True})
+        GameRomCamera.Demo_Talk({'IsWaitFinish': True, 'CameraReset': False, 'NoConnect': True})
+        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'FaceId': 1, 'ActorName': 'Npc_AncientDoctor_Hateno', 'IsWaitFinish': True, 'IsUseSlowTurn': False, 'ObjectId': 0, 'IsValid': False, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+        Event37:
+        if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor002_Naked_First'}) {
+            Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk00'})
+            if !EventSystemActor.GeneralChoice2() {
+                if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+                    Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk02', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_WatchLink'})
+                    Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk24'})
+                    Event180:
 
-                        call Explain_Roberry()
+                    call Explain_Roberry()
 
 
-                        call RoberryIntro()
+                    call RoberryIntro()
 
-                        Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk42'})
-                        EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor002_First', 'IsWaitFinish': True})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_AncientDoctor002_Naked_First'})
-                        goto Event175
-                    } else {
-                        Event222:
-                        Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk01', 'IsOverWriteLabelActorName': False})
-                    }
+                    Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk42'})
+                    EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor002_First', 'IsWaitFinish': True})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_AncientDoctor002_Naked_First'})
+                    goto Event175
                 } else {
-                    goto Event222
+                    Event222:
+                    Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk01', 'IsOverWriteLabelActorName': False})
                 }
             } else {
-                Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk22'})
-                Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk13'})
-                goto Event180
+                goto Event222
             }
-          case 1:
-            goto Event37
-          case 2:
-            goto Event206
-          case 3:
-            goto Event206
+        } else {
+            Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk22'})
+            Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk13'})
+            goto Event180
         }
+      case 1:
+        goto Event37
     }
 }
 
@@ -316,24 +310,23 @@ void Meet_Npc_AncientDoctor_Hateno_AncientLabo_AncientDoctor_MoveA1_Talk() {
         GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 4514.55859375, 'Pattern1PosY': 356.0968017578125, 'Pattern1PosZ': -3158.1767578125, 'Pattern1AtX': 4514.96337890625, 'Pattern1AtY': 355.01910400390625, 'Pattern1AtZ': -3160.947021484375, 'Pattern1Fovy': 54.999996185302734, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
         Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk35'})
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_BlueFire_Meet'})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor002_Naked_First'}) {
-            Event31:
-            if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-                EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor002_First', 'IsWaitFinish': True})
-                goto Event34
-            } else {
-                Event32:
-                Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk01', 'IsOverWriteLabelActorName': False})
-            }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor002_Naked_First'}) {
+        Event31:
+        if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+            EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor002_First', 'IsWaitFinish': True})
+            goto Event34
         } else {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_AncientDoctor002_Naked_First'})
-            Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk00'})
-            if !EventSystemActor.GeneralChoice2() {
-                goto Event31
-            } else {
-                goto Event32
-            }
+            Event32:
+            Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk01', 'IsOverWriteLabelActorName': False})
+        }
+    } else {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_AncientDoctor002_Naked_First'})
+        Npc_AncientDoctor_Hateno.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HatenoMini_BlueFire:talk00'})
+        if !EventSystemActor.GeneralChoice2() {
+            goto Event31
+        } else {
+            goto Event32
         }
     }
 }

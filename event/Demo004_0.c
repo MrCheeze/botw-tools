@@ -981,71 +981,56 @@ void C11() {
                                                                         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsStart_Obj_SheikSensor'})
                                                                     }
                                                                 }
-                                                            } else {
-                                                                Event597:
-                                                                if EventSystemActor.CheckFlag({'FlagName': 'MapTower_DemoFirst'}) {
-                                                                    if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
-                                                                        Event672:
-                                                                        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text026'})
-                                                                        goto Event591
-                                                                    } else {
-                                                                        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text019', 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0})
-                                                                        EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_SheikSensor', 'IsWaitFinish': True})
-                                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                                                                        EventSystemActor.Demo_DownloadShiekSensor({'IsWaitFinish': True})
-                                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
-                                                                        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text020', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True})
-                                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                                                                        EventSystemActor.Demo_DownloadSensorMoveIcon({'IsWaitFinish': True})
-                                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                                                                        goto Event591
-                                                                    }
+                                                            } else
+                                                            Event597:
+                                                            if EventSystemActor.CheckFlag({'FlagName': 'MapTower_DemoFirst'}) {
+                                                                if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
+                                                                    Event672:
+                                                                    NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text026'})
+                                                                    goto Event591
                                                                 } else {
-                                                                    goto Event672
+                                                                    NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text019', 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0})
+                                                                    EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_SheikSensor', 'IsWaitFinish': True})
+                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                                                                    EventSystemActor.Demo_DownloadShiekSensor({'IsWaitFinish': True})
+                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
+                                                                    NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text020', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True})
+                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                                                                    EventSystemActor.Demo_DownloadSensorMoveIcon({'IsWaitFinish': True})
+                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                                                                    goto Event591
                                                                 }
+                                                            } else {
+                                                                goto Event672
                                                             }
-                                                        } else {
-                                                            goto Event597
-                                                        }
-                                                    } else {
+                                                        } else
                                                         goto Event597
-                                                    }
-                                                } else {
+                                                    } else
                                                     goto Event597
-                                                }
-                                            } else {
+                                                } else
                                                 goto Event597
-                                            }
-                                        } else {
+                                            } else
                                             goto Event597
-                                        }
-                                    } else {
+                                        } else
                                         goto Event597
-                                    }
-                                } else {
+                                    } else
                                     goto Event597
-                                }
-                            } else {
+                                } else
                                 goto Event597
-                            }
-                        } else {
+                            } else
                             goto Event597
-                        }
-                    } else {
+                        } else
                         goto Event597
-                    }
-                } else {
+                    } else
                     goto Event597
-                }
-            } else {
+                } else
                 goto Event597
-            }
-        } else {
+            } else
             goto Event597
-        }
-    } else {
+        } else
         goto Event597
-    }
+    } else
+    goto Event597
 }
 
 void Demo166() {

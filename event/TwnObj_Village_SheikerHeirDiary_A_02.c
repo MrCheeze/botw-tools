@@ -38,9 +38,8 @@ void Talk() {
                     } else {
                         goto Event8
                     }
-                } else {
-                    goto Event9
-                }
+                } else
+                goto Event9
             } else {
                 goto Event4
             }

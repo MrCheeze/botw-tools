@@ -26,25 +26,12 @@ void Talk() {
       case 2:
         Npc_Goron017.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron017:talk12'})
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event7:
+          case [0, 1]:
             Npc_Goron017.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron017:talk04'})
-          case 1:
-            goto Event7
-          case 2:
-            Event9:
+          case [2, 3, 4]:
             Npc_Goron017.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron017:talk01'})
-          case 3:
-            goto Event9
-          case 4:
-            goto Event9
-          case 5:
-            Event6:
+          case [5, 6, 7]:
             Npc_Goron017.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron017:talk02'})
-          case 6:
-            goto Event6
-          case 7:
-            goto Event6
         }
       case 3:
         Event60:
@@ -54,27 +41,20 @@ void Talk() {
 
 void Near() {
     switch Npc_Goron017.CheckActorAction13() {
-      case 0:
-        Event80:
+      case [0, 1, 10]:
         if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Finish'}) {
             Event81:
             Npc_Goron017.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Goron017:near02'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Beated'}) {
+            Event82:
+            Npc_Goron017.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron017:near02', 'DispFrame': 300, 'IsChecked': True})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Activated'}) {
+            goto Event81
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Beated'}) {
-                Event82:
-                Npc_Goron017.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron017:near02', 'DispFrame': 300, 'IsChecked': True})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Activated'}) {
-                    goto Event81
-                } else {
-                    goto Event82
-                }
-            }
+            goto Event82
         }
-      case 1:
-        goto Event80
-      case 10:
-        goto Event80
       case 11:
         if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Finish'}) {
             Event19:
@@ -83,22 +63,19 @@ void Near() {
             } else {
                 Npc_Goron017.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron017:near01', 'IsChecked': False, 'DispFrame': 90})
             }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Beated'}) {
-                Event92:
-                if !EventSystemActor.RandomChoice2() {
-                    Npc_Goron017.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron017:near00', 'IsChecked': True, 'DispFrame': 300})
-                } else {
-                    Npc_Goron017.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron017:near01', 'DispFrame': 300, 'IsChecked': True})
-                }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Beated'}) {
+            Event92:
+            if !EventSystemActor.RandomChoice2() {
+                Npc_Goron017.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron017:near00', 'IsChecked': True, 'DispFrame': 300})
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Activated'}) {
-                    goto Event19
-                } else {
-                    goto Event92
-                }
+                Npc_Goron017.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron017:near01', 'DispFrame': 300, 'IsChecked': True})
             }
-        }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'GoronCityMini_BeatGolem_Activated'}) {
+            goto Event19
+        } else
+        goto Event92
     }
 }
 

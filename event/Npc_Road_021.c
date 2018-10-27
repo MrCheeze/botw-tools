@@ -22,34 +22,17 @@ void Near() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event100:
+          case [0, 1]:
             Npc_Road_021.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_021:Near00'})
-          case 1:
-            goto Event100
-          case 2:
-            Event101:
+          case [2, 3]:
             Npc_Road_021.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_021:Near01'})
-          case 3:
-            goto Event101
-          case 4:
-            Event5:
+          case [4, 5]:
             Npc_Road_021.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_021:Near02'})
-          case 5:
-            goto Event5
-          case 6:
-            Event6:
+          case [6, 7]:
             Npc_Road_021.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_021:Near03'})
-          case 7:
-            goto Event6
         }
-      case 1:
-        Event7:
+      case [1, 2, 3]:
         Npc_Road_021.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Road_021:Near04'})
-      case 2:
-        goto Event7
-      case 3:
-        goto Event7
     }
 }
 
@@ -123,29 +106,23 @@ void Rest() {
             Npc_Road_021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_021:Rest_00'})
             Event87:
             EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-          case 1:
+          case [1, 2, 3]:
             Event72:
             Npc_Road_021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_021:Rest_01'})
             goto Event87
-          case 2:
-            goto Event72
-          case 3:
-            goto Event72
         }
+    } else
+    if Npc_Road_021.IsArriveAnchorForRain() {
+        Npc_Road_021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_021:Rest_02'})
+        goto Event87
+    } else
+    Event102:
+    if Npc_Road_021.IsOnInstEventFlag() {
+        Npc_Road_021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_1'})
+        goto Event87
     } else {
-        if Npc_Road_021.IsArriveAnchorForRain() {
-            Npc_Road_021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_021:Rest_02'})
-            goto Event87
-        } else {
-            Event102:
-            if Npc_Road_021.IsOnInstEventFlag() {
-                Npc_Road_021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_1'})
-                goto Event87
-            } else {
-                Npc_Road_021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
-                goto Event87
-            }
-        }
+        Npc_Road_021.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
+        goto Event87
     }
 }
 
@@ -156,11 +133,7 @@ void Rain() {
     switch EventSystemActor.CheckWeather() {
       case 0:
         goto Event102
-      case 1:
-        goto Event72
-      case 2:
-        goto Event72
-      case 3:
+      case [1, 2, 3]:
         goto Event72
     }
 }

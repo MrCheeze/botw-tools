@@ -62,20 +62,19 @@ void Talk() {
                     goto Event206
                 }
             }
+        } else
+        if Npc_King_Parasail002.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
+            Npc_King_Parasail002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail002:Talk01', 'ASName': 'Point'})
+            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+            GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': 'Demo027_2_5', 'DemoName': 'Demo027_2', 'EndFade': 0})
+            Npc_King_Parasail002.Demo_BecomeSpeaker({'IsWaitFinish': True})
+            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'ReviseMode': 0, 'CollisionInterpolateSkip': False})
+            Npc_King_Parasail002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail002:Talk03', 'IsCloseMessageDialog': False})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_King_Parasail002_Talk', 'IsWaitFinish': True})
+            goto Event206
         } else {
-            if Npc_King_Parasail002.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
-                Npc_King_Parasail002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail002:Talk01', 'ASName': 'Point'})
-                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': 'Demo027_2_5', 'DemoName': 'Demo027_2', 'EndFade': 0})
-                Npc_King_Parasail002.Demo_BecomeSpeaker({'IsWaitFinish': True})
-                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'ReviseMode': 0, 'CollisionInterpolateSkip': False})
-                Npc_King_Parasail002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail002:Talk03', 'IsCloseMessageDialog': False})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_King_Parasail002_Talk', 'IsWaitFinish': True})
-                goto Event206
-            } else {
-                Npc_King_Parasail002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail002:Talk00'})
-            }
+            Npc_King_Parasail002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail002:Talk00'})
         }
     } else {
 

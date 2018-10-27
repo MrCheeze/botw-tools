@@ -95,9 +95,8 @@ void Talk() {
             Npc_Zora034.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora034:talk01'})
             goto Event33
         }
-    } else {
-        goto Event99
-    }
+    } else
+    goto Event99
 }
 
 void Near() {
@@ -129,16 +128,11 @@ void Water_Relic_RainStop_Talk() {
                 Npc_Zora034.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora034:talk14'})
                 goto Event33
             }
-          case 1:
-            goto Event26
-          case 2:
-            goto Event26
-          case 3:
+          case [1, 2, 3]:
             goto Event26
         }
-    } else {
-        goto Event52
-    }
+    } else
+    goto Event52
 }
 
 void Water_Relic_Finished_Talk() {
@@ -180,9 +174,8 @@ void Water_Relic_Finished_Talk() {
                 goto Event165
             }
         }
-    } else {
-        goto Event59
-    }
+    } else
+    goto Event59
 }
 
 void JoadaFirst() {

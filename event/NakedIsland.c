@@ -85,13 +85,12 @@ void Naked_Npc_NakedIslandPriest_EachFrame() {
     Event41:
     if EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_ReachTop'}) {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'NakedIsland', 'StepName': 'Finish'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_InIsland'}) {
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event41
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_InIsland'}) {
-            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-            goto Event41
-        } else {
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'NakedIsland', 'StepName': 'Warning'})
-        }
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'NakedIsland', 'StepName': 'Warning'})
     }
 }
 

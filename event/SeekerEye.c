@@ -47,7 +47,7 @@ void Ready_Npc_HyruleDepthHatago004_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_HyruleDepthHatago004.CheckActorAction13() {
-      case 0:
+      case [0, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         Event60:
         Npc_HyruleDepthHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SeekerEye:Talk_012'})
       case 1:
@@ -66,26 +66,6 @@ void Ready_Npc_HyruleDepthHatago004_Talk() {
       case 3:
         Event5:
         Npc_HyruleDepthHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SeekerEye:Talk_101'})
-      case 4:
-        goto Event60
-      case 5:
-        goto Event60
-      case 6:
-        goto Event60
-      case 7:
-        goto Event60
-      case 8:
-        goto Event60
-      case 9:
-        goto Event60
-      case 10:
-        goto Event60
-      case 11:
-        goto Event60
-      case 12:
-        goto Event60
-      case 13:
-        goto Event60
     }
 }
 
@@ -94,7 +74,7 @@ void Finish_Npc_HyruleDepthHatago004_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_HyruleDepthHatago004.CheckActorAction13() {
-      case 0:
+      case [0, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         goto Event60
       case 1:
         Npc_HyruleDepthHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SeekerEye:Talk_017'})
@@ -105,26 +85,6 @@ void Finish_Npc_HyruleDepthHatago004_Talk() {
         goto Event61
       case 3:
         goto Event5
-      case 4:
-        goto Event60
-      case 5:
-        goto Event60
-      case 6:
-        goto Event60
-      case 7:
-        goto Event60
-      case 8:
-        goto Event60
-      case 9:
-        goto Event60
-      case 10:
-        goto Event60
-      case 11:
-        goto Event60
-      case 12:
-        goto Event60
-      case 13:
-        goto Event60
     }
 }
 

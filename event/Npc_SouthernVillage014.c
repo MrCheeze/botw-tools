@@ -30,15 +30,14 @@ void Talk() {
                 EventSystemActor.Demo_FlagON({'FlagName': 'SearchStone_AfterTalk', 'IsWaitFinish': True})
                 goto Event6
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_AfterTalk'}) {
+            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage014:Talk_06'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_AfterTalk'}) {
-                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage014:Talk_06'})
-            } else {
-                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage014:Talk_03'})
-                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage014:Talk_04'})
-                Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage014:Talk_05'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'SearchStone_AfterTalk', 'IsWaitFinish': True})
-            }
+            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage014:Talk_03'})
+            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage014:Talk_04'})
+            Npc_SouthernVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage014:Talk_05'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'SearchStone_AfterTalk', 'IsWaitFinish': True})
         }
     } else {
 

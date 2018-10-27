@@ -152,13 +152,12 @@ void Ready_Npc_IceVillage011_Talk() {
                             } else {
                                 Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:NoPlay_00', 'IsCloseMessageDialog': True, 'ASName': ''})
                             }
+                        } else
+                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_001'}) {
+                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfSelectExpertCourse_Expert', 'ASName': ''})
+                            goto Event411
                         } else {
-                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_001'}) {
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfSelectExpertCourse_Expert', 'ASName': ''})
-                                goto Event411
-                            } else {
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfSelectExpertCourse_Expert1', 'ASName': ''})
-                            }
+                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfSelectExpertCourse_Expert1', 'ASName': ''})
                         }
                     } else {
                         goto Event963
@@ -167,293 +166,259 @@ void Ready_Npc_IceVillage011_Talk() {
                     Event290:
                     Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:NG_00', 'IsCloseMessageDialog': False, 'ASName': ''})
                 }
+            } else
+            Event764:
+            if Npc_IceVillage011.IsOnInstEventFlag() {
+                Event766:
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check02', 'ASName': ''})
             } else {
-                Event764:
-                if Npc_IceVillage011.IsOnInstEventFlag() {
-                    Event766:
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check02', 'ASName': ''})
-                } else {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check01', 'IsCloseMessageDialog': False, 'ASName': ''})
-                    goto Event766
-                }
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check01', 'IsCloseMessageDialog': False, 'ASName': ''})
+                goto Event766
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_8'}) {
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_003'}) {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_003'})
+
+                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_8', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagOFF({'FlagName': 'NotGet_Premium_Shield_8', 'IsWaitFinish': True})
+                goto Event771
+            } else
+            goto Event764
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_7'}) {
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_002'}) {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_002'})
+
+                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_7', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_7'})
+                goto Event771
+            } else
+            goto Event764
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_6'}) {
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_042'}) {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_042'})
+
+                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_6', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_6'})
+                goto Event771
+            } else
+            goto Event764
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_5'}) {
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_035'}) {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_035'})
+
+                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_5', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_5'})
+                goto Event771
+            } else
+            goto Event764
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_4'}) {
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_032'}) {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_032'})
+
+                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_4', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_4'})
+                goto Event771
+            } else
+            goto Event764
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_3'}) {
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_034'}) {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_034'})
+
+                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_3', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_3'})
+                goto Event771
+            } else
+            goto Event764
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_2'}) {
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_031'}) {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_031'})
+
+                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_2', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_2'})
+                goto Event771
+            } else
+            goto Event764
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_1'}) {
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_001'}) {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_001'})
+
+                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_1', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_1'})
+                goto Event771
+            } else
+            goto Event764
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_026'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GoldenShield1', 'ASName': ''})
+            Event285:
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Expert_SP', 'ASName': ''})
+            Event287:
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskPurpose_Expert', 'ASName': ''})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskCourse_Expert', 'ASName': ''})
+                goto Event291
+            } else {
+                goto Event290
+            }
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_036'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_MoonlightShield1', 'ASName': ''})
+            goto Event285
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_037'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SunShield1', 'ASName': ''})
+            goto Event285
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_009'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SpikeShield1', 'ASName': ''})
+            goto Event285
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_033'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GlassShield1', 'ASName': ''})
+            goto Event285
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_022'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_RoyalShield1', 'ASName': ''})
+            goto Event285
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_8'}) {
-                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_003'}) {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Expert_Default', 'ASName': ''})
+            goto Event287
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ShieldSurfing_Try'}) {
+        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_Default_00', 'ASName': ''})
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_026'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GoldenShield', 'IsCloseMessageDialog': True, 'ASName': ''})
+            Event883:
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_Default_02', 'IsCloseMessageDialog': False, 'ASName': ''})
+            Event41:
+            if !EventSystemActor.GeneralChoice2() {
+                if !EventSystemActor.HasPorchItemByCategory({'Count': 1, 'Category': 1}) {
+                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentRupee', 'Operator': 'GreaterThanOrEqualTo', 'Value': 20}) {
 
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_003'})
+                        fork {
 
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_8', 'IsWaitFinish': True})
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'NotGet_Premium_Shield_8', 'IsWaitFinish': True})
-                    goto Event771
+                            call Common.DisableSaveAndWarp()
+
+                            EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
+                            EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_ShieldSurfing_IsBeginnerCourse'})
+                        } {
+                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:TalkForPay_Beginner', 'ASName': ''})
+                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:LetsStart_01', 'IsCloseMessageDialog': True, 'ASName': ''})
+                            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Explain'})
+                        }
+
+                    } else {
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:NotHadEnoughRupee', 'IsCloseMessageDialog': True, 'ASName': ''})
+                    }
                 } else {
-                    goto Event764
+                    Event974:
+                    EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
+                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_No_Shield', 'IsCloseMessageDialog': False, 'ASName': ''})
                 }
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_7'}) {
-                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_002'}) {
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
-
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_002'})
-
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_7', 'IsWaitFinish': True})
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_7'})
-                        goto Event771
-                    } else {
-                        goto Event764
-                    }
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_6'}) {
-                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_042'}) {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
-
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_042'})
-
-                            EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_6', 'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_6'})
-                            goto Event771
-                        } else {
-                            goto Event764
-                        }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_5'}) {
-                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_035'}) {
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
-
-                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_035'})
-
-                                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_5', 'IsWaitFinish': True})
-                                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_5'})
-                                goto Event771
-                            } else {
-                                goto Event764
-                            }
-                        } else {
-                            if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_4'}) {
-                                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_032'}) {
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
-
-                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_032'})
-
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_4', 'IsWaitFinish': True})
-                                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_4'})
-                                    goto Event771
-                                } else {
-                                    goto Event764
-                                }
-                            } else {
-                                if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_3'}) {
-                                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_034'}) {
-                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
-
-                                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_034'})
-
-                                        EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_3', 'IsWaitFinish': True})
-                                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_3'})
-                                        goto Event771
-                                    } else {
-                                        goto Event764
-                                    }
-                                } else {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_2'}) {
-                                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_031'}) {
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
-
-                                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_031'})
-
-                                            EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_2', 'IsWaitFinish': True})
-                                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_2'})
-                                            goto Event771
-                                        } else {
-                                            goto Event764
-                                        }
-                                    } else {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_1'}) {
-                                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_001'}) {
-                                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check00', 'IsCloseMessageDialog': True, 'ASName': ''})
-
-                                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_001'})
-
-                                                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_1', 'IsWaitFinish': True})
-                                                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_1'})
-                                                goto Event771
-                                            } else {
-                                                goto Event764
-                                            }
-                                        } else {
-                                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_026'}) {
-                                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GoldenShield1', 'ASName': ''})
-                                                Event285:
-                                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Expert_SP', 'ASName': ''})
-                                                Event287:
-                                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskPurpose_Expert', 'ASName': ''})
-                                                if !EventSystemActor.GeneralChoice2() {
-                                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskCourse_Expert', 'ASName': ''})
-                                                    goto Event291
-                                                } else {
-                                                    goto Event290
-                                                }
-                                            } else {
-                                                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_036'}) {
-                                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_MoonlightShield1', 'ASName': ''})
-                                                    goto Event285
-                                                } else {
-                                                    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_037'}) {
-                                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SunShield1', 'ASName': ''})
-                                                        goto Event285
-                                                    } else {
-                                                        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_009'}) {
-                                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SpikeShield1', 'ASName': ''})
-                                                            goto Event285
-                                                        } else {
-                                                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_033'}) {
-                                                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GlassShield1', 'ASName': ''})
-                                                                goto Event285
-                                                            } else {
-                                                                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_022'}) {
-                                                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_RoyalShield1', 'ASName': ''})
-                                                                    goto Event285
-                                                                } else {
-                                                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Expert_Default', 'ASName': ''})
-                                                                    goto Event287
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:RefusePay_00', 'IsCloseMessageDialog': True, 'ASName': ''})
             }
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_036'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_MoonlightShield', 'IsCloseMessageDialog': True, 'ASName': ''})
+            goto Event883
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_037'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SunShield', 'IsCloseMessageDialog': True, 'ASName': ''})
+            goto Event883
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_009'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SpikeShield', 'IsCloseMessageDialog': True, 'ASName': ''})
+            goto Event883
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_033'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GlassShield', 'IsCloseMessageDialog': True, 'ASName': ''})
+            goto Event883
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_022'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_RoyalShield', 'IsCloseMessageDialog': True, 'ASName': ''})
+            goto Event883
+        } else {
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_Default_01', 'ASName': ''})
+            goto Event41
         }
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ShieldSurfing_Try'}) {
-            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_Default_00', 'ASName': ''})
-            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_026'}) {
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GoldenShield', 'IsCloseMessageDialog': True, 'ASName': ''})
-                Event883:
-                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_Default_02', 'IsCloseMessageDialog': False, 'ASName': ''})
-                Event41:
+        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner', 'ASName': ''})
+        EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ShieldSurfing_Try', 'IsWaitFinish': True})
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_026'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GoldenShield', 'IsCloseMessageDialog': False, 'ASName': ''})
+            Event31:
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_SP', 'ASName': ''})
+            Event32:
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskPurpose_Beginner', 'ASName': ''})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskTraining_Beginner', 'ASName': ''})
                 if !EventSystemActor.GeneralChoice2() {
                     if !EventSystemActor.HasPorchItemByCategory({'Count': 1, 'Category': 1}) {
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentRupee', 'Operator': 'GreaterThanOrEqualTo', 'Value': 20}) {
-
-                            fork {
-
-                                call Common.DisableSaveAndWarp()
-
-                                EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
-                                EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_ShieldSurfing_IsBeginnerCourse'})
-                            } {
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:TalkForPay_Beginner', 'ASName': ''})
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:LetsStart_01', 'IsCloseMessageDialog': True, 'ASName': ''})
-                                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Explain'})
-                            }
-
-                        } else {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:NotHadEnoughRupee', 'IsCloseMessageDialog': True, 'ASName': ''})
-                        }
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:TellRupee_Beginner', 'ASName': ''})
+                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskRupee_Beginner', 'ASName': ''})
+                        goto Event41
                     } else {
-                        Event974:
-                        EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_No_Shield', 'IsCloseMessageDialog': False, 'ASName': ''})
+                        goto Event974
                     }
                 } else {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:RefusePay_00', 'IsCloseMessageDialog': True, 'ASName': ''})
+                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:NoPlay_00', 'IsCloseMessageDialog': True, 'ASName': ''})
                 }
             } else {
-                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_036'}) {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_MoonlightShield', 'IsCloseMessageDialog': True, 'ASName': ''})
-                    goto Event883
-                } else {
-                    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_037'}) {
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SunShield', 'IsCloseMessageDialog': True, 'ASName': ''})
-                        goto Event883
-                    } else {
-                        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_009'}) {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SpikeShield', 'IsCloseMessageDialog': True, 'ASName': ''})
-                            goto Event883
-                        } else {
-                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_033'}) {
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GlassShield', 'IsCloseMessageDialog': True, 'ASName': ''})
-                                goto Event883
-                            } else {
-                                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_022'}) {
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_RoyalShield', 'IsCloseMessageDialog': True, 'ASName': ''})
-                                    goto Event883
-                                } else {
-                                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_Default_01', 'ASName': ''})
-                                    goto Event41
-                                }
-                            }
-                        }
-                    }
-                }
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:NG_00', 'IsCloseMessageDialog': True, 'ASName': ''})
             }
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_036'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_MoonlightShield', 'ASName': ''})
+            goto Event31
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_037'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SunShield', 'ASName': ''})
+            goto Event31
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_009'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SpikeShield', 'ASName': ''})
+            goto Event31
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_033'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GlassShield', 'ASName': ''})
+            goto Event31
+        } else
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_022'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_RoyalShield', 'ASName': ''})
+            goto Event31
         } else {
-            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner', 'ASName': ''})
-            EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ShieldSurfing_Try', 'IsWaitFinish': True})
-            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_026'}) {
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GoldenShield', 'IsCloseMessageDialog': False, 'ASName': ''})
-                Event31:
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_SP', 'ASName': ''})
-                Event32:
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskPurpose_Beginner', 'ASName': ''})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskTraining_Beginner', 'ASName': ''})
-                    if !EventSystemActor.GeneralChoice2() {
-                        if !EventSystemActor.HasPorchItemByCategory({'Count': 1, 'Category': 1}) {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:TellRupee_Beginner', 'ASName': ''})
-                            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskRupee_Beginner', 'ASName': ''})
-                            goto Event41
-                        } else {
-                            goto Event974
-                        }
-                    } else {
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:NoPlay_00', 'IsCloseMessageDialog': True, 'ASName': ''})
-                    }
-                } else {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:NG_00', 'IsCloseMessageDialog': True, 'ASName': ''})
-                }
-            } else {
-                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_036'}) {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_MoonlightShield', 'ASName': ''})
-                    goto Event31
-                } else {
-                    if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_037'}) {
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SunShield', 'ASName': ''})
-                        goto Event31
-                    } else {
-                        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_009'}) {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_SpikeShield', 'ASName': ''})
-                            goto Event31
-                        } else {
-                            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_033'}) {
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_GlassShield', 'ASName': ''})
-                                goto Event31
-                            } else {
-                                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_022'}) {
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Initial_RoyalShield', 'ASName': ''})
-                                    goto Event31
-                                } else {
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_Default', 'ASName': ''})
-                                    goto Event32
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:EntranceTalk_Beginner_Default', 'ASName': ''})
+            goto Event32
         }
     }
 }
@@ -516,37 +481,34 @@ void Game_Npc_IceVillage011_EachFrame() {
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ShieldSurfing_IsInBeginnerGoalArea'}) {
             GameDataCalcMachine.Demo_MiniGameTimerWrite({'GameDataIntNameMiliseconds': 'MiniGame_ShieldSurfing_ResultMilliSecond', 'GameDataIntNameSeconds': 'MiniGame_ShieldSurfing_ResultSecond', 'GameDataIntNameMintues': 'MiniGame_ShieldSurfing_ResultMinute', 'IsWaitFinish': True})
             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ShieldSurfing_IsInGameArea'}) {
-                if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 120}) {
-                    Event616:
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Failed'})
-                } else {
-                    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                    goto Event268
-                }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ShieldSurfing_IsInGameArea'}) {
+            if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 120}) {
+                Event616:
+                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Failed'})
             } else {
-                goto Event616
+                EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+                goto Event268
             }
+        } else {
+            goto Event616
+        }
+    } else
+    Event108:
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ShieldSurfing_IsInGoalArea'}) {
+        GameDataCalcMachine.Demo_MiniGameTimerWrite({'GameDataIntNameMiliseconds': 'MiniGame_ShieldSurfing_ResultMilliSecond', 'GameDataIntNameSeconds': 'MiniGame_ShieldSurfing_ResultSecond', 'GameDataIntNameMintues': 'MiniGame_ShieldSurfing_ResultMinute', 'IsWaitFinish': True})
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ShieldSurfing_IsInGameArea'}) {
+        if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 240}) {
+            Event615:
+            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Failed'})
+        } else {
+            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+            goto Event108
         }
     } else {
-        Event108:
-        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ShieldSurfing_IsInGoalArea'}) {
-            GameDataCalcMachine.Demo_MiniGameTimerWrite({'GameDataIntNameMiliseconds': 'MiniGame_ShieldSurfing_ResultMilliSecond', 'GameDataIntNameSeconds': 'MiniGame_ShieldSurfing_ResultSecond', 'GameDataIntNameMintues': 'MiniGame_ShieldSurfing_ResultMinute', 'IsWaitFinish': True})
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ShieldSurfing_IsInGameArea'}) {
-                if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 240}) {
-                    Event615:
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Failed'})
-                } else {
-                    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                    goto Event108
-                }
-            } else {
-                goto Event615
-            }
-        }
+        goto Event615
     }
 }
 
@@ -702,14 +664,13 @@ void Finish_Npc_IceVillage011_StepStart() {
                           case 2:
                             goto Event195
                         }
+                    } else
+                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_001'}) {
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:ChangeBeginnerToExpert_Expert', 'IsCloseMessageDialog': False, 'ASName': ''})
+                        goto Event696
                     } else {
-                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_001'}) {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:ChangeBeginnerToExpert_Expert', 'IsCloseMessageDialog': False, 'ASName': ''})
-                            goto Event696
-                        } else {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfSelectExpertCourse_Expert1', 'ASName': ''})
-                            goto Event391
-                        }
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfSelectExpertCourse_Expert1', 'ASName': ''})
+                        goto Event391
                     }
                 } else {
                     goto Event973
@@ -810,330 +771,311 @@ void Result() {
             } else {
                 goto Event356
             }
-        } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_ShieldSurfing_ResultMinute', 'Operator': 'LessThan', 'Value': 1}) {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_ShieldSurfing_ResultSecond', 'Operator': 'LessThan', 'Value': 45}) {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ShieldSurfing_IsGoalOnce', 'IsWaitFinish': True})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_ShieldSurfing_ResultMinute', 'Operator': 'LessThan', 'Value': 1}) {
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_ShieldSurfing_ResultSecond', 'Operator': 'LessThan', 'Value': 45}) {
+                EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ShieldSurfing_IsGoalOnce', 'IsWaitFinish': True})
 
-                    call Common.EnableSaveAndWarp()
+                call Common.EnableSaveAndWarp()
 
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Beginner', 'IsCloseMessageDialog': False, 'ASName': ''})
-                    EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Beginner', 'IsCloseMessageDialog': False, 'ASName': ''})
+                EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
 
-                    call Common.DisableSaveAndWarp()
+                call Common.DisableSaveAndWarp()
 
-                } else {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Beginner', 'ASName': ''})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskAboutShieldSurfing_Beginner', 'IsCloseMessageDialog': False, 'ASName': ''})
-                        if !EventSystemActor.GeneralChoice2() {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfAnswerSurface_Beginner', 'ASName': ''})
-                        } else {
-                            EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ShieldSurfing_IsGoalOnce', 'IsWaitFinish': True})
-
-                            call Common.EnableSaveAndWarp()
-
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfAnswerFact_Beginner', 'ASName': ''})
-                            EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-
-                            call Common.DisableSaveAndWarp()
-
-                        }
-                    } else {
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfAnswerRetry_Beginner', 'ASName': ''})
-                    }
-                }
             } else {
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Beginner', 'ASName': ''})
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Beginner', 'ASName': ''})
+                if !EventSystemActor.GeneralChoice2() {
+                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:AskAboutShieldSurfing_Beginner', 'IsCloseMessageDialog': False, 'ASName': ''})
+                    if !EventSystemActor.GeneralChoice2() {
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfAnswerSurface_Beginner', 'ASName': ''})
+                    } else {
+                        EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ShieldSurfing_IsGoalOnce', 'IsWaitFinish': True})
+
+                        call Common.EnableSaveAndWarp()
+
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfAnswerFact_Beginner', 'ASName': ''})
+                        EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+
+                        call Common.DisableSaveAndWarp()
+
+                    }
+                } else {
+                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:IfAnswerRetry_Beginner', 'ASName': ''})
+                }
             }
+        } else {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Beginner', 'ASName': ''})
         }
-    } else {
-        if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 95}) {
-            if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 110}) {
-                if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 125}) {
-                    if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 140}) {
-                        if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 155}) {
-                            if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 170}) {
-                                if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 185}) {
-                                    if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 200}) {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_dame', 'ASName': ''})
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present1', 'ASName': ''})
+    } else
+    if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 95}) {
+        if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 110}) {
+            if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 125}) {
+                if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 140}) {
+                    if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 155}) {
+                        if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 170}) {
+                            if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 185}) {
+                                if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 200}) {
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
+                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_dame', 'ASName': ''})
+                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present1', 'ASName': ''})
+
+                                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee'})
+
+                                    } else {
+                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_dame', 'ASName': ''})
+                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present', 'ASName': ''})
+                                        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_1'}) {
+                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01', 'ASName': ''})
 
                                             call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee'})
 
+                                        } else
+                                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_001'}) {
+
+                                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_001'})
+
+                                            EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_1', 'IsWaitFinish': True})
                                         } else {
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_dame', 'ASName': ''})
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present', 'ASName': ''})
-                                            if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_1'}) {
-                                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01', 'ASName': ''})
-
-                                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee'})
-
-                                            } else {
-                                                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_001'}) {
-
-                                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_001'})
-
-                                                    EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_1', 'IsWaitFinish': True})
-                                                } else {
-                                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi', 'ASName': ''})
-                                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_1'})
-
-                                                    call Pouch_Check()
-
-                                                }
-                                            }
-                                        }
-                                    } else {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_05', 'IsCloseMessageDialog': False, 'ASName': ''})
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present1', 'ASName': ''})
-
-                                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
-
-                                        } else {
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert', 'ASName': ''})
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present', 'ASName': ''})
-                                            if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_2'}) {
-                                                Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
-
-                                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
-
-                                            } else {
-                                                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_031'}) {
-
-                                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_031'})
-
-                                                    EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_2', 'IsWaitFinish': True})
-                                                } else {
-                                                    Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi'})
-                                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_2'})
-
-                                                    call Pouch_Check()
-
-                                                }
-                                            }
-                                        }
-                                    }
-                                } else {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
-                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_dame1', 'IsCloseMessageDialog': False, 'ASName': ''})
-                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present1', 'ASName': ''})
-
-                                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
-
-                                    } else {
-                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_dame1', 'ASName': ''})
-                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present', 'ASName': ''})
-                                        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_3'}) {
-                                            Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
-
-                                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
-
-                                        } else {
-                                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_032'}) {
-
-                                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_034'})
-
-                                                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_3', 'IsWaitFinish': True})
-                                            } else {
-                                                Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi'})
-                                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_3'})
-
-                                                call Pouch_Check()
-
-                                            }
-                                        }
-                                    }
-                                }
-                            } else {
-                                if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_04', 'IsCloseMessageDialog': False, 'ASName': ''})
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present1', 'ASName': ''})
-
-                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-                                } else {
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert', 'IsCloseMessageDialog': False, 'ASName': ''})
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present', 'ASName': ''})
-                                    if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_4'}) {
-                                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01', 'ASName': ''})
-
-                                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-                                    } else {
-                                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_032'}) {
-
-                                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_032'})
-
-                                            EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_4', 'IsWaitFinish': True})
-                                        } else {
-                                            Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi'})
-                                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_4'})
+                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi', 'ASName': ''})
+                                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_1'})
 
                                             call Pouch_Check()
 
                                         }
                                     }
-                                }
-                            }
-                        } else {
-                            if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert1'})
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present1', 'ASName': ''})
+                                } else
+                                if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
+                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_05', 'IsCloseMessageDialog': False, 'ASName': ''})
+                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present1', 'ASName': ''})
 
-                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-                            } else {
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert1', 'ASName': ''})
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present', 'ASName': ''})
-                                if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_5'}) {
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01', 'ASName': ''})
-
-                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
 
                                 } else {
-                                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_035'}) {
+                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert', 'ASName': ''})
+                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present', 'ASName': ''})
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_2'}) {
+                                        Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
 
-                                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_035'})
+                                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
 
-                                        EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_5', 'IsWaitFinish': True})
+                                    } else
+                                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_031'}) {
+
+                                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_031'})
+
+                                        EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_2', 'IsWaitFinish': True})
                                     } else {
                                         Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi'})
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_5'})
+                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_2'})
 
                                         call Pouch_Check()
 
                                     }
                                 }
-                            }
-                        }
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert2', 'ASName': ''})
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present1', 'ASName': ''})
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
+                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_dame1', 'IsCloseMessageDialog': False, 'ASName': ''})
+                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present1', 'ASName': ''})
 
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-                        } else {
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert2', 'ASName': ''})
-                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present', 'ASName': ''})
-                            if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_6'}) {
-                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01', 'ASName': ''})
-
-                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
 
                             } else {
-                                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_042'}) {
+                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_dame1', 'ASName': ''})
+                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_Present', 'ASName': ''})
+                                if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_3'}) {
+                                    Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
 
-                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_042'})
+                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
 
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_6', 'IsWaitFinish': True})
+                                } else
+                                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_032'}) {
+
+                                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_034'})
+
+                                    EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_3', 'IsWaitFinish': True})
                                 } else {
-                                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi', 'ASName': ''})
-                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_6'})
+                                    Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi'})
+                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_3'})
 
                                     call Pouch_Check()
 
                                 }
                             }
-                        }
-                    }
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_03', 'IsCloseMessageDialog': False, 'ASName': ''})
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present2', 'ASName': ''})
+                        } else
+                        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
+                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_04', 'IsCloseMessageDialog': False, 'ASName': ''})
+                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present1', 'ASName': ''})
 
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
-
-                    } else {
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert', 'IsCloseMessageDialog': False, 'ASName': ''})
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present', 'ASName': ''})
-                        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_7'}) {
-                            Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
-
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
 
                         } else {
-                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_002'}) {
+                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert', 'IsCloseMessageDialog': False, 'ASName': ''})
+                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present', 'ASName': ''})
+                            if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_4'}) {
+                                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01', 'ASName': ''})
 
-                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_002'})
+                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
 
-                                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_7', 'IsWaitFinish': True})
+                            } else
+                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_032'}) {
+
+                                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_032'})
+
+                                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_4', 'IsWaitFinish': True})
                             } else {
                                 Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi'})
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_7'})
+                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_4'})
 
                                 call Pouch_Check()
 
                             }
                         }
-                    }
-                }
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert1', 'IsCloseMessageDialog': False, 'ASName': ''})
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present1', 'ASName': ''})
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert1'})
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present1', 'ASName': ''})
 
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
-
-                } else {
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert1', 'IsCloseMessageDialog': False, 'ASName': ''})
-                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present1', 'ASName': ''})
-                    if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_8'}) {
-                        Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
-
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
 
                     } else {
-                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_003'}) {
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert1', 'ASName': ''})
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present', 'ASName': ''})
+                        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_5'}) {
+                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01', 'ASName': ''})
 
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_003'})
+                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
 
-                            EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_8', 'IsWaitFinish': True})
+                        } else
+                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_035'}) {
+
+                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_035'})
+
+                            EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_5', 'IsWaitFinish': True})
                         } else {
                             Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_8'})
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_5'})
 
                             call Pouch_Check()
 
                         }
                     }
-                }
-            }
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_02', 'IsCloseMessageDialog': False, 'ASName': ''})
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present1', 'ASName': ''})
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
+                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert2', 'ASName': ''})
+                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present1', 'ASName': ''})
 
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
-
-            } else {
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_WonderfulTime_Expert', 'IsCloseMessageDialog': False, 'ASName': ''})
-                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present1', 'ASName': ''})
-                if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_9'}) {
-                    Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
 
                 } else {
-                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_022'}) {
+                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert2', 'ASName': ''})
+                    Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_CommonTime_Expert_Present', 'ASName': ''})
+                    if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_6'}) {
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01', 'ASName': ''})
 
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_022'})
+                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
 
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_9', 'IsWaitFinish': True})
+                    } else
+                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_042'}) {
+
+                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_042'})
+
+                        EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_6', 'IsWaitFinish': True})
                     } else {
-                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi', 'IsCloseMessageDialog': False, 'ASName': ''})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_9'})
+                        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi', 'ASName': ''})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_6'})
 
                         call Pouch_Check()
 
                     }
                 }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_03', 'IsCloseMessageDialog': False, 'ASName': ''})
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present2', 'ASName': ''})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+            } else {
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert', 'IsCloseMessageDialog': False, 'ASName': ''})
+                Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present', 'ASName': ''})
+                if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_7'}) {
+                    Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
+
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+                } else
+                if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_002'}) {
+
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_002'})
+
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_7', 'IsWaitFinish': True})
+                } else {
+                    Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_7'})
+
+                    call Pouch_Check()
+
+                }
             }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert1', 'IsCloseMessageDialog': False, 'ASName': ''})
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present1', 'ASName': ''})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+        } else {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert1', 'IsCloseMessageDialog': False, 'ASName': ''})
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present1', 'ASName': ''})
+            if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_8'}) {
+                Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+            } else
+            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_003'}) {
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_003'})
+
+                EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_8', 'IsWaitFinish': True})
+            } else {
+                Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_8'})
+
+                call Pouch_Check()
+
+            }
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_conp'}) {
+        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_02', 'IsCloseMessageDialog': False, 'ASName': ''})
+        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present1', 'ASName': ''})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+
+    } else {
+        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_WonderfulTime_Expert', 'IsCloseMessageDialog': False, 'ASName': ''})
+        Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_GoodTime_Expert_Present1', 'ASName': ''})
+        if EventSystemActor.CheckFlag({'FlagName': 'Premium_Shield_9'}) {
+            Npc_IceVillage011.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi_01'})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+
+        } else
+        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_022'}) {
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Weapon_Shield_022'})
+
+            EventSystemActor.Demo_FlagON({'FlagName': 'Premium_Shield_9', 'IsWaitFinish': True})
+        } else {
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Goal_BadTime_Expert_rupi', 'IsCloseMessageDialog': False, 'ASName': ''})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NotGet_Premium_Shield_9'})
+
+            call Pouch_Check()
+
         }
     }
 }
@@ -1163,41 +1105,33 @@ void Exit_Npc_IceVillage011_StepStart() {
             Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Pouch_Check04'})
             Event207:
             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Ready'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_8'}) {
+            goto Event735
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_7'}) {
+            goto Event735
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_6'}) {
+            goto Event735
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_5'}) {
+            goto Event735
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_4'}) {
+            goto Event735
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_3'}) {
+            goto Event735
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_2'}) {
+            goto Event735
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_1'}) {
+            goto Event735
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_8'}) {
-                goto Event735
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_7'}) {
-                    goto Event735
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_6'}) {
-                        goto Event735
-                    } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_5'}) {
-                            goto Event735
-                        } else {
-                            if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_4'}) {
-                                goto Event735
-                            } else {
-                                if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_3'}) {
-                                    goto Event735
-                                } else {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_2'}) {
-                                        goto Event735
-                                    } else {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'NotGet_Premium_Shield_1'}) {
-                                            goto Event735
-                                        } else {
-                                            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Exit_03', 'ASName': ''})
-                                            goto Event207
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            Npc_IceVillage011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ShieldSurfing:Exit_03', 'ASName': ''})
+            goto Event207
         }
     } else {
         goto Event214

@@ -17,8 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_NorthHatelHatago002.CheckActorAction13() {
-      case 0:
-        Event13:
+      case [0, 1, 10]:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_NorthHateru002_First'}) {
             Npc_NorthHatelHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago002:talk13'})
             Event17:
@@ -52,10 +51,6 @@ void Talk() {
             Npc_NorthHatelHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago002:talk08'})
             goto Event17
         }
-      case 1:
-        goto Event13
-      case 10:
-        goto Event13
       case 11:
         Npc_NorthHatelHatago002.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_NorthHatelHatago002:talk02', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
     }

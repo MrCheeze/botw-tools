@@ -72,22 +72,18 @@ void Ready_Npc_SouthernVillage015_Talk() {
         Event8:
         if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_HeartPond_WomanIsTalked'}) {
             Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady03'})
-        } else {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                Event87:
-                Npc_SouthernVillage015.Demo_Talk({'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                Event163:
-                EventSystemActor.Demo_FlagON({'FlagName': 'FironeMini_HeartPond_WomanIsTalked', 'IsWaitFinish': True})
-              case 1:
-                Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady18'})
-                goto Event163
-              case 2:
-                goto Event87
-              case 3:
-                Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady19'})
-                goto Event163
-            }
+        } else
+        switch EventSystemActor.CheckWeather() {
+          case [0, 2]:
+            Npc_SouthernVillage015.Demo_Talk({'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            Event163:
+            EventSystemActor.Demo_FlagON({'FlagName': 'FironeMini_HeartPond_WomanIsTalked', 'IsWaitFinish': True})
+          case 1:
+            Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady18'})
+            goto Event163
+          case 3:
+            Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady19'})
+            goto Event163
         }
     } else {
 
@@ -108,8 +104,7 @@ void GetFlower_Npc_SouthernVillage016_Talk() {
     Npc_SouthernVillage015.Demo_Join({'IsWaitFinish': True})
     if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_HeartPond_ManIsTalked'}) {
         switch EventSystemActor.CheckWeather() {
-          case 0:
-            Event140:
+          case [0, 2]:
             Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy02', 'IsCloseMessageDialog': True})
             Event143:
             GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
@@ -147,59 +142,53 @@ void GetFlower_Npc_SouthernVillage016_Talk() {
           case 1:
             Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy00', 'IsCloseMessageDialog': True})
             goto Event143
-          case 2:
-            goto Event140
           case 3:
             Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy01', 'IsCloseMessageDialog': True})
             goto Event143
         }
-    } else {
-        switch EventSystemActor.CheckWeather() {
-          case 0:
-            Event126:
-            Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy28'})
-            Event24:
-            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_PlantGet_I'}) {
-                Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy30', 'IsCloseMessageDialog': True})
-                if !EventSystemActor.GeneralChoice2() {
-                    Event135:
-                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkHandOver', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                    EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -1, 'PorchItemName': 'Item_PlantGet_I'})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy32', 'IsCloseMessageDialog': True})
-                    GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+    } else
+    switch EventSystemActor.CheckWeather() {
+      case [0, 2]:
+        Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy28'})
+        Event24:
+        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_PlantGet_I'}) {
+            Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy30', 'IsCloseMessageDialog': True})
+            if !EventSystemActor.GeneralChoice2() {
+                Event135:
+                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkHandOver', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -1, 'PorchItemName': 'Item_PlantGet_I'})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy32', 'IsCloseMessageDialog': True})
+                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
 
-                    fork {
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                        Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy33', 'IsCloseMessageDialog': True})
-                    } {
-                        GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1PosX': 2587.0, 'Pattern1PosY': 291.0, 'Pattern1PosZ': 3535.0, 'Pattern1AtY': 291.0, 'Pattern1AtX': 2588.0, 'Pattern1AtZ': 3530.0, 'Pattern1Fovy': 50.0, 'Count': 30.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': 'Npc_SouthernVillage015', 'TargetActor1': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    }
-
-                    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': False, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
+                fork {
                     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy25'})
-                    goto Event22
-                } else {
-                    Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy14', 'IsCloseMessageDialog': True})
-                    if !EventSystemActor.GeneralChoice2() {
-                        goto Event135
-                    } else {
-                        Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy31'})
-                    }
+                    Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy33', 'IsCloseMessageDialog': True})
+                } {
+                    GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1PosX': 2587.0, 'Pattern1PosY': 291.0, 'Pattern1PosZ': 3535.0, 'Pattern1AtY': 291.0, 'Pattern1AtX': 2588.0, 'Pattern1AtZ': 3530.0, 'Pattern1Fovy': 50.0, 'Count': 30.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': 'Npc_SouthernVillage015', 'TargetActor1': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
                 }
+
+                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': False, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy25'})
+                goto Event22
             } else {
-                Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy29'})
+                Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy14', 'IsCloseMessageDialog': True})
+                if !EventSystemActor.GeneralChoice2() {
+                    goto Event135
+                } else {
+                    Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy31'})
+                }
             }
-          case 1:
-            Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy27'})
-            goto Event24
-          case 2:
-            goto Event126
-          case 3:
-            Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy26'})
-            goto Event24
+        } else {
+            Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy29'})
         }
+      case 1:
+        Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy27'})
+        goto Event24
+      case 3:
+        Npc_SouthernVillage016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Boy26'})
+        goto Event24
     }
 }
 
@@ -302,12 +291,11 @@ void Ready_Npc_SouthernVillage016_Near() {
     if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_HeartPond_Finish'}) {
         Event116:
         Npc_SouthernVillage016.Demo_TalkASync({'DispFrame': 300, 'IsChecked': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Near_01'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_HeartPond_Activated'}) {
+        goto Event116
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_HeartPond_Activated'}) {
-            goto Event116
-        } else {
-            Npc_SouthernVillage016.Demo_TalkASync({'DispFrame': 300, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Near_01', 'IsChecked': True})
-        }
+        Npc_SouthernVillage016.Demo_TalkASync({'DispFrame': 300, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Near_01', 'IsChecked': True})
     }
 }
 
@@ -325,25 +313,12 @@ void Finish_Npc_SouthernVillage015_NearActorsTalk() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event201:
+      case [0, 1]:
         Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady16'})
-      case 1:
-        goto Event201
-      case 2:
-        Event202:
+      case [2, 3, 4]:
         Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady17'})
-      case 3:
-        goto Event202
-      case 4:
-        goto Event202
-      case 5:
-        Event203:
+      case [5, 6, 7]:
         Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady27'})
-      case 6:
-        goto Event203
-      case 7:
-        goto Event203
     }
 }
 

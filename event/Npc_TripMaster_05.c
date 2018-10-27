@@ -13,15 +13,7 @@ void Talk() {
 }
 
 void Near() {
-    switch Npc_TripMaster_05.CheckActorAction13() {
-      case 0:
-        Event1:
+    if Npc_TripMaster_05.CheckActorAction13() in [0, 1, 2, 12] {
         Npc_TripMaster_05.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_TripMaster_05:Near', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        goto Event1
-      case 2:
-        goto Event1
-      case 12:
-        goto Event1
     }
 }

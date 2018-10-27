@@ -162,13 +162,12 @@ void Talk() {
             Event232:
             Npc_oasis029.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis029:Talk_15'})
             EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis029_first', 'IsWaitFinish': True})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis020_first_gerudo'}) {
+            goto Event232
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis020_first_gerudo'}) {
-                goto Event232
-            } else {
-                Npc_oasis029.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis029:Talk_14'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis029_first', 'IsWaitFinish': True})
-            }
+            Npc_oasis029.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis029:Talk_14'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis029_first', 'IsWaitFinish': True})
         }
     }
 }
@@ -192,36 +191,11 @@ void EntryPoint0() {
     switch Npc_oasis020.CheckActorAction13() {
       case 0:
         Npc_oasis020.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Near_03', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        Event200:
+      case [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis020_zarashi'}) {
             Npc_oasis020.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_oasis020:Near_02', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
         } else {
             Npc_oasis020.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Near_04', 'IsChecked': False, 'DispFrame': 90})
         }
-      case 2:
-        goto Event200
-      case 3:
-        goto Event200
-      case 4:
-        goto Event200
-      case 5:
-        goto Event200
-      case 6:
-        goto Event200
-      case 7:
-        goto Event200
-      case 8:
-        goto Event200
-      case 9:
-        goto Event200
-      case 10:
-        goto Event200
-      case 11:
-        goto Event200
-      case 12:
-        goto Event200
-      case 13:
-        goto Event200
     }
 }

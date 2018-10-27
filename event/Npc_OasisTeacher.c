@@ -79,8 +79,7 @@ void Talk() {
 
                 goto Event63
             }
-          case 3:
-            Event293:
+          case [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
             if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CookingSchoolMT'}) {
                 if Npc_OasisTeacher.IsOnInstEventFlag() {
                     Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk17', 'ASName': ''})
@@ -97,84 +96,36 @@ void Talk() {
                         goto Event67
                     }
                 }
-            } else {
-                if Npc_OasisTeacher.IsOnInstEventFlag() {
-                    Event294:
-                    Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk31', 'ASName': ''})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk40', 'ASName': ''})
-                    } else {
-                        Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk41', 'ASName': ''})
-                    }
+            } else
+            if Npc_OasisTeacher.IsOnInstEventFlag() {
+                Event294:
+                Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk31', 'ASName': ''})
+                if !EventSystemActor.GeneralChoice2() {
+                    Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk40', 'ASName': ''})
                 } else {
-
-                    call hello_teacher()
-
-                    goto Event294
+                    Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk41', 'ASName': ''})
                 }
+            } else {
+
+                call hello_teacher()
+
+                goto Event294
             }
-          case 4:
-            goto Event293
-          case 5:
-            goto Event293
-          case 6:
-            goto Event293
-          case 7:
-            goto Event293
-          case 8:
-            goto Event293
-          case 9:
-            goto Event293
-          case 10:
-            goto Event293
-          case 11:
-            goto Event293
-          case 12:
-            goto Event293
-          case 13:
-            goto Event293
         }
-    } else {
-        switch Npc_OasisTeacher.CheckActorAction13() {
-          case 0:
-            Event298:
+    } else
+    switch Npc_OasisTeacher.CheckActorAction13() {
+      case [0, 2]:
 
-            call hello()
+        call hello()
 
-            Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk39', 'ASName': ''})
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OasisTeacher_first', 'IsWaitFinish': True})
-          case 1:
-            Event306:
+        Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk39', 'ASName': ''})
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OasisTeacher_first', 'IsWaitFinish': True})
+      case [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
 
-            call hello_teacher()
+        call hello_teacher()
 
-            Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk39', 'ASName': ''})
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OasisTeacher_first', 'IsWaitFinish': True})
-          case 2:
-            goto Event298
-          case 3:
-            goto Event306
-          case 4:
-            goto Event306
-          case 5:
-            goto Event306
-          case 6:
-            goto Event306
-          case 7:
-            goto Event306
-          case 8:
-            goto Event306
-          case 9:
-            goto Event306
-          case 10:
-            goto Event306
-          case 11:
-            goto Event306
-          case 12:
-            goto Event306
-          case 13:
-            goto Event306
-        }
+        Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk39', 'ASName': ''})
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OasisTeacher_first', 'IsWaitFinish': True})
     }
 }
 
@@ -560,25 +511,12 @@ void Near() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event127:
+      case [0, 1]:
         Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk19'})
-      case 1:
-        goto Event127
-      case 2:
-        Event126:
+      case [2, 3, 4]:
         Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk20'})
-      case 3:
-        goto Event126
-      case 4:
-        goto Event126
-      case 5:
-        Event128:
+      case [5, 6, 7]:
         Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk21'})
-      case 6:
-        goto Event128
-      case 7:
-        goto Event128
     }
 }
 
@@ -596,25 +534,12 @@ void 1st() {
 
 void hello_teacher() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event322:
+      case [0, 1]:
         Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk42'})
-      case 1:
-        goto Event322
-      case 2:
-        Event323:
+      case [2, 3, 4]:
         Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk43'})
-      case 3:
-        goto Event323
-      case 4:
-        goto Event323
-      case 5:
-        Event324:
+      case [5, 6, 7]:
         Npc_OasisTeacher.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisTeacher:talk44'})
-      case 6:
-        goto Event324
-      case 7:
-        goto Event324
     }
 }
 
@@ -626,69 +551,17 @@ void NearActorsTalk2() {
 
     fork {
         switch Npc_OasisStudent_A.CheckActorAction13() {
-          case 0:
-            Event363:
+          case [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
             Npc_OasisStudent_A.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-          case 1:
-            goto Event363
-          case 2:
-            goto Event363
-          case 3:
-            Event331:
+          case [3, 13]:
             Npc_OasisStudent_A.Demo_ReturnAnchor({'IsWaitFinish': False})
-          case 4:
-            goto Event363
-          case 5:
-            goto Event363
-          case 6:
-            goto Event363
-          case 7:
-            goto Event363
-          case 8:
-            goto Event363
-          case 9:
-            goto Event363
-          case 10:
-            goto Event363
-          case 11:
-            goto Event363
-          case 12:
-            goto Event363
-          case 13:
-            goto Event331
         }
     } {
         switch Npc_OasisStudent_C.CheckActorAction13() {
-          case 0:
-            Event366:
+          case [0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
             Npc_OasisStudent_C.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-          case 1:
-            goto Event366
-          case 2:
-            goto Event366
-          case 3:
-            Event332:
+          case [3, 13]:
             Npc_OasisStudent_C.Demo_ReturnAnchor({'IsWaitFinish': False})
-          case 4:
-            goto Event366
-          case 5:
-            goto Event366
-          case 6:
-            goto Event366
-          case 7:
-            goto Event366
-          case 8:
-            goto Event366
-          case 9:
-            goto Event366
-          case 10:
-            goto Event366
-          case 11:
-            goto Event366
-          case 12:
-            goto Event366
-          case 13:
-            goto Event332
         }
     } {
         goto Event0

@@ -56,26 +56,24 @@ void KorokMini_KorokShiren_Finish_Talk() {
             Event46:
             Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk503'})
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kokiri008_Nazo'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_Finish'}) {
-                goto Event51
-            } else {
-                goto Event46
-            }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kokiri008_Nazo'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_Finish'}) {
+            goto Event51
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kokiri008_Nazo2'}) {
-                Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk504'})
-            } else {
-                Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk500'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk501'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kokiri008_Nazo', 'IsWaitFinish': True})
-                } else {
-                    Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk502'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kokiri008_Nazo2', 'IsWaitFinish': True})
-                }
-            }
+            goto Event46
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kokiri008_Nazo2'}) {
+        Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk504'})
+    } else {
+        Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk500'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk501'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kokiri008_Nazo', 'IsWaitFinish': True})
+        } else {
+            Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk502'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kokiri008_Nazo2', 'IsWaitFinish': True})
         }
     }
 }

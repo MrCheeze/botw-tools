@@ -27,22 +27,13 @@ void Talk() {
 }
 
 void TripMaster_15_Talk() {
-    if !Npc_TripMaster_15[TripMaster_15_Talk(Self)].CheckActorAction13() {
-        Event4:
+    if Npc_TripMaster_15[TripMaster_15_Talk(Self)].CheckActorAction13() in [0, 1] {
         Npc_TripMaster_15[TripMaster_15_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_15:talk_26'})
-    } else {
-        goto Event4
     }
 }
 
 void Near() {
-    switch Npc_TripMaster_15.CheckActorAction13() {
-      case 0:
-        Event5:
+    if Npc_TripMaster_15.CheckActorAction13() in [0, 1, 12] {
         Npc_TripMaster_15.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_TripMaster_15:Near'})
-      case 1:
-        goto Event5
-      case 12:
-        goto Event5
     }
 }

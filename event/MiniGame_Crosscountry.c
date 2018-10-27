@@ -132,12 +132,9 @@ void Ready_Npc_MiniGame_Crosscountry_Talk() {
 }
 
 void WarpToNPC() {
-    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Crosscountry_IsWinTheGame'}) {
-        Event300:
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Crosscountry_IsWinTheGame'}) in [1, 0] {
         Npc_MiniGame_Crosscountry.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': '', 'AnchorName': 'AnchorAction1'})
         EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': -7.0, 'DestinationX': -2644.0, 'DestinationZ': -1168.0, 'DestinationY': 289.1300048828125})
-    } else {
-        goto Event300
     }
 }
 
@@ -161,24 +158,21 @@ void Game_Npc_MiniGame_Crosscountry_EachFrame() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
         EventSystemActor.Demo_DisableMiniGameTime({'IsWaitFinish': True})
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'ForceStop'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Crosscountry_IsInGoalArea'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_Crosscountry_IsWinTheGame'})
+        Event117:
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Crosscountry_Goal'}) {
+        goto Event117
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Crosscountry_IsInSafetyArea'}) {
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event190
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Crosscountry_IsInGoalArea'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_Crosscountry_IsWinTheGame'})
-            Event117:
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Finish'})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Crosscountry_Goal'}) {
-                goto Event117
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Crosscountry_IsInSafetyArea'}) {
-                    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                    goto Event190
-                } else {
-                    EventSystemActor.Demo_DisableMiniGameTime({'IsWaitFinish': True})
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'ForceStop'})
-                }
-            }
-        }
+        EventSystemActor.Demo_DisableMiniGameTime({'IsWaitFinish': True})
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'ForceStop'})
     }
 }
 

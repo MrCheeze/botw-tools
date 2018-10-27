@@ -29,25 +29,21 @@ void Talk() {
             } else {
                 NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk005'})
             }
+        } else
+        if NPC_Lanayru001.IsOnInstEventFlag() {
+            NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk017'})
         } else {
-            if NPC_Lanayru001.IsOnInstEventFlag() {
-                NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk017'})
-            } else {
-                NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk016'})
-            }
+            NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk016'})
         }
     } else {
         EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Lanayru001_First', 'IsWaitFinish': True})
         NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk001'})
-        if !EventSystemActor.GeneralChoice2() {
-            Event106:
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
             NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk018', 'IsCloseMessageDialog': True})
             EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
 
             call OperationGuide.Guide_Surfing()
 
-        } else {
-            goto Event106
         }
     }
 }

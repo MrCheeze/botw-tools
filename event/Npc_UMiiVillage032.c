@@ -114,13 +114,12 @@ void Talk() {
             GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
             EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_HatenoVillage032_Go'})
             Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC032_MarryFirst'}) {
+            Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk09'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC032_MarryFirst'}) {
-                Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk09'})
-            } else {
-                EventSystemActor.Demo_FlagON({'FlagName': 'HatenoNPC032_MarryFirst', 'IsWaitFinish': True})
-                Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk10'})
-            }
+            EventSystemActor.Demo_FlagON({'FlagName': 'HatenoNPC032_MarryFirst', 'IsWaitFinish': True})
+            Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk10'})
         }
     } {
         switch Npc_UMiiVillage030.CheckActorAction13() {
@@ -147,36 +146,20 @@ void Ichikara_SakuradaHello() {
         Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk17'})
         Event19:
         EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-      case 9:
-        Event9:
+      case [9, 12]:
         if Npc_UMiiVillage032.IsOnInstEventFlag() {
             Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk00'})
-        } else {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-                Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk01'})
-            } else {
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event3:
-                    Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk02'})
-                  case 1:
-                    goto Event3
-                  case 2:
-                    Event5:
-                    Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk03'})
-                  case 3:
-                    goto Event5
-                  case 4:
-                    goto Event5
-                  case 5:
-                    goto Event5
-                  case 6:
-                    Event6:
-                    Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk04'})
-                  case 7:
-                    goto Event6
-                }
-            }
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+            Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk01'})
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk02'})
+          case [2, 3, 4, 5]:
+            Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk03'})
+          case [6, 7]:
+            Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk04'})
         }
       case 10:
         if !EventSystemActor.RandomChoice2() {
@@ -196,7 +179,5 @@ void Ichikara_SakuradaHello() {
             Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk03'})
             goto Event21
         }
-      case 12:
-        goto Event9
     }
 }

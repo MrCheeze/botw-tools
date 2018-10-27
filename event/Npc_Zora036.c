@@ -26,79 +26,71 @@ void Talk() {
             Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk13'})
             goto Event163
         }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Water_Relic_RainStop'}) {
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora036_WaterRainFirst'}) {
-                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk07'})
-                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk22'})
-                    Event126:
-                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk19'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Water_Relic_RainStop'}) {
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora036_WaterRainFirst'}) {
+                Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk07'})
+                Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk22'})
+                Event126:
+                Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk19'})
+            } else {
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora036_WaterRainFirst'})
+                if EventSystemActor.CheckFlag({'FlagName': 'ZoraMeet07'}) {
+                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk05'})
+                    goto Event126
                 } else {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora036_WaterRainFirst'})
+                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk16'})
+                    goto Event126
+                }
+            }
+          case [1, 2, 3]:
+            Event46:
+            if EventSystemActor.CheckFlag({'FlagName': 'Water_Relic_Activated'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora036_WaterActivatedFirst'}) {
+                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk07'})
+                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk18', 'ASName': ''})
+                    Event114:
+                    if !EventSystemActor.GeneralChoice2() {
+                        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk17'})
+                    } else {
+                        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk10', 'ASName': ''})
+                    }
+                } else {
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora036_WaterActivatedFirst', 'IsWaitFinish': True})
                     if EventSystemActor.CheckFlag({'FlagName': 'ZoraMeet07'}) {
                         Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk05'})
-                        goto Event126
+                        Event113:
+                        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk08'})
+                        goto Event114
                     } else {
-                        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk16'})
-                        goto Event126
+                        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk06'})
+                        goto Event113
                     }
                 }
-              case 1:
-                Event46:
-                if EventSystemActor.CheckFlag({'FlagName': 'Water_Relic_Activated'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora036_WaterActivatedFirst'}) {
-                        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk07'})
-                        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk18', 'ASName': ''})
-                        Event114:
-                        if !EventSystemActor.GeneralChoice2() {
-                            Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk17'})
-                        } else {
-                            Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk10', 'ASName': ''})
-                        }
-                    } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora036_WaterActivatedFirst', 'IsWaitFinish': True})
-                        if EventSystemActor.CheckFlag({'FlagName': 'ZoraMeet07'}) {
-                            Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk05'})
-                            Event113:
-                            Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk08'})
-                            goto Event114
-                        } else {
-                            Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk06'})
-                            goto Event113
-                        }
-                    }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora036_WaterReadyFirst'}) {
+                Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk07'})
+                Event101:
+                Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk04'})
+            } else {
+                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora036_WaterReadyFirst', 'IsWaitFinish': True})
+                if EventSystemActor.CheckFlag({'FlagName': 'ZoraMeet07'}) {
+                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk05'})
+                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk09'})
+                    goto Event101
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'GotoZoraVillage_Finish'}) {
+                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk11'})
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora036_WaterReadyFirst'}) {
-                        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk07'})
-                        Event101:
-                        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk04'})
-                    } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora036_WaterReadyFirst', 'IsWaitFinish': True})
-                        if EventSystemActor.CheckFlag({'FlagName': 'ZoraMeet07'}) {
-                            Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk05'})
-                            Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk09'})
-                            goto Event101
-                        } else {
-                            if EventSystemActor.CheckFlag({'FlagName': 'GotoZoraVillage_Finish'}) {
-                                Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk11'})
-                            } else {
-                                Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk06'})
-                                Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk15'})
-                            }
-                        }
-                    }
+                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk06'})
+                    Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk15'})
                 }
-              case 2:
-                goto Event46
-              case 3:
-                goto Event46
             }
-        } else {
-            goto Event46
         }
-    }
+    } else
+    goto Event46
 }
 
 void TorufoHello() {
@@ -107,27 +99,12 @@ void TorufoHello() {
 
     if Npc_Zora036.IsOnInstEventFlag() {
         Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk00', 'ASName': 'Hello'})
-    } else {
-        switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event67:
-            Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk01', 'ASName': 'Hello'})
-          case 1:
-            goto Event67
-          case 2:
-            goto Event67
-          case 3:
-            goto Event67
-          case 4:
-            goto Event67
-          case 5:
-            goto Event67
-          case 6:
-            Event68:
-            Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk02'})
-          case 7:
-            goto Event68
-        }
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case [0, 1, 2, 3, 4, 5]:
+        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk01', 'ASName': 'Hello'})
+      case [6, 7]:
+        Npc_Zora036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora036:talk02'})
     }
 }
 

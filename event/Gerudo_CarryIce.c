@@ -72,8 +72,7 @@ void Gerudo_CarryIce_Get_Npc_GerudoDesert003_Talk() {
     call Npc_GerudoDesert003.Sleep_check()
 
     switch Npc_GerudoDesert003.CheckActorAction13() {
-      case 0:
-        Event212:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]:
         Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_GerudoDesert003_S01_002', 'IsCloseMessageDialog': True})
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkingL', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
         Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_GerudoDesert003_S01_001', 'IsCloseMessageDialog': True})
@@ -83,33 +82,9 @@ void Gerudo_CarryIce_Get_Npc_GerudoDesert003_Talk() {
 
         call Preparation()
 
-      case 1:
-        goto Event212
-      case 2:
-        goto Event212
-      case 3:
-        goto Event212
-      case 4:
-        goto Event212
-      case 5:
-        goto Event212
-      case 6:
-        goto Event212
-      case 7:
-        goto Event212
-      case 8:
-        goto Event212
-      case 9:
-        goto Event212
       case 10:
         Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_GerudoDesert003_S01_102', 'IsOverWriteLabelActorName': False})
         Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_GerudoDesert003_S01_104'})
-      case 11:
-        goto Event212
-      case 12:
-        goto Event212
-      case 13:
-        goto Event212
     }
 }
 
@@ -168,8 +143,7 @@ void Gerudo_CarryIce_Delivered_Npc_GerudoDesert003_Talk() {
     call Npc_GerudoDesert003.Sleep_check()
 
     switch Npc_GerudoDesert003.CheckActorAction13() {
-      case 0:
-        Event232:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]:
         if !EventSystemActor.CheckExistActor({'ActorName': 'IceBlock', 'IsCheckEquipStand': False, 'IsCheckLife': False}) {
             Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_GerudoDesert003_S02_101', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             if !EventSystemActor.GeneralChoice2() {
@@ -192,32 +166,8 @@ void Gerudo_CarryIce_Delivered_Npc_GerudoDesert003_Talk() {
             Fader.Demo_FadeOut({'Color': 1, 'DispMode': 'NoLogo', 'Frame': 0, 'IsWaitFinish': True})
             goto Event271
         }
-      case 1:
-        goto Event232
-      case 2:
-        goto Event232
-      case 3:
-        goto Event232
-      case 4:
-        goto Event232
-      case 5:
-        goto Event232
-      case 6:
-        goto Event232
-      case 7:
-        goto Event232
-      case 8:
-        goto Event232
-      case 9:
-        goto Event232
       case 10:
         Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_GerudoDesert003_S01_103'})
-      case 11:
-        goto Event232
-      case 12:
-        goto Event232
-      case 13:
-        goto Event232
     }
 }
 
@@ -299,28 +249,25 @@ void Gerudo_CarryIce_Delivered_Npc_OasisMilk_E_Talk() {
         if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
             Event221:
             Npc_OasisMilk_E[Town_out].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_001'})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_FirstVoy'}) {
+            goto Event221
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_FirstVoy'}) {
-                goto Event221
-            } else {
-                Npc_OasisMilk_E[Town_out].Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_105', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_CarryIce_FirstVoy', 'IsWaitFinish': True})
-                goto Event221
-            }
+            Npc_OasisMilk_E[Town_out].Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_105', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_CarryIce_FirstVoy', 'IsWaitFinish': True})
+            goto Event221
         }
+    } else
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
+        Event46:
+        Npc_OasisMilk_E[Town_out].Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_201', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_FirstVoy'}) {
+        goto Event46
     } else {
-        if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
-            Event46:
-            Npc_OasisMilk_E[Town_out].Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_201', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_FirstVoy'}) {
-                goto Event46
-            } else {
-                Npc_OasisMilk_E[Town_out].Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_105', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_CarryIce_FirstVoy', 'IsWaitFinish': True})
-                goto Event46
-            }
-        }
+        Npc_OasisMilk_E[Town_out].Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_105', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False})
+        EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_CarryIce_FirstVoy', 'IsWaitFinish': True})
+        goto Event46
     }
 }
 
@@ -347,15 +294,14 @@ void Event_carry_ice_flos() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
         EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 0, 'AdditionalResetActor': '', 'IsResetCamera': False})
         Fader.Demo_FadeIn({'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True, 'Frame': 0})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_FirstVoy'}) {
+        goto Event16
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_FirstVoy'}) {
-            goto Event16
-        } else {
-            Npc_OasisMilk_E[Town_out].Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_105', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False})
-            EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_CarryIce_FirstVoy', 'IsWaitFinish': True})
-            Npc_OasisMilk_E[Town_out].Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_104'})
-            goto Event167
-        }
+        Npc_OasisMilk_E[Town_out].Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_105', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False})
+        EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_CarryIce_FirstVoy', 'IsWaitFinish': True})
+        Npc_OasisMilk_E[Town_out].Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_oasis025_S02_104'})
+        goto Event167
     }
 }
 

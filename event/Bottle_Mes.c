@@ -160,12 +160,10 @@ void Ready_Npc_Bottle_Mes001_Talk() {
         Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk104'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk105'})
-            if !EventSystemActor.GeneralChoice2() {
+            if EventSystemActor.GeneralChoice2() in [0, 1] {
                 Event238:
                 Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk106'})
                 Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk111'})
-            } else {
-                goto Event238
             }
         } else {
             goto Event238
@@ -204,13 +202,12 @@ void Step10_Npc_Zora026_Talk() {
           case 3:
             Npc_Zora026[Npc_fine].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk11'})
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Bottle_Mes_river'}) {
+        goto Event198
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Bottle_Mes_river'}) {
-            goto Event198
-        } else {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Zora026_BottleLost', 'IsWaitFinish': True})
-            goto Event198
-        }
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Zora026_BottleLost', 'IsWaitFinish': True})
+        goto Event198
     }
 }
 
@@ -295,12 +292,10 @@ void Bottle_Get_Demo() {
             Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk104'})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk105'})
-                if !EventSystemActor.GeneralChoice2() {
+                if EventSystemActor.GeneralChoice2() in [0, 1] {
                     Event254:
                     Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk106'})
                     goto Event249
-                } else {
-                    goto Event254
                 }
             } else {
                 goto Event254
@@ -315,28 +310,14 @@ void RiverSasanoHello() {
 
     if Npc_Bottle_Mes001[Bottle_Man].IsOnInstEventFlag() {
         Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk103', 'IsCloseMessageDialog': False})
-    } else {
-        switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event227:
-            Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk100', 'IsCloseMessageDialog': False})
-          case 1:
-            goto Event227
-          case 2:
-            Event228:
-            Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk101', 'IsCloseMessageDialog': False})
-          case 3:
-            goto Event228
-          case 4:
-            goto Event228
-          case 5:
-            goto Event228
-          case 6:
-            Event229:
-            Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk102', 'IsCloseMessageDialog': False})
-          case 7:
-            goto Event229
-        }
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case [0, 1]:
+        Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk100', 'IsCloseMessageDialog': False})
+      case [2, 3, 4, 5]:
+        Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk101', 'IsCloseMessageDialog': False})
+      case [6, 7]:
+        Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk102', 'IsCloseMessageDialog': False})
     }
 }
 

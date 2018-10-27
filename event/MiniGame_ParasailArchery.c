@@ -178,14 +178,13 @@ void Ready_Npc_ValleyVillage010_Talk() {
                         Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk19'})
                         goto Event651
                     }
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
+                    Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk06'})
+                    goto Event640
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
-                        Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk06'})
-                        goto Event640
-                    } else {
-                        Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk18'})
-                        goto Event651
-                    }
+                    Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk18'})
+                    goto Event651
                 }
             } else {
                 EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ParasailArchery_Ready_Teba_First', 'IsWaitFinish': True})
@@ -197,22 +196,20 @@ void Ready_Npc_ValleyVillage010_Talk() {
                     goto Event651
                 }
             }
-        } else {
-            Event235:
-            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ParasailArchery_Ready_Teba_First'}) {
-                if Npc_ValleyVillage010[Teba_FlightMinigame].IsOnInstEventFlag() {
-                    Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk102'})
-                } else {
-                    Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk101'})
-                }
+        } else
+        Event235:
+        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ParasailArchery_Ready_Teba_First'}) {
+            if Npc_ValleyVillage010[Teba_FlightMinigame].IsOnInstEventFlag() {
+                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk102'})
             } else {
-                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk100'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ParasailArchery_Ready_Teba_First', 'IsWaitFinish': True})
+                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk101'})
             }
+        } else {
+            Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk100'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ParasailArchery_Ready_Teba_First', 'IsWaitFinish': True})
         }
-    } else {
-        goto Event235
-    }
+    } else
+    goto Event235
 }
 
 void Playing_Npc_HighMountain001_Talk() {
@@ -242,49 +239,42 @@ void Playing_Npc_HighMountain001_EachFrame() {
     if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 20}) {
         Event321:
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Succeeded', 'QuestName': 'MiniGame_ParasailArchery'})
-    } else {
-        if !EventSystemActor.HasPorchItemByCategory({'Category': 0, 'Count': 1}) {
-            if !EventSystemActor.HasPorchArrow({'CheckNum': 1}) {
-                Event281:
-                if EventSystemActor.CheckMiniGameTimeOver() {
-                    EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'Value': 2, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'})
-                    Event311:
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Failed', 'QuestName': 'MiniGame_ParasailArchery'})
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ParasailArchery_Fail_AreaIn'}) {
-                        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                        goto Event500
-                    } else {
-                        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'Value': 3, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'})
-                        goto Event311
-                    }
-                }
+    } else
+    if !EventSystemActor.HasPorchItemByCategory({'Category': 0, 'Count': 1}) {
+        if !EventSystemActor.HasPorchArrow({'CheckNum': 1}) {
+            Event281:
+            if EventSystemActor.CheckMiniGameTimeOver() {
+                EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'Value': 2, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'})
+                Event311:
+                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Failed', 'QuestName': 'MiniGame_ParasailArchery'})
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ParasailArchery_Fail_AreaIn'}) {
+                EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+                goto Event500
             } else {
-                if EventSystemActor.CheckExistArrow() {
-                    goto Event281
-                } else {
-                    EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                    if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 20}) {
-                        goto Event321
-                    } else {
-                        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'})
-                        goto Event311
-                    }
-                }
+                EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'Value': 3, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'})
+                goto Event311
             }
+        } else
+        if EventSystemActor.CheckExistArrow() {
+            goto Event281
         } else {
-            if EventSystemActor.CheckExistArrow() {
-                Event546:
-                EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 20}) {
-                    goto Event321
-                } else {
-                    EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'Value': 0, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'})
-                    goto Event311
-                }
+            EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+            if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 20}) {
+                goto Event321
             } else {
-                goto Event546
+                EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'})
+                goto Event311
             }
+        }
+    } else
+    if EventSystemActor.CheckExistArrow() in [1, 0] {
+        EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+        if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 20}) {
+            goto Event321
+        } else {
+            EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'Value': 0, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'})
+            goto Event311
         }
     }
 }
@@ -340,23 +330,20 @@ void Failed_Npc_HighMountain001_StepStart() {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_ParasailArchery_Fail_Self'})
         SceneSoundCtrlTag.Demo_SetEndProc({'CtrlType': 'SkipAll', 'IsWaitFinish': True})
         goto Event625
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 1, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'}) {
+        Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk15'})
+        goto Event301
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 2, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'}) {
+        Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk16'})
+        goto Event301
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason', 'Value': 3}) {
+        Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk17'})
+        goto Event301
     } else {
-        if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 1, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'}) {
-            Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk15'})
-            goto Event301
-        } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 2, 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason'}) {
-                Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk16'})
-                goto Event301
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'MiniGame_ParasailArchery_FailReason', 'Value': 3}) {
-                    Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk17'})
-                    goto Event301
-                } else {
-                    goto Event301
-                }
-            }
-        }
+        goto Event301
     }
 }
 
@@ -414,31 +401,28 @@ void Result() {
         call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
 
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_PutRupee_Gold'})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 15}) {
+        Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk23'})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_PutRupee_Silver'})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 10}) {
+        Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk24'})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_PutRupee_Purple'})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 5}) {
+        Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk25'})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_PutRupee_Red'})
     } else {
-        if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 15}) {
-            Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk23'})
-
-            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
-
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_PutRupee_Silver'})
-        } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 10}) {
-                Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk24'})
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
-
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_PutRupee_Purple'})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'Wind_Relic_BreakTarget', 'Value': 5}) {
-                    Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk25'})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsGet_PutRupee_Red'})
-                } else {
-                    Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk26'})
-                }
-            }
-        }
+        Npc_HighMountain001[Tyuri_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk26'})
     }
 }

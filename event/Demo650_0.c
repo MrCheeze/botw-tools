@@ -49,17 +49,15 @@ void Demo650_0_GyroNazotokiSE_DLC_130() {
             SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'ReadRiddle_Delay'})
             EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
             EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+        } else
+        if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-            } else {
-                if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-                } else {
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-                    goto Event10
-                }
-            }
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
+            goto Event10
         }
     } else {
         NPC_GodVoice.Demo_OpenMessageDialog({'MessageId': 'DemoMsg/Demo043_0:talk00', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})

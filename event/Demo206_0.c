@@ -110,14 +110,13 @@ void Demo206_0() {
                     DgnObj_MasterSwordBase_100Enemy[Base_4].Demo_XLinkEventFade({'ELinkKey': 'DLC_100Dungeon_MasterSwordGlow_Demo', 'IsWaitFinish': True, 'SLinkKey': ''})
                     Event81:
                     EventControllerRumble[shake].Demo_RumbleMiddle({'IsWaitFinish': False, 'Count': 1})
+                } else
+                if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
+                    DgnObj_MasterSwordBase_100Enemy[Base_2].Demo_XLinkEventFade({'ELinkKey': 'DLC_100Dungeon_MasterSwordGlow_Demo', 'IsWaitFinish': True, 'SLinkKey': ''})
+                    goto Event81
                 } else {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-                        DgnObj_MasterSwordBase_100Enemy[Base_2].Demo_XLinkEventFade({'ELinkKey': 'DLC_100Dungeon_MasterSwordGlow_Demo', 'IsWaitFinish': True, 'SLinkKey': ''})
-                        goto Event81
-                    } else {
-                        DgnObj_MasterSwordBase_100Enemy[Base_1].Demo_XLinkEventFade({'ELinkKey': 'DLC_100Dungeon_MasterSwordGlow_Demo', 'IsWaitFinish': True, 'SLinkKey': ''})
-                        goto Event81
-                    }
+                    DgnObj_MasterSwordBase_100Enemy[Base_1].Demo_XLinkEventFade({'ELinkKey': 'DLC_100Dungeon_MasterSwordGlow_Demo', 'IsWaitFinish': True, 'SLinkKey': ''})
+                    goto Event81
                 }
             }
 
@@ -150,24 +149,22 @@ void Demo206_0() {
                 SceneSoundCtrlTag.Demo_KillAllDemoSound({'IsWaitFinish': True})
                 goto Event123
             }
-        } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-                DgnObj_MasterSwordBase_100Enemy[Base_2].Demo_XLinkEventEnable({'IsWaitFinish': True, 'IsEnable': False})
-                DgnObj_MasterSwordBase_100Enemy[Base_2].Demo_XLinkEventCreate({'ELinkKey': 'DLC_100Dungeon_MasterSwordGlow_Demo', 'IsWaitFinish': True, 'SLinkKey': '', 'IsTargetDemoSLinkUser': False})
-                goto Event41
-            } else {
-                DgnObj_MasterSwordBase_100Enemy[Base_1].Demo_XLinkEventEnable({'IsWaitFinish': True, 'IsEnable': False})
-                DgnObj_MasterSwordBase_100Enemy[Base_1].Demo_XLinkEventCreate({'ELinkKey': 'DLC_100Dungeon_MasterSwordGlow_Demo', 'IsWaitFinish': True, 'SLinkKey': '', 'IsTargetDemoSLinkUser': False})
-                goto Event41
-            }
-        }
-    } else {
+        } else
         if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-            GameROMPlayer.Demo_LookAtObject({'ActorName': 'DgnObj_MasterSwordBase_100Enemy', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'FaceId': 2, 'UniqueName': 'Base_2'})
-            goto Event15
+            DgnObj_MasterSwordBase_100Enemy[Base_2].Demo_XLinkEventEnable({'IsWaitFinish': True, 'IsEnable': False})
+            DgnObj_MasterSwordBase_100Enemy[Base_2].Demo_XLinkEventCreate({'ELinkKey': 'DLC_100Dungeon_MasterSwordGlow_Demo', 'IsWaitFinish': True, 'SLinkKey': '', 'IsTargetDemoSLinkUser': False})
+            goto Event41
         } else {
-            GameROMPlayer.Demo_LookAtObject({'ActorName': 'DgnObj_MasterSwordBase_100Enemy', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'FaceId': 2, 'UniqueName': 'Base_1'})
-            goto Event15
+            DgnObj_MasterSwordBase_100Enemy[Base_1].Demo_XLinkEventEnable({'IsWaitFinish': True, 'IsEnable': False})
+            DgnObj_MasterSwordBase_100Enemy[Base_1].Demo_XLinkEventCreate({'ELinkKey': 'DLC_100Dungeon_MasterSwordGlow_Demo', 'IsWaitFinish': True, 'SLinkKey': '', 'IsTargetDemoSLinkUser': False})
+            goto Event41
         }
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
+        GameROMPlayer.Demo_LookAtObject({'ActorName': 'DgnObj_MasterSwordBase_100Enemy', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'FaceId': 2, 'UniqueName': 'Base_2'})
+        goto Event15
+    } else {
+        GameROMPlayer.Demo_LookAtObject({'ActorName': 'DgnObj_MasterSwordBase_100Enemy', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'FaceId': 2, 'UniqueName': 'Base_1'})
+        goto Event15
     }
 }

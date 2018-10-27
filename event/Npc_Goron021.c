@@ -69,32 +69,18 @@ void Talk() {
             EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron021_First', 'IsWaitFinish': True})
             Npc_Goron021.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron021:talk19'})
         }
-    } else {
-        goto Event8
-    }
+    } else
+    goto Event8
 }
 
 void BerugoHello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event18:
+      case [0, 1]:
         Npc_Goron021.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron021:talk06', 'IsOverWriteLabelActorName': False})
-      case 1:
-        goto Event18
-      case 2:
-        Event19:
+      case [2, 3, 4, 5]:
         Npc_Goron021.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron021:talk07', 'IsOverWriteLabelActorName': False})
-      case 3:
-        goto Event19
-      case 4:
-        goto Event19
-      case 5:
-        goto Event19
-      case 6:
-        Event20:
+      case [6, 7]:
         Npc_Goron021.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron021:talk08', 'IsOverWriteLabelActorName': False})
-      case 7:
-        goto Event20
     }
 }
 

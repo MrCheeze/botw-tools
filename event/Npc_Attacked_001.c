@@ -14,34 +14,27 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 
 void Talk() {
     switch Npc_Attacked_001.CheckTerrorLevel() {
-      case 0:
-        Event3:
+      case [0, 1, 2, 4]:
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
         if EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set6_Wander'}) {
             Npc_Attacked_001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_001:After02'})
-        } else {
-            Event18:
-            if EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set6_FirstTalk'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Attacked_001_Saved'}) {
-                    Npc_Attacked_001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_001:After01'})
-                } else {
-                    Npc_Attacked_001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_001:After00'})
-                }
+        } else
+        Event18:
+        if EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set6_FirstTalk'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Attacked_001_Saved'}) {
+                Npc_Attacked_001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_001:After01'})
             } else {
-                EventSystemActor.Demo_FlagON({'FlagName': 'AttackedNPC_Set6_FirstTalk', 'IsWaitFinish': True})
-                Npc_Attacked_001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_001:GoodBye00', 'ASName': ''})
+                Npc_Attacked_001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_001:After00'})
             }
+        } else {
+            EventSystemActor.Demo_FlagON({'FlagName': 'AttackedNPC_Set6_FirstTalk', 'IsWaitFinish': True})
+            Npc_Attacked_001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_001:GoodBye00', 'ASName': ''})
         }
-      case 1:
-        goto Event3
-      case 2:
-        goto Event3
       case 3:
         switch Npc_Attacked_001.CheckResultOfNPCConflict() {
-          case 0:
-            Event12:
+          case [0, 1]:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 6})
 
@@ -50,21 +43,14 @@ void Talk() {
 
             EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Attacked_001_Reward', 'IsWaitFinish': True})
             goto Event18
-          case 1:
-            goto Event12
-          case 2:
-            Event0:
+          case [2, 3]:
 
             call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})
 
 
             call Npc_Road_Common.Atacked({'Self': ActorIdentifier(name="Npc_Attacked_001"), 'Flag': 'Npc_Attacked_001_CookReward'})
 
-          case 3:
-            goto Event0
         }
-      case 4:
-        goto Event3
       case 5:
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 2})

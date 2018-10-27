@@ -29,15 +29,14 @@ void Talk() {
             Npc_HatenoVillage028.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage028:talk14'})
             Npc_HatenoVillage028.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage028:talk15'})
             EventSystemActor.Demo_FlagOFF({'FlagName': 'HatenoNPC028_DemonStatue', 'IsWaitFinish': True})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC028_Produce'}) {
+            Event37:
+            Npc_HatenoVillage028.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage028:talk13'})
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC028_Produce'}) {
-                Event37:
-                Npc_HatenoVillage028.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage028:talk13'})
-            } else {
-                EventSystemActor.Demo_FlagON({'FlagName': 'HatenoNPC028_Produce', 'IsWaitFinish': True})
-                Npc_HatenoVillage028.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage028:talk12'})
-                goto Event37
-            }
+            EventSystemActor.Demo_FlagON({'FlagName': 'HatenoNPC028_Produce', 'IsWaitFinish': True})
+            Npc_HatenoVillage028.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage028:talk12'})
+            goto Event37
         }
       case 10:
 

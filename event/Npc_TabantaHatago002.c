@@ -17,32 +17,24 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch Npc_TabantaHatago002.CheckActorAction13() {
-      case 0:
-        Event12:
+      case [0, 2, 3, 4]:
         Npc_TabantaHatago002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago002:talk_2000', 'ASName': ''})
         Npc_TabantaHatago002.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
       case 1:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_TabantaHatago003_Talk'}) {
             Npc_TabantaHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago002:talk_5000'})
+        } else
+        if Npc_TabantaHatago002.IsOnInstEventFlag() {
+            Event8:
+            Npc_TabantaHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago002:talk_0003'})
         } else {
-            if Npc_TabantaHatago002.IsOnInstEventFlag() {
-                Event8:
-                Npc_TabantaHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago002:talk_0003'})
+            Npc_TabantaHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago002:talk_0001'})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_TabantaHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago002:talk_0002'})
             } else {
-                Npc_TabantaHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago002:talk_0001'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_TabantaHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago002:talk_0002'})
-                } else {
-                    goto Event8
-                }
+                goto Event8
             }
         }
-      case 2:
-        goto Event12
-      case 3:
-        goto Event12
-      case 4:
-        goto Event12
       case 5:
         Npc_TabantaHatago002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago002:talk_1000', 'ASName': 'Act_Cleaning_Floor'})
         Npc_TabantaHatago002.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})

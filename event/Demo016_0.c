@@ -101,58 +101,56 @@ void DungeonArrival() {
                 }
 
                 EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'DarkWoods_Demo016Camera'})
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Demo016Camera'}) {
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Demo016Camera'}) {
+
+                fork {
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                    EventControllerRumble.Demo_TimeSpecRumbleMiddle({'IsWaitFinish': True, 'IsWait': True, 'Seconds': 14})
+                    EventControllerRumble.Demo_RumbleLarge({'IsWaitFinish': True, 'Count': 1})
+                } {
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'SceneName': 'C02_0', 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'SceneName': 'C02_1', 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'SceneName': 'C02_2', 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'SceneName': 'C02_3', 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                }
+
+                EventSystemActor.Demo_FlagOFF({'FlagName': 'Gaman_Demo016Camera', 'IsWaitFinish': True})
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_DungeonDemo'}) {
+
+                fork {
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
 
                     fork {
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
                         EventControllerRumble.Demo_TimeSpecRumbleMiddle({'IsWaitFinish': True, 'IsWait': True, 'Seconds': 14})
                         EventControllerRumble.Demo_RumbleLarge({'IsWaitFinish': True, 'Count': 1})
                     } {
-                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'SceneName': 'C02_0', 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'SceneName': 'C02_1', 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'SceneName': 'C02_2', 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'SceneName': 'C02_3', 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 150})
+                        GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': False})
                     }
 
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'Gaman_Demo016Camera', 'IsWaitFinish': True})
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'StolenBook_DungeonDemo'}) {
-
-                        fork {
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-
-                            fork {
-                                EventControllerRumble.Demo_TimeSpecRumbleMiddle({'IsWaitFinish': True, 'IsWait': True, 'Seconds': 14})
-                                EventControllerRumble.Demo_RumbleLarge({'IsWaitFinish': True, 'Count': 1})
-                            } {
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 150})
-                                GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': False})
-                            }
-
-                        } {
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_0', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'SceneName': 'C01_1', 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_2', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_3', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                        }
-
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'StolenBook_DungeonDemo'})
-                    } else {
-
-                        fork {
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                            EventControllerRumble.Demo_TimeSpecRumbleMiddle({'IsWaitFinish': True, 'IsWait': True, 'Seconds': 14})
-                            EventControllerRumble.Demo_RumbleLarge({'IsWaitFinish': True, 'Count': 1})
-                        } {
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_0', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'SceneName': 'C01_1', 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_2', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_3', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
-                        }
-
-                    }
+                } {
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_0', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'SceneName': 'C01_1', 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_2', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_3', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
                 }
+
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'StolenBook_DungeonDemo'})
+            } else {
+
+                fork {
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                    EventControllerRumble.Demo_TimeSpecRumbleMiddle({'IsWaitFinish': True, 'IsWait': True, 'Seconds': 14})
+                    EventControllerRumble.Demo_RumbleLarge({'IsWaitFinish': True, 'Count': 1})
+                } {
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_0', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'SceneName': 'C01_1', 'IsWaitFinish': True, 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_2', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'UniqueName': '', 'Accept1FrameDelay': False, 'ActorName': 'DgnObj_DungeonEntranceSP', 'TargetActor': 3, 'IsWaitFinish': True, 'SceneName': 'C01_3', 'BgCheck': False, 'TargetActorPosReferenceMode': 0, 'TargetActorDirReferenceMode': 0, 'OverwriteAtDist': 1.0, 'OverwriteAt': True})
+                }
+
             }
         } {
 
@@ -208,14 +206,13 @@ void DungeonArrival() {
             GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': False})
             GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
         }
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
+        GameROMPlayer.Demo_VisibleOff({'IsWaitFinish': False})
+        goto Event8
     } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-            GameROMPlayer.Demo_VisibleOff({'IsWaitFinish': False})
-            goto Event8
-        } else {
-            GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': True})
-            goto Event8
-        }
+        GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': True})
+        goto Event8
     }
 }
 

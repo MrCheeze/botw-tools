@@ -17,8 +17,7 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event7:
+      case [0, 6, 7]:
         switch EventSystemActor.RandomChoice4() {
           case 0:
             Npc_OasisMilk_D.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_OasisMilk_D:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -29,43 +28,16 @@ void Talk() {
           case 3:
             Npc_OasisMilk_D.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_D:talk04'})
         }
-      case 1:
-        Event3:
+      case [1, 2, 3, 4, 5]:
         Npc_OasisMilk_D.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_D:talk01'})
-      case 2:
-        goto Event3
-      case 3:
-        goto Event3
-      case 4:
-        goto Event3
-      case 5:
-        goto Event3
-      case 6:
-        goto Event7
-      case 7:
-        goto Event7
     }
 }
 
 void Near() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event5:
+      case [0, 1, 6, 7]:
         Npc_OasisMilk_D.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_D:near00', 'DispFrame': 90, 'IsChecked': False})
-      case 1:
-        goto Event5
-      case 2:
-        Event6:
+      case [2, 3, 4, 5]:
         Npc_OasisMilk_D.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_OasisMilk_D:near01', 'DispFrame': 90, 'IsChecked': False})
-      case 3:
-        goto Event6
-      case 4:
-        goto Event6
-      case 5:
-        goto Event6
-      case 6:
-        goto Event5
-      case 7:
-        goto Event5
     }
 }

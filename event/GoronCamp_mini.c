@@ -59,8 +59,7 @@ void Ready_Npc_Goron_Camp001_Talk() {
     call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 1})
 
     switch Npc_Goron_Camp001.CheckActorAction13() {
-      case 0:
-        Event231:
+      case [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_19'})
       case 1:
         if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_FirstTalk'}) {
@@ -200,30 +199,6 @@ void Ready_Npc_Goron_Camp001_Talk() {
             Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_00'})
             goto Event17
         }
-      case 2:
-        goto Event231
-      case 3:
-        goto Event231
-      case 4:
-        goto Event231
-      case 5:
-        goto Event231
-      case 6:
-        goto Event231
-      case 7:
-        goto Event231
-      case 8:
-        goto Event231
-      case 9:
-        goto Event231
-      case 10:
-        goto Event231
-      case 11:
-        goto Event231
-      case 12:
-        goto Event231
-      case 13:
-        goto Event231
     }
 }
 
@@ -255,15 +230,14 @@ void CourseOut_Goron_Camp() {
         EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'StepName': 'GameReady', 'QuestName': 'GoronCamp_mini'})
         EventSystemActor.Demo_FlagOFF({'FlagName': 'SaveProhibition', 'IsWaitFinish': True})
         EventSystemActor.Demo_FlagOFF({'FlagName': 'WarpProhibition', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_GameReady'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_ResetGame'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_GameReady'})
+        goto Event253
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_GameReady'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_ResetGame'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_GameReady'})
-            goto Event253
-        } else {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_ResetGame'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_GameReady'})
-        }
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_ResetGame'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_GameReady'})
     }
 }
 
@@ -329,60 +303,54 @@ void Finish_Goron_Camp() {
 
                     goto Event262
                 }
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 270}) {
-                    Event50:
-                    Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_15'})
-                    goto Event42
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 100}) {
-                        Event41:
-                        Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_17', 'IsOverWriteLabelActorName': False})
-                        goto Event42
-                    } else {
-                        Event49:
-                        Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_19', 'IsOverWriteLabelActorName': False})
-                        goto Event42
-                    }
-                }
-            }
-        } else {
+            } else
+            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 270}) {
+                Event50:
+                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_15'})
+                goto Event42
+            } else
             if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 100}) {
-                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_14'})
-                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_22'})
-                if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Item_MushroomGet_D', 'Count': 1}) {
-
-                    call GetDemo.GetItemByName({'CheckTargetActorName': 'Item_MushroomGet_D', 'IsInvalidOpenPouch': False})
-
-                    goto Event262
-                } else {
-                    Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_23'})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-                    goto Event262
-                }
+                Event41:
+                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_17', 'IsOverWriteLabelActorName': False})
+                goto Event42
             } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 90}) {
-                    goto Event50
-                } else {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 30}) {
-                        goto Event41
-                    } else {
-                        goto Event49
-                    }
-                }
+                Event49:
+                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_19', 'IsOverWriteLabelActorName': False})
+                goto Event42
             }
-        }
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_GameReady'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_ResetGame'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_GameReady'})
-            goto Event270
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 100}) {
+            Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_14'})
+            Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_22'})
+            if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Item_MushroomGet_D', 'Count': 1}) {
+
+                call GetDemo.GetItemByName({'CheckTargetActorName': 'Item_MushroomGet_D', 'IsInvalidOpenPouch': False})
+
+                goto Event262
+            } else {
+                Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_23'})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+
+                goto Event262
+            }
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 90}) {
+            goto Event50
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 30}) {
+            goto Event41
         } else {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_ResetGame'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_GameReady'})
+            goto Event49
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_GameReady'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_ResetGame'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_GameReady'})
+        goto Event270
+    } else {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_ResetGame'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_GameReady'})
     }
 }
 

@@ -42,8 +42,7 @@ void Talk() {
         Npc_OasisSoldier_C.Demo_Join({'IsWaitFinish': True})
         Npc_OasisSoldier_A.Demo_Join({'IsWaitFinish': True})
         goto Event21
-      case 2:
-        Event29:
+      case [2, 3]:
         if Npc_OasisSoldier_B.IsOnInstEventFlag() {
             Event17:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasissoldier_B_first'}) {
@@ -57,12 +56,11 @@ void Talk() {
                     } else {
                         Npc_OasisSoldier_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_B:talk04'})
                     }
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo125_0'}) {
+                    Npc_OasisSoldier_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_B:talk06'})
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo125_0'}) {
-                        Npc_OasisSoldier_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_B:talk06'})
-                    } else {
-                        Npc_OasisSoldier_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_B:talk07'})
-                    }
+                    Npc_OasisSoldier_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_B:talk07'})
                 }
             } else {
                 Npc_OasisSoldier_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_B:talk05'})
@@ -74,8 +72,6 @@ void Talk() {
 
             goto Event17
         }
-      case 3:
-        goto Event29
     }
 }
 
@@ -89,24 +85,11 @@ void Electric_Relic_Finished_Near() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event25:
+      case [0, 1]:
         Npc_OasisSoldier_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_B:talk08'})
-      case 1:
-        goto Event25
-      case 2:
-        Event26:
+      case [2, 3, 4]:
         Npc_OasisSoldier_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_B:talk09'})
-      case 3:
-        goto Event26
-      case 4:
-        goto Event26
-      case 5:
-        Event27:
+      case [5, 6, 7]:
         Npc_OasisSoldier_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_B:talk10'})
-      case 6:
-        goto Event27
-      case 7:
-        goto Event27
     }
 }

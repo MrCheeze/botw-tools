@@ -100,37 +100,22 @@ void Talk() {
                         Npc_oasis023.Demo_TurnAndLookToObject({'IsValid': False, 'FaceId': 2, 'ObjectId': 0, 'IsWaitFinish': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
                         GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis023', 'IsUseSlowTurn': False, 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
                         switch EventSystemActor.CheckTimeType() {
-                          case 0:
-                            Event48:
+                          case [0, 1, 2, 3, 4]:
                             Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_010', 'IsCloseMessageDialog': True})
                             goto Event49
-                          case 1:
-                            goto Event48
-                          case 2:
-                            goto Event48
-                          case 3:
-                            goto Event48
-                          case 4:
-                            goto Event48
-                          case 5:
-                            Event47:
+                          case [5, 6, 7]:
                             Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_009', 'IsCloseMessageDialog': True})
                             goto Event49
-                          case 6:
-                            goto Event47
-                          case 7:
-                            goto Event47
                         }
                       case 2:
                         Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_008'})
                     }
                 }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMT_Finish'}) {
+                Npc_oasis023.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMT_Finish'}) {
-                    Npc_oasis023.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                } else {
-                    Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_003'})
-                }
+                Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_003'})
             }
         } else {
             RemainsElectric[Thunder_Relic01].Demo_Join({'IsWaitFinish': False})
@@ -176,12 +161,11 @@ void SINJYU_CK() {
                 Event109:
                 EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
             }
-        } else {
-            if !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis023_SinjyuClear_Normal'}) {
-                Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Sinjyu_Normal_001'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis023_SinjyuClear_Normal'})
-                goto Event109
-            }
+        } else
+        if !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis023_SinjyuClear_Normal'}) {
+            Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Sinjyu_Normal_001'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis023_SinjyuClear_Normal'})
+            goto Event109
         }
     }
 }
@@ -194,24 +178,11 @@ void Near() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event111:
+      case [0, 1]:
         Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_013'})
-      case 1:
-        goto Event111
-      case 2:
-        Event112:
+      case [2, 3, 4]:
         Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_014'})
-      case 3:
-        goto Event112
-      case 4:
-        goto Event112
-      case 5:
-        Event113:
+      case [5, 6, 7]:
         Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_015'})
-      case 6:
-        goto Event113
-      case 7:
-        goto Event113
     }
 }

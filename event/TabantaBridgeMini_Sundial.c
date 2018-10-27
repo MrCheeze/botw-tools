@@ -78,46 +78,13 @@ void Play_Npc_TabantaBridgeHatago005_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    switch Npc_TabantaBridgeHatago005.CheckActorAction13() {
-      case 0:
-        Event21:
+    if Npc_TabantaBridgeHatago005.CheckActorAction13() in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] {
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_TabantaBridgeHatago005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TabantaBridgeMini_Sundial:talk09'})
-          case 1:
-            Event22:
+          case [1, 2, 3]:
             Npc_TabantaBridgeHatago005.Demo_Talk({'MessageId': 'EventFlowMsg/TabantaBridgeMini_Sundial:talk06', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-          case 2:
-            goto Event22
-          case 3:
-            goto Event22
         }
-      case 1:
-        goto Event21
-      case 2:
-        goto Event21
-      case 3:
-        goto Event21
-      case 4:
-        goto Event21
-      case 5:
-        goto Event21
-      case 6:
-        goto Event21
-      case 7:
-        goto Event21
-      case 8:
-        goto Event21
-      case 9:
-        goto Event21
-      case 10:
-        goto Event21
-      case 11:
-        goto Event21
-      case 12:
-        goto Event21
-      case 13:
-        goto Event21
     }
 }
 

@@ -28,9 +28,7 @@ void Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    switch Npc_Goron025[Pupunda_GoronCity].CheckActorAction13() {
-      case 0:
-        Event39:
+    if Npc_Goron025[Pupunda_GoronCity].CheckActorAction13() in [0, 1, 12] {
         if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_LookFor01'}) {
             if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron025_First'}) {
                 Npc_Goron025[Pupunda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk05'})
@@ -70,52 +68,21 @@ void Talk() {
                 goto Event15
             }
         }
-      case 1:
-        goto Event39
-      case 12:
-        goto Event39
     }
 }
 
 void Near() {
     switch Npc_Goron025[Pupunda_GoronCity].CheckActorAction13() {
-      case 0:
-        Event9:
+      case [0, 1]:
         Npc_Goron025[Pupunda_GoronCity].Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron025:near01', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        goto Event9
-      case 2:
-        Event8:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         Npc_Goron025[Pupunda_GoronCity].Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron025:near00', 'IsChecked': False, 'DispFrame': 90})
-      case 3:
-        goto Event8
-      case 4:
-        goto Event8
-      case 5:
-        goto Event8
-      case 6:
-        goto Event8
-      case 7:
-        goto Event8
-      case 8:
-        goto Event8
-      case 9:
-        goto Event8
-      case 10:
-        goto Event8
-      case 11:
-        goto Event8
-      case 12:
-        goto Event8
-      case 13:
-        goto Event8
     }
 }
 
 void Sell() {
     switch Npc_Goron025.CheckPlacedItemSaled() {
-      case 0:
-        Event60:
+      case [0, 2]:
         switch EventSystemActor.RandomChoice4() {
           case 0:
             Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:Com_Talk_11'})
@@ -137,8 +104,6 @@ void Sell() {
           case 3:
             Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk31'})
         }
-      case 2:
-        goto Event60
     }
 }
 
@@ -209,12 +174,8 @@ void NPC_Goron025_Go_Talk() {
 }
 
 void NPC_Goron025_Go_Near() {
-    switch Npc_Goron025[Pupunda_Ichikara].CheckActorAction13() {
-      case 8:
-        Event90:
+    if Npc_Goron025[Pupunda_Ichikara].CheckActorAction13() in [8, 9] {
         Npc_Goron025[Pupunda_Ichikara].Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Goron025:near03', 'IsChecked': False, 'DispFrame': 90})
-      case 9:
-        goto Event90
     }
 }
 

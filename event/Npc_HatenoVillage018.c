@@ -30,20 +30,19 @@ void Talk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC_018_First'}) {
         Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk26'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC018_First_Ready'}) {
+        Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk18'})
+        Event3:
+        Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk23'})
+        Npc_HatenoVillage018.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk25', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoNPC_018_First'})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC018_First_Ready'}) {
-            Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk18'})
-            Event3:
-            Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk23'})
-            Npc_HatenoVillage018.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk25', 'IsWaitFinish': True})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoNPC_018_First'})
-        } else {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
 
-            call Kurevia_Start()
+        call Kurevia_Start()
 
-            goto Event3
-        }
+        goto Event3
     }
 }
 
@@ -64,13 +63,9 @@ void ThreeTree_Ready() {
                 } else {
                     Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk27', 'ASName': ''})
                 }
-              case 1:
+              case [1, 2, 3]:
                 Event74:
                 Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk20', 'ASName': ''})
-              case 2:
-                goto Event74
-              case 3:
-                goto Event74
             }
         } else {
             Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk10'})
@@ -84,18 +79,13 @@ void ThreeTree_Ready() {
 
             Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk22', 'ASName': ''})
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_ThreeTree_Activated'})
-          case 1:
-            Event72:
+          case [1, 2, 3]:
             if Npc_HatenoVillage018.IsOnInstEventFlag() {
                 goto Event74
             } else {
                 Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk19', 'ASName': ''})
                 goto Event74
             }
-          case 2:
-            goto Event72
-          case 3:
-            goto Event72
         }
       case 10:
         if !EventSystemActor.RandomChoice2() {
@@ -114,31 +104,25 @@ void ThreeTree_Finish() {
     call Kurevia_Hello()
 
     Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk17'})
-    if !EventSystemActor.GeneralChoice2() {
-        Event85:
+    if EventSystemActor.GeneralChoice2() in [0, 1] {
         Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk21', 'IsOverWriteLabelActorName': False})
-    } else {
-        goto Event85
     }
 }
 
 void Near() {
     switch Npc_HatenoVillage018.CheckActorAction13() {
-      case 0:
+      case [0, 10]:
         Event46:
         Npc_HatenoVillage018.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:near01', 'IsChecked': False, 'DispFrame': 90})
       case 1:
         if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_ThreeTree_Finished'}) {
             goto Event46
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_ThreeTree_Activated'}) {
+            goto Event46
         } else {
-            if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_ThreeTree_Activated'}) {
-                goto Event46
-            } else {
-                Npc_HatenoVillage018.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:near01', 'DispFrame': 300, 'IsChecked': True})
-            }
+            Npc_HatenoVillage018.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:near01', 'DispFrame': 300, 'IsChecked': True})
         }
-      case 10:
-        goto Event46
       case 11:
         Npc_HatenoVillage018.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:near00', 'IsChecked': False, 'DispFrame': 90})
     }
@@ -146,8 +130,7 @@ void Near() {
 
 void Kurevia_Hello() {
     switch Npc_HatenoVillage018.CheckActorAction13() {
-      case 0:
-        Event31:
+      case [0, 1, 10]:
         if EventSystemActor.CheckPlayerWeaponFired({'CheckFireType': 2}) {
 
             call InitTalk.InitTalkEquip({'Arg_Turn': 0})
@@ -161,14 +144,13 @@ void Kurevia_Hello() {
                     Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk11'})
                     goto Event75
                 }
+            } else
+            if Npc_HatenoVillage018.IsOnInstEventFlag() {
+                Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk29'})
+                goto Event75
             } else {
-                if Npc_HatenoVillage018.IsOnInstEventFlag() {
-                    Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk29'})
-                    goto Event75
-                } else {
-                    Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk28'})
-                    goto Event75
-                }
+                Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk28'})
+                goto Event75
             }
         } else {
 
@@ -176,34 +158,16 @@ void Kurevia_Hello() {
 
             if Npc_HatenoVillage018.IsOnInstEventFlag() {
                 Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk08'})
-            } else {
-                switch EventSystemActor.CheckTimeType() {
-                  case 0:
-                    Event27:
-                    Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk05'})
-                  case 1:
-                    goto Event27
-                  case 2:
-                    Event26:
-                    Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk06'})
-                  case 3:
-                    goto Event26
-                  case 4:
-                    Event28:
-                    Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk07'})
-                  case 5:
-                    goto Event28
-                  case 6:
-                    goto Event28
-                  case 7:
-                    goto Event28
-                }
+            } else
+            switch EventSystemActor.CheckTimeType() {
+              case [0, 1]:
+                Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk05'})
+              case [2, 3]:
+                Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk06'})
+              case [4, 5, 6, 7]:
+                Npc_HatenoVillage018.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage018:talk07'})
             }
         }
-      case 1:
-        goto Event31
-      case 10:
-        goto Event31
       case 11:
         if EventSystemActor.CheckPlayerWeaponFired({'CheckFireType': 2}) {
 

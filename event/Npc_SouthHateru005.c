@@ -246,36 +246,12 @@ void NearActorsNear() {
 
 void HutagoHatago_Twin_Meet_Talk() {
     switch Npc_SouthHateru005.CheckActorAction13() {
-      case 0:
-        Event217:
+      case [0, 1]:
 
         call NearActorsTalk()
 
-      case 1:
-        goto Event217
-      case 2:
-        Event218:
+      case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
         Npc_HutagoHatago_002.Demo_PlayASForDemo({'IsWaitFinish': False, 'IsIgnoreSame': False, 'ASName': 'Wait', 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -1, 'MorphingFrame': -1.0, 'SeqBank': 0, 'TargetIndex': -1})
         goto Event0
-      case 3:
-        goto Event218
-      case 4:
-        goto Event218
-      case 5:
-        goto Event218
-      case 6:
-        goto Event218
-      case 7:
-        goto Event218
-      case 8:
-        goto Event218
-      case 9:
-        goto Event218
-      case 10:
-        goto Event218
-      case 11:
-        goto Event218
-      case 12:
-        goto Event218
     }
 }

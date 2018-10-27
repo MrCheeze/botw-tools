@@ -59,31 +59,17 @@ void MarutoHello() {
         Npc_Zora009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora009:talk05'})
         Event165:
         Npc_Zora009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora009:talk03'})
-    } else {
-        switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event155:
-            Npc_Zora009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora009:talk00'})
-            goto Event165
-          case 1:
-            goto Event155
-          case 2:
-            Event158:
-            Npc_Zora009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora009:talk01'})
-            goto Event165
-          case 3:
-            goto Event158
-          case 4:
-            goto Event158
-          case 5:
-            goto Event158
-          case 6:
-            Event159:
-            Npc_Zora009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora009:talk02'})
-            goto Event165
-          case 7:
-            goto Event159
-        }
+    } else
+    switch EventSystemActor.CheckTimeType() {
+      case [0, 1]:
+        Npc_Zora009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora009:talk00'})
+        goto Event165
+      case [2, 3, 4, 5]:
+        Npc_Zora009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora009:talk01'})
+        goto Event165
+      case [6, 7]:
+        Npc_Zora009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora009:talk02'})
+        goto Event165
     }
 }
 

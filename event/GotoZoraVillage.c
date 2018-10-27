@@ -414,16 +414,15 @@ void Ready_Npc_Lanayru003_Talk() {
                     Event552:
                     Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_004'})
                     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMeet06'})
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Lanayru003_LieFirst'}) {
+                    Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_008'})
+                    Event553:
+                    Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_009'})
+                    goto Event552
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Lanayru003_LieFirst'}) {
-                        Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_008'})
-                        Event553:
-                        Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_009'})
-                        goto Event552
-                    } else {
-                        Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_007'})
-                        goto Event553
-                    }
+                    Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_007'})
+                    goto Event553
                 }
             } else {
                 Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_007'})
@@ -912,11 +911,10 @@ void Ready_Npc_Zora025_Call() {
                     Event774:
                     GameROMPlayer.Demo_TurnAndLookToObjectNow({'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'ObjectId': 0, 'FaceId': 2, 'PosOffset': [0.0, 0.0, 0.0], 'UniqueName': 'PrinceGuide', 'ActorName': 'Npc_Zora025', 'IsWaitFinish': True})
                     Npc_Zora025[PrinceGuide].Demo_TurnAndLookToObjectNow({'TurnDirection': 0.0, 'ActorName': 'GameROMPlayer', 'IsWaitFinish': True, 'IsValid': True, 'IsConfront': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'FaceId': 2})
-                } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora025_Pos2'}) {
-                        EventSystemActor.Demo_WarpPlayerToDestination({'DestinationZ': 1.2000000476837158, 'DestinationY': 115.0, 'DestinationX': 1999.0999755859375, 'IsWaitFinish': True, 'DirectionY': 0.0})
-                        goto Event774
-                    }
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora025_Pos2'}) {
+                    EventSystemActor.Demo_WarpPlayerToDestination({'DestinationZ': 1.2000000476837158, 'DestinationY': 115.0, 'DestinationX': 1999.0999755859375, 'IsWaitFinish': True, 'DirectionY': 0.0})
+                    goto Event774
                 }
             } {
 
@@ -982,16 +980,15 @@ void Ready_Npc_Zora001_Call() {
                 call camera_talk_takka()
 
                 goto Event856
-            } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora001_Pos2'}) {
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1976.9571533203125, 'Pattern1PosY': 122.23575592041016, 'Pattern1PosZ': -152.275146484375, 'Pattern1AtX': 1982.0576171875, 'Pattern1AtY': 124.49302673339844, 'Pattern1AtZ': -152.60101318359375, 'Pattern1Fovy': 32.309722900390625, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                    EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 0.0, 'DestinationX': 1997.0999755859375, 'DestinationY': 121.69999694824219, 'DestinationZ': -172.6999969482422})
-                    GameROMPlayer.Demo_TurnAndLookToObjectNow({'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_Zora001', 'UniqueName': 'PrinceGuide', 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': True})
-                    Npc_Zora001[PrinceGuide].Demo_TurnAndLookToObjectNow({'TurnDirection': 0.0, 'ActorName': 'GameROMPlayer', 'IsValid': True, 'IsConfront': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'FaceId': 2, 'IsWaitFinish': True})
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1.858886957168579, 'Pattern1PosY': 2.1738970279693604, 'Pattern1PosZ': -2.763305902481079, 'Pattern1AtX': -0.0837400034070015, 'Pattern1AtY': 2.6823039054870605, 'Pattern1AtZ': 2.450316905975342, 'Pattern1Fovy': 32.309722900390625, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Zora001', 'UniqueName1': 'PrinceGuide', 'ReviseModeEnd': 0, 'Count': 150.0, 'Cushion': 5.0, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'CollisionInterpolateSkip': False})
-                    goto Event792
-                }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora001_Pos2'}) {
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1976.9571533203125, 'Pattern1PosY': 122.23575592041016, 'Pattern1PosZ': -152.275146484375, 'Pattern1AtX': 1982.0576171875, 'Pattern1AtY': 124.49302673339844, 'Pattern1AtZ': -152.60101318359375, 'Pattern1Fovy': 32.309722900390625, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 0.0, 'DestinationX': 1997.0999755859375, 'DestinationY': 121.69999694824219, 'DestinationZ': -172.6999969482422})
+                GameROMPlayer.Demo_TurnAndLookToObjectNow({'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_Zora001', 'UniqueName': 'PrinceGuide', 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': True})
+                Npc_Zora001[PrinceGuide].Demo_TurnAndLookToObjectNow({'TurnDirection': 0.0, 'ActorName': 'GameROMPlayer', 'IsValid': True, 'IsConfront': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'FaceId': 2, 'IsWaitFinish': True})
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1.858886957168579, 'Pattern1PosY': 2.1738970279693604, 'Pattern1PosZ': -2.763305902481079, 'Pattern1AtX': -0.0837400034070015, 'Pattern1AtY': 2.6823039054870605, 'Pattern1AtZ': 2.450316905975342, 'Pattern1Fovy': 32.309722900390625, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Zora001', 'UniqueName1': 'PrinceGuide', 'ReviseModeEnd': 0, 'Count': 150.0, 'Cushion': 5.0, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'CollisionInterpolateSkip': False})
+                goto Event792
             }
         } else {
             goto Event845
@@ -1134,10 +1131,9 @@ void camera_point_toon() {
 void camera_talk_takka() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora001_Pos1'}) {
         GameRomCamera.Demo_MovePosFlow({'Pattern1PosY': 2.2776639461517334, 'Pattern1PosZ': 2.038451910018921, 'Pattern1AtY': 1.8787000179290771, 'Pattern1AtZ': -0.7647709846496582, 'Pattern1Fovy': 39.239646911621094, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Zora001', 'UniqueName1': 'PrinceGuide', 'IsWaitFinish': True, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'StartCalcOnly': True, 'Pattern1PosX': -0.33959999680519104, 'Pattern1AtX': 0.3575440049171448})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora001_Pos2'}) {
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosY': 2.2776639461517334, 'Pattern1PosZ': 2.038451910018921, 'Pattern1AtY': 1.8787000179290771, 'Pattern1AtZ': -0.7647709846496582, 'Pattern1Fovy': 39.239646911621094, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Zora001', 'UniqueName1': 'PrinceGuide', 'IsWaitFinish': True, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Pattern1PosX': 0.33959999680519104, 'Pattern1AtX': -0.3575440049171448, 'StartCalcOnly': True})
-        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora001_Pos2'}) {
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosY': 2.2776639461517334, 'Pattern1PosZ': 2.038451910018921, 'Pattern1AtY': 1.8787000179290771, 'Pattern1AtZ': -0.7647709846496582, 'Pattern1Fovy': 39.239646911621094, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Zora001', 'UniqueName1': 'PrinceGuide', 'IsWaitFinish': True, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Pattern1PosX': 0.33959999680519104, 'Pattern1AtX': -0.3575440049171448, 'StartCalcOnly': True})
     }
 }
 

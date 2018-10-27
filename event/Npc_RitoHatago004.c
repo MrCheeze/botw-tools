@@ -63,14 +63,12 @@ void UMaster_OutSideTalk() {
         if EventSystemActor.CheckFlag({'FlagName': 'UmaKyoukai_001'}) {
             if EventSystemActor.CheckHorseRegistered() {
                 switch Npc_RitoHatago004[UMaster_OutSideTalk(Self)].CheckTypeOfWildHorseAssociated() {
-                  case 0:
-                    Event7:
+                  case [0, 1, 2, 3, 4, 5, 6]:
                     Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:KyoukaiTalk04', 'IsOverWriteLabelActorName': False})
                     if !EventSystemActor.GeneralChoice2() {
                         Event141:
                         switch Npc_RitoHatago004[UMaster_OutSideTalk(Self)].CheckTypeOfWildHorseAssociated() {
-                          case 0:
-                            Event11:
+                          case [0, 1, 2, 3]:
                             if EventSystemActor.IsHorseNumMax() {
                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register01', 'IsOverWriteLabelActorName': False})
                                 if !EventSystemActor.GeneralChoice2() {
@@ -96,8 +94,7 @@ void UMaster_OutSideTalk() {
                                                         EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': False})
                                                         Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register14', 'IsOverWriteLabelActorName': False})
                                                         switch Npc_RitoHatago004[UMaster_OutSideTalk(Self)].CheckTypeOfWildHorseAssociated() {
-                                                          case 0:
-                                                            Event31:
+                                                          case [0, 2, 3, 4, 5, 6, 7]:
                                                             Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_TalkNoCloseDialogWB({'ASName': '', 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register17', 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': False})
                                                             EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
                                                             Event246:
@@ -113,8 +110,7 @@ void UMaster_OutSideTalk() {
                                                                     Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register07', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
                                                                     if !EventSystemActor.GeneralChoice2() {
                                                                         switch EventSystemActor.CheckHorseTakenOut() {
-                                                                          case 0:
-                                                                            Event40:
+                                                                          case [0, 1]:
                                                                             Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register08', 'IsOverWriteLabelActorName': False})
                                                                             Event41:
                                                                             Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_RegisterHorse({'IsWaitFinish': True})
@@ -131,8 +127,6 @@ void UMaster_OutSideTalk() {
                                                                                 EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Horse_Is_Registration'})
                                                                                 goto Event43
                                                                             }
-                                                                          case 1:
-                                                                            goto Event40
                                                                           case 2:
                                                                             Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register09', 'IsOverWriteLabelActorName': False})
                                                                             goto Event41
@@ -164,18 +158,6 @@ void UMaster_OutSideTalk() {
                                                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'ASName': '', 'IsBecomingSpeaker': False, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register21'})
                                                                 goto Event151
                                                             }
-                                                          case 2:
-                                                            goto Event31
-                                                          case 3:
-                                                            goto Event31
-                                                          case 4:
-                                                            goto Event31
-                                                          case 5:
-                                                            goto Event31
-                                                          case 6:
-                                                            goto Event31
-                                                          case 7:
-                                                            goto Event31
                                                         }
                                                     } else {
                                                         Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register15', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
@@ -208,26 +190,17 @@ void UMaster_OutSideTalk() {
                                                                             Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
                                                                             Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Deliver04', 'IsOverWriteLabelActorName': False})
                                                                             switch EventSystemActor.RandomChoice8() {
-                                                                              case 0:
-                                                                                Event202:
+                                                                              case [0, 7]:
                                                                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Advice01'})
-                                                                              case 1:
-                                                                                Event203:
+                                                                              case [1, 6]:
                                                                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Advice02'})
                                                                               case 2:
                                                                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Advice03'})
                                                                               case 3:
                                                                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Advice04'})
                                                                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register19'})
-                                                                              case 4:
-                                                                                Event228:
+                                                                              case [4, 5]:
                                                                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Advice05'})
-                                                                              case 5:
-                                                                                goto Event228
-                                                                              case 6:
-                                                                                goto Event203
-                                                                              case 7:
-                                                                                goto Event202
                                                                             }
                                                                           case 1:
                                                                             Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Deliver07', 'IsOverWriteLabelActorName': False})
@@ -250,8 +223,7 @@ void UMaster_OutSideTalk() {
                                                             }
                                                           case 1:
                                                             switch EventSystemActor.CheckHorseTakenOut() {
-                                                              case 0:
-                                                                Event55:
+                                                              case [0, 1]:
                                                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Receive05', 'IsOverWriteLabelActorName': False})
                                                                 if !EventSystemActor.GeneralChoice2() {
                                                                     Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Deliver03', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
@@ -265,8 +237,6 @@ void UMaster_OutSideTalk() {
                                                                     Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Receive03', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
                                                                     goto Event52
                                                                 }
-                                                              case 1:
-                                                                goto Event55
                                                               case 2:
                                                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Receive01', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
                                                                 goto Event52
@@ -302,12 +272,6 @@ void UMaster_OutSideTalk() {
                                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register05', 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                                 goto Event163
                             }
-                          case 1:
-                            goto Event11
-                          case 2:
-                            goto Event11
-                          case 3:
-                            goto Event11
                           case 4:
                             Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Register00_1'})
                           case 5:
@@ -322,18 +286,6 @@ void UMaster_OutSideTalk() {
                         Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:KyoukaiTalk05', 'IsOverWriteLabelActorName': False})
                         goto Event52
                     }
-                  case 1:
-                    goto Event7
-                  case 2:
-                    goto Event7
-                  case 3:
-                    goto Event7
-                  case 4:
-                    goto Event7
-                  case 5:
-                    goto Event7
-                  case 6:
-                    goto Event7
                   case 7:
                     if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
                         Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_06'})
@@ -347,60 +299,56 @@ void UMaster_OutSideTalk() {
                             Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:KyoukaiTalk01', 'IsOverWriteLabelActorName': False})
                             goto Event234
                         }
-                    } else {
-                        goto Event233
-                    }
+                    } else
+                    goto Event233
                 }
-            } else {
-                if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-                    Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_06'})
-                    Event230:
-                    if EventSystemActor.CheckFlag({'FlagName': 'UmaKyoukai_002'}) {
-                        Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:KyoukaiTalk07'})
-                        Event88:
-                        switch EventSystemActor.GeneralChoice3() {
-                          case 0:
-                            goto Event141
-                          case 1:
-                            Event89:
-                            Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_03', 'IsOverWriteLabelActorName': False})
-                            Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_05', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                            Event91:
-                            EventSystemActor.Demo_FlagON({'FlagName': 'UmaKyoukai_001', 'IsWaitFinish': True})
-                            Event87:
-                            Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:KyoukaiTalk02', 'IsOverWriteLabelActorName': False})
-                            goto Event88
-                          case 2:
-                            Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Receive04', 'IsOverWriteLabelActorName': False})
-                        }
-                    } else {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UmaKyoukai_002'})
-                        goto Event87
-                    }
-                } else {
-                    goto Event230
-                }
-            }
-        } else {
+            } else
             if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
                 Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_06'})
-                Event93:
-                Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_01', 'IsOverWriteLabelActorName': False})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_02', 'IsOverWriteLabelActorName': False})
-                    if !EventSystemActor.GeneralChoice2() {
-                        goto Event89
-                    } else {
-                        Event97:
-                        Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_04', 'IsOverWriteLabelActorName': False})
-                        goto Event91
+                Event230:
+                if EventSystemActor.CheckFlag({'FlagName': 'UmaKyoukai_002'}) {
+                    Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:KyoukaiTalk07'})
+                    Event88:
+                    switch EventSystemActor.GeneralChoice3() {
+                      case 0:
+                        goto Event141
+                      case 1:
+                        Event89:
+                        Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_03', 'IsOverWriteLabelActorName': False})
+                        Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_05', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                        Event91:
+                        EventSystemActor.Demo_FlagON({'FlagName': 'UmaKyoukai_001', 'IsWaitFinish': True})
+                        Event87:
+                        Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:KyoukaiTalk02', 'IsOverWriteLabelActorName': False})
+                        goto Event88
+                      case 2:
+                        Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:Receive04', 'IsOverWriteLabelActorName': False})
                     }
                 } else {
-                    goto Event97
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UmaKyoukai_002'})
+                    goto Event87
+                }
+            } else
+            goto Event230
+        } else
+        if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+            Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_06'})
+            Event93:
+            Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_01', 'IsOverWriteLabelActorName': False})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_02', 'IsOverWriteLabelActorName': False})
+                if !EventSystemActor.GeneralChoice2() {
+                    goto Event89
+                } else {
+                    Event97:
+                    Npc_RitoHatago004[UMaster_OutSideTalk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago004:TalkHatu_04', 'IsOverWriteLabelActorName': False})
+                    goto Event91
                 }
             } else {
-                goto Event93
+                goto Event97
             }
+        } else {
+            goto Event93
         }
     } else {
         LastRiddenHorse_ForEvent.Demo_Idling({'IsWaitFinish': False})

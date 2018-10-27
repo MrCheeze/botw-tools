@@ -50,18 +50,10 @@ params: {'Weapon': '', 'DisableWeapon': False, 'Shield': '', 'DisableShield': Fa
 
 void Near() {
     switch Npc_Zora005[Kuroida_Zora].CheckActorAction13() {
-      case 0:
-        Event2:
+      case [0, 1, 12]:
         Npc_Zora005[Kuroida_Zora].Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora005:near00', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        goto Event2
-      case 8:
-        Event26:
+      case [8, 9]:
         Npc_Zora005[Kuroida_Zora].Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora005:near01', 'IsChecked': False, 'DispFrame': 90})
-      case 9:
-        goto Event26
-      case 12:
-        goto Event2
     }
 }
 
@@ -131,18 +123,10 @@ void Talk() {
 
 void Npc_Zora005_Go_Near() {
     switch Npc_Zora005[Kuroida_Ichikara].CheckActorAction13() {
-      case 0:
-        Event130:
+      case [0, 1, 12]:
         Npc_Zora005[Kuroida_Ichikara].Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora005:near00', 'IsChecked': False, 'DispFrame': 90})
-      case 1:
-        goto Event130
-      case 8:
-        Event129:
+      case [8, 9]:
         Npc_Zora005[Kuroida_Ichikara].Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora005:near01', 'IsChecked': False, 'DispFrame': 90})
-      case 9:
-        goto Event129
-      case 12:
-        goto Event130
     }
 }
 
@@ -152,85 +136,81 @@ void Npc_Zora005_Go_Talk() {
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
         Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk24'})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_BackArea'}) {
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_BackArea'}) {
 
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-            if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Invite05'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Marry'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Finish'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_IchikaraFirst'}) {
-                            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk35'})
-                        } else {
-                            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora005_IchikaraFirst', 'IsWaitFinish': True})
-                            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk34'})
-                        }
+        if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Invite05'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Marry'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Finish'}) {
+                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_IchikaraFirst'}) {
+                        Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk35'})
                     } else {
-                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_FinishFirst'}) {
-                            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk29'})
-                        } else {
-                            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora005_FinishFirst', 'IsWaitFinish': True})
-                            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk28'})
-                        }
+                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora005_IchikaraFirst', 'IsWaitFinish': True})
+                        Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk34'})
                     }
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_FinishFirst'}) {
+                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk29'})
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_MarryFirst'}) {
-                        Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk33'})
-                    } else {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora005_MarryFirst', 'IsWaitFinish': True})
-                        Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk30'})
-                        Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk31'})
-                    }
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora005_FinishFirst', 'IsWaitFinish': True})
+                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk28'})
                 }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_MarryFirst'}) {
+                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk33'})
             } else {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_Invite05First'}) {
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk26'})
-                    Event105:
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk27'})
-                } else {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora005_Invite05First', 'IsWaitFinish': True})
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk30'})
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk25'})
-                    goto Event105
-                }
+                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora005_MarryFirst', 'IsWaitFinish': True})
+                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk30'})
+                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk31'})
+            }
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora005_Invite05First'}) {
+            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk26'})
+            Event105:
+            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk27'})
+        } else {
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora005_Invite05First', 'IsWaitFinish': True})
+            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk30'})
+            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk25'})
+            goto Event105
+        }
+    } else {
+        EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': True, 'IsGetDemo': False})
+        EventSystemActor.Demo_SetDispStaminaGauge({'IsWaitFinish': True, 'IsDisplayEx': True, 'IsDisplay': False})
+
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+
+        EventSystemActor.Demo_OpenClockTime({'IsWaitFinish': True})
+        Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk20'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk21'})
+            switch EventSystemActor.GeneralChoice4() {
+              case 0:
+                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk22', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo007_2', 'EntryPointName': 'INN_Morning', 'EndFade': 0})
+                Event81:
+                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk23'})
+                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk17'})
+                EventSystemActor.Demo_CloseClockTime({'IsWaitFinish': True})
+                EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
+              case 1:
+                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk22', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo007_2', 'EntryPointName': 'INN_Noon', 'EndFade': 0})
+                goto Event81
+              case 2:
+                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk22', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo007_2', 'EntryPointName': 'INN_Night', 'EndFade': 0})
+                goto Event81
+              case 3:
+                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk17', 'IsCloseMessageDialog': True})
+                Event150:
+                EventSystemActor.Demo_CloseClockTime({'IsWaitFinish': True})
             }
         } else {
-            EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': True, 'IsGetDemo': False})
-            EventSystemActor.Demo_SetDispStaminaGauge({'IsWaitFinish': True, 'IsDisplayEx': True, 'IsDisplay': False})
-
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
-
-            EventSystemActor.Demo_OpenClockTime({'IsWaitFinish': True})
-            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk20'})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk21'})
-                switch EventSystemActor.GeneralChoice4() {
-                  case 0:
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk22', 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo007_2', 'EntryPointName': 'INN_Morning', 'EndFade': 0})
-                    Event81:
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk23'})
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk17'})
-                    EventSystemActor.Demo_CloseClockTime({'IsWaitFinish': True})
-                    EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-                  case 1:
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk22', 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo007_2', 'EntryPointName': 'INN_Noon', 'EndFade': 0})
-                    goto Event81
-                  case 2:
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk22', 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo007_2', 'EntryPointName': 'INN_Night', 'EndFade': 0})
-                    goto Event81
-                  case 3:
-                    Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk17', 'IsCloseMessageDialog': True})
-                    Event150:
-                    EventSystemActor.Demo_CloseClockTime({'IsWaitFinish': True})
-                }
-            } else {
-                Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk17'})
-                goto Event150
-            }
+            Npc_Zora005[Kuroida_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk17'})
+            goto Event150
         }
     }
 }

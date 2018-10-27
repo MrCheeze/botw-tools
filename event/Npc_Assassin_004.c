@@ -57,11 +57,9 @@ void Talk() {
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
         Npc_Assassin_004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Assassin_004:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Crouch'})
-        if !EventSystemActor.GeneralChoice2() {
-            Event3:
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
             Npc_Assassin_004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Assassin_004:Talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Crouch'})
-            if !EventSystemActor.GeneralChoice2() {
-                Event4:
+            if EventSystemActor.GeneralChoice2() in [0, 1] {
                 Npc_Assassin_004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Assassin_004:Talk02', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Crouch', 'IsCloseMessageDialog': True})
                 Npc_Assassin_004.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
                 EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
@@ -75,11 +73,7 @@ void Talk() {
 
                 call Henshin()
 
-            } else {
-                goto Event4
             }
-        } else {
-            goto Event3
         }
     }
 }

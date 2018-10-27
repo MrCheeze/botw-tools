@@ -148,38 +148,34 @@ void BattlePlaying_Npc_FollowGoron_Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_BattlePlaying_HintArea1'}) {
         RemainsFire_Drone_A_01[Drone002].Demo_Join({'IsWaitFinish': True})
         Npc_FollowGoron.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk144', 'IsWaitFinish': True})
-    } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_NPC020_Follow'}) {
-            if !EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle3rdAttack'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle2ndAttack'}) {
-                    if !EventSystemActor.RandomChoice2() {
-                        Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk119'})
-                    } else {
-                        Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk120'})
-                    }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_NPC020_Follow'}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle3rdAttack'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle2ndAttack'}) {
+                if !EventSystemActor.RandomChoice2() {
+                    Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk119'})
                 } else {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle1stAttack'}) {
-                        if !EventSystemActor.RandomChoice2() {
-                            Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk117'})
-                        } else {
-                            Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk118'})
-                        }
-                    } else {
-                        if !EventSystemActor.RandomChoice2() {
-                            Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk115'})
-                        } else {
-                            Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk116'})
-                        }
-                    }
+                    Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk120'})
                 }
-            }
-        } else {
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle1stAttack'}) {
+                if !EventSystemActor.RandomChoice2() {
+                    Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk117'})
+                } else {
+                    Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk118'})
+                }
+            } else
             if !EventSystemActor.RandomChoice2() {
-                Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk172'})
+                Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk115'})
             } else {
-                Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk173'})
+                Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk116'})
             }
         }
+    } else
+    if !EventSystemActor.RandomChoice2() {
+        Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk172'})
+    } else {
+        Npc_FollowGoron.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk173'})
     }
 }
 
@@ -258,21 +254,12 @@ void Bridge_Npc_FollowGoron_Near() {
 void BattlePlaying_Npc_FollowGoron_Near() {
     if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_NPC020_Follow'}) {
         switch EventSystemActor.RandomChoice8() {
-          case 0:
-            Event215:
+          case [0, 1]:
             Npc_FollowGoron.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Follow_00', 'DispFrame': 90})
-          case 1:
-            goto Event215
-          case 2:
-            Event757:
+          case [2, 3]:
             Npc_FollowGoron.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Follow_01', 'DispFrame': 90})
-          case 3:
-            goto Event757
-          case 4:
-            Event758:
+          case [4, 5]:
             Npc_FollowGoron.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Follow_02', 'DispFrame': 90})
-          case 5:
-            goto Event758
           case 6:
             Npc_FollowGoron.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:Follow_03'})
           case 7:
@@ -325,21 +312,12 @@ void Finished_Npc_Goron006_Near() {
 void GoDeathMt_Npc_FollowGoron_Near() {
     Event750:
     switch EventSystemActor.RandomChoice8() {
-      case 0:
-        Event751:
+      case [0, 1]:
         Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 300, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:HelpEnemy_00'})
-      case 1:
-        goto Event751
-      case 2:
-        Event752:
+      case [2, 3]:
         Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 300, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:HelpEnemy_01'})
-      case 3:
-        goto Event752
-      case 4:
-        Event753:
+      case [4, 5]:
         Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 300, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:HelpEnemy_02'})
-      case 5:
-        goto Event753
       case 6:
         Npc_FollowGoron[YunBo_Bridge].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 300, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:HelpEnemy_03'})
       case 7:
@@ -591,25 +569,16 @@ void Storage_Npc_Goron020_IsPlayed_Demo346_0_Near() {
 void Storage_Npc_Goron020_Fire_Relic_Storage_YunboHelp_EachFrame() {
     Event803:
     switch EventSystemActor.RandomChoice8() {
-      case 0:
-        Event745:
+      case [0, 1]:
         Npc_Goron020[YunBo_Storage].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:HelpStrage_00', 'DispFrame': 90})
         Event802:
         EventSystemActor.Demo_WaitFrame({'Frame': 150, 'IsWaitFinish': True})
-      case 1:
-        goto Event745
-      case 2:
-        Event746:
+      case [2, 3]:
         Npc_Goron020[YunBo_Storage].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:HelpStrage_01', 'DispFrame': 90})
         goto Event802
-      case 3:
-        goto Event746
-      case 4:
-        Event747:
+      case [4, 5]:
         Npc_Goron020[YunBo_Storage].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:HelpStrage_02', 'DispFrame': 90})
         goto Event802
-      case 5:
-        goto Event747
       case 6:
         Npc_Goron020[YunBo_Storage].Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'ShoutMsg/Shout_Npc_Goron020:HelpStrage_03'})
         goto Event802

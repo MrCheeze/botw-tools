@@ -99,22 +99,21 @@ void Ready_Npc_HatenoVillage016_Talk() {
         } else {
             goto Event22
         }
-    } else {
-        if Npc_HatenoVillage016.IsOnInstEventFlag() {
-            Event217:
-            Npc_HatenoVillage016.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk16'})
-            if !EventSystemActor.GeneralChoice2() {
-                EventSystemActor.Demo_FlagON({'FlagName': 'HatenoNPC016_First', 'IsWaitFinish': True})
-                Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk13'})
-                goto Event14
-            } else {
-                Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk17'})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'MiniGame_TimeLimitHunting_AnimalGenerateFlag', 'IsWaitFinish': True})
-            }
+    } else
+    if Npc_HatenoVillage016.IsOnInstEventFlag() {
+        Event217:
+        Npc_HatenoVillage016.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk16'})
+        if !EventSystemActor.GeneralChoice2() {
+            EventSystemActor.Demo_FlagON({'FlagName': 'HatenoNPC016_First', 'IsWaitFinish': True})
+            Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk13'})
+            goto Event14
         } else {
-            Npc_HatenoVillage016.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk11', 'IsWaitFinish': True})
-            goto Event217
+            Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk17'})
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'MiniGame_TimeLimitHunting_AnimalGenerateFlag', 'IsWaitFinish': True})
         }
+    } else {
+        Npc_HatenoVillage016.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk11', 'IsWaitFinish': True})
+        goto Event217
     }
 }
 
@@ -195,52 +194,48 @@ void Finish_Npc_HatenoVillage016_StepStart() {
             Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk22'})
             goto Event234
         }
-    } else {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
-            if !LastRiddenHorse_ForEvent.DummyQuery() {
-                EventSystemActor.Demo_ImmediateStopOwnedHorse({'IsWaitFinish': True, 'ResetChargeNum': False})
-                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'HorseWait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': True})
-                goto Event168
-            }
-        } else {
+    } else
+    if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
+        if !LastRiddenHorse_ForEvent.DummyQuery() {
+            EventSystemActor.Demo_ImmediateStopOwnedHorse({'IsWaitFinish': True, 'ResetChargeNum': False})
+            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'HorseWait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': True})
             goto Event168
         }
+    } else {
+        goto Event168
     }
 }
 
 void Result() {
     if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_TimeLimitHunting_HuntedNum', 'Operator': 'LessThanOrEqualTo', 'Value': 0}) {
         Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk23'})
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_TimeLimitHunting_HuntedNum', 'Operator': 'LessThanOrEqualTo', 'Value': 3}) {
+        Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk25'})
+        Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk29'})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee'})
+
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_TimeLimitHunting_HuntedNum', 'Operator': 'LessThanOrEqualTo', 'Value': 6}) {
+        Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk26'})
+        Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk29'})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
+
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_TimeLimitHunting_HuntedNum', 'Operator': 'LessThanOrEqualTo', 'Value': 9}) {
+        Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk27'})
+        Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk29'})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+
     } else {
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_TimeLimitHunting_HuntedNum', 'Operator': 'LessThanOrEqualTo', 'Value': 3}) {
-            Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk25'})
-            Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk29'})
+        Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk28'})
+        Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk30'})
 
-            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee'})
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
 
-        } else {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_TimeLimitHunting_HuntedNum', 'Operator': 'LessThanOrEqualTo', 'Value': 6}) {
-                Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk26'})
-                Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk29'})
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Blue'})
-
-            } else {
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'MiniGame_TimeLimitHunting_HuntedNum', 'Operator': 'LessThanOrEqualTo', 'Value': 9}) {
-                    Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk27'})
-                    Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk29'})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-                } else {
-                    Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk28'})
-                    Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk30'})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Purple'})
-
-                }
-            }
-        }
     }
 }
 
@@ -259,14 +254,13 @@ void DodantsuHello() {
                 Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk00'})
                 goto Event405
             }
+        } else
+        if Npc_HatenoVillage016.IsOnInstEventFlag() {
+            Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk03'})
+            goto Event405
         } else {
-            if Npc_HatenoVillage016.IsOnInstEventFlag() {
-                Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk03'})
-                goto Event405
-            } else {
-                Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk02'})
-                goto Event405
-            }
+            Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk02'})
+            goto Event405
         }
     } else {
 
@@ -274,28 +268,14 @@ void DodantsuHello() {
 
         if Npc_HatenoVillage016.IsOnInstEventFlag() {
             Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk08'})
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event204:
-                Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk05'})
-              case 1:
-                goto Event204
-              case 2:
-                Event207:
-                Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk06'})
-              case 3:
-                goto Event207
-              case 4:
-                goto Event207
-              case 5:
-                goto Event207
-              case 6:
-                Event206:
-                Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk07'})
-              case 7:
-                goto Event206
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk05'})
+          case [2, 3, 4, 5]:
+            Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk06'})
+          case [6, 7]:
+            Npc_HatenoVillage016.Demo_Talk({'ASName': 'Talk', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_TimeLimitHunting:talk07'})
         }
     }
 }

@@ -78,8 +78,7 @@ void Ready_Npc_GerudoDesert003_Talk() {
     call Npc_GerudoDesert003.Sleep_check()
 
     switch Npc_GerudoDesert003.CheckActorAction13() {
-      case 0:
-        Event302:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]:
         EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
         if Npc_GerudoDesert003.IsOnInstEventFlag() {
             Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_10'})
@@ -123,34 +122,10 @@ void Ready_Npc_GerudoDesert003_Talk() {
             Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_09'})
             goto Event87
         }
-      case 1:
-        goto Event302
-      case 2:
-        goto Event302
-      case 3:
-        goto Event302
-      case 4:
-        goto Event302
-      case 5:
-        goto Event302
-      case 6:
-        goto Event302
-      case 7:
-        goto Event302
-      case 8:
-        goto Event302
-      case 9:
-        goto Event302
       case 10:
         Npc_GerudoDesert003.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'FaceId': 2, 'ObjectId': 0, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
         Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce:Npc_GerudoDesert003_S01_104'})
         Npc_GerudoDesert003.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-      case 11:
-        goto Event302
-      case 12:
-        goto Event302
-      case 13:
-        goto Event302
     }
 }
 
@@ -318,8 +293,7 @@ void Finish_Npc_OasisMilk_E_StepStart() {
 
         Event381:
         switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event316:
+          case [0, 5, 6, 7]:
             EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
             Npc_OasisMilk_E[Town_out1].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:Talk_003', 'IsCloseMessageDialog': True})
             Event152:
@@ -335,8 +309,7 @@ void Finish_Npc_OasisMilk_E_StepStart() {
             GameROMPlayer.Demo_PlayerIceBlockRemove({'IsWaitFinish': True})
             EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
             Fader.Demo_FadeIn({'DispMode': 'Logo', 'Color': 1, 'Frame': 0, 'IsWaitFinish': True})
-          case 1:
-            Event334:
+          case [1, 2, 3, 4]:
             Npc_OasisMilk_E[Town_out1].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:Talk_000'})
             if !EventSystemActor.GeneralChoice2() {
                 SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
@@ -367,18 +340,6 @@ void Finish_Npc_OasisMilk_E_StepStart() {
                 Npc_OasisMilk_E[Town_out1].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:Talk_002', 'IsCloseMessageDialog': True})
                 goto Event152
             }
-          case 2:
-            goto Event334
-          case 3:
-            goto Event334
-          case 4:
-            goto Event334
-          case 5:
-            goto Event316
-          case 6:
-            goto Event316
-          case 7:
-            goto Event316
         }
     } else {
         Npc_OasisMilk_E[Town_out1].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_40', 'IsCloseMessageDialog': True})

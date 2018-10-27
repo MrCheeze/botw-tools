@@ -67,8 +67,7 @@ void NearActorsNear() {
 void Near() {
     Event93:
     switch Npc_Zora007.CheckActorAction13() {
-      case 0:
-        Event89:
+      case [0, 1, 8, 9, 12]:
         switch EventSystemActor.RandomChoice4() {
           case 0:
             Npc_Zora007.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Zora007:near00'})
@@ -79,16 +78,8 @@ void Near() {
           case 3:
             Npc_Zora007.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Zora007:near03'})
         }
-      case 1:
-        goto Event89
-      case 8:
-        goto Event89
-      case 9:
-        goto Event89
       case 10:
         Npc_Zora007.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Zora007:near06'})
-      case 12:
-        goto Event89
     }
 }
 
@@ -215,26 +206,21 @@ void Water_Relic_RainStop_Talk() {
 
         call Rurachu4taku()
 
-    } else {
-        switch EventSystemActor.CheckWeather() {
-          case 0:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora007_RainFirst', 'IsWaitFinish': True})
-            Npc_Zora007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora007:talk17'})
-            Event68:
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora007_First'}) {
-                goto Event82
-            } else {
+    } else
+    switch EventSystemActor.CheckWeather() {
+      case 0:
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora007_RainFirst', 'IsWaitFinish': True})
+        Npc_Zora007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora007:talk17'})
+        Event68:
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora007_First'}) {
+            goto Event82
+        } else {
 
-                call RurachuFirst()
+            call RurachuFirst()
 
-            }
-          case 1:
-            goto Event68
-          case 2:
-            goto Event68
-          case 3:
-            goto Event68
         }
+      case [1, 2, 3]:
+        goto Event68
     }
 }
 
@@ -274,10 +260,8 @@ void Water_Relic_Finished_Near() {
 
 void RurachuHello() {
     switch Npc_Zora007.CheckActorAction13() {
-      case 0:
-        Event31:
-        if Npc_Zora007.IsOnInstEventFlag() {
-            Event97:
+      case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13]:
+        if Npc_Zora007.IsOnInstEventFlag() in [1, 0] {
             if !EventSystemActor.RandomChoice2() {
                 Npc_Zora007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora007:talk24'})
                 Event55:
@@ -289,38 +273,15 @@ void RurachuHello() {
                   case 1:
                     Npc_Zora007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora007:talk12', 'IsCloseMessageDialog': False})
                     goto Event60
-                  case 2:
-                    Event58:
+                  case [2, 3]:
                     Npc_Zora007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora007:talk13', 'IsCloseMessageDialog': False})
                     goto Event60
-                  case 3:
-                    goto Event58
                 }
             } else {
                 Npc_Zora007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora007:talk25'})
                 goto Event55
             }
-        } else {
-            goto Event97
         }
-      case 1:
-        goto Event31
-      case 2:
-        goto Event31
-      case 3:
-        goto Event31
-      case 4:
-        goto Event31
-      case 5:
-        goto Event31
-      case 6:
-        goto Event31
-      case 7:
-        goto Event31
-      case 8:
-        goto Event31
-      case 9:
-        goto Event31
       case 10:
         Npc_Zora007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora007:talk05', 'IsCloseMessageDialog': False})
         Event39:
@@ -328,10 +289,6 @@ void RurachuHello() {
       case 11:
         Npc_Zora007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora007:talk04', 'IsCloseMessageDialog': False})
         goto Event39
-      case 12:
-        goto Event31
-      case 13:
-        goto Event31
     }
 }
 
@@ -355,8 +312,7 @@ void Rurachu4taku() {
 
 void ReadyNear_RurachuStatue() {
     switch Npc_Zora007.CheckActorAction13() {
-      case 0:
-        Event119:
+      case [0, 1, 8, 9, 12]:
         switch EventSystemActor.RandomChoice4() {
           case 0:
             Npc_Zora007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora007:near00', 'DispFrame': 300, 'IsChecked': True})
@@ -367,16 +323,8 @@ void ReadyNear_RurachuStatue() {
           case 3:
             Npc_Zora007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora007:near03', 'IsChecked': True, 'DispFrame': 300})
         }
-      case 1:
-        goto Event119
-      case 8:
-        goto Event119
-      case 9:
-        goto Event119
       case 10:
         Npc_Zora007.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Zora007:near06'})
-      case 12:
-        goto Event119
     }
 }
 

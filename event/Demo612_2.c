@@ -149,14 +149,9 @@ void Demo612_2_C03() {
       case 2:
         Npc_Musician_AoC_HeroZora.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo612_030', 'ASName': 'Demo612_2-Turn-Npc_Rito_Musician-A-1'})
         goto Event173
-      case 3:
-        Event107:
+      case [3, 4, 5]:
         Npc_Musician_AoC_HeroZora.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo612_040', 'ASName': 'Demo612_2-Turn-Npc_Rito_Musician-A-1'})
         goto Event173
-      case 4:
-        goto Event107
-      case 5:
-        goto Event107
     }
 }
 
@@ -188,14 +183,9 @@ void Demo612_2_End() {
       case 2:
         Npc_Musician_AoC_HeroZora.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo612_Grow_003'})
         goto Event23
-      case 3:
-        Event169:
+      case [3, 4, 5]:
         Npc_Musician_AoC_HeroZora.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo612_Grow_004'})
         goto Event23
-      case 4:
-        goto Event169
-      case 5:
-        goto Event169
     }
 }
 

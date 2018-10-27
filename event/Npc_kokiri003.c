@@ -36,43 +36,28 @@ void Talk() {
               case 2:
                 Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Talk060', 'IsCloseMessageDialog': True})
             }
-        } else {
-            switch EventSystemActor.CheckTimeType() {
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1, 2, 3, 4, 5]:
+            Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Talk010'})
+            Event29:
+            switch EventSystemActor.GeneralChoice3() {
               case 0:
-                Event27:
-                Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Talk010'})
-                Event29:
-                switch EventSystemActor.GeneralChoice3() {
-                  case 0:
-                    goto Event46
-                  case 1:
-                    goto Event67
-                  case 2:
-                    Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Talk040'})
-                }
+                goto Event46
               case 1:
-                goto Event27
+                goto Event67
               case 2:
-                goto Event27
-              case 3:
-                goto Event27
-              case 4:
-                goto Event27
-              case 5:
-                goto Event27
-              case 6:
-                Event28:
-                Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Talk020'})
-                switch EventSystemActor.GeneralChoice3() {
-                  case 0:
-                    goto Event46
-                  case 1:
-                    goto Event67
-                  case 2:
-                    Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Talk050'})
-                }
-              case 7:
-                goto Event28
+                Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Talk040'})
+            }
+          case [6, 7]:
+            Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Talk020'})
+            switch EventSystemActor.GeneralChoice3() {
+              case 0:
+                goto Event46
+              case 1:
+                goto Event67
+              case 2:
+                Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Talk050'})
             }
         }
     } else {
@@ -85,8 +70,7 @@ void Talk() {
 void Sell() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_kokiri003_Talk'}) {
         switch Npc_kokiri003.CheckPlacedItemSaled() {
-          case 0:
-            Event69:
+          case [0, 2]:
             switch EventSystemActor.RandomChoice4() {
               case 0:
                 Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Sell010'})
@@ -99,47 +83,24 @@ void Sell() {
             }
           case 1:
             Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Sell030'})
-          case 2:
-            goto Event69
         }
-    } else {
-        switch Npc_kokiri003.CheckPlacedItemSaled() {
-          case 0:
-            Event23:
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_kokiri003_Talk'})
-            Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Sell000'})
-          case 1:
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_kokiri003_Talk'})
-            Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Sell020'})
-          case 2:
-            goto Event23
-        }
+    } else
+    switch Npc_kokiri003.CheckPlacedItemSaled() {
+      case [0, 2]:
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_kokiri003_Talk'})
+        Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Sell000'})
+      case 1:
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_kokiri003_Talk'})
+        Npc_kokiri003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Sell020'})
     }
 }
 
 void Near() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_kokiri003_SoldOut'}) {
         Npc_kokiri003.Demo_TalkToPlayer({'IsWaitFinish': True, 'ASKeyName': '', 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Near020'})
-    } else {
-        switch EventSystemActor.CheckTimeType() {
-          case 0:
-            Event14:
-            Npc_kokiri003.Demo_TalkToPlayer({'IsWaitFinish': True, 'ASKeyName': '', 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Near000'})
-          case 1:
-            goto Event14
-          case 2:
-            goto Event14
-          case 3:
-            goto Event14
-          case 4:
-            goto Event14
-          case 5:
-            goto Event14
-          case 6:
-            goto Event14
-          case 7:
-            goto Event14
-        }
+    } else
+    if EventSystemActor.CheckTimeType() in [0, 1, 2, 3, 4, 5, 6, 7] {
+        Npc_kokiri003.Demo_TalkToPlayer({'IsWaitFinish': True, 'ASKeyName': '', 'MessageId': 'EventFlowMsg/Npc_kokiri003:Npc_kokiri003_Near000'})
     }
 }
 

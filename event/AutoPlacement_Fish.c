@@ -147,16 +147,12 @@ void EntryPoint0() {
             fork {
                 if AutoPlacement.EcoAreaActorName({'ActorName': 'Animal_Fish_K'}) {
                     if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
-                        switch AutoPlacement.GroundMat() {
-                          case 3:
-                            Event142:
+                        if AutoPlacement.GroundMat() in [3, 8] {
                             if AutoPlacement.WaterDepth({'Depth': 0.0}) {
                                 if !AutoPlacement.WaterDepth({'Depth': 1.0}) {
                                     AutoPlacement.CreateData({'RideList': '', 'OffsetPosY': -0.6000000238418579, 'GroupRadius': 10.0, 'MinNum': 1, 'MaxNum': 1, 'EquipWeaponActorCount': -1, 'Mimicry': False})
                                 }
                             }
-                          case 8:
-                            goto Event142
                         }
                     }
                 }
@@ -193,21 +189,13 @@ void EntryPoint0() {
 
             }
         } {
-            switch AutoPlacement.GroundMat() {
-              case 0:
-                Event191:
+            if AutoPlacement.GroundMat() in [0, 1, 2, 3] {
                 if AutoPlacement.EcoAreaActorName({'ActorName': 'Animal_Insect_Z'}) {
                     if AutoPlacement.CheckGameData({'Label': 'FirstTouchdown'}) {
                         AutoPlacement.AppearWeatherRate({'Snow': 0.0, 'Bluesky': 1.0, 'Cloudy': 1.0, 'Rain': 1.0, 'HeavyRain': 1.0, 'HeavySnow': 0.0, 'ThunderStorm': 1.0, 'ThunderRain': 1.0, 'BlueSkyRain': 1.0})
                         AutoPlacement.CreateData({'OffsetPosY': 0.0, 'RideList': '', 'GroupRadius': 10.0, 'MinNum': 1, 'MaxNum': 5, 'EquipWeaponActorCount': -1, 'Mimicry': False})
                     }
                 }
-              case 1:
-                goto Event191
-              case 2:
-                goto Event191
-              case 3:
-                goto Event191
             }
         }
 

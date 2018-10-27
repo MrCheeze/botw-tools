@@ -169,32 +169,29 @@ void Demo622_2_C03_Rest() {
         call Demo622_2_2nd()
 
         EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 2})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 2}) {
+
+        call Demo622_2_3rd()
+
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 3})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 3}) {
+
+        call Demo622_2_4th()
+
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 4})
+    } else
+    if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 4}) {
+
+        call Demo622_2_5th()
+
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 5})
     } else {
-        if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 2}) {
 
-            call Demo622_2_3rd()
+        call Demo622_2_6th()
 
-            EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 3})
-        } else {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 3}) {
-
-                call Demo622_2_4th()
-
-                EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 4})
-            } else {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 4}) {
-
-                    call Demo622_2_5th()
-
-                    EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 5})
-                } else {
-
-                    call Demo622_2_6th()
-
-                    EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 1})
-                }
-            }
-        }
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice', 'Value': 1})
     }
 }
 

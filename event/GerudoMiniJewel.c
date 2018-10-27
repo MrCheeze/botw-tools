@@ -150,87 +150,71 @@ void Finished_Npc_oasis001_Talk() {
                     goto Event89
                 }
             }
-        } else {
-            switch EventSystemActor.CheckTimeType() {
-              case 0:
-                Event146:
-                Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_36'})
-                goto Event50
-              case 1:
-                goto Event146
-              case 2:
-                Event147:
-                Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_37'})
-                goto Event50
-              case 3:
-                goto Event147
-              case 4:
-                goto Event147
-              case 5:
-                Event148:
-                Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_38'})
-                goto Event50
-              case 6:
-                goto Event148
-              case 7:
-                goto Event148
-            }
+        } else
+        switch EventSystemActor.CheckTimeType() {
+          case [0, 1]:
+            Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_36'})
+            goto Event50
+          case [2, 3, 4]:
+            Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_37'})
+            goto Event50
+          case [5, 6, 7]:
+            Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_38'})
+            goto Event50
         }
-    } else {
-        if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 1}) {
-            if Npc_oasis001.IsOnInstEventFlag() {
-                Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_31'})
-                Event67:
-                switch EventSystemActor.GeneralChoice3() {
-                  case 0:
-                    Event96:
-                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkHandOver', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 10}) {
-                        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'PorchItemName': 'Item_Ore_I', 'Value': -10})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                        Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_17', 'IsCloseMessageDialog': True})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                        Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_18'})
-                        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkYes', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                        Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_02', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                        goto Event76
-                    } else {
-                        Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_25'})
-                        Event83:
-                        Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_09', 'IsCloseMessageDialog': True})
-                    }
-                  case 1:
-                    Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_08', 'IsCloseMessageDialog': True})
-                    Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_32', 'IsCloseMessageDialog': True})
-                    if !EventSystemActor.GeneralChoice2() {
-                        goto Event96
-                    } else {
-                        goto Event83
-                    }
-                  case 2:
-                    goto Event83
-                }
-            } else {
-
-                call hello()
-
-                Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_16', 'IsCloseMessageDialog': True})
-                goto Event67
-            }
-        } else {
-            if Npc_oasis001.IsOnInstEventFlag() {
-                Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_30'})
-            } else {
-
-                call hello()
-
-                Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_06', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_08'})
+    } else
+    if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 1}) {
+        if Npc_oasis001.IsOnInstEventFlag() {
+            Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_31'})
+            Event67:
+            switch EventSystemActor.GeneralChoice3() {
+              case 0:
+                Event96:
+                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkHandOver', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_I', 'Count': 10}) {
+                    EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'PorchItemName': 'Item_Ore_I', 'Value': -10})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                    Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_17', 'IsCloseMessageDialog': True})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                    Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_18'})
+                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkYes', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                    Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_02', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+                    goto Event76
                 } else {
+                    Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_25'})
+                    Event83:
                     Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_09', 'IsCloseMessageDialog': True})
                 }
+              case 1:
+                Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_08', 'IsCloseMessageDialog': True})
+                Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_32', 'IsCloseMessageDialog': True})
+                if !EventSystemActor.GeneralChoice2() {
+                    goto Event96
+                } else {
+                    goto Event83
+                }
+              case 2:
+                goto Event83
             }
+        } else {
+
+            call hello()
+
+            Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_16', 'IsCloseMessageDialog': True})
+            goto Event67
+        }
+    } else
+    if Npc_oasis001.IsOnInstEventFlag() {
+        Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_30'})
+    } else {
+
+        call hello()
+
+        Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_06', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_08'})
+        } else {
+            Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_09', 'IsCloseMessageDialog': True})
         }
     }
 }
@@ -269,24 +253,11 @@ void Finished_Npc_oasis001_Near() {
 
 void hello() {
     switch EventSystemActor.CheckTimeType() {
-      case 0:
-        Event138:
+      case [0, 1]:
         Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_33'})
-      case 1:
-        goto Event138
-      case 2:
-        Event139:
+      case [2, 3, 4]:
         Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_34'})
-      case 3:
-        goto Event139
-      case 4:
-        goto Event139
-      case 5:
-        Event140:
+      case [5, 6, 7]:
         Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_35'})
-      case 6:
-        goto Event140
-      case 7:
-        goto Event140
     }
 }

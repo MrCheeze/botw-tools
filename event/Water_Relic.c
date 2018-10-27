@@ -606,16 +606,11 @@ void Step2_Npc_Zora003_Talk() {
                         goto Event678
                     }
                 }
-              case 1:
-                goto Event188
-              case 2:
-                goto Event188
-              case 3:
+              case [1, 2, 3]:
                 goto Event188
             }
-        } else {
-            goto Event188
-        }
+        } else
+        goto Event188
     } else {
 
         call ZoraArmorSend()
@@ -631,13 +626,9 @@ void Step2_Npc_Zora004_Talk() {
         switch EventSystemActor.CheckWeather() {
           case 0:
             Npc_Zora004[Daijin01].Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora004_S2_002'})
-          case 1:
+          case [1, 2, 3]:
             Event165:
             Npc_Zora004[Daijin01].Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora004_S2_001'})
-          case 2:
-            goto Event165
-          case 3:
-            goto Event165
         }
     } else {
         goto Event165
@@ -839,12 +830,11 @@ void Step1_1_Npc_ZoraB001_Talk() {
         } else {
             goto Event1017
         }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Armor_Get'}) {
+        Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S1_012'})
     } else {
-        if EventSystemActor.CheckFlag({'FlagName': 'Armor_Get'}) {
-            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S1_012'})
-        } else {
-            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S1_024'})
-        }
+        Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S1_024'})
     }
 }
 

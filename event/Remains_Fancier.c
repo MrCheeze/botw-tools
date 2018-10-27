@@ -96,23 +96,20 @@ void Check_Guardian_Talk() {
 
                 call Check_Guardian_OK()
 
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
+                goto Event215
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
+                goto Event215
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
+                goto Event215
             } else {
-                if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
-                    goto Event215
-                } else {
-                    if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
-                        goto Event215
-                    } else {
-                        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
-                            goto Event215
-                        } else {
-                            Event208:
+                Event208:
 
-                            call No_Photo()
+                call No_Photo()
 
-                        }
-                    }
-                }
             }
         } else {
             goto Event208
@@ -190,46 +187,38 @@ void Check_Guardian_OK() {
             Npc_Remains_Fancier001.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Remains_Fancier:Talk_1108'})
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Remains_Fancier_Step1'})
             Npc_Remains_Fancier001.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-        } else {
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Baby_Dark'}) {
-                EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Baby_Dark'})
-                goto Event282
-            } else {
-                if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
-                    EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Junior'})
-                    goto Event282
-                } else {
-                    if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior_Dark'}) {
-                        EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Junior_Dark'})
-                        goto Event282
-                    } else {
-                        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior_Wipe'}) {
-                            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Junior_Wipe'})
-                            goto Event282
-                        } else {
-                            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
-                                EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Middle'})
-                                goto Event282
-                            } else {
-                                if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle_Dark'}) {
-                                    EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Middle_Dark'})
-                                    goto Event282
-                                } else {
-                                    if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
-                                        EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Senior'})
-                                        goto Event282
-                                    } else {
-                                        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior_Dark'}) {
-                                            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Senior_Dark'})
-                                            goto Event282
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Baby_Dark'}) {
+            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Baby_Dark'})
+            goto Event282
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
+            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Junior'})
+            goto Event282
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior_Dark'}) {
+            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Junior_Dark'})
+            goto Event282
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior_Wipe'}) {
+            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Junior_Wipe'})
+            goto Event282
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
+            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Middle'})
+            goto Event282
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle_Dark'}) {
+            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Middle_Dark'})
+            goto Event282
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
+            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Senior'})
+            goto Event282
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior_Dark'}) {
+            EventSystemActor.Demo_ShowPhoto({'IsWaitFinish': True, 'ActorName': 'Enemy_Guardian_Mini_Senior_Dark'})
+            goto Event282
         }
     } else {
         Npc_Remains_Fancier001.Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Remains_Fancier', 'MessageId': 'EventFlowMsg/Remains_Fancier:Talk_1001', 'IsCloseMessageDialog': False})
@@ -244,21 +233,18 @@ void Check_Guardian_Near() {
             if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Baby'}) {
                 Event93:
                 Npc_Remains_Fancier001.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Remains_Fancier:Near_00', 'DispFrame': 300, 'IsChecked': True})
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
+                goto Event93
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
+                goto Event93
+            } else
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
+                goto Event93
             } else {
-                if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
-                    goto Event93
-                } else {
-                    if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
-                        goto Event93
-                    } else {
-                        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
-                            goto Event93
-                        } else {
-                            Event143:
-                            Npc_Remains_Fancier001.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Remains_Fancier:Near_00'})
-                        }
-                    }
-                }
+                Event143:
+                Npc_Remains_Fancier001.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Remains_Fancier:Near_00'})
             }
         } else {
             goto Event143
