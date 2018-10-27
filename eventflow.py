@@ -119,6 +119,6 @@ if __name__ == "__main__":
             flow.read(file.read())
 
         flowchart = flow.flowchart
-        outfile = open('event/'+fname.rstrip('.bfevfl')+'.c','w',encoding='utf-8')
+        outfile = open('event/'+fname.replace('.bfevfl','')+'.c','w',encoding='utf-8')
         outfile.write(print_flowchart(flowchart))
         outfile.close()
