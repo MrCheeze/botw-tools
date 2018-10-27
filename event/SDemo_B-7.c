@@ -24,6 +24,7 @@ void PlayerReaction_and_Animal_CK() {
         EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
         GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'ASName': 'TalkSurprise', 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'IsOneTimeEndKeep': False, 'IsWaitFinish': True})
     } else
+    ;
 }
 
 void PlayerReaction_and_Animal_CK_Demo378_0() {
@@ -31,4 +32,5 @@ void PlayerReaction_and_Animal_CK_Demo378_0() {
         EventSystemActor.Demo_SetPLStateToUnequipAndWait({'IsWaitFinish': True})
         GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'IsWaitFinish': False, 'ASName': 'LookAroundAttention', 'ClothWarpMode': -1})
     } else
+    ;
 }

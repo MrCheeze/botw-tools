@@ -55,7 +55,9 @@ def print_event(event,indent,alreadySeen,lines,neededLabels):
         print_event(event.data.nxt.v,indent,alreadySeen,lines,neededLabels)
         pass
     elif isinstance(event.data, SwitchEvent):
-        if len(event.data.cases) > 0:
+        if len(event.data.cases) == 0:
+            lines.append(spaces+';\n')
+        else:
             isTrueFalse = len(event.data.cases) <= 2
             for key in event.data.cases:
                 if key != 0 and key != 1:
@@ -103,7 +105,7 @@ def print_event(event,indent,alreadySeen,lines,neededLabels):
                     lines.append(spaces+"}\n")
     elif isinstance(event.data, ForkEvent):
         lines.append('\n'+spaces+"fork")
-        assert len(event.data.forks) == len(set([fork.v.name for fork in event.data.forks]))
+        assert len(event.data.forks) == len(set([fork.v.name for fork in event.data.forks])) and len(event.data.forks) > 0
         for fork in event.data.forks:
             lines.append(" {\n")
             print_event(fork.v,indent+1,alreadySeen,lines,neededLabels)

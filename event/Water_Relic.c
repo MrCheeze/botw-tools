@@ -272,6 +272,7 @@ void Step1_Npc_Zora004_Talk() {
 
         fork {
             Npc_Zora004[Daijin01].Demo_Talk({'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora004_S1_019'})
+            ;
         } {
             GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_Zora004', 'UniqueName': 'Daijin01', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0]})
         }

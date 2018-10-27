@@ -337,6 +337,7 @@ void Demo346_6_Cannon01() {
 void InitialSetting() {
 
     fork {
+        ;
     } {
         GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
         GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})

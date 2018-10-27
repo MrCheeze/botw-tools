@@ -90,6 +90,7 @@ void Talk() {
 }
 
 void Near() {
+    ;
 }
 
 void NearActorsTalk() {

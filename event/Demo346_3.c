@@ -82,6 +82,7 @@ void Demo346_3() {
     SceneSoundCtrlTag.Demo_SetStartProc({'BgmCtrlType': 'Stop', 'SeCtrlType': 'EnvReduce', 'IsWaitFinish': True})
 
     fork {
+        ;
     } {
         GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
         GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})

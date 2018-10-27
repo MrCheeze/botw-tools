@@ -145,6 +145,7 @@ void NearActorsTalk() {
 
 void NearActorsNear() {
     Event145:
+    ;
 }
 
 void Kakariko_Ch_005_Kakurenbo_NearActorsTalk() {
