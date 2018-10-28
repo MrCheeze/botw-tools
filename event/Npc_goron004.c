@@ -105,12 +105,10 @@ void Sell() {
     } else
     if !EventSystemActor.RandomChoice2() {
         Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk11', 'ASName': 'Talk_Salesclerk'})
-        Event73:
-        if !GameROMPlayer.ComparePlayerFireResistantLevel() {
-            Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Salesclerk', 'MessageId': 'EventFlowMsg/Npc_goron004:talk24'})
-        }
     } else {
         Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_goron004:talk12', 'ASName': 'Talk_Salesclerk'})
-        goto Event73
+    }
+    if !GameROMPlayer.ComparePlayerFireResistantLevel() {
+        Npc_goron004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Salesclerk', 'MessageId': 'EventFlowMsg/Npc_goron004:talk24'})
     }
 }

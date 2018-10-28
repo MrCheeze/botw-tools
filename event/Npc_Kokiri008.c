@@ -23,12 +23,10 @@ void Talk() {
         Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk000'})
         if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo104_0'}) {
             EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-            Event37:
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Kokiri008_Talk'})
         } else {
             Npc_Kokiri008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri008:Npc_Kokiri008_Talk001'})
-            goto Event37
         }
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Kokiri008_Talk'})
     }
 }
 

@@ -112,10 +112,9 @@ void Step1_Npc_HyruleWestHatago006_Talk() {
 }
 
 void BloodyMoonReliefArea_Enter() {
-    if EventSystemActor.CheckDuringBloodyMoon() {
-        if !EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonReliefFirstTime'}) {
-            EventSystemActor.Demo_FlagON({'FlagName': 'BloodyMoonReliefFirstTime', 'IsWaitFinish': True})
-        }
+    if EventSystemActor.CheckDuringBloodyMoon()
+    && !EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonReliefFirstTime'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'BloodyMoonReliefFirstTime', 'IsWaitFinish': True})
     }
 }
 
@@ -124,19 +123,15 @@ void Step1_Lithograph_EachFrame() {
     if !EventSystemActor.CheckDuringBloodyMoon() {
         if EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonReliefOn'}) {
             EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BloodyMoonReliefOn'})
-            Event44:
-            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-            goto Event18
-        } else {
-            goto Event44
         }
+        Event44:
+        EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+        goto Event18
     } else
-    if EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonReliefOn'}) {
-        goto Event44
-    } else {
+    if !EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonReliefOn'}) {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BloodyMoonReliefOn'})
-        goto Event44
     }
+    goto Event44
 }
 
 void AppearDugeon() {
@@ -219,26 +214,22 @@ void Ready_Talk() {
         Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk15'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk04'})
-            Event120:
-            Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk14'})
-            if EventSystemActor.GeneralChoice2() in [0, 1] {
-                Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk05'})
-                goto Event72
-            }
         } else {
             Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk16'})
-            goto Event120
+        }
+        Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk14'})
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
+            Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk05'})
+            goto Event72
         }
     }
 }
 
 void Finish_Talk() {
-    if Npc_Musician_005[Finish_Talk(Self)].IsOnInstEventFlag() {
-        goto Event73
-    } else {
+    if !Npc_Musician_005[Finish_Talk(Self)].IsOnInstEventFlag() {
         Npc_Musician_005[Finish_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk12'})
-        goto Event73
     }
+    goto Event73
 }
 
 void Sing() {
@@ -264,23 +255,15 @@ void Ready_Second_Talk() {
 }
 
 void Musician_Check() {
-    if EventSystemActor.CheckFlag({'FlagName': 'Animal_Forest_Finish'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'HateeluMini_Treasure_Finish'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Thunder_Sword_Finish'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Relief_Landing_Finish'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Shadow_Sign_Finish'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'MouthofDragon_Finish'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Finish'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonRelief_Finish'}) {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_Finish'}) {
-                                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Musician_Come', 'IsWaitFinish': True})
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'Animal_Forest_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'HateeluMini_Treasure_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Thunder_Sword_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Relief_Landing_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Shadow_Sign_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MouthofDragon_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'BloodyMoonRelief_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_Finish'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Musician_Come', 'IsWaitFinish': True})
     }
 }

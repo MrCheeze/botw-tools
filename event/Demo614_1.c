@@ -64,79 +64,73 @@ void Demo614_1() {
     SceneSoundCtrlTag.Demo_SetStartProc({'IsWaitFinish': True, 'SeCtrlType': 'EnvReduce', 'BgmCtrlType': 'Mute'})
     if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': False, 'ActorName': 'Npc_Musician_AoC_HeroRito'}) {
         Npc_Musician_AoC_HeroRito.Demo_Join({'IsWaitFinish': True})
-        Event154:
-        Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+    }
+    Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
 
-        call Demo614_0.Demo614_Pre()
+    call Demo614_0.Demo614_Pre()
 
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_GiveHeroOrbs'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_GiveHeroOrbs'}) {
 
-            call Demo614_1_C01_2nd()
+        call Demo614_1_C01_2nd()
 
-            NPC_GodVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo614_1:Npc_DungeonPriest_talk200'})
-            if !EventSystemActor.GeneralChoice2() {
-                Event72:
+        NPC_GodVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo614_1:Npc_DungeonPriest_talk200'})
+        if !EventSystemActor.GeneralChoice2() {
+            Event72:
 
-                call Demo614_1_C03_Yes()
-
-
-                call Demo614_1_C04()
+            call Demo614_1_C03_Yes()
 
 
-                call Demo614_1_C05()
+            call Demo614_1_C04()
 
-                EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
 
-                call BalladOfHeroCommon.RemainsSetFlag_Wind()
+            call Demo614_1_C05()
 
-                EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'WarpDestMapName': 'MainFieldDungeon/RemainsWind', 'StartType': -1, 'EntryPointName': 'AppearCurse', 'WarpDestPosName': 'StartR', 'EvflName': 'BalladOfHeroRito'})
-            } else {
+            EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
 
-                call Demo614_1_C03_No()
+            call BalladOfHeroCommon.RemainsSetFlag_Wind()
 
-            }
+            EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'WarpDestMapName': 'MainFieldDungeon/RemainsWind', 'StartType': -1, 'EntryPointName': 'AppearCurse', 'WarpDestPosName': 'StartR', 'EvflName': 'BalladOfHeroRito'})
         } else {
 
-            call Demo614_1_C01()
+            call Demo614_1_C03_No()
 
-
-            call Demo614_1_C01-2()
-
-
-            call Demo614_1_C02()
-
-            EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': False})
-            if !EventSystemActor.CheckEventCancel() {
-                goto Event72
-            } else {
-                EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                EventSystemActor.Demo_KillUIScreen({'ScreenName': 'MainDungeon_00', 'IsWaitFinish': True})
-                EventSystemActor.Demo_KillUIScreen({'IsWaitFinish': True, 'ScreenName': 'DLCSinJuAkashiNum_00'})
-                SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_GiveHeroOrbs'}) {
-                    goto Event72
-                } else {
-                    EventSystemActor.Demo_IncreaseNumHeroSeal({'Value': -3, 'IsWaitFinish': True, 'RelicPattern': 2})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_GiveHeroOrbs'})
-                    goto Event72
-                }
-            }
         }
     } else {
-        goto Event154
+
+        call Demo614_1_C01()
+
+
+        call Demo614_1_C01-2()
+
+
+        call Demo614_1_C02()
+
+        EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': False})
+        if !EventSystemActor.CheckEventCancel() {
+            goto Event72
+        } else {
+            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+            EventSystemActor.Demo_KillUIScreen({'ScreenName': 'MainDungeon_00', 'IsWaitFinish': True})
+            EventSystemActor.Demo_KillUIScreen({'IsWaitFinish': True, 'ScreenName': 'DLCSinJuAkashiNum_00'})
+            SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
+            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_GiveHeroOrbs'}) {
+                goto Event72
+            } else {
+                EventSystemActor.Demo_IncreaseNumHeroSeal({'Value': -3, 'IsWaitFinish': True, 'RelicPattern': 2})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_GiveHeroOrbs'})
+                goto Event72
+            }
+        }
     }
 }
 
 void Demo614_1_C01() {
-    if !EventSystemActor.CheckCurseRRetryEverOnce({'CurseRType': 0}) {
-        Event214:
-
-        call Demo614_1_C01Sub()
-
-    } else {
+    if EventSystemActor.CheckCurseRRetryEverOnce({'CurseRType': 0}) {
         EventSystemActor.Demo_EventCancelStart({'IsWaitFinish': True, 'ShowLogo': False})
-        goto Event214
     }
+
+    call Demo614_1_C01Sub()
+
 }
 
 void Demo614_1_C02() {
@@ -234,12 +228,10 @@ void Demo614_1_C01_2nd() {
     if EventSystemActor.CheckEventCancel() {
         if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': False, 'ActorName': 'Npc_Musician_AoC_HeroRito'}) {
             GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -66.2081298828125, 'Pattern1PosY': -49.43084716796875, 'Pattern1PosZ': -1.8920899629592896, 'Pattern1AtX': -57.5177001953125, 'Pattern1AtY': -48.78253173828125, 'Pattern1AtZ': -2.203125, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'SitRemainsWind', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-            Event191:
-            SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
         } else {
             GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -66.1187744140625, 'Pattern1PosY': -49.508056640625, 'Pattern1PosZ': -0.9643549919128418, 'Pattern1AtX': -57.517578125, 'Pattern1AtY': -48.78253173828125, 'Pattern1AtZ': -2.202881097793579, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'SitRemainsWind', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-            goto Event191
         }
+        SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
     }
 }
 
@@ -251,11 +243,9 @@ void Demo614_1_C01Sub() {
     Fader.Demo_FadeIn({'Color': 1, 'Frame': 0, 'DispMode': 'Auto', 'IsWaitFinish': False})
     if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': False, 'ActorName': 'Npc_Musician_AoC_HeroRito'}) {
         GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'Accept1FrameDelay': False, 'TargetActor': 3, 'ActorName': 'SitRemainsWind', 'UniqueName': '', 'TargetActorPosReferenceMode': 1, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'TargetActorDirReferenceMode': 1, 'SceneName': 'C01-1'})
-        Event158:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 35})
     } else {
         GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'Accept1FrameDelay': False, 'TargetActor': 3, 'ActorName': 'SitRemainsWind', 'SceneName': 'C01-0', 'UniqueName': '', 'TargetActorPosReferenceMode': 1, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'TargetActorDirReferenceMode': 1})
-        goto Event158
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 35})
 }

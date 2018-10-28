@@ -19,34 +19,32 @@ void Ready_Npc_Kokiri007_Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kokiri007_Talk'}) {
         if Npc_Kokiri007.IsOnInstEventFlag() {
             Npc_Kokiri007.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Talk010'})
-            Event4:
-            if !EventSystemActor.GeneralChoice2() {
-                if EventSystemActor.CheckSelectPicture({'ActorName': 'Animal_RupeeRabbit_A'}) {
-                    Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Talk040', 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Activated'})
-                    Event32:
-
-                    call Common.LookPicture({'Self': ActorIdentifier(name="Npc_Kokiri007"), 'ActorName': 'Animal_RupeeRabbit_A'})
-
-                    Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_F_Talk030', 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
-
-                    EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                    Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_F_Talk040'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Finish'})
-                } else {
-                    Npc_Kokiri007.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Talk020'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Activated'})
-                }
-            } else {
-                Npc_Kokiri007.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Talk030'})
-            }
         } else {
             Event1:
             Npc_Kokiri007.Demo_Talk({'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Talk000', 'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-            goto Event4
+        }
+        if !EventSystemActor.GeneralChoice2() {
+            if EventSystemActor.CheckSelectPicture({'ActorName': 'Animal_RupeeRabbit_A'}) {
+                Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Talk040', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Activated'})
+                Event32:
+
+                call Common.LookPicture({'Self': ActorIdentifier(name="Npc_Kokiri007"), 'ActorName': 'Animal_RupeeRabbit_A'})
+
+                Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_F_Talk030', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+
+                EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
+                Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_F_Talk040'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Finish'})
+            } else {
+                Npc_Kokiri007.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Talk020'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Activated'})
+            }
+        } else {
+            Npc_Kokiri007.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Talk030'})
         }
     } else {
         Npc_Kokiri007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kokiri007:Npc_Kokiri007_FirstTalk000'})

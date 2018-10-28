@@ -111,33 +111,30 @@ void Hagi_Richmans_Finish() {
 
     switch Npc_UMiiVillage009.CheckActorAction13() {
       case [0, 1]:
-        if Npc_UMiiVillage009.IsOnInstEventFlag() {
-            Event9:
-            Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk15'})
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-                if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC009_BeatGuardians'}) {
-                    EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
-                    Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk20'})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-                    Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk21'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_RichmansHobby_Finish'})
-                } else {
-                    Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk17', 'IsOverWriteLabelActorName': False})
-                    Event52:
-                    Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk19'})
-                }
-              case 1:
-                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk11'})
-                goto Event52
-              case 2:
-                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk01'})
-            }
-        } else {
+        if !Npc_UMiiVillage009.IsOnInstEventFlag() {
             Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk16'})
-            goto Event9
+        }
+        Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk15'})
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC009_BeatGuardians'}) {
+                EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
+                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk20'})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+
+                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk21'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_RichmansHobby_Finish'})
+            } else {
+                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk17', 'IsOverWriteLabelActorName': False})
+                Event52:
+                Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk19'})
+            }
+          case 1:
+            Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk11'})
+            goto Event52
+          case 2:
+            Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk01'})
         }
       case [2, 3]:
 
@@ -199,13 +196,10 @@ void HagiAction1() {
             Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk29'})
         }
     } else
-    if Npc_UMiiVillage009.IsOnInstEventFlag() {
-        Event60:
-        Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk22'})
-    } else {
+    if !Npc_UMiiVillage009.IsOnInstEventFlag() {
         Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk16'})
-        goto Event60
     }
+    Npc_UMiiVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage009:talk22'})
 }
 
 void NearChallenge() {

@@ -19,23 +19,21 @@ void Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_OasisHylia_003_first'}) {
         if Npc_OasisHylia_003.IsOnInstEventFlag() {
             Npc_OasisHylia_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_003:Talk_04'})
-            Event4:
-            if !EventSystemActor.GeneralChoice2() {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis006_aroma'}) {
-                    Npc_OasisHylia_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_003:Talk_02'})
-                    Event10:
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OasisHylia_003_first', 'IsWaitFinish': True})
-                } else {
-                    Npc_OasisHylia_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_003:Talk_01'})
-                    goto Event10
-                }
-            } else {
-                Npc_OasisHylia_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_003:Talk_03'})
-                goto Event10
-            }
         } else {
             Npc_OasisHylia_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_003:Talk_05'})
-            goto Event4
+        }
+        Event4:
+        if !EventSystemActor.GeneralChoice2() {
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis006_aroma'}) {
+                Npc_OasisHylia_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_003:Talk_02'})
+            } else {
+                Npc_OasisHylia_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_003:Talk_01'})
+            }
+            Event10:
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OasisHylia_003_first', 'IsWaitFinish': True})
+        } else {
+            Npc_OasisHylia_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_003:Talk_03'})
+            goto Event10
         }
     } else {
         Npc_OasisHylia_003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_OasisHylia_003:Talk_00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})

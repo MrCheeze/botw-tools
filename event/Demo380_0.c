@@ -152,70 +152,64 @@ void FirstDemo() {
 
                 call Npc_Kakariko001.Explain_Shinju()
 
-                Event60:
+            }
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+            if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_4thClear'}) {
+                EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'QuestName': 'Find_4Relic', 'StepName': 'Finish'})
+                EventSystemActor.Demo_WaitFrame({'Frame': 120, 'IsWaitFinish': True})
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju02'})
                 EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_4thClear'}) {
-                    EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'QuestName': 'Find_4Relic', 'StepName': 'Finish'})
-                    EventSystemActor.Demo_WaitFrame({'Frame': 120, 'IsWaitFinish': True})
-                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Shinju02'})
-                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                    EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'QuestName': 'Find_4Relic', 'StepName': ''})
-                    EventSystemActor.Demo_WaitFrame({'Frame': 120, 'IsWaitFinish': True})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko001_DirectComp_Find_4Relic'})
-                    Event89:
+                EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'QuestName': 'Find_4Relic', 'StepName': ''})
+                EventSystemActor.Demo_WaitFrame({'Frame': 120, 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko001_DirectComp_Find_4Relic'})
+                Event89:
 
-                    fork {
-
-                        call camera_impa_shouldershot()
-
-                    } {
-                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:kioku_00'})
-                        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                    }
-
-
-                    fork {
-
-                        call camera_stone_closeup()
-
-                    } {
-                        Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:kioku_01'})
-                        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                    }
-
+                fork {
 
                     call camera_impa_shouldershot()
 
-                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:kioku_02'})
-                    if !EventSystemActor.GeneralChoice2() {
-
-                        call Npc_Kakariko001.Explain_Hateno()
-
-                        Event59:
-                        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                        EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'StepName': '', 'QuestName': 'CarryingBlueFireEXMini'})
-                        EventSystemActor.Demo_WaitFrame({'Frame': 120, 'IsWaitFinish': True})
-
-                        call camera_impa_shouldershot()
-
-
-                        call Npc_Kakariko001.Conclusion_B()
-
-                        EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'QuestName': 'Find_Impa', 'StepName': ''})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Kakariko001_TalkEnd'})
-                        GameRomCamera.Demo_ReserveConnectTime({'InterpolateTime': 0.0, 'IsWaitFinish': True})
-                        EventBgmCtrlTag.Demo_Stop({'BgmName': 'ImpaDemoBgm', 'FadeSec': 3.0, 'IsWaitFinish': True})
-                    } else {
-                        goto Event59
-                    }
-                } else {
-                    EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'StepName': '', 'QuestName': 'Find_4Relic'})
-                    EventSystemActor.Demo_WaitFrame({'Frame': 120, 'IsWaitFinish': True})
-                    goto Event89
+                } {
+                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:kioku_00'})
+                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
                 }
+
+
+                fork {
+
+                    call camera_stone_closeup()
+
+                } {
+                    Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:kioku_01'})
+                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                }
+
+
+                call camera_impa_shouldershot()
+
+                Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:kioku_02'})
+                if !EventSystemActor.GeneralChoice2() {
+
+                    call Npc_Kakariko001.Explain_Hateno()
+
+                }
+                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'StepName': '', 'QuestName': 'CarryingBlueFireEXMini'})
+                EventSystemActor.Demo_WaitFrame({'Frame': 120, 'IsWaitFinish': True})
+
+                call camera_impa_shouldershot()
+
+
+                call Npc_Kakariko001.Conclusion_B()
+
+                EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'QuestName': 'Find_Impa', 'StepName': ''})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Kakariko001_TalkEnd'})
+                GameRomCamera.Demo_ReserveConnectTime({'InterpolateTime': 0.0, 'IsWaitFinish': True})
+                EventBgmCtrlTag.Demo_Stop({'BgmName': 'ImpaDemoBgm', 'FadeSec': 3.0, 'IsWaitFinish': True})
             } else {
-                goto Event60
+                EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'IsWaitFinish': True, 'StepName': '', 'QuestName': 'Find_4Relic'})
+                EventSystemActor.Demo_WaitFrame({'Frame': 120, 'IsWaitFinish': True})
+                goto Event89
             }
         } else {
 
@@ -223,12 +217,10 @@ void FirstDemo() {
 
             if !EventSystemActor.RandomChoice2() {
                 Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Sayonara01', 'IsCloseMessageDialog': False})
-                Event97:
-                GameRomCamera.Demo_ReserveConnectTime({'InterpolateTime': 0.0, 'IsWaitFinish': True})
             } else {
                 Npc_Kakariko001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko001:Sayonara00', 'IsCloseMessageDialog': False})
-                goto Event97
             }
+            GameRomCamera.Demo_ReserveConnectTime({'InterpolateTime': 0.0, 'IsWaitFinish': True})
         }
     } else {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Kakariko001_Talk'})

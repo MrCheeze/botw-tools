@@ -84,15 +84,13 @@ void flashbros1() {
     call Common.RemainsLithogragh_Giant({'Self': ActorIdentifier(name="FldObj_GiantBrotherBall_01"), 'DgnObj_RemainsLithogragh_A_02': ActorIdentifier(name="DgnObj_RemainsLithogragh_A_02", sub_name="bros1")})
 
     Event19:
-    if EventSystemActor.CheckFlag({'FlagName': 'giant_ball1'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'giant_ball2'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'giant_ball3'}) {
-                GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 3, 'FaceId': 1, 'IsValid': True, 'IsUseSlowTurn': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'IsWaitFinish': True, 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
-                EventSystemActor.Demo_CallDemo({'DemoName': 'Demo016_0', 'EntryPointName': 'DungeonArrival', 'IsWaitFinish': False, 'EndFade': 0})
-                if EventSystemActor.CheckFlag({'FlagName': 'Threebros_giant_Activated'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Threebros_giant_Finish'})
-                }
-            }
+    if EventSystemActor.CheckFlag({'FlagName': 'giant_ball1'})
+    && EventSystemActor.CheckFlag({'FlagName': 'giant_ball2'})
+    && EventSystemActor.CheckFlag({'FlagName': 'giant_ball3'}) {
+        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 3, 'FaceId': 1, 'IsValid': True, 'IsUseSlowTurn': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'IsWaitFinish': True, 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
+        EventSystemActor.Demo_CallDemo({'DemoName': 'Demo016_0', 'EntryPointName': 'DungeonArrival', 'IsWaitFinish': False, 'EndFade': 0})
+        if EventSystemActor.CheckFlag({'FlagName': 'Threebros_giant_Activated'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Threebros_giant_Finish'})
         }
     }
 }

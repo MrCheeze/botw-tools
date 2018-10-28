@@ -321,50 +321,38 @@ void Demo622_0_C03_1st() {
     Npc_Musician_AoC_HeroGoron.Demo_Idling({'DisablePhysics': False, 'IsWaitFinish': False})
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
     GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2456.8935546875, 'Pattern1PosY': 1001.4644775390625, 'Pattern1PosZ': -2539.278564453125, 'Pattern1AtX': 2458.4951171875, 'Pattern1AtY': 1000.349853515625, 'Pattern1AtZ': -2538.204833984375, 'Pattern1Fovy': 30.000015258789062, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'LessThanOrEqualTo', 'Value': 0}) {
-        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroZora_CountVoice'}) {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroGerudo_CountVoice'}) {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroGoron_CountVoice'}) {
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'LessThanOrEqualTo', 'Value': 0})
+    && EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroZora_CountVoice'})
+    && EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroGerudo_CountVoice'})
+    && EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroGoron_CountVoice'}) {
 
-                    fork {
-                        NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo622_0:Npc_Goron_Hero_talk000', 'IsBecomingSpeaker': False, 'CloseDialogOption': 1, 'IsCloseMessageDialog': True})
-                        EventSystemActor[voice].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    } {
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 25})
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2462.489013671875, 'Pattern1PosY': 996.2799072265625, 'Pattern1PosZ': -2538.483642578125, 'Pattern1AtX': 2463.500244140625, 'Pattern1AtY': 996.1630859375, 'Pattern1AtZ': -2537.160400390625, 'Pattern1Fovy': 50.00001907348633, 'ReviseModeEnd': 0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                    } {
-                        EventSystemActor[Player].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                        GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsWaitFinish': False, 'ASName': 'Demo622_0-C02-Link-A-3', 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ClothWarpMode': -2})
-                    }
-
-                    Event293:
-                    EventSystemActor.Demo_SetGameDataInt({'Value': 1, 'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroGoron_CountVoice'})
-                    GameROMPlayer.Demo_LookAtTheFront({'IsWaitFinish': False, 'IsValid': True})
-                } else {
-                    Event260:
-
-                    fork {
-                        NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo622_0:Npc_Goron_Hero_talk000', 'IsBecomingSpeaker': False, 'CloseDialogOption': 1, 'IsCloseMessageDialog': True})
-                        EventSystemActor[voice].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    } {
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 12})
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2462.488525390625, 'Pattern1PosY': 996.2796630859375, 'Pattern1PosZ': -2538.483154296875, 'Pattern1AtX': 2463.500244140625, 'Pattern1AtY': 996.1630859375, 'Pattern1AtZ': -2537.160400390625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                    } {
-                        EventSystemActor[Player].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                        GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsWaitFinish': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': -1, 'ASName': 'Demo622_0-C02-Link-A-2', 'MorphingFrame': 5.0})
-                    }
-
-                    goto Event293
-                }
-            } else {
-                goto Event260
-            }
-        } else {
-            goto Event260
+        fork {
+            NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo622_0:Npc_Goron_Hero_talk000', 'IsBecomingSpeaker': False, 'CloseDialogOption': 1, 'IsCloseMessageDialog': True})
+            EventSystemActor[voice].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 25})
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2462.489013671875, 'Pattern1PosY': 996.2799072265625, 'Pattern1PosZ': -2538.483642578125, 'Pattern1AtX': 2463.500244140625, 'Pattern1AtY': 996.1630859375, 'Pattern1AtZ': -2537.160400390625, 'Pattern1Fovy': 50.00001907348633, 'ReviseModeEnd': 0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+        } {
+            EventSystemActor[Player].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+            GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsWaitFinish': False, 'ASName': 'Demo622_0-C02-Link-A-3', 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ClothWarpMode': -2})
         }
+
     } else {
-        goto Event260
+
+        fork {
+            NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo622_0:Npc_Goron_Hero_talk000', 'IsBecomingSpeaker': False, 'CloseDialogOption': 1, 'IsCloseMessageDialog': True})
+            EventSystemActor[voice].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 12})
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2462.488525390625, 'Pattern1PosY': 996.2796630859375, 'Pattern1PosZ': -2538.483154296875, 'Pattern1AtX': 2463.500244140625, 'Pattern1AtY': 996.1630859375, 'Pattern1AtZ': -2537.160400390625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+        } {
+            EventSystemActor[Player].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+            GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsWaitFinish': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': -1, 'ASName': 'Demo622_0-C02-Link-A-2', 'MorphingFrame': 5.0})
+        }
+
     }
+    EventSystemActor.Demo_SetGameDataInt({'Value': 1, 'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroGoron_CountVoice'})
+    GameROMPlayer.Demo_LookAtTheFront({'IsWaitFinish': False, 'IsValid': True})
 }
 
 void Demo622_0ToDemo623_0() {

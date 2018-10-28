@@ -76,79 +76,73 @@ void Demo614_0() {
     SceneSoundCtrlTag.Demo_SetStartProc({'IsWaitFinish': True, 'SeCtrlType': 'EnvReduce', 'BgmCtrlType': 'Mute'})
     if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': False, 'ActorName': 'Npc_Musician_AoC_HeroGoron'}) {
         Npc_Musician_AoC_HeroGoron.Demo_Join({'IsWaitFinish': True})
-        Event106:
-        Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+    }
+    Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
 
-        call Demo614_Pre()
+    call Demo614_Pre()
 
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_GiveHeroOrbs'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_GiveHeroOrbs'}) {
 
-            call Demo614_0_C01_2nd()
+        call Demo614_0_C01_2nd()
 
-            NPC_GodVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo614_0:Npc_DungeonPriest_talk200'})
-            if !EventSystemActor.GeneralChoice2() {
-                Event82:
+        NPC_GodVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo614_0:Npc_DungeonPriest_talk200'})
+        if !EventSystemActor.GeneralChoice2() {
+            Event82:
 
-                call Demo614_0_C03_Yes()
-
-
-                call Demo614_0_C04()
+            call Demo614_0_C03_Yes()
 
 
-                call Demo614_0_C05()
+            call Demo614_0_C04()
 
-                EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
 
-                call BalladOfHeroCommon.RemainsSetFlag_Fire()
+            call Demo614_0_C05()
 
-                EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EntryPointName': 'AppearCurse', 'WarpDestPosName': 'StartR', 'WarpDestMapName': 'MainFieldDungeon/RemainsFire', 'EvflName': 'BalladOfHeroGoron'})
-            } else {
+            EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
 
-                call Demo614_0_C03_No()
+            call BalladOfHeroCommon.RemainsSetFlag_Fire()
 
-            }
+            EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EntryPointName': 'AppearCurse', 'WarpDestPosName': 'StartR', 'WarpDestMapName': 'MainFieldDungeon/RemainsFire', 'EvflName': 'BalladOfHeroGoron'})
         } else {
 
-            call Demo614_0_C01()
+            call Demo614_0_C03_No()
 
-
-            call Demo614_0_C01-2()
-
-
-            call Demo614_0_C02()
-
-            EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': False})
-            if !EventSystemActor.CheckEventCancel() {
-                goto Event82
-            } else {
-                EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                EventSystemActor.Demo_KillUIScreen({'ScreenName': 'MainDungeon_00', 'IsWaitFinish': True})
-                EventSystemActor.Demo_KillUIScreen({'IsWaitFinish': True, 'ScreenName': 'DLCSinJuAkashiNum_00'})
-                SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_GiveHeroOrbs'}) {
-                    goto Event82
-                } else {
-                    EventSystemActor.Demo_IncreaseNumHeroSeal({'Value': -3, 'IsWaitFinish': True, 'RelicPattern': 0})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_GiveHeroOrbs'})
-                    goto Event82
-                }
-            }
         }
     } else {
-        goto Event106
+
+        call Demo614_0_C01()
+
+
+        call Demo614_0_C01-2()
+
+
+        call Demo614_0_C02()
+
+        EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': False})
+        if !EventSystemActor.CheckEventCancel() {
+            goto Event82
+        } else {
+            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+            EventSystemActor.Demo_KillUIScreen({'ScreenName': 'MainDungeon_00', 'IsWaitFinish': True})
+            EventSystemActor.Demo_KillUIScreen({'IsWaitFinish': True, 'ScreenName': 'DLCSinJuAkashiNum_00'})
+            SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
+            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_GiveHeroOrbs'}) {
+                goto Event82
+            } else {
+                EventSystemActor.Demo_IncreaseNumHeroSeal({'Value': -3, 'IsWaitFinish': True, 'RelicPattern': 0})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_GiveHeroOrbs'})
+                goto Event82
+            }
+        }
     }
 }
 
 void Demo614_0_C01() {
-    if !EventSystemActor.CheckCurseRRetryEverOnce({'CurseRType': 2}) {
-        Event173:
-
-        call Demo614_0_C01Sub()
-
-    } else {
+    if EventSystemActor.CheckCurseRRetryEverOnce({'CurseRType': 2}) {
         EventSystemActor.Demo_EventCancelStart({'IsWaitFinish': True, 'ShowLogo': False})
-        goto Event173
     }
+
+    call Demo614_0_C01Sub()
+
 }
 
 void Demo614_0_C02() {
@@ -263,10 +257,8 @@ void Demo614_Pre() {
     GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
     if EventSystemActor.CheckPlayerRideHorse() {
         GameROMPlayer.Demo_GetOffFromHorse({'IsWaitFinish': False, 'ClearDemoMemberIfNotOwned': True})
-        Event188:
-        OwnedHorse_ForEvent.Demo_VisibleOff({'IsWaitFinish': False})
     } else {
         LastRiddenHorse_ForEvent.Demo_VisibleOff({'IsWaitFinish': False})
-        goto Event188
     }
+    OwnedHorse_ForEvent.Demo_VisibleOff({'IsWaitFinish': False})
 }

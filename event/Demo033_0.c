@@ -238,28 +238,25 @@ void Demo033_0() {
                         EventSystemActor[C07-1_Cam].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
                         EventSystemActor.Demo_SetCurrentDungeonClearFlag({'IsWaitFinish': True})
                         EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': True})
-                        if !EventSystemActor.CheckEventCancel() {
-                            Event207:
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-                            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 1}) {
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_1'})
-                                Event3:
-                                EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
-                            } else
-                            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
-                                switch EventSystemActor.CheckE3Mode() {
-                                  case [0, 3]:
-                                    goto Event3
-                                  case [1, 2]:
-                                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo985_0', 'EntryPointName': 'Demo985_0', 'EndFade': 0})
-                                }
-                            } else {
+                        if EventSystemActor.CheckEventCancel() {
+                            SoundTriggerTag.Demo_SoundTriggerFade({'Sound': 'Demo033_0_PriestVanish', 'IsWaitFinish': True})
+                        }
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
+                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 1}) {
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_1'})
+                            Event3:
+                            EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
+                        } else
+                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
+                            switch EventSystemActor.CheckE3Mode() {
+                              case [0, 3]:
                                 goto Event3
+                              case [1, 2]:
+                                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo985_0', 'EntryPointName': 'Demo985_0', 'EndFade': 0})
                             }
                         } else {
-                            SoundTriggerTag.Demo_SoundTriggerFade({'Sound': 'Demo033_0_PriestVanish', 'IsWaitFinish': True})
-                            goto Event207
+                            goto Event3
                         }
                       case [1, 2]:
                         EventSystemActor.Demo_IncreaseGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Value': 1, 'IsWaitFinish': True})
@@ -349,9 +346,8 @@ void ItemGetCheck() {
             goto Event219
         }
     } else
-    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon065'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_IceMaker'}) {
-            goto Event219
-        }
+    if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon065'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_IceMaker'}) {
+        goto Event219
     }
 }

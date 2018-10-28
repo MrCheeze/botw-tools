@@ -82,45 +82,43 @@ void Ready_Npc_GerudoDesert003_Talk() {
         EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
         if Npc_GerudoDesert003.IsOnInstEventFlag() {
             Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_10'})
-            Event87:
-            if !EventSystemActor.GeneralChoice2() {
-                if EventSystemActor.CheckRupee({'Value': 50}) {
-                    EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': False, 'Value': -50})
-                    SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                    Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_44', 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
-                    Fader.Demo_FadeOut({'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True, 'Frame': 0})
-                    Event233:
-
-                    call Common.DisableSaveAndWarp()
-
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'Gerudo_CarryIce_mini', 'StepName': 'Step1'})
-                    Npc_GerudoDesert003.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction1', 'UniqueName': ''})
-
-                    call Gerudo_CarryIce.Preparation()
-
-                    Event367:
-                    EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
-
-                    fork {
-                        EventBgmCtrlTag.Demo_Start({'IsWaitFinish': True, 'BgmName': 'GameRaceBgm'})
-                    } {
-                        EventSystemActor.Demo_MiniGameTime({'CountMode': 0, 'CountStartTime': 0, 'IsShowTimeUI': True, 'IsWaitFinish': True, 'MaxTime': -1})
-                    }
-
-                } else {
-                    Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_46'})
-                    Event303:
-                    EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                }
-            } else {
-                Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_45'})
-                goto Event303
-            }
         } else {
             Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_09'})
-            goto Event87
+        }
+        if !EventSystemActor.GeneralChoice2() {
+            if EventSystemActor.CheckRupee({'Value': 50}) {
+                EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': False, 'Value': -50})
+                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+                Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_44', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
+                Fader.Demo_FadeOut({'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True, 'Frame': 0})
+                Event233:
+
+                call Common.DisableSaveAndWarp()
+
+                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'Gerudo_CarryIce_mini', 'StepName': 'Step1'})
+                Npc_GerudoDesert003.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction1', 'UniqueName': ''})
+
+                call Gerudo_CarryIce.Preparation()
+
+                Event367:
+                EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
+
+                fork {
+                    EventBgmCtrlTag.Demo_Start({'IsWaitFinish': True, 'BgmName': 'GameRaceBgm'})
+                } {
+                    EventSystemActor.Demo_MiniGameTime({'CountMode': 0, 'CountStartTime': 0, 'IsShowTimeUI': True, 'IsWaitFinish': True, 'MaxTime': -1})
+                }
+
+            } else {
+                Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_46'})
+                Event303:
+                EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
+            }
+        } else {
+            Npc_GerudoDesert003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_CarryIce_mini:NewText_45'})
+            goto Event303
         }
       case 10:
         Npc_GerudoDesert003.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'FaceId': 2, 'ObjectId': 0, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})

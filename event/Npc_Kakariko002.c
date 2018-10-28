@@ -248,10 +248,9 @@ void StolenBook_Finish_Talk() {
 void Near() {
     switch Npc_Kakariko002.CheckActorAction13() {
       case [0, 1, 2, 3, 4, 5, 12, 13]:
-        if Npc_Kakariko002.CheckActorAction14_2() in [0, 1] {
-            if EventSystemActor.CheckWeather() in [1, 2, 3] {
-                Npc_Kakariko002.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Kakariko002:Near03'})
-            }
+        if Npc_Kakariko002.CheckActorAction14_2() in [0, 1]
+        && EventSystemActor.CheckWeather() in [1, 2, 3] {
+            Npc_Kakariko002.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_Kakariko002:Near03'})
         }
       case 10:
         Npc_Kakariko002.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko002:Near01', 'IsChecked': False, 'DispFrame': 90})

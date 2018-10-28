@@ -68,28 +68,25 @@ void Ready_Npc_SouthernVillage015_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if Npc_SouthernVillage015.IsOnInstEventFlag() {
-        Event8:
-        if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_HeartPond_WomanIsTalked'}) {
-            Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady03'})
-        } else
-        switch EventSystemActor.CheckWeather() {
-          case [0, 2]:
-            Npc_SouthernVillage015.Demo_Talk({'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            Event163:
-            EventSystemActor.Demo_FlagON({'FlagName': 'FironeMini_HeartPond_WomanIsTalked', 'IsWaitFinish': True})
-          case 1:
-            Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady18'})
-            goto Event163
-          case 3:
-            Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady19'})
-            goto Event163
-        }
-    } else {
+    if !Npc_SouthernVillage015.IsOnInstEventFlag() {
 
         call hello()
 
-        goto Event8
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_HeartPond_WomanIsTalked'}) {
+        Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady03'})
+    } else
+    switch EventSystemActor.CheckWeather() {
+      case [0, 2]:
+        Npc_SouthernVillage015.Demo_Talk({'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+        Event163:
+        EventSystemActor.Demo_FlagON({'FlagName': 'FironeMini_HeartPond_WomanIsTalked', 'IsWaitFinish': True})
+      case 1:
+        Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady18'})
+        goto Event163
+      case 3:
+        Npc_SouthernVillage015.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_HeartPond:Lady19'})
+        goto Event163
     }
 }
 

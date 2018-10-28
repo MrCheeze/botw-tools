@@ -49,20 +49,17 @@ void INN() {
         SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
     }
 
-    if !EventSystemActor.isBloodyMoonTrig() {
-        Event66:
-
-        fork {
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-        } {
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-        }
-
-        SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
-    } else {
+    if EventSystemActor.isBloodyMoonTrig() {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo011_0', 'EntryPointName': 'Demo011_0', 'IsWaitFinish': True, 'EndFade': 1})
-        goto Event66
     }
+
+    fork {
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+    } {
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+    }
+
+    SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
 }
 
 void INN_Noon() {
@@ -104,22 +101,19 @@ void INN_Extra() {
         SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
     }
 
-    if !EventSystemActor.isBloodyMoonTrig() {
-        Event205:
-
-        fork {
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-        } {
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-        }
-
-        EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
-        SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
-    } else {
+    if EventSystemActor.isBloodyMoonTrig() {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo011_0', 'EntryPointName': 'Demo011_0', 'IsWaitFinish': True, 'EndFade': 1})
-        goto Event205
     }
+
+    fork {
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+    } {
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+    }
+
+    EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
+    EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
+    SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
 }
 
 void INN_NoonExtra() {
@@ -178,22 +172,19 @@ void INN_ExtraGoron() {
         SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
     }
 
-    if !EventSystemActor.isBloodyMoonTrig() {
-        Event140:
-
-        fork {
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-        } {
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-        }
-
-        EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
-        SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
-    } else {
+    if EventSystemActor.isBloodyMoonTrig() {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo011_0', 'EntryPointName': 'Demo011_0', 'IsWaitFinish': True, 'EndFade': 1})
-        goto Event140
     }
+
+    fork {
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+    } {
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+    }
+
+    EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
+    EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
+    SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
 }
 
 void INN_ExtraGerudo() {
@@ -239,22 +230,19 @@ void INN_ExtraGerudo() {
         SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
     }
 
-    if !EventSystemActor.isBloodyMoonTrig() {
-        Event184:
-
-        fork {
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-        } {
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-        }
-
-        EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
-        SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
-    } else {
+    if EventSystemActor.isBloodyMoonTrig() {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo011_0', 'EntryPointName': 'Demo011_0', 'IsWaitFinish': True, 'EndFade': 1})
-        goto Event184
     }
+
+    fork {
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+    } {
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+    }
+
+    EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
+    EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
+    SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
 }
 
 void INN_NoonExtraGoron() {
@@ -343,22 +331,19 @@ void INN_ExtraZora() {
         SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
     }
 
-    if !EventSystemActor.isBloodyMoonTrig() {
-        Event250:
-
-        fork {
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-        } {
-            GameROMPlayer.Demo_Idling({'IsWaitFinish': False, 'DisablePhysics': False})
-        }
-
-        EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
-        SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
-    } else {
+    if EventSystemActor.isBloodyMoonTrig() {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo011_0', 'EntryPointName': 'Demo011_0', 'IsWaitFinish': True, 'EndFade': 1})
-        goto Event250
     }
+
+    fork {
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+    } {
+        GameROMPlayer.Demo_Idling({'IsWaitFinish': False, 'DisablePhysics': False})
+    }
+
+    EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
+    EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
+    SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
 }
 
 void INN_ExtraRito() {
@@ -393,22 +378,19 @@ void INN_ExtraRito() {
         SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
     }
 
-    if !EventSystemActor.isBloodyMoonTrig() {
-        Event287:
-
-        fork {
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-        } {
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-        }
-
-        EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
-        SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
-    } else {
+    if EventSystemActor.isBloodyMoonTrig() {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo011_0', 'EntryPointName': 'Demo011_0', 'IsWaitFinish': True, 'EndFade': 1})
-        goto Event287
     }
+
+    fork {
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+    } {
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+    }
+
+    EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
+    EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
+    SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
 }
 
 void INN_NoonExtraRito() {

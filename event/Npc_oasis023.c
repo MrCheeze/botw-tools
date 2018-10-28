@@ -46,86 +46,81 @@ void Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if Npc_oasis023.IsOnInstEventFlag() {
-        Event104:
-
-        call SINJYU_CK()
-
-        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_GetBack'}) {
-            RemainsElectric[Thunder_Relic02].Demo_Join({'IsWaitFinish': False})
-            Event77:
-            if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckLower': True, 'CheckType': 'GerudoCloth', 'CheckUpper': True}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo125_0'}) {
-                    Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_006', 'IsOverWriteLabelActorName': False})
-                } else {
-                    Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_004', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                    Event44:
-                    switch EventSystemActor.GeneralChoice3() {
-                      case 0:
-                        GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_GetBack'}) {
-                            Npc_oasis023.Demo_TurnAndLookToObject({'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'RemainsElectric', 'IsWaitFinish': True, 'IsConfront': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'UniqueName': 'Thunder_Relic02'})
-                            GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsUseSlowTurn': False, 'IsValid': True, 'FaceId': 2, 'ActorName': 'RemainsElectric', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'UniqueName': 'Thunder_Relic02', 'IsTurnToLookAtPos': False})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
-                            GameRomCamera.Demo_MovePosFlow({'ActorName1': 'RemainsElectric', 'UniqueName2': '', 'IsWaitFinish': True, 'FovyAppendMode': 1, 'UniqueName1': 'Thunder_Relic01', 'ActorName2': 'Npc_oasis023', 'PosAppendMode': 3, 'MotionMode': 1, 'TargetActor2': 3, 'Cushion': 0.0, 'LatShiftRange': 30.0, 'LngShiftRange': 30.0, 'ActorIgnoringCollision': -1, 'Pattern1PosX': 0.0, 'Pattern1PosZ': 0.0, 'ReviseModeEnd': 0, 'Pattern1PosY': 5.0, 'Count': 30.0, 'StartCalcOnly': True, 'TargetActor1': -1, 'AtAppendMode': 1, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': True, 'Pattern1AtX': -3545.14111328125, 'Pattern1AtY': 164.09800720214844, 'Pattern1AtZ': 3131.18896484375, 'Pattern1Fovy': 20.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            Event66:
-                            GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
-                            Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_007'})
-                            EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 0.0})
-                            Npc_oasis023.Demo_TurnAndLookToObject({'IsValid': False, 'FaceId': 2, 'ObjectId': 0, 'IsWaitFinish': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                            GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis023', 'IsUseSlowTurn': False, 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
-                            Event49:
-                            Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_012', 'IsCloseMessageDialog': True})
-                            goto Event44
-                        } else {
-                            Npc_oasis023.Demo_TurnAndLookToObject({'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'RemainsElectric', 'UniqueName': 'Thunder_Relic01', 'IsWaitFinish': True, 'IsConfront': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                            GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsUseSlowTurn': False, 'IsValid': True, 'FaceId': 2, 'ActorName': 'RemainsElectric', 'UniqueName': 'Thunder_Relic01', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
-                            GameRomCamera.Demo_MovePosFlow({'ActorName1': 'RemainsElectric', 'UniqueName2': '', 'IsWaitFinish': True, 'FovyAppendMode': 1, 'UniqueName1': 'Thunder_Relic01', 'ActorName2': 'Npc_oasis023', 'PosAppendMode': 3, 'MotionMode': 1, 'TargetActor2': 3, 'Cushion': 0.0, 'LatShiftRange': 30.0, 'LngShiftRange': 30.0, 'ActorIgnoringCollision': -1, 'Pattern1PosX': 0.0, 'Pattern1PosZ': 0.0, 'ReviseModeEnd': 0, 'Pattern1PosY': 5.0, 'Count': 30.0, 'StartCalcOnly': True, 'TargetActor1': -1, 'AtAppendMode': 1, 'Pattern1AtY': 164.67630004882812, 'Pattern1AtX': -3686.569091796875, 'Pattern1AtZ': 3028.280029296875, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': True, 'Pattern1Fovy': 45.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            goto Event66
-                        }
-                      case 1:
-                        GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                        Npc_oasis023.Demo_TurnAndLookToObject({'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'UniqueName': 'Thunder_Relic01', 'IsWaitFinish': True, 'IsConfront': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ActorName': 'TwnObj_ArtifactObservationPost_A_01'})
-                        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsUseSlowTurn': False, 'IsValid': True, 'FaceId': 2, 'UniqueName': 'Thunder_Relic01', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ActorName': 'TwnObj_ArtifactObservationPost_A_01', 'IsTurnToLookAtPos': False})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3756.416748046875, 'Pattern1PosY': 153.57681274414062, 'Pattern1PosZ': 2949.9912109375, 'Pattern1AtX': -3754.776123046875, 'Pattern1AtY': 153.66848754882812, 'Pattern1AtZ': 2950.884033203125, 'Pattern1Fovy': 14.999978065490723, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Count': 30.0, 'MotionMode': 1})
-                        GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
-                        Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_005', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                        EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 0.0})
-                        Npc_oasis023.Demo_TurnAndLookToObject({'IsValid': False, 'FaceId': 2, 'ObjectId': 0, 'IsWaitFinish': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis023', 'IsUseSlowTurn': False, 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
-                        switch EventSystemActor.CheckTimeType() {
-                          case [0, 1, 2, 3, 4]:
-                            Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_010', 'IsCloseMessageDialog': True})
-                            goto Event49
-                          case [5, 6, 7]:
-                            Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_009', 'IsCloseMessageDialog': True})
-                            goto Event49
-                        }
-                      case 2:
-                        Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_008'})
-                    }
-                }
-            } else
-            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMT_Finish'}) {
-                Npc_oasis023.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            } else {
-                Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_003'})
-            }
-        } else {
-            RemainsElectric[Thunder_Relic01].Demo_Join({'IsWaitFinish': False})
-            goto Event77
-        }
-    } else {
+    if !Npc_oasis023.IsOnInstEventFlag() {
 
         call hello()
 
-        goto Event104
+    }
+
+    call SINJYU_CK()
+
+    if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_GetBack'}) {
+        RemainsElectric[Thunder_Relic02].Demo_Join({'IsWaitFinish': False})
+    } else {
+        RemainsElectric[Thunder_Relic01].Demo_Join({'IsWaitFinish': False})
+    }
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckLower': True, 'CheckType': 'GerudoCloth', 'CheckUpper': True}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo125_0'}) {
+            Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_006', 'IsOverWriteLabelActorName': False})
+        } else {
+            Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_004', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+            Event44:
+            switch EventSystemActor.GeneralChoice3() {
+              case 0:
+                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+                if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_GetBack'}) {
+                    Npc_oasis023.Demo_TurnAndLookToObject({'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'RemainsElectric', 'IsWaitFinish': True, 'IsConfront': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'UniqueName': 'Thunder_Relic02'})
+                    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsUseSlowTurn': False, 'IsValid': True, 'FaceId': 2, 'ActorName': 'RemainsElectric', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'UniqueName': 'Thunder_Relic02', 'IsTurnToLookAtPos': False})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
+                    GameRomCamera.Demo_MovePosFlow({'ActorName1': 'RemainsElectric', 'UniqueName2': '', 'IsWaitFinish': True, 'FovyAppendMode': 1, 'UniqueName1': 'Thunder_Relic01', 'ActorName2': 'Npc_oasis023', 'PosAppendMode': 3, 'MotionMode': 1, 'TargetActor2': 3, 'Cushion': 0.0, 'LatShiftRange': 30.0, 'LngShiftRange': 30.0, 'ActorIgnoringCollision': -1, 'Pattern1PosX': 0.0, 'Pattern1PosZ': 0.0, 'ReviseModeEnd': 0, 'Pattern1PosY': 5.0, 'Count': 30.0, 'StartCalcOnly': True, 'TargetActor1': -1, 'AtAppendMode': 1, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': True, 'Pattern1AtX': -3545.14111328125, 'Pattern1AtY': 164.09800720214844, 'Pattern1AtZ': 3131.18896484375, 'Pattern1Fovy': 20.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                    Event66:
+                    GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
+                    Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_007'})
+                    EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+                    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 0.0})
+                    Npc_oasis023.Demo_TurnAndLookToObject({'IsValid': False, 'FaceId': 2, 'ObjectId': 0, 'IsWaitFinish': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis023', 'IsUseSlowTurn': False, 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
+                    Event49:
+                    Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_012', 'IsCloseMessageDialog': True})
+                    goto Event44
+                } else {
+                    Npc_oasis023.Demo_TurnAndLookToObject({'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'RemainsElectric', 'UniqueName': 'Thunder_Relic01', 'IsWaitFinish': True, 'IsConfront': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsUseSlowTurn': False, 'IsValid': True, 'FaceId': 2, 'ActorName': 'RemainsElectric', 'UniqueName': 'Thunder_Relic01', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
+                    GameRomCamera.Demo_MovePosFlow({'ActorName1': 'RemainsElectric', 'UniqueName2': '', 'IsWaitFinish': True, 'FovyAppendMode': 1, 'UniqueName1': 'Thunder_Relic01', 'ActorName2': 'Npc_oasis023', 'PosAppendMode': 3, 'MotionMode': 1, 'TargetActor2': 3, 'Cushion': 0.0, 'LatShiftRange': 30.0, 'LngShiftRange': 30.0, 'ActorIgnoringCollision': -1, 'Pattern1PosX': 0.0, 'Pattern1PosZ': 0.0, 'ReviseModeEnd': 0, 'Pattern1PosY': 5.0, 'Count': 30.0, 'StartCalcOnly': True, 'TargetActor1': -1, 'AtAppendMode': 1, 'Pattern1AtY': 164.67630004882812, 'Pattern1AtX': -3686.569091796875, 'Pattern1AtZ': 3028.280029296875, 'Accept1FrameDelay': False, 'CollisionInterpolateSkip': True, 'Pattern1Fovy': 45.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                    goto Event66
+                }
+              case 1:
+                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+                Npc_oasis023.Demo_TurnAndLookToObject({'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'UniqueName': 'Thunder_Relic01', 'IsWaitFinish': True, 'IsConfront': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ActorName': 'TwnObj_ArtifactObservationPost_A_01'})
+                GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsUseSlowTurn': False, 'IsValid': True, 'FaceId': 2, 'UniqueName': 'Thunder_Relic01', 'IsWaitFinish': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ActorName': 'TwnObj_ArtifactObservationPost_A_01', 'IsTurnToLookAtPos': False})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3756.416748046875, 'Pattern1PosY': 153.57681274414062, 'Pattern1PosZ': 2949.9912109375, 'Pattern1AtX': -3754.776123046875, 'Pattern1AtY': 153.66848754882812, 'Pattern1AtZ': 2950.884033203125, 'Pattern1Fovy': 14.999978065490723, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Count': 30.0, 'MotionMode': 1})
+                GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
+                Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_005', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 0.0})
+                Npc_oasis023.Demo_TurnAndLookToObject({'IsValid': False, 'FaceId': 2, 'ObjectId': 0, 'IsWaitFinish': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_oasis023', 'IsUseSlowTurn': False, 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
+                switch EventSystemActor.CheckTimeType() {
+                  case [0, 1, 2, 3, 4]:
+                    Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_010', 'IsCloseMessageDialog': True})
+                    goto Event49
+                  case [5, 6, 7]:
+                    Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_009', 'IsCloseMessageDialog': True})
+                    goto Event49
+                }
+              case 2:
+                Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_008'})
+            }
+        }
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SnowMT_Finish'}) {
+        Npc_oasis023.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+    } else {
+        Npc_oasis023.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis023:Npc_oasis023_003'})
     }
 }
 

@@ -17,50 +17,47 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     if EventSystemActor.CheckFlag({'FlagName': 'CursedStatue_Finish'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'CursedStatue_Activated'}) {
-            Event106:
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_HatenoGate001_First'}) {
-                switch EventSystemActor.CheckWeather() {
+        if !EventSystemActor.CheckFlag({'FlagName': 'CursedStatue_Activated'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CursedStatue_Activated'})
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_HatenoGate001_First'}) {
+            switch EventSystemActor.CheckWeather() {
+              case 0:
+                switch Npc_HatenoGate001.CheckActorAction13() {
                   case 0:
-                    switch Npc_HatenoGate001.CheckActorAction13() {
-                      case 0:
-                        Npc_HatenoGate001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-
-                        call night()
-
-                      case 1:
-                        Npc_HatenoGate001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-                        Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk31'})
-                      case 4:
-                        Npc_HatenoGate001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-                        Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk33'})
-                      case 5:
-                        Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk30'})
-                    }
-                  case [1, 2, 3]:
-                    if Npc_HatenoGate001.CheckActorAction13() in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] {
-
-                        call rain()
-
-                    }
-                }
-            } else
-            switch Npc_HatenoGate001.CheckActorAction13() {
-              case [0, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
-                Event112:
-
-                call first()
-
-              case [1, 5]:
-                Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk32'})
-                if !EventSystemActor.GeneralChoice2() {
                     Npc_HatenoGate001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-                    goto Event112
+
+                    call night()
+
+                  case 1:
+                    Npc_HatenoGate001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
+                    Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk31'})
+                  case 4:
+                    Npc_HatenoGate001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
+                    Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk33'})
+                  case 5:
+                    Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk30'})
+                }
+              case [1, 2, 3]:
+                if Npc_HatenoGate001.CheckActorAction13() in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] {
+
+                    call rain()
+
                 }
             }
-        } else {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CursedStatue_Activated'})
-            goto Event106
+        } else
+        switch Npc_HatenoGate001.CheckActorAction13() {
+          case [0, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
+            Event112:
+
+            call first()
+
+          case [1, 5]:
+            Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk32'})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_HatenoGate001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
+                goto Event112
+            }
         }
     } else
     if EventSystemActor.CheckFlag({'FlagName': 'CursedStatue_Activated'}) {
@@ -138,11 +135,10 @@ void Talk() {
                 } else
                 if !EventSystemActor.RandomChoice2() {
                     Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk29'})
-                    goto Event93
                 } else {
                     Npc_HatenoGate001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate001:talk21', 'ASName': ''})
-                    goto Event93
                 }
+                goto Event93
             }
         }
     } else

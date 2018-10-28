@@ -221,20 +221,16 @@ void Finish_Npc_HyruleWestHatago004_Talk() {
                 call Common.LookPicture({'Self': ActorIdentifier(name="Npc_HyruleWestHatago004"), 'ActorName': 'FldObj_BoneWhale_A_03'})
 
                 EventSystemActor.Demo_FlagON({'FlagName': 'Whales_Orak', 'IsWaitFinish': True})
-                if EventSystemActor.CheckFlag({'FlagName': 'Whales_Negyui'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Whales_Gamyo'}) {
-                        Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Orak10'})
+                if EventSystemActor.CheckFlag({'FlagName': 'Whales_Negyui'})
+                && EventSystemActor.CheckFlag({'FlagName': 'Whales_Gamyo'}) {
+                    Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Orak10'})
 
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
 
-                        Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Orak15'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MarittaMini_BigWhales_Finish'})
-                    } else {
-                        Event183:
-                        Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Orak11'})
-                    }
+                    Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Orak15'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MarittaMini_BigWhales_Finish'})
                 } else {
-                    goto Event183
+                    Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Orak11'})
                 }
             } else {
                 Npc_HyruleWestHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Orak12'})
@@ -260,20 +256,16 @@ void Finish_Npc_HyruleWestHatago003_Talk() {
                 call Common.LookPicture({'Self': ActorIdentifier(name="Npc_HyruleWestHatago003"), 'ActorName': 'FldObj_BoneWhale_A_02'})
 
                 EventSystemActor.Demo_FlagON({'FlagName': 'Whales_Negyui', 'IsWaitFinish': True})
-                if EventSystemActor.CheckFlag({'FlagName': 'Whales_Orak'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Whales_Gamyo'}) {
-                        Npc_HyruleWestHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Negyui08'})
+                if EventSystemActor.CheckFlag({'FlagName': 'Whales_Orak'})
+                && EventSystemActor.CheckFlag({'FlagName': 'Whales_Gamyo'}) {
+                    Npc_HyruleWestHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Negyui08'})
 
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
 
-                        Npc_HyruleWestHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Negyui11'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MarittaMini_BigWhales_Finish'})
-                    } else {
-                        Event195:
-                        Npc_HyruleWestHatago003.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Negyui09', 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                    }
+                    Npc_HyruleWestHatago003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Negyui11'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MarittaMini_BigWhales_Finish'})
                 } else {
-                    goto Event195
+                    Npc_HyruleWestHatago003.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Negyui09', 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                 }
             } else {
                 Npc_HyruleWestHatago003.Demo_Talk({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Negyui07', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -299,20 +291,16 @@ void Finish_Npc_HyruleWestHatago002_Talk() {
                 call Common.LookPicture({'Self': ActorIdentifier(name="Npc_HyruleWestHatago002"), 'ActorName': 'FldObj_BoneWhale_A_01'})
 
                 EventSystemActor.Demo_FlagON({'FlagName': 'Whales_Gamyo', 'IsWaitFinish': True})
-                if EventSystemActor.CheckFlag({'FlagName': 'Whales_Orak'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Whales_Negyui'}) {
-                        Npc_HyruleWestHatago002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Gamyo08'})
+                if EventSystemActor.CheckFlag({'FlagName': 'Whales_Orak'})
+                && EventSystemActor.CheckFlag({'FlagName': 'Whales_Negyui'}) {
+                    Npc_HyruleWestHatago002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Gamyo08'})
 
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
 
-                        Npc_HyruleWestHatago002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Gamyo12'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MarittaMini_BigWhales_Finish'})
-                    } else {
-                        Event197:
-                        Npc_HyruleWestHatago002.Demo_Talk({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Gamyo09', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                    }
+                    Npc_HyruleWestHatago002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Gamyo12'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MarittaMini_BigWhales_Finish'})
                 } else {
-                    goto Event197
+                    Npc_HyruleWestHatago002.Demo_Talk({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Gamyo09', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                 }
             } else {
                 Npc_HyruleWestHatago002.Demo_Talk({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:talk-Gamyo07', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -333,10 +321,9 @@ void Finish_Npc_HyruleWestHatago004_Near() {
             Npc_HyruleWestHatago004.Demo_TalkASync({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_02', 'DispFrame': 300, 'IsChecked': True, 'IsWaitFinish': True})
         }
     } else
-    if !EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_02'}) {
-        if !EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_01'}) {
-            Npc_HyruleWestHatago004.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_00', 'DispFrame': 90})
-        }
+    if !EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_02'})
+    && !EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_01'}) {
+        Npc_HyruleWestHatago004.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_00', 'DispFrame': 90})
     }
 }
 
@@ -365,18 +352,16 @@ void Ready_Npc_HyruleWestHatago002_NearActorsTalk() {
 }
 
 void Finish_Npc_HyruleWestHatago003_Near() {
-    if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_02'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Whales_Negyui'}) {
-            Npc_HyruleWestHatago003.Demo_TalkASync({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_02', 'DispFrame': 300, 'IsChecked': True, 'IsWaitFinish': True})
-        }
+    if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_02'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'Whales_Negyui'}) {
+        Npc_HyruleWestHatago003.Demo_TalkASync({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_02', 'DispFrame': 300, 'IsChecked': True, 'IsWaitFinish': True})
     }
 }
 
 void Finish_Npc_HyruleWestHatago002_Near() {
-    if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_01'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Whales_Gamyo'}) {
-            Npc_HyruleWestHatago002.Demo_TalkASync({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_02', 'DispFrame': 300, 'IsChecked': True, 'IsWaitFinish': True})
-        }
+    if EventSystemActor.CheckSelectPicture({'ActorName': 'FldObj_BoneWhale_A_01'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'Whales_Gamyo'}) {
+        Npc_HyruleWestHatago002.Demo_TalkASync({'MessageId': 'EventFlowMsg/MarittaMini_BigWhales:Near_02', 'DispFrame': 300, 'IsChecked': True, 'IsWaitFinish': True})
     }
 }
 

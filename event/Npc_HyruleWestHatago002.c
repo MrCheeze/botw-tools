@@ -25,13 +25,10 @@ void Talk() {
           case 0:
             Npc_HyruleWestHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago002:talk-Gamyo01'})
           case [1, 2, 3]:
-            if Npc_HyruleWestHatago002.IsOnInstEventFlag() {
-                Event16:
-                Npc_HyruleWestHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago002:talk-Gamyo03'})
-            } else {
+            if !Npc_HyruleWestHatago002.IsOnInstEventFlag() {
                 Npc_HyruleWestHatago002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago002:talk-Gamyo04'})
-                goto Event16
             }
+            Npc_HyruleWestHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyruleWestHatago002:talk-Gamyo03'})
         }
     } else
     if Npc_HyruleWestHatago002.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {

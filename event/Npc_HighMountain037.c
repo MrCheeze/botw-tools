@@ -291,10 +291,9 @@ void RitoMini_IceGolem_Finish_Talk() {
 }
 
 void RainTalk() {
-    if EventSystemActor.CheckWeather() in [1, 2, 3] {
-        if !Npc_HighMountain037.IsOnInstEventFlag() {
-            Npc_HighMountain037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain037:talk25'})
-        }
+    if EventSystemActor.CheckWeather() in [1, 2, 3]
+    && !Npc_HighMountain037.IsOnInstEventFlag() {
+        Npc_HighMountain037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain037:talk25'})
     }
 }
 

@@ -31,8 +31,8 @@ void Talk() {
 
             call InitTalk.InitTalk({'Arg_Turn': 2, 'Arg_Greeting': 'NotAndNot'})
 
-            goto Event23
         }
+        goto Event23
     }
 }
 

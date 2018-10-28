@@ -33,50 +33,42 @@ void Talk() {
         Event19:
         if Npc_OasisSoldier_A.CheckActorAction({'ActionName': 'Root/Terror'}) {
             Npc_OasisSoldier_A.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'ObjectId': 0, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-            Event1:
-            Npc_OasisSoldier_A.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-        } else {
-            goto Event1
         }
+        Npc_OasisSoldier_A.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
       case 1:
         Npc_OasisSoldier_C.Demo_Join({'IsWaitFinish': True})
         Npc_OasisSoldier_B.Demo_Join({'IsWaitFinish': True})
         goto Event19
       case [2, 3]:
-        if Npc_OasisSoldier_A.IsOnInstEventFlag() {
-            Event17:
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasissoldier_A_first'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_Helmet_Activated'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_FindingValetta_Finish'}) {
-                        Event4:
-                        if Npc_OasisSoldier_A.IsOnInstEventFlag() {
-                            Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk02', 'ASName': ''})
-                        } else {
-                            Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk01', 'ASName': ''})
-                        }
-                    } else
-                    if Npc_OasisSoldier_A.IsOnInstEventFlag() {
-                        Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk04', 'ASName': ''})
-                    } else {
-                        Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk03', 'ASName': ''})
-                    }
-                } else
-                goto Event4
-            } else
-            if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo125_0'}) {
-                Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk06'})
-                Event18:
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasissoldier_A_first', 'IsWaitFinish': True})
-            } else {
-                Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk05'})
-                goto Event18
-            }
-        } else {
+        if !Npc_OasisSoldier_A.IsOnInstEventFlag() {
 
             call hello()
 
-            goto Event17
         }
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasissoldier_A_first'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_Helmet_Activated'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_FindingValetta_Finish'}) {
+                    Event4:
+                    if Npc_OasisSoldier_A.IsOnInstEventFlag() {
+                        Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk02', 'ASName': ''})
+                    } else {
+                        Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk01', 'ASName': ''})
+                    }
+                } else
+                if Npc_OasisSoldier_A.IsOnInstEventFlag() {
+                    Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk04', 'ASName': ''})
+                } else {
+                    Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk03', 'ASName': ''})
+                }
+            } else
+            goto Event4
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo125_0'}) {
+            Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk06'})
+        } else {
+            Npc_OasisSoldier_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OasisSoldier_A:talk05'})
+        }
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasissoldier_A_first', 'IsWaitFinish': True})
     }
 }
 

@@ -92,32 +92,31 @@ void Talk() {
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Musician_006_Talk'}) {
                 Event25:
                 Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk04'})
-                Event16:
-                Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk10', 'IsCloseMessageDialog': True})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_Musician_006.Demo_TurnAndLookToObject({'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsConfront': True, 'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2})
-                    Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk06'})
-                    Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk07', 'ASName': '', 'IsCloseMessageDialog': True})
-                    Npc_Musician_006.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'IsValid': True, 'FaceId': 1, 'TurnDirection': 280.0, 'ObjectId': 3, 'TurnPosition': [0.0, 0.0, 0.0]})
-                    SceneSoundCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'WorldMute'})
-                    Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk13', 'IsCloseMessageDialog': True})
-
-                    call LastSong()
-
-                    Npc_Musician_006.Demo_PlayASForDemo({'ASName': 'Talk', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': 20.0})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk11', 'IsCloseMessageDialog': True, 'ASName': ''})
-                    GameRomCamera.Demo_ReturnSavePoint_1({'ReviseMode': 0, 'CollisionInterpolateSkip': True, 'Count': 0.0, 'IsWaitFinish': True})
-                    Npc_Musician_006.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'FaceId': 2, 'IsValid': True, 'IsConfront': True})
-                    Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk14', 'ASName': ''})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Musician_LastTalk'})
-                } else {
-                    Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk05'})
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Musician_006_Talk', 'IsWaitFinish': True})
-                }
             } else {
                 Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk09'})
-                goto Event16
+            }
+            Event16:
+            Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk10', 'IsCloseMessageDialog': True})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_Musician_006.Demo_TurnAndLookToObject({'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsConfront': True, 'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2})
+                Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk06'})
+                Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk07', 'ASName': '', 'IsCloseMessageDialog': True})
+                Npc_Musician_006.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'IsValid': True, 'FaceId': 1, 'TurnDirection': 280.0, 'ObjectId': 3, 'TurnPosition': [0.0, 0.0, 0.0]})
+                SceneSoundCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'WorldMute'})
+                Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk13', 'IsCloseMessageDialog': True})
+
+                call LastSong()
+
+                Npc_Musician_006.Demo_PlayASForDemo({'ASName': 'Talk', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': 20.0})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk11', 'IsCloseMessageDialog': True, 'ASName': ''})
+                GameRomCamera.Demo_ReturnSavePoint_1({'ReviseMode': 0, 'CollisionInterpolateSkip': True, 'Count': 0.0, 'IsWaitFinish': True})
+                Npc_Musician_006.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'FaceId': 2, 'IsValid': True, 'IsConfront': True})
+                Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk14', 'ASName': ''})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Musician_LastTalk'})
+            } else {
+                Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk05'})
+                EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Musician_006_Talk', 'IsWaitFinish': True})
             }
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_Musician_006_FirstTalk'}) {
@@ -131,15 +130,12 @@ void Talk() {
     } else
     Event10:
     if Npc_Musician_006.IsOnInstEventFlag() {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Musician_006_Talk'}) {
-            Event56:
-            Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk03'})
-            Event63:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Musician_006_Talk', 'IsWaitFinish': True})
-        } else {
+        if !EventSystemActor.CheckFlag({'FlagName': 'Npc_Musician_006_Talk'}) {
             Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk21'})
-            goto Event56
         }
+        Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk03'})
+        Event63:
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Musician_006_Talk', 'IsWaitFinish': True})
     } else {
         Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk00', 'IsOverWriteLabelActorName': False})
         Npc_Musician_006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_006:Talk01'})

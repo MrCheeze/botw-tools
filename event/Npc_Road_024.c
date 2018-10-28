@@ -45,32 +45,31 @@ void MSG_Rane_00() {
         Event113:
         if Npc_Road_024.IsOnInstEventFlag() {
             Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:RetMSG_Rane_00_1'})
-            Event33:
-            Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:Talk01'})
-            Event27:
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-
-                call Yorozuya_Kaiwa.Yorozuya_Kounyu_Rain({'Self2': ActorIdentifier(name="Npc_Road_024")})
-
-                Event137:
-                Npc_Road_024.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'GameRomHorse00S', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                Npc_Road_024.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:Talk02'})
-                Npc_Road_024.Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': True})
-                Npc_Road_024.Demo_LookAtObject({'IsWaitFinish': True, 'FaceId': 2, 'ObjectId': 0, 'IsValid': True, 'ActorName': 'GameROMPlayer', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                goto Event27
-              case 1:
-
-                call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_Road_024")})
-
-                goto Event137
-              case 2:
-                Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_024:GoodBye00'})
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-            }
         } else {
             Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:RetMSG_Rane_00'})
-            goto Event33
+        }
+        Event33:
+        Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:Talk01'})
+        Event27:
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+
+            call Yorozuya_Kaiwa.Yorozuya_Kounyu_Rain({'Self2': ActorIdentifier(name="Npc_Road_024")})
+
+            Event137:
+            Npc_Road_024.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'ActorName': 'GameRomHorse00S', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_Road_024.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:Talk02'})
+            Npc_Road_024.Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': True})
+            Npc_Road_024.Demo_LookAtObject({'IsWaitFinish': True, 'FaceId': 2, 'ObjectId': 0, 'IsValid': True, 'ActorName': 'GameROMPlayer', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            goto Event27
+          case 1:
+
+            call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_Road_024")})
+
+            goto Event137
+          case 2:
+            Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_024:GoodBye00'})
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         }
       case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_024.IsOnInstEventFlag() {
@@ -117,11 +116,10 @@ void RetMSG_Rane_01() {
 
     if Npc_Road_024.IsOnInstEventFlag() {
         Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:RetMSG_Rane_02_1'})
-        goto Event33
     } else {
         Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:RetMSG_Rane_02'})
-        goto Event33
     }
+    goto Event33
 }
 
 void MSG_Rane_02() {
@@ -202,11 +200,10 @@ void MSG_Rane_04() {
     Event108:
     if Npc_Road_024.IsOnInstEventFlag() {
         Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:MSG_Rane_04_1'})
-        goto Event33
     } else {
         Npc_Road_024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_024:MSG_Rane_04'})
-        goto Event33
     }
+    goto Event33
 }
 
 void RetMSG_Rane_04() {

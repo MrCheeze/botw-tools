@@ -18,31 +18,29 @@ void Talk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_Finish'}) {
         Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk09'})
-        Event8:
-        switch EventSystemActor.GeneralChoice4() {
-          case 0:
-            if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_Finish'}) {
-                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk08', 'IsCloseMessageDialog': True})
-                Event12:
-                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk06', 'IsOverWriteLabelActorName': False})
-                goto Event8
-            } else {
-                Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk03', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                goto Event12
-            }
-          case 1:
-            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk04', 'IsOverWriteLabelActorName': False})
-            goto Event12
-          case 2:
-            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk05', 'IsOverWriteLabelActorName': False})
-            goto Event12
-          case 3:
-            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk07'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HutagoHatago_Ch_001_Ready'})
-        }
     } else {
         Npc_SouthHateru006.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk00', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+    }
+    Event8:
+    switch EventSystemActor.GeneralChoice4() {
+      case 0:
+        if EventSystemActor.CheckFlag({'FlagName': 'HutagoHatago_Ch_001_Finish'}) {
+            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk08', 'IsCloseMessageDialog': True})
+        } else {
+            Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk03', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+        }
+        Event12:
+        Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk06', 'IsOverWriteLabelActorName': False})
         goto Event8
+      case 1:
+        Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk04', 'IsOverWriteLabelActorName': False})
+        goto Event12
+      case 2:
+        Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk05', 'IsOverWriteLabelActorName': False})
+        goto Event12
+      case 3:
+        Npc_SouthHateru006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthHateru006:talk07'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HutagoHatago_Ch_001_Ready'})
     }
 }
 

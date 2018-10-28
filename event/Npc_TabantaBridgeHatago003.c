@@ -56,9 +56,8 @@ void Talk() {
 }
 
 void Near() {
-    if !EventSystemActor.CheckWeather() {
-        if Npc_TabantaBridgeHatago003.CheckActorAction13() == 5 {
-            Npc_TabantaBridgeHatago003.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago003:near001', 'DispFrame': 90, 'IsChecked': False})
-        }
+    if !EventSystemActor.CheckWeather()
+    && Npc_TabantaBridgeHatago003.CheckActorAction13() == 5 {
+        Npc_TabantaBridgeHatago003.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago003:near001', 'DispFrame': 90, 'IsChecked': False})
     }
 }

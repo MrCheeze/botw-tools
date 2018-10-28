@@ -133,17 +133,15 @@ void Ready_Npc_FarthestIsland002_Talk() {
         Npc_FarthestIsland002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Initial', 'IsCloseMessageDialog': False, 'ASName': ''})
         if !EventSystemActor.GeneralChoice2() {
             Npc_FarthestIsland002.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Initial_00_00', 'ASName': ''})
-            Event8:
-            Npc_FarthestIsland002.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Initial_02', 'ASName': ''})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_FarthestIsland002.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Initial_05', 'ASName': ''})
-                goto Event15
-            } else {
-                goto Event20
-            }
         } else {
             Npc_FarthestIsland002.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Initial_01_00', 'ASName': ''})
-            goto Event8
+        }
+        Npc_FarthestIsland002.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Initial_02', 'ASName': ''})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_FarthestIsland002.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailRide:Initial_05', 'ASName': ''})
+            goto Event15
+        } else {
+            goto Event20
         }
     }
 }
@@ -317,10 +315,8 @@ void Finish_Npc_FarthestIsland002_StepStart() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
         GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        goto Event201
-    } else {
-        goto Event201
     }
+    goto Event201
 }
 
 void Result() {

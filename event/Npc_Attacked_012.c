@@ -65,20 +65,14 @@ void Talk() {
             call Npc_Road_Common.Atacked({'Flag': 'Npc_Attacked_012_CookReward', 'Self': ActorIdentifier(name="Npc_Attacked_012")})
 
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Attacked_012_Reward'})
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Attacked_012_Saved'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set7_FirstTalk'}) {
-                    Npc_Attacked_012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Attacked_012:After01', 'IsCloseMessageDialog': True})
-                    Event23:
-                    if !EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set7_FirstTalk'}) {
-                        goto Event15
-                    }
-                } else {
-                    Event8:
-                    Npc_Attacked_012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Attacked_012:GoodBye00', 'ASName': '', 'IsCloseMessageDialog': True})
-                    goto Event23
-                }
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Attacked_012_Saved'})
+            && EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set7_FirstTalk'}) {
+                Npc_Attacked_012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Attacked_012:After01', 'IsCloseMessageDialog': True})
             } else {
-                goto Event8
+                Npc_Attacked_012.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Attacked_012:GoodBye00', 'ASName': '', 'IsCloseMessageDialog': True})
+            }
+            if !EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set7_FirstTalk'}) {
+                goto Event15
             }
           case 2:
 

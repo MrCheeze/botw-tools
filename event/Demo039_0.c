@@ -150,11 +150,7 @@ void DownloadApp() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
         if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWind'}) {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RemainsWind_AccessDownload'})
-            if EventSystemActor.CheckFlag({'FlagName': 'Access_AllTerminalWind'}) {
-                Event14:
-                EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-                EventSystemActor.Demo_RequestOpenPopUpHelp({'HelpType': 17, 'IsWaitFinish': True})
-            } else {
+            if !EventSystemActor.CheckFlag({'FlagName': 'Access_AllTerminalWind'}) {
 
                 fork {
 
@@ -164,8 +160,10 @@ void DownloadApp() {
                     NPC_CaptionVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo039_0:Demo039_0_Text009'})
                 }
 
-                goto Event14
             }
+            Event14:
+            EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
+            EventSystemActor.Demo_RequestOpenPopUpHelp({'HelpType': 17, 'IsWaitFinish': True})
         } else
         if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWater'}) {
 
@@ -211,11 +209,10 @@ void DownloadApp() {
     } else
     if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsElectric'}) {
         EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_App_ElectricRelic', 'IsWaitFinish': True})
-        goto Event100
     } else {
         EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_App_FireRelic', 'IsWaitFinish': True})
-        goto Event100
     }
+    goto Event100
 }
 
 void C04() {

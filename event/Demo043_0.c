@@ -42,14 +42,11 @@ void EntryGyro0() {
     EventSystemActor.Demo_FlagON({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': False})
     ListenerCtrlTag.Demo_SetMode({'Mode': 'Gyro', 'IsWaitFinish': True})
     GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'BgHitJump': False, 'Angle': 0.0, 'LatMin': 43.0, 'LatMax': 43.0, 'Count': 15.0, 'Near': 20.0, 'Middle': 20.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'Far': 200.0, 'LatMode': 1, 'ReviseMode': 2})
-    if !EventSystemActor.CheckProConUse() {
-        Event2:
-        EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
-        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-    } else {
+    if EventSystemActor.CheckProConUse() {
         NPC_GodVoice.Demo_OpenMessageDialog({'MessageId': 'DemoMsg/Demo043_0:talk00', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-        goto Event2
     }
+    EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
+    EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
 }
 
 void EntryGyro1() {
@@ -58,14 +55,11 @@ void EntryGyro1() {
     EventSystemActor.Demo_FlagON({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': False})
     ListenerCtrlTag.Demo_SetMode({'Mode': 'Gyro', 'IsWaitFinish': True})
     GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'BgHitJump': False, 'Angle': 0.0, 'LatMin': 43.0, 'LatMax': 43.0, 'Count': 15.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'Far': 200.0, 'LatMode': 1, 'Near': 20.0, 'Middle': 20.0, 'ReviseMode': 2})
-    if !EventSystemActor.CheckProConUse() {
-        Event4:
-        EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
-        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-    } else {
+    if EventSystemActor.CheckProConUse() {
         NPC_GodVoice.Demo_OpenMessageDialog({'MessageId': 'DemoMsg/Demo043_0:talk00', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-        goto Event4
     }
+    EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
+    EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
 }
 
 void EntryGyro_030_1() {
@@ -80,24 +74,22 @@ void GyroShutter() {
     EventSystemActor.Demo_FlagON({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': False})
     ListenerCtrlTag.Demo_SetMode({'Mode': 'Gyro', 'IsWaitFinish': True})
     GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'Angle': 0.0, 'LatMin': 43.0, 'LatMax': 43.0, 'Count': 15.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'Far': 200.0, 'LatMode': 1, 'Near': 20.0, 'Middle': 20.0, 'ReviseMode': 0, 'BgHitJump': True})
-    if !EventSystemActor.CheckProConUse() {
-        Event48:
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
-            EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-            goto Event48
-        }
-    } else {
+    if EventSystemActor.CheckProConUse() {
         NPC_GodVoice.Demo_OpenMessageDialog({'MessageId': 'DemoMsg/Demo043_0:talk00', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+    }
+    Event48:
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
+        EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
         goto Event48
     }
 }
@@ -126,24 +118,22 @@ void GyroShutter2() {
     EventSystemActor.Demo_FlagON({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': False})
     ListenerCtrlTag.Demo_SetMode({'Mode': 'Gyro', 'IsWaitFinish': True})
     GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'BgHitJump': False, 'Angle': 0.0, 'LatMin': 43.0, 'LatMax': 43.0, 'Count': 15.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'Far': 200.0, 'LatMode': 1, 'Near': 10.0, 'Middle': 10.0, 'ReviseMode': 2})
-    if !EventSystemActor.CheckProConUse() {
-        Event66:
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
-            EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-            goto Event66
-        }
-    } else {
+    if EventSystemActor.CheckProConUse() {
         NPC_GodVoice.Demo_OpenMessageDialog({'MessageId': 'DemoMsg/Demo043_0:talk00', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+    }
+    Event66:
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
+        EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
         goto Event66
     }
 }
@@ -154,25 +144,23 @@ void GyroNazotokiSE() {
     EventSystemActor.Demo_FlagON({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': False})
     ListenerCtrlTag.Demo_SetMode({'Mode': 'Gyro', 'IsWaitFinish': True})
     GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'BgHitJump': False, 'Angle': 0.0, 'LatMin': 43.0, 'LatMax': 43.0, 'Count': 15.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'Far': 200.0, 'LatMode': 1, 'Near': 20.0, 'Middle': 20.0, 'ReviseMode': 2})
-    if !EventSystemActor.CheckProConUse() {
-        Event80:
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
-            EventSystemActor.Demo_FlagON({'FlagName': 'Dungeon040_DoorGyro_SE', 'IsWaitFinish': True})
-            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'ReadRiddle_Delay'})
-            EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-            goto Event80
-        }
-    } else {
+    if EventSystemActor.CheckProConUse() {
         NPC_GodVoice.Demo_OpenMessageDialog({'MessageId': 'DemoMsg/Demo043_0:talk00', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+    }
+    Event80:
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Dungeon040_DoorGyro_SE', 'IsWaitFinish': True})
+        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'ReadRiddle_Delay'})
+        EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
         goto Event80
     }
 }
@@ -211,24 +199,22 @@ void GyroShutter_CheckCamera() {
     EventSystemActor.Demo_FlagON({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': False})
     ListenerCtrlTag.Demo_SetMode({'Mode': 'Gyro', 'IsWaitFinish': True})
     GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'Angle': 0.0, 'LatMin': 43.0, 'LatMax': 43.0, 'Count': 15.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'Far': 200.0, 'LatMode': 1, 'Near': 20.0, 'Middle': 20.0, 'BgHitJump': True, 'ReviseMode': 2})
-    if !EventSystemActor.CheckProConUse() {
-        Event116:
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
-            EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-            goto Event116
-        }
-    } else {
+    if EventSystemActor.CheckProConUse() {
         NPC_GodVoice.Demo_OpenMessageDialog({'MessageId': 'DemoMsg/Demo043_0:talk00', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+    }
+    Event116:
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
+        EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
         goto Event116
     }
 }
@@ -240,29 +226,27 @@ void GyroNazotokiSE_013() {
     ListenerCtrlTag.Demo_SetMode({'Mode': 'Gyro', 'IsWaitFinish': True})
     GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
     GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'BgHitJump': False, 'Angle': 0.0, 'LatMin': 43.0, 'LatMax': 43.0, 'Count': 15.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'Far': 200.0, 'LatMode': 1, 'Near': 20.0, 'Middle': 20.0, 'ReviseMode': 2})
-    if !EventSystemActor.CheckProConUse() {
-        Event133:
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
-            EventSystemActor.Demo_FlagON({'FlagName': 'Dungeon040_DoorGyro_SE', 'IsWaitFinish': True})
-            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'ReadRiddle_Delay'})
-            EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-            Event142:
-            GameRomCamera.Demo_ReturnSavePoint_1({'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'IsWaitFinish': True, 'Count': 1.0})
-        } else
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-            goto Event142
-        } else
-        if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-            goto Event142
-        } else {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-            goto Event133
-        }
-    } else {
+    if EventSystemActor.CheckProConUse() {
         NPC_GodVoice.Demo_OpenMessageDialog({'MessageId': 'DemoMsg/Demo043_0:talk00', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+    }
+    Event133:
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Dungeon040_DoorGyro_SE', 'IsWaitFinish': True})
+        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'ReadRiddle_Delay'})
+        EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+        Event142:
+        GameRomCamera.Demo_ReturnSavePoint_1({'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'IsWaitFinish': True, 'Count': 1.0})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+        goto Event142
+    } else
+    if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+        goto Event142
+    } else {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
         goto Event133
     }
 }

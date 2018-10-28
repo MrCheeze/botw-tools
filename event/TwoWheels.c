@@ -48,16 +48,12 @@ void Ready_Npc_Musician_001_Talk() {
 
         call Sing()
 
-        if EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Activated'}) {
-            Event79:
-            if EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Dungeon'}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Finish'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TwoWheels_Finish'})
-                }
-            }
-        } else {
+        if !EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Activated'}) {
             EventSystemActor.Demo_FlagON({'FlagName': 'TwoWheels_Activated', 'IsWaitFinish': True})
-            goto Event79
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Dungeon'})
+        && !EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Finish'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TwoWheels_Finish'})
         }
     } else {
 
@@ -94,17 +90,14 @@ void EntryPoint0() {
 
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 3, 'FaceId': 1, 'IsWaitFinish': True, 'IsUseSlowTurn': False, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsTurnToLookAtPos': False})
-        Event67:
-        EventSystemActor.Demo_CallDemo({'DemoName': 'Demo016_0', 'EntryPointName': 'DungeonArrival', 'IsWaitFinish': False, 'EndFade': 0})
-        if EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Activated'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TwoWheels_Finish'})
-            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+    }
+    EventSystemActor.Demo_CallDemo({'DemoName': 'Demo016_0', 'EntryPointName': 'DungeonArrival', 'IsWaitFinish': False, 'EndFade': 0})
+    if EventSystemActor.CheckFlag({'FlagName': 'TwoWheels_Activated'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TwoWheels_Finish'})
+        EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
 
-            call BloodyMoonRelief.Musician_Check()
+        call BloodyMoonRelief.Musician_Check()
 
-        }
-    } else {
-        goto Event67
     }
 }
 

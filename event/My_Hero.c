@@ -103,20 +103,18 @@ void Talk() {
         if Npc_HyruleDepthHatago006.IsOnInstEventFlag() {
             Event27:
             Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk01'})
-            Event26:
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-                Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk02'})
-                goto Event27
-              case 1:
-                Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk03'})
-                goto Event27
-              case 2:
-                goto Event31
-            }
         } else {
             Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk00', 'IsCloseMessageDialog': False})
-            goto Event26
+        }
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk02'})
+            goto Event27
+          case 1:
+            Npc_HyruleDepthHatago006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_HyruleDepthHatago006:Talk03'})
+            goto Event27
+          case 2:
+            goto Event31
         }
       case [1, 2, 3]:
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_HyruleDepthHatago006_InUmayado'}) {

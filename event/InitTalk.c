@@ -71,11 +71,8 @@ void InitTalk() {
         Starter.Demo_BecomeSpeaker({'IsWaitFinish': True})
         if Starter.IsNeedEquipWeapon() {
             Starter.Demo_PlayASForDemo({'ASName': 'GuardUnequip', 'IsWaitFinish': True, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsIgnoreSame': True, 'TargetIndex': 0})
-            Event6:
-            Starter.Demo_TurnToObjectGreeting({'ObjectId': 'Arg_Turn', 'TurnDirection': 0.0, 'ActorName': '', 'GreetingType': 'Arg_Greeting', 'IsWaitFinish': False})
-        } else {
-            goto Event6
         }
+        Starter.Demo_TurnToObjectGreeting({'ObjectId': 'Arg_Turn', 'TurnDirection': 0.0, 'ActorName': '', 'GreetingType': 'Arg_Greeting', 'IsWaitFinish': False})
     }
 
 }
@@ -236,11 +233,8 @@ void InitTalk_Pair() {
         Starter.Demo_BecomeSpeaker({'IsWaitFinish': True})
         if Starter.IsNeedEquipWeapon() {
             Starter.Demo_PlayASForDemo({'ASName': 'GuardUnequip', 'IsWaitFinish': True, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsIgnoreSame': True, 'TargetIndex': 0})
-            Event132:
-            Starter.Demo_TurnToObjectGreeting({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': False, 'ObjectId': 'Arg_Turn', 'GreetingType': 'Arg_Greeting'})
-        } else {
-            goto Event132
         }
+        Starter.Demo_TurnToObjectGreeting({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': False, 'ObjectId': 'Arg_Turn', 'GreetingType': 'Arg_Greeting'})
     }
 
 }
@@ -258,11 +252,8 @@ void InitTalk_Trio() {
         Starter.Demo_BecomeSpeaker({'IsWaitFinish': True})
         if Starter.IsNeedEquipWeapon() {
             Starter.Demo_PlayASForDemo({'ASName': 'GuardUnequip', 'IsWaitFinish': True, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsIgnoreSame': True, 'TargetIndex': 0})
-            Event143:
-            Starter.Demo_TurnToObjectGreeting({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': False, 'ObjectId': 'Arg_Turn', 'GreetingType': 'Arg_Greeting'})
-        } else {
-            goto Event143
         }
+        Starter.Demo_TurnToObjectGreeting({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': False, 'ObjectId': 'Arg_Turn', 'GreetingType': 'Arg_Greeting'})
     }
 
 }
@@ -284,12 +275,9 @@ void InitTalk_ReturnArrivalAnchor() {
         Starter.Demo_BecomeSpeaker({'IsWaitFinish': True})
         if Starter.IsNeedEquipWeapon() {
             Starter.Demo_PlayASForDemo({'ASName': 'GuardUnequip', 'IsWaitFinish': True, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsIgnoreSame': True, 'TargetIndex': 0})
-            Event165:
-            Starter.Demo_ReturnAnchor({'IsWaitFinish': True})
-            Starter.Demo_TurnToObjectGreeting({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': False, 'ObjectId': 'Arg_Turn', 'GreetingType': 'Arg_Greeting'})
-        } else {
-            goto Event165
         }
+        Starter.Demo_ReturnAnchor({'IsWaitFinish': True})
+        Starter.Demo_TurnToObjectGreeting({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': False, 'ObjectId': 'Arg_Turn', 'GreetingType': 'Arg_Greeting'})
     }
 
 }

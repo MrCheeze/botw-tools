@@ -125,20 +125,17 @@ void KodahHello() {
         switch Npc_Zora008.CheckActorAction13() {
           case [0, 1, 2]:
             Event81:
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora020_HappyBed'}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora008_Talk3'}) {
-                    Npc_Zora008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora008:talk18', 'IsCloseMessageDialog': False})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_Zora008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora008:talk19', 'IsCloseMessageDialog': False})
-                        Event84:
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora008_Talk3'})
-                        Event91:
-                        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-                    } else {
-                        Npc_Zora008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora008:talk20', 'IsCloseMessageDialog': False})
-                        goto Event84
-                    }
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora020_HappyBed'})
+            && !EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora008_Talk3'}) {
+                Npc_Zora008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora008:talk18', 'IsCloseMessageDialog': False})
+                if !EventSystemActor.GeneralChoice2() {
+                    Npc_Zora008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora008:talk19', 'IsCloseMessageDialog': False})
+                } else {
+                    Npc_Zora008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora008:talk20', 'IsCloseMessageDialog': False})
                 }
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora008_Talk3'})
+                Event91:
+                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
             }
           case 3:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora008_A2First'}) {

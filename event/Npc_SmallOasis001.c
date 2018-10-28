@@ -42,16 +42,13 @@ void Talk() {
 
     switch Npc_SmallOasis001.CheckActorAction13() {
       case 0:
-        if Npc_SmallOasis001.IsOnInstEventFlag() {
-            Event33:
-            if EventSystemActor.CheckFlag({'FlagName': 'Clear_Dungeon032'}) {
-                Npc_SmallOasis001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis001:Talk_50'})
-            } else {
-                Npc_SmallOasis001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis001:Talk_11'})
-            }
-        } else {
+        if !Npc_SmallOasis001.IsOnInstEventFlag() {
             Npc_SmallOasis001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis001:Talk_56'})
-            goto Event33
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'Clear_Dungeon032'}) {
+            Npc_SmallOasis001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis001:Talk_50'})
+        } else {
+            Npc_SmallOasis001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis001:Talk_11'})
         }
       case [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13]:
         if Npc_SmallOasis001.IsOnInstEventFlag() {
@@ -140,9 +137,8 @@ void Clear_RemainsElectric_Talk() {
 }
 
 void Near() {
-    if Npc_SmallOasis001.CheckActorAction13() {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Clear_Dungeon032'}) {
-            Npc_SmallOasis001.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_SmallOasis001:near00'})
-        }
+    if Npc_SmallOasis001.CheckActorAction13()
+    && !EventSystemActor.CheckFlag({'FlagName': 'Clear_Dungeon032'}) {
+        Npc_SmallOasis001.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Npc_SmallOasis001:near00'})
     }
 }

@@ -43,14 +43,13 @@ void MSG_Firo_00() {
     Event116:
     if Npc_Road_009.IsOnInstEventFlag() {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:RetMSG_Firo_00_1'})
-        Event140:
-        EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Road_009_Talk_RetMSG_Firo_04', 'IsWaitFinish': True})
-        Event110:
-        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     } else {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:RetMSG_Firo_00'})
-        goto Event140
     }
+    Event140:
+    EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Road_009_Talk_RetMSG_Firo_04', 'IsWaitFinish': True})
+    Event110:
+    EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
 }
 
 void RetMSG_Firo_00() {
@@ -63,11 +62,10 @@ void RetMSG_Firo_00() {
       case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_009.IsOnInstEventFlag() {
             Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_00_1'})
-            goto Event140
         } else {
             Npc_Road_009.Demo_Talk({'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_00', 'IsWaitFinish': True})
-            goto Event140
         }
+        goto Event140
     }
 }
 
@@ -77,11 +75,10 @@ void MSG_Firo_01() {
 
     if Npc_Road_009.IsOnInstEventFlag() {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_01_1'})
-        goto Event140
     } else {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_01'})
-        goto Event140
     }
+    goto Event140
 }
 
 void RetMSG_Firo_01() {
@@ -90,11 +87,10 @@ void RetMSG_Firo_01() {
 
     if Npc_Road_009.IsOnInstEventFlag() {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:RetMSG_Firo_01_1'})
-        goto Event140
     } else {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:RetMSG_Firo_01'})
-        goto Event140
     }
+    goto Event140
 }
 
 void MSG_Firo_02() {
@@ -103,11 +99,10 @@ void MSG_Firo_02() {
 
     if Npc_Road_009.IsOnInstEventFlag() {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_02_1'})
-        goto Event140
     } else {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_02'})
-        goto Event140
     }
+    goto Event140
 }
 
 void RetMSG_Firo_02() {
@@ -116,11 +111,10 @@ void RetMSG_Firo_02() {
 
     if Npc_Road_009.IsOnInstEventFlag() {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:RetMSG_Firo_02_1'})
-        goto Event140
     } else {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:RetMSG_Firo_02'})
-        goto Event140
     }
+    goto Event140
 }
 
 void MSG_Firo_03() {
@@ -129,11 +123,10 @@ void MSG_Firo_03() {
 
     if Npc_Road_009.IsOnInstEventFlag() {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_03_1'})
-        goto Event140
     } else {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_03'})
-        goto Event140
     }
+    goto Event140
 }
 
 void RetMSG_Firo_03() {
@@ -142,11 +135,10 @@ void RetMSG_Firo_03() {
 
     if Npc_Road_009.IsOnInstEventFlag() {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:RetMSG_Firo_03_1'})
-        goto Event140
     } else {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:RetMSG_Firo_03'})
-        goto Event140
     }
+    goto Event140
 }
 
 void MSG_Firo_04() {
@@ -155,11 +147,10 @@ void MSG_Firo_04() {
 
     if Npc_Road_009.IsOnInstEventFlag() {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_04_1'})
-        goto Event140
     } else {
         Npc_Road_009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_009:MSG_Firo_04'})
-        goto Event140
     }
+    goto Event140
 }
 
 void RetMSG_Firo_04() {

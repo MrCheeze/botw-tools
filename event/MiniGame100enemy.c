@@ -42,12 +42,10 @@ void Deku_Talk() {
     GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 426.755859375, 'Pattern1PosY': 263.6904296875, 'Pattern1PosZ': -2128.235595703125, 'Pattern1AtX': 426.8063049316406, 'Pattern1AtY': 266.3531494140625, 'Pattern1AtZ': -2132.51220703125, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'StartCalcOnly': True, 'ReviseModeEnd': 2})
     if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'MsterSword_TalkLv', 'Value': 4}) {
         TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Face_C_Talk', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/100enemy:talk16'})
-        Event24:
-        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': False, 'Count': 0.0, 'ReviseMode': 1})
     } else {
         TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Face_C_Talk', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/100enemy:talk15'})
-        goto Event24
     }
+    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': False, 'Count': 0.0, 'ReviseMode': 1})
 }
 
 void Battle_EachFrame() {

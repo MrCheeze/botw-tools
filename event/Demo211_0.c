@@ -109,13 +109,11 @@ void Demo211_0() {
                     Event237:
                     if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 2}) {
                         GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3575.330322265625, 'Pattern1PosY': 947.8912963867188, 'Pattern1PosZ': 658.2237548828125, 'Pattern1AtX': -3573.0, 'Pattern1AtY': 947.9173583984375, 'Pattern1AtZ': 653.5, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                        Event226:
-                        EventMessageTransmitter1.Demo_Msg2CameraKeepState({'IsWaitFinish': True})
-                        SceneSoundCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'SeCtrlType': 'None', 'BgmCtrlType': 'StartWithFade'})
                     } else {
                         GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 0.0, 'Pattern1PosZ': -5.3001708984375, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'Pattern1AtY': 1.7999999523162842, 'Pattern1PosY': 1.7999999523162842, 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                        goto Event226
                     }
+                    EventMessageTransmitter1.Demo_Msg2CameraKeepState({'IsWaitFinish': True})
+                    SceneSoundCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'SeCtrlType': 'None', 'BgmCtrlType': 'StartWithFade'})
                 } else {
                     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 2})
                     SceneSoundCtrlTag.Demo_KillAllDemoSound({'IsWaitFinish': True})

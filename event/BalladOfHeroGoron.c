@@ -190,14 +190,12 @@ void AdvanceStep() {
 void Ready_Npc_Musician_AoC_HeroGoronRelief_Talk() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
-        Event100:
-        EventSystemActor.Demo_CallDemo({'EndFade': 0, 'IsWaitFinish': True, 'EntryPointName': 'Ready', 'DemoName': 'Demo610_0'})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_ReliefSong'})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Activated'})
     } else {
         GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        goto Event100
     }
+    EventSystemActor.Demo_CallDemo({'EndFade': 0, 'IsWaitFinish': True, 'EntryPointName': 'Ready', 'DemoName': 'Demo610_0'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_ReliefSong'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Activated'})
 }
 
 void Seek1stDungeon_Npc_Musician_AoC_HeroGoronRelief_Talk() {
@@ -225,164 +223,131 @@ void Seek1stDungeon_Npc_Goron022_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Npc_Goron022_Talk'}) {
-        Event215:
-
-        call Goron022Hello()
-
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_FirstKillGolemR'}) {
-            Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk06'})
-        } else
-        if Npc_Goron022.IsOnInstEventFlag() {
-            Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk01'})
-        } else {
-            Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk16'})
-            Npc_Goron022.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        }
-    } else {
+    if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Npc_Goron022_Talk'}) {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Npc_Goron022_Talk'})
-        goto Event215
+    }
+
+    call Goron022Hello()
+
+    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_FirstKillGolemR'}) {
+        Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk06'})
+    } else
+    if Npc_Goron022.IsOnInstEventFlag() {
+        Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk01'})
+    } else {
+        Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk16'})
+        Npc_Goron022.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
     }
 }
 
 void Seek1stDungeon_Npc_Gaman01_DLC2nd_Talk() {
-    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_RingOnGround'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'})
+    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_RingOnGround'}) {
 
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-            Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk09'})
-        } else
-        Event146:
-        if Npc_Gaman01_DLC2nd.IsOnInstEventFlag() {
-
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
-
-            Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk08'})
-        } else
-        if !EventSystemActor.CheckExistActor({'ActorName': 'Npc_Gaman02_DLC2nd', 'IsCheckEquipStand': False, 'IsCheckLife': True}) {
-            if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': True, 'ActorName': 'Npc_Gaman03_DLC2nd'}) {
-
-                call InitTalk.InitTalk_Trio({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule', 'Actor1': 'Npc_Gaman01_DLC2nd', 'Actor2': 'Npc_Gaman02_DLC2nd', 'Actor3': 'Npc_Gaman03_DLC2nd'})
-
-                Npc_Gaman02_DLC2nd.Demo_TurnAndLookToObject({'ObjectId': 0, 'IsValid': True, 'IsWaitFinish': False, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                Npc_Gaman03_DLC2nd.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ObjectId': 0, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-
-                call GoronChallenge_Check()
-
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'}) {
-                    Event328:
-                    if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'}) {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'})
-                    }
-                } else {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk', 'IsWaitFinish': True})
-                    goto Event328
-                }
-            } else {
-                Event405:
-                GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
-                Npc_Gaman01_DLC2nd.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': False})
-            }
-        } else {
-            goto Event405
-        }
+        Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk09'})
     } else
-    goto Event146
+    if Npc_Gaman01_DLC2nd.IsOnInstEventFlag() {
+
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+
+        Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk08'})
+    } else
+    if !EventSystemActor.CheckExistActor({'ActorName': 'Npc_Gaman02_DLC2nd', 'IsCheckEquipStand': False, 'IsCheckLife': True})
+    && !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': True, 'ActorName': 'Npc_Gaman03_DLC2nd'}) {
+
+        call InitTalk.InitTalk_Trio({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule', 'Actor1': 'Npc_Gaman01_DLC2nd', 'Actor2': 'Npc_Gaman02_DLC2nd', 'Actor3': 'Npc_Gaman03_DLC2nd'})
+
+        Npc_Gaman02_DLC2nd.Demo_TurnAndLookToObject({'ObjectId': 0, 'IsValid': True, 'IsWaitFinish': False, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        Npc_Gaman03_DLC2nd.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ObjectId': 0, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+
+        call GoronChallenge_Check()
+
+        if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'}) {
+            EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk', 'IsWaitFinish': True})
+        }
+        if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'})
+        }
+    } else {
+        GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
+        Npc_Gaman01_DLC2nd.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': False})
+    }
 }
 
 void Seek1stDungeon_Npc_Gaman02_DLC2nd_Talk() {
-    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_RingOnGround'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'})
+    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_RingOnGround'}) {
 
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-            Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk03'})
-        } else
-        Event147:
-        if Npc_Gaman02_DLC2nd.IsOnInstEventFlag() {
-
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
-
-            Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk02'})
-        } else
-        if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': True, 'ActorName': 'Npc_Gaman01_DLC2nd'}) {
-            if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': True, 'ActorName': 'Npc_Gaman03_DLC2nd'}) {
-
-                call InitTalk.InitTalk_Trio({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule', 'Actor1': 'Npc_Gaman01_DLC2nd', 'Actor2': 'Npc_Gaman02_DLC2nd', 'Actor3': 'Npc_Gaman03_DLC2nd'})
-
-                Npc_Gaman01_DLC2nd.Demo_TurnAndLookToObject({'IsValid': True, 'ObjectId': 0, 'IsWaitFinish': False, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                Npc_Gaman03_DLC2nd.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ObjectId': 0, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk01', 'IsCloseMessageDialog': True})
-
-                call GoronChallenge_Check()
-
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'}) {
-                    Event330:
-                    if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'}) {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'})
-                    }
-                } else {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk', 'IsWaitFinish': True})
-                    goto Event330
-                }
-            } else {
-                Event406:
-                GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
-                Npc_Gaman02_DLC2nd.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': False})
-            }
-        } else {
-            goto Event406
-        }
+        Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk03'})
     } else
-    goto Event147
+    if Npc_Gaman02_DLC2nd.IsOnInstEventFlag() {
+
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+
+        Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk02'})
+    } else
+    if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': True, 'ActorName': 'Npc_Gaman01_DLC2nd'})
+    && !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': True, 'ActorName': 'Npc_Gaman03_DLC2nd'}) {
+
+        call InitTalk.InitTalk_Trio({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule', 'Actor1': 'Npc_Gaman01_DLC2nd', 'Actor2': 'Npc_Gaman02_DLC2nd', 'Actor3': 'Npc_Gaman03_DLC2nd'})
+
+        Npc_Gaman01_DLC2nd.Demo_TurnAndLookToObject({'IsValid': True, 'ObjectId': 0, 'IsWaitFinish': False, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        Npc_Gaman03_DLC2nd.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ObjectId': 0, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk01', 'IsCloseMessageDialog': True})
+
+        call GoronChallenge_Check()
+
+        if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'}) {
+            EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk', 'IsWaitFinish': True})
+        }
+        if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'})
+        }
+    } else {
+        GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
+        Npc_Gaman02_DLC2nd.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': False})
+    }
 }
 
 void Seek1stDungeon_Npc_Gaman03_DLC2nd_Talk() {
-    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_RingOnGround'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'})
+    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_RingOnGround'}) {
 
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-            Npc_Gaman03_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk03'})
-        } else
-        Event148:
-        if Npc_Gaman03_DLC2nd.IsOnInstEventFlag() {
-
-            call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
-
-            Npc_Gaman03_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk02'})
-        } else
-        if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': True, 'ActorName': 'Npc_Gaman01_DLC2nd'}) {
-            if !EventSystemActor.CheckExistActor({'ActorName': 'Npc_Gaman02_DLC2nd', 'IsCheckEquipStand': False, 'IsCheckLife': True}) {
-
-                call InitTalk.InitTalk_Trio({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule', 'Actor1': 'Npc_Gaman01_DLC2nd', 'Actor2': 'Npc_Gaman02_DLC2nd', 'Actor3': 'Npc_Gaman03_DLC2nd'})
-
-                Npc_Gaman01_DLC2nd.Demo_TurnAndLookToObject({'IsValid': True, 'ObjectId': 0, 'IsWaitFinish': False, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                Npc_Gaman02_DLC2nd.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                Npc_Gaman03_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk01', 'IsCloseMessageDialog': True})
-
-                call GoronChallenge_Check()
-
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'}) {
-                    Event332:
-                    if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'}) {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'})
-                    }
-                } else {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk', 'IsWaitFinish': True})
-                    goto Event332
-                }
-            } else {
-                Event407:
-                GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
-                Npc_Gaman03_DLC2nd.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-            }
-        } else {
-            goto Event407
-        }
+        Npc_Gaman03_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk03'})
     } else
-    goto Event148
+    if Npc_Gaman03_DLC2nd.IsOnInstEventFlag() {
+
+        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+
+        Npc_Gaman03_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk02'})
+    } else
+    if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': True, 'ActorName': 'Npc_Gaman01_DLC2nd'})
+    && !EventSystemActor.CheckExistActor({'ActorName': 'Npc_Gaman02_DLC2nd', 'IsCheckEquipStand': False, 'IsCheckLife': True}) {
+
+        call InitTalk.InitTalk_Trio({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule', 'Actor1': 'Npc_Gaman01_DLC2nd', 'Actor2': 'Npc_Gaman02_DLC2nd', 'Actor3': 'Npc_Gaman03_DLC2nd'})
+
+        Npc_Gaman01_DLC2nd.Demo_TurnAndLookToObject({'IsValid': True, 'ObjectId': 0, 'IsWaitFinish': False, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        Npc_Gaman02_DLC2nd.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        Npc_Gaman03_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk01', 'IsCloseMessageDialog': True})
+
+        call GoronChallenge_Check()
+
+        if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk'}) {
+            EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGoron_Goronbrothers_Talk', 'IsWaitFinish': True})
+        }
+        if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Goron_ChangeSchedule'})
+        }
+    } else {
+        GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
+        Npc_Gaman03_DLC2nd.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
+    }
 }
 
 void Seek1stDungeon_Npc_Gaman01_DLC2nd_Near() {
@@ -401,39 +366,38 @@ void GoronChallenge_Check() {
     if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Finish'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Finish'}) {
             Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk02'})
-            Event198:
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_RingOnGround'}) {
-                Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk10'})
-                GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'Pattern1PosX': 2315.81005859375, 'Pattern1PosY': 527.5800170898438, 'Pattern1PosZ': -2006.239990234375, 'Pattern1AtX': 2318.85009765625, 'Pattern1AtY': 524.3800048828125, 'Pattern1AtZ': -2014.199951171875, 'ReviseModeEnd': 2, 'CollisionInterpolateSkip': True, 'MotionMode': 0, 'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'StartCalcOnly': False, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'FovyAppendMode': 1, 'Pattern1Fovy': 50.0})
-                Npc_Gaman01_DLC2nd.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 3, 'IsValid': True, 'FaceId': 1, 'TurnDirection': 165.0, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0]})
-                Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk13'})
-                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'ReviseModeEnd': 2, 'CollisionInterpolateSkip': True, 'MotionMode': 0, 'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'StartCalcOnly': False, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1PosX': 2323.070068359375, 'Pattern1PosY': 512.7100219726562, 'Pattern1PosZ': -2031.68994140625, 'Pattern1AtX': 2322.75, 'Pattern1AtY': 510.04998779296875, 'Pattern1AtZ': -2040.3900146484375, 'Pattern1Fovy': 50.0, 'FovyAppendMode': 1})
-                Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk14'})
-                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 0, 'Count': 0.0})
-                GameRomCamera.Demo_MultiTalk({'IsWaitFinish': True, 'ActorName1': 'Npc_Gaman01_DLC2nd', 'ActorSpecify1': 3, 'ActorSpecify2': 3, 'ActorSpecify3': 3, 'ActorName2': 'Npc_Gaman02_DLC2nd', 'ActorName3': 'Npc_Gaman03_DLC2nd', 'Fovy': 40.0, 'UniqueName1': '', 'UniqueName2': '', 'UniqueName3': ''})
-                Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk04'})
-                Npc_Gaman03_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk04'})
-                Npc_Gaman01_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
-                Npc_Gaman02_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
-                Npc_Gaman03_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
-            } else {
-                Npc_Gaman01_DLC2nd.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                Npc_Gaman02_DLC2nd.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-                GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'StartCalcOnly': False, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'FovyAppendMode': 1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': True, 'Count': 30.0, 'Pattern1PosX': 2317.02001953125, 'Pattern1PosY': 531.75, 'Pattern1PosZ': -2009.52001953125, 'Pattern1AtX': 2320.419921875, 'Pattern1AtY': 520.1500244140625, 'Pattern1AtZ': -2025.199951171875, 'Pattern1Fovy': 30.0, 'MotionMode': 1})
-                Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk05'})
-                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 0, 'Count': 0.0})
-                GameRomCamera.Demo_MultiTalk({'IsWaitFinish': True, 'ActorName1': 'Npc_Gaman01_DLC2nd', 'ActorSpecify1': 3, 'ActorSpecify2': 3, 'ActorSpecify3': 3, 'ActorName2': 'Npc_Gaman02_DLC2nd', 'ActorName3': 'Npc_Gaman03_DLC2nd', 'Fovy': 40.0, 'UniqueName1': '', 'UniqueName2': '', 'UniqueName3': ''})
-                Npc_Gaman03_DLC2nd.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk12'})
-                Npc_Gaman01_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
-                Npc_Gaman02_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
-                Npc_Gaman03_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
-            }
         } else {
             Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk03'})
-            goto Event198
+        }
+        Event198:
+        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_RingOnGround'}) {
+            Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk10'})
+            GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'Pattern1PosX': 2315.81005859375, 'Pattern1PosY': 527.5800170898438, 'Pattern1PosZ': -2006.239990234375, 'Pattern1AtX': 2318.85009765625, 'Pattern1AtY': 524.3800048828125, 'Pattern1AtZ': -2014.199951171875, 'ReviseModeEnd': 2, 'CollisionInterpolateSkip': True, 'MotionMode': 0, 'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'StartCalcOnly': False, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'FovyAppendMode': 1, 'Pattern1Fovy': 50.0})
+            Npc_Gaman01_DLC2nd.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 3, 'IsValid': True, 'FaceId': 1, 'TurnDirection': 165.0, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0]})
+            Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk13'})
+            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+            GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'ReviseModeEnd': 2, 'CollisionInterpolateSkip': True, 'MotionMode': 0, 'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'StartCalcOnly': False, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1PosX': 2323.070068359375, 'Pattern1PosY': 512.7100219726562, 'Pattern1PosZ': -2031.68994140625, 'Pattern1AtX': 2322.75, 'Pattern1AtY': 510.04998779296875, 'Pattern1AtZ': -2040.3900146484375, 'Pattern1Fovy': 50.0, 'FovyAppendMode': 1})
+            Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk14'})
+            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 0, 'Count': 0.0})
+            GameRomCamera.Demo_MultiTalk({'IsWaitFinish': True, 'ActorName1': 'Npc_Gaman01_DLC2nd', 'ActorSpecify1': 3, 'ActorSpecify2': 3, 'ActorSpecify3': 3, 'ActorName2': 'Npc_Gaman02_DLC2nd', 'ActorName3': 'Npc_Gaman03_DLC2nd', 'Fovy': 40.0, 'UniqueName1': '', 'UniqueName2': '', 'UniqueName3': ''})
+            Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk04'})
+            Npc_Gaman03_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk04'})
+            Npc_Gaman01_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
+            Npc_Gaman02_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
+            Npc_Gaman03_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
+        } else {
+            Npc_Gaman01_DLC2nd.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+            Npc_Gaman02_DLC2nd.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+            GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'ActorIgnoringCollision': -1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'StartCalcOnly': False, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'FovyAppendMode': 1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': True, 'Count': 30.0, 'Pattern1PosX': 2317.02001953125, 'Pattern1PosY': 531.75, 'Pattern1PosZ': -2009.52001953125, 'Pattern1AtX': 2320.419921875, 'Pattern1AtY': 520.1500244140625, 'Pattern1AtZ': -2025.199951171875, 'Pattern1Fovy': 30.0, 'MotionMode': 1})
+            Npc_Gaman02_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman02_DLC2nd_Talk05'})
+            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 0, 'Count': 0.0})
+            GameRomCamera.Demo_MultiTalk({'IsWaitFinish': True, 'ActorName1': 'Npc_Gaman01_DLC2nd', 'ActorSpecify1': 3, 'ActorSpecify2': 3, 'ActorSpecify3': 3, 'ActorName2': 'Npc_Gaman02_DLC2nd', 'ActorName3': 'Npc_Gaman03_DLC2nd', 'Fovy': 40.0, 'UniqueName1': '', 'UniqueName2': '', 'UniqueName3': ''})
+            Npc_Gaman03_DLC2nd.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman03_DLC2nd_Talk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+            Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk12'})
+            Npc_Gaman01_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
+            Npc_Gaman02_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
+            Npc_Gaman03_DLC2nd.Demo_SetInstEventFlag({'IsWaitFinish': True})
         }
     } else
     if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Finish'}) {
@@ -443,19 +407,17 @@ void GoronChallenge_Check() {
     if EventSystemActor.CheckFlag({'FlagName': 'Gaman_Activated'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Activated'}) {
             Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk05'})
-            goto Event198
         } else {
             Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk06'})
-            goto Event198
         }
+        goto Event198
     } else
     if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Activated'}) {
         Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk07'})
-        goto Event198
     } else {
         Npc_Gaman01_DLC2nd.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Gaman01_DLC2nd_Talk01'})
-        goto Event198
     }
+    goto Event198
 }
 
 void Goron022Hello() {
@@ -631,14 +593,11 @@ void Seek1stDungeon_Npc_Goron020_2_Talk() {
                 Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron020_2_Talk05'})
                 switch EventSystemActor.GeneralChoice4() {
                   case 0:
-                    if Npc_Goron020_2[YunBo_Finished].IsOnInstEventFlag() {
-                        Event305:
-                        Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk24', 'IsCloseMessageDialog': True})
-                        goto Event301
-                    } else {
+                    if !Npc_Goron020_2[YunBo_Finished].IsOnInstEventFlag() {
                         Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk13'})
-                        goto Event305
                     }
+                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk24', 'IsCloseMessageDialog': True})
+                    goto Event301
                   case 1:
                     GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1607.1854248046875, 'Pattern1PosY': 507.4464111328125, 'Pattern1PosZ': -2434.212646484375, 'Pattern1AtX': 1610.5841064453125, 'Pattern1AtY': 508.3669128417969, 'Pattern1AtZ': -2434.633056640625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
                     Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk14', 'IsCloseMessageDialog': True})
@@ -683,13 +642,12 @@ void Seek1stDungeon_Npc_Goron020_2_Talk() {
                 Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron020_2_Talk02', 'IsCloseMessageDialog': False})
                 if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_YunboTalk_In_Home'}) {
                     Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron020_2_Talk11'})
-                    Event337:
-                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron020_2_Talk08'})
-                    goto Event321
                 } else {
                     Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron020_2_Talk10'})
-                    goto Event337
                 }
+                Event337:
+                Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron020_2_Talk08'})
+                goto Event321
               case 1:
                 Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron020_2_Talk07', 'IsCloseMessageDialog': True})
                 goto Event337
@@ -703,15 +661,12 @@ void Seek1stDungeon_Npc_Goron020_2_Talk() {
 
         if Npc_Goron020_2[YunBo_Finished].CheckActorAction13() in [4, 5, 10] {
             Event311:
-            if Npc_Goron020_2[YunBo_Finished].IsOnInstEventFlag() {
-                Event294:
-                Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk23'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Goron020_First', 'IsWaitFinish': True})
-                goto Event320
-            } else {
+            if !Npc_Goron020_2[YunBo_Finished].IsOnInstEventFlag() {
                 Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk27'})
-                goto Event294
             }
+            Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk23'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Goron020_First', 'IsWaitFinish': True})
+            goto Event320
         }
     }
 }

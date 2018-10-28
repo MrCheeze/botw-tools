@@ -18,15 +18,12 @@ void Talk() {
 
     switch Npc_oasis032.CheckActorAction13() {
       case 0:
-        if Npc_oasis032.IsOnInstEventFlag() {
-            Event6:
-            Npc_oasis032.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_03'})
-        } else {
+        if !Npc_oasis032.IsOnInstEventFlag() {
 
             call hello()
 
-            goto Event6
         }
+        Npc_oasis032.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_03'})
       case 1:
         if Npc_oasis032.IsOnInstEventFlag() {
             Npc_oasis032.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_01', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -47,15 +44,12 @@ void Talk() {
             goto Event31
         }
       case 10:
-        if Npc_oasis032.IsOnInstEventFlag() {
-            Event5:
-            Npc_oasis032.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_02'})
-        } else {
+        if !Npc_oasis032.IsOnInstEventFlag() {
 
             call hello()
 
-            goto Event5
         }
+        Npc_oasis032.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_02'})
       case 11:
         Npc_oasis032.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_05'})
     }

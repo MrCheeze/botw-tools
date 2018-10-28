@@ -60,25 +60,22 @@ void Talk() {
                     Event165:
                     if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_006_Finish'}) {
                         if TwnObj_Village_SheikerTorchStand_A_02[Challange_D].IsIgnitionByArrowFire() {
-                            if TwnObj_Village_SheikerTorchStand_A_02[Challange_C].IsIgnitionByArrowFire() {
-                                if TwnObj_Village_SheikerTorchStand_A_02[Challange_B].IsIgnitionByArrowFire() {
-                                    if TwnObj_Village_SheikerTorchStand_A_02[Challange_A].IsIgnitionByArrowFire() {
-                                        Event166:
-                                        Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk31'})
-                                        Event36:
-                                        if !EventSystemActor.GeneralChoice2() {
-                                            goto Event114
-                                        } else
-                                        if !EventSystemActor.RandomChoice2() {
-                                            Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk23'})
-                                        } else {
-                                            Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk24'})
-                                        }
+                            if TwnObj_Village_SheikerTorchStand_A_02[Challange_C].IsIgnitionByArrowFire()
+                            && TwnObj_Village_SheikerTorchStand_A_02[Challange_B].IsIgnitionByArrowFire() {
+                                if TwnObj_Village_SheikerTorchStand_A_02[Challange_A].IsIgnitionByArrowFire() {
+                                    Event166:
+                                    Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk31'})
+                                    Event36:
+                                    if !EventSystemActor.GeneralChoice2() {
+                                        goto Event114
                                     } else
-                                    goto Event165
-                                } else {
-                                    goto Event166
-                                }
+                                    if !EventSystemActor.RandomChoice2() {
+                                        Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk23'})
+                                    } else {
+                                        Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk24'})
+                                    }
+                                } else
+                                goto Event165
                             } else {
                                 goto Event166
                             }
@@ -139,21 +136,19 @@ void Talk() {
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_006_Arrow'}) {
             Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk25'})
-            Event167:
-            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
-
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko_Ch_006_hobi'})
-            Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk26', 'IsCloseMessageDialog': True})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            Npc_Kakariko010.Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': False})
-            EventSystemActor.Demo_FlagON({'FlagName': 'Kakariko_Ch_006_Finish', 'IsWaitFinish': True})
         } else {
             Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk37'})
-            goto Event167
         }
+        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Red'})
+
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko_Ch_006_hobi'})
+        Npc_Kakariko010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko010:Talk26', 'IsCloseMessageDialog': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        Npc_Kakariko010.Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': False})
+        EventSystemActor.Demo_FlagON({'FlagName': 'Kakariko_Ch_006_Finish', 'IsWaitFinish': True})
     } else
     goto Event15
 }

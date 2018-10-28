@@ -164,20 +164,17 @@ void C03() {
     EventCameraRumble.Demo_Rumble({'IsWaitFinish': True, 'Sideways': False, 'Power': 3.0, 'Pattern': 4, 'Count': 2})
     if !EventSystemActor.CheckEventCancel() {
         EventControllerRumble.Demo_RumbleLarge({'IsWaitFinish': False, 'Count': 3})
-        Event73:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
-
-        fork {
-            GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'Demo642_0-C02-Link-A-0', 'IsWaitFinish': True})
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
-        } {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'FinalTrial_Lift_MoveDown', 'IsWaitFinish': True})
-            GameRomCamera.Demo_CameraAnimFlowAbs({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'IsWaitFinish': False, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'SceneName': 'C02-1'})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-            Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
-        }
-
-    } else {
-        goto Event73
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
+
+    fork {
+        GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'Demo642_0-C02-Link-A-0', 'IsWaitFinish': True})
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
+    } {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'FinalTrial_Lift_MoveDown', 'IsWaitFinish': True})
+        GameRomCamera.Demo_CameraAnimFlowAbs({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'IsWaitFinish': False, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'SceneName': 'C02-1'})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+        Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+    }
+
 }

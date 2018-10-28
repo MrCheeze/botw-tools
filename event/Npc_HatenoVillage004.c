@@ -212,20 +212,18 @@ void Sotetsu_BlueFire() {
         if EventSystemActor.CheckFlag({'FlagName': 'CarryingBlueFireEXMini_Permit'}) {
             if Npc_HatenoVillage004.IsOnInstEventFlag() {
                 Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk12'})
-                Event120:
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
             } else {
                 Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk10'})
-                goto Event120
             }
+            Event120:
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else
         if Npc_HatenoVillage004.IsOnInstEventFlag() {
             Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk18'})
-            goto Event120
         } else {
             Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk17'})
-            goto Event120
         }
+        goto Event120
     } else {
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
@@ -238,14 +236,12 @@ void SotetsuSleep() {
 
         call InitTalk.InitTalkEquip({'Arg_Turn': 0})
 
-        Event71:
-        Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk09'})
     } else {
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-        goto Event71
     }
+    Npc_HatenoVillage004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage004:talk09'})
 }
 
 void SotetsuGoHome() {

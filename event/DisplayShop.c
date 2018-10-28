@@ -74,15 +74,14 @@ void Multiple() {
                 Npc_Kakariko010[Multiple(Self)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': False})
                 if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 1, 'GameDataIntName': 'Shop_TradeItemNum'}) {
                     Npc_Kakariko010[Multiple(Self)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_56'})
-                    Event71:
-                    if !EventSystemActor.GeneralChoice2() {
-                        goto Event81
-                    } else {
-                        goto Event73
-                    }
                 } else {
                     Npc_Kakariko010[Multiple(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_52'})
-                    goto Event71
+                }
+                Event71:
+                if !EventSystemActor.GeneralChoice2() {
+                    goto Event81
+                } else {
+                    goto Event73
                 }
               case 1:
                 Npc_Kakariko010[Multiple(Self)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': True})

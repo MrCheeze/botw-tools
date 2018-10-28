@@ -26,13 +26,12 @@ void Talk() {
           case 0:
             if EventSystemActor.CheckFlag({'FlagName': 'Clear_Dungeon021'}) {
                 Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk102'})
-                Event21:
-                Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk141'})
-                goto Event7
             } else {
                 Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk101', 'IsCloseMessageDialog': True})
-                goto Event21
             }
+            Event21:
+            Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk141'})
+            goto Event7
           case 1:
             Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk111', 'IsCloseMessageDialog': True})
             goto Event21
@@ -40,11 +39,10 @@ void Talk() {
             Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk121'})
             if EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_Activated'}) {
                 EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                goto Event21
             } else {
                 Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk122'})
-                goto Event21
             }
+            goto Event21
           case 3:
             Npc_TabantaBridgeHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TabantaBridgeHatago001:talk131'})
             if !EventSystemActor.GeneralChoice2() {

@@ -38,11 +38,9 @@ void CDungeon135_00() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event4:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SceneSoundCtrlTag.Demo_CustomDuckingStop({'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event4
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SceneSoundCtrlTag.Demo_CustomDuckingStop({'IsWaitFinish': True})
 }

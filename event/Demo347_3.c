@@ -142,12 +142,9 @@ void Demo() {
     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'KillTimeProhibition'})
     if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Location_RemainsElectric', 'Operator': 'LessThan', 'Value': 1}) {
         EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'Location_RemainsElectric', 'Value': 1})
-        Event47:
-
-        call Electric_Relic.Electric_Relic_Recovery()
-
-        EventSystemActor.Demo_ChangeScene({'StartType': -1, 'IsWaitFinish': True, 'WarpDestMapName': 'MainFieldDungeon/RemainsElectric', 'EvflName': 'Demo706_0', 'EntryPointName': 'EnterRemainElectric', 'WarpDestPosName': 'StartDemoEnter', 'FadeType': 0})
-    } else {
-        goto Event47
     }
+
+    call Electric_Relic.Electric_Relic_Recovery()
+
+    EventSystemActor.Demo_ChangeScene({'StartType': -1, 'IsWaitFinish': True, 'WarpDestMapName': 'MainFieldDungeon/RemainsElectric', 'EvflName': 'Demo706_0', 'EntryPointName': 'EnterRemainElectric', 'WarpDestPosName': 'StartDemoEnter', 'FadeType': 0})
 }

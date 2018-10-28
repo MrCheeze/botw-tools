@@ -61,23 +61,22 @@ queries: []
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
 void StartNaked() {
-    if !EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_OnceRetire'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_Finish'}) {
-            SceneSoundCtrlTag.Demo_SetStartProc({'BgmCtrlType': 'Mute', 'SeCtrlType': 'EnvReduce', 'IsWaitFinish': True})
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'LookAround', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/NakedIsland:talk00'})
-            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SaveProhibition'})
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'AutoSaveOnOff'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'WarpProhibition'})
-            EventSystemActor.Demo_InitPouchForQuest({'IsWaitFinish': True})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
-            GameROMPlayer.Demo_UpdateEquip({'IsWaitFinish': True})
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-            EventSystemActor.Demo_ForceSetPlayerRestartPosAn({'UniqueName': 'Restart', 'AnchorName': 'ForceSetPosDirAutoSaveAnchor', 'IsWaitFinish': True})
-            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/NakedIsland:talk05'})
-            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'NakedIsland', 'StepName': 'Naked'})
-        }
+    if !EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_OnceRetire'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_Finish'}) {
+        SceneSoundCtrlTag.Demo_SetStartProc({'BgmCtrlType': 'Mute', 'SeCtrlType': 'EnvReduce', 'IsWaitFinish': True})
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'LookAround', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+        EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/NakedIsland:talk00'})
+        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SaveProhibition'})
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'AutoSaveOnOff'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'WarpProhibition'})
+        EventSystemActor.Demo_InitPouchForQuest({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
+        GameROMPlayer.Demo_UpdateEquip({'IsWaitFinish': True})
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+        EventSystemActor.Demo_ForceSetPlayerRestartPosAn({'UniqueName': 'Restart', 'AnchorName': 'ForceSetPosDirAutoSaveAnchor', 'IsWaitFinish': True})
+        EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/NakedIsland:talk05'})
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'NakedIsland', 'StepName': 'Naked'})
     }
 }
 
@@ -154,15 +153,13 @@ void SetBall1() {
     EventSystemActor.Demo_FlagON({'FlagName': 'NakedIsland_EraseBall_1', 'IsWaitFinish': True})
     Event70:
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
-    if EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_SetBall_1'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_SetBall_2'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_SetBall_3'}) {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 50.0, 'StartCalcOnly': False, 'MotionMode': 1, 'ReviseModeEnd': 2, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'Pattern1PosX': 4569.0, 'Pattern1PosY': 217.0, 'Pattern1PosZ': 3663.0, 'Pattern1AtX': 4574.0, 'Pattern1AtY': 216.0, 'Pattern1AtZ': 3666.0, 'Count': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NakedIsland_DemoAppearDungeon'})
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_SetBall_1'})
+    && EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_SetBall_2'})
+    && EventSystemActor.CheckFlag({'FlagName': 'NakedIsland_SetBall_3'}) {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 50.0, 'StartCalcOnly': False, 'MotionMode': 1, 'ReviseModeEnd': 2, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'Pattern1PosX': 4569.0, 'Pattern1PosY': 217.0, 'Pattern1PosZ': 3663.0, 'Pattern1AtX': 4574.0, 'Pattern1AtY': 216.0, 'Pattern1AtZ': 3666.0, 'Count': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'NakedIsland_DemoAppearDungeon'})
     }
 }
 

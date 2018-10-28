@@ -18,38 +18,37 @@ void Talk() {
 
     if !EventSystemActor.RandomChoice2() {
         TwnObj_AncientOven_A_01.Demo_OpenMessageDialog({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk10', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-        Event15:
-        TwnObj_AncientOven_A_01.Demo_OpenMessageDialogTrig({'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk01', 'IsWaitFinish': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 1})
-        Event16:
-        TwnObj_AncientOven_A_01.Demo_MakeArtifact({'IsWaitFinish': True})
-        switch EventSystemActor.CheckManufactResult() {
-          case 0:
-            TwnObj_AncientOven_A_01.Demo_OpenMessageDialog({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk03', 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsWaitFinish': True})
-            if !EventSystemActor.GeneralChoice2() {
-                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                TwnObj_AncientOven_A_01.Demo_ManufactItem({'IsWaitFinish': True})
-                TwnObj_AncientOven_A_01.Demo_OpenMessageDialog({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk04', 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsWaitFinish': True})
-                TwnObj_AncientOven_A_01.Demo_OpenMessageDialog({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk05', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-                goto Event15
-            } else {
-                TwnObj_AncientOven_A_01.Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk09', 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-                goto Event15
-            }
-          case 3:
-            TwnObj_AncientOven_A_01.Demo_OpenMessageDialogTrig({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk06', 'CloseDialogOption': 1})
-            goto Event16
-          case 4:
-            TwnObj_AncientOven_A_01.Demo_OpenMessageDialogTrig({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk07', 'CloseDialogOption': 1})
-            goto Event16
-          case 5:
-            TwnObj_AncientOven_A_01.Demo_OpenMessageDialogTrig({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk08', 'CloseDialogOption': 1})
-            goto Event16
-          case 6:
-            TwnObj_AncientOven_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk02', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Talk'})
-        }
     } else {
         TwnObj_AncientOven_A_01.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk00', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-        goto Event15
+    }
+    Event15:
+    TwnObj_AncientOven_A_01.Demo_OpenMessageDialogTrig({'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk01', 'IsWaitFinish': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 1})
+    Event16:
+    TwnObj_AncientOven_A_01.Demo_MakeArtifact({'IsWaitFinish': True})
+    switch EventSystemActor.CheckManufactResult() {
+      case 0:
+        TwnObj_AncientOven_A_01.Demo_OpenMessageDialog({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk03', 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsWaitFinish': True})
+        if !EventSystemActor.GeneralChoice2() {
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+            TwnObj_AncientOven_A_01.Demo_ManufactItem({'IsWaitFinish': True})
+            TwnObj_AncientOven_A_01.Demo_OpenMessageDialog({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk04', 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsWaitFinish': True})
+            TwnObj_AncientOven_A_01.Demo_OpenMessageDialog({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk05', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+            goto Event15
+        } else {
+            TwnObj_AncientOven_A_01.Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk09', 'ASName': '', 'IsCloseMessageDialog': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+            goto Event15
+        }
+      case 3:
+        TwnObj_AncientOven_A_01.Demo_OpenMessageDialogTrig({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk06', 'CloseDialogOption': 1})
+        goto Event16
+      case 4:
+        TwnObj_AncientOven_A_01.Demo_OpenMessageDialogTrig({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk07', 'CloseDialogOption': 1})
+        goto Event16
+      case 5:
+        TwnObj_AncientOven_A_01.Demo_OpenMessageDialogTrig({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk08', 'CloseDialogOption': 1})
+        goto Event16
+      case 6:
+        TwnObj_AncientOven_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/TwnObj_AncientOven_A_01:talk02', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Talk'})
     }
 }
 

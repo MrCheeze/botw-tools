@@ -30,10 +30,8 @@ void Demo011_0() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
     if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo165_5'}) {
         EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo165_4'})
-        Event3:
-        EventSystemActor.Demo_OffWaitRevival({'IsWaitFinish': True})
     } else {
         EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo165_5'})
-        goto Event3
     }
+    EventSystemActor.Demo_OffWaitRevival({'IsWaitFinish': True})
 }

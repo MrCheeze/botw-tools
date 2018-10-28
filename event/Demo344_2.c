@@ -160,69 +160,66 @@ void Demo344_2() {
                         RemainsWater_WeakPoint[WeakPoint4].Demo_PlayASForDemo({'ASName': 'Alert', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'MorphingFrame': -1.0, 'ClothWarpMode': -1})
                         if EventSystemActor.CheckFlag({'FlagName': 'Retry_Check'}) {
                             Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_019', 'IsCloseMessageDialog': True})
-                            Event307:
+                        } else {
+                            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_003', 'IsCloseMessageDialog': True})
+                        }
 
-                            fork {
-                                GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': True, 'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C14-0', 'TargetActor': 3, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince01', 'TargetActorPosReferenceMode': 2, 'TargetActorDirReferenceMode': 2, 'StartFrame': 30.0, 'IsWaitFinish': False, 'EndFrame': -1.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                            } {
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
+                        fork {
+                            GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': True, 'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C14-0', 'TargetActor': 3, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince01', 'TargetActorPosReferenceMode': 2, 'TargetActorDirReferenceMode': 2, 'StartFrame': 30.0, 'IsWaitFinish': False, 'EndFrame': -1.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+                        } {
+                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
+                            Npc_ZoraB001[Prince01].Demo_LookAtObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ObjectId': 2, 'IsValid': True, 'FaceId': 2, 'ActorName': 'AnchorAction10', 'UniqueName': '', 'TurnPosition': [3665.75, 363.3500061035156, -185.58999633789062], 'PosOffset': [0.0, 0.0, 0.0]})
+                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
+                        }
+
+                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'StartFrame': 0.0, 'ActorName': 'RemainsWater', 'TargetActor': 3, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'UniqueName': '', 'Accept1FrameDelay': False, 'SceneName': 'C16-0', 'EndFrame': -1.0, 'IsWaitFinish': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+                        Npc_ZoraB001[Prince01].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ActorName': 'AnchorAction10', 'TurnPosition': [3661.75, 268.1199951171875, -175.3699951171875], 'UniqueName': '', 'TurnDirection': 110.0, 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 3, 'FaceId': 0, 'IsConfront': False})
+                        Npc_ZoraB001[Prince01].Demo_LookAtObject({'ActorName': '', 'IsWaitFinish': True, 'TurnDirection': 135.0, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0]})
+                        Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_004', 'IsCloseMessageDialog': True})
+                        GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': True, 'IsWaitFinish': False, 'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'StartFrame': 0.0, 'TargetActor': 3, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince01', 'TargetActorPosReferenceMode': 2, 'TargetActorDirReferenceMode': 2, 'SceneName': 'C17-0', 'EndFrame': -1.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+                        if EventSystemActor.CheckFlag({'FlagName': 'Retry_Check'}) {
+                            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_020', 'IsCloseMessageDialog': True})
+                            if !EventSystemActor.GeneralChoice2() {
                                 Npc_ZoraB001[Prince01].Demo_LookAtObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ObjectId': 2, 'IsValid': True, 'FaceId': 2, 'ActorName': 'AnchorAction10', 'UniqueName': '', 'TurnPosition': [3665.75, 363.3500061035156, -185.58999633789062], 'PosOffset': [0.0, 0.0, 0.0]})
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
-                            }
-
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'StartFrame': 0.0, 'ActorName': 'RemainsWater', 'TargetActor': 3, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'UniqueName': '', 'Accept1FrameDelay': False, 'SceneName': 'C16-0', 'EndFrame': -1.0, 'IsWaitFinish': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                            Npc_ZoraB001[Prince01].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ActorName': 'AnchorAction10', 'TurnPosition': [3661.75, 268.1199951171875, -175.3699951171875], 'UniqueName': '', 'TurnDirection': 110.0, 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 3, 'FaceId': 0, 'IsConfront': False})
-                            Npc_ZoraB001[Prince01].Demo_LookAtObject({'ActorName': '', 'IsWaitFinish': True, 'TurnDirection': 135.0, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0]})
-                            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_004', 'IsCloseMessageDialog': True})
-                            GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': True, 'IsWaitFinish': False, 'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'StartFrame': 0.0, 'TargetActor': 3, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince01', 'TargetActorPosReferenceMode': 2, 'TargetActorDirReferenceMode': 2, 'SceneName': 'C17-0', 'EndFrame': -1.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                            if EventSystemActor.CheckFlag({'FlagName': 'Retry_Check'}) {
-                                Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_020', 'IsCloseMessageDialog': True})
-                                if !EventSystemActor.GeneralChoice2() {
-                                    Npc_ZoraB001[Prince01].Demo_LookAtObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ObjectId': 2, 'IsValid': True, 'FaceId': 2, 'ActorName': 'AnchorAction10', 'UniqueName': '', 'TurnPosition': [3665.75, 363.3500061035156, -185.58999633789062], 'PosOffset': [0.0, 0.0, 0.0]})
-                                    Npc_ZoraB001[Prince01].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ActorName': 'AnchorAction10', 'TurnPosition': [3661.75, 268.1199951171875, -175.3699951171875], 'UniqueName': '', 'TurnDirection': 110.0, 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 3, 'FaceId': 0, 'IsConfront': False})
-                                    Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_011'})
-                                    EventBgmCtrlTag.Demo_Stop({'IsWaitFinish': True, 'FadeSec': 1.0, 'BgmName': 'ZoraPrinceTalkBgm'})
-                                    Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 2})
-                                    Event227:
-                                    if EventSystemActor.CheckFlag({'FlagName': 'Retry_Check'}) {
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Demo344_2_LatterHalf'})
-                                        Npc_ZoraB001[Prince01].Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'Demo_InWater', 'SLinkKey': ''})
-                                        Npc_ZoraB001[Prince01].Demo_WarpToAnchor({'IsWaitFinish': False, 'DirectionY': 3465.469970703125, 'DestinationX': 324.2900085449219, 'DestinationY': -391.489990234375, 'DestinationZ': 0.0})
-                                        GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                                        Npc_Zora030[RelicBattleZora].Demo_TurnAndLookToObject({'ActorName': 'AnchorAction10', 'IsWaitFinish': True, 'TurnDirection': 0.0, 'ObjectId': 2, 'IsValid': True, 'FaceId': 1, 'TurnPosition': [3596.77001953125, 315.5, -250.10000610351562], 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
-                                        EventSystemActor.Demo_WarpPlayerToActor({'ActorName': 'Npc_Zora030', 'IsWaitFinish': True, 'DestinationY': 0.0, 'DirectionY': 0.0, 'RotToVec3f': False, 'GameDataVec3fRotDir': '', 'DestinationX': 0.0, 'DestinationZ': -0.5, 'OnGround': False, 'RelativeDist': 0.0, 'IsOffsetBaseTargetActor': False})
-                                        GameROMPlayer.Demo_LookAtTheFront({'IsWaitFinish': False, 'IsValid': True})
-                                        GameROMPlayer.Demo_PlayerZoraRide({'IsWaitFinish': False})
-                                        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                                        Fader.Demo_FadeIn({'Color': 1, 'DispMode': 'Auto', 'Frame': 2, 'IsWaitFinish': False})
-                                        EventBgmCtrlTag.Demo_Start({'BgmName': 'RemainsWaterBattleBgm', 'IsWaitFinish': True})
-                                        Event261:
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Retry_Check'})
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Demo_Test01'})
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Water_Relic_BattleTime'})
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Water_Relic_Step2'})
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SaveProhibition'})
-                                        EventSystemActor.Demo_FlagON({'FlagName': 'WarpProhibition', 'IsWaitFinish': True})
-                                    } else {
-
-                                        call Demo344_2_LatterHalf()
-
-                                    }
-                                }
-                            } else {
-                                Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_007', 'IsCloseMessageDialog': True})
-                                if !EventSystemActor.GeneralChoice2() {
-                                    Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_009', 'IsCloseMessageDialog': True})
-                                    goto Event227
+                                Npc_ZoraB001[Prince01].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': True, 'ActorName': 'AnchorAction10', 'TurnPosition': [3661.75, 268.1199951171875, -175.3699951171875], 'UniqueName': '', 'TurnDirection': 110.0, 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 3, 'FaceId': 0, 'IsConfront': False})
+                                Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_011'})
+                                EventBgmCtrlTag.Demo_Stop({'IsWaitFinish': True, 'FadeSec': 1.0, 'BgmName': 'ZoraPrinceTalkBgm'})
+                                Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 2})
+                                Event227:
+                                if EventSystemActor.CheckFlag({'FlagName': 'Retry_Check'}) {
+                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Demo344_2_LatterHalf'})
+                                    Npc_ZoraB001[Prince01].Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'Demo_InWater', 'SLinkKey': ''})
+                                    Npc_ZoraB001[Prince01].Demo_WarpToAnchor({'IsWaitFinish': False, 'DirectionY': 3465.469970703125, 'DestinationX': 324.2900085449219, 'DestinationY': -391.489990234375, 'DestinationZ': 0.0})
+                                    GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+                                    Npc_Zora030[RelicBattleZora].Demo_TurnAndLookToObject({'ActorName': 'AnchorAction10', 'IsWaitFinish': True, 'TurnDirection': 0.0, 'ObjectId': 2, 'IsValid': True, 'FaceId': 1, 'TurnPosition': [3596.77001953125, 315.5, -250.10000610351562], 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
+                                    EventSystemActor.Demo_WarpPlayerToActor({'ActorName': 'Npc_Zora030', 'IsWaitFinish': True, 'DestinationY': 0.0, 'DirectionY': 0.0, 'RotToVec3f': False, 'GameDataVec3fRotDir': '', 'DestinationX': 0.0, 'DestinationZ': -0.5, 'OnGround': False, 'RelativeDist': 0.0, 'IsOffsetBaseTargetActor': False})
+                                    GameROMPlayer.Demo_LookAtTheFront({'IsWaitFinish': False, 'IsValid': True})
+                                    GameROMPlayer.Demo_PlayerZoraRide({'IsWaitFinish': False})
+                                    GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
+                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                                    Fader.Demo_FadeIn({'Color': 1, 'DispMode': 'Auto', 'Frame': 2, 'IsWaitFinish': False})
+                                    EventBgmCtrlTag.Demo_Start({'BgmName': 'RemainsWaterBattleBgm', 'IsWaitFinish': True})
+                                    Event261:
+                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Retry_Check'})
+                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Demo_Test01'})
+                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Water_Relic_BattleTime'})
+                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Water_Relic_Step2'})
+                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SaveProhibition'})
+                                    EventSystemActor.Demo_FlagON({'FlagName': 'WarpProhibition', 'IsWaitFinish': True})
                                 } else {
-                                    Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_010', 'IsCloseMessageDialog': True})
-                                    goto Event227
+
+                                    call Demo344_2_LatterHalf()
+
                                 }
                             }
                         } else {
-                            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_003', 'IsCloseMessageDialog': True})
-                            goto Event307
+                            Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_007', 'IsCloseMessageDialog': True})
+                            if !EventSystemActor.GeneralChoice2() {
+                                Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_009', 'IsCloseMessageDialog': True})
+                            } else {
+                                Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_010', 'IsCloseMessageDialog': True})
+                            }
+                            goto Event227
                         }
                     } else {
                         Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_002', 'ASName': 'Talk_Prince_Joy'})
@@ -239,11 +236,10 @@ void Demo344_2() {
                     Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_002', 'ASName': 'Talk_Prince_Joy'})
                     if EventSystemActor.CheckFlag({'FlagName': 'Retry_Check'}) {
                         Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_008', 'ASName': 'Talk_Surprised'})
-                        goto Event324
                     } else {
                         Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Surprised', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_026'})
-                        goto Event324
                     }
+                    goto Event324
                 } else {
                     Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_002', 'ASName': 'Talk_Prince_Joy'})
                     Npc_ZoraB001[Prince01].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Surprised', 'MessageId': 'EventFlowMsg/Water_Relic:Npc_ZoraB001_S2_024'})
@@ -277,21 +273,18 @@ void DemoInitialize() {
     Fader.Demo_FadeOut({'Frame': 2, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
     if EventSystemActor.CheckPlayerRideHorse() {
         GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-        Event15:
-        GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-        GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-        Npc_ZoraB001[Prince01].Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
-        Npc_ZoraB001[Prince01].Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': '', 'AnchorName': 'AnchorAction3'})
-        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 0.0, 'DestinationZ': -345.1400146484375, 'DestinationY': 316.4599914550781, 'DestinationX': 3594.43994140625})
-        Npc_ZoraB001[Prince01].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ActorName': '', 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince01', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
-        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': 0.0, 'ASName': 'DemoWait'})
-        GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': True, 'UniqueName': 'Prince01', 'ActorName': 'Npc_ZoraB001', 'TargetActor': 3, 'SceneName': 'C10-0', 'TargetActorPosReferenceMode': 1, 'CameraName': '', 'StartFrame': 0.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'TargetActorDirReferenceMode': 1, 'IsWaitFinish': True, 'EndFrame': 30.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-        Fader.Demo_FadeIn({'Frame': 2, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
-    } else {
-        goto Event15
     }
+    GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
+    GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+    Npc_ZoraB001[Prince01].Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
+    Npc_ZoraB001[Prince01].Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': '', 'AnchorName': 'AnchorAction3'})
+    EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 0.0, 'DestinationZ': -345.1400146484375, 'DestinationY': 316.4599914550781, 'DestinationX': 3594.43994140625})
+    Npc_ZoraB001[Prince01].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ActorName': '', 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
+    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince01', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
+    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': 0.0, 'ASName': 'DemoWait'})
+    GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': True, 'UniqueName': 'Prince01', 'ActorName': 'Npc_ZoraB001', 'TargetActor': 3, 'SceneName': 'C10-0', 'TargetActorPosReferenceMode': 1, 'CameraName': '', 'StartFrame': 0.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'TargetActorDirReferenceMode': 1, 'IsWaitFinish': True, 'EndFrame': 30.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+    Fader.Demo_FadeIn({'Frame': 2, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
 }
 
 void Demo344_2_LatterHalf() {

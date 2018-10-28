@@ -60,39 +60,36 @@ void Talk() {
       case 3:
         if Npc_Goron013.IsOnInstEventFlag() {
             Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk22'})
-            Event41:
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-                Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk02'})
-                Npc_Goron013.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk21', 'IsWaitFinish': True})
-                Event54:
-                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk26'})
-                goto Event41
-              case 1:
-                Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk16'})
-                if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
-                    Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk25'})
-                    goto Event54
-                } else
-                if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Activated'}) {
-                    Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk27'})
-                    goto Event54
-                } else {
-                    Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk23'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk24'})
-                        goto Event54
-                    } else {
-                        goto Event54
-                    }
-                }
-              case 2:
-                Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk20'})
-            }
         } else {
             Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk19'})
+        }
+        Event41:
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk02'})
+            Npc_Goron013.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk21', 'IsWaitFinish': True})
+            Event54:
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+            Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk26'})
             goto Event41
+          case 1:
+            Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk16'})
+            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
+                Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk25'})
+                goto Event54
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Activated'}) {
+                Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk27'})
+                goto Event54
+            } else {
+                Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk23'})
+                if !EventSystemActor.GeneralChoice2() {
+                    Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk24'})
+                }
+                goto Event54
+            }
+          case 2:
+            Npc_Goron013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron013:talk20'})
         }
     }
 }

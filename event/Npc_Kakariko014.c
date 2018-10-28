@@ -35,15 +35,14 @@ void Talk() {
           case 0:
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko014_PlantM_SoldOut'}) {
                 Npc_Kakariko014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko014:Talk19'})
-                Event77:
-                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                Npc_Kakariko014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko014:Talk17'})
-                goto Event22
             } else {
                 Npc_Kakariko014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko014:Talk14'})
-                goto Event77
             }
+            Event77:
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+            EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+            Npc_Kakariko014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko014:Talk17'})
+            goto Event22
           case 1:
             Npc_Kakariko014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko014:Talk15'})
             goto Event77
@@ -96,13 +95,10 @@ void Sell() {
             }
         }
       case 1:
-        if Npc_Kakariko014.IsOnInstEventFlag() {
-            Event11:
-            Npc_Kakariko014.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Kakariko014:Talk05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        } else {
+        if !Npc_Kakariko014.IsOnInstEventFlag() {
             Npc_Kakariko014.Demo_SetInstEventFlag({'IsWaitFinish': True})
-            goto Event11
         }
+        Npc_Kakariko014.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Kakariko014:Talk05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
     }
 }
 
@@ -134,11 +130,10 @@ void NearActorsTalk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko014_SoldOut'}) {
         Npc_Kakariko014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko014:Talk12'})
-        goto Event22
     } else {
         Npc_Kakariko014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko014:Talk13'})
-        goto Event22
     }
+    goto Event22
 }
 
 void NearActorsNear() {

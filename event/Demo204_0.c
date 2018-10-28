@@ -142,11 +142,10 @@ void WarpOut() {
         } else
         if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
             EventSystemActor[DispFloorNum].Demo_OpenEnduranceFloorNumber({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'GameDataIntFloorNum': '100enemy_Now_Floor_Number', 'LabelName': 'EnduranceDungeon01_floor'})
-            goto Event112
         } else {
             EventSystemActor[DispFloorNum].Demo_OpenEnduranceFloorNumber({'IsWaitFinish': False, 'SubMstxt': 'StaticMsg/Dungeon', 'GameDataIntFloorNum': '100enemy_Now_Floor_Number', 'LabelName': 'EnduranceDungeon_floor'})
-            goto Event112
         }
+        goto Event112
     } else {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 2})
         SceneSoundCtrlTag.Demo_KillAllDemoSound({'IsWaitFinish': True})

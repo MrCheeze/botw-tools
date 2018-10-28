@@ -45,83 +45,76 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 void Ready_Npc_Kakariko016_Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko016_Front'}) {
         EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko016_FrontTalk', 'IsWaitFinish': True})
-        Event0:
+    }
 
-        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+    call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-        switch Npc_Kakariko016.CheckActorAction13() {
-          case [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
+    switch Npc_Kakariko016.CheckActorAction13() {
+      case [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
 
-            call Npc_Kakariko016.Talk()
+        call Npc_Kakariko016.Talk()
 
-          case 5:
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko_016_first'}) {
-                Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk13'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko_Ch_004_Activated'})
-            } else {
-                Npc_Kakariko016.Demo_ChangePostureWithAS({'IsWaitFinish': True, 'Posture': 'Stand'})
-                Npc_Kakariko016.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'IsConfront': True})
-                Npc_Kakariko016.Demo_Talk({'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk01', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'ASName': 'TalkEmbarrass', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk26'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Kakariko_016_first'})
-            }
+      case 5:
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko_016_first'}) {
+            Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk13'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko_Ch_004_Activated'})
+        } else {
+            Npc_Kakariko016.Demo_ChangePostureWithAS({'IsWaitFinish': True, 'Posture': 'Stand'})
+            Npc_Kakariko016.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'IsConfront': True})
+            Npc_Kakariko016.Demo_Talk({'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk01', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'ASName': 'TalkEmbarrass', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk26'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Kakariko_016_first'})
         }
-    } else {
-        goto Event0
     }
 }
 
 void Finish_Npc_Kakariko016_Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko016_Front'}) {
         EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko016_FrontTalk', 'IsWaitFinish': True})
-        Event10:
+    }
 
-        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
+    call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-        switch Npc_Kakariko016.CheckActorAction13() {
-          case [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
-            if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_E', 'Count': 1}) {
-                switch Npc_Kakariko016.CheckActorAction13() {
-                  case [0, 1]:
-                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk11', 'ASName': ''})
-                    Event69:
-                    if !EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_004_First'}) {
-                        Event67:
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Kakariko_Ch_004_First', 'IsWaitFinish': True})
-                    }
-                  case 4:
-                    if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_016in015house'}) {
-                        Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk24', 'ASName': ''})
-                        goto Event69
-                    } else {
-                        Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk23', 'ASName': ''})
-                        goto Event69
-                    }
+    switch Npc_Kakariko016.CheckActorAction13() {
+      case [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13]:
+        if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_E', 'Count': 1}) {
+            switch Npc_Kakariko016.CheckActorAction13() {
+              case [0, 1]:
+                Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk11', 'ASName': ''})
+                Event69:
+                if !EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_004_First'}) {
+                    Event67:
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Kakariko_Ch_004_First', 'IsWaitFinish': True})
                 }
-            } else {
-
-                call Npc_Kakariko016.Talk()
-
-            }
-          case 5:
-            if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Hotaru_Short'}) {
-                Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk10'})
-            } else
-            if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_E', 'Count': 1}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_004_First'}) {
-                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk21'})
+              case 4:
+                if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_016in015house'}) {
+                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk24', 'ASName': ''})
                 } else {
-                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk12'})
-                    goto Event67
+                    Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk23', 'ASName': ''})
                 }
-            } else {
-                Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk07'})
+                goto Event69
             }
+        } else {
+
+            call Npc_Kakariko016.Talk()
+
         }
-    } else {
-        goto Event10
+      case 5:
+        if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Hotaru_Short'}) {
+            Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk10'})
+        } else
+        if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_E', 'Count': 1}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_004_First'}) {
+                Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk21'})
+            } else {
+                Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk12'})
+                goto Event67
+            }
+        } else {
+            Npc_Kakariko016.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Talk07'})
+        }
     }
 }
 
@@ -169,17 +162,15 @@ void HotaruDemo() {
 }
 
 void Ready_Npc_Kakariko016_Near() {
-    if Npc_Kakariko016.CheckActorAction13() == 5 {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko_016_first'}) {
-            Npc_Kakariko016.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Near00'})
-        }
+    if Npc_Kakariko016.CheckActorAction13() == 5
+    && EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko_016_first'}) {
+        Npc_Kakariko016.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Near00'})
     }
 }
 
 void Finish_Npc_Kakariko016_Near() {
-    if Npc_Kakariko016.CheckActorAction13() == 5 {
-        if EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_E', 'Count': 5}) {
-            Npc_Kakariko016.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Near01'})
-        }
+    if Npc_Kakariko016.CheckActorAction13() == 5
+    && EventSystemActor.HasPorchItem({'PorchItemName': 'Animal_Insect_E', 'Count': 5}) {
+        Npc_Kakariko016.Demo_TalkASync({'IsWaitFinish': True, 'DispFrame': 300, 'IsChecked': True, 'MessageId': 'EventFlowMsg/Kakariko_Ch_004:Near01'})
     }
 }

@@ -151,42 +151,39 @@ void Ready_Npc_Kokiri011_Talk() {
 }
 
 void EntryPoint0() {
-    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Step010'}) {
-        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_025'}) {
-            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_023'}) {
-                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_013'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Step010'})
+    && EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_025'})
+    && EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_023'})
+    && EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_013'}) {
 
-                    call Shield_Goal_Demo1()
+        call Shield_Goal_Demo1()
 
-                    Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog:Npc_Kokiri011_S20_052', 'ASName': 'Wait_Fly_Talk'})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                    Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait_Fly_Talk', 'MessageId': 'EventFlowMsg/ShieldofKolog:Npc_Kokiri011_S20_053'})
+        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ShieldofKolog:Npc_Kokiri011_S20_052', 'ASName': 'Wait_Fly_Talk'})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+        Npc_Kokiri011.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Wait_Fly_Talk', 'MessageId': 'EventFlowMsg/ShieldofKolog:Npc_Kokiri011_S20_053'})
 
-                    call KorokShiren_CompleteCheck()
-
-
-                    call Shield_Goal_Demo2()
+        call KorokShiren_CompleteCheck()
 
 
-                    fork {
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 818.3124389648438, 'Pattern1PosY': 282.2500915527344, 'Pattern1PosZ': -2392.929931640625, 'Pattern1AtX': 821.719970703125, 'Pattern1AtY': 282.2500915527344, 'Pattern1AtZ': -2396.989990234375, 'Pattern1Fovy': 50.00001907348633, 'Count': 30.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    } {
-                        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 2, 'IsWaitFinish': True, 'IsUseSlowTurn': False, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 140.0, 'IsTurnToLookAtPos': False})
-                    }
+        call Shield_Goal_Demo2()
 
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_Minigame'})
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_ObjectCreateFlag'})
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_WeaponHide'})
 
-                    call Common.EnableSaveAndWarp()
-
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalSword', 'IsWaitFinish': True})
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalShield', 'IsWaitFinish': True})
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalBow', 'IsWaitFinish': True})
-                    Npc_Kokiri011.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
-                }
-            }
+        fork {
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 818.3124389648438, 'Pattern1PosY': 282.2500915527344, 'Pattern1PosZ': -2392.929931640625, 'Pattern1AtX': 821.719970703125, 'Pattern1AtY': 282.2500915527344, 'Pattern1AtZ': -2396.989990234375, 'Pattern1Fovy': 50.00001907348633, 'Count': 30.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        } {
+            GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 2, 'IsWaitFinish': True, 'IsUseSlowTurn': False, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 140.0, 'IsTurnToLookAtPos': False})
         }
+
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_Minigame'})
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_ObjectCreateFlag'})
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_WeaponHide'})
+
+        call Common.EnableSaveAndWarp()
+
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalSword', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalShield', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalBow', 'IsWaitFinish': True})
+        Npc_Kokiri011.Demo_ForbidSettingInstEventFlag({'IsWaitFinish': True})
     }
 }
 
@@ -197,28 +194,23 @@ void Finish_Npc_Kokiri011_EachFrame() {
             EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
             goto Event420
         } else
-        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_025'}) {
-            if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_023'}) {
-                if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_013'}) {
-                    Event100:
-                    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                    goto Event420
-                } else
-                Event421:
-                if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Step010'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'}) {
-                        goto Event100
-                    } else {
-                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'ShieldofKolog', 'ForceRunTelop': False, 'StepName': 'Retire'})
-                    }
-                } else {
-                    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-                    goto Event420
-                }
-            } else
-            goto Event421
+        if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_025'})
+        && EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_023'})
+        && EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_013'}) {
+            Event100:
+            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+            goto Event420
         } else
-        goto Event421
+        if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Step010'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'}) {
+                goto Event100
+            } else {
+                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'ShieldofKolog', 'ForceRunTelop': False, 'StepName': 'Retire'})
+            }
+        } else {
+            EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
+            goto Event420
+        }
     } else {
         EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
         goto Event420
@@ -390,52 +382,49 @@ void Burn_Item() {
 
 void Retire_ItemNone() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_mini_Minigame'}) {
-        Event417:
-        GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'WallOff', 'IsWaitFinish': True, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
-        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': 'Arg_DestinationX', 'DestinationY': 'Arg_DestinationY', 'DestinationZ': 'Arg_DestinationZ', 'DirectionY': 'Arg_DestinationDirY'})
-        GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': False})
-        GameRomCamera.Demo_MovePosFlow({'TargetActor1': 1, 'AtAppendMode': 2, 'PosAppendMode': 2, 'Pattern1AtY': 1.5, 'Pattern1PosY': 2.0, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'Count': 0.0, 'Cushion': 0.0, 'StartCalcOnly': False, 'CollisionInterpolateSkip': True, 'MotionMode': 0, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1PosX': 0.0, 'Pattern1Fovy': 0.0, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'FovyAppendMode': 0, 'IsWaitFinish': False, 'Pattern1PosZ': -4.5, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        Npc_Kokiri011.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': False, 'FaceId': 0, 'IsConfront': True, 'TurnDirection': 0.0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0]})
-        if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'}) {
-            EventSystemActor.Demo_DisableMiniGameTime({'IsWaitFinish': True})
-            EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': 'ShieldofKolog_mini', 'StepName': 'Ready'})
-            Event266:
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-            EventSystemActor.Demo_SwitchPlayerEquipment({'PorchItemName_ArmorHead': '', 'PorchItemName_ArmorUpper': '', 'PorchItemName_ArmorLower': '', 'PorchItemName_Arrow': '', 'UnequipArmorHead': False, 'UnequipArmorUpper': False, 'UnequipArmorLower': False, 'IsWaitFinish': True, 'UnequipBow': True, 'UnequipShield': True, 'UnequipWeapon': True, 'PorchItemName_Weapon': '', 'PorchItemName_Shield': '', 'PorchItemName_Bow': ''})
-            if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalSword'}) {
-                EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Weapon_Sword_025', 'IsWaitFinish': True, 'Value': -1})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalSword', 'IsWaitFinish': True})
-                Event180:
-                if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalShield'}) {
-                    EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Weapon_Shield_023', 'IsWaitFinish': True, 'Value': -1})
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalShield', 'IsWaitFinish': True})
-                    Event181:
-                    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalBow'}) {
-                        EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Weapon_Bow_013', 'IsWaitFinish': True, 'Value': -1})
-                        EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalBow', 'IsWaitFinish': True})
-                        Event98:
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_Minigame'})
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_ObjectCreateFlag'})
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_WeaponHide'})
-                        EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'AdditionalResetActor': 'Weapon_Bow_013,Weapon_Shield_023,Weapon_Sword_025', 'SystemResetOption': 2, 'IsResetCamera': False})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                        Fader.Demo_FadeIn({'IsWaitFinish': False, 'DispMode': 'Auto', 'Color': 1, 'Frame': 0})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    } else {
-                        goto Event98
-                    }
-                } else
-                goto Event181
-            } else
-            goto Event180
-        } else {
-            EventSystemActor.Demo_RollbackQuest({'QuestName': 'ShieldofKolog', 'IsWaitFinish': True, 'StepName': 'Step010'})
-            goto Event266
-        }
-    } else {
+    if !EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_mini_Minigame'}) {
         Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto', 'Color': 1})
-        goto Event417
+    }
+    GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'WallOff', 'IsWaitFinish': True, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
+    EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': 'Arg_DestinationX', 'DestinationY': 'Arg_DestinationY', 'DestinationZ': 'Arg_DestinationZ', 'DirectionY': 'Arg_DestinationDirY'})
+    GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': False})
+    GameRomCamera.Demo_MovePosFlow({'TargetActor1': 1, 'AtAppendMode': 2, 'PosAppendMode': 2, 'Pattern1AtY': 1.5, 'Pattern1PosY': 2.0, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'Count': 0.0, 'Cushion': 0.0, 'StartCalcOnly': False, 'CollisionInterpolateSkip': True, 'MotionMode': 0, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1PosX': 0.0, 'Pattern1Fovy': 0.0, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'FovyAppendMode': 0, 'IsWaitFinish': False, 'Pattern1PosZ': -4.5, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    Npc_Kokiri011.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': False, 'FaceId': 0, 'IsConfront': True, 'TurnDirection': 0.0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0]})
+    if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'}) {
+        EventSystemActor.Demo_DisableMiniGameTime({'IsWaitFinish': True})
+        EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': 'ShieldofKolog_mini', 'StepName': 'Ready'})
+        Event266:
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+        EventSystemActor.Demo_SwitchPlayerEquipment({'PorchItemName_ArmorHead': '', 'PorchItemName_ArmorUpper': '', 'PorchItemName_ArmorLower': '', 'PorchItemName_Arrow': '', 'UnequipArmorHead': False, 'UnequipArmorUpper': False, 'UnequipArmorLower': False, 'IsWaitFinish': True, 'UnequipBow': True, 'UnequipShield': True, 'UnequipWeapon': True, 'PorchItemName_Weapon': '', 'PorchItemName_Shield': '', 'PorchItemName_Bow': ''})
+        if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalSword'}) {
+            EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Weapon_Sword_025', 'IsWaitFinish': True, 'Value': -1})
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalSword', 'IsWaitFinish': True})
+            Event180:
+            if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalShield'}) {
+                EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Weapon_Shield_023', 'IsWaitFinish': True, 'Value': -1})
+                EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalShield', 'IsWaitFinish': True})
+                Event181:
+                if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_RentalBow'}) {
+                    EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Weapon_Bow_013', 'IsWaitFinish': True, 'Value': -1})
+                    EventSystemActor.Demo_FlagOFF({'FlagName': 'ShieldofKolog_RentalBow', 'IsWaitFinish': True})
+                    Event98:
+                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_Minigame'})
+                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_ObjectCreateFlag'})
+                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_WeaponHide'})
+                    EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'AdditionalResetActor': 'Weapon_Bow_013,Weapon_Shield_023,Weapon_Sword_025', 'SystemResetOption': 2, 'IsResetCamera': False})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                    Fader.Demo_FadeIn({'IsWaitFinish': False, 'DispMode': 'Auto', 'Color': 1, 'Frame': 0})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                } else {
+                    goto Event98
+                }
+            } else
+            goto Event181
+        } else
+        goto Event180
+    } else {
+        EventSystemActor.Demo_RollbackQuest({'QuestName': 'ShieldofKolog', 'IsWaitFinish': True, 'StepName': 'Step010'})
+        goto Event266
     }
 }
 
@@ -542,11 +531,9 @@ void PopFlag_OFF() {
 }
 
 void KorokShiren_CompleteCheck() {
-    if EventSystemActor.CheckFlag({'FlagName': 'KorokMini_KorokShiren_Activated'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'GodTree_Finish'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'FirstOhenro_Finish'}) {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_KorokShiren_Step010'})
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'KorokMini_KorokShiren_Activated'})
+    && EventSystemActor.CheckFlag({'FlagName': 'GodTree_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'FirstOhenro_Finish'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_KorokShiren_Step010'})
     }
 }

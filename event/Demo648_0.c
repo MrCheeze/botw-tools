@@ -213,36 +213,34 @@ void C03-05() {
         SceneSoundCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'BgmCtrlType': 'None', 'SeCtrlType': 'WorldMute'})
         if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo681_0'}) {
             EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo648_0:Demo648_0_Text005'})
-            Event130:
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 275})
-            GameROMPlayer.Demo_PlayASForDemo({'ASName': 'DemoWaitAttention', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-
-            fork {
-                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo681_0'}) {
-                    EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo648_0:Demo648_0_Text006'})
-                } else {
-                    EventSystemActor.Demo_OpenDungeonMessage({'MessageId': 'DemoMsg/Demo648_0:Demo648_0_Text002', 'IsWaitFinish': True})
-                }
-            } {
-                EventSystemActor[forBGM].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
-                SceneBgmCtrlTag.Demo_Ctrl({'CtrlType': 'PriestBossBgm_Start', 'IsWaitFinish': True})
-            }
-
-
-            fork {
-                GameROMPlayer.Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'Demo005_0_warp', 'SLinkKey': '', 'IsTargetDemoSLinkUser': False})
-                SoundTriggerTag.Demo_SoundTrigger({'Sound': 'Demo005_0_warp', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
-            } {
-                EventSystemActor[WarpEffect].Demo_PlayerWarpEffectSet({'ChangeType': 1, 'SetFrame': 120.0, 'IsWaitFinish': False})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
-            }
-
-            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Reduce', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
         } else {
             EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo648_0:Demo648_0_Text001'})
-            goto Event130
         }
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 275})
+        GameROMPlayer.Demo_PlayASForDemo({'ASName': 'DemoWaitAttention', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+
+        fork {
+            if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo681_0'}) {
+                EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo648_0:Demo648_0_Text006'})
+            } else {
+                EventSystemActor.Demo_OpenDungeonMessage({'MessageId': 'DemoMsg/Demo648_0:Demo648_0_Text002', 'IsWaitFinish': True})
+            }
+        } {
+            EventSystemActor[forBGM].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
+            SceneBgmCtrlTag.Demo_Ctrl({'CtrlType': 'PriestBossBgm_Start', 'IsWaitFinish': True})
+        }
+
+
+        fork {
+            GameROMPlayer.Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'Demo005_0_warp', 'SLinkKey': '', 'IsTargetDemoSLinkUser': False})
+            SoundTriggerTag.Demo_SoundTrigger({'Sound': 'Demo005_0_warp', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
+        } {
+            EventSystemActor[WarpEffect].Demo_PlayerWarpEffectSet({'ChangeType': 1, 'SetFrame': 120.0, 'IsWaitFinish': False})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
+        }
+
+        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Reduce', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
     } {
         Npc_DungeonPriestDlc2nd_Boss.Demo_PlayASForDemo({'ASName': 'Demo648_0-C01-Npc_DungeonPriestDlc2nd_Boss-A-0', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
         Npc_DungeonPriestDlc2nd_Boss.Demo_XLinkEventCreate({'IsWaitFinish': False, 'ELinkKey': 'DLC_Demo_BossDustArm', 'SLinkKey': '', 'IsTargetDemoSLinkUser': False})
@@ -362,50 +360,38 @@ void FlagOperationBeforeDemo() {
     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_KillByDemo'})
     if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick1'}) {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick1_Temp'})
-        Event270:
-        if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick2'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick2_Temp'})
-            Event273:
-            if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Wind_Trick2'}) {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick2_Temp'})
-                Event285:
-                if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick4'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick4_Temp'})
-                    Event288:
-                    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_EleMagPole_Wind3'}) {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_EleMagPole_Wind3_Temp'})
-                        Event291:
-                        if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Wind_Trick3'}) {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick3_Temp'})
-                            Event294:
-                            if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_WindMagnePole_Ele4'}) {
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_WindMagnePole_Ele4_Temp'})
-                            } else {
-                                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_WindMagnePole_Ele4_Temp'})
-                            }
-                        } else {
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick3_Temp'})
-                            goto Event294
-                        }
-                    } else {
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_EleMagPole_Wind3_Temp'})
-                        goto Event291
-                    }
-                } else {
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick4_Temp'})
-                    goto Event288
-                }
-            } else {
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick2_Temp'})
-                goto Event285
-            }
-        } else {
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick2_Temp'})
-            goto Event273
-        }
     } else {
         EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick1_Temp'})
-        goto Event270
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick2'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick2_Temp'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick2_Temp'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Wind_Trick2'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick2_Temp'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick2_Temp'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick4'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick4_Temp'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick4_Temp'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_EleMagPole_Wind3'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_EleMagPole_Wind3_Temp'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_EleMagPole_Wind3_Temp'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Wind_Trick3'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick3_Temp'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick3_Temp'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_WindMagnePole_Ele4'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_WindMagnePole_Ele4_Temp'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_WindMagnePole_Ele4_Temp'})
     }
 }
 
@@ -413,49 +399,37 @@ void FlagOperationAfterDemo() {
     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_KillByDemo'})
     if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick1_Temp'}) {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick1'})
-        Event279:
-        if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick2_Temp'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick2'})
-            Event282:
-            if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Wind_Trick2_Temp'}) {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick2'})
-                Event297:
-                if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick4_Temp'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick4'})
-                    Event300:
-                    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_EleMagPole_Wind3_Temp'}) {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_EleMagPole_Wind3'})
-                        Event303:
-                        if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Wind_Trick3_Temp'}) {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick3'})
-                            Event306:
-                            if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_WindMagnePole_Ele4_Temp'}) {
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_WindMagnePole_Ele4'})
-                            } else {
-                                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_WindMagnePole_Ele4'})
-                            }
-                        } else {
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick3'})
-                            goto Event306
-                        }
-                    } else {
-                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_EleMagPole_Wind3'})
-                        goto Event303
-                    }
-                } else {
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick4'})
-                    goto Event300
-                }
-            } else {
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick2'})
-                goto Event297
-            }
-        } else {
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick2'})
-            goto Event282
-        }
     } else {
         EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick1'})
-        goto Event279
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick2_Temp'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick2'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick2'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Wind_Trick2_Temp'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick2'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick2'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Electric_Trick4_Temp'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick4'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Electric_Trick4'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_EleMagPole_Wind3_Temp'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_EleMagPole_Wind3'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_EleMagPole_Wind3'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_Wind_Trick3_Temp'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick3'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Wind_Trick3'})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_WindMagnePole_Ele4_Temp'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FinalTrial_WindMagnePole_Ele4'})
+    } else {
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_WindMagnePole_Ele4'})
     }
 }

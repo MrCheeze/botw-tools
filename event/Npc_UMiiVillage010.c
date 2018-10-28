@@ -58,12 +58,10 @@ void Talk() {
         Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk25', 'IsCloseMessageDialog': False})
         Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk20'})
       case 11:
-        if Npc_UMiiVillage010.IsOnInstEventFlag() {
-            goto Event73
-        } else {
+        if !Npc_UMiiVillage010.IsOnInstEventFlag() {
             Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk21'})
-            goto Event73
         }
+        goto Event73
     }
 }
 
@@ -145,10 +143,9 @@ void NearActorsTalk() {
 
 void NearActorsNear() {
     Event146:
-    if !EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC010_Meeting'}) {
-        if Npc_UMiiVillage010.CheckActorAction13() in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] {
-            Npc_UMiiVillage010.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:near01', 'DispFrame': 90, 'IsChecked': False})
-        }
+    if !EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC010_Meeting'})
+    && Npc_UMiiVillage010.CheckActorAction13() in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] {
+        Npc_UMiiVillage010.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:near01', 'DispFrame': 90, 'IsChecked': False})
     }
 }
 
@@ -214,19 +211,16 @@ void GiveCake_Haruri_Finish() {
 
     call HaruriHello()
 
-    if Npc_UMiiVillage010.IsOnInstEventFlag() {
-        Event57:
-        Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk19', 'IsCloseMessageDialog': True})
-
-        call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
-
-        Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk20'})
-        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_GiveCake_Finish'})
-    } else {
+    if !Npc_UMiiVillage010.IsOnInstEventFlag() {
         Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk21'})
-        goto Event57
     }
+    Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk19', 'IsCloseMessageDialog': True})
+
+    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Gold'})
+
+    Npc_UMiiVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage010:talk20'})
+    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_GiveCake_Finish'})
 }
 
 void GiveCake_Haruri_GiveNear() {

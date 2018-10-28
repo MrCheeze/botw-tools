@@ -116,45 +116,36 @@ void BossRoom0() {
                                         EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossCurseGanonElectricGenerateFlag'})
                                         if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWind'}) {
                                             EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo143_0', 'EndFade': 1})
-                                            Event60:
-                                            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
-                                                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo143_3', 'EndFade': 1})
-                                                Event62:
-                                                if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
-                                                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo143_1', 'EndFade': 1})
-                                                    Event64:
-                                                    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
-                                                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo143_2', 'EndFade': 1})
-                                                        Event67:
-                                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_0'}) {
-                                                            Event66:
-                                                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo143_4', 'EndFade': 1})
-                                                            Event155:
-                                                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo720_0', 'EndFade': 1, 'EntryPointName': 'Demo720_0'})
-                                                            GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
+                                        }
+                                        if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
+                                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo143_3', 'EndFade': 1})
+                                        }
+                                        if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
+                                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo143_1', 'EndFade': 1})
+                                        }
+                                        if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
+                                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo143_2', 'EndFade': 1})
+                                        }
+                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_0'}) {
+                                            Event66:
+                                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo143_4', 'EndFade': 1})
+                                            Event155:
+                                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo720_0', 'EndFade': 1, 'EntryPointName': 'Demo720_0'})
+                                            GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
 
-                                                            call Common.DisableSaveAndWarp()
+                                            call Common.DisableSaveAndWarp()
 
-                                                        } else
-                                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_1'}) {
-                                                            goto Event66
-                                                        } else
-                                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_2'}) {
-                                                            goto Event66
-                                                        } else
-                                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_3'}) {
-                                                            goto Event66
-                                                        } else {
-                                                            goto Event155
-                                                        }
-                                                    } else
-                                                    goto Event67
-                                                } else
-                                                goto Event64
-                                            } else
-                                            goto Event62
                                         } else
-                                        goto Event60
+                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_1'}) {
+                                            goto Event66
+                                        } else
+                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_2'}) {
+                                            goto Event66
+                                        } else
+                                        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo143_3'}) {
+                                            goto Event66
+                                        }
+                                        goto Event155
                                     } else
                                     if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
                                         goto Event188
@@ -256,20 +247,11 @@ void BossRoom0() {
         }
     } else {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FirstInHyruleCastleBossRoom'})
-        if EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonWind'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonWater'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonFire'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonElectric'}) {
-                        goto Event151
-                    } else {
-                        goto Event238
-                    }
-                } else {
-                    goto Event238
-                }
-            } else {
-                goto Event238
-            }
+        if EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonWind'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonWater'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonFire'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonElectric'}) {
+            goto Event151
         } else {
             goto Event238
         }
@@ -310,20 +292,14 @@ void BeastGanonDead() {
         EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
         if EventSystemActor.CheckPlayerRideHorse() {
             GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-            Event169:
-            GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo148_0', 'EndFade': 1})
-            if EventSystemActor.CheckFlag({'FlagName': 'PictureMemory_Finish'}) {
-                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo139_0', 'EndFade': 1})
-                Event78:
-                EventSystemActor.Demo_AutoSaveAtGameClear({'RestartPoint': [-253.82000732421875, 127.41000366210938, -97.54000091552734], 'RestartYDegree': -180.0, 'IsWaitFinish': True, 'GameClearFlag': 'GameClear'})
-                EventSystemActor.Demo_ExitGame({'IsWaitFinish': True, 'ShowLogo': 1})
-            } else {
-                goto Event78
-            }
-        } else {
-            goto Event169
         }
+        GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
+        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo148_0', 'EndFade': 1})
+        if EventSystemActor.CheckFlag({'FlagName': 'PictureMemory_Finish'}) {
+            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo139_0', 'EndFade': 1})
+        }
+        EventSystemActor.Demo_AutoSaveAtGameClear({'RestartPoint': [-253.82000732421875, 127.41000366210938, -97.54000091552734], 'RestartYDegree': -180.0, 'IsWaitFinish': True, 'GameClearFlag': 'GameClear'})
+        EventSystemActor.Demo_ExitGame({'IsWaitFinish': True, 'ShowLogo': 1})
     }
 }
 
@@ -342,21 +318,19 @@ void BeastGanonBattleReady() {
 
     if !EventSystemActor.CheckTypeOfOwnedHorseForEvent() {
         EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo146_0'})
-        Event253:
-        GameRomCamera.Demo_ConnectTypeSpecify({'IsWaitFinish': True, 'ConnectType': 0})
-        Enemy_GanonBeast[0].Demo_Idling({'IsWaitFinish': False})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsPlayed_Demo146_0'})
-        GameROMPlayer.Demo_RideHorseForEvent({'IsWaitFinish': True})
-        GameROMPlayer.Demo_AccelerateHorse({'IsWaitFinish': True})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Horse_IsRide'})
-        EventSystemActor.Demo_SetRetryData({'IsWaitFinish': True})
-
-        call Common.DisableSaveAndWarp()
-
     } else {
         EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'EndFade': 0, 'DemoName': 'Demo146_1'})
-        goto Event253
     }
+    GameRomCamera.Demo_ConnectTypeSpecify({'IsWaitFinish': True, 'ConnectType': 0})
+    Enemy_GanonBeast[0].Demo_Idling({'IsWaitFinish': False})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsPlayed_Demo146_0'})
+    GameROMPlayer.Demo_RideHorseForEvent({'IsWaitFinish': True})
+    GameROMPlayer.Demo_AccelerateHorse({'IsWaitFinish': True})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Horse_IsRide'})
+    EventSystemActor.Demo_SetRetryData({'IsWaitFinish': True})
+
+    call Common.DisableSaveAndWarp()
+
 }
 
 void BossRoom1() {

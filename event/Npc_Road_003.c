@@ -44,20 +44,18 @@ void MSG_Rane_00() {
       case [0, 1]:
         if Npc_Road_003.IsOnInstEventFlag() {
             Npc_Road_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_003:MSG_Rane_00_1'})
-            Event88:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_Road_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_003:MSG_Rane_00'})
-            goto Event88
         }
+        Event88:
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
       case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_003.IsOnInstEventFlag() {
             Npc_Road_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_003:MSG_Rane_01_1'})
-            goto Event88
         } else {
             Npc_Road_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_003:MSG_Rane_01'})
-            goto Event88
         }
+        goto Event88
     }
 }
 
@@ -79,11 +77,10 @@ void MSG_Rane_01() {
 
     if Npc_Road_003.IsOnInstEventFlag() {
         Npc_Road_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_003:MSG_Rane_02_1'})
-        goto Event88
     } else {
         Npc_Road_003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_003:MSG_Rane_02'})
-        goto Event88
     }
+    goto Event88
 }
 
 void RetMSG_Rane_01() {

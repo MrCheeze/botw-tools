@@ -103,12 +103,10 @@ void Talk() {
         Npc_OasisHighMountain_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHighMountain_001:talk15'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_OasisHighMountain_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHighMountain_001:talk16'})
-            Event37:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OasisHighMountain_001_first', 'IsWaitFinish': True})
         } else {
             Npc_OasisHighMountain_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHighMountain_001:talk17'})
-            goto Event37
         }
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_OasisHighMountain_001_first', 'IsWaitFinish': True})
     }
 }
 

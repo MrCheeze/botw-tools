@@ -77,12 +77,11 @@ void Talk() {
             Npc_HighMountain035[Reric_Finish_Npc_HighMountain035].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain035:Talk_003'})
         } else {
             Npc_HighMountain035[Reric_Finish_Npc_HighMountain035].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain035:Talk_000'})
-            if Npc_HighMountain035[Reric_Finish_Npc_HighMountain035].CheckActorAction({'ActionName': 'Root/Timeline/Action5/到着'}) {
-                if Npc_HighMountain036.CheckActorAction({'ActionName': 'Root/Timeline/Action5/到着'}) {
-                    Npc_HighMountain036.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_HighMountain035', 'UniqueName': 'Reric_Finish_Npc_HighMountain035', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain035:Talk_001'})
-                    Npc_HighMountain035[Reric_Finish_Npc_HighMountain035].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain035:Talk_002'})
-                }
+            if Npc_HighMountain035[Reric_Finish_Npc_HighMountain035].CheckActorAction({'ActionName': 'Root/Timeline/Action5/到着'})
+            && Npc_HighMountain036.CheckActorAction({'ActionName': 'Root/Timeline/Action5/到着'}) {
+                Npc_HighMountain036.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_HighMountain035', 'UniqueName': 'Reric_Finish_Npc_HighMountain035', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain035:Talk_001'})
+                Npc_HighMountain035[Reric_Finish_Npc_HighMountain035].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain035:Talk_002'})
             }
         }
       case 11:

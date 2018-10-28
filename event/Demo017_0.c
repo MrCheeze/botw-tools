@@ -75,69 +75,60 @@ void HiddenKorok_Ground() {
     Npc_HiddenKorokGround.Demo_PlayASForDemo({'IsEnabledAnimeDriven': -1, 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ASName': 'Surprised', 'MorphingFrame': -1.0, 'ClothWarpMode': -1})
     Npc_HiddenKorokGround.Demo_PlayASForDemo({'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsWaitFinish': False, 'MorphingFrame': -1.0, 'ASName': 'Wait', 'ClothWarpMode': -1})
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
-            Event110:
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            SceneSoundCtrlTag.Demo_NotifyTalk({'IsWaitFinish': True, 'CtrlType': 'BeginTalk'})
-            if !Npc_HiddenKorokGround.IsWaitRevival() {
-                if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
-                    Npc_HiddenKorokGround.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk02'})
-                    Event338:
-                    EventSystemActor.Demo_SetupGetDemoModeNumUi({'NumUiType': 1, 'AddNum': 1, 'IsWaitFinish': True})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_KorokNuts'})
-
-                    Npc_HiddenKorokGround.Demo_OnWaitRevival({'IsWaitFinish': False})
-                    EventSystemActor.Demo_IncreaseGameDataInt({'Value': 1, 'GameDataIntName': 'HiddenKorok_Number', 'IsWaitFinish': True})
-                    EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                    if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
-                        Npc_HiddenKorokGround.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk03'})
-                        Event233:
-                        if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
-                            if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 900, 'GameDataIntName': 'HiddenKorok_Number'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Maracus'}) {
-                                    NPC_GodVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo017_0:CompTalk01'})
-                                    Event142:
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'HiddenKorok_Complete', 'IsWaitFinish': True})
-                                    Event371:
-
-                                    fork {
-                                        GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': True})
-                                    } {
-                                        GameRomCamera.Demo_MovePosFlow({'TargetActor1': 0, 'TargetActor2': 1, 'FovyAppendMode': 0, 'MotionMode': 1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'Pattern1AtY': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1PosY': 3.0, 'PosAppendMode': 3, 'IsWaitFinish': True, 'AtAppendMode': 0, 'StartCalcOnly': False, 'Pattern1Fovy': 0.0, 'Pattern1PosZ': -3.0, 'Count': 0.0, 'Cushion': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'ReviseModeEnd': 1, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': False})
-                                    }
-
-                                } else {
-                                    NPC_GodVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo017_0:CompTalk02'})
-                                    goto Event142
-                                }
-                            } else {
-                                goto Event371
-                            }
-                        } else {
-                            EventSystemActor.Demo_FlagON({'FlagName': 'HiddenKorok_First', 'IsWaitFinish': True})
-                            goto Event371
-                        }
-                    } else {
-                        Npc_HiddenKorokGround.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk01'})
-                        goto Event233
-                    }
-                } else {
-                    Npc_HiddenKorokGround.Demo_Talk({'MessageId': 'DemoMsg/Demo017_0:Talk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                    goto Event338
-                }
-            }
-        } else {
+        if !EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
             Event111:
             GameROMPlayer.Demo_PlayerTurnAndLookToObject({'FaceId': 1, 'ObjectId': 3, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': False, 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
-            goto Event110
+        }
+        Event110:
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        SceneSoundCtrlTag.Demo_NotifyTalk({'IsWaitFinish': True, 'CtrlType': 'BeginTalk'})
+        if !Npc_HiddenKorokGround.IsWaitRevival() {
+            if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
+                Npc_HiddenKorokGround.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk02'})
+            } else {
+                Npc_HiddenKorokGround.Demo_Talk({'MessageId': 'DemoMsg/Demo017_0:Talk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+            }
+            EventSystemActor.Demo_SetupGetDemoModeNumUi({'NumUiType': 1, 'AddNum': 1, 'IsWaitFinish': True})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_KorokNuts'})
+
+            Npc_HiddenKorokGround.Demo_OnWaitRevival({'IsWaitFinish': False})
+            EventSystemActor.Demo_IncreaseGameDataInt({'Value': 1, 'GameDataIntName': 'HiddenKorok_Number', 'IsWaitFinish': True})
+            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+            if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
+                Npc_HiddenKorokGround.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk03'})
+            } else {
+                Npc_HiddenKorokGround.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk01'})
+            }
+            if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
+                if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 900, 'GameDataIntName': 'HiddenKorok_Number'}) {
+                    if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Maracus'}) {
+                        NPC_GodVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo017_0:CompTalk01'})
+                    } else {
+                        NPC_GodVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo017_0:CompTalk02'})
+                    }
+                    EventSystemActor.Demo_FlagON({'FlagName': 'HiddenKorok_Complete', 'IsWaitFinish': True})
+                    Event371:
+
+                    fork {
+                        GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': True})
+                    } {
+                        GameRomCamera.Demo_MovePosFlow({'TargetActor1': 0, 'TargetActor2': 1, 'FovyAppendMode': 0, 'MotionMode': 1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'Pattern1AtY': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1PosY': 3.0, 'PosAppendMode': 3, 'IsWaitFinish': True, 'AtAppendMode': 0, 'StartCalcOnly': False, 'Pattern1Fovy': 0.0, 'Pattern1PosZ': -3.0, 'Count': 0.0, 'Cushion': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'ReviseModeEnd': 1, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': False})
+                    }
+
+                } else {
+                    goto Event371
+                }
+            } else {
+                EventSystemActor.Demo_FlagON({'FlagName': 'HiddenKorok_First', 'IsWaitFinish': True})
+                goto Event371
+            }
         }
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 2}) {
         goto Event111
-    } else {
-        goto Event110
     }
+    goto Event110
 }
 
 void HiddenKorok_Air() {
@@ -163,69 +154,60 @@ void HiddenKorok_Air() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 22})
     Npc_HiddenKorokFly.Demo_PlayASForDemo({'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsWaitFinish': False, 'MorphingFrame': -1.0, 'ASName': 'Act_Wait_Fly', 'ClothWarpMode': -1})
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
-            Event237:
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            SceneSoundCtrlTag.Demo_NotifyTalk({'IsWaitFinish': True, 'CtrlType': 'BeginTalk'})
-            if !Npc_HiddenKorokFly.IsWaitRevival() {
-                if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
-                    Npc_HiddenKorokFly.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk02', 'ASName': 'Act_Talk'})
-                    Event339:
-                    EventSystemActor.Demo_SetupGetDemoModeNumUi({'NumUiType': 1, 'AddNum': 1, 'IsWaitFinish': True})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_KorokNuts'})
-
-                    Npc_HiddenKorokFly.Demo_OnWaitRevival({'IsWaitFinish': False})
-                    EventSystemActor.Demo_IncreaseGameDataInt({'Value': 1, 'GameDataIntName': 'HiddenKorok_Number', 'IsWaitFinish': True})
-                    EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                    if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
-                        Npc_HiddenKorokFly.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk03', 'ASName': 'Act_Talk'})
-                        Event295:
-                        if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
-                            if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 900, 'GameDataIntName': 'HiddenKorok_Number'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Maracus'}) {
-                                    NPC_GodVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo017_0:CompTalk01'})
-                                    Event249:
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'HiddenKorok_Complete', 'IsWaitFinish': True})
-                                    Event373:
-
-                                    fork {
-                                        GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': True})
-                                    } {
-                                        GameRomCamera.Demo_MovePosFlow({'TargetActor1': 0, 'TargetActor2': 1, 'FovyAppendMode': 0, 'CollisionInterpolateSkip': False, 'MotionMode': 1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'Pattern1AtY': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1PosY': 3.0, 'PosAppendMode': 3, 'AtAppendMode': 0, 'StartCalcOnly': False, 'Pattern1Fovy': 0.0, 'Pattern1PosZ': -3.0, 'Count': 0.0, 'Cushion': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'ReviseModeEnd': 1, 'IsWaitFinish': True, 'Accept1FrameDelay': False})
-                                    }
-
-                                } else {
-                                    NPC_GodVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo017_0:CompTalk02'})
-                                    goto Event249
-                                }
-                            } else {
-                                goto Event373
-                            }
-                        } else {
-                            EventSystemActor.Demo_FlagON({'FlagName': 'HiddenKorok_First', 'IsWaitFinish': True})
-                            goto Event373
-                        }
-                    } else {
-                        Npc_HiddenKorokFly.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk01', 'ASName': 'Act_Talk'})
-                        goto Event295
-                    }
-                } else {
-                    Npc_HiddenKorokFly.Demo_Talk({'MessageId': 'DemoMsg/Demo017_0:Talk00', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': 'Act_Talk'})
-                    goto Event339
-                }
-            }
-        } else {
+        if !EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
             Event238:
             GameROMPlayer.Demo_PlayerTurnAndLookToObject({'FaceId': 1, 'ObjectId': 3, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsWaitFinish': False, 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
-            goto Event237
+        }
+        Event237:
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        SceneSoundCtrlTag.Demo_NotifyTalk({'IsWaitFinish': True, 'CtrlType': 'BeginTalk'})
+        if !Npc_HiddenKorokFly.IsWaitRevival() {
+            if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
+                Npc_HiddenKorokFly.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk02', 'ASName': 'Act_Talk'})
+            } else {
+                Npc_HiddenKorokFly.Demo_Talk({'MessageId': 'DemoMsg/Demo017_0:Talk00', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': 'Act_Talk'})
+            }
+            EventSystemActor.Demo_SetupGetDemoModeNumUi({'NumUiType': 1, 'AddNum': 1, 'IsWaitFinish': True})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Obj_KorokNuts'})
+
+            Npc_HiddenKorokFly.Demo_OnWaitRevival({'IsWaitFinish': False})
+            EventSystemActor.Demo_IncreaseGameDataInt({'Value': 1, 'GameDataIntName': 'HiddenKorok_Number', 'IsWaitFinish': True})
+            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+            if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
+                Npc_HiddenKorokFly.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk03', 'ASName': 'Act_Talk'})
+            } else {
+                Npc_HiddenKorokFly.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo017_0:Talk01', 'ASName': 'Act_Talk'})
+            }
+            if EventSystemActor.CheckFlag({'FlagName': 'HiddenKorok_First'}) {
+                if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 900, 'GameDataIntName': 'HiddenKorok_Number'}) {
+                    if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Maracus'}) {
+                        NPC_GodVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo017_0:CompTalk01'})
+                    } else {
+                        NPC_GodVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo017_0:CompTalk02'})
+                    }
+                    EventSystemActor.Demo_FlagON({'FlagName': 'HiddenKorok_Complete', 'IsWaitFinish': True})
+                    Event373:
+
+                    fork {
+                        GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': True})
+                    } {
+                        GameRomCamera.Demo_MovePosFlow({'TargetActor1': 0, 'TargetActor2': 1, 'FovyAppendMode': 0, 'CollisionInterpolateSkip': False, 'MotionMode': 1, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'Pattern1AtY': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1PosY': 3.0, 'PosAppendMode': 3, 'AtAppendMode': 0, 'StartCalcOnly': False, 'Pattern1Fovy': 0.0, 'Pattern1PosZ': -3.0, 'Count': 0.0, 'Cushion': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'ReviseModeEnd': 1, 'IsWaitFinish': True, 'Accept1FrameDelay': False})
+                    }
+
+                } else {
+                    goto Event373
+                }
+            } else {
+                EventSystemActor.Demo_FlagON({'FlagName': 'HiddenKorok_First', 'IsWaitFinish': True})
+                goto Event373
+            }
         }
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 2}) {
         goto Event238
-    } else {
-        goto Event237
     }
+    goto Event237
 }
 
 void HiddenKorok_Ground_Lift() {

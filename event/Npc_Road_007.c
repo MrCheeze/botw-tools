@@ -147,22 +147,20 @@ void Rest() {
         Event55:
         if !EventSystemActor.RandomChoice2() {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:Rest_00'})
-            Event59:
-
-            call Rest_End()
-
         } else {
             Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_007:Rest_01'})
-            goto Event59
         }
+        Event59:
+
+        call Rest_End()
+
     } else
     if Npc_Road_007.IsOnInstEventFlag() {
         Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_1'})
-        goto Event59
     } else {
         Npc_Road_007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
-        goto Event59
     }
+    goto Event59
 }
 
 void Rest2() {

@@ -142,85 +142,82 @@ void ZoraArrival() {
         Fader.Demo_FadeOut({'Frame': 2, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
         if EventSystemActor.CheckPlayerRideHorse() {
             GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-            Event589:
-
-            fork {
-                GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-                EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 155.0, 'DestinationY': 242.68255615234375, 'DestinationX': 3277.64990234375, 'DestinationZ': -416.54998779296875})
-                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Talk', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsIgnoreSame': True, 'NoErrorCheck': True})
-            } {
-                Npc_ZoraB001[Prince02].Demo_WarpToAnchor({'IsWaitFinish': True, 'DestinationX': 3291.080078125, 'DestinationZ': -446.5199890136719, 'DirectionY': -25.0, 'DestinationY': 244.86000061035156})
-                Npc_ZoraB001[Prince02].Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': 0, 'ASName': 'Wait', 'MorphingFrame': -1.0})
-            }
-
-
-            call ZoraVillageIntro()
-
-
-            fork {
-
-                fork {
-                    Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'AnchorUniqueName': 'PrinceRunPoint', 'ASKeyName': 'Run', 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
-                    Npc_ZoraB001[Prince02].Demo_Talk({'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_001', 'IsWaitFinish': True, 'ASName': 'Talk_Prince_Surprise', 'IsCloseMessageDialog': True})
-                } {
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-
-                    call camera_PrinceM_0()
-
-                }
-
-            } {
-                EventSystemActor[player_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince02', 'FaceId': 2})
-            }
-
-
-            call SeyHello()
-
-            Event693:
-
-            fork {
-                Npc_ZoraB001[Prince02].Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_002', 'ASName': 'Talk_Prince_Special', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
-            } {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 23})
-                Npc_ZoraB001[Prince02].Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'ShiningTooth', 'SLinkKey': 'ShiningTooth', 'IsTargetDemoSLinkUser': False})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-                Npc_ZoraB001[Prince02].Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'ShiningTooth', 'SLinkKey': 'ShiningTooth'})
-            } {
-
-                call camera_ShiningTooth()
-
-            }
-
-
-            fork {
-
-                call camera_PrinceM_Fix()
-
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-            } {
-                Npc_ZoraB001[Prince02].Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_003', 'ASName': 'Talk_Prince_Joy'})
-            }
-
-
-            call camera_A1_City_A()
-
-            Npc_ZoraB001[Prince02].Demo_LookAtTheFront({'IsWaitFinish': True, 'IsValid': True})
-            Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'IsWaitFinish': False, 'AnchorName': 'DestinationAnchor', 'AnchorUniqueName': 'PrinceStairUp', 'IsTurnToAnchorDir': False, 'ASKeyName': 'Walk', 'IsAlignmentAnchor': False})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 100})
-            Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-            GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer01'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer02'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer03'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer04'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GotoZoraVillage_Step1'})
-            Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
-        } else {
-            goto Event589
         }
+
+        fork {
+            GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
+            EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 155.0, 'DestinationY': 242.68255615234375, 'DestinationX': 3277.64990234375, 'DestinationZ': -416.54998779296875})
+            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Talk', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsIgnoreSame': True, 'NoErrorCheck': True})
+        } {
+            Npc_ZoraB001[Prince02].Demo_WarpToAnchor({'IsWaitFinish': True, 'DestinationX': 3291.080078125, 'DestinationZ': -446.5199890136719, 'DirectionY': -25.0, 'DestinationY': 244.86000061035156})
+            Npc_ZoraB001[Prince02].Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': 0, 'ASName': 'Wait', 'MorphingFrame': -1.0})
+        }
+
+
+        call ZoraVillageIntro()
+
+
+        fork {
+
+            fork {
+                Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'AnchorUniqueName': 'PrinceRunPoint', 'ASKeyName': 'Run', 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
+                Npc_ZoraB001[Prince02].Demo_Talk({'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_001', 'IsWaitFinish': True, 'ASName': 'Talk_Prince_Surprise', 'IsCloseMessageDialog': True})
+            } {
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+
+                call camera_PrinceM_0()
+
+            }
+
+        } {
+            EventSystemActor[player_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince02', 'FaceId': 2})
+        }
+
+
+        call SeyHello()
+
+        Event693:
+
+        fork {
+            Npc_ZoraB001[Prince02].Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_002', 'ASName': 'Talk_Prince_Special', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 23})
+            Npc_ZoraB001[Prince02].Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'ShiningTooth', 'SLinkKey': 'ShiningTooth', 'IsTargetDemoSLinkUser': False})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+            Npc_ZoraB001[Prince02].Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'ShiningTooth', 'SLinkKey': 'ShiningTooth'})
+        } {
+
+            call camera_ShiningTooth()
+
+        }
+
+
+        fork {
+
+            call camera_PrinceM_Fix()
+
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+        } {
+            Npc_ZoraB001[Prince02].Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_003', 'ASName': 'Talk_Prince_Joy'})
+        }
+
+
+        call camera_A1_City_A()
+
+        Npc_ZoraB001[Prince02].Demo_LookAtTheFront({'IsWaitFinish': True, 'IsValid': True})
+        Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'IsWaitFinish': False, 'AnchorName': 'DestinationAnchor', 'AnchorUniqueName': 'PrinceStairUp', 'IsTurnToAnchorDir': False, 'ASKeyName': 'Walk', 'IsAlignmentAnchor': False})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 100})
+        Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer01'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer02'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer03'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer04'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GotoZoraVillage_Step1'})
+        Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
     }
 }
 
@@ -251,42 +248,38 @@ void Ready_Npc_Zora013_Talk() {
         GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora013_Call'}) {
             Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_001', 'ASName': '', 'IsCloseMessageDialog': False})
-            Event467:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_008'})
-                Event434:
-                Npc_Zora013[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'TurnPosition': [2257.0, 120.0, -109.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False, 'IsValid': True, 'FaceId': 2})
-
-                fork {
-
-                    call camera_point_retoogan()
-
-                } {
-                    Npc_Zora013[PrinceGuide].Demo_PlayASForDemo({'ASName': 'Point', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ClothWarpMode': -2})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    GameROMPlayer.Demo_LookAtObject({'ObjectId': 1, 'FaceId': 2, 'TurnPosition': [2257.0, 120.0, -109.0], 'IsValid': True, 'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
-                    Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_002', 'IsCloseMessageDialog': True, 'ASName': 'Point'})
-                    Npc_Zora013[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'UniqueName': '', 'TurnDirection': 0.0, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'IsValid': True, 'FaceId': 2, 'ActorName': 'GameROMPlayer', 'TurnPosition': [0.0, 0.0, 0.0]})
-                    GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'ObjectId': 0, 'ActorName': 'Npc_Zora013', 'UniqueName': 'PrinceGuide', 'IsValid': True, 'TurnPosition': [0.0, 0.0, 0.0], 'IsWaitFinish': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                }
-
-                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
-                Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_003', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'ASName': ''})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-
-                call camera_ZoraXXX_end()
-
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMeet03'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora013_Call'})
-            } else {
-                Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_007'})
-                goto Event434
-            }
         } else {
             Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_011'})
-            goto Event467
         }
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_008'})
+        } else {
+            Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_007'})
+        }
+        Npc_Zora013[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'TurnPosition': [2257.0, 120.0, -109.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False, 'IsValid': True, 'FaceId': 2})
+
+        fork {
+
+            call camera_point_retoogan()
+
+        } {
+            Npc_Zora013[PrinceGuide].Demo_PlayASForDemo({'ASName': 'Point', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ClothWarpMode': -2})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            GameROMPlayer.Demo_LookAtObject({'ObjectId': 1, 'FaceId': 2, 'TurnPosition': [2257.0, 120.0, -109.0], 'IsValid': True, 'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
+            Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_002', 'IsCloseMessageDialog': True, 'ASName': 'Point'})
+            Npc_Zora013[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'UniqueName': '', 'TurnDirection': 0.0, 'ObjectId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'IsValid': True, 'FaceId': 2, 'ActorName': 'GameROMPlayer', 'TurnPosition': [0.0, 0.0, 0.0]})
+            GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'ObjectId': 0, 'ActorName': 'Npc_Zora013', 'UniqueName': 'PrinceGuide', 'IsValid': True, 'TurnPosition': [0.0, 0.0, 0.0], 'IsWaitFinish': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        }
+
+        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
+        Npc_Zora013[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_003', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'ASName': ''})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+
+        call camera_ZoraXXX_end()
+
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMeet03'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora013_Call'})
     }
 }
 
@@ -313,34 +306,32 @@ void Ready_Npc_Zora025_Talk() {
         Npc_Zora025[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora025_R_001'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_Zora025[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora025_R_002', 'IsCloseMessageDialog': True})
-            Event430:
-            Npc_Zora025[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'TurnPosition': [2056.0, 120.0, -195.0], 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False, 'FaceId': 1})
-
-            fork {
-
-                call camera_point_toon()
-
-            } {
-                Npc_Zora025[PrinceGuide].Demo_PlayASForDemo({'ASName': 'Point', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ClothWarpMode': -2})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                GameROMPlayer.Demo_LookAtObject({'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'TurnPosition': [2056.0, 120.0, -195.0], 'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
-                Npc_Zora025[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora025_R_007', 'ASName': 'Point'})
-                Npc_Zora025[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 0, 'TurnPosition': [0.0, 0.0, 0.0], 'IsConfront': True, 'FaceId': 1})
-                GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'ObjectId': 0, 'UniqueName': 'PrinceGuide', 'IsValid': True, 'ActorName': 'Npc_Zora025', 'TurnPosition': [0.0, 0.0, 0.0], 'IsWaitFinish': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-            }
-
-            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
-            Npc_Zora025[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora025_R_008', 'ASName': ''})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-
-            call camera_ZoraXXX_end()
-
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMeet01'})
         } else {
             Npc_Zora025[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora025_R_003', 'IsCloseMessageDialog': True})
-            goto Event430
         }
+        Npc_Zora025[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'TurnPosition': [2056.0, 120.0, -195.0], 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False, 'FaceId': 1})
+
+        fork {
+
+            call camera_point_toon()
+
+        } {
+            Npc_Zora025[PrinceGuide].Demo_PlayASForDemo({'ASName': 'Point', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ClothWarpMode': -2})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            GameROMPlayer.Demo_LookAtObject({'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'TurnPosition': [2056.0, 120.0, -195.0], 'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
+            Npc_Zora025[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora025_R_007', 'ASName': 'Point'})
+            Npc_Zora025[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 0, 'TurnPosition': [0.0, 0.0, 0.0], 'IsConfront': True, 'FaceId': 1})
+            GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'ObjectId': 0, 'UniqueName': 'PrinceGuide', 'IsValid': True, 'ActorName': 'Npc_Zora025', 'TurnPosition': [0.0, 0.0, 0.0], 'IsWaitFinish': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        }
+
+        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
+        Npc_Zora025[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora025_R_008', 'ASName': ''})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+
+        call camera_ZoraXXX_end()
+
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMeet01'})
     }
 }
 
@@ -417,13 +408,11 @@ void Ready_Npc_Lanayru003_Talk() {
                 } else
                 if EventSystemActor.CheckFlag({'FlagName': 'Npc_Lanayru003_LieFirst'}) {
                     Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_008'})
-                    Event553:
-                    Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_009'})
-                    goto Event552
                 } else {
                     Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_007'})
-                    goto Event553
                 }
+                Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_009'})
+                goto Event552
             } else {
                 Npc_Lanayru003[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Lanayru003_R_007'})
                 EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Lanayru003_LieFirst', 'IsWaitFinish': True})
@@ -469,34 +458,31 @@ void Ready_Npc_Zora028_Talk() {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora028_RiverFirst'})
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora028_FallNear'}) {
             Npc_Zora028[PrinceGuide].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': False, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora028_R_007', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-            Event566:
-            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-            Npc_Zora028[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora028_R_001', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': False, 'ASName': ''})
-            Npc_Zora028[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'TurnPosition': [2248.0, 120.0, -102.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
-
-            fork {
-
-                call camera_point_rutoa()
-
-            } {
-                Npc_Zora028[PrinceGuide].Demo_PlayASForDemo({'ASName': 'Point', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ClothWarpMode': -2})
-                GameROMPlayer.Demo_LookAtObject({'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'TurnPosition': [2248.0, 120.0, -102.0], 'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
-                Npc_Zora028[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora028_R_003', 'IsCloseMessageDialog': True, 'ASName': 'Point'})
-                Npc_Zora028[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'ObjectId': 0, 'TurnPosition': [2248.0, 120.0, -102.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-                GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'ObjectId': 0, 'UniqueName': 'PrinceGuide', 'IsValid': True, 'TurnPosition': [0.0, 0.0, 0.0], 'ActorName': 'Npc_Zora028', 'IsWaitFinish': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-            }
-
-            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'ReviseMode': 0, 'CollisionInterpolateSkip': False})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMeet04'})
-            Npc_Zora028[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora028_R_005', 'ASName': '', 'IsCloseMessageDialog': True})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-
-            call camera_ZoraXXX_end()
-
-        } else {
-            goto Event566
         }
+        GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+        Npc_Zora028[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora028_R_001', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': False, 'ASName': ''})
+        Npc_Zora028[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'TurnPosition': [2248.0, 120.0, -102.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
+
+        fork {
+
+            call camera_point_rutoa()
+
+        } {
+            Npc_Zora028[PrinceGuide].Demo_PlayASForDemo({'ASName': 'Point', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ClothWarpMode': -2})
+            GameROMPlayer.Demo_LookAtObject({'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'TurnPosition': [2248.0, 120.0, -102.0], 'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
+            Npc_Zora028[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora028_R_003', 'IsCloseMessageDialog': True, 'ASName': 'Point'})
+            Npc_Zora028[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'ObjectId': 0, 'TurnPosition': [2248.0, 120.0, -102.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
+            GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'ObjectId': 0, 'UniqueName': 'PrinceGuide', 'IsValid': True, 'TurnPosition': [0.0, 0.0, 0.0], 'ActorName': 'Npc_Zora028', 'IsWaitFinish': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        }
+
+        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'ReviseMode': 0, 'CollisionInterpolateSkip': False})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMeet04'})
+        Npc_Zora028[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora028_R_005', 'ASName': '', 'IsCloseMessageDialog': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+
+        call camera_ZoraXXX_end()
+
     }
 }
 
@@ -572,46 +558,43 @@ void ZoraArrival2() {
         Fader.Demo_FadeOut({'Frame': 2, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
         if EventSystemActor.CheckPlayerRideHorse() {
             GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-            Event595:
-
-            fork {
-                GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-                EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 155.0, 'DestinationX': 3284.739990234375, 'DestinationZ': -432.19000244140625, 'DestinationY': 244.66000366210938})
-                GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': True, 'IsWaitFinish': False, 'ASName': 'DemoWait', 'IsIgnoreSame': False})
-            } {
-                Npc_ZoraB001[Prince02].Demo_WarpToAnchor({'IsWaitFinish': True, 'DirectionY': -25.0, 'DestinationY': 244.86000061035156, 'DestinationX': 3293.81005859375, 'DestinationZ': -452.3699951171875})
-                Npc_ZoraB001[Prince02].Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': 0, 'ASName': 'Wait', 'MorphingFrame': -1.0})
-            }
-
-
-            call ZoraVillageIntro()
-
-
-            fork {
-
-                fork {
-                    Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'ASKeyName': 'Run', 'AnchorUniqueName': 'PrinceRunPoint2', 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
-                    Npc_ZoraB001[Prince02].Demo_Talk({'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_001', 'IsWaitFinish': True, 'ASName': 'Talk_Prince_Surprise', 'IsCloseMessageDialog': True})
-                } {
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
-
-                    call camera_A2_L_to_P()
-
-                }
-
-            } {
-                EventSystemActor[player_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Talk', 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsIgnoreSame': True, 'NoErrorCheck': True, 'IsWaitFinish': False})
-            }
-
-            EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 155.0, 'DestinationX': 3284.739990234375, 'DestinationZ': -432.19000244140625, 'DestinationY': 244.66000366210938})
-
-            call SeyHello()
-
-            goto Event693
-        } else {
-            goto Event595
         }
+
+        fork {
+            GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
+            EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 155.0, 'DestinationX': 3284.739990234375, 'DestinationZ': -432.19000244140625, 'DestinationY': 244.66000366210938})
+            GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': True, 'IsWaitFinish': False, 'ASName': 'DemoWait', 'IsIgnoreSame': False})
+        } {
+            Npc_ZoraB001[Prince02].Demo_WarpToAnchor({'IsWaitFinish': True, 'DirectionY': -25.0, 'DestinationY': 244.86000061035156, 'DestinationX': 3293.81005859375, 'DestinationZ': -452.3699951171875})
+            Npc_ZoraB001[Prince02].Demo_PlayASForDemo({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': 0, 'ASName': 'Wait', 'MorphingFrame': -1.0})
+        }
+
+
+        call ZoraVillageIntro()
+
+
+        fork {
+
+            fork {
+                Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'ASKeyName': 'Run', 'AnchorUniqueName': 'PrinceRunPoint2', 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
+                Npc_ZoraB001[Prince02].Demo_Talk({'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_001', 'IsWaitFinish': True, 'ASName': 'Talk_Prince_Surprise', 'IsCloseMessageDialog': True})
+            } {
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
+
+                call camera_A2_L_to_P()
+
+            }
+
+        } {
+            EventSystemActor[player_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Talk', 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsIgnoreSame': True, 'NoErrorCheck': True, 'IsWaitFinish': False})
+        }
+
+        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DirectionY': 155.0, 'DestinationX': 3284.739990234375, 'DestinationZ': -432.19000244140625, 'DestinationY': 244.66000366210938})
+
+        call SeyHello()
+
+        goto Event693
     }
 }
 
@@ -621,100 +604,97 @@ void ZoraArrival3() {
         Fader.Demo_FadeOut({'Frame': 2, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
         if EventSystemActor.CheckPlayerRideHorse() {
             GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-            Event635:
+        }
 
-            fork {
-                GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-                EventSystemActor.Demo_WarpPlayerToDestination({'DestinationY': 244.668701171875, 'DirectionY': 9.0, 'IsWaitFinish': True, 'DestinationX': 3292.0, 'DestinationZ': -448.1000061035156})
-                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Talk', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsIgnoreSame': True, 'NoErrorCheck': True})
-            } {
-                Npc_ZoraB001[Prince02].Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction1', 'UniqueName': ''})
-            }
+        fork {
+            GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
+            EventSystemActor.Demo_WarpPlayerToDestination({'DestinationY': 244.668701171875, 'DirectionY': 9.0, 'IsWaitFinish': True, 'DestinationX': 3292.0, 'DestinationZ': -448.1000061035156})
+            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Talk', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsIgnoreSame': True, 'NoErrorCheck': True})
+        } {
+            Npc_ZoraB001[Prince02].Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction1', 'UniqueName': ''})
+        }
 
 
-            fork {
-                GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'ObjectId': 0, 'FaceId': 2, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince02', 'PosOffset': [0.0, 0.0, 0.0]})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'ASName': 'Talk', 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                EventSystemActor[player_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
-            } {
-                EventSystemActor[prince_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                Npc_ZoraB001[Prince02].Demo_LookAtObject({'ActorName': '', 'IsWaitFinish': True, 'IsValid': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 3, 'FaceId': 2, 'TurnDirection': 340.0})
-                EventSystemActor[prince_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                Npc_ZoraB001[Prince02].Demo_TurnAndLookToObject({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'FaceId': 2})
-                Npc_ZoraB001[Prince02].Demo_Talk({'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_004', 'ASName': 'Talk_Surprised', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
-            } {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
+        fork {
+            GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'ObjectId': 0, 'FaceId': 2, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince02', 'PosOffset': [0.0, 0.0, 0.0]})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'ASName': 'Talk', 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+            EventSystemActor[player_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
+        } {
+            EventSystemActor[prince_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+            Npc_ZoraB001[Prince02].Demo_LookAtObject({'ActorName': '', 'IsWaitFinish': True, 'IsValid': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 3, 'FaceId': 2, 'TurnDirection': 340.0})
+            EventSystemActor[prince_wait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            Npc_ZoraB001[Prince02].Demo_TurnAndLookToObject({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True, 'FaceId': 2})
+            Npc_ZoraB001[Prince02].Demo_Talk({'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_004', 'ASName': 'Talk_Surprised', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
 
-                call camera_A3_S_closeup()
+            call camera_A3_S_closeup()
 
-                Fader.Demo_FadeIn({'Frame': 2, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
+            Fader.Demo_FadeIn({'Frame': 2, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
 
-                call camera_A3_S_shoulder_L()
+            call camera_A3_S_shoulder_L()
 
-            }
+        }
 
-            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkHello', 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'IsWaitFinish': True})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+        GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkHello', 'IsIgnoreSame': False, 'IsOneTimeEndKeep': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+
+        call camera_A3_S_L_2shot()
+
+        Npc_ZoraB001[Prince02].Demo_Talk({'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_005', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': False})
+
+        fork {
+            Npc_ZoraB001[Prince02].Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_002', 'ASName': 'Talk_Prince_Special', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 23})
+            Npc_ZoraB001[Prince02].Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'ShiningTooth', 'SLinkKey': 'ShiningTooth', 'IsTargetDemoSLinkUser': False})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            Npc_ZoraB001[Prince02].Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'ShiningTooth', 'SLinkKey': 'ShiningTooth'})
+        } {
+
+            call camera_ShiningTooth()
+
+        }
+
+
+        fork {
+            Npc_ZoraB001[Prince02].Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_003', 'ASName': 'Talk_Prince_Joy'})
+            Npc_ZoraB001[Prince02].Demo_LookAtTheFront({'IsWaitFinish': True, 'IsValid': True})
+        } {
 
             call camera_A3_S_L_2shot()
 
-            Npc_ZoraB001[Prince02].Demo_Talk({'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_005', 'ASName': '', 'IsWaitFinish': True, 'IsCloseMessageDialog': False})
+            EventSystemActor[CameraWait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
 
-            fork {
-                Npc_ZoraB001[Prince02].Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_002', 'ASName': 'Talk_Prince_Special', 'IsWaitFinish': True, 'IsCloseMessageDialog': True})
-            } {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 23})
-                Npc_ZoraB001[Prince02].Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'ShiningTooth', 'SLinkKey': 'ShiningTooth', 'IsTargetDemoSLinkUser': False})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                Npc_ZoraB001[Prince02].Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'ShiningTooth', 'SLinkKey': 'ShiningTooth'})
-            } {
+            call camera_A3_S_shoulder_L()
 
-                call camera_ShiningTooth()
-
-            }
-
-
-            fork {
-                Npc_ZoraB001[Prince02].Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_ZoraB001_F_003', 'ASName': 'Talk_Prince_Joy'})
-                Npc_ZoraB001[Prince02].Demo_LookAtTheFront({'IsWaitFinish': True, 'IsValid': True})
-            } {
-
-                call camera_A3_S_L_2shot()
-
-                EventSystemActor[CameraWait].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
-
-                call camera_A3_S_shoulder_L()
-
-            }
-
-
-            fork {
-                GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'TurnDirection': 157.0, 'IsValid': False, 'FaceId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince02'})
-                Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'AnchorName': 'DestinationAnchor', 'AnchorUniqueName': 'PrinceGoBack', 'IsTurnToAnchorDir': False, 'ASKeyName': 'Run', 'IsWaitFinish': True, 'IsAlignmentAnchor': False})
-                Npc_ZoraB001[Prince02].Demo_WarpToScheduleAnchor({'AnchorName': 'DestinationAnchor', 'IsWaitFinish': True, 'UniqueName': 'Run'})
-                Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'AnchorName': 'DestinationAnchor', 'AnchorUniqueName': 'PrinceStairUp', 'IsTurnToAnchorDir': False, 'IsWaitFinish': False, 'ASKeyName': 'Run', 'IsAlignmentAnchor': False})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-
-                call camera_A3_city()
-
-                GameROMPlayer.Demo_PlayerTurnAndLookToObject({'TurnDirection': 157.0, 'IsUseSlowTurn': False, 'IsValid': False, 'FaceId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince02', 'IsWaitFinish': False, 'IsTurnToLookAtPos': False})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
-            }
-
-            Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'TargetActor1': 1, 'PosAppendMode': 2, 'AtAppendMode': 2, 'Pattern1PosX': -1.5410159826278687, 'Pattern1PosY': 1.6899869441986084, 'Pattern1PosZ': -4.974853992462158, 'Pattern1AtY': 1.8000030517578125, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'Count': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer01'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer02'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer03'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer04'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GotoZoraVillage_Step1'})
-            Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
-        } else {
-            goto Event635
         }
+
+
+        fork {
+            GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'TurnDirection': 157.0, 'IsValid': False, 'FaceId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince02'})
+            Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'AnchorName': 'DestinationAnchor', 'AnchorUniqueName': 'PrinceGoBack', 'IsTurnToAnchorDir': False, 'ASKeyName': 'Run', 'IsWaitFinish': True, 'IsAlignmentAnchor': False})
+            Npc_ZoraB001[Prince02].Demo_WarpToScheduleAnchor({'AnchorName': 'DestinationAnchor', 'IsWaitFinish': True, 'UniqueName': 'Run'})
+            Npc_ZoraB001[Prince02].Demo_MoveToAnchor({'AnchorName': 'DestinationAnchor', 'AnchorUniqueName': 'PrinceStairUp', 'IsTurnToAnchorDir': False, 'IsWaitFinish': False, 'ASKeyName': 'Run', 'IsAlignmentAnchor': False})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+
+            call camera_A3_city()
+
+            GameROMPlayer.Demo_PlayerTurnAndLookToObject({'TurnDirection': 157.0, 'IsUseSlowTurn': False, 'IsValid': False, 'FaceId': 0, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'ActorName': 'Npc_ZoraB001', 'UniqueName': 'Prince02', 'IsWaitFinish': False, 'IsTurnToLookAtPos': False})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
+        }
+
+        Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'TargetActor1': 1, 'PosAppendMode': 2, 'AtAppendMode': 2, 'Pattern1PosX': -1.5410159826278687, 'Pattern1PosY': 1.6899869441986084, 'Pattern1PosZ': -4.974853992462158, 'Pattern1AtY': 1.8000030517578125, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'Count': 0.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer01'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer02'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer03'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PrinceCheer04'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GotoZoraVillage_Step1'})
+        Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
     }
 }
 
@@ -757,16 +737,14 @@ void Ready_Npc_Zora036_Talk() {
         Npc_Zora036[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora036_R_001'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_Zora036[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora036_R_002'})
-            Event459:
-            Npc_Zora036[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora036_R_004', 'IsCloseMessageDialog': True})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2246.827392578125, 'Pattern1PosY': 151.48475646972656, 'Pattern1PosZ': -294.2436828613281, 'Pattern1AtX': 2252.93310546875, 'Pattern1AtY': 149.3976593017578, 'Pattern1AtZ': -292.3531494140625, 'Pattern1Fovy': 50.00001907348633, 'Count': 15.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            Npc_Zora036[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'TurnPosition': [2331.0, 120.0, -267.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
-            Npc_Zora036[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora036_R_005', 'ASName': 'Point'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMeet07'})
         } else {
             Npc_Zora036[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora036_R_003'})
-            goto Event459
         }
+        Npc_Zora036[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora036_R_004', 'IsCloseMessageDialog': True})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2246.827392578125, 'Pattern1PosY': 151.48475646972656, 'Pattern1PosZ': -294.2436828613281, 'Pattern1AtX': 2252.93310546875, 'Pattern1AtY': 149.3976593017578, 'Pattern1AtZ': -292.3531494140625, 'Pattern1Fovy': 50.00001907348633, 'Count': 15.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        Npc_Zora036[PrinceGuide].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 2, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'TurnDirection': 0.0, 'TurnPosition': [2331.0, 120.0, -267.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
+        Npc_Zora036[PrinceGuide].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora036_R_005', 'ASName': 'Point'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMeet07'})
     }
 }
 
@@ -832,46 +810,43 @@ void Ready_Npc_Zora013_Call() {
         Npc_Zora013[PrinceGuide].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': False, 'ASName': '', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_009', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
         if EventSystemActor.CheckPlayerRideHorse() {
             GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-            Event985:
-
-            fork {
-                GameROMPlayer.Demo_PlayASAdapt({'ASName': 'LookAround', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsWaitFinish': False, 'NoErrorCheck': False, 'ClothWarpMode': -2})
-            } {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 75})
-            }
-
-            GameROMPlayer.Demo_PlayerTurnAndLookToObject({'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'ObjectId': 0, 'FaceId': 2, 'PosOffset': [0.0, 0.0, 0.0], 'UniqueName': 'PrinceGuide', 'ActorName': 'Npc_Zora013', 'IsWaitFinish': True, 'IsTurnToLookAtPos': False, 'IsUseSlowTurn': True})
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'Talk', 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-
-            fork {
-                Npc_Zora013[PrinceGuide].Demo_Talk({'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': False, 'IsWaitFinish': True, 'ASName': 'Act_Swim_Hello', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_010'})
-            } {
-                GameRomCamera.Demo_MovePosFlow({'Pattern1PosY': 2.8844149112701416, 'Pattern1PosZ': -2.335114002227783, 'Pattern1AtY': 0.6333919763565063, 'Pattern1AtZ': 4.578979015350342, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Count': 30.0, 'Cushion': 5.0, 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-                GameRomCamera.Demo_MovePosFlow({'Pattern1PosY': 3.7462689876556396, 'Pattern1PosZ': 11.37017822265625, 'Pattern1Fovy': 35.009666442871094, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Zora013', 'UniqueName1': 'PrinceGuide', 'Count': 45.0, 'Cushion': 5.0, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'IsWaitFinish': True, 'Pattern1AtY': 0.0, 'Pattern1AtZ': 0.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0})
-            }
-
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora013_Call'})
-
-            fork {
-                EventSystemActor.Demo_WarpPlayerToDestination({'DestinationX': 1521.5999755859375, 'DestinationY': 115.9000015258789, 'DestinationZ': -277.70001220703125, 'DirectionY': 0.0, 'IsWaitFinish': True})
-                GameROMPlayer.Demo_TurnAndLookToObjectNow({'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'ObjectId': 0, 'FaceId': 2, 'PosOffset': [0.0, 0.0, 0.0], 'UniqueName': 'PrinceGuide', 'ActorName': 'Npc_Zora013', 'IsWaitFinish': True})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'Talk', 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                Npc_Zora013[PrinceGuide].Demo_TurnAndLookToObjectNow({'TurnDirection': 0.0, 'ActorName': 'GameROMPlayer', 'IsValid': True, 'IsConfront': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'FaceId': 2, 'IsWaitFinish': True})
-            } {
-
-                call camera_pan_retoogan()
-
-            }
-
-
-            call camera_talk_retoogan()
-
-            goto Event513
-        } else {
-            goto Event985
         }
+
+        fork {
+            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'LookAround', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsWaitFinish': False, 'NoErrorCheck': False, 'ClothWarpMode': -2})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 75})
+        }
+
+        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'ObjectId': 0, 'FaceId': 2, 'PosOffset': [0.0, 0.0, 0.0], 'UniqueName': 'PrinceGuide', 'ActorName': 'Npc_Zora013', 'IsWaitFinish': True, 'IsTurnToLookAtPos': False, 'IsUseSlowTurn': True})
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'Talk', 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+
+        fork {
+            Npc_Zora013[PrinceGuide].Demo_Talk({'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': False, 'IsWaitFinish': True, 'ASName': 'Act_Swim_Hello', 'MessageId': 'EventFlowMsg/GotoZoraVillage:Npc_Zora013_R_010'})
+        } {
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosY': 2.8844149112701416, 'Pattern1PosZ': -2.335114002227783, 'Pattern1AtY': 0.6333919763565063, 'Pattern1AtZ': 4.578979015350342, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Count': 30.0, 'Cushion': 5.0, 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosY': 3.7462689876556396, 'Pattern1PosZ': 11.37017822265625, 'Pattern1Fovy': 35.009666442871094, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Zora013', 'UniqueName1': 'PrinceGuide', 'Count': 45.0, 'Cushion': 5.0, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'IsWaitFinish': True, 'Pattern1AtY': 0.0, 'Pattern1AtZ': 0.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0})
+        }
+
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora013_Call'})
+
+        fork {
+            EventSystemActor.Demo_WarpPlayerToDestination({'DestinationX': 1521.5999755859375, 'DestinationY': 115.9000015258789, 'DestinationZ': -277.70001220703125, 'DirectionY': 0.0, 'IsWaitFinish': True})
+            GameROMPlayer.Demo_TurnAndLookToObjectNow({'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'ObjectId': 0, 'FaceId': 2, 'PosOffset': [0.0, 0.0, 0.0], 'UniqueName': 'PrinceGuide', 'ActorName': 'Npc_Zora013', 'IsWaitFinish': True})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'Talk', 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+            Npc_Zora013[PrinceGuide].Demo_TurnAndLookToObjectNow({'TurnDirection': 0.0, 'ActorName': 'GameROMPlayer', 'IsValid': True, 'IsConfront': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 0, 'FaceId': 2, 'IsWaitFinish': True})
+        } {
+
+            call camera_pan_retoogan()
+
+        }
+
+
+        call camera_talk_retoogan()
+
+        goto Event513
     }
 }
 

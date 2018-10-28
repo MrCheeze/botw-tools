@@ -144,11 +144,8 @@ void Ready_Npc_HighMountain035_Talk() {
     Npc_HighMountain035[Brosrock_Now_Npc_HighMountain035].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain035_R_002', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
     if EventSystemActor.CheckFlag({'FlagName': 'Rito_KeelSearch_Activated'}) {
         EventSystemActor.Demo_FlagON({'FlagName': 'Rito_KeelSearch_Step1', 'IsWaitFinish': True})
-        Event13:
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Activated'})
-    } else {
-        goto Event13
     }
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Activated'})
 }
 
 void Rito_BrosRock_Step1_Npc_HighMountain031_Talk() {
@@ -163,14 +160,12 @@ void Rito_BrosRock_Step1_Npc_HighMountain031_Talk() {
         Npc_HighMountain031[Brosrock_Ready_Npc_HighMountain031].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain031_S01_201', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
         Event102:
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_S1'})
-        if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S2'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S3'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S4'}) {
-                    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Rito_BrosRock_Step1'})
-                    Fader.Demo_FadeIn({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
-                }
-            }
+        if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S2'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S3'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S4'}) {
+            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Rito_BrosRock_Step1'})
+            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
         }
     } else {
         Npc_HighMountain031[Brosrock_Ready_Npc_HighMountain031].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain031_S01_001', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -199,14 +194,12 @@ void Rito_BrosRock_Step1_Npc_HighMountain032_Talk() {
         Npc_HighMountain032[Brosrock_Activated_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain032_S01_201', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
         Event23:
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_S2'})
-        if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S1'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S3'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S4'}) {
-                    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Rito_BrosRock_Step1'})
-                    Fader.Demo_FadeIn({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
-                }
-            }
+        if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S1'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S3'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S4'}) {
+            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Rito_BrosRock_Step1'})
+            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
         }
     } else {
         Npc_HighMountain032[Brosrock_Activated_Npc_HighMountain032].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain032_S01_001', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -238,14 +231,12 @@ void Rito_BrosRock_Step1_Npc_HighMountain033_Talk() {
             Npc_HighMountain033[Brosrock_Ready_Npc_HighMountain033].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain033_S01_102', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
             Npc_HighMountain033[Brosrock_Ready_Npc_HighMountain033].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain033_S01_106', 'IsCloseMessageDialog': False, 'ASName': 'Talk_EatFish'})
             Npc_HighMountain033[Brosrock_Ready_Npc_HighMountain033].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain033_S01_107'})
-            if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S1'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S2'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S4'}) {
-                        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Rito_BrosRock_Step1'})
-                        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
-                    }
-                }
+            if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S1'})
+            && EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S2'})
+            && EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S4'}) {
+                Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Rito_BrosRock_Step1'})
+                Fader.Demo_FadeIn({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
             }
         } else {
             Npc_HighMountain033[Brosrock_Ready_Npc_HighMountain033].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain033_S01_104', 'IsOverWriteLabelActorName': False})
@@ -270,14 +261,12 @@ void Rito_BrosRock_Step1_Npc_HighMountain034_Talk() {
         Npc_HighMountain034[Brosrock_Ready_Npc_HighMountain034].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain035_S01_201', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
         Event40:
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_S4'})
-        if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S1'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S2'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S3'}) {
-                    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Rito_BrosRock_Step1'})
-                    Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 2, 'DispMode': 'Auto', 'Color': 1})
-                }
-            }
+        if EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S1'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S2'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Rito_BrosRock_S3'}) {
+            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'Auto'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_BrosRock_Rito_BrosRock_Step1'})
+            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 2, 'DispMode': 'Auto', 'Color': 1})
         }
     } else {
         Npc_HighMountain034[Brosrock_Ready_Npc_HighMountain034].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Rito_BrosRock:Npc_HighMountain034_S01_001', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})

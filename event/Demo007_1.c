@@ -102,23 +102,20 @@ void Demo007_1_Sub() {
 
     SoundTriggerTag.Demo_SoundTriggerFade({'Sound': 'Demo007_1_FireWood', 'IsWaitFinish': False})
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-    if !EventSystemActor.isBloodyMoonTrig() {
-        Event73:
-        EventSystemActor.Demo_OpenClockTime({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 3})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'Fanfare'})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-
-        fork {
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-        } {
-            GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ASName': 'Demo007_1-C02-Link-A-0', 'IsWaitFinish': True, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-        }
-
-        EventSystemActor.Demo_CloseClockTime({'IsWaitFinish': True})
-        EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-    } else {
+    if EventSystemActor.isBloodyMoonTrig() {
         EventSystemActor.Demo_CallDemo({'DemoName': 'Demo011_0', 'EntryPointName': 'Demo011_0', 'IsWaitFinish': True, 'EndFade': 1})
-        goto Event73
     }
+    EventSystemActor.Demo_OpenClockTime({'IsWaitFinish': True})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 3})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'Fanfare'})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+
+    fork {
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+    } {
+        GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ASName': 'Demo007_1-C02-Link-A-0', 'IsWaitFinish': True, 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+    }
+
+    EventSystemActor.Demo_CloseClockTime({'IsWaitFinish': True})
+    EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
 }

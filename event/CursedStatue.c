@@ -52,13 +52,10 @@ void DungeonAppear() {
 
     EventSystemActor.Demo_CallDemo({'DemoName': 'Demo016_0', 'EntryPointName': 'DungeonArrival', 'IsWaitFinish': True, 'EndFade': 0})
     GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': True})
-    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-        Event16:
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CursedStatue_Finish'})
-    } else {
+    if !EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_ReserveParashawlStart({'IsWaitFinish': True})
-        goto Event16
     }
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CursedStatue_Finish'})
 }
 
 void Ready_Npc_HatenoGate001_Talk() {

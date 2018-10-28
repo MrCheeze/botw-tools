@@ -204,12 +204,9 @@ void Ready_Npc_TamourHatago001_Talk() {
         Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:FirstTalk_01'})
         if EventSystemActor.CheckFlag({'FlagName': 'HatenoMini_BlueFire_Finish'}) {
             EventSystemActor.Demo_FlagOFF({'FlagName': 'MiniGame_KitakkareBF_Fire', 'IsWaitFinish': True})
-            Event27:
-            Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:FirstTalk_02'})
-            goto Event28
-        } else {
-            goto Event27
         }
+        Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:FirstTalk_02'})
+        goto Event28
     }
 }
 
@@ -362,12 +359,11 @@ void Greetings() {
 
         if !EventSystemActor.RandomChoice2() {
             Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:CantPlay_LanternOn_BeforeTalk', 'IsCloseMessageDialog': True})
-            Event101:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:CantPlay_LanternOn_AfterTalk', 'IsCloseMessageDialog': True})
-            goto Event101
         }
+        Event101:
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     } else {
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
@@ -375,35 +371,31 @@ void Greetings() {
         if EventSystemActor.CheckFlag({'FlagName': 'Higakkare_Torch_ON'}) {
             if !EventSystemActor.RandomChoice2() {
                 Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:CantPlay_LanternOn_BeforeTalk', 'IsCloseMessageDialog': True})
-                Event254:
-                Npc_TamourHatago001.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:CantPlay_End'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Higakkare_NPC001_Delete', 'IsWaitFinish': True})
-                goto Event101
             } else {
                 Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:CantPlay_LanternOn_AfterTalk', 'IsCloseMessageDialog': True})
-                goto Event254
             }
+            Npc_TamourHatago001.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'FaceId': 2, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:CantPlay_End'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Higakkare_NPC001_Delete', 'IsWaitFinish': True})
+            goto Event101
         } else
-        if EventSystemActor.CheckFlag({'FlagName': 'Higakkare_NPC001_Delete'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Higakkare_TestToach_OFF'}) {
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'Higakkare_TestToach_OFF', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'Higakkare_NPC001_Delete', 'IsWaitFinish': True})
-                Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:CantPlay_End_00'})
-                Event48:
-                if Npc_TamourHatago001.IsOnInstEventFlag() {
-                    Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:Greetings_Again'})
-                } else
-                switch EventSystemActor.CheckTimeType() {
-                  case [0, 1]:
-                    Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:Greetings_Morning'})
-                  case [2, 3, 4, 5]:
-                    Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:Greetings_AboutNoon'})
-                  case [6, 7]:
-                    Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:Greetings_Night'})
-                }
+        if EventSystemActor.CheckFlag({'FlagName': 'Higakkare_NPC001_Delete'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Higakkare_TestToach_OFF'}) {
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'Higakkare_TestToach_OFF', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'Higakkare_NPC001_Delete', 'IsWaitFinish': True})
+            Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:CantPlay_End_00'})
+            Event48:
+            if Npc_TamourHatago001.IsOnInstEventFlag() {
+                Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:Greetings_Again'})
             } else
-            goto Event48
+            switch EventSystemActor.CheckTimeType() {
+              case [0, 1]:
+                Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:Greetings_Morning'})
+              case [2, 3, 4, 5]:
+                Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:Greetings_AboutNoon'})
+              case [6, 7]:
+                Npc_TamourHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_KitakkareBF:Greetings_Night'})
+            }
         } else
         goto Event48
     }

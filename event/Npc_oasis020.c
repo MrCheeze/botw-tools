@@ -46,11 +46,10 @@ void Talk() {
                     Event216:
                     if !EventSystemActor.RandomChoice2() {
                         Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_40'})
-                        goto Event65
                     } else {
                         Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_22'})
-                        goto Event65
                     }
+                    goto Event65
                   case 1:
                     Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_21'})
                     EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
@@ -144,57 +143,56 @@ void Drag_Hero_Finish_Talk() {
             EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
             if Npc_oasis020.IsOnInstEventFlag() {
                 Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_15'})
-                Event178:
-                switch EventSystemActor.GeneralChoice4() {
-                  case 0:
-                    Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_41'})
-                    Event186:
-                    Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_16'})
-                    goto Event178
-                  case 1:
-                    if !EventSystemActor.HasPorchItemByCategory({'Category': 1, 'Count': 1}) {
-                        if EventSystemActor.CheckRupee({'Value': 20}) {
-                            EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -20})
+            } else {
+                Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_07'})
+            }
+            Event178:
+            switch EventSystemActor.GeneralChoice4() {
+              case 0:
+                Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_41'})
+                Event186:
+                Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_16'})
+                goto Event178
+              case 1:
+                if !EventSystemActor.HasPorchItemByCategory({'Category': 1, 'Count': 1}) {
+                    if EventSystemActor.CheckRupee({'Value': 20}) {
+                        EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -20})
+                        Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_08'})
+                        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+                        Event238:
+
+                        call StartCamera()
+
+                    } else {
+                        Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_11'})
+                    }
+                } else {
+                    Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_12'})
+                    if !EventSystemActor.GeneralChoice2() {
+                        if EventSystemActor.CheckRupee({'Value': 50}) {
+                            EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -50})
                             Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_08'})
                             Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-                            Event238:
-
-                            call StartCamera()
-
+                            EventSystemActor.Demo_IncreasePorchItem({'Value': 1, 'IsWaitFinish': True, 'PorchItemName': 'Weapon_Shield_001'})
+                            EventSystemActor.Demo_SwitchPlayerEquipment({'IsWaitFinish': True, 'UnequipWeapon': False, 'UnequipShield': False, 'UnequipBow': False, 'UnequipArmorHead': False, 'UnequipArmorUpper': False, 'UnequipArmorLower': False, 'PorchItemName_Weapon': '', 'PorchItemName_Bow': '', 'PorchItemName_ArmorHead': '', 'PorchItemName_ArmorUpper': '', 'PorchItemName_ArmorLower': '', 'PorchItemName_Arrow': '', 'PorchItemName_Shield': 'Weapon_Shield_001'})
+                            goto Event238
                         } else {
                             Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_11'})
                         }
                     } else {
-                        Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_12'})
-                        if !EventSystemActor.GeneralChoice2() {
-                            if EventSystemActor.CheckRupee({'Value': 50}) {
-                                EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -50})
-                                Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_08'})
-                                Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-                                EventSystemActor.Demo_IncreasePorchItem({'Value': 1, 'IsWaitFinish': True, 'PorchItemName': 'Weapon_Shield_001'})
-                                EventSystemActor.Demo_SwitchPlayerEquipment({'IsWaitFinish': True, 'UnequipWeapon': False, 'UnequipShield': False, 'UnequipBow': False, 'UnequipArmorHead': False, 'UnequipArmorUpper': False, 'UnequipArmorLower': False, 'PorchItemName_Weapon': '', 'PorchItemName_Bow': '', 'PorchItemName_ArmorHead': '', 'PorchItemName_ArmorUpper': '', 'PorchItemName_ArmorLower': '', 'PorchItemName_Arrow': '', 'PorchItemName_Shield': 'Weapon_Shield_001'})
-                                goto Event238
-                            } else {
-                                Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_11'})
-                            }
-                        } else {
-                            Event163:
-                            Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_09'})
-                        }
+                        Event163:
+                        Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_09'})
                     }
-                  case 2:
-                    Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_35'})
-                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                    EventSystemActor.Demo_OpenMessageTips({'IsWaitFinish': True, 'TipsType': 19, 'MessageId': 'EventFlowMsg/OperationGuide:Guide_SandSeal'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Guide_SandSeal'})
-                    EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                    goto Event186
-                  case 3:
-                    goto Event163
                 }
-            } else {
-                Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_07'})
-                goto Event178
+              case 2:
+                Npc_oasis020.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis020:Talk_35'})
+                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                EventSystemActor.Demo_OpenMessageTips({'IsWaitFinish': True, 'TipsType': 19, 'MessageId': 'EventFlowMsg/OperationGuide:Guide_SandSeal'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Guide_SandSeal'})
+                EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+                goto Event186
+              case 3:
+                goto Event163
             }
         } else {
             EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})

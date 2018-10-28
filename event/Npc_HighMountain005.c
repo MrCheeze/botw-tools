@@ -66,12 +66,10 @@ void Saki_WindRelic_Ready() {
         Npc_HighMountain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain005:talk00'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_HighMountain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain005:talk01'})
-            Event13:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC005_First', 'IsWaitFinish': True})
         } else {
             Npc_HighMountain005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain005:talk02'})
-            goto Event13
         }
+        EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC005_First', 'IsWaitFinish': True})
     }
 }
 

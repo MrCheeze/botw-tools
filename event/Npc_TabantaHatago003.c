@@ -108,9 +108,8 @@ void Talk() {
 }
 
 void Near() {
-    if !Npc_TabantaHatago003.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
-        if EventSystemActor.CheckWeather() in [1, 2, 3] {
-            Npc_TabantaHatago003.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:near_0001', 'DispFrame': 90, 'IsChecked': False})
-        }
+    if !Npc_TabantaHatago003.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'})
+    && EventSystemActor.CheckWeather() in [1, 2, 3] {
+        Npc_TabantaHatago003.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_TabantaHatago003:near_0001', 'DispFrame': 90, 'IsChecked': False})
     }
 }

@@ -45,20 +45,18 @@ void MSG_Rane_00() {
         Event92:
         if Npc_Road_026.IsOnInstEventFlag() {
             Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_00_1'})
-            Event69:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_00'})
-            goto Event69
         }
+        Event69:
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
       case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_026.IsOnInstEventFlag() {
             Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_00_1'})
-            goto Event69
         } else {
             Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_00'})
-            goto Event69
         }
+        goto Event69
     }
 }
 
@@ -75,11 +73,10 @@ void MSG_Rane_01() {
 
     if Npc_Road_026.IsOnInstEventFlag() {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_01_1'})
-        goto Event69
     } else {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_01'})
-        goto Event69
     }
+    goto Event69
 }
 
 void RetMSG_Rane_01() {
@@ -88,11 +85,10 @@ void RetMSG_Rane_01() {
 
     if Npc_Road_026.IsOnInstEventFlag() {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_01_1'})
-        goto Event69
     } else {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_01'})
-        goto Event69
     }
+    goto Event69
 }
 
 void MSG_Rane_02() {
@@ -101,11 +97,10 @@ void MSG_Rane_02() {
 
     if Npc_Road_026.IsOnInstEventFlag() {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_02_1'})
-        goto Event69
     } else {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_02'})
-        goto Event69
     }
+    goto Event69
 }
 
 void RetMSG_Rane_02() {
@@ -114,11 +109,10 @@ void RetMSG_Rane_02() {
 
     if Npc_Road_026.IsOnInstEventFlag() {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_02_1'})
-        goto Event69
     } else {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_02'})
-        goto Event69
     }
+    goto Event69
 }
 
 void MSG_Rane_03() {
@@ -127,11 +121,10 @@ void MSG_Rane_03() {
 
     if Npc_Road_026.IsOnInstEventFlag() {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_03_1'})
-        goto Event69
     } else {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_03'})
-        goto Event69
     }
+    goto Event69
 }
 
 void RetMSG_Rane_03() {
@@ -140,11 +133,10 @@ void RetMSG_Rane_03() {
 
     if Npc_Road_026.IsOnInstEventFlag() {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_03_1'})
-        goto Event69
     } else {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_03'})
-        goto Event69
     }
+    goto Event69
 }
 
 void MSG_Rane_04() {
@@ -153,11 +145,10 @@ void MSG_Rane_04() {
 
     if Npc_Road_026.IsOnInstEventFlag() {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_04_1'})
-        goto Event69
     } else {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:MSG_Rane_04'})
-        goto Event69
     }
+    goto Event69
 }
 
 void RetMSG_Rane_04() {
@@ -166,11 +157,10 @@ void RetMSG_Rane_04() {
 
     if Npc_Road_026.IsOnInstEventFlag() {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_04_1'})
-        goto Event69
     } else {
         Npc_Road_026.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_026:RetMSG_Rane_04'})
-        goto Event69
     }
+    goto Event69
 }
 
 void Rest_End() {

@@ -62,15 +62,11 @@ void Talk() {
         Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk06'})
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-        if Npc_HighMountain010[Peda_Rito].IsOnInstEventFlag() {
-            if !EventSystemActor.RandomChoice2() {
-                Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk19', 'ASName': ''})
-            } else {
-                Event130:
-                Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk18', 'ASName': ''})
-            }
+        if Npc_HighMountain010[Peda_Rito].IsOnInstEventFlag()
+        && !EventSystemActor.RandomChoice2() {
+            Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk19', 'ASName': ''})
         } else {
-            goto Event130
+            Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk18', 'ASName': ''})
         }
     } else
     if Npc_HighMountain010[Peda_Rito].IsOnInstEventFlag() {
@@ -105,36 +101,34 @@ void Talk() {
                         Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk07', 'ASName': 'Talk', 'IsCloseMessageDialog': False})
                         if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWind'}) {
                             Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk00', 'ASName': 'Talk', 'IsCloseMessageDialog': False})
-                            Event216:
-                            Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk33', 'ASName': 'Talk', 'IsCloseMessageDialog': True})
-
-                            fork {
-                                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3594.153564453125, 'Pattern1PosY': 291.9629211425781, 'Pattern1PosZ': -1824.28857421875, 'Pattern1AtX': -3596.8779296875, 'Pattern1AtY': 289.289794921875, 'Pattern1AtZ': -1818.7894287109375, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Count': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            } {
-                                EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'B-3', 'WarpDestPosName': 'PedaMove', 'IsWaitFinish': True})
-                            }
-
-                            GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 0, 'UniqueName': 'Peda_Rito', 'FaceId': 2, 'ActorName': 'Npc_HighMountain010', 'IsWaitFinish': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'PosOffset': [0.0, 0.0, 0.0], 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
-                            Npc_HighMountain010[Peda_Rito].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 1, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                            Npc_HighMountain010[Peda_Rito].Demo_PlayASForDemo({'ASName': 'Hello', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                            Npc_HighMountain010[Peda_Rito].Demo_MoveToAnchor({'IsWaitFinish': False, 'AnchorName': 'AnchorAction4', 'AnchorUniqueName': 'Go_Ichikara', 'ASKeyName': 'Walk', 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
-
-                            fork {
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
-                                Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-                            } {
-                                EventBgmCtrlTag.Demo_StartAndKeep({'IsWaitFinish': True, 'BgmName': 'MovingIchikaraBgm'})
-                            }
-
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Rito_NPC010p_Go_UMiiVillage'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_MakeVillage_Invite03'})
-                            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'Location_UMiiVillageShopYorozu'})
-                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3594.96337890625, 'Pattern1PosY': 290.6139831542969, 'Pattern1PosZ': -1817.4010009765625, 'Pattern1AtX': -3597.62109375, 'Pattern1AtY': 289.4253234863281, 'Pattern1AtZ': -1812.036376953125, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
                         } else {
                             Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk17', 'ASName': 'Talk', 'IsCloseMessageDialog': False})
-                            goto Event216
                         }
+                        Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk33', 'ASName': 'Talk', 'IsCloseMessageDialog': True})
+
+                        fork {
+                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3594.153564453125, 'Pattern1PosY': 291.9629211425781, 'Pattern1PosZ': -1824.28857421875, 'Pattern1AtX': -3596.8779296875, 'Pattern1AtY': 289.289794921875, 'Pattern1AtZ': -1818.7894287109375, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Count': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                        } {
+                            EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'B-3', 'WarpDestPosName': 'PedaMove', 'IsWaitFinish': True})
+                        }
+
+                        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 0, 'UniqueName': 'Peda_Rito', 'FaceId': 2, 'ActorName': 'Npc_HighMountain010', 'IsWaitFinish': True, 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'PosOffset': [0.0, 0.0, 0.0], 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
+                        Npc_HighMountain010[Peda_Rito].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 1, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                        Npc_HighMountain010[Peda_Rito].Demo_PlayASForDemo({'ASName': 'Hello', 'IsWaitFinish': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+                        Npc_HighMountain010[Peda_Rito].Demo_MoveToAnchor({'IsWaitFinish': False, 'AnchorName': 'AnchorAction4', 'AnchorUniqueName': 'Go_Ichikara', 'ASKeyName': 'Walk', 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
+
+                        fork {
+                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
+                            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+                        } {
+                            EventBgmCtrlTag.Demo_StartAndKeep({'IsWaitFinish': True, 'BgmName': 'MovingIchikaraBgm'})
+                        }
+
+                        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Rito_NPC010p_Go_UMiiVillage'})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_MakeVillage_Invite03'})
+                        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'Location_UMiiVillageShopYorozu'})
+                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3594.96337890625, 'Pattern1PosY': 290.6139831542969, 'Pattern1PosZ': -1817.4010009765625, 'Pattern1AtX': -3597.62109375, 'Pattern1AtY': 289.4253234863281, 'Pattern1AtZ': -1812.036376953125, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
                     } else {
                         Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk05', 'ASName': ''})
                     }
@@ -153,14 +147,11 @@ void Talk() {
         } else {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Rito_NPC010p_First_WindRelic'})
             Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk08', 'ASName': ''})
-            if !EventSystemActor.GeneralChoice2() {
-                Event99:
-                Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk02', 'ASName': ''})
-                goto Event93
-            } else {
+            if EventSystemActor.GeneralChoice2() {
                 Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk01', 'ASName': ''})
-                goto Event99
             }
+            Npc_HighMountain010[Peda_Rito].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain010:talk02', 'ASName': ''})
+            goto Event93
         }
     } else
     switch EventSystemActor.CheckTimeType() {

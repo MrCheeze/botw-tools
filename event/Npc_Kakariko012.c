@@ -64,13 +64,11 @@ void Talk() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
         Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:FirstTalk01', 'IsCloseMessageDialog': False})
-        Event348:
-        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Talk', 'IsWaitFinish': True})
-        goto Event248
     } else {
         Npc_Kakariko012.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Kakariko012:FirstTalk00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-        goto Event348
     }
+    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Talk', 'IsWaitFinish': True})
+    goto Event248
 }
 
 void Near() {
@@ -118,26 +116,24 @@ void ClerkAsk() {
         EventSystemActor.Demo_NoDeleteCurrent({'IsWaitFinish': True})
         if !EventSystemActor.RandomChoice2() {
             Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:ClerkAsk00', 'IsOverWriteLabelActorName': False})
-            Event359:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Kakariko012.Demo_SellItem({'IsWaitFinish': True})
-                Npc_Kakariko012.Demo_SetAttentionForbidSale({'IsWaitFinish': True})
-                Argument.Demo_OnMUAssignSaveForUsed({'IsWaitFinish': False})
-                Argument.Demo_PlayASForDemo({'ASName': 'VisibleOff', 'IsWaitFinish': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0})
-
-                call GetDemo.ShowGetDemoDialogByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Arg_CurrentActorName'})
-
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-
-                call Sell()
-
-            } else {
-                Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Com_Talk_61', 'IsOverWriteLabelActorName': False})
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-            }
         } else {
             Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Com_Talk_60', 'IsOverWriteLabelActorName': False})
-            goto Event359
+        }
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Kakariko012.Demo_SellItem({'IsWaitFinish': True})
+            Npc_Kakariko012.Demo_SetAttentionForbidSale({'IsWaitFinish': True})
+            Argument.Demo_OnMUAssignSaveForUsed({'IsWaitFinish': False})
+            Argument.Demo_PlayASForDemo({'ASName': 'VisibleOff', 'IsWaitFinish': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'MorphingFrame': -1.0})
+
+            call GetDemo.ShowGetDemoDialogByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Arg_CurrentActorName'})
+
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
+
+            call Sell()
+
+        } else {
+            Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Com_Talk_61', 'IsOverWriteLabelActorName': False})
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         }
     }
 }
@@ -148,16 +144,14 @@ void SheikahSuitsDemo() {
 
     if Npc_Kakariko012.CheckActorAction({'ActionName': 'Root/Terror'}) {
         Npc_Kakariko012.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-        Event353:
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko012_Talk'}) {
-            Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Talk24'})
-            Event346:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Sheikah_first', 'IsWaitFinish': True})
-        } else {
-            Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Talk25'})
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Talk', 'IsWaitFinish': True})
-            goto Event346
-        }
-    } else
-    goto Event353
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Kakariko012_Talk'}) {
+        Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Talk24'})
+        Event346:
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Sheikah_first', 'IsWaitFinish': True})
+    } else {
+        Npc_Kakariko012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Kakariko012:Talk25'})
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Kakariko012_Talk', 'IsWaitFinish': True})
+        goto Event346
+    }
 }

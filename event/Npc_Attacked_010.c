@@ -25,20 +25,17 @@ void Talk() {
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-        if EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set2_Saved'}) {
-            Event22:
-            if EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set2_FirstTalk'}) {
-                Npc_Attacked_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_010:After00'})
-            } else {
-                Npc_Attacked_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_010:GoodBye00', 'ASName': ''})
-                EventSystemActor.Demo_FlagON({'FlagName': 'AttackedNPC_Set2_FirstTalk', 'IsWaitFinish': True})
-            }
-        } else {
+        if !EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set2_Saved'}) {
             Event5:
 
             call Npc_Road_Common.Atacked_Pair({'Flag': 'Npc_Attacked_010_CookReward', 'AttackedState': 'Npc_Attacked_004_AttackedState', 'TerrorState': 'Npc_Attacked_004_TerrorState', 'Self': ActorIdentifier(name="Npc_Attacked_010"), 'Pair': ActorIdentifier(name="Npc_Attacked_004")})
 
-            goto Event22
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'AttackedNPC_Set2_FirstTalk'}) {
+            Npc_Attacked_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_010:After00'})
+        } else {
+            Npc_Attacked_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_010:GoodBye00', 'ASName': ''})
+            EventSystemActor.Demo_FlagON({'FlagName': 'AttackedNPC_Set2_FirstTalk', 'IsWaitFinish': True})
         }
       case 3:
         switch Npc_Attacked_010.CheckResultOfNPCConflict() {

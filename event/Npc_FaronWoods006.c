@@ -180,11 +180,8 @@ void Talk() {
                     Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk06'})
                     if !EventSystemActor.GeneralChoice2() {
                         Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk07'})
-                        Event43:
-                        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk09'})
-                    } else {
-                        goto Event43
                     }
+                    Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Talk09'})
                   case 1:
                     EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FaronWoods006_talk', 'IsWaitFinish': True})
                     GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
@@ -235,14 +232,12 @@ void Talk() {
 
             if !EventSystemActor.RandomChoice2() {
                 Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear01', 'IsCloseMessageDialog': True})
-                Event190:
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                goto Event229
             } else {
                 Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear00', 'IsCloseMessageDialog': True})
-                goto Event190
             }
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+            goto Event229
         } else
         if Npc_FaronWoods006.IsOnInstEventFlag() {
             Event228:
@@ -293,54 +288,46 @@ void Warning() {
     Npc_FaronWoods006.Demo_LookAtObject({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0]})
     if !EventSystemActor.RandomChoice2() {
         Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning01'})
-        Event78:
-
-        call InitTalk.InitTalkOnEvent({'Arg_Turn': 1, 'Self': ActorIdentifier(name="Npc_FaronWoods006")})
-
-        if !EventSystemActor.RandomChoice2() {
-            Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning03'})
-            Event87:
-            if !EventSystemActor.RandomChoice2() {
-                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning05'})
-                Event90:
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_Warning'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
-            } else {
-                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning04'})
-                goto Event90
-            }
-        } else {
-            Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning02'})
-            goto Event87
-        }
     } else {
         Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning00'})
-        goto Event78
     }
+
+    call InitTalk.InitTalkOnEvent({'Arg_Turn': 1, 'Self': ActorIdentifier(name="Npc_FaronWoods006")})
+
+    if !EventSystemActor.RandomChoice2() {
+        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning03'})
+    } else {
+        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning02'})
+    }
+    if !EventSystemActor.RandomChoice2() {
+        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning05'})
+    } else {
+        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Warning04'})
+    }
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_Warning'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
 }
 
 void WarningClear() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods006_WarningClear'}) {
         if !EventSystemActor.RandomChoice2() {
             Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear01', 'IsCloseMessageDialog': False})
-            Event96:
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
-            Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear02'})
-            Event50:
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-                Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Wander01', 'IsCloseMessageDialog': True})
-
-                call TalkLoop()
-
-              case 1:
-                goto Event52
-              case 2:
-                goto Event66
-            }
         } else {
             Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear00', 'IsCloseMessageDialog': False})
-            goto Event96
+        }
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_FaronWoods006_WarningClear'})
+        Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:WarningClear02'})
+        Event50:
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Wander01', 'IsCloseMessageDialog': True})
+
+            call TalkLoop()
+
+          case 1:
+            goto Event52
+          case 2:
+            goto Event66
         }
     } else {
         Npc_FaronWoods006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods006:Wander00'})

@@ -177,11 +177,10 @@ void Rest() {
     Event157:
     if Npc_Road_008.IsOnInstEventFlag() {
         Npc_Road_008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_1'})
-        goto Event144
     } else {
         Npc_Road_008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
-        goto Event144
     }
+    goto Event144
 }
 
 void Rain() {

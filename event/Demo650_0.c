@@ -42,25 +42,23 @@ void Demo650_0_GyroNazotokiSE_DLC_130() {
     EventSystemActor.Demo_FlagON({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': False})
     ListenerCtrlTag.Demo_SetMode({'Mode': 'Gyro', 'IsWaitFinish': True})
     GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'BgHitJump': False, 'Angle': 0.0, 'Count': 15.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'Far': 200.0, 'LatMode': 1, 'Near': 20.0, 'Middle': 20.0, 'ReviseMode': 2, 'LatMax': 0.0, 'LatMin': 0.0})
-    if !EventSystemActor.CheckProConUse() {
-        Event10:
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
-            EventSystemActor.Demo_FlagON({'FlagName': 'Dungeon040_DoorGyro_SE', 'IsWaitFinish': True})
-            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'ReadRiddle_Delay'})
-            EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else
-        if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
-        } else {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-            goto Event10
-        }
-    } else {
+    if EventSystemActor.CheckProConUse() {
         NPC_GodVoice.Demo_OpenMessageDialog({'MessageId': 'DemoMsg/Demo043_0:talk00', 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+    }
+    Event10:
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagOpen'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Dungeon040_DoorGyro_SE', 'IsWaitFinish': True})
+        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'ReadRiddle_Delay'})
+        EventSystemActor.Demo_WaitForKeyInput({'IsWaitFinish': True, 'ValidInput': 1})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'arg_FlagGyro'}) {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else
+    if EventSystemActor.KeyInputCheck({'ValidInput': 1}) {
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'GyroTiltControlGuide', 'IsWaitFinish': True})
+    } else {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
         goto Event10
     }
 }

@@ -43,20 +43,13 @@ void Talk() {
             EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora033_ChoiseC', 'IsWaitFinish': True})
             Event172:
             EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora033_ChoiseA'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora033_ChoiseB'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora033_ChoiseC'}) {
-                        Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Metal_Engraving_Talk', 'MessageId': 'EventFlowMsg/Npc_Zora033:talk33'})
-                    } else {
-                        Event173:
-                        Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Metal_Engraving_Talk', 'MessageId': 'EventFlowMsg/Npc_Zora033:talk02'})
-                        goto Event158
-                    }
-                } else {
-                    goto Event173
-                }
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora033_ChoiseA'})
+            && EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora033_ChoiseB'})
+            && EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora033_ChoiseC'}) {
+                Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Metal_Engraving_Talk', 'MessageId': 'EventFlowMsg/Npc_Zora033:talk33'})
             } else {
-                goto Event173
+                Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Metal_Engraving_Talk', 'MessageId': 'EventFlowMsg/Npc_Zora033:talk02'})
+                goto Event158
             }
           case 1:
             EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Zora033_spear', 'IsWaitFinish': True})
@@ -137,28 +130,25 @@ void SpearRepair() {
                         } else
                         if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Spear_027'}) {
                             Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk12', 'ASName': 'Act_Metal_Engraving_Talk'})
-                            goto Event106
                         } else {
                             Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk15', 'ASName': 'Act_Metal_Engraving_Talk'})
-                            goto Event106
                         }
+                        goto Event106
                     } else
                     if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_A', 'Count': 1}) {
                         if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Spear_027'}) {
                             Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Metal_Engraving_Talk', 'MessageId': 'EventFlowMsg/Npc_Zora033:talk13'})
-                            goto Event106
                         } else {
                             Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk14', 'ASName': 'Act_Metal_Engraving_Talk'})
-                            goto Event106
                         }
+                        goto Event106
                     } else
                     if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Spear_027'}) {
                         Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk16', 'ASName': 'Act_Metal_Engraving_Talk'})
-                        goto Event106
                     } else {
                         Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk10', 'ASName': 'Act_Metal_Engraving_Talk'})
-                        goto Event106
                     }
+                    goto Event106
                 } else {
                     Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk09', 'ASName': 'Act_Metal_Engraving_Talk'})
                 }
@@ -205,11 +195,10 @@ void SpearRepair() {
                 } else
                 if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Spear_027'}) {
                     Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Metal_Engraving_Talk', 'MessageId': 'EventFlowMsg/Npc_Zora033:talk13'})
-                    goto Event131
                 } else {
                     Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk10', 'ASName': 'Act_Metal_Engraving_Talk'})
-                    goto Event131
                 }
+                goto Event131
             } else {
                 Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk09', 'ASName': 'Act_Metal_Engraving_Talk'})
             }
@@ -228,19 +217,17 @@ void Water_Relic_Finished_Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora033_AfterRelicFirst'}) {
         if EventSystemActor.CheckFlag({'FlagName': 'Get_ZoraWeapon'}) {
             EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_Zora033_Spear049'})
-            Event87:
-            if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Weapon_Spear_050'}) {
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_Zora033_Spear050'})
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Weapon_Spear_050'}) {
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Npc_Zora033_Spear050'})
 
-                call SpearRepair()
+            call SpearRepair()
 
-            } else {
-                Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk00', 'ASName': 'Act_Metal_Engraving_Talk'})
-                Event112:
-                Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Metal_Engraving_Talk', 'MessageId': 'EventFlowMsg/Npc_Zora033:talk23'})
-            }
-        } else
-        goto Event87
+        } else {
+            Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk00', 'ASName': 'Act_Metal_Engraving_Talk'})
+            Event112:
+            Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Metal_Engraving_Talk', 'MessageId': 'EventFlowMsg/Npc_Zora033:talk23'})
+        }
     } else {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora033_AfterRelicFirst'})
         Npc_Zora033.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora033:talk03', 'ASName': 'Act_Metal_Engraving_Talk'})

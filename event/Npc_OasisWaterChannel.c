@@ -32,26 +32,23 @@ void Gerudo_Ch_Poison_Finish_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasiswaterchannel_thanks'}) {
-        if Npc_OasisWaterChannel.IsOnInstEventFlag() {
-            Event9:
-            Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk27', 'ASName': ''})
-            Event18:
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-                Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk23', 'IsCloseMessageDialog': True, 'ASName': ''})
-                GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'ASName': 'DemoWait', 'NoErrorCheck': False})
-                EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
-                Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk24', 'ASName': ''})
-              case 1:
-                Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk25', 'ASName': ''})
-              case 2:
-                Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk26', 'ASName': ''})
-            }
-        } else {
+        if !Npc_OasisWaterChannel.IsOnInstEventFlag() {
 
             call hello()
 
-            goto Event9
+        }
+        Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk27', 'ASName': ''})
+        Event18:
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk23', 'IsCloseMessageDialog': True, 'ASName': ''})
+            GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'ASName': 'DemoWait', 'NoErrorCheck': False})
+            EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
+            Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk24', 'ASName': ''})
+          case 1:
+            Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk25', 'ASName': ''})
+          case 2:
+            Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk26', 'ASName': ''})
         }
     } else {
 

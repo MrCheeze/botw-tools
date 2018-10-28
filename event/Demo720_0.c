@@ -137,9 +137,6 @@ void Demo720_0() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Weapon_Sword_070'}) {
         GameROMPlayer.Demo_PlayASForDemoWithSword({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'IsHold': False, 'ASName': 'WaitAttention', 'IsWaitFinish': False, 'MorphingFrame': 180.0})
-        Event7:
-        EventMessageTransmitter1.Demo_Msg2CameraKeepState({'IsWaitFinish': True})
-    } else {
-        goto Event7
     }
+    EventMessageTransmitter1.Demo_Msg2CameraKeepState({'IsWaitFinish': True})
 }

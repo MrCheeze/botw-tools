@@ -69,8 +69,8 @@ void Talk() {
             goto Event93
         } else {
             Npc_HatenoVillage017.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage017:talk29'})
-            goto Event94
         }
+        goto Event94
       case 1:
 
         call RodanteBlueFire()
@@ -134,20 +134,15 @@ void Talk() {
 
             call InitTalk.InitTalkEquip({'Arg_Turn': 0})
 
-            Event21:
-            if Npc_HatenoVillage017.IsOnInstEventFlag() {
-                Event23:
-                Npc_HatenoVillage017.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage017:talk09'})
-            } else {
-                Npc_HatenoVillage017.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage017:talk08'})
-                goto Event23
-            }
         } else {
 
             call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-            goto Event21
         }
+        if !Npc_HatenoVillage017.IsOnInstEventFlag() {
+            Npc_HatenoVillage017.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage017:talk08'})
+        }
+        Npc_HatenoVillage017.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage017:talk09'})
     }
 }
 

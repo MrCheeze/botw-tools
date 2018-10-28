@@ -92,31 +92,28 @@ void Ready_Npc_FaronWoods008_Talk() {
               case [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13]:
                 Event77:
                 Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk01'})
-                if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_GiantHorse_IsTalked'}) {
-                    Event80:
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': True, 'StepName': ''})
-                    EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
-                    Event96:
-                    Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk15'})
-                    Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk16'})
-                    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-                    Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk17'})
-                    Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk19'})
-                    Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
-                    Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk18'})
-                    Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk03'})
-                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
-
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_GiantHorse_Present'})
-                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                    Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk05'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'FironeMini_GiantHorse_Finish', 'IsWaitFinish': True})
-                } else {
+                if !EventSystemActor.CheckFlag({'FlagName': 'FironeMini_GiantHorse_IsTalked'}) {
                     Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk14'})
-                    goto Event80
                 }
+                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': True, 'StepName': ''})
+                EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
+                Event96:
+                Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk15'})
+                Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk16'})
+                Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+                Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk17'})
+                Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk19'})
+                Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+                Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk18'})
+                Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk03'})
+                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'PutRupee_Silver'})
+
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_GiantHorse_Present'})
+                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+                Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk05'})
+                EventSystemActor.Demo_FlagON({'FlagName': 'FironeMini_GiantHorse_Finish', 'IsWaitFinish': True})
               case 11:
                 Npc_FaronWoods008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_GiantHorse:talk11'})
                 goto Event77

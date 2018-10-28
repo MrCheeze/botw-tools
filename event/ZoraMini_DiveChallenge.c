@@ -35,18 +35,16 @@ void Ready_Npc_Zora029_Talk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora029_First'}) {
         Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk00'})
-        Event88:
-        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk02'})
-        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk01'})
-        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk03'})
-        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk04'})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMini_DiveChallenge_Activated'})
     } else {
 
         call Npc_Zora029.NoruFirst()
 
-        goto Event88
     }
+    Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk02'})
+    Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk01'})
+    Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk03'})
+    Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk04'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMini_DiveChallenge_Activated'})
 }
 
 void Dive01() {
@@ -75,45 +73,39 @@ void Step2_Npc_Zora029_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if Npc_Zora029[Town].IsOnInstEventFlag() {
-        Event120:
-        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk18'})
-    } else {
+    if !Npc_Zora029[Town].IsOnInstEventFlag() {
         Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk17'})
-        goto Event120
     }
+    Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk18'})
 }
 
 void Step1_Npc_Zora029_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if Npc_Zora029[Town].IsOnInstEventFlag() {
-        Event91:
-        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk05'})
-        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk03'})
-        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk06'})
-        Event96:
-        switch EventSystemActor.GeneralChoice4() {
-          case 0:
-            Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk01'})
-            Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk03'})
-            Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk04', 'IsCloseMessageDialog': True})
-            Event98:
-            Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk08'})
-            goto Event96
-          case 1:
-            Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk09', 'IsCloseMessageDialog': True})
-            goto Event98
-          case 2:
-            Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk10', 'IsCloseMessageDialog': True})
-            goto Event98
-          case 3:
-            Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk07'})
-        }
-    } else {
+    if !Npc_Zora029[Town].IsOnInstEventFlag() {
         Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk00'})
-        goto Event91
+    }
+    Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk05'})
+    Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk03'})
+    Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk06'})
+    Event96:
+    switch EventSystemActor.GeneralChoice4() {
+      case 0:
+        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk01'})
+        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk03'})
+        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk04', 'IsCloseMessageDialog': True})
+        Event98:
+        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk08'})
+        goto Event96
+      case 1:
+        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk09', 'IsCloseMessageDialog': True})
+        goto Event98
+      case 2:
+        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk10', 'IsCloseMessageDialog': True})
+        goto Event98
+      case 3:
+        Npc_Zora029[Town].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/ZoraMini_DiveChallenge:talk07'})
     }
 }
 

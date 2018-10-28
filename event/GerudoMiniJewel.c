@@ -67,11 +67,10 @@ void Ready_Npc_oasis001_Talk() {
 
         if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo125_0'}) {
             Npc_oasis001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_26'})
-            goto Event92
         } else {
             Npc_oasis001.Demo_Talk({'MessageId': 'EventFlowMsg/GerudoMiniJewel:Talk_01', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            goto Event92
         }
+        goto Event92
     }
 }
 

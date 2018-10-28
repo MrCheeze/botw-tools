@@ -49,18 +49,16 @@ void Ready_Npc_OasisWaterChannel_Talk() {
 
     if Npc_OasisWaterChannel.IsOnInstEventFlag() {
         Npc_OasisWaterChannel.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_SitGround_EatFruit', 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Cariban_Talk01', 'IsCloseMessageDialog': True, 'IsWaitFinish': True})
-        Event224:
-
-        fork {
-            Npc_OasisWaterChannel.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'ASName': 'Act_SitGround_EatFruit'})
-        } {
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-        }
-
     } else {
         Npc_OasisWaterChannel.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Cariban_Talk00', 'ASName': 'Talk_SitGround_EatFruit', 'IsCloseMessageDialog': True, 'IsWaitFinish': True})
-        goto Event224
     }
+
+    fork {
+        Npc_OasisWaterChannel.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'ASName': 'Act_SitGround_EatFruit'})
+    } {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+    }
+
 }
 
 void Ready_Npc_OasisWaterChannel_Near() {
@@ -78,19 +76,16 @@ void Ready_Npc_oasis016_Talk() {
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk01', 'ASName': ''})
       case 5:
         if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_Poison_Activated'}) {
-            if Npc_oasis016.IsOnInstEventFlag() {
-                Event114:
-                Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk09', 'ASName': ''})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk10', 'ASName': 'Talk_Cry'})
-                } else {
-                    Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk11', 'ASName': 'Talk_Cry'})
-                }
-            } else {
+            if !Npc_oasis016.IsOnInstEventFlag() {
 
                 call hello()
 
-                goto Event114
+            }
+            Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk09', 'ASName': ''})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk10', 'ASName': 'Talk_Cry'})
+            } else {
+                Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk11', 'ASName': 'Talk_Cry'})
             }
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis016_First'}) {
@@ -141,26 +136,23 @@ void Finish_Npc_oasis016_Talk() {
 
     switch Npc_oasis016.CheckActorAction13() {
       case [2, 3, 10]:
-        if Npc_oasis016.IsOnInstEventFlag() {
-            Event93:
-            Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk07'})
-            if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Item_Fruit_F', 'Count': 1}) {
-
-                call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Item_Fruit_F'})
-
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_Poison_Finish'})
-                Event146:
-                Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk26'})
-            } else {
-                Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk17'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_Poison_Finish', 'IsWaitFinish': True})
-                goto Event146
-            }
-        } else {
+        if !Npc_oasis016.IsOnInstEventFlag() {
 
             call hello_finish()
 
-            goto Event93
+        }
+        Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk07'})
+        if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Item_Fruit_F', 'Count': 1}) {
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': False, 'CheckTargetActorName': 'Item_Fruit_F'})
+
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_Poison_Finish'})
+            Event146:
+            Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk26'})
+        } else {
+            Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk17'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_Poison_Finish', 'IsWaitFinish': True})
+            goto Event146
         }
       case 11:
         Npc_oasis016.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:oasis016_Talk16'})
@@ -180,34 +172,30 @@ void Step1_Npc_OasisWaterChannel_Talk() {
 
     if Npc_OasisWaterChannel.IsOnInstEventFlag() {
         Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Talk_SitGround_EatFruit', 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk18'})
-        Event118:
-        GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkingL', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk07', 'ASName': 'Talk_SitGround_EatFruit'})
-        Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk08', 'IsCloseMessageDialog': True, 'ASName': 'Talk_SitGround_EatFruit'})
-        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'DemoWait', 'NoErrorCheck': False})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-        Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk09', 'ASName': 'Talk_SitGround_EatFruit'})
-        if !EventSystemActor.GeneralChoice2() {
-            Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk10', 'ASName': 'Talk_SitGround_EatFruit', 'IsCloseMessageDialog': True})
-            Event110:
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_Poison_Step1'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_Poison_First'})
-
-            fork {
-                Npc_OasisWaterChannel.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'ASName': 'Act_SitGround_EatFruit'})
-            } {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            }
-
-        } else {
-            Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk11', 'ASName': 'Talk_SitGround_EatFruit', 'IsCloseMessageDialog': True})
-            goto Event110
-        }
     } else {
         Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk02', 'IsCloseMessageDialog': True, 'ASName': 'Talk_SitGround_EatFruit'})
-        goto Event118
     }
+    GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkingL', 'IsWaitFinish': True, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk07', 'ASName': 'Talk_SitGround_EatFruit'})
+    Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk08', 'IsCloseMessageDialog': True, 'ASName': 'Talk_SitGround_EatFruit'})
+    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'DemoWait', 'NoErrorCheck': False})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+    Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk09', 'ASName': 'Talk_SitGround_EatFruit'})
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk10', 'ASName': 'Talk_SitGround_EatFruit', 'IsCloseMessageDialog': True})
+    } else {
+        Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk11', 'ASName': 'Talk_SitGround_EatFruit', 'IsCloseMessageDialog': True})
+    }
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_Poison_Step1'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_Poison_First'})
+
+    fork {
+        Npc_OasisWaterChannel.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'ASName': 'Act_SitGround_EatFruit'})
+    } {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+    }
+
 }
 
 void Step1_Npc_OasisWaterChannel_Near() {
@@ -268,18 +256,16 @@ void Step2_Npc_OasisWaterChannel_Talk() {
         Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk12', 'ASName': 'Talk_SitGround_EatFruit'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk13', 'ASName': 'Talk_SitGround_EatFruit', 'IsCloseMessageDialog': True})
-            Event237:
-
-            fork {
-                Npc_OasisWaterChannel.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'ASName': 'Act_SitGround_EatFruit'})
-            } {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            }
-
         } else {
             Npc_OasisWaterChannel.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_Poison:Talk14', 'ASName': 'Talk_SitGround_EatFruit', 'IsCloseMessageDialog': True})
-            goto Event237
         }
+
+        fork {
+            Npc_OasisWaterChannel.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'ASName': 'Act_SitGround_EatFruit'})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        }
+
     }
 }
 

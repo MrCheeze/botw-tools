@@ -95,12 +95,11 @@ void NormalTalk() {
 }
 
 void LorelTalk() {
-    if !EventSystemActor.CheckFlag({'FlagName': 'Npc_SourthernVillage013_TalkLorel'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_HatenoVillage024_First'}) {
-            Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage013:talk03'})
-            Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage013:talk04'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_SourthernVillage013_TalkLorel'})
-        }
+    if !EventSystemActor.CheckFlag({'FlagName': 'Npc_SourthernVillage013_TalkLorel'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Npc_HatenoVillage024_First'}) {
+        Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage013:talk03'})
+        Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage013:talk04'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_SourthernVillage013_TalkLorel'})
     }
 }
 
@@ -185,40 +184,38 @@ void TalkSea() {
     } else
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_SourthernVillage013_TalkSea'}) {
         Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_SinkTreasure:talk09'})
-        Event69:
-        if !EventSystemActor.GeneralChoice2() {
-            Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_SinkTreasure:talk11'})
-            switch EventSystemActor.CheckWeather() {
-              case 0:
-                Event66:
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UotoriMini_SinkTreasure_Activated'})
-              case [1, 2, 3]:
-                Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_SinkTreasure:talk14'})
-                goto Event66
-            }
-        } else {
-            Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_SinkTreasure:talk10'})
-            Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage013:talk25'})
-            switch EventSystemActor.GeneralChoice4() {
-              case 0:
-
-                call TalkSea()
-
-              case 1:
-
-                call TalkSaihate()
-
-              case 2:
-
-                call TalkIseki()
-
-              case 3:
-                Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage013:talk23'})
-            }
-        }
     } else {
         Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_SinkTreasure:talk05'})
-        goto Event69
+    }
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_SinkTreasure:talk11'})
+        switch EventSystemActor.CheckWeather() {
+          case 0:
+            Event66:
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UotoriMini_SinkTreasure_Activated'})
+          case [1, 2, 3]:
+            Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_SinkTreasure:talk14'})
+            goto Event66
+        }
+    } else {
+        Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/UotoriMini_SinkTreasure:talk10'})
+        Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage013:talk25'})
+        switch EventSystemActor.GeneralChoice4() {
+          case 0:
+
+            call TalkSea()
+
+          case 1:
+
+            call TalkSaihate()
+
+          case 2:
+
+            call TalkIseki()
+
+          case 3:
+            Npc_SouthernVillage013.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage013:talk23'})
+        }
     }
 }
 

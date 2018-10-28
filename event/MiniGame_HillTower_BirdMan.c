@@ -271,59 +271,54 @@ void Finish_Npc_Minigame_BirdMan001_StepStart() {
             Event288:
             if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HillTower_BirdMan_FinishedOnce'}) {
                 if !GameDataCalcMachine.CompareGameDataFloat({'GameDataFloatName_A': 'MiniGame_BirdMan_HillTower_CurrentDistance', 'GameDataFloatName_B': 'MiniGame_BirdMan_HillTower_RecordDistance', 'Operator': 'LessThanOrEqualTo'}) {
-                    if EventSystemActor.CheckGameDataFloat({'Operator': 'LessThan', 'Value': 450.0, 'GameDataFloatName': 'MiniGame_BirdMan_HillTower_RecordDistance'}) {
-                        Event267:
-                        Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_23', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'ASName': ''})
+                    if !EventSystemActor.CheckGameDataFloat({'Operator': 'LessThan', 'Value': 450.0, 'GameDataFloatName': 'MiniGame_BirdMan_HillTower_RecordDistance'}) {
+                        Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_22'})
+                    }
+                    Event267:
+                    Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_23', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'ASName': ''})
+                    if !EventSystemActor.GeneralChoice2() {
+                        EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
+                        Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_24', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'ASName': ''})
                         if !EventSystemActor.GeneralChoice2() {
-                            EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
-                            Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_24', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'ASName': ''})
-                            if !EventSystemActor.GeneralChoice2() {
-                                if EventSystemActor.CheckRupee({'Value': 20}) {
-                                    SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+                            if EventSystemActor.CheckRupee({'Value': 20}) {
+                                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
 
-                                    fork {
-                                        EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
-                                        EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                                    } {
-                                        Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_05', 'IsCloseMessageDialog': False, 'ASName': ''})
-                                        Npc_Minigame_BirdMan001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 3, 'IsValid': False, 'TurnDirection': 65.31700134277344, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0]})
-                                        Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_30', 'ASName': 'Point'})
-                                    }
-
-                                    EventBgmCtrlTag.Demo_Start({'BgmName': 'GameParasailBgm', 'IsWaitFinish': True})
-                                    EventSystemActor.Demo_AdvanceQuest({'StepName': 'Game', 'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False})
-                                } else {
-                                    Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_07', 'ASName': ''})
+                                fork {
+                                    EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
                                     EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                                    Event271:
-
-                                    call Common.EnableSaveAndWarp()
-
-                                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BottomComebackProhibitation'})
-                                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': '', 'StepName': 'Ready'})
+                                } {
+                                    Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_05', 'IsCloseMessageDialog': False, 'ASName': ''})
+                                    Npc_Minigame_BirdMan001.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 3, 'IsValid': False, 'TurnDirection': 65.31700134277344, 'IsConfront': True, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0]})
+                                    Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_30', 'ASName': 'Point'})
                                 }
+
+                                EventBgmCtrlTag.Demo_Start({'BgmName': 'GameParasailBgm', 'IsWaitFinish': True})
+                                EventSystemActor.Demo_AdvanceQuest({'StepName': 'Game', 'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False})
                             } else {
-                                Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:ChoiceDoNotPay_00', 'ASName': ''})
+                                Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_07', 'ASName': ''})
                                 EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                                goto Event271
+                                Event271:
+
+                                call Common.EnableSaveAndWarp()
+
+                                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BottomComebackProhibitation'})
+                                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': '', 'StepName': 'Ready'})
                             }
                         } else {
-                            Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_15', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'ASName': ''})
+                            Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:ChoiceDoNotPay_00', 'ASName': ''})
+                            EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
                             goto Event271
                         }
                     } else {
-                        Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_22'})
-                        goto Event267
+                        Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_15', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'ASName': ''})
+                        goto Event271
                     }
                 } else
-                if EventSystemActor.CheckGameDataFloat({'Operator': 'LessThan', 'Value': 450.0, 'GameDataFloatName': 'MiniGame_BirdMan_HillTower_CurrentDistance'}) {
-                    Event266:
-                    GameDataCalcMachine.Demo_GameDataCopyFloat({'GameDataFloatSrcName': 'MiniGame_BirdMan_HillTower_CurrentDistance', 'GameDataFloatDstName': 'MiniGame_BirdMan_HillTower_RecordDistance', 'IsWaitFinish': True})
-                    goto Event267
-                } else {
+                if !EventSystemActor.CheckGameDataFloat({'Operator': 'LessThan', 'Value': 450.0, 'GameDataFloatName': 'MiniGame_BirdMan_HillTower_CurrentDistance'}) {
                     Npc_Minigame_BirdMan001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': True, 'ASName': '', 'MessageId': 'EventFlowMsg/MiniGame_HillTower_BirdMan:New_21'})
-                    goto Event266
                 }
+                GameDataCalcMachine.Demo_GameDataCopyFloat({'GameDataFloatSrcName': 'MiniGame_BirdMan_HillTower_CurrentDistance', 'GameDataFloatDstName': 'MiniGame_BirdMan_HillTower_RecordDistance', 'IsWaitFinish': True})
+                goto Event267
             } else {
                 GameDataCalcMachine.Demo_GameDataCopyFloat({'GameDataFloatSrcName': 'MiniGame_BirdMan_HillTower_CurrentDistance', 'GameDataFloatDstName': 'MiniGame_BirdMan_HillTower_RecordDistance', 'IsWaitFinish': True})
                 EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HillTower_BirdMan_FinishedOnce', 'IsWaitFinish': True})
@@ -349,10 +344,8 @@ void Finish_Npc_Minigame_BirdMan001_StepStart() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
         GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        goto Event337
-    } else {
-        goto Event337
     }
+    goto Event337
 }
 
 void Retire_Npc_Minigame_BirdMan001_StepStart() {

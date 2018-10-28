@@ -472,16 +472,12 @@ void WeaponHandOver() {
 }
 
 void CheckReward() {
-    if EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Sword'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Lsword'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Spear'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Bow'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Shield'}) {
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_RiverSideHatago002_Reward', 'IsWaitFinish': True})
-                        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_sellDiamond'})
-                    }
-                }
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Sword'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Lsword'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Spear'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Bow'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Npc_RiverSideHatago002_Shield'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_RiverSideHatago002_Reward', 'IsWaitFinish': True})
+        Npc_RiverSideHatago002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RiverSideHatago002:talk_sellDiamond'})
     }
 }

@@ -121,115 +121,111 @@ queries: []
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
 void Goal() {
-    if EventSystemActor.CheckPlayerState({'PlayerState': 1}) {
-        if !EventSystemActor.CheckPlayerState({'PlayerState': 24}) {
-            if EventSystemActor.CheckPlayerEquip({'PlayerEquipType': 1}) {
-                GameROMPlayer.Demo_DisableGetOffSunaZInEvent({'IsWaitFinish': False})
-                GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': False})
+    if EventSystemActor.CheckPlayerState({'PlayerState': 1})
+    && !EventSystemActor.CheckPlayerState({'PlayerState': 24})
+    && EventSystemActor.CheckPlayerEquip({'PlayerEquipType': 1}) {
+        GameROMPlayer.Demo_DisableGetOffSunaZInEvent({'IsWaitFinish': False})
+        GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': False})
 
-                call SunazarashiRace.TimeRecord()
+        call SunazarashiRace.TimeRecord()
 
-                if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'SunazarashiRace_mini', 'StepName': 'Finish'})
-                    Event176:
+        if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
+            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': 'SunazarashiRace_mini', 'StepName': 'Finish'})
+            Event176:
 
-                    fork {
-                        GameRomCamera.Demo_Join({'IsWaitFinish': False})
-                        EventSystemActor.Demo_EnableCameraInput({'IsWaitFinish': True})
-                    } {
-                        EventSystemActor[DemoWait1].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                        GameROMPlayer.Demo_SunazarashiRaceGoal({'IsWaitFinish': False, 'ASName': 'WakeBoarding'})
-                        EventSystemActor[DemoWait1].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                        GameROMPlayer.Demo_XLinkEventCreate({'IsWaitFinish': False, 'ELinkKey': 'Sunazarashi', 'SLinkKey': '', 'IsTargetDemoSLinkUser': False})
-                    } {
-                        Animal_SunazarashiSP_A[race].Demo_RailMove({'RailName': 'Demo330_1_WR', 'IsWaitFinish': False, 'ASSlot': 0, 'SequenceBank': 0, 'IsIgnoreSame': False, 'ASName': 'Swim'})
-                        EventSystemActor[DemoWait0].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                        Animal_SunazarashiSP_A[race].Demo_XLinkEventCreate({'IsWaitFinish': False, 'SLinkKey': '', 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'Move'})
-                    } {
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+            fork {
+                GameRomCamera.Demo_Join({'IsWaitFinish': False})
+                EventSystemActor.Demo_EnableCameraInput({'IsWaitFinish': True})
+            } {
+                EventSystemActor[DemoWait1].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+                GameROMPlayer.Demo_SunazarashiRaceGoal({'IsWaitFinish': False, 'ASName': 'WakeBoarding'})
+                EventSystemActor[DemoWait1].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+                GameROMPlayer.Demo_XLinkEventCreate({'IsWaitFinish': False, 'ELinkKey': 'Sunazarashi', 'SLinkKey': '', 'IsTargetDemoSLinkUser': False})
+            } {
+                Animal_SunazarashiSP_A[race].Demo_RailMove({'RailName': 'Demo330_1_WR', 'IsWaitFinish': False, 'ASSlot': 0, 'SequenceBank': 0, 'IsIgnoreSame': False, 'ASName': 'Swim'})
+                EventSystemActor[DemoWait0].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+                Animal_SunazarashiSP_A[race].Demo_XLinkEventCreate({'IsWaitFinish': False, 'SLinkKey': '', 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'Move'})
+            } {
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
 
-                        fork {
-                            SoundTriggerTag.Demo_SoundTrigger({'Sound': 'Demo_Minigame_Retire', 'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False})
-                            EventBgmCtrlTag.Demo_Stop({'IsWaitFinish': True, 'BgmName': 'GameRaceBgm', 'FadeSec': 0.5})
-                        } {
-                            EventSystemActor.Demo_MiniGameFinish({'TextType': 0, 'IsWaitFinish': True})
-                        }
-
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-                    }
-
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
-                    EventSystemActor.Demo_MiniGameTimeMove({'IsWaitFinish': True})
-
-                    call SunazarashiRace.ResultCompare()
-
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                    if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Demo330_1'}) {
-                        Event401:
-                        EventSystemActor.Demo_AppearRaceResult({'IsWaitFinish': True, 'ResultType': 0})
-                        GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': False, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'BgCheck': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'SceneName': 'C50-0', 'TargetActor': 3, 'ActorName': 'GameROMPlayer', 'Accept1FrameDelay': True, 'UniqueName': '', 'TargetActorDirReferenceMode': 2, 'TargetActorPosReferenceMode': 1})
-                        GameROMPlayer.Demo_SunazarashiRaceGoal({'IsWaitFinish': False, 'ASName': 'Demo330_1-C01-Link-A-0'})
-                        Event192:
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 75})
-                        GameRomCamera.Demo_CameraAnimFlowAbs({'IsWaitFinish': False, 'SceneName': 'C51-0', 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'BgCheck': False})
-                        if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_mini_Demo330_1'}) {
-                            Event11:
-                            Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_010', 'IsWaitFinish': False})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                            Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_011', 'IsWaitFinish': False})
-                            Event9:
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                            EventSystemActor.Demo_DisappearRaceResult({'IsWaitFinish': True})
-                            EventSystemActor.Demo_DisableMiniGameTime({'IsWaitFinish': True})
-                            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'NoLogo'})
-                            GameROMPlayer.Demo_PlayerWakeBoardEnd({'IsWaitFinish': True})
-                            EventSystemActor.Demo_DisappearCheckPointNum({'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'SunazarashiRace_Field1'})
-                            if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
-                                Event106:
-                                EventSystemActor.Demo_ChangeScene({'WarpDestMapName': 'MainField/B-8', 'StartType': -1, 'IsWaitFinish': True, 'WarpDestPosName': 'Demo330_1_b2_010', 'EntryPointName': 'AfterGoal', 'EvflName': 'SunazarashiRace', 'FadeType': 2})
-                            } else
-                            if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Demo330_1'}) {
-                                EventSystemActor.Demo_ChangeScene({'WarpDestMapName': 'MainField/B-8', 'StartType': -1, 'IsWaitFinish': True, 'EvflName': 'Demo330_1', 'EntryPointName': 'Hyoushou', 'WarpDestPosName': 'Demo330_1_2_010', 'FadeType': 2})
-                            } else {
-                                goto Event106
-                            }
-                        } else
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'SunazarashiRace_GateCnt', 'Operator': 'GreaterThanOrEqualTo', 'Value': 7}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Demo330_1'}) {
-                                goto Event11
-                            } else
-                            if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
-                                Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_010', 'IsWaitFinish': False})
-                                Event409:
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                                goto Event9
-                            } else {
-                                Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_020', 'IsWaitFinish': False})
-                                goto Event409
-                            }
-                        } else {
-                            Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_030', 'IsWaitFinish': False})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                            Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_031', 'IsWaitFinish': False})
-                            goto Event9
-                        }
-                    } else
-                    if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_mini_Demo330_1'}) {
-                        goto Event401
-                    } else {
-                        EventSystemActor.Demo_AppearRaceResult({'IsWaitFinish': True, 'ResultType': 1})
-                        GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': False, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'BgCheck': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'TargetActor': 3, 'ActorName': 'GameROMPlayer', 'Accept1FrameDelay': True, 'UniqueName': '', 'TargetActorDirReferenceMode': 2, 'TargetActorPosReferenceMode': 1, 'SceneName': 'C50-1'})
-                        GameROMPlayer.Demo_SunazarashiRaceGoal({'IsWaitFinish': False, 'ASName': 'Demo330_1-C06-Link-A-0'})
-                        goto Event192
-                    }
-                } else {
-                    EventSystemActor.Demo_AdvanceQuest({'QuestName': 'SunazarashiRace', 'StepName': 'Step3', 'IsWaitFinish': True, 'ForceRunTelop': False})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ChampionshipBallGenFlg'})
-                    goto Event176
+                fork {
+                    SoundTriggerTag.Demo_SoundTrigger({'Sound': 'Demo_Minigame_Retire', 'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False})
+                    EventBgmCtrlTag.Demo_Stop({'IsWaitFinish': True, 'BgmName': 'GameRaceBgm', 'FadeSec': 0.5})
+                } {
+                    EventSystemActor.Demo_MiniGameFinish({'TextType': 0, 'IsWaitFinish': True})
                 }
+
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
             }
+
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
+            EventSystemActor.Demo_MiniGameTimeMove({'IsWaitFinish': True})
+
+            call SunazarashiRace.ResultCompare()
+
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+            if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Demo330_1'}) {
+                Event401:
+                EventSystemActor.Demo_AppearRaceResult({'IsWaitFinish': True, 'ResultType': 0})
+                GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': False, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'BgCheck': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'SceneName': 'C50-0', 'TargetActor': 3, 'ActorName': 'GameROMPlayer', 'Accept1FrameDelay': True, 'UniqueName': '', 'TargetActorDirReferenceMode': 2, 'TargetActorPosReferenceMode': 1})
+                GameROMPlayer.Demo_SunazarashiRaceGoal({'IsWaitFinish': False, 'ASName': 'Demo330_1-C01-Link-A-0'})
+                Event192:
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 75})
+                GameRomCamera.Demo_CameraAnimFlowAbs({'IsWaitFinish': False, 'SceneName': 'C51-0', 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'BgCheck': False})
+                if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_mini_Demo330_1'}) {
+                    Event11:
+                    Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_010', 'IsWaitFinish': False})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                    Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_011', 'IsWaitFinish': False})
+                    Event9:
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                    EventSystemActor.Demo_DisappearRaceResult({'IsWaitFinish': True})
+                    EventSystemActor.Demo_DisableMiniGameTime({'IsWaitFinish': True})
+                    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'Frame': 2, 'DispMode': 'NoLogo'})
+                    GameROMPlayer.Demo_PlayerWakeBoardEnd({'IsWaitFinish': True})
+                    EventSystemActor.Demo_DisappearCheckPointNum({'IsWaitFinish': True})
+                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'SunazarashiRace_Field1'})
+                    if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
+                        Event106:
+                        EventSystemActor.Demo_ChangeScene({'WarpDestMapName': 'MainField/B-8', 'StartType': -1, 'IsWaitFinish': True, 'WarpDestPosName': 'Demo330_1_b2_010', 'EntryPointName': 'AfterGoal', 'EvflName': 'SunazarashiRace', 'FadeType': 2})
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Demo330_1'}) {
+                        EventSystemActor.Demo_ChangeScene({'WarpDestMapName': 'MainField/B-8', 'StartType': -1, 'IsWaitFinish': True, 'EvflName': 'Demo330_1', 'EntryPointName': 'Hyoushou', 'WarpDestPosName': 'Demo330_1_2_010', 'FadeType': 2})
+                    } else {
+                        goto Event106
+                    }
+                } else
+                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'SunazarashiRace_GateCnt', 'Operator': 'GreaterThanOrEqualTo', 'Value': 7}) {
+                    if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Demo330_1'}) {
+                        goto Event11
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_Finish'}) {
+                        Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_010', 'IsWaitFinish': False})
+                    } else {
+                        Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_020', 'IsWaitFinish': False})
+                    }
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                    goto Event9
+                } else {
+                    Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_030', 'IsWaitFinish': False})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                    Npc_oasis039.Demo_TalkNoMessageStepper({'MessageId': 'DemoMsg/Demo330_1:NPC_GodVoice_Demo330_1_031', 'IsWaitFinish': False})
+                    goto Event9
+                }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'SunazarashiRace_mini_Demo330_1'}) {
+                goto Event401
+            } else {
+                EventSystemActor.Demo_AppearRaceResult({'IsWaitFinish': True, 'ResultType': 1})
+                GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': False, 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'BgCheck': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'InterpolateCount': 0.0, 'TargetActor': 3, 'ActorName': 'GameROMPlayer', 'Accept1FrameDelay': True, 'UniqueName': '', 'TargetActorDirReferenceMode': 2, 'TargetActorPosReferenceMode': 1, 'SceneName': 'C50-1'})
+                GameROMPlayer.Demo_SunazarashiRaceGoal({'IsWaitFinish': False, 'ASName': 'Demo330_1-C06-Link-A-0'})
+                goto Event192
+            }
+        } else {
+            EventSystemActor.Demo_AdvanceQuest({'QuestName': 'SunazarashiRace', 'StepName': 'Step3', 'IsWaitFinish': True, 'ForceRunTelop': False})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ChampionshipBallGenFlg'})
+            goto Event176
         }
     }
 }

@@ -160,14 +160,11 @@ void Demo046() {
         call CleaningUp()
 
         SceneSoundCtrlTag.Demo_KillAllDemoSound({'IsWaitFinish': True})
-        if !EventSystemActor.CheckFadeState({'FadeType': 0, 'State': 1}) {
-            Event149:
-            Fader.Demo_FadeIn({'Frame': 0, 'DispMode': 'Auto', 'IsWaitFinish': False, 'Color': 1})
-            goto Event266
-        } else {
+        if EventSystemActor.CheckFadeState({'FadeType': 0, 'State': 1}) {
             Fader.Demo_FadeIn({'DispMode': 'Auto', 'IsWaitFinish': True, 'Color': 0, 'Frame': 2})
-            goto Event149
         }
+        Fader.Demo_FadeIn({'Frame': 0, 'DispMode': 'Auto', 'IsWaitFinish': False, 'Color': 1})
+        goto Event266
     }
 }
 
@@ -234,14 +231,11 @@ void Demo046_Reset() {
         GameRomCamera.Demo_MovePosFlow({'TargetActor1': 1, 'PosAppendMode': 2, 'AtAppendMode': 2, 'FovyAppendMode': 0, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1Fovy': 0.0, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Pattern1PosX': 0.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Pattern1PosY': 1.0, 'Pattern1AtY': 0.6000000238418579, 'IsWaitFinish': False, 'StartCalcOnly': False, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'Pattern1PosZ': 3.5, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
         SceneSoundCtrlTag.Demo_KillAllDemoSound({'IsWaitFinish': True})
         TwnObj_Village_HatenoTrapFloor_A_01[gimic_02].Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'ASName': 'Wait', 'MorphingFrame': -1.0, 'ClothWarpMode': -1})
-        if !EventSystemActor.CheckFadeState({'FadeType': 0, 'State': 1}) {
-            Event248:
-            Fader.Demo_FadeIn({'Frame': 0, 'DispMode': 'Auto', 'IsWaitFinish': False, 'Color': 1})
-            goto Event265
-        } else {
+        if EventSystemActor.CheckFadeState({'FadeType': 0, 'State': 1}) {
             Fader.Demo_FadeIn({'DispMode': 'Auto', 'Color': 0, 'Frame': 2, 'IsWaitFinish': True})
-            goto Event248
         }
+        Fader.Demo_FadeIn({'Frame': 0, 'DispMode': 'Auto', 'IsWaitFinish': False, 'Color': 1})
+        goto Event265
     }
 }
 

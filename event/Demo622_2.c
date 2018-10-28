@@ -294,50 +294,38 @@ void Demo622_2_C03_1st() {
     GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'FaceId': 2, 'ActorName': 'Npc_Musician_AoC_HeroZora', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True})
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
     GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 3.669495105743408, 'Pattern1PosY': 3.137877941131592, 'Pattern1PosZ': -2.492919921875, 'Pattern1AtX': 0.31445300579071045, 'Pattern1AtY': 1.5254520177841187, 'Pattern1AtZ': 0.8442379832267761, 'Pattern1Fovy': 40.00001525878906, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Musician_AoC_HeroZora', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'LessThanOrEqualTo', 'Value': 0}) {
-        if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroZora_CountVoice'}) {
-            if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroGerudo_CountVoice'}) {
-                if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroGoron_CountVoice'}) {
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_CountVoice', 'Operator': 'LessThanOrEqualTo', 'Value': 0})
+    && EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroZora_CountVoice'})
+    && EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroGerudo_CountVoice'})
+    && EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 0, 'GameDataIntName': 'BalladOfHeroGoron_CountVoice'}) {
 
-                    fork {
-                        NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo622_2:Npc_Zora_Hero_talk000', 'IsBecomingSpeaker': False, 'CloseDialogOption': 1, 'IsCloseMessageDialog': True})
-                        EventSystemActor[2nd].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    } {
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 25})
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2954.539794921875, 'Pattern1PosY': 407.6221923828125, 'Pattern1PosZ': 137.2654266357422, 'Pattern1AtX': 2954.5087890625, 'Pattern1AtY': 407.12060546875, 'Pattern1AtZ': 132.65780639648438, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                    } {
-                        EventSystemActor[Player].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                        GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsWaitFinish': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': -1, 'ASName': 'Demo622_2-C02-Link-A-3', 'MorphingFrame': -1.0})
-                    }
-
-                    Event286:
-                    EventSystemActor.Demo_SetGameDataInt({'Value': 1, 'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice'})
-                    GameROMPlayer.Demo_LookAtTheFront({'IsWaitFinish': False, 'IsValid': True})
-                } else {
-                    Event243:
-
-                    fork {
-                        NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo622_2:Npc_Zora_Hero_talk000', 'IsBecomingSpeaker': False, 'CloseDialogOption': 1, 'IsCloseMessageDialog': True})
-                        EventSystemActor[2nd].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                    } {
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 12})
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2954.539794921875, 'Pattern1PosY': 407.6221923828125, 'Pattern1PosZ': 137.2654266357422, 'Pattern1AtX': 2954.5087890625, 'Pattern1AtY': 407.12060546875, 'Pattern1AtZ': 132.65780639648438, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                    } {
-                        EventSystemActor[Player].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
-                        GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'ASName': 'Demo622_2-C02-Link-A-2', 'MorphingFrame': -1.0})
-                    }
-
-                    goto Event286
-                }
-            } else {
-                goto Event243
-            }
-        } else {
-            goto Event243
+        fork {
+            NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo622_2:Npc_Zora_Hero_talk000', 'IsBecomingSpeaker': False, 'CloseDialogOption': 1, 'IsCloseMessageDialog': True})
+            EventSystemActor[2nd].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 25})
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2954.539794921875, 'Pattern1PosY': 407.6221923828125, 'Pattern1PosZ': 137.2654266357422, 'Pattern1AtX': 2954.5087890625, 'Pattern1AtY': 407.12060546875, 'Pattern1AtZ': 132.65780639648438, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+        } {
+            EventSystemActor[Player].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+            GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsWaitFinish': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': -1, 'ASName': 'Demo622_2-C02-Link-A-3', 'MorphingFrame': -1.0})
         }
+
     } else {
-        goto Event243
+
+        fork {
+            NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo622_2:Npc_Zora_Hero_talk000', 'IsBecomingSpeaker': False, 'CloseDialogOption': 1, 'IsCloseMessageDialog': True})
+            EventSystemActor[2nd].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 12})
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2954.539794921875, 'Pattern1PosY': 407.6221923828125, 'Pattern1PosZ': 137.2654266357422, 'Pattern1AtX': 2954.5087890625, 'Pattern1AtY': 407.12060546875, 'Pattern1AtZ': 132.65780639648438, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+        } {
+            EventSystemActor[Player].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
+            GameROMPlayer.Demo_PlayASAdapt({'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'ASName': 'Demo622_2-C02-Link-A-2', 'MorphingFrame': -1.0})
+        }
+
     }
+    EventSystemActor.Demo_SetGameDataInt({'Value': 1, 'IsWaitFinish': True, 'GameDataIntName': 'BalladOfHeroZora_CountVoice'})
+    GameROMPlayer.Demo_LookAtTheFront({'IsWaitFinish': False, 'IsValid': True})
 }
 
 void Demo622_2_C04_1st() {

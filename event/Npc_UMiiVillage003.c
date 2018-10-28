@@ -47,13 +47,11 @@ void Talk() {
               case 1:
                 if !EventSystemActor.RandomChoice2() {
                     Npc_UMiiVillage003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage003:talk18', 'IsCloseMessageDialog': False})
-                    Event57:
-                    Npc_UMiiVillage003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage003:talk23'})
-                    goto Event53
                 } else {
                     Npc_UMiiVillage003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage003:talk22', 'IsCloseMessageDialog': False})
-                    goto Event57
                 }
+                Npc_UMiiVillage003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage003:talk23'})
+                goto Event53
               case 2:
 
                 fork {
@@ -64,11 +62,10 @@ void Talk() {
 
                 if !EventSystemActor.RandomChoice2() {
                     Npc_UMiiVillage003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage003:talk27'})
-                    goto Event53
                 } else {
                     Npc_UMiiVillage003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage003:talk24', 'IsCloseMessageDialog': True})
-                    goto Event53
                 }
+                goto Event53
               case 3:
                 Npc_UMiiVillage003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage003:talk25'})
             }

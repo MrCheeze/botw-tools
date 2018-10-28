@@ -55,39 +55,37 @@ void Ready_Npc_Kakariko003_Talk() {
             Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk08', 'ASName': ''})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk09', 'ASName': '', 'IsCloseMessageDialog': True})
-                Event1:
-                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Kakariko_Cha_001', 'StepName': 'Finish', 'ForceRunTelop': True})
-                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_PlantGet_M'}) {
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
-                    Event100:
-                    Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk04_2'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                        GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsWaitFinish': True, 'ASName': 'TalkHandOver', 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                        EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -1, 'PorchItemName': 'Item_PlantGet_M'})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                        Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk05', 'IsCloseMessageDialog': True})
-
-                        call CookingBGM()
-
-                        Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk12'})
-                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_F_03'}) {
-
-                            call Demo001_0.SetCookResult3({'CookMaterial_01': 'Item_PlantGet_M', 'CookMaterial_02': 'Item_Ore_H', 'CookMaterial_03': 'Item_Material_05'})
-
-                            Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk13'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko_Cha_001_Finish'})
-                        } else {
-                            Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko003:Talk39', 'IsCloseMessageDialog': False})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko_Cha_001_Reward'})
-                        }
-                    } else {
-                        Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk10'})
-                    }
-                }
             } else {
                 Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk10', 'IsCloseMessageDialog': True, 'ASName': ''})
-                goto Event1
+            }
+            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Kakariko_Cha_001', 'StepName': 'Finish', 'ForceRunTelop': True})
+            if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Item_PlantGet_M'}) {
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
+                Event100:
+                Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk04_2'})
+                if !EventSystemActor.GeneralChoice2() {
+                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                    GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsWaitFinish': True, 'ASName': 'TalkHandOver', 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+                    EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'Value': -1, 'PorchItemName': 'Item_PlantGet_M'})
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                    Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk05', 'IsCloseMessageDialog': True})
+
+                    call CookingBGM()
+
+                    Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk12'})
+                    if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_F_03'}) {
+
+                        call Demo001_0.SetCookResult3({'CookMaterial_01': 'Item_PlantGet_M', 'CookMaterial_02': 'Item_Ore_H', 'CookMaterial_03': 'Item_Material_05'})
+
+                        Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk13'})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko_Cha_001_Finish'})
+                    } else {
+                        Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko003:Talk39', 'IsCloseMessageDialog': False})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Kakariko_Cha_001_Reward'})
+                    }
+                } else {
+                    Npc_Kakariko003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Cha_001:Talk10'})
+                }
             }
           case [1, 2, 3]:
             Event68:

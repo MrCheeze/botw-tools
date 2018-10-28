@@ -78,162 +78,157 @@ void Ready_Npc_FaronWoods009_Talk() {
 
     if Npc_FaronWoods009.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
         Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Sleep', 'ASName': ''})
-        Event573:
-        EventSystemActor.Demo_FlagOFF({'FlagName': 'MiniGame_HorsebackArchery_Retry', 'IsWaitFinish': True})
-        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_IsTalked'}) {
-            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:0000_01', 'ASName': ''})
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-                Event567:
+    }
+    EventSystemActor.Demo_FlagOFF({'FlagName': 'MiniGame_HorsebackArchery_Retry', 'IsWaitFinish': True})
+    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_IsTalked'}) {
+        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:0000_01', 'ASName': ''})
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            Event567:
 
-                call CheckHorseRide()
+            call CheckHorseRide()
 
 
-                call ShopArrow()
+            call ShopArrow()
 
-                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:MyHouse_00', 'ASName': ''})
-                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_01', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                if !EventSystemActor.GeneralChoice2() {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentRupee', 'Operator': 'GreaterThanOrEqualTo', 'Value': 20}) {
+            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:MyHouse_00', 'ASName': ''})
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_01', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+            if !EventSystemActor.GeneralChoice2() {
+                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentRupee', 'Operator': 'GreaterThanOrEqualTo', 'Value': 20}) {
 
-                        fork {
-                            EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
-                            EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                        } {
-                            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_02', 'IsCloseMessageDialog': False, 'ASName': ''})
+                    fork {
+                        EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
+                        EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
+                    } {
+                        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_02', 'IsCloseMessageDialog': False, 'ASName': ''})
 
-                            call Common.DisableSaveAndWarp()
+                        call Common.DisableSaveAndWarp()
 
-                            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_00', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                            Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
-                        }
+                        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_00', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+                        Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+                    }
 
-                        EventSystemActor.Demo_WarpActiveHorse({'PositionX': -247.73130798339844, 'PositionY': 129.03480529785156, 'PositionZ': 3458.395263671875, 'IsWaitFinish': True, 'Direction': -130.0850067138672})
-                        EventSystemActor.Demo_ImmediateStopOwnedHorse({'ResetChargeNum': True, 'IsWaitFinish': True})
-                        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': -247.69210815429688, 'DestinationY': 131.13414001464844, 'DestinationZ': 3458.44873046875, 'DirectionY': -130.0850067138672})
-                        Npc_FaronWoods009.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
-                        Npc_FaronWoods009.Demo_PlayASForDemo({'IsWaitFinish': True, 'ASName': 'Sit_To_Stand', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                        Npc_FaronWoods009.Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'Stand'})
-                        Npc_FaronWoods009.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Wait', 'IsWaitFinish': False, 'MorphingFrame': -1.0})
-                        EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_TargetMakeFlag', 'IsWaitFinish': True})
-                        GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'Pattern1PosX': -246.7899932861328, 'Pattern1PosY': 131.32000732421875, 'Pattern1PosZ': 3461.47998046875, 'AtAppendMode': 1, 'Pattern1AtX': -246.72999572753906, 'Pattern1AtY': 130.77999877929688, 'Pattern1AtZ': 3455.2900390625, 'FovyAppendMode': 1, 'Pattern1Fovy': 43.349998474121094, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'ReviseModeEnd': 1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                        EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'AdditionalResetActor': '', 'SystemResetOption': 0, 'IsResetCamera': False})
+                    EventSystemActor.Demo_WarpActiveHorse({'PositionX': -247.73130798339844, 'PositionY': 129.03480529785156, 'PositionZ': 3458.395263671875, 'IsWaitFinish': True, 'Direction': -130.0850067138672})
+                    EventSystemActor.Demo_ImmediateStopOwnedHorse({'ResetChargeNum': True, 'IsWaitFinish': True})
+                    EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': -247.69210815429688, 'DestinationY': 131.13414001464844, 'DestinationZ': 3458.44873046875, 'DirectionY': -130.0850067138672})
+                    Npc_FaronWoods009.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
+                    Npc_FaronWoods009.Demo_PlayASForDemo({'IsWaitFinish': True, 'ASName': 'Sit_To_Stand', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+                    Npc_FaronWoods009.Demo_ChangePosture({'IsWaitFinish': True, 'Posture': 'Stand'})
+                    Npc_FaronWoods009.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'Wait', 'IsWaitFinish': False, 'MorphingFrame': -1.0})
+                    EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_TargetMakeFlag', 'IsWaitFinish': True})
+                    GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'Pattern1PosX': -246.7899932861328, 'Pattern1PosY': 131.32000732421875, 'Pattern1PosZ': 3461.47998046875, 'AtAppendMode': 1, 'Pattern1AtX': -246.72999572753906, 'Pattern1AtY': 130.77999877929688, 'Pattern1AtZ': 3455.2900390625, 'FovyAppendMode': 1, 'Pattern1Fovy': 43.349998474121094, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'ReviseModeEnd': 1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                    EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'AdditionalResetActor': '', 'SystemResetOption': 0, 'IsResetCamera': False})
 
-                        call InitTalk.InitTalk({'Arg_Greeting': 'NotAndNot', 'Arg_Turn': 2})
+                    call InitTalk.InitTalk({'Arg_Greeting': 'NotAndNot', 'Arg_Turn': 2})
 
-                        WorldManagerControl.Demo_EventSetAddFogOff({'IsWaitFinish': True})
-                        Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
-                        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_IsPlayed'}) {
-                            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_06', 'ASName': ''})
-                            if !EventSystemActor.GeneralChoice2() {
-                                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_07', 'IsCloseMessageDialog': False, 'ASName': ''})
-                                Event471:
-                                switch EventSystemActor.CheckWeather() {
-                                  case 0:
-                                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                                    Event612:
-                                    GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'Pattern1PosX': -244.2899932861328, 'Pattern1PosY': 130.6199951171875, 'Pattern1PosZ': 3461.320068359375, 'Pattern1AtX': -247.72999572753906, 'Pattern1AtY': 130.3699951171875, 'Pattern1AtZ': 3458.419921875, 'Pattern1Fovy': 54.9900016784668, 'MotionMode': 0, 'Count': 20.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Accept1FrameDelay': False, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                                    EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
-                                    EventSystemActor.Demo_RegisterToDeathCounter({'ActorName': 'YabusameTarget', 'GameDataName': 'MiniGame_HorsebackArchery_BreakTargetNum', 'IsWaitFinish': True, 'IsInitializeData': True})
-                                    EventSystemActor.Demo_AppearNumTargets({'IsWaitFinish': True, 'GameDataIntTargetCounter': 'MiniGame_HorsebackArchery_BreakTargetNum'})
-                                    EventBgmCtrlTag.Demo_Start({'BgmName': 'GameHuntBgm', 'IsWaitFinish': True})
-                                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Game'})
-                                  case [1, 2, 3]:
-                                    Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Rain', 'IsCloseMessageDialog': True, 'ASName': ''})
-                                    goto Event612
-                                }
-                            } else {
-                                Event411:
-
-                                fork {
-                                    Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_01', 'ASName': ''})
-                                } {
-                                    GameRomCamera.Demo_MovePosFlow({'Count': 20.0, 'IsWaitFinish': True, 'Cushion': 0.0, 'PosAppendMode': 1, 'Pattern1PosX': -246.7899932861328, 'Pattern1PosY': 131.08999633789062, 'Pattern1PosZ': 3461.47998046875, 'AtAppendMode': 1, 'Pattern1AtX': -250.33999633789062, 'Pattern1AtY': 131.00999450683594, 'Pattern1AtZ': 3456.389892578125, 'FovyAppendMode': 1, 'Pattern1Fovy': 43.349998474121094, 'MotionMode': 1, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'CollisionInterpolateSkip': True, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                                }
-
-                                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_02', 'ASName': ''})
-                                if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins'}) {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseSaddle'}) {
-                                        Event416:
-
-                                        call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'NotAndNot'})
-
-                                        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_04', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': ''})
-                                        goto Event471
-                                    } else {
-                                        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Explanation_02', 'ASName': ''})
-                                        goto Event416
-                                    }
-                                } else {
-                                    Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Explanation_01', 'IsBecomingSpeaker': True, 'ASName': ''})
-                                    goto Event416
-                                }
+                    WorldManagerControl.Demo_EventSetAddFogOff({'IsWaitFinish': True})
+                    Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+                    if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_IsPlayed'}) {
+                        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_06', 'ASName': ''})
+                        if !EventSystemActor.GeneralChoice2() {
+                            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_07', 'IsCloseMessageDialog': False, 'ASName': ''})
+                            Event471:
+                            switch EventSystemActor.CheckWeather() {
+                              case 0:
+                                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                                Event612:
+                                GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'Pattern1PosX': -244.2899932861328, 'Pattern1PosY': 130.6199951171875, 'Pattern1PosZ': 3461.320068359375, 'Pattern1AtX': -247.72999572753906, 'Pattern1AtY': 130.3699951171875, 'Pattern1AtZ': 3458.419921875, 'Pattern1Fovy': 54.9900016784668, 'MotionMode': 0, 'Count': 20.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Accept1FrameDelay': False, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+                                EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
+                                EventSystemActor.Demo_RegisterToDeathCounter({'ActorName': 'YabusameTarget', 'GameDataName': 'MiniGame_HorsebackArchery_BreakTargetNum', 'IsWaitFinish': True, 'IsInitializeData': True})
+                                EventSystemActor.Demo_AppearNumTargets({'IsWaitFinish': True, 'GameDataIntTargetCounter': 'MiniGame_HorsebackArchery_BreakTargetNum'})
+                                EventBgmCtrlTag.Demo_Start({'BgmName': 'GameHuntBgm', 'IsWaitFinish': True})
+                                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Game'})
+                              case [1, 2, 3]:
+                                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Rain', 'IsCloseMessageDialog': True, 'ASName': ''})
+                                goto Event612
                             }
                         } else {
-                            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_05', 'IsCloseMessageDialog': True, 'ASName': ''})
-                            goto Event411
+                            Event411:
+
+                            fork {
+                                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_01', 'ASName': ''})
+                            } {
+                                GameRomCamera.Demo_MovePosFlow({'Count': 20.0, 'IsWaitFinish': True, 'Cushion': 0.0, 'PosAppendMode': 1, 'Pattern1PosX': -246.7899932861328, 'Pattern1PosY': 131.08999633789062, 'Pattern1PosZ': 3461.47998046875, 'AtAppendMode': 1, 'Pattern1AtX': -250.33999633789062, 'Pattern1AtY': 131.00999450683594, 'Pattern1AtZ': 3456.389892578125, 'FovyAppendMode': 1, 'Pattern1Fovy': 43.349998474121094, 'MotionMode': 1, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'CollisionInterpolateSkip': True, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                            }
+
+                            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_02', 'ASName': ''})
+                            if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseReins'}) {
+                                if !EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HorsebackArchery_HasAlreadyGivenHorseSaddle'}) {
+                                    Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Explanation_02', 'ASName': ''})
+                                }
+                                Event416:
+
+                                call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'NotAndNot'})
+
+                                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_04', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': ''})
+                                goto Event471
+                            } else {
+                                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Explanation_01', 'IsBecomingSpeaker': True, 'ASName': ''})
+                                goto Event416
+                            }
                         }
                     } else {
-                        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_04', 'ASName': ''})
-                        Event26:
-                        EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_05', 'IsCloseMessageDialog': True, 'ASName': ''})
+                        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameReady_05', 'IsCloseMessageDialog': True, 'ASName': ''})
+                        goto Event411
                     }
                 } else {
-                    goto Event26
+                    Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_04', 'ASName': ''})
+                    Event26:
+                    EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
+                    Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_05', 'IsCloseMessageDialog': True, 'ASName': ''})
                 }
-              case 1:
-                Event12:
-                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Explanation_00', 'ASName': ''})
-                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Re_ask', 'ASName': ''})
-                switch EventSystemActor.GeneralChoice3() {
-                  case 0:
-                    Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_06', 'ASName': ''})
-                    goto Event567
-                  case 1:
-                    goto Event12
-                  case 2:
-                    Event9:
-                    Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:0002_00', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                }
-              case 2:
-                goto Event9
+            } else {
+                goto Event26
             }
-        } else {
-            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Initial', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+          case 1:
+            Event12:
+            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Explanation_00', 'ASName': ''})
+            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Re_ask', 'ASName': ''})
             switch EventSystemActor.GeneralChoice3() {
               case 0:
-                EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_IsTalked', 'IsWaitFinish': True})
-                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:0000_00', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                switch EventSystemActor.GeneralChoice3() {
-                  case 0:
-                    Event10:
-                    Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_00', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                    goto Event567
-                  case 1:
-                    goto Event12
-                  case 2:
-                    goto Event9
-                }
+                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_06', 'ASName': ''})
+                goto Event567
               case 1:
-                EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_IsTalked', 'IsWaitFinish': True})
-                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:0001_00', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-                switch EventSystemActor.GeneralChoice3() {
-                  case 0:
-                    goto Event10
-                  case 1:
-                    goto Event12
-                  case 2:
-                    goto Event9
-                }
+                goto Event12
+              case 2:
+                Event9:
+                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:0002_00', 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+            }
+          case 2:
+            goto Event9
+        }
+    } else {
+        Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Initial', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_IsTalked', 'IsWaitFinish': True})
+            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:0000_00', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+            switch EventSystemActor.GeneralChoice3() {
+              case 0:
+                Event10:
+                Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_00', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+                goto Event567
+              case 1:
+                goto Event12
               case 2:
                 goto Event9
             }
+          case 1:
+            EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_IsTalked', 'IsWaitFinish': True})
+            Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:0001_00', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+            switch EventSystemActor.GeneralChoice3() {
+              case 0:
+                goto Event10
+              case 1:
+                goto Event12
+              case 2:
+                goto Event9
+            }
+          case 2:
+            goto Event9
         }
-    } else {
-        goto Event573
     }
 }
 
@@ -384,87 +379,84 @@ void Finish_Npc_FaronWoods009_StepStart() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 80})
         EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
         Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
-        if EventSystemActor.CheckFlag({'FlagName': 'Horse_Is_LastRidden_Owned'}) {
-            Event439:
-            EventSystemActor.Demo_ImmediateStopOwnedHorse({'IsWaitFinish': True, 'ResetChargeNum': True})
-            OwnedHorse_ForEvent.Demo_ResetChemicalStateNeutral({'IsWaitFinish': True})
-            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-            EventSystemActor.Demo_WarpActiveHorse({'PositionX': -247.73130798339844, 'PositionY': 129.03480529785156, 'PositionZ': 3458.395263671875, 'IsWaitFinish': True, 'Direction': -130.0850067138672})
-            OwnedHorse_ForEvent.Demo_Wait({'IsWaitFinish': False, 'IsAngryEnable': False, 'IsEatEnable': False, 'IsLoveEnable': False, 'HasToCue': False, 'IsNoMorph': False})
-            EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': -247.69210815429688, 'DestinationY': 131.13414001464844, 'DestinationZ': 3458.44873046875, 'DirectionY': -130.0850067138672})
-            GameROMPlayer.Demo_RideHorse({'IsWaitFinish': True, 'Horse': ActorIdentifier(name="OwnedHorse_ForEvent")})
-            Npc_FaronWoods009.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'MiniGame_HorsebackArchery_TargetMakeFlag', 'IsWaitFinish': True})
-            EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 1, 'AdditionalResetActor': '', 'IsResetCamera': False})
-            GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'Pattern1PosX': -246.7899932861328, 'Pattern1PosY': 131.32000732421875, 'Pattern1PosZ': 3461.47998046875, 'AtAppendMode': 1, 'Pattern1AtX': -246.72999572753906, 'Pattern1AtY': 130.77999877929688, 'Pattern1AtZ': 3455.2900390625, 'FovyAppendMode': 1, 'Pattern1Fovy': 43.349998474121094, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'ReviseModeEnd': 1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        if !EventSystemActor.CheckFlag({'FlagName': 'Horse_Is_LastRidden_Owned'}) {
+            GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
+        }
+        EventSystemActor.Demo_ImmediateStopOwnedHorse({'IsWaitFinish': True, 'ResetChargeNum': True})
+        OwnedHorse_ForEvent.Demo_ResetChemicalStateNeutral({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+        EventSystemActor.Demo_WarpActiveHorse({'PositionX': -247.73130798339844, 'PositionY': 129.03480529785156, 'PositionZ': 3458.395263671875, 'IsWaitFinish': True, 'Direction': -130.0850067138672})
+        OwnedHorse_ForEvent.Demo_Wait({'IsWaitFinish': False, 'IsAngryEnable': False, 'IsEatEnable': False, 'IsLoveEnable': False, 'HasToCue': False, 'IsNoMorph': False})
+        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': -247.69210815429688, 'DestinationY': 131.13414001464844, 'DestinationZ': 3458.44873046875, 'DirectionY': -130.0850067138672})
+        GameROMPlayer.Demo_RideHorse({'IsWaitFinish': True, 'Horse': ActorIdentifier(name="OwnedHorse_ForEvent")})
+        Npc_FaronWoods009.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'MiniGame_HorsebackArchery_TargetMakeFlag', 'IsWaitFinish': True})
+        EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 1, 'AdditionalResetActor': '', 'IsResetCamera': False})
+        GameRomCamera.Demo_MovePosFlow({'PosAppendMode': 1, 'Pattern1PosX': -246.7899932861328, 'Pattern1PosY': 131.32000732421875, 'Pattern1PosZ': 3461.47998046875, 'AtAppendMode': 1, 'Pattern1AtX': -246.72999572753906, 'Pattern1AtY': 130.77999877929688, 'Pattern1AtZ': 3455.2900390625, 'FovyAppendMode': 1, 'Pattern1Fovy': 43.349998474121094, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'ReviseModeEnd': 1, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
 
-            call InitTalk.InitTalk({'Arg_Greeting': 'NotAndNot', 'Arg_Turn': 2})
+        call InitTalk.InitTalk({'Arg_Greeting': 'NotAndNot', 'Arg_Turn': 2})
 
-            Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
-            SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'BgmCtrlType': 'Start', 'IsWaitFinish': True})
+        Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+        SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'BgmCtrlType': 'Start', 'IsWaitFinish': True})
 
-            call Result()
+        call Result()
 
-            EventSystemActor.Demo_DisappearNumTargets({'IsWaitFinish': True})
-            EventSystemActor.Demo_UnregisterFromDeathCounter({'ActorName': 'YabusameTarget', 'IsWaitFinish': True})
-            EventSystemActor.Demo_SetGameDataInt({'Value': 0, 'IsWaitFinish': True, 'GameDataIntName': 'MiniGame_HorsebackArchery_BreakTargetNum'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_HorsebackArchery_IsPlayed'})
-            EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_Retry', 'IsWaitFinish': True})
-            Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:AskAgain'})
+        EventSystemActor.Demo_DisappearNumTargets({'IsWaitFinish': True})
+        EventSystemActor.Demo_UnregisterFromDeathCounter({'ActorName': 'YabusameTarget', 'IsWaitFinish': True})
+        EventSystemActor.Demo_SetGameDataInt({'Value': 0, 'IsWaitFinish': True, 'GameDataIntName': 'MiniGame_HorsebackArchery_BreakTargetNum'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_HorsebackArchery_IsPlayed'})
+        EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_Retry', 'IsWaitFinish': True})
+        Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:AskAgain'})
+        if !EventSystemActor.GeneralChoice2() {
+            EventSystemActor.Demo_FlagON({'FlagName': 'Horse_Is_LastRidden_Owned', 'IsWaitFinish': True})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+
+            call CheckHorseRide()
+
+            Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Register_00'})
+            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+            Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:AskAgain_00'})
             if !EventSystemActor.GeneralChoice2() {
-                EventSystemActor.Demo_FlagON({'FlagName': 'Horse_Is_LastRidden_Owned', 'IsWaitFinish': True})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentRupee', 'Operator': 'GreaterThanOrEqualTo', 'Value': 20}) {
 
-                call CheckHorseRide()
-
-                Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Register_00'})
-                EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-                Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:AskAgain_00'})
-                if !EventSystemActor.GeneralChoice2() {
-                    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentRupee', 'Operator': 'GreaterThanOrEqualTo', 'Value': 20}) {
-
-                        fork {
-                            EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
-                            EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                        } {
-                            Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_02', 'IsCloseMessageDialog': False})
-                            Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:New'})
-                            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                            Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
-                        }
-
-                        EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 0, 'AdditionalResetActor': '', 'IsResetCamera': False})
-                        EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_TargetMakeFlag', 'IsWaitFinish': True})
-                        WorldManagerControl.Demo_EventSetAddFogOff({'IsWaitFinish': True})
-                        Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
-                        Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:New_00'})
-                        GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'Pattern1PosX': -244.2899932861328, 'Pattern1PosY': 130.6199951171875, 'Pattern1PosZ': 3461.320068359375, 'Pattern1AtX': -247.72999572753906, 'Pattern1AtY': 130.3699951171875, 'Pattern1AtZ': 3458.419921875, 'Pattern1Fovy': 54.9900016784668, 'MotionMode': 0, 'Count': 20.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Accept1FrameDelay': False, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-                        EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
-                        EventSystemActor.Demo_RegisterToDeathCounter({'ActorName': 'YabusameTarget', 'GameDataName': 'MiniGame_HorsebackArchery_BreakTargetNum', 'IsWaitFinish': True, 'IsInitializeData': True})
-                        EventSystemActor.Demo_AppearNumTargets({'IsWaitFinish': True, 'GameDataIntTargetCounter': 'MiniGame_HorsebackArchery_BreakTargetNum'})
-                        EventBgmCtrlTag.Demo_Start({'BgmName': 'GameHuntBgm', 'IsWaitFinish': True})
-                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Game'})
-                    } else {
-                        Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_04'})
-                        Event367:
+                    fork {
+                        EventSystemActor.Demo_IncreaseRupee({'Value': -20, 'IsWaitFinish': True})
                         EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
-                        Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_05', 'IsCloseMessageDialog': True})
-
-                        call ExitMiniGame()
-
+                    } {
+                        Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_02', 'IsCloseMessageDialog': False})
+                        Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:New'})
+                        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+                        Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
                     }
+
+                    EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 0, 'AdditionalResetActor': '', 'IsResetCamera': False})
+                    EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_HorsebackArchery_TargetMakeFlag', 'IsWaitFinish': True})
+                    WorldManagerControl.Demo_EventSetAddFogOff({'IsWaitFinish': True})
+                    Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+                    Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:New_00'})
+                    GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'Pattern1PosX': -244.2899932861328, 'Pattern1PosY': 130.6199951171875, 'Pattern1PosZ': 3461.320068359375, 'Pattern1AtX': -247.72999572753906, 'Pattern1AtY': 130.3699951171875, 'Pattern1AtZ': 3458.419921875, 'Pattern1Fovy': 54.9900016784668, 'MotionMode': 0, 'Count': 20.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'Accept1FrameDelay': False, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+                    EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
+                    EventSystemActor.Demo_RegisterToDeathCounter({'ActorName': 'YabusameTarget', 'GameDataName': 'MiniGame_HorsebackArchery_BreakTargetNum', 'IsWaitFinish': True, 'IsInitializeData': True})
+                    EventSystemActor.Demo_AppearNumTargets({'IsWaitFinish': True, 'GameDataIntTargetCounter': 'MiniGame_HorsebackArchery_BreakTargetNum'})
+                    EventBgmCtrlTag.Demo_Start({'BgmName': 'GameHuntBgm', 'IsWaitFinish': True})
+                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'Game'})
                 } else {
-                    goto Event367
+                    Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_04'})
+                    Event367:
+                    EventSystemActor.Demo_AppearRupee({'IsVisible': 1, 'IsWaitFinish': True})
+                    Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:GameInit_05', 'IsCloseMessageDialog': True})
+
+                    call ExitMiniGame()
+
                 }
             } else {
-                Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:AskAgain_01', 'IsCloseMessageDialog': True})
-
-                call ExitMiniGame()
-
+                goto Event367
             }
         } else {
-            GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-            goto Event439
+            Npc_FaronWoods009.Demo_Talk({'ASName': 'Talk', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:AskAgain_01', 'IsCloseMessageDialog': True})
+
+            call ExitMiniGame()
+
         }
     }
 }
@@ -542,11 +534,8 @@ void CheckHorseRide() {
 
                         call ExitMiniGame()
 
-                        Event566:
-                        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-                    } else {
-                        goto Event566
                     }
+                    EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
                 } else {
                     Npc_FaronWoods009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_HorsebackArchery:Accompany_00', 'ASName': ''})
                     Event601:

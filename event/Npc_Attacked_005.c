@@ -24,12 +24,11 @@ void Talk() {
             Npc_Attacked_005.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Attacked_005:After00', 'IsCloseMessageDialog': False})
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_MamonoShop'}) {
                 Npc_Attacked_005.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_005:After02'})
-                Event19:
-                EventSystemActor.Demo_FlagON({'FlagName': 'AttackedNPC_Set5_FirstTalk', 'IsWaitFinish': True})
             } else {
                 Npc_Attacked_005.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_005:After01'})
-                goto Event19
             }
+            Event19:
+            EventSystemActor.Demo_FlagON({'FlagName': 'AttackedNPC_Set5_FirstTalk', 'IsWaitFinish': True})
         } else {
             Npc_Attacked_005.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Attacked_005:Talk02', 'IsCloseMessageDialog': False})
             if !EventSystemActor.GeneralChoice2() {
@@ -57,8 +56,8 @@ void Talk() {
                                 goto Event26
                             } else {
                                 Npc_Attacked_005.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Attacked_005:Talk05', 'IsCloseMessageDialog': True})
-                                goto Event19
                             }
+                            goto Event19
                         }
                     } else {
                         goto Event7

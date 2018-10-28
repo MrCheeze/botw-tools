@@ -89,30 +89,27 @@ void Finish_Npc_Remains_Fancier001_Talk() {
 }
 
 void Check_Guardian_Talk() {
-    if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_C'}) {
-        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_A'}) {
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Baby'}) {
-                Event215:
+    if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_C'})
+    && EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_A'}) {
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Baby'}) {
+            Event215:
 
-                call Check_Guardian_OK()
+            call Check_Guardian_OK()
 
-            } else
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
-                goto Event215
-            } else
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
-                goto Event215
-            } else
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
-                goto Event215
-            } else {
-                Event208:
-
-                call No_Photo()
-
-            }
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
+            goto Event215
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
+            goto Event215
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
+            goto Event215
         } else {
-            goto Event208
+            Event208:
+
+            call No_Photo()
+
         }
     } else {
         goto Event208
@@ -228,26 +225,23 @@ void Check_Guardian_OK() {
 }
 
 void Check_Guardian_Near() {
-    if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_C'}) {
-        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_A'}) {
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Baby'}) {
-                Event93:
-                Npc_Remains_Fancier001.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Remains_Fancier:Near_00', 'DispFrame': 300, 'IsChecked': True})
-            } else
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
-                goto Event93
-            } else
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
-                goto Event93
-            } else
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
-                goto Event93
-            } else {
-                Event143:
-                Npc_Remains_Fancier001.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Remains_Fancier:Near_00'})
-            }
+    if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_C'})
+    && EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_A'}) {
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Baby'}) {
+            Event93:
+            Npc_Remains_Fancier001.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Remains_Fancier:Near_00', 'DispFrame': 300, 'IsChecked': True})
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Junior'}) {
+            goto Event93
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Middle'}) {
+            goto Event93
+        } else
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Enemy_Guardian_Mini_Senior'}) {
+            goto Event93
         } else {
-            goto Event143
+            Event143:
+            Npc_Remains_Fancier001.Demo_TalkASync({'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90, 'MessageId': 'EventFlowMsg/Remains_Fancier:Near_00'})
         }
     } else {
         goto Event143

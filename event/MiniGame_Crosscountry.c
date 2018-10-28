@@ -311,39 +311,37 @@ void ForceStop_Npc_MiniGame_Crosscountry_StepStart() {
     EventSystemActor.Demo_WaitFrame({'Frame': 15, 'IsWaitFinish': True})
     if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
         Npc_MiniGame_Crosscountry.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Crosscountry:Halt_00'})
-        Event266:
-        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-        GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'WallOff', 'IsWaitFinish': True, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
-        Npc_MiniGame_Crosscountry.Demo_SetWanderPathIndex({'IsWaitFinish': True})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_Crosscountry_ActorGenerateFlag'})
-        if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
-            GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-            EventSystemActor.Demo_ImmediateStopOwnedHorse({'IsWaitFinish': True, 'ResetChargeNum': True})
-            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-            Event267:
-
-            call WarpToNPC()
-
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MiniGame_Crosscountry_ActorGenerateFlag'})
-            EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 0, 'AdditionalResetActor': '', 'IsResetCamera': False})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -4.7447509765625, 'Pattern1PosY': 1.7716670036315918, 'Pattern1PosZ': -0.018066000193357468, 'Pattern1AtX': -0.48413100838661194, 'Pattern1AtY': 1.388427972793579, 'Pattern1AtZ': 0.45947301387786865, 'Pattern1Fovy': 40.00001525878906, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_MiniGame_Crosscountry', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-
-            call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
-
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
-            Npc_MiniGame_Crosscountry.Demo_TrigNullASPlay({'IsWaitFinish': True, 'IsIgnoreSame': False, 'ASSlot': 0, 'SequenceBank': 0, 'ASName': 'Talk_Wait'})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
-            Npc_MiniGame_Crosscountry.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Crosscountry:Halt_01'})
-            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Start', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-            goto Event304
-        } else {
-            GameROMPlayer.Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
-            goto Event267
-        }
     } else {
         Npc_MiniGame_Crosscountry.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Crosscountry:Halt_02'})
-        goto Event266
+    }
+    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+    GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'WallOff', 'IsWaitFinish': True, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
+    Npc_MiniGame_Crosscountry.Demo_SetWanderPathIndex({'IsWaitFinish': True})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniGame_Crosscountry_ActorGenerateFlag'})
+    if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
+        GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
+        EventSystemActor.Demo_ImmediateStopOwnedHorse({'IsWaitFinish': True, 'ResetChargeNum': True})
+        EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+        Event267:
+
+        call WarpToNPC()
+
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MiniGame_Crosscountry_ActorGenerateFlag'})
+        EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 0, 'AdditionalResetActor': '', 'IsResetCamera': False})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -4.7447509765625, 'Pattern1PosY': 1.7716670036315918, 'Pattern1PosZ': -0.018066000193357468, 'Pattern1AtX': -0.48413100838661194, 'Pattern1AtY': 1.388427972793579, 'Pattern1AtZ': 0.45947301387786865, 'Pattern1Fovy': 40.00001525878906, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_MiniGame_Crosscountry', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
+
+        call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 0})
+
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
+        Npc_MiniGame_Crosscountry.Demo_TrigNullASPlay({'IsWaitFinish': True, 'IsIgnoreSame': False, 'ASSlot': 0, 'SequenceBank': 0, 'ASName': 'Talk_Wait'})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        Fader.Demo_FadeIn({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+        Npc_MiniGame_Crosscountry.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Crosscountry:Halt_01'})
+        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Start', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+        goto Event304
+    } else {
+        GameROMPlayer.Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
+        goto Event267
     }
 }
 

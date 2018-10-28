@@ -48,13 +48,11 @@ void EntryPoint0() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event7:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event7
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void CDungeon022() {
@@ -62,13 +60,11 @@ void CDungeon022() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
-        Event17:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event17
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void NoSignalWait120() {
@@ -180,13 +176,11 @@ void RemainsWind_Stake1() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
         if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-            Event96:
-            EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
-            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
         } else {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-            goto Event96
         }
+        EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
+        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     }
 }
 
@@ -201,13 +195,11 @@ void RemainsWind_Stake2() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
         if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-            Event99:
-            EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
         } else {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-            goto Event99
         }
+        EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     }
 }
 
@@ -266,14 +258,12 @@ void RemainsFire_Ancient() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
         if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-            Event152:
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RemainsFire_AncientSwitch'})
         } else {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-            goto Event152
         }
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RemainsFire_AncientSwitch'})
     }
 }
 
@@ -291,13 +281,11 @@ void SignalWait30SE() {
     EventSystemActor.Demo_WaitFrame({'Frame': 8, 'IsWaitFinish': True})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
-        Event177:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': False, 'IsWaitFinish': False})
-        goto Event177
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void NoSignalWait150SE() {
@@ -315,13 +303,11 @@ void EntryPoint0Long() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event209:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event209
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void SignalWait90() {
@@ -331,12 +317,10 @@ void SignalWait90() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 8})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
-        Event217:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
     } else {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': False, 'IsWaitFinish': False})
-        goto Event217
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
 }
 
 void EntryPoint0NoSE() {
@@ -344,12 +328,10 @@ void EntryPoint0NoSE() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event227:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event227
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
 }
 
 void EntryPoint0LongNoSE() {
@@ -357,12 +339,10 @@ void EntryPoint0LongNoSE() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event235:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event235
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
 }
 
 void RemainsWind_CrackWall_1() {
@@ -390,12 +370,10 @@ void Dungeon033() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 150})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
-        Event264:
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': False, 'IsWaitFinish': False})
-        goto Event264
     }
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void RemainsFire_Arrow() {
@@ -433,13 +411,11 @@ void CDungeon026Entry1() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
         if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-            Event296:
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon026_Shutter1'})
         } else {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-            goto Event296
         }
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon026_Shutter1'})
     }
 }
 
@@ -452,13 +428,11 @@ void CDungeon026Entry2() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
         if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-            Event306:
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon026_Shutter2'})
         } else {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-            goto Event306
         }
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon026_Shutter2'})
     }
 }
 
@@ -471,13 +445,11 @@ void CDungeon026Entry3() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
         if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-            Event316:
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon026_Shutter2'})
         } else {
             Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-            goto Event316
         }
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon026_Shutter2'})
     }
 }
 
@@ -489,13 +461,11 @@ void Dungeon008_1() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event327:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event327
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void Dungeon008_2() {
@@ -572,13 +542,11 @@ void Dungeon036_0() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event431:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event431
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void Dungeon036_1() {
@@ -587,13 +555,11 @@ void Dungeon036_1() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event439:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event439
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void Dungeon008_1_none() {
@@ -603,13 +569,11 @@ void Dungeon008_1_none() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event447:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event447
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void Dungeon008_2_none() {

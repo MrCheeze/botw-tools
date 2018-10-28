@@ -183,17 +183,6 @@ void Demo() {
                     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Drag_Hero_Trespassing'})
                 }
 
-                Event118:
-                GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': True, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'StartFrame': 0.0, 'IsWaitFinish': False, 'EndFrame': -1.0, 'UniqueName': '', 'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C02-0', 'TargetActor': 1, 'ActorName': 'GameROMPlayer', 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-
-                fork {
-                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'Demo378_0-C02-Link-A-1', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ClothWarpMode': -1})
-                } {
-                    Npc_oasis024.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ASName': 'Demo378_0-C01-UMii_Gerudo_W-1', 'IsWaitFinish': True, 'ClothWarpMode': -1})
-                } {
-                    Npc_oasis010.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ASName': 'Demo378_0-C01-UMii_Gerudo_W-1', 'IsWaitFinish': True, 'ClothWarpMode': -1})
-                }
-
             } else {
 
                 fork {
@@ -205,8 +194,18 @@ void Demo() {
                     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 90})
                 }
 
-                goto Event118
             }
+            Event118:
+            GameRomCamera.Demo_CameraAnimFlow({'Accept1FrameDelay': True, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'StartFrame': 0.0, 'IsWaitFinish': False, 'EndFrame': -1.0, 'UniqueName': '', 'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C02-0', 'TargetActor': 1, 'ActorName': 'GameROMPlayer', 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+
+            fork {
+                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'Demo378_0-C02-Link-A-1', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ClothWarpMode': -1})
+            } {
+                Npc_oasis024.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ASName': 'Demo378_0-C01-UMii_Gerudo_W-1', 'IsWaitFinish': True, 'ClothWarpMode': -1})
+            } {
+                Npc_oasis010.Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'ASName': 'Demo378_0-C01-UMii_Gerudo_W-1', 'IsWaitFinish': True, 'ClothWarpMode': -1})
+            }
+
         } else {
 
             fork {

@@ -154,36 +154,30 @@ void ClearTutorial() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event46:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-        EventSystemActor.Demo_FlagON({'FlagName': 'ClearTutorial_DungeonAll', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event46
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+    EventSystemActor.Demo_FlagON({'FlagName': 'ClearTutorial_DungeonAll', 'IsWaitFinish': True})
 }
 
 void NoShieldCheck() {
     GameROMPlayer.Demo_DisableUnequipInEvent({'IsWaitFinish': True})
-    if EventSystemActor.HasPorchItemByCategory({'Category': 1, 'Count': 1}) {
-        if !EventSystemActor.CheckPlayerEquip({'PlayerEquipType': 1}) {
-            GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsWaitFinish': False, 'ASName': 'DemoWait', 'NoErrorCheck': False, 'ClothWarpMode': -1})
-            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo719_0:talk05'})
-        }
+    if EventSystemActor.HasPorchItemByCategory({'Category': 1, 'Count': 1})
+    && !EventSystemActor.CheckPlayerEquip({'PlayerEquipType': 1}) {
+        GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsWaitFinish': False, 'ASName': 'DemoWait', 'NoErrorCheck': False, 'ClothWarpMode': -1})
+        EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo719_0:talk05'})
     }
 }
 
 void NoSwordCheck() {
     GameROMPlayer.Demo_DisableUnequipInEvent({'IsWaitFinish': True})
-    if EventSystemActor.HasPorchItemByCategory({'Count': 1, 'Category': 3}) {
-        if EventSystemActor.HasPorchItemByCategory({'Count': 1, 'Category': 2}) {
-            if EventSystemActor.HasPorchItemByCategory({'Count': 1, 'Category': 5}) {
-                if !EventSystemActor.CheckPlayerEquip({'PlayerEquipType': 0}) {
-                    GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsWaitFinish': False, 'ASName': 'DemoWait', 'NoErrorCheck': False, 'ClothWarpMode': -1})
-                    EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo719_0:talk06'})
-                }
-            }
-        }
+    if EventSystemActor.HasPorchItemByCategory({'Count': 1, 'Category': 3})
+    && EventSystemActor.HasPorchItemByCategory({'Count': 1, 'Category': 2})
+    && EventSystemActor.HasPorchItemByCategory({'Count': 1, 'Category': 5})
+    && !EventSystemActor.CheckPlayerEquip({'PlayerEquipType': 0}) {
+        GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'IsWaitFinish': False, 'ASName': 'DemoWait', 'NoErrorCheck': False, 'ClothWarpMode': -1})
+        EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo719_0:talk06'})
     }
 }
 
@@ -191,10 +185,8 @@ void Dungeon043() {
     GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ASName': 'LookAround', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ClothWarpMode': -1})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'SignalType': 0, 'IsWaitFinish': False, 'Value': True})
-        Event53:
-        EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo719_0:talk07'})
     } else {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': False, 'IsWaitFinish': False})
-        goto Event53
     }
+    EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo719_0:talk07'})
 }

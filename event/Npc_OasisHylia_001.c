@@ -58,30 +58,29 @@ void Talk() {
                         if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_Delivered'}) {
                             Event9:
                             Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_02'})
-                            Event8:
-                            if !EventSystemActor.GeneralChoice2() {
-                                Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_07'})
-                                if !EventSystemActor.GeneralChoice2() {
-                                    Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_09'})
-                                } else {
-                                    Event14:
-                                    Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_10'})
-                                }
-                            } else
-                            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_Activated'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_Delivered'}) {
-                                    Event12:
-                                    Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_08'})
-                                    goto Event14
-                                } else {
-                                    Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_20'})
-                                }
-                            } else {
-                                goto Event12
-                            }
                         } else {
                             Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_18'})
-                            goto Event8
+                        }
+                        Event8:
+                        if !EventSystemActor.GeneralChoice2() {
+                            Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_07'})
+                            if !EventSystemActor.GeneralChoice2() {
+                                Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_09'})
+                            } else {
+                                Event14:
+                                Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_10'})
+                            }
+                        } else
+                        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_Activated'}) {
+                            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_Delivered'}) {
+                                Event12:
+                                Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_08'})
+                                goto Event14
+                            } else {
+                                Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_20'})
+                            }
+                        } else {
+                            goto Event12
                         }
                     } else {
                         goto Event9
@@ -92,11 +91,10 @@ void Talk() {
                     if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_CarryIce_Delivered'}) {
                         Event26:
                         Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_15'})
-                        goto Event8
                     } else {
                         Npc_OasisHylia_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisHylia_001:Talk_19'})
-                        goto Event8
                     }
+                    goto Event8
                 } else {
                     goto Event26
                 }

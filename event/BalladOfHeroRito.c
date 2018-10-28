@@ -85,11 +85,10 @@ void AppearDungeon01() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
         GameROMPlayer.Demo_Join({'IsWaitFinish': True})
-        goto Event331
     } else {
         GameROMPlayer.Demo_PlayerAirWait({'IsWaitFinish': True})
-        goto Event331
     }
+    goto Event331
 }
 
 void AppearDungeon02() {
@@ -167,14 +166,12 @@ void DefeatCurseGannon() {
 void Ready_Npc_Musician_AoC_HeroRitoRelief_Talk() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
-        Event104:
-        EventSystemActor.Demo_CallDemo({'EndFade': 0, 'DemoName': 'Demo610_1', 'IsWaitFinish': True, 'EntryPointName': 'Ready'})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_ReliefSong'})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Activated'})
     } else {
         GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        goto Event104
     }
+    EventSystemActor.Demo_CallDemo({'EndFade': 0, 'DemoName': 'Demo610_1', 'IsWaitFinish': True, 'EntryPointName': 'Ready'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_ReliefSong'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Activated'})
 }
 
 void Front_ClearDungeon01() {
@@ -238,37 +235,34 @@ void Seek1stDungeon_Npc_HighMountain011_Talk() {
 
         Event379:
         if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_Talk'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'}) {
-                Event242:
-                Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk08'})
-                Event239:
-                if !EventSystemActor.GeneralChoice2() {
-                    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_DragonSuccess'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'}) {
-                            Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk03'})
-                            Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk16'})
-                        } else {
-                            Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk03'})
-                            Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk05'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'})
-                        }
-                    } else
+            if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'}) {
+                Npc_HighMountain011.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            }
+            Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk08'})
+            Event239:
+            if !EventSystemActor.GeneralChoice2() {
+                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_DragonSuccess'}) {
                     if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'}) {
                         Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk03'})
-                        Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk11'})
+                        Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk16'})
                     } else {
                         Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk03'})
-                        Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk10'})
-                        Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk11'})
+                        Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk05'})
                         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'})
                     }
+                } else
+                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'}) {
+                    Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk03'})
+                    Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk11'})
                 } else {
-                    Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk07'})
+                    Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk03'})
+                    Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk10'})
+                    Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk11'})
                     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'})
                 }
             } else {
-                Npc_HighMountain011.Demo_Talk({'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                goto Event242
+                Npc_HighMountain011.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_HighMountain011_Talk07'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'})
             }
         } else {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_Talk'})
@@ -523,13 +517,10 @@ void Seek1stDungeon_Npc_HighMountain004_Near() {
 }
 
 void Npc_HighMountain011_CheckTalk() {
-    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_Talk'}) {
-        Event381:
-        if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'})
-        }
-    } else {
+    if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_Talk'}) {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_Talk'})
-        goto Event381
+    }
+    if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroRito_Npc_HighMountain011_TalkCheck'})
     }
 }

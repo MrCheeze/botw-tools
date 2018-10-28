@@ -45,11 +45,10 @@ void Demo333_Cut1() {
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Guardian_BootUp_2_Cam'}) {
             GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'FovyCalcMode': 1, 'OtherActor': 3, 'AtParam': [0.0, 3.700000047683716, 0.0], 'FovyParam': 35.0, 'AtCalcMode': 1, 'ReverseOrder': True, 'UniqueNameForOtherActor': 'UniqueName', 'ReviseMode': 2, 'ActorIgnoringCollision': 0, 'Time': 30.0, 'ActorNameForOtherActor': 'Enemy_Guardian_A_Fixed_Moss', 'LngOffset': 15.0, 'LatOffset': 5.0, 'RadiusOffset': 20.0})
-            goto Event35
         } else {
             GameRomCamera.Demo_MovePosFlow({'FovyAppendMode': 1, 'IsWaitFinish': True, 'LatShiftRange': 0.0, 'StartCalcOnly': False, 'Count': 30.0, 'Pattern1AtX': 0.0, 'Pattern1AtY': 3.700000047683716, 'PosAppendMode': 0, 'Pattern1PosX': 0.0, 'Pattern1PosY': 0.0, 'Cushion': 0.30000001192092896, 'Pattern1Fovy': 35.0, 'Pattern1PosZ': 5.0, 'Pattern1AtZ': 0.0, 'LngShiftRange': 30.0, 'TargetActor1': 3, 'TargetActor2': 1, 'AtAppendMode': 2, 'ActorName2': '', 'UniqueName2': '', 'UniqueName1': 'UniqueName', 'MotionMode': 1, 'ActorIgnoringCollision': 0, 'ReviseModeEnd': 2, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ActorName1': 'Enemy_Guardian_A_Fixed_Moss', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            goto Event35
         }
+        goto Event35
     }
 
 }
@@ -88,13 +87,11 @@ void Demo333_Cut2() {
     SceneBgmCtrlTag.Demo_Ctrl({'CtrlType': 'Guardian_ReserveEnableScene', 'IsWaitFinish': True})
     if EventSystemActor.CheckFlag({'FlagName': 'Guardian_BootUp_3_Cam'}) {
         GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'LngOffset': 0.0, 'FovyCalcMode': 1, 'OtherActor': 3, 'AtParam': [0.0, 3.700000047683716, 0.0], 'FovyParam': 35.0, 'Time': 0.0, 'RadiusOffset': 12.0, 'AtCalcMode': 1, 'ReverseOrder': True, 'UniqueNameForOtherActor': 'UniqueName', 'ReviseMode': 2, 'ActorIgnoringCollision': 0, 'LatOffset': 17.1299991607666, 'ActorNameForOtherActor': 'Enemy_Guardian_A_Fixed_Moss'})
-        Event10:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'FovyAppendMode': 1, 'IsWaitFinish': True, 'MotionMode': 0, 'LatShiftRange': 0.0, 'Cushion': 0.30000001192092896, 'StartCalcOnly': False, 'Pattern1Fovy': 50.0, 'Pattern1AtY': 1.7999999523162842, 'CollisionInterpolateSkip': True, 'Count': 60.0, 'Pattern1PosY': 1.7899999618530273, 'Pattern1PosZ': -5.289999961853027, 'LngShiftRange': 30.0, 'ReviseModeEnd': 1, 'TargetActor1': 3, 'TargetActor2': 1, 'PosAppendMode': 3, 'AtAppendMode': 3, 'ActorName2': '', 'UniqueName2': '', 'UniqueName1': 'UniqueName', 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': 'Enemy_Guardian_A_Fixed_Moss', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Guardian_BootUp'})
     } else {
         GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'LngOffset': 0.0, 'FovyCalcMode': 1, 'OtherActor': 3, 'AtParam': [0.0, 3.700000047683716, 0.0], 'FovyParam': 35.0, 'Time': 0.0, 'RadiusOffset': 12.0, 'LatOffset': -5.710000038146973, 'AtCalcMode': 1, 'ReverseOrder': True, 'UniqueNameForOtherActor': 'UniqueName', 'ReviseMode': 2, 'ActorIgnoringCollision': 0, 'ActorNameForOtherActor': 'Enemy_Guardian_A_Fixed_Moss'})
-        goto Event10
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 0.0, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'FovyAppendMode': 1, 'IsWaitFinish': True, 'MotionMode': 0, 'LatShiftRange': 0.0, 'Cushion': 0.30000001192092896, 'StartCalcOnly': False, 'Pattern1Fovy': 50.0, 'Pattern1AtY': 1.7999999523162842, 'CollisionInterpolateSkip': True, 'Count': 60.0, 'Pattern1PosY': 1.7899999618530273, 'Pattern1PosZ': -5.289999961853027, 'LngShiftRange': 30.0, 'ReviseModeEnd': 1, 'TargetActor1': 3, 'TargetActor2': 1, 'PosAppendMode': 3, 'AtAppendMode': 3, 'ActorName2': '', 'UniqueName2': '', 'UniqueName1': 'UniqueName', 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': 'Enemy_Guardian_A_Fixed_Moss', 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Guardian_BootUp'})
 }

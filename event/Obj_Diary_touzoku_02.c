@@ -29,80 +29,56 @@ void Talk() {
         if !EventSystemActor.GeneralChoice2() {
             Event5:
             Obj_Diary_touzoku_02.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Obj_Diary_touzoku_02:Diary_02'})
-            if EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku05_Activated'}) {
-                Event15:
-                if EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku05_Step01'}) {
-                    Event6:
+            if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku05_Activated'}) {
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku05_Activated'})
+            }
+            if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku05_Step01'}) {
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku05_Step01'})
+            }
+            if !EventSystemActor.GeneralChoice3() {
+                Event7:
+                Obj_Diary_touzoku_02.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Obj_Diary_touzoku_02:Diary_03'})
+                if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku06_Activated'}) {
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku06_Activated'})
+                }
+                if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku06_Step01'}) {
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku06_Step01'})
+                }
+                if !EventSystemActor.GeneralChoice3() {
+                    Event9:
+                    Obj_Diary_touzoku_02.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Obj_Diary_touzoku_02:Diary_04'})
+                    if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku07_Activated'}) {
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku07_Activated'})
+                    }
+                    if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku07_Step01'}) {
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku07_Step01'})
+                    }
                     if !EventSystemActor.GeneralChoice3() {
-                        Event7:
-                        Obj_Diary_touzoku_02.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Obj_Diary_touzoku_02:Diary_03'})
-                        if EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku06_Activated'}) {
-                            Event16:
-                            if EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku06_Step01'}) {
-                                Event8:
-                                if !EventSystemActor.GeneralChoice3() {
-                                    Event9:
-                                    Obj_Diary_touzoku_02.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Obj_Diary_touzoku_02:Diary_04'})
-                                    if EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku07_Activated'}) {
-                                        Event17:
-                                        if EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku07_Step01'}) {
-                                            Event10:
-                                            if !EventSystemActor.GeneralChoice3() {
-                                                Event11:
-                                                Obj_Diary_touzoku_02.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Obj_Diary_touzoku_02:Diary_05'})
-                                                if EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku08_Activated'}) {
-                                                    Event18:
-                                                    if EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku08_Step01'}) {
-                                                        Event12:
-                                                        if !EventSystemActor.GeneralChoice3() {
-                                                            Event13:
-                                                            Obj_Diary_touzoku_02.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Obj_Diary_touzoku_02:Diary_06'})
-                                                            if !EventSystemActor.GeneralChoice2() {
-                                                                goto Event11
-                                                            }
-                                                        } else {
-                                                            goto Event9
-                                                        }
-                                                    } else {
-                                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku08_Step01'})
-                                                        goto Event12
-                                                    }
-                                                } else {
-                                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku08_Activated'})
-                                                    goto Event18
-                                                }
-                                            } else {
-                                                goto Event7
-                                            }
-                                        } else {
-                                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku07_Step01'})
-                                            goto Event10
-                                        }
-                                    } else {
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku07_Activated'})
-                                        goto Event17
-                                    }
-                                } else {
-                                    goto Event5
-                                }
-                            } else {
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku06_Step01'})
-                                goto Event8
+                        Event11:
+                        Obj_Diary_touzoku_02.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Obj_Diary_touzoku_02:Diary_05'})
+                        if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku08_Activated'}) {
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku08_Activated'})
+                        }
+                        if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_touzoku08_Step01'}) {
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku08_Step01'})
+                        }
+                        if !EventSystemActor.GeneralChoice3() {
+                            Event13:
+                            Obj_Diary_touzoku_02.Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Obj_Diary_touzoku_02:Diary_06'})
+                            if !EventSystemActor.GeneralChoice2() {
+                                goto Event11
                             }
                         } else {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku06_Activated'})
-                            goto Event16
+                            goto Event9
                         }
                     } else {
-                        goto Event3
+                        goto Event7
                     }
                 } else {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku05_Step01'})
-                    goto Event6
+                    goto Event5
                 }
             } else {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_touzoku05_Activated'})
-                goto Event15
+                goto Event3
             }
         }
     } else {

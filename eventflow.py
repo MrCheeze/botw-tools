@@ -16,12 +16,15 @@ def print_flowchart(flowchart):
     for entrypoint in flowchart.entry_points:
         lines.append('\n')
         print_entrypoint(entrypoint,alreadySeen,lines,neededLabels)
+            
+    assert len(alreadySeen) == len(flowchart.events) and len(alreadySeen) == len(set(alreadySeen))
 
     for line in lines:
         if type(line) == str:
             printed_flowchart+=line
         elif line['label'] in neededLabels:
             printed_flowchart+=line['line']
+    
     return printed_flowchart
 
 def print_actor(actor):
@@ -39,8 +42,39 @@ def print_entrypoint(entrypoint,alreadySeen,lines,neededLabels):
     event = entrypoint.main_event.v
     print_event(event,1,alreadySeen,lines,neededLabels)
     lines.append('}\n')
+
+def getNxt(event):
+    assert not isinstance(event.data, SwitchEvent)
+    if event is None:
+        return None
+    if isinstance(event.data, ForkEvent):
+        if event.data.join.v is None or event.data.join.v.data.nxt.v is None:
+            return None
+        return event.data.join.v.data.nxt.v.name
+    else:
+        if event.data.nxt.v is None:
+            return None
+        return event.data.nxt.v.name
+
+def getDistinctCases(event):
+    distinctCases = {}
+    for key in event.data.cases:
+        if event.data.cases[key].v.name not in distinctCases:
+            distinctCases[event.data.cases[key].v.name] = []
+        distinctCases[event.data.cases[key].v.name].append(key)
+    return distinctCases
+
+def isEventTrueFalse(event):
+    isTrueFalse = len(event.data.cases) in [1,2]
+    for key in event.data.cases:
+        if key != 0 and key != 1:
+            isTrueFalse = False
+    if isTrueFalse:
+        if 0 in event.data.cases and 1 in event.data.cases and event.data.cases[0].v.name == event.data.cases[1].v.name:
+            isTrueFalse = False
+    return isTrueFalse
     
-def print_event(event,indent,alreadySeen,lines,neededLabels):
+def print_event(event,indent,alreadySeen,lines,neededLabels,noPrintNxt=False,isAnd=False):
     if event == None:
         return
     spaces = "    " * indent
@@ -52,52 +86,71 @@ def print_event(event,indent,alreadySeen,lines,neededLabels):
     lines.append({'label':event.name,'line':spaces+event.name+':\n'})
     if isinstance(event.data, ActionEvent):
         lines.append(spaces+str(event.data.actor.v.identifier)+"."+str(event.data.actor_action.v)+"("+str(event.data.params.data)+")\n")
-        print_event(event.data.nxt.v,indent,alreadySeen,lines,neededLabels)
-        pass
+        if not noPrintNxt:
+            print_event(event.data.nxt.v,indent,alreadySeen,lines,neededLabels)
     elif isinstance(event.data, SwitchEvent):
         if len(event.data.cases) == 0:
             lines.append(spaces+';\n')
         else:
-            isTrueFalse = len(event.data.cases) <= 2
-            for key in event.data.cases:
-                if key != 0 and key != 1:
-                    isTrueFalse = False
+            isTrueFalse = isEventTrueFalse(event)
             if isTrueFalse:
-                if 0 in event.data.cases and 1 in event.data.cases and event.data.cases[0].v.name == event.data.cases[1].v.name:
-                    isTrueFalse = False
-            if isTrueFalse:
-                key = list(event.data.cases.keys())[0]
-                lines.append(spaces+"if " + ('' if key else '!') + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") {\n")
-                print_event(event.data.cases[key].v,indent+1,alreadySeen,lines,neededLabels)
-                if len(event.data.cases) > 1:
-                    assert event.data.cases[0].v.name != event.data.cases[1].v.name
-                    key = list(event.data.cases.keys())[1]
-                    if (isinstance(event.data.cases[key].v.data, SwitchEvent)):
-                        lines.append(spaces+"} else\n")
-                        print_event(event.data.cases[key].v,indent,alreadySeen,lines,neededLabels)
-                    else:
-                        lines.append(spaces+"} else {\n")
-                        print_event(event.data.cases[key].v,indent+1,alreadySeen,lines,neededLabels)
-                        lines.append(spaces+"}\n")
-                else:
+                keys = list(event.data.cases.keys())
+                if len(event.data.cases) > 1 and not isinstance(event.data.cases[keys[0]].v.data, SwitchEvent) and getNxt(event.data.cases[keys[0]].v) == event.data.cases[keys[1]].v.name:
+                    lines.append(spaces+("&& " if isAnd else "if ") + ('' if keys[0] else '!') + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") {\n")
+                    print_event(event.data.cases[keys[0]].v,indent+1,alreadySeen,lines,neededLabels,noPrintNxt=True)
                     lines.append(spaces+"}\n")
+                    print_event(event.data.cases[keys[1]].v,indent,alreadySeen,lines,neededLabels)
+                elif len(event.data.cases) > 1 and not isinstance(event.data.cases[keys[1]].v.data, SwitchEvent) and getNxt(event.data.cases[keys[1]].v) == event.data.cases[keys[0]].v.name:
+                    lines.append(spaces+("&& " if isAnd else "if ") + ('' if keys[1] else '!') + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") {\n")
+                    print_event(event.data.cases[keys[1]].v,indent+1,alreadySeen,lines,neededLabels,noPrintNxt=True)
+                    lines.append(spaces+"}\n")
+                    print_event(event.data.cases[keys[0]].v,indent,alreadySeen,lines,neededLabels)
+                elif len(event.data.cases) > 1 and not isinstance(event.data.cases[keys[0]].v.data, SwitchEvent) and not isinstance(event.data.cases[keys[1]].v.data, SwitchEvent) and getNxt(event.data.cases[keys[0]].v) == getNxt(event.data.cases[keys[1]].v):
+                    lines.append(spaces+("&& " if isAnd else "if ") + ('' if keys[0] else '!') + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") {\n")
+                    print_event(event.data.cases[keys[0]].v,indent+1,alreadySeen,lines,neededLabels,noPrintNxt=True)
+                    lines.append(spaces+"} else {\n")
+                    print_event(event.data.cases[keys[1]].v,indent+1,alreadySeen,lines,neededLabels,noPrintNxt=True)
+                    lines.append(spaces+'}\n')
+                    if isinstance(event.data.cases[keys[1]].v.data, ForkEvent):
+                        print_event(event.data.cases[keys[1]].v.data.join.v.data.nxt.v,indent,alreadySeen,lines,neededLabels)
+                    else:
+                        print_event(event.data.cases[keys[1]].v.data.nxt.v,indent,alreadySeen,lines,neededLabels)
+                else:
+                    displayNextWithAnd = isinstance(event.data.cases[keys[0]].v.data, SwitchEvent) and ((len(event.data.cases)==1 and len(getDistinctCases(event.data.cases[keys[0]].v))==1) or (len(event.data.cases)==2 and len(event.data.cases[keys[0]].v.data.cases)==2 and isEventTrueFalse(event.data.cases[keys[0]].v) and event.data.cases[keys[1]].v.name==list(event.data.cases[keys[0]].v.data.cases.values())[1].v.name)) and event.data.cases[keys[0]].v.name not in alreadySeen
+                    lines.append(spaces+("&& " if isAnd else "if ") + ('' if keys[0] else '!') + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+(")\n" if displayNextWithAnd else ") {\n"))
+                    if displayNextWithAnd:
+                        print_event(event.data.cases[keys[0]].v,indent,alreadySeen,lines,neededLabels,isAnd=True)
+                    else:
+                        print_event(event.data.cases[keys[0]].v,indent+1,alreadySeen,lines,neededLabels)
+                        if len(event.data.cases) > 1:
+                            assert event.data.cases[0].v.name != event.data.cases[1].v.name
+                            if (isinstance(event.data.cases[keys[1]].v.data, SwitchEvent)):
+                                lines.append(spaces+"} else\n")
+                                print_event(event.data.cases[keys[1]].v,indent,alreadySeen,lines,neededLabels)
+                            else:
+                                lines.append(spaces+"} else {\n")
+                                print_event(event.data.cases[keys[1]].v,indent+1,alreadySeen,lines,neededLabels)
+                                lines.append(spaces+"}\n")
+                        else:
+                            lines.append(spaces+"}\n")
             else:
-                distinctCases = {}
-                for key in event.data.cases:
-                    if event.data.cases[key].v.name not in distinctCases:
-                        distinctCases[event.data.cases[key].v.name] = []
-                    distinctCases[event.data.cases[key].v.name].append(key)
+                distinctCases = getDistinctCases(event)
                 distinctKeys = list(distinctCases.values())
                     
                 if len(distinctKeys) == 1:
-                    key = distinctKeys[0]
-                    if len(key) == 1:
-                        lines.append(spaces+"if " + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") == "+str(key[0])+" {\n")
+                    keyList = distinctKeys[0]
+                    displayNextWithAnd = isinstance(event.data.cases[keyList[0]].v.data, SwitchEvent) and len(getDistinctCases(event.data.cases[keyList[0]].v))==1 and event.data.cases[keyList[0]].v.name not in alreadySeen
+                    if len(keyList) == 1:
+                        lines.append(spaces+("&& " if isAnd else "if ") + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") == "+str(keyList[0])+("\n" if displayNextWithAnd else " {\n"))
                     else:
-                        lines.append(spaces+"if " + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") in "+str(key)+" {\n")
-                    print_event(event.data.cases[key[0]].v,indent+1,alreadySeen,lines,neededLabels)
-                    lines.append(spaces+"}\n")
+                        lines.append(spaces+("&& " if isAnd else "if ") + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") in "+str(keyList)+("\n" if displayNextWithAnd else " {\n"))
+                    if displayNextWithAnd:
+                        print_event(event.data.cases[keyList[0]].v,indent,alreadySeen,lines,neededLabels,isAnd=True)
+                    else:
+                        print_event(event.data.cases[keyList[0]].v,indent+1,alreadySeen,lines,neededLabels)
+                        lines.append(spaces+"}\n")
                 else:
+                    assert not isAnd
                     lines.append(spaces+"switch " + str(event.data.actor.v.identifier)+"."+str(event.data.actor_query.v)+"("+str(event.data.params.data if event.data.params else '')+") {\n")
                     for key in distinctKeys:
                         lines.append(spaces+"  case "+str(key[0] if len(key)==1 else key)+":\n")
@@ -111,16 +164,16 @@ def print_event(event,indent,alreadySeen,lines,neededLabels):
             print_event(fork.v,indent+1,alreadySeen,lines,neededLabels)
             lines.append(spaces+"}")
         lines.append("\n")
-        print_event(event.data.join.v,indent,alreadySeen,lines,neededLabels)
-        pass
+        assert isinstance(event.data.join.v.data, JoinEvent)
+        print_event(event.data.join.v,indent,alreadySeen,lines,neededLabels,noPrintNxt=noPrintNxt)
     elif isinstance(event.data, JoinEvent):
         lines.append('\n')
-        print_event(event.data.nxt.v,indent,alreadySeen,lines,neededLabels)
-        pass
+        if not noPrintNxt:
+            print_event(event.data.nxt.v,indent,alreadySeen,lines,neededLabels)
     elif isinstance(event.data, SubFlowEvent):
         lines.append('\n'+spaces+"call " + event.data.res_flowchart_name+("." if event.data.res_flowchart_name else '')+event.data.entry_point_name+"("+str(event.data.params.data if event.data.params else '')+")\n\n")
-        print_event(event.data.nxt.v,indent,alreadySeen,lines,neededLabels)
-        pass
+        if not noPrintNxt:
+            print_event(event.data.nxt.v,indent,alreadySeen,lines,neededLabels)
     return lines, neededLabels
 
 if __name__ == "__main__":

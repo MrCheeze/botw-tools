@@ -54,11 +54,9 @@ void Talk() {
       case 2:
         goto Event28
       case 3:
-        if Npc_RitoHatago001.IsOnInstEventFlag() {
-            goto Event32
-        } else {
+        if !Npc_RitoHatago001.IsOnInstEventFlag() {
             Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_RitoHatago001:talk_10'})
-            goto Event32
         }
+        goto Event32
     }
 }

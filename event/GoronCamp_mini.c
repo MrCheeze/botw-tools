@@ -94,42 +94,38 @@ void Ready_Npc_Goron_Camp001_Talk() {
                             GameRomCamera.Demo_MovePosFlow({'MotionMode': 0, 'Pattern1Fovy': 50.0, 'IsWaitFinish': True, 'ActorName1': '', 'ActorName2': '', 'FovyAppendMode': 1, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'UniqueName1': '', 'UniqueName2': '', 'TargetActor1': 1, 'TargetActor2': -1, 'AtAppendMode': 2, 'PosAppendMode': 2, 'Pattern1AtX': 0.0, 'Pattern1PosX': 0.0, 'Count': 0.0, 'StartCalcOnly': False, 'CollisionInterpolateSkip': False, 'Pattern1AtY': 5.0, 'Pattern1AtZ': 5.0, 'Pattern1PosZ': -3.0, 'Pattern1PosY': 0.20000000298023224, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ReviseModeEnd': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
                             if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_Hard'}) {
                                 EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestMapName': 'H-1', 'WarpDestPosName': 'GoronCamp_StartPos_H'})
-                                Event232:
-                                EventSystemActor.Demo_ResetGimmick({'SystemResetOption': 1, 'IsWaitFinish': True, 'AdditionalResetActor': '', 'IsResetCamera': False})
-                                Fader.Demo_FadeIn({'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0, 'Color': 1})
-                                EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
-                                EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'IsWaitFinish': True, 'Value': 0})
-                                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': False, 'StepName': 'Finish', 'ForceRunTelop': False, 'QuestName': 'GoronCamp_mini'})
-                                EventBgmCtrlTag.Demo_Start({'IsWaitFinish': True, 'BgmName': 'GameRaceBgm'})
-                                if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_Hard'}) {
-                                    EventSystemActor.Demo_AppearRupeeInMiniGame({'IsWaitFinish': True, 'IsAppear': True, 'TargetValue': 300})
-                                    Event118:
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'SaveProhibition', 'IsWaitFinish': True})
-                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'WarpProhibition'})
-                                    if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_Hard'}) {
-
-                                        fork {
-                                            Npc_Goron_Camp001.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': 'GoronCamp_001_HARD', 'AnchorName': 'AnchorAction10'})
-                                        } {
-                                            Npc_Goron_Camp002.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': 'GoronCamp_002_HARD', 'AnchorName': 'AnchorAction10'})
-                                        }
-
-                                    } else {
-
-                                        fork {
-                                            Npc_Goron_Camp001.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': 'GoronCamp_001_NORMAL', 'AnchorName': 'AnchorAction1'})
-                                        } {
-                                            Npc_Goron_Camp002.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': 'GoronCamp_002_NORMAL', 'AnchorName': 'AnchorAction1'})
-                                        }
-
-                                    }
-                                } else {
-                                    EventSystemActor.Demo_AppearRupeeInMiniGame({'IsWaitFinish': True, 'IsAppear': True, 'TargetValue': 100})
-                                    goto Event118
-                                }
                             } else {
                                 EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestMapName': 'H-1', 'WarpDestPosName': 'GoronCamp_StartPos_N'})
-                                goto Event232
+                            }
+                            EventSystemActor.Demo_ResetGimmick({'SystemResetOption': 1, 'IsWaitFinish': True, 'AdditionalResetActor': '', 'IsResetCamera': False})
+                            Fader.Demo_FadeIn({'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0, 'Color': 1})
+                            EventSystemActor.Demo_MiniGameStart({'IsWaitFinish': True, 'TextType': 0})
+                            EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'IsWaitFinish': True, 'Value': 0})
+                            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': False, 'StepName': 'Finish', 'ForceRunTelop': False, 'QuestName': 'GoronCamp_mini'})
+                            EventBgmCtrlTag.Demo_Start({'IsWaitFinish': True, 'BgmName': 'GameRaceBgm'})
+                            if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_Hard'}) {
+                                EventSystemActor.Demo_AppearRupeeInMiniGame({'IsWaitFinish': True, 'IsAppear': True, 'TargetValue': 300})
+                            } else {
+                                EventSystemActor.Demo_AppearRupeeInMiniGame({'IsWaitFinish': True, 'IsAppear': True, 'TargetValue': 100})
+                            }
+                            EventSystemActor.Demo_FlagON({'FlagName': 'SaveProhibition', 'IsWaitFinish': True})
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'WarpProhibition'})
+                            if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_Hard'}) {
+
+                                fork {
+                                    Npc_Goron_Camp001.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': 'GoronCamp_001_HARD', 'AnchorName': 'AnchorAction10'})
+                                } {
+                                    Npc_Goron_Camp002.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': 'GoronCamp_002_HARD', 'AnchorName': 'AnchorAction10'})
+                                }
+
+                            } else {
+
+                                fork {
+                                    Npc_Goron_Camp001.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': 'GoronCamp_001_NORMAL', 'AnchorName': 'AnchorAction1'})
+                                } {
+                                    Npc_Goron_Camp002.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': 'GoronCamp_002_NORMAL', 'AnchorName': 'AnchorAction1'})
+                                }
+
                             }
                         } else {
                             Event15:
@@ -312,12 +308,11 @@ void Finish_Goron_Camp() {
             if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 100}) {
                 Event41:
                 Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_17', 'IsOverWriteLabelActorName': False})
-                goto Event42
             } else {
                 Event49:
                 Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GoronCamp:Talk_19', 'IsOverWriteLabelActorName': False})
-                goto Event42
             }
+            goto Event42
         } else
         if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'CurrentTotalGetRupeeInMiniGame', 'Operator': 'GreaterThanOrEqualTo', 'Value': 100}) {
             Npc_Goron_Camp001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GoronCamp_mini:Talk_14'})
@@ -343,6 +338,7 @@ void Finish_Goron_Camp() {
         } else {
             goto Event49
         }
+        goto Event42
     } else
     if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_mini_GameReady'}) {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GoronCamp_ResetGame'})

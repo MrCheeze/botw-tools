@@ -98,6 +98,6 @@ void Demo348_1() {
 
         call Demo051_0.Demo051_0()
 
-        goto Event52
     }
+    goto Event52
 }

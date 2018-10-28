@@ -360,10 +360,10 @@ void EntryPoint0() {
     } else
     if EventSystemActor.CheckFlag({'FlagName': 'SearchStone_PlayerPlace02'}) {
         Npc_SouthernVillage014.Demo_MoveToAnchor({'AnchorName': 'DestinationAnchor', 'IsWaitFinish': True, 'AnchorUniqueName': 'I-8_01', 'IsTurnToAnchorDir': False, 'ASKeyName': 'Run', 'IsAlignmentAnchor': True})
-        goto Event60
     } else {
         goto Event40
     }
+    goto Event60
 }
 
 void Finish_Npc_SouthernVillage014_SearchStone_PlayerCHK_Talk() {

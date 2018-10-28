@@ -51,13 +51,11 @@ void Ready_Hosuta_StrangeMan() {
             Npc_TamourHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago004:talk06'})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_TamourHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago004:talk07'})
-                Event24:
-                Npc_TamourHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago004:talk09'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'HigakkareMini_StrangeMan_Activated', 'IsWaitFinish': True})
             } else {
                 Npc_TamourHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago004:talk08'})
-                goto Event24
             }
+            Npc_TamourHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago004:talk09'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'HigakkareMini_StrangeMan_Activated', 'IsWaitFinish': True})
         } else {
             Npc_TamourHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TamourHatago004:talk28'})
         }

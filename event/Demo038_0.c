@@ -95,9 +95,8 @@ void ForestFogSafe() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
         goto Event46
     } else
-    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-        goto Event49
-    } else {
+    if !EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         goto Event46
     }
+    goto Event49
 }

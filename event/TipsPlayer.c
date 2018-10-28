@@ -111,15 +111,11 @@ void IsGet_Obj_SheikSensor() {
 }
 
 void WolfLink_And_SheikSensor() {
-    if TipsSystemActor.CheckFlag({'FlagName': 'WolfLink_HasBeenUsed'}) {
-        if TipsSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
-            TipsSystemActor.Demo_TipsDisplayOK({'IsWaitFinish': True})
-        } else {
-            Event40:
-            TipsSystemActor.Demo_TipsDisplayNG({'IsWaitFinish': True})
-        }
+    if TipsSystemActor.CheckFlag({'FlagName': 'WolfLink_HasBeenUsed'})
+    && TipsSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
+        TipsSystemActor.Demo_TipsDisplayOK({'IsWaitFinish': True})
     } else {
-        goto Event40
+        TipsSystemActor.Demo_TipsDisplayNG({'IsWaitFinish': True})
     }
 }
 

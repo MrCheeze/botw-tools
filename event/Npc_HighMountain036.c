@@ -106,15 +106,11 @@ void Npc_Musician_Come_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_300'})
-    if EventSystemActor.CheckTime({'Hour': 8, 'Minute': 0, 'ConditionType': 'ge'}) {
-        if EventSystemActor.CheckTime({'Minute': 0, 'Hour': 21, 'ConditionType': 'le'}) {
-            Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_301'})
-        } else {
-            Event33:
-            Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_302'})
-        }
+    if EventSystemActor.CheckTime({'Hour': 8, 'Minute': 0, 'ConditionType': 'ge'})
+    && EventSystemActor.CheckTime({'Minute': 0, 'Hour': 21, 'ConditionType': 'le'}) {
+        Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_301'})
     } else {
-        goto Event33
+        Npc_HighMountain036.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain036:Npc_HighMountain036_302'})
     }
 }
 

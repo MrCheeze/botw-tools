@@ -17,28 +17,21 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     if EventSystemActor.CheckFlag({'FlagName': 'Water_Relic_Finished'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_AppearDungeon02'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora004_Talk2'}) {
-                    Npc_Zora004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora004_SD_350'})
-                    Event9:
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora004_Talk2'})
-                } else {
-                    Npc_Zora004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora004_SD_300'})
-                    goto Event9
-                }
-            } else
-            Event7:
+        if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
+        && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_AppearDungeon02'}) {
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora004_Talk2'}) {
-                Event8:
-                Npc_Zora004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora004:talk02'})
-                goto Event9
+                Npc_Zora004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora004_SD_350'})
             } else {
-                Npc_Zora004.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora004:talk00', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                goto Event8
+                Npc_Zora004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora004_SD_300'})
             }
+            Event9:
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora004_Talk2'})
         } else
-        goto Event7
+        if !EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora004_Talk2'}) {
+            Npc_Zora004.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora004:talk00', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+        }
+        Npc_Zora004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora004:talk02'})
+        goto Event9
     } else {
         Npc_Zora004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora004:talk01'})
     }

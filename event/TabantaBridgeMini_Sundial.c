@@ -42,17 +42,15 @@ void Ready_Npc_TabantaBridgeHatago005_Talk() {
 
             call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'NotAndNot'})
 
-            Event2:
-            Npc_TabantaBridgeHatago005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TabantaBridgeMini_Sundial:talk00'})
-            Npc_TabantaBridgeHatago005.Demo_Talk({'MessageId': 'EventFlowMsg/TabantaBridgeMini_Sundial:talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            Npc_TabantaBridgeHatago005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TabantaBridgeMini_Sundial:talk02'})
-            goto Event9
         } else {
 
             call InitTalk.InitTalk({'Arg_Greeting': 'NotAndNot', 'Arg_Turn': 1})
 
-            goto Event2
         }
+        Npc_TabantaBridgeHatago005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TabantaBridgeMini_Sundial:talk00'})
+        Npc_TabantaBridgeHatago005.Demo_Talk({'MessageId': 'EventFlowMsg/TabantaBridgeMini_Sundial:talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+        Npc_TabantaBridgeHatago005.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TabantaBridgeMini_Sundial:talk02'})
+        goto Event9
     }
 }
 

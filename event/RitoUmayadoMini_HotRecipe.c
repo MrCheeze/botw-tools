@@ -24,19 +24,16 @@ void Ready_Npc_RitoHatago001_Talk() {
           case 0:
             Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk03', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             Event44:
-            if Npc_RitoHatago001.IsOnInstEventFlag() {
-                Event59:
-                Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk04', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk08'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RitoUmayadoMini_HotRecipe_Activated'})
-                } else {
-                    Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk07'})
-                }
-            } else {
+            if !Npc_RitoHatago001.IsOnInstEventFlag() {
                 Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                goto Event59
+            }
+            Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk04', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk08'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'RitoUmayadoMini_HotRecipe_Activated'})
+            } else {
+                Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk07'})
             }
           case [1, 3]:
             Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -63,25 +60,22 @@ void Finish_Npc_RitoHatago001_Talk() {
           case 0:
             Event79:
             if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Material_02', 'Count': 1}) {
-                if Npc_RitoHatago001.IsOnInstEventFlag() {
-                    Event80:
-                    Npc_RitoHatago001.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk14'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Item_Material_02', 'Value': -1, 'IsWaitFinish': True})
-                        Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk15', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                        Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk16', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'PutRupee_Purple'})
-
-                        Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk19'})
-                        Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk20'})
-                        EventSystemActor.Demo_FlagON({'FlagName': 'RitoUmayadoMini_HotRecipe_Finish', 'IsWaitFinish': True})
-                    } else {
-                        Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk17', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                    }
-                } else {
+                if !Npc_RitoHatago001.IsOnInstEventFlag() {
                     Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk12', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                    goto Event80
+                }
+                Npc_RitoHatago001.Demo_Talk({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk14'})
+                if !EventSystemActor.GeneralChoice2() {
+                    EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Item_Material_02', 'Value': -1, 'IsWaitFinish': True})
+                    Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk15', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+                    Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk16', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+
+                    call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'PutRupee_Purple'})
+
+                    Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk19'})
+                    Npc_RitoHatago001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk20'})
+                    EventSystemActor.Demo_FlagON({'FlagName': 'RitoUmayadoMini_HotRecipe_Finish', 'IsWaitFinish': True})
+                } else {
+                    Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk17', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                 }
             } else {
                 Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk18', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -91,12 +85,10 @@ void Finish_Npc_RitoHatago001_Talk() {
             goto Event79
         }
       case 3:
-        if Npc_RitoHatago001.IsOnInstEventFlag() {
-            goto Event79
-        } else {
+        if !Npc_RitoHatago001.IsOnInstEventFlag() {
             Npc_RitoHatago001.Demo_Talk({'MessageId': 'EventFlowMsg/RitoUmayadoMini_HotRecipe:talk11', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            goto Event79
         }
+        goto Event79
     }
 }
 

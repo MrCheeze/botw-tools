@@ -116,38 +116,32 @@ void AccessRemainsTerminal() {
 void PGanonAppearAgain() {
     SceneSoundCtrlTag.Demo_SetStartProc({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'StopWithShortFade'})
     if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWind'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonWind'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonWind'}) {
-                Event184:
-                if !EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonAgain'}) {
-                    SceneBgmCtrlTag.Demo_Ctrl({'CtrlType': 'Remains_StartBossSeq', 'IsWaitFinish': True})
-                    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Appear_PGanonAgain'})
-                    Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-                }
-            }
+        if !EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonWind'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonWind'})
+        Event184:
+        && !EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonAgain'}) {
+            SceneBgmCtrlTag.Demo_Ctrl({'CtrlType': 'Remains_StartBossSeq', 'IsWaitFinish': True})
+            Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Appear_PGanonAgain'})
+            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
         }
     } else
     if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsElectric'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonElectric'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonElectric'}) {
-                goto Event184
-            }
+        if !EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonElectric'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonElectric'}) {
+            goto Event184
         }
     } else
     if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsFire'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonFire'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonFire'}) {
-                goto Event184
-            }
+        if !EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonFire'})
+        && EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonFire'}) {
+            goto Event184
         }
     } else
-    if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWater'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonWater'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonWater'}) {
-                goto Event184
-            }
-        }
+    if EventSystemActor.CheckCurrentMap({'MapName': 'RemainsWater'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'Die_PGanonWater'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Appear_PGanonWater'}) {
+        goto Event184
     }
 }
 

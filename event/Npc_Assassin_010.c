@@ -47,15 +47,14 @@ void Talk() {
             SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Assassin_010'}) {
                 Npc_Assassin_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_010:Talk07'})
-                Event5:
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Assassin_010'})
-
-                call Henshin()
-
             } else {
                 Npc_Assassin_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_010:Talk05'})
-                goto Event5
             }
+            Event5:
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Assassin_010'})
+
+            call Henshin()
+
         } else {
             Npc_Assassin_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Assassin_010:Talk01', 'IsCloseMessageDialog': True})
             Npc_Assassin_010.Demo_ChangeEmotion({'IsWaitFinish': True, 'EmotionType': 'Normal', 'IsOnlyFace': False})
@@ -89,8 +88,8 @@ void Talk() {
         goto Event32
     } else {
         Npc_Assassin_010.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_010:Talk03'})
-        goto Event41
     }
+    goto Event41
 }
 
 void Near() {

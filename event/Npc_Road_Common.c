@@ -163,30 +163,27 @@ void Atacked() {
           case 0:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked(Self)].Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv1_00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True})
-                Event163:
-
-                call CookReword({'Self': 'Self', 'Flag': 'Flag'})
-
             } else {
                 Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv1_01', 'IsCloseMessageDialog': True})
-                goto Event163
             }
+            Event163:
+
+            call CookReword({'Self': 'Self', 'Flag': 'Flag'})
+
           case 1:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv2_00', 'IsCloseMessageDialog': True})
-                goto Event163
             } else {
                 Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv2_01', 'IsCloseMessageDialog': True})
-                goto Event163
             }
+            goto Event163
           case 2:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv3_00', 'IsCloseMessageDialog': True})
-                goto Event163
             } else {
                 Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv3_01', 'IsCloseMessageDialog': True})
-                goto Event163
             }
+            goto Event163
         }
       case 2:
         if !EventSystemActor.RandomChoice2() {
@@ -198,20 +195,18 @@ void Atacked() {
         if Npc_Road_001[Atacked(Self)].IsWeaponDrawn() {
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
-                Event60:
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
             } else {
                 Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
-                goto Event60
             }
+            Event60:
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else
         if !EventSystemActor.RandomChoice2() {
             Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-            goto Event60
         } else {
             Npc_Road_001[Atacked(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-            goto Event60
         }
+        goto Event60
     }
 }
 
@@ -222,30 +217,27 @@ void Atacked_Pair() {
           case 0:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:SavedLv1_00'})
-                Event165:
-
-                call CookReword({'Self': 'Self', 'Flag': 'Flag'})
-
             } else {
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:SavedLv1_01'})
-                goto Event165
             }
+            Event165:
+
+            call CookReword({'Self': 'Self', 'Flag': 'Flag'})
+
           case 1:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:SavedLv2_00'})
-                goto Event165
             } else {
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:SavedLv2_01'})
-                goto Event165
             }
+            goto Event165
           case 2:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:SavedLv3_00'})
-                goto Event165
             } else {
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:SavedLv3_01'})
-                goto Event165
             }
+            goto Event165
         }
       case 2:
         if !EventSystemActor.RandomChoice2() {
@@ -258,20 +250,18 @@ void Atacked_Pair() {
             if Npc_Attacked_008[Atacked_Pair(Self)].IsWeaponDrawn() {
                 if !EventSystemActor.RandomChoice2() {
                     Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairFailed00', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
-                    Event83:
-                    EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
                 } else {
                     Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairFailed01', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
-                    goto Event83
                 }
+                Event83:
+                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
             } else
             if !EventSystemActor.RandomChoice2() {
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairFailed00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                goto Event83
             } else {
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairFailed01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-                goto Event83
             }
+            goto Event83
         } else
         switch Npc_Attacked_008[Atacked_Pair(Self)].CheckReceiveTerrorLevel() {
           case [0, 1, 2]:
@@ -279,45 +269,42 @@ void Atacked_Pair() {
                 if Npc_Attacked_008[Atacked_Pair(Self)].IsWeaponDrawn() {
                     if !EventSystemActor.RandomChoice2() {
                         Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked00', 'ASName': 'Guard'})
-                        goto Event83
                     } else {
                         Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked01', 'ASName': 'Guard'})
-                        goto Event83
                     }
+                    goto Event83
                 } else
                 if !EventSystemActor.RandomChoice2() {
                     Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked00', 'ASName': 'Detect'})
-                    goto Event83
                 } else {
                     Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:PairAtacked01', 'ASName': 'Detect'})
-                    goto Event83
                 }
+                goto Event83
             } else
             Event445:
             if Npc_Attacked_008[Atacked_Pair(Self)].IsWeaponDrawn() {
                 Event81:
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked01', 'ASName': 'Guard'})
-                goto Event83
             } else {
                 Event138:
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked01', 'ASName': 'Detect'})
-                goto Event83
             }
+            goto Event83
           case 3:
             if Npc_Attacked_008[Atacked_Pair(Self)].IsWeaponDrawn() {
                 if !EventSystemActor.RandomChoice2() {
                     Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked00', 'ASName': 'Guard'})
-                    goto Event83
                 } else {
                     goto Event81
                 }
+                goto Event83
             } else
             if !EventSystemActor.RandomChoice2() {
                 Npc_Attacked_008[Atacked_Pair(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Attacked_008:Atacked00', 'ASName': 'Detect'})
-                goto Event83
             } else {
                 goto Event138
             }
+            goto Event83
           case [4, 5]:
             goto Event445
         }
@@ -350,10 +337,10 @@ void InitTalk_Npc_Road_Common() {
 
                 call InitTalk.InitTalkNPCEquip({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
 
-                goto Event98
             } else {
                 goto Event124
             }
+            goto Event98
         }
       case 5:
 
@@ -371,58 +358,52 @@ void Atacked_Road() {
           case 0:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv1_00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': False})
-                Event122:
-                Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Thanks00'})
-
-                call CookReword({'Self': 'Self', 'Flag': 'Flag'})
-
             } else {
                 Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv1_01', 'IsCloseMessageDialog': False})
-                goto Event122
             }
+            Event122:
+            Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Thanks00'})
+
+            call CookReword({'Self': 'Self', 'Flag': 'Flag'})
+
           case 1:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv2_00', 'IsCloseMessageDialog': False})
-                goto Event122
             } else {
                 Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv2_01', 'IsCloseMessageDialog': False})
-                goto Event122
             }
+            goto Event122
           case 2:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv3_00', 'IsCloseMessageDialog': False})
-                goto Event122
             } else {
                 Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv3_01', 'IsCloseMessageDialog': False})
-                goto Event122
             }
+            goto Event122
         }
       case 2:
         if !EventSystemActor.RandomChoice2() {
             Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Failed00', 'IsCloseMessageDialog': True})
-            Event121:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Failed01', 'IsCloseMessageDialog': True})
-            goto Event121
         }
+        Event121:
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
       case 3:
         if Npc_Road_001[Atacked_Road(Self)].IsWeaponDrawn() {
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
-                goto Event121
             } else {
                 Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
-                goto Event121
             }
+            goto Event121
         } else
         if !EventSystemActor.RandomChoice2() {
             Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-            goto Event121
         } else {
             Npc_Road_001[Atacked_Road(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-            goto Event121
         }
+        goto Event121
     }
 }
 
@@ -472,10 +453,10 @@ void InitTalk_Npc_Road_027() {
 
                 call InitTalk.InitTalkNPCEquip({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 5})
 
-                goto Event216
             } else {
                 goto Event237
             }
+            goto Event216
         }
       case 5:
 
@@ -493,55 +474,49 @@ void Atacked_Road_NoReward() {
           case 0:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv1_00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': False})
-                Event235:
-                Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Thanks00'})
             } else {
                 Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv1_01', 'IsCloseMessageDialog': False})
-                goto Event235
             }
+            Event235:
+            Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Thanks00'})
           case 1:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv2_00', 'IsCloseMessageDialog': False})
-                goto Event235
             } else {
                 Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv2_01', 'IsCloseMessageDialog': False})
-                goto Event235
             }
+            goto Event235
           case 2:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv3_00', 'IsCloseMessageDialog': False})
-                goto Event235
             } else {
                 Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:SavedLv3_01', 'IsCloseMessageDialog': False})
-                goto Event235
             }
+            goto Event235
         }
       case 2:
         if !EventSystemActor.RandomChoice2() {
             Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Failed00', 'IsCloseMessageDialog': True})
-            Event234:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Failed01', 'IsCloseMessageDialog': True})
-            goto Event234
         }
+        Event234:
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
       case 3:
         if Npc_Road_001[Atacked_Road_NoReward(Self)].IsWeaponDrawn() {
             if !EventSystemActor.RandomChoice2() {
                 Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
-                goto Event234
             } else {
                 Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
-                goto Event234
             }
+            goto Event234
         } else
         if !EventSystemActor.RandomChoice2() {
             Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked00', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-            goto Event234
         } else {
             Npc_Road_001[Atacked_Road_NoReward(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:Atacked01', 'IsCloseMessageDialog': True, 'ASName': 'Detect'})
-            goto Event234
         }
+        goto Event234
     }
 }
 

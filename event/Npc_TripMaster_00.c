@@ -71,12 +71,10 @@ void TripMaster() {
                       case 2:
                         if EventSystemActor.CheckFlag({'FlagName': 'Npc_TripMaster_Thanks'}) {
                             Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_02', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsOverWriteLabelActorName': False})
-                            Event152:
-                            EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_TripMaster_Thanks', 'IsWaitFinish': True})
                         } else {
                             Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_01', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsOverWriteLabelActorName': False})
-                            goto Event152
                         }
+                        EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_TripMaster_Thanks', 'IsWaitFinish': True})
                     }
                 } else
                 if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Animal_Insect_AA'}) {
@@ -101,15 +99,14 @@ void TripMaster() {
                                     EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Animal_Insect_AA', 'Value': -1, 'IsWaitFinish': True})
                                     if !EventSystemActor.RandomChoice2() {
                                         Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_16', 'IsOverWriteLabelActorName': False})
-                                        Event55:
-                                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_TripMaster_Insect', 'IsWaitFinish': True})
-                                        Event52:
-                                        Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_25', 'IsOverWriteLabelActorName': False})
-                                        goto Event86
                                     } else {
                                         Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_33'})
-                                        goto Event55
                                     }
+                                    Event55:
+                                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_TripMaster_Insect', 'IsWaitFinish': True})
+                                    Event52:
+                                    Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_25', 'IsOverWriteLabelActorName': False})
+                                    goto Event86
                                 } else {
                                     Event50:
                                     Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_14', 'IsOverWriteLabelActorName': False})
@@ -193,19 +190,16 @@ void TripMaster() {
                                     Event60:
                                     if EventSystemActor.CheckFlag({'FlagName': 'Npc_TripMaster_Sword'}) {
                                         EventSystemActor.Demo_IncreasePorchItem({'Value': -1, 'PorchItemName': 'Animal_Insect_G', 'IsWaitFinish': True})
-                                        Event61:
-                                        EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_TripMaster_Sword', 'IsWaitFinish': True})
-                                        if !EventSystemActor.RandomChoice2() {
-                                            Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_13', 'IsOverWriteLabelActorName': False})
-                                            goto Event55
-                                        } else {
-                                            Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_32'})
-                                            goto Event55
-                                        }
                                     } else {
                                         EventSystemActor.Demo_IncreasePorchItem({'Value': -1, 'PorchItemName': 'Animal_Insect_P', 'IsWaitFinish': True})
-                                        goto Event61
                                     }
+                                    EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_TripMaster_Sword', 'IsWaitFinish': True})
+                                    if !EventSystemActor.RandomChoice2() {
+                                        Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_13', 'IsOverWriteLabelActorName': False})
+                                    } else {
+                                        Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_32'})
+                                    }
+                                    goto Event55
                                 } else {
                                     Event44:
                                     Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_14', 'IsOverWriteLabelActorName': False})
@@ -291,11 +285,10 @@ void TripMaster() {
                 if Npc_TripMaster_00[TripMaster(Self)].IsOnInstEventFlag() {
                     if !EventSystemActor.RandomChoice2() {
                         Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_04', 'IsOverWriteLabelActorName': False})
-                        goto Event86
                     } else {
                         Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_26'})
-                        goto Event86
                     }
+                    goto Event86
                 } else {
                     Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_03', 'IsOverWriteLabelActorName': True})
                     if EventSystemActor.CheckFlag({'FlagName': 'Npc_TripMaster_02_Talk'}) {
@@ -308,10 +301,8 @@ void TripMaster() {
 
                         call Npc_TripMaster_15.TripMaster_15_Talk({'Self': 'Self'})
 
-                        goto Event86
-                    } else {
-                        goto Event86
                     }
+                    goto Event86
                 }
             } else {
 
@@ -329,12 +320,9 @@ void TripMaster() {
                     Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_talk_18'})
                     if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor002_First'}) {
                         Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_talk_19'})
-                        Event109:
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_TripMaster_Arrow', 'IsWaitFinish': True})
-                        goto Event52
-                    } else {
-                        goto Event109
                     }
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_TripMaster_Arrow', 'IsWaitFinish': True})
+                    goto Event52
                 } else {
                     Npc_TripMaster_00[TripMaster(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:talk_14', 'IsOverWriteLabelActorName': False})
                     goto Event52

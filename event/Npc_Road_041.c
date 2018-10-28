@@ -119,11 +119,10 @@ void Rest() {
     Event92:
     if Npc_Road_041.IsOnInstEventFlag() {
         Npc_Road_041.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_1'})
-        goto Event62
     } else {
         Npc_Road_041.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
-        goto Event62
     }
+    goto Event62
 }
 
 void Rain() {

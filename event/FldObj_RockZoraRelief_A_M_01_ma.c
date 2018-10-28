@@ -100,34 +100,24 @@ void Check_SearchRelief() {
             EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
         }
     } else
-    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_10', 'ActorName': 'FldObj_RockZoraRelief_A_M_10_ma'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_10'})
-            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-        }
+    if EventSystemActor.CheckStarter({'UniqueName': 'ZoraRelief_Mess_10', 'ActorName': 'FldObj_RockZoraRelief_A_M_10_ma'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraRelief_Check_10'})
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
     }
 }
 
 void SearchRelief_AllCheck() {
-    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_01'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_02'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_03'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_04'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_05'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_06'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_07'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_08'}) {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_09'}) {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
-                                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMini_ReliefSearch_SearchRelief'})
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_01'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_02'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_03'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_04'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_05'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_06'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_07'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_08'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_09'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMini_ReliefSearch_SearchRelief'})
     }
 }

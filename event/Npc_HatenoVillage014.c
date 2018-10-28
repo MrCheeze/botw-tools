@@ -258,14 +258,13 @@ void TsukimiMatome() {
             if EventSystemActor.CheckFlag({'FlagName': 'HatenoNPC014_Ride_2times'}) {
                 if !EventSystemActor.RandomChoice2() {
                     Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk12', 'ASName': 'Wait'})
-                    Event147:
-                    Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk11'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'HatenoNPC014_Ride_2times', 'IsWaitFinish': True})
-                    EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
                 } else {
                     Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk14', 'ASName': 'Wait'})
-                    goto Event147
                 }
+                Event147:
+                Npc_HatenoVillage014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoVillage014:talk11'})
+                EventSystemActor.Demo_FlagON({'FlagName': 'HatenoNPC014_Ride_2times', 'IsWaitFinish': True})
+                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
             } else {
                 goto Event147
             }

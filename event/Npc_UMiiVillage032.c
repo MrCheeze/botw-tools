@@ -164,20 +164,17 @@ void Ichikara_SakuradaHello() {
       case 10:
         if !EventSystemActor.RandomChoice2() {
             Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk08'})
-            goto Event19
         } else {
             Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk07'})
-            goto Event19
         }
+        goto Event19
       case 11:
         if !EventSystemActor.RandomChoice2() {
             Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk00'})
-            Event21:
-            Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk06'})
-            goto Event19
         } else {
             Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk03'})
-            goto Event21
         }
+        Npc_UMiiVillage032.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage032:talk06'})
+        goto Event19
     }
 }

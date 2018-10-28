@@ -55,24 +55,22 @@ void Demo201_0() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 225})
     if EventSystemActor.CheckPlayerRideHorse() {
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'HorseWait'})
-        Event27:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-
-        call AocResident.CheckAoc1TreasureRun()
-
-
-        call Aoc2Resident.CheckAoc2TreasureRun()
-
-
-        call AocResident.collaboEquip()
-
-        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': '100enemy_IsPlayNow_ActivatedDemo'})
-        EventSystemActor.Demo_DisableAutoSavePausing({'IsWaitFinish': True})
-        EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
     } else {
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'DemoWait'})
-        goto Event27
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+
+    call AocResident.CheckAoc1TreasureRun()
+
+
+    call Aoc2Resident.CheckAoc2TreasureRun()
+
+
+    call AocResident.collaboEquip()
+
+    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': '100enemy_IsPlayNow_ActivatedDemo'})
+    EventSystemActor.Demo_DisableAutoSavePausing({'IsWaitFinish': True})
+    EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
 }
 
 void Demo201_1() {

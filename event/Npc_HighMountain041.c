@@ -163,12 +163,10 @@ void June_Hello() {
             Event21:
             if Npc_HighMountain041.IsOnInstEventFlag() {
                 Npc_HighMountain041.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain041:talk11', 'IsOverWriteLabelActorName': False})
-                Event132:
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
             } else {
                 Npc_HighMountain041.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain041:talk04', 'IsOverWriteLabelActorName': False})
-                goto Event132
             }
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else
         if Npc_HighMountain041.IsOnInstEventFlag() {
             Npc_HighMountain041.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain041:talk12', 'IsOverWriteLabelActorName': False})
@@ -192,12 +190,11 @@ void June_Hello() {
         } else
         if Npc_HighMountain041.IsOnInstEventFlag() {
             Npc_HighMountain041.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain041:talk14', 'IsOverWriteLabelActorName': False})
-            Event114:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_HighMountain041.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain041:talk13', 'IsOverWriteLabelActorName': False})
-            goto Event114
         }
+        Event114:
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
       case 11:
         Npc_HighMountain041.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain041:talk20'})
         goto Event114

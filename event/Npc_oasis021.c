@@ -58,15 +58,12 @@ void Talk() {
             goto Event5
         }
       case 10:
-        if Npc_oasis021.IsOnInstEventFlag() {
-            Event9:
-            Npc_oasis021.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis021:Talk_05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        } else {
+        if !Npc_oasis021.IsOnInstEventFlag() {
 
             call hello()
 
-            goto Event9
         }
+        Npc_oasis021.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis021:Talk_05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
       case 11:
         Npc_oasis021.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis021:Talk_06', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
     }

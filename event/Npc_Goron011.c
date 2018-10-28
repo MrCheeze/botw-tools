@@ -29,13 +29,12 @@ void Talk() {
                     Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk20'})
                     if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
                         Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk22', 'IsCloseMessageDialog': True})
-                        Event70:
-                        Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk25'})
-                        goto Event61
                     } else {
                         Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk21', 'IsCloseMessageDialog': True})
-                        goto Event70
                     }
+                    Event70:
+                    Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk25'})
+                    goto Event61
                   case 1:
                     Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk19', 'IsCloseMessageDialog': True})
                     goto Event70
@@ -57,11 +56,10 @@ void Talk() {
           case 10:
             if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron011_GoHome'}) {
                 Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk24'})
-                goto Event31
             } else {
                 Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk12', 'IsOverWriteLabelActorName': False})
-                goto Event31
             }
+            goto Event31
           case 11:
             Event60:
             if !EventSystemActor.RandomChoice2() {
@@ -83,22 +81,15 @@ void Talk() {
                 EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron011_You', 'IsWaitFinish': True})
                 Event68:
                 EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron011_You'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron011_Hear'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron011_Home'}) {
-                            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                            Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk16'})
-                            EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron011_1Comp', 'IsWaitFinish': True})
-                        } else {
-                            Event39:
-                            Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk15'})
-                            goto Event19
-                        }
-                    } else {
-                        goto Event39
-                    }
+                if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron011_You'})
+                && EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron011_Hear'})
+                && EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron011_Home'}) {
+                    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+                    Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk16'})
+                    EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron011_1Comp', 'IsWaitFinish': True})
                 } else {
-                    goto Event39
+                    Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk15'})
+                    goto Event19
                 }
               case 1:
                 Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk05', 'IsOverWriteLabelActorName': False})
@@ -114,27 +105,24 @@ void Talk() {
         } else
         if Npc_Goron011.IsOnInstEventFlag() {
             Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk14'})
-            Event15:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk01', 'IsOverWriteLabelActorName': False})
-            } else {
-                Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk02', 'IsOverWriteLabelActorName': False})
-                EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron011_First', 'IsWaitFinish': True})
-                Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk03', 'IsOverWriteLabelActorName': False})
-                goto Event19
-            }
         } else {
             Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk00', 'IsOverWriteLabelActorName': False})
-            goto Event15
+        }
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk01', 'IsOverWriteLabelActorName': False})
+        } else {
+            Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk02', 'IsOverWriteLabelActorName': False})
+            EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron011_First', 'IsWaitFinish': True})
+            Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk03', 'IsOverWriteLabelActorName': False})
+            goto Event19
         }
       case 10:
         if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron011_GoHome'}) {
             Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk24'})
-            goto Event51
         } else {
             Npc_Goron011.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron011:talk12', 'IsOverWriteLabelActorName': False})
-            goto Event51
         }
+        goto Event51
       case 11:
         goto Event60
     }

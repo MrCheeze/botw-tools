@@ -76,15 +76,13 @@ void Ready_Flint_Husband() {
     Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk06', 'IsOverWriteLabelActorName': False})
     if !EventSystemActor.GeneralChoice2() {
         Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk07', 'IsOverWriteLabelActorName': False})
-        Event11:
-        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk09', 'IsOverWriteLabelActorName': False})
-        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk16', 'IsOverWriteLabelActorName': False})
-        Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk27'})
-        EventSystemActor.Demo_FlagON({'FlagName': 'RitoMini_Flint_Activated', 'IsWaitFinish': True})
     } else {
         Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk08', 'IsOverWriteLabelActorName': False})
-        goto Event11
     }
+    Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk09', 'IsOverWriteLabelActorName': False})
+    Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk16', 'IsOverWriteLabelActorName': False})
+    Npc_HighMountain040.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain040:talk27'})
+    EventSystemActor.Demo_FlagON({'FlagName': 'RitoMini_Flint_Activated', 'IsWaitFinish': True})
 }
 
 void Finish_Flint_Husband() {

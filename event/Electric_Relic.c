@@ -178,82 +178,79 @@ void Strategy_Npc_oasis003_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
-        Event105:
-        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_001', 'IsOverWriteLabelActorName': False})
-        if !EventSystemActor.GeneralChoice2() {
-            Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_003', 'IsOverWriteLabelActorName': False})
-            Event119:
-            Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_004', 'IsOverWriteLabelActorName': False})
-            Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_006', 'IsOverWriteLabelActorName': False})
-            if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_BomArrowGet'}) {
-                if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_BombArrow_A_01', 'Count': 10}) {
-                    Event541:
-                    Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_023', 'IsCloseMessageDialog': True})
-                    switch EventSystemActor.GeneralChoice3() {
-                      case 0:
-                        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
-                        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-                        if !EventSystemActor.HasPorchItemByCategory({'Category': 1, 'Count': 1}) {
-                            Event349:
-                            EventSystemActor.Demo_FlagON({'FlagName': 'Electlic_Relic_Rush', 'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagON({'FlagName': 'PSavePosNotUpdate', 'IsWaitFinish': True})
-                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo347_2', 'EntryPointName': 'Demo', 'EndFade': 0})
-                        } else {
-                            EventSystemActor.Demo_IncreasePorchItem({'Value': 1, 'IsWaitFinish': True, 'PorchItemName': 'Weapon_Shield_001'})
-                            EventSystemActor.Demo_SwitchPlayerEquipment({'IsWaitFinish': True, 'PorchItemName_Shield': 'Weapon_Shield_001', 'UnequipWeapon': False, 'UnequipShield': False, 'UnequipBow': False, 'UnequipArmorHead': False, 'UnequipArmorUpper': False, 'UnequipArmorLower': False, 'PorchItemName_Weapon': '', 'PorchItemName_Bow': '', 'PorchItemName_ArmorHead': '', 'PorchItemName_ArmorUpper': '', 'PorchItemName_ArmorLower': '', 'PorchItemName_Arrow': ''})
-                            goto Event349
-                        }
-                      case 1:
-                        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_007', 'IsOverWriteLabelActorName': False})
-                        goto Event119
-                      case 2:
-                        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_008', 'IsOverWriteLabelActorName': False})
-                    }
-                } else
-                if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_BomArrowGet2'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_BomArrowGet3'}) {
-                        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_025'})
-                        goto Event541
-                    } else
-                    if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Obj_BombArrow_A_04', 'Count': 1}) {
-                        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_027'})
-
-                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'Obj_BombArrow_A_04'})
-
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Electric_Relic_BomArrowGet3'})
-                        goto Event541
+    if !EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
+        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_022'})
+    }
+    Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_001', 'IsOverWriteLabelActorName': False})
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_003', 'IsOverWriteLabelActorName': False})
+        Event119:
+        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_004', 'IsOverWriteLabelActorName': False})
+        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_006', 'IsOverWriteLabelActorName': False})
+        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_BomArrowGet'}) {
+            if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_BombArrow_A_01', 'Count': 10}) {
+                Event541:
+                Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_023', 'IsCloseMessageDialog': True})
+                switch EventSystemActor.GeneralChoice3() {
+                  case 0:
+                    SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
+                    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+                    if !EventSystemActor.HasPorchItemByCategory({'Category': 1, 'Count': 1}) {
+                        Event349:
+                        EventSystemActor.Demo_FlagON({'FlagName': 'Electlic_Relic_Rush', 'IsWaitFinish': True})
+                        EventSystemActor.Demo_FlagON({'FlagName': 'PSavePosNotUpdate', 'IsWaitFinish': True})
+                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo347_2', 'EntryPointName': 'Demo', 'EndFade': 0})
                     } else {
-                        goto Event541
+                        EventSystemActor.Demo_IncreasePorchItem({'Value': 1, 'IsWaitFinish': True, 'PorchItemName': 'Weapon_Shield_001'})
+                        EventSystemActor.Demo_SwitchPlayerEquipment({'IsWaitFinish': True, 'PorchItemName_Shield': 'Weapon_Shield_001', 'UnequipWeapon': False, 'UnequipShield': False, 'UnequipBow': False, 'UnequipArmorHead': False, 'UnequipArmorUpper': False, 'UnequipArmorLower': False, 'PorchItemName_Weapon': '', 'PorchItemName_Bow': '', 'PorchItemName_ArmorHead': '', 'PorchItemName_ArmorUpper': '', 'PorchItemName_ArmorLower': '', 'PorchItemName_Arrow': ''})
+                        goto Event349
                     }
+                  case 1:
+                    Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_007', 'IsOverWriteLabelActorName': False})
+                    goto Event119
+                  case 2:
+                    Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_008', 'IsOverWriteLabelActorName': False})
+                }
+            } else
+            if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_BomArrowGet2'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_BomArrowGet3'}) {
+                    Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_025'})
+                    goto Event541
                 } else
                 if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Obj_BombArrow_A_04', 'Count': 1}) {
-                    Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_026'})
+                    Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_027'})
 
                     call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'Obj_BombArrow_A_04'})
 
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Electric_Relic_BomArrowGet2'})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Electric_Relic_BomArrowGet3'})
                     goto Event541
                 } else {
                     goto Event541
                 }
             } else
             if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Obj_BombArrow_A_04', 'Count': 1}) {
-                Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_024'})
+                Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_026'})
 
                 call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'Obj_BombArrow_A_04'})
 
-                EventSystemActor.Demo_FlagON({'FlagName': 'Electric_Relic_BomArrowGet', 'IsWaitFinish': True})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Electric_Relic_BomArrowGet2'})
                 goto Event541
             } else {
                 goto Event541
             }
+        } else
+        if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Obj_BombArrow_A_04', 'Count': 1}) {
+            Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_024'})
+
+            call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'Obj_BombArrow_A_04'})
+
+            EventSystemActor.Demo_FlagON({'FlagName': 'Electric_Relic_BomArrowGet', 'IsWaitFinish': True})
+            goto Event541
         } else {
-            Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_002', 'IsOverWriteLabelActorName': False})
+            goto Event541
         }
     } else {
-        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_022'})
-        goto Event105
+        Npc_oasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Strategy_002', 'IsOverWriteLabelActorName': False})
     }
 }
 
@@ -480,11 +477,10 @@ void Electric_Relic_BattleField01() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
         GameROMPlayer.Demo_PlayerAirWait({'IsWaitFinish': False})
-        goto Event202
     } else {
         GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': False})
-        goto Event202
     }
+    goto Event202
 }
 
 void Strategy_Npc_GerudoDesert001_Talk() {
@@ -533,29 +529,27 @@ void GetBack_Npc_oasis042_Drag_Hero_FirstTime_Talk() {
 
         if Npc_oasis042.IsOnInstEventFlag() {
             Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_006'})
-            Event326:
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-                Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_008'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_009', 'IsCloseMessageDialog': True})
-                } else {
-                    Event521:
-                    Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_007'})
-                }
-              case 1:
-                Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_005'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_004', 'IsCloseMessageDialog': True})
-                } else {
-                    goto Event521
-                }
-              case 2:
-                goto Event521
-            }
         } else {
             Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_001'})
-            goto Event326
+        }
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_008'})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_009', 'IsCloseMessageDialog': True})
+            } else {
+                Event521:
+                Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_007'})
+            }
+          case 1:
+            Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_005'})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis042_GetBack_004', 'IsCloseMessageDialog': True})
+            } else {
+                goto Event521
+            }
+          case 2:
+            goto Event521
         }
     } else {
 

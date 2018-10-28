@@ -87,34 +87,31 @@ void Water_Relic_Finished_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_AppearDungeon02'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
+    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_AppearDungeon02'}) {
 
-            call TakkaHello()
+        call TakkaHello()
 
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Takka_Talk'}) {
-                Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora001_SD_301'})
-            } else {
-                Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora001_SD_300'})
-            }
-        } else
-        Event54:
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora001_ClearFirst'}) {
-
-            call TakkaHello()
-
-            Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora001:talk19', 'IsCloseMessageDialog': False})
-            if !EventSystemActor.RandomChoice2() {
-                Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora001:talk21', 'IsCloseMessageDialog': False})
-            } else {
-                Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora001:talk20', 'IsCloseMessageDialog': False})
-            }
+        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Takka_Talk'}) {
+            Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora001_SD_301'})
         } else {
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora001_ClearFirst', 'IsWaitFinish': True})
-            Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora001:talk18', 'IsCloseMessageDialog': False})
+            Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora001_SD_300'})
         }
     } else
-    goto Event54
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora001_ClearFirst'}) {
+
+        call TakkaHello()
+
+        Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora001:talk19', 'IsCloseMessageDialog': False})
+        if !EventSystemActor.RandomChoice2() {
+            Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora001:talk21', 'IsCloseMessageDialog': False})
+        } else {
+            Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora001:talk20', 'IsCloseMessageDialog': False})
+        }
+    } else {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Zora001_ClearFirst', 'IsWaitFinish': True})
+        Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora001:talk18', 'IsCloseMessageDialog': False})
+    }
 }
 
 void TakkaHello() {

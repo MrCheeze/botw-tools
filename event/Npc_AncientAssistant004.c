@@ -38,24 +38,18 @@ void Talk() {
             EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_NPC002_SonNotLooked', 'IsWaitFinish': True})
             if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_NPC002_SonLooked'}) {
                 Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk14'})
-                Event63:
-                Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk33', 'IsCloseMessageDialog': True})
-                Event18:
-                Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk08'})
-                goto Event9
-            } else {
-                goto Event63
             }
+            Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk33', 'IsCloseMessageDialog': True})
+            Event18:
+            Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk08'})
+            goto Event9
         } else {
             EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_NPC002_SonLooked', 'IsWaitFinish': True})
             if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_NPC002_SonNotLooked'}) {
                 Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk13'})
-                Event61:
-                Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk32', 'IsCloseMessageDialog': True})
-                goto Event18
-            } else {
-                goto Event61
             }
+            Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk32', 'IsCloseMessageDialog': True})
+            goto Event18
         }
       case 1:
         Npc_AncientAssistant004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
@@ -72,14 +66,12 @@ void Talk() {
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'DokuroEye_Activated'}) {
             Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk29'})
-            Event53:
-            Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk30', 'IsCloseMessageDialog': True})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'DokuroEye_Activated'})
-            goto Event18
         } else {
             Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk20'})
-            goto Event53
         }
+        Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk30', 'IsCloseMessageDialog': True})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'DokuroEye_Activated'})
+        goto Event18
       case 2:
         if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_NPC002_Roberry'}) {
 
@@ -146,21 +138,20 @@ void JerinHello() {
         if Npc_AncientAssistant004.IsOnInstEventFlag() {
             if !EventSystemActor.RandomChoice2() {
                 Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk18'})
-                Event2:
-                if !EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_NPC002_ReadyFirst'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_NPC002_ReadyFirst'})
-                    Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk06'})
-                    Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk15', 'ASName': 'Talk_CheckIt'})
-                    Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk01'})
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk02'})
-                    } else {
-                        Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk03'})
-                    }
-                }
             } else {
                 Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk19'})
-                goto Event2
+            }
+            Event2:
+            if !EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_NPC002_ReadyFirst'}) {
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AncientLabo_NPC002_ReadyFirst'})
+                Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk06'})
+                Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk15', 'ASName': 'Talk_CheckIt'})
+                Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk01'})
+                if !EventSystemActor.GeneralChoice2() {
+                    Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk02'})
+                } else {
+                    Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk03'})
+                }
             }
         } else
         switch EventSystemActor.CheckTimeType() {
@@ -180,20 +171,17 @@ void JerinHello() {
 
         if !EventSystemActor.RandomChoice2() {
             Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk21'})
-            goto Event2
         } else {
             Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk22'})
-            goto Event2
         }
+        goto Event2
       case 11:
         if Npc_AncientAssistant004.IsOnInstEventFlag() {
             Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk24'})
-            Event88:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk23'})
-            goto Event88
         }
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     }
 }
 
@@ -210,12 +198,10 @@ void NudeCheck() {
     if !EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor002_First'}) {
         if !EventSystemActor.RandomChoice2() {
             Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk35'})
-            Event93:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_AncientAssistant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant004:talk34'})
-            goto Event93
         }
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     }
 }
 

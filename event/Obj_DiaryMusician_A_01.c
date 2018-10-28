@@ -46,13 +46,11 @@ void Talk() {
                                         Event21:
                                         if EventSystemActor.CheckFlag({'FlagName': 'Npc_Musician_Come'}) {
                                             Obj_DiaryMusician_A_01.Demo_Talk({'MessageId': 'EventFlowMsg/Obj_DiaryMusician_A_01:talk10', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-                                            Event20:
-                                            if !EventSystemActor.GeneralChoice2() {
-                                                goto Event17
-                                            }
                                         } else {
                                             Obj_DiaryMusician_A_01.Demo_Talk({'MessageId': 'EventFlowMsg/Obj_DiaryMusician_A_01:talk09', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-                                            goto Event20
+                                        }
+                                        if !EventSystemActor.GeneralChoice2() {
+                                            goto Event17
                                         }
                                     } else {
                                         goto Event15

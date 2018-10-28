@@ -63,46 +63,43 @@ void Restart() {
 void StepOnTheFlowers() {
     GameROMPlayer.Demo_Join({'IsWaitFinish': True})
     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'DontDamageFlower_IsMiss'})
-    if EventSystemActor.CheckFlag({'FlagName': 'DontDamageFlower_OneMiss'}) {
-        Event82:
-        if EventSystemActor.CheckFlag({'FlagName': 'DontDamageFlower_Activated'}) {
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': 0, 'Operator': 'LessThanOrEqualTo'}) {
-
-                call OkobaTalkCam()
-
-                Npc_Challenge093Lady.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/DontDamageFlower:Fail_1', 'IsOverWriteLabelActorName': False})
-                Event36:
-
-                call Restart()
-
-                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': 1})
-            } else
-            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': 1, 'Operator': 'LessThanOrEqualTo'}) {
-
-                call OkobaTalkCam()
-
-                Npc_Challenge093Lady.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/DontDamageFlower:Fail_2', 'IsOverWriteLabelActorName': False})
-                goto Event36
-            } else {
-                EventSystemActor.Demo_CallDemo({'DemoName': 'Demo331_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo331_0', 'EndFade': 0})
-                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': -2})
-            }
-        } else {
+    if !EventSystemActor.CheckFlag({'FlagName': 'DontDamageFlower_OneMiss'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'DontDamageFlower_OneMiss', 'IsWaitFinish': True})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'DontDamageFlower_Activated'}) {
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': 0, 'Operator': 'LessThanOrEqualTo'}) {
 
             call OkobaTalkCam()
 
-            Npc_Challenge093Lady.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/DontDamageFlower:Fail_4'})
+            Npc_Challenge093Lady.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/DontDamageFlower:Fail_1', 'IsOverWriteLabelActorName': False})
+            Event36:
 
             call Restart()
 
-            GameRomCamera.Demo_Talk({'IsWaitFinish': True, 'CameraReset': True, 'NoConnect': False})
-            Npc_Challenge093Lady.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
-            Npc_Challenge093Lady.Demo_Talk({'MessageId': 'EventFlowMsg/DontDamageFlower:Ready_Intro2', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'DontDamageFlower_Activated'})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': 1})
+        } else
+        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': 1, 'Operator': 'LessThanOrEqualTo'}) {
+
+            call OkobaTalkCam()
+
+            Npc_Challenge093Lady.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/DontDamageFlower:Fail_2', 'IsOverWriteLabelActorName': False})
+            goto Event36
+        } else {
+            EventSystemActor.Demo_CallDemo({'DemoName': 'Demo331_0', 'IsWaitFinish': True, 'EntryPointName': 'Demo331_0', 'EndFade': 0})
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'DontDamageFlower_MissCount', 'Value': -2})
         }
     } else {
-        EventSystemActor.Demo_FlagON({'FlagName': 'DontDamageFlower_OneMiss', 'IsWaitFinish': True})
-        goto Event82
+
+        call OkobaTalkCam()
+
+        Npc_Challenge093Lady.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/DontDamageFlower:Fail_4'})
+
+        call Restart()
+
+        GameRomCamera.Demo_Talk({'IsWaitFinish': True, 'CameraReset': True, 'NoConnect': False})
+        Npc_Challenge093Lady.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
+        Npc_Challenge093Lady.Demo_Talk({'MessageId': 'EventFlowMsg/DontDamageFlower:Ready_Intro2', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'DontDamageFlower_Activated'})
     }
 }
 

@@ -50,29 +50,27 @@ void Ready_Npc_Kokiri010_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if Npc_Kokiri010.IsOnInstEventFlag() {
-        Event6:
-        Npc_Kokiri010.Demo_Talk({'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk03', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        switch EventSystemActor.GeneralChoice3() {
-          case 0:
-            Npc_Kokiri010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk04', 'IsOverWriteLabelActorName': False})
-            Npc_Kokiri010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk06', 'IsOverWriteLabelActorName': False})
-            EventSystemActor.Demo_FlagON({'FlagName': 'GodTree_Activated', 'IsWaitFinish': True})
-            if EventSystemActor.CheckFlag({'FlagName': 'GodTree_Dis_Tree2'}) {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GodTree_Finish'})
-
-                call KorokShiren_CompleteCheck()
-
-            }
-          case 1:
-            Npc_Kokiri010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk02'})
-            goto Event6
-          case 2:
-            Npc_Kokiri010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk05', 'IsOverWriteLabelActorName': False})
-        }
-    } else {
+    if !Npc_Kokiri010.IsOnInstEventFlag() {
         Npc_Kokiri010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk01', 'IsOverWriteLabelActorName': False})
+    }
+    Event6:
+    Npc_Kokiri010.Demo_Talk({'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk03', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+    switch EventSystemActor.GeneralChoice3() {
+      case 0:
+        Npc_Kokiri010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk04', 'IsOverWriteLabelActorName': False})
+        Npc_Kokiri010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk06', 'IsOverWriteLabelActorName': False})
+        EventSystemActor.Demo_FlagON({'FlagName': 'GodTree_Activated', 'IsWaitFinish': True})
+        if EventSystemActor.CheckFlag({'FlagName': 'GodTree_Dis_Tree2'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'GodTree_Finish'})
+
+            call KorokShiren_CompleteCheck()
+
+        }
+      case 1:
+        Npc_Kokiri010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk02'})
         goto Event6
+      case 2:
+        Npc_Kokiri010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/GodTree:Korog_Young_talk05', 'IsOverWriteLabelActorName': False})
     }
 }
 
@@ -128,11 +126,9 @@ void Finish_Npc_Kokiri010_Near() {
 }
 
 void KorokShiren_CompleteCheck() {
-    if EventSystemActor.CheckFlag({'FlagName': 'KorokMini_KorokShiren_Activated'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'FirstOhenro_Finish'}) {
-                EventSystemActor.Demo_FlagON({'FlagName': 'KorokMini_KorokShiren_Step010', 'IsWaitFinish': True})
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'KorokMini_KorokShiren_Activated'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'FirstOhenro_Finish'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'KorokMini_KorokShiren_Step010', 'IsWaitFinish': True})
     }
 }

@@ -47,43 +47,37 @@ void Talk() {
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 6})
 
-        Event151:
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Parasail004_Talk'}) {
-            if Npc_King_Parasail004.CheckActorAction({'ActionName': 'Root/Terror'}) {
-                Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk01', 'ASName': ''})
-                Event152:
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Kotsu01'})
-                } else
-                Event210:
-                if Npc_King_Parasail004.IsOnInstEventFlag() {
-                    Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:GoodBye00', 'IsCloseMessageDialog': True})
-                } else {
-                    Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:GoodBye01'})
-                }
-            } else {
-                Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk01', 'ASName': 'Point'})
-                goto Event152
-            }
-        } else
-        if Npc_King_Parasail004.CheckActorAction({'ActionName': 'Root/Terror'}) {
-            Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-            Event158:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Kotsu00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Parasail004_Talk'})
-            } else
-            goto Event210
-        } else {
-            Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Point'})
-            goto Event158
-        }
     } else {
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-        goto Event151
     }
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Parasail004_Talk'}) {
+        if Npc_King_Parasail004.CheckActorAction({'ActionName': 'Root/Terror'}) {
+            Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk01', 'ASName': ''})
+        } else {
+            Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk01', 'ASName': 'Point'})
+        }
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Kotsu01'})
+        } else
+        Event210:
+        if Npc_King_Parasail004.IsOnInstEventFlag() {
+            Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:GoodBye00', 'IsCloseMessageDialog': True})
+        } else {
+            Npc_King_Parasail004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_King_Parasail004:GoodBye01'})
+        }
+    } else
+    if Npc_King_Parasail004.CheckActorAction({'ActionName': 'Root/Terror'}) {
+        Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
+    } else {
+        Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Point'})
+    }
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_King_Parasail004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Parasail004:Kotsu00', 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Parasail004_Talk'})
+    } else
+    goto Event210
 }
 
 void Near() {
@@ -245,9 +239,8 @@ void Appear11_Camera() {
     } else
     if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Tominaga'}) {
         GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'IsWaitFinish': True, 'TargetActor1': -1, 'TargetActor2': -1, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'ActorName1': '', 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': -1420.633056640625, 'Pattern1PosY': 338.1449890136719, 'Pattern1PosZ': 1983.64404296875, 'Pattern1AtX': -1424.009033203125, 'Pattern1AtY': 338.31640625, 'Pattern1AtZ': 1987.3289794921875, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        goto Event268
     } else {
         GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 40.00001525878906, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Count': 120.0, 'Cushion': 0.20000000298023224, 'ReviseModeEnd': 0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'Pattern1PosX': 2.562865972518921, 'Pattern1PosY': 0.7665860056877136, 'Pattern1PosZ': 6.106354236602783, 'Pattern1AtX': -0.008057000115513802, 'Pattern1AtY': 0.9379879832267761, 'Pattern1AtZ': 1.8213809728622437, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        goto Event268
     }
+    goto Event268
 }

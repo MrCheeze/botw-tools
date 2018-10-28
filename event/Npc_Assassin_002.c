@@ -58,39 +58,37 @@ void Talk() {
         Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk00', 'IsOverWriteLabelActorName': False})
         if !EventSystemActor.GeneralChoice2() {
             Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk01', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-            Event42:
-
-            call Demo023_0.BustUp_PlayerHide()
-
-            Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk03', 'IsOverWriteLabelActorName': False})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk04', 'IsOverWriteLabelActorName': False})
-                if !EventSystemActor.GeneralChoice2() {
-                    Event25:
-                    SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
-                    Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk06', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                    Event12:
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Assassin_002'})
-
-                    call Henshin()
-
-                } else {
-                    Event26:
-                    SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
-                    Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk07', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                    goto Event12
-                }
-            } else {
-                Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk05', 'IsOverWriteLabelActorName': False})
-                if !EventSystemActor.GeneralChoice2() {
-                    goto Event25
-                } else {
-                    goto Event26
-                }
-            }
         } else {
             Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk02', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-            goto Event42
+        }
+
+        call Demo023_0.BustUp_PlayerHide()
+
+        Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk03', 'IsOverWriteLabelActorName': False})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk04', 'IsOverWriteLabelActorName': False})
+            if !EventSystemActor.GeneralChoice2() {
+                Event25:
+                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
+                Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk06', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+                Event12:
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Assassin_002'})
+
+                call Henshin()
+
+            } else {
+                Event26:
+                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
+                Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk07', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+                goto Event12
+            }
+        } else {
+            Npc_Assassin_002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_002:Talk05', 'IsOverWriteLabelActorName': False})
+            if !EventSystemActor.GeneralChoice2() {
+                goto Event25
+            } else {
+                goto Event26
+            }
         }
     }
 }

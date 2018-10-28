@@ -75,84 +75,73 @@ void Demo605_0_ChallengeON() {
     EventSystemActor.Demo_ForceOpenMainScreen({'IsWaitFinish': True})
     if EventSystemActor.CheckPlayerRideHorse() {
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'HorseWait'})
-        Event75:
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': '100enemy_Sheath_BindUpdateSkip'})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-        GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Demo605_0-C02-Link-A-0', 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'MorphingFrame': 15.0})
-        GameROMPlayer.Demo_PlayerReleaseMasterSword({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-        Weapon_Sword_502.Demo_XLinkEventCreate({'ELinkKey': 'DLC2_Demo605_0_Warp_Out', 'IsWaitFinish': True, 'IsTargetDemoSLinkUser': False, 'SLinkKey': 'DLC2_Demo605_0_Warp_Out'})
-        Weapon_Sword_502.Demo_WarpEffectValueSetter({'ChangeType': 1, 'SetFrame': 60.0, 'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-        Fader.Demo_FadeOut({'DispMode': 'Auto', 'Color': 0, 'Frame': 2, 'IsWaitFinish': True})
-        EventSystemActor.Demo_KillSelectActor({'IsWaitFinish': True, 'ActorName': 'GameRomHorseBone_AllDay', 'UniqueName': ''})
-        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': '100enemy_Sheath_BindUpdateSkip'})
-        Weapon_Sword_502.Demo_XLinkEventKill({'ELinkKey': 'DLC2_Demo605_0_Warp_Out', 'IsWaitFinish': True, 'SLinkKey': ''})
-        switch EventSystemActor.CountFlag4({'GameDataFlagNo4': '', 'GameDataFlagNo0': 'Lock_OneHitDungeon001', 'GameDataFlagNo1': 'Lock_OneHitDungeon002', 'GameDataFlagNo2': 'Lock_OneHitDungeon003', 'GameDataFlagNo3': 'Lock_OneHitDungeon004'}) {
-          case [0, 1, 2, 3]:
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Retire_Dungeon04'})
-            Event56:
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step02'})
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step02_Dungeon01'})
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step02_Dungeon02'})
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step02_Dungeon03'})
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step2_Dungeon4'})
-            if EventSystemActor.CheckFlag({'FlagName': 'Defeat_OneHitDungeon001'}) {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Lock_OneHitDungeon001'})
-                Event137:
-                if EventSystemActor.CheckFlag({'FlagName': 'Defeat_OneHitDungeon002'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Lock_OneHitDungeon002'})
-                    Event138:
-                    if EventSystemActor.CheckFlag({'FlagName': 'Defeat_OneHitDungeon003'}) {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Lock_OneHitDungeon003'})
-                        Event139:
-                        if EventSystemActor.CheckFlag({'FlagName': 'Defeat_OneHitDungeon004'}) {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Lock_OneHitDungeon004'})
-                            Event55:
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Ichigeki_Sword_Appear'})
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'HeroSoulProhibition'})
-                            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BloodyMoonProhibition'})
-                            Weapon_Sword_502.Demo_WarpToPos({'IsWaitFinish': False, 'TargetPos': [0.0, 0.0, 0.0], 'TargetRot': [0.0, 0.0, 0.0]})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                            GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
-                            Fader.Demo_FadeIn({'IsWaitFinish': True, 'DispMode': 'Auto', 'Color': 0, 'Frame': 1})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                            EventSystemActor.Demo_EventCancelStart({'ShowLogo': False, 'IsWaitFinish': True})
-
-                            fork {
-                                EventSystemActor[doushi].Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo605_0:Talk02'})
-                            } {
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                                GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'Demo605_0-C03-Link-A-0_Loop', 'MorphingFrame': 20.0})
-                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 180})
-                                GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'DemoWait', 'MorphingFrame': 20.0})
-                            }
-
-                            EventSystemActor.Demo_EventCancelEnd({'NoFadeIn': False, 'IsWaitFinish': True})
-                            if !EventSystemActor.CheckEventCancel() {
-                                Event43:
-                                EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
-                                EventSystemActor.Demo_StartHeartDemo({'IsWaitFinish': True})
-                            } else {
-                                EventSystemActor.Demo_KillUIScreen({'ScreenName': 'MainDungeon_00', 'IsWaitFinish': True})
-                                SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
-                                goto Event43
-                            }
-                        } else {
-                            goto Event55
-                        }
-                    } else
-                    goto Event139
-                } else
-                goto Event138
-            } else
-            goto Event137
-          case [4, 5]:
-            goto Event56
-        }
     } else {
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'DemoWait'})
-        goto Event75
+    }
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': '100enemy_Sheath_BindUpdateSkip'})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+    GameROMPlayer.Demo_PlayASAdapt({'ASName': 'Demo605_0-C02-Link-A-0', 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'MorphingFrame': 15.0})
+    GameROMPlayer.Demo_PlayerReleaseMasterSword({'IsWaitFinish': True})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+    Weapon_Sword_502.Demo_XLinkEventCreate({'ELinkKey': 'DLC2_Demo605_0_Warp_Out', 'IsWaitFinish': True, 'IsTargetDemoSLinkUser': False, 'SLinkKey': 'DLC2_Demo605_0_Warp_Out'})
+    Weapon_Sword_502.Demo_WarpEffectValueSetter({'ChangeType': 1, 'SetFrame': 60.0, 'IsWaitFinish': True})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+    Fader.Demo_FadeOut({'DispMode': 'Auto', 'Color': 0, 'Frame': 2, 'IsWaitFinish': True})
+    EventSystemActor.Demo_KillSelectActor({'IsWaitFinish': True, 'ActorName': 'GameRomHorseBone_AllDay', 'UniqueName': ''})
+    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': '100enemy_Sheath_BindUpdateSkip'})
+    Weapon_Sword_502.Demo_XLinkEventKill({'ELinkKey': 'DLC2_Demo605_0_Warp_Out', 'IsWaitFinish': True, 'SLinkKey': ''})
+    switch EventSystemActor.CountFlag4({'GameDataFlagNo4': '', 'GameDataFlagNo0': 'Lock_OneHitDungeon001', 'GameDataFlagNo1': 'Lock_OneHitDungeon002', 'GameDataFlagNo2': 'Lock_OneHitDungeon003', 'GameDataFlagNo3': 'Lock_OneHitDungeon004'}) {
+      case [0, 1, 2, 3]:
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Retire_Dungeon04'})
+        Event56:
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step02'})
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step02_Dungeon01'})
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step02_Dungeon02'})
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step02_Dungeon03'})
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_Step2_Dungeon4'})
+        if EventSystemActor.CheckFlag({'FlagName': 'Defeat_OneHitDungeon001'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Lock_OneHitDungeon001'})
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'Defeat_OneHitDungeon002'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Lock_OneHitDungeon002'})
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'Defeat_OneHitDungeon003'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Lock_OneHitDungeon003'})
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'Defeat_OneHitDungeon004'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Lock_OneHitDungeon004'})
+        }
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Ichigeki_Sword_Appear'})
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'HeroSoulProhibition'})
+        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'BloodyMoonProhibition'})
+        Weapon_Sword_502.Demo_WarpToPos({'IsWaitFinish': False, 'TargetPos': [0.0, 0.0, 0.0], 'TargetRot': [0.0, 0.0, 0.0]})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'DispMode': 'Auto', 'Color': 0, 'Frame': 1})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        EventSystemActor.Demo_EventCancelStart({'ShowLogo': False, 'IsWaitFinish': True})
+
+        fork {
+            EventSystemActor[doushi].Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo605_0:Talk02'})
+        } {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'Demo605_0-C03-Link-A-0_Loop', 'MorphingFrame': 20.0})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 180})
+            GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'DemoWait', 'MorphingFrame': 20.0})
+        }
+
+        EventSystemActor.Demo_EventCancelEnd({'NoFadeIn': False, 'IsWaitFinish': True})
+        if !EventSystemActor.CheckEventCancel() {
+            Event43:
+            EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
+            EventSystemActor.Demo_StartHeartDemo({'IsWaitFinish': True})
+        } else {
+            EventSystemActor.Demo_KillUIScreen({'ScreenName': 'MainDungeon_00', 'IsWaitFinish': True})
+            SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
+            goto Event43
+        }
+      case [4, 5]:
+        goto Event56
     }
 }
 

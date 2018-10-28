@@ -90,21 +90,18 @@ void _main() {
 
     if Argument[_main(Current)].CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': ''}) {
         EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': False, 'IsGetDemo': True})
-        Event100:
-        EventSystemActor[Temp].Demo_CloseMessageDialog({'IsWaitFinish': False})
-
-        call PorchProhibitionON()
-
-        Argument[_main(Current)].Demo_OpenGetDemo({'IsInvalidOpenPouch': 'Arg_IsInvalidOpenPouch', 'IsWaitFinish': True})
-
-        call PorchProhibitionOFF()
-
-
-        call CallHeartOrGanbariIncleaseDemo({'Current': 'Current'})
-
-    } else {
-        goto Event100
     }
+    EventSystemActor[Temp].Demo_CloseMessageDialog({'IsWaitFinish': False})
+
+    call PorchProhibitionON()
+
+    Argument[_main(Current)].Demo_OpenGetDemo({'IsInvalidOpenPouch': 'Arg_IsInvalidOpenPouch', 'IsWaitFinish': True})
+
+    call PorchProhibitionOFF()
+
+
+    call CallHeartOrGanbariIncleaseDemo({'Current': 'Current'})
+
 }
 
 void GetItemByActorIdentifier() {
@@ -142,21 +139,18 @@ void ShowGetDemoDialogByName() {
 
     if EventSystemActor.CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': 'CheckTargetActorName'}) {
         EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': False, 'IsGetDemo': True})
-        Event183:
-        EventSystemActor[Temp].Demo_CloseMessageDialog({'IsWaitFinish': False})
-
-        call PorchProhibitionON()
-
-        EventSystemActor.Demo_OpenGetDemoDialog({'IsWaitFinish': True, 'IsInvalidOpenPouch': 'IsInvalidOpenPouch', 'TargetActorName': 'CheckTargetActorName', 'UseLastTryGetItemName': False, 'EnableMultiGet': False})
-
-        call PorchProhibitionOFF()
-
-
-        call CallHeartOrGanbariIncleaseDemo({'Current': ActorIdentifier(name="EventSystemActor"), 'CheckTargetActorName': 'CheckTargetActorName'})
-
-    } else {
-        goto Event183
     }
+    EventSystemActor[Temp].Demo_CloseMessageDialog({'IsWaitFinish': False})
+
+    call PorchProhibitionON()
+
+    EventSystemActor.Demo_OpenGetDemoDialog({'IsWaitFinish': True, 'IsInvalidOpenPouch': 'IsInvalidOpenPouch', 'TargetActorName': 'CheckTargetActorName', 'UseLastTryGetItemName': False, 'EnableMultiGet': False})
+
+    call PorchProhibitionOFF()
+
+
+    call CallHeartOrGanbariIncleaseDemo({'Current': ActorIdentifier(name="EventSystemActor"), 'CheckTargetActorName': 'CheckTargetActorName'})
+
 }
 
 void GetItemByName() {
@@ -200,12 +194,11 @@ void OpenShortCutGuide() {
     switch EventSystemActor.CheckEquipItemType({'CheckTargetActorName': 'CheckTargetActorName'}) {
       case 0:
         if EventSystemActor.CheckFlag({'FlagName': 'Guide_ShortCutSword'}) {
-            if !EventSystemActor.CheckFlag({'FlagName': 'Guide_Throw'}) {
-                if !EventSystemActor.HasPouchItemByPouchCategory({'Category': 0, 'Count': 5}) {
+            if !EventSystemActor.CheckFlag({'FlagName': 'Guide_Throw'})
+            && !EventSystemActor.HasPouchItemByPouchCategory({'Category': 0, 'Count': 5}) {
 
-                    call OperationGuide.Guide_Throw()
+                call OperationGuide.Guide_Throw()
 
-                }
             }
         } else
         if !EventSystemActor.HasPouchItemByPouchCategory({'Count': 2, 'Category': 0}) {
@@ -214,28 +207,25 @@ void OpenShortCutGuide() {
 
         }
       case 1:
-        if !EventSystemActor.CheckFlag({'FlagName': 'Guide_ShortCutShield'}) {
-            if !EventSystemActor.HasPouchItemByPouchCategory({'Count': 2, 'Category': 3}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'Guide_ShortCutShield'})
+        && !EventSystemActor.HasPouchItemByPouchCategory({'Count': 2, 'Category': 3}) {
 
-                call OperationGuide.Guide_ShortCutShield()
+            call OperationGuide.Guide_ShortCutShield()
 
-            }
         }
       case 2:
-        if !EventSystemActor.CheckFlag({'FlagName': 'Guide_ShortCutBow'}) {
-            if !EventSystemActor.HasPouchItemByPouchCategory({'Count': 2, 'Category': 1}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'Guide_ShortCutBow'})
+        && !EventSystemActor.HasPouchItemByPouchCategory({'Count': 2, 'Category': 1}) {
 
-                call OperationGuide.Guide_ShortCutBow()
+            call OperationGuide.Guide_ShortCutBow()
 
-            }
         }
       case 5:
-        if !EventSystemActor.CheckFlag({'FlagName': 'Guide_ShortCutArrow'}) {
-            if !EventSystemActor.HasPouchItemByPouchCategory({'Count': 2, 'Category': 2}) {
+        if !EventSystemActor.CheckFlag({'FlagName': 'Guide_ShortCutArrow'})
+        && !EventSystemActor.HasPouchItemByPouchCategory({'Count': 2, 'Category': 2}) {
 
-                call OperationGuide.Guide_ShortCutArrow()
+            call OperationGuide.Guide_ShortCutArrow()
 
-            }
         }
     }
 }

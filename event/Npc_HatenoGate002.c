@@ -20,25 +20,22 @@ void Talk() {
         Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk04'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk05', 'IsCloseMessageDialog': True})
-            Event12:
-            if EventSystemActor.CheckWeather() in [1, 2, 3] {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk07'})
-            }
         } else {
             Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk06', 'IsCloseMessageDialog': True})
-            goto Event12
+        }
+        Event12:
+        if EventSystemActor.CheckWeather() in [1, 2, 3] {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+            Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk07'})
         }
     } else {
         Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk00', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
         if !EventSystemActor.GeneralChoice2() {
             Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk02', 'IsCloseMessageDialog': True})
-            Event6:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_HatenoGate002', 'IsWaitFinish': True})
-            goto Event12
         } else {
             Npc_HatenoGate002.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate002:talk03', 'IsCloseMessageDialog': True})
-            goto Event6
         }
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_HatenoGate002', 'IsWaitFinish': True})
+        goto Event12
     }
 }

@@ -132,12 +132,10 @@ void Demo641_1_C01() {
     GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': False, 'IsValid': True, 'FaceId': 2, 'ActorName': 'DgnObj_StartPointShutter', 'ObjectId': 0, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
     if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo643_3'}) {
         WorldManagerControl.Demo_SetPaletteType({'IsWaitFinish': False, 'ChangeFrame': 1, 'EndFrame': 0, 'PaletteType': 56, 'Speed': 0.05000000074505806})
-        Event53:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
     } else {
         WorldManagerControl.Demo_SetPaletteType({'IsWaitFinish': False, 'PaletteType': 47, 'ChangeFrame': 1, 'EndFrame': 0, 'Speed': 0.05000000074505806})
-        goto Event53
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
 }
 
 void Demo641_1_C02() {

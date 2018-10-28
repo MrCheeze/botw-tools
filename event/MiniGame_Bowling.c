@@ -309,11 +309,10 @@ void Finish_Npc_Bowling_StepStart() {
         } else
         if EventSystemActor.CheckGameDataInt({'Operator': 'LessThanOrEqualTo', 'Value': 9, 'GameDataIntName': 'MiniGame_Bowling_BreakPinNum'}) {
             Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_03', 'ASName': ''})
-            goto Event352
         } else {
             Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:result_04', 'ASName': ''})
-            goto Event352
         }
+        goto Event352
     } else {
         GameDataCalcMachine.Demo_GameDataCopyInt({'GameDataIntSrcName': 'MiniGame_Bowling_BreakPinNum', 'GameDataIntDstName': 'MiniGame_Bowling_BreakPinNumFirst', 'IsWaitFinish': True})
         EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
@@ -450,30 +449,27 @@ void IfOutOfArea_Npc_Bowling_StepStart() {
     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'MiniGame_Bowling_SnowBallMakeFlag'})
     if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
         GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        Event271:
-        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:area_out_00', 'ASName': ''})
+    }
+    Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:area_out_00', 'ASName': ''})
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:break_01', 'ASName': ''})
+        Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:break_02', 'IsCloseMessageDialog': False, 'ASName': ''})
         if !EventSystemActor.GeneralChoice2() {
-            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:break_01', 'ASName': ''})
-            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:break_02', 'IsCloseMessageDialog': False, 'ASName': ''})
-            if !EventSystemActor.GeneralChoice2() {
 
-                call Destruct()
+            call Destruct()
 
-            } else {
-                Event281:
-                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:area_out_03', 'ASName': ''})
-
-                call Reload()
-
-                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:area_out_04', 'ASName': '', 'IsCloseMessageDialog': False})
-                Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:about_snowbowl_03', 'ASName': ''})
-                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'RollPrepare'})
-            }
         } else {
-            goto Event281
+            Event281:
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:area_out_03', 'ASName': ''})
+
+            call Reload()
+
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:area_out_04', 'ASName': '', 'IsCloseMessageDialog': False})
+            Npc_Bowling.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MiniGame_Bowling:about_snowbowl_03', 'ASName': ''})
+            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': '', 'ForceRunTelop': False, 'StepName': 'RollPrepare'})
         }
     } else {
-        goto Event271
+        goto Event281
     }
 }
 
@@ -619,11 +615,10 @@ void RollResult_Npc_Bowling_StepStart() {
                 } else
                 if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isBombIsInRollingArea'}) {
                     GameRomCamera.Demo_MovePosFlow({'ActorIgnoringCollision': -1, 'FovyAppendMode': 1, 'Pattern1Fovy': 50.0, 'Count': 1.0, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'UniqueName1': '', 'ActorName2': '', 'UniqueName2': '', 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'IsWaitFinish': True, 'Pattern1PosX': -2063.110107421875, 'Pattern1PosY': 389.510009765625, 'Pattern1PosZ': -2102.280029296875, 'AtAppendMode': 1, 'Pattern1AtX': -2021.4200439453125, 'Pattern1AtY': 369.739990234375, 'Pattern1AtZ': -2119.860107421875, 'TargetActor1': -1, 'ActorName1': '', 'TargetActor2': -1, 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    goto Event815
                 } else {
                     EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                    goto Event815
                 }
+                goto Event815
             } else {
                 EventSystemActor.Demo_WaitFrame({'Frame': 75, 'IsWaitFinish': True})
                 goto Event750
@@ -644,11 +639,10 @@ void RollResult_Npc_Bowling_StepStart() {
             } else
             if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_Bowling_isSnowBallIsInRollingArea'}) {
                 GameRomCamera.Demo_PolarCoordPlayerRelative({'OtherActor': 3, 'ActorNameForOtherActor': 'SnowBowl', 'UniqueNameForOtherActor': 'bowling_ball', 'ActorIgnoringCollision': -1, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'Time': 1.0, 'IsWaitFinish': True, 'ReverseOrder': True, 'LngOffset': 0.0, 'LatOffset': 30.0, 'AtCalcMode': 1, 'AtParam': [0.0, 0.0, 0.0], 'RadiusOffset': 12.0, 'ReviseMode': 2})
-                goto Event814
             } else {
                 EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                goto Event814
             }
+            goto Event814
         } else
         goto Event750
     }

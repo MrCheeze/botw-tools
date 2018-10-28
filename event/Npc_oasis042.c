@@ -58,11 +58,10 @@ void Talk() {
 }
 
 void RAIMEI_CK() {
-    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': False, 'CheckLower': False, 'CheckType': 'Thunder'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis025_Raimei_CK'}) {
-            Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis042:Raimei_CK_001'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis025_Raimei_CK'})
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-        }
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': False, 'CheckLower': False, 'CheckType': 'Thunder'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis025_Raimei_CK'}) {
+        Npc_oasis042.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis042:Raimei_CK_001'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis025_Raimei_CK'})
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     }
 }

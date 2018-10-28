@@ -187,4 +187,5 @@ void Demo346_3() {
     } else {
         goto Event99
     }
+    goto Event96
 }

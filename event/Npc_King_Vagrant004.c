@@ -30,64 +30,60 @@ void Talk() {
             if !EventSystemActor.RandomChoice2() {
                 if Npc_King_Vagrant004.IsOnInstEventFlag() {
                     Event50:
-                    if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
-                        Event126:
-                        if Npc_King_Vagrant004.IsAwakened() {
-                            if Npc_King_Vagrant004.IsOnInstEventFlag() {
-                                Event315:
-                                if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Action2/到着'}) {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
-                                        Event80:
-                                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk'}) {
-                                            if Npc_King_Vagrant004.IsOnInstEventFlag() {
-                                                if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
-                                                    Event46:
-                                                    if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-                                                        Event38:
-                                                        Npc_King_Vagrant004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                                                        Event81:
-
-                                                        call TalkHub1()
-
-                                                    } else {
-                                                        Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk09'})
-                                                        goto Event81
-                                                    }
+                    if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'})
+                    Event126:
+                    && Npc_King_Vagrant004.IsAwakened() {
+                        if Npc_King_Vagrant004.IsOnInstEventFlag() {
+                            Event315:
+                            if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Action2/到着'}) {
+                                if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
+                                    Event80:
+                                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk'}) {
+                                        if Npc_King_Vagrant004.IsOnInstEventFlag() {
+                                            if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
+                                                Event46:
+                                                if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+                                                    Event38:
+                                                    Npc_King_Vagrant004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                                                 } else {
-                                                    Event43:
-                                                    Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk00'})
-                                                    goto Event81
+                                                    Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk09'})
                                                 }
-                                            } else
-                                            if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Clear_1'}) {
-                                                Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk15'})
-                                                goto Event81
+                                                Event81:
+
+                                                call TalkHub1()
+
                                             } else {
-                                                Npc_King_Vagrant004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk14', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+                                                Event43:
+                                                Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk00'})
                                                 goto Event81
                                             }
                                         } else
-                                        if Npc_King_Vagrant004.IsOnInstEventFlag() {
-                                            goto Event43
+                                        if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Clear_1'}) {
+                                            Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk15'})
                                         } else {
-                                            Npc_King_Vagrant004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                                            goto Event81
+                                            Npc_King_Vagrant004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk14', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                                         }
+                                        goto Event81
                                     } else
-                                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Cook'}) {
+                                    if Npc_King_Vagrant004.IsOnInstEventFlag() {
+                                        goto Event43
+                                    } else {
+                                        Npc_King_Vagrant004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+                                    }
+                                    goto Event81
+                                } else
+                                if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Cook'}) {
 
-                                        call TalkCook()
+                                    call TalkCook()
 
-                                    } else
-                                    goto Event80
                                 } else
                                 goto Event80
-                            } else {
-                                Npc_King_Vagrant004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk07', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                                goto Event81
-                            }
-                        } else
-                        goto Event315
+                            } else
+                            goto Event80
+                        } else {
+                            Npc_King_Vagrant004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk07', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+                            goto Event81
+                        }
                     } else
                     goto Event315
                 } else
@@ -96,101 +92,95 @@ void Talk() {
                 } else
                 goto Event315
             } else
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk'}) {
-                if Npc_King_Vagrant004.IsOnInstEventFlag() {
-                    if !EventSystemActor.RandomChoice2() {
-                        goto Event50
-                    } else
-                    switch Npc_King_Vagrant004.CheckActorAction13() {
-                      case 0:
-                        Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk03'})
-                        goto Event81
-                      case 1:
-                        goto Event46
-                      case 2:
-                        if EventSystemActor.CheckFlag({'FlagName': 'Tree_Cut'}) {
-                            Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk05'})
-                            goto Event81
-                        } else
-                        if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Axe24'}) {
-                                Event326:
-                                if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_InHouse'}) {
-                                    goto Event80
-                                } else
-                                if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_AroundHouse'}) {
-                                    goto Event80
-                                } else {
-                                    Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk16'})
-                                    goto Event81
-                                }
-                            } else {
-                                Event134:
-                                Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk04'})
-                                goto Event81
-                            }
-                        } else
-                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Axe'}) {
-                            goto Event326
-                        } else {
-                            goto Event134
-                        }
-                      case 3:
-                        if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
-                            if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
-                                goto Event38
-                            } else
-                            Event140:
-                            switch EventSystemActor.CheckTimeType() {
-                              case [0, 1, 2, 3, 4, 5]:
-                                Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk10'})
-                                goto Event81
-                              case [6, 7]:
-                                Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk11'})
-                                goto Event81
-                            }
-                        } else
-                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Cook'}) {
-
-                            call TalkCook()
-
-                        } else
-                        goto Event140
-                      case 10:
-                        Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk06'})
-                        goto Event81
-                      case 11:
-                        goto Event126
-                    }
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk'})
+            && Npc_King_Vagrant004.IsOnInstEventFlag() {
+                if !EventSystemActor.RandomChoice2() {
+                    goto Event50
                 } else
-                goto Event50
+                switch Npc_King_Vagrant004.CheckActorAction13() {
+                  case 0:
+                    Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk03'})
+                    goto Event81
+                  case 1:
+                    goto Event46
+                  case 2:
+                    if EventSystemActor.CheckFlag({'FlagName': 'Tree_Cut'}) {
+                        Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk05'})
+                        goto Event81
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
+                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Axe24'}) {
+                            Event326:
+                            if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_InHouse'}) {
+                                goto Event80
+                            } else
+                            if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_AroundHouse'}) {
+                                goto Event80
+                            } else {
+                                Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk16'})
+                                goto Event81
+                            }
+                        } else {
+                            Event134:
+                            Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk04'})
+                            goto Event81
+                        }
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Axe'}) {
+                        goto Event326
+                    } else {
+                        goto Event134
+                    }
+                  case 3:
+                    if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
+                        if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
+                            goto Event38
+                        } else
+                        Event140:
+                        switch EventSystemActor.CheckTimeType() {
+                          case [0, 1, 2, 3, 4, 5]:
+                            Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk10'})
+                            goto Event81
+                          case [6, 7]:
+                            Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk11'})
+                            goto Event81
+                        }
+                    } else
+                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Cook'}) {
+
+                        call TalkCook()
+
+                    } else
+                    goto Event140
+                  case 10:
+                    Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Talk06'})
+                    goto Event81
+                  case 11:
+                    goto Event126
+                }
             } else
             goto Event50
         } else
-        if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
-            if Npc_King_Vagrant004.IsAwakened() {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Cook'}) {
-                    switch EventSystemActor.HasCookResultInPorch({'Count': 1, 'PorchItemName': '', 'CookEffectType': 'AllOK'}) {
-                      case [2, 1]:
-                        EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_King_Vagrant004_Have_Dish', 'IsWaitFinish': True})
-                        if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Temp3'}) {
-                            Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:TalkBokangi01'})
-                            Event357:
+        if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'})
+        && Npc_King_Vagrant004.IsAwakened()
+        && EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Cook'}) {
+            switch EventSystemActor.HasCookResultInPorch({'Count': 1, 'PorchItemName': '', 'CookEffectType': 'AllOK'}) {
+              case [2, 1]:
+                EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_King_Vagrant004_Have_Dish', 'IsWaitFinish': True})
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant004_Talk_Temp3'}) {
+                    Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:TalkBokangi01'})
+                    Event357:
 
-                            call TalkCookAwake()
+                    call TalkCookAwake()
 
-                        } else {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Vagrant004_Talk_Temp3'})
-                            Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:TalkBokangi00'})
-                            goto Event357
-                        }
-                      case 0:
-                        goto Event55
-                    }
-                } else
+                } else {
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Vagrant004_Talk_Temp3'})
+                    Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:TalkBokangi00'})
+                    goto Event357
+                }
+              case 0:
                 goto Event55
-            } else
-            goto Event55
+            }
         } else
         goto Event55
     } else
@@ -206,8 +196,8 @@ void Talk() {
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-        goto Event57
     }
+    goto Event57
 }
 
 void Near() {
@@ -466,12 +456,10 @@ void Nanishiteru() {
                                     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Vagrant004_Recipe'})
                                     EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
                                 } else
-                                if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/移動'}) {
-                                    goto Event293
-                                } else {
+                                if !Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/移動'}) {
                                     EventSystemActor.Demo_FlagON({'FlagName': 'Npc_King_Vagrant004_Talk_Axe24', 'IsWaitFinish': True})
-                                    goto Event293
                                 }
+                                goto Event293
                             }
                           case 0:
                             switch EventSystemActor.HasCookResultInPorch({'Count': 1, 'CookEffectType': 'ResistCold', 'PorchItemName': 'Item_Cook_B_18'}) {
@@ -522,8 +510,8 @@ void Nanishiteru() {
                                         goto Event299
                                     } else {
                                         Npc_King_Vagrant004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant004:Cook07'})
-                                        goto Event302
                                     }
+                                    goto Event302
                                 }
                             }
                         }
@@ -559,19 +547,15 @@ void Nanishiteru() {
                             call GoodBye()
 
                         } else
-                        if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
-                            if Npc_King_Vagrant004.IsAwakened() {
+                        if Npc_King_Vagrant004.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'})
+                        && Npc_King_Vagrant004.IsAwakened() {
 
-                                call Bed3()
+                            call Bed3()
 
-                            } else {
-                                Event242:
-
-                                call Bed2()
-
-                            }
                         } else {
-                            goto Event242
+
+                            call Bed2()
+
                         }
                     }
                 } else {

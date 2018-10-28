@@ -87,9 +87,8 @@ void Demo346_9() {
     EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': '', 'DemoName': 'Demo110_0', 'EndFade': 0})
     ListenerCtrlTag.Demo_FixPosition({'IsWaitFinish': True, 'FixType': 'Unfix'})
     SceneSoundCtrlTag.Demo_CustomDuckingStop({'IsWaitFinish': True})
-    if !EventSystemActor.CheckFlag({'FlagName': 'Find_Impa_Finish'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo051_0'}) {
-            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EndFade': 0, 'DemoName': 'Demo051_0', 'EntryPointName': 'Demo051_0'})
-        }
+    if !EventSystemActor.CheckFlag({'FlagName': 'Find_Impa_Finish'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo051_0'}) {
+        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EndFade': 0, 'DemoName': 'Demo051_0', 'EntryPointName': 'Demo051_0'})
     }
 }

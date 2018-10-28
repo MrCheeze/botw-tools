@@ -106,14 +106,11 @@ void EntryPoint0() {
     call Common.RemainsLithograph()
 
     EventSystemActor.Demo_CallDemo({'DemoName': 'Demo016_0', 'EntryPointName': 'DungeonArrival', 'IsWaitFinish': False, 'EndFade': 0})
-    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-        Event42:
-        if EventSystemActor.CheckFlag({'FlagName': 'SeekerEye_Activated'}) {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SeekerEye_Finish'})
-        }
-    } else {
+    if !EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_ReserveParashawlStart({'IsWaitFinish': True})
-        goto Event42
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'SeekerEye_Activated'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SeekerEye_Finish'})
     }
 }
 
@@ -132,25 +129,23 @@ void Camera() {
     GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -2941.695556640625, 'Pattern1PosY': 293.45562744140625, 'Pattern1PosZ': -501.0914001464844, 'Pattern1AtX': -2944.74853515625, 'Pattern1AtY': 293.98626708984375, 'Pattern1AtZ': -496.56011962890625, 'Pattern1Fovy': 50.00001907348633, 'Count': 30.0, 'CollisionInterpolateSkip': True, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
     if EventSystemActor.CheckFlag({'FlagName': 'SeekerEye_Activated'}) {
         Npc_HyruleDepthHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SeekerEye:Talk_018'})
-        Event15:
-        GameRomCamera.Demo_ReturnSavePoint_1({'ReviseMode': 0, 'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'Count': 20.0})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 25})
-        Npc_HyruleDepthHatago004.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ObjectId': 0, 'FaceId': 2, 'IsValid': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0]})
-        Npc_HyruleDepthHatago004.Demo_PlayASForDemo({'ASName': 'Talk_Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
-        if EventSystemActor.CheckFlag({'FlagName': 'SeekerEye_Activated'}) {
-            Npc_HyruleDepthHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SeekerEye:Talk_019'})
-        } else {
-            Npc_HyruleDepthHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SeekerEye:Talk_016'})
-            if EventSystemActor.CheckFlag({'FlagName': 'SeekerEye_Step1'}) {
-                EventSystemActor.Demo_FlagON({'FlagName': 'SeekerEye_Activated', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SeekerEye_Finish'})
-            } else {
-                EventSystemActor.Demo_FlagON({'FlagName': 'SeekerEye_Activated', 'IsWaitFinish': True})
-            }
-        }
     } else {
         Npc_HyruleDepthHatago004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SeekerEye:Talk_015'})
-        goto Event15
+    }
+    GameRomCamera.Demo_ReturnSavePoint_1({'ReviseMode': 0, 'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'Count': 20.0})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 25})
+    Npc_HyruleDepthHatago004.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ObjectId': 0, 'FaceId': 2, 'IsValid': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0]})
+    Npc_HyruleDepthHatago004.Demo_PlayASForDemo({'ASName': 'Talk_Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
+    if EventSystemActor.CheckFlag({'FlagName': 'SeekerEye_Activated'}) {
+        Npc_HyruleDepthHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SeekerEye:Talk_019'})
+    } else {
+        Npc_HyruleDepthHatago004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SeekerEye:Talk_016'})
+        if EventSystemActor.CheckFlag({'FlagName': 'SeekerEye_Step1'}) {
+            EventSystemActor.Demo_FlagON({'FlagName': 'SeekerEye_Activated', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SeekerEye_Finish'})
+        } else {
+            EventSystemActor.Demo_FlagON({'FlagName': 'SeekerEye_Activated', 'IsWaitFinish': True})
+        }
     }
 }

@@ -881,12 +881,10 @@ void C08() {
 void C09() {
     if EventSystemActor.CheckFlag({'FlagName': 'MapTower_DemoFirst'}) {
         GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'BgCheck': False, 'CameraName': '', 'FocalLength': 0.0, 'Aperture': 0.0, 'InterpolateCount': 0.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'SceneName': 'C09-1', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'UniqueName': 'CameraTagetTerminal_UniqueName', 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-        Event280:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
     } else {
         GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'BgCheck': False, 'CameraName': '', 'FocalLength': 0.0, 'Aperture': 0.0, 'InterpolateCount': 0.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'SceneName': 'C09-0', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'UniqueName': 'CameraTagetTerminal_UniqueName', 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-        goto Event280
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
 }
 
 void C10() {
@@ -932,105 +930,76 @@ void C10() {
 void C11() {
     Starter.Demo_StartMapOpenDemo({'IsWaitFinish': True, 'IsPlayerClose': False})
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 240})
-    if EventSystemActor.CheckFlag({'FlagName': 'MapTower_01'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'MapTower_02'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'MapTower_03'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'MapTower_04'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'MapTower_05'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'MapTower_06'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'MapTower_07'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'MapTower_08'}) {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'MapTower_09'}) {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'MapTower_10'}) {
-                                            if EventSystemActor.CheckFlag({'FlagName': 'MapTower_11'}) {
-                                                if EventSystemActor.CheckFlag({'FlagName': 'MapTower_12'}) {
-                                                    if EventSystemActor.CheckFlag({'FlagName': 'MapTower_13'}) {
-                                                        if EventSystemActor.CheckFlag({'FlagName': 'MapTower_14'}) {
-                                                            if EventSystemActor.CheckFlag({'FlagName': 'MapTower_15'}) {
-                                                                SoundTriggerTag.Demo_SoundTrigger({'Sound': 'Demo_MapDownloadComplete', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
-                                                                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                                                                NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text025'})
-                                                                Event591:
-                                                                EventSystemActor.Demo_CloseItemMenu({'IsWaitFinish': True})
+    if EventSystemActor.CheckFlag({'FlagName': 'MapTower_01'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_02'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_03'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_04'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_05'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_06'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_07'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_08'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_09'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_10'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_11'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_12'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_13'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_14'})
+    && EventSystemActor.CheckFlag({'FlagName': 'MapTower_15'}) {
+        SoundTriggerTag.Demo_SoundTrigger({'Sound': 'Demo_MapDownloadComplete', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text025'})
+        Event591:
+        EventSystemActor.Demo_CloseItemMenu({'IsWaitFinish': True})
 
-                                                                fork {
-                                                                    if EventSystemActor.CheckFlag({'FlagName': 'MapTower_DemoFirst'}) {
-                                                                        GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'BgCheck': False, 'CameraName': '', 'FocalLength': 0.0, 'Aperture': 0.0, 'InterpolateCount': 0.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'SceneName': 'C10-1', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'UniqueName': 'CameraTagetTerminal_UniqueName', 'Accept1FrameDelay': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                                                                    } else {
-                                                                        GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'BgCheck': False, 'CameraName': '', 'FocalLength': 0.0, 'Aperture': 0.0, 'InterpolateCount': 0.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'SceneName': 'C10-0', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'UniqueName': 'CameraTagetTerminal_UniqueName', 'Accept1FrameDelay': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                                                                    }
-                                                                } {
+        fork {
+            if EventSystemActor.CheckFlag({'FlagName': 'MapTower_DemoFirst'}) {
+                GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'BgCheck': False, 'CameraName': '', 'FocalLength': 0.0, 'Aperture': 0.0, 'InterpolateCount': 0.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'SceneName': 'C10-1', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'UniqueName': 'CameraTagetTerminal_UniqueName', 'Accept1FrameDelay': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+            } else {
+                GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'BgCheck': False, 'CameraName': '', 'FocalLength': 0.0, 'Aperture': 0.0, 'InterpolateCount': 0.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'SceneName': 'C10-0', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'UniqueName': 'CameraTagetTerminal_UniqueName', 'Accept1FrameDelay': False, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+            }
+        } {
 
-                                                                    call Demo041_0.SheikPadSetOff({'FldObj_DownloadTerminal_A_01': 'FldObj_DownloadTerminal_A_01', 'ShiekerStoneBindTargetActorName': 'ShiekerStoneBindTargetActorName', 'ShiekerStoneBindTargetUniqueName': 'ShiekerStoneBindTargetUniqueName'})
+            call Demo041_0.SheikPadSetOff({'FldObj_DownloadTerminal_A_01': 'FldObj_DownloadTerminal_A_01', 'ShiekerStoneBindTargetActorName': 'ShiekerStoneBindTargetActorName', 'ShiekerStoneBindTargetUniqueName': 'ShiekerStoneBindTargetUniqueName'})
 
-                                                                }
+        }
 
-                                                                if EventSystemActor.CheckFlag({'FlagName': 'MapTower_DemoFirst'}) {
-                                                                    if EventSystemActor.CheckFlag({'FlagName': 'IsStart_Obj_SheikSensor'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'MapTower_DemoFirst'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'IsStart_Obj_SheikSensor'}) {
 
-                                                                        call OperationGuide.Guide_Scope()
+                call OperationGuide.Guide_Scope()
 
-                                                                    } else {
-                                                                        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-                                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                                                                        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text023'})
-                                                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniMapSensor_Demo'})
-                                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                                                                        EventSystemActor.Demo_StartShiekSensorGaugeDemo({'ReactionNum': 1, 'IsWaitFinish': True})
-                                                                        NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text027'})
-                                                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsStart_Obj_SheikSensor'})
-                                                                    }
-                                                                }
-                                                            } else
-                                                            Event597:
-                                                            if EventSystemActor.CheckFlag({'FlagName': 'MapTower_DemoFirst'}) {
-                                                                if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
-                                                                    Event672:
-                                                                    NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text026'})
-                                                                    goto Event591
-                                                                } else {
-                                                                    NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text019', 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0})
-                                                                    EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_SheikSensor', 'IsWaitFinish': True})
-                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                                                                    EventSystemActor.Demo_DownloadShiekSensor({'IsWaitFinish': True})
-                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
-                                                                    NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text020', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True})
-                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                                                                    EventSystemActor.Demo_DownloadSensorMoveIcon({'IsWaitFinish': True})
-                                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                                                                    goto Event591
-                                                                }
-                                                            } else {
-                                                                goto Event672
-                                                            }
-                                                        } else
-                                                        goto Event597
-                                                    } else
-                                                    goto Event597
-                                                } else
-                                                goto Event597
-                                            } else
-                                            goto Event597
-                                        } else
-                                        goto Event597
-                                    } else
-                                    goto Event597
-                                } else
-                                goto Event597
-                            } else
-                            goto Event597
-                        } else
-                        goto Event597
-                    } else
-                    goto Event597
-                } else
-                goto Event597
-            } else
-            goto Event597
-        } else
-        goto Event597
+            } else {
+                GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+                NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text023'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MiniMapSensor_Demo'})
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                EventSystemActor.Demo_StartShiekSensorGaugeDemo({'ReactionNum': 1, 'IsWaitFinish': True})
+                NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text027'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsStart_Obj_SheikSensor'})
+            }
+        }
     } else
-    goto Event597
+    if EventSystemActor.CheckFlag({'FlagName': 'MapTower_DemoFirst'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
+            Event672:
+            NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text026'})
+            goto Event591
+        } else {
+            NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text019', 'IsBecomingSpeaker': True, 'MessageOpenDelayTime': 0})
+            EventSystemActor.Demo_FlagON({'FlagName': 'IsGet_Obj_SheikSensor', 'IsWaitFinish': True})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            EventSystemActor.Demo_DownloadShiekSensor({'IsWaitFinish': True})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 70})
+            NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'DemoMsg/Demo004_0:Demo004_0_Text020', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+            EventSystemActor.Demo_DownloadSensorMoveIcon({'IsWaitFinish': True})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+            goto Event591
+        }
+    } else {
+        goto Event672
+    }
 }
 
 void Demo166() {

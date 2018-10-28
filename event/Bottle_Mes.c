@@ -71,42 +71,40 @@ void Ready_Npc_Zora026_Talk() {
 
         call InitTalk.InitTalk({'Arg_Greeting': 'FollowAISchedule', 'Arg_Turn': 1})
 
-        if Npc_Zora026[Npc_fine].IsOnInstEventFlag() {
-            Event174:
-            Npc_Zora026[Npc_fine].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk04', 'IsCloseMessageDialog': False})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Zora026[Npc_fine].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk06', 'IsCloseMessageDialog': True})
-
-                fork {
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2757.4921875, 'Pattern1PosY': 192.2383270263672, 'Pattern1PosZ': -71.02193450927734, 'Pattern1AtX': 2759.210693359375, 'Pattern1AtY': 188.557861328125, 'Pattern1AtZ': -85.43225860595703, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                } {
-                    EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'H-4', 'WarpDestPosName': 'Bottle_Start', 'IsWaitFinish': True})
-                }
-
-                Npc_Zora026[Npc_fine].Demo_TurnAndLookToObject({'ObjectId': 1, 'IsValid': False, 'FaceId': 2, 'ActorName': 'FldObj_Bottle_Letter', 'IsWaitFinish': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'UniqueName': 'Bottle_Ready', 'IsConfront': True})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Bottle_Mes_river'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Bottle_Mes_Start', 'IsWaitFinish': True})
-
-                fork {
-                    Npc_Zora026[Npc_fine].Demo_PlayASForDemo({'ASName': 'Act_Push', 'IsWaitFinish': False, 'IsEnabledAnimeDriven': 1, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-                } {
-                    FldObj_Bottle_Letter[Bottle_first].Demo_EventDisableContactIdle({'IsWaitFinish': True, 'ContactType': 0})
-                }
-
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 35})
-                Starter.Demo_SendSignal({'SignalType': 0, 'IsWaitFinish': False, 'Value': True})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 85})
-                Npc_Zora026[Npc_fine].Demo_MoveToAnchor({'IsTurnToAnchorDir': True, 'IsWaitFinish': False, 'ASKeyName': 'Run', 'AnchorName': 'AnchorAction2', 'AnchorUniqueName': 'Event_Point', 'IsAlignmentAnchor': False})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Bottle_Mes_Activated', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'Bottle_Mes_Start', 'IsWaitFinish': True})
-                Starter.Demo_SendSignal({'SignalType': 0, 'IsWaitFinish': False, 'Value': False})
-            } else {
-                Npc_Zora026[Npc_fine].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk05'})
-            }
-        } else {
+        if !Npc_Zora026[Npc_fine].IsOnInstEventFlag() {
             Npc_Zora026[Npc_fine].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk07'})
-            goto Event174
+        }
+        Event174:
+        Npc_Zora026[Npc_fine].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk04', 'IsCloseMessageDialog': False})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Zora026[Npc_fine].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk06', 'IsCloseMessageDialog': True})
+
+            fork {
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2757.4921875, 'Pattern1PosY': 192.2383270263672, 'Pattern1PosZ': -71.02193450927734, 'Pattern1AtX': 2759.210693359375, 'Pattern1AtY': 188.557861328125, 'Pattern1AtZ': -85.43225860595703, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+            } {
+                EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'H-4', 'WarpDestPosName': 'Bottle_Start', 'IsWaitFinish': True})
+            }
+
+            Npc_Zora026[Npc_fine].Demo_TurnAndLookToObject({'ObjectId': 1, 'IsValid': False, 'FaceId': 2, 'ActorName': 'FldObj_Bottle_Letter', 'IsWaitFinish': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'UniqueName': 'Bottle_Ready', 'IsConfront': True})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Bottle_Mes_river'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Bottle_Mes_Start', 'IsWaitFinish': True})
+
+            fork {
+                Npc_Zora026[Npc_fine].Demo_PlayASForDemo({'ASName': 'Act_Push', 'IsWaitFinish': False, 'IsEnabledAnimeDriven': 1, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+            } {
+                FldObj_Bottle_Letter[Bottle_first].Demo_EventDisableContactIdle({'IsWaitFinish': True, 'ContactType': 0})
+            }
+
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 35})
+            Starter.Demo_SendSignal({'SignalType': 0, 'IsWaitFinish': False, 'Value': True})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 85})
+            Npc_Zora026[Npc_fine].Demo_MoveToAnchor({'IsTurnToAnchorDir': True, 'IsWaitFinish': False, 'ASKeyName': 'Run', 'AnchorName': 'AnchorAction2', 'AnchorUniqueName': 'Event_Point', 'IsAlignmentAnchor': False})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Bottle_Mes_Activated', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'Bottle_Mes_Start', 'IsWaitFinish': True})
+            Starter.Demo_SendSignal({'SignalType': 0, 'IsWaitFinish': False, 'Value': False})
+        } else {
+            Npc_Zora026[Npc_fine].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk05'})
         }
     } else {
 
@@ -203,12 +201,10 @@ void Step10_Npc_Zora026_Talk() {
             Npc_Zora026[Npc_fine].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk11'})
         }
     } else
-    if EventSystemActor.CheckFlag({'FlagName': 'Bottle_Mes_river'}) {
-        goto Event198
-    } else {
+    if !EventSystemActor.CheckFlag({'FlagName': 'Bottle_Mes_river'}) {
         EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Zora026_BottleLost', 'IsWaitFinish': True})
-        goto Event198
     }
+    goto Event198
 }
 
 void Step10_Npc_Bottle_Mes001_Talk() {
@@ -276,17 +272,15 @@ void Bottle_Get_Demo() {
             Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk114'})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk115'})
-                Event410:
-                Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk122', 'IsCloseMessageDialog': True})
-                Fader.Demo_FadeOut({'Frame': 0, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Bottle_Mes_Step30'})
-                EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                Fader.Demo_FadeIn({'Frame': 0, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
-                EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': False, 'QuestName': 'Bottle_Mes', 'StepName': 'Finish', 'IsWaitFinish': True})
             } else {
                 Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk116'})
-                goto Event410
             }
+            Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk122', 'IsCloseMessageDialog': True})
+            Fader.Demo_FadeOut({'Frame': 0, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Bottle_Mes_Step30'})
+            EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+            Fader.Demo_FadeIn({'Frame': 0, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
+            EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': False, 'QuestName': 'Bottle_Mes', 'StepName': 'Finish', 'IsWaitFinish': True})
         } else {
             EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Bottle_Mes001_ReadyFirst', 'IsWaitFinish': True})
             Npc_Bottle_Mes001[Bottle_Man].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Bottle_Mes:talk104'})

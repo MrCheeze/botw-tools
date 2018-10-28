@@ -88,18 +88,16 @@ void Ready_Npc_HyruleDepthHatago007_Talk() {
     } else
     if Npc_HyruleDepthHatago007.IsOnInstEventFlag() {
         Npc_HyruleDepthHatago007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk05'})
-        Event5:
-        Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        if !EventSystemActor.GeneralChoice2() {
-            Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk03', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            goto Event11
-        } else {
-            Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk09', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-        }
     } else {
         Npc_HyruleDepthHatago007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk04'})
-        goto Event5
+    }
+    Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+    Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk02', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk03', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+        goto Event11
+    } else {
+        Npc_HyruleDepthHatago007.Demo_Talk({'MessageId': 'EventFlowMsg/HyruleDepthMini_WhiteHorse:talk09', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
     }
 }
 

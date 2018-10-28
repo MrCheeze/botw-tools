@@ -13,15 +13,11 @@ queries: ['IsOnInstEventFlag']
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
 void Near() {
-    if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant003_Talk'}) {
-        if !EventSystemActor.RandomChoice2() {
-            Npc_King_Vagrant003.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Near01', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
-        } else {
-            Event2:
-            Npc_King_Vagrant003.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Near00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Vagrant003_Talk'})
+    && !EventSystemActor.RandomChoice2() {
+        Npc_King_Vagrant003.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Near01', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
     } else {
-        goto Event2
+        Npc_King_Vagrant003.Demo_TalkASync({'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Near00', 'IsWaitFinish': True, 'IsChecked': False, 'DispFrame': 90})
     }
 }
 
@@ -35,30 +31,24 @@ void Talk() {
             Event107:
             if EventSystemActor.CheckFlag({'FlagName': 'Dungeon_Clear_1'}) {
                 Npc_King_Vagrant003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk06', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                Event142:
-                if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
-                    if Npc_King_Vagrant003.IsOnInstEventFlag() {
-                        Event132:
-                        Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Nagameru01', 'IsCloseMessageDialog': True})
-                        Event172:
-                        if !EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
-                            EventSystemActor.Demo_WaitFrame({'Frame': 20, 'IsWaitFinish': True})
-
-                            call GoodBye()
-
-                        }
-                    } else {
-                        Event157:
-
-                        call GoodBye()
-
-                    }
-                } else {
-                    goto Event157
-                }
             } else {
                 Npc_King_Vagrant003.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk05', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                goto Event142
+            }
+            if EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'})
+            && Npc_King_Vagrant003.IsOnInstEventFlag() {
+                Event132:
+                Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Nagameru01', 'IsCloseMessageDialog': True})
+                Event172:
+                if !EventSystemActor.CheckFlag({'FlagName': 'Get_Vagrant_BOKANGI'}) {
+                    EventSystemActor.Demo_WaitFrame({'Frame': 20, 'IsWaitFinish': True})
+
+                    call GoodBye()
+
+                }
+            } else {
+
+                call GoodBye()
+
             }
         } else {
             Npc_King_Vagrant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Vagrant003:Talk01'})

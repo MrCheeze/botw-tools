@@ -46,35 +46,33 @@ void Talk() {
                     Npc_SouthernVillage012.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_00', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
                     if !EventSystemActor.GeneralChoice2() {
                         Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_06'})
-                        Event40:
-                        switch Npc_SouthernVillage012.CheckActorAction13() {
-                          case [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
-                            Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_13'})
-                            Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_04'})
-                          case 1:
-                            WorldManagerControl.Demo_EventSetAddFogOff({'IsWaitFinish': True})
-                            GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-                            Npc_SouthernVillage012.Demo_TurnAndLookToObject({'ObjectId': 2, 'FaceId': 2, 'TurnPosition': [3280.0, 110.0, 3584.0], 'IsValid': True, 'IsWaitFinish': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                            GameROMPlayer.Demo_LookAtObject({'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'TurnPosition': [3280.0, 110.0, 3584.0], 'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-
-                            fork {
-                                Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_02', 'IsCloseMessageDialog': True})
-                            } {
-                                GameRomCamera.Demo_MovePosFlow({'StartCalcOnly': False, 'MotionMode': 1, 'Count': 30.0, 'ReviseModeEnd': 2, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Pattern1Fovy': 40.0, 'Accept1FrameDelay': True, 'Pattern1PosX': 3089.0, 'Pattern1PosY': 125.0, 'Pattern1PosZ': 3562.0, 'Pattern1AtX': 3093.0, 'Pattern1AtY': 125.0, 'Pattern1AtZ': 3562.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            }
-
-                            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': False, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
-                            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                            Npc_SouthernVillage012.Demo_TurnAndLookToObject({'FaceId': 2, 'IsValid': True, 'IsWaitFinish': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'TurnPosition': [0.0, 0.0, 0.0]})
-                            GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'IsValid': True, 'ObjectId': 0, 'ActorName': 'Npc_SouthernVillage012', 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                            GameRomCamera.Demo_PlayerHideOn({'IsWaitFinish': True})
-                            Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_04'})
-                        }
                     } else {
                         Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_07'})
-                        goto Event40
+                    }
+                    switch Npc_SouthernVillage012.CheckActorAction13() {
+                      case [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
+                        Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_13'})
+                        Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_04'})
+                      case 1:
+                        WorldManagerControl.Demo_EventSetAddFogOff({'IsWaitFinish': True})
+                        GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+                        Npc_SouthernVillage012.Demo_TurnAndLookToObject({'ObjectId': 2, 'FaceId': 2, 'TurnPosition': [3280.0, 110.0, 3584.0], 'IsValid': True, 'IsWaitFinish': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                        GameROMPlayer.Demo_LookAtObject({'ObjectId': 1, 'FaceId': 2, 'IsValid': True, 'TurnPosition': [3280.0, 110.0, 3584.0], 'IsWaitFinish': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                        GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+
+                        fork {
+                            Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_02', 'IsCloseMessageDialog': True})
+                        } {
+                            GameRomCamera.Demo_MovePosFlow({'StartCalcOnly': False, 'MotionMode': 1, 'Count': 30.0, 'ReviseModeEnd': 2, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Pattern1Fovy': 40.0, 'Accept1FrameDelay': True, 'Pattern1PosX': 3089.0, 'Pattern1PosY': 125.0, 'Pattern1PosZ': 3562.0, 'Pattern1AtX': 3093.0, 'Pattern1AtY': 125.0, 'Pattern1AtZ': 3562.0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                        }
+
+                        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': False, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
+                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+                        Npc_SouthernVillage012.Demo_TurnAndLookToObject({'FaceId': 2, 'IsValid': True, 'IsWaitFinish': True, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'TurnPosition': [0.0, 0.0, 0.0]})
+                        GameROMPlayer.Demo_LookAtObject({'FaceId': 2, 'IsValid': True, 'ObjectId': 0, 'ActorName': 'Npc_SouthernVillage012', 'IsWaitFinish': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                        GameRomCamera.Demo_PlayerHideOn({'IsWaitFinish': True})
+                        Npc_SouthernVillage012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage012:talk_04'})
                     }
                 }
             } else {

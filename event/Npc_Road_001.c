@@ -42,35 +42,34 @@ void MSG_Bado_03() {
 
     if Npc_Road_001.IsOnInstEventFlag() {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_03_1'})
-        Event233:
-        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Road_001_Talk'}) {
-            Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:Talk01_1'})
-            Event205:
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-
-                call Yorozuya_Kaiwa.Yorozuya_Kounyu_Rain({'Self2': ActorIdentifier(name="Npc_Road_001")})
-
-                Event210:
-                Npc_Road_001.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:Talk02'})
-                goto Event205
-              case 1:
-
-                call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_Road_001")})
-
-                goto Event210
-              case 2:
-                Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:GoodBye00'})
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-            }
-        } else {
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Road_001_Talk', 'IsWaitFinish': True})
-            Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:Talk01'})
-            goto Event205
-        }
     } else {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_03'})
-        goto Event233
+    }
+    Event233:
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_Road_001_Talk'}) {
+        Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:Talk01_1'})
+        Event205:
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+
+            call Yorozuya_Kaiwa.Yorozuya_Kounyu_Rain({'Self2': ActorIdentifier(name="Npc_Road_001")})
+
+            Event210:
+            Npc_Road_001.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:Talk02'})
+            goto Event205
+          case 1:
+
+            call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_Road_001")})
+
+            goto Event210
+          case 2:
+            Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_001:GoodBye00'})
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
+        }
+    } else {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Road_001_Talk', 'IsWaitFinish': True})
+        Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:Talk01'})
+        goto Event205
     }
 }
 
@@ -80,11 +79,10 @@ void MSG_Bado_02() {
 
     if Npc_Road_001.IsOnInstEventFlag() {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_02_1'})
-        goto Event233
     } else {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_02'})
-        goto Event233
     }
+    goto Event233
 }
 
 void MSG_Bado_01() {
@@ -93,11 +91,10 @@ void MSG_Bado_01() {
 
     if Npc_Road_001.IsOnInstEventFlag() {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_01_1'})
-        goto Event233
     } else {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_01'})
-        goto Event233
     }
+    goto Event233
 }
 
 void MSG_Bado_00() {
@@ -106,11 +103,10 @@ void MSG_Bado_00() {
 
     if Npc_Road_001.IsOnInstEventFlag() {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_00_1'})
-        goto Event233
     } else {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_00'})
-        goto Event233
     }
+    goto Event233
 }
 
 void RetMSG_Bado_04() {
@@ -120,22 +116,20 @@ void RetMSG_Bado_04() {
 
         if Npc_Road_001.IsOnInstEventFlag() {
             Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_04_1'})
-            goto Event233
         } else {
             Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:MSG_Bado_04'})
-            goto Event233
         }
+        goto Event233
     } else {
 
         call Rest()
 
         if Npc_Road_001.IsOnInstEventFlag() {
             Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_04_1'})
-            goto Event233
         } else {
             Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_04'})
-            goto Event233
         }
+        goto Event233
     }
 }
 
@@ -145,11 +139,10 @@ void RetMSG_Bado_03() {
 
     if Npc_Road_001.IsOnInstEventFlag() {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_03_1'})
-        goto Event233
     } else {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_03'})
-        goto Event233
     }
+    goto Event233
 }
 
 void RetMSG_Bado_02() {
@@ -158,11 +151,10 @@ void RetMSG_Bado_02() {
 
     if Npc_Road_001.IsOnInstEventFlag() {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_02_1'})
-        goto Event233
     } else {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_02'})
-        goto Event233
     }
+    goto Event233
 }
 
 void RetMSG_Bado_01() {
@@ -171,11 +163,10 @@ void RetMSG_Bado_01() {
 
     if Npc_Road_001.IsOnInstEventFlag() {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_01_1'})
-        goto Event233
     } else {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_01'})
-        goto Event233
     }
+    goto Event233
 }
 
 void RetMSG_Bado_00() {
@@ -184,11 +175,10 @@ void RetMSG_Bado_00() {
 
     if Npc_Road_001.IsOnInstEventFlag() {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_00_1'})
-        goto Event233
     } else {
         Npc_Road_001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_001:RetMSG_Bado_00'})
-        goto Event233
     }
+    goto Event233
 }
 
 void Rest_End() {

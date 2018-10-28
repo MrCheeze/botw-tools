@@ -334,18 +334,16 @@ void GetUtuwa() {
                                 call GetAndFinish()
 
                             } else
-                            if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
-                                Event43:
-                                if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_DungeonClearSeal', 'Count': 4}) {
-                                    GameROMPlayer.Demo_Talk({'GreetingType': 'NotAndNot', 'IsWaitFinish': False})
-                                    Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk13'})
-                                    goto Event517
-                                } else {
-                                    goto Event145
-                                }
-                            } else {
+                            if EventSystemActor.ComparePlayerMaxHeart({'Threshold': 30}) {
                                 Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk15'})
-                                goto Event43
+                            }
+                            Event43:
+                            if EventSystemActor.HasPorchItem({'PorchItemName': 'Obj_DungeonClearSeal', 'Count': 4}) {
+                                GameROMPlayer.Demo_Talk({'GreetingType': 'NotAndNot', 'IsWaitFinish': False})
+                                Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk13'})
+                                goto Event517
+                            } else {
+                                goto Event145
                             }
                           case 1:
                             Event45:
@@ -373,12 +371,10 @@ void GetUtuwa() {
                                 if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 124}) {
                                     goto Event701
                                 } else
-                                if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
-                                    goto Event43
-                                } else {
+                                if EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {
                                     Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk16'})
-                                    goto Event43
                                 }
+                                goto Event43
                               case 1:
                                 goto Event45
                               case 2:
@@ -452,26 +448,6 @@ void Demo034_0_0() {
                 TwnObj_GoddesStatue_A_01.Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'Aureole', 'SLinkKey': 'Aureole', 'IsTargetDemoSLinkUser': False})
             }
 
-            Event164:
-            if EventSystemActor.CheckFlag({'FlagName': 'FindDungeon_AllClear'}) {
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_King_Tennokoe_Ready', 'IsWaitFinish': True})
-                Event440:
-
-                call GetUtuwa()
-
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_FirstColony010_Talking', 'IsWaitFinish': True})
-                TwnObj_GoddesStatue_A_01.Demo_XLinkEventFade({'IsWaitFinish': True, 'SLinkKey': '', 'ELinkKey': 'Aureole'})
-                if !EventSystemActor.CheckFlag({'FlagName': 'FindDungeon_Finish'}) {
-                    if !EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Tennokoe'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'FindDungeon_AllClear'}) {
-                            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1.308655023574829, 'Pattern1PosY': 2.0979459285736084, 'Pattern1PosZ': -4.392578125, 'Pattern1AtX': 0.002257999964058399, 'Pattern1AtY': 1.6499940156936646, 'Pattern1AtZ': 0.7041019797325134, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Cushion': 0.30000001192092896, 'CollisionInterpolateSkip': False, 'Count': 30.0, 'MotionMode': 1, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': 'Tennokoe', 'DemoName': 'Npc_King_Common', 'EndFade': 0})
-                        }
-                    }
-                }
-            } else {
-                goto Event440
-            }
         } else {
 
             fork {
@@ -484,7 +460,20 @@ void Demo034_0_0() {
                 TwnObj_GoddesStatue_A_01.Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'Aureole', 'SLinkKey': 'Aureole', 'IsTargetDemoSLinkUser': False})
             }
 
-            goto Event164
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'FindDungeon_AllClear'}) {
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_King_Tennokoe_Ready', 'IsWaitFinish': True})
+        }
+
+        call GetUtuwa()
+
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_FirstColony010_Talking', 'IsWaitFinish': True})
+        TwnObj_GoddesStatue_A_01.Demo_XLinkEventFade({'IsWaitFinish': True, 'SLinkKey': '', 'ELinkKey': 'Aureole'})
+        if !EventSystemActor.CheckFlag({'FlagName': 'FindDungeon_Finish'})
+        && !EventSystemActor.CheckFlag({'FlagName': 'Npc_King_Tennokoe'})
+        && EventSystemActor.CheckFlag({'FlagName': 'FindDungeon_AllClear'}) {
+            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1.308655023574829, 'Pattern1PosY': 2.0979459285736084, 'Pattern1PosZ': -4.392578125, 'Pattern1AtX': 0.002257999964058399, 'Pattern1AtY': 1.6499940156936646, 'Pattern1AtZ': 0.7041019797325134, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Cushion': 0.30000001192092896, 'CollisionInterpolateSkip': False, 'Count': 30.0, 'MotionMode': 1, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+            EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': 'Tennokoe', 'DemoName': 'Npc_King_Common', 'EndFade': 0})
         }
     } else {
 
@@ -523,20 +512,6 @@ void Demo034_0_2() {
             GameROMPlayer.Demo_Talk({'IsWaitFinish': True, 'GreetingType': 'NotAndNot'})
         }
 
-        Event467:
-
-        fork {
-            TwnObj_SuperGoddesStatue_A_01.Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'Aureole', 'IsTargetDemoSLinkUser': False, 'SLinkKey': 'Aureole'})
-        } {
-            WorldManagerControl.Demo_EventSetDiffuseAttenuate({'IsWaitFinish': True, 'diameter': 0.30000001192092896})
-        }
-
-
-        call GetUtuwa()
-
-        EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_SuperGoddess_Talking', 'IsWaitFinish': True})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 4.070312976837158, 'Pattern1PosY': 3.9248409271240234, 'Pattern1PosZ': 31.88818359375, 'Pattern1AtX': 2.596436023712158, 'Pattern1AtY': 4.116950988769531, 'Pattern1AtZ': 26.87353515625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'TwnObj_SuperGoddesStatue_A_01', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        TwnObj_SuperGoddesStatue_A_01.Demo_XLinkEventFade({'IsWaitFinish': True, 'SLinkKey': '', 'ELinkKey': 'Aureole'})
     } else {
 
         fork {
@@ -547,8 +522,20 @@ void Demo034_0_2() {
             GameROMPlayer.Demo_Talk({'IsWaitFinish': True, 'GreetingType': 'NotAndNot'})
         }
 
-        goto Event467
     }
+
+    fork {
+        TwnObj_SuperGoddesStatue_A_01.Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'Aureole', 'IsTargetDemoSLinkUser': False, 'SLinkKey': 'Aureole'})
+    } {
+        WorldManagerControl.Demo_EventSetDiffuseAttenuate({'IsWaitFinish': True, 'diameter': 0.30000001192092896})
+    }
+
+
+    call GetUtuwa()
+
+    EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_SuperGoddess_Talking', 'IsWaitFinish': True})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 4.070312976837158, 'Pattern1PosY': 3.9248409271240234, 'Pattern1PosZ': 31.88818359375, 'Pattern1AtX': 2.596436023712158, 'Pattern1AtY': 4.116950988769531, 'Pattern1AtZ': 26.87353515625, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'TwnObj_SuperGoddesStatue_A_01', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    TwnObj_SuperGoddesStatue_A_01.Demo_XLinkEventFade({'IsWaitFinish': True, 'SLinkKey': '', 'ELinkKey': 'Aureole'})
 }
 
 void Demo034_0_3() {

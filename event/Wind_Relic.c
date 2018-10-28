@@ -228,38 +228,33 @@ void Battle_Npc_ValleyVillage010_Talk() {
                     } else
                     if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo105_0'}) {
                         EventSystemActor.Demo_FlagOFF({'FlagName': 'Wind_Relic_NPC10_HelpYou', 'IsWaitFinish': True})
-                        Event348:
-                        Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk60', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                        switch EventSystemActor.GeneralChoice4() {
-                          case 0:
-                            Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk71', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                            Event464:
-                            EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC010_Question', 'IsWaitFinish': True})
-                            goto Event781
-                          case 1:
-                            Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk72', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                            Event617:
-                            Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk61', 'IsCloseMessageDialog': False})
-                            goto Event464
-                          case 2:
-                            Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk73', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                            goto Event617
-                          case 3:
-                            Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk74', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
-                            goto Event617
-                        }
-                    } else {
-                        goto Event348
+                    }
+                    Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk60', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+                    switch EventSystemActor.GeneralChoice4() {
+                      case 0:
+                        Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk71', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+                        Event464:
+                        EventSystemActor.Demo_FlagON({'FlagName': 'Rito_NPC010_Question', 'IsWaitFinish': True})
+                        goto Event781
+                      case 1:
+                        Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk72', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+                        Event617:
+                        Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk61', 'IsCloseMessageDialog': False})
+                        goto Event464
+                      case 2:
+                        Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk73', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+                        goto Event617
+                      case 3:
+                        Npc_ValleyVillage010.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk74', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False})
+                        goto Event617
                     }
                 } else
                 if EventSystemActor.HasPorchItem({'PorchItemName': 'BombArrow_A', 'Count': 1}) {
                     Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk80'})
-                    Event555:
-                    Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk29', 'IsOverWriteLabelActorName': False})
                 } else {
                     Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk11', 'IsOverWriteLabelActorName': False})
-                    goto Event555
                 }
+                Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk29', 'IsOverWriteLabelActorName': False})
             } else {
                 Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Wind_Relic:talk35', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             }
@@ -419,13 +414,11 @@ void ParashawlFinished_Npc_ValleyVillage010_StepStart() {
         Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Wind_Relic:talk10', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
         if !EventSystemActor.GeneralChoice2() {
             Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk47'})
-            Event874:
-            Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk44'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Wind_Relic_ParashawlFinished'})
         } else {
             Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk48'})
-            goto Event874
         }
+        Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk44'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Wind_Relic_ParashawlFinished'})
     } else
     if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 150}) {
         Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk49', 'IsOverWriteLabelActorName': False})
@@ -433,11 +426,10 @@ void ParashawlFinished_Npc_ValleyVillage010_StepStart() {
     } else
     if EventSystemActor.CheckElapsedTimeOfMiniGame({'Threshold': 30}) {
         Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk50', 'IsOverWriteLabelActorName': False})
-        goto Event725
     } else {
         Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk51', 'IsOverWriteLabelActorName': False})
-        goto Event725
     }
+    goto Event725
 }
 
 void BattlePlaying_Npc_ValleyVillage031_EachFrame() {
@@ -445,10 +437,9 @@ void BattlePlaying_Npc_ValleyVillage031_EachFrame() {
     if EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_BattleStart'}) {
         if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'Value': 4, 'GameDataIntName': 'Wind_Relic_BreakBattery'}) {
             Event984:
-            if EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_Battle'}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_BattleFinished'}) {
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Wind_Relic', 'StepName': 'BattleSucceeded', 'ForceRunTelop': False})
-                }
+            if EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_Battle'})
+            && !EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_BattleFinished'}) {
+                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Wind_Relic', 'StepName': 'BattleSucceeded', 'ForceRunTelop': False})
             }
         } else
         if !EventSystemActor.HasPorchItemByCategory({'Category': 0, 'Count': 1}) {
@@ -466,10 +457,9 @@ void BattlePlaying_Npc_ValleyVillage031_EachFrame() {
                 } else {
                     EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'Wind_Relic_Parashawl_FailReason', 'Value': 1})
                     Event985:
-                    if EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_Battle'}) {
-                        if !EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_BattleFinished'}) {
-                            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Wind_Relic', 'ForceRunTelop': False, 'StepName': 'BattleEscape'})
-                        }
+                    if EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_Battle'})
+                    && !EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_BattleFinished'}) {
+                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Wind_Relic', 'ForceRunTelop': False, 'StepName': 'BattleEscape'})
                     }
                 }
             }
@@ -622,11 +612,10 @@ void ParashawlFailed_Npc_ValleyVillage010_StepStart() {
         } else
         if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Wind_Relic_Parashawl_FailReason', 'Operator': 'Equal', 'Value': 2}) {
             Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Wind_Relic:talk27', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-            goto Event666
         } else {
             Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk15', 'IsOverWriteLabelActorName': False})
-            goto Event666
         }
+        goto Event666
     } else {
         goto Event666
     }
@@ -685,15 +674,13 @@ void BattleEscape_Npc_ValleyVillage031_StepStart() {
 
     if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Wind_Relic_Parashawl_FailReason', 'Operator': 'Equal', 'Value': 0}) {
         Npc_ValleyVillage031.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Wind_Relic:talk40', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-        Event978:
-        EventBgmCtrlTag.Demo_Stop({'BgmName': 'RemainsWindBattleBgm', 'FadeSec': 2.0, 'IsWaitFinish': True})
-        Fader.Demo_FadeOut({'Color': 1, 'Frame': 0, 'DispMode': 'Auto', 'IsWaitFinish': True})
-        EventSystemActor.Demo_FlagOFF({'FlagName': 'Wind_Relic_Sky', 'IsWaitFinish': True})
-        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': 'BackToBattleStep', 'EndFade': 1, 'DemoName': 'Wind_Relic'})
     } else {
         Npc_ValleyVillage031.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Wind_Relic:talk41', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-        goto Event978
     }
+    EventBgmCtrlTag.Demo_Stop({'BgmName': 'RemainsWindBattleBgm', 'FadeSec': 2.0, 'IsWaitFinish': True})
+    Fader.Demo_FadeOut({'Color': 1, 'Frame': 0, 'DispMode': 'Auto', 'IsWaitFinish': True})
+    EventSystemActor.Demo_FlagOFF({'FlagName': 'Wind_Relic_Sky', 'IsWaitFinish': True})
+    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EntryPointName': 'BackToBattleStep', 'EndFade': 1, 'DemoName': 'Wind_Relic'})
 }
 
 void Demo022_0_FadeOut() {
@@ -742,18 +729,16 @@ void Step1_Npc_ValleyVillage010_IsPlayed_Demo174_0_Talk() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 0}) {
         Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk00', 'ASName': 'Talk_BowSetup'})
-        Event406:
-        if !EventSystemActor.GeneralChoice2() {
-            Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk06', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_BowSetup'})
-            Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk02', 'ASName': 'Talk_BowSetup'})
-            EventSystemActor.Demo_FlagON({'FlagName': 'Wind_Relic_NPC010_First', 'IsWaitFinish': True})
-            goto Event338
-        } else {
-            Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk01', 'ASName': 'Talk_BowSetup'})
-        }
     } else {
         Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk05', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_BowSetup'})
-        goto Event406
+    }
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Wind_Relic:talk06', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_BowSetup'})
+        Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk02', 'ASName': 'Talk_BowSetup'})
+        EventSystemActor.Demo_FlagON({'FlagName': 'Wind_Relic_NPC010_First', 'IsWaitFinish': True})
+        goto Event338
+    } else {
+        Npc_ValleyVillage010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Wind_Relic:talk01', 'ASName': 'Talk_BowSetup'})
     }
 }
 

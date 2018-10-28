@@ -16,22 +16,19 @@ void Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods003_IsTalked'}) {
-        Event17:
-        switch EventSystemActor.CheckWeather() {
-          case [0, 1, 2]:
-            Npc_FaronWoods003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods003:talk00'})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_FaronWoods003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods003:talk02'})
-            } else {
-                Npc_FaronWoods003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods003:talk01'})
-            }
-          case 3:
-            Npc_FaronWoods003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods003:talk03'})
-        }
-    } else {
+    if !EventSystemActor.CheckFlag({'FlagName': 'Npc_FaronWoods003_IsTalked'}) {
         EventSystemActor.Demo_FlagON({'FlagName': 'Npc_FaronWoods003_IsTalked', 'IsWaitFinish': True})
-        goto Event17
+    }
+    switch EventSystemActor.CheckWeather() {
+      case [0, 1, 2]:
+        Npc_FaronWoods003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods003:talk00'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_FaronWoods003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods003:talk02'})
+        } else {
+            Npc_FaronWoods003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods003:talk01'})
+        }
+      case 3:
+        Npc_FaronWoods003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_FaronWoods003:talk03'})
     }
 }
 

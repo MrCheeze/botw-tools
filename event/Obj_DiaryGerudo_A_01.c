@@ -29,38 +29,30 @@ void Talk() {
                 Obj_DiaryGerudo_A_01.Demo_Talk({'MessageId': 'EventFlowMsg/Obj_DiaryGerudo_A_01:talk02', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': True})
                 switch EventSystemActor.GeneralChoice3() {
                   case 0:
-                    if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'}) {
-                        Event7:
-                        Obj_DiaryGerudo_A_01.Demo_Talk({'MessageId': 'EventFlowMsg/Obj_DiaryGerudo_A_01:talk03', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-                        if !EventSystemActor.GeneralChoice2() {
-                            goto Event5
-                        } else
-                        Event18:
-                        if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Step1'}) {
-                                EventSystemActor.Demo_FlagON({'FlagName': 'SecretofObject_Finish', 'IsWaitFinish': True})
-                            }
-                        }
-                    } else {
+                    if !EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'}) {
                         EventSystemActor.Demo_FlagON({'FlagName': 'SecretofObject_Activated', 'IsWaitFinish': True})
-                        goto Event7
+                    }
+                    Event7:
+                    Obj_DiaryGerudo_A_01.Demo_Talk({'MessageId': 'EventFlowMsg/Obj_DiaryGerudo_A_01:talk03', 'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
+                    if !EventSystemActor.GeneralChoice2() {
+                        goto Event5
+                    } else
+                    Event18:
+                    if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'})
+                    && EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Step1'}) {
+                        EventSystemActor.Demo_FlagON({'FlagName': 'SecretofObject_Finish', 'IsWaitFinish': True})
                     }
                   case 1:
-                    if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'}) {
-                        goto Event3
-                    } else {
+                    if !EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'}) {
                         EventSystemActor.Demo_FlagON({'FlagName': 'SecretofObject_Activated', 'IsWaitFinish': True})
-                        goto Event3
                     }
+                    goto Event3
                   case 2:
-                    if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'}) {
-                        Event22:
-                        if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Step1'}) {
-                            EventSystemActor.Demo_FlagON({'FlagName': 'SecretofObject_Finish', 'IsWaitFinish': True})
-                        }
-                    } else {
+                    if !EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Activated'}) {
                         EventSystemActor.Demo_FlagON({'FlagName': 'SecretofObject_Activated', 'IsWaitFinish': True})
-                        goto Event22
+                    }
+                    if EventSystemActor.CheckFlag({'FlagName': 'SecretofObject_Step1'}) {
+                        EventSystemActor.Demo_FlagON({'FlagName': 'SecretofObject_Finish', 'IsWaitFinish': True})
                     }
                 }
               case 1:

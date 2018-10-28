@@ -329,11 +329,9 @@ void Step2_Talk_Retry() {
 }
 
 void KorokShiren_CompleteCheck() {
-    if EventSystemActor.CheckFlag({'FlagName': 'KorokMini_KorokShiren_Activated'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'GodTree_Finish'}) {
-                EventSystemActor.Demo_FlagON({'FlagName': 'KorokMini_KorokShiren_Step010', 'IsWaitFinish': True})
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'KorokMini_KorokShiren_Activated'})
+    && EventSystemActor.CheckFlag({'FlagName': 'ShieldofKolog_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'GodTree_Finish'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'KorokMini_KorokShiren_Step010', 'IsWaitFinish': True})
     }
 }

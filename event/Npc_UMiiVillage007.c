@@ -21,26 +21,23 @@ void Talk() {
         Event73:
         switch EventSystemActor.GeneralChoice4() {
           case 0:
-            if EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC027_Cooker'}) {
-                Event85:
-                Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk21'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'UMiiVillage_NPC027_Cooker', 'IsWaitFinish': True})
-                if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_GiveCake_Activated'}) {
-                    Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk19'})
-                    Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk20'})
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'UMiiVillage_NPC027_MamonoCake', 'IsWaitFinish': True})
-                    Event88:
-                    Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk23', 'IsCloseMessageDialog': True})
-                    Event91:
-                    Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk00'})
-                    goto Event73
-                } else {
-                    Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk18', 'IsCloseMessageDialog': True})
-                    goto Event91
-                }
-            } else {
+            if !EventSystemActor.CheckFlag({'FlagName': 'UMiiVillage_NPC027_Cooker'}) {
                 Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk17'})
-                goto Event85
+            }
+            Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk21'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'UMiiVillage_NPC027_Cooker', 'IsWaitFinish': True})
+            if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_GiveCake_Activated'}) {
+                Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk19'})
+                Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk20'})
+                EventSystemActor.Demo_FlagOFF({'FlagName': 'UMiiVillage_NPC027_MamonoCake', 'IsWaitFinish': True})
+                Event88:
+                Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk23', 'IsCloseMessageDialog': True})
+                Event91:
+                Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk00'})
+                goto Event73
+            } else {
+                Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk18', 'IsCloseMessageDialog': True})
+                goto Event91
             }
           case 1:
             Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk22'})
@@ -94,12 +91,11 @@ void MonaryHello() {
       case 10:
         if !EventSystemActor.RandomChoice2() {
             Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk08'})
-            Event53:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': False})
         } else {
             Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk07'})
-            goto Event53
         }
+        Event53:
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': False})
       case 11:
         Npc_UMiiVillage007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_UMiiVillage007:talk06'})
         goto Event53

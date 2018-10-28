@@ -97,15 +97,14 @@ void Yorozuya_Kaitori() {
                         Npc_Kakariko010[Yorozuya_Kaitori(Self)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': False})
                         if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 1, 'GameDataIntName': 'Shop_TradeItemNum'}) {
                             Npc_Kakariko010[Yorozuya_Kaitori(Self)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_33'})
-                            Event9:
-                            if !EventSystemActor.GeneralChoice2() {
-                                goto Event10
-                            } else {
-                                goto Event13
-                            }
                         } else {
                             Npc_Kakariko010[Yorozuya_Kaitori(Self)].Demo_OpenMessageDialog({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Yorozuya_Kaiwa:Com_Talk_14', 'IsWaitAS': False, 'CloseDialogOption': 0, 'MessageOpenDelayTime': 0})
-                            goto Event9
+                        }
+                        Event9:
+                        if !EventSystemActor.GeneralChoice2() {
+                            goto Event10
+                        } else {
+                            goto Event13
                         }
                       case 1:
                         Npc_Kakariko010[Yorozuya_Kaitori(Self)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': True})
@@ -418,15 +417,14 @@ void Zucchi_Kaitori() {
                         Npc_TripMaster_00[Zucchi_Kaitori(Self)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': False})
                         if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 1, 'GameDataIntName': 'Shop_TradeItemNum'}) {
                             Npc_TripMaster_00[Zucchi_Kaitori(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_33'})
-                            Event105:
-                            if !EventSystemActor.GeneralChoice2() {
-                                goto Event106
-                            } else {
-                                goto Event108
-                            }
                         } else {
                             Npc_TripMaster_00[Zucchi_Kaitori(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_14', 'IsOverWriteLabelActorName': False})
-                            goto Event105
+                        }
+                        Event105:
+                        if !EventSystemActor.GeneralChoice2() {
+                            goto Event106
+                        } else {
+                            goto Event108
                         }
                       case 1:
                         Npc_TripMaster_00[Zucchi_Kaitori(Self)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': True})
@@ -500,11 +498,10 @@ void Zucchi_Konyu() {
                                       case 0:
                                         Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_ShopFixedItemNum({'IsWaitFinish': True, 'IsSelectAll': False})
                                         if EventSystemActor.CheckGameDataInt({'Operator': 'Equal', 'Value': 1, 'GameDataIntName': 'Shop_TradeItemNum'}) {
-                                            if EventSystemActor.HasEnoughPayment() {
-                                                if EventSystemActor.CheckItemShopPorchVacancy() {
-                                                    Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_32'})
-                                                    goto Event148
-                                                }
+                                            if EventSystemActor.HasEnoughPayment()
+                                            && EventSystemActor.CheckItemShopPorchVacancy() {
+                                                Npc_TripMaster_00[Zucchi_Konyu(Self2)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_TripMaster_00:Com_Talk_32'})
+                                                goto Event148
                                             }
                                         } else
                                         if EventSystemActor.HasEnoughPayment() {

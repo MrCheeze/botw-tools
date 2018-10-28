@@ -51,12 +51,10 @@ void Talk() {
             Npc_HatenoGate003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate003:Talk18'})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_HatenoGate003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate003:Talk19'})
-                Event40:
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_HatenoGate003_second', 'IsWaitFinish': True})
             } else {
                 Npc_HatenoGate003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate003:Talk20'})
-                goto Event40
             }
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_HatenoGate003_second', 'IsWaitFinish': True})
           case 11:
             goto Event11
         }
@@ -77,11 +75,10 @@ void Talk() {
         Npc_HatenoGate003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate003:Talk13'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_HatenoGate003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate003:Talk17'})
-            goto Event34
         } else {
             Npc_HatenoGate003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HatenoGate003:Talk16'})
-            goto Event34
         }
+        goto Event34
     }
 }
 

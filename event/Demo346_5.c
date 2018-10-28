@@ -243,7 +243,6 @@ void Demo346_5_SubFlow() {
                     RemainsFire[RemainsFire_Battle].Demo_AnimMatrixDriven({'ASSlot': 0, 'SequenceBank': 0, 'IsIgnoreSame': False, 'IsChangeable': False, 'ASName': 'Place2_TailAttack', 'IsWaitFinish': False, 'StartFrame': -1.0})
                 }
 
-                goto Event224
             } else {
 
                 fork {
@@ -252,8 +251,8 @@ void Demo346_5_SubFlow() {
                     RemainsFire[RemainsFire_Battle].Demo_AnimMatrixDriven({'ASSlot': 0, 'SequenceBank': 0, 'IsIgnoreSame': False, 'IsChangeable': False, 'ASName': 'Place1_TailAttack', 'IsWaitFinish': False, 'StartFrame': -1.0})
                 }
 
-                goto Event224
             }
+            goto Event224
         } else
         if EventSystemActor.CheckPlayerState({'PlayerState': 5}) {
             GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})

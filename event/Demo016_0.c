@@ -209,11 +209,10 @@ void DungeonArrival() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_VisibleOff({'IsWaitFinish': False})
-        goto Event8
     } else {
         GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': True})
-        goto Event8
     }
+    goto Event8
 }
 
 void DungeonArrival_Gaman() {

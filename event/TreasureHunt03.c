@@ -20,13 +20,10 @@ void Ready_TwnObj_UmayadoBook_09_Talk() {
     TwnObj_UmayadoBook_09[UmayadoBook_09_01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/TreasureHunt03:BookFirst'})
     if !EventSystemActor.GeneralChoice2() {
         TwnObj_UmayadoBook_09[UmayadoBook_09_01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/TreasureHunt03:Book00'})
-        if EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt03_Activated'}) {
-            Event5:
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt03_Step01'})
-        } else {
+        if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt03_Activated'}) {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt03_Activated'})
-            goto Event5
         }
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt03_Step01'})
     }
 }
 

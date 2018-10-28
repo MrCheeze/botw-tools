@@ -272,26 +272,22 @@ void Demo331_0() {
                 EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
                 GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'Demo331_0-C05-Link-A-2', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False, 'ClothWarpMode': -1})
             } else
-            if !EventSystemActor.ComparePlayerHeart({'Threshold': 5}) {
-                goto Event91
-            } else {
+            if EventSystemActor.ComparePlayerHeart({'Threshold': 5}) {
                 GameROMPlayer.Demo_ApplyDamage({'IsWaitFinish': True, 'Value': 4})
-                goto Event91
             }
+            goto Event91
         } else
         if !EventSystemActor.ComparePlayerHeart({'Threshold': 9}) {
             GameROMPlayer.Demo_ApplyDamage({'IsWaitFinish': True, 'Value': 7})
-            goto Event91
         } else {
             GameROMPlayer.Demo_ApplyDamage({'IsWaitFinish': True, 'Value': 8})
-            goto Event91
         }
+        goto Event91
     } else
     if !EventSystemActor.ComparePlayerHeart({'Threshold': 13}) {
         GameROMPlayer.Demo_ApplyDamage({'IsWaitFinish': True, 'Value': 11})
-        goto Event91
     } else {
         GameROMPlayer.Demo_ApplyDamage({'IsWaitFinish': True, 'Value': 12})
-        goto Event91
     }
+    goto Event91
 }

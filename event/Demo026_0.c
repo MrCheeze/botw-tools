@@ -146,13 +146,11 @@ void Guardian_Mini_Appearance() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
-        Event102:
-        GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'OtherActor': 3, 'ActorNameForOtherActor': 'TargetActor', 'AtCalcMode': 0, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'ReviseMode': 1, 'ActorIgnoringCollision': -1, 'UniqueNameForOtherActor': '', 'LatOffset': 0.0, 'LngOffset': 0.0, 'RadiusOffset': 5.0, 'ReverseOrder': True, 'AtParam': [0.0, 2.0, 0.0], 'Time': 0.0})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
     } else {
         Starter.Demo_SendSignal({'SignalType': 0, 'IsWaitFinish': False, 'Value': False})
-        goto Event102
     }
+    GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'OtherActor': 3, 'ActorNameForOtherActor': 'TargetActor', 'AtCalcMode': 0, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'ReviseMode': 1, 'ActorIgnoringCollision': -1, 'UniqueNameForOtherActor': '', 'LatOffset': 0.0, 'LngOffset': 0.0, 'RadiusOffset': 5.0, 'ReverseOrder': True, 'AtParam': [0.0, 2.0, 0.0], 'Time': 0.0})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
 }
 
 void Guardian_Mini_Senior_Appearance() {
@@ -231,13 +229,11 @@ void Guardian_Mini_Appearance_TutorialDungeon() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
-        Event104:
-        GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'OtherActor': 3, 'ActorNameForOtherActor': 'TargetActor', 'AtCalcMode': 0, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'ReviseMode': 1, 'ActorIgnoringCollision': -1, 'UniqueNameForOtherActor': '', 'LatOffset': 0.0, 'LngOffset': 0.0, 'RadiusOffset': 5.0, 'ReverseOrder': True, 'AtParam': [0.0, 2.0, 0.0], 'Time': 0.0})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
     } else {
         Starter.Demo_SendSignal({'SignalType': 0, 'IsWaitFinish': False, 'Value': False})
-        goto Event104
     }
+    GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'OtherActor': 3, 'ActorNameForOtherActor': 'TargetActor', 'AtCalcMode': 0, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'ReviseMode': 1, 'ActorIgnoringCollision': -1, 'UniqueNameForOtherActor': '', 'LatOffset': 0.0, 'LngOffset': 0.0, 'RadiusOffset': 5.0, 'ReverseOrder': True, 'AtParam': [0.0, 2.0, 0.0], 'Time': 0.0})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
 }
 
 void Guardian_Mini_Appearance_Relative() {
@@ -284,13 +280,11 @@ void Guardian_Mini_Appearance_Relative() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
-        Event145:
-        GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'OtherActor': 3, 'AtCalcMode': 0, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'ReviseMode': 1, 'ActorIgnoringCollision': -1, 'UniqueNameForOtherActor': '', 'LatOffset': 0.0, 'LngOffset': 0.0, 'RadiusOffset': 5.0, 'ReverseOrder': True, 'AtParam': [0.0, 2.0, 0.0], 'Time': 0.0, 'ActorNameForOtherActor': 'TargetActor'})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
     } else {
         Starter.Demo_SendSignal({'SignalType': 0, 'IsWaitFinish': False, 'Value': False})
-        goto Event145
     }
+    GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'OtherActor': 3, 'AtCalcMode': 0, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'ReviseMode': 1, 'ActorIgnoringCollision': -1, 'UniqueNameForOtherActor': '', 'LatOffset': 0.0, 'LngOffset': 0.0, 'RadiusOffset': 5.0, 'ReverseOrder': True, 'AtParam': [0.0, 2.0, 0.0], 'Time': 0.0, 'ActorNameForOtherActor': 'TargetActor'})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
 }
 
 void Guardian_Mini_Senior_Appearance_Relative() {

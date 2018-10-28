@@ -66,19 +66,17 @@ void Ready_JiatoSekihi() {
     if EventSystemActor.CheckFlag({'FlagName': 'AfterTalk_WaterRelic'}) {
         if Npc_Zora035.IsOnInstEventFlag() {
             Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk15'})
-            Event147:
-            Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk16'})
-            Event141:
-            Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk12'})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk14'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMini_ReliefSearch_Activated'})
-            } else {
-                Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk13'})
-            }
         } else {
             Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk17'})
-            goto Event147
+        }
+        Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk16'})
+        Event141:
+        Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk12'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk14'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'ZoraMini_ReliefSearch_Activated'})
+        } else {
+            Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk13'})
         }
     } else {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'AfterTalk_WaterRelic'})
@@ -115,20 +113,18 @@ void Finish_JiatoSekihi() {
             Event156:
             if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Operator': 'GreaterThan', 'Value': 1}) {
                 Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk20'})
-                Event110:
-
-                call Sub_RandomHint()
-
-                Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk32'})
-                if !EventSystemActor.GeneralChoice2() {
-                    goto Event156
-                } else {
-                    Event154:
-                    Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk19'})
-                }
             } else {
                 Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk21'})
-                goto Event110
+            }
+
+            call Sub_RandomHint()
+
+            Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk32'})
+            if !EventSystemActor.GeneralChoice2() {
+                goto Event156
+            } else {
+                Event154:
+                Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk19'})
             }
         } else {
             goto Event154
@@ -184,52 +180,34 @@ void ReadyNear_JiatoSekihi() {
 void Sub_ReliefCounter() {
     if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_01'}) {
         EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-        Event34:
-        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_02'}) {
-            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-            Event35:
-            if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_03'}) {
-                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                Event36:
-                if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_04'}) {
-                    EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                    Event37:
-                    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_05'}) {
-                        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                        Event38:
-                        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_06'}) {
-                            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                            Event39:
-                            if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_07'}) {
-                                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                                Event40:
-                                if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_08'}) {
-                                    EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                                    Event41:
-                                    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_09'}) {
-                                        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                                        Event42:
-                                        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
-                                            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
-                                        }
-                                    } else
-                                    goto Event42
-                                } else
-                                goto Event41
-                            } else
-                            goto Event40
-                        } else
-                        goto Event39
-                    } else
-                    goto Event38
-                } else
-                goto Event37
-            } else
-            goto Event36
-        } else
-        goto Event35
-    } else
-    goto Event34
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_02'}) {
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_03'}) {
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_04'}) {
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_05'}) {
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_06'}) {
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_07'}) {
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_08'}) {
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_09'}) {
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
+        EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'ZoraMini_ReliefSearch_Count', 'Value': -1})
+    }
 }
 
 void JiatoHello() {
@@ -244,11 +222,10 @@ void JiatoHello() {
       case 10:
         if !EventSystemActor.RandomChoice2() {
             Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk06', 'IsCloseMessageDialog': False})
-            goto Event127
         } else {
             Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk07', 'IsCloseMessageDialog': False})
-            goto Event127
         }
+        goto Event127
       case 11:
         Npc_Zora035.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora035:talk08', 'IsCloseMessageDialog': False})
         goto Event127
@@ -263,47 +240,19 @@ void FinishNear_JiatoSekihi() {
 
 void FinishNear() {
     if Npc_Zora035.CheckActorAction13() {
-        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_01'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_02'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_03'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_04'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_05'}) {
-                            if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_06'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_07'}) {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_08'}) {
-                                        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_09'}) {
-                                            if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
-                                                Npc_Zora035.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora035:near01', 'DispFrame': 300, 'IsChecked': True})
-                                            } else {
-                                                Event136:
-                                                Npc_Zora035.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora035:near01', 'DispFrame': 90, 'IsChecked': False})
-                                            }
-                                        } else {
-                                            goto Event136
-                                        }
-                                    } else {
-                                        goto Event136
-                                    }
-                                } else {
-                                    goto Event136
-                                }
-                            } else {
-                                goto Event136
-                            }
-                        } else {
-                            goto Event136
-                        }
-                    } else {
-                        goto Event136
-                    }
-                } else {
-                    goto Event136
-                }
-            } else {
-                goto Event136
-            }
+        if EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_01'})
+        && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_02'})
+        && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_03'})
+        && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_04'})
+        && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_05'})
+        && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_06'})
+        && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_07'})
+        && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_08'})
+        && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_09'})
+        && EventSystemActor.CheckFlag({'FlagName': 'ZoraRelief_Check_10'}) {
+            Npc_Zora035.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora035:near01', 'DispFrame': 300, 'IsChecked': True})
         } else {
-            goto Event136
+            Npc_Zora035.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_Zora035:near01', 'DispFrame': 90, 'IsChecked': False})
         }
     }
 }

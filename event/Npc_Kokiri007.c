@@ -55,13 +55,11 @@ void Near() {
         Event8:
         Npc_Kokiri007.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/KorokMini_UMAShiren:Npc_Kokiri007_R_Near000', 'DispFrame': 300, 'IsChecked': True})
     } else
-    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo104_0'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_Camera'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Activated'}) {
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Ready'})
-                goto Event8
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo104_0'})
+    && EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_Camera'})
+    && EventSystemActor.CheckFlag({'FlagName': 'OldKorok_Help_Activated'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_UMAShiren_Ready'})
+        goto Event8
     }
 }
 

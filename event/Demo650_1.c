@@ -34,21 +34,16 @@ void CDungeon123() {
     GameROMPlayer.Demo_DisableUnequipInEvent({'IsWaitFinish': True})
     if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
         GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        Event8:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-        GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'BgHitJump': False, 'Angle': 0.0, 'Count': 15.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'LatMode': 1, 'LatMin': 0.0, 'LatMax': 0.0, 'Near': 2.5, 'Middle': 7.5, 'Far': 100.0, 'ReviseMode': 2})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
-        if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
-            Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
-            Event2:
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
-        } else {
-            Starter.Demo_SendSignal({'SignalType': 0, 'Value': False, 'IsWaitFinish': False})
-            goto Event2
-        }
-    } else {
-        goto Event8
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+    GameRomCamera.Demo_Look({'IsWaitFinish': True, 'BaseAngleCamera': False, 'Back': False, 'BgHitJump': False, 'Angle': 0.0, 'Count': 15.0, 'TargetUniqueName': '', 'FovyMin': 35.0, 'FovyMax': 65.0, 'LatMode': 1, 'LatMin': 0.0, 'LatMax': 0.0, 'Near': 2.5, 'Middle': 7.5, 'Far': 100.0, 'ReviseMode': 2})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
+    if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
+        Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
+    } else {
+        Starter.Demo_SendSignal({'SignalType': 0, 'Value': False, 'IsWaitFinish': False})
+    }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
 }
 
 void CDungeon135() {
@@ -57,13 +52,11 @@ void CDungeon135() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 5})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event14:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event14
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
 
 void CDungeon127_wind001() {

@@ -71,11 +71,10 @@ void ForestFog_FadeOut() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 6}) {
         goto Event31
     } else
-    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-        goto Event60
-    } else {
+    if !EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         goto Event31
     }
+    goto Event60
 }
 
 void ForestFog_FadeIn() {

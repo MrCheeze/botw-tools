@@ -102,11 +102,10 @@ void Demo347_4() {
     WorldManagerControl.Demo_SetPaletteType({'PaletteType': 0, 'ChangeFrame': 0, 'EndFrame': 0, 'IsWaitFinish': False, 'Speed': 1.0})
     ListenerCtrlTag.Demo_FixPosition({'IsWaitFinish': True, 'FixType': 'Unfix'})
     SceneSoundCtrlTag.Demo_CustomDuckingStop({'IsWaitFinish': True})
-    if !EventSystemActor.CheckFlag({'FlagName': 'Find_Impa_Finish'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo051_0'}) {
+    if !EventSystemActor.CheckFlag({'FlagName': 'Find_Impa_Finish'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo051_0'}) {
 
-            call Demo051_0.Demo051_0()
+        call Demo051_0.Demo051_0()
 
-        }
     }
 }

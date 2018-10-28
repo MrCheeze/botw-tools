@@ -42,18 +42,16 @@ void Start() {
 
     if EventSystemActor.CheckFlag({'FlagName': '100enemy_Finish'}) {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Battle', 'QuestName': 'MiniGame100enemy'})
-        Event286:
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 2}) {
-            EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'WarpDestMapName': 'AocField/B-2', 'WarpDestPosName': 'Night_1', 'EvflName': 'Demo202_3', 'EntryPointName': 'Demo202_3'})
-        } else
-        if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
-            EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'WarpDestMapName': 'AocField/A-1', 'WarpDestPosName': 'Air_2', 'EvflName': 'Demo202_2', 'EntryPointName': 'Demo202_2'})
-        } else {
-            EventSystemActor.Demo_ChangeScene({'WarpDestPosName': 'Entrance_1', 'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'EvflName': 'Demo202_1', 'EntryPointName': 'Demo202_1', 'WarpDestMapName': 'AocField/A-1'})
-        }
     } else {
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'StepName': 'Battle', 'QuestName': '100enemy'})
-        goto Event286
+    }
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 2}) {
+        EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'WarpDestMapName': 'AocField/B-2', 'WarpDestPosName': 'Night_1', 'EvflName': 'Demo202_3', 'EntryPointName': 'Demo202_3'})
+    } else
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': '100enemy_CurrentCourse', 'Operator': 'Equal', 'Value': 1}) {
+        EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'WarpDestMapName': 'AocField/A-1', 'WarpDestPosName': 'Air_2', 'EvflName': 'Demo202_2', 'EntryPointName': 'Demo202_2'})
+    } else {
+        EventSystemActor.Demo_ChangeScene({'WarpDestPosName': 'Entrance_1', 'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'EvflName': 'Demo202_1', 'EntryPointName': 'Demo202_1', 'WarpDestMapName': 'AocField/A-1'})
     }
 }
 
@@ -71,12 +69,11 @@ void Active_Talk() {
         if EventSystemActor.CheckFlag({'FlagName': 'Open_MasterSword_FullPower'}) {
             if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'GameDataIntName': 'MsterSword_TalkLv', 'Value': 4}) {
                 TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TwnObj_Village_Korok_DekuTree_A_01:DekuTree_A_01_Talk030', 'ASName': 'Face_C_Talk', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True})
-                Event258:
-                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': False, 'Count': 0.0, 'ReviseMode': 1})
             } else {
                 TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/TwnObj_Village_Korok_DekuTree_A_01:DekuTree_A_01_Talk020', 'ASName': 'Face_C_Talk', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True})
-                goto Event258
             }
+            Event258:
+            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': False, 'Count': 0.0, 'ReviseMode': 1})
         } else {
             TwnObj_Village_Korok_DekuTree_A_01.Demo_Talk({'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Face_C_Talk', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/100enemy:talk14'})
             goto Event258
@@ -116,8 +113,8 @@ void RetireBattle() {
             goto Event331
         } else {
             EventSystemActor.Demo_RollbackQuest({'IsWaitFinish': True, 'QuestName': '100enemy', 'StepName': 'Active2'})
-            goto Event189
         }
+        goto Event189
     } else {
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': '100enemy_Clear_Junior'})
         EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'MasterSword_Add_Power', 'IsWaitFinish': True, 'Value': 10})

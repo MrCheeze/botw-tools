@@ -41,13 +41,11 @@ void Talk() {
         Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk07'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk08'})
-            Event16:
-            Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk10'})
-            goto Event27
         } else {
             Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk09'})
-            goto Event16
         }
+        Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk10'})
+        goto Event27
     }
 }
 
@@ -75,12 +73,11 @@ void GuranettoHello() {
       case 10:
         if !EventSystemActor.RandomChoice2() {
             Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk19'})
-            Event39:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk20'})
-            goto Event39
         }
+        Event39:
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
       case 11:
         switch EventSystemActor.RandomChoice4() {
           case 0:
@@ -103,29 +100,22 @@ void GuranettoFlagSell() {
     if !EventSystemActor.HasSpecificArmorSeries({'SeriesType': 0}) {
         if !EventSystemActor.HasSpecificArmorSeries({'SeriesType': 1}) {
             if !EventSystemActor.HasSpecificArmorSeries({'SeriesType': 2}) {
-                if Npc_AncientAssistant003.IsSoldOut({'TableName': 'Normal'}) {
-                    if Npc_AncientAssistant003.IsSoldOut({'TableName': 'Normal_S'}) {
-                        Event105:
-                        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_030'}) {
-                            Event88:
+                if Npc_AncientAssistant003.IsSoldOut({'TableName': 'Normal'})
+                && !Npc_AncientAssistant003.IsSoldOut({'TableName': 'Normal_S'}) {
+                    Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk13'})
+                }
+                if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_030'}) {
+                    Event88:
 
-                            call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Normal_S'})
+                    call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'Self2': ActorIdentifier(name="Npc_AncientAssistant003"), 'TableName': 'Normal_S'})
 
-                        } else
-                        if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
-                            goto Event88
-                        } else {
-
-                            call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'TableName': 'Normal', 'Self2': ActorIdentifier(name="Npc_AncientAssistant003")})
-
-                        }
-                    } else {
-                        Event23:
-                        Npc_AncientAssistant003.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_AncientAssistant003:talk13'})
-                        goto Event105
-                    }
+                } else
+                if !EventSystemActor.CheckExistActor({'IsCheckLife': False, 'IsCheckEquipStand': True, 'ActorName': 'Weapon_Shield_030'}) {
+                    goto Event88
                 } else {
-                    goto Event23
+
+                    call Yorozuya_Kaiwa.Yorozuya_KounyuSetTbl({'TableName': 'Normal', 'Self2': ActorIdentifier(name="Npc_AncientAssistant003")})
+
                 }
             } else {
 

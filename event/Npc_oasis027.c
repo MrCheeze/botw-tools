@@ -10,13 +10,10 @@ void Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if Npc_oasis027.IsOnInstEventFlag() {
-        Event1:
-        Npc_oasis027.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis027:Talk_01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
-    } else {
+    if !Npc_oasis027.IsOnInstEventFlag() {
 
         call KnightDoll.hello()
 
-        goto Event1
     }
+    Npc_oasis027.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis027:Talk_01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': ''})
 }

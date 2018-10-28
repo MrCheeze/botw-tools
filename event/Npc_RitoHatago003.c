@@ -39,20 +39,18 @@ void Talk() {
         } else
         if Npc_RitoHatago003.IsOnInstEventFlag() {
             Npc_RitoHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago003:talk_09', 'IsOverWriteLabelActorName': False})
-            Event5:
-            switch EventSystemActor.GeneralChoice4() {
-              case 0:
-                Npc_RitoHatago003.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago003:talk_01', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-              case 1:
-                Npc_RitoHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago003:talk_02', 'IsOverWriteLabelActorName': False})
-              case 2:
-                Npc_RitoHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago003:talk_03', 'IsOverWriteLabelActorName': False})
-              case 3:
-                goto Event8
-            }
         } else {
             Npc_RitoHatago003.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago003:talk_00', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            goto Event5
+        }
+        switch EventSystemActor.GeneralChoice4() {
+          case 0:
+            Npc_RitoHatago003.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago003:talk_01', 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+          case 1:
+            Npc_RitoHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago003:talk_02', 'IsOverWriteLabelActorName': False})
+          case 2:
+            Npc_RitoHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago003:talk_03', 'IsOverWriteLabelActorName': False})
+          case 3:
+            goto Event8
         }
       case 10:
         Npc_RitoHatago003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_RitoHatago003:talk_05', 'IsOverWriteLabelActorName': False})

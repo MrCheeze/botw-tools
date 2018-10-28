@@ -54,25 +54,19 @@ void Ready_Npc_Kakariko004_Talk() {
             Npc_Kakariko004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_005:Talk10', 'ASName': ''})
             switch EventSystemActor.GeneralChoice3() {
               case 0:
-                if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_005_Finish'}) {
-                    Event60:
-
-                    call Kakurenbo()
-
-                } else {
+                if !EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_005_Finish'}) {
                     EventSystemActor.Demo_FlagON({'FlagName': 'Kakariko_Ch_005_Activated', 'IsWaitFinish': True})
-                    goto Event60
                 }
+
+                call Kakurenbo()
+
               case 1:
-                if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_005_Finish'}) {
-                    Event104:
-
-                    call Kakekko()
-
-                } else {
+                if !EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_005_Finish'}) {
                     EventSystemActor.Demo_FlagON({'FlagName': 'Kakariko_Ch_005_Activated', 'IsWaitFinish': True})
-                    goto Event104
                 }
+
+                call Kakekko()
+
               case 2:
                 Event49:
                 Npc_Kakariko004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Kakariko_Ch_005:Talk03'})
@@ -198,34 +192,32 @@ void Kakekko() {
     Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
     if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
         GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-        Event132:
-        switch EventSystemActor.RandomChoice4() {
-          case 0:
-            Npc_Kakariko004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Kakekko_1'})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1805.8778076171875, 'Pattern1PosY': 221.14996337890625, 'Pattern1PosZ': 999.2567749023438, 'Pattern1AtX': 1811.1009521484375, 'Pattern1AtY': 220.22122192382812, 'Pattern1AtZ': 999.3994750976562, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'IsWaitFinish': True, 'WarpDestPosName': 'Kakekko_1'})
-            Event322:
-            EventSystemActor.Demo_SetPLStateToUnequipAndWait({'IsWaitFinish': True})
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-          case 1:
-            Npc_Kakariko004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Kakekko_2'})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1902.714111328125, 'Pattern1PosY': 235.797119140625, 'Pattern1PosZ': 1024.4239501953125, 'Pattern1AtX': 1901.2120361328125, 'Pattern1AtY': 234.69674682617188, 'Pattern1AtZ': 1019.3200073242188, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'IsWaitFinish': True, 'WarpDestPosName': 'Kakekko_2'})
-            goto Event322
-          case 2:
-            Npc_Kakariko004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Kakekko_2'})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1900.3076171875, 'Pattern1PosY': 235.60150146484375, 'Pattern1PosZ': 1025.087646484375, 'Pattern1AtX': 1900.541748046875, 'Pattern1AtY': 234.70181274414062, 'Pattern1AtZ': 1019.885986328125, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'IsWaitFinish': True, 'WarpDestPosName': 'Kakekko_2'})
-            goto Event322
-          case 3:
-            Npc_Kakariko004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Kakekko_4'})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1849.3074951171875, 'Pattern1PosY': 223.24807739257812, 'Pattern1PosZ': 989.9445190429688, 'Pattern1AtX': 1851.9393310546875, 'Pattern1AtY': 223.21844482421875, 'Pattern1AtZ': 993.7315673828125, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'IsWaitFinish': True, 'WarpDestPosName': 'Kakekko_4'})
-            goto Event322
-        }
-    } else
-    goto Event132
+    }
+    switch EventSystemActor.RandomChoice4() {
+      case 0:
+        Npc_Kakariko004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Kakekko_1'})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1805.8778076171875, 'Pattern1PosY': 221.14996337890625, 'Pattern1PosZ': 999.2567749023438, 'Pattern1AtX': 1811.1009521484375, 'Pattern1AtY': 220.22122192382812, 'Pattern1AtZ': 999.3994750976562, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'IsWaitFinish': True, 'WarpDestPosName': 'Kakekko_1'})
+        Event322:
+        EventSystemActor.Demo_SetPLStateToUnequipAndWait({'IsWaitFinish': True})
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
+        Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+      case 1:
+        Npc_Kakariko004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Kakekko_2'})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1902.714111328125, 'Pattern1PosY': 235.797119140625, 'Pattern1PosZ': 1024.4239501953125, 'Pattern1AtX': 1901.2120361328125, 'Pattern1AtY': 234.69674682617188, 'Pattern1AtZ': 1019.3200073242188, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'IsWaitFinish': True, 'WarpDestPosName': 'Kakekko_2'})
+        goto Event322
+      case 2:
+        Npc_Kakariko004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Kakekko_2'})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1900.3076171875, 'Pattern1PosY': 235.60150146484375, 'Pattern1PosZ': 1025.087646484375, 'Pattern1AtX': 1900.541748046875, 'Pattern1AtY': 234.70181274414062, 'Pattern1AtZ': 1019.885986328125, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'IsWaitFinish': True, 'WarpDestPosName': 'Kakekko_2'})
+        goto Event322
+      case 3:
+        Npc_Kakariko004.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Kakekko_4'})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1849.3074951171875, 'Pattern1PosY': 223.24807739257812, 'Pattern1PosZ': 989.9445190429688, 'Pattern1AtX': 1851.9393310546875, 'Pattern1AtY': 223.21844482421875, 'Pattern1AtZ': 993.7315673828125, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'IsWaitFinish': True, 'WarpDestPosName': 'Kakekko_4'})
+        goto Event322
+    }
 }
 
 void Kakurenbo() {

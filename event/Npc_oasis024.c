@@ -16,42 +16,35 @@ void Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if Npc_oasis024.IsOnInstEventFlag() {
-        Event30:
-
-        call SINJYU_CK()
-
-        if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
-            if Npc_oasis024.IsOnInstEventFlag() {
-                Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_004', 'IsOverWriteLabelActorName': False})
-                Event17:
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_008'})
-                } else {
-                    Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_010'})
-                }
-            } else {
-                Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_003', 'IsOverWriteLabelActorName': False})
-                goto Event17
-            }
-        } else
-        if Npc_oasis024.IsOnInstEventFlag() {
-            Npc_oasis024.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_002', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            Event16:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_009'})
-            } else {
-                Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_010'})
-            }
-        } else {
-            Npc_oasis024.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-            goto Event16
-        }
-    } else {
+    if !Npc_oasis024.IsOnInstEventFlag() {
 
         call hello()
 
-        goto Event30
+    }
+
+    call SINJYU_CK()
+
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
+        if Npc_oasis024.IsOnInstEventFlag() {
+            Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_004', 'IsOverWriteLabelActorName': False})
+        } else {
+            Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_003', 'IsOverWriteLabelActorName': False})
+        }
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_008'})
+        } else {
+            Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_010'})
+        }
+    } else
+    if Npc_oasis024.IsOnInstEventFlag() {
+        Npc_oasis024.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_002', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+    } else {
+        Npc_oasis024.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_001', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+    }
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_009'})
+    } else {
+        Npc_oasis024.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis024:Npc_oasis024_010'})
     }
 }
 

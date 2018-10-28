@@ -48,15 +48,13 @@ void Talk() {
                 if EventSystemActor.CheckFlag({'FlagName': 'Kakariko_Ch_005_1stReward'}) {
                     if Npc_Kakariko004.IsArriveAnchorForRain() {
                         Npc_Kakariko004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/Npc_Kakariko004:Talk22'})
-                        Event111:
-                        if !EventSystemActor.GeneralChoice2() {
-                            Npc_Kakariko004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko004:Talk16'})
-                        } else {
-                            Npc_Kakariko004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko004:Talk21'})
-                        }
                     } else {
                         Npc_Kakariko004.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/Npc_Kakariko004:Talk14'})
-                        goto Event111
+                    }
+                    if !EventSystemActor.GeneralChoice2() {
+                        Npc_Kakariko004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko004:Talk16'})
+                    } else {
+                        Npc_Kakariko004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Kakariko004:Talk21'})
                     }
                 } else
                 if Npc_Kakariko004.IsArriveAnchorForRain() {

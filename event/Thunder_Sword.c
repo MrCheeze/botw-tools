@@ -80,11 +80,8 @@ void Ready_Npc_Musician_005_Talk() {
 
         if EventSystemActor.CheckFlag({'FlagName': 'Thunder_Sword_Step010'}) {
             Npc_Musician_005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Thunder_Sword:Npc_Musician_005_F_021'})
-            Event109:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Thunder_Sword_Activated', 'IsWaitFinish': True})
-        } else {
-            goto Event109
         }
+        EventSystemActor.Demo_FlagON({'FlagName': 'Thunder_Sword_Activated', 'IsWaitFinish': True})
     } else {
         Npc_Musician_005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Thunder_Sword:Npc_Musician_005_R_021', 'IsCloseMessageDialog': True})
 

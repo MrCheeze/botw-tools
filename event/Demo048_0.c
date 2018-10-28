@@ -48,13 +48,10 @@ void Demo048_0() {
         fork {
             if EventSystemActor.CheckPlayerHellType({'PlayerHellType': 2}) {
                 EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                Event8:
-                Fader.Demo_FadeOut({'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True, 'Frame': 0})
-                if EventSystemActor.CheckPlayerHellType({'PlayerHellType': 2}) {
-                    EventSystemActor.Demo_DeleteActorFromSystem({'ActorName': 'FldObj_DeathMtArtifactTrain_A_02', 'IsWaitFinish': True})
-                }
-            } else {
-                goto Event8
+            }
+            Fader.Demo_FadeOut({'Color': 1, 'DispMode': 'NoLogo', 'IsWaitFinish': True, 'Frame': 0})
+            if EventSystemActor.CheckPlayerHellType({'PlayerHellType': 2}) {
+                EventSystemActor.Demo_DeleteActorFromSystem({'ActorName': 'FldObj_DeathMtArtifactTrain_A_02', 'IsWaitFinish': True})
             }
         } {
             GameROMPlayer.Demo_PlayerRestart({'IsNoDamage': False, 'IsWaitFinish': True})

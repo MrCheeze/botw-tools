@@ -57,8 +57,8 @@ void Finish_Npc_SmallOasis002_Talk() {
             goto Event27
         } else {
             Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk10', 'ASName': ''})
-            goto Event3
         }
+        goto Event3
     }
 }
 

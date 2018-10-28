@@ -37,21 +37,19 @@ void Talk() {
 
         if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo347_1'}) {
             Npc_Assassin_004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Crouch', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Assassin_004:Talk05'})
-            Event32:
-            Npc_Assassin_004.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-            EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
-            Npc_Assassin_004.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-
-            call Demo023_0.BustUp_PlayerHide()
-
-            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
-
-            call Henshin()
-
         } else {
             Npc_Assassin_004.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_Assassin_004:Talk04', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Crouch', 'IsCloseMessageDialog': True})
-            goto Event32
         }
+        Npc_Assassin_004.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+        EventSystemActor.Demo_WaitFrame({'Frame': 60, 'IsWaitFinish': True})
+        Npc_Assassin_004.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
+
+        call Demo023_0.BustUp_PlayerHide()
+
+        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
+
+        call Henshin()
+
     } else {
 
         call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})

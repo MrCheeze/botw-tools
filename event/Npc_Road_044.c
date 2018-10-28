@@ -132,14 +132,13 @@ void Rest() {
           case 0:
             if EventSystemActor.CheckFlag({'FlagName': 'UMiiMini_MakeVillage_Activated'}) {
                 Npc_Road_044.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_044:Rest_00'})
-                Event90:
-
-                call Rest_End()
-
             } else {
                 Npc_Road_044.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_044:RetMSG_Ichika_01_1'})
-                goto Event90
             }
+            Event90:
+
+            call Rest_End()
+
           case [1, 2, 3]:
             Npc_Road_044.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_044:Rest_01'})
             goto Event90
@@ -151,9 +150,8 @@ void Rest() {
     } else
     if Npc_Road_044.IsOnInstEventFlag() {
         Npc_Road_044.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_1'})
-        goto Event90
     } else {
         Npc_Road_044.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
-        goto Event90
     }
+    goto Event90
 }

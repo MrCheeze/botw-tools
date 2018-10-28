@@ -38,22 +38,17 @@ void Talk() {
             Event44:
             if !EventSystemActor.RandomChoice2() {
                 Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_12'})
-                Event29:
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_13'})
-                    Event59:
-                    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'}) {
-                        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_Finish'}) {
-                            Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis025_SD_500', 'IsCloseMessageDialog': False})
-                        }
-                    }
-                } else {
-                    Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_14'})
-                    goto Event59
-                }
             } else {
                 Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_16'})
-                goto Event29
+            }
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_13'})
+            } else {
+                Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_14'})
+            }
+            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
+            && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_Finish'}) {
+                Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis025_SD_500', 'IsCloseMessageDialog': False})
             }
         } else
         switch EventSystemActor.CheckTimeType() {
@@ -117,11 +112,10 @@ void Gerudo_CarryIce_Finished_Talk() {
 }
 
 void RAIMEI_CK() {
-    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': False, 'CheckLower': False, 'CheckType': 'Thunder'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis025_Raimei_CK'}) {
-            Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Raimei_CK_001'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis025_Raimei_CK'})
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-        }
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': False, 'CheckLower': False, 'CheckType': 'Thunder'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis025_Raimei_CK'}) {
+        Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Raimei_CK_001'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis025_Raimei_CK'})
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     }
 }

@@ -63,22 +63,18 @@ void Ready_Npc_SmallOasis006_Talk() {
         Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_104'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_105'})
-            Event227:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_107'})
-                Event173:
-                Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_106'})
-                Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_102', 'IsCloseMessageDialog': True})
-                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Drag_Hero', 'ForceRunTelop': True, 'StepName': ''})
-                EventSystemActor.Demo_WaitFrame({'Frame': 90, 'IsWaitFinish': False})
-            } else {
-                Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_103', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
-                goto Event173
-            }
         } else {
             Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_108'})
-            goto Event227
         }
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_107'})
+        } else {
+            Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_103', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
+        }
+        Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_106'})
+        Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_102', 'IsCloseMessageDialog': True})
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Drag_Hero', 'ForceRunTelop': True, 'StepName': ''})
+        EventSystemActor.Demo_WaitFrame({'Frame': 90, 'IsWaitFinish': False})
     } else {
         Npc_SmallOasis006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis006_R_109'})
     }
@@ -234,18 +230,16 @@ void Finish_Npc_SmallOasis008_Talk() {
     } else
     if Npc_SmallOasis008.IsOnInstEventFlag() {
         Npc_SmallOasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis008_F_009', 'IsCloseMessageDialog': True})
-        Event237:
-        Npc_SmallOasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis008_F_011'})
-        if !EventSystemActor.GeneralChoice2() {
-
-            call Npc_SmallOasis008.buy()
-
-        } else {
-            Npc_SmallOasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis008_F_012'})
-        }
     } else {
         Npc_SmallOasis008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis008_F_008', 'IsCloseMessageDialog': True})
-        goto Event237
+    }
+    Npc_SmallOasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis008_F_011'})
+    if !EventSystemActor.GeneralChoice2() {
+
+        call Npc_SmallOasis008.buy()
+
+    } else {
+        Npc_SmallOasis008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Drag_Hero:Npc_SmallOasis008_F_012'})
     }
 }
 
@@ -270,17 +264,13 @@ void Step1_Npc_SmallOasis003_Talk() {
       case 2:
         if EventSystemActor.CheckFlag({'FlagName': 'Oasis_Arrow_SoldOut'}) {
             Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_19'})
-            Event293:
-            if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
-                goto Event285
-            } else {
-                Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_20'})
-                goto Event285
-            }
         } else {
             Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_06', 'IsCloseMessageDialog': True})
-            goto Event293
         }
+        if !EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
+            Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_20'})
+        }
+        goto Event285
       case 3:
         Npc_SmallOasis003.Demo_Talk({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/Npc_SmallOasis003:Talk_03', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitChair_ReadBook'})
     }
@@ -353,9 +343,8 @@ void ReturnCamera() {
 }
 
 void Drag_Hero_Finish() {
-    if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Activated'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Finish'}) {
-            EventSystemActor.Demo_FlagON({'FlagName': 'Drag_Hero_Finish', 'IsWaitFinish': True})
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Activated'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'Drag_Hero_Finish'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'Drag_Hero_Finish', 'IsWaitFinish': True})
     }
 }

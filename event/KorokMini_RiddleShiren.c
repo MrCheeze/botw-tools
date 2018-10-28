@@ -18,18 +18,16 @@ void Ready_Npc_kokiri002_Talk() {
 
     if Npc_kokiri002.IsOnInstEventFlag() {
         Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk010', 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False})
-        Event5:
-        if !EventSystemActor.GeneralChoice2() {
-            Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk020'})
-            Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk500'})
-            Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk040'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_RiddleShiren_Activated'})
-        } else {
-            Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk030'})
-        }
     } else {
         Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk000', 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False})
-        goto Event5
+    }
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk020'})
+        Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk500'})
+        Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk040'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KorokMini_RiddleShiren_Activated'})
+    } else {
+        Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_R_Talk030'})
     }
 }
 
@@ -155,15 +153,14 @@ void Step040_Npc_kokiri002_Talk() {
 }
 
 void EntryPointE() {
-    if !EventSystemActor.CheckFlag({'FlagName': 'KorokMini_RiddleShiren_Finish'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'KorokMini_RiddleShiren_RewardNotYet'}) {
-            Npc_kokiri002.Demo_BecomeSpeaker({'IsWaitFinish': True})
+    if !EventSystemActor.CheckFlag({'FlagName': 'KorokMini_RiddleShiren_Finish'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'KorokMini_RiddleShiren_RewardNotYet'}) {
+        Npc_kokiri002.Demo_BecomeSpeaker({'IsWaitFinish': True})
 
-            call InitTalk.InitTalkOnEvent({'Arg_Turn': 0, 'Self': ActorIdentifier(name="Npc_kokiri002")})
+        call InitTalk.InitTalkOnEvent({'Arg_Turn': 0, 'Self': ActorIdentifier(name="Npc_kokiri002")})
 
-            Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Dance', 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_F_Talk054', 'IsCloseMessageDialog': False})
-            Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_F_Talk020', 'ASName': ''})
-            goto Event31
-        }
+        Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Dance', 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_F_Talk054', 'IsCloseMessageDialog': False})
+        Npc_kokiri002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/KorokMini_RiddleShiren:Npc_kokiri002_F_Talk020', 'ASName': ''})
+        goto Event31
     }
 }

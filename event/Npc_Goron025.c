@@ -125,51 +125,49 @@ void NPC_Goron025_Go_Talk() {
 
     if Npc_Goron025[Pupunda_Ichikara].IsOnInstEventFlag() {
         Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk23'})
-        Event78:
-        Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk22'})
-        switch EventSystemActor.GeneralChoice3() {
-          case 0:
-
-            call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_Goron025", sub_name="Pupunda_Ichikara")})
-
-            Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk26'})
-          case 1:
-            Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk06'})
-            Event97:
-            switch EventSystemActor.GeneralChoice4() {
-              case 0:
-                if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron025_IchikaraFirst'}) {
-                    Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk28', 'IsCloseMessageDialog': True})
-                    Event103:
-                    Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk16'})
-                    goto Event97
-                } else {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron025_IchikaraFirst', 'IsWaitFinish': True})
-                    Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk21', 'IsCloseMessageDialog': True})
-                    goto Event103
-                }
-              case 1:
-                Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk25', 'IsCloseMessageDialog': True})
-                goto Event103
-              case 2:
-                if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron025_Greda'}) {
-                    Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk15', 'IsCloseMessageDialog': True})
-                    goto Event103
-                } else {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron025_Greda', 'IsWaitFinish': True})
-                    Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk14', 'IsCloseMessageDialog': True})
-                    goto Event103
-                }
-              case 3:
-                Event83:
-                Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk23'})
-            }
-          case 2:
-            goto Event83
-        }
     } else {
         Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk20'})
-        goto Event78
+    }
+    Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk22'})
+    switch EventSystemActor.GeneralChoice3() {
+      case 0:
+
+        call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_Goron025", sub_name="Pupunda_Ichikara")})
+
+        Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk26'})
+      case 1:
+        Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk06'})
+        Event97:
+        switch EventSystemActor.GeneralChoice4() {
+          case 0:
+            if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron025_IchikaraFirst'}) {
+                Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk28', 'IsCloseMessageDialog': True})
+                Event103:
+                Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk16'})
+                goto Event97
+            } else {
+                EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron025_IchikaraFirst', 'IsWaitFinish': True})
+                Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk21', 'IsCloseMessageDialog': True})
+                goto Event103
+            }
+          case 1:
+            Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk25', 'IsCloseMessageDialog': True})
+            goto Event103
+          case 2:
+            if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron025_Greda'}) {
+                Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk15', 'IsCloseMessageDialog': True})
+                goto Event103
+            } else {
+                EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron025_Greda', 'IsWaitFinish': True})
+                Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk14', 'IsCloseMessageDialog': True})
+                goto Event103
+            }
+          case 3:
+            Event83:
+            Npc_Goron025[Pupunda_Ichikara].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron025:talk23'})
+        }
+      case 2:
+        goto Event83
     }
 }
 

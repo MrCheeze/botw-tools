@@ -345,16 +345,13 @@ void EntryPoint0() {
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
         Starter.Demo_SendSignal({'SignalType': 0, 'Value': True, 'IsWaitFinish': False})
         EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': True})
-        if !EventSystemActor.CheckEventCancel() {
-            Event219:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Open_FirstDungeon', 'IsWaitFinish': True})
-            EventSystemActor.Demo_ForceSetPlayerSavePosAngle({'IsWaitFinish': True, 'AnchorName': 'ForceSetPosDirAutoSaveAnchor', 'UniqueName': ''})
-        } else {
+        if EventSystemActor.CheckEventCancel() {
 
             call execute_skip({'DungeonEntranceShutter': 'DungeonEntranceShutter', 'DungeonEntranceWarpPoint': 'DungeonEntranceWarpPoint', 'PlayerEndPosUniqueName': 'PlayerEndPosUniqueName'})
 
-            goto Event219
         }
+        EventSystemActor.Demo_FlagON({'FlagName': 'Open_FirstDungeon', 'IsWaitFinish': True})
+        EventSystemActor.Demo_ForceSetPlayerSavePosAngle({'IsWaitFinish': True, 'AnchorName': 'ForceSetPosDirAutoSaveAnchor', 'UniqueName': ''})
     } else {
 
         call c02({'Arg_DestinationX': 'Arg_DestinationX', 'Arg_DestinationY': 'Arg_DestinationY', 'Arg_DestinationZ': 'Arg_DestinationZ', 'Arg_DirectionY': 'Arg_DestinationDirY', 'DungeonEntranceTerminal': 'DungeonEntranceTerminal', 'C02-Link-ASName': 'C02-Link-ASName'})

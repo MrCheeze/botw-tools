@@ -55,24 +55,21 @@ void Demo050_Water() {
 }
 
 void Demo050_Common() {
-    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWind'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
-                    EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
-                    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'ASName': 'DemoWait', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-                    GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-                    EventSystemActor.Demo_EnableCameraInput({'IsWaitFinish': True})
+    if EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWind'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsFire'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsElectric'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Clear_RemainsWater'}) {
+        EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
+        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': True, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'ASName': 'DemoWait', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
+        EventSystemActor.Demo_EnableCameraInput({'IsWaitFinish': True})
 
-                    fork {
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-                        GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ASName': 'LookAround', 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
-                    } {
-                        NPC_CaptionVoice.Demo_OpenMessageDialog({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 0, 'MessageId': 'DemoMsg/Demo050_0:sinjyu_clear_04'})
-                    }
-
-                }
-            }
+        fork {
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ASName': 'LookAround', 'ClothWarpMode': 1, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
+        } {
+            NPC_CaptionVoice.Demo_OpenMessageDialog({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 0, 'MessageId': 'DemoMsg/Demo050_0:sinjyu_clear_04'})
         }
+
     }
 }

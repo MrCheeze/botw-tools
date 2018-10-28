@@ -300,11 +300,10 @@ void Demo347_5() {
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Find_4Relic_1stClear'}) {
             Npc_oasis003[Rouge01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Ready_009'})
-            goto Event42
         } else {
             Npc_oasis003[Rouge01].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Electric_Relic:Npc_oasis003_Ready_006'})
-            goto Event42
         }
+        goto Event42
     }
 }
 

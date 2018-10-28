@@ -42,12 +42,11 @@ void MSG_Futa_00() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_01_1'})
-        Event87:
-        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_01'})
-        goto Event87
     }
+    Event87:
+    EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
 }
 
 void RetMSG_Futa_00() {
@@ -56,11 +55,10 @@ void RetMSG_Futa_00() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_01_1'})
-        goto Event87
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_01'})
-        goto Event87
     }
+    goto Event87
 }
 
 void MSG_Futa_01() {
@@ -69,11 +67,10 @@ void MSG_Futa_01() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_02_1'})
-        goto Event87
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_02'})
-        goto Event87
     }
+    goto Event87
 }
 
 void RetMSG_Futa_01() {
@@ -82,11 +79,10 @@ void RetMSG_Futa_01() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_02_1'})
-        goto Event87
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_02'})
-        goto Event87
     }
+    goto Event87
 }
 
 void MSG_Futa_02() {
@@ -95,11 +91,10 @@ void MSG_Futa_02() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_00_1'})
-        goto Event87
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_00'})
-        goto Event87
     }
+    goto Event87
 }
 
 void RetMSG_Futa_02() {
@@ -108,11 +103,10 @@ void RetMSG_Futa_02() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_03_1'})
-        goto Event87
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_03'})
-        goto Event87
     }
+    goto Event87
 }
 
 void MSG_Futa_03() {
@@ -121,11 +115,10 @@ void MSG_Futa_03() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_03_1'})
-        goto Event87
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_03'})
-        goto Event87
     }
+    goto Event87
 }
 
 void RetMSG_Futa_03() {
@@ -134,11 +127,10 @@ void RetMSG_Futa_03() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_00_1'})
-        goto Event87
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_00'})
-        goto Event87
     }
+    goto Event87
 }
 
 void MSG_Futa_04() {
@@ -147,11 +139,10 @@ void MSG_Futa_04() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_04_1'})
-        goto Event87
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:MSG_Futa_04'})
-        goto Event87
     }
+    goto Event87
 }
 
 void RetMSG_Futa_04() {
@@ -160,11 +151,10 @@ void RetMSG_Futa_04() {
 
     if Npc_Road_018.IsOnInstEventFlag() {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_04_1'})
-        goto Event87
     } else {
         Npc_Road_018.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_018:RetMSG_Futa_04'})
-        goto Event87
     }
+    goto Event87
 }
 
 void Rest_End() {

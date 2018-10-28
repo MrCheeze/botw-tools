@@ -98,11 +98,8 @@ void Demo641_0() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'FinalTrial_FirstMessage'}) {
         EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FinalTrial_Lift_Complete'})
-        Event13:
-        EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'WarpDestMapName': 'MainFieldDungeon/FinalTrial', 'EvflName': 'Demo641_1', 'EntryPointName': 'Demo641_1', 'WarpDestPosName': 'LiftTerminal'})
-    } else {
-        goto Event13
     }
+    EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 0, 'StartType': -1, 'WarpDestMapName': 'MainFieldDungeon/FinalTrial', 'EvflName': 'Demo641_1', 'EntryPointName': 'Demo641_1', 'WarpDestPosName': 'LiftTerminal'})
 }
 
 void Demo641_0_C01() {

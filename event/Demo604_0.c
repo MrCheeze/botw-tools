@@ -204,44 +204,41 @@ void Demo604_0_C06() {
     EventSystemActor[C07-1_Cam].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
     EventSystemActor.Demo_SetCurrentDungeonClearFlag({'IsWaitFinish': True})
     EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': True})
-    if !EventSystemActor.CheckEventCancel() {
-        Event212:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-        switch EventSystemActor.CountFlag4({'GameDataFlagNo1': 'Clear_Dungeon122', 'GameDataFlagNo0': 'Clear_Dungeon120', 'GameDataFlagNo2': 'Clear_Dungeon123', 'GameDataFlagNo3': 'Clear_Dungeon135', 'GameDataFlagNo4': ''}) {
-          case [0, 1, 3, 5]:
-            Event0:
-            EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
-          case 2:
+    if EventSystemActor.CheckEventCancel() {
+        SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
+    }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+    switch EventSystemActor.CountFlag4({'GameDataFlagNo1': 'Clear_Dungeon122', 'GameDataFlagNo0': 'Clear_Dungeon120', 'GameDataFlagNo2': 'Clear_Dungeon123', 'GameDataFlagNo3': 'Clear_Dungeon135', 'GameDataFlagNo4': ''}) {
+      case [0, 1, 3, 5]:
+        Event0:
+        EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
+      case 2:
 
-            call Kass_CheckDungeon()
+        call Kass_CheckDungeon()
 
+        goto Event0
+      case 4:
+        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroes_Step03'}) {
             goto Event0
-          case 4:
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroes_Step03'}) {
-                goto Event0
-            } else {
-                Fader.Demo_FadeOut({'Color': 1, 'Frame': 0, 'IsWaitFinish': True, 'DispMode': 'Auto'})
-                EventSystemActor.Demo_DeletePorchItemInEquip({'IsWaitFinish': True, 'DeleteNum': 1, 'PorchItemName': 'Weapon_Sword_502'})
-                EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'PorchItemName': 'Weapon_Sword_503', 'Value': 1})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                EventSystemActor.Demo_SwitchPlayerEquipment({'PorchItemName_Weapon': 'Weapon_Sword_503', 'IsWaitFinish': True, 'UnequipWeapon': False, 'UnequipShield': False, 'UnequipBow': False, 'UnequipArmorHead': False, 'UnequipArmorUpper': False, 'UnequipArmorLower': False, 'PorchItemName_Shield': '', 'PorchItemName_Bow': '', 'PorchItemName_ArmorHead': '', 'PorchItemName_ArmorUpper': '', 'PorchItemName_ArmorLower': '', 'PorchItemName_Arrow': ''})
-                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon120'}) {
-                    EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0'})
-                } else
-                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon122'}) {
-                    EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-1'})
-                } else
-                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon123'}) {
-                    EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-2'})
-                } else
-                if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon135'}) in [1, 0] {
-                    EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-3'})
-                }
+        } else {
+            Fader.Demo_FadeOut({'Color': 1, 'Frame': 0, 'IsWaitFinish': True, 'DispMode': 'Auto'})
+            EventSystemActor.Demo_DeletePorchItemInEquip({'IsWaitFinish': True, 'DeleteNum': 1, 'PorchItemName': 'Weapon_Sword_502'})
+            EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'PorchItemName': 'Weapon_Sword_503', 'Value': 1})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+            EventSystemActor.Demo_SwitchPlayerEquipment({'PorchItemName_Weapon': 'Weapon_Sword_503', 'IsWaitFinish': True, 'UnequipWeapon': False, 'UnequipShield': False, 'UnequipBow': False, 'UnequipArmorHead': False, 'UnequipArmorUpper': False, 'UnequipArmorLower': False, 'PorchItemName_Shield': '', 'PorchItemName_Bow': '', 'PorchItemName_ArmorHead': '', 'PorchItemName_ArmorUpper': '', 'PorchItemName_ArmorLower': '', 'PorchItemName_Arrow': ''})
+            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon120'}) {
+                EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0'})
+            } else
+            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon122'}) {
+                EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-1'})
+            } else
+            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon123'}) {
+                EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-2'})
+            } else
+            if EventSystemActor.CheckCurrentMap({'MapName': 'Dungeon135'}) in [1, 0] {
+                EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo609_0', 'EntryPointName': 'Demo609_0-3'})
             }
         }
-    } else {
-        SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
-        goto Event212
     }
 }
 

@@ -192,14 +192,12 @@ void AdvanceStep() {
 void Ready_Npc_Musician_AoC_HeroGerudoRelief_Talk() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
-        Event87:
-        EventSystemActor.Demo_CallDemo({'EndFade': 0, 'IsWaitFinish': True, 'EntryPointName': 'Ready', 'DemoName': 'Demo610_3'})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGerudo_ReliefSong'})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGerudo_Activated'})
     } else {
         GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        goto Event87
     }
+    EventSystemActor.Demo_CallDemo({'EndFade': 0, 'IsWaitFinish': True, 'EntryPointName': 'Ready', 'DemoName': 'Demo610_3'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGerudo_ReliefSong'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGerudo_Activated'})
 }
 
 void Seek1stDungeon_Npc_Musician_AoC_HeroGerudoRelief_Talk() {
@@ -241,20 +239,17 @@ void SeekDungeon_Npc_oasis025_Talk() {
         Event272:
         if !EventSystemActor.RandomChoice2() {
             Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_12'})
-            Event265:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_13'})
-                Event102:
-                Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis025_SD_000', 'ASName': '', 'IsCloseMessageDialog': False})
-                goto Event364
-            } else {
-                Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_14'})
-                goto Event102
-            }
         } else {
             Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_16'})
-            goto Event265
         }
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_13'})
+        } else {
+            Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_14'})
+        }
+        Event102:
+        Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis025_SD_000', 'ASName': '', 'IsCloseMessageDialog': False})
+        goto Event364
       case [2, 3, 4]:
         Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_05'})
         goto Event272
@@ -302,29 +297,25 @@ void SeekDungeon_Npc_oasis037_Talk() {
                     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGerudo_037_AfterTalk'})
                 }
             } else
-            if Npc_oasis037.IsOnInstEventFlag() {
-                goto Event416
-            } else {
+            if !Npc_oasis037.IsOnInstEventFlag() {
                 Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_500'})
-                goto Event416
             }
+            goto Event416
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis037_first'}) {
             if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
                 Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_001'})
-                Event350:
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkSurprise', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_010'})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'TalkEmbarrass'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGerudo_037_aboutWomanDress', 'IsWaitFinish': True})
-                Event250:
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGerudo_037_1stGerudoDesert'})
-                goto Event416
             } else {
                 Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_000', 'IsCloseMessageDialog': True})
-                goto Event350
             }
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkSurprise', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+            Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_010'})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'TalkEmbarrass'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGerudo_037_aboutWomanDress', 'IsWaitFinish': True})
+            Event250:
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGerudo_037_1stGerudoDesert'})
+            goto Event416
         } else {
             Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_203', 'ASName': ''})
             Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_204', 'IsCloseMessageDialog': True, 'ASName': ''})
@@ -332,19 +323,17 @@ void SeekDungeon_Npc_oasis037_Talk() {
             Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_401'})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_402'})
-                Event119:
-                EventSystemActor.Demo_WaitFrame({'Frame': 50, 'IsWaitFinish': True})
-                Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_404'})
-                EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_405'})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkSurprise', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-                Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_406'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis037_first', 'IsWaitFinish': True})
-                goto Event250
             } else {
                 Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_403'})
-                goto Event119
             }
+            EventSystemActor.Demo_WaitFrame({'Frame': 50, 'IsWaitFinish': True})
+            Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_404'})
+            EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+            Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_405'})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': True, 'ASName': 'TalkSurprise', 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+            Npc_oasis037.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_406'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis037_first', 'IsWaitFinish': True})
+            goto Event250
         }
       case [1, 3]:
         Npc_oasis037.Demo_PlayASForDemo({'ASName': 'Act_Memo_Ed', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False})
@@ -390,39 +379,33 @@ void SeekDungeon_Npc_oasis032_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if Npc_oasis032[BalladOfHeroGerudo].IsOnInstEventFlag() {
-        Event244:
-        Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis032_SD_000', 'IsCloseMessageDialog': False})
-        if Npc_oasis032[BalladOfHeroGerudo].IsOnInstEventFlag() {
-            Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis032_SD_Talk_01'})
-            Event279:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis032_SD_Talk_06'})
-            } else
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis020_zarashi'}) {
-                Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_07'})
-            } else {
-                Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_12'})
-            }
-        } else {
-            Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis032_SD_Talk_04', 'IsWaitFinish': True})
-            goto Event279
-        }
-    } else {
+    if !Npc_oasis032[BalladOfHeroGerudo].IsOnInstEventFlag() {
 
         call Npc_oasis032.hello()
 
-        goto Event244
+    }
+    Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis032_SD_000', 'IsCloseMessageDialog': False})
+    if Npc_oasis032[BalladOfHeroGerudo].IsOnInstEventFlag() {
+        Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis032_SD_Talk_01'})
+    } else {
+        Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis032_SD_Talk_04', 'IsWaitFinish': True})
+    }
+    if !EventSystemActor.GeneralChoice2() {
+        Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis032_SD_Talk_06'})
+    } else
+    if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis020_zarashi'}) {
+        Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_07'})
+    } else {
+        Npc_oasis032[BalladOfHeroGerudo].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis032:Talk_12'})
     }
 }
 
 void 025_RAIMEI_CK() {
-    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': False, 'CheckLower': False, 'CheckType': 'Thunder'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis025_Raimei_CK'}) {
-            Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Raimei_CK_001'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis025_Raimei_CK'})
-            goto Event102
-        }
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': False, 'CheckLower': False, 'CheckType': 'Thunder'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis025_Raimei_CK'}) {
+        Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Raimei_CK_001'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis025_Raimei_CK'})
+        goto Event102
     }
 }
 
@@ -437,55 +420,54 @@ void SeekDungeon_Npc_oasis007_Talk() {
         Event332:
         if Npc_oasis007.IsOnInstEventFlag() {
             Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_Talk_44'})
-            Event330:
-            switch EventSystemActor.GeneralChoice4() {
-              case 0:
-                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-
-                call Npc_oasis007.Reget_Weapons()
-
-              case 1:
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_007_aboutTheHero'}) {
-                    Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_011', 'IsCloseMessageDialog': True})
-                    Event413:
-                    Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_450'})
-                    goto Event330
-                } else {
-                    Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_010', 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGerudo_007_aboutTheHero', 'IsWaitFinish': True})
-                    goto Event413
-                }
-              case 2:
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_007_near003'}) {
-                    Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_250'})
-                    Event434:
-                    Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_452'})
-                    goto Event330
-                } else
-                if EventSystemActor.CheckTime({'ConditionType': 'ge', 'Minute': 0, 'Hour': 20}) {
-                    Event394:
-                    Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_100', 'IsCloseMessageDialog': True})
-                    goto Event434
-                } else
-                if EventSystemActor.CheckTime({'ConditionType': 'ge', 'Minute': 0, 'Hour': 11}) {
-                    Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_200'})
-                    goto Event434
-                } else
-                if EventSystemActor.CheckTime({'ConditionType': 'ge', 'Minute': 0, 'Hour': 7}) {
-                    Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_300', 'IsCloseMessageDialog': True})
-                    goto Event434
-                } else {
-                    goto Event394
-                }
-              case 3:
-                Event331:
-                Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis007:Talk_43', 'IsCloseMessageDialog': True})
-                Event319:
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-            }
         } else {
             Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_Talk_01'})
-            goto Event330
+        }
+        Event330:
+        switch EventSystemActor.GeneralChoice4() {
+          case 0:
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+
+            call Npc_oasis007.Reget_Weapons()
+
+          case 1:
+            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_007_aboutTheHero'}) {
+                Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_011', 'IsCloseMessageDialog': True})
+                Event413:
+                Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_450'})
+                goto Event330
+            } else {
+                Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_010', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGerudo_007_aboutTheHero', 'IsWaitFinish': True})
+                goto Event413
+            }
+          case 2:
+            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_007_near003'}) {
+                Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_250'})
+                Event434:
+                Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_452'})
+                goto Event330
+            } else
+            if EventSystemActor.CheckTime({'ConditionType': 'ge', 'Minute': 0, 'Hour': 20}) {
+                Event394:
+                Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_100', 'IsCloseMessageDialog': True})
+                goto Event434
+            } else
+            if EventSystemActor.CheckTime({'ConditionType': 'ge', 'Minute': 0, 'Hour': 11}) {
+                Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_200'})
+                goto Event434
+            } else
+            if EventSystemActor.CheckTime({'ConditionType': 'ge', 'Minute': 0, 'Hour': 7}) {
+                Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_300', 'IsCloseMessageDialog': True})
+            } else {
+                goto Event394
+            }
+            goto Event434
+          case 3:
+            Event331:
+            Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis007:Talk_43', 'IsCloseMessageDialog': True})
+            Event319:
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         }
     } else {
         Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis007:Talk_12'})
@@ -525,10 +507,10 @@ void SeekDungeon_Npc_oasis007_Talk() {
             } else
             if EventSystemActor.CheckTime({'ConditionType': 'ge', 'Minute': 0, 'Hour': 7}) {
                 Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis007_DLC2nd_SD_300', 'IsCloseMessageDialog': True})
-                goto Event444
             } else {
                 goto Event380
             }
+            goto Event444
           case 2:
             goto Event331
         }
@@ -536,13 +518,12 @@ void SeekDungeon_Npc_oasis007_Talk() {
 }
 
 void 007_RAIMEI_CK() {
-    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': False, 'CheckLower': False, 'CheckType': 'Thunder'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis007_Raimei_CK'}) {
-            Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis007:Raimei_CK_001'})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis007_Raimei_CK'})
-            if !EventSystemActor.CheckFlag({'FlagName': 'Get_GerudoWeapon'}) {
-                goto Event325
-            }
+    if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': False, 'CheckLower': False, 'CheckType': 'Thunder'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis007_Raimei_CK'}) {
+        Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis007:Raimei_CK_001'})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis007_Raimei_CK'})
+        if !EventSystemActor.CheckFlag({'FlagName': 'Get_GerudoWeapon'}) {
+            goto Event325
         }
     }
 }

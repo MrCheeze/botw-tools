@@ -163,12 +163,9 @@ void Demo309_0() {
     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'PictureMemory_Demo309_0'})
     if EventSystemActor.CheckFlag({'FlagName': 'Kakariko001_GaveChampionShirt'}) {
         Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-        Event1:
-        EventSystemActor.Demo_FlagON({'FlagName': 'IsPlayed_Demo309_0', 'IsWaitFinish': True})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PictureMemory_Last1'})
-        SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'BgmCtrlType': 'StartWithFade', 'IsWaitFinish': True})
-        SceneSoundCtrlTag.Demo_CustomDuckingStop({'IsWaitFinish': True})
-    } else {
-        goto Event1
     }
+    EventSystemActor.Demo_FlagON({'FlagName': 'IsPlayed_Demo309_0', 'IsWaitFinish': True})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'PictureMemory_Last1'})
+    SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'BgmCtrlType': 'StartWithFade', 'IsWaitFinish': True})
+    SceneSoundCtrlTag.Demo_CustomDuckingStop({'IsWaitFinish': True})
 }

@@ -111,12 +111,11 @@ void Ready_Npc_Gaman01_Talk() {
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'GoronCamp_Activated'}) {
             Npc_Gaman01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gaman:Talk_20'})
-            goto Event52
         } else {
             Event51:
             Npc_Gaman01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Gaman:Npc_Gaman01_R_003', 'IsOverWriteLabelActorName': False})
-            goto Event52
         }
+        goto Event52
     } else
     if Npc_Gaman02.IsOnInstEventFlag() {
         goto Event483

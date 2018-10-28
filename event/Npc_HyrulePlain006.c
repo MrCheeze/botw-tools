@@ -19,23 +19,20 @@ void Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_HyrulePlain006_First'}) {
         if Npc_HyrulePlain006.CheckActorAction({'ActionName': 'Root/Timeline/Sleep/到着'}) {
             Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk02', 'IsOverWriteLabelActorName': False})
-            Event11:
-            Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk04'})
-            Event22:
-            switch EventSystemActor.GeneralChoice3() {
-              case 0:
-                Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk08'})
-                Event26:
-                Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk11'})
-              case 1:
-                Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk10'})
-                goto Event26
-              case 2:
-                Event24:
-                Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk09'})
-            }
-        } else {
-            goto Event11
+        }
+        Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk04'})
+        Event22:
+        switch EventSystemActor.GeneralChoice3() {
+          case 0:
+            Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk08'})
+            Event26:
+            Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk11'})
+          case 1:
+            Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk10'})
+            goto Event26
+          case 2:
+            Event24:
+            Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk09'})
         }
     } else {
         Npc_HyrulePlain006.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HyrulePlain006:talk00'})

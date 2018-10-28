@@ -294,16 +294,14 @@ void EntryPoint1() {
 void EntryPoint2() {
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_DemonStatue_Operation'}) {
         TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'DemoMsg/Demo035_0:talk16', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-        Event7:
-        EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_DemonStatue_Operation', 'IsWaitFinish': True})
-        EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_DemonStatue_SellFlow', 'IsWaitFinish': True})
-        EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-        TwnObj_DemonStatue_A_01.Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'DemonStatue_Aureole', 'SLinkKey': 'DemonStatue_Aureole'})
-        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     } else {
         TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'DemoMsg/Demo035_0:talk04', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-        goto Event7
     }
+    EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_DemonStatue_Operation', 'IsWaitFinish': True})
+    EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_DemonStatue_SellFlow', 'IsWaitFinish': True})
+    EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
+    TwnObj_DemonStatue_A_01.Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'DemonStatue_Aureole', 'SLinkKey': 'DemonStatue_Aureole'})
+    EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
 }
 
 void EntryPoint3() {
@@ -327,17 +325,15 @@ void EntryPoint7() {
         TwnObj_DemonStatue_A_01.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'DemoMsg/Demo035_0:talk45', 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_DemonStatue_SellFlow'}) {
             EventSystemActor.Demo_IncreaseRupee({'Value': 100, 'IsWaitFinish': True})
-            Event137:
-            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_DemonStatue_Operation', 'IsWaitFinish': True})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_DemonStatue_FirstSell'})
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_DemonStatue_SellFlow'}) {
-                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'NpcDemonStatue_UtuwaSum'})
-            } else {
-                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': -1, 'GameDataIntName': 'NpcDemonStatue_UtuwaSum'})
-            }
         } else {
             EventSystemActor.Demo_IncreaseRupee({'Value': -120, 'IsWaitFinish': True})
-            goto Event137
+        }
+        EventSystemActor.Demo_FlagON({'FlagName': 'Npc_DemonStatue_Operation', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_DemonStatue_FirstSell'})
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_DemonStatue_SellFlow'}) {
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'NpcDemonStatue_UtuwaSum'})
+        } else {
+            EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': -1, 'GameDataIntName': 'NpcDemonStatue_UtuwaSum'})
         }
     } else {
 
@@ -354,45 +350,43 @@ void Demo035_Ready() {
     TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk53'})
     if !EventSystemActor.GeneralChoice2() {
         TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk54'})
-        Event174:
-        TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk77'})
-        Event291:
-        TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk89'})
-        if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 4}) {
-            if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 6}) {
-                TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk80'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_DevilSeal_Activated'})
-                Event356:
-                TwnObj_DemonStatue_A_01.Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'DemonStatue_Aureole', 'SLinkKey': 'DemonStatue_Aureole'})
-            } else {
-                EventSystemActor.Demo_SetDispStaminaGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': True})
-                TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk78'})
-
-                call Give_First()
-
-                EventSystemActor.Demo_IncreasePlayerMaxStamina({'IsWaitFinish': True, 'Value': -1, 'IsMoveCenter': True})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-                TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk82'})
-                Event274:
-                TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk65'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_DevilSeal_Activated'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_DevilSeal_GiveUtsuwa'})
-                goto Event356
-            }
+    } else {
+        TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk32'})
+    }
+    TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk77'})
+    Event291:
+    TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk89'})
+    if !EventSystemActor.ComparePlayerMaxHeart({'Threshold': 4}) {
+        if !EventSystemActor.ComparePlayerMaxStamina({'Threshold': 6}) {
+            TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk80'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_DevilSeal_Activated'})
+            Event356:
+            TwnObj_DemonStatue_A_01.Demo_XLinkEventFade({'IsWaitFinish': True, 'ELinkKey': 'DemonStatue_Aureole', 'SLinkKey': 'DemonStatue_Aureole'})
         } else {
-            EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplayEx': False, 'IsDisplay': True, 'IsGetDemo': False})
+            EventSystemActor.Demo_SetDispStaminaGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': True})
             TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk78'})
 
             call Give_First()
 
-            EventSystemActor.Demo_IncreasePlayerMaxHeart({'IsWaitFinish': True, 'Value': -1, 'IsMoveCenter': True})
+            EventSystemActor.Demo_IncreasePlayerMaxStamina({'IsWaitFinish': True, 'Value': -1, 'IsMoveCenter': True})
             EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
             TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk82'})
-            goto Event274
+            Event274:
+            TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk65'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_DevilSeal_Activated'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_DevilSeal_GiveUtsuwa'})
+            goto Event356
         }
     } else {
-        TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk32'})
-        goto Event174
+        EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplayEx': False, 'IsDisplay': True, 'IsGetDemo': False})
+        TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk78'})
+
+        call Give_First()
+
+        EventSystemActor.Demo_IncreasePlayerMaxHeart({'IsWaitFinish': True, 'Value': -1, 'IsMoveCenter': True})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+        TwnObj_DemonStatue_A_01.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo035_0:talk82'})
+        goto Event274
     }
 }
 
@@ -461,23 +455,20 @@ void DemonCamera() {
     SceneSoundCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'BgmCtrlType': 'Mute', 'SeCtrlType': 'None'})
 
     fork {
-        if EventSystemActor.CheckPlayerWeaponFired({'CheckFireType': 2}) {
-            Event57:
-            SceneSoundCtrlTag.Demo_NotifyTalk({'CtrlType': 'BeginTalk', 'IsWaitFinish': True})
-
-            fork {
-                GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'TargetActor': 0, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'ActorName': '', 'UniqueName': '', 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C01-1', 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'Accept1FrameDelay': False})
-            } {
-                GameROMPlayer.Demo_ResetBoneCtrl({'IsWaitFinish': True, 'ResetTarget': 0})
-                GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'MorphingFrame': 0.0, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'DemoWait', 'ClothWarpMode': 1})
-                EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'I-7', 'WarpDestPosName': 'DemonPos', 'IsWaitFinish': True})
-            }
-
-            GameROMPlayer.Demo_Talk({'GreetingType': 'NotAndNot', 'IsWaitFinish': False})
-        } else {
+        if !EventSystemActor.CheckPlayerWeaponFired({'CheckFireType': 2}) {
             GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-            goto Event57
         }
+        SceneSoundCtrlTag.Demo_NotifyTalk({'CtrlType': 'BeginTalk', 'IsWaitFinish': True})
+
+        fork {
+            GameRomCamera.Demo_CameraAnimFlow({'IsWaitFinish': True, 'TargetActor': 0, 'TargetActorPosReferenceMode': 1, 'TargetActorDirReferenceMode': 1, 'ActorName': '', 'UniqueName': '', 'CameraName': '', 'StartFrame': 0.0, 'EndFrame': -1.0, 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFBlurStart': 2.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'DOFBlurEnd': 2.0, 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C01-1', 'OverwriteAt': False, 'OverwriteAtDist': 1.0, 'Accept1FrameDelay': False})
+        } {
+            GameROMPlayer.Demo_ResetBoneCtrl({'IsWaitFinish': True, 'ResetTarget': 0})
+            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'MorphingFrame': 0.0, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'ASName': 'DemoWait', 'ClothWarpMode': 1})
+            EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'I-7', 'WarpDestPosName': 'DemonPos', 'IsWaitFinish': True})
+        }
+
+        GameROMPlayer.Demo_Talk({'GreetingType': 'NotAndNot', 'IsWaitFinish': False})
     } {
         TwnObj_DemonStatue_A_01.Demo_BecomeSpeaker({'IsWaitFinish': True})
 

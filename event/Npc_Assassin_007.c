@@ -50,50 +50,45 @@ void Talk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Assassin_007'}) {
         Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk07'})
-        Event13:
-        if !EventSystemActor.GeneralChoice2() {
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Assassin_007'}) {
-                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-                Event16:
-
-                call Demo023_0.BustUp_PlayerHide()
-
-                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
-                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo347_1'}) {
-                    Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk03'})
-                    Event2:
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Assassin_007'})
-                } else {
-                    Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk02'})
-                    goto Event2
-                }
-            } else {
-                Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk01', 'IsCloseMessageDialog': True})
-                goto Event16
-            }
-        } else {
-            Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk04', 'IsCloseMessageDialog': False})
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Assassin_FirstEncounter'}) {
-                EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
-
-                call Demo023_0.BustUp_PlayerHide()
-
-                SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
-                if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo347_1'}) {
-                    Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk06'})
-                    goto Event2
-                } else {
-                    Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk05'})
-                    goto Event2
-                }
-            } else {
-                Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk04_1', 'IsCloseMessageDialog': True})
-                goto Event16
-            }
-        }
     } else {
         Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk00'})
-        goto Event13
+    }
+    if !EventSystemActor.GeneralChoice2() {
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Assassin_007'}) {
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+        } else {
+            Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk01', 'IsCloseMessageDialog': True})
+        }
+        Event16:
+
+        call Demo023_0.BustUp_PlayerHide()
+
+        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
+        if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo347_1'}) {
+            Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk03'})
+        } else {
+            Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk02'})
+        }
+        Event2:
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Assassin_007'})
+    } else {
+        Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk04', 'IsCloseMessageDialog': False})
+        if EventSystemActor.CheckFlag({'FlagName': 'Npc_Assassin_FirstEncounter'}) {
+            EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+
+            call Demo023_0.BustUp_PlayerHide()
+
+            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
+            if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo347_1'}) {
+                Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk06'})
+            } else {
+                Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk05'})
+            }
+            goto Event2
+        } else {
+            Npc_Assassin_007[FirstEncounter(Self)].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Assassin_007:Talk04_1', 'IsCloseMessageDialog': True})
+            goto Event16
+        }
     }
 }
 

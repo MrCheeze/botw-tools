@@ -104,18 +104,16 @@ void Finish_NPC_oasis004_Talk() {
                         NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_119'})
                         if EventSystemActor.CheckFlag({'FlagName': 'OneHundred_1st'}) {
                             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_118'})
-                            Event174:
-                            NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_122'})
-                            EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
-
-                            call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'PutRupee_Gold'})
-
-                            NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_120', 'IsCloseMessageDialog': True})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'OneHundred_Finish'})
                         } else {
                             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_117'})
-                            goto Event174
                         }
+                        NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_122'})
+                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 0})
+
+                        call GetDemo.GetItemByName({'IsInvalidOpenPouch': True, 'CheckTargetActorName': 'PutRupee_Gold'})
+
+                        NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_120', 'IsCloseMessageDialog': True})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'OneHundred_Finish'})
                     } else
                     Event138:
                     if EventSystemActor.CheckFlag({'FlagName': 'OneHundred_1st'}) {
@@ -146,19 +144,14 @@ void Finish_NPC_oasis004_Talk() {
                         Event130:
                         if !EventSystemActor.GeneralChoice2() {
                             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_107'})
-                            Event132:
-                            NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_108'})
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'OneHundred_1st'})
-                        } else {
-                            goto Event132
                         }
+                        NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_108'})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'OneHundred_1st'})
                       case 7:
-                        if NPC_oasis004.IsOnInstEventFlag() {
-                            goto Event139
-                        } else {
+                        if !NPC_oasis004.IsOnInstEventFlag() {
                             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_110'})
-                            goto Event139
                         }
+                        goto Event139
                     }
                 } else
                 if EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr04Free'}) in [1, 0] {
@@ -201,12 +194,10 @@ void Finish_NPC_oasis004_Talk() {
                 NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_106'})
                 goto Event130
               case 7:
-                if NPC_oasis004.IsOnInstEventFlag() {
-                    goto Event129
-                } else {
+                if !NPC_oasis004.IsOnInstEventFlag() {
                     NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_110'})
-                    goto Event129
                 }
+                goto Event129
             }
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr02Free'}) {
@@ -234,12 +225,10 @@ void Finish_NPC_oasis004_Talk() {
                 goto Event115
             }
         } else
-        if NPC_oasis004.IsOnInstEventFlag() {
-            goto Event115
-        } else {
+        if !NPC_oasis004.IsOnInstEventFlag() {
             NPC_oasis004.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/OneHundred:Npc_oasis004_105'})
-            goto Event115
         }
+        goto Event115
     }
 }
 
@@ -419,14 +408,11 @@ void Finish_NPC_oasis004_fr03_Near() {
 }
 
 void Step_CK() {
-    if EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr0Free'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr02Free'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr03Free'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr04Free'}) {
-                    EventSystemActor.Demo_FlagON({'FlagName': 'OneHundred_Step1', 'IsWaitFinish': True})
-                }
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr0Free'})
+    && EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr02Free'})
+    && EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr03Free'})
+    && EventSystemActor.CheckFlag({'FlagName': 'OneHundred_Fr04Free'}) {
+        EventSystemActor.Demo_FlagON({'FlagName': 'OneHundred_Step1', 'IsWaitFinish': True})
     }
 }
 

@@ -16,13 +16,10 @@ void Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if Npc_kokiri005.IsOnInstEventFlag() {
-        Event27:
-        Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_Talk010'})
-    } else {
+    if !Npc_kokiri005.IsOnInstEventFlag() {
         Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_Talk000', 'IsCloseMessageDialog': False})
-        goto Event27
     }
+    Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_Talk010'})
 }
 
 void IsPlayed_Demo104_0_Talk() {
@@ -31,30 +28,28 @@ void IsPlayed_Demo104_0_Talk() {
 
     if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_Finish'}) {
         Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_GotMSword_Talk000'})
-        Event30:
-        switch EventSystemActor.GeneralChoice4() {
-          case 0:
-            Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk010', 'IsCloseMessageDialog': True})
-            Event39:
-            Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk001'})
-            goto Event30
-          case 1:
-            if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_Finish'}) {
-                Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_GotMSword_Talk010', 'IsCloseMessageDialog': True})
-                goto Event39
-            } else {
-                Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk020', 'IsCloseMessageDialog': True})
-                goto Event39
-            }
-          case 2:
-            Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk030', 'IsCloseMessageDialog': True})
-            goto Event39
-          case 3:
-            Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk040'})
-        }
     } else {
         Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk000', 'IsCloseMessageDialog': False})
+    }
+    Event30:
+    switch EventSystemActor.GeneralChoice4() {
+      case 0:
+        Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk010', 'IsCloseMessageDialog': True})
+        Event39:
+        Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk001'})
         goto Event30
+      case 1:
+        if EventSystemActor.CheckFlag({'FlagName': 'Get_MasterSword_Finish'}) {
+            Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_GotMSword_Talk010', 'IsCloseMessageDialog': True})
+        } else {
+            Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk020', 'IsCloseMessageDialog': True})
+        }
+        goto Event39
+      case 2:
+        Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk030', 'IsCloseMessageDialog': True})
+        goto Event39
+      case 3:
+        Npc_kokiri005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_kokiri005:Npc_kokiri005_After_Demo_Talk040'})
     }
 }
 

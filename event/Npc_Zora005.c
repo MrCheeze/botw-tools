@@ -80,33 +80,31 @@ void Talk() {
                 Npc_Zora005[Kuroida_Zora].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk03'})
                 if !EventSystemActor.GeneralChoice2() {
                     Npc_Zora005[Kuroida_Zora].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk04'})
-                    Event11:
-                    Npc_Zora005[Kuroida_Zora].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk05', 'IsCloseMessageDialog': True})
-
-                    fork {
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 3323.23291015625, 'Pattern1PosY': 258.7693786621094, 'Pattern1PosZ': -523.3462524414062, 'Pattern1AtX': 3326.17138671875, 'Pattern1AtY': 258.1684875488281, 'Pattern1AtZ': -523.281005859375, 'Pattern1Fovy': 54.999996185302734, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    } {
-                        EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestMapName': 'I-4', 'WarpDestPosName': 'KapodaMove'})
-                    }
-
-                    Npc_Zora005[Kuroida_Zora].Demo_MoveToAnchor({'AnchorName': 'AnchorAction4', 'AnchorUniqueName': 'Go_Ichikara', 'ASKeyName': 'Walk', 'IsWaitFinish': False, 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
-
-                    fork {
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
-                        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
-                    } {
-                        EventBgmCtrlTag.Demo_StartAndKeep({'IsWaitFinish': True, 'BgmName': 'MovingIchikaraBgm'})
-                    }
-
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 3321.37841796875, 'Pattern1PosY': 258.4703369140625, 'Pattern1PosZ': -524.3675537109375, 'Pattern1AtX': 3326.67822265625, 'Pattern1AtY': 258.4689025878906, 'Pattern1AtZ': -524.2498779296875, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_MakeVillage_BellNormalAppear'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_MakeVillage_Invite04'})
-                    EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'Location_UMiiVillageShopYadoya'})
-                    Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
                 } else {
                     Npc_Zora005[Kuroida_Zora].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk16'})
-                    goto Event11
                 }
+                Npc_Zora005[Kuroida_Zora].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk05', 'IsCloseMessageDialog': True})
+
+                fork {
+                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 3323.23291015625, 'Pattern1PosY': 258.7693786621094, 'Pattern1PosZ': -523.3462524414062, 'Pattern1AtX': 3326.17138671875, 'Pattern1AtY': 258.1684875488281, 'Pattern1AtZ': -523.281005859375, 'Pattern1Fovy': 54.999996185302734, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                } {
+                    EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestMapName': 'I-4', 'WarpDestPosName': 'KapodaMove'})
+                }
+
+                Npc_Zora005[Kuroida_Zora].Demo_MoveToAnchor({'AnchorName': 'AnchorAction4', 'AnchorUniqueName': 'Go_Ichikara', 'ASKeyName': 'Walk', 'IsWaitFinish': False, 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
+
+                fork {
+                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
+                    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 1, 'Color': 1, 'DispMode': 'Auto'})
+                } {
+                    EventBgmCtrlTag.Demo_StartAndKeep({'IsWaitFinish': True, 'BgmName': 'MovingIchikaraBgm'})
+                }
+
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 3321.37841796875, 'Pattern1PosY': 258.4703369140625, 'Pattern1PosZ': -524.3675537109375, 'Pattern1AtX': 3326.67822265625, 'Pattern1AtY': 258.4689025878906, 'Pattern1AtZ': -524.2498779296875, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_MakeVillage_BellNormalAppear'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'UMiiMini_MakeVillage_Invite04'})
+                EventSystemActor.Demo_IncreaseGameDataInt({'IsWaitFinish': True, 'Value': 1, 'GameDataIntName': 'Location_UMiiVillageShopYadoya'})
+                Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
             } else {
                 Npc_Zora005[Kuroida_Zora].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora005:talk17'})
             }

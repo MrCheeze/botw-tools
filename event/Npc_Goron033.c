@@ -23,56 +23,48 @@ void Talk() {
             Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk10'})
             Event23:
             if !EventSystemActor.GeneralChoice2() {
-                if !EventSystemActor.RandomChoice2() {
-                    Event45:
-                    EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
-                    Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk02'})
-                    Event13:
-                    if !EventSystemActor.GeneralChoice2() {
-                        if EventSystemActor.CheckRupee({'Value': 60}) {
-                            if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_C_17'}) {
-                                if !EventSystemActor.RandomChoice2() {
-                                    Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk04', 'IsCloseMessageDialog': True})
-                                    Event9:
-                                    EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -60})
-                                    EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron033_Buy', 'IsWaitFinish': True})
-
-                                    call Demo001_0.SetCookResult3WithNum({'CookMaterial_01': 'Animal_Insect_X', 'CookMaterial_02': 'Animal_Insect_X', 'CookMaterial_03': 'Item_Enemy_00', 'SetNum': 1})
-
-                                    Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk05', 'IsCloseMessageDialog': True})
-                                    goto Event13
-                                } else {
-                                    Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk14'})
-                                    goto Event9
-                                }
+                if EventSystemActor.RandomChoice2() {
+                    Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk01'})
+                }
+                EventSystemActor.Demo_AppearRupee({'IsVisible': 0, 'IsWaitFinish': True})
+                Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk02'})
+                Event13:
+                if !EventSystemActor.GeneralChoice2() {
+                    if EventSystemActor.CheckRupee({'Value': 60}) {
+                        if EventSystemActor.CheckAddPorchItem({'Count': 1, 'PorchItemName': 'Item_Cook_C_17'}) {
+                            if !EventSystemActor.RandomChoice2() {
+                                Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk04', 'IsCloseMessageDialog': True})
                             } else {
-                                Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk06'})
-                                Event37:
-                                EventSystemActor.Demo_FlagOFF({'FlagName': 'NPC_Goron033_Buy', 'IsWaitFinish': True})
+                                Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk14'})
                             }
+                            EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -60})
+                            EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron033_Buy', 'IsWaitFinish': True})
+
+                            call Demo001_0.SetCookResult3WithNum({'CookMaterial_01': 'Animal_Insect_X', 'CookMaterial_02': 'Animal_Insect_X', 'CookMaterial_03': 'Item_Enemy_00', 'SetNum': 1})
+
+                            Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk05', 'IsCloseMessageDialog': True})
+                            goto Event13
                         } else {
-                            Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk03'})
-                            goto Event37
+                            Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk06'})
+                            Event37:
+                            EventSystemActor.Demo_FlagOFF({'FlagName': 'NPC_Goron033_Buy', 'IsWaitFinish': True})
                         }
                     } else {
-                        EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
-                        if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron033_Buy'}) {
-                            if !EventSystemActor.RandomChoice2() {
-                                Event38:
-                                Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk13'})
-                                goto Event37
-                            } else {
-                                Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk00'})
-                                goto Event38
-                            }
-                        } else {
-                            Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk09'})
-                            goto Event37
-                        }
+                        Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk03'})
+                        goto Event37
                     }
                 } else {
-                    Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk01'})
-                    goto Event45
+                    EventSystemActor.Demo_AppearRupee({'IsWaitFinish': True, 'IsVisible': 1})
+                    if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron033_Buy'}) {
+                        if EventSystemActor.RandomChoice2() {
+                            Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk00'})
+                        }
+                        Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk13'})
+                        goto Event37
+                    } else {
+                        Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk09'})
+                        goto Event37
+                    }
                 }
             } else
             switch Npc_Goron033.CheckActorAction13() {
@@ -90,12 +82,10 @@ void Talk() {
             }
         }
       case 11:
-        if Npc_Goron033.IsOnInstEventFlag() {
-            goto Event21
-        } else {
+        if !Npc_Goron033.IsOnInstEventFlag() {
             Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk11'})
-            goto Event21
         }
+        goto Event21
     }
 }
 
@@ -131,11 +121,9 @@ void Clear_RemainsFire_Talk() {
             goto Event23
         }
       case 11:
-        if Npc_Goron033.IsOnInstEventFlag() {
-            goto Event49
-        } else {
+        if !Npc_Goron033.IsOnInstEventFlag() {
             Npc_Goron033.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron033:talk11'})
-            goto Event49
         }
+        goto Event49
     }
 }

@@ -38,63 +38,57 @@ void Talk() {
             }
           case 5:
             GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
+            && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) {
 
-                    call BalladOfHeroGoron.Yunbo_AfterTalk_Entry02()
+                call BalladOfHeroGoron.Yunbo_AfterTalk_Entry02()
 
-                } else
-                Event54:
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_Goron020_Secret'}) {
-                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk11'})
-                    Event24:
-                    switch EventSystemActor.GeneralChoice4() {
-                      case 0:
-                        if Npc_Goron020_2[YunBo_Finished].IsOnInstEventFlag() {
-                            Event61:
-                            Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk24', 'IsCloseMessageDialog': True})
-                            Event57:
-                            Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk06'})
-                            goto Event24
-                        } else {
-                            Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk13'})
-                            goto Event61
-                        }
-                      case 1:
-                        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1607.1854248046875, 'Pattern1PosY': 507.4464111328125, 'Pattern1PosZ': -2434.212646484375, 'Pattern1AtX': 1610.5841064453125, 'Pattern1AtY': 508.3669128417969, 'Pattern1AtZ': -2434.633056640625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                        Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk14', 'IsCloseMessageDialog': True})
-                        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
-                        goto Event57
-                      case 2:
-                        Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk15'})
-                        Npc_Goron020_2[YunBo_Finished].Demo_XLinkEventCreate({'IsWaitFinish': False, 'ELinkKey': 'Barrier', 'IsTargetDemoSLinkUser': False, 'SLinkKey': 'Barrier'})
-                        Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk16', 'IsCloseMessageDialog': True, 'ASName': ''})
-                        Npc_Goron020_2[YunBo_Finished].Demo_XLinkEventFade({'IsWaitFinish': False, 'ELinkKey': 'Barrier', 'SLinkKey': 'Barrier'})
-                        goto Event57
-                      case 3:
-                        Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk12'})
-                    }
-                } else {
-                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk19', 'IsCloseMessageDialog': True})
-                    Npc_Goron020_2[YunBo_Finished].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsConfront': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsValid': True, 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 3, 'TurnDirection': 100.0, 'FaceId': 1, 'ActorName': ''})
-
-                    fork {
-                        Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk25', 'ASName': 'Point', 'IsCloseMessageDialog': True})
-                    } {
-                        EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 2, 'TurnDirection': 100.0, 'FaceId': 1, 'IsValid': True, 'IsWaitFinish': True, 'IsUseSlowTurn': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'IsTurnToLookAtPos': False})
-                    }
-
-                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1607.1854248046875, 'Pattern1PosY': 507.4464111328125, 'Pattern1PosZ': -2434.212646484375, 'Pattern1AtX': 1610.5841064453125, 'Pattern1AtY': 508.3669128417969, 'Pattern1AtZ': -2434.633056640625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk20', 'IsCloseMessageDialog': True})
-                    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
-                    Npc_Goron020_2[YunBo_Finished].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'FaceId': 2})
-                    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsValid': True, 'IsWaitFinish': True, 'IsUseSlowTurn': False, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'IsTurnToLookAtPos': False, 'ObjectId': 0, 'FaceId': 2, 'ActorName': 'Npc_Goron020_2', 'UniqueName': 'YunBo_Finished', 'TurnDirection': 0.0})
-                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk26'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Goron020_Secret'})
-                }
             } else
-            goto Event54
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_Goron020_Secret'}) {
+                Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk11'})
+                Event24:
+                switch EventSystemActor.GeneralChoice4() {
+                  case 0:
+                    if !Npc_Goron020_2[YunBo_Finished].IsOnInstEventFlag() {
+                        Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk13'})
+                    }
+                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk24', 'IsCloseMessageDialog': True})
+                    Event57:
+                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk06'})
+                    goto Event24
+                  case 1:
+                    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1607.1854248046875, 'Pattern1PosY': 507.4464111328125, 'Pattern1PosZ': -2434.212646484375, 'Pattern1AtX': 1610.5841064453125, 'Pattern1AtY': 508.3669128417969, 'Pattern1AtZ': -2434.633056640625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk14', 'IsCloseMessageDialog': True})
+                    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
+                    goto Event57
+                  case 2:
+                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk15'})
+                    Npc_Goron020_2[YunBo_Finished].Demo_XLinkEventCreate({'IsWaitFinish': False, 'ELinkKey': 'Barrier', 'IsTargetDemoSLinkUser': False, 'SLinkKey': 'Barrier'})
+                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk16', 'IsCloseMessageDialog': True, 'ASName': ''})
+                    Npc_Goron020_2[YunBo_Finished].Demo_XLinkEventFade({'IsWaitFinish': False, 'ELinkKey': 'Barrier', 'SLinkKey': 'Barrier'})
+                    goto Event57
+                  case 3:
+                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk12'})
+                }
+            } else {
+                Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk19', 'IsCloseMessageDialog': True})
+                Npc_Goron020_2[YunBo_Finished].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsConfront': True, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'IsValid': True, 'TurnPosition': [0.0, 0.0, 0.0], 'ObjectId': 3, 'TurnDirection': 100.0, 'FaceId': 1, 'ActorName': ''})
+
+                fork {
+                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk25', 'ASName': 'Point', 'IsCloseMessageDialog': True})
+                } {
+                    EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+                    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'ObjectId': 2, 'TurnDirection': 100.0, 'FaceId': 1, 'IsValid': True, 'IsWaitFinish': True, 'IsUseSlowTurn': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'IsTurnToLookAtPos': False})
+                }
+
+                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1607.1854248046875, 'Pattern1PosY': 507.4464111328125, 'Pattern1PosZ': -2434.212646484375, 'Pattern1AtX': 1610.5841064453125, 'Pattern1AtY': 508.3669128417969, 'Pattern1AtZ': -2434.633056640625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+                Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk20', 'IsCloseMessageDialog': True})
+                GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
+                Npc_Goron020_2[YunBo_Finished].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsValid': True, 'FaceId': 2})
+                GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsValid': True, 'IsWaitFinish': True, 'IsUseSlowTurn': False, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'IsTurnToLookAtPos': False, 'ObjectId': 0, 'FaceId': 2, 'ActorName': 'Npc_Goron020_2', 'UniqueName': 'YunBo_Finished', 'TurnDirection': 0.0})
+                Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk26'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Goron020_Secret'})
+            }
           case 10:
             if !EventSystemActor.RandomChoice2() {
                 Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk22'})
@@ -125,23 +119,17 @@ void Talk() {
 
         switch Npc_Goron020_2[YunBo_Finished].CheckActorAction13() {
           case [4, 5, 10]:
-            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) {
+            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
+            && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) {
 
-                    call BalladOfHeroGoron.Yunbo_AfterTalk_Entry01()
+                call BalladOfHeroGoron.Yunbo_AfterTalk_Entry01()
 
-                } else
-                Event68:
-                if Npc_Goron020_2[YunBo_Finished].IsOnInstEventFlag() {
-                    Event49:
-                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk23'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Goron020_First', 'IsWaitFinish': True})
-                } else {
-                    Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk27'})
-                    goto Event49
-                }
             } else
-            goto Event68
+            if !Npc_Goron020_2[YunBo_Finished].IsOnInstEventFlag() {
+                Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk27'})
+            }
+            Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk23'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_Goron020_First', 'IsWaitFinish': True})
           case 11:
             goto Event10
         }

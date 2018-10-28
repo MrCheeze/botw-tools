@@ -75,12 +75,10 @@ void Demo600_0_C03() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 225})
     if EventSystemActor.CheckPlayerRideHorse() {
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'HorseWait'})
-        Event25:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
     } else {
         GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'ASName': 'DemoWait'})
-        goto Event25
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
 }
 
 void Demo600_0_C02() {

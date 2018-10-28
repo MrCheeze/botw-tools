@@ -271,43 +271,41 @@ void Individual_Ready_Talk() {
 }
 
 void Individual_Finish_Talk() {
-    if Npc_Musician_005[Individual_Finish_Talk(Self)].IsOnInstEventFlag() {
-        Event110:
-        Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_Individual_020'})
-        if !EventSystemActor.GeneralChoice2() {
-            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'WorldMute', 'IsWaitFinish': True})
-            Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk01'})
+    if !Npc_Musician_005[Individual_Finish_Talk(Self)].IsOnInstEventFlag() {
+        Npc_Musician_005[Individual_Finish_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk12'})
+    }
+    Event110:
+    Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_Individual_020'})
+    if !EventSystemActor.GeneralChoice2() {
+        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'WorldMute', 'IsWaitFinish': True})
+        Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk01'})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Rito_Talk', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Goron_Talk', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Gerudo_Talk', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Zora_Talk', 'IsWaitFinish': True})
+    } else {
+        Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk03'})
+        if EventSystemActor.CheckFlag({'FlagName': 'Relief_Rito_Talk'}) {
+            Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_Town_004'})
+            Event281:
             EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Rito_Talk', 'IsWaitFinish': True})
             EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Goron_Talk', 'IsWaitFinish': True})
             EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Gerudo_Talk', 'IsWaitFinish': True})
             EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Zora_Talk', 'IsWaitFinish': True})
-        } else {
-            Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk03'})
-            if EventSystemActor.CheckFlag({'FlagName': 'Relief_Rito_Talk'}) {
-                Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_Town_004'})
-                Event281:
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Rito_Talk', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Goron_Talk', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Gerudo_Talk', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'Relief_Zora_Talk', 'IsWaitFinish': True})
-                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-            } else
-            if EventSystemActor.CheckFlag({'FlagName': 'Relief_Goron_Talk'}) {
-                Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_Town_002'})
-                goto Event281
-            } else
-            if EventSystemActor.CheckFlag({'FlagName': 'Relief_Gerudo_Talk'}) {
-                Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_Town_001'})
-                goto Event281
-            } else
-            if EventSystemActor.CheckFlag({'FlagName': 'Relief_Zora_Talk'}) {
-                Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_Town_003'})
-                goto Event281
-            }
+            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Relief_Goron_Talk'}) {
+            Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_Town_002'})
+            goto Event281
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Relief_Gerudo_Talk'}) {
+            Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_Town_001'})
+            goto Event281
+        } else
+        if EventSystemActor.CheckFlag({'FlagName': 'Relief_Zora_Talk'}) {
+            Npc_Musician_005[Individual_Ready_Second_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroes:Npc_Musician_AoC_HeroXxxx_Demo610_Town_003'})
+            goto Event281
         }
-    } else {
-        Npc_Musician_005[Individual_Finish_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk12'})
-        goto Event110
     }
 }
 
@@ -317,24 +315,14 @@ void Individual_Ready_Second_Talk() {
 
 void Check_4ChampComp() {
     EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_Finish'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_Finish'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_FourRemains_Clear'})
-                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'BalladOfHeroes', 'StepName': 'Step05', 'ForceRunTelop': False})
-                } else {
-                    Event251:
-                    EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-                }
-            } else {
-                goto Event251
-            }
-        } else {
-            goto Event251
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_Finish'})
+    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_Finish'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroes_FourRemains_Clear'})
+        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'BalladOfHeroes', 'StepName': 'Step05', 'ForceRunTelop': False})
     } else {
-        goto Event251
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     }
 }
 
@@ -368,15 +356,13 @@ void Ready_Talk() {
         Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk15'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk04'})
-            Event204:
-            Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk14'})
-            if EventSystemActor.GeneralChoice2() in [0, 1] {
-                Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk05'})
-                goto Event208
-            }
         } else {
             Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk16'})
-            goto Event204
+        }
+        Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk14'})
+        if EventSystemActor.GeneralChoice2() in [0, 1] {
+            Npc_Musician_005[Ready_Talk(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Musician_008:Talk05'})
+            goto Event208
         }
     }
 }

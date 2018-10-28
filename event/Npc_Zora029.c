@@ -70,11 +70,9 @@ void NoruFirst() {
     } else
     if EventSystemActor.CheckFlag({'FlagName': 'GotoZoraVillage_Finish'}) {
         Npc_Zora029.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora029:talk15'})
-        Event80:
-        Npc_Zora029.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora029:talk16'})
-        goto Event63
     } else {
         Npc_Zora029.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora029:talk05'})
-        goto Event80
     }
+    Npc_Zora029.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora029:talk16'})
+    goto Event63
 }

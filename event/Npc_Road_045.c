@@ -158,11 +158,10 @@ void Rest() {
     } else
     if Npc_Road_045.IsOnInstEventFlag() {
         Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_01'})
-        goto Event99
     } else {
         Npc_Road_045.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
-        goto Event99
     }
+    goto Event99
 }
 
 void Rest2() {

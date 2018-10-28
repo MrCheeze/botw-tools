@@ -148,27 +148,23 @@ void GoronSword3Repair() {
                 } else
                 if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
                     Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk16', 'IsOverWriteLabelActorName': False})
-                    goto Event91
                 } else {
                     Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk17', 'IsOverWriteLabelActorName': False})
-                    goto Event91
                 }
+                goto Event91
             } else
             if EventSystemActor.HasPorchItem({'PorchItemName': 'Item_Ore_A', 'Count': 1}) {
                 if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
                     Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk18', 'IsOverWriteLabelActorName': False})
-                    goto Event91
                 } else {
                     Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk19', 'IsOverWriteLabelActorName': False})
-                    goto Event91
                 }
+                goto Event91
             } else
             if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Lsword_036'}) {
                 Npc_Goron016.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk20', 'IsOverWriteLabelActorName': False})
-                goto Event91
-            } else {
-                goto Event91
             }
+            goto Event91
         }
     } else {
         Npc_Goron016.Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron016:talk32', 'IsWaitFinish': True})

@@ -20,38 +20,35 @@ void CheckBalladOfHeroRun() {
 }
 
 void CheckAoc2TreasureRun() {
-    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'}) {
-        if !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_Aoc2_RunAutoOrder'}) {
-            if EventSystemActor.IsCurrentMainFieldStage() {
-                if EventSystemActor.CheckFlag({'FlagName': 'FirstTouchdown'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_Aoc2_RunAutoOrder'})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
-                    EventSystemActor.Demo_DisableAutoSavePausing({'IsWaitFinish': True})
-                    EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
+    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'TreasureHunt_Aoc2_RunAutoOrder'})
+    && EventSystemActor.IsCurrentMainFieldStage()
+    && EventSystemActor.CheckFlag({'FlagName': 'FirstTouchdown'}) {
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'TreasureHunt_Aoc2_RunAutoOrder'})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 10})
+        EventSystemActor.Demo_DisableAutoSavePausing({'IsWaitFinish': True})
+        EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
 
-                    call RunTreasureChallenge({'FlagReady': 'TreasureHunt03_Ready', 'FlagActivated': 'TreasureHunt03_Activated'})
-
-
-                    call RunTreasureChallenge({'FlagReady': 'TreasureHunt04_Ready', 'FlagActivated': 'TreasureHunt04_Activated'})
+        call RunTreasureChallenge({'FlagReady': 'TreasureHunt03_Ready', 'FlagActivated': 'TreasureHunt03_Activated'})
 
 
-                    call RunTreasureChallenge({'FlagReady': 'TreasureHunt_touzoku05_Ready', 'FlagActivated': 'TreasureHunt_touzoku05_Activated'})
+        call RunTreasureChallenge({'FlagReady': 'TreasureHunt04_Ready', 'FlagActivated': 'TreasureHunt04_Activated'})
 
 
-                    call RunTreasureChallenge({'FlagReady': 'TreasureHunt_touzoku06_Ready', 'FlagActivated': 'TreasureHunt_touzoku06_Activated'})
+        call RunTreasureChallenge({'FlagReady': 'TreasureHunt_touzoku05_Ready', 'FlagActivated': 'TreasureHunt_touzoku05_Activated'})
 
 
-                    call RunTreasureChallenge({'FlagReady': 'TreasureHunt_touzoku07_Ready', 'FlagActivated': 'TreasureHunt_touzoku07_Activated'})
+        call RunTreasureChallenge({'FlagReady': 'TreasureHunt_touzoku06_Ready', 'FlagActivated': 'TreasureHunt_touzoku06_Activated'})
 
 
-                    call RunTreasureChallenge({'FlagReady': 'TreasureHunt_touzoku08_Ready', 'FlagActivated': 'TreasureHunt_touzoku08_Activated'})
+        call RunTreasureChallenge({'FlagReady': 'TreasureHunt_touzoku07_Ready', 'FlagActivated': 'TreasureHunt_touzoku07_Activated'})
 
 
-                    call RunTreasureChallenge({'FlagReady': 'bf2_collabo_Ready', 'FlagActivated': 'bf2_collabo_Activated'})
+        call RunTreasureChallenge({'FlagReady': 'TreasureHunt_touzoku08_Ready', 'FlagActivated': 'TreasureHunt_touzoku08_Activated'})
 
-                }
-            }
-        }
+
+        call RunTreasureChallenge({'FlagReady': 'bf2_collabo_Ready', 'FlagActivated': 'bf2_collabo_Activated'})
+
     }
 }
 
@@ -69,16 +66,12 @@ void RunTreasureChallenge() {
 }
 
 void CheckDeadlyQuestEscape() {
-    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroes_Step02'}) {
-            if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroes_Step03'}) {
-                if !EventSystemActor.IsCurrentCDungeonStage() {
-                    if EventSystemActor.CheckDeadlyQuestEscapeTiming() {
-                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EndFade': 0, 'DemoName': 'Demo605_0', 'EntryPointName': 'Demo605_0'})
-                    }
-                }
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
+    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroes_Step02'})
+    && !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroes_Step03'})
+    && !EventSystemActor.IsCurrentCDungeonStage()
+    && EventSystemActor.CheckDeadlyQuestEscapeTiming() {
+        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'EndFade': 0, 'DemoName': 'Demo605_0', 'EntryPointName': 'Demo605_0'})
     }
 }
 

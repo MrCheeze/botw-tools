@@ -22,34 +22,30 @@ void Ready_Npc_LakeSideHatago006_Talk() {
           case 0:
             if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_TerribleThuner_IsTalked'}) {
                 Npc_LakeSideHatago006.Demo_Talk({'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk01', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                Event17:
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk09'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThuner_IsTalked'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThunder_Activated'})
-                } else {
-                    Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk10'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThuner_IsTalked'})
-                }
             } else {
                 Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk00'})
-                goto Event17
+            }
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk09'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThuner_IsTalked'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThunder_Activated'})
+            } else {
+                Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk10'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThuner_IsTalked'})
             }
           case [1, 2, 3]:
             if EventSystemActor.CheckFlag({'FlagName': 'FironeMini_TerribleThuner_IsTalked'}) {
                 Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk06'})
-                Event34:
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk09'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThuner_IsTalked'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThunder_Activated'})
-                } else {
-                    Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk10'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThuner_IsTalked'})
-                }
             } else {
                 Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk08'})
-                goto Event34
+            }
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk09'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThuner_IsTalked'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThunder_Activated'})
+            } else {
+                Npc_LakeSideHatago006.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/FironeMini_TerribleThunder:talk10'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'FironeMini_TerribleThuner_IsTalked'})
             }
         }
       case 11:

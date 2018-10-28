@@ -139,18 +139,15 @@ void DragonGate() {
     }
 
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-    if NPC_CaptionVoice.IsOnInstEventFlag() {
-        Event140:
-        NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 0, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo480_0:Dragon_17'})
-        GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'OtherActor': 3, 'ReviseMode': 0, 'LngOffset': 0.0, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'ActorIgnoringCollision': -1, 'ReverseOrder': True, 'AtCalcMode': 0, 'RadiusOffset': 1.0, 'Time': 0.0, 'UniqueNameForOtherActor': '', 'ActorNameForOtherActor': 'TwnObj_GoddesStatue_A_10', 'LatOffset': 0.0, 'AtParam': [0.0, 1.600000023841858, -2.0]})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-
-        call Common.Play_ReadRiddle()
-
-    } else {
+    if !NPC_CaptionVoice.IsOnInstEventFlag() {
         NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 0, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo480_0:Dragon_16'})
-        goto Event140
     }
+    NPC_CaptionVoice.Demo_OpenMessageDialog({'IsWaitFinish': True, 'CloseDialogOption': 0, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo480_0:Dragon_17'})
+    GameRomCamera.Demo_PolarCoordPlayerRelative({'IsWaitFinish': True, 'OtherActor': 3, 'ReviseMode': 0, 'LngOffset': 0.0, 'FovyParam': 50.0, 'FovyCalcMode': 1, 'ActorIgnoringCollision': -1, 'ReverseOrder': True, 'AtCalcMode': 0, 'RadiusOffset': 1.0, 'Time': 0.0, 'UniqueNameForOtherActor': '', 'ActorNameForOtherActor': 'TwnObj_GoddesStatue_A_10', 'LatOffset': 0.0, 'AtParam': [0.0, 1.600000023841858, -2.0]})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+
+    call Common.Play_ReadRiddle()
+
 }
 
 void PowerFirstDemo() {

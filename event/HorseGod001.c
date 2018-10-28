@@ -110,16 +110,13 @@ void HorseGodTalk() {
                                                 if !EventSystemActor.GeneralChoice2() {
                                                     if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy5_HorseRLife'}) {
                                                         EventSystemActor.Demo_IncreasePorchItem({'PorchItemName': 'Item_PlantGet_Q', 'Value': -1, 'IsWaitFinish': True})
-                                                        Event137:
-                                                        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
-                                                        HorseGod001.Demo_Talk({'MessageId': 'EventFlowMsg/HorseGod001:talk_15', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Wait'})
-                                                        SceneSoundCtrlTag.Demo_CustomDuckingStart({'IsWaitFinish': True, 'TargetGroups': 'World', 'ExceptGroups': 'HorseVoice,HorseFootStep,HorseDefault', 'Volume': 0.0, 'FadeOutSec': 2.0, 'FadeInSec': 2.0, 'StartDelaySec': 0.0})
-                                                        EventSystemActor.Demo_FlagON({'FlagName': 'GreatFairy5_HorseRLife', 'IsWaitFinish': True})
-                                                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
-                                                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo030_0', 'EntryPointName': 'HorseGodRevival', 'EndFade': 0})
-                                                    } else {
-                                                        goto Event137
                                                     }
+                                                    SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
+                                                    HorseGod001.Demo_Talk({'MessageId': 'EventFlowMsg/HorseGod001:talk_15', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Wait'})
+                                                    SceneSoundCtrlTag.Demo_CustomDuckingStart({'IsWaitFinish': True, 'TargetGroups': 'World', 'ExceptGroups': 'HorseVoice,HorseFootStep,HorseDefault', 'Volume': 0.0, 'FadeOutSec': 2.0, 'FadeInSec': 2.0, 'StartDelaySec': 0.0})
+                                                    EventSystemActor.Demo_FlagON({'FlagName': 'GreatFairy5_HorseRLife', 'IsWaitFinish': True})
+                                                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 20})
+                                                    EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo030_0', 'EntryPointName': 'HorseGodRevival', 'EndFade': 0})
                                                 } else {
                                                     goto Event63
                                                 }
@@ -219,11 +216,10 @@ void HorseGodTalk() {
             EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
             if EventSystemActor.CheckHorseRegistered() {
                 HorseGod001.Demo_Talk({'MessageId': 'EventFlowMsg/HorseGod001:talk_01', 'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Wait'})
-                goto Event68
             } else {
                 HorseGod001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': 'Wait', 'MessageId': 'EventFlowMsg/HorseGod001:talk_02'})
-                goto Event68
             }
+            goto Event68
         }
     }
 }

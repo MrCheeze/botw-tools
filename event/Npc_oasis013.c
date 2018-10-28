@@ -248,21 +248,17 @@ void hello() {
 }
 
 void MeetingTalk() {
-    if Npc_oasis013.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_KidsMT_Full'}) {
+    if Npc_oasis013.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Gerudo_KidsMT_Full'}) {
 
-            call WithTicle()
+        call WithTicle()
 
-        } else {
-            Event165:
-            Npc_oasis016.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsIgnoreSame': True})
-            Event164:
-            Npc_oasis017.Demo_PlayASForDemo({'IsWaitFinish': False, 'ASName': 'Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsIgnoreSame': True, 'ClothWarpMode': -2})
-            Npc_oasis011.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsIgnoreSame': True})
-            goto Event1
-        }
     } else {
-        goto Event165
+        Npc_oasis016.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsIgnoreSame': True})
+        Event164:
+        Npc_oasis017.Demo_PlayASForDemo({'IsWaitFinish': False, 'ASName': 'Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'MorphingFrame': -1.0, 'IsIgnoreSame': True, 'ClothWarpMode': -2})
+        Npc_oasis011.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsIgnoreSame': True})
+        goto Event1
     }
 }
 
@@ -275,14 +271,11 @@ void WithoutTicle() {
 }
 
 void NoTicle() {
-    if Npc_oasis013.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_KidsMT_NoTickle'}) {
+    if Npc_oasis013.CheckActorAction({'ActionName': 'Root/Timeline/Action1/到着'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Gerudo_KidsMT_NoTickle'}) {
 
-            call WithoutTicle()
+        call WithoutTicle()
 
-        } else {
-            goto Event164
-        }
     } else {
         goto Event164
     }

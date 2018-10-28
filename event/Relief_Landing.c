@@ -58,16 +58,12 @@ void Ready_Npc_Musician_015_Talk() {
 
         call Sing()
 
-        if EventSystemActor.CheckFlag({'FlagName': 'Relief_Landing_Activated'}) {
-            Event39:
-            if EventSystemActor.CheckFlag({'FlagName': 'Relief_Landing_Act'}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'Relief_Landing_Finish'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Relief_Landing_Finish'})
-                }
-            }
-        } else {
+        if !EventSystemActor.CheckFlag({'FlagName': 'Relief_Landing_Activated'}) {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Relief_Landing_Activated'})
-            goto Event39
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'Relief_Landing_Act'})
+        && !EventSystemActor.CheckFlag({'FlagName': 'Relief_Landing_Finish'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Relief_Landing_Finish'})
         }
     } else {
         Npc_Musician_015.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Relief_Landing:Npc_Musician_015_004', 'IsCloseMessageDialog': True})
@@ -146,18 +142,14 @@ void cameraimagawa4() {
     GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 4229.01318359375, 'Pattern1PosY': 132.34414672851562, 'Pattern1PosZ': 504.3121337890625, 'Pattern1AtX': 4223.0126953125, 'Pattern1AtY': 128.40191650390625, 'Pattern1AtZ': 502.4759826660156, 'Pattern1Fovy': 50.00001907348633, 'Cushion': 100.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 2})
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Para_Rock_3'})
-    if EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_1'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_2'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_1'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_2'}) {
 
-            call cameraimagawa2()
+        call cameraimagawa2()
 
-        } else {
-            Event144:
-            EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
-            GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-        }
     } else {
-        goto Event144
+        EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
+        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
     }
 }
 
@@ -169,18 +161,14 @@ void cameraimagawa3() {
     GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 4083.37451171875, 'Pattern1PosY': 140.55838012695312, 'Pattern1PosZ': 423.6237487792969, 'Pattern1AtX': 4087.33544921875, 'Pattern1AtY': 136.54978942871094, 'Pattern1AtZ': 428.488037109375, 'Pattern1Fovy': 50.00001907348633, 'Count': 100.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'ReviseModeEnd': 2, 'CollisionInterpolateSkip': True})
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Para_Rock_2'})
-    if EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_1'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_3'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_1'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_3'}) {
 
-            call cameraimagawa2()
+        call cameraimagawa2()
 
-        } else {
-            Event142:
-            EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
-            GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-        }
     } else {
-        goto Event142
+        EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
+        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
     }
 }
 
@@ -203,17 +191,13 @@ void cameraimagawa1() {
     GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 4196.8046875, 'Pattern1PosY': 135.69073486328125, 'Pattern1PosZ': 551.6179809570312, 'Pattern1AtX': 4153.06591796875, 'Pattern1AtY': 115.884765625, 'Pattern1AtZ': 480.4040222167969, 'Pattern1Fovy': 50.00001907348633, 'Count': 90.0, 'ReviseModeEnd': 0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'GameDataVec3fCameraPos': '', 'AtAppendMode': 1, 'GameDataVec3fCameraAt': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'CollisionInterpolateSkip': True})
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
     EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Para_Rock_1'})
-    if EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_2'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_3'}) {
+    if EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_2'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Para_Rock_3'}) {
 
-            call cameraimagawa2()
+        call cameraimagawa2()
 
-        } else {
-            Event139:
-            EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
-            GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-        }
     } else {
-        goto Event139
+        EventMessageTransmitter1.Demo_Msg2CameraResetNoConnect({'IsWaitFinish': True})
+        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
     }
 }

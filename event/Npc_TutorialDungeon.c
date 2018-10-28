@@ -21,16 +21,14 @@ void Talk() {
 void EachFrame() {
     if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo719_0'}) {
         Event2:
-        if EventSystemActor.CheckFlag({'FlagName': 'ClearTutorial_SideStep'}) {
-            Event3:
-            if EventTimerTag.CheckMiniGameTimeOver() {
-                EventSystemActor.Demo_FlagON({'FlagName': 'ClearTutorial_SpinAttack', 'IsWaitFinish': True})
-            } else
-            goto Event2
-        } else {
+        if !EventSystemActor.CheckFlag({'FlagName': 'ClearTutorial_SideStep'}) {
             EventSystemActor.Demo_MiniGameTime({'CountMode': 1, 'IsWaitFinish': True, 'IsShowTimeUI': True, 'MaxTime': -1, 'CountStartTime': 300})
-            goto Event3
         }
+        Event3:
+        if EventTimerTag.CheckMiniGameTimeOver() {
+            EventSystemActor.Demo_FlagON({'FlagName': 'ClearTutorial_SpinAttack', 'IsWaitFinish': True})
+        } else
+        goto Event2
     } else
     goto Event3
 }

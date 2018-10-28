@@ -352,33 +352,30 @@ void BattleAreaOut() {
             EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'PlayerUpdateOnlyBottomComebackPos'})
             if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle'}) {
                 EventBgmCtrlTag.Demo_Stop({'BgmName': 'RemainsFireBattleBgm', 'IsWaitFinish': True, 'FadeSec': 3.5})
-                Event320:
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_NPC020_Follow'})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_Bridge_AreaInAppear'})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_Bridge_AreaIn'})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_AreaInAppear'})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_AreaIn'})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'WarpProhibition', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'KillTimeProhibition'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_DemoArea_Demo346_4'})
-                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_Demo346_4'})
-                if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle'}) {
-                    EventSystemActor.Demo_FlagOFF({'FlagName': 'Fire_Relic_DeathMt_Wind_OFF', 'IsWaitFinish': True})
-                    EventSystemActor.Demo_ChangeMiniMapScale({'IsWaitFinish': True, 'ScaleLevel': -1})
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_YunboStopGo'})
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_ForceSavePos_YunBo_Bridge00'})
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_ForceSavePos_YunBo_Cannon1st'})
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_ForceSavePos_YunBo_Cannon2nd'})
-                    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_ForceSavePos_YunBo_Cannon3nd'})
-                    EventSystemActor.Demo_RollbackQuest({'QuestName': 'Fire_Relic', 'StepName': 'Battle', 'IsWaitFinish': True})
-                    Event330:
-                    Npc_FollowGoron[YunBo_Bridge].Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk106'})
-                    EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
-                } else {
-                    goto Event330
-                }
+            }
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_NPC020_Follow'})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_Bridge_AreaInAppear'})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_Bridge_AreaIn'})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_AreaInAppear'})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_AreaIn'})
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'WarpProhibition', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'KillTimeProhibition'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_DemoArea_Demo346_4'})
+            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_Demo346_4'})
+            if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Battle'}) {
+                EventSystemActor.Demo_FlagOFF({'FlagName': 'Fire_Relic_DeathMt_Wind_OFF', 'IsWaitFinish': True})
+                EventSystemActor.Demo_ChangeMiniMapScale({'IsWaitFinish': True, 'ScaleLevel': -1})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_YunboStopGo'})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_ForceSavePos_YunBo_Bridge00'})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_ForceSavePos_YunBo_Cannon1st'})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_ForceSavePos_YunBo_Cannon2nd'})
+                EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_BattlePlaying_ForceSavePos_YunBo_Cannon3nd'})
+                EventSystemActor.Demo_RollbackQuest({'QuestName': 'Fire_Relic', 'StepName': 'Battle', 'IsWaitFinish': True})
+                Event330:
+                Npc_FollowGoron[YunBo_Bridge].Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk106'})
+                EventSystemActor.Demo_AutoSave({'IsWaitFinish': True})
             } else {
-                goto Event320
+                goto Event330
             }
         } else {
             Npc_FollowGoron[YunBo_Bridge].Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk105'})
@@ -497,36 +494,30 @@ void GoDeathMt_Enemy() {
     call Common.AirStartUP_Player()
 
     Fader.Demo_FadeOut({'IsWaitFinish': True, 'Color': 1, 'DispMode': 'Auto', 'Frame': 2})
-    if !Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_A].EnemyDieCheck() {
-        Event1046:
-        if !Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_B].EnemyDieCheck() {
-            Event920:
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Color': 1, 'DispMode': 'Auto', 'Frame': 2})
-
-            fork {
-                if Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_A].EnemyDieCheck() {
-                    Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_A].Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'ClothWarpMode': -2, 'ASName': 'Noise_Demo', 'MorphingFrame': -1.0})
-                }
-            } {
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-                if Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_B].EnemyDieCheck() {
-                    Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_B].Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'ASName': 'Noise_Demo', 'MorphingFrame': -1.0})
-                }
-            }
-
-            GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2146.30615234375, 'Pattern1PosY': 652.3091430664062, 'Pattern1PosZ': -2305.28369140625, 'Pattern1AtX': 2154.99462890625, 'Pattern1AtY': 640.789794921875, 'Pattern1AtZ': -2291.316650390625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Count': 30.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0})
-            Npc_FollowGoron[YunBo_Bridge].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk121', 'ASName': 'Crouch', 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 0, 'IsCloseMessageDialog': True})
-            GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_GoDeathMt_Enemy'})
-        } else {
-            Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_B].Demo_Reset({'IsWaitFinish': True})
-            goto Event920
-        }
-    } else {
+    if Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_A].EnemyDieCheck() {
         Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_A].Demo_Reset({'IsWaitFinish': True})
-        goto Event1046
     }
+    if Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_B].EnemyDieCheck() {
+        Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_B].Demo_Reset({'IsWaitFinish': True})
+    }
+    Fader.Demo_FadeIn({'IsWaitFinish': True, 'Color': 1, 'DispMode': 'Auto', 'Frame': 2})
+
+    fork {
+        if Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_A].EnemyDieCheck() {
+            Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_A].Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'ClothWarpMode': -2, 'ASName': 'Noise_Demo', 'MorphingFrame': -1.0})
+        }
+    } {
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+        if Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_B].EnemyDieCheck() {
+            Enemy_Moriblin_Senior_Volcano[Fire_Relic_Bridge_Enemy_B].Demo_PlayASForDemo({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsWaitFinish': False, 'ASName': 'Noise_Demo', 'MorphingFrame': -1.0})
+        }
+    }
+
+    GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2146.30615234375, 'Pattern1PosY': 652.3091430664062, 'Pattern1PosZ': -2305.28369140625, 'Pattern1AtX': 2154.99462890625, 'Pattern1AtY': 640.789794921875, 'Pattern1AtZ': -2291.316650390625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'Count': 30.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 0})
+    Npc_FollowGoron[YunBo_Bridge].Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Fire_Relic:talk121', 'ASName': 'Crouch', 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'CloseDialogOption': 0, 'IsCloseMessageDialog': True})
+    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'CollisionInterpolateSkip': True, 'ReviseMode': 1, 'Count': 30.0})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Fire_Relic_GoDeathMt_Enemy'})
 }
 
 void Storage_Npc_Goron020_IsPlayed_Demo175_0_Talk() {

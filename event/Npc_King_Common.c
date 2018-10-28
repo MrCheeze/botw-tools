@@ -120,16 +120,13 @@ void Tennokoe() {
     SceneSoundCtrlTag.Demo_NotifyTalk({'CtrlType': 'BeginTalk', 'IsWaitFinish': True})
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_FirstColony010_King'}) {
         Npc_King_Vagrant007.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Common:Tennokoe01'})
-        Event195:
-        Npc_King_Vagrant007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Common:Tennokoe02', 'IsCloseMessageDialog': True, 'ASName': 'Point'})
-        Npc_King_Vagrant007.Demo_MoveToAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction3', 'ASKeyName': 'Walk', 'AnchorUniqueName': '', 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'CollisionInterpolateSkip': False, 'MotionMode': 1, 'Count': 20.0, 'Cushion': 0.10000000149011612, 'Pattern1PosX': 0.008759000338613987, 'Pattern1PosY': 1.8295899629592896, 'Pattern1PosZ': -3.679687976837158, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1AtY': 1.7011719942092896, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Tennokoe'})
-        Npc_King_Vagrant007.Demo_WarpToScheduleAnchor({'AnchorName': 'AnchorAction1', 'IsWaitFinish': True, 'UniqueName': ''})
-    } else {
-        goto Event195
     }
+    Npc_King_Vagrant007.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Common:Tennokoe02', 'IsCloseMessageDialog': True, 'ASName': 'Point'})
+    Npc_King_Vagrant007.Demo_MoveToAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction3', 'ASKeyName': 'Walk', 'AnchorUniqueName': '', 'IsTurnToAnchorDir': False, 'IsAlignmentAnchor': False})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'CollisionInterpolateSkip': False, 'MotionMode': 1, 'Count': 20.0, 'Cushion': 0.10000000149011612, 'Pattern1PosX': 0.008759000338613987, 'Pattern1PosY': 1.8295899629592896, 'Pattern1PosZ': -3.679687976837158, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'Pattern1AtY': 1.7011719942092896, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_King_Tennokoe'})
+    Npc_King_Vagrant007.Demo_WarpToScheduleAnchor({'AnchorName': 'AnchorAction1', 'IsWaitFinish': True, 'UniqueName': ''})
 }
 
 void FirstTalk() {
@@ -208,10 +205,10 @@ void FirstTalk() {
         } else
         if !GameROMPlayer.IsEquippedWithLowerBody() {
             Npc_King_Vagrant001[Anataha(Self)].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_King_Common:FirstTalk02'})
-            goto Event244
         } else {
             goto Event238
         }
+        goto Event244
     } else {
         GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
         GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})

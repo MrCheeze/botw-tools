@@ -412,14 +412,12 @@ void Demo344_4() {
                 Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_004', 'IsCloseMessageDialog': False})
                 if !EventSystemActor.GeneralChoice2() {
                     Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_011', 'IsCloseMessageDialog': False})
-                    Event146:
-                    Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_013', 'IsCloseMessageDialog': False})
-                    Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_014', 'IsCloseMessageDialog': False})
-                    goto Event69
                 } else {
                     Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_012', 'IsCloseMessageDialog': False, 'ASName': 'Talk_Surprised'})
-                    goto Event146
                 }
+                Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_013', 'IsCloseMessageDialog': False})
+                Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_014', 'IsCloseMessageDialog': False})
+                goto Event69
             }
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Finished'}) {
@@ -429,14 +427,12 @@ void Demo344_4() {
             Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_004', 'IsCloseMessageDialog': False})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_011', 'IsCloseMessageDialog': False})
-                Event149:
-                Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_013', 'IsCloseMessageDialog': False})
-                Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_006', 'IsCloseMessageDialog': False})
-                goto Event69
             } else {
                 Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_012', 'IsCloseMessageDialog': False, 'ASName': 'Talk_Surprised'})
-                goto Event149
             }
+            Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_013', 'IsCloseMessageDialog': False})
+            Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_006', 'IsCloseMessageDialog': False})
+            goto Event69
         }
     } else
     if EventSystemActor.CheckFlag({'FlagName': 'Fire_Relic_Finished'}) {
@@ -452,14 +448,12 @@ void Demo344_4() {
         Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_004', 'IsCloseMessageDialog': False})
         if !EventSystemActor.GeneralChoice2() {
             Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_011', 'IsCloseMessageDialog': False})
-            Event152:
-            Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_013', 'IsCloseMessageDialog': False})
-            Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_005', 'IsCloseMessageDialog': False})
-            goto Event69
         } else {
             Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_012', 'IsCloseMessageDialog': False, 'ASName': 'Talk_Surprised'})
-            goto Event152
         }
+        Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_013', 'IsCloseMessageDialog': False})
+        Npc_Zora003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Water_Relic:Npc_Zora003_F_005', 'IsCloseMessageDialog': False})
+        goto Event69
     }
 }
 
@@ -467,30 +461,27 @@ void DemoInitialize() {
     Fader.Demo_FadeOut({'Frame': 2, 'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto'})
     if EventSystemActor.CheckPlayerRideHorse() {
         GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-        Event185:
-        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': 3333.610107421875, 'DestinationZ': -541.2423095703125, 'DirectionY': 153.95700073242188, 'DestinationY': 270.1600036621094})
-        GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
-        GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
-
-        fork {
-            Npc_Zora003.Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
-            Npc_Zora003.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
-            Npc_Zora003.Demo_LookAtObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ActorName': '', 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0]})
-        } {
-            Npc_ZoraB001[Prince03].Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
-            Npc_ZoraB001[Prince03].Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
-            Npc_ZoraB001[Prince03].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ActorName': '', 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-        } {
-            Npc_Zora004[Daijin01].Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
-            Npc_Zora004[Daijin01].Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
-            Npc_Zora004[Daijin01].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ActorName': '', 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-        }
-
-        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsWaitFinish': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 0, 'ActorName': 'Npc_Zora003', 'IsUseSlowTurn': False, 'IsValid': False, 'FaceId': 1, 'IsTurnToLookAtPos': False})
-        GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-    } else {
-        goto Event185
     }
+    EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': 3333.610107421875, 'DestinationZ': -541.2423095703125, 'DirectionY': 153.95700073242188, 'DestinationY': 270.1600036621094})
+    GameROMPlayer.Demo_PlayerWait({'IsWaitFinish': True})
+    GameROMPlayer.Demo_Unequip({'IsWaitFinish': True})
+
+    fork {
+        Npc_Zora003.Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
+        Npc_Zora003.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
+        Npc_Zora003.Demo_LookAtObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ActorName': '', 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0]})
+    } {
+        Npc_ZoraB001[Prince03].Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
+        Npc_ZoraB001[Prince03].Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
+        Npc_ZoraB001[Prince03].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ActorName': '', 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
+    } {
+        Npc_Zora004[Daijin01].Demo_Idling({'IsWaitFinish': True, 'DisablePhysics': False})
+        Npc_Zora004[Daijin01].Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction2', 'UniqueName': ''})
+        Npc_Zora004[Daijin01].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'TurnDirection': 0.0, 'ActorName': '', 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
+    }
+
+    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsWaitFinish': True, 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'ObjectId': 0, 'ActorName': 'Npc_Zora003', 'IsUseSlowTurn': False, 'IsValid': False, 'FaceId': 1, 'IsTurnToLookAtPos': False})
+    GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
 }
 
 void VillagerInit() {

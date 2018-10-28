@@ -57,12 +57,11 @@ void Talk() {
                 if EventSystemActor.CheckFlag({'FlagName': 'NPC_Lanayru001_First'}) {
                     if EventSystemActor.CheckFlag({'FlagName': 'NPC_Lanayru001_SoldOut'}) {
                         NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk_22'})
-                        Event41:
-                        NPC_Lanayru001.Demo_SetInstEventFlag({'IsWaitFinish': True})
                     } else {
                         NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk_21'})
-                        goto Event41
                     }
+                    Event41:
+                    NPC_Lanayru001.Demo_SetInstEventFlag({'IsWaitFinish': True})
                 } else {
                     EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Lanayru001_First', 'IsWaitFinish': True})
                     NPC_Lanayru001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru001:Talk_20', 'IsCloseMessageDialog': True})
@@ -105,8 +104,8 @@ void Talk() {
                     goto Event39
                 } else {
                     NPC_Lanayru002.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/NPC_Lanayru002:Talk_02', 'IsCloseMessageDialog': True, 'ASName': ''})
-                    goto Event28
                 }
+                goto Event28
               case [1, 2, 3]:
                 GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1395.367431640625, 'Pattern1PosY': 130.8083038330078, 'Pattern1PosZ': -751.7801513671875, 'Pattern1AtX': 1400.0611572265625, 'Pattern1AtY': 131.96707153320312, 'Pattern1AtZ': -750.97216796875, 'Pattern1Fovy': 50.00001907348633, 'Count': 45.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
                 goto Event38

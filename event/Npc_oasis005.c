@@ -24,34 +24,33 @@ void Talk() {
 
     if Npc_oasis005.IsOnInstEventFlag() {
         Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_09'})
-        Event33:
-        switch EventSystemActor.GeneralChoice3() {
-          case 0:
-            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_11', 'IsCloseMessageDialog': True})
-            GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkSurprise', 'IsIgnoreSame': False, 'IsWaitFinish': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
-            EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-            Event38:
-            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_02', 'IsOverWriteLabelActorName': False})
-            goto Event33
-          case 1:
-            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_05', 'IsOverWriteLabelActorName': False})
-
-            call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_oasis005")})
-
-            goto Event38
-          case 2:
-            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_GSC_SoldOut'}) {
-                Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_04'})
-            } else
-            if !EventSystemActor.RandomChoice2() {
-                Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_12'})
-            } else {
-                Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_03', 'IsOverWriteLabelActorName': False})
-            }
-        }
     } else {
         Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_01'})
+    }
+    Event33:
+    switch EventSystemActor.GeneralChoice3() {
+      case 0:
+        Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_11', 'IsCloseMessageDialog': True})
+        GameROMPlayer.Demo_PlayASAdapt({'ASName': 'TalkSurprise', 'IsIgnoreSame': False, 'IsWaitFinish': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False})
+        EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+        Event38:
+        Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_02', 'IsOverWriteLabelActorName': False})
         goto Event33
+      case 1:
+        Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_05', 'IsOverWriteLabelActorName': False})
+
+        call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_oasis005")})
+
+        goto Event38
+      case 2:
+        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_GSC_SoldOut'}) {
+            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_04'})
+        } else
+        if !EventSystemActor.RandomChoice2() {
+            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_12'})
+        } else {
+            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_oasis005:Talk_03', 'IsOverWriteLabelActorName': False})
+        }
     }
 }
 

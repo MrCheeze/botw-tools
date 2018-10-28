@@ -68,38 +68,35 @@ void EntryPoint1() {
 }
 
 void EntryPoint0() {
-    if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
-        Event36:
-        if EventSystemActor.CheckFlag({'FlagName': 'DarkWoods_Activated'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'DarkWoods_Warp'}) {
-                EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_Dark', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
-                WorldManagerControl.Demo_SetPaletteType({'PaletteType': 7, 'ChangeFrame': 0, 'EndFrame': 0, 'IsWaitFinish': False, 'Speed': 1.0})
-            } else {
-                Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
-                EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
-                EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_Dark', 'IsWaitFinish': True})
-                WorldManagerControl.Demo_SetPaletteType({'PaletteType': 7, 'ChangeFrame': 0, 'EndFrame': 0, 'IsWaitFinish': False, 'Speed': 1.0})
-                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
-                EventSystemActor.Demo_FlagOFF({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
-                Fader.Demo_FadeIn({'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True, 'Frame': 0})
-            }
-        } else {
-            SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
-            Fader.Demo_FadeOut({'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True, 'Frame': 0})
-            EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_Dark', 'IsWaitFinish': True})
-            WorldManagerControl.Demo_SetPaletteType({'PaletteType': 7, 'ChangeFrame': 0, 'EndFrame': 0, 'IsWaitFinish': False, 'Speed': 1.0})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
-            Fader.Demo_FadeIn({'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True, 'Frame': 0})
-            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/DarkWoods:talk00'})
-            EventSystemActor.Demo_FlagOFF({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'DarkWoods_Activated'})
-        }
-    } else {
+    if !EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
 
         call PlayerCheck()
 
-        goto Event36
+    }
+    if EventSystemActor.CheckFlag({'FlagName': 'DarkWoods_Activated'}) {
+        if EventSystemActor.CheckFlag({'FlagName': 'DarkWoods_Warp'}) {
+            EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_Dark', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
+            WorldManagerControl.Demo_SetPaletteType({'PaletteType': 7, 'ChangeFrame': 0, 'EndFrame': 0, 'IsWaitFinish': False, 'Speed': 1.0})
+        } else {
+            Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 0})
+            EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
+            EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_Dark', 'IsWaitFinish': True})
+            WorldManagerControl.Demo_SetPaletteType({'PaletteType': 7, 'ChangeFrame': 0, 'EndFrame': 0, 'IsWaitFinish': False, 'Speed': 1.0})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
+            EventSystemActor.Demo_FlagOFF({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
+            Fader.Demo_FadeIn({'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True, 'Frame': 0})
+        }
+    } else {
+        SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'Mute', 'IsWaitFinish': True, 'SeCtrlType': 'None'})
+        Fader.Demo_FadeOut({'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True, 'Frame': 0})
+        EventSystemActor.Demo_FlagON({'FlagName': 'DarkWoods_Dark', 'IsWaitFinish': True})
+        WorldManagerControl.Demo_SetPaletteType({'PaletteType': 7, 'ChangeFrame': 0, 'EndFrame': 0, 'IsWaitFinish': False, 'Speed': 1.0})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 40})
+        Fader.Demo_FadeIn({'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True, 'Frame': 0})
+        EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/DarkWoods:talk00'})
+        EventSystemActor.Demo_FlagOFF({'FlagName': 'DarkWoods_AirWall', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'DarkWoods_Activated'})
     }
 }
 

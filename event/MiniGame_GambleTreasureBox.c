@@ -146,11 +146,10 @@ void TreasureBoxSetUp() {
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
             TBox_Field_Gamble[box1].Demo_SetTreasure({'ActorName': 'PutRupee_Silver', 'IsWaitFinish': True})
-            goto Event54
         } else {
             TBox_Field_Gamble[box1].Demo_SetTreasure({'ActorName': 'PutRupee_Gold', 'IsWaitFinish': True})
-            goto Event54
         }
+        goto Event54
       case 1:
         EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'MiniGame_GambleTreasureBox_WinBoxNumber', 'Value': 2, 'IsWaitFinish': True})
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_10rupee'}) {
@@ -162,11 +161,10 @@ void TreasureBoxSetUp() {
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
             TBox_Field_Gamble[box2].Demo_SetTreasure({'ActorName': 'PutRupee_Silver', 'IsWaitFinish': True})
-            goto Event49
         } else {
             TBox_Field_Gamble[box2].Demo_SetTreasure({'ActorName': 'PutRupee_Gold', 'IsWaitFinish': True})
-            goto Event49
         }
+        goto Event49
       case 2:
         EventSystemActor.Demo_SetGameDataInt({'GameDataIntName': 'MiniGame_GambleTreasureBox_WinBoxNumber', 'Value': 3, 'IsWaitFinish': True})
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_10rupee'}) {
@@ -178,11 +176,10 @@ void TreasureBoxSetUp() {
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
             TBox_Field_Gamble[box3].Demo_SetTreasure({'ActorName': 'PutRupee_Silver', 'IsWaitFinish': True})
-            goto Event59
         } else {
             TBox_Field_Gamble[box3].Demo_SetTreasure({'ActorName': 'PutRupee_Gold', 'IsWaitFinish': True})
-            goto Event59
         }
+        goto Event59
     }
 }
 
@@ -325,11 +322,10 @@ void Finish_Npc_SouthernVillageGambler_StepStart() {
                 } else
                 if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_GambleTreasureBox_50rupee'}) {
                     Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk25'})
-                    goto Event109
                 } else {
                     Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk26'})
-                    goto Event109
                 }
+                goto Event109
             } else {
                 Event68:
                 Npc_SouthernVillageGambler.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/MiniGame_GambleTreasureBox:talk23'})

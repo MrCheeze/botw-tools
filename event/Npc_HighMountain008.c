@@ -17,27 +17,24 @@ void Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_009_Upper'}) {
-        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_009_Lower'}) {
-            if EventSystemActor.HasPorchItem({'PorchItemName': 'Armor_009_Head', 'Count': 1}) {
-                Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk05', 'ASName': 'Talk_Surprise_Small'})
-                Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk13', 'ASName': ''})
-                Event40:
-                Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk12'})
-                if !EventSystemActor.GeneralChoice2() {
+        if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Armor_009_Lower'})
+        && EventSystemActor.HasPorchItem({'PorchItemName': 'Armor_009_Head', 'Count': 1}) {
+            Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk05', 'ASName': 'Talk_Surprise_Small'})
+            Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk13', 'ASName': ''})
+            Event40:
+            Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk12'})
+            if !EventSystemActor.GeneralChoice2() {
 
-                    call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_HighMountain008")})
+                call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_HighMountain008")})
 
-                    Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk03'})
-                } else {
-                    Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk02'})
-                }
+                Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk03'})
             } else {
-                Event19:
-                Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk06'})
-                goto Event40
+                Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk02'})
             }
         } else {
-            goto Event19
+            Event19:
+            Npc_HighMountain008.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_HighMountain008:talk06'})
+            goto Event40
         }
     } else
     if EventSystemActor.HasPorchItem({'PorchItemName': 'Armor_009_Head', 'Count': 1}) {

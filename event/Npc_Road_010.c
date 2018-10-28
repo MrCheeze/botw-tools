@@ -42,29 +42,28 @@ void MSG_Kyu_00() {
 
     if Npc_Road_010.IsOnInstEventFlag() {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_00_1'})
-        Event47:
-        Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:Talk01'})
-        Event41:
-        switch EventSystemActor.GeneralChoice3() {
-          case 0:
-
-            call Yorozuya_Kaiwa.Yorozuya_Kounyu_Rain({'Self2': ActorIdentifier(name="Npc_Road_010")})
-
-            Event55:
-            Npc_Road_010.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:Talk02'})
-            goto Event41
-          case 1:
-
-            call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_Road_010")})
-
-            goto Event55
-          case 2:
-            Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_010:GoodBye00'})
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-        }
     } else {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_00'})
-        goto Event47
+    }
+    Event47:
+    Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:Talk01'})
+    Event41:
+    switch EventSystemActor.GeneralChoice3() {
+      case 0:
+
+        call Yorozuya_Kaiwa.Yorozuya_Kounyu_Rain({'Self2': ActorIdentifier(name="Npc_Road_010")})
+
+        Event55:
+        Npc_Road_010.Demo_Talk({'IsCloseMessageDialog': False, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:Talk02'})
+        goto Event41
+      case 1:
+
+        call Yorozuya_Kaiwa.Yorozuya_Kaitori({'Self': ActorIdentifier(name="Npc_Road_010")})
+
+        goto Event55
+      case 2:
+        Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_Road_010:GoodBye00'})
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     }
 }
 
@@ -74,11 +73,10 @@ void RetMSG_Kyu_00() {
 
     if Npc_Road_010.IsOnInstEventFlag() {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_01_1'})
-        goto Event47
     } else {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_01'})
-        goto Event47
     }
+    goto Event47
 }
 
 void MSG_Kyu_01() {
@@ -87,11 +85,10 @@ void MSG_Kyu_01() {
 
     if Npc_Road_010.IsOnInstEventFlag() {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_00_1'})
-        goto Event47
     } else {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_00'})
-        goto Event47
     }
+    goto Event47
 }
 
 void RetMSG_Kyu_01() {
@@ -100,11 +97,10 @@ void RetMSG_Kyu_01() {
 
     if Npc_Road_010.IsOnInstEventFlag() {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_02_1'})
-        goto Event47
     } else {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_02'})
-        goto Event47
     }
+    goto Event47
 }
 
 void MSG_Kyu_02() {
@@ -116,19 +112,17 @@ void MSG_Kyu_02() {
         Event96:
         if Npc_Road_010.IsOnInstEventFlag() {
             Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_02_1'})
-            goto Event47
         } else {
             Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_02'})
-            goto Event47
         }
+        goto Event47
       case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_010.IsOnInstEventFlag() {
             Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_04_1'})
-            goto Event47
         } else {
             Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_04'})
-            goto Event47
         }
+        goto Event47
     }
 }
 
@@ -142,11 +136,10 @@ void RetMSG_Kyu_02() {
       case [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_Road_010.IsOnInstEventFlag() {
             Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_01_1'})
-            goto Event47
         } else {
             Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_01'})
-            goto Event47
         }
+        goto Event47
     }
 }
 
@@ -156,11 +149,10 @@ void MSG_Kyu_03() {
 
     if Npc_Road_010.IsOnInstEventFlag() {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_03_1'})
-        goto Event47
     } else {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_03'})
-        goto Event47
     }
+    goto Event47
 }
 
 void RetMSG_Kyu_03() {
@@ -169,11 +161,10 @@ void RetMSG_Kyu_03() {
 
     if Npc_Road_010.IsOnInstEventFlag() {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_03_1'})
-        goto Event47
     } else {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:RetMSG_Kyu_03'})
-        goto Event47
     }
+    goto Event47
 }
 
 void MSG_Kyu_04() {
@@ -183,11 +174,10 @@ void MSG_Kyu_04() {
     Event91:
     if Npc_Road_010.IsOnInstEventFlag() {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_04_1'})
-        goto Event47
     } else {
         Npc_Road_010.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_010:MSG_Kyu_04'})
-        goto Event47
     }
+    goto Event47
 }
 
 void RetMSG_Kyu_04() {

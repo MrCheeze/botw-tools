@@ -52,20 +52,16 @@ void Ready_Npc_Musician_014_Talk() {
 
         call Sing()
 
-        if EventSystemActor.CheckFlag({'FlagName': 'Animal_Forest_Activated'}) {
-            Event40:
-            if EventSystemActor.CheckFlag({'FlagName': 'Animal_Forest_Act'}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'Animal_Forest_Finish'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Animal_Forest_Finish'})
-                    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-
-                    call BloodyMoonRelief.Musician_Check()
-
-                }
-            }
-        } else {
+        if !EventSystemActor.CheckFlag({'FlagName': 'Animal_Forest_Activated'}) {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Animal_Forest_Activated'})
-            goto Event40
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'Animal_Forest_Act'})
+        && !EventSystemActor.CheckFlag({'FlagName': 'Animal_Forest_Finish'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Animal_Forest_Finish'})
+            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+
+            call BloodyMoonRelief.Musician_Check()
+
         }
     } else {
         Npc_Musician_014.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Animal_Forest:Text005'})

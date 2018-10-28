@@ -70,80 +70,74 @@ void Demo614_2() {
     SceneSoundCtrlTag.Demo_SetStartProc({'IsWaitFinish': True, 'SeCtrlType': 'EnvReduce', 'BgmCtrlType': 'Mute'})
     if !EventSystemActor.CheckExistActor({'IsCheckEquipStand': False, 'IsCheckLife': False, 'ActorName': 'Npc_Musician_AoC_HeroZora'}) {
         Npc_Musician_AoC_HeroZora.Demo_Join({'IsWaitFinish': True})
-        Event33:
-        Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
+    }
+    Fader.Demo_FadeOut({'Color': 1, 'IsWaitFinish': True, 'Frame': 0, 'DispMode': 'Auto'})
 
-        call Demo614_0.Demo614_Pre()
+    call Demo614_0.Demo614_Pre()
 
-        LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'AnchorName': 'TargetPosMarker', 'UniqueName': 'Demo614_2HorsePos', 'IsWaitFinish': True})
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_GiveHeroOrbs'}) {
+    LastRiddenHorse_ForEvent.Demo_WarpToAnchor({'AnchorName': 'TargetPosMarker', 'UniqueName': 'Demo614_2HorsePos', 'IsWaitFinish': True})
+    if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_GiveHeroOrbs'}) {
 
-            call Demo614_2_C01_2nd()
+        call Demo614_2_C01_2nd()
 
-            NPC_GodVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo614_2:Npc_DungeonPriest_talk200'})
-            if !EventSystemActor.GeneralChoice2() {
-                Event119:
+        NPC_GodVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsCloseMessageDialog': True, 'MessageId': 'DemoMsg/Demo614_2:Npc_DungeonPriest_talk200'})
+        if !EventSystemActor.GeneralChoice2() {
+            Event119:
 
-                call Demo614_2_C03_Yes()
-
-
-                call Demo614_2_C04()
+            call Demo614_2_C03_Yes()
 
 
-                call Demo614_2_C05()
+            call Demo614_2_C04()
 
-                EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
 
-                call BalladOfHeroCommon.RemainsSetFlag_Water()
+            call Demo614_2_C05()
 
-                EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EntryPointName': 'AppearCurse', 'WarpDestPosName': 'StartR', 'WarpDestMapName': 'MainFieldDungeon/RemainsWater', 'EvflName': 'BalladOfHeroZora'})
-            } else {
+            EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
 
-                call Demo614_2_C03_No()
+            call BalladOfHeroCommon.RemainsSetFlag_Water()
 
-            }
+            EventSystemActor.Demo_ChangeScene({'IsWaitFinish': True, 'FadeType': 1, 'StartType': -1, 'EntryPointName': 'AppearCurse', 'WarpDestPosName': 'StartR', 'WarpDestMapName': 'MainFieldDungeon/RemainsWater', 'EvflName': 'BalladOfHeroZora'})
         } else {
 
-            call Demo614_2_C01()
+            call Demo614_2_C03_No()
 
-
-            call Demo614_2_C01-2()
-
-
-            call Demo614_2_C02()
-
-            EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': False})
-            if !EventSystemActor.CheckEventCancel() {
-                goto Event119
-            } else {
-                EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
-                EventSystemActor.Demo_KillUIScreen({'ScreenName': 'MainDungeon_00', 'IsWaitFinish': True})
-                EventSystemActor.Demo_KillUIScreen({'IsWaitFinish': True, 'ScreenName': 'DLCSinJuAkashiNum_00'})
-                SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_GiveHeroOrbs'}) {
-                    goto Event119
-                } else {
-                    EventSystemActor.Demo_IncreaseNumHeroSeal({'Value': -3, 'IsWaitFinish': True, 'RelicPattern': 1})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroZora_GiveHeroOrbs'})
-                    goto Event119
-                }
-            }
         }
     } else {
-        goto Event33
+
+        call Demo614_2_C01()
+
+
+        call Demo614_2_C01-2()
+
+
+        call Demo614_2_C02()
+
+        EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': False})
+        if !EventSystemActor.CheckEventCancel() {
+            goto Event119
+        } else {
+            EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
+            EventSystemActor.Demo_KillUIScreen({'ScreenName': 'MainDungeon_00', 'IsWaitFinish': True})
+            EventSystemActor.Demo_KillUIScreen({'IsWaitFinish': True, 'ScreenName': 'DLCSinJuAkashiNum_00'})
+            SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
+            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_GiveHeroOrbs'}) {
+                goto Event119
+            } else {
+                EventSystemActor.Demo_IncreaseNumHeroSeal({'Value': -3, 'IsWaitFinish': True, 'RelicPattern': 1})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroZora_GiveHeroOrbs'})
+                goto Event119
+            }
+        }
     }
 }
 
 void Demo614_2_C01() {
-    if !EventSystemActor.CheckCurseRRetryEverOnce({'CurseRType': 3}) {
-        Event257:
-
-        call Demo614_2_C01Sub()
-
-    } else {
+    if EventSystemActor.CheckCurseRRetryEverOnce({'CurseRType': 3}) {
         EventSystemActor.Demo_EventCancelStart({'IsWaitFinish': True, 'ShowLogo': False})
-        goto Event257
     }
+
+    call Demo614_2_C01Sub()
+
 }
 
 void Demo614_2_C02() {

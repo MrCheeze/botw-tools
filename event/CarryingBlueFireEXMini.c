@@ -107,22 +107,20 @@ void Permit_Npc_AncientDoctor_Talk() {
             Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk14'})
             if !EventSystemActor.GeneralChoice2() {
                 Npc_AncientDoctor.Demo_OpenMessageDialog({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk20', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Soliloquy', 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
-                Event47:
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk22', 'IsOverWriteLabelActorName': False})
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk42'})
-
-                call PuruaTrunStart()
-
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk44'})
-
-                call PuruaTrunEnd()
-
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk16'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'CarryingBlueFireEXMini_Permit', 'IsWaitFinish': True})
             } else {
                 Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk21', 'IsOverWriteLabelActorName': False})
-                goto Event47
             }
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk22', 'IsOverWriteLabelActorName': False})
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk42'})
+
+            call PuruaTrunStart()
+
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk44'})
+
+            call PuruaTrunEnd()
+
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk16'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'CarryingBlueFireEXMini_Permit', 'IsWaitFinish': True})
           case 1:
             if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor001_Replay'}) {
                 Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk18'})
@@ -179,16 +177,14 @@ void Fired_Npc_AncientDoctor_Talk() {
 
                 if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor001_GetSSLv1'}) {
                     Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk49'})
-                    Event473:
-                    Npc_AncientDoctor.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'FaceId': 2})
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk76', 'ASName': ''})
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk50', 'ASName': 'Talk_Checkit2', 'IsCloseMessageDialog': True})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CarryingBlueFireEXMini_Fired'})
-                    Npc_AncientDoctor.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:near02', 'DispFrame': 90, 'IsChecked': False})
                 } else {
                     Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk48'})
-                    goto Event473
                 }
+                Npc_AncientDoctor.Demo_LookAtObject({'IsWaitFinish': True, 'IsValid': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'FaceId': 2})
+                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk76', 'ASName': ''})
+                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk50', 'ASName': 'Talk_Checkit2', 'IsCloseMessageDialog': True})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CarryingBlueFireEXMini_Fired'})
+                Npc_AncientDoctor.Demo_TalkASync({'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:near02', 'DispFrame': 90, 'IsChecked': False})
               case 1:
                 Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk32', 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
                 goto Event300
@@ -226,19 +222,17 @@ void Fired_Npc_AncientDoctor_Talk() {
         Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsOverWriteLabelActorName': False, 'IsBecomingSpeaker': False, 'ASName': 'Talk_Checkit', 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk47'})
         if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientAssistant001_First'}) {
             Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk73'})
-            Event510:
-            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk71'})
-
-            call PuruaExplain()
-
-            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk01'})
-            EventSystemActor.Demo_FlagON({'FlagName': 'CarryingBlueFireEXMini_Permit', 'IsWaitFinish': True})
-            EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor001_NoCheckIt', 'IsWaitFinish': True})
-            goto Event332
         } else {
             Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk72'})
-            goto Event510
         }
+        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk71'})
+
+        call PuruaExplain()
+
+        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk01'})
+        EventSystemActor.Demo_FlagON({'FlagName': 'CarryingBlueFireEXMini_Permit', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor001_NoCheckIt', 'IsWaitFinish': True})
+        goto Event332
     }
 }
 
@@ -272,38 +266,34 @@ void Camera_Npc_AncientDoctor_Talk() {
       case 0:
         if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor001_PicFailed'}) {
             Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk64', 'IsCloseMessageDialog': True})
-            Event314:
-            if EventSystemActor.CheckSelectPicture({'ActorName': 'Npc_AncientDoctor'}) {
-
-                call Common.LookPicture({'Self': ActorIdentifier(name="Npc_AncientDoctor"), 'ActorName': 'Npc_AncientDoctor'})
-
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk35'})
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk36'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CarryingBlueFireEXMini_Camera'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CarryingBlueFireEXMini_Repaired'})
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk40'})
-                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk46', 'ASName': 'Talk_Checkit2'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Hateno_SheikPad_PowerUp_Activated'})
-                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_BlueFire_Activated'})
-            } else {
-
-                call ShowkSS()
-
-                Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 1, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor001_PicFailed'}) {
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk19'})
-                    Event522:
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk74'})
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk23'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor001_PicFailed', 'IsWaitFinish': True})
-                } else {
-                    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk37'})
-                    goto Event522
-                }
-            }
         } else {
             Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk63', 'IsCloseMessageDialog': True})
-            goto Event314
+        }
+        if EventSystemActor.CheckSelectPicture({'ActorName': 'Npc_AncientDoctor'}) {
+
+            call Common.LookPicture({'Self': ActorIdentifier(name="Npc_AncientDoctor"), 'ActorName': 'Npc_AncientDoctor'})
+
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk35'})
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk36'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CarryingBlueFireEXMini_Camera'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'CarryingBlueFireEXMini_Repaired'})
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk40'})
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk46', 'ASName': 'Talk_Checkit2'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Hateno_SheikPad_PowerUp_Activated'})
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'HatenoMini_BlueFire_Activated'})
+        } else {
+
+            call ShowkSS()
+
+            Npc_AncientDoctor.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 1, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+            if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor001_PicFailed'}) {
+                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk19'})
+            } else {
+                Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk37'})
+            }
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk74'})
+            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk23'})
+            EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor001_PicFailed', 'IsWaitFinish': True})
         }
       case 1:
         Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk57', 'ASName': ''})
@@ -337,12 +327,10 @@ void Purua_HelloLie() {
     if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor001_UpArea'}) {
         if !EventSystemActor.RandomChoice2() {
             Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Sad_Wait', 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk24'})
-            Event530:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_Sad_Wait', 'MessageId': 'EventFlowMsg/Npc_AncientDoctor:talk25'})
-            goto Event530
         }
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     } else
     if Npc_AncientDoctor.IsOnInstEventFlag() {
         if EventSystemActor.CheckFlag({'FlagName': 'AncientLabo_AncientDoctor001_Tripper'}) {
@@ -408,30 +396,25 @@ void ShowkSS() {
 
 void Demo_HatenoWarp() {
     EventSystemActor.Demo_CallDemo({'DemoName': 'Demo363_0', 'EntryPointName': 'Demo363_0_Hateno', 'IsWaitFinish': True, 'EndFade': 0})
-    if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-        Event489:
-        NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk66'})
-    } else {
+    if !EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_StopInAir({'IsWaitFinish': True, 'NoFixed': False})
-        goto Event489
     }
+    NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk66'})
 }
 
 void PuruaExplain() {
     Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk00', 'IsOverWriteLabelActorName': False})
     if !EventSystemActor.GeneralChoice2() {
         Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk02', 'IsOverWriteLabelActorName': False})
-        Event31:
-        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk04', 'IsOverWriteLabelActorName': False})
-        if EventSystemActor.GeneralChoice2() in [0, 1] {
-            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk07', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Soliloquy'})
-            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk51'})
-            Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk52'})
-            EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor001_Diary', 'IsWaitFinish': True})
-        }
     } else {
         Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk03', 'IsOverWriteLabelActorName': False})
-        goto Event31
+    }
+    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk04', 'IsOverWriteLabelActorName': False})
+    if EventSystemActor.GeneralChoice2() in [0, 1] {
+        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk07', 'IsOverWriteLabelActorName': False, 'ASName': 'Talk_Soliloquy'})
+        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk51'})
+        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/CarryingBlueFireEXMini:talk52'})
+        EventSystemActor.Demo_FlagON({'FlagName': 'AncientLabo_AncientDoctor001_Diary', 'IsWaitFinish': True})
     }
 }
 

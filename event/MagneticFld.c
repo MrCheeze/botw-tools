@@ -66,11 +66,10 @@ void Ready_Npc_oasis009_Talk() {
                                         Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_000'})
                                         if !EventSystemActor.GeneralChoice2() {
                                             Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_005'})
-                                            goto Event60
                                         } else {
                                             Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_001'})
-                                            goto Event60
                                         }
+                                        goto Event60
                                     }
                                 }
                             } else {
@@ -113,22 +112,18 @@ void Ready_Npc_oasis009_Talk() {
                                 } else
                                 if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckLower': True, 'CheckType': 'GerudoCloth', 'CheckUpper': True}) {
                                     Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_023'})
-                                    Event168:
-                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MagneticFld_assassin'})
                                 } else {
                                     Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_032'})
-                                    goto Event168
                                 }
+                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MagneticFld_assassin'})
                             } else
                             if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckLower': True, 'CheckType': 'GerudoCloth', 'CheckUpper': True}) {
                                 Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_017', 'IsCloseMessageDialog': True})
-                                Event185:
-                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MagneticFld_assassin_first'})
-                                goto Event216
                             } else {
                                 Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_020', 'IsCloseMessageDialog': True})
-                                goto Event185
                             }
+                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MagneticFld_assassin_first'})
+                            goto Event216
                           case 1:
                             Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_002', 'IsCloseMessageDialog': True})
 
@@ -155,13 +150,11 @@ void Ready_Npc_oasis009_Talk() {
                                 } else
                                 if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckLower': True, 'CheckType': 'GerudoCloth', 'CheckUpper': True}) {
                                     Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_017', 'IsCloseMessageDialog': True})
-                                    Event184:
-                                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MagneticFld_assassin_first'})
-                                    goto Event224
                                 } else {
                                     Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_020', 'IsCloseMessageDialog': True})
-                                    goto Event184
                                 }
+                                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MagneticFld_assassin_first'})
+                                goto Event224
                             } else {
                                 EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'MagneticFld_assassin'})
                                 Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_003'})
@@ -180,11 +173,10 @@ void Ready_Npc_oasis009_Talk() {
                             Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_000'})
                             if !EventSystemActor.GeneralChoice2() {
                                 Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_016', 'IsCloseMessageDialog': True})
-                                goto Event113
                             } else {
                                 Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_031', 'IsCloseMessageDialog': True})
-                                goto Event113
                             }
+                            goto Event113
                         }
                     }
                 } else
@@ -230,25 +222,20 @@ void Finish_Npc_oasis009_Talk() {
         if EventSystemActor.CheckEquipArmorSeriesType({'CheckType': 'GerudoCloth', 'CheckHead': True, 'CheckUpper': True, 'CheckLower': True}) {
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis009_SinjyuClear_Female'}) {
                 Event273:
-                if Npc_oasis009.IsOnInstEventFlag() {
-                    Event272:
-                    Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Sinjyu_Female_002'})
-                    Event257:
-                    if !EventSystemActor.GeneralChoice2() {
-                        Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_006'})
-                        Event268:
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis009_SinjyuClear_Female'})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis009_SinjyuClear_Normal'})
-                    } else {
-                        Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_029'})
-                        goto Event268
-                    }
-                } else {
+                if !Npc_oasis009.IsOnInstEventFlag() {
 
                     call hello()
 
-                    goto Event272
                 }
+                Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Sinjyu_Female_002'})
+                Event257:
+                if !EventSystemActor.GeneralChoice2() {
+                    Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_006'})
+                } else {
+                    Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_029'})
+                }
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis009_SinjyuClear_Female'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis009_SinjyuClear_Normal'})
             } else {
                 Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Sinjyu_Normal_002'})
                 goto Event257
@@ -277,15 +264,13 @@ void Finish_Npc_oasis009_Talk() {
 
                         if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckLower': True, 'CheckType': 'GerudoCloth', 'CheckUpper': True}) {
                             Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_014'})
-                            Event77:
-                            if !EventSystemActor.GeneralChoice2() {
-                                goto Event93
-                            } else {
-                                Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_003'})
-                            }
                         } else {
                             Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_015'})
-                            goto Event77
+                        }
+                        if !EventSystemActor.GeneralChoice2() {
+                            goto Event93
+                        } else {
+                            Npc_oasis009.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MagneticFld:Talk_003'})
                         }
                     }
                 } else {

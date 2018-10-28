@@ -67,20 +67,18 @@ void Talk() {
             if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron023_Name'}) {
                 if Npc_Goron023[Gureda_GoronCity].IsOnInstEventFlag() {
                     Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk22'})
-                    Event133:
-                    switch EventSystemActor.GeneralChoice4() {
-                      case 2:
-                        Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk27'})
-                        Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk26'})
-                        Event135:
-                        Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk25'})
-                      case 3:
-                        Event1:
-                        Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk17'})
-                    }
                 } else {
                     Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk21'})
-                    goto Event133
+                }
+                switch EventSystemActor.GeneralChoice4() {
+                  case 2:
+                    Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk27'})
+                    Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk26'})
+                    Event135:
+                    Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk25'})
+                  case 3:
+                    Event1:
+                    Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk17'})
                 }
             } else {
                 EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron023_Name', 'IsWaitFinish': True})
@@ -177,13 +175,11 @@ void Talk() {
                 EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron023_First', 'IsWaitFinish': True})
                 if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron023_Name'}) {
                     Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk29'})
-                    Event139:
-                    Npc_Goron023[Gureda_GoronCity].Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk28', 'IsWaitFinish': True})
-                    goto Event22
                 } else {
                     Npc_Goron023[Gureda_GoronCity].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk04', 'IsOverWriteLabelActorName': False})
-                    goto Event139
                 }
+                Npc_Goron023[Gureda_GoronCity].Demo_Talk({'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron023:talk28', 'IsWaitFinish': True})
+                goto Event22
             } else {
                 goto Event1
             }

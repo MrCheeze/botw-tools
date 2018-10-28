@@ -29,18 +29,15 @@ void Talk() {
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_SourthernVillage009_GuideEnd'}) {
                 Npc_SouthernVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage009:talk15'})
             } else
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_SourthernVillage009_IsTalked'}) {
-                Event11:
-                Npc_SouthernVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage009:talk05'})
-                if !EventSystemActor.GeneralChoice2() {
-                    Npc_SouthernVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage009:talk06'})
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_SourthernVillage009_Guide'})
-                } else {
-                    Npc_SouthernVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage009:talk07'})
-                }
-            } else {
+            if !EventSystemActor.CheckFlag({'FlagName': 'Npc_SourthernVillage009_IsTalked'}) {
                 EventSystemActor.Demo_FlagON({'FlagName': 'Npc_SourthernVillage009_IsTalked', 'IsWaitFinish': True})
-                goto Event11
+            }
+            Npc_SouthernVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage009:talk05'})
+            if !EventSystemActor.GeneralChoice2() {
+                Npc_SouthernVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage009:talk06'})
+                EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_SourthernVillage009_Guide'})
+            } else {
+                Npc_SouthernVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage009:talk07'})
             }
           case [1, 2, 3]:
             Npc_SouthernVillage009.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SouthernVillage009:talk16'})

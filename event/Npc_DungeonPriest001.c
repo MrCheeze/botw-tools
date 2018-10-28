@@ -45,10 +45,8 @@ void Talk() {
         } else
         if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
-            goto Event15
-        } else {
-            goto Event15
         }
+        goto Event15
     } else {
         Npc_DungeonPriest001.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_DungeonPriest001:talk04', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0})
         EventSystemActor.Demo_FlagON({'FlagName': 'Npc_DungeonPriest_First', 'IsWaitFinish': True})

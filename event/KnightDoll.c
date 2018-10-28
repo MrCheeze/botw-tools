@@ -95,26 +95,20 @@ void Ready_Npc_oasis027_Talk() {
         Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_08', 'IsCloseMessageDialog': False, 'ASName': ''})
         if !EventSystemActor.GeneralChoice2() {
             Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_09', 'IsCloseMessageDialog': False, 'ASName': ''})
-            Event41:
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_01', 'ASName': ''})
-                Event47:
-                if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Finished'}) {
-                    Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_11', 'ASName': ''})
-                    Event71:
-                    EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'StepName': 'Finish', 'IsWaitFinish': True, 'QuestName': ''})
-                    if EventSystemActor.CheckFlag({'FlagName': 'KnightDoll_Dungeon'}) {
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KnightDoll_Finish'})
-                    }
-                } else {
-                    Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_02', 'ASName': ''})
-                    goto Event71
-                }
-            } else
-            goto Event47
         } else {
             Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_10', 'ASName': ''})
-            goto Event41
+        }
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_01', 'ASName': ''})
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Finished'}) {
+            Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_11', 'ASName': ''})
+        } else {
+            Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_02', 'ASName': ''})
+        }
+        EventSystemActor.Demo_AdvanceQuest({'ForceRunTelop': True, 'StepName': 'Finish', 'IsWaitFinish': True, 'QuestName': ''})
+        if EventSystemActor.CheckFlag({'FlagName': 'KnightDoll_Dungeon'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'KnightDoll_Finish'})
         }
     } else {
         Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_03', 'ASName': ''})
@@ -126,26 +120,23 @@ void Finish_Npc_oasis027_Talk() {
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
     Npc_oasis027.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'FaceId': 2, 'IsConfront': True, 'IsValid': True})
-    if Npc_oasis027.IsOnInstEventFlag() {
-        Event12:
-        Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_04', 'ASName': ''})
-        switch EventSystemActor.GeneralChoice3() {
-          case 0:
-            if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Finished'}) {
-                Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_13', 'ASName': ''})
-            } else {
-                Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_12', 'ASName': ''})
-            }
-          case 1:
-            Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_01', 'ASName': ''})
-          case 2:
-            Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_05', 'ASName': ''})
-        }
-    } else {
+    if !Npc_oasis027.IsOnInstEventFlag() {
 
         call hello()
 
-        goto Event12
+    }
+    Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_04', 'ASName': ''})
+    switch EventSystemActor.GeneralChoice3() {
+      case 0:
+        if EventSystemActor.CheckFlag({'FlagName': 'Electric_Relic_Finished'}) {
+            Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_13', 'ASName': ''})
+        } else {
+            Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_12', 'ASName': ''})
+        }
+      case 1:
+        Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_01', 'ASName': ''})
+      case 2:
+        Npc_oasis027.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/KnightDoll:Talk_05', 'ASName': ''})
     }
 }
 

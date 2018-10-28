@@ -75,11 +75,8 @@ void Ready_Npc_SmallOasis007_Talk() {
                     Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_F_008'})
                     if EventSystemActor.CheckEquipArmorSeriesType({'CheckHead': True, 'CheckUpper': True, 'CheckLower': True, 'CheckType': 'GerudoCloth'}) {
                         Npc_SmallOasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/SandStorm:Npc_SmallOasis007_F_010', 'IsCloseMessageDialog': True})
-                        Event2:
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SandStorm_Activated'})
-                    } else {
-                        goto Event2
                     }
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'SandStorm_Activated'})
                 }
             } else {
                 goto Event78

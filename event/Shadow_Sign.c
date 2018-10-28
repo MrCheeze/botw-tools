@@ -48,16 +48,12 @@ void Ready_Npc_Musician_003_Talk() {
 
         call Sing()
 
-        if EventSystemActor.CheckFlag({'FlagName': 'Shadow_Sign_Activated'}) {
-            Event38:
-            if EventSystemActor.CheckFlag({'FlagName': 'Shadow_Sign_Dungeon'}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'Shadow_Sign_Finish'}) {
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shadow_Sign_Finish'})
-                }
-            }
-        } else {
+        if !EventSystemActor.CheckFlag({'FlagName': 'Shadow_Sign_Activated'}) {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shadow_Sign_Activated'})
-            goto Event38
+        }
+        if EventSystemActor.CheckFlag({'FlagName': 'Shadow_Sign_Dungeon'})
+        && !EventSystemActor.CheckFlag({'FlagName': 'Shadow_Sign_Finish'}) {
+            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Shadow_Sign_Finish'})
         }
     } else {
 

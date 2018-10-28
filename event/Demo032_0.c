@@ -109,12 +109,10 @@ void C01() {
         NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text000', 'IsCloseMessageDialog': False})
         if EventSystemActor.CheckFlag({'FlagName': 'IsGet_Obj_SheikSensor'}) {
             NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text014', 'IsCloseMessageDialog': False})
-            Event252:
-            NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text016'})
         } else {
             NPC_DRCVoice.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text015', 'IsCloseMessageDialog': False})
-            goto Event252
         }
+        NPC_DRCVoice.Demo_Talk({'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text016'})
     }
 }
 
@@ -374,11 +372,10 @@ void Demo032_0() {
 
         call PuruaItemGo({'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text013'})
 
-        goto Event138
     } else {
         Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text010', 'IsCloseMessageDialog': False})
-        goto Event138
     }
+    goto Event138
 }
 
 void C04() {
@@ -412,12 +409,10 @@ void C05() {
 void PuruaItemGo() {
     if EventSystemActor.CheckFlag({'FlagName': 'Hateno_SheikPad_PowerUp_Huh'}) {
         Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text006'})
-        Event232:
-        Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId', 'IsCloseMessageDialog': False})
     } else {
         Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'DemoMsg/Demo032_0:Demo032_0_Text007', 'ASName': '', 'IsCloseMessageDialog': False})
-        goto Event232
     }
+    Npc_AncientDoctor.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId', 'IsCloseMessageDialog': False})
 }
 
 void C04Camera_Return() {

@@ -165,16 +165,13 @@ void PaySuitableRupee() {
         EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -100})
         if EventSystemActor.CheckFlag({'FlagName': 'GreatFairy3_Appear'}) {
             EventSystemActor.Demo_FlagON({'FlagName': 'IsFirstFairyEqualsGreatFairy02', 'IsWaitFinish': True})
-            Event1007:
-            EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Value': 500})
-            Event1136:
-            EventSystemActor.Demo_FlagON({'FlagName': 'IsOtherFairyRevivalForGreatFairy1', 'IsWaitFinish': True})
-            EventSystemActor.Demo_FlagON({'FlagName': 'IsOtherFairyRevivalForGreatFairy2', 'IsWaitFinish': True})
-            EventSystemActor.Demo_FlagON({'FlagName': 'IsOtherFairyRevivalForGreatFairy3', 'IsWaitFinish': True})
-            EventSystemActor.Demo_FlagON({'FlagName': 'IsOtherFairyRevivalForGreatFairy4', 'IsWaitFinish': True})
-        } else {
-            goto Event1007
         }
+        EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Value': 500})
+        Event1136:
+        EventSystemActor.Demo_FlagON({'FlagName': 'IsOtherFairyRevivalForGreatFairy1', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagON({'FlagName': 'IsOtherFairyRevivalForGreatFairy2', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagON({'FlagName': 'IsOtherFairyRevivalForGreatFairy3', 'IsWaitFinish': True})
+        EventSystemActor.Demo_FlagON({'FlagName': 'IsOtherFairyRevivalForGreatFairy4', 'IsWaitFinish': True})
     } else
     if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'AmountRupeeForNextRevivalFountain', 'Operator': 'Equal', 'Value': 500}) {
         EventSystemActor.Demo_IncreaseRupee({'IsWaitFinish': True, 'Value': -500})

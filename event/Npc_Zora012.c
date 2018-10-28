@@ -65,12 +65,10 @@ void Talk() {
         Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk07', 'IsCloseMessageDialog': False})
         if !EventSystemActor.GeneralChoice2() {
             Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk08', 'IsCloseMessageDialog': False})
-            Event66:
-            Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk10', 'IsCloseMessageDialog': False})
         } else {
             Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk09', 'IsCloseMessageDialog': False})
-            goto Event66
         }
+        Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk10', 'IsCloseMessageDialog': False})
     }
 }
 
@@ -135,12 +133,10 @@ void AnteHello() {
         EventSystemActor.Demo_FlagOFF({'FlagName': 'Npc_Zora012_Mom', 'IsWaitFinish': True})
         if !EventSystemActor.RandomChoice2() {
             Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk13', 'IsCloseMessageDialog': False})
-            Event93:
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
         } else {
             Npc_Zora012.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora012:talk14', 'IsCloseMessageDialog': False})
-            goto Event93
         }
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
       case 10:
         if Npc_Zora012.IsOnInstEventFlag() {
             goto Event32

@@ -110,12 +110,11 @@ void DungeonArrival_DLC() {
         GameROMPlayer.Demo_PlayerHide({'IsWaitFinish': False})
 
         fork {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Dungeon01_ForDemo602_0'}) {
-                    EventSystemActor[PlayerController].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                    GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsWaitFinish': False, 'ObjectId': 3, 'FaceId': 1, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
-                    GameROMPlayer.Demo_PlayerHide({'IsWaitFinish': False})
-                }
+            if EventSystemActor.CheckPlayerState({'PlayerState': 4})
+            && !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Dungeon01_ForDemo602_0'}) {
+                EventSystemActor[PlayerController].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+                GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsWaitFinish': False, 'ObjectId': 3, 'FaceId': 1, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False})
+                GameROMPlayer.Demo_PlayerHide({'IsWaitFinish': False})
             }
         } {
 
@@ -140,11 +139,10 @@ void DungeonArrival_DLC() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_VisibleOff({'IsWaitFinish': False})
-        goto Event100
     } else {
         GameROMPlayer.Demo_StopInAir({'NoFixed': True, 'IsWaitFinish': False})
-        goto Event100
     }
+    goto Event100
 }
 
 void Demo602_0() {
@@ -292,12 +290,11 @@ void DungeonArrival_DLC_Water() {
         GameROMPlayer.Demo_PlayerHide({'IsWaitFinish': False})
 
         fork {
-            if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
-                if !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_Dungeon02_ForDemo602_0'}) {
-                    EventSystemActor[PlayerController].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-                    GameROMPlayer.Demo_TurnAndLookToObjectNow({'IsWaitFinish': False, 'ObjectId': 3, 'FaceId': 1, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    GameROMPlayer.Demo_PlayerHide({'IsWaitFinish': False})
-                }
+            if EventSystemActor.CheckPlayerState({'PlayerState': 4})
+            && !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_Dungeon02_ForDemo602_0'}) {
+                EventSystemActor[PlayerController].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+                GameROMPlayer.Demo_TurnAndLookToObjectNow({'IsWaitFinish': False, 'ObjectId': 3, 'FaceId': 1, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                GameROMPlayer.Demo_PlayerHide({'IsWaitFinish': False})
             }
         } {
 
@@ -322,11 +319,10 @@ void DungeonArrival_DLC_Water() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 4}) {
         GameROMPlayer.Demo_VisibleOff({'IsWaitFinish': False})
-        goto Event420
     } else {
         GameROMPlayer.Demo_StopInAir({'NoFixed': True, 'IsWaitFinish': False})
-        goto Event420
     }
+    goto Event420
 }
 
 void Demo602_0_Cam_OneHit01() {

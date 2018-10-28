@@ -55,14 +55,12 @@ void Talk() {
 
         if EventSystemActor.CheckFlag({'FlagName': 'Bottle_Mes_Finish'}) {
             Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk21'})
-            Event50:
-            if !EventSystemActor.RandomChoice2() {
-                Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk22'})
-            } else {
-                Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk23'})
-            }
-        } else
-        goto Event50
+        }
+        if !EventSystemActor.RandomChoice2() {
+            Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk22'})
+        } else {
+            Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk23'})
+        }
       case 10:
 
         call SatoFutabaHello()
@@ -90,13 +88,12 @@ void SatoFutabaHello() {
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Lanayru003_RiverFirst'}) {
                 if EventSystemActor.CheckFlag({'FlagName': 'Npc_Lanayru003_LieFirst'}) {
                     Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk07', 'IsCloseMessageDialog': False})
-                    Event30:
-                    Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk09', 'IsCloseMessageDialog': False})
-                    EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
                 } else {
                     Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk10', 'IsCloseMessageDialog': False})
-                    goto Event30
                 }
+                Event30:
+                Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk09', 'IsCloseMessageDialog': False})
+                EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
             } else {
                 Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk08', 'IsCloseMessageDialog': False})
                 Npc_Lanayru003.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Lanayru003:talk11', 'IsCloseMessageDialog': False})

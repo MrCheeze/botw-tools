@@ -31,15 +31,12 @@ void Talk() {
 
     switch Npc_OasisStudent_A.CheckActorAction13() {
       case [0, 2]:
-        if Npc_OasisStudent_A.IsOnInstEventFlag() {
-            Event5:
-            Npc_OasisStudent_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_A:talk02'})
-        } else {
+        if !Npc_OasisStudent_A.IsOnInstEventFlag() {
 
             call hello()
 
-            goto Event5
         }
+        Npc_OasisStudent_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_A:talk02'})
       case [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
         if Npc_OasisStudent_A.IsOnInstEventFlag() {
             Npc_OasisStudent_A.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_A:talk03'})

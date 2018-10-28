@@ -155,29 +155,26 @@ void Ready_Npc_Kakariko002_Talk() {
             SceneSoundCtrlTag.Demo_Ctrl({'BgmCtrlType': 'StopWithFade', 'SeCtrlType': 'None', 'IsWaitFinish': True})
         }
 
-        if !EventSystemActor.isBloodyMoonTrig() {
-            Event955:
-            Npc_Kakariko002.Demo_WarpToScheduleAnchor({'IsWaitFinish': False, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Paya_Wakeup'})
-            Npc_Kakariko002.Demo_ChangePostureWithAS({'Posture': 'Stand', 'IsWaitFinish': True})
-            Npc_Kakariko002.Demo_PlayASForDemo({'ASName': 'Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False})
-            Npc_Kakariko002.Demo_ChangeEmotion({'IsWaitFinish': False, 'EmotionType': 'Normal', 'IsOnlyFace': False})
-            EventSystemActor.Demo_WarpPlayerToAnchor({'UniqueName': 'Link_Wakeup', 'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor'})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1773.8896484375, 'Pattern1PosY': 236.93084716796875, 'Pattern1PosZ': 985.5161743164062, 'Pattern1AtX': 1775.23779296875, 'Pattern1AtY': 236.79592895507812, 'Pattern1AtZ': 986.800048828125, 'Pattern1Fovy': 60.000030517578125, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsValid': True, 'IsWaitFinish': True, 'ActorName': 'Npc_Kakariko002', 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False, 'ObjectId': 0, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'FaceId': 1})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
-
-            fork {
-                Fader.Demo_FadeIn({'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 1, 'Color': 1})
-            } {
-                GameROMPlayer.Demo_Idling({'IsWaitFinish': False, 'DisablePhysics': False})
-            }
-
-            SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
-            Npc_Kakariko002.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko002_R_011', 'ASName': ''})
-        } else {
+        if EventSystemActor.isBloodyMoonTrig() {
             EventSystemActor.Demo_CallDemo({'DemoName': 'Demo011_0', 'EntryPointName': 'Demo011_0', 'IsWaitFinish': True, 'EndFade': 1})
-            goto Event955
         }
+        Npc_Kakariko002.Demo_WarpToScheduleAnchor({'IsWaitFinish': False, 'AnchorName': 'DestinationAnchor', 'UniqueName': 'Paya_Wakeup'})
+        Npc_Kakariko002.Demo_ChangePostureWithAS({'Posture': 'Stand', 'IsWaitFinish': True})
+        Npc_Kakariko002.Demo_PlayASForDemo({'ASName': 'Wait', 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsWaitFinish': False})
+        Npc_Kakariko002.Demo_ChangeEmotion({'IsWaitFinish': False, 'EmotionType': 'Normal', 'IsOnlyFace': False})
+        EventSystemActor.Demo_WarpPlayerToAnchor({'UniqueName': 'Link_Wakeup', 'IsWaitFinish': True, 'AnchorName': 'DestinationAnchor'})
+        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 1773.8896484375, 'Pattern1PosY': 236.93084716796875, 'Pattern1PosZ': 985.5161743164062, 'Pattern1AtX': 1775.23779296875, 'Pattern1AtY': 236.79592895507812, 'Pattern1AtZ': 986.800048828125, 'Pattern1Fovy': 60.000030517578125, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+        GameROMPlayer.Demo_PlayerTurnAndLookToObject({'IsValid': True, 'IsWaitFinish': True, 'ActorName': 'Npc_Kakariko002', 'IsUseSlowTurn': False, 'IsTurnToLookAtPos': False, 'ObjectId': 0, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'FaceId': 1})
+        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 50})
+
+        fork {
+            Fader.Demo_FadeIn({'IsWaitFinish': True, 'DispMode': 'Auto', 'Frame': 1, 'Color': 1})
+        } {
+            GameROMPlayer.Demo_Idling({'IsWaitFinish': False, 'DisablePhysics': False})
+        }
+
+        SceneSoundCtrlTag.Demo_Ctrl({'SeCtrlType': 'None', 'IsWaitFinish': True, 'BgmCtrlType': 'Start'})
+        Npc_Kakariko002.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko002_R_011', 'ASName': ''})
     } else {
         EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
         GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
@@ -296,15 +293,13 @@ void DiscoverPlayer_Npc_Kakariko007() {
         Npc_Kakariko007.Demo_OpenMessageDialog({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_1', 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Talk_Surprised'})
         if !EventSystemActor.GeneralChoice2() {
             Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_2', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-            Event722:
-
-            call NPC007_FlagResetByReturn()
-
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_Return_NPC007'})
         } else {
             Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_3', 'IsCloseMessageDialog': True, 'IsOverWriteLabelActorName': False})
-            goto Event722
         }
+
+        call NPC007_FlagResetByReturn()
+
+        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_Return_NPC007'})
     } else {
         goto Event309
     }
@@ -330,38 +325,35 @@ void AssassinDead() {
     Fader.Demo_FadeOut({'Frame': 0, 'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True})
     if EventSystemActor.CheckPlayerRideHorse() {
         GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-        Event780:
-        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'StolenBook_AssassinGenerate'})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_JewelGenerate'})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-        EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 1, 'AdditionalResetActor': '', 'IsResetCamera': False})
-        Npc_Kakariko007.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-        Npc_Kakariko007.Demo_BecomeSpeaker({'IsWaitFinish': True})
-        Npc_Kakariko007.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': '', 'AnchorName': 'AnchorAction5'})
-        EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'WarpDestPosName': 'AssassinEnd', 'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
-        LastRiddenHorse_ForEvent.Demo_VisibleOff({'IsWaitFinish': False})
-        Npc_Kakariko007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
-        Npc_Kakariko007.Demo_ChangeEquipState({'IsWaitFinish': False, 'EquipState': 'Equip'})
-        SceneSoundCtrlTag.Demo_NotifyTalk({'CtrlType': 'BeginTalk', 'IsWaitFinish': True})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2014.9884033203125, 'Pattern1PosY': 286.4170227050781, 'Pattern1PosZ': 960.4453735351562, 'Pattern1AtX': 2014.9693603515625, 'Pattern1AtY': 286.216552734375, 'Pattern1AtZ': 959.42041015625, 'Pattern1Fovy': 50.00001907348633, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-        Fader.Demo_FadeIn({'Frame': 0, 'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True})
-        Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_105', 'IsCloseMessageDialog': True})
-        Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_109', 'IsCloseMessageDialog': True})
-        Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_111', 'IsCloseMessageDialog': True})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2015.7314453125, 'Pattern1PosY': 286.38665771484375, 'Pattern1PosZ': 958.4735107421875, 'Pattern1AtX': 2015.5576171875, 'Pattern1AtY': 286.3670959472656, 'Pattern1AtZ': 953.18212890625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
-        Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_106', 'IsCloseMessageDialog': True})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2017.803955078125, 'Pattern1PosY': 285.39666748046875, 'Pattern1PosZ': 959.20556640625, 'Pattern1AtX': 2016.946044921875, 'Pattern1AtY': 285.506591796875, 'Pattern1AtZ': 958.6209106445312, 'Pattern1Fovy': 50.00001907348633, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_107', 'IsCloseMessageDialog': True})
-        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
-        Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_112', 'IsCloseMessageDialog': True, 'ASName': '', 'IsWaitFinish': True})
-        Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_117'})
-        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-    } else {
-        goto Event780
     }
+    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'StolenBook_AssassinGenerate'})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_JewelGenerate'})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+    EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 1, 'AdditionalResetActor': '', 'IsResetCamera': False})
+    Npc_Kakariko007.Demo_PlayASForDemo({'ASName': 'Wait', 'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+    Npc_Kakariko007.Demo_BecomeSpeaker({'IsWaitFinish': True})
+    Npc_Kakariko007.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'UniqueName': '', 'AnchorName': 'AnchorAction5'})
+    EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'WarpDestPosName': 'AssassinEnd', 'IsWaitFinish': True})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 45})
+    LastRiddenHorse_ForEvent.Demo_VisibleOff({'IsWaitFinish': False})
+    Npc_Kakariko007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': True})
+    Npc_Kakariko007.Demo_ChangeEquipState({'IsWaitFinish': False, 'EquipState': 'Equip'})
+    SceneSoundCtrlTag.Demo_NotifyTalk({'CtrlType': 'BeginTalk', 'IsWaitFinish': True})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2014.9884033203125, 'Pattern1PosY': 286.4170227050781, 'Pattern1PosZ': 960.4453735351562, 'Pattern1AtX': 2014.9693603515625, 'Pattern1AtY': 286.216552734375, 'Pattern1AtZ': 959.42041015625, 'Pattern1Fovy': 50.00001907348633, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+    Fader.Demo_FadeIn({'Frame': 0, 'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True})
+    Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_105', 'IsCloseMessageDialog': True})
+    Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_109', 'IsCloseMessageDialog': True})
+    Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_111', 'IsCloseMessageDialog': True})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2015.7314453125, 'Pattern1PosY': 286.38665771484375, 'Pattern1PosZ': 958.4735107421875, 'Pattern1AtX': 2015.5576171875, 'Pattern1AtY': 286.3670959472656, 'Pattern1AtZ': 953.18212890625, 'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    GameRomCamera.Demo_PlayerHideOff({'IsWaitFinish': True})
+    Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_106', 'IsCloseMessageDialog': True})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2017.803955078125, 'Pattern1PosY': 285.39666748046875, 'Pattern1PosZ': 959.20556640625, 'Pattern1AtX': 2016.946044921875, 'Pattern1AtY': 285.506591796875, 'Pattern1AtZ': 958.6209106445312, 'Pattern1Fovy': 50.00001907348633, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'Accept1FrameDelay': False, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_107', 'IsCloseMessageDialog': True})
+    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': True, 'ReviseMode': 1})
+    Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_112', 'IsCloseMessageDialog': True, 'ASName': '', 'IsWaitFinish': True})
+    Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'ASName': '', 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_117'})
+    GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
 }
 
 void BallSet() {
@@ -415,64 +407,57 @@ void AssassinAppear() {
 
     if Npc_Kakariko007.IsNeedEquipWeapon() {
         Npc_Kakariko007.Demo_PlayASForDemo({'IsWaitFinish': True, 'ASName': 'GuardUnequip', 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'TargetIndex': 0, 'IsIgnoreSame': True})
-        Event347:
-        Npc_Kakariko007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 3, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2022.92578125, 'Pattern1PosY': 286.1626281738281, 'Pattern1PosZ': 956.035888671875, 'Pattern1AtX': 2023.82421875, 'Pattern1AtY': 286.29803466796875, 'Pattern1AtZ': 954.005126953125, 'Pattern1Fovy': 43.736331939697266, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-        EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestMapName': 'G-6', 'WarpDestPosName': 'AssassinDemo'})
-        Fader.Demo_FadeIn({'Frame': 0, 'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True})
-        Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_101', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
-        EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2020.6190185546875, 'Pattern1PosY': 285.6466979980469, 'Pattern1PosZ': 951.4181518554688, 'Pattern1AtX': 2021.6781005859375, 'Pattern1AtY': 286.1770935058594, 'Pattern1AtZ': 953.30126953125, 'Pattern1Fovy': 43.736331939697266, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_AssassinGenerate'})
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-        Enemy_Assassin_Middle_Quest[Kakariko_Hoju].Demo_XLinkEventCreate({'IsWaitFinish': True, 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'DoronAppear', 'SLinkKey': 'DoronAppear'})
-        Enemy_Assassin_Middle_Quest[Kakariko_Hoju].Demo_PlayASForDemo({'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ASName': 'EncounterStart', 'IsWaitFinish': True, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-        Enemy_Assassin_Middle_Quest[Kakariko_Hoju].Demo_PlayASForDemo({'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'ASName': 'Wait', 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
-
-        fork {
-            NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_1', 'IsCloseMessageDialog': True})
-        } {
-            Enemy_Assassin_Middle_Quest[Kakariko_Hoju].Demo_XLinkEventCreate({'SLinkKey': 'Greeting', 'IsWaitFinish': True, 'ELinkKey': '', 'IsTargetDemoSLinkUser': False})
-        }
-
-        Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_102', 'ASName': 'Guard'})
-        NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_0', 'IsCloseMessageDialog': True})
-        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
-        Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_103', 'ASName': 'Guard'})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -0.0837400034070015, 'Pattern1PosY': 1.7840579748153687, 'Pattern1PosZ': 2.699950933456421, 'Pattern1AtX': 0.2617189884185791, 'Pattern1AtY': 2.969512939453125, 'Pattern1AtZ': -0.2829590141773224, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'UniqueName1': 'Kakariko_Hoju', 'IsWaitFinish': True, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'ActorName1': 'Enemy_Assassin_Middle_Quest', 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_2', 'IsCloseMessageDialog': True})
-        GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
-        Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_104', 'ASName': 'Guard'})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -0.0837400034070015, 'Pattern1PosY': 1.7840579748153687, 'Pattern1PosZ': 2.699950933456421, 'Pattern1AtX': 0.2617189884185791, 'Pattern1AtY': 2.969512939453125, 'Pattern1AtZ': -0.2829590141773224, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'UniqueName1': 'Kakariko_Hoju', 'IsWaitFinish': True, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'ActorName1': 'Enemy_Assassin_Middle_Quest', 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_3', 'IsCloseMessageDialog': True})
-        if EventSystemActor.CheckPlayerRideHorse() {
-            GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': 'Enemy_Assassin_Middle_Quest', 'UniqueName': 'Kakariko_Hoju', 'FaceId': 2, 'IsValid': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-            Event383:
-            NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_4', 'IsCloseMessageDialog': True})
-            SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'Sound': 'Bgm_AssassinAppear', 'SoundDelay': 0, 'SLinkInst': ''})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2027.5947265625, 'Pattern1PosY': 288.91571044921875, 'Pattern1PosZ': 957.4427490234375, 'Pattern1AtX': 2025.5592041015625, 'Pattern1AtY': 288.5963439941406, 'Pattern1AtZ': 958.281982421875, 'Pattern1Fovy': 43.736331939697266, 'Count': 30.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'IsWaitFinish': False, 'ASName': 'DemoWaitAttention'})
-            Npc_Kakariko007.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction6', 'UniqueName': ''})
-            if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo347_1'}) {
-                NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_6'})
-                Event977:
-                SceneSoundCtrlTag.Demo_NotifyTalk({'CtrlType': 'EndTalk', 'IsWaitFinish': True})
-                GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 0.7456669807434082, 'Pattern1PosY': 1.5925899744033813, 'Pattern1PosZ': -5.432860851287842, 'Pattern1AtX': -0.0408330000936985, 'Pattern1AtY': 1.6499940156936646, 'Pattern1AtZ': 0.05859399959445, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-                EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-                GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-            } else {
-                NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_5', 'IsCloseMessageDialog': True})
-                goto Event977
-            }
-        } else {
-            GameROMPlayer.Demo_DestinationTurnRefActor({'UniqName': 'Kakariko_Hoju', 'IsWaitFinish': True})
-            goto Event383
-        }
-    } else {
-        goto Event347
     }
+    Npc_Kakariko007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 3, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'PosOffset': [0.0, 0.0, 0.0], 'IsConfront': False})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2022.92578125, 'Pattern1PosY': 286.1626281738281, 'Pattern1PosZ': 956.035888671875, 'Pattern1AtX': 2023.82421875, 'Pattern1AtY': 286.29803466796875, 'Pattern1AtZ': 954.005126953125, 'Pattern1Fovy': 43.736331939697266, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
+    EventSystemActor.Demo_WarpPlayer({'IsWaitFinish': True, 'WarpDestMapName': 'G-6', 'WarpDestPosName': 'AssassinDemo'})
+    Fader.Demo_FadeIn({'Frame': 0, 'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True})
+    Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_101', 'IsCloseMessageDialog': True, 'ASName': 'Guard'})
+    EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2020.6190185546875, 'Pattern1PosY': 285.6466979980469, 'Pattern1PosZ': 951.4181518554688, 'Pattern1AtX': 2021.6781005859375, 'Pattern1AtY': 286.1770935058594, 'Pattern1AtZ': 953.30126953125, 'Pattern1Fovy': 43.736331939697266, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_AssassinGenerate'})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+    Enemy_Assassin_Middle_Quest[Kakariko_Hoju].Demo_XLinkEventCreate({'IsWaitFinish': True, 'IsTargetDemoSLinkUser': False, 'ELinkKey': 'DoronAppear', 'SLinkKey': 'DoronAppear'})
+    Enemy_Assassin_Middle_Quest[Kakariko_Hoju].Demo_PlayASForDemo({'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ASName': 'EncounterStart', 'IsWaitFinish': True, 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+    Enemy_Assassin_Middle_Quest[Kakariko_Hoju].Demo_PlayASForDemo({'IsIgnoreSame': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'IsWaitFinish': False, 'ASName': 'Wait', 'ClothWarpMode': -2, 'MorphingFrame': -1.0})
+
+    fork {
+        NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_1', 'IsCloseMessageDialog': True})
+    } {
+        Enemy_Assassin_Middle_Quest[Kakariko_Hoju].Demo_XLinkEventCreate({'SLinkKey': 'Greeting', 'IsWaitFinish': True, 'ELinkKey': '', 'IsTargetDemoSLinkUser': False})
+    }
+
+    Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_102', 'ASName': 'Guard'})
+    NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_0', 'IsCloseMessageDialog': True})
+    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
+    Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_103', 'ASName': 'Guard'})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -0.0837400034070015, 'Pattern1PosY': 1.7840579748153687, 'Pattern1PosZ': 2.699950933456421, 'Pattern1AtX': 0.2617189884185791, 'Pattern1AtY': 2.969512939453125, 'Pattern1AtZ': -0.2829590141773224, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'UniqueName1': 'Kakariko_Hoju', 'IsWaitFinish': True, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'ActorName1': 'Enemy_Assassin_Middle_Quest', 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_2', 'IsCloseMessageDialog': True})
+    GameRomCamera.Demo_ReturnSavePoint_1({'IsWaitFinish': True, 'Count': 0.0, 'CollisionInterpolateSkip': False, 'ReviseMode': 0})
+    Npc_Kakariko007.Demo_Talk({'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsWaitFinish': True, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_104', 'ASName': 'Guard'})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -0.0837400034070015, 'Pattern1PosY': 1.7840579748153687, 'Pattern1PosZ': 2.699950933456421, 'Pattern1AtX': 0.2617189884185791, 'Pattern1AtY': 2.969512939453125, 'Pattern1AtZ': -0.2829590141773224, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'UniqueName1': 'Kakariko_Hoju', 'IsWaitFinish': True, 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'ReviseModeEnd': 0, 'CollisionInterpolateSkip': False, 'ActorName1': 'Enemy_Assassin_Middle_Quest', 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_3', 'IsCloseMessageDialog': True})
+    if EventSystemActor.CheckPlayerRideHorse() {
+        GameROMPlayer.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'ActorName': 'Enemy_Assassin_Middle_Quest', 'UniqueName': 'Kakariko_Hoju', 'FaceId': 2, 'IsValid': True, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+    } else {
+        GameROMPlayer.Demo_DestinationTurnRefActor({'UniqName': 'Kakariko_Hoju', 'IsWaitFinish': True})
+    }
+    NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_4', 'IsCloseMessageDialog': True})
+    SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'Sound': 'Bgm_AssassinAppear', 'SoundDelay': 0, 'SLinkInst': ''})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 2027.5947265625, 'Pattern1PosY': 288.91571044921875, 'Pattern1PosZ': 957.4427490234375, 'Pattern1AtX': 2025.5592041015625, 'Pattern1AtY': 288.5963439941406, 'Pattern1AtZ': 958.281982421875, 'Pattern1Fovy': 43.736331939697266, 'Count': 30.0, 'IsWaitFinish': True, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    GameROMPlayer.Demo_PlayASAdapt({'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'IsWaitFinish': False, 'ASName': 'DemoWaitAttention'})
+    Npc_Kakariko007.Demo_WarpToScheduleAnchor({'IsWaitFinish': True, 'AnchorName': 'AnchorAction6', 'UniqueName': ''})
+    if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo347_1'}) {
+        NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_6'})
+    } else {
+        NPC_PublicVoice.Demo_Talk({'ASName': '', 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'IsBecomingSpeaker': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Assassin_5', 'IsCloseMessageDialog': True})
+    }
+    SceneSoundCtrlTag.Demo_NotifyTalk({'CtrlType': 'EndTalk', 'IsWaitFinish': True})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': 0.7456669807434082, 'Pattern1PosY': 1.5925899744033813, 'Pattern1PosZ': -5.432860851287842, 'Pattern1AtX': -0.0408330000936985, 'Pattern1AtY': 1.6499940156936646, 'Pattern1AtZ': 0.05859399959445, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'GameROMPlayer', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+    GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
 }
 
 void Finish_Npc_Kakariko007_StolenBook_AssassinAttack_Talk() {
@@ -554,32 +539,26 @@ void JewelReset() {
     Npc_Kakariko007.Demo_BecomeSpeaker({'IsWaitFinish': True})
     if Npc_Kakariko007.IsNeedEquipWeapon() {
         Npc_Kakariko007.Demo_PlayASForDemo({'IsWaitFinish': True, 'ASName': 'GuardUnequip', 'ClothWarpMode': -2, 'IsEnabledAnimeDriven': -1, 'SeqBank': 0, 'MorphingFrame': -1.0, 'TargetIndex': 0, 'IsIgnoreSame': True})
-        Event962:
-        Npc_Kakariko007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsConfront': True, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-        GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'TargetActor1': 3, 'ActorName1': 'Npc_Kakariko007', 'PosAppendMode': 2, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'MotionMode': 1, 'Pattern1PosX': 0.0, 'AtAppendMode': 2, 'Pattern1AtY': 1.5, 'Pattern1PosY': 1.2000000476837158, 'Pattern1PosZ': 2.5, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'StolenBook_JewelGenerate'})
-        Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_115', 'IsCloseMessageDialog': True})
-        Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-        if EventSystemActor.CheckPlayerRideHorse() {
-            GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
-            Event993:
-            GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'WallOff', 'IsWaitFinish': True, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': True})
-            EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'WarpDestPosName': 'AssassinEnd', 'IsWaitFinish': True})
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': True, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
-            GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3.282227039337158, 'Pattern1PosY': 1.5778809785842896, 'Pattern1PosZ': 3.5084381103515625, 'Pattern1AtX': -1.764404058456421, 'Pattern1AtY': 1.285248041152954, 'Pattern1AtZ': 2.619710922241211, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Kakariko007', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-            GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
-            Npc_Kakariko007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsConfront': True, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_JewelGenerate'})
-            EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
-            EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'AdditionalResetActor': '', 'IsResetCamera': False, 'SystemResetOption': 1})
-            Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
-        } else {
-            goto Event993
-        }
-    } else {
-        goto Event962
     }
+    Npc_Kakariko007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsConfront': True, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1Fovy': 50.00001907348633, 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'Count': 0.0, 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'TargetActor1': 3, 'ActorName1': 'Npc_Kakariko007', 'PosAppendMode': 2, 'Pattern1AtX': 0.0, 'Pattern1AtZ': 0.0, 'CollisionInterpolateSkip': False, 'ReviseModeEnd': 0, 'MotionMode': 1, 'Pattern1PosX': 0.0, 'AtAppendMode': 2, 'Pattern1AtY': 1.5, 'Pattern1PosY': 1.2000000476837158, 'Pattern1PosZ': 2.5, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'StolenBook_JewelGenerate'})
+    Npc_Kakariko007.Demo_Talk({'ASName': '', 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_115', 'IsCloseMessageDialog': True})
+    Fader.Demo_FadeOut({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
+    if EventSystemActor.CheckPlayerRideHorse() {
+        GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
+    }
+    GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'WallOff', 'IsWaitFinish': True, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': True})
+    EventSystemActor.Demo_WarpPlayer({'WarpDestMapName': 'G-6', 'WarpDestPosName': 'AssassinEnd', 'IsWaitFinish': True})
+    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'IsIgnoreSame': True, 'IsOneTimeEndKeep': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'NoErrorCheck': False, 'ASName': 'DemoWait'})
+    GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -3.282227039337158, 'Pattern1PosY': 1.5778809785842896, 'Pattern1PosZ': 3.5084381103515625, 'Pattern1AtX': -1.764404058456421, 'Pattern1AtY': 1.285248041152954, 'Pattern1AtZ': 2.619710922241211, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'ActorName1': 'Npc_Kakariko007', 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
+    GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'MorphingFrame': -1.0, 'ASName': 'Talk', 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 30})
+    Npc_Kakariko007.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsConfront': True, 'IsValid': False, 'FaceId': 0, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_JewelGenerate'})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+    EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'AdditionalResetActor': '', 'IsResetCamera': False, 'SystemResetOption': 1})
+    Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 0, 'Color': 1, 'DispMode': 'Auto'})
 }
 
 void Finish_Npc_Kakariko016_StolenBook_Npc016_Return_Talk() {
@@ -959,15 +938,13 @@ void DoranGoHome() {
     Npc_Kakariko007.Demo_OpenMessageDialog({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Talk_Surprised', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_4'})
     if !EventSystemActor.GeneralChoice2() {
         Npc_Kakariko007.Demo_OpenMessageDialog({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_6'})
-        Event916:
-
-        call NPC007_FlagResetByReturn()
-
-        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_Return_NPC007'})
     } else {
         Npc_Kakariko007.Demo_OpenMessageDialog({'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsWaitFinish': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'ASName': 'Talk', 'MessageId': 'EventFlowMsg/StolenBook:Npc_Kakariko007_S1_002_5'})
-        goto Event916
     }
+
+    call NPC007_FlagResetByReturn()
+
+    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'StolenBook_Return_NPC007'})
 }
 
 void Ready_Npc_Kakariko006_Talk() {

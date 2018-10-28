@@ -319,19 +319,16 @@ void Demo707_9() {
     }
 
     EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': False})
-    if !EventSystemActor.CheckEventCancel() {
-        Event429:
-
-        call EndDance({'XMan': 'XMan', 'EndDance_XLinkEventCreate_ELinkKey': 'EndDance_XLinkEventCreate_ELinkKey', 'EndDance_XLinkEventFade_ELinkKey': 'StartDance_XLinkEventCreate_ELinkKey', 'EndDance_Ban': 'EndDance_Ban'})
-
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 55})
-        GameRomCamera.Demo_XLinkEventFade({'IsWaitFinish': True, 'SLinkKey': '', 'ELinkKey': 'EndDance_Ban'})
-    } else {
+    if EventSystemActor.CheckEventCancel() {
 
         call Skipped({'XMan': 'XMan'})
 
-        goto Event429
     }
+
+    call EndDance({'XMan': 'XMan', 'EndDance_XLinkEventCreate_ELinkKey': 'EndDance_XLinkEventCreate_ELinkKey', 'EndDance_XLinkEventFade_ELinkKey': 'StartDance_XLinkEventCreate_ELinkKey', 'EndDance_Ban': 'EndDance_Ban'})
+
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 55})
+    GameRomCamera.Demo_XLinkEventFade({'IsWaitFinish': True, 'SLinkKey': '', 'ELinkKey': 'EndDance_Ban'})
 }
 
 void Skipped() {

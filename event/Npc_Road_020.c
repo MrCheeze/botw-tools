@@ -122,11 +122,10 @@ void Rest() {
         } else
         if Npc_Road_020.IsOnInstEventFlag() {
             Npc_Road_020.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId_1'})
-            goto Event74
         } else {
             Npc_Road_020.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'MessageId'})
-            goto Event74
         }
+        goto Event74
     } else {
         EventSystemActor.Demo_FlagON({'FlagName': 'NpcRoad020_First', 'IsWaitFinish': True})
         Npc_Road_020.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Road_020:talk00'})

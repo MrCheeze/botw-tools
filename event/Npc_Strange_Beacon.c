@@ -155,11 +155,8 @@ void InitTalk_Npc_Strange_Beacon() {
         Npc_Strange_Beacon.Demo_BecomeSpeaker({'IsWaitFinish': True})
         if Npc_Strange_Beacon.IsWeaponDrawn() {
             Npc_Strange_Beacon.Demo_PlayASForDemo({'ASName': 'GuardUnequip', 'IsWaitFinish': True, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'IsIgnoreSame': True, 'TargetIndex': 0})
-            Event82:
-            Npc_Strange_Beacon.Demo_TurnToObjectGreeting({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': False, 'ObjectId': 'Arg_Turn', 'GreetingType': 'Arg_Greeting'})
-        } else {
-            goto Event82
         }
+        Npc_Strange_Beacon.Demo_TurnToObjectGreeting({'TurnDirection': 0.0, 'ActorName': '', 'IsWaitFinish': False, 'ObjectId': 'Arg_Turn', 'GreetingType': 'Arg_Greeting'})
     }
 
 }

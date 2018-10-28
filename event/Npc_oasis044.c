@@ -56,32 +56,28 @@ void Talk() {
             } else
             if Npc_oasis044.IsOnInstEventFlag() {
                 Npc_oasis044.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis044:Talk_22'})
-                Event54:
-                Npc_oasis044.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis044:Talk_21'})
-                Event55:
-                EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis044_talk', 'IsWaitFinish': True})
-                goto Event2
             } else {
 
                 call hello()
 
-                goto Event54
             }
+            Npc_oasis044.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis044:Talk_21'})
+            Event55:
+            EventSystemActor.Demo_FlagON({'FlagName': 'Npc_oasis044_talk', 'IsWaitFinish': True})
+            goto Event2
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis044_talk'}) {
             goto Event30
         } else
         if Npc_oasis044.IsOnInstEventFlag() {
             Npc_oasis044.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis044:Talk_22'})
-            Event47:
-            Npc_oasis044.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis044:Talk_17'})
-            goto Event55
         } else {
 
             call hello()
 
-            goto Event47
         }
+        Npc_oasis044.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis044:Talk_17'})
+        goto Event55
     } else
     goto Event30
 }

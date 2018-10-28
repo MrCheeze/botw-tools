@@ -139,11 +139,10 @@ void ToonHello() {
             } else
             if EventSystemActor.CheckFlag({'FlagName': 'GotoZoraVillage_Finish'}) {
                 Npc_Zora025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_Zora025:talk22'})
-                goto Event69
             } else {
                 Npc_Zora025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora025:talk05', 'IsCloseMessageDialog': False})
-                goto Event69
             }
+            goto Event69
         }
       case 11:
         Npc_Zora025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Zora025:talk04', 'IsCloseMessageDialog': False})

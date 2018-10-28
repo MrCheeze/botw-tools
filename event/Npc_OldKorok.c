@@ -156,24 +156,20 @@ void SubFlowWeapon() {
             Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
             Npc_OldKorok[SubFlowWeapon(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk25', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Weapon11'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Bow08'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Shield16'}) {
-                        Event221:
-                        Npc_OldKorok[SubFlowShield(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk12', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
-                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_OldKorok_FullComp'})
-                        EventSystemActor.Demo_DisappearNumKorokNuts({'IsWaitFinish': True})
-                    } else {
-                        Event445:
-                        Npc_OldKorok[SubFlowWeapon(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk28', 'IsOverWriteLabelActorName': True})
-                        Event928:
-                        Npc_OldKorok[SubFlowShield(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk33'})
-                        Event354:
-
-                        call SelectIncreasePorch({'Xman': 'Xman'})
-
-                    }
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Bow08'})
+                && EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Shield16'}) {
+                    Event221:
+                    Npc_OldKorok[SubFlowShield(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk12', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_OldKorok_FullComp'})
+                    EventSystemActor.Demo_DisappearNumKorokNuts({'IsWaitFinish': True})
                 } else {
-                    goto Event445
+                    Npc_OldKorok[SubFlowWeapon(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk28', 'IsOverWriteLabelActorName': True})
+                    Event928:
+                    Npc_OldKorok[SubFlowShield(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk33'})
+                    Event354:
+
+                    call SelectIncreasePorch({'Xman': 'Xman'})
+
                 }
             } else {
                 goto Event354
@@ -225,16 +221,12 @@ void SubFlowBow() {
             Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
             Npc_OldKorok[SubFlowBow(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk26', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Bow08'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Weapon11'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Shield16'}) {
-                        goto Event221
-                    } else {
-                        Event446:
-                        Npc_OldKorok[SubFlowBow(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk29', 'IsOverWriteLabelActorName': False})
-                        goto Event928
-                    }
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Weapon11'})
+                && EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Shield16'}) {
+                    goto Event221
                 } else {
-                    goto Event446
+                    Npc_OldKorok[SubFlowBow(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk29', 'IsOverWriteLabelActorName': False})
+                    goto Event928
                 }
             } else {
                 goto Event354
@@ -275,16 +267,12 @@ void SubFlowShield() {
             Fader.Demo_FadeIn({'IsWaitFinish': True, 'Frame': 2, 'Color': 1, 'DispMode': 'Auto'})
             Npc_OldKorok[SubFlowShield(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk27', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False})
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Shield16'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Weapon11'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Bow08'}) {
-                        goto Event221
-                    } else {
-                        Event447:
-                        Npc_OldKorok[SubFlowShield(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk30', 'IsOverWriteLabelActorName': False})
-                        goto Event928
-                    }
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Weapon11'})
+                && EventSystemActor.CheckFlag({'FlagName': 'Npc_OldKorok_Bow08'}) {
+                    goto Event221
                 } else {
-                    goto Event447
+                    Npc_OldKorok[SubFlowShield(Xman)].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'MessageId': 'EventFlowMsg/Npc_OldKorok:talk30', 'IsOverWriteLabelActorName': False})
+                    goto Event928
                 }
             } else {
                 goto Event354

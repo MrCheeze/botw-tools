@@ -351,13 +351,10 @@ void Demo611_0_C06() {
     EventSystemActor[2nd].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
     EventSystemActor.Demo_SetCurrentDungeonClearFlag({'IsWaitFinish': True})
     EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': True})
-    if !EventSystemActor.CheckEventCancel() {
-        Event197:
-        EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
-    } else {
+    if EventSystemActor.CheckEventCancel() {
         SceneSoundCtrlTag.Demo_StopAllDemoSound({'IsWaitFinish': True})
-        goto Event197
     }
+    EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
 }
 
 void Demo611_0_C05() {

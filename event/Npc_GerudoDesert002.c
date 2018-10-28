@@ -55,17 +55,14 @@ void Talk() {
         Starter.Demo_BecomeSpeaker({'IsWaitFinish': True})
         if Starter.IsNeedEquipWeapon() {
             Starter.Demo_PlayASForDemo({'ASName': 'GuardUnequip', 'IsWaitFinish': True, 'SeqBank': 0, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'MorphingFrame': -1.0, 'TargetIndex': 0, 'IsIgnoreSame': True})
-            Event22:
-
-            fork {
-                Npc_GerudoDesert002.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsConfront': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_E', 'UniqueName': 'Town', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-            } {
-                Npc_OasisMilk_E[Town].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsConfront': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ActorName': 'Npc_GerudoDesert002', 'UniqueName': ''})
-            }
-
-        } else {
-            goto Event22
         }
+
+        fork {
+            Npc_GerudoDesert002.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsConfront': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'ActorName': 'Npc_OasisMilk_E', 'UniqueName': 'Town', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+        } {
+            Npc_OasisMilk_E[Town].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsConfront': False, 'ObjectId': 1, 'IsValid': True, 'FaceId': 2, 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ActorName': 'Npc_GerudoDesert002', 'UniqueName': ''})
+        }
+
     }
 
 

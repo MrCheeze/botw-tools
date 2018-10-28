@@ -33,67 +33,57 @@ void BackDoor() {
     call InitTalk.InitTalkNoTurn()
 
     GameRomCamera.Demo_MovePosFlow({'Pattern1PosX': -0.42651399970054626, 'Pattern1PosY': 1.2700350284576416, 'Pattern1PosZ': 6.4794921875, 'Pattern1AtX': -0.5570070147514343, 'Pattern1AtY': 1.5902400016784668, 'Pattern1AtZ': 1.210448980331421, 'Pattern1Fovy': 50.00001907348633, 'TargetActor1': 3, 'AtAppendMode': 2, 'PosAppendMode': 2, 'IsWaitFinish': True, 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'FovyAppendMode': 1, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorName1': 'Gerud_SecretClubDoor_A', 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
-    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_Activated'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_Stop'}) {
-            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_18'})
-        } else {
-            Event29:
-            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_16'})
+    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_Activated'})
+    && EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_Stop'}) {
+        Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_18'})
+    } else {
+        Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_16'})
+        switch EventSystemActor.GeneralChoice4() {
+          case [0, 1, 3]:
+            Event39:
+            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_12'})
             switch EventSystemActor.GeneralChoice4() {
               case [0, 1, 3]:
-                Event39:
-                Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_12'})
+                Event42:
+                Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_13'})
                 switch EventSystemActor.GeneralChoice4() {
                   case [0, 1, 3]:
-                    Event42:
-                    Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_13'})
+                    Event46:
+                    Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_19'})
                     switch EventSystemActor.GeneralChoice4() {
-                      case [0, 1, 3]:
-                        Event46:
-                        Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_19'})
-                        switch EventSystemActor.GeneralChoice4() {
-                          case [0, 1, 2]:
-                            Event48:
-                            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_15'})
+                      case [0, 1, 2]:
+                        Event48:
+                        Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_15'})
+                        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
+                        EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_Stop', 'IsWaitFinish': True})
+                        EventSystemActor.Demo_FlagOFF({'FlagName': 'Gerudo_Ch_SecretClub_CodeA', 'IsWaitFinish': True})
+                        EventSystemActor.Demo_FlagOFF({'FlagName': 'Gerudo_Ch_SecretClub_CodeB', 'IsWaitFinish': True})
+                        EventSystemActor.Demo_FlagOFF({'FlagName': 'Gerudo_Ch_SecretClub_CodeC', 'IsWaitFinish': True})
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SecretClub_Activated'})
+                      case 3:
+                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SecretClub_CodeD'})
+                        if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_CodeA'})
+                        && EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_CodeB'})
+                        && EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_CodeC'}) {
+                            Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_14'})
                             GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_Stop', 'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagOFF({'FlagName': 'Gerudo_Ch_SecretClub_CodeA', 'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagOFF({'FlagName': 'Gerudo_Ch_SecretClub_CodeB', 'IsWaitFinish': True})
-                            EventSystemActor.Demo_FlagOFF({'FlagName': 'Gerudo_Ch_SecretClub_CodeC', 'IsWaitFinish': True})
                             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SecretClub_Activated'})
-                          case 3:
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SecretClub_CodeD'})
-                            if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_CodeA'}) {
-                                if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_CodeB'}) {
-                                    if EventSystemActor.CheckFlag({'FlagName': 'Gerudo_Ch_SecretClub_CodeC'}) {
-                                        Npc_oasis005.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Gerudo_Ch_SecretClub:Talk_14'})
-                                        GameRomCamera.Demo_GameCamera({'IsWaitFinish': True})
-                                        EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Gerudo_Ch_SecretClub_Activated'})
-                                        EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeGet', 'IsWaitFinish': True})
-                                    } else {
-                                        goto Event48
-                                    }
-                                } else {
-                                    goto Event48
-                                }
-                            } else {
-                                goto Event48
-                            }
+                            EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeGet', 'IsWaitFinish': True})
+                        } else {
+                            goto Event48
                         }
-                      case 2:
-                        EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeC', 'IsWaitFinish': True})
-                        goto Event46
                     }
                   case 2:
-                    EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeB', 'IsWaitFinish': True})
-                    goto Event42
+                    EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeC', 'IsWaitFinish': True})
+                    goto Event46
                 }
               case 2:
-                EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeA', 'IsWaitFinish': True})
-                goto Event39
+                EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeB', 'IsWaitFinish': True})
+                goto Event42
             }
+          case 2:
+            EventSystemActor.Demo_FlagON({'FlagName': 'Gerudo_Ch_SecretClub_CodeA', 'IsWaitFinish': True})
+            goto Event39
         }
-    } else {
-        goto Event29
     }
 }

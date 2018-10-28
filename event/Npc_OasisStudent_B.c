@@ -19,44 +19,35 @@ void Talk() {
 
     switch Npc_OasisStudent_B.CheckActorAction13() {
       case 0:
-        if Npc_OasisStudent_B.IsOnInstEventFlag() {
-            Event8:
-            Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk04'})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk05'})
-            } else {
-                Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk03'})
-            }
-        } else {
+        if !Npc_OasisStudent_B.IsOnInstEventFlag() {
 
             call hello()
 
-            goto Event8
+        }
+        Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk04'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk05'})
+        } else {
+            Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk03'})
         }
       case [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:
-        if Npc_OasisStudent_B.IsOnInstEventFlag() {
-            Event1:
-            Npc_OasisStudent_B.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitChair_ReadBook'})
-        } else {
+        if !Npc_OasisStudent_B.IsOnInstEventFlag() {
 
             call hello()
 
-            goto Event1
         }
+        Npc_OasisStudent_B.Demo_Talk({'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk00', 'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': 'Act_SitChair_ReadBook'})
       case 2:
-        if Npc_OasisStudent_B.IsOnInstEventFlag() {
-            Event4:
-            Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk01'})
-            if !EventSystemActor.GeneralChoice2() {
-                Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk02'})
-            } else {
-                Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk03'})
-            }
-        } else {
+        if !Npc_OasisStudent_B.IsOnInstEventFlag() {
 
             call hello()
 
-            goto Event4
+        }
+        Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk01'})
+        if !EventSystemActor.GeneralChoice2() {
+            Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk02'})
+        } else {
+            Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk03'})
         }
       case 3:
         if Npc_OasisStudent_B.CheckActorAction({'ActionName': 'Root/Terror'}) {
@@ -64,23 +55,19 @@ void Talk() {
             Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk20'})
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_OasisStudent_B_night'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'Npc_OasisStudent_B_fisrt'}) {
-                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OasisStudent_B_second'}) {
-                    if EventSystemActor.CheckFlag({'FlagName': 'Npc_OasisStudent_B_third'}) {
-                        Npc_OasisStudent_B.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                        Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk15'})
-                        Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk16'})
-                    } else {
-                        Npc_OasisStudent_B.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                        Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk14'})
-                    }
-                } else {
-                    Event83:
+            if EventSystemActor.CheckFlag({'FlagName': 'Npc_OasisStudent_B_fisrt'})
+            && EventSystemActor.CheckFlag({'FlagName': 'Npc_OasisStudent_B_second'}) {
+                if EventSystemActor.CheckFlag({'FlagName': 'Npc_OasisStudent_B_third'}) {
                     Npc_OasisStudent_B.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
-                    Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk09'})
+                    Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk15'})
+                    Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk16'})
+                } else {
+                    Npc_OasisStudent_B.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                    Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk14'})
                 }
             } else {
-                goto Event83
+                Npc_OasisStudent_B.Demo_LookAtObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
+                Npc_OasisStudent_B.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_OasisStudent_B:talk09'})
             }
         } else
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_OasisStudent_B_fisrt'}) {

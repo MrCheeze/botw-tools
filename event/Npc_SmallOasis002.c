@@ -51,12 +51,10 @@ void Talk() {
             }
         }
       case 11:
-        if Npc_SmallOasis002.IsOnInstEventFlag() {
-            goto Event23
-        } else {
+        if !Npc_SmallOasis002.IsOnInstEventFlag() {
             Npc_SmallOasis002.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_SmallOasis002:talk10', 'ASName': ''})
-            goto Event23
         }
+        goto Event23
     }
 }
 

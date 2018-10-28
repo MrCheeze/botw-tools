@@ -46,11 +46,9 @@ void EntryPoint0() {
     EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
     if Starter.IsOnLinkTag({'SignalType': 'Basic'}) {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': True})
-        Event21:
-        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
     } else {
         Starter.Demo_SendSignal({'IsWaitFinish': True, 'SignalType': 0, 'Value': False})
-        goto Event21
     }
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 15})
+    SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'Sound': 'ReadRiddle', 'SLinkInst': '', 'IsWaitFinish': True})
 }
