@@ -211,97 +211,52 @@ void Demo033_0() {
                 EventSystemActor.Demo_WaitFrame({'Frame': 15, 'IsWaitFinish': True})
                 EventSystemActor.Demo_AdvanceQuest({'QuestName': 'CompleteDungeon', 'StepName': 'Finish', 'ForceRunTelop': True, 'IsWaitFinish': True})
                 EventSystemActor.Demo_WaitFrame({'Frame': 165, 'IsWaitFinish': True})
-                Event260:
-                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 3}) {
+                Event47:
+                EventSystemActor.Demo_IncreaseGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Value': 1, 'IsWaitFinish': True})
+                EventSystemActor.Demo_EventCancelStart({'IsWaitFinish': True, 'ShowLogo': True})
+
+                fork {
+                    EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo033_0:talk02'})
+                } {
+                    GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C07-0', 'IsWaitFinish': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+                    EventSystemActor[02].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 300})
+                } {
+                    EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
+                    Npc_DungeonPriest001.Demo_PlayASForDemo({'ASName': 'Vanish', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': 0, 'IsWaitFinish': False, 'SeqBank': 1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0})
+                    Npc_DungeonPriest001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'Demo_PriestVanish', 'IsTargetDemoSLinkUser': False, 'SLinkKey': ''})
+                    SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': '', 'Sound': 'Demo033_0_PriestVanish'})
+                } {
+                    GameROMPlayer.Demo_PlayerHide({'IsWaitFinish': True})
+                }
+
+                GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': True})
+                GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'IsWaitFinish': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'SceneName': 'C07-1', 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
+                EventSystemActor[C07-1_Cam].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
+                EventSystemActor.Demo_SetCurrentDungeonClearFlag({'IsWaitFinish': True})
+                EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': True})
+                if EventSystemActor.CheckEventCancel() {
+                    SoundTriggerTag.Demo_SoundTriggerFade({'Sound': 'Demo033_0_PriestVanish', 'IsWaitFinish': True})
+                }
+                EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
+                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 1}) {
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_1'})
+                    Event3:
+                    EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
+                } else
+                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
+                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
                     switch EventSystemActor.CheckE3Mode() {
                       case [0, 3]:
-                        Event47:
-                        EventSystemActor.Demo_IncreaseGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Value': 1, 'IsWaitFinish': True})
-                        EventSystemActor.Demo_EventCancelStart({'IsWaitFinish': True, 'ShowLogo': True})
-
-                        fork {
-                            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo033_0:talk02'})
-                        } {
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C07-0', 'IsWaitFinish': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                            EventSystemActor[02].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 300})
-                        } {
-                            EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
-                            Npc_DungeonPriest001.Demo_PlayASForDemo({'ASName': 'Vanish', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': 0, 'IsWaitFinish': False, 'SeqBank': 1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0})
-                            Npc_DungeonPriest001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'Demo_PriestVanish', 'IsTargetDemoSLinkUser': False, 'SLinkKey': ''})
-                            SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': '', 'Sound': 'Demo033_0_PriestVanish'})
-                        } {
-                            GameROMPlayer.Demo_PlayerHide({'IsWaitFinish': True})
-                        }
-
-                        GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': True})
-                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'IsWaitFinish': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'SceneName': 'C07-1', 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                        EventSystemActor[C07-1_Cam].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                        EventSystemActor.Demo_SetCurrentDungeonClearFlag({'IsWaitFinish': True})
-                        EventSystemActor.Demo_EventCancelEnd({'IsWaitFinish': True, 'NoFadeIn': True})
-                        if EventSystemActor.CheckEventCancel() {
-                            SoundTriggerTag.Demo_SoundTriggerFade({'Sound': 'Demo033_0_PriestVanish', 'IsWaitFinish': True})
-                        }
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 1}) {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_1'})
-                            Event3:
-                            EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
-                        } else
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
-                            switch EventSystemActor.CheckE3Mode() {
-                              case [0, 3]:
-                                goto Event3
-                              case [1, 2]:
-                                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo985_0', 'EntryPointName': 'Demo985_0', 'EndFade': 0})
-                            }
-                        } else {
-                            goto Event3
-                        }
+                        goto Event3
                       case [1, 2]:
-                        EventSystemActor.Demo_IncreaseGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Value': 1, 'IsWaitFinish': True})
-
-                        fork {
-                            EventSystemActor.Demo_OpenDungeonMessage({'IsWaitFinish': True, 'MessageId': 'DemoMsg/Demo033_0:talk02'})
-                        } {
-                            GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'SceneName': 'C07-0', 'IsWaitFinish': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                            EventSystemActor[02].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 300})
-                        } {
-                            EventSystemActor[01].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 120})
-                            Npc_DungeonPriest001.Demo_PlayASForDemo({'ASName': 'Vanish', 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'TargetIndex': 0, 'IsWaitFinish': False, 'SeqBank': 1, 'ClothWarpMode': 1, 'MorphingFrame': -1.0})
-                            Npc_DungeonPriest001.Demo_XLinkEventCreate({'IsWaitFinish': True, 'ELinkKey': 'Demo_PriestVanish', 'IsTargetDemoSLinkUser': False, 'SLinkKey': ''})
-                            SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': '', 'Sound': 'Demo033_0_PriestVanish'})
-                        } {
-                            GameROMPlayer.Demo_PlayerHide({'IsWaitFinish': True})
-                        }
-
-                        GameROMPlayer.Demo_PlayerShow({'IsWaitFinish': True})
-                        GameRomCamera.Demo_CameraAnimFlow({'CameraName': '', 'DOFUse': False, 'DOFStartFrame': 0.0, 'FocalLength': 0.0, 'Aperture': 0.0, 'DOFEndFrame': 0.0, 'FocalLengthEnd': 0.0, 'ApertureEnd': 0.0, 'TargetActor': -1, 'ActorName': '', 'InterpolateCount': 0.0, 'BgCheck': False, 'IsWaitFinish': False, 'UniqueName': '', 'TargetActorDirReferenceMode': 0, 'DOFBlurStart': 2.0, 'DOFBlurEnd': 2.0, 'StartFrame': 0.0, 'EndFrame': -1.0, 'TargetActorPosReferenceMode': 1, 'SceneName': 'C07-1', 'Accept1FrameDelay': True, 'OverwriteAt': False, 'OverwriteAtDist': 1.0})
-                        EventSystemActor[C07-1_Cam].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 60})
-                        EventSystemActor.Demo_SetCurrentDungeonClearFlag({'IsWaitFinish': True})
-                        EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 1}) {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_1'})
-                            Event233:
-                            EventSystemActor.Demo_FromCDunToMainField({'StartType': 1, 'IsWaitFinish': True, 'EvflName': 'Demo008_4', 'EntryPointName': 'Demo008_4'})
-                        } else
-                        if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'DungeonClearCounter', 'Operator': 'Equal', 'Value': 4}) {
-                            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Dungeon_Clear_4'})
-                            switch EventSystemActor.CheckE3Mode() {
-                              case [0, 3]:
-                                goto Event233
-                              case [1, 2]:
-                                EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo985_0', 'EntryPointName': 'Demo985_0', 'EndFade': 0})
-                            }
-                        } else {
-                            goto Event233
-                        }
+                        EventSystemActor.Demo_CallDemo({'IsWaitFinish': True, 'DemoName': 'Demo985_0', 'EntryPointName': 'Demo985_0', 'EndFade': 0})
                     }
                 } else {
-                    goto Event47
+                    goto Event3
                 }
-            } else
-            goto Event260
+            } else {
+                goto Event47
+            }
         } else {
             GameROMPlayer.Demo_PlayASAdapt({'IsWaitFinish': False, 'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': True, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': 1, 'ASName': 'DemoWait', 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': True, 'NoErrorCheck': False})
             EventSystemActor.Demo_KillUIScreen({'IsWaitFinish': True, 'ScreenName': 'MainDungeon_00'})

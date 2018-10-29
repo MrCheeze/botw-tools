@@ -2,7 +2,7 @@
 
 Actor: EventSystemActor
 entrypoint: None()
-actions: ['Demo_FlagON', 'Demo_WarpPlayer', 'Demo_FlagOFF', 'Demo_RollbackQuest', 'Demo_ChangeMiniMapScale', 'Demo_AutoSave', 'Demo_ChangeScene', 'Demo_CallDemo', 'Demo_WaitFrame', 'Demo_CloseMessageDialog', 'Demo_WarpPLAndResetGimmick', 'Demo_WarpPlayerToAnchor', 'Demo_ResetGimmick', 'Demo_DeleteActorFromSystem']
+actions: ['Demo_FlagON', 'Demo_WarpPlayer', 'Demo_FlagOFF', 'Demo_RollbackQuest', 'Demo_ChangeMiniMapScale', 'Demo_AutoSave', 'Demo_ChangeScene', 'Demo_CallDemo', 'Demo_WaitFrame', 'Demo_CloseMessageDialog', 'Demo_WarpPLAndResetGimmick', 'Demo_WarpPlayerToAnchor', 'Demo_ResetGimmick']
 queries: ['GeneralChoice2', 'RandomChoice4', 'CheckFlag', 'RandomChoice2', 'GeneralChoice3', 'RandomChoice8']
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
@@ -671,7 +671,6 @@ void Fire_Relic_Contact_Retry() {
 void Meet_StrageYunBo() {
     Fader.Demo_FadeOut({'Frame': 0, 'Color': 1, 'DispMode': 'Auto', 'IsWaitFinish': True})
     EventSystemActor.Demo_FlagON({'FlagName': 'Fire_Relic_Meet_StrageYunBo', 'IsWaitFinish': True})
-    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'IsPlayed_Demo346_0'})
     Npc_Goron020[YunBo_Storage].Demo_TurnAndLookToObjectNow({'IsWaitFinish': True, 'IsConfront': True, 'ObjectId': 0, 'IsValid': True, 'ActorName': 'GameROMPlayer', 'FaceId': 0, 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
     EventSystemActor.Demo_CallDemo({'DemoName': 'Demo175_0', 'EndFade': 0, 'IsWaitFinish': True, 'EntryPointName': ''})
 }

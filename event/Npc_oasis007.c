@@ -44,19 +44,12 @@ void Electric_Relic_Finished_Talk() {
     call RAIMEI_CK()
 
     if EventSystemActor.CheckFlag({'FlagName': 'Get_GerudoWeapon'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-        && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_Activated'}) {
-
-            call BalladOfHeroGerudo.007_afterGetWeapon()
-
-        } else
         if Npc_oasis007.IsOnInstEventFlag() {
             Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True, 'MessageId': 'EventFlowMsg/Npc_oasis007:Talk_44'})
         } else {
             Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis007:Talk_01', 'IsCloseMessageDialog': True})
         }
         if !EventSystemActor.GeneralChoice2() {
-            Event8:
             if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Sword_052'}) {
                 if EventSystemActor.HasPorchItem({'Count': 1, 'PorchItemName': 'Weapon_Shield_037'}) {
                     Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis007:Talk_15'})
@@ -292,15 +285,6 @@ void Electric_Relic_Finished_Talk() {
         }
     } else {
         Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis007:Talk_12'})
-        Event253:
-        if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-        && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_Activated'}) {
-
-            call BalladOfHeroGerudo.007_beforeGetWeapon()
-
-        } else {
-            EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
-        }
     }
 }
 
@@ -309,10 +293,6 @@ void RAIMEI_CK() {
     && !EventSystemActor.CheckFlag({'FlagName': 'Npc_oasis007_Raimei_CK'}) {
         Npc_oasis007.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis007:Raimei_CK_001'})
         EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_oasis007_Raimei_CK'})
-        goto Event253
+        EventSystemActor.Demo_ExitEventPlayer({'IsWaitFinish': True})
     }
-}
-
-void Reget_Weapons() {
-    goto Event8
 }

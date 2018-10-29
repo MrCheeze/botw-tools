@@ -297,7 +297,7 @@ void GetUtuwa() {
     EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplayEx': False, 'IsDisplay': True, 'IsGetDemo': False})
     EventSystemActor.Demo_AppearNumDungeonClrSeal({'IsWaitFinish': True})
     SceneSoundCtrlTag.Demo_NotifyTalk({'CtrlType': 'BeginTalk', 'IsWaitFinish': True})
-    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 124}) {
+    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 120}) {
         Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk33'})
         Event295:
 
@@ -326,7 +326,7 @@ void GetUtuwa() {
                             call GetMatome({'AppearFlagName': 'Npc_FirstColony010_AppearHeart', 'FirstGetUtsuwaFlag': 'Npc_FirstColony010_Heart', 'IsGet_Utuwa': 'IsGet_Obj_HeartUtuwa_A_01', 'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': 'Obj_HeartUtuwa_A_01', 'Obj_Utuwa': ActorIdentifier(name="Obj_HeartUtuwa_A_01")})
 
                             EventSystemActor.Demo_RecoverPlayerLife({'IsWaitFinish': True})
-                            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 124}) {
+                            if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 120}) {
                                 Event701:
                                 Starter.Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'CloseDialogOption': 0, 'IsWaitAS': False, 'MessageOpenDelayTime': 0, 'MessageId': 'DemoMsg/Demo034_0:talk33'})
                                 Event145:
@@ -368,7 +368,7 @@ void GetUtuwa() {
                                 call GetMatome({'AppearFlagName': 'Npc_FirstColony010_AppearStamina', 'FirstGetUtsuwaFlag': 'Npc_FirstColony010_Stamina', 'IsGet_Utuwa': 'IsGet_Obj_StaminaUtuwa_A_01', 'ActorName': 'Obj_StaminaUtuwa_A_01', 'CheckTargetActorName': 'Obj_StaminaUtuwa_A_01', 'Obj_Utuwa': ActorIdentifier(name="Obj_StaminaUtuwa_A_01")})
 
                                 EventSystemActor.Demo_RecoverPlayerEnergy({'IsWaitFinish': True})
-                                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 124}) {
+                                if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'Npc_Goddess_UtuwaSum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 120}) {
                                     goto Event701
                                 } else
                                 if EventSystemActor.ComparePlayerMaxStamina({'Threshold': 15}) {

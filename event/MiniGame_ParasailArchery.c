@@ -3,7 +3,7 @@
 Actor: EventSystemActor
 entrypoint: None()
 actions: ['Demo_FlagON', 'Demo_LoopEnd', 'Demo_WarpPlayer', 'Demo_FlagOFF', 'Demo_MiniGameStart', 'Demo_MiniGameTime', 'Demo_RegisterToDeathCounter', 'Demo_UnregisterFromDeathCounter', 'Demo_AutoSave', 'Demo_AppearNumTargets', 'Demo_SwitchPlayerEquipment', 'Demo_SetGameDataInt', 'Demo_DisableMiniGameTime', 'Demo_DisappearNumTargets', 'Demo_AdvanceQuest', 'Demo_WaitFrame', 'Demo_ResetGimmick']
-queries: ['GeneralChoice2', 'CheckFlag', 'GeneralChoice3', 'CheckGameDataInt', 'CheckMiniGameTimeOver', 'HasPorchItemByCategory', 'HasPorchArrow', 'CheckExistArrow', 'RandomChoice4', 'GeneralChoice4']
+queries: ['GeneralChoice2', 'CheckFlag', 'GeneralChoice3', 'CheckGameDataInt', 'CheckMiniGameTimeOver', 'HasPorchItemByCategory', 'HasPorchArrow', 'CheckExistArrow', 'RandomChoice4']
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
 Actor: GameRomCamera
@@ -135,67 +135,6 @@ void Ready_Npc_ValleyVillage010_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Activated'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ParasailArchery_Ready_Teba_First'}) {
-            if Npc_ValleyVillage010[Teba_FlightMinigame].IsOnInstEventFlag() {
-                if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
-                    Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk07'})
-                    Event640:
-                    switch EventSystemActor.GeneralChoice3() {
-                      case 0:
-                        Event642:
-                        Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk01', 'IsCloseMessageDialog': True})
-                        Event652:
-                        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
-                            Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk10'})
-                            goto Event640
-                        } else {
-                            Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk20'})
-                            Event651:
-                            switch EventSystemActor.GeneralChoice4() {
-                              case 0:
-                                goto Event642
-                              case 1:
-                                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk21', 'IsCloseMessageDialog': True})
-                                goto Event652
-                              case 2:
-                                Event643:
-                                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk09', 'IsCloseMessageDialog': True})
-                                goto Event652
-                              case 3:
-                                Event641:
-                                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk08'})
-                            }
-                        }
-                      case 1:
-                        goto Event643
-                      case 2:
-                        goto Event641
-                    }
-                } else {
-                    Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk19'})
-                    goto Event651
-                }
-            } else
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
-                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk06'})
-                goto Event640
-            } else {
-                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk18'})
-                goto Event651
-            }
-        } else {
-            EventSystemActor.Demo_FlagON({'FlagName': 'MiniGame_ParasailArchery_Ready_Teba_First', 'IsWaitFinish': True})
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Finish'}) {
-                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk05'})
-                goto Event640
-            } else {
-                Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroRito:Npc_ValleyVillage010_Talk17'})
-                goto Event651
-            }
-        }
-    } else
     if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_ParasailArchery_Ready_Teba_First'}) {
         if Npc_ValleyVillage010[Teba_FlightMinigame].IsOnInstEventFlag() {
             Npc_ValleyVillage010[Teba_FlightMinigame].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/MiniGame_ParasailArchery:talk102'})

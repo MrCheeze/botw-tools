@@ -96,12 +96,6 @@ actions: ['Demo_RumbleSmall']
 queries: []
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
-Actor: DgnObj_DLC_ChampionsDungeonEntrance_A_01
-entrypoint: None()
-actions: []
-queries: []
-params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
-
 void C03() {
 
     fork {
@@ -181,11 +175,5 @@ void ExecuteSkip() {
 void Demo008_9() {
 
     call Demo008_0.EntryPoint0({'Arg_DestinationX': 'Arg_DestinationX', 'Arg_DestinationY': 'Arg_DestinationY', 'Arg_DestinationZ': 'Arg_DestinationZ', 'Arg_DestinationDirY': 'Arg_DestinationDirY', 'C03-Link-ASName': 'Demo008_9-C03-Link-A-0', 'C02-Link-ASName': 'Demo008_9-C02-Link-A-0', 'C04-Link-ASName': 'Demo008_9-C04-Link-A-0', 'C05-Link-ASName': 'Demo008_9-C05-Link-A-0', 'DungeonEntranceTerminal': ActorIdentifier(name="DgnObj_EntranceTerminalSP"), 'DungeonEntranceWarpPoint': ActorIdentifier(name="DgnObj_WarpPointSP"), 'DungeonEntrance': ActorIdentifier(name="DgnObj_DungeonEntranceSP"), 'DungeonEntranceShutter': ActorIdentifier(name="DgnObj_EntranceShutterSP"), 'PlayerEndPosUniqueName': 'Demo008_9_PlayerEndPos'})
-
-}
-
-void Demo008_9_Ex() {
-
-    call Demo008_0.EntryPoint0({'C03-Link-ASName': 'Demo008_9-C03-Link-A-0', 'C02-Link-ASName': 'Demo008_9-C02-Link-A-0', 'C04-Link-ASName': 'Demo008_9-C04-Link-A-0', 'C05-Link-ASName': 'Demo008_9-C05-Link-A-0', 'PlayerEndPosUniqueName': 'Demo008_9_PlayerEndPos', 'Arg_DestinationX': 'Arg_DestinationX', 'Arg_DestinationY': 'Arg_DestinationY', 'Arg_DestinationZ': 'Arg_DestinationZ', 'Arg_DestinationDirY': 'Arg_DestinationDirY', 'DungeonEntranceWarpPoint': ActorIdentifier(name="DgnObj_WarpPointSP"), 'DungeonEntranceShutter': ActorIdentifier(name="DgnObj_EntranceShutterSP"), 'DungeonEntranceTerminal': ActorIdentifier(name="DgnObj_EntranceTerminalSP"), 'DungeonEntrance': ActorIdentifier(name="DgnObj_DLC_ChampionsDungeonEntrance_A_01")})
 
 }

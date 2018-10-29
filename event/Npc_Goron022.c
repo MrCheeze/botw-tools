@@ -9,7 +9,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 Actor: EventSystemActor
 entrypoint: None()
 actions: ['Demo_FlagON', 'Demo_FlagOFF']
-queries: ['GeneralChoice2', 'CheckFlag', 'CheckTimeType', 'GeneralChoice4', 'CheckAddPorchItem']
+queries: ['GeneralChoice2', 'CheckFlag', 'CheckTimeType', 'GeneralChoice4']
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
 void Talk() {
@@ -126,62 +126,14 @@ void Clear_RemainsFire_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) {
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Npc_Goron022_AfterTalk'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Npc_Goron022_Omiyage'}) {
-                Event33:
 
-                call KukurenHello()
+    call KukurenHello()
 
-                if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron022_AfterFirst'}) {
-                    goto Event21
-                } else {
-                    Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron022:talk21'})
-                    EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron022_AfterFirst', 'IsWaitFinish': True})
-                }
-            } else {
-
-                call KukurenHello()
-
-                Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk13'})
-                Event92:
-                if EventSystemActor.CheckAddPorchItem({'PorchItemName': 'Item_Ore_F', 'Count': 1}) {
-
-                    call GetDemo.GetItemByName({'CheckTargetActorName': 'Item_Ore_F', 'IsInvalidOpenPouch': False})
-
-                    EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Npc_Goron022_Omiyage'})
-                    Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk11'})
-                    Event90:
-                    if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron022_AfterFirst'}) {
-                        Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk15'})
-                        goto Event21
-                    } else {
-                        Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk14'})
-                        EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron022_AfterFirst', 'IsWaitFinish': True})
-                    }
-                } else {
-                    Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk12'})
-                    goto Event90
-                }
-            }
-        } else {
-            EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'BalladOfHeroGoron_Npc_Goron022_AfterTalk'})
-            if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Npc_Goron022_Talk'}) {
-                Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk08'})
-                Event82:
-                Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk10'})
-                goto Event92
-            } else {
-
-                call KukurenHello()
-
-                Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGoron:Npc_Goron022_Talk09'})
-                goto Event82
-            }
-        }
+    if EventSystemActor.CheckFlag({'FlagName': 'NPC_Goron022_AfterFirst'}) {
+        goto Event21
     } else {
-        goto Event33
+        Npc_Goron022.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron022:talk21'})
+        EventSystemActor.Demo_FlagON({'FlagName': 'NPC_Goron022_AfterFirst', 'IsWaitFinish': True})
     }
 }
 

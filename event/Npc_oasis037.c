@@ -51,25 +51,16 @@ void Talk() {
           case 4:
             Npc_oasis037[Third].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
             Npc_oasis037[Third].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis037:Talk_003'})
-            Event161:
-            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-            && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_037_1stGerudoDesert'})
-            && !EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_037_aboutWomanDress'}) {
-                Npc_oasis037[Third].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis037_SD_400'})
-                EventSystemActor.Demo_FlagON({'FlagName': 'BalladOfHeroGerudo_037_aboutWomanDress', 'IsWaitFinish': True})
-            }
           case 5:
             Npc_oasis037[Third].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis037:Talk_001', 'ASName': 'Act_Memo'})
           case 6:
             Npc_oasis037[Third].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
             Npc_oasis037[Third].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis037:Talk_004'})
-            goto Event161
           case 7:
             Npc_oasis037[Third].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis037:Talk_000', 'ASName': 'Act_Memo'})
           case 8:
             Npc_oasis037[Third].Demo_TurnAndLookToObject({'IsWaitFinish': True, 'ObjectId': 0, 'IsValid': True, 'FaceId': 2, 'IsConfront': True, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0})
             Npc_oasis037[Third].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis037:Talk_004'})
-            goto Event161
           case 9:
             Npc_oasis037[Third].Demo_Talk({'IsWaitFinish': True, 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis037:Talk_002', 'ASName': 'Act_Memo'})
         }

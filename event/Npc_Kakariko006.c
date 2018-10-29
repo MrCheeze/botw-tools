@@ -341,7 +341,6 @@ void ClerkAsk() {
         call Demo002_0.Demo002_0({'Arg_FlagName': 'Arg_FlagName', 'Arg_CurrentActorName': 'Arg_CurrentActorName'})
 
         Npc_Kakariko006.Demo_SetAttentionForbidSale({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitFrame({'Frame': 1, 'IsWaitFinish': True})
 
         call Sell()
 

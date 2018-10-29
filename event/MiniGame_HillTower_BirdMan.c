@@ -54,12 +54,6 @@ actions: ['Demo_SoundTrigger']
 queries: []
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
-Actor: WorldManagerControl
-entrypoint: None()
-actions: ['Demo_SetPaletteType']
-queries: []
-params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
-
 void Ready_Npc_Minigame_BirdMan001_Talk() {
     if EventSystemActor.CheckFlag({'FlagName': 'MiniGame_HillTower_BirdMan_TalkedOnce'}) {
 
@@ -212,8 +206,7 @@ void Flying_Npc_Minigame_BirdMan001_EachFrame() {
     Event394:
     if EventSystemActor.CheckPlayerState({'PlayerState': 12}) {
         if EventSystemActor.CheckPlayerState({'PlayerState': 17}) {
-            Event415:
-            EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'FirstInHyruleCastleBossRoom'})
+            Event20:
             EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'ForceRunTelop': False, 'QuestName': '', 'StepName': 'Finish'})
         } else {
             Event213:
@@ -230,7 +223,7 @@ void Flying_Npc_Minigame_BirdMan001_EachFrame() {
     if EventSystemActor.CheckPlayerState({'PlayerState': 21}) {
         goto Event213
     } else {
-        goto Event415
+        goto Event20
     }
 }
 
@@ -245,14 +238,7 @@ void Finish_Npc_Minigame_BirdMan001_StepStart() {
         GameROMPlayer.Demo_PlayerHorseGetOff({'IsWaitFinish': True})
         Event337:
         GameROMPlayer.Demo_PlayASAdapt({'TargetIndex': -1, 'SeqBank': 0, 'IsIgnoreSame': False, 'IsEnabledAnimeDriven': -1, 'ClothWarpMode': -2, 'ASName': 'WallOff', 'IsWaitFinish': True, 'MorphingFrame': -1.0, 'IsOneTimeEndKeep': False, 'NoErrorCheck': False})
-        GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'Pattern1Fovy': 50.0, 'StartCalcOnly': False, 'MotionMode': 0, 'ReviseModeEnd': 0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'Cushion': 0.0, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Count': 0.0, 'Pattern1PosX': -1750.1600341796875, 'Pattern1PosY': 331.6499938964844, 'Pattern1PosZ': -773.6199951171875, 'Pattern1AtX': -1746.030029296875, 'Pattern1AtY': 330.3900146484375, 'Pattern1AtZ': -771.3300170898438, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': '', 'CollisionInterpolateSkip': False, 'Accept1FrameDelay': False})
-        EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': -1746.7099609375, 'DestinationY': 329.06451416015625, 'DestinationZ': -772.847412109375, 'DirectionY': 22.70400047302246})
-        WorldManagerControl.Demo_SetPaletteType({'ChangeFrame': 1, 'EndFrame': 1, 'PaletteType': 0, 'Speed': 1.0, 'IsWaitFinish': False})
-        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'IsPlayed_Demo141_0'})
-        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'IsPlayed_Demo141_1'})
-        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'IsPlayed_Demo141_2'})
-        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'IsPlayed_Demo141_3'})
-        EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'LastBossIncompleteGanonGenerateFlag'})
+        GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'PosAppendMode': 1, 'AtAppendMode': 1, 'FovyAppendMode': 1, 'Pattern1Fovy': 50.0, 'StartCalcOnly': False, 'MotionMode': 0, 'ReviseModeEnd': 0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1, 'Accept1FrameDelay': True, 'Count': 0.0, 'Pattern1PosX': -1750.1600341796875, 'Pattern1PosY': 331.6499938964844, 'Pattern1PosZ': -773.6199951171875, 'Pattern1AtX': -1746.030029296875, 'Pattern1AtY': 330.3900146484375, 'Pattern1AtZ': -771.3300170898438, 'GameDataVec3fCameraPos': '', 'GameDataVec3fCameraAt': ''})
         EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
         EventSystemActor.Demo_ResetGimmick({'IsWaitFinish': True, 'SystemResetOption': 0, 'AdditionalResetActor': '', 'IsResetCamera': False})
         EventSystemActor.Demo_WarpPlayerToDestination({'IsWaitFinish': True, 'DestinationX': -1746.7099609375, 'DestinationY': 329.06451416015625, 'DestinationZ': -772.847412109375, 'DirectionY': 22.70400047302246})

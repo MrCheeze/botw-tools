@@ -192,13 +192,6 @@ void WaitToTakeOff_Npc_FarthestIsland002_EachFrame() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 13}) {
         goto Event54
-    } else
-    if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 27}) {
-            goto Event51
-        } else {
-            goto Event54
-        }
     } else {
         goto Event51
     }
@@ -225,13 +218,6 @@ void Flying_Npc_FarthestIsland002_EachFrame() {
     } else
     if EventSystemActor.CheckPlayerState({'PlayerState': 21}) {
         goto Event232
-    } else
-    if EventSystemActor.CheckPlayerState({'PlayerState': 3}) {
-        if EventSystemActor.CheckPlayerState({'PlayerState': 27}) {
-            goto Event235
-        } else {
-            goto Event232
-        }
     } else {
         goto Event235
     }

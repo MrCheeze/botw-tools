@@ -38,12 +38,6 @@ void Talk() {
             }
           case 5:
             GameRomCamera.Demo_SavePoint1({'IsWaitFinish': True})
-            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-            && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) {
-
-                call BalladOfHeroGoron.Yunbo_AfterTalk_Entry02()
-
-            } else
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Goron020_Secret'}) {
                 Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk11'})
                 Event24:
@@ -119,12 +113,6 @@ void Talk() {
 
         switch Npc_Goron020_2[YunBo_Finished].CheckActorAction13() {
           case [4, 5, 10]:
-            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-            && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGoron_Finish'}) {
-
-                call BalladOfHeroGoron.Yunbo_AfterTalk_Entry01()
-
-            } else
             if !Npc_Goron020_2[YunBo_Finished].IsOnInstEventFlag() {
                 Npc_Goron020_2[YunBo_Finished].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_Goron020_2:talk27'})
             }

@@ -120,12 +120,7 @@ void Water_Relic_Step5_Talk() {
       case [2, 3, 10]:
         Npc_Zora014.Demo_TurnAndLookToObject({'IsWaitFinish': True, 'IsValid': False, 'ActorName': '', 'UniqueName': '', 'PosOffset': [0.0, 0.0, 0.0], 'TurnPosition': [0.0, 0.0, 0.0], 'TurnDirection': 0.0, 'ObjectId': 0, 'FaceId': 1, 'IsConfront': True})
         if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora014_NormalFirst'}) {
-            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-            && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_AppearDungeon01'}) {
-                Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora014_SD_100'})
-            } else {
-                Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk21'})
-            }
+            Npc_Zora014.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': False, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': False, 'ASName': '', 'MessageId': 'EventFlowMsg/Npc_Zora014:talk21'})
         } else {
             EventSystemActor.Demo_FlagON({'IsWaitFinish': True, 'FlagName': 'Npc_Zora014_NormalFirst'})
             if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora014_First'}) {

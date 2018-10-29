@@ -23,12 +23,5 @@ void Demo025_0() {
     EventSystemActor.Demo_WaitForCloseFade({'IsWaitFinish': True, 'OrClosing': False})
     if EventSystemActor.CheckFlag({'FlagName': 'IsPlayed_Demo146_0'}) {
         GameROMPlayer.Demo_AccelerateHorse({'IsWaitFinish': True})
-    } else {
-
-        call AocResident.Check100EnemyRun()
-
-
-        call Aoc2Resident.CheckBalladOfHeroRun()
-
     }
 }

@@ -177,7 +177,7 @@ def print_event(event,indent,alreadySeen,lines,neededLabels,noPrintNxt=False,isA
     return lines, neededLabels
 
 if __name__ == "__main__":
-    eventfolder = 'C:/Users/Matt/Documents/BotW/Event/'
+    eventfolder = 'C:/Users/Matt/Documents/BotW/v1.1/Event/'
     for fname in os.listdir(eventfolder):
 
         path = None

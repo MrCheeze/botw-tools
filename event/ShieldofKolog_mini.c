@@ -288,12 +288,12 @@ void EntryPoint0() {
     if EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Sword_025'})
     && EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Shield_023'})
     && EventSystemActor.CheckEquipment({'EquipItemName': 'Weapon_Bow_013'}) {
-        EventSystemActor.Demo_DisableMiniGameTime({'IsWaitFinish': True})
         EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': False, 'ForceRunTelop': False, 'QuestName': 'ShieldofKolog_mini', 'StepName': 'Goal'})
     }
 }
 
 void Goal_Npc_Kokiri011_StepStart() {
+    EventSystemActor.Demo_DisableMiniGameTime({'IsWaitFinish': True})
     GameDataCalcMachine.Demo_MiniGameTimerWrite({'GameDataIntNameMintues': 'ShieldofKolog_mini_ThisTime_L', 'GameDataIntNameSeconds': 'ShieldofKolog_mini_ThisTime_M', 'GameDataIntNameMiliseconds': 'ShieldofKolog_mini_ThisTime_S', 'IsWaitFinish': True})
     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_ObjectCreateFlag'})
     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'ShieldofKolog_Minigame'})

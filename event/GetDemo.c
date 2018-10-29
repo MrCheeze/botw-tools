@@ -3,7 +3,7 @@
 Actor: EventSystemActor
 entrypoint: None()
 actions: ['Demo_FlagON', 'Demo_CloseMessageDialog', 'Demo_StartLifeUpDemo', 'Demo_WaitUntilLifeUpDemoEnd', 'Demo_StartStaminaUpDemo', 'Demo_WaitForStaminaUpDemoEnd', 'Demo_FlagOFF', 'Demo_WaitFrame', 'Demo_AppearFullPouchInfo', 'Demo_PickOutFromPorch', 'Demo_OpenGetDemoDialog', 'Demo_SetItemDataToPouch', 'Demo_CheckAndCreateEquip', 'Demo_SetGetFlagByActorName', 'Demo_NoDeleteCurrent', 'Demo_IncreasePorchItem', 'Demo_SetGameDataInt', 'Demo_OpenGetDemoDressFairy', 'Demo_SetDispHeartGauge']
-queries: ['CheckFlag', 'CheckTreasure', 'CheckEquipItemType', 'CheckGetDemoTypeFromArg', 'HasPouchItemByPouchCategory']
+queries: ['CheckFlag', 'CheckTreasure', 'CheckContainerItem', 'CheckEquipItemType', 'CheckGetDemoTypeFromArg', 'HasPouchItemByPouchCategory']
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
 Actor: SoundTriggerTag
@@ -24,7 +24,7 @@ actions: ['Demo_OpenMessageDialog']
 queries: []
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
-Actor: EventSystemActor[Temp]
+Actor: EventSystemActor[0]
 entrypoint: None()
 actions: ['Demo_CloseMessageDialog']
 queries: []
@@ -33,7 +33,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 Actor: Argument[_main(Current)]
 entrypoint: _main(Current)
 actions: ['Demo_OpenGetDemo']
-queries: ['CheckTreasure']
+queries: ['CheckTreasure', 'CheckGetDemoType']
 params: None
 
 Actor: Argument[GetItemByActorIdentifier(Current)]
@@ -72,36 +72,52 @@ actions: []
 queries: []
 params: None
 
-Actor: Argument[CheckSpecialActorAndGetDemoSoundCall(Current)]
-entrypoint: CheckSpecialActorAndGetDemoSoundCall(Current)
-actions: []
-queries: ['CheckTreasure', 'CheckGetDemoType']
-params: None
-
-Actor: Argument[CallHeartOrGanbariIncleaseDemo(Current)]
-entrypoint: CallHeartOrGanbariIncleaseDemo(Current)
-actions: []
-queries: ['CheckTreasure']
-params: None
-
 void _main() {
 
-    call CheckSpecialActorAndGetDemoSoundCall({'Current': 'Current'})
+    fork {
+        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': False})
+        if Argument[_main(Current)].CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': ''}) {
+            EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': False, 'IsGetDemo': True})
+        }
+
+        call PorchProhibitionON()
+
+        Argument[_main(Current)].Demo_OpenGetDemo({'IsInvalidOpenPouch': 'Arg_IsInvalidOpenPouch', 'IsWaitFinish': True})
+
+        call PorchProhibitionOFF()
+
+    } {
+        SceneSoundCtrlTag.Demo_KillDucking({'DuckerType': 'cEventSkip', 'IsWaitFinish': True})
+        if Argument[_main(Current)].CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': ''}) {
+            Event106:
+            SoundTriggerTag.Demo_SoundTrigger({'Sound': 'GetDemo_Heart', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
+        } else
+        if Argument[_main(Current)].CheckTreasure({'ActorName': 'Obj_StaminaUtuwa_A_01', 'CheckTargetActorName': ''}) {
+            goto Event106
+        } else
+        if Argument[_main(Current)].CheckTreasure({'ActorName': 'Obj_DRStone_Get', 'CheckTargetActorName': ''}) {
+            SoundTriggerTag.Demo_SoundTrigger({'Sound': 'GetDemo_SheikPad', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
+        } else
+        switch Argument[_main(Current)].CheckGetDemoType({'CheckTargetActorName': '', 'UseLastTryGetItemName': False}) {
+          case 2:
+            SoundTriggerTag.Demo_SoundTrigger({'Sound': 'GetDemo_HighGrade', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
+          case 1:
+            SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'Sound': 'GetDemo_Deluxe', 'SoundDelay': 0, 'SLinkInst': ''})
+          case 0:
+            SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'Sound': 'GetDemo_Standard', 'SoundDelay': 0, 'SLinkInst': ''})
+        }
+    }
 
     if Argument[_main(Current)].CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': ''}) {
-        EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': False, 'IsGetDemo': True})
+        EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+        EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': False, 'IsDisplayEx': False, 'IsGetDemo': True})
+    } else
+    if Argument[_main(Current)].CheckTreasure({'ActorName': 'Obj_StaminaUtuwa_A_01', 'CheckTargetActorName': ''}) {
+        EventSystemActor.Demo_StartStaminaUpDemo({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitForStaminaUpDemoEnd({'IsWaitFinish': True})
     }
-    EventSystemActor[Temp].Demo_CloseMessageDialog({'IsWaitFinish': False})
-
-    call PorchProhibitionON()
-
-    Argument[_main(Current)].Demo_OpenGetDemo({'IsInvalidOpenPouch': 'Arg_IsInvalidOpenPouch', 'IsWaitFinish': True})
-
-    call PorchProhibitionOFF()
-
-
-    call CallHeartOrGanbariIncleaseDemo({'Current': 'Current'})
-
 }
 
 void GetItemByActorIdentifier() {
@@ -135,22 +151,50 @@ void TresureBoxPorchFull() {
 
 void ShowGetDemoDialogByName() {
 
-    call CheckSpecialActorAndGetDemoSoundCall({'Current': ActorIdentifier(name="EventSystemActor"), 'CheckTargetActorName': 'CheckTargetActorName'})
+    fork {
+        EventSystemActor[0].Demo_CloseMessageDialog({'IsWaitFinish': False})
+        if EventSystemActor.CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': 'CheckTargetActorName'}) {
+            EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': False, 'IsGetDemo': True})
+        }
+
+        call PorchProhibitionON()
+
+        EventSystemActor.Demo_OpenGetDemoDialog({'IsWaitFinish': True, 'IsInvalidOpenPouch': 'IsInvalidOpenPouch', 'TargetActorName': 'CheckTargetActorName', 'UseLastTryGetItemName': False, 'EnableMultiGet': False})
+
+        call PorchProhibitionOFF()
+
+    } {
+        SceneSoundCtrlTag.Demo_KillDucking({'DuckerType': 'cEventSkip', 'IsWaitFinish': True})
+        if EventSystemActor.CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': 'CheckTargetActorName'}) {
+            Event177:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_Heart'})
+        } else
+        if EventSystemActor.CheckTreasure({'ActorName': 'Obj_StaminaUtuwa_A_01', 'CheckTargetActorName': 'CheckTargetActorName'}) {
+            goto Event177
+        } else
+        if EventSystemActor.CheckTreasure({'ActorName': 'Obj_DRStone_Get', 'CheckTargetActorName': 'CheckTargetActorName'}) {
+            SoundTriggerTag.Demo_SoundTrigger({'Sound': 'GetDemo_SheikPad', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
+        } else
+        switch EventSystemActor.CheckGetDemoTypeFromArg({'CheckTargetActorName': 'CheckTargetActorName', 'UseLastTryGetItemName': False}) {
+          case 2:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_HighGrade'})
+          case 1:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_Deluxe'})
+          case 0:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_Standard'})
+        }
+    }
 
     if EventSystemActor.CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': 'CheckTargetActorName'}) {
-        EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': True, 'IsDisplayEx': False, 'IsGetDemo': True})
+        EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
+        EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': False, 'IsDisplayEx': False, 'IsGetDemo': True})
+    } else
+    if EventSystemActor.CheckTreasure({'ActorName': 'Obj_StaminaUtuwa_A_01', 'CheckTargetActorName': 'CheckTargetActorName'}) {
+        EventSystemActor.Demo_StartStaminaUpDemo({'IsWaitFinish': True})
+        EventSystemActor.Demo_WaitForStaminaUpDemoEnd({'IsWaitFinish': True})
     }
-    EventSystemActor[Temp].Demo_CloseMessageDialog({'IsWaitFinish': False})
-
-    call PorchProhibitionON()
-
-    EventSystemActor.Demo_OpenGetDemoDialog({'IsWaitFinish': True, 'IsInvalidOpenPouch': 'IsInvalidOpenPouch', 'TargetActorName': 'CheckTargetActorName', 'UseLastTryGetItemName': False, 'EnableMultiGet': False})
-
-    call PorchProhibitionOFF()
-
-
-    call CallHeartOrGanbariIncleaseDemo({'Current': ActorIdentifier(name="EventSystemActor"), 'CheckTargetActorName': 'CheckTargetActorName'})
-
 }
 
 void GetItemByName() {
@@ -178,15 +222,26 @@ void GetItemPouchFullWithNameByCurrent() {
 
 void ShowGetDemoCookResult() {
 
-    call CheckAndCallGetDemoSound({'CheckTargetActorName': 'Item_Cook_O_01'})
+    fork {
+        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
 
-    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+        call PorchProhibitionON()
 
-    call PorchProhibitionON()
+        EventSystemActor.Demo_OpenGetDemoDialog({'IsInvalidOpenPouch': 'IsInvalidOpenPouch', 'IsWaitFinish': True, 'TargetActorName': 'Item_Cook_O_01', 'UseLastTryGetItemName': True, 'EnableMultiGet': 'EnableMultiGet'})
 
-    EventSystemActor.Demo_OpenGetDemoDialog({'IsInvalidOpenPouch': 'IsInvalidOpenPouch', 'IsWaitFinish': True, 'TargetActorName': 'Item_Cook_O_01', 'UseLastTryGetItemName': True, 'EnableMultiGet': 'EnableMultiGet'})
+        call PorchProhibitionOFF()
 
-    call PorchProhibitionOFF()
+    } {
+        SceneSoundCtrlTag.Demo_KillDucking({'DuckerType': 'cEventSkip', 'IsWaitFinish': True})
+        switch EventSystemActor.CheckGetDemoTypeFromArg({'CheckTargetActorName': 'Item_Cook_O_01', 'UseLastTryGetItemName': True}) {
+          case 2:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_HighGrade'})
+          case 1:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_Deluxe'})
+          case 0:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_Standard'})
+        }
+    }
 
 }
 
@@ -262,22 +317,33 @@ void OpenOperationAndShortCutGuide() {
 
 void ShopDressFairyGetDemo() {
 
-    call CheckAndCallGetDemoSound({'CheckTargetActorName': 'Armor_Default_Head'})
+    fork {
+        EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
 
-    EventSystemActor.Demo_CloseMessageDialog({'IsWaitFinish': True})
+        call PorchProhibitionON()
 
-    call PorchProhibitionON()
+        EventSystemActor.Demo_OpenGetDemoDressFairy({'IsWaitFinish': True})
 
-    EventSystemActor.Demo_OpenGetDemoDressFairy({'IsWaitFinish': True})
+        call PorchProhibitionOFF()
 
-    call PorchProhibitionOFF()
+    } {
+        SceneSoundCtrlTag.Demo_KillDucking({'DuckerType': 'cEventSkip', 'IsWaitFinish': True})
+        switch EventSystemActor.CheckGetDemoTypeFromArg({'UseLastTryGetItemName': True, 'CheckTargetActorName': 'Armor_Default_Head'}) {
+          case 2:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_HighGrade'})
+          case 1:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_Deluxe'})
+          case 0:
+            SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_Standard'})
+        }
+    }
 
 }
 
 void GetManyItemsByName() {
     EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'GiveItemNumber', 'Value': 'GetNumber'})
     EventSystemActor.Demo_IncreasePorchItem({'IsWaitFinish': True, 'PorchItemName': 'IncreaseTargetActorName', 'Value': 'GetNumber'})
-    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 1})
+    EventSystemActor.Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 0})
 
     call ShowGetDemoDialogByName({'IsInvalidOpenPouch': 'IsInvalidOpenPouch', 'CheckTargetActorName': 'ShowDialogTargetActorName'})
 
@@ -320,55 +386,4 @@ void GetItemPouchFullWithNameByCurrent_VisibleOn_NoChkEquipItemType() {
 
     call GetItemPouchFullWithNameByCurrentBase({'Current': 'Current', 'Arg_IsInvalidOpenPouch': 'Arg_IsInvalidOpenPouch', 'PorchItemName': 'PorchItemName'})
 
-}
-
-void CheckAndCallGetDemoSound() {
-    SceneSoundCtrlTag.Demo_KillDucking({'DuckerType': 'cEventSkip', 'IsWaitFinish': True})
-    switch EventSystemActor.CheckGetDemoTypeFromArg({'UseLastTryGetItemName': True, 'CheckTargetActorName': 'CheckTargetActorName'}) {
-      case 2:
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_HighGrade'})
-      case 1:
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_Deluxe'})
-      case 0:
-        SoundTriggerTag.Demo_SoundTrigger({'SoundDelay': 0, 'SLinkInst': '', 'IsWaitFinish': False, 'Sound': 'GetDemo_Standard'})
-    }
-}
-
-void CheckSpecialActorAndGetDemoSoundCall() {
-    SceneSoundCtrlTag.Demo_KillDucking({'DuckerType': 'cEventSkip', 'IsWaitFinish': True})
-    if Argument[CheckSpecialActorAndGetDemoSoundCall(Current)].CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': 'CheckTargetActorName'}) {
-        Event322:
-        SoundTriggerTag.Demo_SoundTrigger({'Sound': 'GetDemo_Heart', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
-    } else
-    if Argument[CheckSpecialActorAndGetDemoSoundCall(Current)].CheckTreasure({'ActorName': 'Obj_StaminaUtuwa_A_01', 'CheckTargetActorName': 'CheckTargetActorName'}) {
-        goto Event322
-    } else
-    if Argument[CheckSpecialActorAndGetDemoSoundCall(Current)].CheckTreasure({'ActorName': 'Obj_DRStone_Get', 'CheckTargetActorName': 'CheckTargetActorName'}) {
-        Event324:
-        SoundTriggerTag.Demo_SoundTrigger({'Sound': 'GetDemo_SheikPad', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
-    } else
-    if Argument[CheckSpecialActorAndGetDemoSoundCall(Current)].CheckTreasure({'CheckTargetActorName': 'CheckTargetActorName', 'ActorName': 'Weapon_Sword_502'}) {
-        goto Event324
-    } else
-    switch Argument[CheckSpecialActorAndGetDemoSoundCall(Current)].CheckGetDemoType({'UseLastTryGetItemName': False, 'CheckTargetActorName': 'CheckTargetActorName'}) {
-      case 2:
-        SoundTriggerTag.Demo_SoundTrigger({'Sound': 'GetDemo_HighGrade', 'IsWaitFinish': False, 'SoundDelay': 0, 'SLinkInst': ''})
-      case 1:
-        SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'Sound': 'GetDemo_Deluxe', 'SoundDelay': 0, 'SLinkInst': ''})
-      case 0:
-        SoundTriggerTag.Demo_SoundTrigger({'IsWaitFinish': False, 'Sound': 'GetDemo_Standard', 'SoundDelay': 0, 'SLinkInst': ''})
-    }
-}
-
-void CallHeartOrGanbariIncleaseDemo() {
-    if Argument[CallHeartOrGanbariIncleaseDemo(Current)].CheckTreasure({'ActorName': 'Obj_HeartUtuwa_A_01', 'CheckTargetActorName': 'CheckTargetActorName'}) {
-        EventSystemActor.Demo_StartLifeUpDemo({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitUntilLifeUpDemoEnd({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
-        EventSystemActor.Demo_SetDispHeartGauge({'IsWaitFinish': True, 'IsDisplay': False, 'IsDisplayEx': False, 'IsGetDemo': True})
-    } else
-    if Argument[CallHeartOrGanbariIncleaseDemo(Current)].CheckTreasure({'CheckTargetActorName': 'CheckTargetActorName', 'ActorName': 'Obj_StaminaUtuwa_A_01'}) {
-        EventSystemActor.Demo_StartStaminaUpDemo({'IsWaitFinish': True})
-        EventSystemActor.Demo_WaitForStaminaUpDemoEnd({'IsWaitFinish': True})
-    }
 }

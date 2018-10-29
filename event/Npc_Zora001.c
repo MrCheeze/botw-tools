@@ -87,17 +87,6 @@ void Water_Relic_Finished_Talk() {
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
-    if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-    && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroZora_AppearDungeon02'}) {
-
-        call TakkaHello()
-
-        if EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroRito_Takka_Talk'}) {
-            Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora001_SD_301'})
-        } else {
-            Npc_Zora001.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'IsCloseMessageDialog': False, 'MessageId': 'EventFlowMsg/BalladOfHeroZora:Npc_Zora001_SD_300'})
-        }
-    } else
     if EventSystemActor.CheckFlag({'FlagName': 'Npc_Zora001_ClearFirst'}) {
 
         call TakkaHello()

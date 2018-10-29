@@ -198,15 +198,6 @@ void CommonPreFunc() {
 
 void CommonPostFunc() {
     GameROMPlayer.Demo_XLinkEventFade({'IsWaitFinish': True, 'SLinkKey': '', 'ELinkKey': 'Demo005_1_warp_appear'})
-
-    call Aoc2Resident.CheckDeadlyQuestEscape()
-
-
-    call AocResident.Check100EnemyRun()
-
-
-    call Aoc2Resident.CheckBalladOfHeroRun()
-
     SceneSoundCtrlTag.Demo_Ctrl({'IsWaitFinish': True, 'BgmCtrlType': 'StartWithFade', 'SeCtrlType': 'None'})
 }
 
@@ -349,8 +340,4 @@ void CDungeonSP() {
 
     call CommonFunc({'DgnObj_WarpPoint_A_01': ActorIdentifier(name="DgnObj_WarpPointSP")})
 
-}
-
-void WarpMarker() {
-    goto Event68
 }

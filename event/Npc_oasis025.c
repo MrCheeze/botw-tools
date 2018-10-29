@@ -46,10 +46,6 @@ void Talk() {
             } else {
                 Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'IsCloseMessageDialog': False, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'MessageId': 'EventFlowMsg/Npc_oasis025:Talk_14'})
             }
-            if EventSystemActor.CheckFlag({'FlagName': 'HasAoCVer3'})
-            && EventSystemActor.CheckFlag({'FlagName': 'BalladOfHeroGerudo_Finish'}) {
-                Npc_oasis025.Demo_Talk({'IsWaitFinish': True, 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'ASName': '', 'MessageId': 'EventFlowMsg/BalladOfHeroGerudo:Npc_oasis025_SD_500', 'IsCloseMessageDialog': False})
-            }
         } else
         switch EventSystemActor.CheckTimeType() {
           case [0, 1]:

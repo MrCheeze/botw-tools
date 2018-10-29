@@ -9,7 +9,7 @@ params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, '
 Actor: EventSystemActor
 entrypoint: None()
 actions: ['Demo_ChangeScene', 'Demo_WaitFrame', 'Demo_ImmediateStopOwnedHorse']
-queries: ['CheckPlayerRideHorse', 'CheckPlayerState', 'IsCurrentAocFieldStage']
+queries: ['CheckPlayerRideHorse', 'CheckPlayerState']
 params: {'CreateMode': 0, 'IsGrounding': False, 'IsWorld': False, 'PosX': 0.0, 'PosY': 0.0, 'PosZ': 0.0, 'RotX': 0.0, 'RotY': 0.0, 'RotZ': 0.0}
 
 Actor: GameROMPlayer
@@ -113,11 +113,6 @@ void Demo005_0() {
         EventSystemActor[02].Demo_WaitFrame({'IsWaitFinish': True, 'Frame': 25})
         if EventSystemActor.CheckPlayerRideHorse() {
             GameROMPlayer.Demo_PlayerHorseGetOffInDemo({'IsWaitFinish': False})
-        }
-        if EventSystemActor.IsCurrentAocFieldStage() {
-
-            call AocResident.100EnemyWarpReset()
-
         }
         EventSystemActor.Demo_ChangeScene({'WarpDestMapName': 'Arg_WarpDestMapName', 'WarpDestPosName': 'Arg_WarpDestPosName', 'IsWaitFinish': True, 'StartType': 2, 'EvflName': 'Demo005_1', 'EntryPointName': 'Demo005_1', 'FadeType': 0})
     } else

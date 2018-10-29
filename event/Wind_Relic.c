@@ -203,7 +203,6 @@ void Parashawl_Npc_ValleyVillage010_Talk() {
 }
 
 void Battle_Npc_ValleyVillage010_Talk() {
-    Event53:
 
     call InitTalk.InitTalk({'Arg_Turn': 0, 'Arg_Greeting': 'FollowAISchedule'})
 
@@ -436,11 +435,8 @@ void BattlePlaying_Npc_ValleyVillage031_EachFrame() {
     Event925:
     if EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_BattleStart'}) {
         if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'Value': 4, 'GameDataIntName': 'Wind_Relic_BreakBattery'}) {
-            Event984:
-            if EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_Battle'})
-            && !EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_BattleFinished'}) {
-                EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Wind_Relic', 'StepName': 'BattleSucceeded', 'ForceRunTelop': False})
-            }
+            Event698:
+            EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Wind_Relic', 'StepName': 'BattleSucceeded', 'ForceRunTelop': False})
         } else
         if !EventSystemActor.HasPorchItemByCategory({'Category': 0, 'Count': 1}) {
             if EventSystemActor.HasPorchItem({'PorchItemName': 'BombArrow_A', 'Count': 1}) {
@@ -453,14 +449,11 @@ void BattlePlaying_Npc_ValleyVillage031_EachFrame() {
             } else {
                 EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
                 if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'Value': 4, 'GameDataIntName': 'Wind_Relic_BreakBattery'}) {
-                    goto Event984
+                    goto Event698
                 } else {
                     EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'Wind_Relic_Parashawl_FailReason', 'Value': 1})
-                    Event985:
-                    if EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_Battle'})
-                    && !EventSystemActor.CheckFlag({'FlagName': 'Wind_Relic_BattleFinished'}) {
-                        EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Wind_Relic', 'ForceRunTelop': False, 'StepName': 'BattleEscape'})
-                    }
+                    Event707:
+                    EventSystemActor.Demo_AdvanceQuest({'IsWaitFinish': True, 'QuestName': 'Wind_Relic', 'ForceRunTelop': False, 'StepName': 'BattleEscape'})
                 }
             }
         } else
@@ -469,10 +462,10 @@ void BattlePlaying_Npc_ValleyVillage031_EachFrame() {
         } else {
             EventSystemActor.Demo_WaitFrame({'Frame': 30, 'IsWaitFinish': True})
             if EventSystemActor.CheckGameDataInt({'Operator': 'GreaterThanOrEqualTo', 'Value': 4, 'GameDataIntName': 'Wind_Relic_BreakBattery'}) {
-                goto Event984
+                goto Event698
             } else {
                 EventSystemActor.Demo_SetGameDataInt({'IsWaitFinish': True, 'GameDataIntName': 'Wind_Relic_Parashawl_FailReason', 'Value': 0})
-                goto Event985
+                goto Event707
             }
         }
     }
@@ -782,22 +775,4 @@ void BackToBattleStep() {
     EventSystemActor.Demo_FlagOFF({'IsWaitFinish': True, 'FlagName': 'Wind_Relic_BattleFailed'})
     Npc_ValleyVillage010[Teba_FlightTraining].Demo_Talk({'IsWaitFinish': True, 'ASName': '', 'MessageId': 'EventFlowMsg/Wind_Relic:talk42', 'IsBecomingSpeaker': True, 'IsOverWriteLabelActorName': False, 'IsCloseMessageDialog': True})
     GameRomCamera.Demo_MovePosFlow({'IsWaitFinish': True, 'PosAppendMode': 0, 'AtAppendMode': 0, 'FovyAppendMode': 0, 'TargetActor1': -1, 'ActorName1': '', 'UniqueName1': '', 'TargetActor2': -1, 'ActorName2': '', 'UniqueName2': '', 'Pattern1PosX': 0.0, 'Pattern1PosY': 0.0, 'Pattern1PosZ': 0.0, 'GameDataVec3fCameraPos': '', 'Pattern1AtX': 0.0, 'Pattern1AtY': 0.0, 'Pattern1AtZ': 0.0, 'GameDataVec3fCameraAt': '', 'Pattern1Fovy': 0.0, 'StartCalcOnly': False, 'MotionMode': 0, 'Count': 0.0, 'Cushion': 0.0, 'CollisionInterpolateSkip': True, 'Accept1FrameDelay': False, 'ReviseModeEnd': 1, 'LatShiftRange': 0.0, 'LngShiftRange': 0.0, 'ActorIgnoringCollision': -1})
-}
-
-void BattlePlaying_Npc_ValleyVillage010_Talk() {
-    Event983:
-    EventSystemActor.Demo_AdvanceQuest({'QuestName': 'Wind_Relic', 'StepName': 'Battle', 'IsWaitFinish': True, 'ForceRunTelop': False})
-    goto Event53
-}
-
-void BattleSucceeded_Npc_ValleyVillage010_Talk() {
-    goto Event983
-}
-
-void BattleEscape_Npc_ValleyVillage010_Talk() {
-    goto Event983
-}
-
-void BattleFinished_Npc_ValleyVillage010_Talk() {
-    goto Event983
 }

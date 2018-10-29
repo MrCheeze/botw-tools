@@ -16,12 +16,6 @@ void Demo008_4() {
 
     call main({'Arg_DestinationX': 'Arg_DestinationX', 'Arg_DestinationY': 'Arg_DestinationY', 'Arg_DestinationZ': 'Arg_DestinationZ'})
 
-
-    call AocResident.Check100EnemyRun()
-
-
-    call Aoc2Resident.CheckBalladOfHeroRun()
-
 }
 
 void main() {

@@ -299,7 +299,7 @@ void HorseRace_Goal() {
 
 void Check_StepOnTheFlowers() {
     Event137:
-    if EventSystemActor.CheckPlayerState({'PlayerState': 27})
+    if EventSystemActor.CheckPlayerState({'PlayerState': 4})
     && EventSystemActor.CheckFlag({'FlagName': 'DontDamageFlower_IsMiss'}) {
         SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
     } else {
@@ -380,26 +380,4 @@ void PlayerFalls() {
     }
     EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
     goto Event172
-}
-
-void BalladOfHeroRito_RapidBreak() {
-    Event175:
-    if EventSystemActor.CheckGameDataInt({'GameDataIntName': 'BalladOfHeroRito_BrokenTargetNum', 'Operator': 'GreaterThanOrEqualTo', 'Value': 4}) {
-        SignalFlowchart.Demo_SendSignal({'Value': 1, 'SignalType': 0, 'IsWaitFinish': True})
-    } else {
-        SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
-    }
-    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-    goto Event175
-}
-
-void BalladOfHeroGerudo_TakeBall() {
-    Event182:
-    if EventSystemActor.CheckPlayerState({'PlayerState': 26}) {
-        SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 0, 'IsWaitFinish': True})
-    } else {
-        SignalFlowchart.Demo_SendSignal({'SignalType': 0, 'Value': 1, 'IsWaitFinish': True})
-    }
-    EventSystemActor.Demo_LoopEnd({'IsWaitFinish': True})
-    goto Event182
 }
