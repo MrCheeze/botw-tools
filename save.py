@@ -23,24 +23,29 @@ def parseSaveFile(savefile, skip_bools=False):
     f = open(savefile,'rb')
     data = f.read()
     f.close()
-    assert data[4:0xC] == b'\xff\xff\xff\xff\x00\x00\x00\x01'
+    if data[4:0xC] == b'\xff\xff\xff\xff\x00\x00\x00\x01':
+        endian = '>'
+    elif data[4:0xC] == b'\xff\xff\xff\xff\x01\x00\x00\x00':
+        endian = '<'
+    else:
+        assert False
     assert data[-4:] == b'\xff\xff\xff\xff'
 
     parsed_data = {}
 
     i = 0xC
     while i < len(data)-4:
-        hashvalue, entrydata = struct.unpack('>i4s', data[i:i+8])
+        hashvalue, entrydata = struct.unpack(endian+'i4s', data[i:i+8])
         if str(hashvalue) not in gamedata:
             i += 8
             continue
         datatype, name = gamedata[str(hashvalue)]
         if datatype=='s32':
-            parsed_data[name] = struct.unpack('>i', entrydata)[0]
+            parsed_data[name] = struct.unpack(endian+'i', entrydata)[0]
             i += 8
         elif datatype=='bool':
             if not skip_bools:
-                parsed_data[name] = bool(struct.unpack('>i', entrydata)[0])
+                parsed_data[name] = bool(struct.unpack(endian+'i', entrydata)[0])
             i += 8
         elif datatype=='string256':
             bytestr = b''
@@ -51,7 +56,7 @@ def parseSaveFile(savefile, skip_bools=False):
         elif datatype=='s32_array':
             if name not in parsed_data:
                 parsed_data[name] = []
-            parsed_data[name].append(struct.unpack('>i', entrydata)[0])
+            parsed_data[name].append(struct.unpack(endian+'i', entrydata)[0])
             i += 8
         elif datatype=='string64_array':
             if name not in parsed_data:
@@ -62,7 +67,7 @@ def parseSaveFile(savefile, skip_bools=False):
             parsed_data[name].append(bytestr.split(b'\0',1)[0].decode('ascii'))
             i += 64*2
         elif datatype=='f32':
-            parsed_data[name] = struct.unpack('>f', entrydata)[0]
+            parsed_data[name] = struct.unpack(endian+'f', entrydata)[0]
             i += 8
         elif datatype=='string':
             bytestr = b''
@@ -79,7 +84,7 @@ def parseSaveFile(savefile, skip_bools=False):
         elif datatype=='vector3f':
             parsed_data[name] = []
             for j in range(i,i+3*8,8):
-                parsed_data[name].append(struct.unpack('>f', data[j+4:j+8])[0])
+                parsed_data[name].append(struct.unpack(endian+'f', data[j+4:j+8])[0])
             i += 3*8
         elif datatype=='string256_array':
             if name not in parsed_data:
@@ -92,26 +97,26 @@ def parseSaveFile(savefile, skip_bools=False):
         elif datatype=='bool_array':
             if name not in parsed_data:
                 parsed_data[name] = []
-            parsed_data[name].append(bool(struct.unpack('>i', entrydata)[0]))
+            parsed_data[name].append(bool(struct.unpack(endian+'i', entrydata)[0]))
             i += 8
         elif datatype=='vector2f_array':
             if name not in parsed_data:
                 parsed_data[name] = []
             parsed_data[name].append([])
             for j in range(i,i+2*8,8):
-                parsed_data[name][-1].append(struct.unpack('>f', data[j+4:j+8])[0])
+                parsed_data[name][-1].append(struct.unpack(endian+'f', data[j+4:j+8])[0])
             i += 2*8
         elif datatype=='f32_array':
             if name not in parsed_data:
                 parsed_data[name] = []
-            parsed_data[name].append(struct.unpack('>f', entrydata)[0])
+            parsed_data[name].append(struct.unpack(endian+'f', entrydata)[0])
             i += 8
         elif datatype=='vector3f_array':
             if name not in parsed_data:
                 parsed_data[name] = []
             parsed_data[name].append([])
             for j in range(i,i+3*8,8):
-                parsed_data[name][-1].append(struct.unpack('>f', data[j+4:j+8])[0])
+                parsed_data[name][-1].append(struct.unpack(endian+'f', data[j+4:j+8])[0])
             i += 3*8
         else:
             #print(parsed_data)
@@ -129,22 +134,27 @@ def writeSaveFile(json_data, savefile):
     data = list(f.read())
     f.close()
 
-    assert data[4:0xC] == list(b'\xff\xff\xff\xff\x00\x00\x00\x01')
+    if data[4:0xC] == list(b'\xff\xff\xff\xff\x00\x00\x00\x01'):
+        endian = '>'
+    elif data[4:0xC] == list(b'\xff\xff\xff\xff\x01\x00\x00\x00'):
+        endian = '<'
+    else:
+        assert False
     assert data[-4:] == list(b'\xff\xff\xff\xff')
 
     i = 0xC
     while i < len(data)-4:
-        hashvalue = struct.unpack('>i', bytes(data[i:i+4]))[0]
+        hashvalue = struct.unpack(endian+'i', bytes(data[i:i+4]))[0]
         if str(hashvalue) not in gamedata:
             i += 8
             continue
         datatype, name = gamedata[str(hashvalue)]
         value = json_data[name]
         if datatype=='s32':
-            data[i+4:i+8] = struct.pack('>i', value)
+            data[i+4:i+8] = struct.pack(endian+'i', value)
             i += 8
         elif datatype=='bool':
-            data[i+4:i+8] = struct.pack('>i', value)
+            data[i+4:i+8] = struct.pack(endian+'i', value)
             i += 8
         elif datatype=='string256':
             value += '\0' * (256 - len(value))
@@ -152,7 +162,7 @@ def writeSaveFile(json_data, savefile):
                 data[i+4+j*8:i+8+j*8] = value[j*4:j*4+4].encode('ascii')
             i += 256*2
         elif datatype=='s32_array':
-            data[i+4:i+8] = struct.pack('>i', value[0])
+            data[i+4:i+8] = struct.pack(endian+'i', value[0])
             json_data[name] = json_data[name][1:]
             i += 8
         elif datatype=='string64_array':
@@ -162,7 +172,7 @@ def writeSaveFile(json_data, savefile):
             json_data[name] = json_data[name][1:]
             i += 64*2
         elif datatype=='f32':
-            data[i+4:i+8] = struct.pack('>f', value)
+            data[i+4:i+8] = struct.pack(endian+'f', value)
             i += 8
         elif datatype=='string':
             value += '\0' * (32 - len(value))
@@ -176,7 +186,7 @@ def writeSaveFile(json_data, savefile):
             i += 64*2
         elif datatype=='vector3f':
             for j in range(3):
-                data[i+4+j*8:i+8+j*8] = struct.pack('>f', value[j])
+                data[i+4+j*8:i+8+j*8] = struct.pack(endian+'f', value[j])
             i += 3*8
         elif datatype=='string256_array':
             value[0] += '\0' * (256 - len(value[0]))
@@ -185,21 +195,21 @@ def writeSaveFile(json_data, savefile):
             json_data[name] = json_data[name][1:]
             i += 256*2
         elif datatype=='bool_array':
-            data[i+4:i+8] = struct.pack('>i', value[0])
+            data[i+4:i+8] = struct.pack(endian+'i', value[0])
             json_data[name] = json_data[name][1:]
             i += 8
         elif datatype=='vector2f_array':
             for j in range(2):
-                data[i+4+j*8:i+8+j*8] = struct.pack('>f', value[0][j])
+                data[i+4+j*8:i+8+j*8] = struct.pack(endian+'f', value[0][j])
             json_data[name] = json_data[name][1:]
             i += 2*8
         elif datatype=='f32_array':
-            data[i+4:i+8] = struct.pack('>f', value[0])
+            data[i+4:i+8] = struct.pack(endian+'f', value[0])
             json_data[name] = json_data[name][1:]
             i += 8
         elif datatype=='vector3f_array':
             for j in range(3):
-                data[i+4+j*8:i+8+j*8] = struct.pack('>f', value[0][j])
+                data[i+4+j*8:i+8+j*8] = struct.pack(endian+'f', value[0][j])
             json_data[name] = json_data[name][1:]
             i += 3*8
         else:
