@@ -3,11 +3,17 @@ import os
 
 img = Image.new("RGB", (0x100*6*2, 0x100*6*2))
 
-i = 0
+file_paths = []
+# os.walk does not guarantee order, for example mac file system will have random results,
+# so need to sort it to make sure files are processed in order
 for folder, _, files in os.walk('terrain'):
     if len(files) == 0:
         continue
+    file_paths.append((folder, sorted(files)))
+file_paths.sort()
 
+i = 0
+for folder, files in file_paths:
     y_high = [0,0,0,1,2,1,
               1,2,2,0,0,0,
               1,1,2,2,1,2,
